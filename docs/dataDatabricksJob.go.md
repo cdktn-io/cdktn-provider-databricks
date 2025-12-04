@@ -4,7 +4,7 @@
 
 ### DataDatabricksJob <a name="DataDatabricksJob" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJob"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job databricks_job}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job databricks_job}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJob.Initializer"></a>
 
@@ -413,7 +413,7 @@ The construct id used in the generated config for the DataDatabricksJob to impor
 
 The id of the existing DataDatabricksJob that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -730,11 +730,11 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#id DataDatabricksJob#id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobConfig.property.jobId">JobId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#job_id DataDatabricksJob#job_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobConfig.property.jobName">JobName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#job_name DataDatabricksJob#job_name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#id DataDatabricksJob#id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobConfig.property.jobId">JobId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#job_id DataDatabricksJob#job_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobConfig.property.jobName">JobName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#job_name DataDatabricksJob#job_name}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobConfig.property.jobSettings">JobSettings</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettings">DataDatabricksJobJobSettings</a></code> | job_settings block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#name DataDatabricksJob#name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#name DataDatabricksJob#name}. |
 
 ---
 
@@ -816,7 +816,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#id DataDatabricksJob#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#id DataDatabricksJob#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -831,7 +831,7 @@ JobId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#job_id DataDatabricksJob#job_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#job_id DataDatabricksJob#job_id}.
 
 ---
 
@@ -843,7 +843,7 @@ JobName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#job_name DataDatabricksJob#job_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#job_name DataDatabricksJob#job_name}.
 
 ---
 
@@ -857,7 +857,7 @@ JobSettings DataDatabricksJobJobSettings
 
 job_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#job_settings DataDatabricksJob#job_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#job_settings DataDatabricksJob#job_settings}
 
 ---
 
@@ -869,7 +869,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#name DataDatabricksJob#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#name DataDatabricksJob#name}.
 
 ---
 
@@ -893,10 +893,10 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettings.property.createdTime">CreatedTime</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#created_time DataDatabricksJob#created_time}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettings.property.creatorUserName">CreatorUserName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#creator_user_name DataDatabricksJob#creator_user_name}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettings.property.jobId">JobId</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#job_id DataDatabricksJob#job_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettings.property.runAsUserName">RunAsUserName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#run_as_user_name DataDatabricksJob#run_as_user_name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettings.property.createdTime">CreatedTime</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#created_time DataDatabricksJob#created_time}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettings.property.creatorUserName">CreatorUserName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#creator_user_name DataDatabricksJob#creator_user_name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettings.property.jobId">JobId</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#job_id DataDatabricksJob#job_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettings.property.runAsUserName">RunAsUserName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#run_as_user_name DataDatabricksJob#run_as_user_name}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettings.property.settings">Settings</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings">DataDatabricksJobJobSettingsSettings</a></code> | settings block. |
 
 ---
@@ -909,7 +909,7 @@ CreatedTime *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#created_time DataDatabricksJob#created_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#created_time DataDatabricksJob#created_time}.
 
 ---
 
@@ -921,7 +921,7 @@ CreatorUserName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#creator_user_name DataDatabricksJob#creator_user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#creator_user_name DataDatabricksJob#creator_user_name}.
 
 ---
 
@@ -933,7 +933,7 @@ JobId *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#job_id DataDatabricksJob#job_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#job_id DataDatabricksJob#job_id}.
 
 ---
 
@@ -945,7 +945,7 @@ RunAsUserName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#run_as_user_name DataDatabricksJob#run_as_user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#run_as_user_name DataDatabricksJob#run_as_user_name}.
 
 ---
 
@@ -959,7 +959,7 @@ Settings DataDatabricksJobJobSettingsSettings
 
 settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#settings DataDatabricksJob#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#settings DataDatabricksJob#settings}
 
 ---
 
@@ -1017,20 +1017,20 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings.property.continuous">Continuous</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsContinuous">DataDatabricksJobJobSettingsSettingsContinuous</a></code> | continuous block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings.property.dbtTask">DbtTask</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsDbtTask">DataDatabricksJobJobSettingsSettingsDbtTask</a></code> | dbt_task block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings.property.deployment">Deployment</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsDeployment">DataDatabricksJobJobSettingsSettingsDeployment</a></code> | deployment block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#description DataDatabricksJob#description}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings.property.editMode">EditMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#edit_mode DataDatabricksJob#edit_mode}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#description DataDatabricksJob#description}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings.property.editMode">EditMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#edit_mode DataDatabricksJob#edit_mode}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings.property.emailNotifications">EmailNotifications</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsEmailNotifications">DataDatabricksJobJobSettingsSettingsEmailNotifications</a></code> | email_notifications block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings.property.environment">Environment</a></code> | <code>interface{}</code> | environment block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings.property.existingClusterId">ExistingClusterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#existing_cluster_id DataDatabricksJob#existing_cluster_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings.property.format">Format</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#format DataDatabricksJob#format}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings.property.existingClusterId">ExistingClusterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#existing_cluster_id DataDatabricksJob#existing_cluster_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings.property.format">Format</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#format DataDatabricksJob#format}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings.property.gitSource">GitSource</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsGitSource">DataDatabricksJobJobSettingsSettingsGitSource</a></code> | git_source block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings.property.health">Health</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsHealth">DataDatabricksJobJobSettingsSettingsHealth</a></code> | health block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings.property.jobCluster">JobCluster</a></code> | <code>interface{}</code> | job_cluster block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings.property.library">Library</a></code> | <code>interface{}</code> | library block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings.property.maxConcurrentRuns">MaxConcurrentRuns</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#max_concurrent_runs DataDatabricksJob#max_concurrent_runs}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings.property.maxRetries">MaxRetries</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#max_retries DataDatabricksJob#max_retries}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings.property.minRetryIntervalMillis">MinRetryIntervalMillis</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#min_retry_interval_millis DataDatabricksJob#min_retry_interval_millis}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#name DataDatabricksJob#name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings.property.maxConcurrentRuns">MaxConcurrentRuns</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#max_concurrent_runs DataDatabricksJob#max_concurrent_runs}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings.property.maxRetries">MaxRetries</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#max_retries DataDatabricksJob#max_retries}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings.property.minRetryIntervalMillis">MinRetryIntervalMillis</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#min_retry_interval_millis DataDatabricksJob#min_retry_interval_millis}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#name DataDatabricksJob#name}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings.property.newCluster">NewCluster</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewCluster">DataDatabricksJobJobSettingsSettingsNewCluster</a></code> | new_cluster block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings.property.notebookTask">NotebookTask</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNotebookTask">DataDatabricksJobJobSettingsSettingsNotebookTask</a></code> | notebook_task block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings.property.notificationSettings">NotificationSettings</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNotificationSettings">DataDatabricksJobJobSettingsSettingsNotificationSettings</a></code> | notification_settings block. |
@@ -1038,16 +1038,16 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings.property.pipelineTask">PipelineTask</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsPipelineTask">DataDatabricksJobJobSettingsSettingsPipelineTask</a></code> | pipeline_task block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings.property.pythonWheelTask">PythonWheelTask</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsPythonWheelTask">DataDatabricksJobJobSettingsSettingsPythonWheelTask</a></code> | python_wheel_task block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings.property.queue">Queue</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueue">DataDatabricksJobJobSettingsSettingsQueue</a></code> | queue block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings.property.retryOnTimeout">RetryOnTimeout</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#retry_on_timeout DataDatabricksJob#retry_on_timeout}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings.property.retryOnTimeout">RetryOnTimeout</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#retry_on_timeout DataDatabricksJob#retry_on_timeout}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings.property.runAs">RunAs</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsRunAs">DataDatabricksJobJobSettingsSettingsRunAs</a></code> | run_as block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings.property.runJobTask">RunJobTask</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsRunJobTask">DataDatabricksJobJobSettingsSettingsRunJobTask</a></code> | run_job_task block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings.property.schedule">Schedule</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSchedule">DataDatabricksJobJobSettingsSettingsSchedule</a></code> | schedule block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings.property.sparkJarTask">SparkJarTask</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkJarTask">DataDatabricksJobJobSettingsSettingsSparkJarTask</a></code> | spark_jar_task block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings.property.sparkPythonTask">SparkPythonTask</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkPythonTask">DataDatabricksJobJobSettingsSettingsSparkPythonTask</a></code> | spark_python_task block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings.property.sparkSubmitTask">SparkSubmitTask</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkSubmitTask">DataDatabricksJobJobSettingsSettingsSparkSubmitTask</a></code> | spark_submit_task block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#tags DataDatabricksJob#tags}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#tags DataDatabricksJob#tags}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings.property.task">Task</a></code> | <code>interface{}</code> | task block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings.property.timeoutSeconds">TimeoutSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#timeout_seconds DataDatabricksJob#timeout_seconds}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings.property.timeoutSeconds">TimeoutSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#timeout_seconds DataDatabricksJob#timeout_seconds}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings.property.trigger">Trigger</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTrigger">DataDatabricksJobJobSettingsSettingsTrigger</a></code> | trigger block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings.property.webhookNotifications">WebhookNotifications</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotifications">DataDatabricksJobJobSettingsSettingsWebhookNotifications</a></code> | webhook_notifications block. |
 
@@ -1063,7 +1063,7 @@ Continuous DataDatabricksJobJobSettingsSettingsContinuous
 
 continuous block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#continuous DataDatabricksJob#continuous}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#continuous DataDatabricksJob#continuous}
 
 ---
 
@@ -1077,7 +1077,7 @@ DbtTask DataDatabricksJobJobSettingsSettingsDbtTask
 
 dbt_task block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#dbt_task DataDatabricksJob#dbt_task}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#dbt_task DataDatabricksJob#dbt_task}
 
 ---
 
@@ -1091,7 +1091,7 @@ Deployment DataDatabricksJobJobSettingsSettingsDeployment
 
 deployment block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#deployment DataDatabricksJob#deployment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#deployment DataDatabricksJob#deployment}
 
 ---
 
@@ -1103,7 +1103,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#description DataDatabricksJob#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#description DataDatabricksJob#description}.
 
 ---
 
@@ -1115,7 +1115,7 @@ EditMode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#edit_mode DataDatabricksJob#edit_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#edit_mode DataDatabricksJob#edit_mode}.
 
 ---
 
@@ -1129,7 +1129,7 @@ EmailNotifications DataDatabricksJobJobSettingsSettingsEmailNotifications
 
 email_notifications block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#email_notifications DataDatabricksJob#email_notifications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#email_notifications DataDatabricksJob#email_notifications}
 
 ---
 
@@ -1143,7 +1143,7 @@ Environment interface{}
 
 environment block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#environment DataDatabricksJob#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#environment DataDatabricksJob#environment}
 
 ---
 
@@ -1155,7 +1155,7 @@ ExistingClusterId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#existing_cluster_id DataDatabricksJob#existing_cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#existing_cluster_id DataDatabricksJob#existing_cluster_id}.
 
 ---
 
@@ -1167,7 +1167,7 @@ Format *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#format DataDatabricksJob#format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#format DataDatabricksJob#format}.
 
 ---
 
@@ -1181,7 +1181,7 @@ GitSource DataDatabricksJobJobSettingsSettingsGitSource
 
 git_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#git_source DataDatabricksJob#git_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#git_source DataDatabricksJob#git_source}
 
 ---
 
@@ -1195,7 +1195,7 @@ Health DataDatabricksJobJobSettingsSettingsHealth
 
 health block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#health DataDatabricksJob#health}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#health DataDatabricksJob#health}
 
 ---
 
@@ -1209,7 +1209,7 @@ JobCluster interface{}
 
 job_cluster block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#job_cluster DataDatabricksJob#job_cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#job_cluster DataDatabricksJob#job_cluster}
 
 ---
 
@@ -1223,7 +1223,7 @@ Library interface{}
 
 library block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#library DataDatabricksJob#library}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#library DataDatabricksJob#library}
 
 ---
 
@@ -1235,7 +1235,7 @@ MaxConcurrentRuns *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#max_concurrent_runs DataDatabricksJob#max_concurrent_runs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#max_concurrent_runs DataDatabricksJob#max_concurrent_runs}.
 
 ---
 
@@ -1247,7 +1247,7 @@ MaxRetries *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#max_retries DataDatabricksJob#max_retries}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#max_retries DataDatabricksJob#max_retries}.
 
 ---
 
@@ -1259,7 +1259,7 @@ MinRetryIntervalMillis *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#min_retry_interval_millis DataDatabricksJob#min_retry_interval_millis}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#min_retry_interval_millis DataDatabricksJob#min_retry_interval_millis}.
 
 ---
 
@@ -1271,7 +1271,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#name DataDatabricksJob#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#name DataDatabricksJob#name}.
 
 ---
 
@@ -1285,7 +1285,7 @@ NewCluster DataDatabricksJobJobSettingsSettingsNewCluster
 
 new_cluster block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#new_cluster DataDatabricksJob#new_cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#new_cluster DataDatabricksJob#new_cluster}
 
 ---
 
@@ -1299,7 +1299,7 @@ NotebookTask DataDatabricksJobJobSettingsSettingsNotebookTask
 
 notebook_task block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#notebook_task DataDatabricksJob#notebook_task}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#notebook_task DataDatabricksJob#notebook_task}
 
 ---
 
@@ -1313,7 +1313,7 @@ NotificationSettings DataDatabricksJobJobSettingsSettingsNotificationSettings
 
 notification_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#notification_settings DataDatabricksJob#notification_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#notification_settings DataDatabricksJob#notification_settings}
 
 ---
 
@@ -1327,7 +1327,7 @@ Parameter interface{}
 
 parameter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#parameter DataDatabricksJob#parameter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#parameter DataDatabricksJob#parameter}
 
 ---
 
@@ -1341,7 +1341,7 @@ PipelineTask DataDatabricksJobJobSettingsSettingsPipelineTask
 
 pipeline_task block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#pipeline_task DataDatabricksJob#pipeline_task}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#pipeline_task DataDatabricksJob#pipeline_task}
 
 ---
 
@@ -1355,7 +1355,7 @@ PythonWheelTask DataDatabricksJobJobSettingsSettingsPythonWheelTask
 
 python_wheel_task block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#python_wheel_task DataDatabricksJob#python_wheel_task}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#python_wheel_task DataDatabricksJob#python_wheel_task}
 
 ---
 
@@ -1369,7 +1369,7 @@ Queue DataDatabricksJobJobSettingsSettingsQueue
 
 queue block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#queue DataDatabricksJob#queue}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#queue DataDatabricksJob#queue}
 
 ---
 
@@ -1381,7 +1381,7 @@ RetryOnTimeout interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#retry_on_timeout DataDatabricksJob#retry_on_timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#retry_on_timeout DataDatabricksJob#retry_on_timeout}.
 
 ---
 
@@ -1395,7 +1395,7 @@ RunAs DataDatabricksJobJobSettingsSettingsRunAs
 
 run_as block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#run_as DataDatabricksJob#run_as}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#run_as DataDatabricksJob#run_as}
 
 ---
 
@@ -1409,7 +1409,7 @@ RunJobTask DataDatabricksJobJobSettingsSettingsRunJobTask
 
 run_job_task block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#run_job_task DataDatabricksJob#run_job_task}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#run_job_task DataDatabricksJob#run_job_task}
 
 ---
 
@@ -1423,7 +1423,7 @@ Schedule DataDatabricksJobJobSettingsSettingsSchedule
 
 schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#schedule DataDatabricksJob#schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#schedule DataDatabricksJob#schedule}
 
 ---
 
@@ -1437,7 +1437,7 @@ SparkJarTask DataDatabricksJobJobSettingsSettingsSparkJarTask
 
 spark_jar_task block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#spark_jar_task DataDatabricksJob#spark_jar_task}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#spark_jar_task DataDatabricksJob#spark_jar_task}
 
 ---
 
@@ -1451,7 +1451,7 @@ SparkPythonTask DataDatabricksJobJobSettingsSettingsSparkPythonTask
 
 spark_python_task block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#spark_python_task DataDatabricksJob#spark_python_task}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#spark_python_task DataDatabricksJob#spark_python_task}
 
 ---
 
@@ -1465,7 +1465,7 @@ SparkSubmitTask DataDatabricksJobJobSettingsSettingsSparkSubmitTask
 
 spark_submit_task block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#spark_submit_task DataDatabricksJob#spark_submit_task}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#spark_submit_task DataDatabricksJob#spark_submit_task}
 
 ---
 
@@ -1477,7 +1477,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#tags DataDatabricksJob#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#tags DataDatabricksJob#tags}.
 
 ---
 
@@ -1491,7 +1491,7 @@ Task interface{}
 
 task block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#task DataDatabricksJob#task}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#task DataDatabricksJob#task}
 
 ---
 
@@ -1503,7 +1503,7 @@ TimeoutSeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#timeout_seconds DataDatabricksJob#timeout_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#timeout_seconds DataDatabricksJob#timeout_seconds}.
 
 ---
 
@@ -1517,7 +1517,7 @@ Trigger DataDatabricksJobJobSettingsSettingsTrigger
 
 trigger block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#trigger DataDatabricksJob#trigger}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#trigger DataDatabricksJob#trigger}
 
 ---
 
@@ -1531,7 +1531,7 @@ WebhookNotifications DataDatabricksJobJobSettingsSettingsWebhookNotifications
 
 webhook_notifications block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#webhook_notifications DataDatabricksJob#webhook_notifications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#webhook_notifications DataDatabricksJob#webhook_notifications}
 
 ---
 
@@ -1551,7 +1551,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsContinuous.property.pauseStatus">PauseStatus</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#pause_status DataDatabricksJob#pause_status}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsContinuous.property.pauseStatus">PauseStatus</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#pause_status DataDatabricksJob#pause_status}. |
 
 ---
 
@@ -1563,7 +1563,7 @@ PauseStatus *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#pause_status DataDatabricksJob#pause_status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#pause_status DataDatabricksJob#pause_status}.
 
 ---
 
@@ -1589,13 +1589,13 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsDbtTask.property.commands">Commands</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#commands DataDatabricksJob#commands}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsDbtTask.property.catalog">Catalog</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#catalog DataDatabricksJob#catalog}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsDbtTask.property.profilesDirectory">ProfilesDirectory</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#profiles_directory DataDatabricksJob#profiles_directory}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsDbtTask.property.projectDirectory">ProjectDirectory</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#project_directory DataDatabricksJob#project_directory}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsDbtTask.property.schema">Schema</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#schema DataDatabricksJob#schema}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsDbtTask.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#source DataDatabricksJob#source}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsDbtTask.property.warehouseId">WarehouseId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#warehouse_id DataDatabricksJob#warehouse_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsDbtTask.property.commands">Commands</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#commands DataDatabricksJob#commands}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsDbtTask.property.catalog">Catalog</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#catalog DataDatabricksJob#catalog}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsDbtTask.property.profilesDirectory">ProfilesDirectory</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#profiles_directory DataDatabricksJob#profiles_directory}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsDbtTask.property.projectDirectory">ProjectDirectory</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#project_directory DataDatabricksJob#project_directory}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsDbtTask.property.schema">Schema</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#schema DataDatabricksJob#schema}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsDbtTask.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#source DataDatabricksJob#source}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsDbtTask.property.warehouseId">WarehouseId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#warehouse_id DataDatabricksJob#warehouse_id}. |
 
 ---
 
@@ -1607,7 +1607,7 @@ Commands *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#commands DataDatabricksJob#commands}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#commands DataDatabricksJob#commands}.
 
 ---
 
@@ -1619,7 +1619,7 @@ Catalog *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#catalog DataDatabricksJob#catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#catalog DataDatabricksJob#catalog}.
 
 ---
 
@@ -1631,7 +1631,7 @@ ProfilesDirectory *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#profiles_directory DataDatabricksJob#profiles_directory}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#profiles_directory DataDatabricksJob#profiles_directory}.
 
 ---
 
@@ -1643,7 +1643,7 @@ ProjectDirectory *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#project_directory DataDatabricksJob#project_directory}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#project_directory DataDatabricksJob#project_directory}.
 
 ---
 
@@ -1655,7 +1655,7 @@ Schema *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#schema DataDatabricksJob#schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#schema DataDatabricksJob#schema}.
 
 ---
 
@@ -1667,7 +1667,7 @@ Source *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#source DataDatabricksJob#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#source DataDatabricksJob#source}.
 
 ---
 
@@ -1679,7 +1679,7 @@ WarehouseId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#warehouse_id DataDatabricksJob#warehouse_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#warehouse_id DataDatabricksJob#warehouse_id}.
 
 ---
 
@@ -1700,8 +1700,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsDeployment.property.kind">Kind</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#kind DataDatabricksJob#kind}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsDeployment.property.metadataFilePath">MetadataFilePath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#metadata_file_path DataDatabricksJob#metadata_file_path}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsDeployment.property.kind">Kind</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#kind DataDatabricksJob#kind}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsDeployment.property.metadataFilePath">MetadataFilePath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#metadata_file_path DataDatabricksJob#metadata_file_path}. |
 
 ---
 
@@ -1713,7 +1713,7 @@ Kind *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#kind DataDatabricksJob#kind}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#kind DataDatabricksJob#kind}.
 
 ---
 
@@ -1725,7 +1725,7 @@ MetadataFilePath *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#metadata_file_path DataDatabricksJob#metadata_file_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#metadata_file_path DataDatabricksJob#metadata_file_path}.
 
 ---
 
@@ -1750,12 +1750,12 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsEmailNotifications.property.noAlertForSkippedRuns">NoAlertForSkippedRuns</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#no_alert_for_skipped_runs DataDatabricksJob#no_alert_for_skipped_runs}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsEmailNotifications.property.onDurationWarningThresholdExceeded">OnDurationWarningThresholdExceeded</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#on_duration_warning_threshold_exceeded DataDatabricksJob#on_duration_warning_threshold_exceeded}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsEmailNotifications.property.onFailure">OnFailure</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#on_failure DataDatabricksJob#on_failure}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsEmailNotifications.property.onStart">OnStart</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#on_start DataDatabricksJob#on_start}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsEmailNotifications.property.onStreamingBacklogExceeded">OnStreamingBacklogExceeded</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#on_streaming_backlog_exceeded DataDatabricksJob#on_streaming_backlog_exceeded}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsEmailNotifications.property.onSuccess">OnSuccess</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#on_success DataDatabricksJob#on_success}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsEmailNotifications.property.noAlertForSkippedRuns">NoAlertForSkippedRuns</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#no_alert_for_skipped_runs DataDatabricksJob#no_alert_for_skipped_runs}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsEmailNotifications.property.onDurationWarningThresholdExceeded">OnDurationWarningThresholdExceeded</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#on_duration_warning_threshold_exceeded DataDatabricksJob#on_duration_warning_threshold_exceeded}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsEmailNotifications.property.onFailure">OnFailure</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#on_failure DataDatabricksJob#on_failure}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsEmailNotifications.property.onStart">OnStart</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#on_start DataDatabricksJob#on_start}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsEmailNotifications.property.onStreamingBacklogExceeded">OnStreamingBacklogExceeded</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#on_streaming_backlog_exceeded DataDatabricksJob#on_streaming_backlog_exceeded}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsEmailNotifications.property.onSuccess">OnSuccess</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#on_success DataDatabricksJob#on_success}. |
 
 ---
 
@@ -1767,7 +1767,7 @@ NoAlertForSkippedRuns interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#no_alert_for_skipped_runs DataDatabricksJob#no_alert_for_skipped_runs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#no_alert_for_skipped_runs DataDatabricksJob#no_alert_for_skipped_runs}.
 
 ---
 
@@ -1779,7 +1779,7 @@ OnDurationWarningThresholdExceeded *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#on_duration_warning_threshold_exceeded DataDatabricksJob#on_duration_warning_threshold_exceeded}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#on_duration_warning_threshold_exceeded DataDatabricksJob#on_duration_warning_threshold_exceeded}.
 
 ---
 
@@ -1791,7 +1791,7 @@ OnFailure *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#on_failure DataDatabricksJob#on_failure}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#on_failure DataDatabricksJob#on_failure}.
 
 ---
 
@@ -1803,7 +1803,7 @@ OnStart *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#on_start DataDatabricksJob#on_start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#on_start DataDatabricksJob#on_start}.
 
 ---
 
@@ -1815,7 +1815,7 @@ OnStreamingBacklogExceeded *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#on_streaming_backlog_exceeded DataDatabricksJob#on_streaming_backlog_exceeded}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#on_streaming_backlog_exceeded DataDatabricksJob#on_streaming_backlog_exceeded}.
 
 ---
 
@@ -1827,7 +1827,7 @@ OnSuccess *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#on_success DataDatabricksJob#on_success}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#on_success DataDatabricksJob#on_success}.
 
 ---
 
@@ -1848,7 +1848,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsEnvironment.property.environmentKey">EnvironmentKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#environment_key DataDatabricksJob#environment_key}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsEnvironment.property.environmentKey">EnvironmentKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#environment_key DataDatabricksJob#environment_key}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsEnvironment.property.spec">Spec</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsEnvironmentSpec">DataDatabricksJobJobSettingsSettingsEnvironmentSpec</a></code> | spec block. |
 
 ---
@@ -1861,7 +1861,7 @@ EnvironmentKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#environment_key DataDatabricksJob#environment_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#environment_key DataDatabricksJob#environment_key}.
 
 ---
 
@@ -1875,7 +1875,7 @@ Spec DataDatabricksJobJobSettingsSettingsEnvironmentSpec
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#spec DataDatabricksJob#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#spec DataDatabricksJob#spec}
 
 ---
 
@@ -1898,10 +1898,10 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsEnvironmentSpec.property.client">Client</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#client DataDatabricksJob#client}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsEnvironmentSpec.property.dependencies">Dependencies</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#dependencies DataDatabricksJob#dependencies}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsEnvironmentSpec.property.environmentVersion">EnvironmentVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#environment_version DataDatabricksJob#environment_version}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsEnvironmentSpec.property.javaDependencies">JavaDependencies</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#java_dependencies DataDatabricksJob#java_dependencies}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsEnvironmentSpec.property.client">Client</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#client DataDatabricksJob#client}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsEnvironmentSpec.property.dependencies">Dependencies</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#dependencies DataDatabricksJob#dependencies}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsEnvironmentSpec.property.environmentVersion">EnvironmentVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#environment_version DataDatabricksJob#environment_version}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsEnvironmentSpec.property.javaDependencies">JavaDependencies</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#java_dependencies DataDatabricksJob#java_dependencies}. |
 
 ---
 
@@ -1913,7 +1913,7 @@ Client *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#client DataDatabricksJob#client}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#client DataDatabricksJob#client}.
 
 ---
 
@@ -1925,7 +1925,7 @@ Dependencies *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#dependencies DataDatabricksJob#dependencies}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#dependencies DataDatabricksJob#dependencies}.
 
 ---
 
@@ -1937,7 +1937,7 @@ EnvironmentVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#environment_version DataDatabricksJob#environment_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#environment_version DataDatabricksJob#environment_version}.
 
 ---
 
@@ -1949,7 +1949,7 @@ JavaDependencies *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#java_dependencies DataDatabricksJob#java_dependencies}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#java_dependencies DataDatabricksJob#java_dependencies}.
 
 ---
 
@@ -1974,12 +1974,12 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsGitSource.property.url">Url</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#url DataDatabricksJob#url}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsGitSource.property.branch">Branch</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#branch DataDatabricksJob#branch}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsGitSource.property.commit">Commit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#commit DataDatabricksJob#commit}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsGitSource.property.url">Url</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#url DataDatabricksJob#url}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsGitSource.property.branch">Branch</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#branch DataDatabricksJob#branch}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsGitSource.property.commit">Commit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#commit DataDatabricksJob#commit}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsGitSource.property.jobSource">JobSource</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsGitSourceJobSource">DataDatabricksJobJobSettingsSettingsGitSourceJobSource</a></code> | job_source block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsGitSource.property.provider">Provider</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#provider DataDatabricksJob#provider}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsGitSource.property.tag">Tag</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#tag DataDatabricksJob#tag}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsGitSource.property.provider">Provider</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#provider DataDatabricksJob#provider}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsGitSource.property.tag">Tag</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#tag DataDatabricksJob#tag}. |
 
 ---
 
@@ -1991,7 +1991,7 @@ Url *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#url DataDatabricksJob#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#url DataDatabricksJob#url}.
 
 ---
 
@@ -2003,7 +2003,7 @@ Branch *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#branch DataDatabricksJob#branch}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#branch DataDatabricksJob#branch}.
 
 ---
 
@@ -2015,7 +2015,7 @@ Commit *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#commit DataDatabricksJob#commit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#commit DataDatabricksJob#commit}.
 
 ---
 
@@ -2029,7 +2029,7 @@ JobSource DataDatabricksJobJobSettingsSettingsGitSourceJobSource
 
 job_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#job_source DataDatabricksJob#job_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#job_source DataDatabricksJob#job_source}
 
 ---
 
@@ -2041,7 +2041,7 @@ Provider *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#provider DataDatabricksJob#provider}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#provider DataDatabricksJob#provider}.
 
 ---
 
@@ -2053,7 +2053,7 @@ Tag *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#tag DataDatabricksJob#tag}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#tag DataDatabricksJob#tag}.
 
 ---
 
@@ -2075,9 +2075,9 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsGitSourceJobSource.property.importFromGitBranch">ImportFromGitBranch</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#import_from_git_branch DataDatabricksJob#import_from_git_branch}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsGitSourceJobSource.property.jobConfigPath">JobConfigPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#job_config_path DataDatabricksJob#job_config_path}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsGitSourceJobSource.property.dirtyState">DirtyState</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#dirty_state DataDatabricksJob#dirty_state}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsGitSourceJobSource.property.importFromGitBranch">ImportFromGitBranch</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#import_from_git_branch DataDatabricksJob#import_from_git_branch}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsGitSourceJobSource.property.jobConfigPath">JobConfigPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#job_config_path DataDatabricksJob#job_config_path}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsGitSourceJobSource.property.dirtyState">DirtyState</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#dirty_state DataDatabricksJob#dirty_state}. |
 
 ---
 
@@ -2089,7 +2089,7 @@ ImportFromGitBranch *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#import_from_git_branch DataDatabricksJob#import_from_git_branch}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#import_from_git_branch DataDatabricksJob#import_from_git_branch}.
 
 ---
 
@@ -2101,7 +2101,7 @@ JobConfigPath *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#job_config_path DataDatabricksJob#job_config_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#job_config_path DataDatabricksJob#job_config_path}.
 
 ---
 
@@ -2113,7 +2113,7 @@ DirtyState *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#dirty_state DataDatabricksJob#dirty_state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#dirty_state DataDatabricksJob#dirty_state}.
 
 ---
 
@@ -2147,7 +2147,7 @@ Rules interface{}
 
 rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#rules DataDatabricksJob#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#rules DataDatabricksJob#rules}
 
 ---
 
@@ -2169,9 +2169,9 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsHealthRules.property.metric">Metric</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#metric DataDatabricksJob#metric}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsHealthRules.property.op">Op</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#op DataDatabricksJob#op}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsHealthRules.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#value DataDatabricksJob#value}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsHealthRules.property.metric">Metric</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#metric DataDatabricksJob#metric}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsHealthRules.property.op">Op</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#op DataDatabricksJob#op}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsHealthRules.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#value DataDatabricksJob#value}. |
 
 ---
 
@@ -2183,7 +2183,7 @@ Metric *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#metric DataDatabricksJob#metric}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#metric DataDatabricksJob#metric}.
 
 ---
 
@@ -2195,7 +2195,7 @@ Op *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#op DataDatabricksJob#op}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#op DataDatabricksJob#op}.
 
 ---
 
@@ -2207,7 +2207,7 @@ Value *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#value DataDatabricksJob#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#value DataDatabricksJob#value}.
 
 ---
 
@@ -2228,7 +2228,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobCluster.property.jobClusterKey">JobClusterKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#job_cluster_key DataDatabricksJob#job_cluster_key}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobCluster.property.jobClusterKey">JobClusterKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#job_cluster_key DataDatabricksJob#job_cluster_key}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobCluster.property.newCluster">NewCluster</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewCluster">DataDatabricksJobJobSettingsSettingsJobClusterNewCluster</a></code> | new_cluster block. |
 
 ---
@@ -2241,7 +2241,7 @@ JobClusterKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#job_cluster_key DataDatabricksJob#job_cluster_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#job_cluster_key DataDatabricksJob#job_cluster_key}.
 
 ---
 
@@ -2255,7 +2255,7 @@ NewCluster DataDatabricksJobJobSettingsSettingsJobClusterNewCluster
 
 new_cluster block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#new_cluster DataDatabricksJob#new_cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#new_cluster DataDatabricksJob#new_cluster}
 
 ---
 
@@ -2304,35 +2304,35 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewCluster.property.numWorkers">NumWorkers</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#num_workers DataDatabricksJob#num_workers}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewCluster.property.applyPolicyDefaultValues">ApplyPolicyDefaultValues</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#apply_policy_default_values DataDatabricksJob#apply_policy_default_values}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewCluster.property.numWorkers">NumWorkers</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#num_workers DataDatabricksJob#num_workers}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewCluster.property.applyPolicyDefaultValues">ApplyPolicyDefaultValues</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#apply_policy_default_values DataDatabricksJob#apply_policy_default_values}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewCluster.property.autoscale">Autoscale</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAutoscale">DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAutoscale</a></code> | autoscale block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewCluster.property.autoterminationMinutes">AutoterminationMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#autotermination_minutes DataDatabricksJob#autotermination_minutes}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewCluster.property.autoterminationMinutes">AutoterminationMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#autotermination_minutes DataDatabricksJob#autotermination_minutes}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewCluster.property.awsAttributes">AwsAttributes</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAwsAttributes">DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAwsAttributes</a></code> | aws_attributes block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewCluster.property.azureAttributes">AzureAttributes</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAzureAttributes">DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAzureAttributes</a></code> | azure_attributes block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewCluster.property.clusterId">ClusterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#cluster_id DataDatabricksJob#cluster_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewCluster.property.clusterId">ClusterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#cluster_id DataDatabricksJob#cluster_id}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewCluster.property.clusterLogConf">ClusterLogConf</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConf">DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConf</a></code> | cluster_log_conf block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewCluster.property.clusterMountInfo">ClusterMountInfo</a></code> | <code>interface{}</code> | cluster_mount_info block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewCluster.property.clusterName">ClusterName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#cluster_name DataDatabricksJob#cluster_name}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewCluster.property.customTags">CustomTags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#custom_tags DataDatabricksJob#custom_tags}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewCluster.property.dataSecurityMode">DataSecurityMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#data_security_mode DataDatabricksJob#data_security_mode}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewCluster.property.clusterName">ClusterName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#cluster_name DataDatabricksJob#cluster_name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewCluster.property.customTags">CustomTags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#custom_tags DataDatabricksJob#custom_tags}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewCluster.property.dataSecurityMode">DataSecurityMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#data_security_mode DataDatabricksJob#data_security_mode}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewCluster.property.dockerImage">DockerImage</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterDockerImage">DataDatabricksJobJobSettingsSettingsJobClusterNewClusterDockerImage</a></code> | docker_image block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewCluster.property.driverInstancePoolId">DriverInstancePoolId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#driver_instance_pool_id DataDatabricksJob#driver_instance_pool_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewCluster.property.driverNodeTypeId">DriverNodeTypeId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#driver_node_type_id DataDatabricksJob#driver_node_type_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewCluster.property.enableElasticDisk">EnableElasticDisk</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#enable_elastic_disk DataDatabricksJob#enable_elastic_disk}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewCluster.property.enableLocalDiskEncryption">EnableLocalDiskEncryption</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#enable_local_disk_encryption DataDatabricksJob#enable_local_disk_encryption}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewCluster.property.driverInstancePoolId">DriverInstancePoolId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#driver_instance_pool_id DataDatabricksJob#driver_instance_pool_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewCluster.property.driverNodeTypeId">DriverNodeTypeId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#driver_node_type_id DataDatabricksJob#driver_node_type_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewCluster.property.enableElasticDisk">EnableElasticDisk</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#enable_elastic_disk DataDatabricksJob#enable_elastic_disk}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewCluster.property.enableLocalDiskEncryption">EnableLocalDiskEncryption</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#enable_local_disk_encryption DataDatabricksJob#enable_local_disk_encryption}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewCluster.property.gcpAttributes">GcpAttributes</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterGcpAttributes">DataDatabricksJobJobSettingsSettingsJobClusterNewClusterGcpAttributes</a></code> | gcp_attributes block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewCluster.property.idempotencyToken">IdempotencyToken</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#idempotency_token DataDatabricksJob#idempotency_token}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewCluster.property.idempotencyToken">IdempotencyToken</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#idempotency_token DataDatabricksJob#idempotency_token}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewCluster.property.initScripts">InitScripts</a></code> | <code>interface{}</code> | init_scripts block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewCluster.property.instancePoolId">InstancePoolId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#instance_pool_id DataDatabricksJob#instance_pool_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewCluster.property.nodeTypeId">NodeTypeId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#node_type_id DataDatabricksJob#node_type_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewCluster.property.policyId">PolicyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#policy_id DataDatabricksJob#policy_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewCluster.property.runtimeEngine">RuntimeEngine</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#runtime_engine DataDatabricksJob#runtime_engine}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewCluster.property.singleUserName">SingleUserName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#single_user_name DataDatabricksJob#single_user_name}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewCluster.property.sparkConf">SparkConf</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#spark_conf DataDatabricksJob#spark_conf}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewCluster.property.sparkEnvVars">SparkEnvVars</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#spark_env_vars DataDatabricksJob#spark_env_vars}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewCluster.property.sparkVersion">SparkVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#spark_version DataDatabricksJob#spark_version}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewCluster.property.sshPublicKeys">SshPublicKeys</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#ssh_public_keys DataDatabricksJob#ssh_public_keys}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewCluster.property.instancePoolId">InstancePoolId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#instance_pool_id DataDatabricksJob#instance_pool_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewCluster.property.nodeTypeId">NodeTypeId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#node_type_id DataDatabricksJob#node_type_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewCluster.property.policyId">PolicyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#policy_id DataDatabricksJob#policy_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewCluster.property.runtimeEngine">RuntimeEngine</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#runtime_engine DataDatabricksJob#runtime_engine}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewCluster.property.singleUserName">SingleUserName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#single_user_name DataDatabricksJob#single_user_name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewCluster.property.sparkConf">SparkConf</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#spark_conf DataDatabricksJob#spark_conf}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewCluster.property.sparkEnvVars">SparkEnvVars</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#spark_env_vars DataDatabricksJob#spark_env_vars}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewCluster.property.sparkVersion">SparkVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#spark_version DataDatabricksJob#spark_version}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewCluster.property.sshPublicKeys">SshPublicKeys</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#ssh_public_keys DataDatabricksJob#ssh_public_keys}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewCluster.property.workloadType">WorkloadType</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterWorkloadType">DataDatabricksJobJobSettingsSettingsJobClusterNewClusterWorkloadType</a></code> | workload_type block. |
 
 ---
@@ -2345,7 +2345,7 @@ NumWorkers *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#num_workers DataDatabricksJob#num_workers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#num_workers DataDatabricksJob#num_workers}.
 
 ---
 
@@ -2357,7 +2357,7 @@ ApplyPolicyDefaultValues interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#apply_policy_default_values DataDatabricksJob#apply_policy_default_values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#apply_policy_default_values DataDatabricksJob#apply_policy_default_values}.
 
 ---
 
@@ -2371,7 +2371,7 @@ Autoscale DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAutoscale
 
 autoscale block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#autoscale DataDatabricksJob#autoscale}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#autoscale DataDatabricksJob#autoscale}
 
 ---
 
@@ -2383,7 +2383,7 @@ AutoterminationMinutes *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#autotermination_minutes DataDatabricksJob#autotermination_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#autotermination_minutes DataDatabricksJob#autotermination_minutes}.
 
 ---
 
@@ -2397,7 +2397,7 @@ AwsAttributes DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAwsAttribu
 
 aws_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#aws_attributes DataDatabricksJob#aws_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#aws_attributes DataDatabricksJob#aws_attributes}
 
 ---
 
@@ -2411,7 +2411,7 @@ AzureAttributes DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAzureAtt
 
 azure_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#azure_attributes DataDatabricksJob#azure_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#azure_attributes DataDatabricksJob#azure_attributes}
 
 ---
 
@@ -2423,7 +2423,7 @@ ClusterId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#cluster_id DataDatabricksJob#cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#cluster_id DataDatabricksJob#cluster_id}.
 
 ---
 
@@ -2437,7 +2437,7 @@ ClusterLogConf DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLo
 
 cluster_log_conf block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#cluster_log_conf DataDatabricksJob#cluster_log_conf}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#cluster_log_conf DataDatabricksJob#cluster_log_conf}
 
 ---
 
@@ -2451,7 +2451,7 @@ ClusterMountInfo interface{}
 
 cluster_mount_info block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#cluster_mount_info DataDatabricksJob#cluster_mount_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#cluster_mount_info DataDatabricksJob#cluster_mount_info}
 
 ---
 
@@ -2463,7 +2463,7 @@ ClusterName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#cluster_name DataDatabricksJob#cluster_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#cluster_name DataDatabricksJob#cluster_name}.
 
 ---
 
@@ -2475,7 +2475,7 @@ CustomTags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#custom_tags DataDatabricksJob#custom_tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#custom_tags DataDatabricksJob#custom_tags}.
 
 ---
 
@@ -2487,7 +2487,7 @@ DataSecurityMode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#data_security_mode DataDatabricksJob#data_security_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#data_security_mode DataDatabricksJob#data_security_mode}.
 
 ---
 
@@ -2501,7 +2501,7 @@ DockerImage DataDatabricksJobJobSettingsSettingsJobClusterNewClusterDockerImage
 
 docker_image block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#docker_image DataDatabricksJob#docker_image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#docker_image DataDatabricksJob#docker_image}
 
 ---
 
@@ -2513,7 +2513,7 @@ DriverInstancePoolId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#driver_instance_pool_id DataDatabricksJob#driver_instance_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#driver_instance_pool_id DataDatabricksJob#driver_instance_pool_id}.
 
 ---
 
@@ -2525,7 +2525,7 @@ DriverNodeTypeId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#driver_node_type_id DataDatabricksJob#driver_node_type_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#driver_node_type_id DataDatabricksJob#driver_node_type_id}.
 
 ---
 
@@ -2537,7 +2537,7 @@ EnableElasticDisk interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#enable_elastic_disk DataDatabricksJob#enable_elastic_disk}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#enable_elastic_disk DataDatabricksJob#enable_elastic_disk}.
 
 ---
 
@@ -2549,7 +2549,7 @@ EnableLocalDiskEncryption interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#enable_local_disk_encryption DataDatabricksJob#enable_local_disk_encryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#enable_local_disk_encryption DataDatabricksJob#enable_local_disk_encryption}.
 
 ---
 
@@ -2563,7 +2563,7 @@ GcpAttributes DataDatabricksJobJobSettingsSettingsJobClusterNewClusterGcpAttribu
 
 gcp_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#gcp_attributes DataDatabricksJob#gcp_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#gcp_attributes DataDatabricksJob#gcp_attributes}
 
 ---
 
@@ -2575,7 +2575,7 @@ IdempotencyToken *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#idempotency_token DataDatabricksJob#idempotency_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#idempotency_token DataDatabricksJob#idempotency_token}.
 
 ---
 
@@ -2589,7 +2589,7 @@ InitScripts interface{}
 
 init_scripts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#init_scripts DataDatabricksJob#init_scripts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#init_scripts DataDatabricksJob#init_scripts}
 
 ---
 
@@ -2601,7 +2601,7 @@ InstancePoolId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#instance_pool_id DataDatabricksJob#instance_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#instance_pool_id DataDatabricksJob#instance_pool_id}.
 
 ---
 
@@ -2613,7 +2613,7 @@ NodeTypeId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#node_type_id DataDatabricksJob#node_type_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#node_type_id DataDatabricksJob#node_type_id}.
 
 ---
 
@@ -2625,7 +2625,7 @@ PolicyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#policy_id DataDatabricksJob#policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#policy_id DataDatabricksJob#policy_id}.
 
 ---
 
@@ -2637,7 +2637,7 @@ RuntimeEngine *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#runtime_engine DataDatabricksJob#runtime_engine}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#runtime_engine DataDatabricksJob#runtime_engine}.
 
 ---
 
@@ -2649,7 +2649,7 @@ SingleUserName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#single_user_name DataDatabricksJob#single_user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#single_user_name DataDatabricksJob#single_user_name}.
 
 ---
 
@@ -2661,7 +2661,7 @@ SparkConf *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#spark_conf DataDatabricksJob#spark_conf}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#spark_conf DataDatabricksJob#spark_conf}.
 
 ---
 
@@ -2673,7 +2673,7 @@ SparkEnvVars *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#spark_env_vars DataDatabricksJob#spark_env_vars}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#spark_env_vars DataDatabricksJob#spark_env_vars}.
 
 ---
 
@@ -2685,7 +2685,7 @@ SparkVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#spark_version DataDatabricksJob#spark_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#spark_version DataDatabricksJob#spark_version}.
 
 ---
 
@@ -2697,7 +2697,7 @@ SshPublicKeys *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#ssh_public_keys DataDatabricksJob#ssh_public_keys}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#ssh_public_keys DataDatabricksJob#ssh_public_keys}.
 
 ---
 
@@ -2711,7 +2711,7 @@ WorkloadType DataDatabricksJobJobSettingsSettingsJobClusterNewClusterWorkloadTyp
 
 workload_type block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#workload_type DataDatabricksJob#workload_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#workload_type DataDatabricksJob#workload_type}
 
 ---
 
@@ -2732,8 +2732,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAutoscale.property.maxWorkers">MaxWorkers</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#max_workers DataDatabricksJob#max_workers}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAutoscale.property.minWorkers">MinWorkers</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#min_workers DataDatabricksJob#min_workers}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAutoscale.property.maxWorkers">MaxWorkers</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#max_workers DataDatabricksJob#max_workers}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAutoscale.property.minWorkers">MinWorkers</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#min_workers DataDatabricksJob#min_workers}. |
 
 ---
 
@@ -2745,7 +2745,7 @@ MaxWorkers *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#max_workers DataDatabricksJob#max_workers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#max_workers DataDatabricksJob#max_workers}.
 
 ---
 
@@ -2757,7 +2757,7 @@ MinWorkers *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#min_workers DataDatabricksJob#min_workers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#min_workers DataDatabricksJob#min_workers}.
 
 ---
 
@@ -2784,14 +2784,14 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAwsAttributes.property.availability">Availability</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#availability DataDatabricksJob#availability}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAwsAttributes.property.ebsVolumeCount">EbsVolumeCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#ebs_volume_count DataDatabricksJob#ebs_volume_count}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAwsAttributes.property.ebsVolumeSize">EbsVolumeSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#ebs_volume_size DataDatabricksJob#ebs_volume_size}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAwsAttributes.property.ebsVolumeType">EbsVolumeType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#ebs_volume_type DataDatabricksJob#ebs_volume_type}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAwsAttributes.property.firstOnDemand">FirstOnDemand</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#first_on_demand DataDatabricksJob#first_on_demand}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAwsAttributes.property.instanceProfileArn">InstanceProfileArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#instance_profile_arn DataDatabricksJob#instance_profile_arn}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAwsAttributes.property.spotBidPricePercent">SpotBidPricePercent</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#spot_bid_price_percent DataDatabricksJob#spot_bid_price_percent}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAwsAttributes.property.zoneId">ZoneId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#zone_id DataDatabricksJob#zone_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAwsAttributes.property.availability">Availability</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#availability DataDatabricksJob#availability}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAwsAttributes.property.ebsVolumeCount">EbsVolumeCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#ebs_volume_count DataDatabricksJob#ebs_volume_count}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAwsAttributes.property.ebsVolumeSize">EbsVolumeSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#ebs_volume_size DataDatabricksJob#ebs_volume_size}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAwsAttributes.property.ebsVolumeType">EbsVolumeType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#ebs_volume_type DataDatabricksJob#ebs_volume_type}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAwsAttributes.property.firstOnDemand">FirstOnDemand</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#first_on_demand DataDatabricksJob#first_on_demand}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAwsAttributes.property.instanceProfileArn">InstanceProfileArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#instance_profile_arn DataDatabricksJob#instance_profile_arn}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAwsAttributes.property.spotBidPricePercent">SpotBidPricePercent</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#spot_bid_price_percent DataDatabricksJob#spot_bid_price_percent}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAwsAttributes.property.zoneId">ZoneId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#zone_id DataDatabricksJob#zone_id}. |
 
 ---
 
@@ -2803,7 +2803,7 @@ Availability *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#availability DataDatabricksJob#availability}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#availability DataDatabricksJob#availability}.
 
 ---
 
@@ -2815,7 +2815,7 @@ EbsVolumeCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#ebs_volume_count DataDatabricksJob#ebs_volume_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#ebs_volume_count DataDatabricksJob#ebs_volume_count}.
 
 ---
 
@@ -2827,7 +2827,7 @@ EbsVolumeSize *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#ebs_volume_size DataDatabricksJob#ebs_volume_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#ebs_volume_size DataDatabricksJob#ebs_volume_size}.
 
 ---
 
@@ -2839,7 +2839,7 @@ EbsVolumeType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#ebs_volume_type DataDatabricksJob#ebs_volume_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#ebs_volume_type DataDatabricksJob#ebs_volume_type}.
 
 ---
 
@@ -2851,7 +2851,7 @@ FirstOnDemand *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#first_on_demand DataDatabricksJob#first_on_demand}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#first_on_demand DataDatabricksJob#first_on_demand}.
 
 ---
 
@@ -2863,7 +2863,7 @@ InstanceProfileArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#instance_profile_arn DataDatabricksJob#instance_profile_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#instance_profile_arn DataDatabricksJob#instance_profile_arn}.
 
 ---
 
@@ -2875,7 +2875,7 @@ SpotBidPricePercent *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#spot_bid_price_percent DataDatabricksJob#spot_bid_price_percent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#spot_bid_price_percent DataDatabricksJob#spot_bid_price_percent}.
 
 ---
 
@@ -2887,7 +2887,7 @@ ZoneId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#zone_id DataDatabricksJob#zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#zone_id DataDatabricksJob#zone_id}.
 
 ---
 
@@ -2909,9 +2909,9 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAzureAttributes.property.availability">Availability</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#availability DataDatabricksJob#availability}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAzureAttributes.property.firstOnDemand">FirstOnDemand</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#first_on_demand DataDatabricksJob#first_on_demand}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAzureAttributes.property.spotBidMaxPrice">SpotBidMaxPrice</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#spot_bid_max_price DataDatabricksJob#spot_bid_max_price}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAzureAttributes.property.availability">Availability</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#availability DataDatabricksJob#availability}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAzureAttributes.property.firstOnDemand">FirstOnDemand</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#first_on_demand DataDatabricksJob#first_on_demand}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAzureAttributes.property.spotBidMaxPrice">SpotBidMaxPrice</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#spot_bid_max_price DataDatabricksJob#spot_bid_max_price}. |
 
 ---
 
@@ -2923,7 +2923,7 @@ Availability *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#availability DataDatabricksJob#availability}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#availability DataDatabricksJob#availability}.
 
 ---
 
@@ -2935,7 +2935,7 @@ FirstOnDemand *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#first_on_demand DataDatabricksJob#first_on_demand}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#first_on_demand DataDatabricksJob#first_on_demand}.
 
 ---
 
@@ -2947,7 +2947,7 @@ SpotBidMaxPrice *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#spot_bid_max_price DataDatabricksJob#spot_bid_max_price}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#spot_bid_max_price DataDatabricksJob#spot_bid_max_price}.
 
 ---
 
@@ -2983,7 +2983,7 @@ Dbfs DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConfDbfs
 
 dbfs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#dbfs DataDatabricksJob#dbfs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#dbfs DataDatabricksJob#dbfs}
 
 ---
 
@@ -2997,7 +2997,7 @@ S3 DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConfS3
 
 s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#s3 DataDatabricksJob#s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#s3 DataDatabricksJob#s3}
 
 ---
 
@@ -3017,7 +3017,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConfDbfs.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConfDbfs.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
 
 ---
 
@@ -3029,7 +3029,7 @@ Destination *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
 
 ---
 
@@ -3055,13 +3055,13 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConfS3.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConfS3.property.cannedAcl">CannedAcl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#canned_acl DataDatabricksJob#canned_acl}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConfS3.property.enableEncryption">EnableEncryption</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#enable_encryption DataDatabricksJob#enable_encryption}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConfS3.property.encryptionType">EncryptionType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#encryption_type DataDatabricksJob#encryption_type}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConfS3.property.endpoint">Endpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#endpoint DataDatabricksJob#endpoint}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConfS3.property.kmsKey">KmsKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#kms_key DataDatabricksJob#kms_key}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConfS3.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#region DataDatabricksJob#region}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConfS3.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConfS3.property.cannedAcl">CannedAcl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#canned_acl DataDatabricksJob#canned_acl}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConfS3.property.enableEncryption">EnableEncryption</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#enable_encryption DataDatabricksJob#enable_encryption}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConfS3.property.encryptionType">EncryptionType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#encryption_type DataDatabricksJob#encryption_type}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConfS3.property.endpoint">Endpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#endpoint DataDatabricksJob#endpoint}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConfS3.property.kmsKey">KmsKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#kms_key DataDatabricksJob#kms_key}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConfS3.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#region DataDatabricksJob#region}. |
 
 ---
 
@@ -3073,7 +3073,7 @@ Destination *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
 
 ---
 
@@ -3085,7 +3085,7 @@ CannedAcl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#canned_acl DataDatabricksJob#canned_acl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#canned_acl DataDatabricksJob#canned_acl}.
 
 ---
 
@@ -3097,7 +3097,7 @@ EnableEncryption interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#enable_encryption DataDatabricksJob#enable_encryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#enable_encryption DataDatabricksJob#enable_encryption}.
 
 ---
 
@@ -3109,7 +3109,7 @@ EncryptionType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#encryption_type DataDatabricksJob#encryption_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#encryption_type DataDatabricksJob#encryption_type}.
 
 ---
 
@@ -3121,7 +3121,7 @@ Endpoint *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#endpoint DataDatabricksJob#endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#endpoint DataDatabricksJob#endpoint}.
 
 ---
 
@@ -3133,7 +3133,7 @@ KmsKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#kms_key DataDatabricksJob#kms_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#kms_key DataDatabricksJob#kms_key}.
 
 ---
 
@@ -3145,7 +3145,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#region DataDatabricksJob#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#region DataDatabricksJob#region}.
 
 ---
 
@@ -3167,9 +3167,9 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMountInfo.property.localMountDirPath">LocalMountDirPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#local_mount_dir_path DataDatabricksJob#local_mount_dir_path}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMountInfo.property.localMountDirPath">LocalMountDirPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#local_mount_dir_path DataDatabricksJob#local_mount_dir_path}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMountInfo.property.networkFilesystemInfo">NetworkFilesystemInfo</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMountInfoNetworkFilesystemInfo">DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMountInfoNetworkFilesystemInfo</a></code> | network_filesystem_info block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMountInfo.property.remoteMountDirPath">RemoteMountDirPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#remote_mount_dir_path DataDatabricksJob#remote_mount_dir_path}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMountInfo.property.remoteMountDirPath">RemoteMountDirPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#remote_mount_dir_path DataDatabricksJob#remote_mount_dir_path}. |
 
 ---
 
@@ -3181,7 +3181,7 @@ LocalMountDirPath *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#local_mount_dir_path DataDatabricksJob#local_mount_dir_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#local_mount_dir_path DataDatabricksJob#local_mount_dir_path}.
 
 ---
 
@@ -3195,7 +3195,7 @@ NetworkFilesystemInfo DataDatabricksJobJobSettingsSettingsJobClusterNewClusterCl
 
 network_filesystem_info block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#network_filesystem_info DataDatabricksJob#network_filesystem_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#network_filesystem_info DataDatabricksJob#network_filesystem_info}
 
 ---
 
@@ -3207,7 +3207,7 @@ RemoteMountDirPath *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#remote_mount_dir_path DataDatabricksJob#remote_mount_dir_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#remote_mount_dir_path DataDatabricksJob#remote_mount_dir_path}.
 
 ---
 
@@ -3228,8 +3228,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMountInfoNetworkFilesystemInfo.property.serverAddress">ServerAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#server_address DataDatabricksJob#server_address}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMountInfoNetworkFilesystemInfo.property.mountOptions">MountOptions</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#mount_options DataDatabricksJob#mount_options}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMountInfoNetworkFilesystemInfo.property.serverAddress">ServerAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#server_address DataDatabricksJob#server_address}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMountInfoNetworkFilesystemInfo.property.mountOptions">MountOptions</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#mount_options DataDatabricksJob#mount_options}. |
 
 ---
 
@@ -3241,7 +3241,7 @@ ServerAddress *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#server_address DataDatabricksJob#server_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#server_address DataDatabricksJob#server_address}.
 
 ---
 
@@ -3253,7 +3253,7 @@ MountOptions *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#mount_options DataDatabricksJob#mount_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#mount_options DataDatabricksJob#mount_options}.
 
 ---
 
@@ -3274,7 +3274,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterDockerImage.property.url">Url</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#url DataDatabricksJob#url}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterDockerImage.property.url">Url</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#url DataDatabricksJob#url}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterDockerImage.property.basicAuth">BasicAuth</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterDockerImageBasicAuth">DataDatabricksJobJobSettingsSettingsJobClusterNewClusterDockerImageBasicAuth</a></code> | basic_auth block. |
 
 ---
@@ -3287,7 +3287,7 @@ Url *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#url DataDatabricksJob#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#url DataDatabricksJob#url}.
 
 ---
 
@@ -3301,7 +3301,7 @@ BasicAuth DataDatabricksJobJobSettingsSettingsJobClusterNewClusterDockerImageBas
 
 basic_auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#basic_auth DataDatabricksJob#basic_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#basic_auth DataDatabricksJob#basic_auth}
 
 ---
 
@@ -3322,8 +3322,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterDockerImageBasicAuth.property.password">Password</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#password DataDatabricksJob#password}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterDockerImageBasicAuth.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#username DataDatabricksJob#username}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterDockerImageBasicAuth.property.password">Password</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#password DataDatabricksJob#password}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterDockerImageBasicAuth.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#username DataDatabricksJob#username}. |
 
 ---
 
@@ -3335,7 +3335,7 @@ Password *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#password DataDatabricksJob#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#password DataDatabricksJob#password}.
 
 ---
 
@@ -3347,7 +3347,7 @@ Username *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#username DataDatabricksJob#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#username DataDatabricksJob#username}.
 
 ---
 
@@ -3372,12 +3372,12 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterGcpAttributes.property.availability">Availability</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#availability DataDatabricksJob#availability}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterGcpAttributes.property.bootDiskSize">BootDiskSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#boot_disk_size DataDatabricksJob#boot_disk_size}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterGcpAttributes.property.googleServiceAccount">GoogleServiceAccount</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#google_service_account DataDatabricksJob#google_service_account}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterGcpAttributes.property.localSsdCount">LocalSsdCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#local_ssd_count DataDatabricksJob#local_ssd_count}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterGcpAttributes.property.usePreemptibleExecutors">UsePreemptibleExecutors</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#use_preemptible_executors DataDatabricksJob#use_preemptible_executors}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterGcpAttributes.property.zoneId">ZoneId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#zone_id DataDatabricksJob#zone_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterGcpAttributes.property.availability">Availability</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#availability DataDatabricksJob#availability}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterGcpAttributes.property.bootDiskSize">BootDiskSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#boot_disk_size DataDatabricksJob#boot_disk_size}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterGcpAttributes.property.googleServiceAccount">GoogleServiceAccount</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#google_service_account DataDatabricksJob#google_service_account}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterGcpAttributes.property.localSsdCount">LocalSsdCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#local_ssd_count DataDatabricksJob#local_ssd_count}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterGcpAttributes.property.usePreemptibleExecutors">UsePreemptibleExecutors</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#use_preemptible_executors DataDatabricksJob#use_preemptible_executors}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterGcpAttributes.property.zoneId">ZoneId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#zone_id DataDatabricksJob#zone_id}. |
 
 ---
 
@@ -3389,7 +3389,7 @@ Availability *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#availability DataDatabricksJob#availability}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#availability DataDatabricksJob#availability}.
 
 ---
 
@@ -3401,7 +3401,7 @@ BootDiskSize *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#boot_disk_size DataDatabricksJob#boot_disk_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#boot_disk_size DataDatabricksJob#boot_disk_size}.
 
 ---
 
@@ -3413,7 +3413,7 @@ GoogleServiceAccount *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#google_service_account DataDatabricksJob#google_service_account}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#google_service_account DataDatabricksJob#google_service_account}.
 
 ---
 
@@ -3425,7 +3425,7 @@ LocalSsdCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#local_ssd_count DataDatabricksJob#local_ssd_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#local_ssd_count DataDatabricksJob#local_ssd_count}.
 
 ---
 
@@ -3437,7 +3437,7 @@ UsePreemptibleExecutors interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#use_preemptible_executors DataDatabricksJob#use_preemptible_executors}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#use_preemptible_executors DataDatabricksJob#use_preemptible_executors}.
 
 ---
 
@@ -3449,7 +3449,7 @@ ZoneId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#zone_id DataDatabricksJob#zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#zone_id DataDatabricksJob#zone_id}.
 
 ---
 
@@ -3495,7 +3495,7 @@ Abfss DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsAbfss
 
 abfss block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#abfss DataDatabricksJob#abfss}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#abfss DataDatabricksJob#abfss}
 
 ---
 
@@ -3509,7 +3509,7 @@ Dbfs DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsDbfs
 
 dbfs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#dbfs DataDatabricksJob#dbfs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#dbfs DataDatabricksJob#dbfs}
 
 ---
 
@@ -3523,7 +3523,7 @@ File DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsFile
 
 file block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#file DataDatabricksJob#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#file DataDatabricksJob#file}
 
 ---
 
@@ -3537,7 +3537,7 @@ Gcs DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsGcs
 
 gcs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#gcs DataDatabricksJob#gcs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#gcs DataDatabricksJob#gcs}
 
 ---
 
@@ -3551,7 +3551,7 @@ S3 DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsS3
 
 s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#s3 DataDatabricksJob#s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#s3 DataDatabricksJob#s3}
 
 ---
 
@@ -3565,7 +3565,7 @@ Volumes DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsVolum
 
 volumes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#volumes DataDatabricksJob#volumes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#volumes DataDatabricksJob#volumes}
 
 ---
 
@@ -3579,7 +3579,7 @@ Workspace DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsWor
 
 workspace block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#workspace DataDatabricksJob#workspace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#workspace DataDatabricksJob#workspace}
 
 ---
 
@@ -3599,7 +3599,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsAbfss.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsAbfss.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
 
 ---
 
@@ -3611,7 +3611,7 @@ Destination *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
 
 ---
 
@@ -3631,7 +3631,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsDbfs.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsDbfs.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
 
 ---
 
@@ -3643,7 +3643,7 @@ Destination *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
 
 ---
 
@@ -3663,7 +3663,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsFile.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsFile.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
 
 ---
 
@@ -3675,7 +3675,7 @@ Destination *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
 
 ---
 
@@ -3695,7 +3695,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsGcs.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsGcs.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
 
 ---
 
@@ -3707,7 +3707,7 @@ Destination *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
 
 ---
 
@@ -3733,13 +3733,13 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsS3.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsS3.property.cannedAcl">CannedAcl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#canned_acl DataDatabricksJob#canned_acl}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsS3.property.enableEncryption">EnableEncryption</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#enable_encryption DataDatabricksJob#enable_encryption}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsS3.property.encryptionType">EncryptionType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#encryption_type DataDatabricksJob#encryption_type}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsS3.property.endpoint">Endpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#endpoint DataDatabricksJob#endpoint}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsS3.property.kmsKey">KmsKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#kms_key DataDatabricksJob#kms_key}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsS3.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#region DataDatabricksJob#region}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsS3.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsS3.property.cannedAcl">CannedAcl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#canned_acl DataDatabricksJob#canned_acl}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsS3.property.enableEncryption">EnableEncryption</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#enable_encryption DataDatabricksJob#enable_encryption}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsS3.property.encryptionType">EncryptionType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#encryption_type DataDatabricksJob#encryption_type}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsS3.property.endpoint">Endpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#endpoint DataDatabricksJob#endpoint}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsS3.property.kmsKey">KmsKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#kms_key DataDatabricksJob#kms_key}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsS3.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#region DataDatabricksJob#region}. |
 
 ---
 
@@ -3751,7 +3751,7 @@ Destination *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
 
 ---
 
@@ -3763,7 +3763,7 @@ CannedAcl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#canned_acl DataDatabricksJob#canned_acl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#canned_acl DataDatabricksJob#canned_acl}.
 
 ---
 
@@ -3775,7 +3775,7 @@ EnableEncryption interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#enable_encryption DataDatabricksJob#enable_encryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#enable_encryption DataDatabricksJob#enable_encryption}.
 
 ---
 
@@ -3787,7 +3787,7 @@ EncryptionType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#encryption_type DataDatabricksJob#encryption_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#encryption_type DataDatabricksJob#encryption_type}.
 
 ---
 
@@ -3799,7 +3799,7 @@ Endpoint *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#endpoint DataDatabricksJob#endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#endpoint DataDatabricksJob#endpoint}.
 
 ---
 
@@ -3811,7 +3811,7 @@ KmsKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#kms_key DataDatabricksJob#kms_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#kms_key DataDatabricksJob#kms_key}.
 
 ---
 
@@ -3823,7 +3823,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#region DataDatabricksJob#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#region DataDatabricksJob#region}.
 
 ---
 
@@ -3843,7 +3843,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsVolumes.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsVolumes.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
 
 ---
 
@@ -3855,7 +3855,7 @@ Destination *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
 
 ---
 
@@ -3875,7 +3875,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsWorkspace.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsWorkspace.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
 
 ---
 
@@ -3887,7 +3887,7 @@ Destination *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
 
 ---
 
@@ -3921,7 +3921,7 @@ Clients DataDatabricksJobJobSettingsSettingsJobClusterNewClusterWorkloadTypeClie
 
 clients block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#clients DataDatabricksJob#clients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#clients DataDatabricksJob#clients}
 
 ---
 
@@ -3942,8 +3942,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterWorkloadTypeClients.property.jobs">Jobs</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#jobs DataDatabricksJob#jobs}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterWorkloadTypeClients.property.notebooks">Notebooks</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#notebooks DataDatabricksJob#notebooks}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterWorkloadTypeClients.property.jobs">Jobs</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#jobs DataDatabricksJob#jobs}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterWorkloadTypeClients.property.notebooks">Notebooks</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#notebooks DataDatabricksJob#notebooks}. |
 
 ---
 
@@ -3955,7 +3955,7 @@ Jobs interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#jobs DataDatabricksJob#jobs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#jobs DataDatabricksJob#jobs}.
 
 ---
 
@@ -3967,7 +3967,7 @@ Notebooks interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#notebooks DataDatabricksJob#notebooks}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#notebooks DataDatabricksJob#notebooks}.
 
 ---
 
@@ -3995,13 +3995,13 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibrary.property.cran">Cran</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibraryCran">DataDatabricksJobJobSettingsSettingsLibraryCran</a></code> | cran block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibrary.property.egg">Egg</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#egg DataDatabricksJob#egg}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibrary.property.jar">Jar</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#jar DataDatabricksJob#jar}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibrary.property.egg">Egg</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#egg DataDatabricksJob#egg}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibrary.property.jar">Jar</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#jar DataDatabricksJob#jar}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibrary.property.maven">Maven</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibraryMaven">DataDatabricksJobJobSettingsSettingsLibraryMaven</a></code> | maven block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibrary.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibraryProviderConfig">DataDatabricksJobJobSettingsSettingsLibraryProviderConfig</a></code> | provider_config block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibrary.property.pypi">Pypi</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibraryPypi">DataDatabricksJobJobSettingsSettingsLibraryPypi</a></code> | pypi block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibrary.property.requirements">Requirements</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#requirements DataDatabricksJob#requirements}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibrary.property.whl">Whl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#whl DataDatabricksJob#whl}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibrary.property.requirements">Requirements</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#requirements DataDatabricksJob#requirements}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibrary.property.whl">Whl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#whl DataDatabricksJob#whl}. |
 
 ---
 
@@ -4015,7 +4015,7 @@ Cran DataDatabricksJobJobSettingsSettingsLibraryCran
 
 cran block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#cran DataDatabricksJob#cran}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#cran DataDatabricksJob#cran}
 
 ---
 
@@ -4027,7 +4027,7 @@ Egg *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#egg DataDatabricksJob#egg}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#egg DataDatabricksJob#egg}.
 
 ---
 
@@ -4039,7 +4039,7 @@ Jar *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#jar DataDatabricksJob#jar}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#jar DataDatabricksJob#jar}.
 
 ---
 
@@ -4053,7 +4053,7 @@ Maven DataDatabricksJobJobSettingsSettingsLibraryMaven
 
 maven block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#maven DataDatabricksJob#maven}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#maven DataDatabricksJob#maven}
 
 ---
 
@@ -4067,7 +4067,7 @@ ProviderConfig DataDatabricksJobJobSettingsSettingsLibraryProviderConfig
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#provider_config DataDatabricksJob#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#provider_config DataDatabricksJob#provider_config}
 
 ---
 
@@ -4081,7 +4081,7 @@ Pypi DataDatabricksJobJobSettingsSettingsLibraryPypi
 
 pypi block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#pypi DataDatabricksJob#pypi}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#pypi DataDatabricksJob#pypi}
 
 ---
 
@@ -4093,7 +4093,7 @@ Requirements *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#requirements DataDatabricksJob#requirements}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#requirements DataDatabricksJob#requirements}.
 
 ---
 
@@ -4105,7 +4105,7 @@ Whl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#whl DataDatabricksJob#whl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#whl DataDatabricksJob#whl}.
 
 ---
 
@@ -4126,8 +4126,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibraryCran.property.package">Package</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#package DataDatabricksJob#package}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibraryCran.property.repo">Repo</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#repo DataDatabricksJob#repo}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibraryCran.property.package">Package</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#package DataDatabricksJob#package}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibraryCran.property.repo">Repo</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#repo DataDatabricksJob#repo}. |
 
 ---
 
@@ -4139,7 +4139,7 @@ Package *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#package DataDatabricksJob#package}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#package DataDatabricksJob#package}.
 
 ---
 
@@ -4151,7 +4151,7 @@ Repo *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#repo DataDatabricksJob#repo}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#repo DataDatabricksJob#repo}.
 
 ---
 
@@ -4173,9 +4173,9 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibraryMaven.property.coordinates">Coordinates</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#coordinates DataDatabricksJob#coordinates}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibraryMaven.property.exclusions">Exclusions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#exclusions DataDatabricksJob#exclusions}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibraryMaven.property.repo">Repo</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#repo DataDatabricksJob#repo}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibraryMaven.property.coordinates">Coordinates</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#coordinates DataDatabricksJob#coordinates}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibraryMaven.property.exclusions">Exclusions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#exclusions DataDatabricksJob#exclusions}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibraryMaven.property.repo">Repo</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#repo DataDatabricksJob#repo}. |
 
 ---
 
@@ -4187,7 +4187,7 @@ Coordinates *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#coordinates DataDatabricksJob#coordinates}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#coordinates DataDatabricksJob#coordinates}.
 
 ---
 
@@ -4199,7 +4199,7 @@ Exclusions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#exclusions DataDatabricksJob#exclusions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#exclusions DataDatabricksJob#exclusions}.
 
 ---
 
@@ -4211,7 +4211,7 @@ Repo *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#repo DataDatabricksJob#repo}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#repo DataDatabricksJob#repo}.
 
 ---
 
@@ -4231,7 +4231,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibraryProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#workspace_id DataDatabricksJob#workspace_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibraryProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#workspace_id DataDatabricksJob#workspace_id}. |
 
 ---
 
@@ -4243,7 +4243,7 @@ WorkspaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#workspace_id DataDatabricksJob#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#workspace_id DataDatabricksJob#workspace_id}.
 
 ---
 
@@ -4264,8 +4264,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibraryPypi.property.package">Package</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#package DataDatabricksJob#package}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibraryPypi.property.repo">Repo</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#repo DataDatabricksJob#repo}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibraryPypi.property.package">Package</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#package DataDatabricksJob#package}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibraryPypi.property.repo">Repo</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#repo DataDatabricksJob#repo}. |
 
 ---
 
@@ -4277,7 +4277,7 @@ Package *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#package DataDatabricksJob#package}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#package DataDatabricksJob#package}.
 
 ---
 
@@ -4289,7 +4289,7 @@ Repo *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#repo DataDatabricksJob#repo}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#repo DataDatabricksJob#repo}.
 
 ---
 
@@ -4338,35 +4338,35 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewCluster.property.numWorkers">NumWorkers</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#num_workers DataDatabricksJob#num_workers}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewCluster.property.applyPolicyDefaultValues">ApplyPolicyDefaultValues</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#apply_policy_default_values DataDatabricksJob#apply_policy_default_values}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewCluster.property.numWorkers">NumWorkers</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#num_workers DataDatabricksJob#num_workers}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewCluster.property.applyPolicyDefaultValues">ApplyPolicyDefaultValues</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#apply_policy_default_values DataDatabricksJob#apply_policy_default_values}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewCluster.property.autoscale">Autoscale</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterAutoscale">DataDatabricksJobJobSettingsSettingsNewClusterAutoscale</a></code> | autoscale block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewCluster.property.autoterminationMinutes">AutoterminationMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#autotermination_minutes DataDatabricksJob#autotermination_minutes}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewCluster.property.autoterminationMinutes">AutoterminationMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#autotermination_minutes DataDatabricksJob#autotermination_minutes}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewCluster.property.awsAttributes">AwsAttributes</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterAwsAttributes">DataDatabricksJobJobSettingsSettingsNewClusterAwsAttributes</a></code> | aws_attributes block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewCluster.property.azureAttributes">AzureAttributes</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterAzureAttributes">DataDatabricksJobJobSettingsSettingsNewClusterAzureAttributes</a></code> | azure_attributes block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewCluster.property.clusterId">ClusterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#cluster_id DataDatabricksJob#cluster_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewCluster.property.clusterId">ClusterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#cluster_id DataDatabricksJob#cluster_id}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewCluster.property.clusterLogConf">ClusterLogConf</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConf">DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConf</a></code> | cluster_log_conf block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewCluster.property.clusterMountInfo">ClusterMountInfo</a></code> | <code>interface{}</code> | cluster_mount_info block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewCluster.property.clusterName">ClusterName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#cluster_name DataDatabricksJob#cluster_name}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewCluster.property.customTags">CustomTags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#custom_tags DataDatabricksJob#custom_tags}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewCluster.property.dataSecurityMode">DataSecurityMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#data_security_mode DataDatabricksJob#data_security_mode}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewCluster.property.clusterName">ClusterName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#cluster_name DataDatabricksJob#cluster_name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewCluster.property.customTags">CustomTags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#custom_tags DataDatabricksJob#custom_tags}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewCluster.property.dataSecurityMode">DataSecurityMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#data_security_mode DataDatabricksJob#data_security_mode}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewCluster.property.dockerImage">DockerImage</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterDockerImage">DataDatabricksJobJobSettingsSettingsNewClusterDockerImage</a></code> | docker_image block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewCluster.property.driverInstancePoolId">DriverInstancePoolId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#driver_instance_pool_id DataDatabricksJob#driver_instance_pool_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewCluster.property.driverNodeTypeId">DriverNodeTypeId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#driver_node_type_id DataDatabricksJob#driver_node_type_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewCluster.property.enableElasticDisk">EnableElasticDisk</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#enable_elastic_disk DataDatabricksJob#enable_elastic_disk}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewCluster.property.enableLocalDiskEncryption">EnableLocalDiskEncryption</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#enable_local_disk_encryption DataDatabricksJob#enable_local_disk_encryption}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewCluster.property.driverInstancePoolId">DriverInstancePoolId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#driver_instance_pool_id DataDatabricksJob#driver_instance_pool_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewCluster.property.driverNodeTypeId">DriverNodeTypeId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#driver_node_type_id DataDatabricksJob#driver_node_type_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewCluster.property.enableElasticDisk">EnableElasticDisk</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#enable_elastic_disk DataDatabricksJob#enable_elastic_disk}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewCluster.property.enableLocalDiskEncryption">EnableLocalDiskEncryption</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#enable_local_disk_encryption DataDatabricksJob#enable_local_disk_encryption}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewCluster.property.gcpAttributes">GcpAttributes</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterGcpAttributes">DataDatabricksJobJobSettingsSettingsNewClusterGcpAttributes</a></code> | gcp_attributes block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewCluster.property.idempotencyToken">IdempotencyToken</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#idempotency_token DataDatabricksJob#idempotency_token}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewCluster.property.idempotencyToken">IdempotencyToken</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#idempotency_token DataDatabricksJob#idempotency_token}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewCluster.property.initScripts">InitScripts</a></code> | <code>interface{}</code> | init_scripts block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewCluster.property.instancePoolId">InstancePoolId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#instance_pool_id DataDatabricksJob#instance_pool_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewCluster.property.nodeTypeId">NodeTypeId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#node_type_id DataDatabricksJob#node_type_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewCluster.property.policyId">PolicyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#policy_id DataDatabricksJob#policy_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewCluster.property.runtimeEngine">RuntimeEngine</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#runtime_engine DataDatabricksJob#runtime_engine}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewCluster.property.singleUserName">SingleUserName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#single_user_name DataDatabricksJob#single_user_name}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewCluster.property.sparkConf">SparkConf</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#spark_conf DataDatabricksJob#spark_conf}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewCluster.property.sparkEnvVars">SparkEnvVars</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#spark_env_vars DataDatabricksJob#spark_env_vars}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewCluster.property.sparkVersion">SparkVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#spark_version DataDatabricksJob#spark_version}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewCluster.property.sshPublicKeys">SshPublicKeys</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#ssh_public_keys DataDatabricksJob#ssh_public_keys}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewCluster.property.instancePoolId">InstancePoolId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#instance_pool_id DataDatabricksJob#instance_pool_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewCluster.property.nodeTypeId">NodeTypeId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#node_type_id DataDatabricksJob#node_type_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewCluster.property.policyId">PolicyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#policy_id DataDatabricksJob#policy_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewCluster.property.runtimeEngine">RuntimeEngine</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#runtime_engine DataDatabricksJob#runtime_engine}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewCluster.property.singleUserName">SingleUserName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#single_user_name DataDatabricksJob#single_user_name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewCluster.property.sparkConf">SparkConf</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#spark_conf DataDatabricksJob#spark_conf}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewCluster.property.sparkEnvVars">SparkEnvVars</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#spark_env_vars DataDatabricksJob#spark_env_vars}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewCluster.property.sparkVersion">SparkVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#spark_version DataDatabricksJob#spark_version}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewCluster.property.sshPublicKeys">SshPublicKeys</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#ssh_public_keys DataDatabricksJob#ssh_public_keys}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewCluster.property.workloadType">WorkloadType</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterWorkloadType">DataDatabricksJobJobSettingsSettingsNewClusterWorkloadType</a></code> | workload_type block. |
 
 ---
@@ -4379,7 +4379,7 @@ NumWorkers *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#num_workers DataDatabricksJob#num_workers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#num_workers DataDatabricksJob#num_workers}.
 
 ---
 
@@ -4391,7 +4391,7 @@ ApplyPolicyDefaultValues interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#apply_policy_default_values DataDatabricksJob#apply_policy_default_values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#apply_policy_default_values DataDatabricksJob#apply_policy_default_values}.
 
 ---
 
@@ -4405,7 +4405,7 @@ Autoscale DataDatabricksJobJobSettingsSettingsNewClusterAutoscale
 
 autoscale block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#autoscale DataDatabricksJob#autoscale}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#autoscale DataDatabricksJob#autoscale}
 
 ---
 
@@ -4417,7 +4417,7 @@ AutoterminationMinutes *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#autotermination_minutes DataDatabricksJob#autotermination_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#autotermination_minutes DataDatabricksJob#autotermination_minutes}.
 
 ---
 
@@ -4431,7 +4431,7 @@ AwsAttributes DataDatabricksJobJobSettingsSettingsNewClusterAwsAttributes
 
 aws_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#aws_attributes DataDatabricksJob#aws_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#aws_attributes DataDatabricksJob#aws_attributes}
 
 ---
 
@@ -4445,7 +4445,7 @@ AzureAttributes DataDatabricksJobJobSettingsSettingsNewClusterAzureAttributes
 
 azure_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#azure_attributes DataDatabricksJob#azure_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#azure_attributes DataDatabricksJob#azure_attributes}
 
 ---
 
@@ -4457,7 +4457,7 @@ ClusterId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#cluster_id DataDatabricksJob#cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#cluster_id DataDatabricksJob#cluster_id}.
 
 ---
 
@@ -4471,7 +4471,7 @@ ClusterLogConf DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConf
 
 cluster_log_conf block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#cluster_log_conf DataDatabricksJob#cluster_log_conf}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#cluster_log_conf DataDatabricksJob#cluster_log_conf}
 
 ---
 
@@ -4485,7 +4485,7 @@ ClusterMountInfo interface{}
 
 cluster_mount_info block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#cluster_mount_info DataDatabricksJob#cluster_mount_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#cluster_mount_info DataDatabricksJob#cluster_mount_info}
 
 ---
 
@@ -4497,7 +4497,7 @@ ClusterName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#cluster_name DataDatabricksJob#cluster_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#cluster_name DataDatabricksJob#cluster_name}.
 
 ---
 
@@ -4509,7 +4509,7 @@ CustomTags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#custom_tags DataDatabricksJob#custom_tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#custom_tags DataDatabricksJob#custom_tags}.
 
 ---
 
@@ -4521,7 +4521,7 @@ DataSecurityMode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#data_security_mode DataDatabricksJob#data_security_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#data_security_mode DataDatabricksJob#data_security_mode}.
 
 ---
 
@@ -4535,7 +4535,7 @@ DockerImage DataDatabricksJobJobSettingsSettingsNewClusterDockerImage
 
 docker_image block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#docker_image DataDatabricksJob#docker_image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#docker_image DataDatabricksJob#docker_image}
 
 ---
 
@@ -4547,7 +4547,7 @@ DriverInstancePoolId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#driver_instance_pool_id DataDatabricksJob#driver_instance_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#driver_instance_pool_id DataDatabricksJob#driver_instance_pool_id}.
 
 ---
 
@@ -4559,7 +4559,7 @@ DriverNodeTypeId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#driver_node_type_id DataDatabricksJob#driver_node_type_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#driver_node_type_id DataDatabricksJob#driver_node_type_id}.
 
 ---
 
@@ -4571,7 +4571,7 @@ EnableElasticDisk interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#enable_elastic_disk DataDatabricksJob#enable_elastic_disk}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#enable_elastic_disk DataDatabricksJob#enable_elastic_disk}.
 
 ---
 
@@ -4583,7 +4583,7 @@ EnableLocalDiskEncryption interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#enable_local_disk_encryption DataDatabricksJob#enable_local_disk_encryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#enable_local_disk_encryption DataDatabricksJob#enable_local_disk_encryption}.
 
 ---
 
@@ -4597,7 +4597,7 @@ GcpAttributes DataDatabricksJobJobSettingsSettingsNewClusterGcpAttributes
 
 gcp_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#gcp_attributes DataDatabricksJob#gcp_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#gcp_attributes DataDatabricksJob#gcp_attributes}
 
 ---
 
@@ -4609,7 +4609,7 @@ IdempotencyToken *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#idempotency_token DataDatabricksJob#idempotency_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#idempotency_token DataDatabricksJob#idempotency_token}.
 
 ---
 
@@ -4623,7 +4623,7 @@ InitScripts interface{}
 
 init_scripts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#init_scripts DataDatabricksJob#init_scripts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#init_scripts DataDatabricksJob#init_scripts}
 
 ---
 
@@ -4635,7 +4635,7 @@ InstancePoolId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#instance_pool_id DataDatabricksJob#instance_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#instance_pool_id DataDatabricksJob#instance_pool_id}.
 
 ---
 
@@ -4647,7 +4647,7 @@ NodeTypeId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#node_type_id DataDatabricksJob#node_type_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#node_type_id DataDatabricksJob#node_type_id}.
 
 ---
 
@@ -4659,7 +4659,7 @@ PolicyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#policy_id DataDatabricksJob#policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#policy_id DataDatabricksJob#policy_id}.
 
 ---
 
@@ -4671,7 +4671,7 @@ RuntimeEngine *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#runtime_engine DataDatabricksJob#runtime_engine}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#runtime_engine DataDatabricksJob#runtime_engine}.
 
 ---
 
@@ -4683,7 +4683,7 @@ SingleUserName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#single_user_name DataDatabricksJob#single_user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#single_user_name DataDatabricksJob#single_user_name}.
 
 ---
 
@@ -4695,7 +4695,7 @@ SparkConf *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#spark_conf DataDatabricksJob#spark_conf}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#spark_conf DataDatabricksJob#spark_conf}.
 
 ---
 
@@ -4707,7 +4707,7 @@ SparkEnvVars *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#spark_env_vars DataDatabricksJob#spark_env_vars}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#spark_env_vars DataDatabricksJob#spark_env_vars}.
 
 ---
 
@@ -4719,7 +4719,7 @@ SparkVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#spark_version DataDatabricksJob#spark_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#spark_version DataDatabricksJob#spark_version}.
 
 ---
 
@@ -4731,7 +4731,7 @@ SshPublicKeys *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#ssh_public_keys DataDatabricksJob#ssh_public_keys}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#ssh_public_keys DataDatabricksJob#ssh_public_keys}.
 
 ---
 
@@ -4745,7 +4745,7 @@ WorkloadType DataDatabricksJobJobSettingsSettingsNewClusterWorkloadType
 
 workload_type block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#workload_type DataDatabricksJob#workload_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#workload_type DataDatabricksJob#workload_type}
 
 ---
 
@@ -4766,8 +4766,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterAutoscale.property.maxWorkers">MaxWorkers</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#max_workers DataDatabricksJob#max_workers}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterAutoscale.property.minWorkers">MinWorkers</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#min_workers DataDatabricksJob#min_workers}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterAutoscale.property.maxWorkers">MaxWorkers</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#max_workers DataDatabricksJob#max_workers}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterAutoscale.property.minWorkers">MinWorkers</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#min_workers DataDatabricksJob#min_workers}. |
 
 ---
 
@@ -4779,7 +4779,7 @@ MaxWorkers *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#max_workers DataDatabricksJob#max_workers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#max_workers DataDatabricksJob#max_workers}.
 
 ---
 
@@ -4791,7 +4791,7 @@ MinWorkers *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#min_workers DataDatabricksJob#min_workers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#min_workers DataDatabricksJob#min_workers}.
 
 ---
 
@@ -4818,14 +4818,14 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterAwsAttributes.property.availability">Availability</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#availability DataDatabricksJob#availability}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterAwsAttributes.property.ebsVolumeCount">EbsVolumeCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#ebs_volume_count DataDatabricksJob#ebs_volume_count}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterAwsAttributes.property.ebsVolumeSize">EbsVolumeSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#ebs_volume_size DataDatabricksJob#ebs_volume_size}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterAwsAttributes.property.ebsVolumeType">EbsVolumeType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#ebs_volume_type DataDatabricksJob#ebs_volume_type}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterAwsAttributes.property.firstOnDemand">FirstOnDemand</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#first_on_demand DataDatabricksJob#first_on_demand}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterAwsAttributes.property.instanceProfileArn">InstanceProfileArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#instance_profile_arn DataDatabricksJob#instance_profile_arn}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterAwsAttributes.property.spotBidPricePercent">SpotBidPricePercent</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#spot_bid_price_percent DataDatabricksJob#spot_bid_price_percent}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterAwsAttributes.property.zoneId">ZoneId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#zone_id DataDatabricksJob#zone_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterAwsAttributes.property.availability">Availability</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#availability DataDatabricksJob#availability}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterAwsAttributes.property.ebsVolumeCount">EbsVolumeCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#ebs_volume_count DataDatabricksJob#ebs_volume_count}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterAwsAttributes.property.ebsVolumeSize">EbsVolumeSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#ebs_volume_size DataDatabricksJob#ebs_volume_size}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterAwsAttributes.property.ebsVolumeType">EbsVolumeType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#ebs_volume_type DataDatabricksJob#ebs_volume_type}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterAwsAttributes.property.firstOnDemand">FirstOnDemand</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#first_on_demand DataDatabricksJob#first_on_demand}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterAwsAttributes.property.instanceProfileArn">InstanceProfileArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#instance_profile_arn DataDatabricksJob#instance_profile_arn}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterAwsAttributes.property.spotBidPricePercent">SpotBidPricePercent</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#spot_bid_price_percent DataDatabricksJob#spot_bid_price_percent}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterAwsAttributes.property.zoneId">ZoneId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#zone_id DataDatabricksJob#zone_id}. |
 
 ---
 
@@ -4837,7 +4837,7 @@ Availability *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#availability DataDatabricksJob#availability}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#availability DataDatabricksJob#availability}.
 
 ---
 
@@ -4849,7 +4849,7 @@ EbsVolumeCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#ebs_volume_count DataDatabricksJob#ebs_volume_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#ebs_volume_count DataDatabricksJob#ebs_volume_count}.
 
 ---
 
@@ -4861,7 +4861,7 @@ EbsVolumeSize *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#ebs_volume_size DataDatabricksJob#ebs_volume_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#ebs_volume_size DataDatabricksJob#ebs_volume_size}.
 
 ---
 
@@ -4873,7 +4873,7 @@ EbsVolumeType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#ebs_volume_type DataDatabricksJob#ebs_volume_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#ebs_volume_type DataDatabricksJob#ebs_volume_type}.
 
 ---
 
@@ -4885,7 +4885,7 @@ FirstOnDemand *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#first_on_demand DataDatabricksJob#first_on_demand}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#first_on_demand DataDatabricksJob#first_on_demand}.
 
 ---
 
@@ -4897,7 +4897,7 @@ InstanceProfileArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#instance_profile_arn DataDatabricksJob#instance_profile_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#instance_profile_arn DataDatabricksJob#instance_profile_arn}.
 
 ---
 
@@ -4909,7 +4909,7 @@ SpotBidPricePercent *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#spot_bid_price_percent DataDatabricksJob#spot_bid_price_percent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#spot_bid_price_percent DataDatabricksJob#spot_bid_price_percent}.
 
 ---
 
@@ -4921,7 +4921,7 @@ ZoneId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#zone_id DataDatabricksJob#zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#zone_id DataDatabricksJob#zone_id}.
 
 ---
 
@@ -4943,9 +4943,9 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterAzureAttributes.property.availability">Availability</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#availability DataDatabricksJob#availability}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterAzureAttributes.property.firstOnDemand">FirstOnDemand</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#first_on_demand DataDatabricksJob#first_on_demand}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterAzureAttributes.property.spotBidMaxPrice">SpotBidMaxPrice</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#spot_bid_max_price DataDatabricksJob#spot_bid_max_price}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterAzureAttributes.property.availability">Availability</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#availability DataDatabricksJob#availability}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterAzureAttributes.property.firstOnDemand">FirstOnDemand</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#first_on_demand DataDatabricksJob#first_on_demand}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterAzureAttributes.property.spotBidMaxPrice">SpotBidMaxPrice</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#spot_bid_max_price DataDatabricksJob#spot_bid_max_price}. |
 
 ---
 
@@ -4957,7 +4957,7 @@ Availability *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#availability DataDatabricksJob#availability}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#availability DataDatabricksJob#availability}.
 
 ---
 
@@ -4969,7 +4969,7 @@ FirstOnDemand *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#first_on_demand DataDatabricksJob#first_on_demand}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#first_on_demand DataDatabricksJob#first_on_demand}.
 
 ---
 
@@ -4981,7 +4981,7 @@ SpotBidMaxPrice *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#spot_bid_max_price DataDatabricksJob#spot_bid_max_price}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#spot_bid_max_price DataDatabricksJob#spot_bid_max_price}.
 
 ---
 
@@ -5017,7 +5017,7 @@ Dbfs DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConfDbfs
 
 dbfs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#dbfs DataDatabricksJob#dbfs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#dbfs DataDatabricksJob#dbfs}
 
 ---
 
@@ -5031,7 +5031,7 @@ S3 DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConfS3
 
 s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#s3 DataDatabricksJob#s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#s3 DataDatabricksJob#s3}
 
 ---
 
@@ -5051,7 +5051,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConfDbfs.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConfDbfs.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
 
 ---
 
@@ -5063,7 +5063,7 @@ Destination *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
 
 ---
 
@@ -5089,13 +5089,13 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConfS3.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConfS3.property.cannedAcl">CannedAcl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#canned_acl DataDatabricksJob#canned_acl}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConfS3.property.enableEncryption">EnableEncryption</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#enable_encryption DataDatabricksJob#enable_encryption}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConfS3.property.encryptionType">EncryptionType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#encryption_type DataDatabricksJob#encryption_type}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConfS3.property.endpoint">Endpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#endpoint DataDatabricksJob#endpoint}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConfS3.property.kmsKey">KmsKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#kms_key DataDatabricksJob#kms_key}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConfS3.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#region DataDatabricksJob#region}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConfS3.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConfS3.property.cannedAcl">CannedAcl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#canned_acl DataDatabricksJob#canned_acl}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConfS3.property.enableEncryption">EnableEncryption</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#enable_encryption DataDatabricksJob#enable_encryption}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConfS3.property.encryptionType">EncryptionType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#encryption_type DataDatabricksJob#encryption_type}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConfS3.property.endpoint">Endpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#endpoint DataDatabricksJob#endpoint}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConfS3.property.kmsKey">KmsKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#kms_key DataDatabricksJob#kms_key}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConfS3.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#region DataDatabricksJob#region}. |
 
 ---
 
@@ -5107,7 +5107,7 @@ Destination *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
 
 ---
 
@@ -5119,7 +5119,7 @@ CannedAcl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#canned_acl DataDatabricksJob#canned_acl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#canned_acl DataDatabricksJob#canned_acl}.
 
 ---
 
@@ -5131,7 +5131,7 @@ EnableEncryption interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#enable_encryption DataDatabricksJob#enable_encryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#enable_encryption DataDatabricksJob#enable_encryption}.
 
 ---
 
@@ -5143,7 +5143,7 @@ EncryptionType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#encryption_type DataDatabricksJob#encryption_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#encryption_type DataDatabricksJob#encryption_type}.
 
 ---
 
@@ -5155,7 +5155,7 @@ Endpoint *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#endpoint DataDatabricksJob#endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#endpoint DataDatabricksJob#endpoint}.
 
 ---
 
@@ -5167,7 +5167,7 @@ KmsKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#kms_key DataDatabricksJob#kms_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#kms_key DataDatabricksJob#kms_key}.
 
 ---
 
@@ -5179,7 +5179,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#region DataDatabricksJob#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#region DataDatabricksJob#region}.
 
 ---
 
@@ -5201,9 +5201,9 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterMountInfo.property.localMountDirPath">LocalMountDirPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#local_mount_dir_path DataDatabricksJob#local_mount_dir_path}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterMountInfo.property.localMountDirPath">LocalMountDirPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#local_mount_dir_path DataDatabricksJob#local_mount_dir_path}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterMountInfo.property.networkFilesystemInfo">NetworkFilesystemInfo</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterMountInfoNetworkFilesystemInfo">DataDatabricksJobJobSettingsSettingsNewClusterClusterMountInfoNetworkFilesystemInfo</a></code> | network_filesystem_info block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterMountInfo.property.remoteMountDirPath">RemoteMountDirPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#remote_mount_dir_path DataDatabricksJob#remote_mount_dir_path}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterMountInfo.property.remoteMountDirPath">RemoteMountDirPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#remote_mount_dir_path DataDatabricksJob#remote_mount_dir_path}. |
 
 ---
 
@@ -5215,7 +5215,7 @@ LocalMountDirPath *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#local_mount_dir_path DataDatabricksJob#local_mount_dir_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#local_mount_dir_path DataDatabricksJob#local_mount_dir_path}.
 
 ---
 
@@ -5229,7 +5229,7 @@ NetworkFilesystemInfo DataDatabricksJobJobSettingsSettingsNewClusterClusterMount
 
 network_filesystem_info block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#network_filesystem_info DataDatabricksJob#network_filesystem_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#network_filesystem_info DataDatabricksJob#network_filesystem_info}
 
 ---
 
@@ -5241,7 +5241,7 @@ RemoteMountDirPath *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#remote_mount_dir_path DataDatabricksJob#remote_mount_dir_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#remote_mount_dir_path DataDatabricksJob#remote_mount_dir_path}.
 
 ---
 
@@ -5262,8 +5262,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterMountInfoNetworkFilesystemInfo.property.serverAddress">ServerAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#server_address DataDatabricksJob#server_address}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterMountInfoNetworkFilesystemInfo.property.mountOptions">MountOptions</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#mount_options DataDatabricksJob#mount_options}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterMountInfoNetworkFilesystemInfo.property.serverAddress">ServerAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#server_address DataDatabricksJob#server_address}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterMountInfoNetworkFilesystemInfo.property.mountOptions">MountOptions</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#mount_options DataDatabricksJob#mount_options}. |
 
 ---
 
@@ -5275,7 +5275,7 @@ ServerAddress *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#server_address DataDatabricksJob#server_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#server_address DataDatabricksJob#server_address}.
 
 ---
 
@@ -5287,7 +5287,7 @@ MountOptions *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#mount_options DataDatabricksJob#mount_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#mount_options DataDatabricksJob#mount_options}.
 
 ---
 
@@ -5308,7 +5308,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterDockerImage.property.url">Url</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#url DataDatabricksJob#url}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterDockerImage.property.url">Url</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#url DataDatabricksJob#url}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterDockerImage.property.basicAuth">BasicAuth</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterDockerImageBasicAuth">DataDatabricksJobJobSettingsSettingsNewClusterDockerImageBasicAuth</a></code> | basic_auth block. |
 
 ---
@@ -5321,7 +5321,7 @@ Url *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#url DataDatabricksJob#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#url DataDatabricksJob#url}.
 
 ---
 
@@ -5335,7 +5335,7 @@ BasicAuth DataDatabricksJobJobSettingsSettingsNewClusterDockerImageBasicAuth
 
 basic_auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#basic_auth DataDatabricksJob#basic_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#basic_auth DataDatabricksJob#basic_auth}
 
 ---
 
@@ -5356,8 +5356,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterDockerImageBasicAuth.property.password">Password</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#password DataDatabricksJob#password}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterDockerImageBasicAuth.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#username DataDatabricksJob#username}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterDockerImageBasicAuth.property.password">Password</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#password DataDatabricksJob#password}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterDockerImageBasicAuth.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#username DataDatabricksJob#username}. |
 
 ---
 
@@ -5369,7 +5369,7 @@ Password *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#password DataDatabricksJob#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#password DataDatabricksJob#password}.
 
 ---
 
@@ -5381,7 +5381,7 @@ Username *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#username DataDatabricksJob#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#username DataDatabricksJob#username}.
 
 ---
 
@@ -5406,12 +5406,12 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterGcpAttributes.property.availability">Availability</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#availability DataDatabricksJob#availability}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterGcpAttributes.property.bootDiskSize">BootDiskSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#boot_disk_size DataDatabricksJob#boot_disk_size}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterGcpAttributes.property.googleServiceAccount">GoogleServiceAccount</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#google_service_account DataDatabricksJob#google_service_account}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterGcpAttributes.property.localSsdCount">LocalSsdCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#local_ssd_count DataDatabricksJob#local_ssd_count}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterGcpAttributes.property.usePreemptibleExecutors">UsePreemptibleExecutors</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#use_preemptible_executors DataDatabricksJob#use_preemptible_executors}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterGcpAttributes.property.zoneId">ZoneId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#zone_id DataDatabricksJob#zone_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterGcpAttributes.property.availability">Availability</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#availability DataDatabricksJob#availability}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterGcpAttributes.property.bootDiskSize">BootDiskSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#boot_disk_size DataDatabricksJob#boot_disk_size}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterGcpAttributes.property.googleServiceAccount">GoogleServiceAccount</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#google_service_account DataDatabricksJob#google_service_account}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterGcpAttributes.property.localSsdCount">LocalSsdCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#local_ssd_count DataDatabricksJob#local_ssd_count}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterGcpAttributes.property.usePreemptibleExecutors">UsePreemptibleExecutors</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#use_preemptible_executors DataDatabricksJob#use_preemptible_executors}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterGcpAttributes.property.zoneId">ZoneId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#zone_id DataDatabricksJob#zone_id}. |
 
 ---
 
@@ -5423,7 +5423,7 @@ Availability *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#availability DataDatabricksJob#availability}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#availability DataDatabricksJob#availability}.
 
 ---
 
@@ -5435,7 +5435,7 @@ BootDiskSize *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#boot_disk_size DataDatabricksJob#boot_disk_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#boot_disk_size DataDatabricksJob#boot_disk_size}.
 
 ---
 
@@ -5447,7 +5447,7 @@ GoogleServiceAccount *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#google_service_account DataDatabricksJob#google_service_account}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#google_service_account DataDatabricksJob#google_service_account}.
 
 ---
 
@@ -5459,7 +5459,7 @@ LocalSsdCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#local_ssd_count DataDatabricksJob#local_ssd_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#local_ssd_count DataDatabricksJob#local_ssd_count}.
 
 ---
 
@@ -5471,7 +5471,7 @@ UsePreemptibleExecutors interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#use_preemptible_executors DataDatabricksJob#use_preemptible_executors}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#use_preemptible_executors DataDatabricksJob#use_preemptible_executors}.
 
 ---
 
@@ -5483,7 +5483,7 @@ ZoneId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#zone_id DataDatabricksJob#zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#zone_id DataDatabricksJob#zone_id}.
 
 ---
 
@@ -5529,7 +5529,7 @@ Abfss DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsAbfss
 
 abfss block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#abfss DataDatabricksJob#abfss}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#abfss DataDatabricksJob#abfss}
 
 ---
 
@@ -5543,7 +5543,7 @@ Dbfs DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsDbfs
 
 dbfs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#dbfs DataDatabricksJob#dbfs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#dbfs DataDatabricksJob#dbfs}
 
 ---
 
@@ -5557,7 +5557,7 @@ File DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsFile
 
 file block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#file DataDatabricksJob#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#file DataDatabricksJob#file}
 
 ---
 
@@ -5571,7 +5571,7 @@ Gcs DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsGcs
 
 gcs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#gcs DataDatabricksJob#gcs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#gcs DataDatabricksJob#gcs}
 
 ---
 
@@ -5585,7 +5585,7 @@ S3 DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsS3
 
 s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#s3 DataDatabricksJob#s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#s3 DataDatabricksJob#s3}
 
 ---
 
@@ -5599,7 +5599,7 @@ Volumes DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsVolumes
 
 volumes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#volumes DataDatabricksJob#volumes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#volumes DataDatabricksJob#volumes}
 
 ---
 
@@ -5613,7 +5613,7 @@ Workspace DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsWorkspace
 
 workspace block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#workspace DataDatabricksJob#workspace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#workspace DataDatabricksJob#workspace}
 
 ---
 
@@ -5633,7 +5633,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsAbfss.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsAbfss.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
 
 ---
 
@@ -5645,7 +5645,7 @@ Destination *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
 
 ---
 
@@ -5665,7 +5665,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsDbfs.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsDbfs.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
 
 ---
 
@@ -5677,7 +5677,7 @@ Destination *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
 
 ---
 
@@ -5697,7 +5697,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsFile.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsFile.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
 
 ---
 
@@ -5709,7 +5709,7 @@ Destination *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
 
 ---
 
@@ -5729,7 +5729,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsGcs.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsGcs.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
 
 ---
 
@@ -5741,7 +5741,7 @@ Destination *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
 
 ---
 
@@ -5767,13 +5767,13 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsS3.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsS3.property.cannedAcl">CannedAcl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#canned_acl DataDatabricksJob#canned_acl}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsS3.property.enableEncryption">EnableEncryption</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#enable_encryption DataDatabricksJob#enable_encryption}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsS3.property.encryptionType">EncryptionType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#encryption_type DataDatabricksJob#encryption_type}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsS3.property.endpoint">Endpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#endpoint DataDatabricksJob#endpoint}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsS3.property.kmsKey">KmsKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#kms_key DataDatabricksJob#kms_key}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsS3.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#region DataDatabricksJob#region}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsS3.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsS3.property.cannedAcl">CannedAcl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#canned_acl DataDatabricksJob#canned_acl}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsS3.property.enableEncryption">EnableEncryption</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#enable_encryption DataDatabricksJob#enable_encryption}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsS3.property.encryptionType">EncryptionType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#encryption_type DataDatabricksJob#encryption_type}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsS3.property.endpoint">Endpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#endpoint DataDatabricksJob#endpoint}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsS3.property.kmsKey">KmsKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#kms_key DataDatabricksJob#kms_key}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsS3.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#region DataDatabricksJob#region}. |
 
 ---
 
@@ -5785,7 +5785,7 @@ Destination *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
 
 ---
 
@@ -5797,7 +5797,7 @@ CannedAcl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#canned_acl DataDatabricksJob#canned_acl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#canned_acl DataDatabricksJob#canned_acl}.
 
 ---
 
@@ -5809,7 +5809,7 @@ EnableEncryption interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#enable_encryption DataDatabricksJob#enable_encryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#enable_encryption DataDatabricksJob#enable_encryption}.
 
 ---
 
@@ -5821,7 +5821,7 @@ EncryptionType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#encryption_type DataDatabricksJob#encryption_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#encryption_type DataDatabricksJob#encryption_type}.
 
 ---
 
@@ -5833,7 +5833,7 @@ Endpoint *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#endpoint DataDatabricksJob#endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#endpoint DataDatabricksJob#endpoint}.
 
 ---
 
@@ -5845,7 +5845,7 @@ KmsKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#kms_key DataDatabricksJob#kms_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#kms_key DataDatabricksJob#kms_key}.
 
 ---
 
@@ -5857,7 +5857,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#region DataDatabricksJob#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#region DataDatabricksJob#region}.
 
 ---
 
@@ -5877,7 +5877,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsVolumes.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsVolumes.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
 
 ---
 
@@ -5889,7 +5889,7 @@ Destination *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
 
 ---
 
@@ -5909,7 +5909,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsWorkspace.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsWorkspace.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
 
 ---
 
@@ -5921,7 +5921,7 @@ Destination *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
 
 ---
 
@@ -5955,7 +5955,7 @@ Clients DataDatabricksJobJobSettingsSettingsNewClusterWorkloadTypeClients
 
 clients block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#clients DataDatabricksJob#clients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#clients DataDatabricksJob#clients}
 
 ---
 
@@ -5976,8 +5976,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterWorkloadTypeClients.property.jobs">Jobs</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#jobs DataDatabricksJob#jobs}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterWorkloadTypeClients.property.notebooks">Notebooks</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#notebooks DataDatabricksJob#notebooks}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterWorkloadTypeClients.property.jobs">Jobs</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#jobs DataDatabricksJob#jobs}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterWorkloadTypeClients.property.notebooks">Notebooks</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#notebooks DataDatabricksJob#notebooks}. |
 
 ---
 
@@ -5989,7 +5989,7 @@ Jobs interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#jobs DataDatabricksJob#jobs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#jobs DataDatabricksJob#jobs}.
 
 ---
 
@@ -6001,7 +6001,7 @@ Notebooks interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#notebooks DataDatabricksJob#notebooks}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#notebooks DataDatabricksJob#notebooks}.
 
 ---
 
@@ -6024,10 +6024,10 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNotebookTask.property.notebookPath">NotebookPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#notebook_path DataDatabricksJob#notebook_path}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNotebookTask.property.baseParameters">BaseParameters</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#base_parameters DataDatabricksJob#base_parameters}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNotebookTask.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#source DataDatabricksJob#source}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNotebookTask.property.warehouseId">WarehouseId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#warehouse_id DataDatabricksJob#warehouse_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNotebookTask.property.notebookPath">NotebookPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#notebook_path DataDatabricksJob#notebook_path}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNotebookTask.property.baseParameters">BaseParameters</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#base_parameters DataDatabricksJob#base_parameters}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNotebookTask.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#source DataDatabricksJob#source}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNotebookTask.property.warehouseId">WarehouseId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#warehouse_id DataDatabricksJob#warehouse_id}. |
 
 ---
 
@@ -6039,7 +6039,7 @@ NotebookPath *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#notebook_path DataDatabricksJob#notebook_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#notebook_path DataDatabricksJob#notebook_path}.
 
 ---
 
@@ -6051,7 +6051,7 @@ BaseParameters *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#base_parameters DataDatabricksJob#base_parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#base_parameters DataDatabricksJob#base_parameters}.
 
 ---
 
@@ -6063,7 +6063,7 @@ Source *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#source DataDatabricksJob#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#source DataDatabricksJob#source}.
 
 ---
 
@@ -6075,7 +6075,7 @@ WarehouseId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#warehouse_id DataDatabricksJob#warehouse_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#warehouse_id DataDatabricksJob#warehouse_id}.
 
 ---
 
@@ -6096,8 +6096,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNotificationSettings.property.noAlertForCanceledRuns">NoAlertForCanceledRuns</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#no_alert_for_canceled_runs DataDatabricksJob#no_alert_for_canceled_runs}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNotificationSettings.property.noAlertForSkippedRuns">NoAlertForSkippedRuns</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#no_alert_for_skipped_runs DataDatabricksJob#no_alert_for_skipped_runs}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNotificationSettings.property.noAlertForCanceledRuns">NoAlertForCanceledRuns</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#no_alert_for_canceled_runs DataDatabricksJob#no_alert_for_canceled_runs}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNotificationSettings.property.noAlertForSkippedRuns">NoAlertForSkippedRuns</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#no_alert_for_skipped_runs DataDatabricksJob#no_alert_for_skipped_runs}. |
 
 ---
 
@@ -6109,7 +6109,7 @@ NoAlertForCanceledRuns interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#no_alert_for_canceled_runs DataDatabricksJob#no_alert_for_canceled_runs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#no_alert_for_canceled_runs DataDatabricksJob#no_alert_for_canceled_runs}.
 
 ---
 
@@ -6121,7 +6121,7 @@ NoAlertForSkippedRuns interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#no_alert_for_skipped_runs DataDatabricksJob#no_alert_for_skipped_runs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#no_alert_for_skipped_runs DataDatabricksJob#no_alert_for_skipped_runs}.
 
 ---
 
@@ -6142,8 +6142,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsParameter.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#default DataDatabricksJob#default}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsParameter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#name DataDatabricksJob#name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsParameter.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#default DataDatabricksJob#default}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsParameter.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#name DataDatabricksJob#name}. |
 
 ---
 
@@ -6155,7 +6155,7 @@ Default *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#default DataDatabricksJob#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#default DataDatabricksJob#default}.
 
 ---
 
@@ -6167,7 +6167,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#name DataDatabricksJob#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#name DataDatabricksJob#name}.
 
 ---
 
@@ -6188,8 +6188,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsPipelineTask.property.pipelineId">PipelineId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#pipeline_id DataDatabricksJob#pipeline_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsPipelineTask.property.fullRefresh">FullRefresh</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#full_refresh DataDatabricksJob#full_refresh}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsPipelineTask.property.pipelineId">PipelineId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#pipeline_id DataDatabricksJob#pipeline_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsPipelineTask.property.fullRefresh">FullRefresh</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#full_refresh DataDatabricksJob#full_refresh}. |
 
 ---
 
@@ -6201,7 +6201,7 @@ PipelineId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#pipeline_id DataDatabricksJob#pipeline_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#pipeline_id DataDatabricksJob#pipeline_id}.
 
 ---
 
@@ -6213,7 +6213,7 @@ FullRefresh interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#full_refresh DataDatabricksJob#full_refresh}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#full_refresh DataDatabricksJob#full_refresh}.
 
 ---
 
@@ -6236,10 +6236,10 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsPythonWheelTask.property.entryPoint">EntryPoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#entry_point DataDatabricksJob#entry_point}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsPythonWheelTask.property.namedParameters">NamedParameters</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#named_parameters DataDatabricksJob#named_parameters}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsPythonWheelTask.property.packageName">PackageName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#package_name DataDatabricksJob#package_name}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsPythonWheelTask.property.parameters">Parameters</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsPythonWheelTask.property.entryPoint">EntryPoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#entry_point DataDatabricksJob#entry_point}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsPythonWheelTask.property.namedParameters">NamedParameters</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#named_parameters DataDatabricksJob#named_parameters}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsPythonWheelTask.property.packageName">PackageName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#package_name DataDatabricksJob#package_name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsPythonWheelTask.property.parameters">Parameters</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}. |
 
 ---
 
@@ -6251,7 +6251,7 @@ EntryPoint *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#entry_point DataDatabricksJob#entry_point}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#entry_point DataDatabricksJob#entry_point}.
 
 ---
 
@@ -6263,7 +6263,7 @@ NamedParameters *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#named_parameters DataDatabricksJob#named_parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#named_parameters DataDatabricksJob#named_parameters}.
 
 ---
 
@@ -6275,7 +6275,7 @@ PackageName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#package_name DataDatabricksJob#package_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#package_name DataDatabricksJob#package_name}.
 
 ---
 
@@ -6287,7 +6287,7 @@ Parameters *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}.
 
 ---
 
@@ -6307,7 +6307,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueue.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#enabled DataDatabricksJob#enabled}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueue.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#enabled DataDatabricksJob#enabled}. |
 
 ---
 
@@ -6319,7 +6319,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#enabled DataDatabricksJob#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#enabled DataDatabricksJob#enabled}.
 
 ---
 
@@ -6340,8 +6340,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsRunAs.property.servicePrincipalName">ServicePrincipalName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#service_principal_name DataDatabricksJob#service_principal_name}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsRunAs.property.userName">UserName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#user_name DataDatabricksJob#user_name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsRunAs.property.servicePrincipalName">ServicePrincipalName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#service_principal_name DataDatabricksJob#service_principal_name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsRunAs.property.userName">UserName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#user_name DataDatabricksJob#user_name}. |
 
 ---
 
@@ -6353,7 +6353,7 @@ ServicePrincipalName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#service_principal_name DataDatabricksJob#service_principal_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#service_principal_name DataDatabricksJob#service_principal_name}.
 
 ---
 
@@ -6365,7 +6365,7 @@ UserName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#user_name DataDatabricksJob#user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#user_name DataDatabricksJob#user_name}.
 
 ---
 
@@ -6386,8 +6386,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsRunJobTask.property.jobId">JobId</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#job_id DataDatabricksJob#job_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsRunJobTask.property.jobParameters">JobParameters</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#job_parameters DataDatabricksJob#job_parameters}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsRunJobTask.property.jobId">JobId</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#job_id DataDatabricksJob#job_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsRunJobTask.property.jobParameters">JobParameters</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#job_parameters DataDatabricksJob#job_parameters}. |
 
 ---
 
@@ -6399,7 +6399,7 @@ JobId *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#job_id DataDatabricksJob#job_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#job_id DataDatabricksJob#job_id}.
 
 ---
 
@@ -6411,7 +6411,7 @@ JobParameters *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#job_parameters DataDatabricksJob#job_parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#job_parameters DataDatabricksJob#job_parameters}.
 
 ---
 
@@ -6433,9 +6433,9 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSchedule.property.quartzCronExpression">QuartzCronExpression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#quartz_cron_expression DataDatabricksJob#quartz_cron_expression}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSchedule.property.timezoneId">TimezoneId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#timezone_id DataDatabricksJob#timezone_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSchedule.property.pauseStatus">PauseStatus</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#pause_status DataDatabricksJob#pause_status}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSchedule.property.quartzCronExpression">QuartzCronExpression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#quartz_cron_expression DataDatabricksJob#quartz_cron_expression}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSchedule.property.timezoneId">TimezoneId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#timezone_id DataDatabricksJob#timezone_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSchedule.property.pauseStatus">PauseStatus</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#pause_status DataDatabricksJob#pause_status}. |
 
 ---
 
@@ -6447,7 +6447,7 @@ QuartzCronExpression *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#quartz_cron_expression DataDatabricksJob#quartz_cron_expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#quartz_cron_expression DataDatabricksJob#quartz_cron_expression}.
 
 ---
 
@@ -6459,7 +6459,7 @@ TimezoneId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#timezone_id DataDatabricksJob#timezone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#timezone_id DataDatabricksJob#timezone_id}.
 
 ---
 
@@ -6471,7 +6471,7 @@ PauseStatus *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#pause_status DataDatabricksJob#pause_status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#pause_status DataDatabricksJob#pause_status}.
 
 ---
 
@@ -6493,9 +6493,9 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkJarTask.property.jarUri">JarUri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#jar_uri DataDatabricksJob#jar_uri}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkJarTask.property.mainClassName">MainClassName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#main_class_name DataDatabricksJob#main_class_name}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkJarTask.property.parameters">Parameters</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkJarTask.property.jarUri">JarUri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#jar_uri DataDatabricksJob#jar_uri}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkJarTask.property.mainClassName">MainClassName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#main_class_name DataDatabricksJob#main_class_name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkJarTask.property.parameters">Parameters</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}. |
 
 ---
 
@@ -6507,7 +6507,7 @@ JarUri *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#jar_uri DataDatabricksJob#jar_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#jar_uri DataDatabricksJob#jar_uri}.
 
 ---
 
@@ -6519,7 +6519,7 @@ MainClassName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#main_class_name DataDatabricksJob#main_class_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#main_class_name DataDatabricksJob#main_class_name}.
 
 ---
 
@@ -6531,7 +6531,7 @@ Parameters *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}.
 
 ---
 
@@ -6553,9 +6553,9 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkPythonTask.property.pythonFile">PythonFile</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#python_file DataDatabricksJob#python_file}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkPythonTask.property.parameters">Parameters</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkPythonTask.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#source DataDatabricksJob#source}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkPythonTask.property.pythonFile">PythonFile</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#python_file DataDatabricksJob#python_file}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkPythonTask.property.parameters">Parameters</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkPythonTask.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#source DataDatabricksJob#source}. |
 
 ---
 
@@ -6567,7 +6567,7 @@ PythonFile *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#python_file DataDatabricksJob#python_file}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#python_file DataDatabricksJob#python_file}.
 
 ---
 
@@ -6579,7 +6579,7 @@ Parameters *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}.
 
 ---
 
@@ -6591,7 +6591,7 @@ Source *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#source DataDatabricksJob#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#source DataDatabricksJob#source}.
 
 ---
 
@@ -6611,7 +6611,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkSubmitTask.property.parameters">Parameters</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkSubmitTask.property.parameters">Parameters</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}. |
 
 ---
 
@@ -6623,7 +6623,7 @@ Parameters *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}.
 
 ---
 
@@ -6672,35 +6672,35 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTask.property.taskKey">TaskKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#task_key DataDatabricksJob#task_key}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTask.property.taskKey">TaskKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#task_key DataDatabricksJob#task_key}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTask.property.conditionTask">ConditionTask</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskConditionTask">DataDatabricksJobJobSettingsSettingsTaskConditionTask</a></code> | condition_task block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTask.property.dashboardTask">DashboardTask</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDashboardTask">DataDatabricksJobJobSettingsSettingsTaskDashboardTask</a></code> | dashboard_task block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTask.property.dbtTask">DbtTask</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDbtTask">DataDatabricksJobJobSettingsSettingsTaskDbtTask</a></code> | dbt_task block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTask.property.dependsOn">DependsOn</a></code> | <code>interface{}</code> | depends_on block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTask.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#description DataDatabricksJob#description}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTask.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#description DataDatabricksJob#description}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTask.property.emailNotifications">EmailNotifications</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskEmailNotifications">DataDatabricksJobJobSettingsSettingsTaskEmailNotifications</a></code> | email_notifications block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTask.property.environmentKey">EnvironmentKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#environment_key DataDatabricksJob#environment_key}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTask.property.existingClusterId">ExistingClusterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#existing_cluster_id DataDatabricksJob#existing_cluster_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTask.property.environmentKey">EnvironmentKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#environment_key DataDatabricksJob#environment_key}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTask.property.existingClusterId">ExistingClusterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#existing_cluster_id DataDatabricksJob#existing_cluster_id}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTask.property.forEachTask">ForEachTask</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTask">DataDatabricksJobJobSettingsSettingsTaskForEachTask</a></code> | for_each_task block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTask.property.health">Health</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskHealth">DataDatabricksJobJobSettingsSettingsTaskHealth</a></code> | health block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTask.property.jobClusterKey">JobClusterKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#job_cluster_key DataDatabricksJob#job_cluster_key}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTask.property.jobClusterKey">JobClusterKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#job_cluster_key DataDatabricksJob#job_cluster_key}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTask.property.library">Library</a></code> | <code>interface{}</code> | library block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTask.property.maxRetries">MaxRetries</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#max_retries DataDatabricksJob#max_retries}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTask.property.minRetryIntervalMillis">MinRetryIntervalMillis</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#min_retry_interval_millis DataDatabricksJob#min_retry_interval_millis}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTask.property.maxRetries">MaxRetries</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#max_retries DataDatabricksJob#max_retries}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTask.property.minRetryIntervalMillis">MinRetryIntervalMillis</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#min_retry_interval_millis DataDatabricksJob#min_retry_interval_millis}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTask.property.newCluster">NewCluster</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewCluster">DataDatabricksJobJobSettingsSettingsTaskNewCluster</a></code> | new_cluster block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTask.property.notebookTask">NotebookTask</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNotebookTask">DataDatabricksJobJobSettingsSettingsTaskNotebookTask</a></code> | notebook_task block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTask.property.notificationSettings">NotificationSettings</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNotificationSettings">DataDatabricksJobJobSettingsSettingsTaskNotificationSettings</a></code> | notification_settings block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTask.property.pipelineTask">PipelineTask</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPipelineTask">DataDatabricksJobJobSettingsSettingsTaskPipelineTask</a></code> | pipeline_task block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTask.property.powerBiTask">PowerBiTask</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPowerBiTask">DataDatabricksJobJobSettingsSettingsTaskPowerBiTask</a></code> | power_bi_task block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTask.property.pythonWheelTask">PythonWheelTask</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPythonWheelTask">DataDatabricksJobJobSettingsSettingsTaskPythonWheelTask</a></code> | python_wheel_task block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTask.property.retryOnTimeout">RetryOnTimeout</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#retry_on_timeout DataDatabricksJob#retry_on_timeout}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTask.property.runIf">RunIf</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#run_if DataDatabricksJob#run_if}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTask.property.retryOnTimeout">RetryOnTimeout</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#retry_on_timeout DataDatabricksJob#retry_on_timeout}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTask.property.runIf">RunIf</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#run_if DataDatabricksJob#run_if}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTask.property.runJobTask">RunJobTask</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskRunJobTask">DataDatabricksJobJobSettingsSettingsTaskRunJobTask</a></code> | run_job_task block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTask.property.sparkJarTask">SparkJarTask</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkJarTask">DataDatabricksJobJobSettingsSettingsTaskSparkJarTask</a></code> | spark_jar_task block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTask.property.sparkPythonTask">SparkPythonTask</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkPythonTask">DataDatabricksJobJobSettingsSettingsTaskSparkPythonTask</a></code> | spark_python_task block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTask.property.sparkSubmitTask">SparkSubmitTask</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkSubmitTask">DataDatabricksJobJobSettingsSettingsTaskSparkSubmitTask</a></code> | spark_submit_task block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTask.property.sqlTask">SqlTask</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTask">DataDatabricksJobJobSettingsSettingsTaskSqlTask</a></code> | sql_task block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTask.property.timeoutSeconds">TimeoutSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#timeout_seconds DataDatabricksJob#timeout_seconds}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTask.property.timeoutSeconds">TimeoutSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#timeout_seconds DataDatabricksJob#timeout_seconds}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTask.property.webhookNotifications">WebhookNotifications</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskWebhookNotifications">DataDatabricksJobJobSettingsSettingsTaskWebhookNotifications</a></code> | webhook_notifications block. |
 
 ---
@@ -6713,7 +6713,7 @@ TaskKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#task_key DataDatabricksJob#task_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#task_key DataDatabricksJob#task_key}.
 
 ---
 
@@ -6727,7 +6727,7 @@ ConditionTask DataDatabricksJobJobSettingsSettingsTaskConditionTask
 
 condition_task block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#condition_task DataDatabricksJob#condition_task}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#condition_task DataDatabricksJob#condition_task}
 
 ---
 
@@ -6741,7 +6741,7 @@ DashboardTask DataDatabricksJobJobSettingsSettingsTaskDashboardTask
 
 dashboard_task block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#dashboard_task DataDatabricksJob#dashboard_task}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#dashboard_task DataDatabricksJob#dashboard_task}
 
 ---
 
@@ -6755,7 +6755,7 @@ DbtTask DataDatabricksJobJobSettingsSettingsTaskDbtTask
 
 dbt_task block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#dbt_task DataDatabricksJob#dbt_task}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#dbt_task DataDatabricksJob#dbt_task}
 
 ---
 
@@ -6769,7 +6769,7 @@ DependsOn interface{}
 
 depends_on block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#depends_on DataDatabricksJob#depends_on}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#depends_on DataDatabricksJob#depends_on}
 
 ---
 
@@ -6781,7 +6781,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#description DataDatabricksJob#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#description DataDatabricksJob#description}.
 
 ---
 
@@ -6795,7 +6795,7 @@ EmailNotifications DataDatabricksJobJobSettingsSettingsTaskEmailNotifications
 
 email_notifications block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#email_notifications DataDatabricksJob#email_notifications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#email_notifications DataDatabricksJob#email_notifications}
 
 ---
 
@@ -6807,7 +6807,7 @@ EnvironmentKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#environment_key DataDatabricksJob#environment_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#environment_key DataDatabricksJob#environment_key}.
 
 ---
 
@@ -6819,7 +6819,7 @@ ExistingClusterId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#existing_cluster_id DataDatabricksJob#existing_cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#existing_cluster_id DataDatabricksJob#existing_cluster_id}.
 
 ---
 
@@ -6833,7 +6833,7 @@ ForEachTask DataDatabricksJobJobSettingsSettingsTaskForEachTask
 
 for_each_task block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#for_each_task DataDatabricksJob#for_each_task}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#for_each_task DataDatabricksJob#for_each_task}
 
 ---
 
@@ -6847,7 +6847,7 @@ Health DataDatabricksJobJobSettingsSettingsTaskHealth
 
 health block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#health DataDatabricksJob#health}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#health DataDatabricksJob#health}
 
 ---
 
@@ -6859,7 +6859,7 @@ JobClusterKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#job_cluster_key DataDatabricksJob#job_cluster_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#job_cluster_key DataDatabricksJob#job_cluster_key}.
 
 ---
 
@@ -6873,7 +6873,7 @@ Library interface{}
 
 library block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#library DataDatabricksJob#library}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#library DataDatabricksJob#library}
 
 ---
 
@@ -6885,7 +6885,7 @@ MaxRetries *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#max_retries DataDatabricksJob#max_retries}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#max_retries DataDatabricksJob#max_retries}.
 
 ---
 
@@ -6897,7 +6897,7 @@ MinRetryIntervalMillis *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#min_retry_interval_millis DataDatabricksJob#min_retry_interval_millis}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#min_retry_interval_millis DataDatabricksJob#min_retry_interval_millis}.
 
 ---
 
@@ -6911,7 +6911,7 @@ NewCluster DataDatabricksJobJobSettingsSettingsTaskNewCluster
 
 new_cluster block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#new_cluster DataDatabricksJob#new_cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#new_cluster DataDatabricksJob#new_cluster}
 
 ---
 
@@ -6925,7 +6925,7 @@ NotebookTask DataDatabricksJobJobSettingsSettingsTaskNotebookTask
 
 notebook_task block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#notebook_task DataDatabricksJob#notebook_task}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#notebook_task DataDatabricksJob#notebook_task}
 
 ---
 
@@ -6939,7 +6939,7 @@ NotificationSettings DataDatabricksJobJobSettingsSettingsTaskNotificationSetting
 
 notification_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#notification_settings DataDatabricksJob#notification_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#notification_settings DataDatabricksJob#notification_settings}
 
 ---
 
@@ -6953,7 +6953,7 @@ PipelineTask DataDatabricksJobJobSettingsSettingsTaskPipelineTask
 
 pipeline_task block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#pipeline_task DataDatabricksJob#pipeline_task}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#pipeline_task DataDatabricksJob#pipeline_task}
 
 ---
 
@@ -6967,7 +6967,7 @@ PowerBiTask DataDatabricksJobJobSettingsSettingsTaskPowerBiTask
 
 power_bi_task block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#power_bi_task DataDatabricksJob#power_bi_task}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#power_bi_task DataDatabricksJob#power_bi_task}
 
 ---
 
@@ -6981,7 +6981,7 @@ PythonWheelTask DataDatabricksJobJobSettingsSettingsTaskPythonWheelTask
 
 python_wheel_task block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#python_wheel_task DataDatabricksJob#python_wheel_task}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#python_wheel_task DataDatabricksJob#python_wheel_task}
 
 ---
 
@@ -6993,7 +6993,7 @@ RetryOnTimeout interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#retry_on_timeout DataDatabricksJob#retry_on_timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#retry_on_timeout DataDatabricksJob#retry_on_timeout}.
 
 ---
 
@@ -7005,7 +7005,7 @@ RunIf *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#run_if DataDatabricksJob#run_if}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#run_if DataDatabricksJob#run_if}.
 
 ---
 
@@ -7019,7 +7019,7 @@ RunJobTask DataDatabricksJobJobSettingsSettingsTaskRunJobTask
 
 run_job_task block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#run_job_task DataDatabricksJob#run_job_task}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#run_job_task DataDatabricksJob#run_job_task}
 
 ---
 
@@ -7033,7 +7033,7 @@ SparkJarTask DataDatabricksJobJobSettingsSettingsTaskSparkJarTask
 
 spark_jar_task block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#spark_jar_task DataDatabricksJob#spark_jar_task}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#spark_jar_task DataDatabricksJob#spark_jar_task}
 
 ---
 
@@ -7047,7 +7047,7 @@ SparkPythonTask DataDatabricksJobJobSettingsSettingsTaskSparkPythonTask
 
 spark_python_task block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#spark_python_task DataDatabricksJob#spark_python_task}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#spark_python_task DataDatabricksJob#spark_python_task}
 
 ---
 
@@ -7061,7 +7061,7 @@ SparkSubmitTask DataDatabricksJobJobSettingsSettingsTaskSparkSubmitTask
 
 spark_submit_task block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#spark_submit_task DataDatabricksJob#spark_submit_task}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#spark_submit_task DataDatabricksJob#spark_submit_task}
 
 ---
 
@@ -7075,7 +7075,7 @@ SqlTask DataDatabricksJobJobSettingsSettingsTaskSqlTask
 
 sql_task block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#sql_task DataDatabricksJob#sql_task}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#sql_task DataDatabricksJob#sql_task}
 
 ---
 
@@ -7087,7 +7087,7 @@ TimeoutSeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#timeout_seconds DataDatabricksJob#timeout_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#timeout_seconds DataDatabricksJob#timeout_seconds}.
 
 ---
 
@@ -7101,7 +7101,7 @@ WebhookNotifications DataDatabricksJobJobSettingsSettingsTaskWebhookNotification
 
 webhook_notifications block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#webhook_notifications DataDatabricksJob#webhook_notifications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#webhook_notifications DataDatabricksJob#webhook_notifications}
 
 ---
 
@@ -7123,9 +7123,9 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskConditionTask.property.left">Left</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#left DataDatabricksJob#left}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskConditionTask.property.op">Op</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#op DataDatabricksJob#op}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskConditionTask.property.right">Right</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#right DataDatabricksJob#right}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskConditionTask.property.left">Left</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#left DataDatabricksJob#left}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskConditionTask.property.op">Op</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#op DataDatabricksJob#op}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskConditionTask.property.right">Right</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#right DataDatabricksJob#right}. |
 
 ---
 
@@ -7137,7 +7137,7 @@ Left *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#left DataDatabricksJob#left}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#left DataDatabricksJob#left}.
 
 ---
 
@@ -7149,7 +7149,7 @@ Op *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#op DataDatabricksJob#op}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#op DataDatabricksJob#op}.
 
 ---
 
@@ -7161,7 +7161,7 @@ Right *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#right DataDatabricksJob#right}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#right DataDatabricksJob#right}.
 
 ---
 
@@ -7183,9 +7183,9 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDashboardTask.property.dashboardId">DashboardId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#dashboard_id DataDatabricksJob#dashboard_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDashboardTask.property.dashboardId">DashboardId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#dashboard_id DataDatabricksJob#dashboard_id}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDashboardTask.property.subscription">Subscription</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDashboardTaskSubscription">DataDatabricksJobJobSettingsSettingsTaskDashboardTaskSubscription</a></code> | subscription block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDashboardTask.property.warehouseId">WarehouseId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#warehouse_id DataDatabricksJob#warehouse_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDashboardTask.property.warehouseId">WarehouseId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#warehouse_id DataDatabricksJob#warehouse_id}. |
 
 ---
 
@@ -7197,7 +7197,7 @@ DashboardId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#dashboard_id DataDatabricksJob#dashboard_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#dashboard_id DataDatabricksJob#dashboard_id}.
 
 ---
 
@@ -7211,7 +7211,7 @@ Subscription DataDatabricksJobJobSettingsSettingsTaskDashboardTaskSubscription
 
 subscription block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#subscription DataDatabricksJob#subscription}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#subscription DataDatabricksJob#subscription}
 
 ---
 
@@ -7223,7 +7223,7 @@ WarehouseId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#warehouse_id DataDatabricksJob#warehouse_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#warehouse_id DataDatabricksJob#warehouse_id}.
 
 ---
 
@@ -7245,8 +7245,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDashboardTaskSubscription.property.customSubject">CustomSubject</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#custom_subject DataDatabricksJob#custom_subject}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDashboardTaskSubscription.property.paused">Paused</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#paused DataDatabricksJob#paused}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDashboardTaskSubscription.property.customSubject">CustomSubject</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#custom_subject DataDatabricksJob#custom_subject}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDashboardTaskSubscription.property.paused">Paused</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#paused DataDatabricksJob#paused}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDashboardTaskSubscription.property.subscribers">Subscribers</a></code> | <code>interface{}</code> | subscribers block. |
 
 ---
@@ -7259,7 +7259,7 @@ CustomSubject *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#custom_subject DataDatabricksJob#custom_subject}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#custom_subject DataDatabricksJob#custom_subject}.
 
 ---
 
@@ -7271,7 +7271,7 @@ Paused interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#paused DataDatabricksJob#paused}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#paused DataDatabricksJob#paused}.
 
 ---
 
@@ -7285,7 +7285,7 @@ Subscribers interface{}
 
 subscribers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#subscribers DataDatabricksJob#subscribers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#subscribers DataDatabricksJob#subscribers}
 
 ---
 
@@ -7306,8 +7306,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDashboardTaskSubscriptionSubscribers.property.destinationId">DestinationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination_id DataDatabricksJob#destination_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDashboardTaskSubscriptionSubscribers.property.userName">UserName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#user_name DataDatabricksJob#user_name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDashboardTaskSubscriptionSubscribers.property.destinationId">DestinationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination_id DataDatabricksJob#destination_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDashboardTaskSubscriptionSubscribers.property.userName">UserName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#user_name DataDatabricksJob#user_name}. |
 
 ---
 
@@ -7319,7 +7319,7 @@ DestinationId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination_id DataDatabricksJob#destination_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination_id DataDatabricksJob#destination_id}.
 
 ---
 
@@ -7331,7 +7331,7 @@ UserName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#user_name DataDatabricksJob#user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#user_name DataDatabricksJob#user_name}.
 
 ---
 
@@ -7357,13 +7357,13 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDbtTask.property.commands">Commands</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#commands DataDatabricksJob#commands}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDbtTask.property.catalog">Catalog</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#catalog DataDatabricksJob#catalog}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDbtTask.property.profilesDirectory">ProfilesDirectory</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#profiles_directory DataDatabricksJob#profiles_directory}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDbtTask.property.projectDirectory">ProjectDirectory</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#project_directory DataDatabricksJob#project_directory}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDbtTask.property.schema">Schema</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#schema DataDatabricksJob#schema}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDbtTask.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#source DataDatabricksJob#source}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDbtTask.property.warehouseId">WarehouseId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#warehouse_id DataDatabricksJob#warehouse_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDbtTask.property.commands">Commands</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#commands DataDatabricksJob#commands}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDbtTask.property.catalog">Catalog</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#catalog DataDatabricksJob#catalog}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDbtTask.property.profilesDirectory">ProfilesDirectory</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#profiles_directory DataDatabricksJob#profiles_directory}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDbtTask.property.projectDirectory">ProjectDirectory</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#project_directory DataDatabricksJob#project_directory}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDbtTask.property.schema">Schema</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#schema DataDatabricksJob#schema}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDbtTask.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#source DataDatabricksJob#source}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDbtTask.property.warehouseId">WarehouseId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#warehouse_id DataDatabricksJob#warehouse_id}. |
 
 ---
 
@@ -7375,7 +7375,7 @@ Commands *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#commands DataDatabricksJob#commands}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#commands DataDatabricksJob#commands}.
 
 ---
 
@@ -7387,7 +7387,7 @@ Catalog *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#catalog DataDatabricksJob#catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#catalog DataDatabricksJob#catalog}.
 
 ---
 
@@ -7399,7 +7399,7 @@ ProfilesDirectory *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#profiles_directory DataDatabricksJob#profiles_directory}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#profiles_directory DataDatabricksJob#profiles_directory}.
 
 ---
 
@@ -7411,7 +7411,7 @@ ProjectDirectory *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#project_directory DataDatabricksJob#project_directory}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#project_directory DataDatabricksJob#project_directory}.
 
 ---
 
@@ -7423,7 +7423,7 @@ Schema *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#schema DataDatabricksJob#schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#schema DataDatabricksJob#schema}.
 
 ---
 
@@ -7435,7 +7435,7 @@ Source *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#source DataDatabricksJob#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#source DataDatabricksJob#source}.
 
 ---
 
@@ -7447,7 +7447,7 @@ WarehouseId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#warehouse_id DataDatabricksJob#warehouse_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#warehouse_id DataDatabricksJob#warehouse_id}.
 
 ---
 
@@ -7468,8 +7468,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDependsOn.property.taskKey">TaskKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#task_key DataDatabricksJob#task_key}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDependsOn.property.outcome">Outcome</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#outcome DataDatabricksJob#outcome}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDependsOn.property.taskKey">TaskKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#task_key DataDatabricksJob#task_key}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDependsOn.property.outcome">Outcome</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#outcome DataDatabricksJob#outcome}. |
 
 ---
 
@@ -7481,7 +7481,7 @@ TaskKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#task_key DataDatabricksJob#task_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#task_key DataDatabricksJob#task_key}.
 
 ---
 
@@ -7493,7 +7493,7 @@ Outcome *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#outcome DataDatabricksJob#outcome}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#outcome DataDatabricksJob#outcome}.
 
 ---
 
@@ -7518,12 +7518,12 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskEmailNotifications.property.noAlertForSkippedRuns">NoAlertForSkippedRuns</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#no_alert_for_skipped_runs DataDatabricksJob#no_alert_for_skipped_runs}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskEmailNotifications.property.onDurationWarningThresholdExceeded">OnDurationWarningThresholdExceeded</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#on_duration_warning_threshold_exceeded DataDatabricksJob#on_duration_warning_threshold_exceeded}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskEmailNotifications.property.onFailure">OnFailure</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#on_failure DataDatabricksJob#on_failure}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskEmailNotifications.property.onStart">OnStart</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#on_start DataDatabricksJob#on_start}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskEmailNotifications.property.onStreamingBacklogExceeded">OnStreamingBacklogExceeded</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#on_streaming_backlog_exceeded DataDatabricksJob#on_streaming_backlog_exceeded}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskEmailNotifications.property.onSuccess">OnSuccess</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#on_success DataDatabricksJob#on_success}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskEmailNotifications.property.noAlertForSkippedRuns">NoAlertForSkippedRuns</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#no_alert_for_skipped_runs DataDatabricksJob#no_alert_for_skipped_runs}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskEmailNotifications.property.onDurationWarningThresholdExceeded">OnDurationWarningThresholdExceeded</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#on_duration_warning_threshold_exceeded DataDatabricksJob#on_duration_warning_threshold_exceeded}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskEmailNotifications.property.onFailure">OnFailure</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#on_failure DataDatabricksJob#on_failure}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskEmailNotifications.property.onStart">OnStart</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#on_start DataDatabricksJob#on_start}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskEmailNotifications.property.onStreamingBacklogExceeded">OnStreamingBacklogExceeded</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#on_streaming_backlog_exceeded DataDatabricksJob#on_streaming_backlog_exceeded}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskEmailNotifications.property.onSuccess">OnSuccess</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#on_success DataDatabricksJob#on_success}. |
 
 ---
 
@@ -7535,7 +7535,7 @@ NoAlertForSkippedRuns interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#no_alert_for_skipped_runs DataDatabricksJob#no_alert_for_skipped_runs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#no_alert_for_skipped_runs DataDatabricksJob#no_alert_for_skipped_runs}.
 
 ---
 
@@ -7547,7 +7547,7 @@ OnDurationWarningThresholdExceeded *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#on_duration_warning_threshold_exceeded DataDatabricksJob#on_duration_warning_threshold_exceeded}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#on_duration_warning_threshold_exceeded DataDatabricksJob#on_duration_warning_threshold_exceeded}.
 
 ---
 
@@ -7559,7 +7559,7 @@ OnFailure *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#on_failure DataDatabricksJob#on_failure}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#on_failure DataDatabricksJob#on_failure}.
 
 ---
 
@@ -7571,7 +7571,7 @@ OnStart *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#on_start DataDatabricksJob#on_start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#on_start DataDatabricksJob#on_start}.
 
 ---
 
@@ -7583,7 +7583,7 @@ OnStreamingBacklogExceeded *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#on_streaming_backlog_exceeded DataDatabricksJob#on_streaming_backlog_exceeded}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#on_streaming_backlog_exceeded DataDatabricksJob#on_streaming_backlog_exceeded}.
 
 ---
 
@@ -7595,7 +7595,7 @@ OnSuccess *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#on_success DataDatabricksJob#on_success}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#on_success DataDatabricksJob#on_success}.
 
 ---
 
@@ -7617,9 +7617,9 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTask.property.inputs">Inputs</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#inputs DataDatabricksJob#inputs}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTask.property.inputs">Inputs</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#inputs DataDatabricksJob#inputs}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTask.property.task">Task</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTask">DataDatabricksJobJobSettingsSettingsTaskForEachTaskTask</a></code> | task block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTask.property.concurrency">Concurrency</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#concurrency DataDatabricksJob#concurrency}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTask.property.concurrency">Concurrency</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#concurrency DataDatabricksJob#concurrency}. |
 
 ---
 
@@ -7631,7 +7631,7 @@ Inputs *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#inputs DataDatabricksJob#inputs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#inputs DataDatabricksJob#inputs}.
 
 ---
 
@@ -7645,7 +7645,7 @@ Task DataDatabricksJobJobSettingsSettingsTaskForEachTaskTask
 
 task block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#task DataDatabricksJob#task}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#task DataDatabricksJob#task}
 
 ---
 
@@ -7657,7 +7657,7 @@ Concurrency *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#concurrency DataDatabricksJob#concurrency}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#concurrency DataDatabricksJob#concurrency}.
 
 ---
 
@@ -7705,34 +7705,34 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTask.property.taskKey">TaskKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#task_key DataDatabricksJob#task_key}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTask.property.taskKey">TaskKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#task_key DataDatabricksJob#task_key}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTask.property.conditionTask">ConditionTask</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskConditionTask">DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskConditionTask</a></code> | condition_task block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTask.property.dashboardTask">DashboardTask</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTask">DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTask</a></code> | dashboard_task block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTask.property.dbtTask">DbtTask</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDbtTask">DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDbtTask</a></code> | dbt_task block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTask.property.dependsOn">DependsOn</a></code> | <code>interface{}</code> | depends_on block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTask.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#description DataDatabricksJob#description}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTask.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#description DataDatabricksJob#description}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTask.property.emailNotifications">EmailNotifications</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskEmailNotifications">DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskEmailNotifications</a></code> | email_notifications block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTask.property.environmentKey">EnvironmentKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#environment_key DataDatabricksJob#environment_key}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTask.property.existingClusterId">ExistingClusterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#existing_cluster_id DataDatabricksJob#existing_cluster_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTask.property.environmentKey">EnvironmentKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#environment_key DataDatabricksJob#environment_key}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTask.property.existingClusterId">ExistingClusterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#existing_cluster_id DataDatabricksJob#existing_cluster_id}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTask.property.health">Health</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskHealth">DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskHealth</a></code> | health block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTask.property.jobClusterKey">JobClusterKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#job_cluster_key DataDatabricksJob#job_cluster_key}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTask.property.jobClusterKey">JobClusterKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#job_cluster_key DataDatabricksJob#job_cluster_key}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTask.property.library">Library</a></code> | <code>interface{}</code> | library block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTask.property.maxRetries">MaxRetries</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#max_retries DataDatabricksJob#max_retries}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTask.property.minRetryIntervalMillis">MinRetryIntervalMillis</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#min_retry_interval_millis DataDatabricksJob#min_retry_interval_millis}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTask.property.maxRetries">MaxRetries</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#max_retries DataDatabricksJob#max_retries}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTask.property.minRetryIntervalMillis">MinRetryIntervalMillis</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#min_retry_interval_millis DataDatabricksJob#min_retry_interval_millis}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTask.property.newCluster">NewCluster</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewCluster">DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewCluster</a></code> | new_cluster block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTask.property.notebookTask">NotebookTask</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNotebookTask">DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNotebookTask</a></code> | notebook_task block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTask.property.notificationSettings">NotificationSettings</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNotificationSettings">DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNotificationSettings</a></code> | notification_settings block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTask.property.pipelineTask">PipelineTask</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPipelineTask">DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPipelineTask</a></code> | pipeline_task block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTask.property.powerBiTask">PowerBiTask</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPowerBiTask">DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPowerBiTask</a></code> | power_bi_task block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTask.property.pythonWheelTask">PythonWheelTask</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPythonWheelTask">DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPythonWheelTask</a></code> | python_wheel_task block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTask.property.retryOnTimeout">RetryOnTimeout</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#retry_on_timeout DataDatabricksJob#retry_on_timeout}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTask.property.runIf">RunIf</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#run_if DataDatabricksJob#run_if}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTask.property.retryOnTimeout">RetryOnTimeout</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#retry_on_timeout DataDatabricksJob#retry_on_timeout}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTask.property.runIf">RunIf</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#run_if DataDatabricksJob#run_if}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTask.property.runJobTask">RunJobTask</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskRunJobTask">DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskRunJobTask</a></code> | run_job_task block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTask.property.sparkJarTask">SparkJarTask</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSparkJarTask">DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSparkJarTask</a></code> | spark_jar_task block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTask.property.sparkPythonTask">SparkPythonTask</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSparkPythonTask">DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSparkPythonTask</a></code> | spark_python_task block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTask.property.sparkSubmitTask">SparkSubmitTask</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSparkSubmitTask">DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSparkSubmitTask</a></code> | spark_submit_task block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTask.property.sqlTask">SqlTask</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTask">DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTask</a></code> | sql_task block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTask.property.timeoutSeconds">TimeoutSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#timeout_seconds DataDatabricksJob#timeout_seconds}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTask.property.timeoutSeconds">TimeoutSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#timeout_seconds DataDatabricksJob#timeout_seconds}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTask.property.webhookNotifications">WebhookNotifications</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotifications">DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotifications</a></code> | webhook_notifications block. |
 
 ---
@@ -7745,7 +7745,7 @@ TaskKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#task_key DataDatabricksJob#task_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#task_key DataDatabricksJob#task_key}.
 
 ---
 
@@ -7759,7 +7759,7 @@ ConditionTask DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskConditionTa
 
 condition_task block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#condition_task DataDatabricksJob#condition_task}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#condition_task DataDatabricksJob#condition_task}
 
 ---
 
@@ -7773,7 +7773,7 @@ DashboardTask DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTa
 
 dashboard_task block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#dashboard_task DataDatabricksJob#dashboard_task}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#dashboard_task DataDatabricksJob#dashboard_task}
 
 ---
 
@@ -7787,7 +7787,7 @@ DbtTask DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDbtTask
 
 dbt_task block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#dbt_task DataDatabricksJob#dbt_task}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#dbt_task DataDatabricksJob#dbt_task}
 
 ---
 
@@ -7801,7 +7801,7 @@ DependsOn interface{}
 
 depends_on block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#depends_on DataDatabricksJob#depends_on}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#depends_on DataDatabricksJob#depends_on}
 
 ---
 
@@ -7813,7 +7813,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#description DataDatabricksJob#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#description DataDatabricksJob#description}.
 
 ---
 
@@ -7827,7 +7827,7 @@ EmailNotifications DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskEmailN
 
 email_notifications block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#email_notifications DataDatabricksJob#email_notifications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#email_notifications DataDatabricksJob#email_notifications}
 
 ---
 
@@ -7839,7 +7839,7 @@ EnvironmentKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#environment_key DataDatabricksJob#environment_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#environment_key DataDatabricksJob#environment_key}.
 
 ---
 
@@ -7851,7 +7851,7 @@ ExistingClusterId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#existing_cluster_id DataDatabricksJob#existing_cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#existing_cluster_id DataDatabricksJob#existing_cluster_id}.
 
 ---
 
@@ -7865,7 +7865,7 @@ Health DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskHealth
 
 health block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#health DataDatabricksJob#health}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#health DataDatabricksJob#health}
 
 ---
 
@@ -7877,7 +7877,7 @@ JobClusterKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#job_cluster_key DataDatabricksJob#job_cluster_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#job_cluster_key DataDatabricksJob#job_cluster_key}.
 
 ---
 
@@ -7891,7 +7891,7 @@ Library interface{}
 
 library block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#library DataDatabricksJob#library}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#library DataDatabricksJob#library}
 
 ---
 
@@ -7903,7 +7903,7 @@ MaxRetries *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#max_retries DataDatabricksJob#max_retries}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#max_retries DataDatabricksJob#max_retries}.
 
 ---
 
@@ -7915,7 +7915,7 @@ MinRetryIntervalMillis *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#min_retry_interval_millis DataDatabricksJob#min_retry_interval_millis}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#min_retry_interval_millis DataDatabricksJob#min_retry_interval_millis}.
 
 ---
 
@@ -7929,7 +7929,7 @@ NewCluster DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewCluster
 
 new_cluster block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#new_cluster DataDatabricksJob#new_cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#new_cluster DataDatabricksJob#new_cluster}
 
 ---
 
@@ -7943,7 +7943,7 @@ NotebookTask DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNotebookTask
 
 notebook_task block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#notebook_task DataDatabricksJob#notebook_task}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#notebook_task DataDatabricksJob#notebook_task}
 
 ---
 
@@ -7957,7 +7957,7 @@ NotificationSettings DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNoti
 
 notification_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#notification_settings DataDatabricksJob#notification_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#notification_settings DataDatabricksJob#notification_settings}
 
 ---
 
@@ -7971,7 +7971,7 @@ PipelineTask DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPipelineTask
 
 pipeline_task block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#pipeline_task DataDatabricksJob#pipeline_task}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#pipeline_task DataDatabricksJob#pipeline_task}
 
 ---
 
@@ -7985,7 +7985,7 @@ PowerBiTask DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPowerBiTask
 
 power_bi_task block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#power_bi_task DataDatabricksJob#power_bi_task}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#power_bi_task DataDatabricksJob#power_bi_task}
 
 ---
 
@@ -7999,7 +7999,7 @@ PythonWheelTask DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPythonWhe
 
 python_wheel_task block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#python_wheel_task DataDatabricksJob#python_wheel_task}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#python_wheel_task DataDatabricksJob#python_wheel_task}
 
 ---
 
@@ -8011,7 +8011,7 @@ RetryOnTimeout interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#retry_on_timeout DataDatabricksJob#retry_on_timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#retry_on_timeout DataDatabricksJob#retry_on_timeout}.
 
 ---
 
@@ -8023,7 +8023,7 @@ RunIf *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#run_if DataDatabricksJob#run_if}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#run_if DataDatabricksJob#run_if}.
 
 ---
 
@@ -8037,7 +8037,7 @@ RunJobTask DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskRunJobTask
 
 run_job_task block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#run_job_task DataDatabricksJob#run_job_task}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#run_job_task DataDatabricksJob#run_job_task}
 
 ---
 
@@ -8051,7 +8051,7 @@ SparkJarTask DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSparkJarTask
 
 spark_jar_task block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#spark_jar_task DataDatabricksJob#spark_jar_task}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#spark_jar_task DataDatabricksJob#spark_jar_task}
 
 ---
 
@@ -8065,7 +8065,7 @@ SparkPythonTask DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSparkPyth
 
 spark_python_task block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#spark_python_task DataDatabricksJob#spark_python_task}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#spark_python_task DataDatabricksJob#spark_python_task}
 
 ---
 
@@ -8079,7 +8079,7 @@ SparkSubmitTask DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSparkSubm
 
 spark_submit_task block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#spark_submit_task DataDatabricksJob#spark_submit_task}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#spark_submit_task DataDatabricksJob#spark_submit_task}
 
 ---
 
@@ -8093,7 +8093,7 @@ SqlTask DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTask
 
 sql_task block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#sql_task DataDatabricksJob#sql_task}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#sql_task DataDatabricksJob#sql_task}
 
 ---
 
@@ -8105,7 +8105,7 @@ TimeoutSeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#timeout_seconds DataDatabricksJob#timeout_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#timeout_seconds DataDatabricksJob#timeout_seconds}.
 
 ---
 
@@ -8119,7 +8119,7 @@ WebhookNotifications DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebh
 
 webhook_notifications block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#webhook_notifications DataDatabricksJob#webhook_notifications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#webhook_notifications DataDatabricksJob#webhook_notifications}
 
 ---
 
@@ -8141,9 +8141,9 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskConditionTask.property.left">Left</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#left DataDatabricksJob#left}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskConditionTask.property.op">Op</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#op DataDatabricksJob#op}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskConditionTask.property.right">Right</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#right DataDatabricksJob#right}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskConditionTask.property.left">Left</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#left DataDatabricksJob#left}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskConditionTask.property.op">Op</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#op DataDatabricksJob#op}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskConditionTask.property.right">Right</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#right DataDatabricksJob#right}. |
 
 ---
 
@@ -8155,7 +8155,7 @@ Left *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#left DataDatabricksJob#left}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#left DataDatabricksJob#left}.
 
 ---
 
@@ -8167,7 +8167,7 @@ Op *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#op DataDatabricksJob#op}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#op DataDatabricksJob#op}.
 
 ---
 
@@ -8179,7 +8179,7 @@ Right *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#right DataDatabricksJob#right}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#right DataDatabricksJob#right}.
 
 ---
 
@@ -8201,9 +8201,9 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTask.property.dashboardId">DashboardId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#dashboard_id DataDatabricksJob#dashboard_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTask.property.dashboardId">DashboardId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#dashboard_id DataDatabricksJob#dashboard_id}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTask.property.subscription">Subscription</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscription">DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscription</a></code> | subscription block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTask.property.warehouseId">WarehouseId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#warehouse_id DataDatabricksJob#warehouse_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTask.property.warehouseId">WarehouseId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#warehouse_id DataDatabricksJob#warehouse_id}. |
 
 ---
 
@@ -8215,7 +8215,7 @@ DashboardId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#dashboard_id DataDatabricksJob#dashboard_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#dashboard_id DataDatabricksJob#dashboard_id}.
 
 ---
 
@@ -8229,7 +8229,7 @@ Subscription DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTas
 
 subscription block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#subscription DataDatabricksJob#subscription}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#subscription DataDatabricksJob#subscription}
 
 ---
 
@@ -8241,7 +8241,7 @@ WarehouseId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#warehouse_id DataDatabricksJob#warehouse_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#warehouse_id DataDatabricksJob#warehouse_id}.
 
 ---
 
@@ -8263,8 +8263,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscription.property.customSubject">CustomSubject</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#custom_subject DataDatabricksJob#custom_subject}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscription.property.paused">Paused</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#paused DataDatabricksJob#paused}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscription.property.customSubject">CustomSubject</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#custom_subject DataDatabricksJob#custom_subject}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscription.property.paused">Paused</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#paused DataDatabricksJob#paused}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscription.property.subscribers">Subscribers</a></code> | <code>interface{}</code> | subscribers block. |
 
 ---
@@ -8277,7 +8277,7 @@ CustomSubject *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#custom_subject DataDatabricksJob#custom_subject}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#custom_subject DataDatabricksJob#custom_subject}.
 
 ---
 
@@ -8289,7 +8289,7 @@ Paused interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#paused DataDatabricksJob#paused}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#paused DataDatabricksJob#paused}.
 
 ---
 
@@ -8303,7 +8303,7 @@ Subscribers interface{}
 
 subscribers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#subscribers DataDatabricksJob#subscribers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#subscribers DataDatabricksJob#subscribers}
 
 ---
 
@@ -8324,8 +8324,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscriptionSubscribers.property.destinationId">DestinationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination_id DataDatabricksJob#destination_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscriptionSubscribers.property.userName">UserName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#user_name DataDatabricksJob#user_name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscriptionSubscribers.property.destinationId">DestinationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination_id DataDatabricksJob#destination_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscriptionSubscribers.property.userName">UserName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#user_name DataDatabricksJob#user_name}. |
 
 ---
 
@@ -8337,7 +8337,7 @@ DestinationId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination_id DataDatabricksJob#destination_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination_id DataDatabricksJob#destination_id}.
 
 ---
 
@@ -8349,7 +8349,7 @@ UserName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#user_name DataDatabricksJob#user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#user_name DataDatabricksJob#user_name}.
 
 ---
 
@@ -8375,13 +8375,13 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDbtTask.property.commands">Commands</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#commands DataDatabricksJob#commands}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDbtTask.property.catalog">Catalog</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#catalog DataDatabricksJob#catalog}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDbtTask.property.profilesDirectory">ProfilesDirectory</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#profiles_directory DataDatabricksJob#profiles_directory}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDbtTask.property.projectDirectory">ProjectDirectory</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#project_directory DataDatabricksJob#project_directory}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDbtTask.property.schema">Schema</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#schema DataDatabricksJob#schema}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDbtTask.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#source DataDatabricksJob#source}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDbtTask.property.warehouseId">WarehouseId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#warehouse_id DataDatabricksJob#warehouse_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDbtTask.property.commands">Commands</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#commands DataDatabricksJob#commands}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDbtTask.property.catalog">Catalog</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#catalog DataDatabricksJob#catalog}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDbtTask.property.profilesDirectory">ProfilesDirectory</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#profiles_directory DataDatabricksJob#profiles_directory}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDbtTask.property.projectDirectory">ProjectDirectory</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#project_directory DataDatabricksJob#project_directory}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDbtTask.property.schema">Schema</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#schema DataDatabricksJob#schema}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDbtTask.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#source DataDatabricksJob#source}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDbtTask.property.warehouseId">WarehouseId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#warehouse_id DataDatabricksJob#warehouse_id}. |
 
 ---
 
@@ -8393,7 +8393,7 @@ Commands *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#commands DataDatabricksJob#commands}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#commands DataDatabricksJob#commands}.
 
 ---
 
@@ -8405,7 +8405,7 @@ Catalog *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#catalog DataDatabricksJob#catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#catalog DataDatabricksJob#catalog}.
 
 ---
 
@@ -8417,7 +8417,7 @@ ProfilesDirectory *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#profiles_directory DataDatabricksJob#profiles_directory}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#profiles_directory DataDatabricksJob#profiles_directory}.
 
 ---
 
@@ -8429,7 +8429,7 @@ ProjectDirectory *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#project_directory DataDatabricksJob#project_directory}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#project_directory DataDatabricksJob#project_directory}.
 
 ---
 
@@ -8441,7 +8441,7 @@ Schema *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#schema DataDatabricksJob#schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#schema DataDatabricksJob#schema}.
 
 ---
 
@@ -8453,7 +8453,7 @@ Source *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#source DataDatabricksJob#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#source DataDatabricksJob#source}.
 
 ---
 
@@ -8465,7 +8465,7 @@ WarehouseId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#warehouse_id DataDatabricksJob#warehouse_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#warehouse_id DataDatabricksJob#warehouse_id}.
 
 ---
 
@@ -8486,8 +8486,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDependsOn.property.taskKey">TaskKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#task_key DataDatabricksJob#task_key}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDependsOn.property.outcome">Outcome</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#outcome DataDatabricksJob#outcome}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDependsOn.property.taskKey">TaskKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#task_key DataDatabricksJob#task_key}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDependsOn.property.outcome">Outcome</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#outcome DataDatabricksJob#outcome}. |
 
 ---
 
@@ -8499,7 +8499,7 @@ TaskKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#task_key DataDatabricksJob#task_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#task_key DataDatabricksJob#task_key}.
 
 ---
 
@@ -8511,7 +8511,7 @@ Outcome *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#outcome DataDatabricksJob#outcome}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#outcome DataDatabricksJob#outcome}.
 
 ---
 
@@ -8536,12 +8536,12 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskEmailNotifications.property.noAlertForSkippedRuns">NoAlertForSkippedRuns</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#no_alert_for_skipped_runs DataDatabricksJob#no_alert_for_skipped_runs}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskEmailNotifications.property.onDurationWarningThresholdExceeded">OnDurationWarningThresholdExceeded</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#on_duration_warning_threshold_exceeded DataDatabricksJob#on_duration_warning_threshold_exceeded}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskEmailNotifications.property.onFailure">OnFailure</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#on_failure DataDatabricksJob#on_failure}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskEmailNotifications.property.onStart">OnStart</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#on_start DataDatabricksJob#on_start}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskEmailNotifications.property.onStreamingBacklogExceeded">OnStreamingBacklogExceeded</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#on_streaming_backlog_exceeded DataDatabricksJob#on_streaming_backlog_exceeded}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskEmailNotifications.property.onSuccess">OnSuccess</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#on_success DataDatabricksJob#on_success}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskEmailNotifications.property.noAlertForSkippedRuns">NoAlertForSkippedRuns</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#no_alert_for_skipped_runs DataDatabricksJob#no_alert_for_skipped_runs}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskEmailNotifications.property.onDurationWarningThresholdExceeded">OnDurationWarningThresholdExceeded</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#on_duration_warning_threshold_exceeded DataDatabricksJob#on_duration_warning_threshold_exceeded}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskEmailNotifications.property.onFailure">OnFailure</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#on_failure DataDatabricksJob#on_failure}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskEmailNotifications.property.onStart">OnStart</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#on_start DataDatabricksJob#on_start}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskEmailNotifications.property.onStreamingBacklogExceeded">OnStreamingBacklogExceeded</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#on_streaming_backlog_exceeded DataDatabricksJob#on_streaming_backlog_exceeded}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskEmailNotifications.property.onSuccess">OnSuccess</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#on_success DataDatabricksJob#on_success}. |
 
 ---
 
@@ -8553,7 +8553,7 @@ NoAlertForSkippedRuns interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#no_alert_for_skipped_runs DataDatabricksJob#no_alert_for_skipped_runs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#no_alert_for_skipped_runs DataDatabricksJob#no_alert_for_skipped_runs}.
 
 ---
 
@@ -8565,7 +8565,7 @@ OnDurationWarningThresholdExceeded *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#on_duration_warning_threshold_exceeded DataDatabricksJob#on_duration_warning_threshold_exceeded}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#on_duration_warning_threshold_exceeded DataDatabricksJob#on_duration_warning_threshold_exceeded}.
 
 ---
 
@@ -8577,7 +8577,7 @@ OnFailure *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#on_failure DataDatabricksJob#on_failure}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#on_failure DataDatabricksJob#on_failure}.
 
 ---
 
@@ -8589,7 +8589,7 @@ OnStart *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#on_start DataDatabricksJob#on_start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#on_start DataDatabricksJob#on_start}.
 
 ---
 
@@ -8601,7 +8601,7 @@ OnStreamingBacklogExceeded *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#on_streaming_backlog_exceeded DataDatabricksJob#on_streaming_backlog_exceeded}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#on_streaming_backlog_exceeded DataDatabricksJob#on_streaming_backlog_exceeded}.
 
 ---
 
@@ -8613,7 +8613,7 @@ OnSuccess *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#on_success DataDatabricksJob#on_success}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#on_success DataDatabricksJob#on_success}.
 
 ---
 
@@ -8647,7 +8647,7 @@ Rules interface{}
 
 rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#rules DataDatabricksJob#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#rules DataDatabricksJob#rules}
 
 ---
 
@@ -8669,9 +8669,9 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskHealthRules.property.metric">Metric</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#metric DataDatabricksJob#metric}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskHealthRules.property.op">Op</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#op DataDatabricksJob#op}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskHealthRules.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#value DataDatabricksJob#value}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskHealthRules.property.metric">Metric</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#metric DataDatabricksJob#metric}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskHealthRules.property.op">Op</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#op DataDatabricksJob#op}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskHealthRules.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#value DataDatabricksJob#value}. |
 
 ---
 
@@ -8683,7 +8683,7 @@ Metric *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#metric DataDatabricksJob#metric}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#metric DataDatabricksJob#metric}.
 
 ---
 
@@ -8695,7 +8695,7 @@ Op *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#op DataDatabricksJob#op}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#op DataDatabricksJob#op}.
 
 ---
 
@@ -8707,7 +8707,7 @@ Value *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#value DataDatabricksJob#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#value DataDatabricksJob#value}.
 
 ---
 
@@ -8735,13 +8735,13 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibrary.property.cran">Cran</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryCran">DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryCran</a></code> | cran block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibrary.property.egg">Egg</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#egg DataDatabricksJob#egg}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibrary.property.jar">Jar</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#jar DataDatabricksJob#jar}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibrary.property.egg">Egg</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#egg DataDatabricksJob#egg}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibrary.property.jar">Jar</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#jar DataDatabricksJob#jar}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibrary.property.maven">Maven</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryMaven">DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryMaven</a></code> | maven block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibrary.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryProviderConfig">DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryProviderConfig</a></code> | provider_config block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibrary.property.pypi">Pypi</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryPypi">DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryPypi</a></code> | pypi block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibrary.property.requirements">Requirements</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#requirements DataDatabricksJob#requirements}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibrary.property.whl">Whl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#whl DataDatabricksJob#whl}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibrary.property.requirements">Requirements</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#requirements DataDatabricksJob#requirements}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibrary.property.whl">Whl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#whl DataDatabricksJob#whl}. |
 
 ---
 
@@ -8755,7 +8755,7 @@ Cran DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryCran
 
 cran block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#cran DataDatabricksJob#cran}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#cran DataDatabricksJob#cran}
 
 ---
 
@@ -8767,7 +8767,7 @@ Egg *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#egg DataDatabricksJob#egg}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#egg DataDatabricksJob#egg}.
 
 ---
 
@@ -8779,7 +8779,7 @@ Jar *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#jar DataDatabricksJob#jar}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#jar DataDatabricksJob#jar}.
 
 ---
 
@@ -8793,7 +8793,7 @@ Maven DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryMaven
 
 maven block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#maven DataDatabricksJob#maven}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#maven DataDatabricksJob#maven}
 
 ---
 
@@ -8807,7 +8807,7 @@ ProviderConfig DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryPro
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#provider_config DataDatabricksJob#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#provider_config DataDatabricksJob#provider_config}
 
 ---
 
@@ -8821,7 +8821,7 @@ Pypi DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryPypi
 
 pypi block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#pypi DataDatabricksJob#pypi}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#pypi DataDatabricksJob#pypi}
 
 ---
 
@@ -8833,7 +8833,7 @@ Requirements *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#requirements DataDatabricksJob#requirements}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#requirements DataDatabricksJob#requirements}.
 
 ---
 
@@ -8845,7 +8845,7 @@ Whl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#whl DataDatabricksJob#whl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#whl DataDatabricksJob#whl}.
 
 ---
 
@@ -8866,8 +8866,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryCran.property.package">Package</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#package DataDatabricksJob#package}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryCran.property.repo">Repo</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#repo DataDatabricksJob#repo}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryCran.property.package">Package</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#package DataDatabricksJob#package}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryCran.property.repo">Repo</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#repo DataDatabricksJob#repo}. |
 
 ---
 
@@ -8879,7 +8879,7 @@ Package *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#package DataDatabricksJob#package}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#package DataDatabricksJob#package}.
 
 ---
 
@@ -8891,7 +8891,7 @@ Repo *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#repo DataDatabricksJob#repo}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#repo DataDatabricksJob#repo}.
 
 ---
 
@@ -8913,9 +8913,9 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryMaven.property.coordinates">Coordinates</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#coordinates DataDatabricksJob#coordinates}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryMaven.property.exclusions">Exclusions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#exclusions DataDatabricksJob#exclusions}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryMaven.property.repo">Repo</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#repo DataDatabricksJob#repo}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryMaven.property.coordinates">Coordinates</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#coordinates DataDatabricksJob#coordinates}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryMaven.property.exclusions">Exclusions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#exclusions DataDatabricksJob#exclusions}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryMaven.property.repo">Repo</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#repo DataDatabricksJob#repo}. |
 
 ---
 
@@ -8927,7 +8927,7 @@ Coordinates *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#coordinates DataDatabricksJob#coordinates}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#coordinates DataDatabricksJob#coordinates}.
 
 ---
 
@@ -8939,7 +8939,7 @@ Exclusions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#exclusions DataDatabricksJob#exclusions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#exclusions DataDatabricksJob#exclusions}.
 
 ---
 
@@ -8951,7 +8951,7 @@ Repo *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#repo DataDatabricksJob#repo}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#repo DataDatabricksJob#repo}.
 
 ---
 
@@ -8971,7 +8971,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#workspace_id DataDatabricksJob#workspace_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#workspace_id DataDatabricksJob#workspace_id}. |
 
 ---
 
@@ -8983,7 +8983,7 @@ WorkspaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#workspace_id DataDatabricksJob#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#workspace_id DataDatabricksJob#workspace_id}.
 
 ---
 
@@ -9004,8 +9004,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryPypi.property.package">Package</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#package DataDatabricksJob#package}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryPypi.property.repo">Repo</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#repo DataDatabricksJob#repo}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryPypi.property.package">Package</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#package DataDatabricksJob#package}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryPypi.property.repo">Repo</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#repo DataDatabricksJob#repo}. |
 
 ---
 
@@ -9017,7 +9017,7 @@ Package *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#package DataDatabricksJob#package}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#package DataDatabricksJob#package}.
 
 ---
 
@@ -9029,7 +9029,7 @@ Repo *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#repo DataDatabricksJob#repo}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#repo DataDatabricksJob#repo}.
 
 ---
 
@@ -9078,35 +9078,35 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewCluster.property.numWorkers">NumWorkers</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#num_workers DataDatabricksJob#num_workers}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewCluster.property.applyPolicyDefaultValues">ApplyPolicyDefaultValues</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#apply_policy_default_values DataDatabricksJob#apply_policy_default_values}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewCluster.property.numWorkers">NumWorkers</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#num_workers DataDatabricksJob#num_workers}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewCluster.property.applyPolicyDefaultValues">ApplyPolicyDefaultValues</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#apply_policy_default_values DataDatabricksJob#apply_policy_default_values}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewCluster.property.autoscale">Autoscale</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterAutoscale">DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterAutoscale</a></code> | autoscale block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewCluster.property.autoterminationMinutes">AutoterminationMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#autotermination_minutes DataDatabricksJob#autotermination_minutes}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewCluster.property.autoterminationMinutes">AutoterminationMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#autotermination_minutes DataDatabricksJob#autotermination_minutes}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewCluster.property.awsAttributes">AwsAttributes</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterAwsAttributes">DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterAwsAttributes</a></code> | aws_attributes block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewCluster.property.azureAttributes">AzureAttributes</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterAzureAttributes">DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterAzureAttributes</a></code> | azure_attributes block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewCluster.property.clusterId">ClusterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#cluster_id DataDatabricksJob#cluster_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewCluster.property.clusterId">ClusterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#cluster_id DataDatabricksJob#cluster_id}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewCluster.property.clusterLogConf">ClusterLogConf</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterLogConf">DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterLogConf</a></code> | cluster_log_conf block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewCluster.property.clusterMountInfo">ClusterMountInfo</a></code> | <code>interface{}</code> | cluster_mount_info block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewCluster.property.clusterName">ClusterName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#cluster_name DataDatabricksJob#cluster_name}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewCluster.property.customTags">CustomTags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#custom_tags DataDatabricksJob#custom_tags}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewCluster.property.dataSecurityMode">DataSecurityMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#data_security_mode DataDatabricksJob#data_security_mode}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewCluster.property.clusterName">ClusterName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#cluster_name DataDatabricksJob#cluster_name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewCluster.property.customTags">CustomTags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#custom_tags DataDatabricksJob#custom_tags}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewCluster.property.dataSecurityMode">DataSecurityMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#data_security_mode DataDatabricksJob#data_security_mode}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewCluster.property.dockerImage">DockerImage</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterDockerImage">DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterDockerImage</a></code> | docker_image block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewCluster.property.driverInstancePoolId">DriverInstancePoolId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#driver_instance_pool_id DataDatabricksJob#driver_instance_pool_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewCluster.property.driverNodeTypeId">DriverNodeTypeId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#driver_node_type_id DataDatabricksJob#driver_node_type_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewCluster.property.enableElasticDisk">EnableElasticDisk</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#enable_elastic_disk DataDatabricksJob#enable_elastic_disk}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewCluster.property.enableLocalDiskEncryption">EnableLocalDiskEncryption</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#enable_local_disk_encryption DataDatabricksJob#enable_local_disk_encryption}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewCluster.property.driverInstancePoolId">DriverInstancePoolId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#driver_instance_pool_id DataDatabricksJob#driver_instance_pool_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewCluster.property.driverNodeTypeId">DriverNodeTypeId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#driver_node_type_id DataDatabricksJob#driver_node_type_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewCluster.property.enableElasticDisk">EnableElasticDisk</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#enable_elastic_disk DataDatabricksJob#enable_elastic_disk}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewCluster.property.enableLocalDiskEncryption">EnableLocalDiskEncryption</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#enable_local_disk_encryption DataDatabricksJob#enable_local_disk_encryption}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewCluster.property.gcpAttributes">GcpAttributes</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterGcpAttributes">DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterGcpAttributes</a></code> | gcp_attributes block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewCluster.property.idempotencyToken">IdempotencyToken</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#idempotency_token DataDatabricksJob#idempotency_token}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewCluster.property.idempotencyToken">IdempotencyToken</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#idempotency_token DataDatabricksJob#idempotency_token}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewCluster.property.initScripts">InitScripts</a></code> | <code>interface{}</code> | init_scripts block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewCluster.property.instancePoolId">InstancePoolId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#instance_pool_id DataDatabricksJob#instance_pool_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewCluster.property.nodeTypeId">NodeTypeId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#node_type_id DataDatabricksJob#node_type_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewCluster.property.policyId">PolicyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#policy_id DataDatabricksJob#policy_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewCluster.property.runtimeEngine">RuntimeEngine</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#runtime_engine DataDatabricksJob#runtime_engine}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewCluster.property.singleUserName">SingleUserName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#single_user_name DataDatabricksJob#single_user_name}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewCluster.property.sparkConf">SparkConf</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#spark_conf DataDatabricksJob#spark_conf}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewCluster.property.sparkEnvVars">SparkEnvVars</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#spark_env_vars DataDatabricksJob#spark_env_vars}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewCluster.property.sparkVersion">SparkVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#spark_version DataDatabricksJob#spark_version}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewCluster.property.sshPublicKeys">SshPublicKeys</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#ssh_public_keys DataDatabricksJob#ssh_public_keys}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewCluster.property.instancePoolId">InstancePoolId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#instance_pool_id DataDatabricksJob#instance_pool_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewCluster.property.nodeTypeId">NodeTypeId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#node_type_id DataDatabricksJob#node_type_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewCluster.property.policyId">PolicyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#policy_id DataDatabricksJob#policy_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewCluster.property.runtimeEngine">RuntimeEngine</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#runtime_engine DataDatabricksJob#runtime_engine}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewCluster.property.singleUserName">SingleUserName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#single_user_name DataDatabricksJob#single_user_name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewCluster.property.sparkConf">SparkConf</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#spark_conf DataDatabricksJob#spark_conf}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewCluster.property.sparkEnvVars">SparkEnvVars</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#spark_env_vars DataDatabricksJob#spark_env_vars}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewCluster.property.sparkVersion">SparkVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#spark_version DataDatabricksJob#spark_version}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewCluster.property.sshPublicKeys">SshPublicKeys</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#ssh_public_keys DataDatabricksJob#ssh_public_keys}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewCluster.property.workloadType">WorkloadType</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterWorkloadType">DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterWorkloadType</a></code> | workload_type block. |
 
 ---
@@ -9119,7 +9119,7 @@ NumWorkers *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#num_workers DataDatabricksJob#num_workers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#num_workers DataDatabricksJob#num_workers}.
 
 ---
 
@@ -9131,7 +9131,7 @@ ApplyPolicyDefaultValues interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#apply_policy_default_values DataDatabricksJob#apply_policy_default_values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#apply_policy_default_values DataDatabricksJob#apply_policy_default_values}.
 
 ---
 
@@ -9145,7 +9145,7 @@ Autoscale DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterAutos
 
 autoscale block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#autoscale DataDatabricksJob#autoscale}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#autoscale DataDatabricksJob#autoscale}
 
 ---
 
@@ -9157,7 +9157,7 @@ AutoterminationMinutes *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#autotermination_minutes DataDatabricksJob#autotermination_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#autotermination_minutes DataDatabricksJob#autotermination_minutes}.
 
 ---
 
@@ -9171,7 +9171,7 @@ AwsAttributes DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterA
 
 aws_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#aws_attributes DataDatabricksJob#aws_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#aws_attributes DataDatabricksJob#aws_attributes}
 
 ---
 
@@ -9185,7 +9185,7 @@ AzureAttributes DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewCluste
 
 azure_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#azure_attributes DataDatabricksJob#azure_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#azure_attributes DataDatabricksJob#azure_attributes}
 
 ---
 
@@ -9197,7 +9197,7 @@ ClusterId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#cluster_id DataDatabricksJob#cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#cluster_id DataDatabricksJob#cluster_id}.
 
 ---
 
@@ -9211,7 +9211,7 @@ ClusterLogConf DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewCluster
 
 cluster_log_conf block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#cluster_log_conf DataDatabricksJob#cluster_log_conf}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#cluster_log_conf DataDatabricksJob#cluster_log_conf}
 
 ---
 
@@ -9225,7 +9225,7 @@ ClusterMountInfo interface{}
 
 cluster_mount_info block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#cluster_mount_info DataDatabricksJob#cluster_mount_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#cluster_mount_info DataDatabricksJob#cluster_mount_info}
 
 ---
 
@@ -9237,7 +9237,7 @@ ClusterName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#cluster_name DataDatabricksJob#cluster_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#cluster_name DataDatabricksJob#cluster_name}.
 
 ---
 
@@ -9249,7 +9249,7 @@ CustomTags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#custom_tags DataDatabricksJob#custom_tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#custom_tags DataDatabricksJob#custom_tags}.
 
 ---
 
@@ -9261,7 +9261,7 @@ DataSecurityMode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#data_security_mode DataDatabricksJob#data_security_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#data_security_mode DataDatabricksJob#data_security_mode}.
 
 ---
 
@@ -9275,7 +9275,7 @@ DockerImage DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterDoc
 
 docker_image block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#docker_image DataDatabricksJob#docker_image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#docker_image DataDatabricksJob#docker_image}
 
 ---
 
@@ -9287,7 +9287,7 @@ DriverInstancePoolId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#driver_instance_pool_id DataDatabricksJob#driver_instance_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#driver_instance_pool_id DataDatabricksJob#driver_instance_pool_id}.
 
 ---
 
@@ -9299,7 +9299,7 @@ DriverNodeTypeId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#driver_node_type_id DataDatabricksJob#driver_node_type_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#driver_node_type_id DataDatabricksJob#driver_node_type_id}.
 
 ---
 
@@ -9311,7 +9311,7 @@ EnableElasticDisk interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#enable_elastic_disk DataDatabricksJob#enable_elastic_disk}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#enable_elastic_disk DataDatabricksJob#enable_elastic_disk}.
 
 ---
 
@@ -9323,7 +9323,7 @@ EnableLocalDiskEncryption interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#enable_local_disk_encryption DataDatabricksJob#enable_local_disk_encryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#enable_local_disk_encryption DataDatabricksJob#enable_local_disk_encryption}.
 
 ---
 
@@ -9337,7 +9337,7 @@ GcpAttributes DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterG
 
 gcp_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#gcp_attributes DataDatabricksJob#gcp_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#gcp_attributes DataDatabricksJob#gcp_attributes}
 
 ---
 
@@ -9349,7 +9349,7 @@ IdempotencyToken *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#idempotency_token DataDatabricksJob#idempotency_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#idempotency_token DataDatabricksJob#idempotency_token}.
 
 ---
 
@@ -9363,7 +9363,7 @@ InitScripts interface{}
 
 init_scripts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#init_scripts DataDatabricksJob#init_scripts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#init_scripts DataDatabricksJob#init_scripts}
 
 ---
 
@@ -9375,7 +9375,7 @@ InstancePoolId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#instance_pool_id DataDatabricksJob#instance_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#instance_pool_id DataDatabricksJob#instance_pool_id}.
 
 ---
 
@@ -9387,7 +9387,7 @@ NodeTypeId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#node_type_id DataDatabricksJob#node_type_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#node_type_id DataDatabricksJob#node_type_id}.
 
 ---
 
@@ -9399,7 +9399,7 @@ PolicyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#policy_id DataDatabricksJob#policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#policy_id DataDatabricksJob#policy_id}.
 
 ---
 
@@ -9411,7 +9411,7 @@ RuntimeEngine *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#runtime_engine DataDatabricksJob#runtime_engine}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#runtime_engine DataDatabricksJob#runtime_engine}.
 
 ---
 
@@ -9423,7 +9423,7 @@ SingleUserName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#single_user_name DataDatabricksJob#single_user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#single_user_name DataDatabricksJob#single_user_name}.
 
 ---
 
@@ -9435,7 +9435,7 @@ SparkConf *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#spark_conf DataDatabricksJob#spark_conf}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#spark_conf DataDatabricksJob#spark_conf}.
 
 ---
 
@@ -9447,7 +9447,7 @@ SparkEnvVars *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#spark_env_vars DataDatabricksJob#spark_env_vars}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#spark_env_vars DataDatabricksJob#spark_env_vars}.
 
 ---
 
@@ -9459,7 +9459,7 @@ SparkVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#spark_version DataDatabricksJob#spark_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#spark_version DataDatabricksJob#spark_version}.
 
 ---
 
@@ -9471,7 +9471,7 @@ SshPublicKeys *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#ssh_public_keys DataDatabricksJob#ssh_public_keys}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#ssh_public_keys DataDatabricksJob#ssh_public_keys}.
 
 ---
 
@@ -9485,7 +9485,7 @@ WorkloadType DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterWo
 
 workload_type block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#workload_type DataDatabricksJob#workload_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#workload_type DataDatabricksJob#workload_type}
 
 ---
 
@@ -9506,8 +9506,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterAutoscale.property.maxWorkers">MaxWorkers</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#max_workers DataDatabricksJob#max_workers}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterAutoscale.property.minWorkers">MinWorkers</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#min_workers DataDatabricksJob#min_workers}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterAutoscale.property.maxWorkers">MaxWorkers</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#max_workers DataDatabricksJob#max_workers}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterAutoscale.property.minWorkers">MinWorkers</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#min_workers DataDatabricksJob#min_workers}. |
 
 ---
 
@@ -9519,7 +9519,7 @@ MaxWorkers *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#max_workers DataDatabricksJob#max_workers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#max_workers DataDatabricksJob#max_workers}.
 
 ---
 
@@ -9531,7 +9531,7 @@ MinWorkers *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#min_workers DataDatabricksJob#min_workers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#min_workers DataDatabricksJob#min_workers}.
 
 ---
 
@@ -9558,14 +9558,14 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterAwsAttributes.property.availability">Availability</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#availability DataDatabricksJob#availability}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterAwsAttributes.property.ebsVolumeCount">EbsVolumeCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#ebs_volume_count DataDatabricksJob#ebs_volume_count}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterAwsAttributes.property.ebsVolumeSize">EbsVolumeSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#ebs_volume_size DataDatabricksJob#ebs_volume_size}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterAwsAttributes.property.ebsVolumeType">EbsVolumeType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#ebs_volume_type DataDatabricksJob#ebs_volume_type}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterAwsAttributes.property.firstOnDemand">FirstOnDemand</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#first_on_demand DataDatabricksJob#first_on_demand}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterAwsAttributes.property.instanceProfileArn">InstanceProfileArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#instance_profile_arn DataDatabricksJob#instance_profile_arn}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterAwsAttributes.property.spotBidPricePercent">SpotBidPricePercent</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#spot_bid_price_percent DataDatabricksJob#spot_bid_price_percent}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterAwsAttributes.property.zoneId">ZoneId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#zone_id DataDatabricksJob#zone_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterAwsAttributes.property.availability">Availability</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#availability DataDatabricksJob#availability}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterAwsAttributes.property.ebsVolumeCount">EbsVolumeCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#ebs_volume_count DataDatabricksJob#ebs_volume_count}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterAwsAttributes.property.ebsVolumeSize">EbsVolumeSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#ebs_volume_size DataDatabricksJob#ebs_volume_size}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterAwsAttributes.property.ebsVolumeType">EbsVolumeType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#ebs_volume_type DataDatabricksJob#ebs_volume_type}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterAwsAttributes.property.firstOnDemand">FirstOnDemand</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#first_on_demand DataDatabricksJob#first_on_demand}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterAwsAttributes.property.instanceProfileArn">InstanceProfileArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#instance_profile_arn DataDatabricksJob#instance_profile_arn}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterAwsAttributes.property.spotBidPricePercent">SpotBidPricePercent</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#spot_bid_price_percent DataDatabricksJob#spot_bid_price_percent}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterAwsAttributes.property.zoneId">ZoneId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#zone_id DataDatabricksJob#zone_id}. |
 
 ---
 
@@ -9577,7 +9577,7 @@ Availability *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#availability DataDatabricksJob#availability}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#availability DataDatabricksJob#availability}.
 
 ---
 
@@ -9589,7 +9589,7 @@ EbsVolumeCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#ebs_volume_count DataDatabricksJob#ebs_volume_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#ebs_volume_count DataDatabricksJob#ebs_volume_count}.
 
 ---
 
@@ -9601,7 +9601,7 @@ EbsVolumeSize *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#ebs_volume_size DataDatabricksJob#ebs_volume_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#ebs_volume_size DataDatabricksJob#ebs_volume_size}.
 
 ---
 
@@ -9613,7 +9613,7 @@ EbsVolumeType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#ebs_volume_type DataDatabricksJob#ebs_volume_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#ebs_volume_type DataDatabricksJob#ebs_volume_type}.
 
 ---
 
@@ -9625,7 +9625,7 @@ FirstOnDemand *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#first_on_demand DataDatabricksJob#first_on_demand}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#first_on_demand DataDatabricksJob#first_on_demand}.
 
 ---
 
@@ -9637,7 +9637,7 @@ InstanceProfileArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#instance_profile_arn DataDatabricksJob#instance_profile_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#instance_profile_arn DataDatabricksJob#instance_profile_arn}.
 
 ---
 
@@ -9649,7 +9649,7 @@ SpotBidPricePercent *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#spot_bid_price_percent DataDatabricksJob#spot_bid_price_percent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#spot_bid_price_percent DataDatabricksJob#spot_bid_price_percent}.
 
 ---
 
@@ -9661,7 +9661,7 @@ ZoneId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#zone_id DataDatabricksJob#zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#zone_id DataDatabricksJob#zone_id}.
 
 ---
 
@@ -9683,9 +9683,9 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterAzureAttributes.property.availability">Availability</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#availability DataDatabricksJob#availability}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterAzureAttributes.property.firstOnDemand">FirstOnDemand</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#first_on_demand DataDatabricksJob#first_on_demand}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterAzureAttributes.property.spotBidMaxPrice">SpotBidMaxPrice</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#spot_bid_max_price DataDatabricksJob#spot_bid_max_price}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterAzureAttributes.property.availability">Availability</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#availability DataDatabricksJob#availability}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterAzureAttributes.property.firstOnDemand">FirstOnDemand</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#first_on_demand DataDatabricksJob#first_on_demand}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterAzureAttributes.property.spotBidMaxPrice">SpotBidMaxPrice</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#spot_bid_max_price DataDatabricksJob#spot_bid_max_price}. |
 
 ---
 
@@ -9697,7 +9697,7 @@ Availability *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#availability DataDatabricksJob#availability}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#availability DataDatabricksJob#availability}.
 
 ---
 
@@ -9709,7 +9709,7 @@ FirstOnDemand *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#first_on_demand DataDatabricksJob#first_on_demand}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#first_on_demand DataDatabricksJob#first_on_demand}.
 
 ---
 
@@ -9721,7 +9721,7 @@ SpotBidMaxPrice *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#spot_bid_max_price DataDatabricksJob#spot_bid_max_price}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#spot_bid_max_price DataDatabricksJob#spot_bid_max_price}.
 
 ---
 
@@ -9757,7 +9757,7 @@ Dbfs DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterLog
 
 dbfs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#dbfs DataDatabricksJob#dbfs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#dbfs DataDatabricksJob#dbfs}
 
 ---
 
@@ -9771,7 +9771,7 @@ S3 DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterLogCo
 
 s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#s3 DataDatabricksJob#s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#s3 DataDatabricksJob#s3}
 
 ---
 
@@ -9791,7 +9791,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterLogConfDbfs.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterLogConfDbfs.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
 
 ---
 
@@ -9803,7 +9803,7 @@ Destination *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
 
 ---
 
@@ -9829,13 +9829,13 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterLogConfS3.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterLogConfS3.property.cannedAcl">CannedAcl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#canned_acl DataDatabricksJob#canned_acl}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterLogConfS3.property.enableEncryption">EnableEncryption</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#enable_encryption DataDatabricksJob#enable_encryption}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterLogConfS3.property.encryptionType">EncryptionType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#encryption_type DataDatabricksJob#encryption_type}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterLogConfS3.property.endpoint">Endpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#endpoint DataDatabricksJob#endpoint}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterLogConfS3.property.kmsKey">KmsKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#kms_key DataDatabricksJob#kms_key}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterLogConfS3.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#region DataDatabricksJob#region}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterLogConfS3.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterLogConfS3.property.cannedAcl">CannedAcl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#canned_acl DataDatabricksJob#canned_acl}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterLogConfS3.property.enableEncryption">EnableEncryption</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#enable_encryption DataDatabricksJob#enable_encryption}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterLogConfS3.property.encryptionType">EncryptionType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#encryption_type DataDatabricksJob#encryption_type}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterLogConfS3.property.endpoint">Endpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#endpoint DataDatabricksJob#endpoint}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterLogConfS3.property.kmsKey">KmsKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#kms_key DataDatabricksJob#kms_key}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterLogConfS3.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#region DataDatabricksJob#region}. |
 
 ---
 
@@ -9847,7 +9847,7 @@ Destination *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
 
 ---
 
@@ -9859,7 +9859,7 @@ CannedAcl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#canned_acl DataDatabricksJob#canned_acl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#canned_acl DataDatabricksJob#canned_acl}.
 
 ---
 
@@ -9871,7 +9871,7 @@ EnableEncryption interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#enable_encryption DataDatabricksJob#enable_encryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#enable_encryption DataDatabricksJob#enable_encryption}.
 
 ---
 
@@ -9883,7 +9883,7 @@ EncryptionType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#encryption_type DataDatabricksJob#encryption_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#encryption_type DataDatabricksJob#encryption_type}.
 
 ---
 
@@ -9895,7 +9895,7 @@ Endpoint *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#endpoint DataDatabricksJob#endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#endpoint DataDatabricksJob#endpoint}.
 
 ---
 
@@ -9907,7 +9907,7 @@ KmsKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#kms_key DataDatabricksJob#kms_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#kms_key DataDatabricksJob#kms_key}.
 
 ---
 
@@ -9919,7 +9919,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#region DataDatabricksJob#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#region DataDatabricksJob#region}.
 
 ---
 
@@ -9941,9 +9941,9 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterMountInfo.property.localMountDirPath">LocalMountDirPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#local_mount_dir_path DataDatabricksJob#local_mount_dir_path}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterMountInfo.property.localMountDirPath">LocalMountDirPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#local_mount_dir_path DataDatabricksJob#local_mount_dir_path}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterMountInfo.property.networkFilesystemInfo">NetworkFilesystemInfo</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterMountInfoNetworkFilesystemInfo">DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterMountInfoNetworkFilesystemInfo</a></code> | network_filesystem_info block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterMountInfo.property.remoteMountDirPath">RemoteMountDirPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#remote_mount_dir_path DataDatabricksJob#remote_mount_dir_path}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterMountInfo.property.remoteMountDirPath">RemoteMountDirPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#remote_mount_dir_path DataDatabricksJob#remote_mount_dir_path}. |
 
 ---
 
@@ -9955,7 +9955,7 @@ LocalMountDirPath *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#local_mount_dir_path DataDatabricksJob#local_mount_dir_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#local_mount_dir_path DataDatabricksJob#local_mount_dir_path}.
 
 ---
 
@@ -9969,7 +9969,7 @@ NetworkFilesystemInfo DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNew
 
 network_filesystem_info block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#network_filesystem_info DataDatabricksJob#network_filesystem_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#network_filesystem_info DataDatabricksJob#network_filesystem_info}
 
 ---
 
@@ -9981,7 +9981,7 @@ RemoteMountDirPath *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#remote_mount_dir_path DataDatabricksJob#remote_mount_dir_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#remote_mount_dir_path DataDatabricksJob#remote_mount_dir_path}.
 
 ---
 
@@ -10002,8 +10002,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterMountInfoNetworkFilesystemInfo.property.serverAddress">ServerAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#server_address DataDatabricksJob#server_address}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterMountInfoNetworkFilesystemInfo.property.mountOptions">MountOptions</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#mount_options DataDatabricksJob#mount_options}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterMountInfoNetworkFilesystemInfo.property.serverAddress">ServerAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#server_address DataDatabricksJob#server_address}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterMountInfoNetworkFilesystemInfo.property.mountOptions">MountOptions</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#mount_options DataDatabricksJob#mount_options}. |
 
 ---
 
@@ -10015,7 +10015,7 @@ ServerAddress *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#server_address DataDatabricksJob#server_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#server_address DataDatabricksJob#server_address}.
 
 ---
 
@@ -10027,7 +10027,7 @@ MountOptions *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#mount_options DataDatabricksJob#mount_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#mount_options DataDatabricksJob#mount_options}.
 
 ---
 
@@ -10048,7 +10048,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterDockerImage.property.url">Url</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#url DataDatabricksJob#url}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterDockerImage.property.url">Url</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#url DataDatabricksJob#url}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterDockerImage.property.basicAuth">BasicAuth</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterDockerImageBasicAuth">DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterDockerImageBasicAuth</a></code> | basic_auth block. |
 
 ---
@@ -10061,7 +10061,7 @@ Url *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#url DataDatabricksJob#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#url DataDatabricksJob#url}.
 
 ---
 
@@ -10075,7 +10075,7 @@ BasicAuth DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterDocke
 
 basic_auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#basic_auth DataDatabricksJob#basic_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#basic_auth DataDatabricksJob#basic_auth}
 
 ---
 
@@ -10096,8 +10096,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterDockerImageBasicAuth.property.password">Password</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#password DataDatabricksJob#password}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterDockerImageBasicAuth.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#username DataDatabricksJob#username}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterDockerImageBasicAuth.property.password">Password</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#password DataDatabricksJob#password}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterDockerImageBasicAuth.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#username DataDatabricksJob#username}. |
 
 ---
 
@@ -10109,7 +10109,7 @@ Password *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#password DataDatabricksJob#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#password DataDatabricksJob#password}.
 
 ---
 
@@ -10121,7 +10121,7 @@ Username *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#username DataDatabricksJob#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#username DataDatabricksJob#username}.
 
 ---
 
@@ -10146,12 +10146,12 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterGcpAttributes.property.availability">Availability</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#availability DataDatabricksJob#availability}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterGcpAttributes.property.bootDiskSize">BootDiskSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#boot_disk_size DataDatabricksJob#boot_disk_size}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterGcpAttributes.property.googleServiceAccount">GoogleServiceAccount</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#google_service_account DataDatabricksJob#google_service_account}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterGcpAttributes.property.localSsdCount">LocalSsdCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#local_ssd_count DataDatabricksJob#local_ssd_count}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterGcpAttributes.property.usePreemptibleExecutors">UsePreemptibleExecutors</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#use_preemptible_executors DataDatabricksJob#use_preemptible_executors}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterGcpAttributes.property.zoneId">ZoneId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#zone_id DataDatabricksJob#zone_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterGcpAttributes.property.availability">Availability</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#availability DataDatabricksJob#availability}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterGcpAttributes.property.bootDiskSize">BootDiskSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#boot_disk_size DataDatabricksJob#boot_disk_size}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterGcpAttributes.property.googleServiceAccount">GoogleServiceAccount</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#google_service_account DataDatabricksJob#google_service_account}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterGcpAttributes.property.localSsdCount">LocalSsdCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#local_ssd_count DataDatabricksJob#local_ssd_count}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterGcpAttributes.property.usePreemptibleExecutors">UsePreemptibleExecutors</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#use_preemptible_executors DataDatabricksJob#use_preemptible_executors}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterGcpAttributes.property.zoneId">ZoneId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#zone_id DataDatabricksJob#zone_id}. |
 
 ---
 
@@ -10163,7 +10163,7 @@ Availability *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#availability DataDatabricksJob#availability}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#availability DataDatabricksJob#availability}.
 
 ---
 
@@ -10175,7 +10175,7 @@ BootDiskSize *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#boot_disk_size DataDatabricksJob#boot_disk_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#boot_disk_size DataDatabricksJob#boot_disk_size}.
 
 ---
 
@@ -10187,7 +10187,7 @@ GoogleServiceAccount *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#google_service_account DataDatabricksJob#google_service_account}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#google_service_account DataDatabricksJob#google_service_account}.
 
 ---
 
@@ -10199,7 +10199,7 @@ LocalSsdCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#local_ssd_count DataDatabricksJob#local_ssd_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#local_ssd_count DataDatabricksJob#local_ssd_count}.
 
 ---
 
@@ -10211,7 +10211,7 @@ UsePreemptibleExecutors interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#use_preemptible_executors DataDatabricksJob#use_preemptible_executors}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#use_preemptible_executors DataDatabricksJob#use_preemptible_executors}.
 
 ---
 
@@ -10223,7 +10223,7 @@ ZoneId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#zone_id DataDatabricksJob#zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#zone_id DataDatabricksJob#zone_id}.
 
 ---
 
@@ -10269,7 +10269,7 @@ Abfss DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScrip
 
 abfss block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#abfss DataDatabricksJob#abfss}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#abfss DataDatabricksJob#abfss}
 
 ---
 
@@ -10283,7 +10283,7 @@ Dbfs DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScript
 
 dbfs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#dbfs DataDatabricksJob#dbfs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#dbfs DataDatabricksJob#dbfs}
 
 ---
 
@@ -10297,7 +10297,7 @@ File DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScript
 
 file block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#file DataDatabricksJob#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#file DataDatabricksJob#file}
 
 ---
 
@@ -10311,7 +10311,7 @@ Gcs DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScripts
 
 gcs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#gcs DataDatabricksJob#gcs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#gcs DataDatabricksJob#gcs}
 
 ---
 
@@ -10325,7 +10325,7 @@ S3 DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsS
 
 s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#s3 DataDatabricksJob#s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#s3 DataDatabricksJob#s3}
 
 ---
 
@@ -10339,7 +10339,7 @@ Volumes DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScr
 
 volumes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#volumes DataDatabricksJob#volumes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#volumes DataDatabricksJob#volumes}
 
 ---
 
@@ -10353,7 +10353,7 @@ Workspace DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitS
 
 workspace block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#workspace DataDatabricksJob#workspace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#workspace DataDatabricksJob#workspace}
 
 ---
 
@@ -10373,7 +10373,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsAbfss.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsAbfss.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
 
 ---
 
@@ -10385,7 +10385,7 @@ Destination *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
 
 ---
 
@@ -10405,7 +10405,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsDbfs.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsDbfs.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
 
 ---
 
@@ -10417,7 +10417,7 @@ Destination *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
 
 ---
 
@@ -10437,7 +10437,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsFile.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsFile.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
 
 ---
 
@@ -10449,7 +10449,7 @@ Destination *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
 
 ---
 
@@ -10469,7 +10469,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsGcs.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsGcs.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
 
 ---
 
@@ -10481,7 +10481,7 @@ Destination *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
 
 ---
 
@@ -10507,13 +10507,13 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsS3.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsS3.property.cannedAcl">CannedAcl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#canned_acl DataDatabricksJob#canned_acl}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsS3.property.enableEncryption">EnableEncryption</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#enable_encryption DataDatabricksJob#enable_encryption}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsS3.property.encryptionType">EncryptionType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#encryption_type DataDatabricksJob#encryption_type}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsS3.property.endpoint">Endpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#endpoint DataDatabricksJob#endpoint}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsS3.property.kmsKey">KmsKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#kms_key DataDatabricksJob#kms_key}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsS3.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#region DataDatabricksJob#region}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsS3.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsS3.property.cannedAcl">CannedAcl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#canned_acl DataDatabricksJob#canned_acl}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsS3.property.enableEncryption">EnableEncryption</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#enable_encryption DataDatabricksJob#enable_encryption}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsS3.property.encryptionType">EncryptionType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#encryption_type DataDatabricksJob#encryption_type}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsS3.property.endpoint">Endpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#endpoint DataDatabricksJob#endpoint}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsS3.property.kmsKey">KmsKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#kms_key DataDatabricksJob#kms_key}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsS3.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#region DataDatabricksJob#region}. |
 
 ---
 
@@ -10525,7 +10525,7 @@ Destination *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
 
 ---
 
@@ -10537,7 +10537,7 @@ CannedAcl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#canned_acl DataDatabricksJob#canned_acl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#canned_acl DataDatabricksJob#canned_acl}.
 
 ---
 
@@ -10549,7 +10549,7 @@ EnableEncryption interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#enable_encryption DataDatabricksJob#enable_encryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#enable_encryption DataDatabricksJob#enable_encryption}.
 
 ---
 
@@ -10561,7 +10561,7 @@ EncryptionType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#encryption_type DataDatabricksJob#encryption_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#encryption_type DataDatabricksJob#encryption_type}.
 
 ---
 
@@ -10573,7 +10573,7 @@ Endpoint *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#endpoint DataDatabricksJob#endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#endpoint DataDatabricksJob#endpoint}.
 
 ---
 
@@ -10585,7 +10585,7 @@ KmsKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#kms_key DataDatabricksJob#kms_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#kms_key DataDatabricksJob#kms_key}.
 
 ---
 
@@ -10597,7 +10597,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#region DataDatabricksJob#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#region DataDatabricksJob#region}.
 
 ---
 
@@ -10617,7 +10617,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsVolumes.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsVolumes.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
 
 ---
 
@@ -10629,7 +10629,7 @@ Destination *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
 
 ---
 
@@ -10649,7 +10649,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsWorkspace.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsWorkspace.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
 
 ---
 
@@ -10661,7 +10661,7 @@ Destination *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
 
 ---
 
@@ -10695,7 +10695,7 @@ Clients DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterWorkloa
 
 clients block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#clients DataDatabricksJob#clients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#clients DataDatabricksJob#clients}
 
 ---
 
@@ -10716,8 +10716,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterWorkloadTypeClients.property.jobs">Jobs</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#jobs DataDatabricksJob#jobs}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterWorkloadTypeClients.property.notebooks">Notebooks</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#notebooks DataDatabricksJob#notebooks}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterWorkloadTypeClients.property.jobs">Jobs</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#jobs DataDatabricksJob#jobs}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterWorkloadTypeClients.property.notebooks">Notebooks</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#notebooks DataDatabricksJob#notebooks}. |
 
 ---
 
@@ -10729,7 +10729,7 @@ Jobs interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#jobs DataDatabricksJob#jobs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#jobs DataDatabricksJob#jobs}.
 
 ---
 
@@ -10741,7 +10741,7 @@ Notebooks interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#notebooks DataDatabricksJob#notebooks}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#notebooks DataDatabricksJob#notebooks}.
 
 ---
 
@@ -10764,10 +10764,10 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNotebookTask.property.notebookPath">NotebookPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#notebook_path DataDatabricksJob#notebook_path}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNotebookTask.property.baseParameters">BaseParameters</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#base_parameters DataDatabricksJob#base_parameters}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNotebookTask.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#source DataDatabricksJob#source}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNotebookTask.property.warehouseId">WarehouseId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#warehouse_id DataDatabricksJob#warehouse_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNotebookTask.property.notebookPath">NotebookPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#notebook_path DataDatabricksJob#notebook_path}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNotebookTask.property.baseParameters">BaseParameters</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#base_parameters DataDatabricksJob#base_parameters}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNotebookTask.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#source DataDatabricksJob#source}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNotebookTask.property.warehouseId">WarehouseId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#warehouse_id DataDatabricksJob#warehouse_id}. |
 
 ---
 
@@ -10779,7 +10779,7 @@ NotebookPath *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#notebook_path DataDatabricksJob#notebook_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#notebook_path DataDatabricksJob#notebook_path}.
 
 ---
 
@@ -10791,7 +10791,7 @@ BaseParameters *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#base_parameters DataDatabricksJob#base_parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#base_parameters DataDatabricksJob#base_parameters}.
 
 ---
 
@@ -10803,7 +10803,7 @@ Source *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#source DataDatabricksJob#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#source DataDatabricksJob#source}.
 
 ---
 
@@ -10815,7 +10815,7 @@ WarehouseId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#warehouse_id DataDatabricksJob#warehouse_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#warehouse_id DataDatabricksJob#warehouse_id}.
 
 ---
 
@@ -10837,9 +10837,9 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNotificationSettings.property.alertOnLastAttempt">AlertOnLastAttempt</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#alert_on_last_attempt DataDatabricksJob#alert_on_last_attempt}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNotificationSettings.property.noAlertForCanceledRuns">NoAlertForCanceledRuns</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#no_alert_for_canceled_runs DataDatabricksJob#no_alert_for_canceled_runs}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNotificationSettings.property.noAlertForSkippedRuns">NoAlertForSkippedRuns</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#no_alert_for_skipped_runs DataDatabricksJob#no_alert_for_skipped_runs}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNotificationSettings.property.alertOnLastAttempt">AlertOnLastAttempt</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#alert_on_last_attempt DataDatabricksJob#alert_on_last_attempt}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNotificationSettings.property.noAlertForCanceledRuns">NoAlertForCanceledRuns</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#no_alert_for_canceled_runs DataDatabricksJob#no_alert_for_canceled_runs}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNotificationSettings.property.noAlertForSkippedRuns">NoAlertForSkippedRuns</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#no_alert_for_skipped_runs DataDatabricksJob#no_alert_for_skipped_runs}. |
 
 ---
 
@@ -10851,7 +10851,7 @@ AlertOnLastAttempt interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#alert_on_last_attempt DataDatabricksJob#alert_on_last_attempt}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#alert_on_last_attempt DataDatabricksJob#alert_on_last_attempt}.
 
 ---
 
@@ -10863,7 +10863,7 @@ NoAlertForCanceledRuns interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#no_alert_for_canceled_runs DataDatabricksJob#no_alert_for_canceled_runs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#no_alert_for_canceled_runs DataDatabricksJob#no_alert_for_canceled_runs}.
 
 ---
 
@@ -10875,7 +10875,7 @@ NoAlertForSkippedRuns interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#no_alert_for_skipped_runs DataDatabricksJob#no_alert_for_skipped_runs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#no_alert_for_skipped_runs DataDatabricksJob#no_alert_for_skipped_runs}.
 
 ---
 
@@ -10896,8 +10896,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPipelineTask.property.pipelineId">PipelineId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#pipeline_id DataDatabricksJob#pipeline_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPipelineTask.property.fullRefresh">FullRefresh</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#full_refresh DataDatabricksJob#full_refresh}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPipelineTask.property.pipelineId">PipelineId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#pipeline_id DataDatabricksJob#pipeline_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPipelineTask.property.fullRefresh">FullRefresh</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#full_refresh DataDatabricksJob#full_refresh}. |
 
 ---
 
@@ -10909,7 +10909,7 @@ PipelineId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#pipeline_id DataDatabricksJob#pipeline_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#pipeline_id DataDatabricksJob#pipeline_id}.
 
 ---
 
@@ -10921,7 +10921,7 @@ FullRefresh interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#full_refresh DataDatabricksJob#full_refresh}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#full_refresh DataDatabricksJob#full_refresh}.
 
 ---
 
@@ -10945,11 +10945,11 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPowerBiTask.property.connectionResourceName">ConnectionResourceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#connection_resource_name DataDatabricksJob#connection_resource_name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPowerBiTask.property.connectionResourceName">ConnectionResourceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#connection_resource_name DataDatabricksJob#connection_resource_name}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPowerBiTask.property.powerBiModel">PowerBiModel</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPowerBiTaskPowerBiModel">DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPowerBiTaskPowerBiModel</a></code> | power_bi_model block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPowerBiTask.property.refreshAfterUpdate">RefreshAfterUpdate</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#refresh_after_update DataDatabricksJob#refresh_after_update}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPowerBiTask.property.refreshAfterUpdate">RefreshAfterUpdate</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#refresh_after_update DataDatabricksJob#refresh_after_update}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPowerBiTask.property.tables">Tables</a></code> | <code>interface{}</code> | tables block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPowerBiTask.property.warehouseId">WarehouseId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#warehouse_id DataDatabricksJob#warehouse_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPowerBiTask.property.warehouseId">WarehouseId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#warehouse_id DataDatabricksJob#warehouse_id}. |
 
 ---
 
@@ -10961,7 +10961,7 @@ ConnectionResourceName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#connection_resource_name DataDatabricksJob#connection_resource_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#connection_resource_name DataDatabricksJob#connection_resource_name}.
 
 ---
 
@@ -10975,7 +10975,7 @@ PowerBiModel DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPowerBiTaskP
 
 power_bi_model block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#power_bi_model DataDatabricksJob#power_bi_model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#power_bi_model DataDatabricksJob#power_bi_model}
 
 ---
 
@@ -10987,7 +10987,7 @@ RefreshAfterUpdate interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#refresh_after_update DataDatabricksJob#refresh_after_update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#refresh_after_update DataDatabricksJob#refresh_after_update}.
 
 ---
 
@@ -11001,7 +11001,7 @@ Tables interface{}
 
 tables block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#tables DataDatabricksJob#tables}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#tables DataDatabricksJob#tables}
 
 ---
 
@@ -11013,7 +11013,7 @@ WarehouseId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#warehouse_id DataDatabricksJob#warehouse_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#warehouse_id DataDatabricksJob#warehouse_id}.
 
 ---
 
@@ -11037,11 +11037,11 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPowerBiTaskPowerBiModel.property.authenticationMethod">AuthenticationMethod</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#authentication_method DataDatabricksJob#authentication_method}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPowerBiTaskPowerBiModel.property.modelName">ModelName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#model_name DataDatabricksJob#model_name}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPowerBiTaskPowerBiModel.property.overwriteExisting">OverwriteExisting</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#overwrite_existing DataDatabricksJob#overwrite_existing}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPowerBiTaskPowerBiModel.property.storageMode">StorageMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#storage_mode DataDatabricksJob#storage_mode}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPowerBiTaskPowerBiModel.property.workspaceName">WorkspaceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#workspace_name DataDatabricksJob#workspace_name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPowerBiTaskPowerBiModel.property.authenticationMethod">AuthenticationMethod</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#authentication_method DataDatabricksJob#authentication_method}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPowerBiTaskPowerBiModel.property.modelName">ModelName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#model_name DataDatabricksJob#model_name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPowerBiTaskPowerBiModel.property.overwriteExisting">OverwriteExisting</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#overwrite_existing DataDatabricksJob#overwrite_existing}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPowerBiTaskPowerBiModel.property.storageMode">StorageMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#storage_mode DataDatabricksJob#storage_mode}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPowerBiTaskPowerBiModel.property.workspaceName">WorkspaceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#workspace_name DataDatabricksJob#workspace_name}. |
 
 ---
 
@@ -11053,7 +11053,7 @@ AuthenticationMethod *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#authentication_method DataDatabricksJob#authentication_method}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#authentication_method DataDatabricksJob#authentication_method}.
 
 ---
 
@@ -11065,7 +11065,7 @@ ModelName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#model_name DataDatabricksJob#model_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#model_name DataDatabricksJob#model_name}.
 
 ---
 
@@ -11077,7 +11077,7 @@ OverwriteExisting interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#overwrite_existing DataDatabricksJob#overwrite_existing}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#overwrite_existing DataDatabricksJob#overwrite_existing}.
 
 ---
 
@@ -11089,7 +11089,7 @@ StorageMode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#storage_mode DataDatabricksJob#storage_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#storage_mode DataDatabricksJob#storage_mode}.
 
 ---
 
@@ -11101,7 +11101,7 @@ WorkspaceName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#workspace_name DataDatabricksJob#workspace_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#workspace_name DataDatabricksJob#workspace_name}.
 
 ---
 
@@ -11124,10 +11124,10 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPowerBiTaskTables.property.catalog">Catalog</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#catalog DataDatabricksJob#catalog}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPowerBiTaskTables.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#name DataDatabricksJob#name}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPowerBiTaskTables.property.schema">Schema</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#schema DataDatabricksJob#schema}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPowerBiTaskTables.property.storageMode">StorageMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#storage_mode DataDatabricksJob#storage_mode}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPowerBiTaskTables.property.catalog">Catalog</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#catalog DataDatabricksJob#catalog}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPowerBiTaskTables.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#name DataDatabricksJob#name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPowerBiTaskTables.property.schema">Schema</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#schema DataDatabricksJob#schema}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPowerBiTaskTables.property.storageMode">StorageMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#storage_mode DataDatabricksJob#storage_mode}. |
 
 ---
 
@@ -11139,7 +11139,7 @@ Catalog *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#catalog DataDatabricksJob#catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#catalog DataDatabricksJob#catalog}.
 
 ---
 
@@ -11151,7 +11151,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#name DataDatabricksJob#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#name DataDatabricksJob#name}.
 
 ---
 
@@ -11163,7 +11163,7 @@ Schema *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#schema DataDatabricksJob#schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#schema DataDatabricksJob#schema}.
 
 ---
 
@@ -11175,7 +11175,7 @@ StorageMode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#storage_mode DataDatabricksJob#storage_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#storage_mode DataDatabricksJob#storage_mode}.
 
 ---
 
@@ -11198,10 +11198,10 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPythonWheelTask.property.entryPoint">EntryPoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#entry_point DataDatabricksJob#entry_point}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPythonWheelTask.property.namedParameters">NamedParameters</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#named_parameters DataDatabricksJob#named_parameters}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPythonWheelTask.property.packageName">PackageName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#package_name DataDatabricksJob#package_name}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPythonWheelTask.property.parameters">Parameters</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPythonWheelTask.property.entryPoint">EntryPoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#entry_point DataDatabricksJob#entry_point}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPythonWheelTask.property.namedParameters">NamedParameters</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#named_parameters DataDatabricksJob#named_parameters}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPythonWheelTask.property.packageName">PackageName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#package_name DataDatabricksJob#package_name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPythonWheelTask.property.parameters">Parameters</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}. |
 
 ---
 
@@ -11213,7 +11213,7 @@ EntryPoint *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#entry_point DataDatabricksJob#entry_point}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#entry_point DataDatabricksJob#entry_point}.
 
 ---
 
@@ -11225,7 +11225,7 @@ NamedParameters *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#named_parameters DataDatabricksJob#named_parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#named_parameters DataDatabricksJob#named_parameters}.
 
 ---
 
@@ -11237,7 +11237,7 @@ PackageName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#package_name DataDatabricksJob#package_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#package_name DataDatabricksJob#package_name}.
 
 ---
 
@@ -11249,7 +11249,7 @@ Parameters *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}.
 
 ---
 
@@ -11270,8 +11270,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskRunJobTask.property.jobId">JobId</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#job_id DataDatabricksJob#job_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskRunJobTask.property.jobParameters">JobParameters</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#job_parameters DataDatabricksJob#job_parameters}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskRunJobTask.property.jobId">JobId</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#job_id DataDatabricksJob#job_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskRunJobTask.property.jobParameters">JobParameters</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#job_parameters DataDatabricksJob#job_parameters}. |
 
 ---
 
@@ -11283,7 +11283,7 @@ JobId *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#job_id DataDatabricksJob#job_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#job_id DataDatabricksJob#job_id}.
 
 ---
 
@@ -11295,7 +11295,7 @@ JobParameters *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#job_parameters DataDatabricksJob#job_parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#job_parameters DataDatabricksJob#job_parameters}.
 
 ---
 
@@ -11317,9 +11317,9 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSparkJarTask.property.jarUri">JarUri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#jar_uri DataDatabricksJob#jar_uri}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSparkJarTask.property.mainClassName">MainClassName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#main_class_name DataDatabricksJob#main_class_name}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSparkJarTask.property.parameters">Parameters</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSparkJarTask.property.jarUri">JarUri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#jar_uri DataDatabricksJob#jar_uri}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSparkJarTask.property.mainClassName">MainClassName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#main_class_name DataDatabricksJob#main_class_name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSparkJarTask.property.parameters">Parameters</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}. |
 
 ---
 
@@ -11331,7 +11331,7 @@ JarUri *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#jar_uri DataDatabricksJob#jar_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#jar_uri DataDatabricksJob#jar_uri}.
 
 ---
 
@@ -11343,7 +11343,7 @@ MainClassName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#main_class_name DataDatabricksJob#main_class_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#main_class_name DataDatabricksJob#main_class_name}.
 
 ---
 
@@ -11355,7 +11355,7 @@ Parameters *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}.
 
 ---
 
@@ -11377,9 +11377,9 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSparkPythonTask.property.pythonFile">PythonFile</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#python_file DataDatabricksJob#python_file}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSparkPythonTask.property.parameters">Parameters</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSparkPythonTask.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#source DataDatabricksJob#source}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSparkPythonTask.property.pythonFile">PythonFile</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#python_file DataDatabricksJob#python_file}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSparkPythonTask.property.parameters">Parameters</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSparkPythonTask.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#source DataDatabricksJob#source}. |
 
 ---
 
@@ -11391,7 +11391,7 @@ PythonFile *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#python_file DataDatabricksJob#python_file}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#python_file DataDatabricksJob#python_file}.
 
 ---
 
@@ -11403,7 +11403,7 @@ Parameters *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}.
 
 ---
 
@@ -11415,7 +11415,7 @@ Source *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#source DataDatabricksJob#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#source DataDatabricksJob#source}.
 
 ---
 
@@ -11435,7 +11435,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSparkSubmitTask.property.parameters">Parameters</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSparkSubmitTask.property.parameters">Parameters</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}. |
 
 ---
 
@@ -11447,7 +11447,7 @@ Parameters *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}.
 
 ---
 
@@ -11472,11 +11472,11 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTask.property.warehouseId">WarehouseId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#warehouse_id DataDatabricksJob#warehouse_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTask.property.warehouseId">WarehouseId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#warehouse_id DataDatabricksJob#warehouse_id}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTask.property.alert">Alert</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskAlert">DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskAlert</a></code> | alert block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTask.property.dashboard">Dashboard</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskDashboard">DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskDashboard</a></code> | dashboard block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTask.property.file">File</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskFile">DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskFile</a></code> | file block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTask.property.parameters">Parameters</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTask.property.parameters">Parameters</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTask.property.query">Query</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskQuery">DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskQuery</a></code> | query block. |
 
 ---
@@ -11489,7 +11489,7 @@ WarehouseId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#warehouse_id DataDatabricksJob#warehouse_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#warehouse_id DataDatabricksJob#warehouse_id}.
 
 ---
 
@@ -11503,7 +11503,7 @@ Alert DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskAlert
 
 alert block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#alert DataDatabricksJob#alert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#alert DataDatabricksJob#alert}
 
 ---
 
@@ -11517,7 +11517,7 @@ Dashboard DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskDashboar
 
 dashboard block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#dashboard DataDatabricksJob#dashboard}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#dashboard DataDatabricksJob#dashboard}
 
 ---
 
@@ -11531,7 +11531,7 @@ File DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskFile
 
 file block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#file DataDatabricksJob#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#file DataDatabricksJob#file}
 
 ---
 
@@ -11543,7 +11543,7 @@ Parameters *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}.
 
 ---
 
@@ -11557,7 +11557,7 @@ Query DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskQuery
 
 query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#query DataDatabricksJob#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#query DataDatabricksJob#query}
 
 ---
 
@@ -11579,8 +11579,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskAlert.property.alertId">AlertId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#alert_id DataDatabricksJob#alert_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskAlert.property.pauseSubscriptions">PauseSubscriptions</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#pause_subscriptions DataDatabricksJob#pause_subscriptions}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskAlert.property.alertId">AlertId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#alert_id DataDatabricksJob#alert_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskAlert.property.pauseSubscriptions">PauseSubscriptions</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#pause_subscriptions DataDatabricksJob#pause_subscriptions}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskAlert.property.subscriptions">Subscriptions</a></code> | <code>interface{}</code> | subscriptions block. |
 
 ---
@@ -11593,7 +11593,7 @@ AlertId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#alert_id DataDatabricksJob#alert_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#alert_id DataDatabricksJob#alert_id}.
 
 ---
 
@@ -11605,7 +11605,7 @@ PauseSubscriptions interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#pause_subscriptions DataDatabricksJob#pause_subscriptions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#pause_subscriptions DataDatabricksJob#pause_subscriptions}.
 
 ---
 
@@ -11619,7 +11619,7 @@ Subscriptions interface{}
 
 subscriptions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#subscriptions DataDatabricksJob#subscriptions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#subscriptions DataDatabricksJob#subscriptions}
 
 ---
 
@@ -11640,8 +11640,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskAlertSubscriptions.property.destinationId">DestinationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination_id DataDatabricksJob#destination_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskAlertSubscriptions.property.userName">UserName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#user_name DataDatabricksJob#user_name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskAlertSubscriptions.property.destinationId">DestinationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination_id DataDatabricksJob#destination_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskAlertSubscriptions.property.userName">UserName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#user_name DataDatabricksJob#user_name}. |
 
 ---
 
@@ -11653,7 +11653,7 @@ DestinationId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination_id DataDatabricksJob#destination_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination_id DataDatabricksJob#destination_id}.
 
 ---
 
@@ -11665,7 +11665,7 @@ UserName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#user_name DataDatabricksJob#user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#user_name DataDatabricksJob#user_name}.
 
 ---
 
@@ -11688,9 +11688,9 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskDashboard.property.dashboardId">DashboardId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#dashboard_id DataDatabricksJob#dashboard_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskDashboard.property.customSubject">CustomSubject</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#custom_subject DataDatabricksJob#custom_subject}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskDashboard.property.pauseSubscriptions">PauseSubscriptions</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#pause_subscriptions DataDatabricksJob#pause_subscriptions}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskDashboard.property.dashboardId">DashboardId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#dashboard_id DataDatabricksJob#dashboard_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskDashboard.property.customSubject">CustomSubject</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#custom_subject DataDatabricksJob#custom_subject}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskDashboard.property.pauseSubscriptions">PauseSubscriptions</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#pause_subscriptions DataDatabricksJob#pause_subscriptions}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskDashboard.property.subscriptions">Subscriptions</a></code> | <code>interface{}</code> | subscriptions block. |
 
 ---
@@ -11703,7 +11703,7 @@ DashboardId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#dashboard_id DataDatabricksJob#dashboard_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#dashboard_id DataDatabricksJob#dashboard_id}.
 
 ---
 
@@ -11715,7 +11715,7 @@ CustomSubject *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#custom_subject DataDatabricksJob#custom_subject}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#custom_subject DataDatabricksJob#custom_subject}.
 
 ---
 
@@ -11727,7 +11727,7 @@ PauseSubscriptions interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#pause_subscriptions DataDatabricksJob#pause_subscriptions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#pause_subscriptions DataDatabricksJob#pause_subscriptions}.
 
 ---
 
@@ -11741,7 +11741,7 @@ Subscriptions interface{}
 
 subscriptions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#subscriptions DataDatabricksJob#subscriptions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#subscriptions DataDatabricksJob#subscriptions}
 
 ---
 
@@ -11762,8 +11762,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskDashboardSubscriptions.property.destinationId">DestinationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination_id DataDatabricksJob#destination_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskDashboardSubscriptions.property.userName">UserName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#user_name DataDatabricksJob#user_name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskDashboardSubscriptions.property.destinationId">DestinationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination_id DataDatabricksJob#destination_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskDashboardSubscriptions.property.userName">UserName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#user_name DataDatabricksJob#user_name}. |
 
 ---
 
@@ -11775,7 +11775,7 @@ DestinationId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination_id DataDatabricksJob#destination_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination_id DataDatabricksJob#destination_id}.
 
 ---
 
@@ -11787,7 +11787,7 @@ UserName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#user_name DataDatabricksJob#user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#user_name DataDatabricksJob#user_name}.
 
 ---
 
@@ -11808,8 +11808,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskFile.property.path">Path</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#path DataDatabricksJob#path}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskFile.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#source DataDatabricksJob#source}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskFile.property.path">Path</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#path DataDatabricksJob#path}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskFile.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#source DataDatabricksJob#source}. |
 
 ---
 
@@ -11821,7 +11821,7 @@ Path *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#path DataDatabricksJob#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#path DataDatabricksJob#path}.
 
 ---
 
@@ -11833,7 +11833,7 @@ Source *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#source DataDatabricksJob#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#source DataDatabricksJob#source}.
 
 ---
 
@@ -11853,7 +11853,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskQuery.property.queryId">QueryId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#query_id DataDatabricksJob#query_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskQuery.property.queryId">QueryId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#query_id DataDatabricksJob#query_id}. |
 
 ---
 
@@ -11865,7 +11865,7 @@ QueryId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#query_id DataDatabricksJob#query_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#query_id DataDatabricksJob#query_id}.
 
 ---
 
@@ -11907,7 +11907,7 @@ OnDurationWarningThresholdExceeded interface{}
 
 on_duration_warning_threshold_exceeded block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#on_duration_warning_threshold_exceeded DataDatabricksJob#on_duration_warning_threshold_exceeded}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#on_duration_warning_threshold_exceeded DataDatabricksJob#on_duration_warning_threshold_exceeded}
 
 ---
 
@@ -11921,7 +11921,7 @@ OnFailure interface{}
 
 on_failure block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#on_failure DataDatabricksJob#on_failure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#on_failure DataDatabricksJob#on_failure}
 
 ---
 
@@ -11935,7 +11935,7 @@ OnStart interface{}
 
 on_start block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#on_start DataDatabricksJob#on_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#on_start DataDatabricksJob#on_start}
 
 ---
 
@@ -11949,7 +11949,7 @@ OnStreamingBacklogExceeded interface{}
 
 on_streaming_backlog_exceeded block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#on_streaming_backlog_exceeded DataDatabricksJob#on_streaming_backlog_exceeded}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#on_streaming_backlog_exceeded DataDatabricksJob#on_streaming_backlog_exceeded}
 
 ---
 
@@ -11963,7 +11963,7 @@ OnSuccess interface{}
 
 on_success block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#on_success DataDatabricksJob#on_success}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#on_success DataDatabricksJob#on_success}
 
 ---
 
@@ -11983,7 +11983,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceeded.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#id DataDatabricksJob#id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceeded.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#id DataDatabricksJob#id}. |
 
 ---
 
@@ -11995,7 +11995,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#id DataDatabricksJob#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#id DataDatabricksJob#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -12018,7 +12018,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOnFailure.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#id DataDatabricksJob#id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOnFailure.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#id DataDatabricksJob#id}. |
 
 ---
 
@@ -12030,7 +12030,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#id DataDatabricksJob#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#id DataDatabricksJob#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -12053,7 +12053,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOnStart.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#id DataDatabricksJob#id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOnStart.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#id DataDatabricksJob#id}. |
 
 ---
 
@@ -12065,7 +12065,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#id DataDatabricksJob#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#id DataDatabricksJob#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -12088,7 +12088,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceeded.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#id DataDatabricksJob#id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceeded.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#id DataDatabricksJob#id}. |
 
 ---
 
@@ -12100,7 +12100,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#id DataDatabricksJob#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#id DataDatabricksJob#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -12123,7 +12123,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOnSuccess.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#id DataDatabricksJob#id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOnSuccess.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#id DataDatabricksJob#id}. |
 
 ---
 
@@ -12135,7 +12135,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#id DataDatabricksJob#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#id DataDatabricksJob#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -12172,7 +12172,7 @@ Rules interface{}
 
 rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#rules DataDatabricksJob#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#rules DataDatabricksJob#rules}
 
 ---
 
@@ -12194,9 +12194,9 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskHealthRules.property.metric">Metric</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#metric DataDatabricksJob#metric}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskHealthRules.property.op">Op</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#op DataDatabricksJob#op}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskHealthRules.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#value DataDatabricksJob#value}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskHealthRules.property.metric">Metric</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#metric DataDatabricksJob#metric}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskHealthRules.property.op">Op</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#op DataDatabricksJob#op}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskHealthRules.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#value DataDatabricksJob#value}. |
 
 ---
 
@@ -12208,7 +12208,7 @@ Metric *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#metric DataDatabricksJob#metric}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#metric DataDatabricksJob#metric}.
 
 ---
 
@@ -12220,7 +12220,7 @@ Op *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#op DataDatabricksJob#op}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#op DataDatabricksJob#op}.
 
 ---
 
@@ -12232,7 +12232,7 @@ Value *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#value DataDatabricksJob#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#value DataDatabricksJob#value}.
 
 ---
 
@@ -12260,13 +12260,13 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibrary.property.cran">Cran</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibraryCran">DataDatabricksJobJobSettingsSettingsTaskLibraryCran</a></code> | cran block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibrary.property.egg">Egg</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#egg DataDatabricksJob#egg}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibrary.property.jar">Jar</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#jar DataDatabricksJob#jar}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibrary.property.egg">Egg</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#egg DataDatabricksJob#egg}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibrary.property.jar">Jar</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#jar DataDatabricksJob#jar}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibrary.property.maven">Maven</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibraryMaven">DataDatabricksJobJobSettingsSettingsTaskLibraryMaven</a></code> | maven block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibrary.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibraryProviderConfig">DataDatabricksJobJobSettingsSettingsTaskLibraryProviderConfig</a></code> | provider_config block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibrary.property.pypi">Pypi</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibraryPypi">DataDatabricksJobJobSettingsSettingsTaskLibraryPypi</a></code> | pypi block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibrary.property.requirements">Requirements</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#requirements DataDatabricksJob#requirements}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibrary.property.whl">Whl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#whl DataDatabricksJob#whl}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibrary.property.requirements">Requirements</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#requirements DataDatabricksJob#requirements}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibrary.property.whl">Whl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#whl DataDatabricksJob#whl}. |
 
 ---
 
@@ -12280,7 +12280,7 @@ Cran DataDatabricksJobJobSettingsSettingsTaskLibraryCran
 
 cran block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#cran DataDatabricksJob#cran}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#cran DataDatabricksJob#cran}
 
 ---
 
@@ -12292,7 +12292,7 @@ Egg *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#egg DataDatabricksJob#egg}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#egg DataDatabricksJob#egg}.
 
 ---
 
@@ -12304,7 +12304,7 @@ Jar *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#jar DataDatabricksJob#jar}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#jar DataDatabricksJob#jar}.
 
 ---
 
@@ -12318,7 +12318,7 @@ Maven DataDatabricksJobJobSettingsSettingsTaskLibraryMaven
 
 maven block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#maven DataDatabricksJob#maven}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#maven DataDatabricksJob#maven}
 
 ---
 
@@ -12332,7 +12332,7 @@ ProviderConfig DataDatabricksJobJobSettingsSettingsTaskLibraryProviderConfig
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#provider_config DataDatabricksJob#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#provider_config DataDatabricksJob#provider_config}
 
 ---
 
@@ -12346,7 +12346,7 @@ Pypi DataDatabricksJobJobSettingsSettingsTaskLibraryPypi
 
 pypi block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#pypi DataDatabricksJob#pypi}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#pypi DataDatabricksJob#pypi}
 
 ---
 
@@ -12358,7 +12358,7 @@ Requirements *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#requirements DataDatabricksJob#requirements}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#requirements DataDatabricksJob#requirements}.
 
 ---
 
@@ -12370,7 +12370,7 @@ Whl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#whl DataDatabricksJob#whl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#whl DataDatabricksJob#whl}.
 
 ---
 
@@ -12391,8 +12391,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibraryCran.property.package">Package</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#package DataDatabricksJob#package}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibraryCran.property.repo">Repo</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#repo DataDatabricksJob#repo}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibraryCran.property.package">Package</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#package DataDatabricksJob#package}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibraryCran.property.repo">Repo</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#repo DataDatabricksJob#repo}. |
 
 ---
 
@@ -12404,7 +12404,7 @@ Package *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#package DataDatabricksJob#package}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#package DataDatabricksJob#package}.
 
 ---
 
@@ -12416,7 +12416,7 @@ Repo *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#repo DataDatabricksJob#repo}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#repo DataDatabricksJob#repo}.
 
 ---
 
@@ -12438,9 +12438,9 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibraryMaven.property.coordinates">Coordinates</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#coordinates DataDatabricksJob#coordinates}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibraryMaven.property.exclusions">Exclusions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#exclusions DataDatabricksJob#exclusions}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibraryMaven.property.repo">Repo</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#repo DataDatabricksJob#repo}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibraryMaven.property.coordinates">Coordinates</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#coordinates DataDatabricksJob#coordinates}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibraryMaven.property.exclusions">Exclusions</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#exclusions DataDatabricksJob#exclusions}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibraryMaven.property.repo">Repo</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#repo DataDatabricksJob#repo}. |
 
 ---
 
@@ -12452,7 +12452,7 @@ Coordinates *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#coordinates DataDatabricksJob#coordinates}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#coordinates DataDatabricksJob#coordinates}.
 
 ---
 
@@ -12464,7 +12464,7 @@ Exclusions *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#exclusions DataDatabricksJob#exclusions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#exclusions DataDatabricksJob#exclusions}.
 
 ---
 
@@ -12476,7 +12476,7 @@ Repo *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#repo DataDatabricksJob#repo}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#repo DataDatabricksJob#repo}.
 
 ---
 
@@ -12496,7 +12496,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibraryProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#workspace_id DataDatabricksJob#workspace_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibraryProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#workspace_id DataDatabricksJob#workspace_id}. |
 
 ---
 
@@ -12508,7 +12508,7 @@ WorkspaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#workspace_id DataDatabricksJob#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#workspace_id DataDatabricksJob#workspace_id}.
 
 ---
 
@@ -12529,8 +12529,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibraryPypi.property.package">Package</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#package DataDatabricksJob#package}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibraryPypi.property.repo">Repo</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#repo DataDatabricksJob#repo}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibraryPypi.property.package">Package</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#package DataDatabricksJob#package}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibraryPypi.property.repo">Repo</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#repo DataDatabricksJob#repo}. |
 
 ---
 
@@ -12542,7 +12542,7 @@ Package *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#package DataDatabricksJob#package}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#package DataDatabricksJob#package}.
 
 ---
 
@@ -12554,7 +12554,7 @@ Repo *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#repo DataDatabricksJob#repo}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#repo DataDatabricksJob#repo}.
 
 ---
 
@@ -12603,35 +12603,35 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewCluster.property.numWorkers">NumWorkers</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#num_workers DataDatabricksJob#num_workers}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewCluster.property.applyPolicyDefaultValues">ApplyPolicyDefaultValues</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#apply_policy_default_values DataDatabricksJob#apply_policy_default_values}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewCluster.property.numWorkers">NumWorkers</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#num_workers DataDatabricksJob#num_workers}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewCluster.property.applyPolicyDefaultValues">ApplyPolicyDefaultValues</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#apply_policy_default_values DataDatabricksJob#apply_policy_default_values}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewCluster.property.autoscale">Autoscale</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterAutoscale">DataDatabricksJobJobSettingsSettingsTaskNewClusterAutoscale</a></code> | autoscale block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewCluster.property.autoterminationMinutes">AutoterminationMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#autotermination_minutes DataDatabricksJob#autotermination_minutes}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewCluster.property.autoterminationMinutes">AutoterminationMinutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#autotermination_minutes DataDatabricksJob#autotermination_minutes}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewCluster.property.awsAttributes">AwsAttributes</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterAwsAttributes">DataDatabricksJobJobSettingsSettingsTaskNewClusterAwsAttributes</a></code> | aws_attributes block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewCluster.property.azureAttributes">AzureAttributes</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterAzureAttributes">DataDatabricksJobJobSettingsSettingsTaskNewClusterAzureAttributes</a></code> | azure_attributes block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewCluster.property.clusterId">ClusterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#cluster_id DataDatabricksJob#cluster_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewCluster.property.clusterId">ClusterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#cluster_id DataDatabricksJob#cluster_id}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewCluster.property.clusterLogConf">ClusterLogConf</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConf">DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConf</a></code> | cluster_log_conf block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewCluster.property.clusterMountInfo">ClusterMountInfo</a></code> | <code>interface{}</code> | cluster_mount_info block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewCluster.property.clusterName">ClusterName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#cluster_name DataDatabricksJob#cluster_name}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewCluster.property.customTags">CustomTags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#custom_tags DataDatabricksJob#custom_tags}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewCluster.property.dataSecurityMode">DataSecurityMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#data_security_mode DataDatabricksJob#data_security_mode}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewCluster.property.clusterName">ClusterName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#cluster_name DataDatabricksJob#cluster_name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewCluster.property.customTags">CustomTags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#custom_tags DataDatabricksJob#custom_tags}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewCluster.property.dataSecurityMode">DataSecurityMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#data_security_mode DataDatabricksJob#data_security_mode}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewCluster.property.dockerImage">DockerImage</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterDockerImage">DataDatabricksJobJobSettingsSettingsTaskNewClusterDockerImage</a></code> | docker_image block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewCluster.property.driverInstancePoolId">DriverInstancePoolId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#driver_instance_pool_id DataDatabricksJob#driver_instance_pool_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewCluster.property.driverNodeTypeId">DriverNodeTypeId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#driver_node_type_id DataDatabricksJob#driver_node_type_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewCluster.property.enableElasticDisk">EnableElasticDisk</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#enable_elastic_disk DataDatabricksJob#enable_elastic_disk}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewCluster.property.enableLocalDiskEncryption">EnableLocalDiskEncryption</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#enable_local_disk_encryption DataDatabricksJob#enable_local_disk_encryption}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewCluster.property.driverInstancePoolId">DriverInstancePoolId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#driver_instance_pool_id DataDatabricksJob#driver_instance_pool_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewCluster.property.driverNodeTypeId">DriverNodeTypeId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#driver_node_type_id DataDatabricksJob#driver_node_type_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewCluster.property.enableElasticDisk">EnableElasticDisk</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#enable_elastic_disk DataDatabricksJob#enable_elastic_disk}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewCluster.property.enableLocalDiskEncryption">EnableLocalDiskEncryption</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#enable_local_disk_encryption DataDatabricksJob#enable_local_disk_encryption}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewCluster.property.gcpAttributes">GcpAttributes</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterGcpAttributes">DataDatabricksJobJobSettingsSettingsTaskNewClusterGcpAttributes</a></code> | gcp_attributes block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewCluster.property.idempotencyToken">IdempotencyToken</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#idempotency_token DataDatabricksJob#idempotency_token}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewCluster.property.idempotencyToken">IdempotencyToken</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#idempotency_token DataDatabricksJob#idempotency_token}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewCluster.property.initScripts">InitScripts</a></code> | <code>interface{}</code> | init_scripts block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewCluster.property.instancePoolId">InstancePoolId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#instance_pool_id DataDatabricksJob#instance_pool_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewCluster.property.nodeTypeId">NodeTypeId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#node_type_id DataDatabricksJob#node_type_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewCluster.property.policyId">PolicyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#policy_id DataDatabricksJob#policy_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewCluster.property.runtimeEngine">RuntimeEngine</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#runtime_engine DataDatabricksJob#runtime_engine}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewCluster.property.singleUserName">SingleUserName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#single_user_name DataDatabricksJob#single_user_name}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewCluster.property.sparkConf">SparkConf</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#spark_conf DataDatabricksJob#spark_conf}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewCluster.property.sparkEnvVars">SparkEnvVars</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#spark_env_vars DataDatabricksJob#spark_env_vars}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewCluster.property.sparkVersion">SparkVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#spark_version DataDatabricksJob#spark_version}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewCluster.property.sshPublicKeys">SshPublicKeys</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#ssh_public_keys DataDatabricksJob#ssh_public_keys}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewCluster.property.instancePoolId">InstancePoolId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#instance_pool_id DataDatabricksJob#instance_pool_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewCluster.property.nodeTypeId">NodeTypeId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#node_type_id DataDatabricksJob#node_type_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewCluster.property.policyId">PolicyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#policy_id DataDatabricksJob#policy_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewCluster.property.runtimeEngine">RuntimeEngine</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#runtime_engine DataDatabricksJob#runtime_engine}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewCluster.property.singleUserName">SingleUserName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#single_user_name DataDatabricksJob#single_user_name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewCluster.property.sparkConf">SparkConf</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#spark_conf DataDatabricksJob#spark_conf}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewCluster.property.sparkEnvVars">SparkEnvVars</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#spark_env_vars DataDatabricksJob#spark_env_vars}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewCluster.property.sparkVersion">SparkVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#spark_version DataDatabricksJob#spark_version}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewCluster.property.sshPublicKeys">SshPublicKeys</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#ssh_public_keys DataDatabricksJob#ssh_public_keys}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewCluster.property.workloadType">WorkloadType</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterWorkloadType">DataDatabricksJobJobSettingsSettingsTaskNewClusterWorkloadType</a></code> | workload_type block. |
 
 ---
@@ -12644,7 +12644,7 @@ NumWorkers *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#num_workers DataDatabricksJob#num_workers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#num_workers DataDatabricksJob#num_workers}.
 
 ---
 
@@ -12656,7 +12656,7 @@ ApplyPolicyDefaultValues interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#apply_policy_default_values DataDatabricksJob#apply_policy_default_values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#apply_policy_default_values DataDatabricksJob#apply_policy_default_values}.
 
 ---
 
@@ -12670,7 +12670,7 @@ Autoscale DataDatabricksJobJobSettingsSettingsTaskNewClusterAutoscale
 
 autoscale block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#autoscale DataDatabricksJob#autoscale}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#autoscale DataDatabricksJob#autoscale}
 
 ---
 
@@ -12682,7 +12682,7 @@ AutoterminationMinutes *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#autotermination_minutes DataDatabricksJob#autotermination_minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#autotermination_minutes DataDatabricksJob#autotermination_minutes}.
 
 ---
 
@@ -12696,7 +12696,7 @@ AwsAttributes DataDatabricksJobJobSettingsSettingsTaskNewClusterAwsAttributes
 
 aws_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#aws_attributes DataDatabricksJob#aws_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#aws_attributes DataDatabricksJob#aws_attributes}
 
 ---
 
@@ -12710,7 +12710,7 @@ AzureAttributes DataDatabricksJobJobSettingsSettingsTaskNewClusterAzureAttribute
 
 azure_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#azure_attributes DataDatabricksJob#azure_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#azure_attributes DataDatabricksJob#azure_attributes}
 
 ---
 
@@ -12722,7 +12722,7 @@ ClusterId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#cluster_id DataDatabricksJob#cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#cluster_id DataDatabricksJob#cluster_id}.
 
 ---
 
@@ -12736,7 +12736,7 @@ ClusterLogConf DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConf
 
 cluster_log_conf block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#cluster_log_conf DataDatabricksJob#cluster_log_conf}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#cluster_log_conf DataDatabricksJob#cluster_log_conf}
 
 ---
 
@@ -12750,7 +12750,7 @@ ClusterMountInfo interface{}
 
 cluster_mount_info block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#cluster_mount_info DataDatabricksJob#cluster_mount_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#cluster_mount_info DataDatabricksJob#cluster_mount_info}
 
 ---
 
@@ -12762,7 +12762,7 @@ ClusterName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#cluster_name DataDatabricksJob#cluster_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#cluster_name DataDatabricksJob#cluster_name}.
 
 ---
 
@@ -12774,7 +12774,7 @@ CustomTags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#custom_tags DataDatabricksJob#custom_tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#custom_tags DataDatabricksJob#custom_tags}.
 
 ---
 
@@ -12786,7 +12786,7 @@ DataSecurityMode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#data_security_mode DataDatabricksJob#data_security_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#data_security_mode DataDatabricksJob#data_security_mode}.
 
 ---
 
@@ -12800,7 +12800,7 @@ DockerImage DataDatabricksJobJobSettingsSettingsTaskNewClusterDockerImage
 
 docker_image block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#docker_image DataDatabricksJob#docker_image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#docker_image DataDatabricksJob#docker_image}
 
 ---
 
@@ -12812,7 +12812,7 @@ DriverInstancePoolId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#driver_instance_pool_id DataDatabricksJob#driver_instance_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#driver_instance_pool_id DataDatabricksJob#driver_instance_pool_id}.
 
 ---
 
@@ -12824,7 +12824,7 @@ DriverNodeTypeId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#driver_node_type_id DataDatabricksJob#driver_node_type_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#driver_node_type_id DataDatabricksJob#driver_node_type_id}.
 
 ---
 
@@ -12836,7 +12836,7 @@ EnableElasticDisk interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#enable_elastic_disk DataDatabricksJob#enable_elastic_disk}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#enable_elastic_disk DataDatabricksJob#enable_elastic_disk}.
 
 ---
 
@@ -12848,7 +12848,7 @@ EnableLocalDiskEncryption interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#enable_local_disk_encryption DataDatabricksJob#enable_local_disk_encryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#enable_local_disk_encryption DataDatabricksJob#enable_local_disk_encryption}.
 
 ---
 
@@ -12862,7 +12862,7 @@ GcpAttributes DataDatabricksJobJobSettingsSettingsTaskNewClusterGcpAttributes
 
 gcp_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#gcp_attributes DataDatabricksJob#gcp_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#gcp_attributes DataDatabricksJob#gcp_attributes}
 
 ---
 
@@ -12874,7 +12874,7 @@ IdempotencyToken *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#idempotency_token DataDatabricksJob#idempotency_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#idempotency_token DataDatabricksJob#idempotency_token}.
 
 ---
 
@@ -12888,7 +12888,7 @@ InitScripts interface{}
 
 init_scripts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#init_scripts DataDatabricksJob#init_scripts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#init_scripts DataDatabricksJob#init_scripts}
 
 ---
 
@@ -12900,7 +12900,7 @@ InstancePoolId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#instance_pool_id DataDatabricksJob#instance_pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#instance_pool_id DataDatabricksJob#instance_pool_id}.
 
 ---
 
@@ -12912,7 +12912,7 @@ NodeTypeId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#node_type_id DataDatabricksJob#node_type_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#node_type_id DataDatabricksJob#node_type_id}.
 
 ---
 
@@ -12924,7 +12924,7 @@ PolicyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#policy_id DataDatabricksJob#policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#policy_id DataDatabricksJob#policy_id}.
 
 ---
 
@@ -12936,7 +12936,7 @@ RuntimeEngine *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#runtime_engine DataDatabricksJob#runtime_engine}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#runtime_engine DataDatabricksJob#runtime_engine}.
 
 ---
 
@@ -12948,7 +12948,7 @@ SingleUserName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#single_user_name DataDatabricksJob#single_user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#single_user_name DataDatabricksJob#single_user_name}.
 
 ---
 
@@ -12960,7 +12960,7 @@ SparkConf *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#spark_conf DataDatabricksJob#spark_conf}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#spark_conf DataDatabricksJob#spark_conf}.
 
 ---
 
@@ -12972,7 +12972,7 @@ SparkEnvVars *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#spark_env_vars DataDatabricksJob#spark_env_vars}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#spark_env_vars DataDatabricksJob#spark_env_vars}.
 
 ---
 
@@ -12984,7 +12984,7 @@ SparkVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#spark_version DataDatabricksJob#spark_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#spark_version DataDatabricksJob#spark_version}.
 
 ---
 
@@ -12996,7 +12996,7 @@ SshPublicKeys *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#ssh_public_keys DataDatabricksJob#ssh_public_keys}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#ssh_public_keys DataDatabricksJob#ssh_public_keys}.
 
 ---
 
@@ -13010,7 +13010,7 @@ WorkloadType DataDatabricksJobJobSettingsSettingsTaskNewClusterWorkloadType
 
 workload_type block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#workload_type DataDatabricksJob#workload_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#workload_type DataDatabricksJob#workload_type}
 
 ---
 
@@ -13031,8 +13031,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterAutoscale.property.maxWorkers">MaxWorkers</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#max_workers DataDatabricksJob#max_workers}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterAutoscale.property.minWorkers">MinWorkers</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#min_workers DataDatabricksJob#min_workers}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterAutoscale.property.maxWorkers">MaxWorkers</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#max_workers DataDatabricksJob#max_workers}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterAutoscale.property.minWorkers">MinWorkers</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#min_workers DataDatabricksJob#min_workers}. |
 
 ---
 
@@ -13044,7 +13044,7 @@ MaxWorkers *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#max_workers DataDatabricksJob#max_workers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#max_workers DataDatabricksJob#max_workers}.
 
 ---
 
@@ -13056,7 +13056,7 @@ MinWorkers *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#min_workers DataDatabricksJob#min_workers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#min_workers DataDatabricksJob#min_workers}.
 
 ---
 
@@ -13083,14 +13083,14 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterAwsAttributes.property.availability">Availability</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#availability DataDatabricksJob#availability}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterAwsAttributes.property.ebsVolumeCount">EbsVolumeCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#ebs_volume_count DataDatabricksJob#ebs_volume_count}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterAwsAttributes.property.ebsVolumeSize">EbsVolumeSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#ebs_volume_size DataDatabricksJob#ebs_volume_size}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterAwsAttributes.property.ebsVolumeType">EbsVolumeType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#ebs_volume_type DataDatabricksJob#ebs_volume_type}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterAwsAttributes.property.firstOnDemand">FirstOnDemand</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#first_on_demand DataDatabricksJob#first_on_demand}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterAwsAttributes.property.instanceProfileArn">InstanceProfileArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#instance_profile_arn DataDatabricksJob#instance_profile_arn}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterAwsAttributes.property.spotBidPricePercent">SpotBidPricePercent</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#spot_bid_price_percent DataDatabricksJob#spot_bid_price_percent}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterAwsAttributes.property.zoneId">ZoneId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#zone_id DataDatabricksJob#zone_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterAwsAttributes.property.availability">Availability</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#availability DataDatabricksJob#availability}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterAwsAttributes.property.ebsVolumeCount">EbsVolumeCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#ebs_volume_count DataDatabricksJob#ebs_volume_count}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterAwsAttributes.property.ebsVolumeSize">EbsVolumeSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#ebs_volume_size DataDatabricksJob#ebs_volume_size}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterAwsAttributes.property.ebsVolumeType">EbsVolumeType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#ebs_volume_type DataDatabricksJob#ebs_volume_type}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterAwsAttributes.property.firstOnDemand">FirstOnDemand</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#first_on_demand DataDatabricksJob#first_on_demand}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterAwsAttributes.property.instanceProfileArn">InstanceProfileArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#instance_profile_arn DataDatabricksJob#instance_profile_arn}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterAwsAttributes.property.spotBidPricePercent">SpotBidPricePercent</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#spot_bid_price_percent DataDatabricksJob#spot_bid_price_percent}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterAwsAttributes.property.zoneId">ZoneId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#zone_id DataDatabricksJob#zone_id}. |
 
 ---
 
@@ -13102,7 +13102,7 @@ Availability *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#availability DataDatabricksJob#availability}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#availability DataDatabricksJob#availability}.
 
 ---
 
@@ -13114,7 +13114,7 @@ EbsVolumeCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#ebs_volume_count DataDatabricksJob#ebs_volume_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#ebs_volume_count DataDatabricksJob#ebs_volume_count}.
 
 ---
 
@@ -13126,7 +13126,7 @@ EbsVolumeSize *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#ebs_volume_size DataDatabricksJob#ebs_volume_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#ebs_volume_size DataDatabricksJob#ebs_volume_size}.
 
 ---
 
@@ -13138,7 +13138,7 @@ EbsVolumeType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#ebs_volume_type DataDatabricksJob#ebs_volume_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#ebs_volume_type DataDatabricksJob#ebs_volume_type}.
 
 ---
 
@@ -13150,7 +13150,7 @@ FirstOnDemand *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#first_on_demand DataDatabricksJob#first_on_demand}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#first_on_demand DataDatabricksJob#first_on_demand}.
 
 ---
 
@@ -13162,7 +13162,7 @@ InstanceProfileArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#instance_profile_arn DataDatabricksJob#instance_profile_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#instance_profile_arn DataDatabricksJob#instance_profile_arn}.
 
 ---
 
@@ -13174,7 +13174,7 @@ SpotBidPricePercent *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#spot_bid_price_percent DataDatabricksJob#spot_bid_price_percent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#spot_bid_price_percent DataDatabricksJob#spot_bid_price_percent}.
 
 ---
 
@@ -13186,7 +13186,7 @@ ZoneId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#zone_id DataDatabricksJob#zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#zone_id DataDatabricksJob#zone_id}.
 
 ---
 
@@ -13208,9 +13208,9 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterAzureAttributes.property.availability">Availability</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#availability DataDatabricksJob#availability}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterAzureAttributes.property.firstOnDemand">FirstOnDemand</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#first_on_demand DataDatabricksJob#first_on_demand}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterAzureAttributes.property.spotBidMaxPrice">SpotBidMaxPrice</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#spot_bid_max_price DataDatabricksJob#spot_bid_max_price}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterAzureAttributes.property.availability">Availability</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#availability DataDatabricksJob#availability}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterAzureAttributes.property.firstOnDemand">FirstOnDemand</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#first_on_demand DataDatabricksJob#first_on_demand}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterAzureAttributes.property.spotBidMaxPrice">SpotBidMaxPrice</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#spot_bid_max_price DataDatabricksJob#spot_bid_max_price}. |
 
 ---
 
@@ -13222,7 +13222,7 @@ Availability *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#availability DataDatabricksJob#availability}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#availability DataDatabricksJob#availability}.
 
 ---
 
@@ -13234,7 +13234,7 @@ FirstOnDemand *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#first_on_demand DataDatabricksJob#first_on_demand}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#first_on_demand DataDatabricksJob#first_on_demand}.
 
 ---
 
@@ -13246,7 +13246,7 @@ SpotBidMaxPrice *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#spot_bid_max_price DataDatabricksJob#spot_bid_max_price}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#spot_bid_max_price DataDatabricksJob#spot_bid_max_price}.
 
 ---
 
@@ -13282,7 +13282,7 @@ Dbfs DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConfDbfs
 
 dbfs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#dbfs DataDatabricksJob#dbfs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#dbfs DataDatabricksJob#dbfs}
 
 ---
 
@@ -13296,7 +13296,7 @@ S3 DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConfS3
 
 s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#s3 DataDatabricksJob#s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#s3 DataDatabricksJob#s3}
 
 ---
 
@@ -13316,7 +13316,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConfDbfs.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConfDbfs.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
 
 ---
 
@@ -13328,7 +13328,7 @@ Destination *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
 
 ---
 
@@ -13354,13 +13354,13 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConfS3.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConfS3.property.cannedAcl">CannedAcl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#canned_acl DataDatabricksJob#canned_acl}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConfS3.property.enableEncryption">EnableEncryption</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#enable_encryption DataDatabricksJob#enable_encryption}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConfS3.property.encryptionType">EncryptionType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#encryption_type DataDatabricksJob#encryption_type}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConfS3.property.endpoint">Endpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#endpoint DataDatabricksJob#endpoint}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConfS3.property.kmsKey">KmsKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#kms_key DataDatabricksJob#kms_key}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConfS3.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#region DataDatabricksJob#region}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConfS3.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConfS3.property.cannedAcl">CannedAcl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#canned_acl DataDatabricksJob#canned_acl}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConfS3.property.enableEncryption">EnableEncryption</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#enable_encryption DataDatabricksJob#enable_encryption}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConfS3.property.encryptionType">EncryptionType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#encryption_type DataDatabricksJob#encryption_type}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConfS3.property.endpoint">Endpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#endpoint DataDatabricksJob#endpoint}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConfS3.property.kmsKey">KmsKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#kms_key DataDatabricksJob#kms_key}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConfS3.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#region DataDatabricksJob#region}. |
 
 ---
 
@@ -13372,7 +13372,7 @@ Destination *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
 
 ---
 
@@ -13384,7 +13384,7 @@ CannedAcl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#canned_acl DataDatabricksJob#canned_acl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#canned_acl DataDatabricksJob#canned_acl}.
 
 ---
 
@@ -13396,7 +13396,7 @@ EnableEncryption interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#enable_encryption DataDatabricksJob#enable_encryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#enable_encryption DataDatabricksJob#enable_encryption}.
 
 ---
 
@@ -13408,7 +13408,7 @@ EncryptionType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#encryption_type DataDatabricksJob#encryption_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#encryption_type DataDatabricksJob#encryption_type}.
 
 ---
 
@@ -13420,7 +13420,7 @@ Endpoint *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#endpoint DataDatabricksJob#endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#endpoint DataDatabricksJob#endpoint}.
 
 ---
 
@@ -13432,7 +13432,7 @@ KmsKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#kms_key DataDatabricksJob#kms_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#kms_key DataDatabricksJob#kms_key}.
 
 ---
 
@@ -13444,7 +13444,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#region DataDatabricksJob#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#region DataDatabricksJob#region}.
 
 ---
 
@@ -13466,9 +13466,9 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterMountInfo.property.localMountDirPath">LocalMountDirPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#local_mount_dir_path DataDatabricksJob#local_mount_dir_path}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterMountInfo.property.localMountDirPath">LocalMountDirPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#local_mount_dir_path DataDatabricksJob#local_mount_dir_path}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterMountInfo.property.networkFilesystemInfo">NetworkFilesystemInfo</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterMountInfoNetworkFilesystemInfo">DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterMountInfoNetworkFilesystemInfo</a></code> | network_filesystem_info block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterMountInfo.property.remoteMountDirPath">RemoteMountDirPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#remote_mount_dir_path DataDatabricksJob#remote_mount_dir_path}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterMountInfo.property.remoteMountDirPath">RemoteMountDirPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#remote_mount_dir_path DataDatabricksJob#remote_mount_dir_path}. |
 
 ---
 
@@ -13480,7 +13480,7 @@ LocalMountDirPath *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#local_mount_dir_path DataDatabricksJob#local_mount_dir_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#local_mount_dir_path DataDatabricksJob#local_mount_dir_path}.
 
 ---
 
@@ -13494,7 +13494,7 @@ NetworkFilesystemInfo DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterM
 
 network_filesystem_info block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#network_filesystem_info DataDatabricksJob#network_filesystem_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#network_filesystem_info DataDatabricksJob#network_filesystem_info}
 
 ---
 
@@ -13506,7 +13506,7 @@ RemoteMountDirPath *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#remote_mount_dir_path DataDatabricksJob#remote_mount_dir_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#remote_mount_dir_path DataDatabricksJob#remote_mount_dir_path}.
 
 ---
 
@@ -13527,8 +13527,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterMountInfoNetworkFilesystemInfo.property.serverAddress">ServerAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#server_address DataDatabricksJob#server_address}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterMountInfoNetworkFilesystemInfo.property.mountOptions">MountOptions</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#mount_options DataDatabricksJob#mount_options}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterMountInfoNetworkFilesystemInfo.property.serverAddress">ServerAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#server_address DataDatabricksJob#server_address}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterMountInfoNetworkFilesystemInfo.property.mountOptions">MountOptions</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#mount_options DataDatabricksJob#mount_options}. |
 
 ---
 
@@ -13540,7 +13540,7 @@ ServerAddress *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#server_address DataDatabricksJob#server_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#server_address DataDatabricksJob#server_address}.
 
 ---
 
@@ -13552,7 +13552,7 @@ MountOptions *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#mount_options DataDatabricksJob#mount_options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#mount_options DataDatabricksJob#mount_options}.
 
 ---
 
@@ -13573,7 +13573,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterDockerImage.property.url">Url</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#url DataDatabricksJob#url}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterDockerImage.property.url">Url</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#url DataDatabricksJob#url}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterDockerImage.property.basicAuth">BasicAuth</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterDockerImageBasicAuth">DataDatabricksJobJobSettingsSettingsTaskNewClusterDockerImageBasicAuth</a></code> | basic_auth block. |
 
 ---
@@ -13586,7 +13586,7 @@ Url *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#url DataDatabricksJob#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#url DataDatabricksJob#url}.
 
 ---
 
@@ -13600,7 +13600,7 @@ BasicAuth DataDatabricksJobJobSettingsSettingsTaskNewClusterDockerImageBasicAuth
 
 basic_auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#basic_auth DataDatabricksJob#basic_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#basic_auth DataDatabricksJob#basic_auth}
 
 ---
 
@@ -13621,8 +13621,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterDockerImageBasicAuth.property.password">Password</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#password DataDatabricksJob#password}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterDockerImageBasicAuth.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#username DataDatabricksJob#username}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterDockerImageBasicAuth.property.password">Password</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#password DataDatabricksJob#password}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterDockerImageBasicAuth.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#username DataDatabricksJob#username}. |
 
 ---
 
@@ -13634,7 +13634,7 @@ Password *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#password DataDatabricksJob#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#password DataDatabricksJob#password}.
 
 ---
 
@@ -13646,7 +13646,7 @@ Username *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#username DataDatabricksJob#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#username DataDatabricksJob#username}.
 
 ---
 
@@ -13671,12 +13671,12 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterGcpAttributes.property.availability">Availability</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#availability DataDatabricksJob#availability}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterGcpAttributes.property.bootDiskSize">BootDiskSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#boot_disk_size DataDatabricksJob#boot_disk_size}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterGcpAttributes.property.googleServiceAccount">GoogleServiceAccount</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#google_service_account DataDatabricksJob#google_service_account}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterGcpAttributes.property.localSsdCount">LocalSsdCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#local_ssd_count DataDatabricksJob#local_ssd_count}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterGcpAttributes.property.usePreemptibleExecutors">UsePreemptibleExecutors</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#use_preemptible_executors DataDatabricksJob#use_preemptible_executors}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterGcpAttributes.property.zoneId">ZoneId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#zone_id DataDatabricksJob#zone_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterGcpAttributes.property.availability">Availability</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#availability DataDatabricksJob#availability}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterGcpAttributes.property.bootDiskSize">BootDiskSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#boot_disk_size DataDatabricksJob#boot_disk_size}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterGcpAttributes.property.googleServiceAccount">GoogleServiceAccount</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#google_service_account DataDatabricksJob#google_service_account}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterGcpAttributes.property.localSsdCount">LocalSsdCount</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#local_ssd_count DataDatabricksJob#local_ssd_count}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterGcpAttributes.property.usePreemptibleExecutors">UsePreemptibleExecutors</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#use_preemptible_executors DataDatabricksJob#use_preemptible_executors}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterGcpAttributes.property.zoneId">ZoneId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#zone_id DataDatabricksJob#zone_id}. |
 
 ---
 
@@ -13688,7 +13688,7 @@ Availability *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#availability DataDatabricksJob#availability}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#availability DataDatabricksJob#availability}.
 
 ---
 
@@ -13700,7 +13700,7 @@ BootDiskSize *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#boot_disk_size DataDatabricksJob#boot_disk_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#boot_disk_size DataDatabricksJob#boot_disk_size}.
 
 ---
 
@@ -13712,7 +13712,7 @@ GoogleServiceAccount *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#google_service_account DataDatabricksJob#google_service_account}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#google_service_account DataDatabricksJob#google_service_account}.
 
 ---
 
@@ -13724,7 +13724,7 @@ LocalSsdCount *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#local_ssd_count DataDatabricksJob#local_ssd_count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#local_ssd_count DataDatabricksJob#local_ssd_count}.
 
 ---
 
@@ -13736,7 +13736,7 @@ UsePreemptibleExecutors interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#use_preemptible_executors DataDatabricksJob#use_preemptible_executors}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#use_preemptible_executors DataDatabricksJob#use_preemptible_executors}.
 
 ---
 
@@ -13748,7 +13748,7 @@ ZoneId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#zone_id DataDatabricksJob#zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#zone_id DataDatabricksJob#zone_id}.
 
 ---
 
@@ -13794,7 +13794,7 @@ Abfss DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsAbfss
 
 abfss block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#abfss DataDatabricksJob#abfss}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#abfss DataDatabricksJob#abfss}
 
 ---
 
@@ -13808,7 +13808,7 @@ Dbfs DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsDbfs
 
 dbfs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#dbfs DataDatabricksJob#dbfs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#dbfs DataDatabricksJob#dbfs}
 
 ---
 
@@ -13822,7 +13822,7 @@ File DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsFile
 
 file block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#file DataDatabricksJob#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#file DataDatabricksJob#file}
 
 ---
 
@@ -13836,7 +13836,7 @@ Gcs DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsGcs
 
 gcs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#gcs DataDatabricksJob#gcs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#gcs DataDatabricksJob#gcs}
 
 ---
 
@@ -13850,7 +13850,7 @@ S3 DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsS3
 
 s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#s3 DataDatabricksJob#s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#s3 DataDatabricksJob#s3}
 
 ---
 
@@ -13864,7 +13864,7 @@ Volumes DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsVolumes
 
 volumes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#volumes DataDatabricksJob#volumes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#volumes DataDatabricksJob#volumes}
 
 ---
 
@@ -13878,7 +13878,7 @@ Workspace DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsWorkspace
 
 workspace block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#workspace DataDatabricksJob#workspace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#workspace DataDatabricksJob#workspace}
 
 ---
 
@@ -13898,7 +13898,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsAbfss.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsAbfss.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
 
 ---
 
@@ -13910,7 +13910,7 @@ Destination *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
 
 ---
 
@@ -13930,7 +13930,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsDbfs.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsDbfs.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
 
 ---
 
@@ -13942,7 +13942,7 @@ Destination *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
 
 ---
 
@@ -13962,7 +13962,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsFile.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsFile.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
 
 ---
 
@@ -13974,7 +13974,7 @@ Destination *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
 
 ---
 
@@ -13994,7 +13994,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsGcs.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsGcs.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
 
 ---
 
@@ -14006,7 +14006,7 @@ Destination *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
 
 ---
 
@@ -14032,13 +14032,13 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsS3.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsS3.property.cannedAcl">CannedAcl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#canned_acl DataDatabricksJob#canned_acl}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsS3.property.enableEncryption">EnableEncryption</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#enable_encryption DataDatabricksJob#enable_encryption}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsS3.property.encryptionType">EncryptionType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#encryption_type DataDatabricksJob#encryption_type}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsS3.property.endpoint">Endpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#endpoint DataDatabricksJob#endpoint}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsS3.property.kmsKey">KmsKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#kms_key DataDatabricksJob#kms_key}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsS3.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#region DataDatabricksJob#region}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsS3.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsS3.property.cannedAcl">CannedAcl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#canned_acl DataDatabricksJob#canned_acl}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsS3.property.enableEncryption">EnableEncryption</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#enable_encryption DataDatabricksJob#enable_encryption}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsS3.property.encryptionType">EncryptionType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#encryption_type DataDatabricksJob#encryption_type}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsS3.property.endpoint">Endpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#endpoint DataDatabricksJob#endpoint}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsS3.property.kmsKey">KmsKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#kms_key DataDatabricksJob#kms_key}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsS3.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#region DataDatabricksJob#region}. |
 
 ---
 
@@ -14050,7 +14050,7 @@ Destination *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
 
 ---
 
@@ -14062,7 +14062,7 @@ CannedAcl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#canned_acl DataDatabricksJob#canned_acl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#canned_acl DataDatabricksJob#canned_acl}.
 
 ---
 
@@ -14074,7 +14074,7 @@ EnableEncryption interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#enable_encryption DataDatabricksJob#enable_encryption}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#enable_encryption DataDatabricksJob#enable_encryption}.
 
 ---
 
@@ -14086,7 +14086,7 @@ EncryptionType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#encryption_type DataDatabricksJob#encryption_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#encryption_type DataDatabricksJob#encryption_type}.
 
 ---
 
@@ -14098,7 +14098,7 @@ Endpoint *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#endpoint DataDatabricksJob#endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#endpoint DataDatabricksJob#endpoint}.
 
 ---
 
@@ -14110,7 +14110,7 @@ KmsKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#kms_key DataDatabricksJob#kms_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#kms_key DataDatabricksJob#kms_key}.
 
 ---
 
@@ -14122,7 +14122,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#region DataDatabricksJob#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#region DataDatabricksJob#region}.
 
 ---
 
@@ -14142,7 +14142,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsVolumes.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsVolumes.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
 
 ---
 
@@ -14154,7 +14154,7 @@ Destination *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
 
 ---
 
@@ -14174,7 +14174,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsWorkspace.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsWorkspace.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}. |
 
 ---
 
@@ -14186,7 +14186,7 @@ Destination *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination DataDatabricksJob#destination}.
 
 ---
 
@@ -14220,7 +14220,7 @@ Clients DataDatabricksJobJobSettingsSettingsTaskNewClusterWorkloadTypeClients
 
 clients block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#clients DataDatabricksJob#clients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#clients DataDatabricksJob#clients}
 
 ---
 
@@ -14241,8 +14241,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterWorkloadTypeClients.property.jobs">Jobs</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#jobs DataDatabricksJob#jobs}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterWorkloadTypeClients.property.notebooks">Notebooks</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#notebooks DataDatabricksJob#notebooks}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterWorkloadTypeClients.property.jobs">Jobs</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#jobs DataDatabricksJob#jobs}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterWorkloadTypeClients.property.notebooks">Notebooks</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#notebooks DataDatabricksJob#notebooks}. |
 
 ---
 
@@ -14254,7 +14254,7 @@ Jobs interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#jobs DataDatabricksJob#jobs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#jobs DataDatabricksJob#jobs}.
 
 ---
 
@@ -14266,7 +14266,7 @@ Notebooks interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#notebooks DataDatabricksJob#notebooks}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#notebooks DataDatabricksJob#notebooks}.
 
 ---
 
@@ -14289,10 +14289,10 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNotebookTask.property.notebookPath">NotebookPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#notebook_path DataDatabricksJob#notebook_path}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNotebookTask.property.baseParameters">BaseParameters</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#base_parameters DataDatabricksJob#base_parameters}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNotebookTask.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#source DataDatabricksJob#source}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNotebookTask.property.warehouseId">WarehouseId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#warehouse_id DataDatabricksJob#warehouse_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNotebookTask.property.notebookPath">NotebookPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#notebook_path DataDatabricksJob#notebook_path}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNotebookTask.property.baseParameters">BaseParameters</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#base_parameters DataDatabricksJob#base_parameters}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNotebookTask.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#source DataDatabricksJob#source}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNotebookTask.property.warehouseId">WarehouseId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#warehouse_id DataDatabricksJob#warehouse_id}. |
 
 ---
 
@@ -14304,7 +14304,7 @@ NotebookPath *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#notebook_path DataDatabricksJob#notebook_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#notebook_path DataDatabricksJob#notebook_path}.
 
 ---
 
@@ -14316,7 +14316,7 @@ BaseParameters *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#base_parameters DataDatabricksJob#base_parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#base_parameters DataDatabricksJob#base_parameters}.
 
 ---
 
@@ -14328,7 +14328,7 @@ Source *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#source DataDatabricksJob#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#source DataDatabricksJob#source}.
 
 ---
 
@@ -14340,7 +14340,7 @@ WarehouseId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#warehouse_id DataDatabricksJob#warehouse_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#warehouse_id DataDatabricksJob#warehouse_id}.
 
 ---
 
@@ -14362,9 +14362,9 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNotificationSettings.property.alertOnLastAttempt">AlertOnLastAttempt</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#alert_on_last_attempt DataDatabricksJob#alert_on_last_attempt}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNotificationSettings.property.noAlertForCanceledRuns">NoAlertForCanceledRuns</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#no_alert_for_canceled_runs DataDatabricksJob#no_alert_for_canceled_runs}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNotificationSettings.property.noAlertForSkippedRuns">NoAlertForSkippedRuns</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#no_alert_for_skipped_runs DataDatabricksJob#no_alert_for_skipped_runs}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNotificationSettings.property.alertOnLastAttempt">AlertOnLastAttempt</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#alert_on_last_attempt DataDatabricksJob#alert_on_last_attempt}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNotificationSettings.property.noAlertForCanceledRuns">NoAlertForCanceledRuns</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#no_alert_for_canceled_runs DataDatabricksJob#no_alert_for_canceled_runs}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNotificationSettings.property.noAlertForSkippedRuns">NoAlertForSkippedRuns</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#no_alert_for_skipped_runs DataDatabricksJob#no_alert_for_skipped_runs}. |
 
 ---
 
@@ -14376,7 +14376,7 @@ AlertOnLastAttempt interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#alert_on_last_attempt DataDatabricksJob#alert_on_last_attempt}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#alert_on_last_attempt DataDatabricksJob#alert_on_last_attempt}.
 
 ---
 
@@ -14388,7 +14388,7 @@ NoAlertForCanceledRuns interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#no_alert_for_canceled_runs DataDatabricksJob#no_alert_for_canceled_runs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#no_alert_for_canceled_runs DataDatabricksJob#no_alert_for_canceled_runs}.
 
 ---
 
@@ -14400,7 +14400,7 @@ NoAlertForSkippedRuns interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#no_alert_for_skipped_runs DataDatabricksJob#no_alert_for_skipped_runs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#no_alert_for_skipped_runs DataDatabricksJob#no_alert_for_skipped_runs}.
 
 ---
 
@@ -14421,8 +14421,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPipelineTask.property.pipelineId">PipelineId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#pipeline_id DataDatabricksJob#pipeline_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPipelineTask.property.fullRefresh">FullRefresh</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#full_refresh DataDatabricksJob#full_refresh}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPipelineTask.property.pipelineId">PipelineId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#pipeline_id DataDatabricksJob#pipeline_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPipelineTask.property.fullRefresh">FullRefresh</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#full_refresh DataDatabricksJob#full_refresh}. |
 
 ---
 
@@ -14434,7 +14434,7 @@ PipelineId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#pipeline_id DataDatabricksJob#pipeline_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#pipeline_id DataDatabricksJob#pipeline_id}.
 
 ---
 
@@ -14446,7 +14446,7 @@ FullRefresh interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#full_refresh DataDatabricksJob#full_refresh}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#full_refresh DataDatabricksJob#full_refresh}.
 
 ---
 
@@ -14470,11 +14470,11 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPowerBiTask.property.connectionResourceName">ConnectionResourceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#connection_resource_name DataDatabricksJob#connection_resource_name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPowerBiTask.property.connectionResourceName">ConnectionResourceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#connection_resource_name DataDatabricksJob#connection_resource_name}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPowerBiTask.property.powerBiModel">PowerBiModel</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskPowerBiModel">DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskPowerBiModel</a></code> | power_bi_model block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPowerBiTask.property.refreshAfterUpdate">RefreshAfterUpdate</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#refresh_after_update DataDatabricksJob#refresh_after_update}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPowerBiTask.property.refreshAfterUpdate">RefreshAfterUpdate</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#refresh_after_update DataDatabricksJob#refresh_after_update}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPowerBiTask.property.tables">Tables</a></code> | <code>interface{}</code> | tables block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPowerBiTask.property.warehouseId">WarehouseId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#warehouse_id DataDatabricksJob#warehouse_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPowerBiTask.property.warehouseId">WarehouseId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#warehouse_id DataDatabricksJob#warehouse_id}. |
 
 ---
 
@@ -14486,7 +14486,7 @@ ConnectionResourceName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#connection_resource_name DataDatabricksJob#connection_resource_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#connection_resource_name DataDatabricksJob#connection_resource_name}.
 
 ---
 
@@ -14500,7 +14500,7 @@ PowerBiModel DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskPowerBiModel
 
 power_bi_model block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#power_bi_model DataDatabricksJob#power_bi_model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#power_bi_model DataDatabricksJob#power_bi_model}
 
 ---
 
@@ -14512,7 +14512,7 @@ RefreshAfterUpdate interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#refresh_after_update DataDatabricksJob#refresh_after_update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#refresh_after_update DataDatabricksJob#refresh_after_update}.
 
 ---
 
@@ -14526,7 +14526,7 @@ Tables interface{}
 
 tables block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#tables DataDatabricksJob#tables}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#tables DataDatabricksJob#tables}
 
 ---
 
@@ -14538,7 +14538,7 @@ WarehouseId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#warehouse_id DataDatabricksJob#warehouse_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#warehouse_id DataDatabricksJob#warehouse_id}.
 
 ---
 
@@ -14562,11 +14562,11 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskPowerBiModel.property.authenticationMethod">AuthenticationMethod</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#authentication_method DataDatabricksJob#authentication_method}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskPowerBiModel.property.modelName">ModelName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#model_name DataDatabricksJob#model_name}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskPowerBiModel.property.overwriteExisting">OverwriteExisting</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#overwrite_existing DataDatabricksJob#overwrite_existing}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskPowerBiModel.property.storageMode">StorageMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#storage_mode DataDatabricksJob#storage_mode}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskPowerBiModel.property.workspaceName">WorkspaceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#workspace_name DataDatabricksJob#workspace_name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskPowerBiModel.property.authenticationMethod">AuthenticationMethod</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#authentication_method DataDatabricksJob#authentication_method}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskPowerBiModel.property.modelName">ModelName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#model_name DataDatabricksJob#model_name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskPowerBiModel.property.overwriteExisting">OverwriteExisting</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#overwrite_existing DataDatabricksJob#overwrite_existing}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskPowerBiModel.property.storageMode">StorageMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#storage_mode DataDatabricksJob#storage_mode}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskPowerBiModel.property.workspaceName">WorkspaceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#workspace_name DataDatabricksJob#workspace_name}. |
 
 ---
 
@@ -14578,7 +14578,7 @@ AuthenticationMethod *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#authentication_method DataDatabricksJob#authentication_method}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#authentication_method DataDatabricksJob#authentication_method}.
 
 ---
 
@@ -14590,7 +14590,7 @@ ModelName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#model_name DataDatabricksJob#model_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#model_name DataDatabricksJob#model_name}.
 
 ---
 
@@ -14602,7 +14602,7 @@ OverwriteExisting interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#overwrite_existing DataDatabricksJob#overwrite_existing}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#overwrite_existing DataDatabricksJob#overwrite_existing}.
 
 ---
 
@@ -14614,7 +14614,7 @@ StorageMode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#storage_mode DataDatabricksJob#storage_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#storage_mode DataDatabricksJob#storage_mode}.
 
 ---
 
@@ -14626,7 +14626,7 @@ WorkspaceName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#workspace_name DataDatabricksJob#workspace_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#workspace_name DataDatabricksJob#workspace_name}.
 
 ---
 
@@ -14649,10 +14649,10 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskTables.property.catalog">Catalog</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#catalog DataDatabricksJob#catalog}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskTables.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#name DataDatabricksJob#name}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskTables.property.schema">Schema</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#schema DataDatabricksJob#schema}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskTables.property.storageMode">StorageMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#storage_mode DataDatabricksJob#storage_mode}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskTables.property.catalog">Catalog</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#catalog DataDatabricksJob#catalog}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskTables.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#name DataDatabricksJob#name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskTables.property.schema">Schema</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#schema DataDatabricksJob#schema}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskTables.property.storageMode">StorageMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#storage_mode DataDatabricksJob#storage_mode}. |
 
 ---
 
@@ -14664,7 +14664,7 @@ Catalog *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#catalog DataDatabricksJob#catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#catalog DataDatabricksJob#catalog}.
 
 ---
 
@@ -14676,7 +14676,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#name DataDatabricksJob#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#name DataDatabricksJob#name}.
 
 ---
 
@@ -14688,7 +14688,7 @@ Schema *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#schema DataDatabricksJob#schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#schema DataDatabricksJob#schema}.
 
 ---
 
@@ -14700,7 +14700,7 @@ StorageMode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#storage_mode DataDatabricksJob#storage_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#storage_mode DataDatabricksJob#storage_mode}.
 
 ---
 
@@ -14723,10 +14723,10 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPythonWheelTask.property.entryPoint">EntryPoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#entry_point DataDatabricksJob#entry_point}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPythonWheelTask.property.namedParameters">NamedParameters</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#named_parameters DataDatabricksJob#named_parameters}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPythonWheelTask.property.packageName">PackageName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#package_name DataDatabricksJob#package_name}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPythonWheelTask.property.parameters">Parameters</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPythonWheelTask.property.entryPoint">EntryPoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#entry_point DataDatabricksJob#entry_point}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPythonWheelTask.property.namedParameters">NamedParameters</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#named_parameters DataDatabricksJob#named_parameters}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPythonWheelTask.property.packageName">PackageName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#package_name DataDatabricksJob#package_name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPythonWheelTask.property.parameters">Parameters</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}. |
 
 ---
 
@@ -14738,7 +14738,7 @@ EntryPoint *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#entry_point DataDatabricksJob#entry_point}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#entry_point DataDatabricksJob#entry_point}.
 
 ---
 
@@ -14750,7 +14750,7 @@ NamedParameters *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#named_parameters DataDatabricksJob#named_parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#named_parameters DataDatabricksJob#named_parameters}.
 
 ---
 
@@ -14762,7 +14762,7 @@ PackageName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#package_name DataDatabricksJob#package_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#package_name DataDatabricksJob#package_name}.
 
 ---
 
@@ -14774,7 +14774,7 @@ Parameters *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}.
 
 ---
 
@@ -14795,8 +14795,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskRunJobTask.property.jobId">JobId</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#job_id DataDatabricksJob#job_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskRunJobTask.property.jobParameters">JobParameters</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#job_parameters DataDatabricksJob#job_parameters}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskRunJobTask.property.jobId">JobId</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#job_id DataDatabricksJob#job_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskRunJobTask.property.jobParameters">JobParameters</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#job_parameters DataDatabricksJob#job_parameters}. |
 
 ---
 
@@ -14808,7 +14808,7 @@ JobId *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#job_id DataDatabricksJob#job_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#job_id DataDatabricksJob#job_id}.
 
 ---
 
@@ -14820,7 +14820,7 @@ JobParameters *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#job_parameters DataDatabricksJob#job_parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#job_parameters DataDatabricksJob#job_parameters}.
 
 ---
 
@@ -14842,9 +14842,9 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkJarTask.property.jarUri">JarUri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#jar_uri DataDatabricksJob#jar_uri}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkJarTask.property.mainClassName">MainClassName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#main_class_name DataDatabricksJob#main_class_name}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkJarTask.property.parameters">Parameters</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkJarTask.property.jarUri">JarUri</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#jar_uri DataDatabricksJob#jar_uri}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkJarTask.property.mainClassName">MainClassName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#main_class_name DataDatabricksJob#main_class_name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkJarTask.property.parameters">Parameters</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}. |
 
 ---
 
@@ -14856,7 +14856,7 @@ JarUri *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#jar_uri DataDatabricksJob#jar_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#jar_uri DataDatabricksJob#jar_uri}.
 
 ---
 
@@ -14868,7 +14868,7 @@ MainClassName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#main_class_name DataDatabricksJob#main_class_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#main_class_name DataDatabricksJob#main_class_name}.
 
 ---
 
@@ -14880,7 +14880,7 @@ Parameters *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}.
 
 ---
 
@@ -14902,9 +14902,9 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkPythonTask.property.pythonFile">PythonFile</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#python_file DataDatabricksJob#python_file}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkPythonTask.property.parameters">Parameters</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkPythonTask.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#source DataDatabricksJob#source}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkPythonTask.property.pythonFile">PythonFile</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#python_file DataDatabricksJob#python_file}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkPythonTask.property.parameters">Parameters</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkPythonTask.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#source DataDatabricksJob#source}. |
 
 ---
 
@@ -14916,7 +14916,7 @@ PythonFile *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#python_file DataDatabricksJob#python_file}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#python_file DataDatabricksJob#python_file}.
 
 ---
 
@@ -14928,7 +14928,7 @@ Parameters *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}.
 
 ---
 
@@ -14940,7 +14940,7 @@ Source *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#source DataDatabricksJob#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#source DataDatabricksJob#source}.
 
 ---
 
@@ -14960,7 +14960,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkSubmitTask.property.parameters">Parameters</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkSubmitTask.property.parameters">Parameters</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}. |
 
 ---
 
@@ -14972,7 +14972,7 @@ Parameters *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}.
 
 ---
 
@@ -14997,11 +14997,11 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTask.property.warehouseId">WarehouseId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#warehouse_id DataDatabricksJob#warehouse_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTask.property.warehouseId">WarehouseId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#warehouse_id DataDatabricksJob#warehouse_id}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTask.property.alert">Alert</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskAlert">DataDatabricksJobJobSettingsSettingsTaskSqlTaskAlert</a></code> | alert block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTask.property.dashboard">Dashboard</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboard">DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboard</a></code> | dashboard block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTask.property.file">File</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskFile">DataDatabricksJobJobSettingsSettingsTaskSqlTaskFile</a></code> | file block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTask.property.parameters">Parameters</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTask.property.parameters">Parameters</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTask.property.query">Query</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskQuery">DataDatabricksJobJobSettingsSettingsTaskSqlTaskQuery</a></code> | query block. |
 
 ---
@@ -15014,7 +15014,7 @@ WarehouseId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#warehouse_id DataDatabricksJob#warehouse_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#warehouse_id DataDatabricksJob#warehouse_id}.
 
 ---
 
@@ -15028,7 +15028,7 @@ Alert DataDatabricksJobJobSettingsSettingsTaskSqlTaskAlert
 
 alert block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#alert DataDatabricksJob#alert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#alert DataDatabricksJob#alert}
 
 ---
 
@@ -15042,7 +15042,7 @@ Dashboard DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboard
 
 dashboard block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#dashboard DataDatabricksJob#dashboard}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#dashboard DataDatabricksJob#dashboard}
 
 ---
 
@@ -15056,7 +15056,7 @@ File DataDatabricksJobJobSettingsSettingsTaskSqlTaskFile
 
 file block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#file DataDatabricksJob#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#file DataDatabricksJob#file}
 
 ---
 
@@ -15068,7 +15068,7 @@ Parameters *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#parameters DataDatabricksJob#parameters}.
 
 ---
 
@@ -15082,7 +15082,7 @@ Query DataDatabricksJobJobSettingsSettingsTaskSqlTaskQuery
 
 query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#query DataDatabricksJob#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#query DataDatabricksJob#query}
 
 ---
 
@@ -15104,8 +15104,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskAlert.property.alertId">AlertId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#alert_id DataDatabricksJob#alert_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskAlert.property.pauseSubscriptions">PauseSubscriptions</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#pause_subscriptions DataDatabricksJob#pause_subscriptions}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskAlert.property.alertId">AlertId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#alert_id DataDatabricksJob#alert_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskAlert.property.pauseSubscriptions">PauseSubscriptions</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#pause_subscriptions DataDatabricksJob#pause_subscriptions}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskAlert.property.subscriptions">Subscriptions</a></code> | <code>interface{}</code> | subscriptions block. |
 
 ---
@@ -15118,7 +15118,7 @@ AlertId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#alert_id DataDatabricksJob#alert_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#alert_id DataDatabricksJob#alert_id}.
 
 ---
 
@@ -15130,7 +15130,7 @@ PauseSubscriptions interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#pause_subscriptions DataDatabricksJob#pause_subscriptions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#pause_subscriptions DataDatabricksJob#pause_subscriptions}.
 
 ---
 
@@ -15144,7 +15144,7 @@ Subscriptions interface{}
 
 subscriptions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#subscriptions DataDatabricksJob#subscriptions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#subscriptions DataDatabricksJob#subscriptions}
 
 ---
 
@@ -15165,8 +15165,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskAlertSubscriptions.property.destinationId">DestinationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination_id DataDatabricksJob#destination_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskAlertSubscriptions.property.userName">UserName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#user_name DataDatabricksJob#user_name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskAlertSubscriptions.property.destinationId">DestinationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination_id DataDatabricksJob#destination_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskAlertSubscriptions.property.userName">UserName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#user_name DataDatabricksJob#user_name}. |
 
 ---
 
@@ -15178,7 +15178,7 @@ DestinationId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination_id DataDatabricksJob#destination_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination_id DataDatabricksJob#destination_id}.
 
 ---
 
@@ -15190,7 +15190,7 @@ UserName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#user_name DataDatabricksJob#user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#user_name DataDatabricksJob#user_name}.
 
 ---
 
@@ -15213,9 +15213,9 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboard.property.dashboardId">DashboardId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#dashboard_id DataDatabricksJob#dashboard_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboard.property.customSubject">CustomSubject</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#custom_subject DataDatabricksJob#custom_subject}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboard.property.pauseSubscriptions">PauseSubscriptions</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#pause_subscriptions DataDatabricksJob#pause_subscriptions}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboard.property.dashboardId">DashboardId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#dashboard_id DataDatabricksJob#dashboard_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboard.property.customSubject">CustomSubject</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#custom_subject DataDatabricksJob#custom_subject}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboard.property.pauseSubscriptions">PauseSubscriptions</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#pause_subscriptions DataDatabricksJob#pause_subscriptions}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboard.property.subscriptions">Subscriptions</a></code> | <code>interface{}</code> | subscriptions block. |
 
 ---
@@ -15228,7 +15228,7 @@ DashboardId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#dashboard_id DataDatabricksJob#dashboard_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#dashboard_id DataDatabricksJob#dashboard_id}.
 
 ---
 
@@ -15240,7 +15240,7 @@ CustomSubject *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#custom_subject DataDatabricksJob#custom_subject}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#custom_subject DataDatabricksJob#custom_subject}.
 
 ---
 
@@ -15252,7 +15252,7 @@ PauseSubscriptions interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#pause_subscriptions DataDatabricksJob#pause_subscriptions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#pause_subscriptions DataDatabricksJob#pause_subscriptions}.
 
 ---
 
@@ -15266,7 +15266,7 @@ Subscriptions interface{}
 
 subscriptions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#subscriptions DataDatabricksJob#subscriptions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#subscriptions DataDatabricksJob#subscriptions}
 
 ---
 
@@ -15287,8 +15287,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboardSubscriptions.property.destinationId">DestinationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination_id DataDatabricksJob#destination_id}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboardSubscriptions.property.userName">UserName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#user_name DataDatabricksJob#user_name}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboardSubscriptions.property.destinationId">DestinationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination_id DataDatabricksJob#destination_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboardSubscriptions.property.userName">UserName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#user_name DataDatabricksJob#user_name}. |
 
 ---
 
@@ -15300,7 +15300,7 @@ DestinationId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#destination_id DataDatabricksJob#destination_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#destination_id DataDatabricksJob#destination_id}.
 
 ---
 
@@ -15312,7 +15312,7 @@ UserName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#user_name DataDatabricksJob#user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#user_name DataDatabricksJob#user_name}.
 
 ---
 
@@ -15333,8 +15333,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskFile.property.path">Path</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#path DataDatabricksJob#path}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskFile.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#source DataDatabricksJob#source}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskFile.property.path">Path</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#path DataDatabricksJob#path}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskFile.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#source DataDatabricksJob#source}. |
 
 ---
 
@@ -15346,7 +15346,7 @@ Path *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#path DataDatabricksJob#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#path DataDatabricksJob#path}.
 
 ---
 
@@ -15358,7 +15358,7 @@ Source *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#source DataDatabricksJob#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#source DataDatabricksJob#source}.
 
 ---
 
@@ -15378,7 +15378,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskQuery.property.queryId">QueryId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#query_id DataDatabricksJob#query_id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskQuery.property.queryId">QueryId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#query_id DataDatabricksJob#query_id}. |
 
 ---
 
@@ -15390,7 +15390,7 @@ QueryId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#query_id DataDatabricksJob#query_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#query_id DataDatabricksJob#query_id}.
 
 ---
 
@@ -15432,7 +15432,7 @@ OnDurationWarningThresholdExceeded interface{}
 
 on_duration_warning_threshold_exceeded block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#on_duration_warning_threshold_exceeded DataDatabricksJob#on_duration_warning_threshold_exceeded}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#on_duration_warning_threshold_exceeded DataDatabricksJob#on_duration_warning_threshold_exceeded}
 
 ---
 
@@ -15446,7 +15446,7 @@ OnFailure interface{}
 
 on_failure block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#on_failure DataDatabricksJob#on_failure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#on_failure DataDatabricksJob#on_failure}
 
 ---
 
@@ -15460,7 +15460,7 @@ OnStart interface{}
 
 on_start block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#on_start DataDatabricksJob#on_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#on_start DataDatabricksJob#on_start}
 
 ---
 
@@ -15474,7 +15474,7 @@ OnStreamingBacklogExceeded interface{}
 
 on_streaming_backlog_exceeded block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#on_streaming_backlog_exceeded DataDatabricksJob#on_streaming_backlog_exceeded}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#on_streaming_backlog_exceeded DataDatabricksJob#on_streaming_backlog_exceeded}
 
 ---
 
@@ -15488,7 +15488,7 @@ OnSuccess interface{}
 
 on_success block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#on_success DataDatabricksJob#on_success}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#on_success DataDatabricksJob#on_success}
 
 ---
 
@@ -15508,7 +15508,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskWebhookNotificationsOnDurationWarningThresholdExceeded.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#id DataDatabricksJob#id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskWebhookNotificationsOnDurationWarningThresholdExceeded.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#id DataDatabricksJob#id}. |
 
 ---
 
@@ -15520,7 +15520,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#id DataDatabricksJob#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#id DataDatabricksJob#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -15543,7 +15543,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskWebhookNotificationsOnFailure.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#id DataDatabricksJob#id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskWebhookNotificationsOnFailure.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#id DataDatabricksJob#id}. |
 
 ---
 
@@ -15555,7 +15555,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#id DataDatabricksJob#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#id DataDatabricksJob#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -15578,7 +15578,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskWebhookNotificationsOnStart.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#id DataDatabricksJob#id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskWebhookNotificationsOnStart.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#id DataDatabricksJob#id}. |
 
 ---
 
@@ -15590,7 +15590,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#id DataDatabricksJob#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#id DataDatabricksJob#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -15613,7 +15613,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskWebhookNotificationsOnStreamingBacklogExceeded.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#id DataDatabricksJob#id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskWebhookNotificationsOnStreamingBacklogExceeded.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#id DataDatabricksJob#id}. |
 
 ---
 
@@ -15625,7 +15625,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#id DataDatabricksJob#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#id DataDatabricksJob#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -15648,7 +15648,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskWebhookNotificationsOnSuccess.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#id DataDatabricksJob#id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskWebhookNotificationsOnSuccess.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#id DataDatabricksJob#id}. |
 
 ---
 
@@ -15660,7 +15660,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#id DataDatabricksJob#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#id DataDatabricksJob#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -15687,7 +15687,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTrigger.property.fileArrival">FileArrival</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrival">DataDatabricksJobJobSettingsSettingsTriggerFileArrival</a></code> | file_arrival block. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTrigger.property.pauseStatus">PauseStatus</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#pause_status DataDatabricksJob#pause_status}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTrigger.property.pauseStatus">PauseStatus</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#pause_status DataDatabricksJob#pause_status}. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTrigger.property.periodic">Periodic</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerPeriodic">DataDatabricksJobJobSettingsSettingsTriggerPeriodic</a></code> | periodic block. |
 | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTrigger.property.tableUpdate">TableUpdate</a></code> | <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerTableUpdate">DataDatabricksJobJobSettingsSettingsTriggerTableUpdate</a></code> | table_update block. |
 
@@ -15703,7 +15703,7 @@ FileArrival DataDatabricksJobJobSettingsSettingsTriggerFileArrival
 
 file_arrival block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#file_arrival DataDatabricksJob#file_arrival}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#file_arrival DataDatabricksJob#file_arrival}
 
 ---
 
@@ -15715,7 +15715,7 @@ PauseStatus *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#pause_status DataDatabricksJob#pause_status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#pause_status DataDatabricksJob#pause_status}.
 
 ---
 
@@ -15729,7 +15729,7 @@ Periodic DataDatabricksJobJobSettingsSettingsTriggerPeriodic
 
 periodic block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#periodic DataDatabricksJob#periodic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#periodic DataDatabricksJob#periodic}
 
 ---
 
@@ -15743,7 +15743,7 @@ TableUpdate DataDatabricksJobJobSettingsSettingsTriggerTableUpdate
 
 table_update block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#table_update DataDatabricksJob#table_update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#table_update DataDatabricksJob#table_update}
 
 ---
 
@@ -15765,9 +15765,9 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrival.property.url">Url</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#url DataDatabricksJob#url}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrival.property.minTimeBetweenTriggersSeconds">MinTimeBetweenTriggersSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#min_time_between_triggers_seconds DataDatabricksJob#min_time_between_triggers_seconds}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrival.property.waitAfterLastChangeSeconds">WaitAfterLastChangeSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#wait_after_last_change_seconds DataDatabricksJob#wait_after_last_change_seconds}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrival.property.url">Url</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#url DataDatabricksJob#url}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrival.property.minTimeBetweenTriggersSeconds">MinTimeBetweenTriggersSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#min_time_between_triggers_seconds DataDatabricksJob#min_time_between_triggers_seconds}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrival.property.waitAfterLastChangeSeconds">WaitAfterLastChangeSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#wait_after_last_change_seconds DataDatabricksJob#wait_after_last_change_seconds}. |
 
 ---
 
@@ -15779,7 +15779,7 @@ Url *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#url DataDatabricksJob#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#url DataDatabricksJob#url}.
 
 ---
 
@@ -15791,7 +15791,7 @@ MinTimeBetweenTriggersSeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#min_time_between_triggers_seconds DataDatabricksJob#min_time_between_triggers_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#min_time_between_triggers_seconds DataDatabricksJob#min_time_between_triggers_seconds}.
 
 ---
 
@@ -15803,7 +15803,7 @@ WaitAfterLastChangeSeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#wait_after_last_change_seconds DataDatabricksJob#wait_after_last_change_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#wait_after_last_change_seconds DataDatabricksJob#wait_after_last_change_seconds}.
 
 ---
 
@@ -15824,8 +15824,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerPeriodic.property.interval">Interval</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#interval DataDatabricksJob#interval}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerPeriodic.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#unit DataDatabricksJob#unit}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerPeriodic.property.interval">Interval</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#interval DataDatabricksJob#interval}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerPeriodic.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#unit DataDatabricksJob#unit}. |
 
 ---
 
@@ -15837,7 +15837,7 @@ Interval *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#interval DataDatabricksJob#interval}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#interval DataDatabricksJob#interval}.
 
 ---
 
@@ -15849,7 +15849,7 @@ Unit *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#unit DataDatabricksJob#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#unit DataDatabricksJob#unit}.
 
 ---
 
@@ -15872,10 +15872,10 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerTableUpdate.property.tableNames">TableNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#table_names DataDatabricksJob#table_names}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerTableUpdate.property.condition">Condition</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#condition DataDatabricksJob#condition}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerTableUpdate.property.minTimeBetweenTriggersSeconds">MinTimeBetweenTriggersSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#min_time_between_triggers_seconds DataDatabricksJob#min_time_between_triggers_seconds}. |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerTableUpdate.property.waitAfterLastChangeSeconds">WaitAfterLastChangeSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#wait_after_last_change_seconds DataDatabricksJob#wait_after_last_change_seconds}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerTableUpdate.property.tableNames">TableNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#table_names DataDatabricksJob#table_names}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerTableUpdate.property.condition">Condition</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#condition DataDatabricksJob#condition}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerTableUpdate.property.minTimeBetweenTriggersSeconds">MinTimeBetweenTriggersSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#min_time_between_triggers_seconds DataDatabricksJob#min_time_between_triggers_seconds}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerTableUpdate.property.waitAfterLastChangeSeconds">WaitAfterLastChangeSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#wait_after_last_change_seconds DataDatabricksJob#wait_after_last_change_seconds}. |
 
 ---
 
@@ -15887,7 +15887,7 @@ TableNames *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#table_names DataDatabricksJob#table_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#table_names DataDatabricksJob#table_names}.
 
 ---
 
@@ -15899,7 +15899,7 @@ Condition *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#condition DataDatabricksJob#condition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#condition DataDatabricksJob#condition}.
 
 ---
 
@@ -15911,7 +15911,7 @@ MinTimeBetweenTriggersSeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#min_time_between_triggers_seconds DataDatabricksJob#min_time_between_triggers_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#min_time_between_triggers_seconds DataDatabricksJob#min_time_between_triggers_seconds}.
 
 ---
 
@@ -15923,7 +15923,7 @@ WaitAfterLastChangeSeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#wait_after_last_change_seconds DataDatabricksJob#wait_after_last_change_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#wait_after_last_change_seconds DataDatabricksJob#wait_after_last_change_seconds}.
 
 ---
 
@@ -15965,7 +15965,7 @@ OnDurationWarningThresholdExceeded interface{}
 
 on_duration_warning_threshold_exceeded block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#on_duration_warning_threshold_exceeded DataDatabricksJob#on_duration_warning_threshold_exceeded}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#on_duration_warning_threshold_exceeded DataDatabricksJob#on_duration_warning_threshold_exceeded}
 
 ---
 
@@ -15979,7 +15979,7 @@ OnFailure interface{}
 
 on_failure block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#on_failure DataDatabricksJob#on_failure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#on_failure DataDatabricksJob#on_failure}
 
 ---
 
@@ -15993,7 +15993,7 @@ OnStart interface{}
 
 on_start block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#on_start DataDatabricksJob#on_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#on_start DataDatabricksJob#on_start}
 
 ---
 
@@ -16007,7 +16007,7 @@ OnStreamingBacklogExceeded interface{}
 
 on_streaming_backlog_exceeded block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#on_streaming_backlog_exceeded DataDatabricksJob#on_streaming_backlog_exceeded}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#on_streaming_backlog_exceeded DataDatabricksJob#on_streaming_backlog_exceeded}
 
 ---
 
@@ -16021,7 +16021,7 @@ OnSuccess interface{}
 
 on_success block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#on_success DataDatabricksJob#on_success}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#on_success DataDatabricksJob#on_success}
 
 ---
 
@@ -16041,7 +16041,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnDurationWarningThresholdExceeded.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#id DataDatabricksJob#id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnDurationWarningThresholdExceeded.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#id DataDatabricksJob#id}. |
 
 ---
 
@@ -16053,7 +16053,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#id DataDatabricksJob#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#id DataDatabricksJob#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -16076,7 +16076,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnFailure.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#id DataDatabricksJob#id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnFailure.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#id DataDatabricksJob#id}. |
 
 ---
 
@@ -16088,7 +16088,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#id DataDatabricksJob#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#id DataDatabricksJob#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -16111,7 +16111,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStart.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#id DataDatabricksJob#id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStart.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#id DataDatabricksJob#id}. |
 
 ---
 
@@ -16123,7 +16123,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#id DataDatabricksJob#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#id DataDatabricksJob#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -16146,7 +16146,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStreamingBacklogExceeded.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#id DataDatabricksJob#id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStreamingBacklogExceeded.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#id DataDatabricksJob#id}. |
 
 ---
 
@@ -16158,7 +16158,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#id DataDatabricksJob#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#id DataDatabricksJob#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -16181,7 +16181,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnSuccess.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#id DataDatabricksJob#id}. |
+| <code><a href="#@cdktf/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnSuccess.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#id DataDatabricksJob#id}. |
 
 ---
 
@@ -16193,7 +16193,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.97.0/docs/data-sources/job#id DataDatabricksJob#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.98.0/docs/data-sources/job#id DataDatabricksJob#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
