@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksQualityMonitorV2.DataDatabricksQualityMonitorV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksqualitymonitorv2"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksqualitymonitorv2"
 
 datadatabricksqualitymonitorv2.NewDataDatabricksQualityMonitorV2(scope Construct, id *string, config DataDatabricksQualityMonitorV2Config) DataDatabricksQualityMonitorV2
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.dataDatabricksQualityMonitorV2.DataDatabricksQualityMonitorV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksqualitymonitorv2"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksqualitymonitorv2"
 
 datadatabricksqualitymonitorv2.DataDatabricksQualityMonitorV2_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.dataDatabricksQualityMonitorV2.DataDatabricksQualityMonitorV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksqualitymonitorv2"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksqualitymonitorv2"
 
 datadatabricksqualitymonitorv2.DataDatabricksQualityMonitorV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datadatabricksqualitymonitorv2.DataDatabricksQualityMonitorV2_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-databricks.dataDatabricksQualityMonitorV2.DataDatabricksQualityMonitorV2.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksqualitymonitorv2"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksqualitymonitorv2"
 
 datadatabricksqualitymonitorv2.DataDatabricksQualityMonitorV2_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datadatabricksqualitymonitorv2.DataDatabricksQualityMonitorV2_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.dataDatabricksQualityMonitorV2.DataDatabricksQualityMonitorV2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksqualitymonitorv2"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksqualitymonitorv2"
 
 datadatabricksqualitymonitorv2.DataDatabricksQualityMonitorV2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -598,7 +598,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksQualityMonitorV2.DataDatabricksQualityMonitorV2AnomalyDetectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksqualitymonitorv2"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksqualitymonitorv2"
 
 &datadatabricksqualitymonitorv2.DataDatabricksQualityMonitorV2AnomalyDetectionConfig {
 
@@ -611,7 +611,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksq
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksQualityMonitorV2.DataDatabricksQualityMonitorV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksqualitymonitorv2"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksqualitymonitorv2"
 
 &datadatabricksqualitymonitorv2.DataDatabricksQualityMonitorV2Config {
 	Connection: interface{},
@@ -743,7 +743,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksQualityMonitorV2.DataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksqualitymonitorv2"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksqualitymonitorv2"
 
 datadatabricksqualitymonitorv2.NewDataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksQualityMonitorV2AnomalyDetectionConfigOutputReference
 ```

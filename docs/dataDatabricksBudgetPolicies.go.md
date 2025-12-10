@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksbudgetpolicies"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksbudgetpolicies"
 
 datadatabricksbudgetpolicies.NewDataDatabricksBudgetPolicies(scope Construct, id *string, config DataDatabricksBudgetPoliciesConfig) DataDatabricksBudgetPolicies
 ```
@@ -323,7 +323,7 @@ func ResetSortSpec()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPolicies.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksbudgetpolicies"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksbudgetpolicies"
 
 datadatabricksbudgetpolicies.DataDatabricksBudgetPolicies_IsConstruct(x interface{}) *bool
 ```
@@ -355,7 +355,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPolicies.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksbudgetpolicies"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksbudgetpolicies"
 
 datadatabricksbudgetpolicies.DataDatabricksBudgetPolicies_IsTerraformElement(x interface{}) *bool
 ```
@@ -369,7 +369,7 @@ datadatabricksbudgetpolicies.DataDatabricksBudgetPolicies_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPolicies.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksbudgetpolicies"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksbudgetpolicies"
 
 datadatabricksbudgetpolicies.DataDatabricksBudgetPolicies_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -383,7 +383,7 @@ datadatabricksbudgetpolicies.DataDatabricksBudgetPolicies_IsTerraformDataSource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPolicies.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksbudgetpolicies"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksbudgetpolicies"
 
 datadatabricksbudgetpolicies.DataDatabricksBudgetPolicies_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -667,7 +667,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksbudgetpolicies"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksbudgetpolicies"
 
 &datadatabricksbudgetpolicies.DataDatabricksBudgetPoliciesConfig {
 	Connection: interface{},
@@ -677,9 +677,9 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksb
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	FilterBy: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesFilterBy,
+	FilterBy: github.com/cdktf/cdktf-provider-databricks-go/databricks/v15.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesFilterBy,
 	PageSize: *f64,
-	SortSpec: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesSortSpec,
+	SortSpec: github.com/cdktf/cdktf-provider-databricks-go/databricks/v15.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesSortSpec,
 }
 ```
 
@@ -811,7 +811,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesFilterBy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksbudgetpolicies"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksbudgetpolicies"
 
 &datadatabricksbudgetpolicies.DataDatabricksBudgetPoliciesFilterBy {
 	CreatorUserId: *f64,
@@ -871,7 +871,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksbudgetpolicies"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksbudgetpolicies"
 
 &datadatabricksbudgetpolicies.DataDatabricksBudgetPoliciesPolicies {
 	PolicyId: *string,
@@ -903,7 +903,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesPoliciesCustomTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksbudgetpolicies"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksbudgetpolicies"
 
 &datadatabricksbudgetpolicies.DataDatabricksBudgetPoliciesPoliciesCustomTags {
 	Key: *string,
@@ -949,7 +949,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesSortSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksbudgetpolicies"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksbudgetpolicies"
 
 &datadatabricksbudgetpolicies.DataDatabricksBudgetPoliciesSortSpec {
 	Descending: interface{},
@@ -997,7 +997,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesFilterByOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksbudgetpolicies"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksbudgetpolicies"
 
 datadatabricksbudgetpolicies.NewDataDatabricksBudgetPoliciesFilterByOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksBudgetPoliciesFilterByOutputReference
 ```
@@ -1333,7 +1333,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesPoliciesCustomTagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksbudgetpolicies"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksbudgetpolicies"
 
 datadatabricksbudgetpolicies.NewDataDatabricksBudgetPoliciesPoliciesCustomTagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksBudgetPoliciesPoliciesCustomTagsList
 ```
@@ -1493,7 +1493,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesPoliciesCustomTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksbudgetpolicies"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksbudgetpolicies"
 
 datadatabricksbudgetpolicies.NewDataDatabricksBudgetPoliciesPoliciesCustomTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksBudgetPoliciesPoliciesCustomTagsOutputReference
 ```
@@ -1811,7 +1811,7 @@ func InternalValue() DataDatabricksBudgetPoliciesPoliciesCustomTags
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesPoliciesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksbudgetpolicies"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksbudgetpolicies"
 
 datadatabricksbudgetpolicies.NewDataDatabricksBudgetPoliciesPoliciesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksBudgetPoliciesPoliciesList
 ```
@@ -1971,7 +1971,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesPoliciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksbudgetpolicies"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksbudgetpolicies"
 
 datadatabricksbudgetpolicies.NewDataDatabricksBudgetPoliciesPoliciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksBudgetPoliciesPoliciesOutputReference
 ```
@@ -2293,7 +2293,7 @@ func InternalValue() DataDatabricksBudgetPoliciesPolicies
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksBudgetPolicies.DataDatabricksBudgetPoliciesSortSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksbudgetpolicies"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksbudgetpolicies"
 
 datadatabricksbudgetpolicies.NewDataDatabricksBudgetPoliciesSortSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksBudgetPoliciesSortSpecOutputReference
 ```

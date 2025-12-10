@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksNotebook.DataDatabricksNotebook.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksnotebook"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksnotebook"
 
 datadatabricksnotebook.NewDataDatabricksNotebook(scope Construct, id *string, config DataDatabricksNotebookConfig) DataDatabricksNotebook
 ```
@@ -324,7 +324,7 @@ func ResetProviderConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.dataDatabricksNotebook.DataDatabricksNotebook.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksnotebook"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksnotebook"
 
 datadatabricksnotebook.DataDatabricksNotebook_IsConstruct(x interface{}) *bool
 ```
@@ -356,7 +356,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.dataDatabricksNotebook.DataDatabricksNotebook.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksnotebook"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksnotebook"
 
 datadatabricksnotebook.DataDatabricksNotebook_IsTerraformElement(x interface{}) *bool
 ```
@@ -370,7 +370,7 @@ datadatabricksnotebook.DataDatabricksNotebook_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-databricks.dataDatabricksNotebook.DataDatabricksNotebook.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksnotebook"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksnotebook"
 
 datadatabricksnotebook.DataDatabricksNotebook_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -384,7 +384,7 @@ datadatabricksnotebook.DataDatabricksNotebook_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.dataDatabricksNotebook.DataDatabricksNotebook.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksnotebook"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksnotebook"
 
 datadatabricksnotebook.DataDatabricksNotebook_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -767,7 +767,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksNotebook.DataDatabricksNotebookConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksnotebook"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksnotebook"
 
 &datadatabricksnotebook.DataDatabricksNotebookConfig {
 	Connection: interface{},
@@ -783,7 +783,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksn
 	Language: *string,
 	ObjectId: *f64,
 	ObjectType: *string,
-	ProviderConfig: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksNotebook.DataDatabricksNotebookProviderConfig,
+	ProviderConfig: github.com/cdktf/cdktf-provider-databricks-go/databricks/v15.dataDatabricksNotebook.DataDatabricksNotebookProviderConfig,
 }
 ```
 
@@ -972,7 +972,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksNotebook.DataDatabricksNotebookProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksnotebook"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksnotebook"
 
 &datadatabricksnotebook.DataDatabricksNotebookProviderConfig {
 	WorkspaceId: *string,
@@ -1006,7 +1006,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksNotebook.DataDatabricksNotebookProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksnotebook"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksnotebook"
 
 datadatabricksnotebook.NewDataDatabricksNotebookProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksNotebookProviderConfigOutputReference
 ```

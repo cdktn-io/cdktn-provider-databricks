@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksDatabaseDatabaseCatalog.DataDatabricksDatabaseDatabaseCatalog.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksdatabasedatabasecatalog"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksdatabasedatabasecatalog"
 
 datadatabricksdatabasedatabasecatalog.NewDataDatabricksDatabaseDatabaseCatalog(scope Construct, id *string, config DataDatabricksDatabaseDatabaseCatalogConfig) DataDatabricksDatabaseDatabaseCatalog
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.dataDatabricksDatabaseDatabaseCatalog.DataDatabricksDatabaseDatabaseCatalog.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksdatabasedatabasecatalog"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksdatabasedatabasecatalog"
 
 datadatabricksdatabasedatabasecatalog.DataDatabricksDatabaseDatabaseCatalog_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.dataDatabricksDatabaseDatabaseCatalog.DataDatabricksDatabaseDatabaseCatalog.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksdatabasedatabasecatalog"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksdatabasedatabasecatalog"
 
 datadatabricksdatabasedatabasecatalog.DataDatabricksDatabaseDatabaseCatalog_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datadatabricksdatabasedatabasecatalog.DataDatabricksDatabaseDatabaseCatalog_IsTe
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-databricks.dataDatabricksDatabaseDatabaseCatalog.DataDatabricksDatabaseDatabaseCatalog.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksdatabasedatabasecatalog"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksdatabasedatabasecatalog"
 
 datadatabricksdatabasedatabasecatalog.DataDatabricksDatabaseDatabaseCatalog_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datadatabricksdatabasedatabasecatalog.DataDatabricksDatabaseDatabaseCatalog_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.dataDatabricksDatabaseDatabaseCatalog.DataDatabricksDatabaseDatabaseCatalog.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksdatabasedatabasecatalog"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksdatabasedatabasecatalog"
 
 datadatabricksdatabasedatabasecatalog.DataDatabricksDatabaseDatabaseCatalog_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -609,7 +609,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksDatabaseDatabaseCatalog.DataDatabricksDatabaseDatabaseCatalogConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksdatabasedatabasecatalog"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksdatabasedatabasecatalog"
 
 &datadatabricksdatabasedatabasecatalog.DataDatabricksDatabaseDatabaseCatalogConfig {
 	Connection: interface{},

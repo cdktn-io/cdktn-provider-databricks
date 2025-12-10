@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksAccountFederationPolicy.DataDatabricksAccountFederationPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksaccountfederationpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksaccountfederationpolicy"
 
 datadatabricksaccountfederationpolicy.NewDataDatabricksAccountFederationPolicy(scope Construct, id *string, config DataDatabricksAccountFederationPolicyConfig) DataDatabricksAccountFederationPolicy
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.dataDatabricksAccountFederationPolicy.DataDatabricksAccountFederationPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksaccountfederationpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksaccountfederationpolicy"
 
 datadatabricksaccountfederationpolicy.DataDatabricksAccountFederationPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.dataDatabricksAccountFederationPolicy.DataDatabricksAccountFederationPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksaccountfederationpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksaccountfederationpolicy"
 
 datadatabricksaccountfederationpolicy.DataDatabricksAccountFederationPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datadatabricksaccountfederationpolicy.DataDatabricksAccountFederationPolicy_IsTe
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-databricks.dataDatabricksAccountFederationPolicy.DataDatabricksAccountFederationPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksaccountfederationpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksaccountfederationpolicy"
 
 datadatabricksaccountfederationpolicy.DataDatabricksAccountFederationPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datadatabricksaccountfederationpolicy.DataDatabricksAccountFederationPolicy_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.dataDatabricksAccountFederationPolicy.DataDatabricksAccountFederationPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksaccountfederationpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksaccountfederationpolicy"
 
 datadatabricksaccountfederationpolicy.DataDatabricksAccountFederationPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -642,7 +642,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksAccountFederationPolicy.DataDatabricksAccountFederationPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksaccountfederationpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksaccountfederationpolicy"
 
 &datadatabricksaccountfederationpolicy.DataDatabricksAccountFederationPolicyConfig {
 	Connection: interface{},
@@ -758,7 +758,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksAccountFederationPolicy.DataDatabricksAccountFederationPolicyOidcPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksaccountfederationpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksaccountfederationpolicy"
 
 &datadatabricksaccountfederationpolicy.DataDatabricksAccountFederationPolicyOidcPolicy {
 	Audiences: *[]*string,
@@ -862,7 +862,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksAccountFederationPolicy.DataDatabricksAccountFederationPolicyOidcPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksaccountfederationpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksaccountfederationpolicy"
 
 datadatabricksaccountfederationpolicy.NewDataDatabricksAccountFederationPolicyOidcPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksAccountFederationPolicyOidcPolicyOutputReference
 ```

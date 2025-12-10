@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksOnlineStore.DataDatabricksOnlineStore.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksonlinestore"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksonlinestore"
 
 datadatabricksonlinestore.NewDataDatabricksOnlineStore(scope Construct, id *string, config DataDatabricksOnlineStoreConfig) DataDatabricksOnlineStore
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.dataDatabricksOnlineStore.DataDatabricksOnlineStore.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksonlinestore"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksonlinestore"
 
 datadatabricksonlinestore.DataDatabricksOnlineStore_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.dataDatabricksOnlineStore.DataDatabricksOnlineStore.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksonlinestore"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksonlinestore"
 
 datadatabricksonlinestore.DataDatabricksOnlineStore_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datadatabricksonlinestore.DataDatabricksOnlineStore_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-databricks.dataDatabricksOnlineStore.DataDatabricksOnlineStore.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksonlinestore"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksonlinestore"
 
 datadatabricksonlinestore.DataDatabricksOnlineStore_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datadatabricksonlinestore.DataDatabricksOnlineStore_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.dataDatabricksOnlineStore.DataDatabricksOnlineStore.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksonlinestore"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksonlinestore"
 
 datadatabricksonlinestore.DataDatabricksOnlineStore_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -620,7 +620,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksOnlineStore.DataDatabricksOnlineStoreConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksonlinestore"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksonlinestore"
 
 &datadatabricksonlinestore.DataDatabricksOnlineStoreConfig {
 	Connection: interface{},

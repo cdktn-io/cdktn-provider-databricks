@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperiment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmlflowexperiment"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksmlflowexperiment"
 
 datadatabricksmlflowexperiment.NewDataDatabricksMlflowExperiment(scope Construct, id *string, config DataDatabricksMlflowExperimentConfig) DataDatabricksMlflowExperiment
 ```
@@ -365,7 +365,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperiment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmlflowexperiment"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksmlflowexperiment"
 
 datadatabricksmlflowexperiment.DataDatabricksMlflowExperiment_IsConstruct(x interface{}) *bool
 ```
@@ -397,7 +397,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperiment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmlflowexperiment"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksmlflowexperiment"
 
 datadatabricksmlflowexperiment.DataDatabricksMlflowExperiment_IsTerraformElement(x interface{}) *bool
 ```
@@ -411,7 +411,7 @@ datadatabricksmlflowexperiment.DataDatabricksMlflowExperiment_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperiment.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmlflowexperiment"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksmlflowexperiment"
 
 datadatabricksmlflowexperiment.DataDatabricksMlflowExperiment_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -425,7 +425,7 @@ datadatabricksmlflowexperiment.DataDatabricksMlflowExperiment_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperiment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmlflowexperiment"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksmlflowexperiment"
 
 datadatabricksmlflowexperiment.DataDatabricksMlflowExperiment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -830,7 +830,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmlflowexperiment"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksmlflowexperiment"
 
 &datadatabricksmlflowexperiment.DataDatabricksMlflowExperimentConfig {
 	Connection: interface{},
@@ -847,7 +847,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksm
 	LastUpdateTime: *f64,
 	LifecycleStage: *string,
 	Name: *string,
-	ProviderConfig: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentProviderConfig,
+	ProviderConfig: github.com/cdktf/cdktf-provider-databricks-go/databricks/v15.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentProviderConfig,
 	Tags: interface{},
 }
 ```
@@ -1065,7 +1065,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmlflowexperiment"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksmlflowexperiment"
 
 &datadatabricksmlflowexperiment.DataDatabricksMlflowExperimentProviderConfig {
 	WorkspaceId: *string,
@@ -1097,7 +1097,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmlflowexperiment"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksmlflowexperiment"
 
 &datadatabricksmlflowexperiment.DataDatabricksMlflowExperimentTags {
 	Key: *string,
@@ -1145,7 +1145,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmlflowexperiment"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksmlflowexperiment"
 
 datadatabricksmlflowexperiment.NewDataDatabricksMlflowExperimentProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksMlflowExperimentProviderConfigOutputReference
 ```
@@ -1416,7 +1416,7 @@ func InternalValue() DataDatabricksMlflowExperimentProviderConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmlflowexperiment"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksmlflowexperiment"
 
 datadatabricksmlflowexperiment.NewDataDatabricksMlflowExperimentTagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksMlflowExperimentTagsList
 ```
@@ -1576,7 +1576,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksMlflowExperiment.DataDatabricksMlflowExperimentTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksmlflowexperiment"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksmlflowexperiment"
 
 datadatabricksmlflowexperiment.NewDataDatabricksMlflowExperimentTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksMlflowExperimentTagsOutputReference
 ```

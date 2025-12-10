@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.servicePrincipalFederationPolicy.ServicePrincipalFederationPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/serviceprincipalfederationpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/serviceprincipalfederationpolicy"
 
 serviceprincipalfederationpolicy.NewServicePrincipalFederationPolicy(scope Construct, id *string, config ServicePrincipalFederationPolicyConfig) ServicePrincipalFederationPolicy
 ```
@@ -419,7 +419,7 @@ func ResetServicePrincipalId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.servicePrincipalFederationPolicy.ServicePrincipalFederationPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/serviceprincipalfederationpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/serviceprincipalfederationpolicy"
 
 serviceprincipalfederationpolicy.ServicePrincipalFederationPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.servicePrincipalFederationPolicy.ServicePrincipalFederationPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/serviceprincipalfederationpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/serviceprincipalfederationpolicy"
 
 serviceprincipalfederationpolicy.ServicePrincipalFederationPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ serviceprincipalfederationpolicy.ServicePrincipalFederationPolicy_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.servicePrincipalFederationPolicy.ServicePrincipalFederationPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/serviceprincipalfederationpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/serviceprincipalfederationpolicy"
 
 serviceprincipalfederationpolicy.ServicePrincipalFederationPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ serviceprincipalfederationpolicy.ServicePrincipalFederationPolicy_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.servicePrincipalFederationPolicy.ServicePrincipalFederationPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/serviceprincipalfederationpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/serviceprincipalfederationpolicy"
 
 serviceprincipalfederationpolicy.ServicePrincipalFederationPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -840,7 +840,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.servicePrincipalFederationPolicy.ServicePrincipalFederationPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/serviceprincipalfederationpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/serviceprincipalfederationpolicy"
 
 &serviceprincipalfederationpolicy.ServicePrincipalFederationPolicyConfig {
 	Connection: interface{},
@@ -851,7 +851,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/serviceprincipa
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Description: *string,
-	OidcPolicy: github.com/cdktf/cdktf-provider-databricks-go/databricks.servicePrincipalFederationPolicy.ServicePrincipalFederationPolicyOidcPolicy,
+	OidcPolicy: github.com/cdktf/cdktf-provider-databricks-go/databricks/v15.servicePrincipalFederationPolicy.ServicePrincipalFederationPolicyOidcPolicy,
 	PolicyId: *string,
 	ServicePrincipalId: *f64,
 }
@@ -998,7 +998,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.servicePrincipalFederationPolicy.ServicePrincipalFederationPolicyOidcPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/serviceprincipalfederationpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/serviceprincipalfederationpolicy"
 
 &serviceprincipalfederationpolicy.ServicePrincipalFederationPolicyOidcPolicy {
 	Audiences: *[]*string,
@@ -1102,7 +1102,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.servicePrincipalFederationPolicy.ServicePrincipalFederationPolicyOidcPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/serviceprincipalfederationpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/serviceprincipalfederationpolicy"
 
 serviceprincipalfederationpolicy.NewServicePrincipalFederationPolicyOidcPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServicePrincipalFederationPolicyOidcPolicyOutputReference
 ```

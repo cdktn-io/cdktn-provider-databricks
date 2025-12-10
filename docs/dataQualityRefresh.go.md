@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataQualityRefresh.DataQualityRefresh.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/dataqualityrefresh"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/dataqualityrefresh"
 
 dataqualityrefresh.NewDataQualityRefresh(scope Construct, id *string, config DataQualityRefreshConfig) DataQualityRefresh
 ```
@@ -378,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.dataQualityRefresh.DataQualityRefresh.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/dataqualityrefresh"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/dataqualityrefresh"
 
 dataqualityrefresh.DataQualityRefresh_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.dataQualityRefresh.DataQualityRefresh.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/dataqualityrefresh"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/dataqualityrefresh"
 
 dataqualityrefresh.DataQualityRefresh_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ dataqualityrefresh.DataQualityRefresh_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.dataQualityRefresh.DataQualityRefresh.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/dataqualityrefresh"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/dataqualityrefresh"
 
 dataqualityrefresh.DataQualityRefresh_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ dataqualityrefresh.DataQualityRefresh_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.dataQualityRefresh.DataQualityRefresh.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/dataqualityrefresh"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/dataqualityrefresh"
 
 dataqualityrefresh.DataQualityRefresh_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -777,7 +777,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataQualityRefresh.DataQualityRefreshConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/dataqualityrefresh"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/dataqualityrefresh"
 
 &dataqualityrefresh.DataQualityRefreshConfig {
 	Connection: interface{},
