@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksPolicyInfos.DataDatabricksPolicyInfos.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabrickspolicyinfos"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickspolicyinfos"
 
 datadatabrickspolicyinfos.NewDataDatabricksPolicyInfos(scope Construct, id *string, config DataDatabricksPolicyInfosConfig) DataDatabricksPolicyInfos
 ```
@@ -290,7 +290,7 @@ func ResetMaxResults()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.dataDatabricksPolicyInfos.DataDatabricksPolicyInfos.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabrickspolicyinfos"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickspolicyinfos"
 
 datadatabrickspolicyinfos.DataDatabricksPolicyInfos_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.dataDatabricksPolicyInfos.DataDatabricksPolicyInfos.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabrickspolicyinfos"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickspolicyinfos"
 
 datadatabrickspolicyinfos.DataDatabricksPolicyInfos_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datadatabrickspolicyinfos.DataDatabricksPolicyInfos_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-databricks.dataDatabricksPolicyInfos.DataDatabricksPolicyInfos.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabrickspolicyinfos"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickspolicyinfos"
 
 datadatabrickspolicyinfos.DataDatabricksPolicyInfos_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ datadatabrickspolicyinfos.DataDatabricksPolicyInfos_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.dataDatabricksPolicyInfos.DataDatabricksPolicyInfos.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabrickspolicyinfos"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickspolicyinfos"
 
 datadatabrickspolicyinfos.DataDatabricksPolicyInfos_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -656,7 +656,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksPolicyInfos.DataDatabricksPolicyInfosConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabrickspolicyinfos"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickspolicyinfos"
 
 &datadatabrickspolicyinfos.DataDatabricksPolicyInfosConfig {
 	Connection: interface{},
@@ -814,7 +814,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksPolicyInfos.DataDatabricksPolicyInfosPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabrickspolicyinfos"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickspolicyinfos"
 
 &datadatabrickspolicyinfos.DataDatabricksPolicyInfosPolicies {
 	Name: *string,
@@ -874,7 +874,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksPolicyInfos.DataDatabricksPolicyInfosPoliciesColumnMask.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabrickspolicyinfos"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickspolicyinfos"
 
 &datadatabrickspolicyinfos.DataDatabricksPolicyInfosPoliciesColumnMask {
 	FunctionName: *string,
@@ -934,7 +934,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksPolicyInfos.DataDatabricksPolicyInfosPoliciesColumnMaskUsing.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabrickspolicyinfos"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickspolicyinfos"
 
 &datadatabrickspolicyinfos.DataDatabricksPolicyInfosPoliciesColumnMaskUsing {
 	Alias: *string,
@@ -980,7 +980,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksPolicyInfos.DataDatabricksPolicyInfosPoliciesMatchColumns.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabrickspolicyinfos"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickspolicyinfos"
 
 &datadatabrickspolicyinfos.DataDatabricksPolicyInfosPoliciesMatchColumns {
 	Alias: *string,
@@ -1026,7 +1026,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksPolicyInfos.DataDatabricksPolicyInfosPoliciesRowFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabrickspolicyinfos"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickspolicyinfos"
 
 &datadatabrickspolicyinfos.DataDatabricksPolicyInfosPoliciesRowFilter {
 	FunctionName: *string,
@@ -1072,7 +1072,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksPolicyInfos.DataDatabricksPolicyInfosPoliciesRowFilterUsing.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabrickspolicyinfos"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickspolicyinfos"
 
 &datadatabrickspolicyinfos.DataDatabricksPolicyInfosPoliciesRowFilterUsing {
 	Alias: *string,
@@ -1120,7 +1120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksPolicyInfos.DataDatabricksPolicyInfosPoliciesColumnMaskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabrickspolicyinfos"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickspolicyinfos"
 
 datadatabrickspolicyinfos.NewDataDatabricksPolicyInfosPoliciesColumnMaskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksPolicyInfosPoliciesColumnMaskOutputReference
 ```
@@ -1455,7 +1455,7 @@ func InternalValue() DataDatabricksPolicyInfosPoliciesColumnMask
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksPolicyInfos.DataDatabricksPolicyInfosPoliciesColumnMaskUsingList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabrickspolicyinfos"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickspolicyinfos"
 
 datadatabrickspolicyinfos.NewDataDatabricksPolicyInfosPoliciesColumnMaskUsingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksPolicyInfosPoliciesColumnMaskUsingList
 ```
@@ -1615,7 +1615,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksPolicyInfos.DataDatabricksPolicyInfosPoliciesColumnMaskUsingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabrickspolicyinfos"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickspolicyinfos"
 
 datadatabrickspolicyinfos.NewDataDatabricksPolicyInfosPoliciesColumnMaskUsingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksPolicyInfosPoliciesColumnMaskUsingOutputReference
 ```
@@ -1940,7 +1940,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksPolicyInfos.DataDatabricksPolicyInfosPoliciesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabrickspolicyinfos"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickspolicyinfos"
 
 datadatabrickspolicyinfos.NewDataDatabricksPolicyInfosPoliciesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksPolicyInfosPoliciesList
 ```
@@ -2100,7 +2100,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksPolicyInfos.DataDatabricksPolicyInfosPoliciesMatchColumnsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabrickspolicyinfos"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickspolicyinfos"
 
 datadatabrickspolicyinfos.NewDataDatabricksPolicyInfosPoliciesMatchColumnsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksPolicyInfosPoliciesMatchColumnsList
 ```
@@ -2260,7 +2260,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksPolicyInfos.DataDatabricksPolicyInfosPoliciesMatchColumnsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabrickspolicyinfos"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickspolicyinfos"
 
 datadatabrickspolicyinfos.NewDataDatabricksPolicyInfosPoliciesMatchColumnsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksPolicyInfosPoliciesMatchColumnsOutputReference
 ```
@@ -2585,7 +2585,7 @@ func InternalValue() DataDatabricksPolicyInfosPoliciesMatchColumns
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksPolicyInfos.DataDatabricksPolicyInfosPoliciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabrickspolicyinfos"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickspolicyinfos"
 
 datadatabrickspolicyinfos.NewDataDatabricksPolicyInfosPoliciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksPolicyInfosPoliciesOutputReference
 ```
@@ -3072,7 +3072,7 @@ func InternalValue() DataDatabricksPolicyInfosPolicies
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksPolicyInfos.DataDatabricksPolicyInfosPoliciesRowFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabrickspolicyinfos"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickspolicyinfos"
 
 datadatabrickspolicyinfos.NewDataDatabricksPolicyInfosPoliciesRowFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksPolicyInfosPoliciesRowFilterOutputReference
 ```
@@ -3385,7 +3385,7 @@ func InternalValue() DataDatabricksPolicyInfosPoliciesRowFilter
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksPolicyInfos.DataDatabricksPolicyInfosPoliciesRowFilterUsingList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabrickspolicyinfos"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickspolicyinfos"
 
 datadatabrickspolicyinfos.NewDataDatabricksPolicyInfosPoliciesRowFilterUsingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksPolicyInfosPoliciesRowFilterUsingList
 ```
@@ -3545,7 +3545,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksPolicyInfos.DataDatabricksPolicyInfosPoliciesRowFilterUsingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabrickspolicyinfos"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickspolicyinfos"
 
 datadatabrickspolicyinfos.NewDataDatabricksPolicyInfosPoliciesRowFilterUsingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksPolicyInfosPoliciesRowFilterUsingOutputReference
 ```

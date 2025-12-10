@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.tagPolicy.TagPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/tagpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/tagpolicy"
 
 tagpolicy.NewTagPolicy(scope Construct, id *string, config TagPolicyConfig) TagPolicy
 ```
@@ -405,7 +405,7 @@ func ResetValues()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.tagPolicy.TagPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/tagpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/tagpolicy"
 
 tagpolicy.TagPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.tagPolicy.TagPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/tagpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/tagpolicy"
 
 tagpolicy.TagPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ tagpolicy.TagPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.tagPolicy.TagPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/tagpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/tagpolicy"
 
 tagpolicy.TagPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ tagpolicy.TagPolicy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.tagPolicy.TagPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/tagpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/tagpolicy"
 
 tagpolicy.TagPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -793,7 +793,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.tagPolicy.TagPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/tagpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/tagpolicy"
 
 &tagpolicy.TagPolicyConfig {
 	Connection: interface{},
@@ -937,7 +937,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.tagPolicy.TagPolicyValues.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/tagpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/tagpolicy"
 
 &tagpolicy.TagPolicyValues {
 	Name: *string,
@@ -971,7 +971,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.tagPolicy.TagPolicyValuesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/tagpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/tagpolicy"
 
 tagpolicy.NewTagPolicyValuesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TagPolicyValuesList
 ```
@@ -1131,7 +1131,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.tagPolicy.TagPolicyValuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/tagpolicy"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/tagpolicy"
 
 tagpolicy.NewTagPolicyValuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TagPolicyValuesOutputReference
 ```

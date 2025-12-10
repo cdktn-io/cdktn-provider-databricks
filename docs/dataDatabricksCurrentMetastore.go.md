@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksCurrentMetastore.DataDatabricksCurrentMetastore.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabrickscurrentmetastore"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickscurrentmetastore"
 
 datadatabrickscurrentmetastore.NewDataDatabricksCurrentMetastore(scope Construct, id *string, config DataDatabricksCurrentMetastoreConfig) DataDatabricksCurrentMetastore
 ```
@@ -323,7 +323,7 @@ func ResetProviderConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.dataDatabricksCurrentMetastore.DataDatabricksCurrentMetastore.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabrickscurrentmetastore"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickscurrentmetastore"
 
 datadatabrickscurrentmetastore.DataDatabricksCurrentMetastore_IsConstruct(x interface{}) *bool
 ```
@@ -355,7 +355,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.dataDatabricksCurrentMetastore.DataDatabricksCurrentMetastore.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabrickscurrentmetastore"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickscurrentmetastore"
 
 datadatabrickscurrentmetastore.DataDatabricksCurrentMetastore_IsTerraformElement(x interface{}) *bool
 ```
@@ -369,7 +369,7 @@ datadatabrickscurrentmetastore.DataDatabricksCurrentMetastore_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-databricks.dataDatabricksCurrentMetastore.DataDatabricksCurrentMetastore.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabrickscurrentmetastore"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickscurrentmetastore"
 
 datadatabrickscurrentmetastore.DataDatabricksCurrentMetastore_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -383,7 +383,7 @@ datadatabrickscurrentmetastore.DataDatabricksCurrentMetastore_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.dataDatabricksCurrentMetastore.DataDatabricksCurrentMetastore.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabrickscurrentmetastore"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickscurrentmetastore"
 
 datadatabrickscurrentmetastore.DataDatabricksCurrentMetastore_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -656,7 +656,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksCurrentMetastore.DataDatabricksCurrentMetastoreConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabrickscurrentmetastore"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickscurrentmetastore"
 
 &datadatabrickscurrentmetastore.DataDatabricksCurrentMetastoreConfig {
 	Connection: interface{},
@@ -667,8 +667,8 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Id: *string,
-	MetastoreInfo: github.com/cdktf/cdktf-provider-databricks-go/databricks/v15.dataDatabricksCurrentMetastore.DataDatabricksCurrentMetastoreMetastoreInfo,
-	ProviderConfig: github.com/cdktf/cdktf-provider-databricks-go/databricks/v15.dataDatabricksCurrentMetastore.DataDatabricksCurrentMetastoreProviderConfig,
+	MetastoreInfo: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksCurrentMetastore.DataDatabricksCurrentMetastoreMetastoreInfo,
+	ProviderConfig: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksCurrentMetastore.DataDatabricksCurrentMetastoreProviderConfig,
 }
 ```
 
@@ -807,7 +807,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksCurrentMetastore.DataDatabricksCurrentMetastoreMetastoreInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabrickscurrentmetastore"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickscurrentmetastore"
 
 &datadatabrickscurrentmetastore.DataDatabricksCurrentMetastoreMetastoreInfo {
 	Cloud: *string,
@@ -1091,7 +1091,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksCurrentMetastore.DataDatabricksCurrentMetastoreProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabrickscurrentmetastore"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickscurrentmetastore"
 
 &datadatabrickscurrentmetastore.DataDatabricksCurrentMetastoreProviderConfig {
 	WorkspaceId: *string,
@@ -1125,7 +1125,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksCurrentMetastore.DataDatabricksCurrentMetastoreMetastoreInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabrickscurrentmetastore"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickscurrentmetastore"
 
 datadatabrickscurrentmetastore.NewDataDatabricksCurrentMetastoreMetastoreInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksCurrentMetastoreMetastoreInfoOutputReference
 ```
@@ -1925,7 +1925,7 @@ func InternalValue() DataDatabricksCurrentMetastoreMetastoreInfo
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksCurrentMetastore.DataDatabricksCurrentMetastoreProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabrickscurrentmetastore"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabrickscurrentmetastore"
 
 datadatabrickscurrentmetastore.NewDataDatabricksCurrentMetastoreProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksCurrentMetastoreProviderConfigOutputReference
 ```

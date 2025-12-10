@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksFeatureEngineeringMaterializedFeature.DataDatabricksFeatureEngineeringMaterializedFeature.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksfeatureengineeringmaterializedfeature"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksfeatureengineeringmaterializedfeature"
 
 datadatabricksfeatureengineeringmaterializedfeature.NewDataDatabricksFeatureEngineeringMaterializedFeature(scope Construct, id *string, config DataDatabricksFeatureEngineeringMaterializedFeatureConfig) DataDatabricksFeatureEngineeringMaterializedFeature
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.dataDatabricksFeatureEngineeringMaterializedFeature.DataDatabricksFeatureEngineeringMaterializedFeature.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksfeatureengineeringmaterializedfeature"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksfeatureengineeringmaterializedfeature"
 
 datadatabricksfeatureengineeringmaterializedfeature.DataDatabricksFeatureEngineeringMaterializedFeature_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.dataDatabricksFeatureEngineeringMaterializedFeature.DataDatabricksFeatureEngineeringMaterializedFeature.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksfeatureengineeringmaterializedfeature"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksfeatureengineeringmaterializedfeature"
 
 datadatabricksfeatureengineeringmaterializedfeature.DataDatabricksFeatureEngineeringMaterializedFeature_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datadatabricksfeatureengineeringmaterializedfeature.DataDatabricksFeatureEnginee
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-databricks.dataDatabricksFeatureEngineeringMaterializedFeature.DataDatabricksFeatureEngineeringMaterializedFeature.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksfeatureengineeringmaterializedfeature"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksfeatureengineeringmaterializedfeature"
 
 datadatabricksfeatureengineeringmaterializedfeature.DataDatabricksFeatureEngineeringMaterializedFeature_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datadatabricksfeatureengineeringmaterializedfeature.DataDatabricksFeatureEnginee
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.dataDatabricksFeatureEngineeringMaterializedFeature.DataDatabricksFeatureEngineeringMaterializedFeature.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksfeatureengineeringmaterializedfeature"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksfeatureengineeringmaterializedfeature"
 
 datadatabricksfeatureengineeringmaterializedfeature.DataDatabricksFeatureEngineeringMaterializedFeature_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -631,7 +631,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksFeatureEngineeringMaterializedFeature.DataDatabricksFeatureEngineeringMaterializedFeatureConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksfeatureengineeringmaterializedfeature"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksfeatureengineeringmaterializedfeature"
 
 &datadatabricksfeatureengineeringmaterializedfeature.DataDatabricksFeatureEngineeringMaterializedFeatureConfig {
 	Connection: interface{},
@@ -747,7 +747,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksFeatureEngineeringMaterializedFeature.DataDatabricksFeatureEngineeringMaterializedFeatureOfflineStoreConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksfeatureengineeringmaterializedfeature"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksfeatureengineeringmaterializedfeature"
 
 &datadatabricksfeatureengineeringmaterializedfeature.DataDatabricksFeatureEngineeringMaterializedFeatureOfflineStoreConfig {
 	CatalogName: *string,
@@ -807,7 +807,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksFeatureEngineeringMaterializedFeature.DataDatabricksFeatureEngineeringMaterializedFeatureOnlineStoreConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksfeatureengineeringmaterializedfeature"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksfeatureengineeringmaterializedfeature"
 
 &datadatabricksfeatureengineeringmaterializedfeature.DataDatabricksFeatureEngineeringMaterializedFeatureOnlineStoreConfig {
 	CatalogName: *string,
@@ -883,7 +883,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksFeatureEngineeringMaterializedFeature.DataDatabricksFeatureEngineeringMaterializedFeatureOfflineStoreConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksfeatureengineeringmaterializedfeature"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksfeatureengineeringmaterializedfeature"
 
 datadatabricksfeatureengineeringmaterializedfeature.NewDataDatabricksFeatureEngineeringMaterializedFeatureOfflineStoreConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksFeatureEngineeringMaterializedFeatureOfflineStoreConfigOutputReference
 ```
@@ -1198,7 +1198,7 @@ func InternalValue() DataDatabricksFeatureEngineeringMaterializedFeatureOfflineS
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksFeatureEngineeringMaterializedFeature.DataDatabricksFeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksfeatureengineeringmaterializedfeature"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksfeatureengineeringmaterializedfeature"
 
 datadatabricksfeatureengineeringmaterializedfeature.NewDataDatabricksFeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksFeatureEngineeringMaterializedFeatureOnlineStoreConfigOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.rfaAccessRequestDestinations.RfaAccessRequestDestinations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/rfaaccessrequestdestinations"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/rfaaccessrequestdestinations"
 
 rfaaccessrequestdestinations.NewRfaAccessRequestDestinations(scope Construct, id *string, config RfaAccessRequestDestinationsConfig) RfaAccessRequestDestinations
 ```
@@ -411,7 +411,7 @@ func ResetDestinations()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.rfaAccessRequestDestinations.RfaAccessRequestDestinations.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/rfaaccessrequestdestinations"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/rfaaccessrequestdestinations"
 
 rfaaccessrequestdestinations.RfaAccessRequestDestinations_IsConstruct(x interface{}) *bool
 ```
@@ -443,7 +443,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.rfaAccessRequestDestinations.RfaAccessRequestDestinations.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/rfaaccessrequestdestinations"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/rfaaccessrequestdestinations"
 
 rfaaccessrequestdestinations.RfaAccessRequestDestinations_IsTerraformElement(x interface{}) *bool
 ```
@@ -457,7 +457,7 @@ rfaaccessrequestdestinations.RfaAccessRequestDestinations_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.rfaAccessRequestDestinations.RfaAccessRequestDestinations.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/rfaaccessrequestdestinations"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/rfaaccessrequestdestinations"
 
 rfaaccessrequestdestinations.RfaAccessRequestDestinations_IsTerraformResource(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ rfaaccessrequestdestinations.RfaAccessRequestDestinations_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.rfaAccessRequestDestinations.RfaAccessRequestDestinations.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/rfaaccessrequestdestinations"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/rfaaccessrequestdestinations"
 
 rfaaccessrequestdestinations.RfaAccessRequestDestinations_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -755,7 +755,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.rfaAccessRequestDestinations.RfaAccessRequestDestinationsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/rfaaccessrequestdestinations"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/rfaaccessrequestdestinations"
 
 &rfaaccessrequestdestinations.RfaAccessRequestDestinationsConfig {
 	Connection: interface{},
@@ -765,7 +765,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/rfaaccessre
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Securable: github.com/cdktf/cdktf-provider-databricks-go/databricks/v15.rfaAccessRequestDestinations.RfaAccessRequestDestinationsSecurable,
+	Securable: github.com/cdktf/cdktf-provider-databricks-go/databricks.rfaAccessRequestDestinations.RfaAccessRequestDestinationsSecurable,
 	Destinations: interface{},
 }
 ```
@@ -885,7 +885,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.rfaAccessRequestDestinations.RfaAccessRequestDestinationsDestinations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/rfaaccessrequestdestinations"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/rfaaccessrequestdestinations"
 
 &rfaaccessrequestdestinations.RfaAccessRequestDestinationsDestinations {
 	DestinationId: *string,
@@ -945,7 +945,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.rfaAccessRequestDestinations.RfaAccessRequestDestinationsSecurable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/rfaaccessrequestdestinations"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/rfaaccessrequestdestinations"
 
 &rfaaccessrequestdestinations.RfaAccessRequestDestinationsSecurable {
 	FullName: *string,
@@ -1007,7 +1007,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.rfaAccessRequestDestinations.RfaAccessRequestDestinationsDestinationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/rfaaccessrequestdestinations"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/rfaaccessrequestdestinations"
 
 rfaaccessrequestdestinations.NewRfaAccessRequestDestinationsDestinationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RfaAccessRequestDestinationsDestinationsList
 ```
@@ -1167,7 +1167,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.rfaAccessRequestDestinations.RfaAccessRequestDestinationsDestinationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/rfaaccessrequestdestinations"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/rfaaccessrequestdestinations"
 
 rfaaccessrequestdestinations.NewRfaAccessRequestDestinationsDestinationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RfaAccessRequestDestinationsDestinationsOutputReference
 ```
@@ -1521,7 +1521,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.rfaAccessRequestDestinations.RfaAccessRequestDestinationsSecurableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/rfaaccessrequestdestinations"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/rfaaccessrequestdestinations"
 
 rfaaccessrequestdestinations.NewRfaAccessRequestDestinationsSecurableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RfaAccessRequestDestinationsSecurableOutputReference
 ```

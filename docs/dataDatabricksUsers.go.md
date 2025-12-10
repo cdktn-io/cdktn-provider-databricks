@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksUsers.DataDatabricksUsers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksusers"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksusers"
 
 datadatabricksusers.NewDataDatabricksUsers(scope Construct, id *string, config DataDatabricksUsersConfig) DataDatabricksUsers
 ```
@@ -310,7 +310,7 @@ func ResetUsers()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.dataDatabricksUsers.DataDatabricksUsers.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksusers"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksusers"
 
 datadatabricksusers.DataDatabricksUsers_IsConstruct(x interface{}) *bool
 ```
@@ -342,7 +342,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.dataDatabricksUsers.DataDatabricksUsers.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksusers"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksusers"
 
 datadatabricksusers.DataDatabricksUsers_IsTerraformElement(x interface{}) *bool
 ```
@@ -356,7 +356,7 @@ datadatabricksusers.DataDatabricksUsers_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-databricks.dataDatabricksUsers.DataDatabricksUsers.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksusers"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksusers"
 
 datadatabricksusers.DataDatabricksUsers_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -370,7 +370,7 @@ datadatabricksusers.DataDatabricksUsers_IsTerraformDataSource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.dataDatabricksUsers.DataDatabricksUsers.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksusers"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksusers"
 
 datadatabricksusers.DataDatabricksUsers_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -643,7 +643,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksUsers.DataDatabricksUsersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksusers"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksusers"
 
 &datadatabricksusers.DataDatabricksUsersConfig {
 	Connection: interface{},
@@ -787,7 +787,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksUsers.DataDatabricksUsersUsers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksusers"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksusers"
 
 &datadatabricksusers.DataDatabricksUsersUsers {
 	Active: interface{},
@@ -797,7 +797,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 	ExternalId: *string,
 	Groups: interface{},
 	Id: *string,
-	Name: github.com/cdktf/cdktf-provider-databricks-go/databricks/v15.dataDatabricksUsers.DataDatabricksUsersUsersName,
+	Name: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksUsers.DataDatabricksUsersUsersName,
 	Roles: interface{},
 	Schemas: *[]*string,
 	UserName: *string,
@@ -962,7 +962,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksUsers.DataDatabricksUsersUsersEmails.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksusers"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksusers"
 
 &datadatabricksusers.DataDatabricksUsersUsersEmails {
 	Display: *string,
@@ -1050,7 +1050,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksUsers.DataDatabricksUsersUsersEntitlements.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksusers"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksusers"
 
 &datadatabricksusers.DataDatabricksUsersUsersEntitlements {
 	Display: *string,
@@ -1138,7 +1138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksUsers.DataDatabricksUsersUsersGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksusers"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksusers"
 
 &datadatabricksusers.DataDatabricksUsersUsersGroups {
 	Display: *string,
@@ -1226,7 +1226,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksUsers.DataDatabricksUsersUsersName.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksusers"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksusers"
 
 &datadatabricksusers.DataDatabricksUsersUsersName {
 	FamilyName: *string,
@@ -1272,7 +1272,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksUsers.DataDatabricksUsersUsersRoles.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksusers"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksusers"
 
 &datadatabricksusers.DataDatabricksUsersUsersRoles {
 	Display: *string,
@@ -1362,7 +1362,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksUsers.DataDatabricksUsersUsersEmailsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksusers"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksusers"
 
 datadatabricksusers.NewDataDatabricksUsersUsersEmailsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksUsersUsersEmailsList
 ```
@@ -1522,7 +1522,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksUsers.DataDatabricksUsersUsersEmailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksusers"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksusers"
 
 datadatabricksusers.NewDataDatabricksUsersUsersEmailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksUsersUsersEmailsOutputReference
 ```
@@ -1934,7 +1934,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksUsers.DataDatabricksUsersUsersEntitlementsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksusers"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksusers"
 
 datadatabricksusers.NewDataDatabricksUsersUsersEntitlementsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksUsersUsersEntitlementsList
 ```
@@ -2094,7 +2094,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksUsers.DataDatabricksUsersUsersEntitlementsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksusers"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksusers"
 
 datadatabricksusers.NewDataDatabricksUsersUsersEntitlementsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksUsersUsersEntitlementsOutputReference
 ```
@@ -2506,7 +2506,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksUsers.DataDatabricksUsersUsersGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksusers"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksusers"
 
 datadatabricksusers.NewDataDatabricksUsersUsersGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksUsersUsersGroupsList
 ```
@@ -2666,7 +2666,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksUsers.DataDatabricksUsersUsersGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksusers"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksusers"
 
 datadatabricksusers.NewDataDatabricksUsersUsersGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksUsersUsersGroupsOutputReference
 ```
@@ -3078,7 +3078,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksUsers.DataDatabricksUsersUsersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksusers"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksusers"
 
 datadatabricksusers.NewDataDatabricksUsersUsersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksUsersUsersList
 ```
@@ -3238,7 +3238,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksUsers.DataDatabricksUsersUsersNameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksusers"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksusers"
 
 datadatabricksusers.NewDataDatabricksUsersUsersNameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksUsersUsersNameOutputReference
 ```
@@ -3545,7 +3545,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksUsers.DataDatabricksUsersUsersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksusers"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksusers"
 
 datadatabricksusers.NewDataDatabricksUsersUsersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksUsersUsersOutputReference
 ```
@@ -4196,7 +4196,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksUsers.DataDatabricksUsersUsersRolesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksusers"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksusers"
 
 datadatabricksusers.NewDataDatabricksUsersUsersRolesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksUsersUsersRolesList
 ```
@@ -4356,7 +4356,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksUsers.DataDatabricksUsersUsersRolesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksusers"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksusers"
 
 datadatabricksusers.NewDataDatabricksUsersUsersRolesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksUsersUsersRolesOutputReference
 ```

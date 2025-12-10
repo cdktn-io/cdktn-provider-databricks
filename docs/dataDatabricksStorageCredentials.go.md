@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksStorageCredentials.DataDatabricksStorageCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksstoragecredentials"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksstoragecredentials"
 
 datadatabricksstoragecredentials.NewDataDatabricksStorageCredentials(scope Construct, id *string, config DataDatabricksStorageCredentialsConfig) DataDatabricksStorageCredentials
 ```
@@ -310,7 +310,7 @@ func ResetProviderConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.dataDatabricksStorageCredentials.DataDatabricksStorageCredentials.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksstoragecredentials"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksstoragecredentials"
 
 datadatabricksstoragecredentials.DataDatabricksStorageCredentials_IsConstruct(x interface{}) *bool
 ```
@@ -342,7 +342,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.dataDatabricksStorageCredentials.DataDatabricksStorageCredentials.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksstoragecredentials"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksstoragecredentials"
 
 datadatabricksstoragecredentials.DataDatabricksStorageCredentials_IsTerraformElement(x interface{}) *bool
 ```
@@ -356,7 +356,7 @@ datadatabricksstoragecredentials.DataDatabricksStorageCredentials_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-databricks.dataDatabricksStorageCredentials.DataDatabricksStorageCredentials.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksstoragecredentials"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksstoragecredentials"
 
 datadatabricksstoragecredentials.DataDatabricksStorageCredentials_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -370,7 +370,7 @@ datadatabricksstoragecredentials.DataDatabricksStorageCredentials_IsTerraformDat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.dataDatabricksStorageCredentials.DataDatabricksStorageCredentials.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksstoragecredentials"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksstoragecredentials"
 
 datadatabricksstoragecredentials.DataDatabricksStorageCredentials_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -643,7 +643,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksStorageCredentials.DataDatabricksStorageCredentialsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksstoragecredentials"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksstoragecredentials"
 
 &datadatabricksstoragecredentials.DataDatabricksStorageCredentialsConfig {
 	Connection: interface{},
@@ -655,7 +655,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabri
 	Provisioners: *[]interface{},
 	Id: *string,
 	Names: *[]*string,
-	ProviderConfig: github.com/cdktf/cdktf-provider-databricks-go/databricks/v15.dataDatabricksStorageCredentials.DataDatabricksStorageCredentialsProviderConfig,
+	ProviderConfig: github.com/cdktf/cdktf-provider-databricks-go/databricks.dataDatabricksStorageCredentials.DataDatabricksStorageCredentialsProviderConfig,
 }
 ```
 
@@ -792,7 +792,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dataDatabricksStorageCredentials.DataDatabricksStorageCredentialsProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksstoragecredentials"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksstoragecredentials"
 
 &datadatabricksstoragecredentials.DataDatabricksStorageCredentialsProviderConfig {
 	WorkspaceId: *string,
@@ -826,7 +826,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dataDatabricksStorageCredentials.DataDatabricksStorageCredentialsProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/datadatabricksstoragecredentials"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/datadatabricksstoragecredentials"
 
 datadatabricksstoragecredentials.NewDataDatabricksStorageCredentialsProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksStorageCredentialsProviderConfigOutputReference
 ```

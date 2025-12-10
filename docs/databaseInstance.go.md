@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.databaseInstance.DatabaseInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/databaseinstance"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/databaseinstance"
 
 databaseinstance.NewDatabaseInstance(scope Construct, id *string, config DatabaseInstanceConfig) DatabaseInstance
 ```
@@ -474,7 +474,7 @@ func ResetUsagePolicyId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.databaseInstance.DatabaseInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/databaseinstance"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/databaseinstance"
 
 databaseinstance.DatabaseInstance_IsConstruct(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.databaseInstance.DatabaseInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/databaseinstance"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/databaseinstance"
 
 databaseinstance.DatabaseInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ databaseinstance.DatabaseInstance_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-databricks.databaseInstance.DatabaseInstance.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/databaseinstance"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/databaseinstance"
 
 databaseinstance.DatabaseInstance_IsTerraformResource(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ databaseinstance.DatabaseInstance_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.databaseInstance.DatabaseInstance.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/databaseinstance"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/databaseinstance"
 
 databaseinstance.DatabaseInstance_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1181,7 +1181,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.databaseInstance.DatabaseInstanceChildInstanceRefs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/databaseinstance"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/databaseinstance"
 
 &databaseinstance.DatabaseInstanceChildInstanceRefs {
 	BranchTime: *string,
@@ -1241,7 +1241,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.databaseInstance.DatabaseInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/databaseinstance"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/databaseinstance"
 
 &databaseinstance.DatabaseInstanceConfig {
 	Connection: interface{},
@@ -1257,7 +1257,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/databaseins
 	EnablePgNativeLogin: interface{},
 	EnableReadableSecondaries: interface{},
 	NodeCount: *f64,
-	ParentInstanceRef: github.com/cdktf/cdktf-provider-databricks-go/databricks/v15.databaseInstance.DatabaseInstanceParentInstanceRef,
+	ParentInstanceRef: github.com/cdktf/cdktf-provider-databricks-go/databricks.databaseInstance.DatabaseInstanceParentInstanceRef,
 	PurgeOnDelete: interface{},
 	RetentionWindowInDays: *f64,
 	Stopped: interface{},
@@ -1497,7 +1497,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.databaseInstance.DatabaseInstanceCustomTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/databaseinstance"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/databaseinstance"
 
 &databaseinstance.DatabaseInstanceCustomTags {
 	Key: *string,
@@ -1543,7 +1543,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.databaseInstance.DatabaseInstanceEffectiveCustomTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/databaseinstance"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/databaseinstance"
 
 &databaseinstance.DatabaseInstanceEffectiveCustomTags {
 	Key: *string,
@@ -1589,7 +1589,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktf/provider-databricks.databaseInstance.DatabaseInstanceParentInstanceRef.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/databaseinstance"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/databaseinstance"
 
 &databaseinstance.DatabaseInstanceParentInstanceRef {
 	BranchTime: *string,
@@ -1651,7 +1651,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.databaseInstance.DatabaseInstanceChildInstanceRefsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/databaseinstance"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/databaseinstance"
 
 databaseinstance.NewDatabaseInstanceChildInstanceRefsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabaseInstanceChildInstanceRefsList
 ```
@@ -1811,7 +1811,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.databaseInstance.DatabaseInstanceChildInstanceRefsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/databaseinstance"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/databaseinstance"
 
 databaseinstance.NewDatabaseInstanceChildInstanceRefsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatabaseInstanceChildInstanceRefsOutputReference
 ```
@@ -2187,7 +2187,7 @@ func InternalValue() DatabaseInstanceChildInstanceRefs
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.databaseInstance.DatabaseInstanceCustomTagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/databaseinstance"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/databaseinstance"
 
 databaseinstance.NewDatabaseInstanceCustomTagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabaseInstanceCustomTagsList
 ```
@@ -2347,7 +2347,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.databaseInstance.DatabaseInstanceCustomTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/databaseinstance"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/databaseinstance"
 
 databaseinstance.NewDatabaseInstanceCustomTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatabaseInstanceCustomTagsOutputReference
 ```
@@ -2672,7 +2672,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.databaseInstance.DatabaseInstanceEffectiveCustomTagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/databaseinstance"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/databaseinstance"
 
 databaseinstance.NewDatabaseInstanceEffectiveCustomTagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabaseInstanceEffectiveCustomTagsList
 ```
@@ -2832,7 +2832,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.databaseInstance.DatabaseInstanceEffectiveCustomTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/databaseinstance"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/databaseinstance"
 
 databaseinstance.NewDatabaseInstanceEffectiveCustomTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatabaseInstanceEffectiveCustomTagsOutputReference
 ```
@@ -3157,7 +3157,7 @@ func InternalValue() DatabaseInstanceEffectiveCustomTags
 #### Initializers <a name="Initializers" id="@cdktf/provider-databricks.databaseInstance.DatabaseInstanceParentInstanceRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/databaseinstance"
+import "github.com/cdktf/cdktf-provider-databricks-go/databricks/databaseinstance"
 
 databaseinstance.NewDatabaseInstanceParentInstanceRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatabaseInstanceParentInstanceRefOutputReference
 ```
