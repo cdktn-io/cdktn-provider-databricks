@@ -1,28 +1,28 @@
-# `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-databricks.provider"></a>
+# `provider` Submodule <a name="`provider` Submodule" id="@cdktn/provider-databricks.provider"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### DatabricksProvider <a name="DatabricksProvider" id="@cdktf/provider-databricks.provider.DatabricksProvider"></a>
+### DatabricksProvider <a name="DatabricksProvider" id="@cdktn/provider-databricks.provider.DatabricksProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs databricks}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs databricks}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.provider.DatabricksProvider.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.provider.DatabricksProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/provider"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/provider"
 
 provider.NewDatabricksProvider(scope Construct, id *string, config DatabricksProviderConfig) DatabricksProvider
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig">DatabricksProviderConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig">DatabricksProviderConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.id"></a>
 
 - *Type:* *string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Optional</sup> <a name="config" id="@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig">DatabricksProviderConfig</a>
+- *Type:* <a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig">DatabricksProviderConfig</a>
 
 ---
 
@@ -50,56 +50,58 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.toString">ToString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.addOverride">AddOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.toMetadata">ToMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetAccountId">ResetAccountId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetActionsIdTokenRequestToken">ResetActionsIdTokenRequestToken</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetActionsIdTokenRequestUrl">ResetActionsIdTokenRequestUrl</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetAlias">ResetAlias</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetAudience">ResetAudience</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetAuthType">ResetAuthType</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetAzureClientId">ResetAzureClientId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetAzureClientSecret">ResetAzureClientSecret</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetAzureEnvironment">ResetAzureEnvironment</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetAzureLoginAppId">ResetAzureLoginAppId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetAzureTenantId">ResetAzureTenantId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetAzureUseMsi">ResetAzureUseMsi</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetAzureWorkspaceResourceId">ResetAzureWorkspaceResourceId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetClientId">ResetClientId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetClientSecret">ResetClientSecret</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetClusterId">ResetClusterId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetConfigFile">ResetConfigFile</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetDatabricksCliPath">ResetDatabricksCliPath</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetDatabricksIdTokenFilepath">ResetDatabricksIdTokenFilepath</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetDebugHeaders">ResetDebugHeaders</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetDebugTruncateBytes">ResetDebugTruncateBytes</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetExperimentalIsUnifiedHost">ResetExperimentalIsUnifiedHost</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetGoogleCredentials">ResetGoogleCredentials</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetGoogleServiceAccount">ResetGoogleServiceAccount</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetHost">ResetHost</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetHttpTimeoutSeconds">ResetHttpTimeoutSeconds</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetMetadataServiceUrl">ResetMetadataServiceUrl</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetOauthCallbackPort">ResetOauthCallbackPort</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetOidcTokenEnv">ResetOidcTokenEnv</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetPassword">ResetPassword</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetProfile">ResetProfile</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetRateLimit">ResetRateLimit</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetRetryTimeoutSeconds">ResetRetryTimeoutSeconds</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetServerlessComputeId">ResetServerlessComputeId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetSkipVerify">ResetSkipVerify</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetToken">ResetToken</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetUsername">ResetUsername</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetWarehouseId">ResetWarehouseId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetWorkspaceId">ResetWorkspaceId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.addOverride">AddOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.toMetadata">ToMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetAccountId">ResetAccountId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetActionsIdTokenRequestToken">ResetActionsIdTokenRequestToken</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetActionsIdTokenRequestUrl">ResetActionsIdTokenRequestUrl</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetAlias">ResetAlias</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetAudience">ResetAudience</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetAuthType">ResetAuthType</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetAzureClientId">ResetAzureClientId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetAzureClientSecret">ResetAzureClientSecret</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetAzureEnvironment">ResetAzureEnvironment</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetAzureLoginAppId">ResetAzureLoginAppId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetAzureTenantId">ResetAzureTenantId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetAzureUseMsi">ResetAzureUseMsi</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetAzureWorkspaceResourceId">ResetAzureWorkspaceResourceId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetClientId">ResetClientId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetClientSecret">ResetClientSecret</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetClusterId">ResetClusterId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetConfigFile">ResetConfigFile</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetDatabricksCliPath">ResetDatabricksCliPath</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetDatabricksIdTokenFilepath">ResetDatabricksIdTokenFilepath</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetDebugHeaders">ResetDebugHeaders</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetDebugTruncateBytes">ResetDebugTruncateBytes</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetDisableOauthRefreshToken">ResetDisableOauthRefreshToken</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetExperimentalIsUnifiedHost">ResetExperimentalIsUnifiedHost</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetGoogleCredentials">ResetGoogleCredentials</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetGoogleServiceAccount">ResetGoogleServiceAccount</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetHost">ResetHost</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetHttpTimeoutSeconds">ResetHttpTimeoutSeconds</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetMetadataServiceUrl">ResetMetadataServiceUrl</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetOauthCallbackPort">ResetOauthCallbackPort</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetOidcTokenEnv">ResetOidcTokenEnv</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetPassword">ResetPassword</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetProfile">ResetProfile</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetRateLimit">ResetRateLimit</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetRetryTimeoutSeconds">ResetRetryTimeoutSeconds</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetScopes">ResetScopes</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetServerlessComputeId">ResetServerlessComputeId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetSkipVerify">ResetSkipVerify</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetToken">ResetToken</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetUsername">ResetUsername</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetWarehouseId">ResetWarehouseId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetWorkspaceId">ResetWorkspaceId</a></code> | *No description.* |
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-databricks.provider.DatabricksProvider.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-databricks.provider.DatabricksProvider.toString"></a>
 
 ```go
 func ToString() *string
@@ -107,25 +109,25 @@ func ToString() *string
 
 Returns a string representation of this construct.
 
-##### `AddOverride` <a name="AddOverride" id="@cdktf/provider-databricks.provider.DatabricksProvider.addOverride"></a>
+##### `AddOverride` <a name="AddOverride" id="@cdktn/provider-databricks.provider.DatabricksProvider.addOverride"></a>
 
 ```go
 func AddOverride(path *string, value interface{})
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-databricks.provider.DatabricksProvider.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-databricks.provider.DatabricksProvider.addOverride.parameter.path"></a>
 
 - *Type:* *string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.provider.DatabricksProvider.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.provider.DatabricksProvider.addOverride.parameter.value"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktf/provider-databricks.provider.DatabricksProvider.overrideLogicalId"></a>
+##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktn/provider-databricks.provider.DatabricksProvider.overrideLogicalId"></a>
 
 ```go
 func OverrideLogicalId(newLogicalId *string)
@@ -133,7 +135,7 @@ func OverrideLogicalId(newLogicalId *string)
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-databricks.provider.DatabricksProvider.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-databricks.provider.DatabricksProvider.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* *string
 
@@ -141,7 +143,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetOverrideLogicalId"></a>
+##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetOverrideLogicalId"></a>
 
 ```go
 func ResetOverrideLogicalId()
@@ -149,19 +151,19 @@ func ResetOverrideLogicalId()
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-databricks.provider.DatabricksProvider.toHclTerraform"></a>
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktn/provider-databricks.provider.DatabricksProvider.toHclTerraform"></a>
 
 ```go
 func ToHclTerraform() interface{}
 ```
 
-##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-databricks.provider.DatabricksProvider.toMetadata"></a>
+##### `ToMetadata` <a name="ToMetadata" id="@cdktn/provider-databricks.provider.DatabricksProvider.toMetadata"></a>
 
 ```go
 func ToMetadata() interface{}
 ```
 
-##### `ToTerraform` <a name="ToTerraform" id="@cdktf/provider-databricks.provider.DatabricksProvider.toTerraform"></a>
+##### `ToTerraform` <a name="ToTerraform" id="@cdktn/provider-databricks.provider.DatabricksProvider.toTerraform"></a>
 
 ```go
 func ToTerraform() interface{}
@@ -169,235 +171,247 @@ func ToTerraform() interface{}
 
 Adds this resource to the terraform JSON output.
 
-##### `ResetAccountId` <a name="ResetAccountId" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetAccountId"></a>
+##### `ResetAccountId` <a name="ResetAccountId" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetAccountId"></a>
 
 ```go
 func ResetAccountId()
 ```
 
-##### `ResetActionsIdTokenRequestToken` <a name="ResetActionsIdTokenRequestToken" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetActionsIdTokenRequestToken"></a>
+##### `ResetActionsIdTokenRequestToken` <a name="ResetActionsIdTokenRequestToken" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetActionsIdTokenRequestToken"></a>
 
 ```go
 func ResetActionsIdTokenRequestToken()
 ```
 
-##### `ResetActionsIdTokenRequestUrl` <a name="ResetActionsIdTokenRequestUrl" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetActionsIdTokenRequestUrl"></a>
+##### `ResetActionsIdTokenRequestUrl` <a name="ResetActionsIdTokenRequestUrl" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetActionsIdTokenRequestUrl"></a>
 
 ```go
 func ResetActionsIdTokenRequestUrl()
 ```
 
-##### `ResetAlias` <a name="ResetAlias" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetAlias"></a>
+##### `ResetAlias` <a name="ResetAlias" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetAlias"></a>
 
 ```go
 func ResetAlias()
 ```
 
-##### `ResetAudience` <a name="ResetAudience" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetAudience"></a>
+##### `ResetAudience` <a name="ResetAudience" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetAudience"></a>
 
 ```go
 func ResetAudience()
 ```
 
-##### `ResetAuthType` <a name="ResetAuthType" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetAuthType"></a>
+##### `ResetAuthType` <a name="ResetAuthType" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetAuthType"></a>
 
 ```go
 func ResetAuthType()
 ```
 
-##### `ResetAzureClientId` <a name="ResetAzureClientId" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetAzureClientId"></a>
+##### `ResetAzureClientId` <a name="ResetAzureClientId" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetAzureClientId"></a>
 
 ```go
 func ResetAzureClientId()
 ```
 
-##### `ResetAzureClientSecret` <a name="ResetAzureClientSecret" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetAzureClientSecret"></a>
+##### `ResetAzureClientSecret` <a name="ResetAzureClientSecret" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetAzureClientSecret"></a>
 
 ```go
 func ResetAzureClientSecret()
 ```
 
-##### `ResetAzureEnvironment` <a name="ResetAzureEnvironment" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetAzureEnvironment"></a>
+##### `ResetAzureEnvironment` <a name="ResetAzureEnvironment" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetAzureEnvironment"></a>
 
 ```go
 func ResetAzureEnvironment()
 ```
 
-##### `ResetAzureLoginAppId` <a name="ResetAzureLoginAppId" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetAzureLoginAppId"></a>
+##### `ResetAzureLoginAppId` <a name="ResetAzureLoginAppId" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetAzureLoginAppId"></a>
 
 ```go
 func ResetAzureLoginAppId()
 ```
 
-##### `ResetAzureTenantId` <a name="ResetAzureTenantId" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetAzureTenantId"></a>
+##### `ResetAzureTenantId` <a name="ResetAzureTenantId" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetAzureTenantId"></a>
 
 ```go
 func ResetAzureTenantId()
 ```
 
-##### `ResetAzureUseMsi` <a name="ResetAzureUseMsi" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetAzureUseMsi"></a>
+##### `ResetAzureUseMsi` <a name="ResetAzureUseMsi" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetAzureUseMsi"></a>
 
 ```go
 func ResetAzureUseMsi()
 ```
 
-##### `ResetAzureWorkspaceResourceId` <a name="ResetAzureWorkspaceResourceId" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetAzureWorkspaceResourceId"></a>
+##### `ResetAzureWorkspaceResourceId` <a name="ResetAzureWorkspaceResourceId" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetAzureWorkspaceResourceId"></a>
 
 ```go
 func ResetAzureWorkspaceResourceId()
 ```
 
-##### `ResetClientId` <a name="ResetClientId" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetClientId"></a>
+##### `ResetClientId` <a name="ResetClientId" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetClientId"></a>
 
 ```go
 func ResetClientId()
 ```
 
-##### `ResetClientSecret` <a name="ResetClientSecret" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetClientSecret"></a>
+##### `ResetClientSecret` <a name="ResetClientSecret" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetClientSecret"></a>
 
 ```go
 func ResetClientSecret()
 ```
 
-##### `ResetClusterId` <a name="ResetClusterId" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetClusterId"></a>
+##### `ResetClusterId` <a name="ResetClusterId" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetClusterId"></a>
 
 ```go
 func ResetClusterId()
 ```
 
-##### `ResetConfigFile` <a name="ResetConfigFile" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetConfigFile"></a>
+##### `ResetConfigFile` <a name="ResetConfigFile" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetConfigFile"></a>
 
 ```go
 func ResetConfigFile()
 ```
 
-##### `ResetDatabricksCliPath` <a name="ResetDatabricksCliPath" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetDatabricksCliPath"></a>
+##### `ResetDatabricksCliPath` <a name="ResetDatabricksCliPath" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetDatabricksCliPath"></a>
 
 ```go
 func ResetDatabricksCliPath()
 ```
 
-##### `ResetDatabricksIdTokenFilepath` <a name="ResetDatabricksIdTokenFilepath" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetDatabricksIdTokenFilepath"></a>
+##### `ResetDatabricksIdTokenFilepath` <a name="ResetDatabricksIdTokenFilepath" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetDatabricksIdTokenFilepath"></a>
 
 ```go
 func ResetDatabricksIdTokenFilepath()
 ```
 
-##### `ResetDebugHeaders` <a name="ResetDebugHeaders" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetDebugHeaders"></a>
+##### `ResetDebugHeaders` <a name="ResetDebugHeaders" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetDebugHeaders"></a>
 
 ```go
 func ResetDebugHeaders()
 ```
 
-##### `ResetDebugTruncateBytes` <a name="ResetDebugTruncateBytes" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetDebugTruncateBytes"></a>
+##### `ResetDebugTruncateBytes` <a name="ResetDebugTruncateBytes" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetDebugTruncateBytes"></a>
 
 ```go
 func ResetDebugTruncateBytes()
 ```
 
-##### `ResetExperimentalIsUnifiedHost` <a name="ResetExperimentalIsUnifiedHost" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetExperimentalIsUnifiedHost"></a>
+##### `ResetDisableOauthRefreshToken` <a name="ResetDisableOauthRefreshToken" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetDisableOauthRefreshToken"></a>
+
+```go
+func ResetDisableOauthRefreshToken()
+```
+
+##### `ResetExperimentalIsUnifiedHost` <a name="ResetExperimentalIsUnifiedHost" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetExperimentalIsUnifiedHost"></a>
 
 ```go
 func ResetExperimentalIsUnifiedHost()
 ```
 
-##### `ResetGoogleCredentials` <a name="ResetGoogleCredentials" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetGoogleCredentials"></a>
+##### `ResetGoogleCredentials` <a name="ResetGoogleCredentials" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetGoogleCredentials"></a>
 
 ```go
 func ResetGoogleCredentials()
 ```
 
-##### `ResetGoogleServiceAccount` <a name="ResetGoogleServiceAccount" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetGoogleServiceAccount"></a>
+##### `ResetGoogleServiceAccount` <a name="ResetGoogleServiceAccount" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetGoogleServiceAccount"></a>
 
 ```go
 func ResetGoogleServiceAccount()
 ```
 
-##### `ResetHost` <a name="ResetHost" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetHost"></a>
+##### `ResetHost` <a name="ResetHost" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetHost"></a>
 
 ```go
 func ResetHost()
 ```
 
-##### `ResetHttpTimeoutSeconds` <a name="ResetHttpTimeoutSeconds" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetHttpTimeoutSeconds"></a>
+##### `ResetHttpTimeoutSeconds` <a name="ResetHttpTimeoutSeconds" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetHttpTimeoutSeconds"></a>
 
 ```go
 func ResetHttpTimeoutSeconds()
 ```
 
-##### `ResetMetadataServiceUrl` <a name="ResetMetadataServiceUrl" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetMetadataServiceUrl"></a>
+##### `ResetMetadataServiceUrl` <a name="ResetMetadataServiceUrl" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetMetadataServiceUrl"></a>
 
 ```go
 func ResetMetadataServiceUrl()
 ```
 
-##### `ResetOauthCallbackPort` <a name="ResetOauthCallbackPort" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetOauthCallbackPort"></a>
+##### `ResetOauthCallbackPort` <a name="ResetOauthCallbackPort" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetOauthCallbackPort"></a>
 
 ```go
 func ResetOauthCallbackPort()
 ```
 
-##### `ResetOidcTokenEnv` <a name="ResetOidcTokenEnv" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetOidcTokenEnv"></a>
+##### `ResetOidcTokenEnv` <a name="ResetOidcTokenEnv" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetOidcTokenEnv"></a>
 
 ```go
 func ResetOidcTokenEnv()
 ```
 
-##### `ResetPassword` <a name="ResetPassword" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetPassword"></a>
+##### `ResetPassword` <a name="ResetPassword" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetPassword"></a>
 
 ```go
 func ResetPassword()
 ```
 
-##### `ResetProfile` <a name="ResetProfile" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetProfile"></a>
+##### `ResetProfile` <a name="ResetProfile" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetProfile"></a>
 
 ```go
 func ResetProfile()
 ```
 
-##### `ResetRateLimit` <a name="ResetRateLimit" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetRateLimit"></a>
+##### `ResetRateLimit` <a name="ResetRateLimit" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetRateLimit"></a>
 
 ```go
 func ResetRateLimit()
 ```
 
-##### `ResetRetryTimeoutSeconds` <a name="ResetRetryTimeoutSeconds" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetRetryTimeoutSeconds"></a>
+##### `ResetRetryTimeoutSeconds` <a name="ResetRetryTimeoutSeconds" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetRetryTimeoutSeconds"></a>
 
 ```go
 func ResetRetryTimeoutSeconds()
 ```
 
-##### `ResetServerlessComputeId` <a name="ResetServerlessComputeId" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetServerlessComputeId"></a>
+##### `ResetScopes` <a name="ResetScopes" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetScopes"></a>
+
+```go
+func ResetScopes()
+```
+
+##### `ResetServerlessComputeId` <a name="ResetServerlessComputeId" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetServerlessComputeId"></a>
 
 ```go
 func ResetServerlessComputeId()
 ```
 
-##### `ResetSkipVerify` <a name="ResetSkipVerify" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetSkipVerify"></a>
+##### `ResetSkipVerify` <a name="ResetSkipVerify" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetSkipVerify"></a>
 
 ```go
 func ResetSkipVerify()
 ```
 
-##### `ResetToken` <a name="ResetToken" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetToken"></a>
+##### `ResetToken` <a name="ResetToken" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetToken"></a>
 
 ```go
 func ResetToken()
 ```
 
-##### `ResetUsername` <a name="ResetUsername" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetUsername"></a>
+##### `ResetUsername` <a name="ResetUsername" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetUsername"></a>
 
 ```go
 func ResetUsername()
 ```
 
-##### `ResetWarehouseId` <a name="ResetWarehouseId" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetWarehouseId"></a>
+##### `ResetWarehouseId` <a name="ResetWarehouseId" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetWarehouseId"></a>
 
 ```go
 func ResetWarehouseId()
 ```
 
-##### `ResetWorkspaceId` <a name="ResetWorkspaceId" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetWorkspaceId"></a>
+##### `ResetWorkspaceId` <a name="ResetWorkspaceId" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetWorkspaceId"></a>
 
 ```go
 func ResetWorkspaceId()
@@ -407,17 +421,17 @@ func ResetWorkspaceId()
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.isTerraformProvider">IsTerraformProvider</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DatabricksProvider resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.isTerraformProvider">IsTerraformProvider</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTN code for importing a DatabricksProvider resource upon running "cdktn plan <stack-name>". |
 
 ---
 
-##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-databricks.provider.DatabricksProvider.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.provider.DatabricksProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/provider"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/provider"
 
 provider.DatabricksProvider_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +452,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-databricks.provider.DatabricksProvider.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-databricks.provider.DatabricksProvider.isConstruct.parameter.x"></a>
 
 - *Type:* interface{}
 
@@ -446,45 +460,45 @@ Any object.
 
 ---
 
-##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-databricks.provider.DatabricksProvider.isTerraformElement"></a>
+##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.provider.DatabricksProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/provider"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/provider"
 
 provider.DatabricksProvider_IsTerraformElement(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-databricks.provider.DatabricksProvider.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-databricks.provider.DatabricksProvider.isTerraformElement.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-databricks.provider.DatabricksProvider.isTerraformProvider"></a>
+##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktn/provider-databricks.provider.DatabricksProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/provider"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/provider"
 
 provider.DatabricksProvider_IsTerraformProvider(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-databricks.provider.DatabricksProvider.isTerraformProvider.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-databricks.provider.DatabricksProvider.isTerraformProvider.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-databricks.provider.DatabricksProvider.generateConfigForImport"></a>
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.provider.DatabricksProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/provider"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/provider"
 
 provider.DatabricksProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
 
-Generates CDKTF code for importing a DatabricksProvider resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a DatabricksProvider resource upon running "cdktn plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-databricks.provider.DatabricksProvider.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-databricks.provider.DatabricksProvider.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -492,7 +506,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-databricks.provider.DatabricksProvider.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-databricks.provider.DatabricksProvider.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* *string
 
@@ -500,19 +514,19 @@ The construct id used in the generated config for the DatabricksProvider to impo
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-databricks.provider.DatabricksProvider.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-databricks.provider.DatabricksProvider.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* *string
 
 The id of the existing DatabricksProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-databricks.provider.DatabricksProvider.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-databricks.provider.DatabricksProvider.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ? Optional instance of the provider where the DatabricksProvider to import is found.
 
@@ -522,96 +536,100 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.metaAttributes">MetaAttributes</a></code> | <code>*map[string]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.terraformProviderSource">TerraformProviderSource</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.alias">Alias</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.accountIdInput">AccountIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.actionsIdTokenRequestTokenInput">ActionsIdTokenRequestTokenInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.actionsIdTokenRequestUrlInput">ActionsIdTokenRequestUrlInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.aliasInput">AliasInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.audienceInput">AudienceInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.authTypeInput">AuthTypeInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.azureClientIdInput">AzureClientIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.azureClientSecretInput">AzureClientSecretInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.azureEnvironmentInput">AzureEnvironmentInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.azureLoginAppIdInput">AzureLoginAppIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.azureTenantIdInput">AzureTenantIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.azureUseMsiInput">AzureUseMsiInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.azureWorkspaceResourceIdInput">AzureWorkspaceResourceIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.clientIdInput">ClientIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.clientSecretInput">ClientSecretInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.clusterIdInput">ClusterIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.configFileInput">ConfigFileInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.databricksCliPathInput">DatabricksCliPathInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.databricksIdTokenFilepathInput">DatabricksIdTokenFilepathInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.debugHeadersInput">DebugHeadersInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.debugTruncateBytesInput">DebugTruncateBytesInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.experimentalIsUnifiedHostInput">ExperimentalIsUnifiedHostInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.googleCredentialsInput">GoogleCredentialsInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.googleServiceAccountInput">GoogleServiceAccountInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.hostInput">HostInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.httpTimeoutSecondsInput">HttpTimeoutSecondsInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.metadataServiceUrlInput">MetadataServiceUrlInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.oauthCallbackPortInput">OauthCallbackPortInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.oidcTokenEnvInput">OidcTokenEnvInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.passwordInput">PasswordInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.profileInput">ProfileInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.rateLimitInput">RateLimitInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.retryTimeoutSecondsInput">RetryTimeoutSecondsInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.serverlessComputeIdInput">ServerlessComputeIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.skipVerifyInput">SkipVerifyInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.tokenInput">TokenInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.usernameInput">UsernameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.warehouseIdInput">WarehouseIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.workspaceIdInput">WorkspaceIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.accountId">AccountId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.actionsIdTokenRequestToken">ActionsIdTokenRequestToken</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.actionsIdTokenRequestUrl">ActionsIdTokenRequestUrl</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.audience">Audience</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.authType">AuthType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.azureClientId">AzureClientId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.azureClientSecret">AzureClientSecret</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.azureEnvironment">AzureEnvironment</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.azureLoginAppId">AzureLoginAppId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.azureTenantId">AzureTenantId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.azureUseMsi">AzureUseMsi</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.azureWorkspaceResourceId">AzureWorkspaceResourceId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.clientId">ClientId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.clientSecret">ClientSecret</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.clusterId">ClusterId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.configFile">ConfigFile</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.databricksCliPath">DatabricksCliPath</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.databricksIdTokenFilepath">DatabricksIdTokenFilepath</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.debugHeaders">DebugHeaders</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.debugTruncateBytes">DebugTruncateBytes</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.experimentalIsUnifiedHost">ExperimentalIsUnifiedHost</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.googleCredentials">GoogleCredentials</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.googleServiceAccount">GoogleServiceAccount</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.host">Host</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.httpTimeoutSeconds">HttpTimeoutSeconds</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.metadataServiceUrl">MetadataServiceUrl</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.oauthCallbackPort">OauthCallbackPort</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.oidcTokenEnv">OidcTokenEnv</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.password">Password</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.profile">Profile</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.rateLimit">RateLimit</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.retryTimeoutSeconds">RetryTimeoutSeconds</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.serverlessComputeId">ServerlessComputeId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.skipVerify">SkipVerify</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.token">Token</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.username">Username</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.warehouseId">WarehouseId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.cdktfStack">CdktfStack</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.metaAttributes">MetaAttributes</a></code> | <code>*map[string]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.terraformProviderSource">TerraformProviderSource</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.alias">Alias</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.accountIdInput">AccountIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.actionsIdTokenRequestTokenInput">ActionsIdTokenRequestTokenInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.actionsIdTokenRequestUrlInput">ActionsIdTokenRequestUrlInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.aliasInput">AliasInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.audienceInput">AudienceInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.authTypeInput">AuthTypeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.azureClientIdInput">AzureClientIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.azureClientSecretInput">AzureClientSecretInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.azureEnvironmentInput">AzureEnvironmentInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.azureLoginAppIdInput">AzureLoginAppIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.azureTenantIdInput">AzureTenantIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.azureUseMsiInput">AzureUseMsiInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.azureWorkspaceResourceIdInput">AzureWorkspaceResourceIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.clientIdInput">ClientIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.clientSecretInput">ClientSecretInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.clusterIdInput">ClusterIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.configFileInput">ConfigFileInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.databricksCliPathInput">DatabricksCliPathInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.databricksIdTokenFilepathInput">DatabricksIdTokenFilepathInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.debugHeadersInput">DebugHeadersInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.debugTruncateBytesInput">DebugTruncateBytesInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.disableOauthRefreshTokenInput">DisableOauthRefreshTokenInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.experimentalIsUnifiedHostInput">ExperimentalIsUnifiedHostInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.googleCredentialsInput">GoogleCredentialsInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.googleServiceAccountInput">GoogleServiceAccountInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.hostInput">HostInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.httpTimeoutSecondsInput">HttpTimeoutSecondsInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.metadataServiceUrlInput">MetadataServiceUrlInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.oauthCallbackPortInput">OauthCallbackPortInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.oidcTokenEnvInput">OidcTokenEnvInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.passwordInput">PasswordInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.profileInput">ProfileInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.rateLimitInput">RateLimitInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.retryTimeoutSecondsInput">RetryTimeoutSecondsInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.scopesInput">ScopesInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.serverlessComputeIdInput">ServerlessComputeIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.skipVerifyInput">SkipVerifyInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.tokenInput">TokenInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.usernameInput">UsernameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.warehouseIdInput">WarehouseIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.workspaceIdInput">WorkspaceIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.accountId">AccountId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.actionsIdTokenRequestToken">ActionsIdTokenRequestToken</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.actionsIdTokenRequestUrl">ActionsIdTokenRequestUrl</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.audience">Audience</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.authType">AuthType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.azureClientId">AzureClientId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.azureClientSecret">AzureClientSecret</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.azureEnvironment">AzureEnvironment</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.azureLoginAppId">AzureLoginAppId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.azureTenantId">AzureTenantId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.azureUseMsi">AzureUseMsi</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.azureWorkspaceResourceId">AzureWorkspaceResourceId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.clientId">ClientId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.clientSecret">ClientSecret</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.clusterId">ClusterId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.configFile">ConfigFile</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.databricksCliPath">DatabricksCliPath</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.databricksIdTokenFilepath">DatabricksIdTokenFilepath</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.debugHeaders">DebugHeaders</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.debugTruncateBytes">DebugTruncateBytes</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.disableOauthRefreshToken">DisableOauthRefreshToken</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.experimentalIsUnifiedHost">ExperimentalIsUnifiedHost</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.googleCredentials">GoogleCredentials</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.googleServiceAccount">GoogleServiceAccount</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.host">Host</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.httpTimeoutSeconds">HttpTimeoutSeconds</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.metadataServiceUrl">MetadataServiceUrl</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.oauthCallbackPort">OauthCallbackPort</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.oidcTokenEnv">OidcTokenEnv</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.password">Password</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.profile">Profile</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.rateLimit">RateLimit</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.retryTimeoutSeconds">RetryTimeoutSeconds</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.scopes">Scopes</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.serverlessComputeId">ServerlessComputeId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.skipVerify">SkipVerify</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.token">Token</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.username">Username</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.warehouseId">WarehouseId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `Node`<sup>Required</sup> <a name="Node" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.node"></a>
 
 ```go
 func Node() Node
@@ -623,17 +641,17 @@ The tree node.
 
 ---
 
-##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.cdktfStack"></a>
+##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.cdktfStack"></a>
 
 ```go
 func CdktfStack() TerraformStack
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformStack
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -643,7 +661,7 @@ func Fqn() *string
 
 ---
 
-##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.friendlyUniqueId"></a>
+##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.friendlyUniqueId"></a>
 
 ```go
 func FriendlyUniqueId() *string
@@ -653,7 +671,7 @@ func FriendlyUniqueId() *string
 
 ---
 
-##### `MetaAttributes`<sup>Required</sup> <a name="MetaAttributes" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.metaAttributes"></a>
+##### `MetaAttributes`<sup>Required</sup> <a name="MetaAttributes" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.metaAttributes"></a>
 
 ```go
 func MetaAttributes() *map[string]interface{}
@@ -663,7 +681,7 @@ func MetaAttributes() *map[string]interface{}
 
 ---
 
-##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.terraformResourceType"></a>
+##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.terraformResourceType"></a>
 
 ```go
 func TerraformResourceType() *string
@@ -673,17 +691,17 @@ func TerraformResourceType() *string
 
 ---
 
-##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.terraformGeneratorMetadata"></a>
+##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.terraformGeneratorMetadata"></a>
 
 ```go
 func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
-##### `TerraformProviderSource`<sup>Optional</sup> <a name="TerraformProviderSource" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.terraformProviderSource"></a>
+##### `TerraformProviderSource`<sup>Optional</sup> <a name="TerraformProviderSource" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.terraformProviderSource"></a>
 
 ```go
 func TerraformProviderSource() *string
@@ -693,7 +711,7 @@ func TerraformProviderSource() *string
 
 ---
 
-##### `Alias`<sup>Optional</sup> <a name="Alias" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.alias"></a>
+##### `Alias`<sup>Optional</sup> <a name="Alias" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.alias"></a>
 
 ```go
 func Alias() *string
@@ -703,7 +721,7 @@ func Alias() *string
 
 ---
 
-##### `AccountIdInput`<sup>Optional</sup> <a name="AccountIdInput" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.accountIdInput"></a>
+##### `AccountIdInput`<sup>Optional</sup> <a name="AccountIdInput" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.accountIdInput"></a>
 
 ```go
 func AccountIdInput() *string
@@ -713,7 +731,7 @@ func AccountIdInput() *string
 
 ---
 
-##### `ActionsIdTokenRequestTokenInput`<sup>Optional</sup> <a name="ActionsIdTokenRequestTokenInput" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.actionsIdTokenRequestTokenInput"></a>
+##### `ActionsIdTokenRequestTokenInput`<sup>Optional</sup> <a name="ActionsIdTokenRequestTokenInput" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.actionsIdTokenRequestTokenInput"></a>
 
 ```go
 func ActionsIdTokenRequestTokenInput() *string
@@ -723,7 +741,7 @@ func ActionsIdTokenRequestTokenInput() *string
 
 ---
 
-##### `ActionsIdTokenRequestUrlInput`<sup>Optional</sup> <a name="ActionsIdTokenRequestUrlInput" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.actionsIdTokenRequestUrlInput"></a>
+##### `ActionsIdTokenRequestUrlInput`<sup>Optional</sup> <a name="ActionsIdTokenRequestUrlInput" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.actionsIdTokenRequestUrlInput"></a>
 
 ```go
 func ActionsIdTokenRequestUrlInput() *string
@@ -733,7 +751,7 @@ func ActionsIdTokenRequestUrlInput() *string
 
 ---
 
-##### `AliasInput`<sup>Optional</sup> <a name="AliasInput" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.aliasInput"></a>
+##### `AliasInput`<sup>Optional</sup> <a name="AliasInput" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.aliasInput"></a>
 
 ```go
 func AliasInput() *string
@@ -743,7 +761,7 @@ func AliasInput() *string
 
 ---
 
-##### `AudienceInput`<sup>Optional</sup> <a name="AudienceInput" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.audienceInput"></a>
+##### `AudienceInput`<sup>Optional</sup> <a name="AudienceInput" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.audienceInput"></a>
 
 ```go
 func AudienceInput() *string
@@ -753,7 +771,7 @@ func AudienceInput() *string
 
 ---
 
-##### `AuthTypeInput`<sup>Optional</sup> <a name="AuthTypeInput" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.authTypeInput"></a>
+##### `AuthTypeInput`<sup>Optional</sup> <a name="AuthTypeInput" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.authTypeInput"></a>
 
 ```go
 func AuthTypeInput() *string
@@ -763,7 +781,7 @@ func AuthTypeInput() *string
 
 ---
 
-##### `AzureClientIdInput`<sup>Optional</sup> <a name="AzureClientIdInput" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.azureClientIdInput"></a>
+##### `AzureClientIdInput`<sup>Optional</sup> <a name="AzureClientIdInput" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.azureClientIdInput"></a>
 
 ```go
 func AzureClientIdInput() *string
@@ -773,7 +791,7 @@ func AzureClientIdInput() *string
 
 ---
 
-##### `AzureClientSecretInput`<sup>Optional</sup> <a name="AzureClientSecretInput" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.azureClientSecretInput"></a>
+##### `AzureClientSecretInput`<sup>Optional</sup> <a name="AzureClientSecretInput" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.azureClientSecretInput"></a>
 
 ```go
 func AzureClientSecretInput() *string
@@ -783,7 +801,7 @@ func AzureClientSecretInput() *string
 
 ---
 
-##### `AzureEnvironmentInput`<sup>Optional</sup> <a name="AzureEnvironmentInput" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.azureEnvironmentInput"></a>
+##### `AzureEnvironmentInput`<sup>Optional</sup> <a name="AzureEnvironmentInput" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.azureEnvironmentInput"></a>
 
 ```go
 func AzureEnvironmentInput() *string
@@ -793,7 +811,7 @@ func AzureEnvironmentInput() *string
 
 ---
 
-##### `AzureLoginAppIdInput`<sup>Optional</sup> <a name="AzureLoginAppIdInput" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.azureLoginAppIdInput"></a>
+##### `AzureLoginAppIdInput`<sup>Optional</sup> <a name="AzureLoginAppIdInput" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.azureLoginAppIdInput"></a>
 
 ```go
 func AzureLoginAppIdInput() *string
@@ -803,7 +821,7 @@ func AzureLoginAppIdInput() *string
 
 ---
 
-##### `AzureTenantIdInput`<sup>Optional</sup> <a name="AzureTenantIdInput" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.azureTenantIdInput"></a>
+##### `AzureTenantIdInput`<sup>Optional</sup> <a name="AzureTenantIdInput" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.azureTenantIdInput"></a>
 
 ```go
 func AzureTenantIdInput() *string
@@ -813,7 +831,7 @@ func AzureTenantIdInput() *string
 
 ---
 
-##### `AzureUseMsiInput`<sup>Optional</sup> <a name="AzureUseMsiInput" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.azureUseMsiInput"></a>
+##### `AzureUseMsiInput`<sup>Optional</sup> <a name="AzureUseMsiInput" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.azureUseMsiInput"></a>
 
 ```go
 func AzureUseMsiInput() interface{}
@@ -823,7 +841,7 @@ func AzureUseMsiInput() interface{}
 
 ---
 
-##### `AzureWorkspaceResourceIdInput`<sup>Optional</sup> <a name="AzureWorkspaceResourceIdInput" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.azureWorkspaceResourceIdInput"></a>
+##### `AzureWorkspaceResourceIdInput`<sup>Optional</sup> <a name="AzureWorkspaceResourceIdInput" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.azureWorkspaceResourceIdInput"></a>
 
 ```go
 func AzureWorkspaceResourceIdInput() *string
@@ -833,7 +851,7 @@ func AzureWorkspaceResourceIdInput() *string
 
 ---
 
-##### `ClientIdInput`<sup>Optional</sup> <a name="ClientIdInput" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.clientIdInput"></a>
+##### `ClientIdInput`<sup>Optional</sup> <a name="ClientIdInput" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.clientIdInput"></a>
 
 ```go
 func ClientIdInput() *string
@@ -843,7 +861,7 @@ func ClientIdInput() *string
 
 ---
 
-##### `ClientSecretInput`<sup>Optional</sup> <a name="ClientSecretInput" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.clientSecretInput"></a>
+##### `ClientSecretInput`<sup>Optional</sup> <a name="ClientSecretInput" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.clientSecretInput"></a>
 
 ```go
 func ClientSecretInput() *string
@@ -853,7 +871,7 @@ func ClientSecretInput() *string
 
 ---
 
-##### `ClusterIdInput`<sup>Optional</sup> <a name="ClusterIdInput" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.clusterIdInput"></a>
+##### `ClusterIdInput`<sup>Optional</sup> <a name="ClusterIdInput" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.clusterIdInput"></a>
 
 ```go
 func ClusterIdInput() *string
@@ -863,7 +881,7 @@ func ClusterIdInput() *string
 
 ---
 
-##### `ConfigFileInput`<sup>Optional</sup> <a name="ConfigFileInput" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.configFileInput"></a>
+##### `ConfigFileInput`<sup>Optional</sup> <a name="ConfigFileInput" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.configFileInput"></a>
 
 ```go
 func ConfigFileInput() *string
@@ -873,7 +891,7 @@ func ConfigFileInput() *string
 
 ---
 
-##### `DatabricksCliPathInput`<sup>Optional</sup> <a name="DatabricksCliPathInput" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.databricksCliPathInput"></a>
+##### `DatabricksCliPathInput`<sup>Optional</sup> <a name="DatabricksCliPathInput" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.databricksCliPathInput"></a>
 
 ```go
 func DatabricksCliPathInput() *string
@@ -883,7 +901,7 @@ func DatabricksCliPathInput() *string
 
 ---
 
-##### `DatabricksIdTokenFilepathInput`<sup>Optional</sup> <a name="DatabricksIdTokenFilepathInput" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.databricksIdTokenFilepathInput"></a>
+##### `DatabricksIdTokenFilepathInput`<sup>Optional</sup> <a name="DatabricksIdTokenFilepathInput" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.databricksIdTokenFilepathInput"></a>
 
 ```go
 func DatabricksIdTokenFilepathInput() *string
@@ -893,7 +911,7 @@ func DatabricksIdTokenFilepathInput() *string
 
 ---
 
-##### `DebugHeadersInput`<sup>Optional</sup> <a name="DebugHeadersInput" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.debugHeadersInput"></a>
+##### `DebugHeadersInput`<sup>Optional</sup> <a name="DebugHeadersInput" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.debugHeadersInput"></a>
 
 ```go
 func DebugHeadersInput() interface{}
@@ -903,7 +921,7 @@ func DebugHeadersInput() interface{}
 
 ---
 
-##### `DebugTruncateBytesInput`<sup>Optional</sup> <a name="DebugTruncateBytesInput" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.debugTruncateBytesInput"></a>
+##### `DebugTruncateBytesInput`<sup>Optional</sup> <a name="DebugTruncateBytesInput" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.debugTruncateBytesInput"></a>
 
 ```go
 func DebugTruncateBytesInput() *f64
@@ -913,7 +931,17 @@ func DebugTruncateBytesInput() *f64
 
 ---
 
-##### `ExperimentalIsUnifiedHostInput`<sup>Optional</sup> <a name="ExperimentalIsUnifiedHostInput" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.experimentalIsUnifiedHostInput"></a>
+##### `DisableOauthRefreshTokenInput`<sup>Optional</sup> <a name="DisableOauthRefreshTokenInput" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.disableOauthRefreshTokenInput"></a>
+
+```go
+func DisableOauthRefreshTokenInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `ExperimentalIsUnifiedHostInput`<sup>Optional</sup> <a name="ExperimentalIsUnifiedHostInput" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.experimentalIsUnifiedHostInput"></a>
 
 ```go
 func ExperimentalIsUnifiedHostInput() interface{}
@@ -923,7 +951,7 @@ func ExperimentalIsUnifiedHostInput() interface{}
 
 ---
 
-##### `GoogleCredentialsInput`<sup>Optional</sup> <a name="GoogleCredentialsInput" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.googleCredentialsInput"></a>
+##### `GoogleCredentialsInput`<sup>Optional</sup> <a name="GoogleCredentialsInput" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.googleCredentialsInput"></a>
 
 ```go
 func GoogleCredentialsInput() *string
@@ -933,7 +961,7 @@ func GoogleCredentialsInput() *string
 
 ---
 
-##### `GoogleServiceAccountInput`<sup>Optional</sup> <a name="GoogleServiceAccountInput" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.googleServiceAccountInput"></a>
+##### `GoogleServiceAccountInput`<sup>Optional</sup> <a name="GoogleServiceAccountInput" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.googleServiceAccountInput"></a>
 
 ```go
 func GoogleServiceAccountInput() *string
@@ -943,7 +971,7 @@ func GoogleServiceAccountInput() *string
 
 ---
 
-##### `HostInput`<sup>Optional</sup> <a name="HostInput" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.hostInput"></a>
+##### `HostInput`<sup>Optional</sup> <a name="HostInput" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.hostInput"></a>
 
 ```go
 func HostInput() *string
@@ -953,7 +981,7 @@ func HostInput() *string
 
 ---
 
-##### `HttpTimeoutSecondsInput`<sup>Optional</sup> <a name="HttpTimeoutSecondsInput" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.httpTimeoutSecondsInput"></a>
+##### `HttpTimeoutSecondsInput`<sup>Optional</sup> <a name="HttpTimeoutSecondsInput" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.httpTimeoutSecondsInput"></a>
 
 ```go
 func HttpTimeoutSecondsInput() *f64
@@ -963,7 +991,7 @@ func HttpTimeoutSecondsInput() *f64
 
 ---
 
-##### `MetadataServiceUrlInput`<sup>Optional</sup> <a name="MetadataServiceUrlInput" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.metadataServiceUrlInput"></a>
+##### `MetadataServiceUrlInput`<sup>Optional</sup> <a name="MetadataServiceUrlInput" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.metadataServiceUrlInput"></a>
 
 ```go
 func MetadataServiceUrlInput() *string
@@ -973,7 +1001,7 @@ func MetadataServiceUrlInput() *string
 
 ---
 
-##### `OauthCallbackPortInput`<sup>Optional</sup> <a name="OauthCallbackPortInput" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.oauthCallbackPortInput"></a>
+##### `OauthCallbackPortInput`<sup>Optional</sup> <a name="OauthCallbackPortInput" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.oauthCallbackPortInput"></a>
 
 ```go
 func OauthCallbackPortInput() *f64
@@ -983,7 +1011,7 @@ func OauthCallbackPortInput() *f64
 
 ---
 
-##### `OidcTokenEnvInput`<sup>Optional</sup> <a name="OidcTokenEnvInput" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.oidcTokenEnvInput"></a>
+##### `OidcTokenEnvInput`<sup>Optional</sup> <a name="OidcTokenEnvInput" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.oidcTokenEnvInput"></a>
 
 ```go
 func OidcTokenEnvInput() *string
@@ -993,7 +1021,7 @@ func OidcTokenEnvInput() *string
 
 ---
 
-##### `PasswordInput`<sup>Optional</sup> <a name="PasswordInput" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.passwordInput"></a>
+##### `PasswordInput`<sup>Optional</sup> <a name="PasswordInput" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.passwordInput"></a>
 
 ```go
 func PasswordInput() *string
@@ -1003,7 +1031,7 @@ func PasswordInput() *string
 
 ---
 
-##### `ProfileInput`<sup>Optional</sup> <a name="ProfileInput" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.profileInput"></a>
+##### `ProfileInput`<sup>Optional</sup> <a name="ProfileInput" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.profileInput"></a>
 
 ```go
 func ProfileInput() *string
@@ -1013,7 +1041,7 @@ func ProfileInput() *string
 
 ---
 
-##### `RateLimitInput`<sup>Optional</sup> <a name="RateLimitInput" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.rateLimitInput"></a>
+##### `RateLimitInput`<sup>Optional</sup> <a name="RateLimitInput" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.rateLimitInput"></a>
 
 ```go
 func RateLimitInput() *f64
@@ -1023,7 +1051,7 @@ func RateLimitInput() *f64
 
 ---
 
-##### `RetryTimeoutSecondsInput`<sup>Optional</sup> <a name="RetryTimeoutSecondsInput" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.retryTimeoutSecondsInput"></a>
+##### `RetryTimeoutSecondsInput`<sup>Optional</sup> <a name="RetryTimeoutSecondsInput" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.retryTimeoutSecondsInput"></a>
 
 ```go
 func RetryTimeoutSecondsInput() *f64
@@ -1033,7 +1061,17 @@ func RetryTimeoutSecondsInput() *f64
 
 ---
 
-##### `ServerlessComputeIdInput`<sup>Optional</sup> <a name="ServerlessComputeIdInput" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.serverlessComputeIdInput"></a>
+##### `ScopesInput`<sup>Optional</sup> <a name="ScopesInput" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.scopesInput"></a>
+
+```go
+func ScopesInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `ServerlessComputeIdInput`<sup>Optional</sup> <a name="ServerlessComputeIdInput" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.serverlessComputeIdInput"></a>
 
 ```go
 func ServerlessComputeIdInput() *string
@@ -1043,7 +1081,7 @@ func ServerlessComputeIdInput() *string
 
 ---
 
-##### `SkipVerifyInput`<sup>Optional</sup> <a name="SkipVerifyInput" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.skipVerifyInput"></a>
+##### `SkipVerifyInput`<sup>Optional</sup> <a name="SkipVerifyInput" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.skipVerifyInput"></a>
 
 ```go
 func SkipVerifyInput() interface{}
@@ -1053,7 +1091,7 @@ func SkipVerifyInput() interface{}
 
 ---
 
-##### `TokenInput`<sup>Optional</sup> <a name="TokenInput" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.tokenInput"></a>
+##### `TokenInput`<sup>Optional</sup> <a name="TokenInput" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.tokenInput"></a>
 
 ```go
 func TokenInput() *string
@@ -1063,7 +1101,7 @@ func TokenInput() *string
 
 ---
 
-##### `UsernameInput`<sup>Optional</sup> <a name="UsernameInput" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.usernameInput"></a>
+##### `UsernameInput`<sup>Optional</sup> <a name="UsernameInput" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.usernameInput"></a>
 
 ```go
 func UsernameInput() *string
@@ -1073,7 +1111,7 @@ func UsernameInput() *string
 
 ---
 
-##### `WarehouseIdInput`<sup>Optional</sup> <a name="WarehouseIdInput" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.warehouseIdInput"></a>
+##### `WarehouseIdInput`<sup>Optional</sup> <a name="WarehouseIdInput" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.warehouseIdInput"></a>
 
 ```go
 func WarehouseIdInput() *string
@@ -1083,7 +1121,7 @@ func WarehouseIdInput() *string
 
 ---
 
-##### `WorkspaceIdInput`<sup>Optional</sup> <a name="WorkspaceIdInput" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.workspaceIdInput"></a>
+##### `WorkspaceIdInput`<sup>Optional</sup> <a name="WorkspaceIdInput" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.workspaceIdInput"></a>
 
 ```go
 func WorkspaceIdInput() *string
@@ -1093,7 +1131,7 @@ func WorkspaceIdInput() *string
 
 ---
 
-##### `AccountId`<sup>Optional</sup> <a name="AccountId" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.accountId"></a>
+##### `AccountId`<sup>Optional</sup> <a name="AccountId" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.accountId"></a>
 
 ```go
 func AccountId() *string
@@ -1103,7 +1141,7 @@ func AccountId() *string
 
 ---
 
-##### `ActionsIdTokenRequestToken`<sup>Optional</sup> <a name="ActionsIdTokenRequestToken" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.actionsIdTokenRequestToken"></a>
+##### `ActionsIdTokenRequestToken`<sup>Optional</sup> <a name="ActionsIdTokenRequestToken" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.actionsIdTokenRequestToken"></a>
 
 ```go
 func ActionsIdTokenRequestToken() *string
@@ -1113,7 +1151,7 @@ func ActionsIdTokenRequestToken() *string
 
 ---
 
-##### `ActionsIdTokenRequestUrl`<sup>Optional</sup> <a name="ActionsIdTokenRequestUrl" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.actionsIdTokenRequestUrl"></a>
+##### `ActionsIdTokenRequestUrl`<sup>Optional</sup> <a name="ActionsIdTokenRequestUrl" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.actionsIdTokenRequestUrl"></a>
 
 ```go
 func ActionsIdTokenRequestUrl() *string
@@ -1123,7 +1161,7 @@ func ActionsIdTokenRequestUrl() *string
 
 ---
 
-##### `Audience`<sup>Optional</sup> <a name="Audience" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.audience"></a>
+##### `Audience`<sup>Optional</sup> <a name="Audience" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.audience"></a>
 
 ```go
 func Audience() *string
@@ -1133,7 +1171,7 @@ func Audience() *string
 
 ---
 
-##### `AuthType`<sup>Optional</sup> <a name="AuthType" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.authType"></a>
+##### `AuthType`<sup>Optional</sup> <a name="AuthType" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.authType"></a>
 
 ```go
 func AuthType() *string
@@ -1143,7 +1181,7 @@ func AuthType() *string
 
 ---
 
-##### `AzureClientId`<sup>Optional</sup> <a name="AzureClientId" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.azureClientId"></a>
+##### `AzureClientId`<sup>Optional</sup> <a name="AzureClientId" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.azureClientId"></a>
 
 ```go
 func AzureClientId() *string
@@ -1153,7 +1191,7 @@ func AzureClientId() *string
 
 ---
 
-##### `AzureClientSecret`<sup>Optional</sup> <a name="AzureClientSecret" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.azureClientSecret"></a>
+##### `AzureClientSecret`<sup>Optional</sup> <a name="AzureClientSecret" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.azureClientSecret"></a>
 
 ```go
 func AzureClientSecret() *string
@@ -1163,7 +1201,7 @@ func AzureClientSecret() *string
 
 ---
 
-##### `AzureEnvironment`<sup>Optional</sup> <a name="AzureEnvironment" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.azureEnvironment"></a>
+##### `AzureEnvironment`<sup>Optional</sup> <a name="AzureEnvironment" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.azureEnvironment"></a>
 
 ```go
 func AzureEnvironment() *string
@@ -1173,7 +1211,7 @@ func AzureEnvironment() *string
 
 ---
 
-##### `AzureLoginAppId`<sup>Optional</sup> <a name="AzureLoginAppId" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.azureLoginAppId"></a>
+##### `AzureLoginAppId`<sup>Optional</sup> <a name="AzureLoginAppId" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.azureLoginAppId"></a>
 
 ```go
 func AzureLoginAppId() *string
@@ -1183,7 +1221,7 @@ func AzureLoginAppId() *string
 
 ---
 
-##### `AzureTenantId`<sup>Optional</sup> <a name="AzureTenantId" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.azureTenantId"></a>
+##### `AzureTenantId`<sup>Optional</sup> <a name="AzureTenantId" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.azureTenantId"></a>
 
 ```go
 func AzureTenantId() *string
@@ -1193,7 +1231,7 @@ func AzureTenantId() *string
 
 ---
 
-##### `AzureUseMsi`<sup>Optional</sup> <a name="AzureUseMsi" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.azureUseMsi"></a>
+##### `AzureUseMsi`<sup>Optional</sup> <a name="AzureUseMsi" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.azureUseMsi"></a>
 
 ```go
 func AzureUseMsi() interface{}
@@ -1203,7 +1241,7 @@ func AzureUseMsi() interface{}
 
 ---
 
-##### `AzureWorkspaceResourceId`<sup>Optional</sup> <a name="AzureWorkspaceResourceId" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.azureWorkspaceResourceId"></a>
+##### `AzureWorkspaceResourceId`<sup>Optional</sup> <a name="AzureWorkspaceResourceId" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.azureWorkspaceResourceId"></a>
 
 ```go
 func AzureWorkspaceResourceId() *string
@@ -1213,7 +1251,7 @@ func AzureWorkspaceResourceId() *string
 
 ---
 
-##### `ClientId`<sup>Optional</sup> <a name="ClientId" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.clientId"></a>
+##### `ClientId`<sup>Optional</sup> <a name="ClientId" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.clientId"></a>
 
 ```go
 func ClientId() *string
@@ -1223,7 +1261,7 @@ func ClientId() *string
 
 ---
 
-##### `ClientSecret`<sup>Optional</sup> <a name="ClientSecret" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.clientSecret"></a>
+##### `ClientSecret`<sup>Optional</sup> <a name="ClientSecret" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.clientSecret"></a>
 
 ```go
 func ClientSecret() *string
@@ -1233,7 +1271,7 @@ func ClientSecret() *string
 
 ---
 
-##### `ClusterId`<sup>Optional</sup> <a name="ClusterId" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.clusterId"></a>
+##### `ClusterId`<sup>Optional</sup> <a name="ClusterId" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.clusterId"></a>
 
 ```go
 func ClusterId() *string
@@ -1243,7 +1281,7 @@ func ClusterId() *string
 
 ---
 
-##### `ConfigFile`<sup>Optional</sup> <a name="ConfigFile" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.configFile"></a>
+##### `ConfigFile`<sup>Optional</sup> <a name="ConfigFile" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.configFile"></a>
 
 ```go
 func ConfigFile() *string
@@ -1253,7 +1291,7 @@ func ConfigFile() *string
 
 ---
 
-##### `DatabricksCliPath`<sup>Optional</sup> <a name="DatabricksCliPath" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.databricksCliPath"></a>
+##### `DatabricksCliPath`<sup>Optional</sup> <a name="DatabricksCliPath" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.databricksCliPath"></a>
 
 ```go
 func DatabricksCliPath() *string
@@ -1263,7 +1301,7 @@ func DatabricksCliPath() *string
 
 ---
 
-##### `DatabricksIdTokenFilepath`<sup>Optional</sup> <a name="DatabricksIdTokenFilepath" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.databricksIdTokenFilepath"></a>
+##### `DatabricksIdTokenFilepath`<sup>Optional</sup> <a name="DatabricksIdTokenFilepath" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.databricksIdTokenFilepath"></a>
 
 ```go
 func DatabricksIdTokenFilepath() *string
@@ -1273,7 +1311,7 @@ func DatabricksIdTokenFilepath() *string
 
 ---
 
-##### `DebugHeaders`<sup>Optional</sup> <a name="DebugHeaders" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.debugHeaders"></a>
+##### `DebugHeaders`<sup>Optional</sup> <a name="DebugHeaders" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.debugHeaders"></a>
 
 ```go
 func DebugHeaders() interface{}
@@ -1283,7 +1321,7 @@ func DebugHeaders() interface{}
 
 ---
 
-##### `DebugTruncateBytes`<sup>Optional</sup> <a name="DebugTruncateBytes" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.debugTruncateBytes"></a>
+##### `DebugTruncateBytes`<sup>Optional</sup> <a name="DebugTruncateBytes" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.debugTruncateBytes"></a>
 
 ```go
 func DebugTruncateBytes() *f64
@@ -1293,7 +1331,17 @@ func DebugTruncateBytes() *f64
 
 ---
 
-##### `ExperimentalIsUnifiedHost`<sup>Optional</sup> <a name="ExperimentalIsUnifiedHost" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.experimentalIsUnifiedHost"></a>
+##### `DisableOauthRefreshToken`<sup>Optional</sup> <a name="DisableOauthRefreshToken" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.disableOauthRefreshToken"></a>
+
+```go
+func DisableOauthRefreshToken() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `ExperimentalIsUnifiedHost`<sup>Optional</sup> <a name="ExperimentalIsUnifiedHost" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.experimentalIsUnifiedHost"></a>
 
 ```go
 func ExperimentalIsUnifiedHost() interface{}
@@ -1303,7 +1351,7 @@ func ExperimentalIsUnifiedHost() interface{}
 
 ---
 
-##### `GoogleCredentials`<sup>Optional</sup> <a name="GoogleCredentials" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.googleCredentials"></a>
+##### `GoogleCredentials`<sup>Optional</sup> <a name="GoogleCredentials" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.googleCredentials"></a>
 
 ```go
 func GoogleCredentials() *string
@@ -1313,7 +1361,7 @@ func GoogleCredentials() *string
 
 ---
 
-##### `GoogleServiceAccount`<sup>Optional</sup> <a name="GoogleServiceAccount" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.googleServiceAccount"></a>
+##### `GoogleServiceAccount`<sup>Optional</sup> <a name="GoogleServiceAccount" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.googleServiceAccount"></a>
 
 ```go
 func GoogleServiceAccount() *string
@@ -1323,7 +1371,7 @@ func GoogleServiceAccount() *string
 
 ---
 
-##### `Host`<sup>Optional</sup> <a name="Host" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.host"></a>
+##### `Host`<sup>Optional</sup> <a name="Host" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.host"></a>
 
 ```go
 func Host() *string
@@ -1333,7 +1381,7 @@ func Host() *string
 
 ---
 
-##### `HttpTimeoutSeconds`<sup>Optional</sup> <a name="HttpTimeoutSeconds" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.httpTimeoutSeconds"></a>
+##### `HttpTimeoutSeconds`<sup>Optional</sup> <a name="HttpTimeoutSeconds" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.httpTimeoutSeconds"></a>
 
 ```go
 func HttpTimeoutSeconds() *f64
@@ -1343,7 +1391,7 @@ func HttpTimeoutSeconds() *f64
 
 ---
 
-##### `MetadataServiceUrl`<sup>Optional</sup> <a name="MetadataServiceUrl" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.metadataServiceUrl"></a>
+##### `MetadataServiceUrl`<sup>Optional</sup> <a name="MetadataServiceUrl" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.metadataServiceUrl"></a>
 
 ```go
 func MetadataServiceUrl() *string
@@ -1353,7 +1401,7 @@ func MetadataServiceUrl() *string
 
 ---
 
-##### `OauthCallbackPort`<sup>Optional</sup> <a name="OauthCallbackPort" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.oauthCallbackPort"></a>
+##### `OauthCallbackPort`<sup>Optional</sup> <a name="OauthCallbackPort" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.oauthCallbackPort"></a>
 
 ```go
 func OauthCallbackPort() *f64
@@ -1363,7 +1411,7 @@ func OauthCallbackPort() *f64
 
 ---
 
-##### `OidcTokenEnv`<sup>Optional</sup> <a name="OidcTokenEnv" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.oidcTokenEnv"></a>
+##### `OidcTokenEnv`<sup>Optional</sup> <a name="OidcTokenEnv" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.oidcTokenEnv"></a>
 
 ```go
 func OidcTokenEnv() *string
@@ -1373,7 +1421,7 @@ func OidcTokenEnv() *string
 
 ---
 
-##### `Password`<sup>Optional</sup> <a name="Password" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.password"></a>
+##### `Password`<sup>Optional</sup> <a name="Password" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.password"></a>
 
 ```go
 func Password() *string
@@ -1383,7 +1431,7 @@ func Password() *string
 
 ---
 
-##### `Profile`<sup>Optional</sup> <a name="Profile" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.profile"></a>
+##### `Profile`<sup>Optional</sup> <a name="Profile" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.profile"></a>
 
 ```go
 func Profile() *string
@@ -1393,7 +1441,7 @@ func Profile() *string
 
 ---
 
-##### `RateLimit`<sup>Optional</sup> <a name="RateLimit" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.rateLimit"></a>
+##### `RateLimit`<sup>Optional</sup> <a name="RateLimit" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.rateLimit"></a>
 
 ```go
 func RateLimit() *f64
@@ -1403,7 +1451,7 @@ func RateLimit() *f64
 
 ---
 
-##### `RetryTimeoutSeconds`<sup>Optional</sup> <a name="RetryTimeoutSeconds" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.retryTimeoutSeconds"></a>
+##### `RetryTimeoutSeconds`<sup>Optional</sup> <a name="RetryTimeoutSeconds" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.retryTimeoutSeconds"></a>
 
 ```go
 func RetryTimeoutSeconds() *f64
@@ -1413,7 +1461,17 @@ func RetryTimeoutSeconds() *f64
 
 ---
 
-##### `ServerlessComputeId`<sup>Optional</sup> <a name="ServerlessComputeId" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.serverlessComputeId"></a>
+##### `Scopes`<sup>Optional</sup> <a name="Scopes" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.scopes"></a>
+
+```go
+func Scopes() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `ServerlessComputeId`<sup>Optional</sup> <a name="ServerlessComputeId" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.serverlessComputeId"></a>
 
 ```go
 func ServerlessComputeId() *string
@@ -1423,7 +1481,7 @@ func ServerlessComputeId() *string
 
 ---
 
-##### `SkipVerify`<sup>Optional</sup> <a name="SkipVerify" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.skipVerify"></a>
+##### `SkipVerify`<sup>Optional</sup> <a name="SkipVerify" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.skipVerify"></a>
 
 ```go
 func SkipVerify() interface{}
@@ -1433,7 +1491,7 @@ func SkipVerify() interface{}
 
 ---
 
-##### `Token`<sup>Optional</sup> <a name="Token" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.token"></a>
+##### `Token`<sup>Optional</sup> <a name="Token" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.token"></a>
 
 ```go
 func Token() *string
@@ -1443,7 +1501,7 @@ func Token() *string
 
 ---
 
-##### `Username`<sup>Optional</sup> <a name="Username" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.username"></a>
+##### `Username`<sup>Optional</sup> <a name="Username" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.username"></a>
 
 ```go
 func Username() *string
@@ -1453,7 +1511,7 @@ func Username() *string
 
 ---
 
-##### `WarehouseId`<sup>Optional</sup> <a name="WarehouseId" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.warehouseId"></a>
+##### `WarehouseId`<sup>Optional</sup> <a name="WarehouseId" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.warehouseId"></a>
 
 ```go
 func WarehouseId() *string
@@ -1463,7 +1521,7 @@ func WarehouseId() *string
 
 ---
 
-##### `WorkspaceId`<sup>Optional</sup> <a name="WorkspaceId" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.workspaceId"></a>
+##### `WorkspaceId`<sup>Optional</sup> <a name="WorkspaceId" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.workspaceId"></a>
 
 ```go
 func WorkspaceId() *string
@@ -1477,11 +1535,11 @@ func WorkspaceId() *string
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.tfResourceType"></a>
+##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.tfResourceType"></a>
 
 ```go
 func TfResourceType() *string
@@ -1493,12 +1551,12 @@ func TfResourceType() *string
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### DatabricksProviderConfig <a name="DatabricksProviderConfig" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig"></a>
+### DatabricksProviderConfig <a name="DatabricksProviderConfig" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/provider"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/provider"
 
 &provider.DatabricksProviderConfig {
 	AccountId: *string,
@@ -1522,6 +1580,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/provider"
 	DatabricksIdTokenFilepath: *string,
 	DebugHeaders: interface{},
 	DebugTruncateBytes: *f64,
+	DisableOauthRefreshToken: interface{},
 	ExperimentalIsUnifiedHost: interface{},
 	GoogleCredentials: *string,
 	GoogleServiceAccount: *string,
@@ -1534,6 +1593,7 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/provider"
 	Profile: *string,
 	RateLimit: *f64,
 	RetryTimeoutSeconds: *f64,
+	Scopes: *[]*string,
 	ServerlessComputeId: *string,
 	SkipVerify: interface{},
 	Token: *string,
@@ -1547,49 +1607,51 @@ import "github.com/cdktf/cdktf-provider-databricks-go/databricks/v15/provider"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#account_id DatabricksProvider#account_id}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.actionsIdTokenRequestToken">ActionsIdTokenRequestToken</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#actions_id_token_request_token DatabricksProvider#actions_id_token_request_token}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.actionsIdTokenRequestUrl">ActionsIdTokenRequestUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#actions_id_token_request_url DatabricksProvider#actions_id_token_request_url}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.alias">Alias</a></code> | <code>*string</code> | Alias name. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.audience">Audience</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#audience DatabricksProvider#audience}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.authType">AuthType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#auth_type DatabricksProvider#auth_type}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.azureClientId">AzureClientId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#azure_client_id DatabricksProvider#azure_client_id}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.azureClientSecret">AzureClientSecret</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#azure_client_secret DatabricksProvider#azure_client_secret}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.azureEnvironment">AzureEnvironment</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#azure_environment DatabricksProvider#azure_environment}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.azureLoginAppId">AzureLoginAppId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#azure_login_app_id DatabricksProvider#azure_login_app_id}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.azureTenantId">AzureTenantId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#azure_tenant_id DatabricksProvider#azure_tenant_id}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.azureUseMsi">AzureUseMsi</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#azure_use_msi DatabricksProvider#azure_use_msi}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.azureWorkspaceResourceId">AzureWorkspaceResourceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#azure_workspace_resource_id DatabricksProvider#azure_workspace_resource_id}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.clientId">ClientId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#client_id DatabricksProvider#client_id}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.clientSecret">ClientSecret</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#client_secret DatabricksProvider#client_secret}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.clusterId">ClusterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#cluster_id DatabricksProvider#cluster_id}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.configFile">ConfigFile</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#config_file DatabricksProvider#config_file}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.databricksCliPath">DatabricksCliPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#databricks_cli_path DatabricksProvider#databricks_cli_path}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.databricksIdTokenFilepath">DatabricksIdTokenFilepath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#databricks_id_token_filepath DatabricksProvider#databricks_id_token_filepath}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.debugHeaders">DebugHeaders</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#debug_headers DatabricksProvider#debug_headers}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.debugTruncateBytes">DebugTruncateBytes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#debug_truncate_bytes DatabricksProvider#debug_truncate_bytes}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.experimentalIsUnifiedHost">ExperimentalIsUnifiedHost</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#experimental_is_unified_host DatabricksProvider#experimental_is_unified_host}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.googleCredentials">GoogleCredentials</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#google_credentials DatabricksProvider#google_credentials}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.googleServiceAccount">GoogleServiceAccount</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#google_service_account DatabricksProvider#google_service_account}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.host">Host</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#host DatabricksProvider#host}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.httpTimeoutSeconds">HttpTimeoutSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#http_timeout_seconds DatabricksProvider#http_timeout_seconds}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.metadataServiceUrl">MetadataServiceUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#metadata_service_url DatabricksProvider#metadata_service_url}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.oauthCallbackPort">OauthCallbackPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#oauth_callback_port DatabricksProvider#oauth_callback_port}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.oidcTokenEnv">OidcTokenEnv</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#oidc_token_env DatabricksProvider#oidc_token_env}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.password">Password</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#password DatabricksProvider#password}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.profile">Profile</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#profile DatabricksProvider#profile}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.rateLimit">RateLimit</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#rate_limit DatabricksProvider#rate_limit}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.retryTimeoutSeconds">RetryTimeoutSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#retry_timeout_seconds DatabricksProvider#retry_timeout_seconds}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.serverlessComputeId">ServerlessComputeId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#serverless_compute_id DatabricksProvider#serverless_compute_id}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.skipVerify">SkipVerify</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#skip_verify DatabricksProvider#skip_verify}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.token">Token</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#token DatabricksProvider#token}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#username DatabricksProvider#username}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.warehouseId">WarehouseId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#warehouse_id DatabricksProvider#warehouse_id}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#workspace_id DatabricksProvider#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#account_id DatabricksProvider#account_id}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.actionsIdTokenRequestToken">ActionsIdTokenRequestToken</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#actions_id_token_request_token DatabricksProvider#actions_id_token_request_token}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.actionsIdTokenRequestUrl">ActionsIdTokenRequestUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#actions_id_token_request_url DatabricksProvider#actions_id_token_request_url}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.alias">Alias</a></code> | <code>*string</code> | Alias name. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.audience">Audience</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#audience DatabricksProvider#audience}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.authType">AuthType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#auth_type DatabricksProvider#auth_type}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.azureClientId">AzureClientId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#azure_client_id DatabricksProvider#azure_client_id}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.azureClientSecret">AzureClientSecret</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#azure_client_secret DatabricksProvider#azure_client_secret}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.azureEnvironment">AzureEnvironment</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#azure_environment DatabricksProvider#azure_environment}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.azureLoginAppId">AzureLoginAppId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#azure_login_app_id DatabricksProvider#azure_login_app_id}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.azureTenantId">AzureTenantId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#azure_tenant_id DatabricksProvider#azure_tenant_id}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.azureUseMsi">AzureUseMsi</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#azure_use_msi DatabricksProvider#azure_use_msi}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.azureWorkspaceResourceId">AzureWorkspaceResourceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#azure_workspace_resource_id DatabricksProvider#azure_workspace_resource_id}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.clientId">ClientId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#client_id DatabricksProvider#client_id}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.clientSecret">ClientSecret</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#client_secret DatabricksProvider#client_secret}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.clusterId">ClusterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#cluster_id DatabricksProvider#cluster_id}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.configFile">ConfigFile</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#config_file DatabricksProvider#config_file}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.databricksCliPath">DatabricksCliPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#databricks_cli_path DatabricksProvider#databricks_cli_path}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.databricksIdTokenFilepath">DatabricksIdTokenFilepath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#databricks_id_token_filepath DatabricksProvider#databricks_id_token_filepath}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.debugHeaders">DebugHeaders</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#debug_headers DatabricksProvider#debug_headers}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.debugTruncateBytes">DebugTruncateBytes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#debug_truncate_bytes DatabricksProvider#debug_truncate_bytes}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.disableOauthRefreshToken">DisableOauthRefreshToken</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#disable_oauth_refresh_token DatabricksProvider#disable_oauth_refresh_token}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.experimentalIsUnifiedHost">ExperimentalIsUnifiedHost</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#experimental_is_unified_host DatabricksProvider#experimental_is_unified_host}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.googleCredentials">GoogleCredentials</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#google_credentials DatabricksProvider#google_credentials}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.googleServiceAccount">GoogleServiceAccount</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#google_service_account DatabricksProvider#google_service_account}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.host">Host</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#host DatabricksProvider#host}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.httpTimeoutSeconds">HttpTimeoutSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#http_timeout_seconds DatabricksProvider#http_timeout_seconds}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.metadataServiceUrl">MetadataServiceUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#metadata_service_url DatabricksProvider#metadata_service_url}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.oauthCallbackPort">OauthCallbackPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#oauth_callback_port DatabricksProvider#oauth_callback_port}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.oidcTokenEnv">OidcTokenEnv</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#oidc_token_env DatabricksProvider#oidc_token_env}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.password">Password</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#password DatabricksProvider#password}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.profile">Profile</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#profile DatabricksProvider#profile}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.rateLimit">RateLimit</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#rate_limit DatabricksProvider#rate_limit}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.retryTimeoutSeconds">RetryTimeoutSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#retry_timeout_seconds DatabricksProvider#retry_timeout_seconds}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.scopes">Scopes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#scopes DatabricksProvider#scopes}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.serverlessComputeId">ServerlessComputeId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#serverless_compute_id DatabricksProvider#serverless_compute_id}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.skipVerify">SkipVerify</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#skip_verify DatabricksProvider#skip_verify}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.token">Token</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#token DatabricksProvider#token}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#username DatabricksProvider#username}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.warehouseId">WarehouseId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#warehouse_id DatabricksProvider#warehouse_id}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#workspace_id DatabricksProvider#workspace_id}. |
 
 ---
 
-##### `AccountId`<sup>Optional</sup> <a name="AccountId" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.accountId"></a>
+##### `AccountId`<sup>Optional</sup> <a name="AccountId" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.accountId"></a>
 
 ```go
 AccountId *string
@@ -1597,11 +1659,11 @@ AccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#account_id DatabricksProvider#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#account_id DatabricksProvider#account_id}.
 
 ---
 
-##### `ActionsIdTokenRequestToken`<sup>Optional</sup> <a name="ActionsIdTokenRequestToken" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.actionsIdTokenRequestToken"></a>
+##### `ActionsIdTokenRequestToken`<sup>Optional</sup> <a name="ActionsIdTokenRequestToken" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.actionsIdTokenRequestToken"></a>
 
 ```go
 ActionsIdTokenRequestToken *string
@@ -1609,11 +1671,11 @@ ActionsIdTokenRequestToken *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#actions_id_token_request_token DatabricksProvider#actions_id_token_request_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#actions_id_token_request_token DatabricksProvider#actions_id_token_request_token}.
 
 ---
 
-##### `ActionsIdTokenRequestUrl`<sup>Optional</sup> <a name="ActionsIdTokenRequestUrl" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.actionsIdTokenRequestUrl"></a>
+##### `ActionsIdTokenRequestUrl`<sup>Optional</sup> <a name="ActionsIdTokenRequestUrl" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.actionsIdTokenRequestUrl"></a>
 
 ```go
 ActionsIdTokenRequestUrl *string
@@ -1621,11 +1683,11 @@ ActionsIdTokenRequestUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#actions_id_token_request_url DatabricksProvider#actions_id_token_request_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#actions_id_token_request_url DatabricksProvider#actions_id_token_request_url}.
 
 ---
 
-##### `Alias`<sup>Optional</sup> <a name="Alias" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.alias"></a>
+##### `Alias`<sup>Optional</sup> <a name="Alias" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.alias"></a>
 
 ```go
 Alias *string
@@ -1635,11 +1697,11 @@ Alias *string
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#alias DatabricksProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#alias DatabricksProvider#alias}
 
 ---
 
-##### `Audience`<sup>Optional</sup> <a name="Audience" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.audience"></a>
+##### `Audience`<sup>Optional</sup> <a name="Audience" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.audience"></a>
 
 ```go
 Audience *string
@@ -1647,11 +1709,11 @@ Audience *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#audience DatabricksProvider#audience}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#audience DatabricksProvider#audience}.
 
 ---
 
-##### `AuthType`<sup>Optional</sup> <a name="AuthType" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.authType"></a>
+##### `AuthType`<sup>Optional</sup> <a name="AuthType" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.authType"></a>
 
 ```go
 AuthType *string
@@ -1659,11 +1721,11 @@ AuthType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#auth_type DatabricksProvider#auth_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#auth_type DatabricksProvider#auth_type}.
 
 ---
 
-##### `AzureClientId`<sup>Optional</sup> <a name="AzureClientId" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.azureClientId"></a>
+##### `AzureClientId`<sup>Optional</sup> <a name="AzureClientId" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.azureClientId"></a>
 
 ```go
 AzureClientId *string
@@ -1671,11 +1733,11 @@ AzureClientId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#azure_client_id DatabricksProvider#azure_client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#azure_client_id DatabricksProvider#azure_client_id}.
 
 ---
 
-##### `AzureClientSecret`<sup>Optional</sup> <a name="AzureClientSecret" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.azureClientSecret"></a>
+##### `AzureClientSecret`<sup>Optional</sup> <a name="AzureClientSecret" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.azureClientSecret"></a>
 
 ```go
 AzureClientSecret *string
@@ -1683,11 +1745,11 @@ AzureClientSecret *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#azure_client_secret DatabricksProvider#azure_client_secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#azure_client_secret DatabricksProvider#azure_client_secret}.
 
 ---
 
-##### `AzureEnvironment`<sup>Optional</sup> <a name="AzureEnvironment" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.azureEnvironment"></a>
+##### `AzureEnvironment`<sup>Optional</sup> <a name="AzureEnvironment" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.azureEnvironment"></a>
 
 ```go
 AzureEnvironment *string
@@ -1695,11 +1757,11 @@ AzureEnvironment *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#azure_environment DatabricksProvider#azure_environment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#azure_environment DatabricksProvider#azure_environment}.
 
 ---
 
-##### `AzureLoginAppId`<sup>Optional</sup> <a name="AzureLoginAppId" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.azureLoginAppId"></a>
+##### `AzureLoginAppId`<sup>Optional</sup> <a name="AzureLoginAppId" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.azureLoginAppId"></a>
 
 ```go
 AzureLoginAppId *string
@@ -1707,11 +1769,11 @@ AzureLoginAppId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#azure_login_app_id DatabricksProvider#azure_login_app_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#azure_login_app_id DatabricksProvider#azure_login_app_id}.
 
 ---
 
-##### `AzureTenantId`<sup>Optional</sup> <a name="AzureTenantId" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.azureTenantId"></a>
+##### `AzureTenantId`<sup>Optional</sup> <a name="AzureTenantId" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.azureTenantId"></a>
 
 ```go
 AzureTenantId *string
@@ -1719,11 +1781,11 @@ AzureTenantId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#azure_tenant_id DatabricksProvider#azure_tenant_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#azure_tenant_id DatabricksProvider#azure_tenant_id}.
 
 ---
 
-##### `AzureUseMsi`<sup>Optional</sup> <a name="AzureUseMsi" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.azureUseMsi"></a>
+##### `AzureUseMsi`<sup>Optional</sup> <a name="AzureUseMsi" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.azureUseMsi"></a>
 
 ```go
 AzureUseMsi interface{}
@@ -1731,11 +1793,11 @@ AzureUseMsi interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#azure_use_msi DatabricksProvider#azure_use_msi}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#azure_use_msi DatabricksProvider#azure_use_msi}.
 
 ---
 
-##### `AzureWorkspaceResourceId`<sup>Optional</sup> <a name="AzureWorkspaceResourceId" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.azureWorkspaceResourceId"></a>
+##### `AzureWorkspaceResourceId`<sup>Optional</sup> <a name="AzureWorkspaceResourceId" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.azureWorkspaceResourceId"></a>
 
 ```go
 AzureWorkspaceResourceId *string
@@ -1743,11 +1805,11 @@ AzureWorkspaceResourceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#azure_workspace_resource_id DatabricksProvider#azure_workspace_resource_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#azure_workspace_resource_id DatabricksProvider#azure_workspace_resource_id}.
 
 ---
 
-##### `ClientId`<sup>Optional</sup> <a name="ClientId" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.clientId"></a>
+##### `ClientId`<sup>Optional</sup> <a name="ClientId" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.clientId"></a>
 
 ```go
 ClientId *string
@@ -1755,11 +1817,11 @@ ClientId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#client_id DatabricksProvider#client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#client_id DatabricksProvider#client_id}.
 
 ---
 
-##### `ClientSecret`<sup>Optional</sup> <a name="ClientSecret" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.clientSecret"></a>
+##### `ClientSecret`<sup>Optional</sup> <a name="ClientSecret" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.clientSecret"></a>
 
 ```go
 ClientSecret *string
@@ -1767,11 +1829,11 @@ ClientSecret *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#client_secret DatabricksProvider#client_secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#client_secret DatabricksProvider#client_secret}.
 
 ---
 
-##### `ClusterId`<sup>Optional</sup> <a name="ClusterId" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.clusterId"></a>
+##### `ClusterId`<sup>Optional</sup> <a name="ClusterId" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.clusterId"></a>
 
 ```go
 ClusterId *string
@@ -1779,11 +1841,11 @@ ClusterId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#cluster_id DatabricksProvider#cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#cluster_id DatabricksProvider#cluster_id}.
 
 ---
 
-##### `ConfigFile`<sup>Optional</sup> <a name="ConfigFile" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.configFile"></a>
+##### `ConfigFile`<sup>Optional</sup> <a name="ConfigFile" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.configFile"></a>
 
 ```go
 ConfigFile *string
@@ -1791,11 +1853,11 @@ ConfigFile *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#config_file DatabricksProvider#config_file}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#config_file DatabricksProvider#config_file}.
 
 ---
 
-##### `DatabricksCliPath`<sup>Optional</sup> <a name="DatabricksCliPath" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.databricksCliPath"></a>
+##### `DatabricksCliPath`<sup>Optional</sup> <a name="DatabricksCliPath" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.databricksCliPath"></a>
 
 ```go
 DatabricksCliPath *string
@@ -1803,11 +1865,11 @@ DatabricksCliPath *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#databricks_cli_path DatabricksProvider#databricks_cli_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#databricks_cli_path DatabricksProvider#databricks_cli_path}.
 
 ---
 
-##### `DatabricksIdTokenFilepath`<sup>Optional</sup> <a name="DatabricksIdTokenFilepath" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.databricksIdTokenFilepath"></a>
+##### `DatabricksIdTokenFilepath`<sup>Optional</sup> <a name="DatabricksIdTokenFilepath" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.databricksIdTokenFilepath"></a>
 
 ```go
 DatabricksIdTokenFilepath *string
@@ -1815,11 +1877,11 @@ DatabricksIdTokenFilepath *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#databricks_id_token_filepath DatabricksProvider#databricks_id_token_filepath}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#databricks_id_token_filepath DatabricksProvider#databricks_id_token_filepath}.
 
 ---
 
-##### `DebugHeaders`<sup>Optional</sup> <a name="DebugHeaders" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.debugHeaders"></a>
+##### `DebugHeaders`<sup>Optional</sup> <a name="DebugHeaders" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.debugHeaders"></a>
 
 ```go
 DebugHeaders interface{}
@@ -1827,11 +1889,11 @@ DebugHeaders interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#debug_headers DatabricksProvider#debug_headers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#debug_headers DatabricksProvider#debug_headers}.
 
 ---
 
-##### `DebugTruncateBytes`<sup>Optional</sup> <a name="DebugTruncateBytes" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.debugTruncateBytes"></a>
+##### `DebugTruncateBytes`<sup>Optional</sup> <a name="DebugTruncateBytes" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.debugTruncateBytes"></a>
 
 ```go
 DebugTruncateBytes *f64
@@ -1839,11 +1901,23 @@ DebugTruncateBytes *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#debug_truncate_bytes DatabricksProvider#debug_truncate_bytes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#debug_truncate_bytes DatabricksProvider#debug_truncate_bytes}.
 
 ---
 
-##### `ExperimentalIsUnifiedHost`<sup>Optional</sup> <a name="ExperimentalIsUnifiedHost" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.experimentalIsUnifiedHost"></a>
+##### `DisableOauthRefreshToken`<sup>Optional</sup> <a name="DisableOauthRefreshToken" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.disableOauthRefreshToken"></a>
+
+```go
+DisableOauthRefreshToken interface{}
+```
+
+- *Type:* interface{}
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#disable_oauth_refresh_token DatabricksProvider#disable_oauth_refresh_token}.
+
+---
+
+##### `ExperimentalIsUnifiedHost`<sup>Optional</sup> <a name="ExperimentalIsUnifiedHost" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.experimentalIsUnifiedHost"></a>
 
 ```go
 ExperimentalIsUnifiedHost interface{}
@@ -1851,11 +1925,11 @@ ExperimentalIsUnifiedHost interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#experimental_is_unified_host DatabricksProvider#experimental_is_unified_host}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#experimental_is_unified_host DatabricksProvider#experimental_is_unified_host}.
 
 ---
 
-##### `GoogleCredentials`<sup>Optional</sup> <a name="GoogleCredentials" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.googleCredentials"></a>
+##### `GoogleCredentials`<sup>Optional</sup> <a name="GoogleCredentials" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.googleCredentials"></a>
 
 ```go
 GoogleCredentials *string
@@ -1863,11 +1937,11 @@ GoogleCredentials *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#google_credentials DatabricksProvider#google_credentials}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#google_credentials DatabricksProvider#google_credentials}.
 
 ---
 
-##### `GoogleServiceAccount`<sup>Optional</sup> <a name="GoogleServiceAccount" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.googleServiceAccount"></a>
+##### `GoogleServiceAccount`<sup>Optional</sup> <a name="GoogleServiceAccount" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.googleServiceAccount"></a>
 
 ```go
 GoogleServiceAccount *string
@@ -1875,11 +1949,11 @@ GoogleServiceAccount *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#google_service_account DatabricksProvider#google_service_account}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#google_service_account DatabricksProvider#google_service_account}.
 
 ---
 
-##### `Host`<sup>Optional</sup> <a name="Host" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.host"></a>
+##### `Host`<sup>Optional</sup> <a name="Host" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.host"></a>
 
 ```go
 Host *string
@@ -1887,11 +1961,11 @@ Host *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#host DatabricksProvider#host}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#host DatabricksProvider#host}.
 
 ---
 
-##### `HttpTimeoutSeconds`<sup>Optional</sup> <a name="HttpTimeoutSeconds" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.httpTimeoutSeconds"></a>
+##### `HttpTimeoutSeconds`<sup>Optional</sup> <a name="HttpTimeoutSeconds" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.httpTimeoutSeconds"></a>
 
 ```go
 HttpTimeoutSeconds *f64
@@ -1899,11 +1973,11 @@ HttpTimeoutSeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#http_timeout_seconds DatabricksProvider#http_timeout_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#http_timeout_seconds DatabricksProvider#http_timeout_seconds}.
 
 ---
 
-##### `MetadataServiceUrl`<sup>Optional</sup> <a name="MetadataServiceUrl" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.metadataServiceUrl"></a>
+##### `MetadataServiceUrl`<sup>Optional</sup> <a name="MetadataServiceUrl" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.metadataServiceUrl"></a>
 
 ```go
 MetadataServiceUrl *string
@@ -1911,11 +1985,11 @@ MetadataServiceUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#metadata_service_url DatabricksProvider#metadata_service_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#metadata_service_url DatabricksProvider#metadata_service_url}.
 
 ---
 
-##### `OauthCallbackPort`<sup>Optional</sup> <a name="OauthCallbackPort" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.oauthCallbackPort"></a>
+##### `OauthCallbackPort`<sup>Optional</sup> <a name="OauthCallbackPort" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.oauthCallbackPort"></a>
 
 ```go
 OauthCallbackPort *f64
@@ -1923,11 +1997,11 @@ OauthCallbackPort *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#oauth_callback_port DatabricksProvider#oauth_callback_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#oauth_callback_port DatabricksProvider#oauth_callback_port}.
 
 ---
 
-##### `OidcTokenEnv`<sup>Optional</sup> <a name="OidcTokenEnv" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.oidcTokenEnv"></a>
+##### `OidcTokenEnv`<sup>Optional</sup> <a name="OidcTokenEnv" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.oidcTokenEnv"></a>
 
 ```go
 OidcTokenEnv *string
@@ -1935,11 +2009,11 @@ OidcTokenEnv *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#oidc_token_env DatabricksProvider#oidc_token_env}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#oidc_token_env DatabricksProvider#oidc_token_env}.
 
 ---
 
-##### `Password`<sup>Optional</sup> <a name="Password" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.password"></a>
+##### `Password`<sup>Optional</sup> <a name="Password" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.password"></a>
 
 ```go
 Password *string
@@ -1947,11 +2021,11 @@ Password *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#password DatabricksProvider#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#password DatabricksProvider#password}.
 
 ---
 
-##### `Profile`<sup>Optional</sup> <a name="Profile" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.profile"></a>
+##### `Profile`<sup>Optional</sup> <a name="Profile" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.profile"></a>
 
 ```go
 Profile *string
@@ -1959,11 +2033,11 @@ Profile *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#profile DatabricksProvider#profile}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#profile DatabricksProvider#profile}.
 
 ---
 
-##### `RateLimit`<sup>Optional</sup> <a name="RateLimit" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.rateLimit"></a>
+##### `RateLimit`<sup>Optional</sup> <a name="RateLimit" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.rateLimit"></a>
 
 ```go
 RateLimit *f64
@@ -1971,11 +2045,11 @@ RateLimit *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#rate_limit DatabricksProvider#rate_limit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#rate_limit DatabricksProvider#rate_limit}.
 
 ---
 
-##### `RetryTimeoutSeconds`<sup>Optional</sup> <a name="RetryTimeoutSeconds" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.retryTimeoutSeconds"></a>
+##### `RetryTimeoutSeconds`<sup>Optional</sup> <a name="RetryTimeoutSeconds" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.retryTimeoutSeconds"></a>
 
 ```go
 RetryTimeoutSeconds *f64
@@ -1983,11 +2057,23 @@ RetryTimeoutSeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#retry_timeout_seconds DatabricksProvider#retry_timeout_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#retry_timeout_seconds DatabricksProvider#retry_timeout_seconds}.
 
 ---
 
-##### `ServerlessComputeId`<sup>Optional</sup> <a name="ServerlessComputeId" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.serverlessComputeId"></a>
+##### `Scopes`<sup>Optional</sup> <a name="Scopes" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.scopes"></a>
+
+```go
+Scopes *[]*string
+```
+
+- *Type:* *[]*string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#scopes DatabricksProvider#scopes}.
+
+---
+
+##### `ServerlessComputeId`<sup>Optional</sup> <a name="ServerlessComputeId" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.serverlessComputeId"></a>
 
 ```go
 ServerlessComputeId *string
@@ -1995,11 +2081,11 @@ ServerlessComputeId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#serverless_compute_id DatabricksProvider#serverless_compute_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#serverless_compute_id DatabricksProvider#serverless_compute_id}.
 
 ---
 
-##### `SkipVerify`<sup>Optional</sup> <a name="SkipVerify" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.skipVerify"></a>
+##### `SkipVerify`<sup>Optional</sup> <a name="SkipVerify" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.skipVerify"></a>
 
 ```go
 SkipVerify interface{}
@@ -2007,11 +2093,11 @@ SkipVerify interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#skip_verify DatabricksProvider#skip_verify}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#skip_verify DatabricksProvider#skip_verify}.
 
 ---
 
-##### `Token`<sup>Optional</sup> <a name="Token" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.token"></a>
+##### `Token`<sup>Optional</sup> <a name="Token" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.token"></a>
 
 ```go
 Token *string
@@ -2019,11 +2105,11 @@ Token *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#token DatabricksProvider#token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#token DatabricksProvider#token}.
 
 ---
 
-##### `Username`<sup>Optional</sup> <a name="Username" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.username"></a>
+##### `Username`<sup>Optional</sup> <a name="Username" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.username"></a>
 
 ```go
 Username *string
@@ -2031,11 +2117,11 @@ Username *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#username DatabricksProvider#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#username DatabricksProvider#username}.
 
 ---
 
-##### `WarehouseId`<sup>Optional</sup> <a name="WarehouseId" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.warehouseId"></a>
+##### `WarehouseId`<sup>Optional</sup> <a name="WarehouseId" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.warehouseId"></a>
 
 ```go
 WarehouseId *string
@@ -2043,11 +2129,11 @@ WarehouseId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#warehouse_id DatabricksProvider#warehouse_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#warehouse_id DatabricksProvider#warehouse_id}.
 
 ---
 
-##### `WorkspaceId`<sup>Optional</sup> <a name="WorkspaceId" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.workspaceId"></a>
+##### `WorkspaceId`<sup>Optional</sup> <a name="WorkspaceId" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.workspaceId"></a>
 
 ```go
 WorkspaceId *string
@@ -2055,7 +2141,7 @@ WorkspaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#workspace_id DatabricksProvider#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#workspace_id DatabricksProvider#workspace_id}.
 
 ---
 

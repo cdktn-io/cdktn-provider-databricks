@@ -1,15 +1,15 @@
-# `dashboard` Submodule <a name="`dashboard` Submodule" id="@cdktf/provider-databricks.dashboard"></a>
+# `dashboard` Submodule <a name="`dashboard` Submodule" id="@cdktn/provider-databricks.dashboard"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### Dashboard <a name="Dashboard" id="@cdktf/provider-databricks.dashboard.Dashboard"></a>
+### Dashboard <a name="Dashboard" id="@cdktn/provider-databricks.dashboard.Dashboard"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard databricks_dashboard}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard databricks_dashboard}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.dashboard.Dashboard.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dashboard.Dashboard.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_databricks import dashboard
+from cdktn_provider_databricks import dashboard
 
 dashboard.Dashboard(
   scope: Construct,
@@ -27,6 +27,8 @@ dashboard.Dashboard(
   create_time: str = None,
   dashboard_change_detected: bool | IResolvable = None,
   dashboard_id: str = None,
+  dataset_catalog: str = None,
+  dataset_schema: str = None,
   embed_credentials: bool | IResolvable = None,
   etag: str = None,
   file_path: str = None,
@@ -34,6 +36,7 @@ dashboard.Dashboard(
   lifecycle_state: str = None,
   md5: str = None,
   path: str = None,
+  provider_config: DashboardProviderConfig = None,
   serialized_dashboard: str = None,
   update_time: str = None
 )
@@ -41,34 +44,37 @@ dashboard.Dashboard(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#display_name Dashboard#display_name}. |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.Initializer.parameter.parentPath">parent_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#parent_path Dashboard#parent_path}. |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.Initializer.parameter.warehouseId">warehouse_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#warehouse_id Dashboard#warehouse_id}. |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.Initializer.parameter.createTime">create_time</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#create_time Dashboard#create_time}. |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.Initializer.parameter.dashboardChangeDetected">dashboard_change_detected</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#dashboard_change_detected Dashboard#dashboard_change_detected}. |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.Initializer.parameter.dashboardId">dashboard_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#dashboard_id Dashboard#dashboard_id}. |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.Initializer.parameter.embedCredentials">embed_credentials</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#embed_credentials Dashboard#embed_credentials}. |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.Initializer.parameter.etag">etag</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#etag Dashboard#etag}. |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.Initializer.parameter.filePath">file_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#file_path Dashboard#file_path}. |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#id Dashboard#id}. |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.Initializer.parameter.lifecycleState">lifecycle_state</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#lifecycle_state Dashboard#lifecycle_state}. |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.Initializer.parameter.md5">md5</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#md5 Dashboard#md5}. |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.Initializer.parameter.path">path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#path Dashboard#path}. |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.Initializer.parameter.serializedDashboard">serialized_dashboard</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#serialized_dashboard Dashboard#serialized_dashboard}. |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.Initializer.parameter.updateTime">update_time</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#update_time Dashboard#update_time}. |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.Initializer.parameter.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.Initializer.parameter.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#display_name Dashboard#display_name}. |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.Initializer.parameter.parentPath">parent_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#parent_path Dashboard#parent_path}. |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.Initializer.parameter.warehouseId">warehouse_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#warehouse_id Dashboard#warehouse_id}. |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.Initializer.parameter.createTime">create_time</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#create_time Dashboard#create_time}. |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.Initializer.parameter.dashboardChangeDetected">dashboard_change_detected</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#dashboard_change_detected Dashboard#dashboard_change_detected}. |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.Initializer.parameter.dashboardId">dashboard_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#dashboard_id Dashboard#dashboard_id}. |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.Initializer.parameter.datasetCatalog">dataset_catalog</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#dataset_catalog Dashboard#dataset_catalog}. |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.Initializer.parameter.datasetSchema">dataset_schema</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#dataset_schema Dashboard#dataset_schema}. |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.Initializer.parameter.embedCredentials">embed_credentials</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#embed_credentials Dashboard#embed_credentials}. |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.Initializer.parameter.etag">etag</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#etag Dashboard#etag}. |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.Initializer.parameter.filePath">file_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#file_path Dashboard#file_path}. |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#id Dashboard#id}. |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.Initializer.parameter.lifecycleState">lifecycle_state</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#lifecycle_state Dashboard#lifecycle_state}. |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.Initializer.parameter.md5">md5</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#md5 Dashboard#md5}. |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.Initializer.parameter.path">path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#path Dashboard#path}. |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.Initializer.parameter.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.dashboard.DashboardProviderConfig">DashboardProviderConfig</a></code> | provider_config block. |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.Initializer.parameter.serializedDashboard">serialized_dashboard</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#serialized_dashboard Dashboard#serialized_dashboard}. |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.Initializer.parameter.updateTime">update_time</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#update_time Dashboard#update_time}. |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-databricks.dashboard.Dashboard.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-databricks.dashboard.Dashboard.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -76,7 +82,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-databricks.dashboard.Dashboard.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-databricks.dashboard.Dashboard.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -86,168 +92,194 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-databricks.dashboard.Dashboard.Initializer.parameter.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-databricks.dashboard.Dashboard.Initializer.parameter.connection"></a>
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
-
----
-
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-databricks.dashboard.Dashboard.Initializer.parameter.count"></a>
-
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-databricks.dashboard.Dashboard.Initializer.parameter.dependsOn"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-databricks.dashboard.Dashboard.Initializer.parameter.count"></a>
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
-
----
-
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-databricks.dashboard.Dashboard.Initializer.parameter.forEach"></a>
-
-- *Type:* cdktf.ITerraformIterator
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-databricks.dashboard.Dashboard.Initializer.parameter.lifecycle"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-databricks.dashboard.Dashboard.Initializer.parameter.dependsOn"></a>
 
-- *Type:* cdktf.TerraformResourceLifecycle
-
----
-
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-databricks.dashboard.Dashboard.Initializer.parameter.provider"></a>
-
-- *Type:* cdktf.TerraformProvider
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-databricks.dashboard.Dashboard.Initializer.parameter.provisioners"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-databricks.dashboard.Dashboard.Initializer.parameter.forEach"></a>
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `display_name`<sup>Required</sup> <a name="display_name" id="@cdktf/provider-databricks.dashboard.Dashboard.Initializer.parameter.displayName"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-databricks.dashboard.Dashboard.Initializer.parameter.lifecycle"></a>
+
+- *Type:* cdktn.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-databricks.dashboard.Dashboard.Initializer.parameter.provider"></a>
+
+- *Type:* cdktn.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-databricks.dashboard.Dashboard.Initializer.parameter.provisioners"></a>
+
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
+
+---
+
+##### `display_name`<sup>Required</sup> <a name="display_name" id="@cdktn/provider-databricks.dashboard.Dashboard.Initializer.parameter.displayName"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#display_name Dashboard#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#display_name Dashboard#display_name}.
 
 ---
 
-##### `parent_path`<sup>Required</sup> <a name="parent_path" id="@cdktf/provider-databricks.dashboard.Dashboard.Initializer.parameter.parentPath"></a>
+##### `parent_path`<sup>Required</sup> <a name="parent_path" id="@cdktn/provider-databricks.dashboard.Dashboard.Initializer.parameter.parentPath"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#parent_path Dashboard#parent_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#parent_path Dashboard#parent_path}.
 
 ---
 
-##### `warehouse_id`<sup>Required</sup> <a name="warehouse_id" id="@cdktf/provider-databricks.dashboard.Dashboard.Initializer.parameter.warehouseId"></a>
+##### `warehouse_id`<sup>Required</sup> <a name="warehouse_id" id="@cdktn/provider-databricks.dashboard.Dashboard.Initializer.parameter.warehouseId"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#warehouse_id Dashboard#warehouse_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#warehouse_id Dashboard#warehouse_id}.
 
 ---
 
-##### `create_time`<sup>Optional</sup> <a name="create_time" id="@cdktf/provider-databricks.dashboard.Dashboard.Initializer.parameter.createTime"></a>
+##### `create_time`<sup>Optional</sup> <a name="create_time" id="@cdktn/provider-databricks.dashboard.Dashboard.Initializer.parameter.createTime"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#create_time Dashboard#create_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#create_time Dashboard#create_time}.
 
 ---
 
-##### `dashboard_change_detected`<sup>Optional</sup> <a name="dashboard_change_detected" id="@cdktf/provider-databricks.dashboard.Dashboard.Initializer.parameter.dashboardChangeDetected"></a>
+##### `dashboard_change_detected`<sup>Optional</sup> <a name="dashboard_change_detected" id="@cdktn/provider-databricks.dashboard.Dashboard.Initializer.parameter.dashboardChangeDetected"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#dashboard_change_detected Dashboard#dashboard_change_detected}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#dashboard_change_detected Dashboard#dashboard_change_detected}.
 
 ---
 
-##### `dashboard_id`<sup>Optional</sup> <a name="dashboard_id" id="@cdktf/provider-databricks.dashboard.Dashboard.Initializer.parameter.dashboardId"></a>
+##### `dashboard_id`<sup>Optional</sup> <a name="dashboard_id" id="@cdktn/provider-databricks.dashboard.Dashboard.Initializer.parameter.dashboardId"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#dashboard_id Dashboard#dashboard_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#dashboard_id Dashboard#dashboard_id}.
 
 ---
 
-##### `embed_credentials`<sup>Optional</sup> <a name="embed_credentials" id="@cdktf/provider-databricks.dashboard.Dashboard.Initializer.parameter.embedCredentials"></a>
-
-- *Type:* bool | cdktf.IResolvable
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#embed_credentials Dashboard#embed_credentials}.
-
----
-
-##### `etag`<sup>Optional</sup> <a name="etag" id="@cdktf/provider-databricks.dashboard.Dashboard.Initializer.parameter.etag"></a>
+##### `dataset_catalog`<sup>Optional</sup> <a name="dataset_catalog" id="@cdktn/provider-databricks.dashboard.Dashboard.Initializer.parameter.datasetCatalog"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#etag Dashboard#etag}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#dataset_catalog Dashboard#dataset_catalog}.
 
 ---
 
-##### `file_path`<sup>Optional</sup> <a name="file_path" id="@cdktf/provider-databricks.dashboard.Dashboard.Initializer.parameter.filePath"></a>
+##### `dataset_schema`<sup>Optional</sup> <a name="dataset_schema" id="@cdktn/provider-databricks.dashboard.Dashboard.Initializer.parameter.datasetSchema"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#file_path Dashboard#file_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#dataset_schema Dashboard#dataset_schema}.
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-databricks.dashboard.Dashboard.Initializer.parameter.id"></a>
+##### `embed_credentials`<sup>Optional</sup> <a name="embed_credentials" id="@cdktn/provider-databricks.dashboard.Dashboard.Initializer.parameter.embedCredentials"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#embed_credentials Dashboard#embed_credentials}.
+
+---
+
+##### `etag`<sup>Optional</sup> <a name="etag" id="@cdktn/provider-databricks.dashboard.Dashboard.Initializer.parameter.etag"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#id Dashboard#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#etag Dashboard#etag}.
+
+---
+
+##### `file_path`<sup>Optional</sup> <a name="file_path" id="@cdktn/provider-databricks.dashboard.Dashboard.Initializer.parameter.filePath"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#file_path Dashboard#file_path}.
+
+---
+
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-databricks.dashboard.Dashboard.Initializer.parameter.id"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#id Dashboard#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `lifecycle_state`<sup>Optional</sup> <a name="lifecycle_state" id="@cdktf/provider-databricks.dashboard.Dashboard.Initializer.parameter.lifecycleState"></a>
+##### `lifecycle_state`<sup>Optional</sup> <a name="lifecycle_state" id="@cdktn/provider-databricks.dashboard.Dashboard.Initializer.parameter.lifecycleState"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#lifecycle_state Dashboard#lifecycle_state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#lifecycle_state Dashboard#lifecycle_state}.
 
 ---
 
-##### `md5`<sup>Optional</sup> <a name="md5" id="@cdktf/provider-databricks.dashboard.Dashboard.Initializer.parameter.md5"></a>
+##### `md5`<sup>Optional</sup> <a name="md5" id="@cdktn/provider-databricks.dashboard.Dashboard.Initializer.parameter.md5"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#md5 Dashboard#md5}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#md5 Dashboard#md5}.
 
 ---
 
-##### `path`<sup>Optional</sup> <a name="path" id="@cdktf/provider-databricks.dashboard.Dashboard.Initializer.parameter.path"></a>
+##### `path`<sup>Optional</sup> <a name="path" id="@cdktn/provider-databricks.dashboard.Dashboard.Initializer.parameter.path"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#path Dashboard#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#path Dashboard#path}.
 
 ---
 
-##### `serialized_dashboard`<sup>Optional</sup> <a name="serialized_dashboard" id="@cdktf/provider-databricks.dashboard.Dashboard.Initializer.parameter.serializedDashboard"></a>
+##### `provider_config`<sup>Optional</sup> <a name="provider_config" id="@cdktn/provider-databricks.dashboard.Dashboard.Initializer.parameter.providerConfig"></a>
 
-- *Type:* str
+- *Type:* <a href="#@cdktn/provider-databricks.dashboard.DashboardProviderConfig">DashboardProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#serialized_dashboard Dashboard#serialized_dashboard}.
+provider_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#provider_config Dashboard#provider_config}
 
 ---
 
-##### `update_time`<sup>Optional</sup> <a name="update_time" id="@cdktf/provider-databricks.dashboard.Dashboard.Initializer.parameter.updateTime"></a>
+##### `serialized_dashboard`<sup>Optional</sup> <a name="serialized_dashboard" id="@cdktn/provider-databricks.dashboard.Dashboard.Initializer.parameter.serializedDashboard"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#update_time Dashboard#update_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#serialized_dashboard Dashboard#serialized_dashboard}.
+
+---
+
+##### `update_time`<sup>Optional</sup> <a name="update_time" id="@cdktn/provider-databricks.dashboard.Dashboard.Initializer.parameter.updateTime"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#update_time Dashboard#update_time}.
 
 ---
 
@@ -255,45 +287,49 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.toString">to_string</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.addOverride">add_override</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.toMetadata">to_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.hasResourceMove">has_resource_move</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.importFrom">import_from</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.resetCreateTime">reset_create_time</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.resetDashboardChangeDetected">reset_dashboard_change_detected</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.resetDashboardId">reset_dashboard_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.resetEmbedCredentials">reset_embed_credentials</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.resetEtag">reset_etag</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.resetFilePath">reset_file_path</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.resetId">reset_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.resetLifecycleState">reset_lifecycle_state</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.resetMd5">reset_md5</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.resetPath">reset_path</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.resetSerializedDashboard">reset_serialized_dashboard</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.resetUpdateTime">reset_update_time</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.hasResourceMove">has_resource_move</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.importFrom">import_from</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.putProviderConfig">put_provider_config</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.resetCreateTime">reset_create_time</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.resetDashboardChangeDetected">reset_dashboard_change_detected</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.resetDashboardId">reset_dashboard_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.resetDatasetCatalog">reset_dataset_catalog</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.resetDatasetSchema">reset_dataset_schema</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.resetEmbedCredentials">reset_embed_credentials</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.resetEtag">reset_etag</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.resetFilePath">reset_file_path</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.resetLifecycleState">reset_lifecycle_state</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.resetMd5">reset_md5</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.resetPath">reset_path</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.resetProviderConfig">reset_provider_config</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.resetSerializedDashboard">reset_serialized_dashboard</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.resetUpdateTime">reset_update_time</a></code> | *No description.* |
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-databricks.dashboard.Dashboard.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-databricks.dashboard.Dashboard.toString"></a>
 
 ```python
 def to_string() -> str
@@ -301,7 +337,7 @@ def to_string() -> str
 
 Returns a string representation of this construct.
 
-##### `add_override` <a name="add_override" id="@cdktf/provider-databricks.dashboard.Dashboard.addOverride"></a>
+##### `add_override` <a name="add_override" id="@cdktn/provider-databricks.dashboard.Dashboard.addOverride"></a>
 
 ```python
 def add_override(
@@ -310,19 +346,19 @@ def add_override(
 ) -> None
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-databricks.dashboard.Dashboard.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-databricks.dashboard.Dashboard.addOverride.parameter.path"></a>
 
 - *Type:* str
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.dashboard.Dashboard.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.dashboard.Dashboard.addOverride.parameter.value"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-databricks.dashboard.Dashboard.overrideLogicalId"></a>
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-databricks.dashboard.Dashboard.overrideLogicalId"></a>
 
 ```python
 def override_logical_id(
@@ -332,7 +368,7 @@ def override_logical_id(
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-databricks.dashboard.Dashboard.overrideLogicalId.parameter.newLogicalId"></a>
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-databricks.dashboard.Dashboard.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* str
 
@@ -340,7 +376,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-databricks.dashboard.Dashboard.resetOverrideLogicalId"></a>
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-databricks.dashboard.Dashboard.resetOverrideLogicalId"></a>
 
 ```python
 def reset_override_logical_id() -> None
@@ -348,19 +384,19 @@ def reset_override_logical_id() -> None
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-databricks.dashboard.Dashboard.toHclTerraform"></a>
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-databricks.dashboard.Dashboard.toHclTerraform"></a>
 
 ```python
 def to_hcl_terraform() -> typing.Any
 ```
 
-##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-databricks.dashboard.Dashboard.toMetadata"></a>
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-databricks.dashboard.Dashboard.toMetadata"></a>
 
 ```python
 def to_metadata() -> typing.Any
 ```
 
-##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-databricks.dashboard.Dashboard.toTerraform"></a>
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-databricks.dashboard.Dashboard.toTerraform"></a>
 
 ```python
 def to_terraform() -> typing.Any
@@ -368,7 +404,7 @@ def to_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `add_move_target` <a name="add_move_target" id="@cdktf/provider-databricks.dashboard.Dashboard.addMoveTarget"></a>
+##### `add_move_target` <a name="add_move_target" id="@cdktn/provider-databricks.dashboard.Dashboard.addMoveTarget"></a>
 
 ```python
 def add_move_target(
@@ -378,7 +414,7 @@ def add_move_target(
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-databricks.dashboard.Dashboard.addMoveTarget.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-databricks.dashboard.Dashboard.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -386,7 +422,7 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-databricks.dashboard.Dashboard.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-databricks.dashboard.Dashboard.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -394,13 +430,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.dashboard.Dashboard.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.dashboard.Dashboard.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-databricks.dashboard.Dashboard.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-databricks.dashboard.Dashboard.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -408,13 +444,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.dashboard.Dashboard.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.dashboard.Dashboard.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-databricks.dashboard.Dashboard.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-databricks.dashboard.Dashboard.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -422,13 +458,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.dashboard.Dashboard.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.dashboard.Dashboard.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-databricks.dashboard.Dashboard.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-databricks.dashboard.Dashboard.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -436,13 +472,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.dashboard.Dashboard.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.dashboard.Dashboard.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-databricks.dashboard.Dashboard.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-databricks.dashboard.Dashboard.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -450,13 +486,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.dashboard.Dashboard.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.dashboard.Dashboard.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-databricks.dashboard.Dashboard.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-databricks.dashboard.Dashboard.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -464,13 +500,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.dashboard.Dashboard.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.dashboard.Dashboard.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-databricks.dashboard.Dashboard.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-databricks.dashboard.Dashboard.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -478,13 +514,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.dashboard.Dashboard.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.dashboard.Dashboard.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-databricks.dashboard.Dashboard.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-databricks.dashboard.Dashboard.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -492,13 +528,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.dashboard.Dashboard.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.dashboard.Dashboard.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-databricks.dashboard.Dashboard.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-databricks.dashboard.Dashboard.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -506,19 +542,19 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.dashboard.Dashboard.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.dashboard.Dashboard.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-databricks.dashboard.Dashboard.hasResourceMove"></a>
+##### `has_resource_move` <a name="has_resource_move" id="@cdktn/provider-databricks.dashboard.Dashboard.hasResourceMove"></a>
 
 ```python
 def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `import_from` <a name="import_from" id="@cdktf/provider-databricks.dashboard.Dashboard.importFrom"></a>
+##### `import_from` <a name="import_from" id="@cdktn/provider-databricks.dashboard.Dashboard.importFrom"></a>
 
 ```python
 def import_from(
@@ -527,19 +563,19 @@ def import_from(
 ) -> None
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-databricks.dashboard.Dashboard.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-databricks.dashboard.Dashboard.importFrom.parameter.id"></a>
 
 - *Type:* str
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-databricks.dashboard.Dashboard.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-databricks.dashboard.Dashboard.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-databricks.dashboard.Dashboard.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-databricks.dashboard.Dashboard.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -547,13 +583,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.dashboard.Dashboard.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.dashboard.Dashboard.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `move_from_id` <a name="move_from_id" id="@cdktf/provider-databricks.dashboard.Dashboard.moveFromId"></a>
+##### `move_from_id` <a name="move_from_id" id="@cdktn/provider-databricks.dashboard.Dashboard.moveFromId"></a>
 
 ```python
 def move_from_id(
@@ -565,7 +601,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-databricks.dashboard.Dashboard.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-databricks.dashboard.Dashboard.moveFromId.parameter.id"></a>
 
 - *Type:* str
 
@@ -573,7 +609,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `move_to` <a name="move_to" id="@cdktf/provider-databricks.dashboard.Dashboard.moveTo"></a>
+##### `move_to` <a name="move_to" id="@cdktn/provider-databricks.dashboard.Dashboard.moveTo"></a>
 
 ```python
 def move_to(
@@ -584,7 +620,7 @@ def move_to(
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-databricks.dashboard.Dashboard.moveTo.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-databricks.dashboard.Dashboard.moveTo.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -592,7 +628,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-databricks.dashboard.Dashboard.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-databricks.dashboard.Dashboard.moveTo.parameter.index"></a>
 
 - *Type:* str | typing.Union[int, float]
 
@@ -600,7 +636,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `move_to_id` <a name="move_to_id" id="@cdktf/provider-databricks.dashboard.Dashboard.moveToId"></a>
+##### `move_to_id` <a name="move_to_id" id="@cdktn/provider-databricks.dashboard.Dashboard.moveToId"></a>
 
 ```python
 def move_to_id(
@@ -610,7 +646,7 @@ def move_to_id(
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-databricks.dashboard.Dashboard.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-databricks.dashboard.Dashboard.moveToId.parameter.id"></a>
 
 - *Type:* str
 
@@ -618,73 +654,107 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `reset_create_time` <a name="reset_create_time" id="@cdktf/provider-databricks.dashboard.Dashboard.resetCreateTime"></a>
+##### `put_provider_config` <a name="put_provider_config" id="@cdktn/provider-databricks.dashboard.Dashboard.putProviderConfig"></a>
+
+```python
+def put_provider_config(
+  workspace_id: str
+) -> None
+```
+
+###### `workspace_id`<sup>Required</sup> <a name="workspace_id" id="@cdktn/provider-databricks.dashboard.Dashboard.putProviderConfig.parameter.workspaceId"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#workspace_id Dashboard#workspace_id}.
+
+---
+
+##### `reset_create_time` <a name="reset_create_time" id="@cdktn/provider-databricks.dashboard.Dashboard.resetCreateTime"></a>
 
 ```python
 def reset_create_time() -> None
 ```
 
-##### `reset_dashboard_change_detected` <a name="reset_dashboard_change_detected" id="@cdktf/provider-databricks.dashboard.Dashboard.resetDashboardChangeDetected"></a>
+##### `reset_dashboard_change_detected` <a name="reset_dashboard_change_detected" id="@cdktn/provider-databricks.dashboard.Dashboard.resetDashboardChangeDetected"></a>
 
 ```python
 def reset_dashboard_change_detected() -> None
 ```
 
-##### `reset_dashboard_id` <a name="reset_dashboard_id" id="@cdktf/provider-databricks.dashboard.Dashboard.resetDashboardId"></a>
+##### `reset_dashboard_id` <a name="reset_dashboard_id" id="@cdktn/provider-databricks.dashboard.Dashboard.resetDashboardId"></a>
 
 ```python
 def reset_dashboard_id() -> None
 ```
 
-##### `reset_embed_credentials` <a name="reset_embed_credentials" id="@cdktf/provider-databricks.dashboard.Dashboard.resetEmbedCredentials"></a>
+##### `reset_dataset_catalog` <a name="reset_dataset_catalog" id="@cdktn/provider-databricks.dashboard.Dashboard.resetDatasetCatalog"></a>
+
+```python
+def reset_dataset_catalog() -> None
+```
+
+##### `reset_dataset_schema` <a name="reset_dataset_schema" id="@cdktn/provider-databricks.dashboard.Dashboard.resetDatasetSchema"></a>
+
+```python
+def reset_dataset_schema() -> None
+```
+
+##### `reset_embed_credentials` <a name="reset_embed_credentials" id="@cdktn/provider-databricks.dashboard.Dashboard.resetEmbedCredentials"></a>
 
 ```python
 def reset_embed_credentials() -> None
 ```
 
-##### `reset_etag` <a name="reset_etag" id="@cdktf/provider-databricks.dashboard.Dashboard.resetEtag"></a>
+##### `reset_etag` <a name="reset_etag" id="@cdktn/provider-databricks.dashboard.Dashboard.resetEtag"></a>
 
 ```python
 def reset_etag() -> None
 ```
 
-##### `reset_file_path` <a name="reset_file_path" id="@cdktf/provider-databricks.dashboard.Dashboard.resetFilePath"></a>
+##### `reset_file_path` <a name="reset_file_path" id="@cdktn/provider-databricks.dashboard.Dashboard.resetFilePath"></a>
 
 ```python
 def reset_file_path() -> None
 ```
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-databricks.dashboard.Dashboard.resetId"></a>
+##### `reset_id` <a name="reset_id" id="@cdktn/provider-databricks.dashboard.Dashboard.resetId"></a>
 
 ```python
 def reset_id() -> None
 ```
 
-##### `reset_lifecycle_state` <a name="reset_lifecycle_state" id="@cdktf/provider-databricks.dashboard.Dashboard.resetLifecycleState"></a>
+##### `reset_lifecycle_state` <a name="reset_lifecycle_state" id="@cdktn/provider-databricks.dashboard.Dashboard.resetLifecycleState"></a>
 
 ```python
 def reset_lifecycle_state() -> None
 ```
 
-##### `reset_md5` <a name="reset_md5" id="@cdktf/provider-databricks.dashboard.Dashboard.resetMd5"></a>
+##### `reset_md5` <a name="reset_md5" id="@cdktn/provider-databricks.dashboard.Dashboard.resetMd5"></a>
 
 ```python
 def reset_md5() -> None
 ```
 
-##### `reset_path` <a name="reset_path" id="@cdktf/provider-databricks.dashboard.Dashboard.resetPath"></a>
+##### `reset_path` <a name="reset_path" id="@cdktn/provider-databricks.dashboard.Dashboard.resetPath"></a>
 
 ```python
 def reset_path() -> None
 ```
 
-##### `reset_serialized_dashboard` <a name="reset_serialized_dashboard" id="@cdktf/provider-databricks.dashboard.Dashboard.resetSerializedDashboard"></a>
+##### `reset_provider_config` <a name="reset_provider_config" id="@cdktn/provider-databricks.dashboard.Dashboard.resetProviderConfig"></a>
+
+```python
+def reset_provider_config() -> None
+```
+
+##### `reset_serialized_dashboard` <a name="reset_serialized_dashboard" id="@cdktn/provider-databricks.dashboard.Dashboard.resetSerializedDashboard"></a>
 
 ```python
 def reset_serialized_dashboard() -> None
 ```
 
-##### `reset_update_time` <a name="reset_update_time" id="@cdktf/provider-databricks.dashboard.Dashboard.resetUpdateTime"></a>
+##### `reset_update_time` <a name="reset_update_time" id="@cdktn/provider-databricks.dashboard.Dashboard.resetUpdateTime"></a>
 
 ```python
 def reset_update_time() -> None
@@ -694,17 +764,17 @@ def reset_update_time() -> None
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.isTerraformElement">is_terraform_element</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a Dashboard resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTN code for importing a Dashboard resource upon running "cdktn plan <stack-name>". |
 
 ---
 
-##### `is_construct` <a name="is_construct" id="@cdktf/provider-databricks.dashboard.Dashboard.isConstruct"></a>
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-databricks.dashboard.Dashboard.isConstruct"></a>
 
 ```python
-from cdktf_cdktf_provider_databricks import dashboard
+from cdktn_provider_databricks import dashboard
 
 dashboard.Dashboard.is_construct(
   x: typing.Any
@@ -727,7 +797,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-databricks.dashboard.Dashboard.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-databricks.dashboard.Dashboard.isConstruct.parameter.x"></a>
 
 - *Type:* typing.Any
 
@@ -735,42 +805,42 @@ Any object.
 
 ---
 
-##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-databricks.dashboard.Dashboard.isTerraformElement"></a>
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-databricks.dashboard.Dashboard.isTerraformElement"></a>
 
 ```python
-from cdktf_cdktf_provider_databricks import dashboard
+from cdktn_provider_databricks import dashboard
 
 dashboard.Dashboard.is_terraform_element(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-databricks.dashboard.Dashboard.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-databricks.dashboard.Dashboard.isTerraformElement.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktf/provider-databricks.dashboard.Dashboard.isTerraformResource"></a>
+##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktn/provider-databricks.dashboard.Dashboard.isTerraformResource"></a>
 
 ```python
-from cdktf_cdktf_provider_databricks import dashboard
+from cdktn_provider_databricks import dashboard
 
 dashboard.Dashboard.is_terraform_resource(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-databricks.dashboard.Dashboard.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-databricks.dashboard.Dashboard.isTerraformResource.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-databricks.dashboard.Dashboard.generateConfigForImport"></a>
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-databricks.dashboard.Dashboard.generateConfigForImport"></a>
 
 ```python
-from cdktf_cdktf_provider_databricks import dashboard
+from cdktn_provider_databricks import dashboard
 
 dashboard.Dashboard.generate_config_for_import(
   scope: Construct,
@@ -780,9 +850,9 @@ dashboard.Dashboard.generate_config_for_import(
 )
 ```
 
-Generates CDKTF code for importing a Dashboard resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a Dashboard resource upon running "cdktn plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-databricks.dashboard.Dashboard.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-databricks.dashboard.Dashboard.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -790,7 +860,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-databricks.dashboard.Dashboard.generateConfigForImport.parameter.importToId"></a>
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-databricks.dashboard.Dashboard.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* str
 
@@ -798,19 +868,19 @@ The construct id used in the generated config for the Dashboard to import.
 
 ---
 
-###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-databricks.dashboard.Dashboard.generateConfigForImport.parameter.importFromId"></a>
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-databricks.dashboard.Dashboard.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* str
 
 The id of the existing Dashboard that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-databricks.dashboard.Dashboard.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-databricks.dashboard.Dashboard.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the Dashboard to import is found.
 
@@ -820,54 +890,60 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.property.createTimeInput">create_time_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.property.dashboardChangeDetectedInput">dashboard_change_detected_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.property.dashboardIdInput">dashboard_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.property.displayNameInput">display_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.property.embedCredentialsInput">embed_credentials_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.property.etagInput">etag_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.property.filePathInput">file_path_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.property.lifecycleStateInput">lifecycle_state_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.property.md5Input">md5_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.property.parentPathInput">parent_path_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.property.pathInput">path_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.property.serializedDashboardInput">serialized_dashboard_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.property.updateTimeInput">update_time_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.property.warehouseIdInput">warehouse_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.property.createTime">create_time</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.property.dashboardChangeDetected">dashboard_change_detected</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.property.dashboardId">dashboard_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.property.displayName">display_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.property.embedCredentials">embed_credentials</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.property.etag">etag</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.property.filePath">file_path</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.property.lifecycleState">lifecycle_state</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.property.md5">md5</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.property.parentPath">parent_path</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.property.path">path</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.property.serializedDashboard">serialized_dashboard</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.property.updateTime">update_time</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.property.warehouseId">warehouse_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.property.cdktfStack">cdktf_stack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.property.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.dashboard.DashboardProviderConfigOutputReference">DashboardProviderConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.property.createTimeInput">create_time_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.property.dashboardChangeDetectedInput">dashboard_change_detected_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.property.dashboardIdInput">dashboard_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.property.datasetCatalogInput">dataset_catalog_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.property.datasetSchemaInput">dataset_schema_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.property.displayNameInput">display_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.property.embedCredentialsInput">embed_credentials_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.property.etagInput">etag_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.property.filePathInput">file_path_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.property.lifecycleStateInput">lifecycle_state_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.property.md5Input">md5_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.property.parentPathInput">parent_path_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.property.pathInput">path_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.property.providerConfigInput">provider_config_input</a></code> | <code><a href="#@cdktn/provider-databricks.dashboard.DashboardProviderConfig">DashboardProviderConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.property.serializedDashboardInput">serialized_dashboard_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.property.updateTimeInput">update_time_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.property.warehouseIdInput">warehouse_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.property.createTime">create_time</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.property.dashboardChangeDetected">dashboard_change_detected</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.property.dashboardId">dashboard_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.property.datasetCatalog">dataset_catalog</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.property.datasetSchema">dataset_schema</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.property.displayName">display_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.property.embedCredentials">embed_credentials</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.property.etag">etag</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.property.filePath">file_path</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.property.lifecycleState">lifecycle_state</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.property.md5">md5</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.property.parentPath">parent_path</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.property.path">path</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.property.serializedDashboard">serialized_dashboard</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.property.updateTime">update_time</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.property.warehouseId">warehouse_id</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-databricks.dashboard.Dashboard.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-databricks.dashboard.Dashboard.property.node"></a>
 
 ```python
 node: Node
@@ -879,17 +955,17 @@ The tree node.
 
 ---
 
-##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-databricks.dashboard.Dashboard.property.cdktfStack"></a>
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-databricks.dashboard.Dashboard.property.cdktfStack"></a>
 
 ```python
 cdktf_stack: TerraformStack
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-databricks.dashboard.Dashboard.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.dashboard.Dashboard.property.fqn"></a>
 
 ```python
 fqn: str
@@ -899,7 +975,7 @@ fqn: str
 
 ---
 
-##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-databricks.dashboard.Dashboard.property.friendlyUniqueId"></a>
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-databricks.dashboard.Dashboard.property.friendlyUniqueId"></a>
 
 ```python
 friendly_unique_id: str
@@ -909,7 +985,7 @@ friendly_unique_id: str
 
 ---
 
-##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktf/provider-databricks.dashboard.Dashboard.property.terraformMetaArguments"></a>
+##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktn/provider-databricks.dashboard.Dashboard.property.terraformMetaArguments"></a>
 
 ```python
 terraform_meta_arguments: typing.Mapping[typing.Any]
@@ -919,7 +995,7 @@ terraform_meta_arguments: typing.Mapping[typing.Any]
 
 ---
 
-##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-databricks.dashboard.Dashboard.property.terraformResourceType"></a>
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-databricks.dashboard.Dashboard.property.terraformResourceType"></a>
 
 ```python
 terraform_resource_type: str
@@ -929,37 +1005,37 @@ terraform_resource_type: str
 
 ---
 
-##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-databricks.dashboard.Dashboard.property.terraformGeneratorMetadata"></a>
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-databricks.dashboard.Dashboard.property.terraformGeneratorMetadata"></a>
 
 ```python
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-databricks.dashboard.Dashboard.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-databricks.dashboard.Dashboard.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-databricks.dashboard.Dashboard.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-databricks.dashboard.Dashboard.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-databricks.dashboard.Dashboard.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-databricks.dashboard.Dashboard.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[str]
@@ -969,47 +1045,57 @@ depends_on: typing.List[str]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-databricks.dashboard.Dashboard.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-databricks.dashboard.Dashboard.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-databricks.dashboard.Dashboard.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-databricks.dashboard.Dashboard.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-databricks.dashboard.Dashboard.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-databricks.dashboard.Dashboard.property.provider"></a>
 
 ```python
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-databricks.dashboard.Dashboard.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-databricks.dashboard.Dashboard.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
-##### `create_time_input`<sup>Optional</sup> <a name="create_time_input" id="@cdktf/provider-databricks.dashboard.Dashboard.property.createTimeInput"></a>
+##### `provider_config`<sup>Required</sup> <a name="provider_config" id="@cdktn/provider-databricks.dashboard.Dashboard.property.providerConfig"></a>
+
+```python
+provider_config: DashboardProviderConfigOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.dashboard.DashboardProviderConfigOutputReference">DashboardProviderConfigOutputReference</a>
+
+---
+
+##### `create_time_input`<sup>Optional</sup> <a name="create_time_input" id="@cdktn/provider-databricks.dashboard.Dashboard.property.createTimeInput"></a>
 
 ```python
 create_time_input: str
@@ -1019,17 +1105,17 @@ create_time_input: str
 
 ---
 
-##### `dashboard_change_detected_input`<sup>Optional</sup> <a name="dashboard_change_detected_input" id="@cdktf/provider-databricks.dashboard.Dashboard.property.dashboardChangeDetectedInput"></a>
+##### `dashboard_change_detected_input`<sup>Optional</sup> <a name="dashboard_change_detected_input" id="@cdktn/provider-databricks.dashboard.Dashboard.property.dashboardChangeDetectedInput"></a>
 
 ```python
 dashboard_change_detected_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `dashboard_id_input`<sup>Optional</sup> <a name="dashboard_id_input" id="@cdktf/provider-databricks.dashboard.Dashboard.property.dashboardIdInput"></a>
+##### `dashboard_id_input`<sup>Optional</sup> <a name="dashboard_id_input" id="@cdktn/provider-databricks.dashboard.Dashboard.property.dashboardIdInput"></a>
 
 ```python
 dashboard_id_input: str
@@ -1039,7 +1125,27 @@ dashboard_id_input: str
 
 ---
 
-##### `display_name_input`<sup>Optional</sup> <a name="display_name_input" id="@cdktf/provider-databricks.dashboard.Dashboard.property.displayNameInput"></a>
+##### `dataset_catalog_input`<sup>Optional</sup> <a name="dataset_catalog_input" id="@cdktn/provider-databricks.dashboard.Dashboard.property.datasetCatalogInput"></a>
+
+```python
+dataset_catalog_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `dataset_schema_input`<sup>Optional</sup> <a name="dataset_schema_input" id="@cdktn/provider-databricks.dashboard.Dashboard.property.datasetSchemaInput"></a>
+
+```python
+dataset_schema_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `display_name_input`<sup>Optional</sup> <a name="display_name_input" id="@cdktn/provider-databricks.dashboard.Dashboard.property.displayNameInput"></a>
 
 ```python
 display_name_input: str
@@ -1049,17 +1155,17 @@ display_name_input: str
 
 ---
 
-##### `embed_credentials_input`<sup>Optional</sup> <a name="embed_credentials_input" id="@cdktf/provider-databricks.dashboard.Dashboard.property.embedCredentialsInput"></a>
+##### `embed_credentials_input`<sup>Optional</sup> <a name="embed_credentials_input" id="@cdktn/provider-databricks.dashboard.Dashboard.property.embedCredentialsInput"></a>
 
 ```python
 embed_credentials_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `etag_input`<sup>Optional</sup> <a name="etag_input" id="@cdktf/provider-databricks.dashboard.Dashboard.property.etagInput"></a>
+##### `etag_input`<sup>Optional</sup> <a name="etag_input" id="@cdktn/provider-databricks.dashboard.Dashboard.property.etagInput"></a>
 
 ```python
 etag_input: str
@@ -1069,7 +1175,7 @@ etag_input: str
 
 ---
 
-##### `file_path_input`<sup>Optional</sup> <a name="file_path_input" id="@cdktf/provider-databricks.dashboard.Dashboard.property.filePathInput"></a>
+##### `file_path_input`<sup>Optional</sup> <a name="file_path_input" id="@cdktn/provider-databricks.dashboard.Dashboard.property.filePathInput"></a>
 
 ```python
 file_path_input: str
@@ -1079,7 +1185,7 @@ file_path_input: str
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-databricks.dashboard.Dashboard.property.idInput"></a>
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-databricks.dashboard.Dashboard.property.idInput"></a>
 
 ```python
 id_input: str
@@ -1089,7 +1195,7 @@ id_input: str
 
 ---
 
-##### `lifecycle_state_input`<sup>Optional</sup> <a name="lifecycle_state_input" id="@cdktf/provider-databricks.dashboard.Dashboard.property.lifecycleStateInput"></a>
+##### `lifecycle_state_input`<sup>Optional</sup> <a name="lifecycle_state_input" id="@cdktn/provider-databricks.dashboard.Dashboard.property.lifecycleStateInput"></a>
 
 ```python
 lifecycle_state_input: str
@@ -1099,7 +1205,7 @@ lifecycle_state_input: str
 
 ---
 
-##### `md5_input`<sup>Optional</sup> <a name="md5_input" id="@cdktf/provider-databricks.dashboard.Dashboard.property.md5Input"></a>
+##### `md5_input`<sup>Optional</sup> <a name="md5_input" id="@cdktn/provider-databricks.dashboard.Dashboard.property.md5Input"></a>
 
 ```python
 md5_input: str
@@ -1109,7 +1215,7 @@ md5_input: str
 
 ---
 
-##### `parent_path_input`<sup>Optional</sup> <a name="parent_path_input" id="@cdktf/provider-databricks.dashboard.Dashboard.property.parentPathInput"></a>
+##### `parent_path_input`<sup>Optional</sup> <a name="parent_path_input" id="@cdktn/provider-databricks.dashboard.Dashboard.property.parentPathInput"></a>
 
 ```python
 parent_path_input: str
@@ -1119,7 +1225,7 @@ parent_path_input: str
 
 ---
 
-##### `path_input`<sup>Optional</sup> <a name="path_input" id="@cdktf/provider-databricks.dashboard.Dashboard.property.pathInput"></a>
+##### `path_input`<sup>Optional</sup> <a name="path_input" id="@cdktn/provider-databricks.dashboard.Dashboard.property.pathInput"></a>
 
 ```python
 path_input: str
@@ -1129,7 +1235,17 @@ path_input: str
 
 ---
 
-##### `serialized_dashboard_input`<sup>Optional</sup> <a name="serialized_dashboard_input" id="@cdktf/provider-databricks.dashboard.Dashboard.property.serializedDashboardInput"></a>
+##### `provider_config_input`<sup>Optional</sup> <a name="provider_config_input" id="@cdktn/provider-databricks.dashboard.Dashboard.property.providerConfigInput"></a>
+
+```python
+provider_config_input: DashboardProviderConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.dashboard.DashboardProviderConfig">DashboardProviderConfig</a>
+
+---
+
+##### `serialized_dashboard_input`<sup>Optional</sup> <a name="serialized_dashboard_input" id="@cdktn/provider-databricks.dashboard.Dashboard.property.serializedDashboardInput"></a>
 
 ```python
 serialized_dashboard_input: str
@@ -1139,7 +1255,7 @@ serialized_dashboard_input: str
 
 ---
 
-##### `update_time_input`<sup>Optional</sup> <a name="update_time_input" id="@cdktf/provider-databricks.dashboard.Dashboard.property.updateTimeInput"></a>
+##### `update_time_input`<sup>Optional</sup> <a name="update_time_input" id="@cdktn/provider-databricks.dashboard.Dashboard.property.updateTimeInput"></a>
 
 ```python
 update_time_input: str
@@ -1149,7 +1265,7 @@ update_time_input: str
 
 ---
 
-##### `warehouse_id_input`<sup>Optional</sup> <a name="warehouse_id_input" id="@cdktf/provider-databricks.dashboard.Dashboard.property.warehouseIdInput"></a>
+##### `warehouse_id_input`<sup>Optional</sup> <a name="warehouse_id_input" id="@cdktn/provider-databricks.dashboard.Dashboard.property.warehouseIdInput"></a>
 
 ```python
 warehouse_id_input: str
@@ -1159,7 +1275,7 @@ warehouse_id_input: str
 
 ---
 
-##### `create_time`<sup>Required</sup> <a name="create_time" id="@cdktf/provider-databricks.dashboard.Dashboard.property.createTime"></a>
+##### `create_time`<sup>Required</sup> <a name="create_time" id="@cdktn/provider-databricks.dashboard.Dashboard.property.createTime"></a>
 
 ```python
 create_time: str
@@ -1169,17 +1285,17 @@ create_time: str
 
 ---
 
-##### `dashboard_change_detected`<sup>Required</sup> <a name="dashboard_change_detected" id="@cdktf/provider-databricks.dashboard.Dashboard.property.dashboardChangeDetected"></a>
+##### `dashboard_change_detected`<sup>Required</sup> <a name="dashboard_change_detected" id="@cdktn/provider-databricks.dashboard.Dashboard.property.dashboardChangeDetected"></a>
 
 ```python
 dashboard_change_detected: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `dashboard_id`<sup>Required</sup> <a name="dashboard_id" id="@cdktf/provider-databricks.dashboard.Dashboard.property.dashboardId"></a>
+##### `dashboard_id`<sup>Required</sup> <a name="dashboard_id" id="@cdktn/provider-databricks.dashboard.Dashboard.property.dashboardId"></a>
 
 ```python
 dashboard_id: str
@@ -1189,7 +1305,27 @@ dashboard_id: str
 
 ---
 
-##### `display_name`<sup>Required</sup> <a name="display_name" id="@cdktf/provider-databricks.dashboard.Dashboard.property.displayName"></a>
+##### `dataset_catalog`<sup>Required</sup> <a name="dataset_catalog" id="@cdktn/provider-databricks.dashboard.Dashboard.property.datasetCatalog"></a>
+
+```python
+dataset_catalog: str
+```
+
+- *Type:* str
+
+---
+
+##### `dataset_schema`<sup>Required</sup> <a name="dataset_schema" id="@cdktn/provider-databricks.dashboard.Dashboard.property.datasetSchema"></a>
+
+```python
+dataset_schema: str
+```
+
+- *Type:* str
+
+---
+
+##### `display_name`<sup>Required</sup> <a name="display_name" id="@cdktn/provider-databricks.dashboard.Dashboard.property.displayName"></a>
 
 ```python
 display_name: str
@@ -1199,17 +1335,17 @@ display_name: str
 
 ---
 
-##### `embed_credentials`<sup>Required</sup> <a name="embed_credentials" id="@cdktf/provider-databricks.dashboard.Dashboard.property.embedCredentials"></a>
+##### `embed_credentials`<sup>Required</sup> <a name="embed_credentials" id="@cdktn/provider-databricks.dashboard.Dashboard.property.embedCredentials"></a>
 
 ```python
 embed_credentials: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `etag`<sup>Required</sup> <a name="etag" id="@cdktf/provider-databricks.dashboard.Dashboard.property.etag"></a>
+##### `etag`<sup>Required</sup> <a name="etag" id="@cdktn/provider-databricks.dashboard.Dashboard.property.etag"></a>
 
 ```python
 etag: str
@@ -1219,7 +1355,7 @@ etag: str
 
 ---
 
-##### `file_path`<sup>Required</sup> <a name="file_path" id="@cdktf/provider-databricks.dashboard.Dashboard.property.filePath"></a>
+##### `file_path`<sup>Required</sup> <a name="file_path" id="@cdktn/provider-databricks.dashboard.Dashboard.property.filePath"></a>
 
 ```python
 file_path: str
@@ -1229,7 +1365,7 @@ file_path: str
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-databricks.dashboard.Dashboard.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-databricks.dashboard.Dashboard.property.id"></a>
 
 ```python
 id: str
@@ -1239,7 +1375,7 @@ id: str
 
 ---
 
-##### `lifecycle_state`<sup>Required</sup> <a name="lifecycle_state" id="@cdktf/provider-databricks.dashboard.Dashboard.property.lifecycleState"></a>
+##### `lifecycle_state`<sup>Required</sup> <a name="lifecycle_state" id="@cdktn/provider-databricks.dashboard.Dashboard.property.lifecycleState"></a>
 
 ```python
 lifecycle_state: str
@@ -1249,7 +1385,7 @@ lifecycle_state: str
 
 ---
 
-##### `md5`<sup>Required</sup> <a name="md5" id="@cdktf/provider-databricks.dashboard.Dashboard.property.md5"></a>
+##### `md5`<sup>Required</sup> <a name="md5" id="@cdktn/provider-databricks.dashboard.Dashboard.property.md5"></a>
 
 ```python
 md5: str
@@ -1259,7 +1395,7 @@ md5: str
 
 ---
 
-##### `parent_path`<sup>Required</sup> <a name="parent_path" id="@cdktf/provider-databricks.dashboard.Dashboard.property.parentPath"></a>
+##### `parent_path`<sup>Required</sup> <a name="parent_path" id="@cdktn/provider-databricks.dashboard.Dashboard.property.parentPath"></a>
 
 ```python
 parent_path: str
@@ -1269,7 +1405,7 @@ parent_path: str
 
 ---
 
-##### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-databricks.dashboard.Dashboard.property.path"></a>
+##### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-databricks.dashboard.Dashboard.property.path"></a>
 
 ```python
 path: str
@@ -1279,7 +1415,7 @@ path: str
 
 ---
 
-##### `serialized_dashboard`<sup>Required</sup> <a name="serialized_dashboard" id="@cdktf/provider-databricks.dashboard.Dashboard.property.serializedDashboard"></a>
+##### `serialized_dashboard`<sup>Required</sup> <a name="serialized_dashboard" id="@cdktn/provider-databricks.dashboard.Dashboard.property.serializedDashboard"></a>
 
 ```python
 serialized_dashboard: str
@@ -1289,7 +1425,7 @@ serialized_dashboard: str
 
 ---
 
-##### `update_time`<sup>Required</sup> <a name="update_time" id="@cdktf/provider-databricks.dashboard.Dashboard.property.updateTime"></a>
+##### `update_time`<sup>Required</sup> <a name="update_time" id="@cdktn/provider-databricks.dashboard.Dashboard.property.updateTime"></a>
 
 ```python
 update_time: str
@@ -1299,7 +1435,7 @@ update_time: str
 
 ---
 
-##### `warehouse_id`<sup>Required</sup> <a name="warehouse_id" id="@cdktf/provider-databricks.dashboard.Dashboard.property.warehouseId"></a>
+##### `warehouse_id`<sup>Required</sup> <a name="warehouse_id" id="@cdktn/provider-databricks.dashboard.Dashboard.property.warehouseId"></a>
 
 ```python
 warehouse_id: str
@@ -1313,11 +1449,11 @@ warehouse_id: str
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dashboard.Dashboard.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.Dashboard.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-databricks.dashboard.Dashboard.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-databricks.dashboard.Dashboard.property.tfResourceType"></a>
 
 ```python
 tfResourceType: str
@@ -1329,12 +1465,12 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### DashboardConfig <a name="DashboardConfig" id="@cdktf/provider-databricks.dashboard.DashboardConfig"></a>
+### DashboardConfig <a name="DashboardConfig" id="@cdktn/provider-databricks.dashboard.DashboardConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-databricks.dashboard.DashboardConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dashboard.DashboardConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_databricks import dashboard
+from cdktn_provider_databricks import dashboard
 
 dashboard.DashboardConfig(
   connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
@@ -1350,6 +1486,8 @@ dashboard.DashboardConfig(
   create_time: str = None,
   dashboard_change_detected: bool | IResolvable = None,
   dashboard_id: str = None,
+  dataset_catalog: str = None,
+  dataset_schema: str = None,
   embed_credentials: bool | IResolvable = None,
   etag: str = None,
   file_path: str = None,
@@ -1357,6 +1495,7 @@ dashboard.DashboardConfig(
   lifecycle_state: str = None,
   md5: str = None,
   path: str = None,
+  provider_config: DashboardProviderConfig = None,
   serialized_dashboard: str = None,
   update_time: str = None
 )
@@ -1366,102 +1505,105 @@ dashboard.DashboardConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.dashboard.DashboardConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.DashboardConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.DashboardConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.DashboardConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.DashboardConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.DashboardConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.DashboardConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.dashboard.DashboardConfig.property.displayName">display_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#display_name Dashboard#display_name}. |
-| <code><a href="#@cdktf/provider-databricks.dashboard.DashboardConfig.property.parentPath">parent_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#parent_path Dashboard#parent_path}. |
-| <code><a href="#@cdktf/provider-databricks.dashboard.DashboardConfig.property.warehouseId">warehouse_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#warehouse_id Dashboard#warehouse_id}. |
-| <code><a href="#@cdktf/provider-databricks.dashboard.DashboardConfig.property.createTime">create_time</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#create_time Dashboard#create_time}. |
-| <code><a href="#@cdktf/provider-databricks.dashboard.DashboardConfig.property.dashboardChangeDetected">dashboard_change_detected</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#dashboard_change_detected Dashboard#dashboard_change_detected}. |
-| <code><a href="#@cdktf/provider-databricks.dashboard.DashboardConfig.property.dashboardId">dashboard_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#dashboard_id Dashboard#dashboard_id}. |
-| <code><a href="#@cdktf/provider-databricks.dashboard.DashboardConfig.property.embedCredentials">embed_credentials</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#embed_credentials Dashboard#embed_credentials}. |
-| <code><a href="#@cdktf/provider-databricks.dashboard.DashboardConfig.property.etag">etag</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#etag Dashboard#etag}. |
-| <code><a href="#@cdktf/provider-databricks.dashboard.DashboardConfig.property.filePath">file_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#file_path Dashboard#file_path}. |
-| <code><a href="#@cdktf/provider-databricks.dashboard.DashboardConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#id Dashboard#id}. |
-| <code><a href="#@cdktf/provider-databricks.dashboard.DashboardConfig.property.lifecycleState">lifecycle_state</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#lifecycle_state Dashboard#lifecycle_state}. |
-| <code><a href="#@cdktf/provider-databricks.dashboard.DashboardConfig.property.md5">md5</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#md5 Dashboard#md5}. |
-| <code><a href="#@cdktf/provider-databricks.dashboard.DashboardConfig.property.path">path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#path Dashboard#path}. |
-| <code><a href="#@cdktf/provider-databricks.dashboard.DashboardConfig.property.serializedDashboard">serialized_dashboard</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#serialized_dashboard Dashboard#serialized_dashboard}. |
-| <code><a href="#@cdktf/provider-databricks.dashboard.DashboardConfig.property.updateTime">update_time</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#update_time Dashboard#update_time}. |
+| <code><a href="#@cdktn/provider-databricks.dashboard.DashboardConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.DashboardConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.DashboardConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.DashboardConfig.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.DashboardConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.DashboardConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.DashboardConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.DashboardConfig.property.displayName">display_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#display_name Dashboard#display_name}. |
+| <code><a href="#@cdktn/provider-databricks.dashboard.DashboardConfig.property.parentPath">parent_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#parent_path Dashboard#parent_path}. |
+| <code><a href="#@cdktn/provider-databricks.dashboard.DashboardConfig.property.warehouseId">warehouse_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#warehouse_id Dashboard#warehouse_id}. |
+| <code><a href="#@cdktn/provider-databricks.dashboard.DashboardConfig.property.createTime">create_time</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#create_time Dashboard#create_time}. |
+| <code><a href="#@cdktn/provider-databricks.dashboard.DashboardConfig.property.dashboardChangeDetected">dashboard_change_detected</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#dashboard_change_detected Dashboard#dashboard_change_detected}. |
+| <code><a href="#@cdktn/provider-databricks.dashboard.DashboardConfig.property.dashboardId">dashboard_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#dashboard_id Dashboard#dashboard_id}. |
+| <code><a href="#@cdktn/provider-databricks.dashboard.DashboardConfig.property.datasetCatalog">dataset_catalog</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#dataset_catalog Dashboard#dataset_catalog}. |
+| <code><a href="#@cdktn/provider-databricks.dashboard.DashboardConfig.property.datasetSchema">dataset_schema</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#dataset_schema Dashboard#dataset_schema}. |
+| <code><a href="#@cdktn/provider-databricks.dashboard.DashboardConfig.property.embedCredentials">embed_credentials</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#embed_credentials Dashboard#embed_credentials}. |
+| <code><a href="#@cdktn/provider-databricks.dashboard.DashboardConfig.property.etag">etag</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#etag Dashboard#etag}. |
+| <code><a href="#@cdktn/provider-databricks.dashboard.DashboardConfig.property.filePath">file_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#file_path Dashboard#file_path}. |
+| <code><a href="#@cdktn/provider-databricks.dashboard.DashboardConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#id Dashboard#id}. |
+| <code><a href="#@cdktn/provider-databricks.dashboard.DashboardConfig.property.lifecycleState">lifecycle_state</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#lifecycle_state Dashboard#lifecycle_state}. |
+| <code><a href="#@cdktn/provider-databricks.dashboard.DashboardConfig.property.md5">md5</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#md5 Dashboard#md5}. |
+| <code><a href="#@cdktn/provider-databricks.dashboard.DashboardConfig.property.path">path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#path Dashboard#path}. |
+| <code><a href="#@cdktn/provider-databricks.dashboard.DashboardConfig.property.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.dashboard.DashboardProviderConfig">DashboardProviderConfig</a></code> | provider_config block. |
+| <code><a href="#@cdktn/provider-databricks.dashboard.DashboardConfig.property.serializedDashboard">serialized_dashboard</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#serialized_dashboard Dashboard#serialized_dashboard}. |
+| <code><a href="#@cdktn/provider-databricks.dashboard.DashboardConfig.property.updateTime">update_time</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#update_time Dashboard#update_time}. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-databricks.dashboard.DashboardConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-databricks.dashboard.DashboardConfig.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-databricks.dashboard.DashboardConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-databricks.dashboard.DashboardConfig.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-databricks.dashboard.DashboardConfig.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-databricks.dashboard.DashboardConfig.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[ITerraformDependable]
 ```
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-databricks.dashboard.DashboardConfig.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-databricks.dashboard.DashboardConfig.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-databricks.dashboard.DashboardConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-databricks.dashboard.DashboardConfig.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-databricks.dashboard.DashboardConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-databricks.dashboard.DashboardConfig.property.provider"></a>
 
 ```python
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-databricks.dashboard.DashboardConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-databricks.dashboard.DashboardConfig.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
-##### `display_name`<sup>Required</sup> <a name="display_name" id="@cdktf/provider-databricks.dashboard.DashboardConfig.property.displayName"></a>
+##### `display_name`<sup>Required</sup> <a name="display_name" id="@cdktn/provider-databricks.dashboard.DashboardConfig.property.displayName"></a>
 
 ```python
 display_name: str
@@ -1469,11 +1611,11 @@ display_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#display_name Dashboard#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#display_name Dashboard#display_name}.
 
 ---
 
-##### `parent_path`<sup>Required</sup> <a name="parent_path" id="@cdktf/provider-databricks.dashboard.DashboardConfig.property.parentPath"></a>
+##### `parent_path`<sup>Required</sup> <a name="parent_path" id="@cdktn/provider-databricks.dashboard.DashboardConfig.property.parentPath"></a>
 
 ```python
 parent_path: str
@@ -1481,11 +1623,11 @@ parent_path: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#parent_path Dashboard#parent_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#parent_path Dashboard#parent_path}.
 
 ---
 
-##### `warehouse_id`<sup>Required</sup> <a name="warehouse_id" id="@cdktf/provider-databricks.dashboard.DashboardConfig.property.warehouseId"></a>
+##### `warehouse_id`<sup>Required</sup> <a name="warehouse_id" id="@cdktn/provider-databricks.dashboard.DashboardConfig.property.warehouseId"></a>
 
 ```python
 warehouse_id: str
@@ -1493,11 +1635,11 @@ warehouse_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#warehouse_id Dashboard#warehouse_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#warehouse_id Dashboard#warehouse_id}.
 
 ---
 
-##### `create_time`<sup>Optional</sup> <a name="create_time" id="@cdktf/provider-databricks.dashboard.DashboardConfig.property.createTime"></a>
+##### `create_time`<sup>Optional</sup> <a name="create_time" id="@cdktn/provider-databricks.dashboard.DashboardConfig.property.createTime"></a>
 
 ```python
 create_time: str
@@ -1505,23 +1647,23 @@ create_time: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#create_time Dashboard#create_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#create_time Dashboard#create_time}.
 
 ---
 
-##### `dashboard_change_detected`<sup>Optional</sup> <a name="dashboard_change_detected" id="@cdktf/provider-databricks.dashboard.DashboardConfig.property.dashboardChangeDetected"></a>
+##### `dashboard_change_detected`<sup>Optional</sup> <a name="dashboard_change_detected" id="@cdktn/provider-databricks.dashboard.DashboardConfig.property.dashboardChangeDetected"></a>
 
 ```python
 dashboard_change_detected: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#dashboard_change_detected Dashboard#dashboard_change_detected}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#dashboard_change_detected Dashboard#dashboard_change_detected}.
 
 ---
 
-##### `dashboard_id`<sup>Optional</sup> <a name="dashboard_id" id="@cdktf/provider-databricks.dashboard.DashboardConfig.property.dashboardId"></a>
+##### `dashboard_id`<sup>Optional</sup> <a name="dashboard_id" id="@cdktn/provider-databricks.dashboard.DashboardConfig.property.dashboardId"></a>
 
 ```python
 dashboard_id: str
@@ -1529,23 +1671,47 @@ dashboard_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#dashboard_id Dashboard#dashboard_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#dashboard_id Dashboard#dashboard_id}.
 
 ---
 
-##### `embed_credentials`<sup>Optional</sup> <a name="embed_credentials" id="@cdktf/provider-databricks.dashboard.DashboardConfig.property.embedCredentials"></a>
+##### `dataset_catalog`<sup>Optional</sup> <a name="dataset_catalog" id="@cdktn/provider-databricks.dashboard.DashboardConfig.property.datasetCatalog"></a>
+
+```python
+dataset_catalog: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#dataset_catalog Dashboard#dataset_catalog}.
+
+---
+
+##### `dataset_schema`<sup>Optional</sup> <a name="dataset_schema" id="@cdktn/provider-databricks.dashboard.DashboardConfig.property.datasetSchema"></a>
+
+```python
+dataset_schema: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#dataset_schema Dashboard#dataset_schema}.
+
+---
+
+##### `embed_credentials`<sup>Optional</sup> <a name="embed_credentials" id="@cdktn/provider-databricks.dashboard.DashboardConfig.property.embedCredentials"></a>
 
 ```python
 embed_credentials: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#embed_credentials Dashboard#embed_credentials}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#embed_credentials Dashboard#embed_credentials}.
 
 ---
 
-##### `etag`<sup>Optional</sup> <a name="etag" id="@cdktf/provider-databricks.dashboard.DashboardConfig.property.etag"></a>
+##### `etag`<sup>Optional</sup> <a name="etag" id="@cdktn/provider-databricks.dashboard.DashboardConfig.property.etag"></a>
 
 ```python
 etag: str
@@ -1553,11 +1719,11 @@ etag: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#etag Dashboard#etag}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#etag Dashboard#etag}.
 
 ---
 
-##### `file_path`<sup>Optional</sup> <a name="file_path" id="@cdktf/provider-databricks.dashboard.DashboardConfig.property.filePath"></a>
+##### `file_path`<sup>Optional</sup> <a name="file_path" id="@cdktn/provider-databricks.dashboard.DashboardConfig.property.filePath"></a>
 
 ```python
 file_path: str
@@ -1565,11 +1731,11 @@ file_path: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#file_path Dashboard#file_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#file_path Dashboard#file_path}.
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-databricks.dashboard.DashboardConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-databricks.dashboard.DashboardConfig.property.id"></a>
 
 ```python
 id: str
@@ -1577,14 +1743,14 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#id Dashboard#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#id Dashboard#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `lifecycle_state`<sup>Optional</sup> <a name="lifecycle_state" id="@cdktf/provider-databricks.dashboard.DashboardConfig.property.lifecycleState"></a>
+##### `lifecycle_state`<sup>Optional</sup> <a name="lifecycle_state" id="@cdktn/provider-databricks.dashboard.DashboardConfig.property.lifecycleState"></a>
 
 ```python
 lifecycle_state: str
@@ -1592,11 +1758,11 @@ lifecycle_state: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#lifecycle_state Dashboard#lifecycle_state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#lifecycle_state Dashboard#lifecycle_state}.
 
 ---
 
-##### `md5`<sup>Optional</sup> <a name="md5" id="@cdktf/provider-databricks.dashboard.DashboardConfig.property.md5"></a>
+##### `md5`<sup>Optional</sup> <a name="md5" id="@cdktn/provider-databricks.dashboard.DashboardConfig.property.md5"></a>
 
 ```python
 md5: str
@@ -1604,11 +1770,11 @@ md5: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#md5 Dashboard#md5}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#md5 Dashboard#md5}.
 
 ---
 
-##### `path`<sup>Optional</sup> <a name="path" id="@cdktf/provider-databricks.dashboard.DashboardConfig.property.path"></a>
+##### `path`<sup>Optional</sup> <a name="path" id="@cdktn/provider-databricks.dashboard.DashboardConfig.property.path"></a>
 
 ```python
 path: str
@@ -1616,11 +1782,25 @@ path: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#path Dashboard#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#path Dashboard#path}.
 
 ---
 
-##### `serialized_dashboard`<sup>Optional</sup> <a name="serialized_dashboard" id="@cdktf/provider-databricks.dashboard.DashboardConfig.property.serializedDashboard"></a>
+##### `provider_config`<sup>Optional</sup> <a name="provider_config" id="@cdktn/provider-databricks.dashboard.DashboardConfig.property.providerConfig"></a>
+
+```python
+provider_config: DashboardProviderConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.dashboard.DashboardProviderConfig">DashboardProviderConfig</a>
+
+provider_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#provider_config Dashboard#provider_config}
+
+---
+
+##### `serialized_dashboard`<sup>Optional</sup> <a name="serialized_dashboard" id="@cdktn/provider-databricks.dashboard.DashboardConfig.property.serializedDashboard"></a>
 
 ```python
 serialized_dashboard: str
@@ -1628,11 +1808,11 @@ serialized_dashboard: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#serialized_dashboard Dashboard#serialized_dashboard}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#serialized_dashboard Dashboard#serialized_dashboard}.
 
 ---
 
-##### `update_time`<sup>Optional</sup> <a name="update_time" id="@cdktf/provider-databricks.dashboard.DashboardConfig.property.updateTime"></a>
+##### `update_time`<sup>Optional</sup> <a name="update_time" id="@cdktn/provider-databricks.dashboard.DashboardConfig.property.updateTime"></a>
 
 ```python
 update_time: str
@@ -1640,7 +1820,336 @@ update_time: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#update_time Dashboard#update_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#update_time Dashboard#update_time}.
+
+---
+
+### DashboardProviderConfig <a name="DashboardProviderConfig" id="@cdktn/provider-databricks.dashboard.DashboardProviderConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dashboard.DashboardProviderConfig.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import dashboard
+
+dashboard.DashboardProviderConfig(
+  workspace_id: str
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.dashboard.DashboardProviderConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#workspace_id Dashboard#workspace_id}. |
+
+---
+
+##### `workspace_id`<sup>Required</sup> <a name="workspace_id" id="@cdktn/provider-databricks.dashboard.DashboardProviderConfig.property.workspaceId"></a>
+
+```python
+workspace_id: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#workspace_id Dashboard#workspace_id}.
+
+---
+
+## Classes <a name="Classes" id="Classes"></a>
+
+### DashboardProviderConfigOutputReference <a name="DashboardProviderConfigOutputReference" id="@cdktn/provider-databricks.dashboard.DashboardProviderConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dashboard.DashboardProviderConfigOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import dashboard
+
+dashboard.DashboardProviderConfigOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.dashboard.DashboardProviderConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.dashboard.DashboardProviderConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-databricks.dashboard.DashboardProviderConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.dashboard.DashboardProviderConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.dashboard.DashboardProviderConfigOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.DashboardProviderConfigOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.DashboardProviderConfigOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.DashboardProviderConfigOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.DashboardProviderConfigOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.DashboardProviderConfigOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.DashboardProviderConfigOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.DashboardProviderConfigOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.DashboardProviderConfigOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.DashboardProviderConfigOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.DashboardProviderConfigOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.DashboardProviderConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.dashboard.DashboardProviderConfigOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-databricks.dashboard.DashboardProviderConfigOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-databricks.dashboard.DashboardProviderConfigOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.dashboard.DashboardProviderConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-databricks.dashboard.DashboardProviderConfigOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.dashboard.DashboardProviderConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-databricks.dashboard.DashboardProviderConfigOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.dashboard.DashboardProviderConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-databricks.dashboard.DashboardProviderConfigOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.dashboard.DashboardProviderConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-databricks.dashboard.DashboardProviderConfigOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.dashboard.DashboardProviderConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-databricks.dashboard.DashboardProviderConfigOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.dashboard.DashboardProviderConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-databricks.dashboard.DashboardProviderConfigOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.dashboard.DashboardProviderConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-databricks.dashboard.DashboardProviderConfigOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.dashboard.DashboardProviderConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-databricks.dashboard.DashboardProviderConfigOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.dashboard.DashboardProviderConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-databricks.dashboard.DashboardProviderConfigOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.dashboard.DashboardProviderConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.dashboard.DashboardProviderConfigOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.dashboard.DashboardProviderConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-databricks.dashboard.DashboardProviderConfigOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.dashboard.DashboardProviderConfigOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.dashboard.DashboardProviderConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.DashboardProviderConfigOutputReference.property.workspaceIdInput">workspace_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.DashboardProviderConfigOutputReference.property.workspaceId">workspace_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dashboard.DashboardProviderConfigOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-databricks.dashboard.DashboardProviderConfig">DashboardProviderConfig</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-databricks.dashboard.DashboardProviderConfigOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.dashboard.DashboardProviderConfigOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `workspace_id_input`<sup>Optional</sup> <a name="workspace_id_input" id="@cdktn/provider-databricks.dashboard.DashboardProviderConfigOutputReference.property.workspaceIdInput"></a>
+
+```python
+workspace_id_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `workspace_id`<sup>Required</sup> <a name="workspace_id" id="@cdktn/provider-databricks.dashboard.DashboardProviderConfigOutputReference.property.workspaceId"></a>
+
+```python
+workspace_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-databricks.dashboard.DashboardProviderConfigOutputReference.property.internalValue"></a>
+
+```python
+internal_value: DashboardProviderConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.dashboard.DashboardProviderConfig">DashboardProviderConfig</a>
 
 ---
 
