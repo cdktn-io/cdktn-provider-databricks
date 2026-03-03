@@ -1,100 +1,104 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_setting_v2
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface WorkspaceSettingV2Config extends cdktf.TerraformMetaArguments {
+export interface WorkspaceSettingV2Config extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_setting_v2#aibi_dashboard_embedding_access_policy WorkspaceSettingV2#aibi_dashboard_embedding_access_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2#aibi_dashboard_embedding_access_policy WorkspaceSettingV2#aibi_dashboard_embedding_access_policy}
   */
   readonly aibiDashboardEmbeddingAccessPolicy?: WorkspaceSettingV2AibiDashboardEmbeddingAccessPolicy;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_setting_v2#aibi_dashboard_embedding_approved_domains WorkspaceSettingV2#aibi_dashboard_embedding_approved_domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2#aibi_dashboard_embedding_approved_domains WorkspaceSettingV2#aibi_dashboard_embedding_approved_domains}
   */
   readonly aibiDashboardEmbeddingApprovedDomains?: WorkspaceSettingV2AibiDashboardEmbeddingApprovedDomains;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_setting_v2#automatic_cluster_update_workspace WorkspaceSettingV2#automatic_cluster_update_workspace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2#automatic_cluster_update_workspace WorkspaceSettingV2#automatic_cluster_update_workspace}
   */
   readonly automaticClusterUpdateWorkspace?: WorkspaceSettingV2AutomaticClusterUpdateWorkspace;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_setting_v2#boolean_val WorkspaceSettingV2#boolean_val}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2#boolean_val WorkspaceSettingV2#boolean_val}
   */
   readonly booleanVal?: WorkspaceSettingV2BooleanVal;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_setting_v2#effective_aibi_dashboard_embedding_access_policy WorkspaceSettingV2#effective_aibi_dashboard_embedding_access_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2#effective_aibi_dashboard_embedding_access_policy WorkspaceSettingV2#effective_aibi_dashboard_embedding_access_policy}
   */
   readonly effectiveAibiDashboardEmbeddingAccessPolicy?: WorkspaceSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_setting_v2#effective_aibi_dashboard_embedding_approved_domains WorkspaceSettingV2#effective_aibi_dashboard_embedding_approved_domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2#effective_aibi_dashboard_embedding_approved_domains WorkspaceSettingV2#effective_aibi_dashboard_embedding_approved_domains}
   */
   readonly effectiveAibiDashboardEmbeddingApprovedDomains?: WorkspaceSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_setting_v2#effective_automatic_cluster_update_workspace WorkspaceSettingV2#effective_automatic_cluster_update_workspace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2#effective_automatic_cluster_update_workspace WorkspaceSettingV2#effective_automatic_cluster_update_workspace}
   */
   readonly effectiveAutomaticClusterUpdateWorkspace?: WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_setting_v2#effective_personal_compute WorkspaceSettingV2#effective_personal_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2#effective_personal_compute WorkspaceSettingV2#effective_personal_compute}
   */
   readonly effectivePersonalCompute?: WorkspaceSettingV2EffectivePersonalCompute;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_setting_v2#effective_restrict_workspace_admins WorkspaceSettingV2#effective_restrict_workspace_admins}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2#effective_restrict_workspace_admins WorkspaceSettingV2#effective_restrict_workspace_admins}
   */
   readonly effectiveRestrictWorkspaceAdmins?: WorkspaceSettingV2EffectiveRestrictWorkspaceAdmins;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_setting_v2#integer_val WorkspaceSettingV2#integer_val}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2#integer_val WorkspaceSettingV2#integer_val}
   */
   readonly integerVal?: WorkspaceSettingV2IntegerVal;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_setting_v2#name WorkspaceSettingV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2#name WorkspaceSettingV2#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_setting_v2#personal_compute WorkspaceSettingV2#personal_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2#personal_compute WorkspaceSettingV2#personal_compute}
   */
   readonly personalCompute?: WorkspaceSettingV2PersonalCompute;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_setting_v2#restrict_workspace_admins WorkspaceSettingV2#restrict_workspace_admins}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2#provider_config WorkspaceSettingV2#provider_config}
+  */
+  readonly providerConfig?: WorkspaceSettingV2ProviderConfig;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2#restrict_workspace_admins WorkspaceSettingV2#restrict_workspace_admins}
   */
   readonly restrictWorkspaceAdmins?: WorkspaceSettingV2RestrictWorkspaceAdmins;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_setting_v2#string_val WorkspaceSettingV2#string_val}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2#string_val WorkspaceSettingV2#string_val}
   */
   readonly stringVal?: WorkspaceSettingV2StringVal;
 }
 export interface WorkspaceSettingV2AibiDashboardEmbeddingAccessPolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_setting_v2#access_policy_type WorkspaceSettingV2#access_policy_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2#access_policy_type WorkspaceSettingV2#access_policy_type}
   */
   readonly accessPolicyType: string;
 }
 
-export function workspaceSettingV2AibiDashboardEmbeddingAccessPolicyToTerraform(struct?: WorkspaceSettingV2AibiDashboardEmbeddingAccessPolicy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceSettingV2AibiDashboardEmbeddingAccessPolicyToTerraform(struct?: WorkspaceSettingV2AibiDashboardEmbeddingAccessPolicy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    access_policy_type: cdktf.stringToTerraform(struct!.accessPolicyType),
+    access_policy_type: cdktn.stringToTerraform(struct!.accessPolicyType),
   }
 }
 
 
-export function workspaceSettingV2AibiDashboardEmbeddingAccessPolicyToHclTerraform(struct?: WorkspaceSettingV2AibiDashboardEmbeddingAccessPolicy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceSettingV2AibiDashboardEmbeddingAccessPolicyToHclTerraform(struct?: WorkspaceSettingV2AibiDashboardEmbeddingAccessPolicy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     access_policy_type: {
-      value: cdktf.stringToHclTerraform(struct!.accessPolicyType),
+      value: cdktn.stringToHclTerraform(struct!.accessPolicyType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -105,19 +109,19 @@ export function workspaceSettingV2AibiDashboardEmbeddingAccessPolicyToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkspaceSettingV2AibiDashboardEmbeddingAccessPolicyOutputReference extends cdktf.ComplexObject {
+export class WorkspaceSettingV2AibiDashboardEmbeddingAccessPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): WorkspaceSettingV2AibiDashboardEmbeddingAccessPolicy | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkspaceSettingV2AibiDashboardEmbeddingAccessPolicy | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -130,13 +134,13 @@ export class WorkspaceSettingV2AibiDashboardEmbeddingAccessPolicyOutputReference
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkspaceSettingV2AibiDashboardEmbeddingAccessPolicy | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkspaceSettingV2AibiDashboardEmbeddingAccessPolicy | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._accessPolicyType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -162,30 +166,30 @@ export class WorkspaceSettingV2AibiDashboardEmbeddingAccessPolicyOutputReference
 }
 export interface WorkspaceSettingV2AibiDashboardEmbeddingApprovedDomains {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_setting_v2#approved_domains WorkspaceSettingV2#approved_domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2#approved_domains WorkspaceSettingV2#approved_domains}
   */
   readonly approvedDomains?: string[];
 }
 
-export function workspaceSettingV2AibiDashboardEmbeddingApprovedDomainsToTerraform(struct?: WorkspaceSettingV2AibiDashboardEmbeddingApprovedDomains | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceSettingV2AibiDashboardEmbeddingApprovedDomainsToTerraform(struct?: WorkspaceSettingV2AibiDashboardEmbeddingApprovedDomains | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    approved_domains: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.approvedDomains),
+    approved_domains: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.approvedDomains),
   }
 }
 
 
-export function workspaceSettingV2AibiDashboardEmbeddingApprovedDomainsToHclTerraform(struct?: WorkspaceSettingV2AibiDashboardEmbeddingApprovedDomains | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceSettingV2AibiDashboardEmbeddingApprovedDomainsToHclTerraform(struct?: WorkspaceSettingV2AibiDashboardEmbeddingApprovedDomains | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     approved_domains: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.approvedDomains),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.approvedDomains),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -196,19 +200,19 @@ export function workspaceSettingV2AibiDashboardEmbeddingApprovedDomainsToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkspaceSettingV2AibiDashboardEmbeddingApprovedDomainsOutputReference extends cdktf.ComplexObject {
+export class WorkspaceSettingV2AibiDashboardEmbeddingApprovedDomainsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): WorkspaceSettingV2AibiDashboardEmbeddingApprovedDomains | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkspaceSettingV2AibiDashboardEmbeddingApprovedDomains | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -221,13 +225,13 @@ export class WorkspaceSettingV2AibiDashboardEmbeddingApprovedDomainsOutputRefere
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkspaceSettingV2AibiDashboardEmbeddingApprovedDomains | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkspaceSettingV2AibiDashboardEmbeddingApprovedDomains | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._approvedDomains = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -256,52 +260,52 @@ export class WorkspaceSettingV2AibiDashboardEmbeddingApprovedDomainsOutputRefere
 }
 export interface WorkspaceSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_setting_v2#forced_for_compliance_mode WorkspaceSettingV2#forced_for_compliance_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2#forced_for_compliance_mode WorkspaceSettingV2#forced_for_compliance_mode}
   */
-  readonly forcedForComplianceMode?: boolean | cdktf.IResolvable;
+  readonly forcedForComplianceMode?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_setting_v2#unavailable_for_disabled_entitlement WorkspaceSettingV2#unavailable_for_disabled_entitlement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2#unavailable_for_disabled_entitlement WorkspaceSettingV2#unavailable_for_disabled_entitlement}
   */
-  readonly unavailableForDisabledEntitlement?: boolean | cdktf.IResolvable;
+  readonly unavailableForDisabledEntitlement?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_setting_v2#unavailable_for_non_enterprise_tier WorkspaceSettingV2#unavailable_for_non_enterprise_tier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2#unavailable_for_non_enterprise_tier WorkspaceSettingV2#unavailable_for_non_enterprise_tier}
   */
-  readonly unavailableForNonEnterpriseTier?: boolean | cdktf.IResolvable;
+  readonly unavailableForNonEnterpriseTier?: boolean | cdktn.IResolvable;
 }
 
-export function workspaceSettingV2AutomaticClusterUpdateWorkspaceEnablementDetailsToTerraform(struct?: WorkspaceSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceSettingV2AutomaticClusterUpdateWorkspaceEnablementDetailsToTerraform(struct?: WorkspaceSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    forced_for_compliance_mode: cdktf.booleanToTerraform(struct!.forcedForComplianceMode),
-    unavailable_for_disabled_entitlement: cdktf.booleanToTerraform(struct!.unavailableForDisabledEntitlement),
-    unavailable_for_non_enterprise_tier: cdktf.booleanToTerraform(struct!.unavailableForNonEnterpriseTier),
+    forced_for_compliance_mode: cdktn.booleanToTerraform(struct!.forcedForComplianceMode),
+    unavailable_for_disabled_entitlement: cdktn.booleanToTerraform(struct!.unavailableForDisabledEntitlement),
+    unavailable_for_non_enterprise_tier: cdktn.booleanToTerraform(struct!.unavailableForNonEnterpriseTier),
   }
 }
 
 
-export function workspaceSettingV2AutomaticClusterUpdateWorkspaceEnablementDetailsToHclTerraform(struct?: WorkspaceSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceSettingV2AutomaticClusterUpdateWorkspaceEnablementDetailsToHclTerraform(struct?: WorkspaceSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     forced_for_compliance_mode: {
-      value: cdktf.booleanToHclTerraform(struct!.forcedForComplianceMode),
+      value: cdktn.booleanToHclTerraform(struct!.forcedForComplianceMode),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     unavailable_for_disabled_entitlement: {
-      value: cdktf.booleanToHclTerraform(struct!.unavailableForDisabledEntitlement),
+      value: cdktn.booleanToHclTerraform(struct!.unavailableForDisabledEntitlement),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     unavailable_for_non_enterprise_tier: {
-      value: cdktf.booleanToHclTerraform(struct!.unavailableForNonEnterpriseTier),
+      value: cdktn.booleanToHclTerraform(struct!.unavailableForNonEnterpriseTier),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -312,19 +316,19 @@ export function workspaceSettingV2AutomaticClusterUpdateWorkspaceEnablementDetai
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkspaceSettingV2AutomaticClusterUpdateWorkspaceEnablementDetailsOutputReference extends cdktf.ComplexObject {
+export class WorkspaceSettingV2AutomaticClusterUpdateWorkspaceEnablementDetailsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): WorkspaceSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkspaceSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -345,7 +349,7 @@ export class WorkspaceSettingV2AutomaticClusterUpdateWorkspaceEnablementDetailsO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkspaceSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkspaceSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -353,7 +357,7 @@ export class WorkspaceSettingV2AutomaticClusterUpdateWorkspaceEnablementDetailsO
       this._unavailableForDisabledEntitlement = undefined;
       this._unavailableForNonEnterpriseTier = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -367,11 +371,11 @@ export class WorkspaceSettingV2AutomaticClusterUpdateWorkspaceEnablementDetailsO
   }
 
   // forced_for_compliance_mode - computed: false, optional: true, required: false
-  private _forcedForComplianceMode?: boolean | cdktf.IResolvable; 
+  private _forcedForComplianceMode?: boolean | cdktn.IResolvable; 
   public get forcedForComplianceMode() {
     return this.getBooleanAttribute('forced_for_compliance_mode');
   }
-  public set forcedForComplianceMode(value: boolean | cdktf.IResolvable) {
+  public set forcedForComplianceMode(value: boolean | cdktn.IResolvable) {
     this._forcedForComplianceMode = value;
   }
   public resetForcedForComplianceMode() {
@@ -383,11 +387,11 @@ export class WorkspaceSettingV2AutomaticClusterUpdateWorkspaceEnablementDetailsO
   }
 
   // unavailable_for_disabled_entitlement - computed: false, optional: true, required: false
-  private _unavailableForDisabledEntitlement?: boolean | cdktf.IResolvable; 
+  private _unavailableForDisabledEntitlement?: boolean | cdktn.IResolvable; 
   public get unavailableForDisabledEntitlement() {
     return this.getBooleanAttribute('unavailable_for_disabled_entitlement');
   }
-  public set unavailableForDisabledEntitlement(value: boolean | cdktf.IResolvable) {
+  public set unavailableForDisabledEntitlement(value: boolean | cdktn.IResolvable) {
     this._unavailableForDisabledEntitlement = value;
   }
   public resetUnavailableForDisabledEntitlement() {
@@ -399,11 +403,11 @@ export class WorkspaceSettingV2AutomaticClusterUpdateWorkspaceEnablementDetailsO
   }
 
   // unavailable_for_non_enterprise_tier - computed: false, optional: true, required: false
-  private _unavailableForNonEnterpriseTier?: boolean | cdktf.IResolvable; 
+  private _unavailableForNonEnterpriseTier?: boolean | cdktn.IResolvable; 
   public get unavailableForNonEnterpriseTier() {
     return this.getBooleanAttribute('unavailable_for_non_enterprise_tier');
   }
-  public set unavailableForNonEnterpriseTier(value: boolean | cdktf.IResolvable) {
+  public set unavailableForNonEnterpriseTier(value: boolean | cdktn.IResolvable) {
     this._unavailableForNonEnterpriseTier = value;
   }
   public resetUnavailableForNonEnterpriseTier() {
@@ -416,41 +420,41 @@ export class WorkspaceSettingV2AutomaticClusterUpdateWorkspaceEnablementDetailsO
 }
 export interface WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_setting_v2#hours WorkspaceSettingV2#hours}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2#hours WorkspaceSettingV2#hours}
   */
   readonly hours?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_setting_v2#minutes WorkspaceSettingV2#minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2#minutes WorkspaceSettingV2#minutes}
   */
   readonly minutes?: number;
 }
 
-export function workspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTimeToTerraform(struct?: WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTimeToTerraform(struct?: WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    hours: cdktf.numberToTerraform(struct!.hours),
-    minutes: cdktf.numberToTerraform(struct!.minutes),
+    hours: cdktn.numberToTerraform(struct!.hours),
+    minutes: cdktn.numberToTerraform(struct!.minutes),
   }
 }
 
 
-export function workspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTimeToHclTerraform(struct?: WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTimeToHclTerraform(struct?: WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     hours: {
-      value: cdktf.numberToHclTerraform(struct!.hours),
+      value: cdktn.numberToHclTerraform(struct!.hours),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     minutes: {
-      value: cdktf.numberToHclTerraform(struct!.minutes),
+      value: cdktn.numberToHclTerraform(struct!.minutes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -461,19 +465,19 @@ export function workspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWind
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTimeOutputReference extends cdktf.ComplexObject {
+export class WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTimeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -490,14 +494,14 @@ export class WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowW
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._hours = undefined;
       this._minutes = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -543,46 +547,46 @@ export class WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowW
 }
 export interface WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_setting_v2#day_of_week WorkspaceSettingV2#day_of_week}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2#day_of_week WorkspaceSettingV2#day_of_week}
   */
   readonly dayOfWeek?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_setting_v2#frequency WorkspaceSettingV2#frequency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2#frequency WorkspaceSettingV2#frequency}
   */
   readonly frequency?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_setting_v2#window_start_time WorkspaceSettingV2#window_start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2#window_start_time WorkspaceSettingV2#window_start_time}
   */
   readonly windowStartTime?: WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime;
 }
 
-export function workspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleToTerraform(struct?: WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleToTerraform(struct?: WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    day_of_week: cdktf.stringToTerraform(struct!.dayOfWeek),
-    frequency: cdktf.stringToTerraform(struct!.frequency),
+    day_of_week: cdktn.stringToTerraform(struct!.dayOfWeek),
+    frequency: cdktn.stringToTerraform(struct!.frequency),
     window_start_time: workspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTimeToTerraform(struct!.windowStartTime),
   }
 }
 
 
-export function workspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleToHclTerraform(struct?: WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleToHclTerraform(struct?: WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     day_of_week: {
-      value: cdktf.stringToHclTerraform(struct!.dayOfWeek),
+      value: cdktn.stringToHclTerraform(struct!.dayOfWeek),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     frequency: {
-      value: cdktf.stringToHclTerraform(struct!.frequency),
+      value: cdktn.stringToHclTerraform(struct!.frequency),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -599,19 +603,19 @@ export function workspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWind
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleOutputReference extends cdktf.ComplexObject {
+export class WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -632,7 +636,7 @@ export class WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowW
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -640,7 +644,7 @@ export class WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowW
       this._frequency = undefined;
       this._windowStartTime.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -703,14 +707,14 @@ export class WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowW
 }
 export interface WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_setting_v2#week_day_based_schedule WorkspaceSettingV2#week_day_based_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2#week_day_based_schedule WorkspaceSettingV2#week_day_based_schedule}
   */
   readonly weekDayBasedSchedule?: WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule;
 }
 
-export function workspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowToTerraform(struct?: WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowToTerraform(struct?: WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -719,9 +723,9 @@ export function workspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWind
 }
 
 
-export function workspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowToHclTerraform(struct?: WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowToHclTerraform(struct?: WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -737,19 +741,19 @@ export function workspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWind
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowOutputReference extends cdktf.ComplexObject {
+export class WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -762,13 +766,13 @@ export class WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._weekDayBasedSchedule.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -797,56 +801,56 @@ export class WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowO
 }
 export interface WorkspaceSettingV2AutomaticClusterUpdateWorkspace {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_setting_v2#can_toggle WorkspaceSettingV2#can_toggle}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2#can_toggle WorkspaceSettingV2#can_toggle}
   */
-  readonly canToggle?: boolean | cdktf.IResolvable;
+  readonly canToggle?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_setting_v2#enabled WorkspaceSettingV2#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2#enabled WorkspaceSettingV2#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_setting_v2#enablement_details WorkspaceSettingV2#enablement_details}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2#enablement_details WorkspaceSettingV2#enablement_details}
   */
   readonly enablementDetails?: WorkspaceSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_setting_v2#maintenance_window WorkspaceSettingV2#maintenance_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2#maintenance_window WorkspaceSettingV2#maintenance_window}
   */
   readonly maintenanceWindow?: WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_setting_v2#restart_even_if_no_updates_available WorkspaceSettingV2#restart_even_if_no_updates_available}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2#restart_even_if_no_updates_available WorkspaceSettingV2#restart_even_if_no_updates_available}
   */
-  readonly restartEvenIfNoUpdatesAvailable?: boolean | cdktf.IResolvable;
+  readonly restartEvenIfNoUpdatesAvailable?: boolean | cdktn.IResolvable;
 }
 
-export function workspaceSettingV2AutomaticClusterUpdateWorkspaceToTerraform(struct?: WorkspaceSettingV2AutomaticClusterUpdateWorkspace | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceSettingV2AutomaticClusterUpdateWorkspaceToTerraform(struct?: WorkspaceSettingV2AutomaticClusterUpdateWorkspace | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    can_toggle: cdktf.booleanToTerraform(struct!.canToggle),
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    can_toggle: cdktn.booleanToTerraform(struct!.canToggle),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
     enablement_details: workspaceSettingV2AutomaticClusterUpdateWorkspaceEnablementDetailsToTerraform(struct!.enablementDetails),
     maintenance_window: workspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowToTerraform(struct!.maintenanceWindow),
-    restart_even_if_no_updates_available: cdktf.booleanToTerraform(struct!.restartEvenIfNoUpdatesAvailable),
+    restart_even_if_no_updates_available: cdktn.booleanToTerraform(struct!.restartEvenIfNoUpdatesAvailable),
   }
 }
 
 
-export function workspaceSettingV2AutomaticClusterUpdateWorkspaceToHclTerraform(struct?: WorkspaceSettingV2AutomaticClusterUpdateWorkspace | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceSettingV2AutomaticClusterUpdateWorkspaceToHclTerraform(struct?: WorkspaceSettingV2AutomaticClusterUpdateWorkspace | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     can_toggle: {
-      value: cdktf.booleanToHclTerraform(struct!.canToggle),
+      value: cdktn.booleanToHclTerraform(struct!.canToggle),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -864,7 +868,7 @@ export function workspaceSettingV2AutomaticClusterUpdateWorkspaceToHclTerraform(
       storageClassType: "WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow",
     },
     restart_even_if_no_updates_available: {
-      value: cdktf.booleanToHclTerraform(struct!.restartEvenIfNoUpdatesAvailable),
+      value: cdktn.booleanToHclTerraform(struct!.restartEvenIfNoUpdatesAvailable),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -875,19 +879,19 @@ export function workspaceSettingV2AutomaticClusterUpdateWorkspaceToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkspaceSettingV2AutomaticClusterUpdateWorkspaceOutputReference extends cdktf.ComplexObject {
+export class WorkspaceSettingV2AutomaticClusterUpdateWorkspaceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): WorkspaceSettingV2AutomaticClusterUpdateWorkspace | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkspaceSettingV2AutomaticClusterUpdateWorkspace | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -916,7 +920,7 @@ export class WorkspaceSettingV2AutomaticClusterUpdateWorkspaceOutputReference ex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkspaceSettingV2AutomaticClusterUpdateWorkspace | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkspaceSettingV2AutomaticClusterUpdateWorkspace | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -926,7 +930,7 @@ export class WorkspaceSettingV2AutomaticClusterUpdateWorkspaceOutputReference ex
       this._maintenanceWindow.internalValue = undefined;
       this._restartEvenIfNoUpdatesAvailable = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -942,11 +946,11 @@ export class WorkspaceSettingV2AutomaticClusterUpdateWorkspaceOutputReference ex
   }
 
   // can_toggle - computed: false, optional: true, required: false
-  private _canToggle?: boolean | cdktf.IResolvable; 
+  private _canToggle?: boolean | cdktn.IResolvable; 
   public get canToggle() {
     return this.getBooleanAttribute('can_toggle');
   }
-  public set canToggle(value: boolean | cdktf.IResolvable) {
+  public set canToggle(value: boolean | cdktn.IResolvable) {
     this._canToggle = value;
   }
   public resetCanToggle() {
@@ -958,11 +962,11 @@ export class WorkspaceSettingV2AutomaticClusterUpdateWorkspaceOutputReference ex
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -1006,11 +1010,11 @@ export class WorkspaceSettingV2AutomaticClusterUpdateWorkspaceOutputReference ex
   }
 
   // restart_even_if_no_updates_available - computed: false, optional: true, required: false
-  private _restartEvenIfNoUpdatesAvailable?: boolean | cdktf.IResolvable; 
+  private _restartEvenIfNoUpdatesAvailable?: boolean | cdktn.IResolvable; 
   public get restartEvenIfNoUpdatesAvailable() {
     return this.getBooleanAttribute('restart_even_if_no_updates_available');
   }
-  public set restartEvenIfNoUpdatesAvailable(value: boolean | cdktf.IResolvable) {
+  public set restartEvenIfNoUpdatesAvailable(value: boolean | cdktn.IResolvable) {
     this._restartEvenIfNoUpdatesAvailable = value;
   }
   public resetRestartEvenIfNoUpdatesAvailable() {
@@ -1023,30 +1027,30 @@ export class WorkspaceSettingV2AutomaticClusterUpdateWorkspaceOutputReference ex
 }
 export interface WorkspaceSettingV2BooleanVal {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}
   */
-  readonly value?: boolean | cdktf.IResolvable;
+  readonly value?: boolean | cdktn.IResolvable;
 }
 
-export function workspaceSettingV2BooleanValToTerraform(struct?: WorkspaceSettingV2BooleanVal | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceSettingV2BooleanValToTerraform(struct?: WorkspaceSettingV2BooleanVal | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    value: cdktf.booleanToTerraform(struct!.value),
+    value: cdktn.booleanToTerraform(struct!.value),
   }
 }
 
 
-export function workspaceSettingV2BooleanValToHclTerraform(struct?: WorkspaceSettingV2BooleanVal | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceSettingV2BooleanValToHclTerraform(struct?: WorkspaceSettingV2BooleanVal | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     value: {
-      value: cdktf.booleanToHclTerraform(struct!.value),
+      value: cdktn.booleanToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -1057,19 +1061,19 @@ export function workspaceSettingV2BooleanValToHclTerraform(struct?: WorkspaceSet
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkspaceSettingV2BooleanValOutputReference extends cdktf.ComplexObject {
+export class WorkspaceSettingV2BooleanValOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): WorkspaceSettingV2BooleanVal | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkspaceSettingV2BooleanVal | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1082,13 +1086,13 @@ export class WorkspaceSettingV2BooleanValOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkspaceSettingV2BooleanVal | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkspaceSettingV2BooleanVal | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1100,11 +1104,11 @@ export class WorkspaceSettingV2BooleanValOutputReference extends cdktf.ComplexOb
   }
 
   // value - computed: false, optional: true, required: false
-  private _value?: boolean | cdktf.IResolvable; 
+  private _value?: boolean | cdktn.IResolvable; 
   public get value() {
     return this.getBooleanAttribute('value');
   }
-  public set value(value: boolean | cdktf.IResolvable) {
+  public set value(value: boolean | cdktn.IResolvable) {
     this._value = value;
   }
   public resetValue() {
@@ -1117,30 +1121,30 @@ export class WorkspaceSettingV2BooleanValOutputReference extends cdktf.ComplexOb
 }
 export interface WorkspaceSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_setting_v2#access_policy_type WorkspaceSettingV2#access_policy_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2#access_policy_type WorkspaceSettingV2#access_policy_type}
   */
   readonly accessPolicyType: string;
 }
 
-export function workspaceSettingV2EffectiveAibiDashboardEmbeddingAccessPolicyToTerraform(struct?: WorkspaceSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceSettingV2EffectiveAibiDashboardEmbeddingAccessPolicyToTerraform(struct?: WorkspaceSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    access_policy_type: cdktf.stringToTerraform(struct!.accessPolicyType),
+    access_policy_type: cdktn.stringToTerraform(struct!.accessPolicyType),
   }
 }
 
 
-export function workspaceSettingV2EffectiveAibiDashboardEmbeddingAccessPolicyToHclTerraform(struct?: WorkspaceSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceSettingV2EffectiveAibiDashboardEmbeddingAccessPolicyToHclTerraform(struct?: WorkspaceSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     access_policy_type: {
-      value: cdktf.stringToHclTerraform(struct!.accessPolicyType),
+      value: cdktn.stringToHclTerraform(struct!.accessPolicyType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1151,19 +1155,19 @@ export function workspaceSettingV2EffectiveAibiDashboardEmbeddingAccessPolicyToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkspaceSettingV2EffectiveAibiDashboardEmbeddingAccessPolicyOutputReference extends cdktf.ComplexObject {
+export class WorkspaceSettingV2EffectiveAibiDashboardEmbeddingAccessPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): WorkspaceSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkspaceSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1176,13 +1180,13 @@ export class WorkspaceSettingV2EffectiveAibiDashboardEmbeddingAccessPolicyOutput
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkspaceSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkspaceSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._accessPolicyType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1208,30 +1212,30 @@ export class WorkspaceSettingV2EffectiveAibiDashboardEmbeddingAccessPolicyOutput
 }
 export interface WorkspaceSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_setting_v2#approved_domains WorkspaceSettingV2#approved_domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2#approved_domains WorkspaceSettingV2#approved_domains}
   */
   readonly approvedDomains?: string[];
 }
 
-export function workspaceSettingV2EffectiveAibiDashboardEmbeddingApprovedDomainsToTerraform(struct?: WorkspaceSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceSettingV2EffectiveAibiDashboardEmbeddingApprovedDomainsToTerraform(struct?: WorkspaceSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    approved_domains: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.approvedDomains),
+    approved_domains: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.approvedDomains),
   }
 }
 
 
-export function workspaceSettingV2EffectiveAibiDashboardEmbeddingApprovedDomainsToHclTerraform(struct?: WorkspaceSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceSettingV2EffectiveAibiDashboardEmbeddingApprovedDomainsToHclTerraform(struct?: WorkspaceSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     approved_domains: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.approvedDomains),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.approvedDomains),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -1242,19 +1246,19 @@ export function workspaceSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkspaceSettingV2EffectiveAibiDashboardEmbeddingApprovedDomainsOutputReference extends cdktf.ComplexObject {
+export class WorkspaceSettingV2EffectiveAibiDashboardEmbeddingApprovedDomainsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): WorkspaceSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkspaceSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1267,13 +1271,13 @@ export class WorkspaceSettingV2EffectiveAibiDashboardEmbeddingApprovedDomainsOut
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkspaceSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkspaceSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._approvedDomains = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1302,52 +1306,52 @@ export class WorkspaceSettingV2EffectiveAibiDashboardEmbeddingApprovedDomainsOut
 }
 export interface WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_setting_v2#forced_for_compliance_mode WorkspaceSettingV2#forced_for_compliance_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2#forced_for_compliance_mode WorkspaceSettingV2#forced_for_compliance_mode}
   */
-  readonly forcedForComplianceMode?: boolean | cdktf.IResolvable;
+  readonly forcedForComplianceMode?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_setting_v2#unavailable_for_disabled_entitlement WorkspaceSettingV2#unavailable_for_disabled_entitlement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2#unavailable_for_disabled_entitlement WorkspaceSettingV2#unavailable_for_disabled_entitlement}
   */
-  readonly unavailableForDisabledEntitlement?: boolean | cdktf.IResolvable;
+  readonly unavailableForDisabledEntitlement?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_setting_v2#unavailable_for_non_enterprise_tier WorkspaceSettingV2#unavailable_for_non_enterprise_tier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2#unavailable_for_non_enterprise_tier WorkspaceSettingV2#unavailable_for_non_enterprise_tier}
   */
-  readonly unavailableForNonEnterpriseTier?: boolean | cdktf.IResolvable;
+  readonly unavailableForNonEnterpriseTier?: boolean | cdktn.IResolvable;
 }
 
-export function workspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetailsToTerraform(struct?: WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetailsToTerraform(struct?: WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    forced_for_compliance_mode: cdktf.booleanToTerraform(struct!.forcedForComplianceMode),
-    unavailable_for_disabled_entitlement: cdktf.booleanToTerraform(struct!.unavailableForDisabledEntitlement),
-    unavailable_for_non_enterprise_tier: cdktf.booleanToTerraform(struct!.unavailableForNonEnterpriseTier),
+    forced_for_compliance_mode: cdktn.booleanToTerraform(struct!.forcedForComplianceMode),
+    unavailable_for_disabled_entitlement: cdktn.booleanToTerraform(struct!.unavailableForDisabledEntitlement),
+    unavailable_for_non_enterprise_tier: cdktn.booleanToTerraform(struct!.unavailableForNonEnterpriseTier),
   }
 }
 
 
-export function workspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetailsToHclTerraform(struct?: WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetailsToHclTerraform(struct?: WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     forced_for_compliance_mode: {
-      value: cdktf.booleanToHclTerraform(struct!.forcedForComplianceMode),
+      value: cdktn.booleanToHclTerraform(struct!.forcedForComplianceMode),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     unavailable_for_disabled_entitlement: {
-      value: cdktf.booleanToHclTerraform(struct!.unavailableForDisabledEntitlement),
+      value: cdktn.booleanToHclTerraform(struct!.unavailableForDisabledEntitlement),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     unavailable_for_non_enterprise_tier: {
-      value: cdktf.booleanToHclTerraform(struct!.unavailableForNonEnterpriseTier),
+      value: cdktn.booleanToHclTerraform(struct!.unavailableForNonEnterpriseTier),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -1358,19 +1362,19 @@ export function workspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnable
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetailsOutputReference extends cdktf.ComplexObject {
+export class WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetailsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1391,7 +1395,7 @@ export class WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablemen
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1399,7 +1403,7 @@ export class WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablemen
       this._unavailableForDisabledEntitlement = undefined;
       this._unavailableForNonEnterpriseTier = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1413,11 +1417,11 @@ export class WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablemen
   }
 
   // forced_for_compliance_mode - computed: false, optional: true, required: false
-  private _forcedForComplianceMode?: boolean | cdktf.IResolvable; 
+  private _forcedForComplianceMode?: boolean | cdktn.IResolvable; 
   public get forcedForComplianceMode() {
     return this.getBooleanAttribute('forced_for_compliance_mode');
   }
-  public set forcedForComplianceMode(value: boolean | cdktf.IResolvable) {
+  public set forcedForComplianceMode(value: boolean | cdktn.IResolvable) {
     this._forcedForComplianceMode = value;
   }
   public resetForcedForComplianceMode() {
@@ -1429,11 +1433,11 @@ export class WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablemen
   }
 
   // unavailable_for_disabled_entitlement - computed: false, optional: true, required: false
-  private _unavailableForDisabledEntitlement?: boolean | cdktf.IResolvable; 
+  private _unavailableForDisabledEntitlement?: boolean | cdktn.IResolvable; 
   public get unavailableForDisabledEntitlement() {
     return this.getBooleanAttribute('unavailable_for_disabled_entitlement');
   }
-  public set unavailableForDisabledEntitlement(value: boolean | cdktf.IResolvable) {
+  public set unavailableForDisabledEntitlement(value: boolean | cdktn.IResolvable) {
     this._unavailableForDisabledEntitlement = value;
   }
   public resetUnavailableForDisabledEntitlement() {
@@ -1445,11 +1449,11 @@ export class WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablemen
   }
 
   // unavailable_for_non_enterprise_tier - computed: false, optional: true, required: false
-  private _unavailableForNonEnterpriseTier?: boolean | cdktf.IResolvable; 
+  private _unavailableForNonEnterpriseTier?: boolean | cdktn.IResolvable; 
   public get unavailableForNonEnterpriseTier() {
     return this.getBooleanAttribute('unavailable_for_non_enterprise_tier');
   }
-  public set unavailableForNonEnterpriseTier(value: boolean | cdktf.IResolvable) {
+  public set unavailableForNonEnterpriseTier(value: boolean | cdktn.IResolvable) {
     this._unavailableForNonEnterpriseTier = value;
   }
   public resetUnavailableForNonEnterpriseTier() {
@@ -1462,41 +1466,41 @@ export class WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablemen
 }
 export interface WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_setting_v2#hours WorkspaceSettingV2#hours}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2#hours WorkspaceSettingV2#hours}
   */
   readonly hours?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_setting_v2#minutes WorkspaceSettingV2#minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2#minutes WorkspaceSettingV2#minutes}
   */
   readonly minutes?: number;
 }
 
-export function workspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTimeToTerraform(struct?: WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTimeToTerraform(struct?: WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    hours: cdktf.numberToTerraform(struct!.hours),
-    minutes: cdktf.numberToTerraform(struct!.minutes),
+    hours: cdktn.numberToTerraform(struct!.hours),
+    minutes: cdktn.numberToTerraform(struct!.minutes),
   }
 }
 
 
-export function workspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTimeToHclTerraform(struct?: WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTimeToHclTerraform(struct?: WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     hours: {
-      value: cdktf.numberToHclTerraform(struct!.hours),
+      value: cdktn.numberToHclTerraform(struct!.hours),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     minutes: {
-      value: cdktf.numberToHclTerraform(struct!.minutes),
+      value: cdktn.numberToHclTerraform(struct!.minutes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1507,19 +1511,19 @@ export function workspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMainte
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTimeOutputReference extends cdktf.ComplexObject {
+export class WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTimeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1536,14 +1540,14 @@ export class WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenan
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._hours = undefined;
       this._minutes = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1589,46 +1593,46 @@ export class WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenan
 }
 export interface WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_setting_v2#day_of_week WorkspaceSettingV2#day_of_week}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2#day_of_week WorkspaceSettingV2#day_of_week}
   */
   readonly dayOfWeek?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_setting_v2#frequency WorkspaceSettingV2#frequency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2#frequency WorkspaceSettingV2#frequency}
   */
   readonly frequency?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_setting_v2#window_start_time WorkspaceSettingV2#window_start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2#window_start_time WorkspaceSettingV2#window_start_time}
   */
   readonly windowStartTime?: WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime;
 }
 
-export function workspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleToTerraform(struct?: WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleToTerraform(struct?: WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    day_of_week: cdktf.stringToTerraform(struct!.dayOfWeek),
-    frequency: cdktf.stringToTerraform(struct!.frequency),
+    day_of_week: cdktn.stringToTerraform(struct!.dayOfWeek),
+    frequency: cdktn.stringToTerraform(struct!.frequency),
     window_start_time: workspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTimeToTerraform(struct!.windowStartTime),
   }
 }
 
 
-export function workspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleToHclTerraform(struct?: WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleToHclTerraform(struct?: WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     day_of_week: {
-      value: cdktf.stringToHclTerraform(struct!.dayOfWeek),
+      value: cdktn.stringToHclTerraform(struct!.dayOfWeek),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     frequency: {
-      value: cdktf.stringToHclTerraform(struct!.frequency),
+      value: cdktn.stringToHclTerraform(struct!.frequency),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1645,19 +1649,19 @@ export function workspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMainte
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleOutputReference extends cdktf.ComplexObject {
+export class WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1678,7 +1682,7 @@ export class WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenan
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1686,7 +1690,7 @@ export class WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenan
       this._frequency = undefined;
       this._windowStartTime.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1749,14 +1753,14 @@ export class WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenan
 }
 export interface WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindow {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_setting_v2#week_day_based_schedule WorkspaceSettingV2#week_day_based_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2#week_day_based_schedule WorkspaceSettingV2#week_day_based_schedule}
   */
   readonly weekDayBasedSchedule?: WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule;
 }
 
-export function workspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowToTerraform(struct?: WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindow | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowToTerraform(struct?: WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindow | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1765,9 +1769,9 @@ export function workspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMainte
 }
 
 
-export function workspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowToHclTerraform(struct?: WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindow | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowToHclTerraform(struct?: WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindow | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1783,19 +1787,19 @@ export function workspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMainte
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowOutputReference extends cdktf.ComplexObject {
+export class WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindow | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindow | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1808,13 +1812,13 @@ export class WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenan
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindow | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindow | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._weekDayBasedSchedule.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1843,56 +1847,56 @@ export class WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenan
 }
 export interface WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_setting_v2#can_toggle WorkspaceSettingV2#can_toggle}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2#can_toggle WorkspaceSettingV2#can_toggle}
   */
-  readonly canToggle?: boolean | cdktf.IResolvable;
+  readonly canToggle?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_setting_v2#enabled WorkspaceSettingV2#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2#enabled WorkspaceSettingV2#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_setting_v2#enablement_details WorkspaceSettingV2#enablement_details}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2#enablement_details WorkspaceSettingV2#enablement_details}
   */
   readonly enablementDetails?: WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_setting_v2#maintenance_window WorkspaceSettingV2#maintenance_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2#maintenance_window WorkspaceSettingV2#maintenance_window}
   */
   readonly maintenanceWindow?: WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindow;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_setting_v2#restart_even_if_no_updates_available WorkspaceSettingV2#restart_even_if_no_updates_available}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2#restart_even_if_no_updates_available WorkspaceSettingV2#restart_even_if_no_updates_available}
   */
-  readonly restartEvenIfNoUpdatesAvailable?: boolean | cdktf.IResolvable;
+  readonly restartEvenIfNoUpdatesAvailable?: boolean | cdktn.IResolvable;
 }
 
-export function workspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceToTerraform(struct?: WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceToTerraform(struct?: WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    can_toggle: cdktf.booleanToTerraform(struct!.canToggle),
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    can_toggle: cdktn.booleanToTerraform(struct!.canToggle),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
     enablement_details: workspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetailsToTerraform(struct!.enablementDetails),
     maintenance_window: workspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowToTerraform(struct!.maintenanceWindow),
-    restart_even_if_no_updates_available: cdktf.booleanToTerraform(struct!.restartEvenIfNoUpdatesAvailable),
+    restart_even_if_no_updates_available: cdktn.booleanToTerraform(struct!.restartEvenIfNoUpdatesAvailable),
   }
 }
 
 
-export function workspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceToHclTerraform(struct?: WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceToHclTerraform(struct?: WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     can_toggle: {
-      value: cdktf.booleanToHclTerraform(struct!.canToggle),
+      value: cdktn.booleanToHclTerraform(struct!.canToggle),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -1910,7 +1914,7 @@ export function workspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceToHclT
       storageClassType: "WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindow",
     },
     restart_even_if_no_updates_available: {
-      value: cdktf.booleanToHclTerraform(struct!.restartEvenIfNoUpdatesAvailable),
+      value: cdktn.booleanToHclTerraform(struct!.restartEvenIfNoUpdatesAvailable),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -1921,19 +1925,19 @@ export function workspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceOutputReference extends cdktf.ComplexObject {
+export class WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1962,7 +1966,7 @@ export class WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceOutputRef
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1972,7 +1976,7 @@ export class WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceOutputRef
       this._maintenanceWindow.internalValue = undefined;
       this._restartEvenIfNoUpdatesAvailable = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1988,11 +1992,11 @@ export class WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceOutputRef
   }
 
   // can_toggle - computed: false, optional: true, required: false
-  private _canToggle?: boolean | cdktf.IResolvable; 
+  private _canToggle?: boolean | cdktn.IResolvable; 
   public get canToggle() {
     return this.getBooleanAttribute('can_toggle');
   }
-  public set canToggle(value: boolean | cdktf.IResolvable) {
+  public set canToggle(value: boolean | cdktn.IResolvable) {
     this._canToggle = value;
   }
   public resetCanToggle() {
@@ -2004,11 +2008,11 @@ export class WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceOutputRef
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -2052,11 +2056,11 @@ export class WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceOutputRef
   }
 
   // restart_even_if_no_updates_available - computed: false, optional: true, required: false
-  private _restartEvenIfNoUpdatesAvailable?: boolean | cdktf.IResolvable; 
+  private _restartEvenIfNoUpdatesAvailable?: boolean | cdktn.IResolvable; 
   public get restartEvenIfNoUpdatesAvailable() {
     return this.getBooleanAttribute('restart_even_if_no_updates_available');
   }
-  public set restartEvenIfNoUpdatesAvailable(value: boolean | cdktf.IResolvable) {
+  public set restartEvenIfNoUpdatesAvailable(value: boolean | cdktn.IResolvable) {
     this._restartEvenIfNoUpdatesAvailable = value;
   }
   public resetRestartEvenIfNoUpdatesAvailable() {
@@ -2069,30 +2073,30 @@ export class WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceOutputRef
 }
 export interface WorkspaceSettingV2EffectiveBooleanVal {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}
   */
-  readonly value?: boolean | cdktf.IResolvable;
+  readonly value?: boolean | cdktn.IResolvable;
 }
 
 export function workspaceSettingV2EffectiveBooleanValToTerraform(struct?: WorkspaceSettingV2EffectiveBooleanVal): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    value: cdktf.booleanToTerraform(struct!.value),
+    value: cdktn.booleanToTerraform(struct!.value),
   }
 }
 
 
 export function workspaceSettingV2EffectiveBooleanValToHclTerraform(struct?: WorkspaceSettingV2EffectiveBooleanVal): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     value: {
-      value: cdktf.booleanToHclTerraform(struct!.value),
+      value: cdktn.booleanToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -2103,14 +2107,14 @@ export function workspaceSettingV2EffectiveBooleanValToHclTerraform(struct?: Wor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkspaceSettingV2EffectiveBooleanValOutputReference extends cdktf.ComplexObject {
+export class WorkspaceSettingV2EffectiveBooleanValOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -2136,11 +2140,11 @@ export class WorkspaceSettingV2EffectiveBooleanValOutputReference extends cdktf.
   }
 
   // value - computed: true, optional: true, required: false
-  private _value?: boolean | cdktf.IResolvable; 
+  private _value?: boolean | cdktn.IResolvable; 
   public get value() {
     return this.getBooleanAttribute('value');
   }
-  public set value(value: boolean | cdktf.IResolvable) {
+  public set value(value: boolean | cdktn.IResolvable) {
     this._value = value;
   }
   public resetValue() {
@@ -2153,30 +2157,30 @@ export class WorkspaceSettingV2EffectiveBooleanValOutputReference extends cdktf.
 }
 export interface WorkspaceSettingV2EffectiveIntegerVal {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}
   */
   readonly value?: number;
 }
 
 export function workspaceSettingV2EffectiveIntegerValToTerraform(struct?: WorkspaceSettingV2EffectiveIntegerVal): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    value: cdktf.numberToTerraform(struct!.value),
+    value: cdktn.numberToTerraform(struct!.value),
   }
 }
 
 
 export function workspaceSettingV2EffectiveIntegerValToHclTerraform(struct?: WorkspaceSettingV2EffectiveIntegerVal): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     value: {
-      value: cdktf.numberToHclTerraform(struct!.value),
+      value: cdktn.numberToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -2187,14 +2191,14 @@ export function workspaceSettingV2EffectiveIntegerValToHclTerraform(struct?: Wor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkspaceSettingV2EffectiveIntegerValOutputReference extends cdktf.ComplexObject {
+export class WorkspaceSettingV2EffectiveIntegerValOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -2237,30 +2241,30 @@ export class WorkspaceSettingV2EffectiveIntegerValOutputReference extends cdktf.
 }
 export interface WorkspaceSettingV2EffectivePersonalCompute {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}
   */
   readonly value?: string;
 }
 
-export function workspaceSettingV2EffectivePersonalComputeToTerraform(struct?: WorkspaceSettingV2EffectivePersonalCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceSettingV2EffectivePersonalComputeToTerraform(struct?: WorkspaceSettingV2EffectivePersonalCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    value: cdktf.stringToTerraform(struct!.value),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function workspaceSettingV2EffectivePersonalComputeToHclTerraform(struct?: WorkspaceSettingV2EffectivePersonalCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceSettingV2EffectivePersonalComputeToHclTerraform(struct?: WorkspaceSettingV2EffectivePersonalCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2271,19 +2275,19 @@ export function workspaceSettingV2EffectivePersonalComputeToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkspaceSettingV2EffectivePersonalComputeOutputReference extends cdktf.ComplexObject {
+export class WorkspaceSettingV2EffectivePersonalComputeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): WorkspaceSettingV2EffectivePersonalCompute | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkspaceSettingV2EffectivePersonalCompute | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2296,13 +2300,13 @@ export class WorkspaceSettingV2EffectivePersonalComputeOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkspaceSettingV2EffectivePersonalCompute | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkspaceSettingV2EffectivePersonalCompute | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2331,30 +2335,30 @@ export class WorkspaceSettingV2EffectivePersonalComputeOutputReference extends c
 }
 export interface WorkspaceSettingV2EffectiveRestrictWorkspaceAdmins {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_setting_v2#status WorkspaceSettingV2#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2#status WorkspaceSettingV2#status}
   */
   readonly status: string;
 }
 
-export function workspaceSettingV2EffectiveRestrictWorkspaceAdminsToTerraform(struct?: WorkspaceSettingV2EffectiveRestrictWorkspaceAdmins | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceSettingV2EffectiveRestrictWorkspaceAdminsToTerraform(struct?: WorkspaceSettingV2EffectiveRestrictWorkspaceAdmins | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    status: cdktf.stringToTerraform(struct!.status),
+    status: cdktn.stringToTerraform(struct!.status),
   }
 }
 
 
-export function workspaceSettingV2EffectiveRestrictWorkspaceAdminsToHclTerraform(struct?: WorkspaceSettingV2EffectiveRestrictWorkspaceAdmins | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceSettingV2EffectiveRestrictWorkspaceAdminsToHclTerraform(struct?: WorkspaceSettingV2EffectiveRestrictWorkspaceAdmins | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     status: {
-      value: cdktf.stringToHclTerraform(struct!.status),
+      value: cdktn.stringToHclTerraform(struct!.status),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2365,19 +2369,19 @@ export function workspaceSettingV2EffectiveRestrictWorkspaceAdminsToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkspaceSettingV2EffectiveRestrictWorkspaceAdminsOutputReference extends cdktf.ComplexObject {
+export class WorkspaceSettingV2EffectiveRestrictWorkspaceAdminsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): WorkspaceSettingV2EffectiveRestrictWorkspaceAdmins | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkspaceSettingV2EffectiveRestrictWorkspaceAdmins | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2390,13 +2394,13 @@ export class WorkspaceSettingV2EffectiveRestrictWorkspaceAdminsOutputReference e
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkspaceSettingV2EffectiveRestrictWorkspaceAdmins | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkspaceSettingV2EffectiveRestrictWorkspaceAdmins | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._status = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2422,30 +2426,30 @@ export class WorkspaceSettingV2EffectiveRestrictWorkspaceAdminsOutputReference e
 }
 export interface WorkspaceSettingV2EffectiveStringVal {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}
   */
   readonly value?: string;
 }
 
 export function workspaceSettingV2EffectiveStringValToTerraform(struct?: WorkspaceSettingV2EffectiveStringVal): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    value: cdktf.stringToTerraform(struct!.value),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
 export function workspaceSettingV2EffectiveStringValToHclTerraform(struct?: WorkspaceSettingV2EffectiveStringVal): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2456,14 +2460,14 @@ export function workspaceSettingV2EffectiveStringValToHclTerraform(struct?: Work
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkspaceSettingV2EffectiveStringValOutputReference extends cdktf.ComplexObject {
+export class WorkspaceSettingV2EffectiveStringValOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -2506,30 +2510,30 @@ export class WorkspaceSettingV2EffectiveStringValOutputReference extends cdktf.C
 }
 export interface WorkspaceSettingV2IntegerVal {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}
   */
   readonly value?: number;
 }
 
-export function workspaceSettingV2IntegerValToTerraform(struct?: WorkspaceSettingV2IntegerVal | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceSettingV2IntegerValToTerraform(struct?: WorkspaceSettingV2IntegerVal | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    value: cdktf.numberToTerraform(struct!.value),
+    value: cdktn.numberToTerraform(struct!.value),
   }
 }
 
 
-export function workspaceSettingV2IntegerValToHclTerraform(struct?: WorkspaceSettingV2IntegerVal | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceSettingV2IntegerValToHclTerraform(struct?: WorkspaceSettingV2IntegerVal | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     value: {
-      value: cdktf.numberToHclTerraform(struct!.value),
+      value: cdktn.numberToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -2540,19 +2544,19 @@ export function workspaceSettingV2IntegerValToHclTerraform(struct?: WorkspaceSet
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkspaceSettingV2IntegerValOutputReference extends cdktf.ComplexObject {
+export class WorkspaceSettingV2IntegerValOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): WorkspaceSettingV2IntegerVal | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkspaceSettingV2IntegerVal | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2565,13 +2569,13 @@ export class WorkspaceSettingV2IntegerValOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkspaceSettingV2IntegerVal | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkspaceSettingV2IntegerVal | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2600,30 +2604,30 @@ export class WorkspaceSettingV2IntegerValOutputReference extends cdktf.ComplexOb
 }
 export interface WorkspaceSettingV2PersonalCompute {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}
   */
   readonly value?: string;
 }
 
-export function workspaceSettingV2PersonalComputeToTerraform(struct?: WorkspaceSettingV2PersonalCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceSettingV2PersonalComputeToTerraform(struct?: WorkspaceSettingV2PersonalCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    value: cdktf.stringToTerraform(struct!.value),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function workspaceSettingV2PersonalComputeToHclTerraform(struct?: WorkspaceSettingV2PersonalCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceSettingV2PersonalComputeToHclTerraform(struct?: WorkspaceSettingV2PersonalCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2634,19 +2638,19 @@ export function workspaceSettingV2PersonalComputeToHclTerraform(struct?: Workspa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkspaceSettingV2PersonalComputeOutputReference extends cdktf.ComplexObject {
+export class WorkspaceSettingV2PersonalComputeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): WorkspaceSettingV2PersonalCompute | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkspaceSettingV2PersonalCompute | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2659,13 +2663,13 @@ export class WorkspaceSettingV2PersonalComputeOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkspaceSettingV2PersonalCompute | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkspaceSettingV2PersonalCompute | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2692,32 +2696,32 @@ export class WorkspaceSettingV2PersonalComputeOutputReference extends cdktf.Comp
     return this._value;
   }
 }
-export interface WorkspaceSettingV2RestrictWorkspaceAdmins {
+export interface WorkspaceSettingV2ProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_setting_v2#status WorkspaceSettingV2#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2#workspace_id WorkspaceSettingV2#workspace_id}
   */
-  readonly status: string;
+  readonly workspaceId: string;
 }
 
-export function workspaceSettingV2RestrictWorkspaceAdminsToTerraform(struct?: WorkspaceSettingV2RestrictWorkspaceAdmins | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceSettingV2ProviderConfigToTerraform(struct?: WorkspaceSettingV2ProviderConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    status: cdktf.stringToTerraform(struct!.status),
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
   }
 }
 
 
-export function workspaceSettingV2RestrictWorkspaceAdminsToHclTerraform(struct?: WorkspaceSettingV2RestrictWorkspaceAdmins | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceSettingV2ProviderConfigToHclTerraform(struct?: WorkspaceSettingV2ProviderConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
-    status: {
-      value: cdktf.stringToHclTerraform(struct!.status),
+    workspace_id: {
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2728,19 +2732,110 @@ export function workspaceSettingV2RestrictWorkspaceAdminsToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkspaceSettingV2RestrictWorkspaceAdminsOutputReference extends cdktf.ComplexObject {
+export class WorkspaceSettingV2ProviderConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): WorkspaceSettingV2RestrictWorkspaceAdmins | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkspaceSettingV2ProviderConfig | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._workspaceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workspaceId = this._workspaceId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: WorkspaceSettingV2ProviderConfig | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._workspaceId = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._workspaceId = value.workspaceId;
+    }
+  }
+
+  // workspace_id - computed: false, optional: false, required: true
+  private _workspaceId?: string; 
+  public get workspaceId() {
+    return this.getStringAttribute('workspace_id');
+  }
+  public set workspaceId(value: string) {
+    this._workspaceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workspaceIdInput() {
+    return this._workspaceId;
+  }
+}
+export interface WorkspaceSettingV2RestrictWorkspaceAdmins {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2#status WorkspaceSettingV2#status}
+  */
+  readonly status: string;
+}
+
+export function workspaceSettingV2RestrictWorkspaceAdminsToTerraform(struct?: WorkspaceSettingV2RestrictWorkspaceAdmins | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    status: cdktn.stringToTerraform(struct!.status),
+  }
+}
+
+
+export function workspaceSettingV2RestrictWorkspaceAdminsToHclTerraform(struct?: WorkspaceSettingV2RestrictWorkspaceAdmins | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    status: {
+      value: cdktn.stringToHclTerraform(struct!.status),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class WorkspaceSettingV2RestrictWorkspaceAdminsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): WorkspaceSettingV2RestrictWorkspaceAdmins | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2753,13 +2848,13 @@ export class WorkspaceSettingV2RestrictWorkspaceAdminsOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkspaceSettingV2RestrictWorkspaceAdmins | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkspaceSettingV2RestrictWorkspaceAdmins | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._status = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2785,30 +2880,30 @@ export class WorkspaceSettingV2RestrictWorkspaceAdminsOutputReference extends cd
 }
 export interface WorkspaceSettingV2StringVal {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2#value WorkspaceSettingV2#value}
   */
   readonly value?: string;
 }
 
-export function workspaceSettingV2StringValToTerraform(struct?: WorkspaceSettingV2StringVal | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceSettingV2StringValToTerraform(struct?: WorkspaceSettingV2StringVal | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    value: cdktf.stringToTerraform(struct!.value),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function workspaceSettingV2StringValToHclTerraform(struct?: WorkspaceSettingV2StringVal | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workspaceSettingV2StringValToHclTerraform(struct?: WorkspaceSettingV2StringVal | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2819,19 +2914,19 @@ export function workspaceSettingV2StringValToHclTerraform(struct?: WorkspaceSett
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkspaceSettingV2StringValOutputReference extends cdktf.ComplexObject {
+export class WorkspaceSettingV2StringValOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): WorkspaceSettingV2StringVal | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkspaceSettingV2StringVal | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2844,13 +2939,13 @@ export class WorkspaceSettingV2StringValOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkspaceSettingV2StringVal | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkspaceSettingV2StringVal | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2879,9 +2974,9 @@ export class WorkspaceSettingV2StringValOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_setting_v2 databricks_workspace_setting_v2}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2 databricks_workspace_setting_v2}
 */
-export class WorkspaceSettingV2 extends cdktf.TerraformResource {
+export class WorkspaceSettingV2 extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -2892,14 +2987,14 @@ export class WorkspaceSettingV2 extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a WorkspaceSettingV2 resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a WorkspaceSettingV2 resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WorkspaceSettingV2 to import
-  * @param importFromId The id of the existing WorkspaceSettingV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_setting_v2#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WorkspaceSettingV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WorkspaceSettingV2 to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_workspace_setting_v2", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_workspace_setting_v2", importId: importFromId, provider });
       }
 
   // ===========
@@ -2907,7 +3002,7 @@ export class WorkspaceSettingV2 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/workspace_setting_v2 databricks_workspace_setting_v2} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/workspace_setting_v2 databricks_workspace_setting_v2} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2918,7 +3013,7 @@ export class WorkspaceSettingV2 extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_workspace_setting_v2',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -2941,6 +3036,7 @@ export class WorkspaceSettingV2 extends cdktf.TerraformResource {
     this._integerVal.internalValue = config.integerVal;
     this._name = config.name;
     this._personalCompute.internalValue = config.personalCompute;
+    this._providerConfig.internalValue = config.providerConfig;
     this._restrictWorkspaceAdmins.internalValue = config.restrictWorkspaceAdmins;
     this._stringVal.internalValue = config.stringVal;
   }
@@ -3159,6 +3255,22 @@ export class WorkspaceSettingV2 extends cdktf.TerraformResource {
     return this._personalCompute.internalValue;
   }
 
+  // provider_config - computed: false, optional: true, required: false
+  private _providerConfig = new WorkspaceSettingV2ProviderConfigOutputReference(this, "provider_config");
+  public get providerConfig() {
+    return this._providerConfig;
+  }
+  public putProviderConfig(value: WorkspaceSettingV2ProviderConfig) {
+    this._providerConfig.internalValue = value;
+  }
+  public resetProviderConfig() {
+    this._providerConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerConfigInput() {
+    return this._providerConfig.internalValue;
+  }
+
   // restrict_workspace_admins - computed: false, optional: true, required: false
   private _restrictWorkspaceAdmins = new WorkspaceSettingV2RestrictWorkspaceAdminsOutputReference(this, "restrict_workspace_admins");
   public get restrictWorkspaceAdmins() {
@@ -3207,8 +3319,9 @@ export class WorkspaceSettingV2 extends cdktf.TerraformResource {
       effective_personal_compute: workspaceSettingV2EffectivePersonalComputeToTerraform(this._effectivePersonalCompute.internalValue),
       effective_restrict_workspace_admins: workspaceSettingV2EffectiveRestrictWorkspaceAdminsToTerraform(this._effectiveRestrictWorkspaceAdmins.internalValue),
       integer_val: workspaceSettingV2IntegerValToTerraform(this._integerVal.internalValue),
-      name: cdktf.stringToTerraform(this._name),
+      name: cdktn.stringToTerraform(this._name),
       personal_compute: workspaceSettingV2PersonalComputeToTerraform(this._personalCompute.internalValue),
+      provider_config: workspaceSettingV2ProviderConfigToTerraform(this._providerConfig.internalValue),
       restrict_workspace_admins: workspaceSettingV2RestrictWorkspaceAdminsToTerraform(this._restrictWorkspaceAdmins.internalValue),
       string_val: workspaceSettingV2StringValToTerraform(this._stringVal.internalValue),
     };
@@ -3277,7 +3390,7 @@ export class WorkspaceSettingV2 extends cdktf.TerraformResource {
         storageClassType: "WorkspaceSettingV2IntegerVal",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -3287,6 +3400,12 @@ export class WorkspaceSettingV2 extends cdktf.TerraformResource {
         isBlock: true,
         type: "struct",
         storageClassType: "WorkspaceSettingV2PersonalCompute",
+      },
+      provider_config: {
+        value: workspaceSettingV2ProviderConfigToHclTerraform(this._providerConfig.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "WorkspaceSettingV2ProviderConfig",
       },
       restrict_workspace_admins: {
         value: workspaceSettingV2RestrictWorkspaceAdminsToHclTerraform(this._restrictWorkspaceAdmins.internalValue),

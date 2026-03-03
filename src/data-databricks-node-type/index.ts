@@ -1,113 +1,113 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/node_type
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/node_type
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataDatabricksNodeTypeConfig extends cdktf.TerraformMetaArguments {
+export interface DataDatabricksNodeTypeConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/node_type#arm DataDatabricksNodeType#arm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/node_type#arm DataDatabricksNodeType#arm}
   */
-  readonly arm?: boolean | cdktf.IResolvable;
+  readonly arm?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/node_type#category DataDatabricksNodeType#category}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/node_type#category DataDatabricksNodeType#category}
   */
   readonly category?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/node_type#fleet DataDatabricksNodeType#fleet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/node_type#fleet DataDatabricksNodeType#fleet}
   */
-  readonly fleet?: boolean | cdktf.IResolvable;
+  readonly fleet?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/node_type#gb_per_core DataDatabricksNodeType#gb_per_core}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/node_type#gb_per_core DataDatabricksNodeType#gb_per_core}
   */
   readonly gbPerCore?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/node_type#graviton DataDatabricksNodeType#graviton}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/node_type#graviton DataDatabricksNodeType#graviton}
   */
-  readonly graviton?: boolean | cdktf.IResolvable;
+  readonly graviton?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/node_type#id DataDatabricksNodeType#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/node_type#id DataDatabricksNodeType#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/node_type#is_io_cache_enabled DataDatabricksNodeType#is_io_cache_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/node_type#is_io_cache_enabled DataDatabricksNodeType#is_io_cache_enabled}
   */
-  readonly isIoCacheEnabled?: boolean | cdktf.IResolvable;
+  readonly isIoCacheEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/node_type#local_disk DataDatabricksNodeType#local_disk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/node_type#local_disk DataDatabricksNodeType#local_disk}
   */
-  readonly localDisk?: boolean | cdktf.IResolvable;
+  readonly localDisk?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/node_type#local_disk_min_size DataDatabricksNodeType#local_disk_min_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/node_type#local_disk_min_size DataDatabricksNodeType#local_disk_min_size}
   */
   readonly localDiskMinSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/node_type#min_cores DataDatabricksNodeType#min_cores}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/node_type#min_cores DataDatabricksNodeType#min_cores}
   */
   readonly minCores?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/node_type#min_gpus DataDatabricksNodeType#min_gpus}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/node_type#min_gpus DataDatabricksNodeType#min_gpus}
   */
   readonly minGpus?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/node_type#min_memory_gb DataDatabricksNodeType#min_memory_gb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/node_type#min_memory_gb DataDatabricksNodeType#min_memory_gb}
   */
   readonly minMemoryGb?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/node_type#photon_driver_capable DataDatabricksNodeType#photon_driver_capable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/node_type#photon_driver_capable DataDatabricksNodeType#photon_driver_capable}
   */
-  readonly photonDriverCapable?: boolean | cdktf.IResolvable;
+  readonly photonDriverCapable?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/node_type#photon_worker_capable DataDatabricksNodeType#photon_worker_capable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/node_type#photon_worker_capable DataDatabricksNodeType#photon_worker_capable}
   */
-  readonly photonWorkerCapable?: boolean | cdktf.IResolvable;
+  readonly photonWorkerCapable?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/node_type#support_port_forwarding DataDatabricksNodeType#support_port_forwarding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/node_type#support_port_forwarding DataDatabricksNodeType#support_port_forwarding}
   */
-  readonly supportPortForwarding?: boolean | cdktf.IResolvable;
+  readonly supportPortForwarding?: boolean | cdktn.IResolvable;
   /**
   * provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/node_type#provider_config DataDatabricksNodeType#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/node_type#provider_config DataDatabricksNodeType#provider_config}
   */
   readonly providerConfig?: DataDatabricksNodeTypeProviderConfig;
 }
 export interface DataDatabricksNodeTypeProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/node_type#workspace_id DataDatabricksNodeType#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/node_type#workspace_id DataDatabricksNodeType#workspace_id}
   */
   readonly workspaceId: string;
 }
 
 export function dataDatabricksNodeTypeProviderConfigToTerraform(struct?: DataDatabricksNodeTypeProviderConfigOutputReference | DataDatabricksNodeTypeProviderConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    workspace_id: cdktf.stringToTerraform(struct!.workspaceId),
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
   }
 }
 
 
 export function dataDatabricksNodeTypeProviderConfigToHclTerraform(struct?: DataDatabricksNodeTypeProviderConfigOutputReference | DataDatabricksNodeTypeProviderConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     workspace_id: {
-      value: cdktf.stringToHclTerraform(struct!.workspaceId),
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -118,14 +118,14 @@ export function dataDatabricksNodeTypeProviderConfigToHclTerraform(struct?: Data
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksNodeTypeProviderConfigOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksNodeTypeProviderConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -165,9 +165,9 @@ export class DataDatabricksNodeTypeProviderConfigOutputReference extends cdktf.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/node_type databricks_node_type}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/node_type databricks_node_type}
 */
-export class DataDatabricksNodeType extends cdktf.TerraformDataSource {
+export class DataDatabricksNodeType extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -178,14 +178,14 @@ export class DataDatabricksNodeType extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataDatabricksNodeType resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataDatabricksNodeType resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksNodeType to import
-  * @param importFromId The id of the existing DataDatabricksNodeType that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/node_type#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksNodeType that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/node_type#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksNodeType to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_node_type", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_node_type", importId: importFromId, provider });
       }
 
   // ===========
@@ -193,7 +193,7 @@ export class DataDatabricksNodeType extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/node_type databricks_node_type} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/node_type databricks_node_type} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -204,7 +204,7 @@ export class DataDatabricksNodeType extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_node_type',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -238,11 +238,11 @@ export class DataDatabricksNodeType extends cdktf.TerraformDataSource {
   // ==========
 
   // arm - computed: false, optional: true, required: false
-  private _arm?: boolean | cdktf.IResolvable; 
+  private _arm?: boolean | cdktn.IResolvable; 
   public get arm() {
     return this.getBooleanAttribute('arm');
   }
-  public set arm(value: boolean | cdktf.IResolvable) {
+  public set arm(value: boolean | cdktn.IResolvable) {
     this._arm = value;
   }
   public resetArm() {
@@ -270,11 +270,11 @@ export class DataDatabricksNodeType extends cdktf.TerraformDataSource {
   }
 
   // fleet - computed: false, optional: true, required: false
-  private _fleet?: boolean | cdktf.IResolvable; 
+  private _fleet?: boolean | cdktn.IResolvable; 
   public get fleet() {
     return this.getBooleanAttribute('fleet');
   }
-  public set fleet(value: boolean | cdktf.IResolvable) {
+  public set fleet(value: boolean | cdktn.IResolvable) {
     this._fleet = value;
   }
   public resetFleet() {
@@ -302,11 +302,11 @@ export class DataDatabricksNodeType extends cdktf.TerraformDataSource {
   }
 
   // graviton - computed: false, optional: true, required: false
-  private _graviton?: boolean | cdktf.IResolvable; 
+  private _graviton?: boolean | cdktn.IResolvable; 
   public get graviton() {
     return this.getBooleanAttribute('graviton');
   }
-  public set graviton(value: boolean | cdktf.IResolvable) {
+  public set graviton(value: boolean | cdktn.IResolvable) {
     this._graviton = value;
   }
   public resetGraviton() {
@@ -334,11 +334,11 @@ export class DataDatabricksNodeType extends cdktf.TerraformDataSource {
   }
 
   // is_io_cache_enabled - computed: false, optional: true, required: false
-  private _isIoCacheEnabled?: boolean | cdktf.IResolvable; 
+  private _isIoCacheEnabled?: boolean | cdktn.IResolvable; 
   public get isIoCacheEnabled() {
     return this.getBooleanAttribute('is_io_cache_enabled');
   }
-  public set isIoCacheEnabled(value: boolean | cdktf.IResolvable) {
+  public set isIoCacheEnabled(value: boolean | cdktn.IResolvable) {
     this._isIoCacheEnabled = value;
   }
   public resetIsIoCacheEnabled() {
@@ -350,11 +350,11 @@ export class DataDatabricksNodeType extends cdktf.TerraformDataSource {
   }
 
   // local_disk - computed: false, optional: true, required: false
-  private _localDisk?: boolean | cdktf.IResolvable; 
+  private _localDisk?: boolean | cdktn.IResolvable; 
   public get localDisk() {
     return this.getBooleanAttribute('local_disk');
   }
-  public set localDisk(value: boolean | cdktf.IResolvable) {
+  public set localDisk(value: boolean | cdktn.IResolvable) {
     this._localDisk = value;
   }
   public resetLocalDisk() {
@@ -430,11 +430,11 @@ export class DataDatabricksNodeType extends cdktf.TerraformDataSource {
   }
 
   // photon_driver_capable - computed: false, optional: true, required: false
-  private _photonDriverCapable?: boolean | cdktf.IResolvable; 
+  private _photonDriverCapable?: boolean | cdktn.IResolvable; 
   public get photonDriverCapable() {
     return this.getBooleanAttribute('photon_driver_capable');
   }
-  public set photonDriverCapable(value: boolean | cdktf.IResolvable) {
+  public set photonDriverCapable(value: boolean | cdktn.IResolvable) {
     this._photonDriverCapable = value;
   }
   public resetPhotonDriverCapable() {
@@ -446,11 +446,11 @@ export class DataDatabricksNodeType extends cdktf.TerraformDataSource {
   }
 
   // photon_worker_capable - computed: false, optional: true, required: false
-  private _photonWorkerCapable?: boolean | cdktf.IResolvable; 
+  private _photonWorkerCapable?: boolean | cdktn.IResolvable; 
   public get photonWorkerCapable() {
     return this.getBooleanAttribute('photon_worker_capable');
   }
-  public set photonWorkerCapable(value: boolean | cdktf.IResolvable) {
+  public set photonWorkerCapable(value: boolean | cdktn.IResolvable) {
     this._photonWorkerCapable = value;
   }
   public resetPhotonWorkerCapable() {
@@ -462,11 +462,11 @@ export class DataDatabricksNodeType extends cdktf.TerraformDataSource {
   }
 
   // support_port_forwarding - computed: false, optional: true, required: false
-  private _supportPortForwarding?: boolean | cdktf.IResolvable; 
+  private _supportPortForwarding?: boolean | cdktn.IResolvable; 
   public get supportPortForwarding() {
     return this.getBooleanAttribute('support_port_forwarding');
   }
-  public set supportPortForwarding(value: boolean | cdktf.IResolvable) {
+  public set supportPortForwarding(value: boolean | cdktn.IResolvable) {
     this._supportPortForwarding = value;
   }
   public resetSupportPortForwarding() {
@@ -499,21 +499,21 @@ export class DataDatabricksNodeType extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      arm: cdktf.booleanToTerraform(this._arm),
-      category: cdktf.stringToTerraform(this._category),
-      fleet: cdktf.booleanToTerraform(this._fleet),
-      gb_per_core: cdktf.numberToTerraform(this._gbPerCore),
-      graviton: cdktf.booleanToTerraform(this._graviton),
-      id: cdktf.stringToTerraform(this._id),
-      is_io_cache_enabled: cdktf.booleanToTerraform(this._isIoCacheEnabled),
-      local_disk: cdktf.booleanToTerraform(this._localDisk),
-      local_disk_min_size: cdktf.numberToTerraform(this._localDiskMinSize),
-      min_cores: cdktf.numberToTerraform(this._minCores),
-      min_gpus: cdktf.numberToTerraform(this._minGpus),
-      min_memory_gb: cdktf.numberToTerraform(this._minMemoryGb),
-      photon_driver_capable: cdktf.booleanToTerraform(this._photonDriverCapable),
-      photon_worker_capable: cdktf.booleanToTerraform(this._photonWorkerCapable),
-      support_port_forwarding: cdktf.booleanToTerraform(this._supportPortForwarding),
+      arm: cdktn.booleanToTerraform(this._arm),
+      category: cdktn.stringToTerraform(this._category),
+      fleet: cdktn.booleanToTerraform(this._fleet),
+      gb_per_core: cdktn.numberToTerraform(this._gbPerCore),
+      graviton: cdktn.booleanToTerraform(this._graviton),
+      id: cdktn.stringToTerraform(this._id),
+      is_io_cache_enabled: cdktn.booleanToTerraform(this._isIoCacheEnabled),
+      local_disk: cdktn.booleanToTerraform(this._localDisk),
+      local_disk_min_size: cdktn.numberToTerraform(this._localDiskMinSize),
+      min_cores: cdktn.numberToTerraform(this._minCores),
+      min_gpus: cdktn.numberToTerraform(this._minGpus),
+      min_memory_gb: cdktn.numberToTerraform(this._minMemoryGb),
+      photon_driver_capable: cdktn.booleanToTerraform(this._photonDriverCapable),
+      photon_worker_capable: cdktn.booleanToTerraform(this._photonWorkerCapable),
+      support_port_forwarding: cdktn.booleanToTerraform(this._supportPortForwarding),
       provider_config: dataDatabricksNodeTypeProviderConfigToTerraform(this._providerConfig.internalValue),
     };
   }
@@ -521,91 +521,91 @@ export class DataDatabricksNodeType extends cdktf.TerraformDataSource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       arm: {
-        value: cdktf.booleanToHclTerraform(this._arm),
+        value: cdktn.booleanToHclTerraform(this._arm),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       category: {
-        value: cdktf.stringToHclTerraform(this._category),
+        value: cdktn.stringToHclTerraform(this._category),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       fleet: {
-        value: cdktf.booleanToHclTerraform(this._fleet),
+        value: cdktn.booleanToHclTerraform(this._fleet),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       gb_per_core: {
-        value: cdktf.numberToHclTerraform(this._gbPerCore),
+        value: cdktn.numberToHclTerraform(this._gbPerCore),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       graviton: {
-        value: cdktf.booleanToHclTerraform(this._graviton),
+        value: cdktn.booleanToHclTerraform(this._graviton),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       is_io_cache_enabled: {
-        value: cdktf.booleanToHclTerraform(this._isIoCacheEnabled),
+        value: cdktn.booleanToHclTerraform(this._isIoCacheEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       local_disk: {
-        value: cdktf.booleanToHclTerraform(this._localDisk),
+        value: cdktn.booleanToHclTerraform(this._localDisk),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       local_disk_min_size: {
-        value: cdktf.numberToHclTerraform(this._localDiskMinSize),
+        value: cdktn.numberToHclTerraform(this._localDiskMinSize),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       min_cores: {
-        value: cdktf.numberToHclTerraform(this._minCores),
+        value: cdktn.numberToHclTerraform(this._minCores),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       min_gpus: {
-        value: cdktf.numberToHclTerraform(this._minGpus),
+        value: cdktn.numberToHclTerraform(this._minGpus),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       min_memory_gb: {
-        value: cdktf.numberToHclTerraform(this._minMemoryGb),
+        value: cdktn.numberToHclTerraform(this._minMemoryGb),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       photon_driver_capable: {
-        value: cdktf.booleanToHclTerraform(this._photonDriverCapable),
+        value: cdktn.booleanToHclTerraform(this._photonDriverCapable),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       photon_worker_capable: {
-        value: cdktf.booleanToHclTerraform(this._photonWorkerCapable),
+        value: cdktn.booleanToHclTerraform(this._photonWorkerCapable),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       support_port_forwarding: {
-        value: cdktf.booleanToHclTerraform(this._supportPortForwarding),
+        value: cdktn.booleanToHclTerraform(this._supportPortForwarding),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

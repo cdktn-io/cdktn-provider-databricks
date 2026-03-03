@@ -1,94 +1,94 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/user
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/user
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface UserConfig extends cdktf.TerraformMetaArguments {
+export interface UserConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/user#acl_principal_id User#acl_principal_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/user#acl_principal_id User#acl_principal_id}
   */
   readonly aclPrincipalId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/user#active User#active}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/user#active User#active}
   */
-  readonly active?: boolean | cdktf.IResolvable;
+  readonly active?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/user#allow_cluster_create User#allow_cluster_create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/user#allow_cluster_create User#allow_cluster_create}
   */
-  readonly allowClusterCreate?: boolean | cdktf.IResolvable;
+  readonly allowClusterCreate?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/user#allow_instance_pool_create User#allow_instance_pool_create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/user#allow_instance_pool_create User#allow_instance_pool_create}
   */
-  readonly allowInstancePoolCreate?: boolean | cdktf.IResolvable;
+  readonly allowInstancePoolCreate?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/user#databricks_sql_access User#databricks_sql_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/user#databricks_sql_access User#databricks_sql_access}
   */
-  readonly databricksSqlAccess?: boolean | cdktf.IResolvable;
+  readonly databricksSqlAccess?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/user#disable_as_user_deletion User#disable_as_user_deletion}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/user#disable_as_user_deletion User#disable_as_user_deletion}
   */
-  readonly disableAsUserDeletion?: boolean | cdktf.IResolvable;
+  readonly disableAsUserDeletion?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/user#display_name User#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/user#display_name User#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/user#external_id User#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/user#external_id User#external_id}
   */
   readonly externalId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/user#force User#force}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/user#force User#force}
   */
-  readonly force?: boolean | cdktf.IResolvable;
+  readonly force?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/user#force_delete_home_dir User#force_delete_home_dir}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/user#force_delete_home_dir User#force_delete_home_dir}
   */
-  readonly forceDeleteHomeDir?: boolean | cdktf.IResolvable;
+  readonly forceDeleteHomeDir?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/user#force_delete_repos User#force_delete_repos}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/user#force_delete_repos User#force_delete_repos}
   */
-  readonly forceDeleteRepos?: boolean | cdktf.IResolvable;
+  readonly forceDeleteRepos?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/user#home User#home}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/user#home User#home}
   */
   readonly home?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/user#id User#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/user#id User#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/user#repos User#repos}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/user#repos User#repos}
   */
   readonly repos?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/user#user_name User#user_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/user#user_name User#user_name}
   */
   readonly userName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/user#workspace_access User#workspace_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/user#workspace_access User#workspace_access}
   */
-  readonly workspaceAccess?: boolean | cdktf.IResolvable;
+  readonly workspaceAccess?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/user#workspace_consume User#workspace_consume}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/user#workspace_consume User#workspace_consume}
   */
-  readonly workspaceConsume?: boolean | cdktf.IResolvable;
+  readonly workspaceConsume?: boolean | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/user databricks_user}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/user databricks_user}
 */
-export class User extends cdktf.TerraformResource {
+export class User extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -99,14 +99,14 @@ export class User extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a User resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a User resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the User to import
-  * @param importFromId The id of the existing User that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/user#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing User that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/user#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the User to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_user", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_user", importId: importFromId, provider });
       }
 
   // ===========
@@ -114,7 +114,7 @@ export class User extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/user databricks_user} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/user databricks_user} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -125,7 +125,7 @@ export class User extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_user',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -176,11 +176,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // active - computed: false, optional: true, required: false
-  private _active?: boolean | cdktf.IResolvable; 
+  private _active?: boolean | cdktn.IResolvable; 
   public get active() {
     return this.getBooleanAttribute('active');
   }
-  public set active(value: boolean | cdktf.IResolvable) {
+  public set active(value: boolean | cdktn.IResolvable) {
     this._active = value;
   }
   public resetActive() {
@@ -192,11 +192,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // allow_cluster_create - computed: false, optional: true, required: false
-  private _allowClusterCreate?: boolean | cdktf.IResolvable; 
+  private _allowClusterCreate?: boolean | cdktn.IResolvable; 
   public get allowClusterCreate() {
     return this.getBooleanAttribute('allow_cluster_create');
   }
-  public set allowClusterCreate(value: boolean | cdktf.IResolvable) {
+  public set allowClusterCreate(value: boolean | cdktn.IResolvable) {
     this._allowClusterCreate = value;
   }
   public resetAllowClusterCreate() {
@@ -208,11 +208,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // allow_instance_pool_create - computed: false, optional: true, required: false
-  private _allowInstancePoolCreate?: boolean | cdktf.IResolvable; 
+  private _allowInstancePoolCreate?: boolean | cdktn.IResolvable; 
   public get allowInstancePoolCreate() {
     return this.getBooleanAttribute('allow_instance_pool_create');
   }
-  public set allowInstancePoolCreate(value: boolean | cdktf.IResolvable) {
+  public set allowInstancePoolCreate(value: boolean | cdktn.IResolvable) {
     this._allowInstancePoolCreate = value;
   }
   public resetAllowInstancePoolCreate() {
@@ -224,11 +224,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // databricks_sql_access - computed: false, optional: true, required: false
-  private _databricksSqlAccess?: boolean | cdktf.IResolvable; 
+  private _databricksSqlAccess?: boolean | cdktn.IResolvable; 
   public get databricksSqlAccess() {
     return this.getBooleanAttribute('databricks_sql_access');
   }
-  public set databricksSqlAccess(value: boolean | cdktf.IResolvable) {
+  public set databricksSqlAccess(value: boolean | cdktn.IResolvable) {
     this._databricksSqlAccess = value;
   }
   public resetDatabricksSqlAccess() {
@@ -240,11 +240,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // disable_as_user_deletion - computed: true, optional: true, required: false
-  private _disableAsUserDeletion?: boolean | cdktf.IResolvable; 
+  private _disableAsUserDeletion?: boolean | cdktn.IResolvable; 
   public get disableAsUserDeletion() {
     return this.getBooleanAttribute('disable_as_user_deletion');
   }
-  public set disableAsUserDeletion(value: boolean | cdktf.IResolvable) {
+  public set disableAsUserDeletion(value: boolean | cdktn.IResolvable) {
     this._disableAsUserDeletion = value;
   }
   public resetDisableAsUserDeletion() {
@@ -288,11 +288,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // force - computed: false, optional: true, required: false
-  private _force?: boolean | cdktf.IResolvable; 
+  private _force?: boolean | cdktn.IResolvable; 
   public get force() {
     return this.getBooleanAttribute('force');
   }
-  public set force(value: boolean | cdktf.IResolvable) {
+  public set force(value: boolean | cdktn.IResolvable) {
     this._force = value;
   }
   public resetForce() {
@@ -304,11 +304,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // force_delete_home_dir - computed: false, optional: true, required: false
-  private _forceDeleteHomeDir?: boolean | cdktf.IResolvable; 
+  private _forceDeleteHomeDir?: boolean | cdktn.IResolvable; 
   public get forceDeleteHomeDir() {
     return this.getBooleanAttribute('force_delete_home_dir');
   }
-  public set forceDeleteHomeDir(value: boolean | cdktf.IResolvable) {
+  public set forceDeleteHomeDir(value: boolean | cdktn.IResolvable) {
     this._forceDeleteHomeDir = value;
   }
   public resetForceDeleteHomeDir() {
@@ -320,11 +320,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // force_delete_repos - computed: false, optional: true, required: false
-  private _forceDeleteRepos?: boolean | cdktf.IResolvable; 
+  private _forceDeleteRepos?: boolean | cdktn.IResolvable; 
   public get forceDeleteRepos() {
     return this.getBooleanAttribute('force_delete_repos');
   }
-  public set forceDeleteRepos(value: boolean | cdktf.IResolvable) {
+  public set forceDeleteRepos(value: boolean | cdktn.IResolvable) {
     this._forceDeleteRepos = value;
   }
   public resetForceDeleteRepos() {
@@ -397,11 +397,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // workspace_access - computed: false, optional: true, required: false
-  private _workspaceAccess?: boolean | cdktf.IResolvable; 
+  private _workspaceAccess?: boolean | cdktn.IResolvable; 
   public get workspaceAccess() {
     return this.getBooleanAttribute('workspace_access');
   }
-  public set workspaceAccess(value: boolean | cdktf.IResolvable) {
+  public set workspaceAccess(value: boolean | cdktn.IResolvable) {
     this._workspaceAccess = value;
   }
   public resetWorkspaceAccess() {
@@ -413,11 +413,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // workspace_consume - computed: false, optional: true, required: false
-  private _workspaceConsume?: boolean | cdktf.IResolvable; 
+  private _workspaceConsume?: boolean | cdktn.IResolvable; 
   public get workspaceConsume() {
     return this.getBooleanAttribute('workspace_consume');
   }
-  public set workspaceConsume(value: boolean | cdktf.IResolvable) {
+  public set workspaceConsume(value: boolean | cdktn.IResolvable) {
     this._workspaceConsume = value;
   }
   public resetWorkspaceConsume() {
@@ -434,126 +434,126 @@ export class User extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      acl_principal_id: cdktf.stringToTerraform(this._aclPrincipalId),
-      active: cdktf.booleanToTerraform(this._active),
-      allow_cluster_create: cdktf.booleanToTerraform(this._allowClusterCreate),
-      allow_instance_pool_create: cdktf.booleanToTerraform(this._allowInstancePoolCreate),
-      databricks_sql_access: cdktf.booleanToTerraform(this._databricksSqlAccess),
-      disable_as_user_deletion: cdktf.booleanToTerraform(this._disableAsUserDeletion),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      external_id: cdktf.stringToTerraform(this._externalId),
-      force: cdktf.booleanToTerraform(this._force),
-      force_delete_home_dir: cdktf.booleanToTerraform(this._forceDeleteHomeDir),
-      force_delete_repos: cdktf.booleanToTerraform(this._forceDeleteRepos),
-      home: cdktf.stringToTerraform(this._home),
-      id: cdktf.stringToTerraform(this._id),
-      repos: cdktf.stringToTerraform(this._repos),
-      user_name: cdktf.stringToTerraform(this._userName),
-      workspace_access: cdktf.booleanToTerraform(this._workspaceAccess),
-      workspace_consume: cdktf.booleanToTerraform(this._workspaceConsume),
+      acl_principal_id: cdktn.stringToTerraform(this._aclPrincipalId),
+      active: cdktn.booleanToTerraform(this._active),
+      allow_cluster_create: cdktn.booleanToTerraform(this._allowClusterCreate),
+      allow_instance_pool_create: cdktn.booleanToTerraform(this._allowInstancePoolCreate),
+      databricks_sql_access: cdktn.booleanToTerraform(this._databricksSqlAccess),
+      disable_as_user_deletion: cdktn.booleanToTerraform(this._disableAsUserDeletion),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      external_id: cdktn.stringToTerraform(this._externalId),
+      force: cdktn.booleanToTerraform(this._force),
+      force_delete_home_dir: cdktn.booleanToTerraform(this._forceDeleteHomeDir),
+      force_delete_repos: cdktn.booleanToTerraform(this._forceDeleteRepos),
+      home: cdktn.stringToTerraform(this._home),
+      id: cdktn.stringToTerraform(this._id),
+      repos: cdktn.stringToTerraform(this._repos),
+      user_name: cdktn.stringToTerraform(this._userName),
+      workspace_access: cdktn.booleanToTerraform(this._workspaceAccess),
+      workspace_consume: cdktn.booleanToTerraform(this._workspaceConsume),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       acl_principal_id: {
-        value: cdktf.stringToHclTerraform(this._aclPrincipalId),
+        value: cdktn.stringToHclTerraform(this._aclPrincipalId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       active: {
-        value: cdktf.booleanToHclTerraform(this._active),
+        value: cdktn.booleanToHclTerraform(this._active),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       allow_cluster_create: {
-        value: cdktf.booleanToHclTerraform(this._allowClusterCreate),
+        value: cdktn.booleanToHclTerraform(this._allowClusterCreate),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       allow_instance_pool_create: {
-        value: cdktf.booleanToHclTerraform(this._allowInstancePoolCreate),
+        value: cdktn.booleanToHclTerraform(this._allowInstancePoolCreate),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       databricks_sql_access: {
-        value: cdktf.booleanToHclTerraform(this._databricksSqlAccess),
+        value: cdktn.booleanToHclTerraform(this._databricksSqlAccess),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       disable_as_user_deletion: {
-        value: cdktf.booleanToHclTerraform(this._disableAsUserDeletion),
+        value: cdktn.booleanToHclTerraform(this._disableAsUserDeletion),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       external_id: {
-        value: cdktf.stringToHclTerraform(this._externalId),
+        value: cdktn.stringToHclTerraform(this._externalId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       force: {
-        value: cdktf.booleanToHclTerraform(this._force),
+        value: cdktn.booleanToHclTerraform(this._force),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       force_delete_home_dir: {
-        value: cdktf.booleanToHclTerraform(this._forceDeleteHomeDir),
+        value: cdktn.booleanToHclTerraform(this._forceDeleteHomeDir),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       force_delete_repos: {
-        value: cdktf.booleanToHclTerraform(this._forceDeleteRepos),
+        value: cdktn.booleanToHclTerraform(this._forceDeleteRepos),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       home: {
-        value: cdktf.stringToHclTerraform(this._home),
+        value: cdktn.stringToHclTerraform(this._home),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       repos: {
-        value: cdktf.stringToHclTerraform(this._repos),
+        value: cdktn.stringToHclTerraform(this._repos),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       user_name: {
-        value: cdktf.stringToHclTerraform(this._userName),
+        value: cdktn.stringToHclTerraform(this._userName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       workspace_access: {
-        value: cdktf.booleanToHclTerraform(this._workspaceAccess),
+        value: cdktn.booleanToHclTerraform(this._workspaceAccess),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       workspace_consume: {
-        value: cdktf.booleanToHclTerraform(this._workspaceConsume),
+        value: cdktn.booleanToHclTerraform(this._workspaceConsume),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

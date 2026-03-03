@@ -1,15 +1,15 @@
-# `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-databricks.provider"></a>
+# `provider` Submodule <a name="`provider` Submodule" id="@cdktn/provider-databricks.provider"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### DatabricksProvider <a name="DatabricksProvider" id="@cdktf/provider-databricks.provider.DatabricksProvider"></a>
+### DatabricksProvider <a name="DatabricksProvider" id="@cdktn/provider-databricks.provider.DatabricksProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs databricks}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs databricks}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.provider.DatabricksProvider.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.provider.DatabricksProvider.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_databricks import provider
+from cdktn_provider_databricks import provider
 
 provider.DatabricksProvider(
   scope: Construct,
@@ -35,6 +35,7 @@ provider.DatabricksProvider(
   databricks_id_token_filepath: str = None,
   debug_headers: bool | IResolvable = None,
   debug_truncate_bytes: typing.Union[int, float] = None,
+  disable_oauth_refresh_token: bool | IResolvable = None,
   experimental_is_unified_host: bool | IResolvable = None,
   google_credentials: str = None,
   google_service_account: str = None,
@@ -47,6 +48,7 @@ provider.DatabricksProvider(
   profile: str = None,
   rate_limit: typing.Union[int, float] = None,
   retry_timeout_seconds: typing.Union[int, float] = None,
+  scopes: typing.List[str] = None,
   serverless_compute_id: str = None,
   skip_verify: bool | IResolvable = None,
   token: str = None,
@@ -58,51 +60,53 @@ provider.DatabricksProvider(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#account_id DatabricksProvider#account_id}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.actionsIdTokenRequestToken">actions_id_token_request_token</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#actions_id_token_request_token DatabricksProvider#actions_id_token_request_token}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.actionsIdTokenRequestUrl">actions_id_token_request_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#actions_id_token_request_url DatabricksProvider#actions_id_token_request_url}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.alias">alias</a></code> | <code>str</code> | Alias name. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.audience">audience</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#audience DatabricksProvider#audience}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.authType">auth_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#auth_type DatabricksProvider#auth_type}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureClientId">azure_client_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#azure_client_id DatabricksProvider#azure_client_id}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureClientSecret">azure_client_secret</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#azure_client_secret DatabricksProvider#azure_client_secret}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureEnvironment">azure_environment</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#azure_environment DatabricksProvider#azure_environment}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureLoginAppId">azure_login_app_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#azure_login_app_id DatabricksProvider#azure_login_app_id}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureTenantId">azure_tenant_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#azure_tenant_id DatabricksProvider#azure_tenant_id}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureUseMsi">azure_use_msi</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#azure_use_msi DatabricksProvider#azure_use_msi}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureWorkspaceResourceId">azure_workspace_resource_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#azure_workspace_resource_id DatabricksProvider#azure_workspace_resource_id}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.clientId">client_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#client_id DatabricksProvider#client_id}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.clientSecret">client_secret</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#client_secret DatabricksProvider#client_secret}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.clusterId">cluster_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#cluster_id DatabricksProvider#cluster_id}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.configFile">config_file</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#config_file DatabricksProvider#config_file}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.databricksCliPath">databricks_cli_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#databricks_cli_path DatabricksProvider#databricks_cli_path}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.databricksIdTokenFilepath">databricks_id_token_filepath</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#databricks_id_token_filepath DatabricksProvider#databricks_id_token_filepath}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.debugHeaders">debug_headers</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#debug_headers DatabricksProvider#debug_headers}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.debugTruncateBytes">debug_truncate_bytes</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#debug_truncate_bytes DatabricksProvider#debug_truncate_bytes}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.experimentalIsUnifiedHost">experimental_is_unified_host</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#experimental_is_unified_host DatabricksProvider#experimental_is_unified_host}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.googleCredentials">google_credentials</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#google_credentials DatabricksProvider#google_credentials}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.googleServiceAccount">google_service_account</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#google_service_account DatabricksProvider#google_service_account}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.host">host</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#host DatabricksProvider#host}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.httpTimeoutSeconds">http_timeout_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#http_timeout_seconds DatabricksProvider#http_timeout_seconds}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.metadataServiceUrl">metadata_service_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#metadata_service_url DatabricksProvider#metadata_service_url}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.oauthCallbackPort">oauth_callback_port</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#oauth_callback_port DatabricksProvider#oauth_callback_port}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.oidcTokenEnv">oidc_token_env</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#oidc_token_env DatabricksProvider#oidc_token_env}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.password">password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#password DatabricksProvider#password}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.profile">profile</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#profile DatabricksProvider#profile}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.rateLimit">rate_limit</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#rate_limit DatabricksProvider#rate_limit}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.retryTimeoutSeconds">retry_timeout_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#retry_timeout_seconds DatabricksProvider#retry_timeout_seconds}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.serverlessComputeId">serverless_compute_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#serverless_compute_id DatabricksProvider#serverless_compute_id}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.skipVerify">skip_verify</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#skip_verify DatabricksProvider#skip_verify}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.token">token</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#token DatabricksProvider#token}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.username">username</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#username DatabricksProvider#username}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.warehouseId">warehouse_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#warehouse_id DatabricksProvider#warehouse_id}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#workspace_id DatabricksProvider#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#account_id DatabricksProvider#account_id}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.actionsIdTokenRequestToken">actions_id_token_request_token</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#actions_id_token_request_token DatabricksProvider#actions_id_token_request_token}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.actionsIdTokenRequestUrl">actions_id_token_request_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#actions_id_token_request_url DatabricksProvider#actions_id_token_request_url}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.alias">alias</a></code> | <code>str</code> | Alias name. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.audience">audience</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#audience DatabricksProvider#audience}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.authType">auth_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#auth_type DatabricksProvider#auth_type}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureClientId">azure_client_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#azure_client_id DatabricksProvider#azure_client_id}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureClientSecret">azure_client_secret</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#azure_client_secret DatabricksProvider#azure_client_secret}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureEnvironment">azure_environment</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#azure_environment DatabricksProvider#azure_environment}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureLoginAppId">azure_login_app_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#azure_login_app_id DatabricksProvider#azure_login_app_id}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureTenantId">azure_tenant_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#azure_tenant_id DatabricksProvider#azure_tenant_id}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureUseMsi">azure_use_msi</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#azure_use_msi DatabricksProvider#azure_use_msi}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureWorkspaceResourceId">azure_workspace_resource_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#azure_workspace_resource_id DatabricksProvider#azure_workspace_resource_id}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.clientId">client_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#client_id DatabricksProvider#client_id}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.clientSecret">client_secret</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#client_secret DatabricksProvider#client_secret}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.clusterId">cluster_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#cluster_id DatabricksProvider#cluster_id}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.configFile">config_file</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#config_file DatabricksProvider#config_file}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.databricksCliPath">databricks_cli_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#databricks_cli_path DatabricksProvider#databricks_cli_path}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.databricksIdTokenFilepath">databricks_id_token_filepath</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#databricks_id_token_filepath DatabricksProvider#databricks_id_token_filepath}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.debugHeaders">debug_headers</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#debug_headers DatabricksProvider#debug_headers}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.debugTruncateBytes">debug_truncate_bytes</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#debug_truncate_bytes DatabricksProvider#debug_truncate_bytes}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.disableOauthRefreshToken">disable_oauth_refresh_token</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#disable_oauth_refresh_token DatabricksProvider#disable_oauth_refresh_token}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.experimentalIsUnifiedHost">experimental_is_unified_host</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#experimental_is_unified_host DatabricksProvider#experimental_is_unified_host}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.googleCredentials">google_credentials</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#google_credentials DatabricksProvider#google_credentials}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.googleServiceAccount">google_service_account</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#google_service_account DatabricksProvider#google_service_account}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.host">host</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#host DatabricksProvider#host}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.httpTimeoutSeconds">http_timeout_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#http_timeout_seconds DatabricksProvider#http_timeout_seconds}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.metadataServiceUrl">metadata_service_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#metadata_service_url DatabricksProvider#metadata_service_url}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.oauthCallbackPort">oauth_callback_port</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#oauth_callback_port DatabricksProvider#oauth_callback_port}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.oidcTokenEnv">oidc_token_env</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#oidc_token_env DatabricksProvider#oidc_token_env}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.password">password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#password DatabricksProvider#password}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.profile">profile</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#profile DatabricksProvider#profile}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.rateLimit">rate_limit</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#rate_limit DatabricksProvider#rate_limit}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.retryTimeoutSeconds">retry_timeout_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#retry_timeout_seconds DatabricksProvider#retry_timeout_seconds}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.scopes">scopes</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#scopes DatabricksProvider#scopes}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.serverlessComputeId">serverless_compute_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#serverless_compute_id DatabricksProvider#serverless_compute_id}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.skipVerify">skip_verify</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#skip_verify DatabricksProvider#skip_verify}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.token">token</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#token DatabricksProvider#token}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.username">username</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#username DatabricksProvider#username}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.warehouseId">warehouse_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#warehouse_id DatabricksProvider#warehouse_id}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#workspace_id DatabricksProvider#workspace_id}. |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -110,7 +114,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -120,317 +124,333 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.accountId"></a>
+##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.accountId"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#account_id DatabricksProvider#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#account_id DatabricksProvider#account_id}.
 
 ---
 
-##### `actions_id_token_request_token`<sup>Optional</sup> <a name="actions_id_token_request_token" id="@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.actionsIdTokenRequestToken"></a>
+##### `actions_id_token_request_token`<sup>Optional</sup> <a name="actions_id_token_request_token" id="@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.actionsIdTokenRequestToken"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#actions_id_token_request_token DatabricksProvider#actions_id_token_request_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#actions_id_token_request_token DatabricksProvider#actions_id_token_request_token}.
 
 ---
 
-##### `actions_id_token_request_url`<sup>Optional</sup> <a name="actions_id_token_request_url" id="@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.actionsIdTokenRequestUrl"></a>
+##### `actions_id_token_request_url`<sup>Optional</sup> <a name="actions_id_token_request_url" id="@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.actionsIdTokenRequestUrl"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#actions_id_token_request_url DatabricksProvider#actions_id_token_request_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#actions_id_token_request_url DatabricksProvider#actions_id_token_request_url}.
 
 ---
 
-##### `alias`<sup>Optional</sup> <a name="alias" id="@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.alias"></a>
+##### `alias`<sup>Optional</sup> <a name="alias" id="@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.alias"></a>
 
 - *Type:* str
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#alias DatabricksProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#alias DatabricksProvider#alias}
 
 ---
 
-##### `audience`<sup>Optional</sup> <a name="audience" id="@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.audience"></a>
+##### `audience`<sup>Optional</sup> <a name="audience" id="@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.audience"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#audience DatabricksProvider#audience}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#audience DatabricksProvider#audience}.
 
 ---
 
-##### `auth_type`<sup>Optional</sup> <a name="auth_type" id="@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.authType"></a>
+##### `auth_type`<sup>Optional</sup> <a name="auth_type" id="@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.authType"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#auth_type DatabricksProvider#auth_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#auth_type DatabricksProvider#auth_type}.
 
 ---
 
-##### `azure_client_id`<sup>Optional</sup> <a name="azure_client_id" id="@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureClientId"></a>
+##### `azure_client_id`<sup>Optional</sup> <a name="azure_client_id" id="@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureClientId"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#azure_client_id DatabricksProvider#azure_client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#azure_client_id DatabricksProvider#azure_client_id}.
 
 ---
 
-##### `azure_client_secret`<sup>Optional</sup> <a name="azure_client_secret" id="@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureClientSecret"></a>
+##### `azure_client_secret`<sup>Optional</sup> <a name="azure_client_secret" id="@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureClientSecret"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#azure_client_secret DatabricksProvider#azure_client_secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#azure_client_secret DatabricksProvider#azure_client_secret}.
 
 ---
 
-##### `azure_environment`<sup>Optional</sup> <a name="azure_environment" id="@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureEnvironment"></a>
+##### `azure_environment`<sup>Optional</sup> <a name="azure_environment" id="@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureEnvironment"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#azure_environment DatabricksProvider#azure_environment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#azure_environment DatabricksProvider#azure_environment}.
 
 ---
 
-##### `azure_login_app_id`<sup>Optional</sup> <a name="azure_login_app_id" id="@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureLoginAppId"></a>
+##### `azure_login_app_id`<sup>Optional</sup> <a name="azure_login_app_id" id="@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureLoginAppId"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#azure_login_app_id DatabricksProvider#azure_login_app_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#azure_login_app_id DatabricksProvider#azure_login_app_id}.
 
 ---
 
-##### `azure_tenant_id`<sup>Optional</sup> <a name="azure_tenant_id" id="@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureTenantId"></a>
+##### `azure_tenant_id`<sup>Optional</sup> <a name="azure_tenant_id" id="@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureTenantId"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#azure_tenant_id DatabricksProvider#azure_tenant_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#azure_tenant_id DatabricksProvider#azure_tenant_id}.
 
 ---
 
-##### `azure_use_msi`<sup>Optional</sup> <a name="azure_use_msi" id="@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureUseMsi"></a>
+##### `azure_use_msi`<sup>Optional</sup> <a name="azure_use_msi" id="@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureUseMsi"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#azure_use_msi DatabricksProvider#azure_use_msi}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#azure_use_msi DatabricksProvider#azure_use_msi}.
 
 ---
 
-##### `azure_workspace_resource_id`<sup>Optional</sup> <a name="azure_workspace_resource_id" id="@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureWorkspaceResourceId"></a>
+##### `azure_workspace_resource_id`<sup>Optional</sup> <a name="azure_workspace_resource_id" id="@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.azureWorkspaceResourceId"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#azure_workspace_resource_id DatabricksProvider#azure_workspace_resource_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#azure_workspace_resource_id DatabricksProvider#azure_workspace_resource_id}.
 
 ---
 
-##### `client_id`<sup>Optional</sup> <a name="client_id" id="@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.clientId"></a>
+##### `client_id`<sup>Optional</sup> <a name="client_id" id="@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.clientId"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#client_id DatabricksProvider#client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#client_id DatabricksProvider#client_id}.
 
 ---
 
-##### `client_secret`<sup>Optional</sup> <a name="client_secret" id="@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.clientSecret"></a>
+##### `client_secret`<sup>Optional</sup> <a name="client_secret" id="@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.clientSecret"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#client_secret DatabricksProvider#client_secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#client_secret DatabricksProvider#client_secret}.
 
 ---
 
-##### `cluster_id`<sup>Optional</sup> <a name="cluster_id" id="@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.clusterId"></a>
+##### `cluster_id`<sup>Optional</sup> <a name="cluster_id" id="@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.clusterId"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#cluster_id DatabricksProvider#cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#cluster_id DatabricksProvider#cluster_id}.
 
 ---
 
-##### `config_file`<sup>Optional</sup> <a name="config_file" id="@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.configFile"></a>
+##### `config_file`<sup>Optional</sup> <a name="config_file" id="@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.configFile"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#config_file DatabricksProvider#config_file}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#config_file DatabricksProvider#config_file}.
 
 ---
 
-##### `databricks_cli_path`<sup>Optional</sup> <a name="databricks_cli_path" id="@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.databricksCliPath"></a>
+##### `databricks_cli_path`<sup>Optional</sup> <a name="databricks_cli_path" id="@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.databricksCliPath"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#databricks_cli_path DatabricksProvider#databricks_cli_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#databricks_cli_path DatabricksProvider#databricks_cli_path}.
 
 ---
 
-##### `databricks_id_token_filepath`<sup>Optional</sup> <a name="databricks_id_token_filepath" id="@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.databricksIdTokenFilepath"></a>
+##### `databricks_id_token_filepath`<sup>Optional</sup> <a name="databricks_id_token_filepath" id="@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.databricksIdTokenFilepath"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#databricks_id_token_filepath DatabricksProvider#databricks_id_token_filepath}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#databricks_id_token_filepath DatabricksProvider#databricks_id_token_filepath}.
 
 ---
 
-##### `debug_headers`<sup>Optional</sup> <a name="debug_headers" id="@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.debugHeaders"></a>
+##### `debug_headers`<sup>Optional</sup> <a name="debug_headers" id="@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.debugHeaders"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#debug_headers DatabricksProvider#debug_headers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#debug_headers DatabricksProvider#debug_headers}.
 
 ---
 
-##### `debug_truncate_bytes`<sup>Optional</sup> <a name="debug_truncate_bytes" id="@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.debugTruncateBytes"></a>
+##### `debug_truncate_bytes`<sup>Optional</sup> <a name="debug_truncate_bytes" id="@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.debugTruncateBytes"></a>
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#debug_truncate_bytes DatabricksProvider#debug_truncate_bytes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#debug_truncate_bytes DatabricksProvider#debug_truncate_bytes}.
 
 ---
 
-##### `experimental_is_unified_host`<sup>Optional</sup> <a name="experimental_is_unified_host" id="@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.experimentalIsUnifiedHost"></a>
+##### `disable_oauth_refresh_token`<sup>Optional</sup> <a name="disable_oauth_refresh_token" id="@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.disableOauthRefreshToken"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#experimental_is_unified_host DatabricksProvider#experimental_is_unified_host}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#disable_oauth_refresh_token DatabricksProvider#disable_oauth_refresh_token}.
 
 ---
 
-##### `google_credentials`<sup>Optional</sup> <a name="google_credentials" id="@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.googleCredentials"></a>
+##### `experimental_is_unified_host`<sup>Optional</sup> <a name="experimental_is_unified_host" id="@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.experimentalIsUnifiedHost"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#experimental_is_unified_host DatabricksProvider#experimental_is_unified_host}.
+
+---
+
+##### `google_credentials`<sup>Optional</sup> <a name="google_credentials" id="@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.googleCredentials"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#google_credentials DatabricksProvider#google_credentials}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#google_credentials DatabricksProvider#google_credentials}.
 
 ---
 
-##### `google_service_account`<sup>Optional</sup> <a name="google_service_account" id="@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.googleServiceAccount"></a>
+##### `google_service_account`<sup>Optional</sup> <a name="google_service_account" id="@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.googleServiceAccount"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#google_service_account DatabricksProvider#google_service_account}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#google_service_account DatabricksProvider#google_service_account}.
 
 ---
 
-##### `host`<sup>Optional</sup> <a name="host" id="@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.host"></a>
+##### `host`<sup>Optional</sup> <a name="host" id="@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.host"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#host DatabricksProvider#host}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#host DatabricksProvider#host}.
 
 ---
 
-##### `http_timeout_seconds`<sup>Optional</sup> <a name="http_timeout_seconds" id="@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.httpTimeoutSeconds"></a>
+##### `http_timeout_seconds`<sup>Optional</sup> <a name="http_timeout_seconds" id="@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.httpTimeoutSeconds"></a>
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#http_timeout_seconds DatabricksProvider#http_timeout_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#http_timeout_seconds DatabricksProvider#http_timeout_seconds}.
 
 ---
 
-##### `metadata_service_url`<sup>Optional</sup> <a name="metadata_service_url" id="@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.metadataServiceUrl"></a>
+##### `metadata_service_url`<sup>Optional</sup> <a name="metadata_service_url" id="@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.metadataServiceUrl"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#metadata_service_url DatabricksProvider#metadata_service_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#metadata_service_url DatabricksProvider#metadata_service_url}.
 
 ---
 
-##### `oauth_callback_port`<sup>Optional</sup> <a name="oauth_callback_port" id="@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.oauthCallbackPort"></a>
+##### `oauth_callback_port`<sup>Optional</sup> <a name="oauth_callback_port" id="@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.oauthCallbackPort"></a>
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#oauth_callback_port DatabricksProvider#oauth_callback_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#oauth_callback_port DatabricksProvider#oauth_callback_port}.
 
 ---
 
-##### `oidc_token_env`<sup>Optional</sup> <a name="oidc_token_env" id="@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.oidcTokenEnv"></a>
+##### `oidc_token_env`<sup>Optional</sup> <a name="oidc_token_env" id="@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.oidcTokenEnv"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#oidc_token_env DatabricksProvider#oidc_token_env}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#oidc_token_env DatabricksProvider#oidc_token_env}.
 
 ---
 
-##### `password`<sup>Optional</sup> <a name="password" id="@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.password"></a>
+##### `password`<sup>Optional</sup> <a name="password" id="@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.password"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#password DatabricksProvider#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#password DatabricksProvider#password}.
 
 ---
 
-##### `profile`<sup>Optional</sup> <a name="profile" id="@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.profile"></a>
+##### `profile`<sup>Optional</sup> <a name="profile" id="@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.profile"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#profile DatabricksProvider#profile}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#profile DatabricksProvider#profile}.
 
 ---
 
-##### `rate_limit`<sup>Optional</sup> <a name="rate_limit" id="@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.rateLimit"></a>
+##### `rate_limit`<sup>Optional</sup> <a name="rate_limit" id="@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.rateLimit"></a>
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#rate_limit DatabricksProvider#rate_limit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#rate_limit DatabricksProvider#rate_limit}.
 
 ---
 
-##### `retry_timeout_seconds`<sup>Optional</sup> <a name="retry_timeout_seconds" id="@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.retryTimeoutSeconds"></a>
+##### `retry_timeout_seconds`<sup>Optional</sup> <a name="retry_timeout_seconds" id="@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.retryTimeoutSeconds"></a>
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#retry_timeout_seconds DatabricksProvider#retry_timeout_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#retry_timeout_seconds DatabricksProvider#retry_timeout_seconds}.
 
 ---
 
-##### `serverless_compute_id`<sup>Optional</sup> <a name="serverless_compute_id" id="@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.serverlessComputeId"></a>
+##### `scopes`<sup>Optional</sup> <a name="scopes" id="@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.scopes"></a>
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#scopes DatabricksProvider#scopes}.
+
+---
+
+##### `serverless_compute_id`<sup>Optional</sup> <a name="serverless_compute_id" id="@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.serverlessComputeId"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#serverless_compute_id DatabricksProvider#serverless_compute_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#serverless_compute_id DatabricksProvider#serverless_compute_id}.
 
 ---
 
-##### `skip_verify`<sup>Optional</sup> <a name="skip_verify" id="@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.skipVerify"></a>
+##### `skip_verify`<sup>Optional</sup> <a name="skip_verify" id="@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.skipVerify"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#skip_verify DatabricksProvider#skip_verify}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#skip_verify DatabricksProvider#skip_verify}.
 
 ---
 
-##### `token`<sup>Optional</sup> <a name="token" id="@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.token"></a>
+##### `token`<sup>Optional</sup> <a name="token" id="@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.token"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#token DatabricksProvider#token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#token DatabricksProvider#token}.
 
 ---
 
-##### `username`<sup>Optional</sup> <a name="username" id="@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.username"></a>
+##### `username`<sup>Optional</sup> <a name="username" id="@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.username"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#username DatabricksProvider#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#username DatabricksProvider#username}.
 
 ---
 
-##### `warehouse_id`<sup>Optional</sup> <a name="warehouse_id" id="@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.warehouseId"></a>
+##### `warehouse_id`<sup>Optional</sup> <a name="warehouse_id" id="@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.warehouseId"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#warehouse_id DatabricksProvider#warehouse_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#warehouse_id DatabricksProvider#warehouse_id}.
 
 ---
 
-##### `workspace_id`<sup>Optional</sup> <a name="workspace_id" id="@cdktf/provider-databricks.provider.DatabricksProvider.Initializer.parameter.workspaceId"></a>
+##### `workspace_id`<sup>Optional</sup> <a name="workspace_id" id="@cdktn/provider-databricks.provider.DatabricksProvider.Initializer.parameter.workspaceId"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#workspace_id DatabricksProvider#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#workspace_id DatabricksProvider#workspace_id}.
 
 ---
 
@@ -438,56 +458,58 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.toString">to_string</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.addOverride">add_override</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.toMetadata">to_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetAccountId">reset_account_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetActionsIdTokenRequestToken">reset_actions_id_token_request_token</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetActionsIdTokenRequestUrl">reset_actions_id_token_request_url</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetAlias">reset_alias</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetAudience">reset_audience</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetAuthType">reset_auth_type</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetAzureClientId">reset_azure_client_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetAzureClientSecret">reset_azure_client_secret</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetAzureEnvironment">reset_azure_environment</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetAzureLoginAppId">reset_azure_login_app_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetAzureTenantId">reset_azure_tenant_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetAzureUseMsi">reset_azure_use_msi</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetAzureWorkspaceResourceId">reset_azure_workspace_resource_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetClientId">reset_client_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetClientSecret">reset_client_secret</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetClusterId">reset_cluster_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetConfigFile">reset_config_file</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetDatabricksCliPath">reset_databricks_cli_path</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetDatabricksIdTokenFilepath">reset_databricks_id_token_filepath</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetDebugHeaders">reset_debug_headers</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetDebugTruncateBytes">reset_debug_truncate_bytes</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetExperimentalIsUnifiedHost">reset_experimental_is_unified_host</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetGoogleCredentials">reset_google_credentials</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetGoogleServiceAccount">reset_google_service_account</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetHost">reset_host</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetHttpTimeoutSeconds">reset_http_timeout_seconds</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetMetadataServiceUrl">reset_metadata_service_url</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetOauthCallbackPort">reset_oauth_callback_port</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetOidcTokenEnv">reset_oidc_token_env</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetPassword">reset_password</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetProfile">reset_profile</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetRateLimit">reset_rate_limit</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetRetryTimeoutSeconds">reset_retry_timeout_seconds</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetServerlessComputeId">reset_serverless_compute_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetSkipVerify">reset_skip_verify</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetToken">reset_token</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetUsername">reset_username</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetWarehouseId">reset_warehouse_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.resetWorkspaceId">reset_workspace_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetAccountId">reset_account_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetActionsIdTokenRequestToken">reset_actions_id_token_request_token</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetActionsIdTokenRequestUrl">reset_actions_id_token_request_url</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetAlias">reset_alias</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetAudience">reset_audience</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetAuthType">reset_auth_type</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetAzureClientId">reset_azure_client_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetAzureClientSecret">reset_azure_client_secret</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetAzureEnvironment">reset_azure_environment</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetAzureLoginAppId">reset_azure_login_app_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetAzureTenantId">reset_azure_tenant_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetAzureUseMsi">reset_azure_use_msi</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetAzureWorkspaceResourceId">reset_azure_workspace_resource_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetClientId">reset_client_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetClientSecret">reset_client_secret</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetClusterId">reset_cluster_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetConfigFile">reset_config_file</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetDatabricksCliPath">reset_databricks_cli_path</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetDatabricksIdTokenFilepath">reset_databricks_id_token_filepath</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetDebugHeaders">reset_debug_headers</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetDebugTruncateBytes">reset_debug_truncate_bytes</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetDisableOauthRefreshToken">reset_disable_oauth_refresh_token</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetExperimentalIsUnifiedHost">reset_experimental_is_unified_host</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetGoogleCredentials">reset_google_credentials</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetGoogleServiceAccount">reset_google_service_account</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetHost">reset_host</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetHttpTimeoutSeconds">reset_http_timeout_seconds</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetMetadataServiceUrl">reset_metadata_service_url</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetOauthCallbackPort">reset_oauth_callback_port</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetOidcTokenEnv">reset_oidc_token_env</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetPassword">reset_password</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetProfile">reset_profile</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetRateLimit">reset_rate_limit</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetRetryTimeoutSeconds">reset_retry_timeout_seconds</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetScopes">reset_scopes</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetServerlessComputeId">reset_serverless_compute_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetSkipVerify">reset_skip_verify</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetToken">reset_token</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetUsername">reset_username</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetWarehouseId">reset_warehouse_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.resetWorkspaceId">reset_workspace_id</a></code> | *No description.* |
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-databricks.provider.DatabricksProvider.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-databricks.provider.DatabricksProvider.toString"></a>
 
 ```python
 def to_string() -> str
@@ -495,7 +517,7 @@ def to_string() -> str
 
 Returns a string representation of this construct.
 
-##### `add_override` <a name="add_override" id="@cdktf/provider-databricks.provider.DatabricksProvider.addOverride"></a>
+##### `add_override` <a name="add_override" id="@cdktn/provider-databricks.provider.DatabricksProvider.addOverride"></a>
 
 ```python
 def add_override(
@@ -504,19 +526,19 @@ def add_override(
 ) -> None
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-databricks.provider.DatabricksProvider.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-databricks.provider.DatabricksProvider.addOverride.parameter.path"></a>
 
 - *Type:* str
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.provider.DatabricksProvider.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.provider.DatabricksProvider.addOverride.parameter.value"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-databricks.provider.DatabricksProvider.overrideLogicalId"></a>
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-databricks.provider.DatabricksProvider.overrideLogicalId"></a>
 
 ```python
 def override_logical_id(
@@ -526,7 +548,7 @@ def override_logical_id(
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-databricks.provider.DatabricksProvider.overrideLogicalId.parameter.newLogicalId"></a>
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-databricks.provider.DatabricksProvider.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* str
 
@@ -534,7 +556,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetOverrideLogicalId"></a>
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetOverrideLogicalId"></a>
 
 ```python
 def reset_override_logical_id() -> None
@@ -542,19 +564,19 @@ def reset_override_logical_id() -> None
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-databricks.provider.DatabricksProvider.toHclTerraform"></a>
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-databricks.provider.DatabricksProvider.toHclTerraform"></a>
 
 ```python
 def to_hcl_terraform() -> typing.Any
 ```
 
-##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-databricks.provider.DatabricksProvider.toMetadata"></a>
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-databricks.provider.DatabricksProvider.toMetadata"></a>
 
 ```python
 def to_metadata() -> typing.Any
 ```
 
-##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-databricks.provider.DatabricksProvider.toTerraform"></a>
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-databricks.provider.DatabricksProvider.toTerraform"></a>
 
 ```python
 def to_terraform() -> typing.Any
@@ -562,235 +584,247 @@ def to_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `reset_account_id` <a name="reset_account_id" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetAccountId"></a>
+##### `reset_account_id` <a name="reset_account_id" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetAccountId"></a>
 
 ```python
 def reset_account_id() -> None
 ```
 
-##### `reset_actions_id_token_request_token` <a name="reset_actions_id_token_request_token" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetActionsIdTokenRequestToken"></a>
+##### `reset_actions_id_token_request_token` <a name="reset_actions_id_token_request_token" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetActionsIdTokenRequestToken"></a>
 
 ```python
 def reset_actions_id_token_request_token() -> None
 ```
 
-##### `reset_actions_id_token_request_url` <a name="reset_actions_id_token_request_url" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetActionsIdTokenRequestUrl"></a>
+##### `reset_actions_id_token_request_url` <a name="reset_actions_id_token_request_url" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetActionsIdTokenRequestUrl"></a>
 
 ```python
 def reset_actions_id_token_request_url() -> None
 ```
 
-##### `reset_alias` <a name="reset_alias" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetAlias"></a>
+##### `reset_alias` <a name="reset_alias" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetAlias"></a>
 
 ```python
 def reset_alias() -> None
 ```
 
-##### `reset_audience` <a name="reset_audience" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetAudience"></a>
+##### `reset_audience` <a name="reset_audience" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetAudience"></a>
 
 ```python
 def reset_audience() -> None
 ```
 
-##### `reset_auth_type` <a name="reset_auth_type" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetAuthType"></a>
+##### `reset_auth_type` <a name="reset_auth_type" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetAuthType"></a>
 
 ```python
 def reset_auth_type() -> None
 ```
 
-##### `reset_azure_client_id` <a name="reset_azure_client_id" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetAzureClientId"></a>
+##### `reset_azure_client_id` <a name="reset_azure_client_id" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetAzureClientId"></a>
 
 ```python
 def reset_azure_client_id() -> None
 ```
 
-##### `reset_azure_client_secret` <a name="reset_azure_client_secret" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetAzureClientSecret"></a>
+##### `reset_azure_client_secret` <a name="reset_azure_client_secret" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetAzureClientSecret"></a>
 
 ```python
 def reset_azure_client_secret() -> None
 ```
 
-##### `reset_azure_environment` <a name="reset_azure_environment" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetAzureEnvironment"></a>
+##### `reset_azure_environment` <a name="reset_azure_environment" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetAzureEnvironment"></a>
 
 ```python
 def reset_azure_environment() -> None
 ```
 
-##### `reset_azure_login_app_id` <a name="reset_azure_login_app_id" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetAzureLoginAppId"></a>
+##### `reset_azure_login_app_id` <a name="reset_azure_login_app_id" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetAzureLoginAppId"></a>
 
 ```python
 def reset_azure_login_app_id() -> None
 ```
 
-##### `reset_azure_tenant_id` <a name="reset_azure_tenant_id" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetAzureTenantId"></a>
+##### `reset_azure_tenant_id` <a name="reset_azure_tenant_id" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetAzureTenantId"></a>
 
 ```python
 def reset_azure_tenant_id() -> None
 ```
 
-##### `reset_azure_use_msi` <a name="reset_azure_use_msi" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetAzureUseMsi"></a>
+##### `reset_azure_use_msi` <a name="reset_azure_use_msi" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetAzureUseMsi"></a>
 
 ```python
 def reset_azure_use_msi() -> None
 ```
 
-##### `reset_azure_workspace_resource_id` <a name="reset_azure_workspace_resource_id" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetAzureWorkspaceResourceId"></a>
+##### `reset_azure_workspace_resource_id` <a name="reset_azure_workspace_resource_id" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetAzureWorkspaceResourceId"></a>
 
 ```python
 def reset_azure_workspace_resource_id() -> None
 ```
 
-##### `reset_client_id` <a name="reset_client_id" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetClientId"></a>
+##### `reset_client_id` <a name="reset_client_id" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetClientId"></a>
 
 ```python
 def reset_client_id() -> None
 ```
 
-##### `reset_client_secret` <a name="reset_client_secret" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetClientSecret"></a>
+##### `reset_client_secret` <a name="reset_client_secret" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetClientSecret"></a>
 
 ```python
 def reset_client_secret() -> None
 ```
 
-##### `reset_cluster_id` <a name="reset_cluster_id" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetClusterId"></a>
+##### `reset_cluster_id` <a name="reset_cluster_id" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetClusterId"></a>
 
 ```python
 def reset_cluster_id() -> None
 ```
 
-##### `reset_config_file` <a name="reset_config_file" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetConfigFile"></a>
+##### `reset_config_file` <a name="reset_config_file" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetConfigFile"></a>
 
 ```python
 def reset_config_file() -> None
 ```
 
-##### `reset_databricks_cli_path` <a name="reset_databricks_cli_path" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetDatabricksCliPath"></a>
+##### `reset_databricks_cli_path` <a name="reset_databricks_cli_path" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetDatabricksCliPath"></a>
 
 ```python
 def reset_databricks_cli_path() -> None
 ```
 
-##### `reset_databricks_id_token_filepath` <a name="reset_databricks_id_token_filepath" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetDatabricksIdTokenFilepath"></a>
+##### `reset_databricks_id_token_filepath` <a name="reset_databricks_id_token_filepath" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetDatabricksIdTokenFilepath"></a>
 
 ```python
 def reset_databricks_id_token_filepath() -> None
 ```
 
-##### `reset_debug_headers` <a name="reset_debug_headers" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetDebugHeaders"></a>
+##### `reset_debug_headers` <a name="reset_debug_headers" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetDebugHeaders"></a>
 
 ```python
 def reset_debug_headers() -> None
 ```
 
-##### `reset_debug_truncate_bytes` <a name="reset_debug_truncate_bytes" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetDebugTruncateBytes"></a>
+##### `reset_debug_truncate_bytes` <a name="reset_debug_truncate_bytes" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetDebugTruncateBytes"></a>
 
 ```python
 def reset_debug_truncate_bytes() -> None
 ```
 
-##### `reset_experimental_is_unified_host` <a name="reset_experimental_is_unified_host" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetExperimentalIsUnifiedHost"></a>
+##### `reset_disable_oauth_refresh_token` <a name="reset_disable_oauth_refresh_token" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetDisableOauthRefreshToken"></a>
+
+```python
+def reset_disable_oauth_refresh_token() -> None
+```
+
+##### `reset_experimental_is_unified_host` <a name="reset_experimental_is_unified_host" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetExperimentalIsUnifiedHost"></a>
 
 ```python
 def reset_experimental_is_unified_host() -> None
 ```
 
-##### `reset_google_credentials` <a name="reset_google_credentials" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetGoogleCredentials"></a>
+##### `reset_google_credentials` <a name="reset_google_credentials" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetGoogleCredentials"></a>
 
 ```python
 def reset_google_credentials() -> None
 ```
 
-##### `reset_google_service_account` <a name="reset_google_service_account" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetGoogleServiceAccount"></a>
+##### `reset_google_service_account` <a name="reset_google_service_account" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetGoogleServiceAccount"></a>
 
 ```python
 def reset_google_service_account() -> None
 ```
 
-##### `reset_host` <a name="reset_host" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetHost"></a>
+##### `reset_host` <a name="reset_host" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetHost"></a>
 
 ```python
 def reset_host() -> None
 ```
 
-##### `reset_http_timeout_seconds` <a name="reset_http_timeout_seconds" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetHttpTimeoutSeconds"></a>
+##### `reset_http_timeout_seconds` <a name="reset_http_timeout_seconds" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetHttpTimeoutSeconds"></a>
 
 ```python
 def reset_http_timeout_seconds() -> None
 ```
 
-##### `reset_metadata_service_url` <a name="reset_metadata_service_url" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetMetadataServiceUrl"></a>
+##### `reset_metadata_service_url` <a name="reset_metadata_service_url" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetMetadataServiceUrl"></a>
 
 ```python
 def reset_metadata_service_url() -> None
 ```
 
-##### `reset_oauth_callback_port` <a name="reset_oauth_callback_port" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetOauthCallbackPort"></a>
+##### `reset_oauth_callback_port` <a name="reset_oauth_callback_port" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetOauthCallbackPort"></a>
 
 ```python
 def reset_oauth_callback_port() -> None
 ```
 
-##### `reset_oidc_token_env` <a name="reset_oidc_token_env" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetOidcTokenEnv"></a>
+##### `reset_oidc_token_env` <a name="reset_oidc_token_env" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetOidcTokenEnv"></a>
 
 ```python
 def reset_oidc_token_env() -> None
 ```
 
-##### `reset_password` <a name="reset_password" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetPassword"></a>
+##### `reset_password` <a name="reset_password" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetPassword"></a>
 
 ```python
 def reset_password() -> None
 ```
 
-##### `reset_profile` <a name="reset_profile" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetProfile"></a>
+##### `reset_profile` <a name="reset_profile" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetProfile"></a>
 
 ```python
 def reset_profile() -> None
 ```
 
-##### `reset_rate_limit` <a name="reset_rate_limit" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetRateLimit"></a>
+##### `reset_rate_limit` <a name="reset_rate_limit" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetRateLimit"></a>
 
 ```python
 def reset_rate_limit() -> None
 ```
 
-##### `reset_retry_timeout_seconds` <a name="reset_retry_timeout_seconds" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetRetryTimeoutSeconds"></a>
+##### `reset_retry_timeout_seconds` <a name="reset_retry_timeout_seconds" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetRetryTimeoutSeconds"></a>
 
 ```python
 def reset_retry_timeout_seconds() -> None
 ```
 
-##### `reset_serverless_compute_id` <a name="reset_serverless_compute_id" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetServerlessComputeId"></a>
+##### `reset_scopes` <a name="reset_scopes" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetScopes"></a>
+
+```python
+def reset_scopes() -> None
+```
+
+##### `reset_serverless_compute_id` <a name="reset_serverless_compute_id" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetServerlessComputeId"></a>
 
 ```python
 def reset_serverless_compute_id() -> None
 ```
 
-##### `reset_skip_verify` <a name="reset_skip_verify" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetSkipVerify"></a>
+##### `reset_skip_verify` <a name="reset_skip_verify" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetSkipVerify"></a>
 
 ```python
 def reset_skip_verify() -> None
 ```
 
-##### `reset_token` <a name="reset_token" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetToken"></a>
+##### `reset_token` <a name="reset_token" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetToken"></a>
 
 ```python
 def reset_token() -> None
 ```
 
-##### `reset_username` <a name="reset_username" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetUsername"></a>
+##### `reset_username` <a name="reset_username" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetUsername"></a>
 
 ```python
 def reset_username() -> None
 ```
 
-##### `reset_warehouse_id` <a name="reset_warehouse_id" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetWarehouseId"></a>
+##### `reset_warehouse_id` <a name="reset_warehouse_id" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetWarehouseId"></a>
 
 ```python
 def reset_warehouse_id() -> None
 ```
 
-##### `reset_workspace_id` <a name="reset_workspace_id" id="@cdktf/provider-databricks.provider.DatabricksProvider.resetWorkspaceId"></a>
+##### `reset_workspace_id` <a name="reset_workspace_id" id="@cdktn/provider-databricks.provider.DatabricksProvider.resetWorkspaceId"></a>
 
 ```python
 def reset_workspace_id() -> None
@@ -800,17 +834,17 @@ def reset_workspace_id() -> None
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.isTerraformElement">is_terraform_element</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.isTerraformProvider">is_terraform_provider</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a DatabricksProvider resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.isTerraformProvider">is_terraform_provider</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTN code for importing a DatabricksProvider resource upon running "cdktn plan <stack-name>". |
 
 ---
 
-##### `is_construct` <a name="is_construct" id="@cdktf/provider-databricks.provider.DatabricksProvider.isConstruct"></a>
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-databricks.provider.DatabricksProvider.isConstruct"></a>
 
 ```python
-from cdktf_cdktf_provider_databricks import provider
+from cdktn_provider_databricks import provider
 
 provider.DatabricksProvider.is_construct(
   x: typing.Any
@@ -833,7 +867,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-databricks.provider.DatabricksProvider.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-databricks.provider.DatabricksProvider.isConstruct.parameter.x"></a>
 
 - *Type:* typing.Any
 
@@ -841,42 +875,42 @@ Any object.
 
 ---
 
-##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-databricks.provider.DatabricksProvider.isTerraformElement"></a>
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-databricks.provider.DatabricksProvider.isTerraformElement"></a>
 
 ```python
-from cdktf_cdktf_provider_databricks import provider
+from cdktn_provider_databricks import provider
 
 provider.DatabricksProvider.is_terraform_element(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-databricks.provider.DatabricksProvider.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-databricks.provider.DatabricksProvider.isTerraformElement.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `is_terraform_provider` <a name="is_terraform_provider" id="@cdktf/provider-databricks.provider.DatabricksProvider.isTerraformProvider"></a>
+##### `is_terraform_provider` <a name="is_terraform_provider" id="@cdktn/provider-databricks.provider.DatabricksProvider.isTerraformProvider"></a>
 
 ```python
-from cdktf_cdktf_provider_databricks import provider
+from cdktn_provider_databricks import provider
 
 provider.DatabricksProvider.is_terraform_provider(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-databricks.provider.DatabricksProvider.isTerraformProvider.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-databricks.provider.DatabricksProvider.isTerraformProvider.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-databricks.provider.DatabricksProvider.generateConfigForImport"></a>
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-databricks.provider.DatabricksProvider.generateConfigForImport"></a>
 
 ```python
-from cdktf_cdktf_provider_databricks import provider
+from cdktn_provider_databricks import provider
 
 provider.DatabricksProvider.generate_config_for_import(
   scope: Construct,
@@ -886,9 +920,9 @@ provider.DatabricksProvider.generate_config_for_import(
 )
 ```
 
-Generates CDKTF code for importing a DatabricksProvider resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a DatabricksProvider resource upon running "cdktn plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-databricks.provider.DatabricksProvider.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-databricks.provider.DatabricksProvider.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -896,7 +930,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-databricks.provider.DatabricksProvider.generateConfigForImport.parameter.importToId"></a>
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-databricks.provider.DatabricksProvider.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* str
 
@@ -904,19 +938,19 @@ The construct id used in the generated config for the DatabricksProvider to impo
 
 ---
 
-###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-databricks.provider.DatabricksProvider.generateConfigForImport.parameter.importFromId"></a>
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-databricks.provider.DatabricksProvider.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* str
 
 The id of the existing DatabricksProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-databricks.provider.DatabricksProvider.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-databricks.provider.DatabricksProvider.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the DatabricksProvider to import is found.
 
@@ -926,96 +960,100 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.metaAttributes">meta_attributes</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.terraformProviderSource">terraform_provider_source</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.alias">alias</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.accountIdInput">account_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.actionsIdTokenRequestTokenInput">actions_id_token_request_token_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.actionsIdTokenRequestUrlInput">actions_id_token_request_url_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.aliasInput">alias_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.audienceInput">audience_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.authTypeInput">auth_type_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.azureClientIdInput">azure_client_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.azureClientSecretInput">azure_client_secret_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.azureEnvironmentInput">azure_environment_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.azureLoginAppIdInput">azure_login_app_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.azureTenantIdInput">azure_tenant_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.azureUseMsiInput">azure_use_msi_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.azureWorkspaceResourceIdInput">azure_workspace_resource_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.clientIdInput">client_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.clientSecretInput">client_secret_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.clusterIdInput">cluster_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.configFileInput">config_file_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.databricksCliPathInput">databricks_cli_path_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.databricksIdTokenFilepathInput">databricks_id_token_filepath_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.debugHeadersInput">debug_headers_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.debugTruncateBytesInput">debug_truncate_bytes_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.experimentalIsUnifiedHostInput">experimental_is_unified_host_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.googleCredentialsInput">google_credentials_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.googleServiceAccountInput">google_service_account_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.hostInput">host_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.httpTimeoutSecondsInput">http_timeout_seconds_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.metadataServiceUrlInput">metadata_service_url_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.oauthCallbackPortInput">oauth_callback_port_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.oidcTokenEnvInput">oidc_token_env_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.passwordInput">password_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.profileInput">profile_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.rateLimitInput">rate_limit_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.retryTimeoutSecondsInput">retry_timeout_seconds_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.serverlessComputeIdInput">serverless_compute_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.skipVerifyInput">skip_verify_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.tokenInput">token_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.usernameInput">username_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.warehouseIdInput">warehouse_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.workspaceIdInput">workspace_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.accountId">account_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.actionsIdTokenRequestToken">actions_id_token_request_token</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.actionsIdTokenRequestUrl">actions_id_token_request_url</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.audience">audience</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.authType">auth_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.azureClientId">azure_client_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.azureClientSecret">azure_client_secret</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.azureEnvironment">azure_environment</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.azureLoginAppId">azure_login_app_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.azureTenantId">azure_tenant_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.azureUseMsi">azure_use_msi</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.azureWorkspaceResourceId">azure_workspace_resource_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.clientId">client_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.clientSecret">client_secret</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.clusterId">cluster_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.configFile">config_file</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.databricksCliPath">databricks_cli_path</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.databricksIdTokenFilepath">databricks_id_token_filepath</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.debugHeaders">debug_headers</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.debugTruncateBytes">debug_truncate_bytes</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.experimentalIsUnifiedHost">experimental_is_unified_host</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.googleCredentials">google_credentials</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.googleServiceAccount">google_service_account</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.host">host</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.httpTimeoutSeconds">http_timeout_seconds</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.metadataServiceUrl">metadata_service_url</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.oauthCallbackPort">oauth_callback_port</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.oidcTokenEnv">oidc_token_env</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.password">password</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.profile">profile</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.rateLimit">rate_limit</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.retryTimeoutSeconds">retry_timeout_seconds</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.serverlessComputeId">serverless_compute_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.skipVerify">skip_verify</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.token">token</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.username">username</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.warehouseId">warehouse_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.workspaceId">workspace_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.cdktfStack">cdktf_stack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.metaAttributes">meta_attributes</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.terraformProviderSource">terraform_provider_source</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.alias">alias</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.accountIdInput">account_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.actionsIdTokenRequestTokenInput">actions_id_token_request_token_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.actionsIdTokenRequestUrlInput">actions_id_token_request_url_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.aliasInput">alias_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.audienceInput">audience_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.authTypeInput">auth_type_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.azureClientIdInput">azure_client_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.azureClientSecretInput">azure_client_secret_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.azureEnvironmentInput">azure_environment_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.azureLoginAppIdInput">azure_login_app_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.azureTenantIdInput">azure_tenant_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.azureUseMsiInput">azure_use_msi_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.azureWorkspaceResourceIdInput">azure_workspace_resource_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.clientIdInput">client_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.clientSecretInput">client_secret_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.clusterIdInput">cluster_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.configFileInput">config_file_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.databricksCliPathInput">databricks_cli_path_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.databricksIdTokenFilepathInput">databricks_id_token_filepath_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.debugHeadersInput">debug_headers_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.debugTruncateBytesInput">debug_truncate_bytes_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.disableOauthRefreshTokenInput">disable_oauth_refresh_token_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.experimentalIsUnifiedHostInput">experimental_is_unified_host_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.googleCredentialsInput">google_credentials_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.googleServiceAccountInput">google_service_account_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.hostInput">host_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.httpTimeoutSecondsInput">http_timeout_seconds_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.metadataServiceUrlInput">metadata_service_url_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.oauthCallbackPortInput">oauth_callback_port_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.oidcTokenEnvInput">oidc_token_env_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.passwordInput">password_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.profileInput">profile_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.rateLimitInput">rate_limit_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.retryTimeoutSecondsInput">retry_timeout_seconds_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.scopesInput">scopes_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.serverlessComputeIdInput">serverless_compute_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.skipVerifyInput">skip_verify_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.tokenInput">token_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.usernameInput">username_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.warehouseIdInput">warehouse_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.workspaceIdInput">workspace_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.accountId">account_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.actionsIdTokenRequestToken">actions_id_token_request_token</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.actionsIdTokenRequestUrl">actions_id_token_request_url</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.audience">audience</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.authType">auth_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.azureClientId">azure_client_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.azureClientSecret">azure_client_secret</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.azureEnvironment">azure_environment</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.azureLoginAppId">azure_login_app_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.azureTenantId">azure_tenant_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.azureUseMsi">azure_use_msi</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.azureWorkspaceResourceId">azure_workspace_resource_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.clientId">client_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.clientSecret">client_secret</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.clusterId">cluster_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.configFile">config_file</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.databricksCliPath">databricks_cli_path</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.databricksIdTokenFilepath">databricks_id_token_filepath</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.debugHeaders">debug_headers</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.debugTruncateBytes">debug_truncate_bytes</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.disableOauthRefreshToken">disable_oauth_refresh_token</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.experimentalIsUnifiedHost">experimental_is_unified_host</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.googleCredentials">google_credentials</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.googleServiceAccount">google_service_account</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.host">host</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.httpTimeoutSeconds">http_timeout_seconds</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.metadataServiceUrl">metadata_service_url</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.oauthCallbackPort">oauth_callback_port</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.oidcTokenEnv">oidc_token_env</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.password">password</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.profile">profile</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.rateLimit">rate_limit</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.retryTimeoutSeconds">retry_timeout_seconds</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.scopes">scopes</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.serverlessComputeId">serverless_compute_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.skipVerify">skip_verify</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.token">token</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.username">username</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.warehouseId">warehouse_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.workspaceId">workspace_id</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.node"></a>
 
 ```python
 node: Node
@@ -1027,17 +1065,17 @@ The tree node.
 
 ---
 
-##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.cdktfStack"></a>
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.cdktfStack"></a>
 
 ```python
 cdktf_stack: TerraformStack
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.fqn"></a>
 
 ```python
 fqn: str
@@ -1047,7 +1085,7 @@ fqn: str
 
 ---
 
-##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.friendlyUniqueId"></a>
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.friendlyUniqueId"></a>
 
 ```python
 friendly_unique_id: str
@@ -1057,7 +1095,7 @@ friendly_unique_id: str
 
 ---
 
-##### `meta_attributes`<sup>Required</sup> <a name="meta_attributes" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.metaAttributes"></a>
+##### `meta_attributes`<sup>Required</sup> <a name="meta_attributes" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.metaAttributes"></a>
 
 ```python
 meta_attributes: typing.Mapping[typing.Any]
@@ -1067,7 +1105,7 @@ meta_attributes: typing.Mapping[typing.Any]
 
 ---
 
-##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.terraformResourceType"></a>
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.terraformResourceType"></a>
 
 ```python
 terraform_resource_type: str
@@ -1077,17 +1115,17 @@ terraform_resource_type: str
 
 ---
 
-##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.terraformGeneratorMetadata"></a>
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.terraformGeneratorMetadata"></a>
 
 ```python
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
-##### `terraform_provider_source`<sup>Optional</sup> <a name="terraform_provider_source" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.terraformProviderSource"></a>
+##### `terraform_provider_source`<sup>Optional</sup> <a name="terraform_provider_source" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.terraformProviderSource"></a>
 
 ```python
 terraform_provider_source: str
@@ -1097,7 +1135,7 @@ terraform_provider_source: str
 
 ---
 
-##### `alias`<sup>Optional</sup> <a name="alias" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.alias"></a>
+##### `alias`<sup>Optional</sup> <a name="alias" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.alias"></a>
 
 ```python
 alias: str
@@ -1107,7 +1145,7 @@ alias: str
 
 ---
 
-##### `account_id_input`<sup>Optional</sup> <a name="account_id_input" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.accountIdInput"></a>
+##### `account_id_input`<sup>Optional</sup> <a name="account_id_input" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.accountIdInput"></a>
 
 ```python
 account_id_input: str
@@ -1117,7 +1155,7 @@ account_id_input: str
 
 ---
 
-##### `actions_id_token_request_token_input`<sup>Optional</sup> <a name="actions_id_token_request_token_input" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.actionsIdTokenRequestTokenInput"></a>
+##### `actions_id_token_request_token_input`<sup>Optional</sup> <a name="actions_id_token_request_token_input" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.actionsIdTokenRequestTokenInput"></a>
 
 ```python
 actions_id_token_request_token_input: str
@@ -1127,7 +1165,7 @@ actions_id_token_request_token_input: str
 
 ---
 
-##### `actions_id_token_request_url_input`<sup>Optional</sup> <a name="actions_id_token_request_url_input" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.actionsIdTokenRequestUrlInput"></a>
+##### `actions_id_token_request_url_input`<sup>Optional</sup> <a name="actions_id_token_request_url_input" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.actionsIdTokenRequestUrlInput"></a>
 
 ```python
 actions_id_token_request_url_input: str
@@ -1137,7 +1175,7 @@ actions_id_token_request_url_input: str
 
 ---
 
-##### `alias_input`<sup>Optional</sup> <a name="alias_input" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.aliasInput"></a>
+##### `alias_input`<sup>Optional</sup> <a name="alias_input" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.aliasInput"></a>
 
 ```python
 alias_input: str
@@ -1147,7 +1185,7 @@ alias_input: str
 
 ---
 
-##### `audience_input`<sup>Optional</sup> <a name="audience_input" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.audienceInput"></a>
+##### `audience_input`<sup>Optional</sup> <a name="audience_input" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.audienceInput"></a>
 
 ```python
 audience_input: str
@@ -1157,7 +1195,7 @@ audience_input: str
 
 ---
 
-##### `auth_type_input`<sup>Optional</sup> <a name="auth_type_input" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.authTypeInput"></a>
+##### `auth_type_input`<sup>Optional</sup> <a name="auth_type_input" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.authTypeInput"></a>
 
 ```python
 auth_type_input: str
@@ -1167,7 +1205,7 @@ auth_type_input: str
 
 ---
 
-##### `azure_client_id_input`<sup>Optional</sup> <a name="azure_client_id_input" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.azureClientIdInput"></a>
+##### `azure_client_id_input`<sup>Optional</sup> <a name="azure_client_id_input" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.azureClientIdInput"></a>
 
 ```python
 azure_client_id_input: str
@@ -1177,7 +1215,7 @@ azure_client_id_input: str
 
 ---
 
-##### `azure_client_secret_input`<sup>Optional</sup> <a name="azure_client_secret_input" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.azureClientSecretInput"></a>
+##### `azure_client_secret_input`<sup>Optional</sup> <a name="azure_client_secret_input" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.azureClientSecretInput"></a>
 
 ```python
 azure_client_secret_input: str
@@ -1187,7 +1225,7 @@ azure_client_secret_input: str
 
 ---
 
-##### `azure_environment_input`<sup>Optional</sup> <a name="azure_environment_input" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.azureEnvironmentInput"></a>
+##### `azure_environment_input`<sup>Optional</sup> <a name="azure_environment_input" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.azureEnvironmentInput"></a>
 
 ```python
 azure_environment_input: str
@@ -1197,7 +1235,7 @@ azure_environment_input: str
 
 ---
 
-##### `azure_login_app_id_input`<sup>Optional</sup> <a name="azure_login_app_id_input" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.azureLoginAppIdInput"></a>
+##### `azure_login_app_id_input`<sup>Optional</sup> <a name="azure_login_app_id_input" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.azureLoginAppIdInput"></a>
 
 ```python
 azure_login_app_id_input: str
@@ -1207,7 +1245,7 @@ azure_login_app_id_input: str
 
 ---
 
-##### `azure_tenant_id_input`<sup>Optional</sup> <a name="azure_tenant_id_input" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.azureTenantIdInput"></a>
+##### `azure_tenant_id_input`<sup>Optional</sup> <a name="azure_tenant_id_input" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.azureTenantIdInput"></a>
 
 ```python
 azure_tenant_id_input: str
@@ -1217,17 +1255,17 @@ azure_tenant_id_input: str
 
 ---
 
-##### `azure_use_msi_input`<sup>Optional</sup> <a name="azure_use_msi_input" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.azureUseMsiInput"></a>
+##### `azure_use_msi_input`<sup>Optional</sup> <a name="azure_use_msi_input" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.azureUseMsiInput"></a>
 
 ```python
 azure_use_msi_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `azure_workspace_resource_id_input`<sup>Optional</sup> <a name="azure_workspace_resource_id_input" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.azureWorkspaceResourceIdInput"></a>
+##### `azure_workspace_resource_id_input`<sup>Optional</sup> <a name="azure_workspace_resource_id_input" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.azureWorkspaceResourceIdInput"></a>
 
 ```python
 azure_workspace_resource_id_input: str
@@ -1237,7 +1275,7 @@ azure_workspace_resource_id_input: str
 
 ---
 
-##### `client_id_input`<sup>Optional</sup> <a name="client_id_input" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.clientIdInput"></a>
+##### `client_id_input`<sup>Optional</sup> <a name="client_id_input" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.clientIdInput"></a>
 
 ```python
 client_id_input: str
@@ -1247,7 +1285,7 @@ client_id_input: str
 
 ---
 
-##### `client_secret_input`<sup>Optional</sup> <a name="client_secret_input" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.clientSecretInput"></a>
+##### `client_secret_input`<sup>Optional</sup> <a name="client_secret_input" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.clientSecretInput"></a>
 
 ```python
 client_secret_input: str
@@ -1257,7 +1295,7 @@ client_secret_input: str
 
 ---
 
-##### `cluster_id_input`<sup>Optional</sup> <a name="cluster_id_input" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.clusterIdInput"></a>
+##### `cluster_id_input`<sup>Optional</sup> <a name="cluster_id_input" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.clusterIdInput"></a>
 
 ```python
 cluster_id_input: str
@@ -1267,7 +1305,7 @@ cluster_id_input: str
 
 ---
 
-##### `config_file_input`<sup>Optional</sup> <a name="config_file_input" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.configFileInput"></a>
+##### `config_file_input`<sup>Optional</sup> <a name="config_file_input" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.configFileInput"></a>
 
 ```python
 config_file_input: str
@@ -1277,7 +1315,7 @@ config_file_input: str
 
 ---
 
-##### `databricks_cli_path_input`<sup>Optional</sup> <a name="databricks_cli_path_input" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.databricksCliPathInput"></a>
+##### `databricks_cli_path_input`<sup>Optional</sup> <a name="databricks_cli_path_input" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.databricksCliPathInput"></a>
 
 ```python
 databricks_cli_path_input: str
@@ -1287,7 +1325,7 @@ databricks_cli_path_input: str
 
 ---
 
-##### `databricks_id_token_filepath_input`<sup>Optional</sup> <a name="databricks_id_token_filepath_input" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.databricksIdTokenFilepathInput"></a>
+##### `databricks_id_token_filepath_input`<sup>Optional</sup> <a name="databricks_id_token_filepath_input" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.databricksIdTokenFilepathInput"></a>
 
 ```python
 databricks_id_token_filepath_input: str
@@ -1297,17 +1335,17 @@ databricks_id_token_filepath_input: str
 
 ---
 
-##### `debug_headers_input`<sup>Optional</sup> <a name="debug_headers_input" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.debugHeadersInput"></a>
+##### `debug_headers_input`<sup>Optional</sup> <a name="debug_headers_input" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.debugHeadersInput"></a>
 
 ```python
 debug_headers_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `debug_truncate_bytes_input`<sup>Optional</sup> <a name="debug_truncate_bytes_input" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.debugTruncateBytesInput"></a>
+##### `debug_truncate_bytes_input`<sup>Optional</sup> <a name="debug_truncate_bytes_input" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.debugTruncateBytesInput"></a>
 
 ```python
 debug_truncate_bytes_input: typing.Union[int, float]
@@ -1317,17 +1355,27 @@ debug_truncate_bytes_input: typing.Union[int, float]
 
 ---
 
-##### `experimental_is_unified_host_input`<sup>Optional</sup> <a name="experimental_is_unified_host_input" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.experimentalIsUnifiedHostInput"></a>
+##### `disable_oauth_refresh_token_input`<sup>Optional</sup> <a name="disable_oauth_refresh_token_input" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.disableOauthRefreshTokenInput"></a>
+
+```python
+disable_oauth_refresh_token_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `experimental_is_unified_host_input`<sup>Optional</sup> <a name="experimental_is_unified_host_input" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.experimentalIsUnifiedHostInput"></a>
 
 ```python
 experimental_is_unified_host_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `google_credentials_input`<sup>Optional</sup> <a name="google_credentials_input" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.googleCredentialsInput"></a>
+##### `google_credentials_input`<sup>Optional</sup> <a name="google_credentials_input" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.googleCredentialsInput"></a>
 
 ```python
 google_credentials_input: str
@@ -1337,7 +1385,7 @@ google_credentials_input: str
 
 ---
 
-##### `google_service_account_input`<sup>Optional</sup> <a name="google_service_account_input" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.googleServiceAccountInput"></a>
+##### `google_service_account_input`<sup>Optional</sup> <a name="google_service_account_input" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.googleServiceAccountInput"></a>
 
 ```python
 google_service_account_input: str
@@ -1347,7 +1395,7 @@ google_service_account_input: str
 
 ---
 
-##### `host_input`<sup>Optional</sup> <a name="host_input" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.hostInput"></a>
+##### `host_input`<sup>Optional</sup> <a name="host_input" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.hostInput"></a>
 
 ```python
 host_input: str
@@ -1357,7 +1405,7 @@ host_input: str
 
 ---
 
-##### `http_timeout_seconds_input`<sup>Optional</sup> <a name="http_timeout_seconds_input" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.httpTimeoutSecondsInput"></a>
+##### `http_timeout_seconds_input`<sup>Optional</sup> <a name="http_timeout_seconds_input" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.httpTimeoutSecondsInput"></a>
 
 ```python
 http_timeout_seconds_input: typing.Union[int, float]
@@ -1367,7 +1415,7 @@ http_timeout_seconds_input: typing.Union[int, float]
 
 ---
 
-##### `metadata_service_url_input`<sup>Optional</sup> <a name="metadata_service_url_input" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.metadataServiceUrlInput"></a>
+##### `metadata_service_url_input`<sup>Optional</sup> <a name="metadata_service_url_input" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.metadataServiceUrlInput"></a>
 
 ```python
 metadata_service_url_input: str
@@ -1377,7 +1425,7 @@ metadata_service_url_input: str
 
 ---
 
-##### `oauth_callback_port_input`<sup>Optional</sup> <a name="oauth_callback_port_input" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.oauthCallbackPortInput"></a>
+##### `oauth_callback_port_input`<sup>Optional</sup> <a name="oauth_callback_port_input" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.oauthCallbackPortInput"></a>
 
 ```python
 oauth_callback_port_input: typing.Union[int, float]
@@ -1387,7 +1435,7 @@ oauth_callback_port_input: typing.Union[int, float]
 
 ---
 
-##### `oidc_token_env_input`<sup>Optional</sup> <a name="oidc_token_env_input" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.oidcTokenEnvInput"></a>
+##### `oidc_token_env_input`<sup>Optional</sup> <a name="oidc_token_env_input" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.oidcTokenEnvInput"></a>
 
 ```python
 oidc_token_env_input: str
@@ -1397,7 +1445,7 @@ oidc_token_env_input: str
 
 ---
 
-##### `password_input`<sup>Optional</sup> <a name="password_input" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.passwordInput"></a>
+##### `password_input`<sup>Optional</sup> <a name="password_input" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.passwordInput"></a>
 
 ```python
 password_input: str
@@ -1407,7 +1455,7 @@ password_input: str
 
 ---
 
-##### `profile_input`<sup>Optional</sup> <a name="profile_input" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.profileInput"></a>
+##### `profile_input`<sup>Optional</sup> <a name="profile_input" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.profileInput"></a>
 
 ```python
 profile_input: str
@@ -1417,7 +1465,7 @@ profile_input: str
 
 ---
 
-##### `rate_limit_input`<sup>Optional</sup> <a name="rate_limit_input" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.rateLimitInput"></a>
+##### `rate_limit_input`<sup>Optional</sup> <a name="rate_limit_input" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.rateLimitInput"></a>
 
 ```python
 rate_limit_input: typing.Union[int, float]
@@ -1427,7 +1475,7 @@ rate_limit_input: typing.Union[int, float]
 
 ---
 
-##### `retry_timeout_seconds_input`<sup>Optional</sup> <a name="retry_timeout_seconds_input" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.retryTimeoutSecondsInput"></a>
+##### `retry_timeout_seconds_input`<sup>Optional</sup> <a name="retry_timeout_seconds_input" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.retryTimeoutSecondsInput"></a>
 
 ```python
 retry_timeout_seconds_input: typing.Union[int, float]
@@ -1437,7 +1485,17 @@ retry_timeout_seconds_input: typing.Union[int, float]
 
 ---
 
-##### `serverless_compute_id_input`<sup>Optional</sup> <a name="serverless_compute_id_input" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.serverlessComputeIdInput"></a>
+##### `scopes_input`<sup>Optional</sup> <a name="scopes_input" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.scopesInput"></a>
+
+```python
+scopes_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `serverless_compute_id_input`<sup>Optional</sup> <a name="serverless_compute_id_input" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.serverlessComputeIdInput"></a>
 
 ```python
 serverless_compute_id_input: str
@@ -1447,17 +1505,17 @@ serverless_compute_id_input: str
 
 ---
 
-##### `skip_verify_input`<sup>Optional</sup> <a name="skip_verify_input" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.skipVerifyInput"></a>
+##### `skip_verify_input`<sup>Optional</sup> <a name="skip_verify_input" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.skipVerifyInput"></a>
 
 ```python
 skip_verify_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `token_input`<sup>Optional</sup> <a name="token_input" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.tokenInput"></a>
+##### `token_input`<sup>Optional</sup> <a name="token_input" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.tokenInput"></a>
 
 ```python
 token_input: str
@@ -1467,7 +1525,7 @@ token_input: str
 
 ---
 
-##### `username_input`<sup>Optional</sup> <a name="username_input" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.usernameInput"></a>
+##### `username_input`<sup>Optional</sup> <a name="username_input" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.usernameInput"></a>
 
 ```python
 username_input: str
@@ -1477,7 +1535,7 @@ username_input: str
 
 ---
 
-##### `warehouse_id_input`<sup>Optional</sup> <a name="warehouse_id_input" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.warehouseIdInput"></a>
+##### `warehouse_id_input`<sup>Optional</sup> <a name="warehouse_id_input" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.warehouseIdInput"></a>
 
 ```python
 warehouse_id_input: str
@@ -1487,7 +1545,7 @@ warehouse_id_input: str
 
 ---
 
-##### `workspace_id_input`<sup>Optional</sup> <a name="workspace_id_input" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.workspaceIdInput"></a>
+##### `workspace_id_input`<sup>Optional</sup> <a name="workspace_id_input" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.workspaceIdInput"></a>
 
 ```python
 workspace_id_input: str
@@ -1497,7 +1555,7 @@ workspace_id_input: str
 
 ---
 
-##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.accountId"></a>
+##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.accountId"></a>
 
 ```python
 account_id: str
@@ -1507,7 +1565,7 @@ account_id: str
 
 ---
 
-##### `actions_id_token_request_token`<sup>Optional</sup> <a name="actions_id_token_request_token" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.actionsIdTokenRequestToken"></a>
+##### `actions_id_token_request_token`<sup>Optional</sup> <a name="actions_id_token_request_token" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.actionsIdTokenRequestToken"></a>
 
 ```python
 actions_id_token_request_token: str
@@ -1517,7 +1575,7 @@ actions_id_token_request_token: str
 
 ---
 
-##### `actions_id_token_request_url`<sup>Optional</sup> <a name="actions_id_token_request_url" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.actionsIdTokenRequestUrl"></a>
+##### `actions_id_token_request_url`<sup>Optional</sup> <a name="actions_id_token_request_url" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.actionsIdTokenRequestUrl"></a>
 
 ```python
 actions_id_token_request_url: str
@@ -1527,7 +1585,7 @@ actions_id_token_request_url: str
 
 ---
 
-##### `audience`<sup>Optional</sup> <a name="audience" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.audience"></a>
+##### `audience`<sup>Optional</sup> <a name="audience" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.audience"></a>
 
 ```python
 audience: str
@@ -1537,7 +1595,7 @@ audience: str
 
 ---
 
-##### `auth_type`<sup>Optional</sup> <a name="auth_type" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.authType"></a>
+##### `auth_type`<sup>Optional</sup> <a name="auth_type" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.authType"></a>
 
 ```python
 auth_type: str
@@ -1547,7 +1605,7 @@ auth_type: str
 
 ---
 
-##### `azure_client_id`<sup>Optional</sup> <a name="azure_client_id" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.azureClientId"></a>
+##### `azure_client_id`<sup>Optional</sup> <a name="azure_client_id" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.azureClientId"></a>
 
 ```python
 azure_client_id: str
@@ -1557,7 +1615,7 @@ azure_client_id: str
 
 ---
 
-##### `azure_client_secret`<sup>Optional</sup> <a name="azure_client_secret" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.azureClientSecret"></a>
+##### `azure_client_secret`<sup>Optional</sup> <a name="azure_client_secret" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.azureClientSecret"></a>
 
 ```python
 azure_client_secret: str
@@ -1567,7 +1625,7 @@ azure_client_secret: str
 
 ---
 
-##### `azure_environment`<sup>Optional</sup> <a name="azure_environment" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.azureEnvironment"></a>
+##### `azure_environment`<sup>Optional</sup> <a name="azure_environment" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.azureEnvironment"></a>
 
 ```python
 azure_environment: str
@@ -1577,7 +1635,7 @@ azure_environment: str
 
 ---
 
-##### `azure_login_app_id`<sup>Optional</sup> <a name="azure_login_app_id" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.azureLoginAppId"></a>
+##### `azure_login_app_id`<sup>Optional</sup> <a name="azure_login_app_id" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.azureLoginAppId"></a>
 
 ```python
 azure_login_app_id: str
@@ -1587,7 +1645,7 @@ azure_login_app_id: str
 
 ---
 
-##### `azure_tenant_id`<sup>Optional</sup> <a name="azure_tenant_id" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.azureTenantId"></a>
+##### `azure_tenant_id`<sup>Optional</sup> <a name="azure_tenant_id" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.azureTenantId"></a>
 
 ```python
 azure_tenant_id: str
@@ -1597,17 +1655,17 @@ azure_tenant_id: str
 
 ---
 
-##### `azure_use_msi`<sup>Optional</sup> <a name="azure_use_msi" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.azureUseMsi"></a>
+##### `azure_use_msi`<sup>Optional</sup> <a name="azure_use_msi" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.azureUseMsi"></a>
 
 ```python
 azure_use_msi: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `azure_workspace_resource_id`<sup>Optional</sup> <a name="azure_workspace_resource_id" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.azureWorkspaceResourceId"></a>
+##### `azure_workspace_resource_id`<sup>Optional</sup> <a name="azure_workspace_resource_id" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.azureWorkspaceResourceId"></a>
 
 ```python
 azure_workspace_resource_id: str
@@ -1617,7 +1675,7 @@ azure_workspace_resource_id: str
 
 ---
 
-##### `client_id`<sup>Optional</sup> <a name="client_id" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.clientId"></a>
+##### `client_id`<sup>Optional</sup> <a name="client_id" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.clientId"></a>
 
 ```python
 client_id: str
@@ -1627,7 +1685,7 @@ client_id: str
 
 ---
 
-##### `client_secret`<sup>Optional</sup> <a name="client_secret" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.clientSecret"></a>
+##### `client_secret`<sup>Optional</sup> <a name="client_secret" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.clientSecret"></a>
 
 ```python
 client_secret: str
@@ -1637,7 +1695,7 @@ client_secret: str
 
 ---
 
-##### `cluster_id`<sup>Optional</sup> <a name="cluster_id" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.clusterId"></a>
+##### `cluster_id`<sup>Optional</sup> <a name="cluster_id" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.clusterId"></a>
 
 ```python
 cluster_id: str
@@ -1647,7 +1705,7 @@ cluster_id: str
 
 ---
 
-##### `config_file`<sup>Optional</sup> <a name="config_file" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.configFile"></a>
+##### `config_file`<sup>Optional</sup> <a name="config_file" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.configFile"></a>
 
 ```python
 config_file: str
@@ -1657,7 +1715,7 @@ config_file: str
 
 ---
 
-##### `databricks_cli_path`<sup>Optional</sup> <a name="databricks_cli_path" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.databricksCliPath"></a>
+##### `databricks_cli_path`<sup>Optional</sup> <a name="databricks_cli_path" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.databricksCliPath"></a>
 
 ```python
 databricks_cli_path: str
@@ -1667,7 +1725,7 @@ databricks_cli_path: str
 
 ---
 
-##### `databricks_id_token_filepath`<sup>Optional</sup> <a name="databricks_id_token_filepath" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.databricksIdTokenFilepath"></a>
+##### `databricks_id_token_filepath`<sup>Optional</sup> <a name="databricks_id_token_filepath" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.databricksIdTokenFilepath"></a>
 
 ```python
 databricks_id_token_filepath: str
@@ -1677,17 +1735,17 @@ databricks_id_token_filepath: str
 
 ---
 
-##### `debug_headers`<sup>Optional</sup> <a name="debug_headers" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.debugHeaders"></a>
+##### `debug_headers`<sup>Optional</sup> <a name="debug_headers" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.debugHeaders"></a>
 
 ```python
 debug_headers: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `debug_truncate_bytes`<sup>Optional</sup> <a name="debug_truncate_bytes" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.debugTruncateBytes"></a>
+##### `debug_truncate_bytes`<sup>Optional</sup> <a name="debug_truncate_bytes" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.debugTruncateBytes"></a>
 
 ```python
 debug_truncate_bytes: typing.Union[int, float]
@@ -1697,17 +1755,27 @@ debug_truncate_bytes: typing.Union[int, float]
 
 ---
 
-##### `experimental_is_unified_host`<sup>Optional</sup> <a name="experimental_is_unified_host" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.experimentalIsUnifiedHost"></a>
+##### `disable_oauth_refresh_token`<sup>Optional</sup> <a name="disable_oauth_refresh_token" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.disableOauthRefreshToken"></a>
+
+```python
+disable_oauth_refresh_token: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `experimental_is_unified_host`<sup>Optional</sup> <a name="experimental_is_unified_host" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.experimentalIsUnifiedHost"></a>
 
 ```python
 experimental_is_unified_host: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `google_credentials`<sup>Optional</sup> <a name="google_credentials" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.googleCredentials"></a>
+##### `google_credentials`<sup>Optional</sup> <a name="google_credentials" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.googleCredentials"></a>
 
 ```python
 google_credentials: str
@@ -1717,7 +1785,7 @@ google_credentials: str
 
 ---
 
-##### `google_service_account`<sup>Optional</sup> <a name="google_service_account" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.googleServiceAccount"></a>
+##### `google_service_account`<sup>Optional</sup> <a name="google_service_account" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.googleServiceAccount"></a>
 
 ```python
 google_service_account: str
@@ -1727,7 +1795,7 @@ google_service_account: str
 
 ---
 
-##### `host`<sup>Optional</sup> <a name="host" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.host"></a>
+##### `host`<sup>Optional</sup> <a name="host" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.host"></a>
 
 ```python
 host: str
@@ -1737,7 +1805,7 @@ host: str
 
 ---
 
-##### `http_timeout_seconds`<sup>Optional</sup> <a name="http_timeout_seconds" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.httpTimeoutSeconds"></a>
+##### `http_timeout_seconds`<sup>Optional</sup> <a name="http_timeout_seconds" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.httpTimeoutSeconds"></a>
 
 ```python
 http_timeout_seconds: typing.Union[int, float]
@@ -1747,7 +1815,7 @@ http_timeout_seconds: typing.Union[int, float]
 
 ---
 
-##### `metadata_service_url`<sup>Optional</sup> <a name="metadata_service_url" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.metadataServiceUrl"></a>
+##### `metadata_service_url`<sup>Optional</sup> <a name="metadata_service_url" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.metadataServiceUrl"></a>
 
 ```python
 metadata_service_url: str
@@ -1757,7 +1825,7 @@ metadata_service_url: str
 
 ---
 
-##### `oauth_callback_port`<sup>Optional</sup> <a name="oauth_callback_port" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.oauthCallbackPort"></a>
+##### `oauth_callback_port`<sup>Optional</sup> <a name="oauth_callback_port" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.oauthCallbackPort"></a>
 
 ```python
 oauth_callback_port: typing.Union[int, float]
@@ -1767,7 +1835,7 @@ oauth_callback_port: typing.Union[int, float]
 
 ---
 
-##### `oidc_token_env`<sup>Optional</sup> <a name="oidc_token_env" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.oidcTokenEnv"></a>
+##### `oidc_token_env`<sup>Optional</sup> <a name="oidc_token_env" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.oidcTokenEnv"></a>
 
 ```python
 oidc_token_env: str
@@ -1777,7 +1845,7 @@ oidc_token_env: str
 
 ---
 
-##### `password`<sup>Optional</sup> <a name="password" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.password"></a>
+##### `password`<sup>Optional</sup> <a name="password" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.password"></a>
 
 ```python
 password: str
@@ -1787,7 +1855,7 @@ password: str
 
 ---
 
-##### `profile`<sup>Optional</sup> <a name="profile" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.profile"></a>
+##### `profile`<sup>Optional</sup> <a name="profile" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.profile"></a>
 
 ```python
 profile: str
@@ -1797,7 +1865,7 @@ profile: str
 
 ---
 
-##### `rate_limit`<sup>Optional</sup> <a name="rate_limit" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.rateLimit"></a>
+##### `rate_limit`<sup>Optional</sup> <a name="rate_limit" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.rateLimit"></a>
 
 ```python
 rate_limit: typing.Union[int, float]
@@ -1807,7 +1875,7 @@ rate_limit: typing.Union[int, float]
 
 ---
 
-##### `retry_timeout_seconds`<sup>Optional</sup> <a name="retry_timeout_seconds" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.retryTimeoutSeconds"></a>
+##### `retry_timeout_seconds`<sup>Optional</sup> <a name="retry_timeout_seconds" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.retryTimeoutSeconds"></a>
 
 ```python
 retry_timeout_seconds: typing.Union[int, float]
@@ -1817,7 +1885,17 @@ retry_timeout_seconds: typing.Union[int, float]
 
 ---
 
-##### `serverless_compute_id`<sup>Optional</sup> <a name="serverless_compute_id" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.serverlessComputeId"></a>
+##### `scopes`<sup>Optional</sup> <a name="scopes" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.scopes"></a>
+
+```python
+scopes: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `serverless_compute_id`<sup>Optional</sup> <a name="serverless_compute_id" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.serverlessComputeId"></a>
 
 ```python
 serverless_compute_id: str
@@ -1827,17 +1905,17 @@ serverless_compute_id: str
 
 ---
 
-##### `skip_verify`<sup>Optional</sup> <a name="skip_verify" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.skipVerify"></a>
+##### `skip_verify`<sup>Optional</sup> <a name="skip_verify" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.skipVerify"></a>
 
 ```python
 skip_verify: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `token`<sup>Optional</sup> <a name="token" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.token"></a>
+##### `token`<sup>Optional</sup> <a name="token" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.token"></a>
 
 ```python
 token: str
@@ -1847,7 +1925,7 @@ token: str
 
 ---
 
-##### `username`<sup>Optional</sup> <a name="username" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.username"></a>
+##### `username`<sup>Optional</sup> <a name="username" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.username"></a>
 
 ```python
 username: str
@@ -1857,7 +1935,7 @@ username: str
 
 ---
 
-##### `warehouse_id`<sup>Optional</sup> <a name="warehouse_id" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.warehouseId"></a>
+##### `warehouse_id`<sup>Optional</sup> <a name="warehouse_id" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.warehouseId"></a>
 
 ```python
 warehouse_id: str
@@ -1867,7 +1945,7 @@ warehouse_id: str
 
 ---
 
-##### `workspace_id`<sup>Optional</sup> <a name="workspace_id" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.workspaceId"></a>
+##### `workspace_id`<sup>Optional</sup> <a name="workspace_id" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.workspaceId"></a>
 
 ```python
 workspace_id: str
@@ -1881,11 +1959,11 @@ workspace_id: str
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProvider.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProvider.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-databricks.provider.DatabricksProvider.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-databricks.provider.DatabricksProvider.property.tfResourceType"></a>
 
 ```python
 tfResourceType: str
@@ -1897,12 +1975,12 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### DatabricksProviderConfig <a name="DatabricksProviderConfig" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig"></a>
+### DatabricksProviderConfig <a name="DatabricksProviderConfig" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_databricks import provider
+from cdktn_provider_databricks import provider
 
 provider.DatabricksProviderConfig(
   account_id: str = None,
@@ -1926,6 +2004,7 @@ provider.DatabricksProviderConfig(
   databricks_id_token_filepath: str = None,
   debug_headers: bool | IResolvable = None,
   debug_truncate_bytes: typing.Union[int, float] = None,
+  disable_oauth_refresh_token: bool | IResolvable = None,
   experimental_is_unified_host: bool | IResolvable = None,
   google_credentials: str = None,
   google_service_account: str = None,
@@ -1938,6 +2017,7 @@ provider.DatabricksProviderConfig(
   profile: str = None,
   rate_limit: typing.Union[int, float] = None,
   retry_timeout_seconds: typing.Union[int, float] = None,
+  scopes: typing.List[str] = None,
   serverless_compute_id: str = None,
   skip_verify: bool | IResolvable = None,
   token: str = None,
@@ -1951,49 +2031,51 @@ provider.DatabricksProviderConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#account_id DatabricksProvider#account_id}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.actionsIdTokenRequestToken">actions_id_token_request_token</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#actions_id_token_request_token DatabricksProvider#actions_id_token_request_token}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.actionsIdTokenRequestUrl">actions_id_token_request_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#actions_id_token_request_url DatabricksProvider#actions_id_token_request_url}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.alias">alias</a></code> | <code>str</code> | Alias name. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.audience">audience</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#audience DatabricksProvider#audience}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.authType">auth_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#auth_type DatabricksProvider#auth_type}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.azureClientId">azure_client_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#azure_client_id DatabricksProvider#azure_client_id}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.azureClientSecret">azure_client_secret</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#azure_client_secret DatabricksProvider#azure_client_secret}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.azureEnvironment">azure_environment</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#azure_environment DatabricksProvider#azure_environment}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.azureLoginAppId">azure_login_app_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#azure_login_app_id DatabricksProvider#azure_login_app_id}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.azureTenantId">azure_tenant_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#azure_tenant_id DatabricksProvider#azure_tenant_id}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.azureUseMsi">azure_use_msi</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#azure_use_msi DatabricksProvider#azure_use_msi}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.azureWorkspaceResourceId">azure_workspace_resource_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#azure_workspace_resource_id DatabricksProvider#azure_workspace_resource_id}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.clientId">client_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#client_id DatabricksProvider#client_id}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.clientSecret">client_secret</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#client_secret DatabricksProvider#client_secret}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.clusterId">cluster_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#cluster_id DatabricksProvider#cluster_id}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.configFile">config_file</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#config_file DatabricksProvider#config_file}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.databricksCliPath">databricks_cli_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#databricks_cli_path DatabricksProvider#databricks_cli_path}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.databricksIdTokenFilepath">databricks_id_token_filepath</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#databricks_id_token_filepath DatabricksProvider#databricks_id_token_filepath}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.debugHeaders">debug_headers</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#debug_headers DatabricksProvider#debug_headers}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.debugTruncateBytes">debug_truncate_bytes</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#debug_truncate_bytes DatabricksProvider#debug_truncate_bytes}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.experimentalIsUnifiedHost">experimental_is_unified_host</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#experimental_is_unified_host DatabricksProvider#experimental_is_unified_host}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.googleCredentials">google_credentials</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#google_credentials DatabricksProvider#google_credentials}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.googleServiceAccount">google_service_account</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#google_service_account DatabricksProvider#google_service_account}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.host">host</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#host DatabricksProvider#host}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.httpTimeoutSeconds">http_timeout_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#http_timeout_seconds DatabricksProvider#http_timeout_seconds}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.metadataServiceUrl">metadata_service_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#metadata_service_url DatabricksProvider#metadata_service_url}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.oauthCallbackPort">oauth_callback_port</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#oauth_callback_port DatabricksProvider#oauth_callback_port}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.oidcTokenEnv">oidc_token_env</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#oidc_token_env DatabricksProvider#oidc_token_env}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.password">password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#password DatabricksProvider#password}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.profile">profile</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#profile DatabricksProvider#profile}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.rateLimit">rate_limit</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#rate_limit DatabricksProvider#rate_limit}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.retryTimeoutSeconds">retry_timeout_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#retry_timeout_seconds DatabricksProvider#retry_timeout_seconds}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.serverlessComputeId">serverless_compute_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#serverless_compute_id DatabricksProvider#serverless_compute_id}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.skipVerify">skip_verify</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#skip_verify DatabricksProvider#skip_verify}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.token">token</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#token DatabricksProvider#token}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.username">username</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#username DatabricksProvider#username}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.warehouseId">warehouse_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#warehouse_id DatabricksProvider#warehouse_id}. |
-| <code><a href="#@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#workspace_id DatabricksProvider#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#account_id DatabricksProvider#account_id}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.actionsIdTokenRequestToken">actions_id_token_request_token</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#actions_id_token_request_token DatabricksProvider#actions_id_token_request_token}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.actionsIdTokenRequestUrl">actions_id_token_request_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#actions_id_token_request_url DatabricksProvider#actions_id_token_request_url}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.alias">alias</a></code> | <code>str</code> | Alias name. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.audience">audience</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#audience DatabricksProvider#audience}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.authType">auth_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#auth_type DatabricksProvider#auth_type}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.azureClientId">azure_client_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#azure_client_id DatabricksProvider#azure_client_id}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.azureClientSecret">azure_client_secret</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#azure_client_secret DatabricksProvider#azure_client_secret}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.azureEnvironment">azure_environment</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#azure_environment DatabricksProvider#azure_environment}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.azureLoginAppId">azure_login_app_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#azure_login_app_id DatabricksProvider#azure_login_app_id}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.azureTenantId">azure_tenant_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#azure_tenant_id DatabricksProvider#azure_tenant_id}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.azureUseMsi">azure_use_msi</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#azure_use_msi DatabricksProvider#azure_use_msi}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.azureWorkspaceResourceId">azure_workspace_resource_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#azure_workspace_resource_id DatabricksProvider#azure_workspace_resource_id}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.clientId">client_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#client_id DatabricksProvider#client_id}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.clientSecret">client_secret</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#client_secret DatabricksProvider#client_secret}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.clusterId">cluster_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#cluster_id DatabricksProvider#cluster_id}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.configFile">config_file</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#config_file DatabricksProvider#config_file}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.databricksCliPath">databricks_cli_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#databricks_cli_path DatabricksProvider#databricks_cli_path}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.databricksIdTokenFilepath">databricks_id_token_filepath</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#databricks_id_token_filepath DatabricksProvider#databricks_id_token_filepath}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.debugHeaders">debug_headers</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#debug_headers DatabricksProvider#debug_headers}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.debugTruncateBytes">debug_truncate_bytes</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#debug_truncate_bytes DatabricksProvider#debug_truncate_bytes}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.disableOauthRefreshToken">disable_oauth_refresh_token</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#disable_oauth_refresh_token DatabricksProvider#disable_oauth_refresh_token}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.experimentalIsUnifiedHost">experimental_is_unified_host</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#experimental_is_unified_host DatabricksProvider#experimental_is_unified_host}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.googleCredentials">google_credentials</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#google_credentials DatabricksProvider#google_credentials}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.googleServiceAccount">google_service_account</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#google_service_account DatabricksProvider#google_service_account}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.host">host</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#host DatabricksProvider#host}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.httpTimeoutSeconds">http_timeout_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#http_timeout_seconds DatabricksProvider#http_timeout_seconds}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.metadataServiceUrl">metadata_service_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#metadata_service_url DatabricksProvider#metadata_service_url}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.oauthCallbackPort">oauth_callback_port</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#oauth_callback_port DatabricksProvider#oauth_callback_port}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.oidcTokenEnv">oidc_token_env</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#oidc_token_env DatabricksProvider#oidc_token_env}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.password">password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#password DatabricksProvider#password}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.profile">profile</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#profile DatabricksProvider#profile}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.rateLimit">rate_limit</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#rate_limit DatabricksProvider#rate_limit}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.retryTimeoutSeconds">retry_timeout_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#retry_timeout_seconds DatabricksProvider#retry_timeout_seconds}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.scopes">scopes</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#scopes DatabricksProvider#scopes}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.serverlessComputeId">serverless_compute_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#serverless_compute_id DatabricksProvider#serverless_compute_id}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.skipVerify">skip_verify</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#skip_verify DatabricksProvider#skip_verify}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.token">token</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#token DatabricksProvider#token}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.username">username</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#username DatabricksProvider#username}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.warehouseId">warehouse_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#warehouse_id DatabricksProvider#warehouse_id}. |
+| <code><a href="#@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#workspace_id DatabricksProvider#workspace_id}. |
 
 ---
 
-##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.accountId"></a>
+##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.accountId"></a>
 
 ```python
 account_id: str
@@ -2001,11 +2083,11 @@ account_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#account_id DatabricksProvider#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#account_id DatabricksProvider#account_id}.
 
 ---
 
-##### `actions_id_token_request_token`<sup>Optional</sup> <a name="actions_id_token_request_token" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.actionsIdTokenRequestToken"></a>
+##### `actions_id_token_request_token`<sup>Optional</sup> <a name="actions_id_token_request_token" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.actionsIdTokenRequestToken"></a>
 
 ```python
 actions_id_token_request_token: str
@@ -2013,11 +2095,11 @@ actions_id_token_request_token: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#actions_id_token_request_token DatabricksProvider#actions_id_token_request_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#actions_id_token_request_token DatabricksProvider#actions_id_token_request_token}.
 
 ---
 
-##### `actions_id_token_request_url`<sup>Optional</sup> <a name="actions_id_token_request_url" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.actionsIdTokenRequestUrl"></a>
+##### `actions_id_token_request_url`<sup>Optional</sup> <a name="actions_id_token_request_url" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.actionsIdTokenRequestUrl"></a>
 
 ```python
 actions_id_token_request_url: str
@@ -2025,11 +2107,11 @@ actions_id_token_request_url: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#actions_id_token_request_url DatabricksProvider#actions_id_token_request_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#actions_id_token_request_url DatabricksProvider#actions_id_token_request_url}.
 
 ---
 
-##### `alias`<sup>Optional</sup> <a name="alias" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.alias"></a>
+##### `alias`<sup>Optional</sup> <a name="alias" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.alias"></a>
 
 ```python
 alias: str
@@ -2039,11 +2121,11 @@ alias: str
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#alias DatabricksProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#alias DatabricksProvider#alias}
 
 ---
 
-##### `audience`<sup>Optional</sup> <a name="audience" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.audience"></a>
+##### `audience`<sup>Optional</sup> <a name="audience" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.audience"></a>
 
 ```python
 audience: str
@@ -2051,11 +2133,11 @@ audience: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#audience DatabricksProvider#audience}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#audience DatabricksProvider#audience}.
 
 ---
 
-##### `auth_type`<sup>Optional</sup> <a name="auth_type" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.authType"></a>
+##### `auth_type`<sup>Optional</sup> <a name="auth_type" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.authType"></a>
 
 ```python
 auth_type: str
@@ -2063,11 +2145,11 @@ auth_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#auth_type DatabricksProvider#auth_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#auth_type DatabricksProvider#auth_type}.
 
 ---
 
-##### `azure_client_id`<sup>Optional</sup> <a name="azure_client_id" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.azureClientId"></a>
+##### `azure_client_id`<sup>Optional</sup> <a name="azure_client_id" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.azureClientId"></a>
 
 ```python
 azure_client_id: str
@@ -2075,11 +2157,11 @@ azure_client_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#azure_client_id DatabricksProvider#azure_client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#azure_client_id DatabricksProvider#azure_client_id}.
 
 ---
 
-##### `azure_client_secret`<sup>Optional</sup> <a name="azure_client_secret" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.azureClientSecret"></a>
+##### `azure_client_secret`<sup>Optional</sup> <a name="azure_client_secret" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.azureClientSecret"></a>
 
 ```python
 azure_client_secret: str
@@ -2087,11 +2169,11 @@ azure_client_secret: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#azure_client_secret DatabricksProvider#azure_client_secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#azure_client_secret DatabricksProvider#azure_client_secret}.
 
 ---
 
-##### `azure_environment`<sup>Optional</sup> <a name="azure_environment" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.azureEnvironment"></a>
+##### `azure_environment`<sup>Optional</sup> <a name="azure_environment" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.azureEnvironment"></a>
 
 ```python
 azure_environment: str
@@ -2099,11 +2181,11 @@ azure_environment: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#azure_environment DatabricksProvider#azure_environment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#azure_environment DatabricksProvider#azure_environment}.
 
 ---
 
-##### `azure_login_app_id`<sup>Optional</sup> <a name="azure_login_app_id" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.azureLoginAppId"></a>
+##### `azure_login_app_id`<sup>Optional</sup> <a name="azure_login_app_id" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.azureLoginAppId"></a>
 
 ```python
 azure_login_app_id: str
@@ -2111,11 +2193,11 @@ azure_login_app_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#azure_login_app_id DatabricksProvider#azure_login_app_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#azure_login_app_id DatabricksProvider#azure_login_app_id}.
 
 ---
 
-##### `azure_tenant_id`<sup>Optional</sup> <a name="azure_tenant_id" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.azureTenantId"></a>
+##### `azure_tenant_id`<sup>Optional</sup> <a name="azure_tenant_id" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.azureTenantId"></a>
 
 ```python
 azure_tenant_id: str
@@ -2123,23 +2205,23 @@ azure_tenant_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#azure_tenant_id DatabricksProvider#azure_tenant_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#azure_tenant_id DatabricksProvider#azure_tenant_id}.
 
 ---
 
-##### `azure_use_msi`<sup>Optional</sup> <a name="azure_use_msi" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.azureUseMsi"></a>
+##### `azure_use_msi`<sup>Optional</sup> <a name="azure_use_msi" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.azureUseMsi"></a>
 
 ```python
 azure_use_msi: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#azure_use_msi DatabricksProvider#azure_use_msi}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#azure_use_msi DatabricksProvider#azure_use_msi}.
 
 ---
 
-##### `azure_workspace_resource_id`<sup>Optional</sup> <a name="azure_workspace_resource_id" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.azureWorkspaceResourceId"></a>
+##### `azure_workspace_resource_id`<sup>Optional</sup> <a name="azure_workspace_resource_id" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.azureWorkspaceResourceId"></a>
 
 ```python
 azure_workspace_resource_id: str
@@ -2147,11 +2229,11 @@ azure_workspace_resource_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#azure_workspace_resource_id DatabricksProvider#azure_workspace_resource_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#azure_workspace_resource_id DatabricksProvider#azure_workspace_resource_id}.
 
 ---
 
-##### `client_id`<sup>Optional</sup> <a name="client_id" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.clientId"></a>
+##### `client_id`<sup>Optional</sup> <a name="client_id" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.clientId"></a>
 
 ```python
 client_id: str
@@ -2159,11 +2241,11 @@ client_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#client_id DatabricksProvider#client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#client_id DatabricksProvider#client_id}.
 
 ---
 
-##### `client_secret`<sup>Optional</sup> <a name="client_secret" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.clientSecret"></a>
+##### `client_secret`<sup>Optional</sup> <a name="client_secret" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.clientSecret"></a>
 
 ```python
 client_secret: str
@@ -2171,11 +2253,11 @@ client_secret: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#client_secret DatabricksProvider#client_secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#client_secret DatabricksProvider#client_secret}.
 
 ---
 
-##### `cluster_id`<sup>Optional</sup> <a name="cluster_id" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.clusterId"></a>
+##### `cluster_id`<sup>Optional</sup> <a name="cluster_id" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.clusterId"></a>
 
 ```python
 cluster_id: str
@@ -2183,11 +2265,11 @@ cluster_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#cluster_id DatabricksProvider#cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#cluster_id DatabricksProvider#cluster_id}.
 
 ---
 
-##### `config_file`<sup>Optional</sup> <a name="config_file" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.configFile"></a>
+##### `config_file`<sup>Optional</sup> <a name="config_file" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.configFile"></a>
 
 ```python
 config_file: str
@@ -2195,11 +2277,11 @@ config_file: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#config_file DatabricksProvider#config_file}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#config_file DatabricksProvider#config_file}.
 
 ---
 
-##### `databricks_cli_path`<sup>Optional</sup> <a name="databricks_cli_path" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.databricksCliPath"></a>
+##### `databricks_cli_path`<sup>Optional</sup> <a name="databricks_cli_path" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.databricksCliPath"></a>
 
 ```python
 databricks_cli_path: str
@@ -2207,11 +2289,11 @@ databricks_cli_path: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#databricks_cli_path DatabricksProvider#databricks_cli_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#databricks_cli_path DatabricksProvider#databricks_cli_path}.
 
 ---
 
-##### `databricks_id_token_filepath`<sup>Optional</sup> <a name="databricks_id_token_filepath" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.databricksIdTokenFilepath"></a>
+##### `databricks_id_token_filepath`<sup>Optional</sup> <a name="databricks_id_token_filepath" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.databricksIdTokenFilepath"></a>
 
 ```python
 databricks_id_token_filepath: str
@@ -2219,23 +2301,23 @@ databricks_id_token_filepath: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#databricks_id_token_filepath DatabricksProvider#databricks_id_token_filepath}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#databricks_id_token_filepath DatabricksProvider#databricks_id_token_filepath}.
 
 ---
 
-##### `debug_headers`<sup>Optional</sup> <a name="debug_headers" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.debugHeaders"></a>
+##### `debug_headers`<sup>Optional</sup> <a name="debug_headers" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.debugHeaders"></a>
 
 ```python
 debug_headers: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#debug_headers DatabricksProvider#debug_headers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#debug_headers DatabricksProvider#debug_headers}.
 
 ---
 
-##### `debug_truncate_bytes`<sup>Optional</sup> <a name="debug_truncate_bytes" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.debugTruncateBytes"></a>
+##### `debug_truncate_bytes`<sup>Optional</sup> <a name="debug_truncate_bytes" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.debugTruncateBytes"></a>
 
 ```python
 debug_truncate_bytes: typing.Union[int, float]
@@ -2243,23 +2325,35 @@ debug_truncate_bytes: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#debug_truncate_bytes DatabricksProvider#debug_truncate_bytes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#debug_truncate_bytes DatabricksProvider#debug_truncate_bytes}.
 
 ---
 
-##### `experimental_is_unified_host`<sup>Optional</sup> <a name="experimental_is_unified_host" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.experimentalIsUnifiedHost"></a>
+##### `disable_oauth_refresh_token`<sup>Optional</sup> <a name="disable_oauth_refresh_token" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.disableOauthRefreshToken"></a>
+
+```python
+disable_oauth_refresh_token: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#disable_oauth_refresh_token DatabricksProvider#disable_oauth_refresh_token}.
+
+---
+
+##### `experimental_is_unified_host`<sup>Optional</sup> <a name="experimental_is_unified_host" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.experimentalIsUnifiedHost"></a>
 
 ```python
 experimental_is_unified_host: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#experimental_is_unified_host DatabricksProvider#experimental_is_unified_host}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#experimental_is_unified_host DatabricksProvider#experimental_is_unified_host}.
 
 ---
 
-##### `google_credentials`<sup>Optional</sup> <a name="google_credentials" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.googleCredentials"></a>
+##### `google_credentials`<sup>Optional</sup> <a name="google_credentials" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.googleCredentials"></a>
 
 ```python
 google_credentials: str
@@ -2267,11 +2361,11 @@ google_credentials: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#google_credentials DatabricksProvider#google_credentials}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#google_credentials DatabricksProvider#google_credentials}.
 
 ---
 
-##### `google_service_account`<sup>Optional</sup> <a name="google_service_account" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.googleServiceAccount"></a>
+##### `google_service_account`<sup>Optional</sup> <a name="google_service_account" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.googleServiceAccount"></a>
 
 ```python
 google_service_account: str
@@ -2279,11 +2373,11 @@ google_service_account: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#google_service_account DatabricksProvider#google_service_account}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#google_service_account DatabricksProvider#google_service_account}.
 
 ---
 
-##### `host`<sup>Optional</sup> <a name="host" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.host"></a>
+##### `host`<sup>Optional</sup> <a name="host" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.host"></a>
 
 ```python
 host: str
@@ -2291,11 +2385,11 @@ host: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#host DatabricksProvider#host}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#host DatabricksProvider#host}.
 
 ---
 
-##### `http_timeout_seconds`<sup>Optional</sup> <a name="http_timeout_seconds" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.httpTimeoutSeconds"></a>
+##### `http_timeout_seconds`<sup>Optional</sup> <a name="http_timeout_seconds" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.httpTimeoutSeconds"></a>
 
 ```python
 http_timeout_seconds: typing.Union[int, float]
@@ -2303,11 +2397,11 @@ http_timeout_seconds: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#http_timeout_seconds DatabricksProvider#http_timeout_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#http_timeout_seconds DatabricksProvider#http_timeout_seconds}.
 
 ---
 
-##### `metadata_service_url`<sup>Optional</sup> <a name="metadata_service_url" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.metadataServiceUrl"></a>
+##### `metadata_service_url`<sup>Optional</sup> <a name="metadata_service_url" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.metadataServiceUrl"></a>
 
 ```python
 metadata_service_url: str
@@ -2315,11 +2409,11 @@ metadata_service_url: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#metadata_service_url DatabricksProvider#metadata_service_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#metadata_service_url DatabricksProvider#metadata_service_url}.
 
 ---
 
-##### `oauth_callback_port`<sup>Optional</sup> <a name="oauth_callback_port" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.oauthCallbackPort"></a>
+##### `oauth_callback_port`<sup>Optional</sup> <a name="oauth_callback_port" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.oauthCallbackPort"></a>
 
 ```python
 oauth_callback_port: typing.Union[int, float]
@@ -2327,11 +2421,11 @@ oauth_callback_port: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#oauth_callback_port DatabricksProvider#oauth_callback_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#oauth_callback_port DatabricksProvider#oauth_callback_port}.
 
 ---
 
-##### `oidc_token_env`<sup>Optional</sup> <a name="oidc_token_env" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.oidcTokenEnv"></a>
+##### `oidc_token_env`<sup>Optional</sup> <a name="oidc_token_env" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.oidcTokenEnv"></a>
 
 ```python
 oidc_token_env: str
@@ -2339,11 +2433,11 @@ oidc_token_env: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#oidc_token_env DatabricksProvider#oidc_token_env}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#oidc_token_env DatabricksProvider#oidc_token_env}.
 
 ---
 
-##### `password`<sup>Optional</sup> <a name="password" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.password"></a>
+##### `password`<sup>Optional</sup> <a name="password" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.password"></a>
 
 ```python
 password: str
@@ -2351,11 +2445,11 @@ password: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#password DatabricksProvider#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#password DatabricksProvider#password}.
 
 ---
 
-##### `profile`<sup>Optional</sup> <a name="profile" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.profile"></a>
+##### `profile`<sup>Optional</sup> <a name="profile" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.profile"></a>
 
 ```python
 profile: str
@@ -2363,11 +2457,11 @@ profile: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#profile DatabricksProvider#profile}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#profile DatabricksProvider#profile}.
 
 ---
 
-##### `rate_limit`<sup>Optional</sup> <a name="rate_limit" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.rateLimit"></a>
+##### `rate_limit`<sup>Optional</sup> <a name="rate_limit" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.rateLimit"></a>
 
 ```python
 rate_limit: typing.Union[int, float]
@@ -2375,11 +2469,11 @@ rate_limit: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#rate_limit DatabricksProvider#rate_limit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#rate_limit DatabricksProvider#rate_limit}.
 
 ---
 
-##### `retry_timeout_seconds`<sup>Optional</sup> <a name="retry_timeout_seconds" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.retryTimeoutSeconds"></a>
+##### `retry_timeout_seconds`<sup>Optional</sup> <a name="retry_timeout_seconds" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.retryTimeoutSeconds"></a>
 
 ```python
 retry_timeout_seconds: typing.Union[int, float]
@@ -2387,11 +2481,23 @@ retry_timeout_seconds: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#retry_timeout_seconds DatabricksProvider#retry_timeout_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#retry_timeout_seconds DatabricksProvider#retry_timeout_seconds}.
 
 ---
 
-##### `serverless_compute_id`<sup>Optional</sup> <a name="serverless_compute_id" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.serverlessComputeId"></a>
+##### `scopes`<sup>Optional</sup> <a name="scopes" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.scopes"></a>
+
+```python
+scopes: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#scopes DatabricksProvider#scopes}.
+
+---
+
+##### `serverless_compute_id`<sup>Optional</sup> <a name="serverless_compute_id" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.serverlessComputeId"></a>
 
 ```python
 serverless_compute_id: str
@@ -2399,23 +2505,23 @@ serverless_compute_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#serverless_compute_id DatabricksProvider#serverless_compute_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#serverless_compute_id DatabricksProvider#serverless_compute_id}.
 
 ---
 
-##### `skip_verify`<sup>Optional</sup> <a name="skip_verify" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.skipVerify"></a>
+##### `skip_verify`<sup>Optional</sup> <a name="skip_verify" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.skipVerify"></a>
 
 ```python
 skip_verify: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#skip_verify DatabricksProvider#skip_verify}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#skip_verify DatabricksProvider#skip_verify}.
 
 ---
 
-##### `token`<sup>Optional</sup> <a name="token" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.token"></a>
+##### `token`<sup>Optional</sup> <a name="token" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.token"></a>
 
 ```python
 token: str
@@ -2423,11 +2529,11 @@ token: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#token DatabricksProvider#token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#token DatabricksProvider#token}.
 
 ---
 
-##### `username`<sup>Optional</sup> <a name="username" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.username"></a>
+##### `username`<sup>Optional</sup> <a name="username" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.username"></a>
 
 ```python
 username: str
@@ -2435,11 +2541,11 @@ username: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#username DatabricksProvider#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#username DatabricksProvider#username}.
 
 ---
 
-##### `warehouse_id`<sup>Optional</sup> <a name="warehouse_id" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.warehouseId"></a>
+##### `warehouse_id`<sup>Optional</sup> <a name="warehouse_id" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.warehouseId"></a>
 
 ```python
 warehouse_id: str
@@ -2447,11 +2553,11 @@ warehouse_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#warehouse_id DatabricksProvider#warehouse_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#warehouse_id DatabricksProvider#warehouse_id}.
 
 ---
 
-##### `workspace_id`<sup>Optional</sup> <a name="workspace_id" id="@cdktf/provider-databricks.provider.DatabricksProviderConfig.property.workspaceId"></a>
+##### `workspace_id`<sup>Optional</sup> <a name="workspace_id" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.property.workspaceId"></a>
 
 ```python
 workspace_id: str
@@ -2459,7 +2565,7 @@ workspace_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#workspace_id DatabricksProvider#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#workspace_id DatabricksProvider#workspace_id}.
 
 ---
 

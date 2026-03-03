@@ -1,48 +1,52 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/feature_engineering_kafka_configs
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/feature_engineering_kafka_configs
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataDatabricksFeatureEngineeringKafkaConfigsConfig extends cdktf.TerraformMetaArguments {
+export interface DataDatabricksFeatureEngineeringKafkaConfigsConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/feature_engineering_kafka_configs#page_size DataDatabricksFeatureEngineeringKafkaConfigs#page_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/feature_engineering_kafka_configs#page_size DataDatabricksFeatureEngineeringKafkaConfigs#page_size}
   */
   readonly pageSize?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/feature_engineering_kafka_configs#provider_config DataDatabricksFeatureEngineeringKafkaConfigs#provider_config}
+  */
+  readonly providerConfig?: DataDatabricksFeatureEngineeringKafkaConfigsProviderConfig;
 }
 export interface DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsAuthConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/feature_engineering_kafka_configs#uc_service_credential_name DataDatabricksFeatureEngineeringKafkaConfigs#uc_service_credential_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/feature_engineering_kafka_configs#uc_service_credential_name DataDatabricksFeatureEngineeringKafkaConfigs#uc_service_credential_name}
   */
   readonly ucServiceCredentialName?: string;
 }
 
 export function dataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsAuthConfigToTerraform(struct?: DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsAuthConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    uc_service_credential_name: cdktf.stringToTerraform(struct!.ucServiceCredentialName),
+    uc_service_credential_name: cdktn.stringToTerraform(struct!.ucServiceCredentialName),
   }
 }
 
 
 export function dataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsAuthConfigToHclTerraform(struct?: DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsAuthConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     uc_service_credential_name: {
-      value: cdktf.stringToHclTerraform(struct!.ucServiceCredentialName),
+      value: cdktn.stringToHclTerraform(struct!.ucServiceCredentialName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -53,14 +57,14 @@ export function dataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsAuthConf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsAuthConfigOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsAuthConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -101,32 +105,54 @@ export class DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsAuthConfigO
     return this._ucServiceCredentialName;
   }
 }
-export interface DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsKeySchema {
+export interface DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsBackfillSourceDeltaTableSource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/feature_engineering_kafka_configs#json_schema DataDatabricksFeatureEngineeringKafkaConfigs#json_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/feature_engineering_kafka_configs#entity_columns DataDatabricksFeatureEngineeringKafkaConfigs#entity_columns}
   */
-  readonly jsonSchema?: string;
+  readonly entityColumns: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/feature_engineering_kafka_configs#full_name DataDatabricksFeatureEngineeringKafkaConfigs#full_name}
+  */
+  readonly fullName: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/feature_engineering_kafka_configs#timeseries_column DataDatabricksFeatureEngineeringKafkaConfigs#timeseries_column}
+  */
+  readonly timeseriesColumn: string;
 }
 
-export function dataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsKeySchemaToTerraform(struct?: DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsKeySchema): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsBackfillSourceDeltaTableSourceToTerraform(struct?: DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsBackfillSourceDeltaTableSource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    json_schema: cdktf.stringToTerraform(struct!.jsonSchema),
+    entity_columns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.entityColumns),
+    full_name: cdktn.stringToTerraform(struct!.fullName),
+    timeseries_column: cdktn.stringToTerraform(struct!.timeseriesColumn),
   }
 }
 
 
-export function dataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsKeySchemaToHclTerraform(struct?: DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsKeySchema): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsBackfillSourceDeltaTableSourceToHclTerraform(struct?: DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsBackfillSourceDeltaTableSource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
-    json_schema: {
-      value: cdktf.stringToHclTerraform(struct!.jsonSchema),
+    entity_columns: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.entityColumns),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    full_name: {
+      value: cdktn.stringToHclTerraform(struct!.fullName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    timeseries_column: {
+      value: cdktn.stringToHclTerraform(struct!.timeseriesColumn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -137,14 +163,227 @@ export function dataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsKeySchem
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsKeySchemaOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsBackfillSourceDeltaTableSourceOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsBackfillSourceDeltaTableSource | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._entityColumns !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.entityColumns = this._entityColumns;
+    }
+    if (this._fullName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fullName = this._fullName;
+    }
+    if (this._timeseriesColumn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.timeseriesColumn = this._timeseriesColumn;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsBackfillSourceDeltaTableSource | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._entityColumns = undefined;
+      this._fullName = undefined;
+      this._timeseriesColumn = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._entityColumns = value.entityColumns;
+      this._fullName = value.fullName;
+      this._timeseriesColumn = value.timeseriesColumn;
+    }
+  }
+
+  // entity_columns - computed: true, optional: false, required: true
+  private _entityColumns?: string[]; 
+  public get entityColumns() {
+    return this.getListAttribute('entity_columns');
+  }
+  public set entityColumns(value: string[]) {
+    this._entityColumns = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get entityColumnsInput() {
+    return this._entityColumns;
+  }
+
+  // full_name - computed: true, optional: false, required: true
+  private _fullName?: string; 
+  public get fullName() {
+    return this.getStringAttribute('full_name');
+  }
+  public set fullName(value: string) {
+    this._fullName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fullNameInput() {
+    return this._fullName;
+  }
+
+  // timeseries_column - computed: true, optional: false, required: true
+  private _timeseriesColumn?: string; 
+  public get timeseriesColumn() {
+    return this.getStringAttribute('timeseries_column');
+  }
+  public set timeseriesColumn(value: string) {
+    this._timeseriesColumn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeseriesColumnInput() {
+    return this._timeseriesColumn;
+  }
+}
+export interface DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsBackfillSource {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/feature_engineering_kafka_configs#delta_table_source DataDatabricksFeatureEngineeringKafkaConfigs#delta_table_source}
+  */
+  readonly deltaTableSource?: DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsBackfillSourceDeltaTableSource;
+}
+
+export function dataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsBackfillSourceToTerraform(struct?: DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsBackfillSource): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    delta_table_source: dataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsBackfillSourceDeltaTableSourceToTerraform(struct!.deltaTableSource),
+  }
+}
+
+
+export function dataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsBackfillSourceToHclTerraform(struct?: DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsBackfillSource): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    delta_table_source: {
+      value: dataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsBackfillSourceDeltaTableSourceToHclTerraform(struct!.deltaTableSource),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsBackfillSourceDeltaTableSource",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsBackfillSourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsBackfillSource | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._deltaTableSource?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.deltaTableSource = this._deltaTableSource?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsBackfillSource | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._deltaTableSource.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._deltaTableSource.internalValue = value.deltaTableSource;
+    }
+  }
+
+  // delta_table_source - computed: true, optional: true, required: false
+  private _deltaTableSource = new DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsBackfillSourceDeltaTableSourceOutputReference(this, "delta_table_source");
+  public get deltaTableSource() {
+    return this._deltaTableSource;
+  }
+  public putDeltaTableSource(value: DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsBackfillSourceDeltaTableSource) {
+    this._deltaTableSource.internalValue = value;
+  }
+  public resetDeltaTableSource() {
+    this._deltaTableSource.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deltaTableSourceInput() {
+    return this._deltaTableSource.internalValue;
+  }
+}
+export interface DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsKeySchema {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/feature_engineering_kafka_configs#json_schema DataDatabricksFeatureEngineeringKafkaConfigs#json_schema}
+  */
+  readonly jsonSchema?: string;
+}
+
+export function dataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsKeySchemaToTerraform(struct?: DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsKeySchema): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    json_schema: cdktn.stringToTerraform(struct!.jsonSchema),
+  }
+}
+
+
+export function dataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsKeySchemaToHclTerraform(struct?: DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsKeySchema): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    json_schema: {
+      value: cdktn.stringToHclTerraform(struct!.jsonSchema),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsKeySchemaOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -185,54 +424,32 @@ export class DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsKeySchemaOu
     return this._jsonSchema;
   }
 }
-export interface DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsSubscriptionMode {
+export interface DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/feature_engineering_kafka_configs#assign DataDatabricksFeatureEngineeringKafkaConfigs#assign}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/feature_engineering_kafka_configs#workspace_id DataDatabricksFeatureEngineeringKafkaConfigs#workspace_id}
   */
-  readonly assign?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/feature_engineering_kafka_configs#subscribe DataDatabricksFeatureEngineeringKafkaConfigs#subscribe}
-  */
-  readonly subscribe?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/feature_engineering_kafka_configs#subscribe_pattern DataDatabricksFeatureEngineeringKafkaConfigs#subscribe_pattern}
-  */
-  readonly subscribePattern?: string;
+  readonly workspaceId: string;
 }
 
-export function dataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsSubscriptionModeToTerraform(struct?: DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsSubscriptionMode): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsProviderConfigToTerraform(struct?: DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsProviderConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    assign: cdktf.stringToTerraform(struct!.assign),
-    subscribe: cdktf.stringToTerraform(struct!.subscribe),
-    subscribe_pattern: cdktf.stringToTerraform(struct!.subscribePattern),
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
   }
 }
 
 
-export function dataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsSubscriptionModeToHclTerraform(struct?: DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsSubscriptionMode): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsProviderConfigToHclTerraform(struct?: DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsProviderConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
-    assign: {
-      value: cdktf.stringToHclTerraform(struct!.assign),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    subscribe: {
-      value: cdktf.stringToHclTerraform(struct!.subscribe),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    subscribe_pattern: {
-      value: cdktf.stringToHclTerraform(struct!.subscribePattern),
+    workspace_id: {
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -243,14 +460,127 @@ export function dataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsSubscrip
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsSubscriptionModeOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsProviderConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsProviderConfig | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._workspaceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workspaceId = this._workspaceId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsProviderConfig | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._workspaceId = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._workspaceId = value.workspaceId;
+    }
+  }
+
+  // workspace_id - computed: true, optional: false, required: true
+  private _workspaceId?: string; 
+  public get workspaceId() {
+    return this.getStringAttribute('workspace_id');
+  }
+  public set workspaceId(value: string) {
+    this._workspaceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workspaceIdInput() {
+    return this._workspaceId;
+  }
+}
+export interface DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsSubscriptionMode {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/feature_engineering_kafka_configs#assign DataDatabricksFeatureEngineeringKafkaConfigs#assign}
+  */
+  readonly assign?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/feature_engineering_kafka_configs#subscribe DataDatabricksFeatureEngineeringKafkaConfigs#subscribe}
+  */
+  readonly subscribe?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/feature_engineering_kafka_configs#subscribe_pattern DataDatabricksFeatureEngineeringKafkaConfigs#subscribe_pattern}
+  */
+  readonly subscribePattern?: string;
+}
+
+export function dataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsSubscriptionModeToTerraform(struct?: DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsSubscriptionMode): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    assign: cdktn.stringToTerraform(struct!.assign),
+    subscribe: cdktn.stringToTerraform(struct!.subscribe),
+    subscribe_pattern: cdktn.stringToTerraform(struct!.subscribePattern),
+  }
+}
+
+
+export function dataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsSubscriptionModeToHclTerraform(struct?: DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsSubscriptionMode): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    assign: {
+      value: cdktn.stringToHclTerraform(struct!.assign),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    subscribe: {
+      value: cdktn.stringToHclTerraform(struct!.subscribe),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    subscribe_pattern: {
+      value: cdktn.stringToHclTerraform(struct!.subscribePattern),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsSubscriptionModeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -337,30 +667,30 @@ export class DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsSubscriptio
 }
 export interface DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsValueSchema {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/feature_engineering_kafka_configs#json_schema DataDatabricksFeatureEngineeringKafkaConfigs#json_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/feature_engineering_kafka_configs#json_schema DataDatabricksFeatureEngineeringKafkaConfigs#json_schema}
   */
   readonly jsonSchema?: string;
 }
 
 export function dataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsValueSchemaToTerraform(struct?: DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsValueSchema): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    json_schema: cdktf.stringToTerraform(struct!.jsonSchema),
+    json_schema: cdktn.stringToTerraform(struct!.jsonSchema),
   }
 }
 
 
 export function dataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsValueSchemaToHclTerraform(struct?: DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsValueSchema): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     json_schema: {
-      value: cdktf.stringToHclTerraform(struct!.jsonSchema),
+      value: cdktn.stringToHclTerraform(struct!.jsonSchema),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -371,14 +701,14 @@ export function dataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsValueSch
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsValueSchemaOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsValueSchemaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -421,33 +751,44 @@ export class DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsValueSchema
 }
 export interface DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/feature_engineering_kafka_configs#name DataDatabricksFeatureEngineeringKafkaConfigs#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/feature_engineering_kafka_configs#name DataDatabricksFeatureEngineeringKafkaConfigs#name}
   */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/feature_engineering_kafka_configs#provider_config DataDatabricksFeatureEngineeringKafkaConfigs#provider_config}
+  */
+  readonly providerConfig?: DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsProviderConfig;
 }
 
 export function dataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsToTerraform(struct?: DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
+    name: cdktn.stringToTerraform(struct!.name),
+    provider_config: dataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsProviderConfigToTerraform(struct!.providerConfig),
   }
 }
 
 
 export function dataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsToHclTerraform(struct?: DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    provider_config: {
+      value: dataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsProviderConfigToHclTerraform(struct!.providerConfig),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsProviderConfig",
     },
   };
 
@@ -455,7 +796,7 @@ export function dataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -464,7 +805,7 @@ export class DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsOutputRefer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -475,6 +816,10 @@ export class DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsOutputRefer
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
+    if (this._providerConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.providerConfig = this._providerConfig?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -482,10 +827,12 @@ export class DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsOutputRefer
     if (value === undefined) {
       this.isEmptyObject = false;
       this._name = undefined;
+      this._providerConfig.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
+      this._providerConfig.internalValue = value.providerConfig;
     }
   }
 
@@ -495,13 +842,19 @@ export class DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsOutputRefer
     return this._authConfig;
   }
 
+  // backfill_source - computed: true, optional: false, required: false
+  private _backfillSource = new DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsBackfillSourceOutputReference(this, "backfill_source");
+  public get backfillSource() {
+    return this._backfillSource;
+  }
+
   // bootstrap_servers - computed: true, optional: false, required: false
   public get bootstrapServers() {
     return this.getStringAttribute('bootstrap_servers');
   }
 
   // extra_options - computed: true, optional: false, required: false
-  private _extraOptions = new cdktf.StringMap(this, "extra_options");
+  private _extraOptions = new cdktn.StringMap(this, "extra_options");
   public get extraOptions() {
     return this._extraOptions;
   }
@@ -525,6 +878,22 @@ export class DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsOutputRefer
     return this._name;
   }
 
+  // provider_config - computed: true, optional: true, required: false
+  private _providerConfig = new DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsProviderConfigOutputReference(this, "provider_config");
+  public get providerConfig() {
+    return this._providerConfig;
+  }
+  public putProviderConfig(value: DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsProviderConfig) {
+    this._providerConfig.internalValue = value;
+  }
+  public resetProviderConfig() {
+    this._providerConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerConfigInput() {
+    return this._providerConfig.internalValue;
+  }
+
   // subscription_mode - computed: true, optional: false, required: false
   private _subscriptionMode = new DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsSubscriptionModeOutputReference(this, "subscription_mode");
   public get subscriptionMode() {
@@ -538,15 +907,15 @@ export class DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsOutputRefer
   }
 }
 
-export class DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsList extends cdktf.ComplexList {
-  public internalValue? : DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigs[] | cdktf.IResolvable
+export class DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsList extends cdktn.ComplexList {
+  public internalValue? : DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigs[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -557,11 +926,102 @@ export class DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsList extend
     return new DataDatabricksFeatureEngineeringKafkaConfigsKafkaConfigsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataDatabricksFeatureEngineeringKafkaConfigsProviderConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/feature_engineering_kafka_configs#workspace_id DataDatabricksFeatureEngineeringKafkaConfigs#workspace_id}
+  */
+  readonly workspaceId: string;
+}
+
+export function dataDatabricksFeatureEngineeringKafkaConfigsProviderConfigToTerraform(struct?: DataDatabricksFeatureEngineeringKafkaConfigsProviderConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
+  }
+}
+
+
+export function dataDatabricksFeatureEngineeringKafkaConfigsProviderConfigToHclTerraform(struct?: DataDatabricksFeatureEngineeringKafkaConfigsProviderConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    workspace_id: {
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataDatabricksFeatureEngineeringKafkaConfigsProviderConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatabricksFeatureEngineeringKafkaConfigsProviderConfig | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._workspaceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workspaceId = this._workspaceId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksFeatureEngineeringKafkaConfigsProviderConfig | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._workspaceId = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._workspaceId = value.workspaceId;
+    }
+  }
+
+  // workspace_id - computed: false, optional: false, required: true
+  private _workspaceId?: string; 
+  public get workspaceId() {
+    return this.getStringAttribute('workspace_id');
+  }
+  public set workspaceId(value: string) {
+    this._workspaceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workspaceIdInput() {
+    return this._workspaceId;
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/feature_engineering_kafka_configs databricks_feature_engineering_kafka_configs}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/feature_engineering_kafka_configs databricks_feature_engineering_kafka_configs}
 */
-export class DataDatabricksFeatureEngineeringKafkaConfigs extends cdktf.TerraformDataSource {
+export class DataDatabricksFeatureEngineeringKafkaConfigs extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -572,14 +1032,14 @@ export class DataDatabricksFeatureEngineeringKafkaConfigs extends cdktf.Terrafor
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataDatabricksFeatureEngineeringKafkaConfigs resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataDatabricksFeatureEngineeringKafkaConfigs resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksFeatureEngineeringKafkaConfigs to import
-  * @param importFromId The id of the existing DataDatabricksFeatureEngineeringKafkaConfigs that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/feature_engineering_kafka_configs#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksFeatureEngineeringKafkaConfigs that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/feature_engineering_kafka_configs#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksFeatureEngineeringKafkaConfigs to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_feature_engineering_kafka_configs", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_feature_engineering_kafka_configs", importId: importFromId, provider });
       }
 
   // ===========
@@ -587,7 +1047,7 @@ export class DataDatabricksFeatureEngineeringKafkaConfigs extends cdktf.Terrafor
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/feature_engineering_kafka_configs databricks_feature_engineering_kafka_configs} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/feature_engineering_kafka_configs databricks_feature_engineering_kafka_configs} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -598,7 +1058,7 @@ export class DataDatabricksFeatureEngineeringKafkaConfigs extends cdktf.Terrafor
       terraformResourceType: 'databricks_feature_engineering_kafka_configs',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -610,6 +1070,7 @@ export class DataDatabricksFeatureEngineeringKafkaConfigs extends cdktf.Terrafor
       forEach: config.forEach
     });
     this._pageSize = config.pageSize;
+    this._providerConfig.internalValue = config.providerConfig;
   }
 
   // ==========
@@ -638,23 +1099,46 @@ export class DataDatabricksFeatureEngineeringKafkaConfigs extends cdktf.Terrafor
     return this._pageSize;
   }
 
+  // provider_config - computed: false, optional: true, required: false
+  private _providerConfig = new DataDatabricksFeatureEngineeringKafkaConfigsProviderConfigOutputReference(this, "provider_config");
+  public get providerConfig() {
+    return this._providerConfig;
+  }
+  public putProviderConfig(value: DataDatabricksFeatureEngineeringKafkaConfigsProviderConfig) {
+    this._providerConfig.internalValue = value;
+  }
+  public resetProviderConfig() {
+    this._providerConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerConfigInput() {
+    return this._providerConfig.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      page_size: cdktf.numberToTerraform(this._pageSize),
+      page_size: cdktn.numberToTerraform(this._pageSize),
+      provider_config: dataDatabricksFeatureEngineeringKafkaConfigsProviderConfigToTerraform(this._providerConfig.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       page_size: {
-        value: cdktf.numberToHclTerraform(this._pageSize),
+        value: cdktn.numberToHclTerraform(this._pageSize),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
+      },
+      provider_config: {
+        value: dataDatabricksFeatureEngineeringKafkaConfigsProviderConfigToHclTerraform(this._providerConfig.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "DataDatabricksFeatureEngineeringKafkaConfigsProviderConfig",
       },
     };
 

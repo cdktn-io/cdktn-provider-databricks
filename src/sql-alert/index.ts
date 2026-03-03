@@ -1,147 +1,153 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_alert
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_alert
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SqlAlertConfig extends cdktf.TerraformMetaArguments {
+export interface SqlAlertConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_alert#created_at SqlAlert#created_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_alert#created_at SqlAlert#created_at}
   */
   readonly createdAt?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_alert#id SqlAlert#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_alert#id SqlAlert#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_alert#name SqlAlert#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_alert#name SqlAlert#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_alert#parent SqlAlert#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_alert#parent SqlAlert#parent}
   */
   readonly parent?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_alert#query_id SqlAlert#query_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_alert#query_id SqlAlert#query_id}
   */
   readonly queryId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_alert#rearm SqlAlert#rearm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_alert#rearm SqlAlert#rearm}
   */
   readonly rearm?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_alert#updated_at SqlAlert#updated_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_alert#updated_at SqlAlert#updated_at}
   */
   readonly updatedAt?: string;
   /**
   * options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_alert#options SqlAlert#options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_alert#options SqlAlert#options}
   */
   readonly options: SqlAlertOptions;
+  /**
+  * provider_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_alert#provider_config SqlAlert#provider_config}
+  */
+  readonly providerConfig?: SqlAlertProviderConfig;
 }
 export interface SqlAlertOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_alert#column SqlAlert#column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_alert#column SqlAlert#column}
   */
   readonly column: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_alert#custom_body SqlAlert#custom_body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_alert#custom_body SqlAlert#custom_body}
   */
   readonly customBody?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_alert#custom_subject SqlAlert#custom_subject}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_alert#custom_subject SqlAlert#custom_subject}
   */
   readonly customSubject?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_alert#empty_result_state SqlAlert#empty_result_state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_alert#empty_result_state SqlAlert#empty_result_state}
   */
   readonly emptyResultState?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_alert#muted SqlAlert#muted}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_alert#muted SqlAlert#muted}
   */
-  readonly muted?: boolean | cdktf.IResolvable;
+  readonly muted?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_alert#op SqlAlert#op}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_alert#op SqlAlert#op}
   */
   readonly op: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_alert#value SqlAlert#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_alert#value SqlAlert#value}
   */
   readonly value: string;
 }
 
 export function sqlAlertOptionsToTerraform(struct?: SqlAlertOptionsOutputReference | SqlAlertOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    column: cdktf.stringToTerraform(struct!.column),
-    custom_body: cdktf.stringToTerraform(struct!.customBody),
-    custom_subject: cdktf.stringToTerraform(struct!.customSubject),
-    empty_result_state: cdktf.stringToTerraform(struct!.emptyResultState),
-    muted: cdktf.booleanToTerraform(struct!.muted),
-    op: cdktf.stringToTerraform(struct!.op),
-    value: cdktf.stringToTerraform(struct!.value),
+    column: cdktn.stringToTerraform(struct!.column),
+    custom_body: cdktn.stringToTerraform(struct!.customBody),
+    custom_subject: cdktn.stringToTerraform(struct!.customSubject),
+    empty_result_state: cdktn.stringToTerraform(struct!.emptyResultState),
+    muted: cdktn.booleanToTerraform(struct!.muted),
+    op: cdktn.stringToTerraform(struct!.op),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
 export function sqlAlertOptionsToHclTerraform(struct?: SqlAlertOptionsOutputReference | SqlAlertOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     column: {
-      value: cdktf.stringToHclTerraform(struct!.column),
+      value: cdktn.stringToHclTerraform(struct!.column),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     custom_body: {
-      value: cdktf.stringToHclTerraform(struct!.customBody),
+      value: cdktn.stringToHclTerraform(struct!.customBody),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     custom_subject: {
-      value: cdktf.stringToHclTerraform(struct!.customSubject),
+      value: cdktn.stringToHclTerraform(struct!.customSubject),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     empty_result_state: {
-      value: cdktf.stringToHclTerraform(struct!.emptyResultState),
+      value: cdktn.stringToHclTerraform(struct!.emptyResultState),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     muted: {
-      value: cdktf.booleanToHclTerraform(struct!.muted),
+      value: cdktn.booleanToHclTerraform(struct!.muted),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     op: {
-      value: cdktf.stringToHclTerraform(struct!.op),
+      value: cdktn.stringToHclTerraform(struct!.op),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -152,14 +158,14 @@ export function sqlAlertOptionsToHclTerraform(struct?: SqlAlertOptionsOutputRefe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SqlAlertOptionsOutputReference extends cdktf.ComplexObject {
+export class SqlAlertOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -282,11 +288,11 @@ export class SqlAlertOptionsOutputReference extends cdktf.ComplexObject {
   }
 
   // muted - computed: false, optional: true, required: false
-  private _muted?: boolean | cdktf.IResolvable; 
+  private _muted?: boolean | cdktn.IResolvable; 
   public get muted() {
     return this.getBooleanAttribute('muted');
   }
-  public set muted(value: boolean | cdktf.IResolvable) {
+  public set muted(value: boolean | cdktn.IResolvable) {
     this._muted = value;
   }
   public resetMuted() {
@@ -323,11 +329,92 @@ export class SqlAlertOptionsOutputReference extends cdktf.ComplexObject {
     return this._value;
   }
 }
+export interface SqlAlertProviderConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_alert#workspace_id SqlAlert#workspace_id}
+  */
+  readonly workspaceId: string;
+}
+
+export function sqlAlertProviderConfigToTerraform(struct?: SqlAlertProviderConfigOutputReference | SqlAlertProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
+  }
+}
+
+
+export function sqlAlertProviderConfigToHclTerraform(struct?: SqlAlertProviderConfigOutputReference | SqlAlertProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    workspace_id: {
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class SqlAlertProviderConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): SqlAlertProviderConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._workspaceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workspaceId = this._workspaceId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SqlAlertProviderConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._workspaceId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._workspaceId = value.workspaceId;
+    }
+  }
+
+  // workspace_id - computed: false, optional: false, required: true
+  private _workspaceId?: string; 
+  public get workspaceId() {
+    return this.getStringAttribute('workspace_id');
+  }
+  public set workspaceId(value: string) {
+    this._workspaceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workspaceIdInput() {
+    return this._workspaceId;
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_alert databricks_sql_alert}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_alert databricks_sql_alert}
 */
-export class SqlAlert extends cdktf.TerraformResource {
+export class SqlAlert extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -338,14 +425,14 @@ export class SqlAlert extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SqlAlert resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SqlAlert resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SqlAlert to import
-  * @param importFromId The id of the existing SqlAlert that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_alert#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SqlAlert that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_alert#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SqlAlert to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_sql_alert", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_sql_alert", importId: importFromId, provider });
       }
 
   // ===========
@@ -353,7 +440,7 @@ export class SqlAlert extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_alert databricks_sql_alert} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_alert databricks_sql_alert} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -364,7 +451,7 @@ export class SqlAlert extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_sql_alert',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -383,6 +470,7 @@ export class SqlAlert extends cdktf.TerraformResource {
     this._rearm = config.rearm;
     this._updatedAt = config.updatedAt;
     this._options.internalValue = config.options;
+    this._providerConfig.internalValue = config.providerConfig;
   }
 
   // ==========
@@ -508,63 +596,80 @@ export class SqlAlert extends cdktf.TerraformResource {
     return this._options.internalValue;
   }
 
+  // provider_config - computed: false, optional: true, required: false
+  private _providerConfig = new SqlAlertProviderConfigOutputReference(this, "provider_config");
+  public get providerConfig() {
+    return this._providerConfig;
+  }
+  public putProviderConfig(value: SqlAlertProviderConfig) {
+    this._providerConfig.internalValue = value;
+  }
+  public resetProviderConfig() {
+    this._providerConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerConfigInput() {
+    return this._providerConfig.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      created_at: cdktf.stringToTerraform(this._createdAt),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      parent: cdktf.stringToTerraform(this._parent),
-      query_id: cdktf.stringToTerraform(this._queryId),
-      rearm: cdktf.numberToTerraform(this._rearm),
-      updated_at: cdktf.stringToTerraform(this._updatedAt),
+      created_at: cdktn.stringToTerraform(this._createdAt),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      parent: cdktn.stringToTerraform(this._parent),
+      query_id: cdktn.stringToTerraform(this._queryId),
+      rearm: cdktn.numberToTerraform(this._rearm),
+      updated_at: cdktn.stringToTerraform(this._updatedAt),
       options: sqlAlertOptionsToTerraform(this._options.internalValue),
+      provider_config: sqlAlertProviderConfigToTerraform(this._providerConfig.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       created_at: {
-        value: cdktf.stringToHclTerraform(this._createdAt),
+        value: cdktn.stringToHclTerraform(this._createdAt),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parent: {
-        value: cdktf.stringToHclTerraform(this._parent),
+        value: cdktn.stringToHclTerraform(this._parent),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       query_id: {
-        value: cdktf.stringToHclTerraform(this._queryId),
+        value: cdktn.stringToHclTerraform(this._queryId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       rearm: {
-        value: cdktf.numberToHclTerraform(this._rearm),
+        value: cdktn.numberToHclTerraform(this._rearm),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       updated_at: {
-        value: cdktf.stringToHclTerraform(this._updatedAt),
+        value: cdktn.stringToHclTerraform(this._updatedAt),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -574,6 +679,12 @@ export class SqlAlert extends cdktf.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "SqlAlertOptionsList",
+      },
+      provider_config: {
+        value: sqlAlertProviderConfigToHclTerraform(this._providerConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SqlAlertProviderConfigList",
       },
     };
 

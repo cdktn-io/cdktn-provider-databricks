@@ -1,94 +1,98 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_ncc_private_endpoint_rule
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_ncc_private_endpoint_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MwsNccPrivateEndpointRuleConfig extends cdktf.TerraformMetaArguments {
+export interface MwsNccPrivateEndpointRuleConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_ncc_private_endpoint_rule#account_id MwsNccPrivateEndpointRule#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_ncc_private_endpoint_rule#account_id MwsNccPrivateEndpointRule#account_id}
   */
   readonly accountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_ncc_private_endpoint_rule#connection_state MwsNccPrivateEndpointRule#connection_state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_ncc_private_endpoint_rule#connection_state MwsNccPrivateEndpointRule#connection_state}
   */
   readonly connectionState?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_ncc_private_endpoint_rule#creation_time MwsNccPrivateEndpointRule#creation_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_ncc_private_endpoint_rule#creation_time MwsNccPrivateEndpointRule#creation_time}
   */
   readonly creationTime?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_ncc_private_endpoint_rule#deactivated MwsNccPrivateEndpointRule#deactivated}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_ncc_private_endpoint_rule#deactivated MwsNccPrivateEndpointRule#deactivated}
   */
-  readonly deactivated?: boolean | cdktf.IResolvable;
+  readonly deactivated?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_ncc_private_endpoint_rule#deactivated_at MwsNccPrivateEndpointRule#deactivated_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_ncc_private_endpoint_rule#deactivated_at MwsNccPrivateEndpointRule#deactivated_at}
   */
   readonly deactivatedAt?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_ncc_private_endpoint_rule#domain_names MwsNccPrivateEndpointRule#domain_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_ncc_private_endpoint_rule#domain_names MwsNccPrivateEndpointRule#domain_names}
   */
   readonly domainNames?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_ncc_private_endpoint_rule#enabled MwsNccPrivateEndpointRule#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_ncc_private_endpoint_rule#enabled MwsNccPrivateEndpointRule#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_ncc_private_endpoint_rule#endpoint_name MwsNccPrivateEndpointRule#endpoint_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_ncc_private_endpoint_rule#endpoint_name MwsNccPrivateEndpointRule#endpoint_name}
   */
   readonly endpointName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_ncc_private_endpoint_rule#endpoint_service MwsNccPrivateEndpointRule#endpoint_service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_ncc_private_endpoint_rule#endpoint_service MwsNccPrivateEndpointRule#endpoint_service}
   */
   readonly endpointService?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_ncc_private_endpoint_rule#group_id MwsNccPrivateEndpointRule#group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_ncc_private_endpoint_rule#error_message MwsNccPrivateEndpointRule#error_message}
+  */
+  readonly errorMessage?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_ncc_private_endpoint_rule#group_id MwsNccPrivateEndpointRule#group_id}
   */
   readonly groupId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_ncc_private_endpoint_rule#id MwsNccPrivateEndpointRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_ncc_private_endpoint_rule#id MwsNccPrivateEndpointRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_ncc_private_endpoint_rule#network_connectivity_config_id MwsNccPrivateEndpointRule#network_connectivity_config_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_ncc_private_endpoint_rule#network_connectivity_config_id MwsNccPrivateEndpointRule#network_connectivity_config_id}
   */
   readonly networkConnectivityConfigId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_ncc_private_endpoint_rule#resource_id MwsNccPrivateEndpointRule#resource_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_ncc_private_endpoint_rule#resource_id MwsNccPrivateEndpointRule#resource_id}
   */
   readonly resourceId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_ncc_private_endpoint_rule#resource_names MwsNccPrivateEndpointRule#resource_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_ncc_private_endpoint_rule#resource_names MwsNccPrivateEndpointRule#resource_names}
   */
   readonly resourceNames?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_ncc_private_endpoint_rule#rule_id MwsNccPrivateEndpointRule#rule_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_ncc_private_endpoint_rule#rule_id MwsNccPrivateEndpointRule#rule_id}
   */
   readonly ruleId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_ncc_private_endpoint_rule#updated_time MwsNccPrivateEndpointRule#updated_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_ncc_private_endpoint_rule#updated_time MwsNccPrivateEndpointRule#updated_time}
   */
   readonly updatedTime?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_ncc_private_endpoint_rule#vpc_endpoint_id MwsNccPrivateEndpointRule#vpc_endpoint_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_ncc_private_endpoint_rule#vpc_endpoint_id MwsNccPrivateEndpointRule#vpc_endpoint_id}
   */
   readonly vpcEndpointId?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_ncc_private_endpoint_rule databricks_mws_ncc_private_endpoint_rule}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_ncc_private_endpoint_rule databricks_mws_ncc_private_endpoint_rule}
 */
-export class MwsNccPrivateEndpointRule extends cdktf.TerraformResource {
+export class MwsNccPrivateEndpointRule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -99,14 +103,14 @@ export class MwsNccPrivateEndpointRule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a MwsNccPrivateEndpointRule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a MwsNccPrivateEndpointRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MwsNccPrivateEndpointRule to import
-  * @param importFromId The id of the existing MwsNccPrivateEndpointRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_ncc_private_endpoint_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MwsNccPrivateEndpointRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_ncc_private_endpoint_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MwsNccPrivateEndpointRule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_mws_ncc_private_endpoint_rule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_mws_ncc_private_endpoint_rule", importId: importFromId, provider });
       }
 
   // ===========
@@ -114,7 +118,7 @@ export class MwsNccPrivateEndpointRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_ncc_private_endpoint_rule databricks_mws_ncc_private_endpoint_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_ncc_private_endpoint_rule databricks_mws_ncc_private_endpoint_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -125,7 +129,7 @@ export class MwsNccPrivateEndpointRule extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_mws_ncc_private_endpoint_rule',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -145,6 +149,7 @@ export class MwsNccPrivateEndpointRule extends cdktf.TerraformResource {
     this._enabled = config.enabled;
     this._endpointName = config.endpointName;
     this._endpointService = config.endpointService;
+    this._errorMessage = config.errorMessage;
     this._groupId = config.groupId;
     this._id = config.id;
     this._networkConnectivityConfigId = config.networkConnectivityConfigId;
@@ -208,11 +213,11 @@ export class MwsNccPrivateEndpointRule extends cdktf.TerraformResource {
   }
 
   // deactivated - computed: false, optional: true, required: false
-  private _deactivated?: boolean | cdktf.IResolvable; 
+  private _deactivated?: boolean | cdktn.IResolvable; 
   public get deactivated() {
     return this.getBooleanAttribute('deactivated');
   }
-  public set deactivated(value: boolean | cdktf.IResolvable) {
+  public set deactivated(value: boolean | cdktn.IResolvable) {
     this._deactivated = value;
   }
   public resetDeactivated() {
@@ -256,11 +261,11 @@ export class MwsNccPrivateEndpointRule extends cdktf.TerraformResource {
   }
 
   // enabled - computed: true, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -301,6 +306,22 @@ export class MwsNccPrivateEndpointRule extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get endpointServiceInput() {
     return this._endpointService;
+  }
+
+  // error_message - computed: false, optional: true, required: false
+  private _errorMessage?: string; 
+  public get errorMessage() {
+    return this.getStringAttribute('error_message');
+  }
+  public set errorMessage(value: string) {
+    this._errorMessage = value;
+  }
+  public resetErrorMessage() {
+    this._errorMessage = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get errorMessageInput() {
+    return this._errorMessage;
   }
 
   // group_id - computed: false, optional: true, required: false
@@ -434,126 +455,133 @@ export class MwsNccPrivateEndpointRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      connection_state: cdktf.stringToTerraform(this._connectionState),
-      creation_time: cdktf.numberToTerraform(this._creationTime),
-      deactivated: cdktf.booleanToTerraform(this._deactivated),
-      deactivated_at: cdktf.numberToTerraform(this._deactivatedAt),
-      domain_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._domainNames),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      endpoint_name: cdktf.stringToTerraform(this._endpointName),
-      endpoint_service: cdktf.stringToTerraform(this._endpointService),
-      group_id: cdktf.stringToTerraform(this._groupId),
-      id: cdktf.stringToTerraform(this._id),
-      network_connectivity_config_id: cdktf.stringToTerraform(this._networkConnectivityConfigId),
-      resource_id: cdktf.stringToTerraform(this._resourceId),
-      resource_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._resourceNames),
-      rule_id: cdktf.stringToTerraform(this._ruleId),
-      updated_time: cdktf.numberToTerraform(this._updatedTime),
-      vpc_endpoint_id: cdktf.stringToTerraform(this._vpcEndpointId),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      connection_state: cdktn.stringToTerraform(this._connectionState),
+      creation_time: cdktn.numberToTerraform(this._creationTime),
+      deactivated: cdktn.booleanToTerraform(this._deactivated),
+      deactivated_at: cdktn.numberToTerraform(this._deactivatedAt),
+      domain_names: cdktn.listMapper(cdktn.stringToTerraform, false)(this._domainNames),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      endpoint_name: cdktn.stringToTerraform(this._endpointName),
+      endpoint_service: cdktn.stringToTerraform(this._endpointService),
+      error_message: cdktn.stringToTerraform(this._errorMessage),
+      group_id: cdktn.stringToTerraform(this._groupId),
+      id: cdktn.stringToTerraform(this._id),
+      network_connectivity_config_id: cdktn.stringToTerraform(this._networkConnectivityConfigId),
+      resource_id: cdktn.stringToTerraform(this._resourceId),
+      resource_names: cdktn.listMapper(cdktn.stringToTerraform, false)(this._resourceNames),
+      rule_id: cdktn.stringToTerraform(this._ruleId),
+      updated_time: cdktn.numberToTerraform(this._updatedTime),
+      vpc_endpoint_id: cdktn.stringToTerraform(this._vpcEndpointId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       connection_state: {
-        value: cdktf.stringToHclTerraform(this._connectionState),
+        value: cdktn.stringToHclTerraform(this._connectionState),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       creation_time: {
-        value: cdktf.numberToHclTerraform(this._creationTime),
+        value: cdktn.numberToHclTerraform(this._creationTime),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       deactivated: {
-        value: cdktf.booleanToHclTerraform(this._deactivated),
+        value: cdktn.booleanToHclTerraform(this._deactivated),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       deactivated_at: {
-        value: cdktf.numberToHclTerraform(this._deactivatedAt),
+        value: cdktn.numberToHclTerraform(this._deactivatedAt),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       domain_names: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._domainNames),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._domainNames),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       endpoint_name: {
-        value: cdktf.stringToHclTerraform(this._endpointName),
+        value: cdktn.stringToHclTerraform(this._endpointName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       endpoint_service: {
-        value: cdktf.stringToHclTerraform(this._endpointService),
+        value: cdktn.stringToHclTerraform(this._endpointService),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      error_message: {
+        value: cdktn.stringToHclTerraform(this._errorMessage),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       group_id: {
-        value: cdktf.stringToHclTerraform(this._groupId),
+        value: cdktn.stringToHclTerraform(this._groupId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       network_connectivity_config_id: {
-        value: cdktf.stringToHclTerraform(this._networkConnectivityConfigId),
+        value: cdktn.stringToHclTerraform(this._networkConnectivityConfigId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_id: {
-        value: cdktf.stringToHclTerraform(this._resourceId),
+        value: cdktn.stringToHclTerraform(this._resourceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_names: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._resourceNames),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._resourceNames),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       rule_id: {
-        value: cdktf.stringToHclTerraform(this._ruleId),
+        value: cdktn.stringToHclTerraform(this._ruleId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       updated_time: {
-        value: cdktf.numberToHclTerraform(this._updatedTime),
+        value: cdktn.numberToHclTerraform(this._updatedTime),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       vpc_endpoint_id: {
-        value: cdktf.stringToHclTerraform(this._vpcEndpointId),
+        value: cdktn.stringToHclTerraform(this._vpcEndpointId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

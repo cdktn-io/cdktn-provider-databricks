@@ -1,94 +1,181 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface GrantConfig extends cdktf.TerraformMetaArguments {
+export interface GrantConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#catalog Grant#catalog}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#catalog Grant#catalog}
   */
   readonly catalog?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#credential Grant#credential}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#credential Grant#credential}
   */
   readonly credential?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#external_location Grant#external_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#external_location Grant#external_location}
   */
   readonly externalLocation?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#foreign_connection Grant#foreign_connection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#foreign_connection Grant#foreign_connection}
   */
   readonly foreignConnection?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#function Grant#function}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#function Grant#function}
   */
   readonly function?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#id Grant#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#id Grant#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#metastore Grant#metastore}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#metastore Grant#metastore}
   */
   readonly metastore?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#model Grant#model}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#model Grant#model}
   */
   readonly model?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#pipeline Grant#pipeline}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#pipeline Grant#pipeline}
   */
   readonly pipeline?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#principal Grant#principal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#principal Grant#principal}
   */
   readonly principal: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#privileges Grant#privileges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#privileges Grant#privileges}
   */
   readonly privileges: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#recipient Grant#recipient}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#recipient Grant#recipient}
   */
   readonly recipient?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#schema Grant#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#schema Grant#schema}
   */
   readonly schema?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#share Grant#share}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#share Grant#share}
   */
   readonly share?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#storage_credential Grant#storage_credential}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#storage_credential Grant#storage_credential}
   */
   readonly storageCredential?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#table Grant#table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#table Grant#table}
   */
   readonly table?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#volume Grant#volume}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#volume Grant#volume}
   */
   readonly volume?: string;
+  /**
+  * provider_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#provider_config Grant#provider_config}
+  */
+  readonly providerConfig?: GrantProviderConfig;
+}
+export interface GrantProviderConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#workspace_id Grant#workspace_id}
+  */
+  readonly workspaceId: string;
+}
+
+export function grantProviderConfigToTerraform(struct?: GrantProviderConfigOutputReference | GrantProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
+  }
+}
+
+
+export function grantProviderConfigToHclTerraform(struct?: GrantProviderConfigOutputReference | GrantProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    workspace_id: {
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GrantProviderConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GrantProviderConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._workspaceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workspaceId = this._workspaceId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GrantProviderConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._workspaceId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._workspaceId = value.workspaceId;
+    }
+  }
+
+  // workspace_id - computed: false, optional: false, required: true
+  private _workspaceId?: string; 
+  public get workspaceId() {
+    return this.getStringAttribute('workspace_id');
+  }
+  public set workspaceId(value: string) {
+    this._workspaceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workspaceIdInput() {
+    return this._workspaceId;
+  }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant databricks_grant}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant databricks_grant}
 */
-export class Grant extends cdktf.TerraformResource {
+export class Grant extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -99,14 +186,14 @@ export class Grant extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Grant resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Grant resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Grant to import
-  * @param importFromId The id of the existing Grant that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Grant that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Grant to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_grant", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_grant", importId: importFromId, provider });
       }
 
   // ===========
@@ -114,7 +201,7 @@ export class Grant extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant databricks_grant} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant databricks_grant} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -125,7 +212,7 @@ export class Grant extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_grant',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -153,6 +240,7 @@ export class Grant extends cdktf.TerraformResource {
     this._storageCredential = config.storageCredential;
     this._table = config.table;
     this._volume = config.volume;
+    this._providerConfig.internalValue = config.providerConfig;
   }
 
   // ==========
@@ -319,7 +407,7 @@ export class Grant extends cdktf.TerraformResource {
   // privileges - computed: false, optional: false, required: true
   private _privileges?: string[]; 
   public get privileges() {
-    return cdktf.Fn.tolist(this.getListAttribute('privileges'));
+    return cdktn.Fn.tolist(this.getListAttribute('privileges'));
   }
   public set privileges(value: string[]) {
     this._privileges = value;
@@ -425,135 +513,158 @@ export class Grant extends cdktf.TerraformResource {
     return this._volume;
   }
 
+  // provider_config - computed: false, optional: true, required: false
+  private _providerConfig = new GrantProviderConfigOutputReference(this, "provider_config");
+  public get providerConfig() {
+    return this._providerConfig;
+  }
+  public putProviderConfig(value: GrantProviderConfig) {
+    this._providerConfig.internalValue = value;
+  }
+  public resetProviderConfig() {
+    this._providerConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerConfigInput() {
+    return this._providerConfig.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      catalog: cdktf.stringToTerraform(this._catalog),
-      credential: cdktf.stringToTerraform(this._credential),
-      external_location: cdktf.stringToTerraform(this._externalLocation),
-      foreign_connection: cdktf.stringToTerraform(this._foreignConnection),
-      function: cdktf.stringToTerraform(this._function),
-      id: cdktf.stringToTerraform(this._id),
-      metastore: cdktf.stringToTerraform(this._metastore),
-      model: cdktf.stringToTerraform(this._model),
-      pipeline: cdktf.stringToTerraform(this._pipeline),
-      principal: cdktf.stringToTerraform(this._principal),
-      privileges: cdktf.listMapper(cdktf.stringToTerraform, false)(this._privileges),
-      recipient: cdktf.stringToTerraform(this._recipient),
-      schema: cdktf.stringToTerraform(this._schema),
-      share: cdktf.stringToTerraform(this._share),
-      storage_credential: cdktf.stringToTerraform(this._storageCredential),
-      table: cdktf.stringToTerraform(this._table),
-      volume: cdktf.stringToTerraform(this._volume),
+      catalog: cdktn.stringToTerraform(this._catalog),
+      credential: cdktn.stringToTerraform(this._credential),
+      external_location: cdktn.stringToTerraform(this._externalLocation),
+      foreign_connection: cdktn.stringToTerraform(this._foreignConnection),
+      function: cdktn.stringToTerraform(this._function),
+      id: cdktn.stringToTerraform(this._id),
+      metastore: cdktn.stringToTerraform(this._metastore),
+      model: cdktn.stringToTerraform(this._model),
+      pipeline: cdktn.stringToTerraform(this._pipeline),
+      principal: cdktn.stringToTerraform(this._principal),
+      privileges: cdktn.listMapper(cdktn.stringToTerraform, false)(this._privileges),
+      recipient: cdktn.stringToTerraform(this._recipient),
+      schema: cdktn.stringToTerraform(this._schema),
+      share: cdktn.stringToTerraform(this._share),
+      storage_credential: cdktn.stringToTerraform(this._storageCredential),
+      table: cdktn.stringToTerraform(this._table),
+      volume: cdktn.stringToTerraform(this._volume),
+      provider_config: grantProviderConfigToTerraform(this._providerConfig.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       catalog: {
-        value: cdktf.stringToHclTerraform(this._catalog),
+        value: cdktn.stringToHclTerraform(this._catalog),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       credential: {
-        value: cdktf.stringToHclTerraform(this._credential),
+        value: cdktn.stringToHclTerraform(this._credential),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       external_location: {
-        value: cdktf.stringToHclTerraform(this._externalLocation),
+        value: cdktn.stringToHclTerraform(this._externalLocation),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       foreign_connection: {
-        value: cdktf.stringToHclTerraform(this._foreignConnection),
+        value: cdktn.stringToHclTerraform(this._foreignConnection),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       function: {
-        value: cdktf.stringToHclTerraform(this._function),
+        value: cdktn.stringToHclTerraform(this._function),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       metastore: {
-        value: cdktf.stringToHclTerraform(this._metastore),
+        value: cdktn.stringToHclTerraform(this._metastore),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       model: {
-        value: cdktf.stringToHclTerraform(this._model),
+        value: cdktn.stringToHclTerraform(this._model),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       pipeline: {
-        value: cdktf.stringToHclTerraform(this._pipeline),
+        value: cdktn.stringToHclTerraform(this._pipeline),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       principal: {
-        value: cdktf.stringToHclTerraform(this._principal),
+        value: cdktn.stringToHclTerraform(this._principal),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       privileges: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._privileges),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._privileges),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       recipient: {
-        value: cdktf.stringToHclTerraform(this._recipient),
+        value: cdktn.stringToHclTerraform(this._recipient),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       schema: {
-        value: cdktf.stringToHclTerraform(this._schema),
+        value: cdktn.stringToHclTerraform(this._schema),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       share: {
-        value: cdktf.stringToHclTerraform(this._share),
+        value: cdktn.stringToHclTerraform(this._share),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_credential: {
-        value: cdktf.stringToHclTerraform(this._storageCredential),
+        value: cdktn.stringToHclTerraform(this._storageCredential),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       table: {
-        value: cdktf.stringToHclTerraform(this._table),
+        value: cdktn.stringToHclTerraform(this._table),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       volume: {
-        value: cdktf.stringToHclTerraform(this._volume),
+        value: cdktn.stringToHclTerraform(this._volume),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      provider_config: {
+        value: grantProviderConfigToHclTerraform(this._providerConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GrantProviderConfigList",
       },
     };
 

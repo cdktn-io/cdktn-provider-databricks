@@ -1,35 +1,130 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/data_quality_refresh
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/data_quality_refresh
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataDatabricksDataQualityRefreshConfig extends cdktf.TerraformMetaArguments {
+export interface DataDatabricksDataQualityRefreshConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/data_quality_refresh#object_id DataDatabricksDataQualityRefresh#object_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/data_quality_refresh#object_id DataDatabricksDataQualityRefresh#object_id}
   */
   readonly objectId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/data_quality_refresh#object_type DataDatabricksDataQualityRefresh#object_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/data_quality_refresh#object_type DataDatabricksDataQualityRefresh#object_type}
   */
   readonly objectType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/data_quality_refresh#refresh_id DataDatabricksDataQualityRefresh#refresh_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/data_quality_refresh#provider_config DataDatabricksDataQualityRefresh#provider_config}
+  */
+  readonly providerConfig?: DataDatabricksDataQualityRefreshProviderConfig;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/data_quality_refresh#refresh_id DataDatabricksDataQualityRefresh#refresh_id}
   */
   readonly refreshId: number;
 }
+export interface DataDatabricksDataQualityRefreshProviderConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/data_quality_refresh#workspace_id DataDatabricksDataQualityRefresh#workspace_id}
+  */
+  readonly workspaceId: string;
+}
+
+export function dataDatabricksDataQualityRefreshProviderConfigToTerraform(struct?: DataDatabricksDataQualityRefreshProviderConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
+  }
+}
+
+
+export function dataDatabricksDataQualityRefreshProviderConfigToHclTerraform(struct?: DataDatabricksDataQualityRefreshProviderConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    workspace_id: {
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataDatabricksDataQualityRefreshProviderConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatabricksDataQualityRefreshProviderConfig | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._workspaceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workspaceId = this._workspaceId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksDataQualityRefreshProviderConfig | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._workspaceId = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._workspaceId = value.workspaceId;
+    }
+  }
+
+  // workspace_id - computed: false, optional: false, required: true
+  private _workspaceId?: string; 
+  public get workspaceId() {
+    return this.getStringAttribute('workspace_id');
+  }
+  public set workspaceId(value: string) {
+    this._workspaceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workspaceIdInput() {
+    return this._workspaceId;
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/data_quality_refresh databricks_data_quality_refresh}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/data_quality_refresh databricks_data_quality_refresh}
 */
-export class DataDatabricksDataQualityRefresh extends cdktf.TerraformDataSource {
+export class DataDatabricksDataQualityRefresh extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -40,14 +135,14 @@ export class DataDatabricksDataQualityRefresh extends cdktf.TerraformDataSource 
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataDatabricksDataQualityRefresh resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataDatabricksDataQualityRefresh resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksDataQualityRefresh to import
-  * @param importFromId The id of the existing DataDatabricksDataQualityRefresh that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/data_quality_refresh#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksDataQualityRefresh that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/data_quality_refresh#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksDataQualityRefresh to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_data_quality_refresh", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_data_quality_refresh", importId: importFromId, provider });
       }
 
   // ===========
@@ -55,7 +150,7 @@ export class DataDatabricksDataQualityRefresh extends cdktf.TerraformDataSource 
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/data_quality_refresh databricks_data_quality_refresh} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/data_quality_refresh databricks_data_quality_refresh} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +161,7 @@ export class DataDatabricksDataQualityRefresh extends cdktf.TerraformDataSource 
       terraformResourceType: 'databricks_data_quality_refresh',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -79,6 +174,7 @@ export class DataDatabricksDataQualityRefresh extends cdktf.TerraformDataSource 
     });
     this._objectId = config.objectId;
     this._objectType = config.objectType;
+    this._providerConfig.internalValue = config.providerConfig;
     this._refreshId = config.refreshId;
   }
 
@@ -122,6 +218,22 @@ export class DataDatabricksDataQualityRefresh extends cdktf.TerraformDataSource 
     return this._objectType;
   }
 
+  // provider_config - computed: false, optional: true, required: false
+  private _providerConfig = new DataDatabricksDataQualityRefreshProviderConfigOutputReference(this, "provider_config");
+  public get providerConfig() {
+    return this._providerConfig;
+  }
+  public putProviderConfig(value: DataDatabricksDataQualityRefreshProviderConfig) {
+    this._providerConfig.internalValue = value;
+  }
+  public resetProviderConfig() {
+    this._providerConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerConfigInput() {
+    return this._providerConfig.internalValue;
+  }
+
   // refresh_id - computed: false, optional: false, required: true
   private _refreshId?: number; 
   public get refreshId() {
@@ -156,28 +268,35 @@ export class DataDatabricksDataQualityRefresh extends cdktf.TerraformDataSource 
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      object_id: cdktf.stringToTerraform(this._objectId),
-      object_type: cdktf.stringToTerraform(this._objectType),
-      refresh_id: cdktf.numberToTerraform(this._refreshId),
+      object_id: cdktn.stringToTerraform(this._objectId),
+      object_type: cdktn.stringToTerraform(this._objectType),
+      provider_config: dataDatabricksDataQualityRefreshProviderConfigToTerraform(this._providerConfig.internalValue),
+      refresh_id: cdktn.numberToTerraform(this._refreshId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       object_id: {
-        value: cdktf.stringToHclTerraform(this._objectId),
+        value: cdktn.stringToHclTerraform(this._objectId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       object_type: {
-        value: cdktf.stringToHclTerraform(this._objectType),
+        value: cdktn.stringToHclTerraform(this._objectType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
+      provider_config: {
+        value: dataDatabricksDataQualityRefreshProviderConfigToHclTerraform(this._providerConfig.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "DataDatabricksDataQualityRefreshProviderConfig",
+      },
       refresh_id: {
-        value: cdktf.numberToHclTerraform(this._refreshId),
+        value: cdktn.numberToHclTerraform(this._refreshId),
         isBlock: false,
         type: "simple",
         storageClassType: "number",

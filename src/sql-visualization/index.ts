@@ -1,58 +1,145 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_visualization
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_visualization
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SqlVisualizationConfig extends cdktf.TerraformMetaArguments {
+export interface SqlVisualizationConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_visualization#description SqlVisualization#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_visualization#description SqlVisualization#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_visualization#id SqlVisualization#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_visualization#id SqlVisualization#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_visualization#name SqlVisualization#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_visualization#name SqlVisualization#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_visualization#options SqlVisualization#options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_visualization#options SqlVisualization#options}
   */
   readonly options: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_visualization#query_id SqlVisualization#query_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_visualization#query_id SqlVisualization#query_id}
   */
   readonly queryId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_visualization#query_plan SqlVisualization#query_plan}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_visualization#query_plan SqlVisualization#query_plan}
   */
   readonly queryPlan?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_visualization#type SqlVisualization#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_visualization#type SqlVisualization#type}
   */
   readonly type: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_visualization#visualization_id SqlVisualization#visualization_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_visualization#visualization_id SqlVisualization#visualization_id}
   */
   readonly visualizationId?: string;
+  /**
+  * provider_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_visualization#provider_config SqlVisualization#provider_config}
+  */
+  readonly providerConfig?: SqlVisualizationProviderConfig;
+}
+export interface SqlVisualizationProviderConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_visualization#workspace_id SqlVisualization#workspace_id}
+  */
+  readonly workspaceId: string;
+}
+
+export function sqlVisualizationProviderConfigToTerraform(struct?: SqlVisualizationProviderConfigOutputReference | SqlVisualizationProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
+  }
+}
+
+
+export function sqlVisualizationProviderConfigToHclTerraform(struct?: SqlVisualizationProviderConfigOutputReference | SqlVisualizationProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    workspace_id: {
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class SqlVisualizationProviderConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): SqlVisualizationProviderConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._workspaceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workspaceId = this._workspaceId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SqlVisualizationProviderConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._workspaceId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._workspaceId = value.workspaceId;
+    }
+  }
+
+  // workspace_id - computed: false, optional: false, required: true
+  private _workspaceId?: string; 
+  public get workspaceId() {
+    return this.getStringAttribute('workspace_id');
+  }
+  public set workspaceId(value: string) {
+    this._workspaceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workspaceIdInput() {
+    return this._workspaceId;
+  }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_visualization databricks_sql_visualization}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_visualization databricks_sql_visualization}
 */
-export class SqlVisualization extends cdktf.TerraformResource {
+export class SqlVisualization extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -63,14 +150,14 @@ export class SqlVisualization extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SqlVisualization resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SqlVisualization resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SqlVisualization to import
-  * @param importFromId The id of the existing SqlVisualization that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_visualization#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SqlVisualization that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_visualization#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SqlVisualization to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_sql_visualization", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_sql_visualization", importId: importFromId, provider });
       }
 
   // ===========
@@ -78,7 +165,7 @@ export class SqlVisualization extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_visualization databricks_sql_visualization} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_visualization databricks_sql_visualization} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -89,7 +176,7 @@ export class SqlVisualization extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_sql_visualization',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -108,6 +195,7 @@ export class SqlVisualization extends cdktf.TerraformResource {
     this._queryPlan = config.queryPlan;
     this._type = config.type;
     this._visualizationId = config.visualizationId;
+    this._providerConfig.internalValue = config.providerConfig;
   }
 
   // ==========
@@ -230,72 +318,95 @@ export class SqlVisualization extends cdktf.TerraformResource {
     return this._visualizationId;
   }
 
+  // provider_config - computed: false, optional: true, required: false
+  private _providerConfig = new SqlVisualizationProviderConfigOutputReference(this, "provider_config");
+  public get providerConfig() {
+    return this._providerConfig;
+  }
+  public putProviderConfig(value: SqlVisualizationProviderConfig) {
+    this._providerConfig.internalValue = value;
+  }
+  public resetProviderConfig() {
+    this._providerConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerConfigInput() {
+    return this._providerConfig.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      options: cdktf.stringToTerraform(this._options),
-      query_id: cdktf.stringToTerraform(this._queryId),
-      query_plan: cdktf.stringToTerraform(this._queryPlan),
-      type: cdktf.stringToTerraform(this._type),
-      visualization_id: cdktf.stringToTerraform(this._visualizationId),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      options: cdktn.stringToTerraform(this._options),
+      query_id: cdktn.stringToTerraform(this._queryId),
+      query_plan: cdktn.stringToTerraform(this._queryPlan),
+      type: cdktn.stringToTerraform(this._type),
+      visualization_id: cdktn.stringToTerraform(this._visualizationId),
+      provider_config: sqlVisualizationProviderConfigToTerraform(this._providerConfig.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       options: {
-        value: cdktf.stringToHclTerraform(this._options),
+        value: cdktn.stringToHclTerraform(this._options),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       query_id: {
-        value: cdktf.stringToHclTerraform(this._queryId),
+        value: cdktn.stringToHclTerraform(this._queryId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       query_plan: {
-        value: cdktf.stringToHclTerraform(this._queryPlan),
+        value: cdktn.stringToHclTerraform(this._queryPlan),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       visualization_id: {
-        value: cdktf.stringToHclTerraform(this._visualizationId),
+        value: cdktn.stringToHclTerraform(this._visualizationId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      provider_config: {
+        value: sqlVisualizationProviderConfigToHclTerraform(this._providerConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SqlVisualizationProviderConfigList",
       },
     };
 

@@ -1,78 +1,78 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/external_location
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/external_location
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataDatabricksExternalLocationConfig extends cdktf.TerraformMetaArguments {
+export interface DataDatabricksExternalLocationConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/external_location#id DataDatabricksExternalLocation#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/external_location#id DataDatabricksExternalLocation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/external_location#name DataDatabricksExternalLocation#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/external_location#name DataDatabricksExternalLocation#name}
   */
   readonly name: string;
   /**
   * external_location_info block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/external_location#external_location_info DataDatabricksExternalLocation#external_location_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/external_location#external_location_info DataDatabricksExternalLocation#external_location_info}
   */
   readonly externalLocationInfo?: DataDatabricksExternalLocationExternalLocationInfo;
   /**
   * provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/external_location#provider_config DataDatabricksExternalLocation#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/external_location#provider_config DataDatabricksExternalLocation#provider_config}
   */
   readonly providerConfig?: DataDatabricksExternalLocationProviderConfig;
 }
 export interface DataDatabricksExternalLocationExternalLocationInfoEncryptionDetailsSseEncryptionDetails {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/external_location#algorithm DataDatabricksExternalLocation#algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/external_location#algorithm DataDatabricksExternalLocation#algorithm}
   */
   readonly algorithm?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/external_location#aws_kms_key_arn DataDatabricksExternalLocation#aws_kms_key_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/external_location#aws_kms_key_arn DataDatabricksExternalLocation#aws_kms_key_arn}
   */
   readonly awsKmsKeyArn?: string;
 }
 
 export function dataDatabricksExternalLocationExternalLocationInfoEncryptionDetailsSseEncryptionDetailsToTerraform(struct?: DataDatabricksExternalLocationExternalLocationInfoEncryptionDetailsSseEncryptionDetailsOutputReference | DataDatabricksExternalLocationExternalLocationInfoEncryptionDetailsSseEncryptionDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    algorithm: cdktf.stringToTerraform(struct!.algorithm),
-    aws_kms_key_arn: cdktf.stringToTerraform(struct!.awsKmsKeyArn),
+    algorithm: cdktn.stringToTerraform(struct!.algorithm),
+    aws_kms_key_arn: cdktn.stringToTerraform(struct!.awsKmsKeyArn),
   }
 }
 
 
 export function dataDatabricksExternalLocationExternalLocationInfoEncryptionDetailsSseEncryptionDetailsToHclTerraform(struct?: DataDatabricksExternalLocationExternalLocationInfoEncryptionDetailsSseEncryptionDetailsOutputReference | DataDatabricksExternalLocationExternalLocationInfoEncryptionDetailsSseEncryptionDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     algorithm: {
-      value: cdktf.stringToHclTerraform(struct!.algorithm),
+      value: cdktn.stringToHclTerraform(struct!.algorithm),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     aws_kms_key_arn: {
-      value: cdktf.stringToHclTerraform(struct!.awsKmsKeyArn),
+      value: cdktn.stringToHclTerraform(struct!.awsKmsKeyArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -83,14 +83,14 @@ export function dataDatabricksExternalLocationExternalLocationInfoEncryptionDeta
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksExternalLocationExternalLocationInfoEncryptionDetailsSseEncryptionDetailsOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksExternalLocationExternalLocationInfoEncryptionDetailsSseEncryptionDetailsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -157,14 +157,14 @@ export interface DataDatabricksExternalLocationExternalLocationInfoEncryptionDet
   /**
   * sse_encryption_details block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/external_location#sse_encryption_details DataDatabricksExternalLocation#sse_encryption_details}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/external_location#sse_encryption_details DataDatabricksExternalLocation#sse_encryption_details}
   */
   readonly sseEncryptionDetails?: DataDatabricksExternalLocationExternalLocationInfoEncryptionDetailsSseEncryptionDetails;
 }
 
 export function dataDatabricksExternalLocationExternalLocationInfoEncryptionDetailsToTerraform(struct?: DataDatabricksExternalLocationExternalLocationInfoEncryptionDetailsOutputReference | DataDatabricksExternalLocationExternalLocationInfoEncryptionDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -174,8 +174,8 @@ export function dataDatabricksExternalLocationExternalLocationInfoEncryptionDeta
 
 
 export function dataDatabricksExternalLocationExternalLocationInfoEncryptionDetailsToHclTerraform(struct?: DataDatabricksExternalLocationExternalLocationInfoEncryptionDetailsOutputReference | DataDatabricksExternalLocationExternalLocationInfoEncryptionDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -191,14 +191,14 @@ export function dataDatabricksExternalLocationExternalLocationInfoEncryptionDeta
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksExternalLocationExternalLocationInfoEncryptionDetailsOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksExternalLocationExternalLocationInfoEncryptionDetailsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -241,63 +241,63 @@ export class DataDatabricksExternalLocationExternalLocationInfoEncryptionDetails
 }
 export interface DataDatabricksExternalLocationExternalLocationInfoFileEventQueueManagedAqs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/external_location#managed_resource_id DataDatabricksExternalLocation#managed_resource_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/external_location#managed_resource_id DataDatabricksExternalLocation#managed_resource_id}
   */
   readonly managedResourceId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/external_location#queue_url DataDatabricksExternalLocation#queue_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/external_location#queue_url DataDatabricksExternalLocation#queue_url}
   */
   readonly queueUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/external_location#resource_group DataDatabricksExternalLocation#resource_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/external_location#resource_group DataDatabricksExternalLocation#resource_group}
   */
   readonly resourceGroup?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/external_location#subscription_id DataDatabricksExternalLocation#subscription_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/external_location#subscription_id DataDatabricksExternalLocation#subscription_id}
   */
   readonly subscriptionId?: string;
 }
 
 export function dataDatabricksExternalLocationExternalLocationInfoFileEventQueueManagedAqsToTerraform(struct?: DataDatabricksExternalLocationExternalLocationInfoFileEventQueueManagedAqsOutputReference | DataDatabricksExternalLocationExternalLocationInfoFileEventQueueManagedAqs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    managed_resource_id: cdktf.stringToTerraform(struct!.managedResourceId),
-    queue_url: cdktf.stringToTerraform(struct!.queueUrl),
-    resource_group: cdktf.stringToTerraform(struct!.resourceGroup),
-    subscription_id: cdktf.stringToTerraform(struct!.subscriptionId),
+    managed_resource_id: cdktn.stringToTerraform(struct!.managedResourceId),
+    queue_url: cdktn.stringToTerraform(struct!.queueUrl),
+    resource_group: cdktn.stringToTerraform(struct!.resourceGroup),
+    subscription_id: cdktn.stringToTerraform(struct!.subscriptionId),
   }
 }
 
 
 export function dataDatabricksExternalLocationExternalLocationInfoFileEventQueueManagedAqsToHclTerraform(struct?: DataDatabricksExternalLocationExternalLocationInfoFileEventQueueManagedAqsOutputReference | DataDatabricksExternalLocationExternalLocationInfoFileEventQueueManagedAqs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     managed_resource_id: {
-      value: cdktf.stringToHclTerraform(struct!.managedResourceId),
+      value: cdktn.stringToHclTerraform(struct!.managedResourceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     queue_url: {
-      value: cdktf.stringToHclTerraform(struct!.queueUrl),
+      value: cdktn.stringToHclTerraform(struct!.queueUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     resource_group: {
-      value: cdktf.stringToHclTerraform(struct!.resourceGroup),
+      value: cdktn.stringToHclTerraform(struct!.resourceGroup),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     subscription_id: {
-      value: cdktf.stringToHclTerraform(struct!.subscriptionId),
+      value: cdktn.stringToHclTerraform(struct!.subscriptionId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -308,14 +308,14 @@ export function dataDatabricksExternalLocationExternalLocationInfoFileEventQueue
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksExternalLocationExternalLocationInfoFileEventQueueManagedAqsOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksExternalLocationExternalLocationInfoFileEventQueueManagedAqsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -424,41 +424,41 @@ export class DataDatabricksExternalLocationExternalLocationInfoFileEventQueueMan
 }
 export interface DataDatabricksExternalLocationExternalLocationInfoFileEventQueueManagedPubsub {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/external_location#managed_resource_id DataDatabricksExternalLocation#managed_resource_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/external_location#managed_resource_id DataDatabricksExternalLocation#managed_resource_id}
   */
   readonly managedResourceId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/external_location#subscription_name DataDatabricksExternalLocation#subscription_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/external_location#subscription_name DataDatabricksExternalLocation#subscription_name}
   */
   readonly subscriptionName?: string;
 }
 
 export function dataDatabricksExternalLocationExternalLocationInfoFileEventQueueManagedPubsubToTerraform(struct?: DataDatabricksExternalLocationExternalLocationInfoFileEventQueueManagedPubsubOutputReference | DataDatabricksExternalLocationExternalLocationInfoFileEventQueueManagedPubsub): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    managed_resource_id: cdktf.stringToTerraform(struct!.managedResourceId),
-    subscription_name: cdktf.stringToTerraform(struct!.subscriptionName),
+    managed_resource_id: cdktn.stringToTerraform(struct!.managedResourceId),
+    subscription_name: cdktn.stringToTerraform(struct!.subscriptionName),
   }
 }
 
 
 export function dataDatabricksExternalLocationExternalLocationInfoFileEventQueueManagedPubsubToHclTerraform(struct?: DataDatabricksExternalLocationExternalLocationInfoFileEventQueueManagedPubsubOutputReference | DataDatabricksExternalLocationExternalLocationInfoFileEventQueueManagedPubsub): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     managed_resource_id: {
-      value: cdktf.stringToHclTerraform(struct!.managedResourceId),
+      value: cdktn.stringToHclTerraform(struct!.managedResourceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     subscription_name: {
-      value: cdktf.stringToHclTerraform(struct!.subscriptionName),
+      value: cdktn.stringToHclTerraform(struct!.subscriptionName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -469,14 +469,14 @@ export function dataDatabricksExternalLocationExternalLocationInfoFileEventQueue
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksExternalLocationExternalLocationInfoFileEventQueueManagedPubsubOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksExternalLocationExternalLocationInfoFileEventQueueManagedPubsubOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -541,41 +541,41 @@ export class DataDatabricksExternalLocationExternalLocationInfoFileEventQueueMan
 }
 export interface DataDatabricksExternalLocationExternalLocationInfoFileEventQueueManagedSqs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/external_location#managed_resource_id DataDatabricksExternalLocation#managed_resource_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/external_location#managed_resource_id DataDatabricksExternalLocation#managed_resource_id}
   */
   readonly managedResourceId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/external_location#queue_url DataDatabricksExternalLocation#queue_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/external_location#queue_url DataDatabricksExternalLocation#queue_url}
   */
   readonly queueUrl?: string;
 }
 
 export function dataDatabricksExternalLocationExternalLocationInfoFileEventQueueManagedSqsToTerraform(struct?: DataDatabricksExternalLocationExternalLocationInfoFileEventQueueManagedSqsOutputReference | DataDatabricksExternalLocationExternalLocationInfoFileEventQueueManagedSqs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    managed_resource_id: cdktf.stringToTerraform(struct!.managedResourceId),
-    queue_url: cdktf.stringToTerraform(struct!.queueUrl),
+    managed_resource_id: cdktn.stringToTerraform(struct!.managedResourceId),
+    queue_url: cdktn.stringToTerraform(struct!.queueUrl),
   }
 }
 
 
 export function dataDatabricksExternalLocationExternalLocationInfoFileEventQueueManagedSqsToHclTerraform(struct?: DataDatabricksExternalLocationExternalLocationInfoFileEventQueueManagedSqsOutputReference | DataDatabricksExternalLocationExternalLocationInfoFileEventQueueManagedSqs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     managed_resource_id: {
-      value: cdktf.stringToHclTerraform(struct!.managedResourceId),
+      value: cdktn.stringToHclTerraform(struct!.managedResourceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     queue_url: {
-      value: cdktf.stringToHclTerraform(struct!.queueUrl),
+      value: cdktn.stringToHclTerraform(struct!.queueUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -586,14 +586,14 @@ export function dataDatabricksExternalLocationExternalLocationInfoFileEventQueue
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksExternalLocationExternalLocationInfoFileEventQueueManagedSqsOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksExternalLocationExternalLocationInfoFileEventQueueManagedSqsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -658,63 +658,63 @@ export class DataDatabricksExternalLocationExternalLocationInfoFileEventQueueMan
 }
 export interface DataDatabricksExternalLocationExternalLocationInfoFileEventQueueProvidedAqs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/external_location#managed_resource_id DataDatabricksExternalLocation#managed_resource_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/external_location#managed_resource_id DataDatabricksExternalLocation#managed_resource_id}
   */
   readonly managedResourceId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/external_location#queue_url DataDatabricksExternalLocation#queue_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/external_location#queue_url DataDatabricksExternalLocation#queue_url}
   */
   readonly queueUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/external_location#resource_group DataDatabricksExternalLocation#resource_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/external_location#resource_group DataDatabricksExternalLocation#resource_group}
   */
   readonly resourceGroup?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/external_location#subscription_id DataDatabricksExternalLocation#subscription_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/external_location#subscription_id DataDatabricksExternalLocation#subscription_id}
   */
   readonly subscriptionId?: string;
 }
 
 export function dataDatabricksExternalLocationExternalLocationInfoFileEventQueueProvidedAqsToTerraform(struct?: DataDatabricksExternalLocationExternalLocationInfoFileEventQueueProvidedAqsOutputReference | DataDatabricksExternalLocationExternalLocationInfoFileEventQueueProvidedAqs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    managed_resource_id: cdktf.stringToTerraform(struct!.managedResourceId),
-    queue_url: cdktf.stringToTerraform(struct!.queueUrl),
-    resource_group: cdktf.stringToTerraform(struct!.resourceGroup),
-    subscription_id: cdktf.stringToTerraform(struct!.subscriptionId),
+    managed_resource_id: cdktn.stringToTerraform(struct!.managedResourceId),
+    queue_url: cdktn.stringToTerraform(struct!.queueUrl),
+    resource_group: cdktn.stringToTerraform(struct!.resourceGroup),
+    subscription_id: cdktn.stringToTerraform(struct!.subscriptionId),
   }
 }
 
 
 export function dataDatabricksExternalLocationExternalLocationInfoFileEventQueueProvidedAqsToHclTerraform(struct?: DataDatabricksExternalLocationExternalLocationInfoFileEventQueueProvidedAqsOutputReference | DataDatabricksExternalLocationExternalLocationInfoFileEventQueueProvidedAqs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     managed_resource_id: {
-      value: cdktf.stringToHclTerraform(struct!.managedResourceId),
+      value: cdktn.stringToHclTerraform(struct!.managedResourceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     queue_url: {
-      value: cdktf.stringToHclTerraform(struct!.queueUrl),
+      value: cdktn.stringToHclTerraform(struct!.queueUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     resource_group: {
-      value: cdktf.stringToHclTerraform(struct!.resourceGroup),
+      value: cdktn.stringToHclTerraform(struct!.resourceGroup),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     subscription_id: {
-      value: cdktf.stringToHclTerraform(struct!.subscriptionId),
+      value: cdktn.stringToHclTerraform(struct!.subscriptionId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -725,14 +725,14 @@ export function dataDatabricksExternalLocationExternalLocationInfoFileEventQueue
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksExternalLocationExternalLocationInfoFileEventQueueProvidedAqsOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksExternalLocationExternalLocationInfoFileEventQueueProvidedAqsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -841,41 +841,41 @@ export class DataDatabricksExternalLocationExternalLocationInfoFileEventQueuePro
 }
 export interface DataDatabricksExternalLocationExternalLocationInfoFileEventQueueProvidedPubsub {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/external_location#managed_resource_id DataDatabricksExternalLocation#managed_resource_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/external_location#managed_resource_id DataDatabricksExternalLocation#managed_resource_id}
   */
   readonly managedResourceId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/external_location#subscription_name DataDatabricksExternalLocation#subscription_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/external_location#subscription_name DataDatabricksExternalLocation#subscription_name}
   */
   readonly subscriptionName?: string;
 }
 
 export function dataDatabricksExternalLocationExternalLocationInfoFileEventQueueProvidedPubsubToTerraform(struct?: DataDatabricksExternalLocationExternalLocationInfoFileEventQueueProvidedPubsubOutputReference | DataDatabricksExternalLocationExternalLocationInfoFileEventQueueProvidedPubsub): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    managed_resource_id: cdktf.stringToTerraform(struct!.managedResourceId),
-    subscription_name: cdktf.stringToTerraform(struct!.subscriptionName),
+    managed_resource_id: cdktn.stringToTerraform(struct!.managedResourceId),
+    subscription_name: cdktn.stringToTerraform(struct!.subscriptionName),
   }
 }
 
 
 export function dataDatabricksExternalLocationExternalLocationInfoFileEventQueueProvidedPubsubToHclTerraform(struct?: DataDatabricksExternalLocationExternalLocationInfoFileEventQueueProvidedPubsubOutputReference | DataDatabricksExternalLocationExternalLocationInfoFileEventQueueProvidedPubsub): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     managed_resource_id: {
-      value: cdktf.stringToHclTerraform(struct!.managedResourceId),
+      value: cdktn.stringToHclTerraform(struct!.managedResourceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     subscription_name: {
-      value: cdktf.stringToHclTerraform(struct!.subscriptionName),
+      value: cdktn.stringToHclTerraform(struct!.subscriptionName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -886,14 +886,14 @@ export function dataDatabricksExternalLocationExternalLocationInfoFileEventQueue
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksExternalLocationExternalLocationInfoFileEventQueueProvidedPubsubOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksExternalLocationExternalLocationInfoFileEventQueueProvidedPubsubOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -958,41 +958,41 @@ export class DataDatabricksExternalLocationExternalLocationInfoFileEventQueuePro
 }
 export interface DataDatabricksExternalLocationExternalLocationInfoFileEventQueueProvidedSqs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/external_location#managed_resource_id DataDatabricksExternalLocation#managed_resource_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/external_location#managed_resource_id DataDatabricksExternalLocation#managed_resource_id}
   */
   readonly managedResourceId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/external_location#queue_url DataDatabricksExternalLocation#queue_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/external_location#queue_url DataDatabricksExternalLocation#queue_url}
   */
   readonly queueUrl?: string;
 }
 
 export function dataDatabricksExternalLocationExternalLocationInfoFileEventQueueProvidedSqsToTerraform(struct?: DataDatabricksExternalLocationExternalLocationInfoFileEventQueueProvidedSqsOutputReference | DataDatabricksExternalLocationExternalLocationInfoFileEventQueueProvidedSqs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    managed_resource_id: cdktf.stringToTerraform(struct!.managedResourceId),
-    queue_url: cdktf.stringToTerraform(struct!.queueUrl),
+    managed_resource_id: cdktn.stringToTerraform(struct!.managedResourceId),
+    queue_url: cdktn.stringToTerraform(struct!.queueUrl),
   }
 }
 
 
 export function dataDatabricksExternalLocationExternalLocationInfoFileEventQueueProvidedSqsToHclTerraform(struct?: DataDatabricksExternalLocationExternalLocationInfoFileEventQueueProvidedSqsOutputReference | DataDatabricksExternalLocationExternalLocationInfoFileEventQueueProvidedSqs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     managed_resource_id: {
-      value: cdktf.stringToHclTerraform(struct!.managedResourceId),
+      value: cdktn.stringToHclTerraform(struct!.managedResourceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     queue_url: {
-      value: cdktf.stringToHclTerraform(struct!.queueUrl),
+      value: cdktn.stringToHclTerraform(struct!.queueUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1003,14 +1003,14 @@ export function dataDatabricksExternalLocationExternalLocationInfoFileEventQueue
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksExternalLocationExternalLocationInfoFileEventQueueProvidedSqsOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksExternalLocationExternalLocationInfoFileEventQueueProvidedSqsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1077,44 +1077,44 @@ export interface DataDatabricksExternalLocationExternalLocationInfoFileEventQueu
   /**
   * managed_aqs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/external_location#managed_aqs DataDatabricksExternalLocation#managed_aqs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/external_location#managed_aqs DataDatabricksExternalLocation#managed_aqs}
   */
   readonly managedAqs?: DataDatabricksExternalLocationExternalLocationInfoFileEventQueueManagedAqs;
   /**
   * managed_pubsub block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/external_location#managed_pubsub DataDatabricksExternalLocation#managed_pubsub}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/external_location#managed_pubsub DataDatabricksExternalLocation#managed_pubsub}
   */
   readonly managedPubsub?: DataDatabricksExternalLocationExternalLocationInfoFileEventQueueManagedPubsub;
   /**
   * managed_sqs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/external_location#managed_sqs DataDatabricksExternalLocation#managed_sqs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/external_location#managed_sqs DataDatabricksExternalLocation#managed_sqs}
   */
   readonly managedSqs?: DataDatabricksExternalLocationExternalLocationInfoFileEventQueueManagedSqs;
   /**
   * provided_aqs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/external_location#provided_aqs DataDatabricksExternalLocation#provided_aqs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/external_location#provided_aqs DataDatabricksExternalLocation#provided_aqs}
   */
   readonly providedAqs?: DataDatabricksExternalLocationExternalLocationInfoFileEventQueueProvidedAqs;
   /**
   * provided_pubsub block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/external_location#provided_pubsub DataDatabricksExternalLocation#provided_pubsub}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/external_location#provided_pubsub DataDatabricksExternalLocation#provided_pubsub}
   */
   readonly providedPubsub?: DataDatabricksExternalLocationExternalLocationInfoFileEventQueueProvidedPubsub;
   /**
   * provided_sqs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/external_location#provided_sqs DataDatabricksExternalLocation#provided_sqs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/external_location#provided_sqs DataDatabricksExternalLocation#provided_sqs}
   */
   readonly providedSqs?: DataDatabricksExternalLocationExternalLocationInfoFileEventQueueProvidedSqs;
 }
 
 export function dataDatabricksExternalLocationExternalLocationInfoFileEventQueueToTerraform(struct?: DataDatabricksExternalLocationExternalLocationInfoFileEventQueueOutputReference | DataDatabricksExternalLocationExternalLocationInfoFileEventQueue): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1129,8 +1129,8 @@ export function dataDatabricksExternalLocationExternalLocationInfoFileEventQueue
 
 
 export function dataDatabricksExternalLocationExternalLocationInfoFileEventQueueToHclTerraform(struct?: DataDatabricksExternalLocationExternalLocationInfoFileEventQueueOutputReference | DataDatabricksExternalLocationExternalLocationInfoFileEventQueue): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1176,14 +1176,14 @@ export function dataDatabricksExternalLocationExternalLocationInfoFileEventQueue
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksExternalLocationExternalLocationInfoFileEventQueueOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksExternalLocationExternalLocationInfoFileEventQueueOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1336,105 +1336,110 @@ export class DataDatabricksExternalLocationExternalLocationInfoFileEventQueueOut
 }
 export interface DataDatabricksExternalLocationExternalLocationInfo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/external_location#browse_only DataDatabricksExternalLocation#browse_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/external_location#browse_only DataDatabricksExternalLocation#browse_only}
   */
-  readonly browseOnly?: boolean | cdktf.IResolvable;
+  readonly browseOnly?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/external_location#comment DataDatabricksExternalLocation#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/external_location#comment DataDatabricksExternalLocation#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/external_location#created_at DataDatabricksExternalLocation#created_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/external_location#created_at DataDatabricksExternalLocation#created_at}
   */
   readonly createdAt?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/external_location#created_by DataDatabricksExternalLocation#created_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/external_location#created_by DataDatabricksExternalLocation#created_by}
   */
   readonly createdBy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/external_location#credential_id DataDatabricksExternalLocation#credential_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/external_location#credential_id DataDatabricksExternalLocation#credential_id}
   */
   readonly credentialId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/external_location#credential_name DataDatabricksExternalLocation#credential_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/external_location#credential_name DataDatabricksExternalLocation#credential_name}
   */
   readonly credentialName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/external_location#enable_file_events DataDatabricksExternalLocation#enable_file_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/external_location#effective_enable_file_events DataDatabricksExternalLocation#effective_enable_file_events}
   */
-  readonly enableFileEvents?: boolean | cdktf.IResolvable;
+  readonly effectiveEnableFileEvents?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/external_location#fallback DataDatabricksExternalLocation#fallback}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/external_location#enable_file_events DataDatabricksExternalLocation#enable_file_events}
   */
-  readonly fallback?: boolean | cdktf.IResolvable;
+  readonly enableFileEvents?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/external_location#isolation_mode DataDatabricksExternalLocation#isolation_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/external_location#fallback DataDatabricksExternalLocation#fallback}
+  */
+  readonly fallback?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/external_location#isolation_mode DataDatabricksExternalLocation#isolation_mode}
   */
   readonly isolationMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/external_location#metastore_id DataDatabricksExternalLocation#metastore_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/external_location#metastore_id DataDatabricksExternalLocation#metastore_id}
   */
   readonly metastoreId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/external_location#name DataDatabricksExternalLocation#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/external_location#name DataDatabricksExternalLocation#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/external_location#owner DataDatabricksExternalLocation#owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/external_location#owner DataDatabricksExternalLocation#owner}
   */
   readonly owner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/external_location#read_only DataDatabricksExternalLocation#read_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/external_location#read_only DataDatabricksExternalLocation#read_only}
   */
-  readonly readOnly?: boolean | cdktf.IResolvable;
+  readonly readOnly?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/external_location#updated_at DataDatabricksExternalLocation#updated_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/external_location#updated_at DataDatabricksExternalLocation#updated_at}
   */
   readonly updatedAt?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/external_location#updated_by DataDatabricksExternalLocation#updated_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/external_location#updated_by DataDatabricksExternalLocation#updated_by}
   */
   readonly updatedBy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/external_location#url DataDatabricksExternalLocation#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/external_location#url DataDatabricksExternalLocation#url}
   */
   readonly url?: string;
   /**
   * encryption_details block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/external_location#encryption_details DataDatabricksExternalLocation#encryption_details}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/external_location#encryption_details DataDatabricksExternalLocation#encryption_details}
   */
   readonly encryptionDetails?: DataDatabricksExternalLocationExternalLocationInfoEncryptionDetails;
   /**
   * file_event_queue block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/external_location#file_event_queue DataDatabricksExternalLocation#file_event_queue}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/external_location#file_event_queue DataDatabricksExternalLocation#file_event_queue}
   */
   readonly fileEventQueue?: DataDatabricksExternalLocationExternalLocationInfoFileEventQueue;
 }
 
 export function dataDatabricksExternalLocationExternalLocationInfoToTerraform(struct?: DataDatabricksExternalLocationExternalLocationInfoOutputReference | DataDatabricksExternalLocationExternalLocationInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    browse_only: cdktf.booleanToTerraform(struct!.browseOnly),
-    comment: cdktf.stringToTerraform(struct!.comment),
-    created_at: cdktf.numberToTerraform(struct!.createdAt),
-    created_by: cdktf.stringToTerraform(struct!.createdBy),
-    credential_id: cdktf.stringToTerraform(struct!.credentialId),
-    credential_name: cdktf.stringToTerraform(struct!.credentialName),
-    enable_file_events: cdktf.booleanToTerraform(struct!.enableFileEvents),
-    fallback: cdktf.booleanToTerraform(struct!.fallback),
-    isolation_mode: cdktf.stringToTerraform(struct!.isolationMode),
-    metastore_id: cdktf.stringToTerraform(struct!.metastoreId),
-    name: cdktf.stringToTerraform(struct!.name),
-    owner: cdktf.stringToTerraform(struct!.owner),
-    read_only: cdktf.booleanToTerraform(struct!.readOnly),
-    updated_at: cdktf.numberToTerraform(struct!.updatedAt),
-    updated_by: cdktf.stringToTerraform(struct!.updatedBy),
-    url: cdktf.stringToTerraform(struct!.url),
+    browse_only: cdktn.booleanToTerraform(struct!.browseOnly),
+    comment: cdktn.stringToTerraform(struct!.comment),
+    created_at: cdktn.numberToTerraform(struct!.createdAt),
+    created_by: cdktn.stringToTerraform(struct!.createdBy),
+    credential_id: cdktn.stringToTerraform(struct!.credentialId),
+    credential_name: cdktn.stringToTerraform(struct!.credentialName),
+    effective_enable_file_events: cdktn.booleanToTerraform(struct!.effectiveEnableFileEvents),
+    enable_file_events: cdktn.booleanToTerraform(struct!.enableFileEvents),
+    fallback: cdktn.booleanToTerraform(struct!.fallback),
+    isolation_mode: cdktn.stringToTerraform(struct!.isolationMode),
+    metastore_id: cdktn.stringToTerraform(struct!.metastoreId),
+    name: cdktn.stringToTerraform(struct!.name),
+    owner: cdktn.stringToTerraform(struct!.owner),
+    read_only: cdktn.booleanToTerraform(struct!.readOnly),
+    updated_at: cdktn.numberToTerraform(struct!.updatedAt),
+    updated_by: cdktn.stringToTerraform(struct!.updatedBy),
+    url: cdktn.stringToTerraform(struct!.url),
     encryption_details: dataDatabricksExternalLocationExternalLocationInfoEncryptionDetailsToTerraform(struct!.encryptionDetails),
     file_event_queue: dataDatabricksExternalLocationExternalLocationInfoFileEventQueueToTerraform(struct!.fileEventQueue),
   }
@@ -1442,103 +1447,109 @@ export function dataDatabricksExternalLocationExternalLocationInfoToTerraform(st
 
 
 export function dataDatabricksExternalLocationExternalLocationInfoToHclTerraform(struct?: DataDatabricksExternalLocationExternalLocationInfoOutputReference | DataDatabricksExternalLocationExternalLocationInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     browse_only: {
-      value: cdktf.booleanToHclTerraform(struct!.browseOnly),
+      value: cdktn.booleanToHclTerraform(struct!.browseOnly),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     comment: {
-      value: cdktf.stringToHclTerraform(struct!.comment),
+      value: cdktn.stringToHclTerraform(struct!.comment),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     created_at: {
-      value: cdktf.numberToHclTerraform(struct!.createdAt),
+      value: cdktn.numberToHclTerraform(struct!.createdAt),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     created_by: {
-      value: cdktf.stringToHclTerraform(struct!.createdBy),
+      value: cdktn.stringToHclTerraform(struct!.createdBy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     credential_id: {
-      value: cdktf.stringToHclTerraform(struct!.credentialId),
+      value: cdktn.stringToHclTerraform(struct!.credentialId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     credential_name: {
-      value: cdktf.stringToHclTerraform(struct!.credentialName),
+      value: cdktn.stringToHclTerraform(struct!.credentialName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
+    effective_enable_file_events: {
+      value: cdktn.booleanToHclTerraform(struct!.effectiveEnableFileEvents),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
     enable_file_events: {
-      value: cdktf.booleanToHclTerraform(struct!.enableFileEvents),
+      value: cdktn.booleanToHclTerraform(struct!.enableFileEvents),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     fallback: {
-      value: cdktf.booleanToHclTerraform(struct!.fallback),
+      value: cdktn.booleanToHclTerraform(struct!.fallback),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     isolation_mode: {
-      value: cdktf.stringToHclTerraform(struct!.isolationMode),
+      value: cdktn.stringToHclTerraform(struct!.isolationMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     metastore_id: {
-      value: cdktf.stringToHclTerraform(struct!.metastoreId),
+      value: cdktn.stringToHclTerraform(struct!.metastoreId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     owner: {
-      value: cdktf.stringToHclTerraform(struct!.owner),
+      value: cdktn.stringToHclTerraform(struct!.owner),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read_only: {
-      value: cdktf.booleanToHclTerraform(struct!.readOnly),
+      value: cdktn.booleanToHclTerraform(struct!.readOnly),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     updated_at: {
-      value: cdktf.numberToHclTerraform(struct!.updatedAt),
+      value: cdktn.numberToHclTerraform(struct!.updatedAt),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     updated_by: {
-      value: cdktf.stringToHclTerraform(struct!.updatedBy),
+      value: cdktn.stringToHclTerraform(struct!.updatedBy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     url: {
-      value: cdktf.stringToHclTerraform(struct!.url),
+      value: cdktn.stringToHclTerraform(struct!.url),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1561,14 +1572,14 @@ export function dataDatabricksExternalLocationExternalLocationInfoToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksExternalLocationExternalLocationInfoOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksExternalLocationExternalLocationInfoOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1598,6 +1609,10 @@ export class DataDatabricksExternalLocationExternalLocationInfoOutputReference e
     if (this._credentialName !== undefined) {
       hasAnyValues = true;
       internalValueResult.credentialName = this._credentialName;
+    }
+    if (this._effectiveEnableFileEvents !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.effectiveEnableFileEvents = this._effectiveEnableFileEvents;
     }
     if (this._enableFileEvents !== undefined) {
       hasAnyValues = true;
@@ -1659,6 +1674,7 @@ export class DataDatabricksExternalLocationExternalLocationInfoOutputReference e
       this._createdBy = undefined;
       this._credentialId = undefined;
       this._credentialName = undefined;
+      this._effectiveEnableFileEvents = undefined;
       this._enableFileEvents = undefined;
       this._fallback = undefined;
       this._isolationMode = undefined;
@@ -1680,6 +1696,7 @@ export class DataDatabricksExternalLocationExternalLocationInfoOutputReference e
       this._createdBy = value.createdBy;
       this._credentialId = value.credentialId;
       this._credentialName = value.credentialName;
+      this._effectiveEnableFileEvents = value.effectiveEnableFileEvents;
       this._enableFileEvents = value.enableFileEvents;
       this._fallback = value.fallback;
       this._isolationMode = value.isolationMode;
@@ -1696,11 +1713,11 @@ export class DataDatabricksExternalLocationExternalLocationInfoOutputReference e
   }
 
   // browse_only - computed: false, optional: true, required: false
-  private _browseOnly?: boolean | cdktf.IResolvable; 
+  private _browseOnly?: boolean | cdktn.IResolvable; 
   public get browseOnly() {
     return this.getBooleanAttribute('browse_only');
   }
-  public set browseOnly(value: boolean | cdktf.IResolvable) {
+  public set browseOnly(value: boolean | cdktn.IResolvable) {
     this._browseOnly = value;
   }
   public resetBrowseOnly() {
@@ -1791,12 +1808,28 @@ export class DataDatabricksExternalLocationExternalLocationInfoOutputReference e
     return this._credentialName;
   }
 
+  // effective_enable_file_events - computed: false, optional: true, required: false
+  private _effectiveEnableFileEvents?: boolean | cdktn.IResolvable; 
+  public get effectiveEnableFileEvents() {
+    return this.getBooleanAttribute('effective_enable_file_events');
+  }
+  public set effectiveEnableFileEvents(value: boolean | cdktn.IResolvable) {
+    this._effectiveEnableFileEvents = value;
+  }
+  public resetEffectiveEnableFileEvents() {
+    this._effectiveEnableFileEvents = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get effectiveEnableFileEventsInput() {
+    return this._effectiveEnableFileEvents;
+  }
+
   // enable_file_events - computed: false, optional: true, required: false
-  private _enableFileEvents?: boolean | cdktf.IResolvable; 
+  private _enableFileEvents?: boolean | cdktn.IResolvable; 
   public get enableFileEvents() {
     return this.getBooleanAttribute('enable_file_events');
   }
-  public set enableFileEvents(value: boolean | cdktf.IResolvable) {
+  public set enableFileEvents(value: boolean | cdktn.IResolvable) {
     this._enableFileEvents = value;
   }
   public resetEnableFileEvents() {
@@ -1808,11 +1841,11 @@ export class DataDatabricksExternalLocationExternalLocationInfoOutputReference e
   }
 
   // fallback - computed: false, optional: true, required: false
-  private _fallback?: boolean | cdktf.IResolvable; 
+  private _fallback?: boolean | cdktn.IResolvable; 
   public get fallback() {
     return this.getBooleanAttribute('fallback');
   }
-  public set fallback(value: boolean | cdktf.IResolvable) {
+  public set fallback(value: boolean | cdktn.IResolvable) {
     this._fallback = value;
   }
   public resetFallback() {
@@ -1888,11 +1921,11 @@ export class DataDatabricksExternalLocationExternalLocationInfoOutputReference e
   }
 
   // read_only - computed: false, optional: true, required: false
-  private _readOnly?: boolean | cdktf.IResolvable; 
+  private _readOnly?: boolean | cdktn.IResolvable; 
   public get readOnly() {
     return this.getBooleanAttribute('read_only');
   }
-  public set readOnly(value: boolean | cdktf.IResolvable) {
+  public set readOnly(value: boolean | cdktn.IResolvable) {
     this._readOnly = value;
   }
   public resetReadOnly() {
@@ -1985,30 +2018,30 @@ export class DataDatabricksExternalLocationExternalLocationInfoOutputReference e
 }
 export interface DataDatabricksExternalLocationProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/external_location#workspace_id DataDatabricksExternalLocation#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/external_location#workspace_id DataDatabricksExternalLocation#workspace_id}
   */
   readonly workspaceId: string;
 }
 
 export function dataDatabricksExternalLocationProviderConfigToTerraform(struct?: DataDatabricksExternalLocationProviderConfigOutputReference | DataDatabricksExternalLocationProviderConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    workspace_id: cdktf.stringToTerraform(struct!.workspaceId),
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
   }
 }
 
 
 export function dataDatabricksExternalLocationProviderConfigToHclTerraform(struct?: DataDatabricksExternalLocationProviderConfigOutputReference | DataDatabricksExternalLocationProviderConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     workspace_id: {
-      value: cdktf.stringToHclTerraform(struct!.workspaceId),
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2019,14 +2052,14 @@ export function dataDatabricksExternalLocationProviderConfigToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksExternalLocationProviderConfigOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksExternalLocationProviderConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2066,9 +2099,9 @@ export class DataDatabricksExternalLocationProviderConfigOutputReference extends
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/external_location databricks_external_location}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/external_location databricks_external_location}
 */
-export class DataDatabricksExternalLocation extends cdktf.TerraformDataSource {
+export class DataDatabricksExternalLocation extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -2079,14 +2112,14 @@ export class DataDatabricksExternalLocation extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataDatabricksExternalLocation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataDatabricksExternalLocation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksExternalLocation to import
-  * @param importFromId The id of the existing DataDatabricksExternalLocation that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/external_location#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksExternalLocation that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/external_location#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksExternalLocation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_external_location", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_external_location", importId: importFromId, provider });
       }
 
   // ===========
@@ -2094,7 +2127,7 @@ export class DataDatabricksExternalLocation extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/external_location databricks_external_location} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/external_location databricks_external_location} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2105,7 +2138,7 @@ export class DataDatabricksExternalLocation extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_external_location',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -2193,8 +2226,8 @@ export class DataDatabricksExternalLocation extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
       external_location_info: dataDatabricksExternalLocationExternalLocationInfoToTerraform(this._externalLocationInfo.internalValue),
       provider_config: dataDatabricksExternalLocationProviderConfigToTerraform(this._providerConfig.internalValue),
     };
@@ -2203,13 +2236,13 @@ export class DataDatabricksExternalLocation extends cdktf.TerraformDataSource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

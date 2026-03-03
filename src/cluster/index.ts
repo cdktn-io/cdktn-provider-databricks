@@ -1,242 +1,254 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ClusterConfig extends cdktf.TerraformMetaArguments {
+export interface ClusterConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#apply_policy_default_values Cluster#apply_policy_default_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#apply_policy_default_values Cluster#apply_policy_default_values}
   */
-  readonly applyPolicyDefaultValues?: boolean | cdktf.IResolvable;
+  readonly applyPolicyDefaultValues?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#autotermination_minutes Cluster#autotermination_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#autotermination_minutes Cluster#autotermination_minutes}
   */
   readonly autoterminationMinutes?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#cluster_name Cluster#cluster_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#cluster_name Cluster#cluster_name}
   */
   readonly clusterName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#custom_tags Cluster#custom_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#custom_tags Cluster#custom_tags}
   */
   readonly customTags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#data_security_mode Cluster#data_security_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#data_security_mode Cluster#data_security_mode}
   */
   readonly dataSecurityMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#driver_instance_pool_id Cluster#driver_instance_pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#driver_instance_pool_id Cluster#driver_instance_pool_id}
   */
   readonly driverInstancePoolId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#driver_node_type_id Cluster#driver_node_type_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#driver_node_type_id Cluster#driver_node_type_id}
   */
   readonly driverNodeTypeId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#enable_elastic_disk Cluster#enable_elastic_disk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#enable_elastic_disk Cluster#enable_elastic_disk}
   */
-  readonly enableElasticDisk?: boolean | cdktf.IResolvable;
+  readonly enableElasticDisk?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#enable_local_disk_encryption Cluster#enable_local_disk_encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#enable_local_disk_encryption Cluster#enable_local_disk_encryption}
   */
-  readonly enableLocalDiskEncryption?: boolean | cdktf.IResolvable;
+  readonly enableLocalDiskEncryption?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#id Cluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#id Cluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#idempotency_token Cluster#idempotency_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#idempotency_token Cluster#idempotency_token}
   */
   readonly idempotencyToken?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#instance_pool_id Cluster#instance_pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#instance_pool_id Cluster#instance_pool_id}
   */
   readonly instancePoolId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#is_pinned Cluster#is_pinned}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#is_pinned Cluster#is_pinned}
   */
-  readonly isPinned?: boolean | cdktf.IResolvable;
+  readonly isPinned?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#is_single_node Cluster#is_single_node}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#is_single_node Cluster#is_single_node}
   */
-  readonly isSingleNode?: boolean | cdktf.IResolvable;
+  readonly isSingleNode?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#kind Cluster#kind}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#kind Cluster#kind}
   */
   readonly kind?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#no_wait Cluster#no_wait}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#no_wait Cluster#no_wait}
   */
-  readonly noWait?: boolean | cdktf.IResolvable;
+  readonly noWait?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#node_type_id Cluster#node_type_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#node_type_id Cluster#node_type_id}
   */
   readonly nodeTypeId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#num_workers Cluster#num_workers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#num_workers Cluster#num_workers}
   */
   readonly numWorkers?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#policy_id Cluster#policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#policy_id Cluster#policy_id}
   */
   readonly policyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#remote_disk_throughput Cluster#remote_disk_throughput}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#remote_disk_throughput Cluster#remote_disk_throughput}
   */
   readonly remoteDiskThroughput?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#runtime_engine Cluster#runtime_engine}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#runtime_engine Cluster#runtime_engine}
   */
   readonly runtimeEngine?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#single_user_name Cluster#single_user_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#single_user_name Cluster#single_user_name}
   */
   readonly singleUserName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#spark_conf Cluster#spark_conf}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#spark_conf Cluster#spark_conf}
   */
   readonly sparkConf?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#spark_env_vars Cluster#spark_env_vars}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#spark_env_vars Cluster#spark_env_vars}
   */
   readonly sparkEnvVars?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#spark_version Cluster#spark_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#spark_version Cluster#spark_version}
   */
   readonly sparkVersion: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#ssh_public_keys Cluster#ssh_public_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#ssh_public_keys Cluster#ssh_public_keys}
   */
   readonly sshPublicKeys?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#total_initial_remote_disk_size Cluster#total_initial_remote_disk_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#total_initial_remote_disk_size Cluster#total_initial_remote_disk_size}
   */
   readonly totalInitialRemoteDiskSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#use_ml_runtime Cluster#use_ml_runtime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#use_ml_runtime Cluster#use_ml_runtime}
   */
-  readonly useMlRuntime?: boolean | cdktf.IResolvable;
+  readonly useMlRuntime?: boolean | cdktn.IResolvable;
   /**
   * autoscale block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#autoscale Cluster#autoscale}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#autoscale Cluster#autoscale}
   */
   readonly autoscale?: ClusterAutoscale;
   /**
   * aws_attributes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#aws_attributes Cluster#aws_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#aws_attributes Cluster#aws_attributes}
   */
   readonly awsAttributes?: ClusterAwsAttributes;
   /**
   * azure_attributes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#azure_attributes Cluster#azure_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#azure_attributes Cluster#azure_attributes}
   */
   readonly azureAttributes?: ClusterAzureAttributes;
   /**
   * cluster_log_conf block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#cluster_log_conf Cluster#cluster_log_conf}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#cluster_log_conf Cluster#cluster_log_conf}
   */
   readonly clusterLogConf?: ClusterClusterLogConf;
   /**
   * cluster_mount_info block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#cluster_mount_info Cluster#cluster_mount_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#cluster_mount_info Cluster#cluster_mount_info}
   */
-  readonly clusterMountInfo?: ClusterClusterMountInfo[] | cdktf.IResolvable;
+  readonly clusterMountInfo?: ClusterClusterMountInfo[] | cdktn.IResolvable;
   /**
   * docker_image block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#docker_image Cluster#docker_image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#docker_image Cluster#docker_image}
   */
   readonly dockerImage?: ClusterDockerImage;
   /**
+  * driver_node_type_flexibility block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#driver_node_type_flexibility Cluster#driver_node_type_flexibility}
+  */
+  readonly driverNodeTypeFlexibility?: ClusterDriverNodeTypeFlexibility;
+  /**
   * gcp_attributes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#gcp_attributes Cluster#gcp_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#gcp_attributes Cluster#gcp_attributes}
   */
   readonly gcpAttributes?: ClusterGcpAttributes;
   /**
   * init_scripts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#init_scripts Cluster#init_scripts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#init_scripts Cluster#init_scripts}
   */
-  readonly initScripts?: ClusterInitScripts[] | cdktf.IResolvable;
+  readonly initScripts?: ClusterInitScripts[] | cdktn.IResolvable;
   /**
   * library block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#library Cluster#library}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#library Cluster#library}
   */
-  readonly library?: ClusterLibrary[] | cdktf.IResolvable;
+  readonly library?: ClusterLibrary[] | cdktn.IResolvable;
   /**
   * provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#provider_config Cluster#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#provider_config Cluster#provider_config}
   */
   readonly providerConfig?: ClusterProviderConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#timeouts Cluster#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#timeouts Cluster#timeouts}
   */
   readonly timeouts?: ClusterTimeouts;
   /**
+  * worker_node_type_flexibility block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#worker_node_type_flexibility Cluster#worker_node_type_flexibility}
+  */
+  readonly workerNodeTypeFlexibility?: ClusterWorkerNodeTypeFlexibility;
+  /**
   * workload_type block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#workload_type Cluster#workload_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#workload_type Cluster#workload_type}
   */
   readonly workloadType?: ClusterWorkloadType;
 }
 export interface ClusterAutoscale {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#max_workers Cluster#max_workers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#max_workers Cluster#max_workers}
   */
   readonly maxWorkers?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#min_workers Cluster#min_workers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#min_workers Cluster#min_workers}
   */
   readonly minWorkers?: number;
 }
 
 export function clusterAutoscaleToTerraform(struct?: ClusterAutoscaleOutputReference | ClusterAutoscale): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    max_workers: cdktf.numberToTerraform(struct!.maxWorkers),
-    min_workers: cdktf.numberToTerraform(struct!.minWorkers),
+    max_workers: cdktn.numberToTerraform(struct!.maxWorkers),
+    min_workers: cdktn.numberToTerraform(struct!.minWorkers),
   }
 }
 
 
 export function clusterAutoscaleToHclTerraform(struct?: ClusterAutoscaleOutputReference | ClusterAutoscale): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     max_workers: {
-      value: cdktf.numberToHclTerraform(struct!.maxWorkers),
+      value: cdktn.numberToHclTerraform(struct!.maxWorkers),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     min_workers: {
-      value: cdktf.numberToHclTerraform(struct!.minWorkers),
+      value: cdktn.numberToHclTerraform(struct!.minWorkers),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -247,14 +259,14 @@ export function clusterAutoscaleToHclTerraform(struct?: ClusterAutoscaleOutputRe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClusterAutoscaleOutputReference extends cdktf.ComplexObject {
+export class ClusterAutoscaleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -319,129 +331,129 @@ export class ClusterAutoscaleOutputReference extends cdktf.ComplexObject {
 }
 export interface ClusterAwsAttributes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#availability Cluster#availability}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#availability Cluster#availability}
   */
   readonly availability?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#ebs_volume_count Cluster#ebs_volume_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#ebs_volume_count Cluster#ebs_volume_count}
   */
   readonly ebsVolumeCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#ebs_volume_iops Cluster#ebs_volume_iops}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#ebs_volume_iops Cluster#ebs_volume_iops}
   */
   readonly ebsVolumeIops?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#ebs_volume_size Cluster#ebs_volume_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#ebs_volume_size Cluster#ebs_volume_size}
   */
   readonly ebsVolumeSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#ebs_volume_throughput Cluster#ebs_volume_throughput}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#ebs_volume_throughput Cluster#ebs_volume_throughput}
   */
   readonly ebsVolumeThroughput?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#ebs_volume_type Cluster#ebs_volume_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#ebs_volume_type Cluster#ebs_volume_type}
   */
   readonly ebsVolumeType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#first_on_demand Cluster#first_on_demand}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#first_on_demand Cluster#first_on_demand}
   */
   readonly firstOnDemand?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#instance_profile_arn Cluster#instance_profile_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#instance_profile_arn Cluster#instance_profile_arn}
   */
   readonly instanceProfileArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#spot_bid_price_percent Cluster#spot_bid_price_percent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#spot_bid_price_percent Cluster#spot_bid_price_percent}
   */
   readonly spotBidPricePercent?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#zone_id Cluster#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#zone_id Cluster#zone_id}
   */
   readonly zoneId?: string;
 }
 
 export function clusterAwsAttributesToTerraform(struct?: ClusterAwsAttributesOutputReference | ClusterAwsAttributes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    availability: cdktf.stringToTerraform(struct!.availability),
-    ebs_volume_count: cdktf.numberToTerraform(struct!.ebsVolumeCount),
-    ebs_volume_iops: cdktf.numberToTerraform(struct!.ebsVolumeIops),
-    ebs_volume_size: cdktf.numberToTerraform(struct!.ebsVolumeSize),
-    ebs_volume_throughput: cdktf.numberToTerraform(struct!.ebsVolumeThroughput),
-    ebs_volume_type: cdktf.stringToTerraform(struct!.ebsVolumeType),
-    first_on_demand: cdktf.numberToTerraform(struct!.firstOnDemand),
-    instance_profile_arn: cdktf.stringToTerraform(struct!.instanceProfileArn),
-    spot_bid_price_percent: cdktf.numberToTerraform(struct!.spotBidPricePercent),
-    zone_id: cdktf.stringToTerraform(struct!.zoneId),
+    availability: cdktn.stringToTerraform(struct!.availability),
+    ebs_volume_count: cdktn.numberToTerraform(struct!.ebsVolumeCount),
+    ebs_volume_iops: cdktn.numberToTerraform(struct!.ebsVolumeIops),
+    ebs_volume_size: cdktn.numberToTerraform(struct!.ebsVolumeSize),
+    ebs_volume_throughput: cdktn.numberToTerraform(struct!.ebsVolumeThroughput),
+    ebs_volume_type: cdktn.stringToTerraform(struct!.ebsVolumeType),
+    first_on_demand: cdktn.numberToTerraform(struct!.firstOnDemand),
+    instance_profile_arn: cdktn.stringToTerraform(struct!.instanceProfileArn),
+    spot_bid_price_percent: cdktn.numberToTerraform(struct!.spotBidPricePercent),
+    zone_id: cdktn.stringToTerraform(struct!.zoneId),
   }
 }
 
 
 export function clusterAwsAttributesToHclTerraform(struct?: ClusterAwsAttributesOutputReference | ClusterAwsAttributes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     availability: {
-      value: cdktf.stringToHclTerraform(struct!.availability),
+      value: cdktn.stringToHclTerraform(struct!.availability),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ebs_volume_count: {
-      value: cdktf.numberToHclTerraform(struct!.ebsVolumeCount),
+      value: cdktn.numberToHclTerraform(struct!.ebsVolumeCount),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     ebs_volume_iops: {
-      value: cdktf.numberToHclTerraform(struct!.ebsVolumeIops),
+      value: cdktn.numberToHclTerraform(struct!.ebsVolumeIops),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     ebs_volume_size: {
-      value: cdktf.numberToHclTerraform(struct!.ebsVolumeSize),
+      value: cdktn.numberToHclTerraform(struct!.ebsVolumeSize),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     ebs_volume_throughput: {
-      value: cdktf.numberToHclTerraform(struct!.ebsVolumeThroughput),
+      value: cdktn.numberToHclTerraform(struct!.ebsVolumeThroughput),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     ebs_volume_type: {
-      value: cdktf.stringToHclTerraform(struct!.ebsVolumeType),
+      value: cdktn.stringToHclTerraform(struct!.ebsVolumeType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     first_on_demand: {
-      value: cdktf.numberToHclTerraform(struct!.firstOnDemand),
+      value: cdktn.numberToHclTerraform(struct!.firstOnDemand),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     instance_profile_arn: {
-      value: cdktf.stringToHclTerraform(struct!.instanceProfileArn),
+      value: cdktn.stringToHclTerraform(struct!.instanceProfileArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     spot_bid_price_percent: {
-      value: cdktf.numberToHclTerraform(struct!.spotBidPricePercent),
+      value: cdktn.numberToHclTerraform(struct!.spotBidPricePercent),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     zone_id: {
-      value: cdktf.stringToHclTerraform(struct!.zoneId),
+      value: cdktn.stringToHclTerraform(struct!.zoneId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -452,14 +464,14 @@ export function clusterAwsAttributesToHclTerraform(struct?: ClusterAwsAttributes
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClusterAwsAttributesOutputReference extends cdktf.ComplexObject {
+export class ClusterAwsAttributesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -700,41 +712,41 @@ export class ClusterAwsAttributesOutputReference extends cdktf.ComplexObject {
 }
 export interface ClusterAzureAttributesLogAnalyticsInfo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#log_analytics_primary_key Cluster#log_analytics_primary_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#log_analytics_primary_key Cluster#log_analytics_primary_key}
   */
   readonly logAnalyticsPrimaryKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#log_analytics_workspace_id Cluster#log_analytics_workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#log_analytics_workspace_id Cluster#log_analytics_workspace_id}
   */
   readonly logAnalyticsWorkspaceId?: string;
 }
 
 export function clusterAzureAttributesLogAnalyticsInfoToTerraform(struct?: ClusterAzureAttributesLogAnalyticsInfoOutputReference | ClusterAzureAttributesLogAnalyticsInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    log_analytics_primary_key: cdktf.stringToTerraform(struct!.logAnalyticsPrimaryKey),
-    log_analytics_workspace_id: cdktf.stringToTerraform(struct!.logAnalyticsWorkspaceId),
+    log_analytics_primary_key: cdktn.stringToTerraform(struct!.logAnalyticsPrimaryKey),
+    log_analytics_workspace_id: cdktn.stringToTerraform(struct!.logAnalyticsWorkspaceId),
   }
 }
 
 
 export function clusterAzureAttributesLogAnalyticsInfoToHclTerraform(struct?: ClusterAzureAttributesLogAnalyticsInfoOutputReference | ClusterAzureAttributesLogAnalyticsInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     log_analytics_primary_key: {
-      value: cdktf.stringToHclTerraform(struct!.logAnalyticsPrimaryKey),
+      value: cdktn.stringToHclTerraform(struct!.logAnalyticsPrimaryKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     log_analytics_workspace_id: {
-      value: cdktf.stringToHclTerraform(struct!.logAnalyticsWorkspaceId),
+      value: cdktn.stringToHclTerraform(struct!.logAnalyticsWorkspaceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -745,14 +757,14 @@ export function clusterAzureAttributesLogAnalyticsInfoToHclTerraform(struct?: Cl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClusterAzureAttributesLogAnalyticsInfoOutputReference extends cdktf.ComplexObject {
+export class ClusterAzureAttributesLogAnalyticsInfoOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -817,59 +829,59 @@ export class ClusterAzureAttributesLogAnalyticsInfoOutputReference extends cdktf
 }
 export interface ClusterAzureAttributes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#availability Cluster#availability}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#availability Cluster#availability}
   */
   readonly availability?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#first_on_demand Cluster#first_on_demand}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#first_on_demand Cluster#first_on_demand}
   */
   readonly firstOnDemand?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#spot_bid_max_price Cluster#spot_bid_max_price}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#spot_bid_max_price Cluster#spot_bid_max_price}
   */
   readonly spotBidMaxPrice?: number;
   /**
   * log_analytics_info block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#log_analytics_info Cluster#log_analytics_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#log_analytics_info Cluster#log_analytics_info}
   */
   readonly logAnalyticsInfo?: ClusterAzureAttributesLogAnalyticsInfo;
 }
 
 export function clusterAzureAttributesToTerraform(struct?: ClusterAzureAttributesOutputReference | ClusterAzureAttributes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    availability: cdktf.stringToTerraform(struct!.availability),
-    first_on_demand: cdktf.numberToTerraform(struct!.firstOnDemand),
-    spot_bid_max_price: cdktf.numberToTerraform(struct!.spotBidMaxPrice),
+    availability: cdktn.stringToTerraform(struct!.availability),
+    first_on_demand: cdktn.numberToTerraform(struct!.firstOnDemand),
+    spot_bid_max_price: cdktn.numberToTerraform(struct!.spotBidMaxPrice),
     log_analytics_info: clusterAzureAttributesLogAnalyticsInfoToTerraform(struct!.logAnalyticsInfo),
   }
 }
 
 
 export function clusterAzureAttributesToHclTerraform(struct?: ClusterAzureAttributesOutputReference | ClusterAzureAttributes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     availability: {
-      value: cdktf.stringToHclTerraform(struct!.availability),
+      value: cdktn.stringToHclTerraform(struct!.availability),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     first_on_demand: {
-      value: cdktf.numberToHclTerraform(struct!.firstOnDemand),
+      value: cdktn.numberToHclTerraform(struct!.firstOnDemand),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     spot_bid_max_price: {
-      value: cdktf.numberToHclTerraform(struct!.spotBidMaxPrice),
+      value: cdktn.numberToHclTerraform(struct!.spotBidMaxPrice),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -886,14 +898,14 @@ export function clusterAzureAttributesToHclTerraform(struct?: ClusterAzureAttrib
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClusterAzureAttributesOutputReference extends cdktf.ComplexObject {
+export class ClusterAzureAttributesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1002,30 +1014,30 @@ export class ClusterAzureAttributesOutputReference extends cdktf.ComplexObject {
 }
 export interface ClusterClusterLogConfDbfs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#destination Cluster#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#destination Cluster#destination}
   */
   readonly destination: string;
 }
 
 export function clusterClusterLogConfDbfsToTerraform(struct?: ClusterClusterLogConfDbfsOutputReference | ClusterClusterLogConfDbfs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    destination: cdktf.stringToTerraform(struct!.destination),
+    destination: cdktn.stringToTerraform(struct!.destination),
   }
 }
 
 
 export function clusterClusterLogConfDbfsToHclTerraform(struct?: ClusterClusterLogConfDbfsOutputReference | ClusterClusterLogConfDbfs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     destination: {
-      value: cdktf.stringToHclTerraform(struct!.destination),
+      value: cdktn.stringToHclTerraform(struct!.destination),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1036,14 +1048,14 @@ export function clusterClusterLogConfDbfsToHclTerraform(struct?: ClusterClusterL
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClusterClusterLogConfDbfsOutputReference extends cdktf.ComplexObject {
+export class ClusterClusterLogConfDbfsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1083,96 +1095,96 @@ export class ClusterClusterLogConfDbfsOutputReference extends cdktf.ComplexObjec
 }
 export interface ClusterClusterLogConfS3 {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#canned_acl Cluster#canned_acl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#canned_acl Cluster#canned_acl}
   */
   readonly cannedAcl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#destination Cluster#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#destination Cluster#destination}
   */
   readonly destination: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#enable_encryption Cluster#enable_encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#enable_encryption Cluster#enable_encryption}
   */
-  readonly enableEncryption?: boolean | cdktf.IResolvable;
+  readonly enableEncryption?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#encryption_type Cluster#encryption_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#encryption_type Cluster#encryption_type}
   */
   readonly encryptionType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#endpoint Cluster#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#endpoint Cluster#endpoint}
   */
   readonly endpoint?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#kms_key Cluster#kms_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#kms_key Cluster#kms_key}
   */
   readonly kmsKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#region Cluster#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#region Cluster#region}
   */
   readonly region?: string;
 }
 
 export function clusterClusterLogConfS3ToTerraform(struct?: ClusterClusterLogConfS3OutputReference | ClusterClusterLogConfS3): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    canned_acl: cdktf.stringToTerraform(struct!.cannedAcl),
-    destination: cdktf.stringToTerraform(struct!.destination),
-    enable_encryption: cdktf.booleanToTerraform(struct!.enableEncryption),
-    encryption_type: cdktf.stringToTerraform(struct!.encryptionType),
-    endpoint: cdktf.stringToTerraform(struct!.endpoint),
-    kms_key: cdktf.stringToTerraform(struct!.kmsKey),
-    region: cdktf.stringToTerraform(struct!.region),
+    canned_acl: cdktn.stringToTerraform(struct!.cannedAcl),
+    destination: cdktn.stringToTerraform(struct!.destination),
+    enable_encryption: cdktn.booleanToTerraform(struct!.enableEncryption),
+    encryption_type: cdktn.stringToTerraform(struct!.encryptionType),
+    endpoint: cdktn.stringToTerraform(struct!.endpoint),
+    kms_key: cdktn.stringToTerraform(struct!.kmsKey),
+    region: cdktn.stringToTerraform(struct!.region),
   }
 }
 
 
 export function clusterClusterLogConfS3ToHclTerraform(struct?: ClusterClusterLogConfS3OutputReference | ClusterClusterLogConfS3): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     canned_acl: {
-      value: cdktf.stringToHclTerraform(struct!.cannedAcl),
+      value: cdktn.stringToHclTerraform(struct!.cannedAcl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     destination: {
-      value: cdktf.stringToHclTerraform(struct!.destination),
+      value: cdktn.stringToHclTerraform(struct!.destination),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     enable_encryption: {
-      value: cdktf.booleanToHclTerraform(struct!.enableEncryption),
+      value: cdktn.booleanToHclTerraform(struct!.enableEncryption),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     encryption_type: {
-      value: cdktf.stringToHclTerraform(struct!.encryptionType),
+      value: cdktn.stringToHclTerraform(struct!.encryptionType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     endpoint: {
-      value: cdktf.stringToHclTerraform(struct!.endpoint),
+      value: cdktn.stringToHclTerraform(struct!.endpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     kms_key: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKey),
+      value: cdktn.stringToHclTerraform(struct!.kmsKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     region: {
-      value: cdktf.stringToHclTerraform(struct!.region),
+      value: cdktn.stringToHclTerraform(struct!.region),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1183,14 +1195,14 @@ export function clusterClusterLogConfS3ToHclTerraform(struct?: ClusterClusterLog
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClusterClusterLogConfS3OutputReference extends cdktf.ComplexObject {
+export class ClusterClusterLogConfS3OutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1281,11 +1293,11 @@ export class ClusterClusterLogConfS3OutputReference extends cdktf.ComplexObject 
   }
 
   // enable_encryption - computed: false, optional: true, required: false
-  private _enableEncryption?: boolean | cdktf.IResolvable; 
+  private _enableEncryption?: boolean | cdktn.IResolvable; 
   public get enableEncryption() {
     return this.getBooleanAttribute('enable_encryption');
   }
-  public set enableEncryption(value: boolean | cdktf.IResolvable) {
+  public set enableEncryption(value: boolean | cdktn.IResolvable) {
     this._enableEncryption = value;
   }
   public resetEnableEncryption() {
@@ -1362,30 +1374,30 @@ export class ClusterClusterLogConfS3OutputReference extends cdktf.ComplexObject 
 }
 export interface ClusterClusterLogConfVolumes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#destination Cluster#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#destination Cluster#destination}
   */
   readonly destination: string;
 }
 
 export function clusterClusterLogConfVolumesToTerraform(struct?: ClusterClusterLogConfVolumesOutputReference | ClusterClusterLogConfVolumes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    destination: cdktf.stringToTerraform(struct!.destination),
+    destination: cdktn.stringToTerraform(struct!.destination),
   }
 }
 
 
 export function clusterClusterLogConfVolumesToHclTerraform(struct?: ClusterClusterLogConfVolumesOutputReference | ClusterClusterLogConfVolumes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     destination: {
-      value: cdktf.stringToHclTerraform(struct!.destination),
+      value: cdktn.stringToHclTerraform(struct!.destination),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1396,14 +1408,14 @@ export function clusterClusterLogConfVolumesToHclTerraform(struct?: ClusterClust
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClusterClusterLogConfVolumesOutputReference extends cdktf.ComplexObject {
+export class ClusterClusterLogConfVolumesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1445,26 +1457,26 @@ export interface ClusterClusterLogConf {
   /**
   * dbfs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#dbfs Cluster#dbfs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#dbfs Cluster#dbfs}
   */
   readonly dbfs?: ClusterClusterLogConfDbfs;
   /**
   * s3 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#s3 Cluster#s3}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#s3 Cluster#s3}
   */
   readonly s3?: ClusterClusterLogConfS3;
   /**
   * volumes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#volumes Cluster#volumes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#volumes Cluster#volumes}
   */
   readonly volumes?: ClusterClusterLogConfVolumes;
 }
 
 export function clusterClusterLogConfToTerraform(struct?: ClusterClusterLogConfOutputReference | ClusterClusterLogConf): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1476,8 +1488,8 @@ export function clusterClusterLogConfToTerraform(struct?: ClusterClusterLogConfO
 
 
 export function clusterClusterLogConfToHclTerraform(struct?: ClusterClusterLogConfOutputReference | ClusterClusterLogConf): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1505,14 +1517,14 @@ export function clusterClusterLogConfToHclTerraform(struct?: ClusterClusterLogCo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClusterClusterLogConfOutputReference extends cdktf.ComplexObject {
+export class ClusterClusterLogConfOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1599,41 +1611,41 @@ export class ClusterClusterLogConfOutputReference extends cdktf.ComplexObject {
 }
 export interface ClusterClusterMountInfoNetworkFilesystemInfo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#mount_options Cluster#mount_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#mount_options Cluster#mount_options}
   */
   readonly mountOptions?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#server_address Cluster#server_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#server_address Cluster#server_address}
   */
   readonly serverAddress: string;
 }
 
 export function clusterClusterMountInfoNetworkFilesystemInfoToTerraform(struct?: ClusterClusterMountInfoNetworkFilesystemInfoOutputReference | ClusterClusterMountInfoNetworkFilesystemInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    mount_options: cdktf.stringToTerraform(struct!.mountOptions),
-    server_address: cdktf.stringToTerraform(struct!.serverAddress),
+    mount_options: cdktn.stringToTerraform(struct!.mountOptions),
+    server_address: cdktn.stringToTerraform(struct!.serverAddress),
   }
 }
 
 
 export function clusterClusterMountInfoNetworkFilesystemInfoToHclTerraform(struct?: ClusterClusterMountInfoNetworkFilesystemInfoOutputReference | ClusterClusterMountInfoNetworkFilesystemInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     mount_options: {
-      value: cdktf.stringToHclTerraform(struct!.mountOptions),
+      value: cdktn.stringToHclTerraform(struct!.mountOptions),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     server_address: {
-      value: cdktf.stringToHclTerraform(struct!.serverAddress),
+      value: cdktn.stringToHclTerraform(struct!.serverAddress),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1644,14 +1656,14 @@ export function clusterClusterMountInfoNetworkFilesystemInfoToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClusterClusterMountInfoNetworkFilesystemInfoOutputReference extends cdktf.ComplexObject {
+export class ClusterClusterMountInfoNetworkFilesystemInfoOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1713,48 +1725,48 @@ export class ClusterClusterMountInfoNetworkFilesystemInfoOutputReference extends
 }
 export interface ClusterClusterMountInfo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#local_mount_dir_path Cluster#local_mount_dir_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#local_mount_dir_path Cluster#local_mount_dir_path}
   */
   readonly localMountDirPath: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#remote_mount_dir_path Cluster#remote_mount_dir_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#remote_mount_dir_path Cluster#remote_mount_dir_path}
   */
   readonly remoteMountDirPath?: string;
   /**
   * network_filesystem_info block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#network_filesystem_info Cluster#network_filesystem_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#network_filesystem_info Cluster#network_filesystem_info}
   */
   readonly networkFilesystemInfo: ClusterClusterMountInfoNetworkFilesystemInfo;
 }
 
-export function clusterClusterMountInfoToTerraform(struct?: ClusterClusterMountInfo | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function clusterClusterMountInfoToTerraform(struct?: ClusterClusterMountInfo | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    local_mount_dir_path: cdktf.stringToTerraform(struct!.localMountDirPath),
-    remote_mount_dir_path: cdktf.stringToTerraform(struct!.remoteMountDirPath),
+    local_mount_dir_path: cdktn.stringToTerraform(struct!.localMountDirPath),
+    remote_mount_dir_path: cdktn.stringToTerraform(struct!.remoteMountDirPath),
     network_filesystem_info: clusterClusterMountInfoNetworkFilesystemInfoToTerraform(struct!.networkFilesystemInfo),
   }
 }
 
 
-export function clusterClusterMountInfoToHclTerraform(struct?: ClusterClusterMountInfo | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function clusterClusterMountInfoToHclTerraform(struct?: ClusterClusterMountInfo | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     local_mount_dir_path: {
-      value: cdktf.stringToHclTerraform(struct!.localMountDirPath),
+      value: cdktn.stringToHclTerraform(struct!.localMountDirPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     remote_mount_dir_path: {
-      value: cdktf.stringToHclTerraform(struct!.remoteMountDirPath),
+      value: cdktn.stringToHclTerraform(struct!.remoteMountDirPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1771,9 +1783,9 @@ export function clusterClusterMountInfoToHclTerraform(struct?: ClusterClusterMou
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClusterClusterMountInfoOutputReference extends cdktf.ComplexObject {
+export class ClusterClusterMountInfoOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1781,11 +1793,11 @@ export class ClusterClusterMountInfoOutputReference extends cdktf.ComplexObject 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ClusterClusterMountInfo | cdktf.IResolvable | undefined {
+  public get internalValue(): ClusterClusterMountInfo | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1806,7 +1818,7 @@ export class ClusterClusterMountInfoOutputReference extends cdktf.ComplexObject 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ClusterClusterMountInfo | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ClusterClusterMountInfo | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1814,7 +1826,7 @@ export class ClusterClusterMountInfoOutputReference extends cdktf.ComplexObject 
       this._remoteMountDirPath = undefined;
       this._networkFilesystemInfo.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1870,15 +1882,15 @@ export class ClusterClusterMountInfoOutputReference extends cdktf.ComplexObject 
   }
 }
 
-export class ClusterClusterMountInfoList extends cdktf.ComplexList {
-  public internalValue? : ClusterClusterMountInfo[] | cdktf.IResolvable
+export class ClusterClusterMountInfoList extends cdktn.ComplexList {
+  public internalValue? : ClusterClusterMountInfo[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1891,41 +1903,41 @@ export class ClusterClusterMountInfoList extends cdktf.ComplexList {
 }
 export interface ClusterDockerImageBasicAuth {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#password Cluster#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#password Cluster#password}
   */
   readonly password: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#username Cluster#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#username Cluster#username}
   */
   readonly username: string;
 }
 
 export function clusterDockerImageBasicAuthToTerraform(struct?: ClusterDockerImageBasicAuthOutputReference | ClusterDockerImageBasicAuth): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    password: cdktf.stringToTerraform(struct!.password),
-    username: cdktf.stringToTerraform(struct!.username),
+    password: cdktn.stringToTerraform(struct!.password),
+    username: cdktn.stringToTerraform(struct!.username),
   }
 }
 
 
 export function clusterDockerImageBasicAuthToHclTerraform(struct?: ClusterDockerImageBasicAuthOutputReference | ClusterDockerImageBasicAuth): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     password: {
-      value: cdktf.stringToHclTerraform(struct!.password),
+      value: cdktn.stringToHclTerraform(struct!.password),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     username: {
-      value: cdktf.stringToHclTerraform(struct!.username),
+      value: cdktn.stringToHclTerraform(struct!.username),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1936,14 +1948,14 @@ export function clusterDockerImageBasicAuthToHclTerraform(struct?: ClusterDocker
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClusterDockerImageBasicAuthOutputReference extends cdktf.ComplexObject {
+export class ClusterDockerImageBasicAuthOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2002,37 +2014,37 @@ export class ClusterDockerImageBasicAuthOutputReference extends cdktf.ComplexObj
 }
 export interface ClusterDockerImage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#url Cluster#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#url Cluster#url}
   */
   readonly url: string;
   /**
   * basic_auth block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#basic_auth Cluster#basic_auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#basic_auth Cluster#basic_auth}
   */
   readonly basicAuth?: ClusterDockerImageBasicAuth;
 }
 
 export function clusterDockerImageToTerraform(struct?: ClusterDockerImageOutputReference | ClusterDockerImage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    url: cdktf.stringToTerraform(struct!.url),
+    url: cdktn.stringToTerraform(struct!.url),
     basic_auth: clusterDockerImageBasicAuthToTerraform(struct!.basicAuth),
   }
 }
 
 
 export function clusterDockerImageToHclTerraform(struct?: ClusterDockerImageOutputReference | ClusterDockerImage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     url: {
-      value: cdktf.stringToHclTerraform(struct!.url),
+      value: cdktn.stringToHclTerraform(struct!.url),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2049,14 +2061,14 @@ export function clusterDockerImageToHclTerraform(struct?: ClusterDockerImageOutp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClusterDockerImageOutputReference extends cdktf.ComplexObject {
+export class ClusterDockerImageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2116,98 +2128,182 @@ export class ClusterDockerImageOutputReference extends cdktf.ComplexObject {
     return this._basicAuth.internalValue;
   }
 }
+export interface ClusterDriverNodeTypeFlexibility {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#alternate_node_type_ids Cluster#alternate_node_type_ids}
+  */
+  readonly alternateNodeTypeIds?: string[];
+}
+
+export function clusterDriverNodeTypeFlexibilityToTerraform(struct?: ClusterDriverNodeTypeFlexibilityOutputReference | ClusterDriverNodeTypeFlexibility): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    alternate_node_type_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.alternateNodeTypeIds),
+  }
+}
+
+
+export function clusterDriverNodeTypeFlexibilityToHclTerraform(struct?: ClusterDriverNodeTypeFlexibilityOutputReference | ClusterDriverNodeTypeFlexibility): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    alternate_node_type_ids: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.alternateNodeTypeIds),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ClusterDriverNodeTypeFlexibilityOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ClusterDriverNodeTypeFlexibility | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._alternateNodeTypeIds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.alternateNodeTypeIds = this._alternateNodeTypeIds;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ClusterDriverNodeTypeFlexibility | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._alternateNodeTypeIds = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._alternateNodeTypeIds = value.alternateNodeTypeIds;
+    }
+  }
+
+  // alternate_node_type_ids - computed: false, optional: true, required: false
+  private _alternateNodeTypeIds?: string[]; 
+  public get alternateNodeTypeIds() {
+    return this.getListAttribute('alternate_node_type_ids');
+  }
+  public set alternateNodeTypeIds(value: string[]) {
+    this._alternateNodeTypeIds = value;
+  }
+  public resetAlternateNodeTypeIds() {
+    this._alternateNodeTypeIds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get alternateNodeTypeIdsInput() {
+    return this._alternateNodeTypeIds;
+  }
+}
 export interface ClusterGcpAttributes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#availability Cluster#availability}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#availability Cluster#availability}
   */
   readonly availability?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#boot_disk_size Cluster#boot_disk_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#boot_disk_size Cluster#boot_disk_size}
   */
   readonly bootDiskSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#first_on_demand Cluster#first_on_demand}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#first_on_demand Cluster#first_on_demand}
   */
   readonly firstOnDemand?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#google_service_account Cluster#google_service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#google_service_account Cluster#google_service_account}
   */
   readonly googleServiceAccount?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#local_ssd_count Cluster#local_ssd_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#local_ssd_count Cluster#local_ssd_count}
   */
   readonly localSsdCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#use_preemptible_executors Cluster#use_preemptible_executors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#use_preemptible_executors Cluster#use_preemptible_executors}
   */
-  readonly usePreemptibleExecutors?: boolean | cdktf.IResolvable;
+  readonly usePreemptibleExecutors?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#zone_id Cluster#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#zone_id Cluster#zone_id}
   */
   readonly zoneId?: string;
 }
 
 export function clusterGcpAttributesToTerraform(struct?: ClusterGcpAttributesOutputReference | ClusterGcpAttributes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    availability: cdktf.stringToTerraform(struct!.availability),
-    boot_disk_size: cdktf.numberToTerraform(struct!.bootDiskSize),
-    first_on_demand: cdktf.numberToTerraform(struct!.firstOnDemand),
-    google_service_account: cdktf.stringToTerraform(struct!.googleServiceAccount),
-    local_ssd_count: cdktf.numberToTerraform(struct!.localSsdCount),
-    use_preemptible_executors: cdktf.booleanToTerraform(struct!.usePreemptibleExecutors),
-    zone_id: cdktf.stringToTerraform(struct!.zoneId),
+    availability: cdktn.stringToTerraform(struct!.availability),
+    boot_disk_size: cdktn.numberToTerraform(struct!.bootDiskSize),
+    first_on_demand: cdktn.numberToTerraform(struct!.firstOnDemand),
+    google_service_account: cdktn.stringToTerraform(struct!.googleServiceAccount),
+    local_ssd_count: cdktn.numberToTerraform(struct!.localSsdCount),
+    use_preemptible_executors: cdktn.booleanToTerraform(struct!.usePreemptibleExecutors),
+    zone_id: cdktn.stringToTerraform(struct!.zoneId),
   }
 }
 
 
 export function clusterGcpAttributesToHclTerraform(struct?: ClusterGcpAttributesOutputReference | ClusterGcpAttributes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     availability: {
-      value: cdktf.stringToHclTerraform(struct!.availability),
+      value: cdktn.stringToHclTerraform(struct!.availability),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     boot_disk_size: {
-      value: cdktf.numberToHclTerraform(struct!.bootDiskSize),
+      value: cdktn.numberToHclTerraform(struct!.bootDiskSize),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     first_on_demand: {
-      value: cdktf.numberToHclTerraform(struct!.firstOnDemand),
+      value: cdktn.numberToHclTerraform(struct!.firstOnDemand),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     google_service_account: {
-      value: cdktf.stringToHclTerraform(struct!.googleServiceAccount),
+      value: cdktn.stringToHclTerraform(struct!.googleServiceAccount),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     local_ssd_count: {
-      value: cdktf.numberToHclTerraform(struct!.localSsdCount),
+      value: cdktn.numberToHclTerraform(struct!.localSsdCount),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     use_preemptible_executors: {
-      value: cdktf.booleanToHclTerraform(struct!.usePreemptibleExecutors),
+      value: cdktn.booleanToHclTerraform(struct!.usePreemptibleExecutors),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     zone_id: {
-      value: cdktf.stringToHclTerraform(struct!.zoneId),
+      value: cdktn.stringToHclTerraform(struct!.zoneId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2218,14 +2314,14 @@ export function clusterGcpAttributesToHclTerraform(struct?: ClusterGcpAttributes
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClusterGcpAttributesOutputReference extends cdktf.ComplexObject {
+export class ClusterGcpAttributesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2367,11 +2463,11 @@ export class ClusterGcpAttributesOutputReference extends cdktf.ComplexObject {
   }
 
   // use_preemptible_executors - computed: false, optional: true, required: false
-  private _usePreemptibleExecutors?: boolean | cdktf.IResolvable; 
+  private _usePreemptibleExecutors?: boolean | cdktn.IResolvable; 
   public get usePreemptibleExecutors() {
     return this.getBooleanAttribute('use_preemptible_executors');
   }
-  public set usePreemptibleExecutors(value: boolean | cdktf.IResolvable) {
+  public set usePreemptibleExecutors(value: boolean | cdktn.IResolvable) {
     this._usePreemptibleExecutors = value;
   }
   public resetUsePreemptibleExecutors() {
@@ -2400,30 +2496,30 @@ export class ClusterGcpAttributesOutputReference extends cdktf.ComplexObject {
 }
 export interface ClusterInitScriptsAbfss {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#destination Cluster#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#destination Cluster#destination}
   */
   readonly destination: string;
 }
 
 export function clusterInitScriptsAbfssToTerraform(struct?: ClusterInitScriptsAbfssOutputReference | ClusterInitScriptsAbfss): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    destination: cdktf.stringToTerraform(struct!.destination),
+    destination: cdktn.stringToTerraform(struct!.destination),
   }
 }
 
 
 export function clusterInitScriptsAbfssToHclTerraform(struct?: ClusterInitScriptsAbfssOutputReference | ClusterInitScriptsAbfss): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     destination: {
-      value: cdktf.stringToHclTerraform(struct!.destination),
+      value: cdktn.stringToHclTerraform(struct!.destination),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2434,14 +2530,14 @@ export function clusterInitScriptsAbfssToHclTerraform(struct?: ClusterInitScript
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClusterInitScriptsAbfssOutputReference extends cdktf.ComplexObject {
+export class ClusterInitScriptsAbfssOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2481,30 +2577,30 @@ export class ClusterInitScriptsAbfssOutputReference extends cdktf.ComplexObject 
 }
 export interface ClusterInitScriptsDbfs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#destination Cluster#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#destination Cluster#destination}
   */
   readonly destination: string;
 }
 
 export function clusterInitScriptsDbfsToTerraform(struct?: ClusterInitScriptsDbfsOutputReference | ClusterInitScriptsDbfs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    destination: cdktf.stringToTerraform(struct!.destination),
+    destination: cdktn.stringToTerraform(struct!.destination),
   }
 }
 
 
 export function clusterInitScriptsDbfsToHclTerraform(struct?: ClusterInitScriptsDbfsOutputReference | ClusterInitScriptsDbfs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     destination: {
-      value: cdktf.stringToHclTerraform(struct!.destination),
+      value: cdktn.stringToHclTerraform(struct!.destination),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2515,14 +2611,14 @@ export function clusterInitScriptsDbfsToHclTerraform(struct?: ClusterInitScripts
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClusterInitScriptsDbfsOutputReference extends cdktf.ComplexObject {
+export class ClusterInitScriptsDbfsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2562,30 +2658,30 @@ export class ClusterInitScriptsDbfsOutputReference extends cdktf.ComplexObject {
 }
 export interface ClusterInitScriptsFile {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#destination Cluster#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#destination Cluster#destination}
   */
   readonly destination: string;
 }
 
 export function clusterInitScriptsFileToTerraform(struct?: ClusterInitScriptsFileOutputReference | ClusterInitScriptsFile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    destination: cdktf.stringToTerraform(struct!.destination),
+    destination: cdktn.stringToTerraform(struct!.destination),
   }
 }
 
 
 export function clusterInitScriptsFileToHclTerraform(struct?: ClusterInitScriptsFileOutputReference | ClusterInitScriptsFile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     destination: {
-      value: cdktf.stringToHclTerraform(struct!.destination),
+      value: cdktn.stringToHclTerraform(struct!.destination),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2596,14 +2692,14 @@ export function clusterInitScriptsFileToHclTerraform(struct?: ClusterInitScripts
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClusterInitScriptsFileOutputReference extends cdktf.ComplexObject {
+export class ClusterInitScriptsFileOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2643,30 +2739,30 @@ export class ClusterInitScriptsFileOutputReference extends cdktf.ComplexObject {
 }
 export interface ClusterInitScriptsGcs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#destination Cluster#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#destination Cluster#destination}
   */
   readonly destination: string;
 }
 
 export function clusterInitScriptsGcsToTerraform(struct?: ClusterInitScriptsGcsOutputReference | ClusterInitScriptsGcs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    destination: cdktf.stringToTerraform(struct!.destination),
+    destination: cdktn.stringToTerraform(struct!.destination),
   }
 }
 
 
 export function clusterInitScriptsGcsToHclTerraform(struct?: ClusterInitScriptsGcsOutputReference | ClusterInitScriptsGcs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     destination: {
-      value: cdktf.stringToHclTerraform(struct!.destination),
+      value: cdktn.stringToHclTerraform(struct!.destination),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2677,14 +2773,14 @@ export function clusterInitScriptsGcsToHclTerraform(struct?: ClusterInitScriptsG
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClusterInitScriptsGcsOutputReference extends cdktf.ComplexObject {
+export class ClusterInitScriptsGcsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2724,96 +2820,96 @@ export class ClusterInitScriptsGcsOutputReference extends cdktf.ComplexObject {
 }
 export interface ClusterInitScriptsS3 {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#canned_acl Cluster#canned_acl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#canned_acl Cluster#canned_acl}
   */
   readonly cannedAcl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#destination Cluster#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#destination Cluster#destination}
   */
   readonly destination: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#enable_encryption Cluster#enable_encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#enable_encryption Cluster#enable_encryption}
   */
-  readonly enableEncryption?: boolean | cdktf.IResolvable;
+  readonly enableEncryption?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#encryption_type Cluster#encryption_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#encryption_type Cluster#encryption_type}
   */
   readonly encryptionType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#endpoint Cluster#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#endpoint Cluster#endpoint}
   */
   readonly endpoint?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#kms_key Cluster#kms_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#kms_key Cluster#kms_key}
   */
   readonly kmsKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#region Cluster#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#region Cluster#region}
   */
   readonly region?: string;
 }
 
 export function clusterInitScriptsS3ToTerraform(struct?: ClusterInitScriptsS3OutputReference | ClusterInitScriptsS3): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    canned_acl: cdktf.stringToTerraform(struct!.cannedAcl),
-    destination: cdktf.stringToTerraform(struct!.destination),
-    enable_encryption: cdktf.booleanToTerraform(struct!.enableEncryption),
-    encryption_type: cdktf.stringToTerraform(struct!.encryptionType),
-    endpoint: cdktf.stringToTerraform(struct!.endpoint),
-    kms_key: cdktf.stringToTerraform(struct!.kmsKey),
-    region: cdktf.stringToTerraform(struct!.region),
+    canned_acl: cdktn.stringToTerraform(struct!.cannedAcl),
+    destination: cdktn.stringToTerraform(struct!.destination),
+    enable_encryption: cdktn.booleanToTerraform(struct!.enableEncryption),
+    encryption_type: cdktn.stringToTerraform(struct!.encryptionType),
+    endpoint: cdktn.stringToTerraform(struct!.endpoint),
+    kms_key: cdktn.stringToTerraform(struct!.kmsKey),
+    region: cdktn.stringToTerraform(struct!.region),
   }
 }
 
 
 export function clusterInitScriptsS3ToHclTerraform(struct?: ClusterInitScriptsS3OutputReference | ClusterInitScriptsS3): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     canned_acl: {
-      value: cdktf.stringToHclTerraform(struct!.cannedAcl),
+      value: cdktn.stringToHclTerraform(struct!.cannedAcl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     destination: {
-      value: cdktf.stringToHclTerraform(struct!.destination),
+      value: cdktn.stringToHclTerraform(struct!.destination),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     enable_encryption: {
-      value: cdktf.booleanToHclTerraform(struct!.enableEncryption),
+      value: cdktn.booleanToHclTerraform(struct!.enableEncryption),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     encryption_type: {
-      value: cdktf.stringToHclTerraform(struct!.encryptionType),
+      value: cdktn.stringToHclTerraform(struct!.encryptionType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     endpoint: {
-      value: cdktf.stringToHclTerraform(struct!.endpoint),
+      value: cdktn.stringToHclTerraform(struct!.endpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     kms_key: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKey),
+      value: cdktn.stringToHclTerraform(struct!.kmsKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     region: {
-      value: cdktf.stringToHclTerraform(struct!.region),
+      value: cdktn.stringToHclTerraform(struct!.region),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2824,14 +2920,14 @@ export function clusterInitScriptsS3ToHclTerraform(struct?: ClusterInitScriptsS3
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClusterInitScriptsS3OutputReference extends cdktf.ComplexObject {
+export class ClusterInitScriptsS3OutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2922,11 +3018,11 @@ export class ClusterInitScriptsS3OutputReference extends cdktf.ComplexObject {
   }
 
   // enable_encryption - computed: false, optional: true, required: false
-  private _enableEncryption?: boolean | cdktf.IResolvable; 
+  private _enableEncryption?: boolean | cdktn.IResolvable; 
   public get enableEncryption() {
     return this.getBooleanAttribute('enable_encryption');
   }
-  public set enableEncryption(value: boolean | cdktf.IResolvable) {
+  public set enableEncryption(value: boolean | cdktn.IResolvable) {
     this._enableEncryption = value;
   }
   public resetEnableEncryption() {
@@ -3003,30 +3099,30 @@ export class ClusterInitScriptsS3OutputReference extends cdktf.ComplexObject {
 }
 export interface ClusterInitScriptsVolumes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#destination Cluster#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#destination Cluster#destination}
   */
   readonly destination: string;
 }
 
 export function clusterInitScriptsVolumesToTerraform(struct?: ClusterInitScriptsVolumesOutputReference | ClusterInitScriptsVolumes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    destination: cdktf.stringToTerraform(struct!.destination),
+    destination: cdktn.stringToTerraform(struct!.destination),
   }
 }
 
 
 export function clusterInitScriptsVolumesToHclTerraform(struct?: ClusterInitScriptsVolumesOutputReference | ClusterInitScriptsVolumes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     destination: {
-      value: cdktf.stringToHclTerraform(struct!.destination),
+      value: cdktn.stringToHclTerraform(struct!.destination),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3037,14 +3133,14 @@ export function clusterInitScriptsVolumesToHclTerraform(struct?: ClusterInitScri
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClusterInitScriptsVolumesOutputReference extends cdktf.ComplexObject {
+export class ClusterInitScriptsVolumesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3084,30 +3180,30 @@ export class ClusterInitScriptsVolumesOutputReference extends cdktf.ComplexObjec
 }
 export interface ClusterInitScriptsWorkspace {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#destination Cluster#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#destination Cluster#destination}
   */
   readonly destination: string;
 }
 
 export function clusterInitScriptsWorkspaceToTerraform(struct?: ClusterInitScriptsWorkspaceOutputReference | ClusterInitScriptsWorkspace): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    destination: cdktf.stringToTerraform(struct!.destination),
+    destination: cdktn.stringToTerraform(struct!.destination),
   }
 }
 
 
 export function clusterInitScriptsWorkspaceToHclTerraform(struct?: ClusterInitScriptsWorkspaceOutputReference | ClusterInitScriptsWorkspace): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     destination: {
-      value: cdktf.stringToHclTerraform(struct!.destination),
+      value: cdktn.stringToHclTerraform(struct!.destination),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3118,14 +3214,14 @@ export function clusterInitScriptsWorkspaceToHclTerraform(struct?: ClusterInitSc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClusterInitScriptsWorkspaceOutputReference extends cdktf.ComplexObject {
+export class ClusterInitScriptsWorkspaceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3167,50 +3263,50 @@ export interface ClusterInitScripts {
   /**
   * abfss block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#abfss Cluster#abfss}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#abfss Cluster#abfss}
   */
   readonly abfss?: ClusterInitScriptsAbfss;
   /**
   * dbfs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#dbfs Cluster#dbfs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#dbfs Cluster#dbfs}
   */
   readonly dbfs?: ClusterInitScriptsDbfs;
   /**
   * file block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#file Cluster#file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#file Cluster#file}
   */
   readonly file?: ClusterInitScriptsFile;
   /**
   * gcs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#gcs Cluster#gcs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#gcs Cluster#gcs}
   */
   readonly gcs?: ClusterInitScriptsGcs;
   /**
   * s3 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#s3 Cluster#s3}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#s3 Cluster#s3}
   */
   readonly s3?: ClusterInitScriptsS3;
   /**
   * volumes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#volumes Cluster#volumes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#volumes Cluster#volumes}
   */
   readonly volumes?: ClusterInitScriptsVolumes;
   /**
   * workspace block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#workspace Cluster#workspace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#workspace Cluster#workspace}
   */
   readonly workspace?: ClusterInitScriptsWorkspace;
 }
 
-export function clusterInitScriptsToTerraform(struct?: ClusterInitScripts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function clusterInitScriptsToTerraform(struct?: ClusterInitScripts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3225,9 +3321,9 @@ export function clusterInitScriptsToTerraform(struct?: ClusterInitScripts | cdkt
 }
 
 
-export function clusterInitScriptsToHclTerraform(struct?: ClusterInitScripts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function clusterInitScriptsToHclTerraform(struct?: ClusterInitScripts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3279,9 +3375,9 @@ export function clusterInitScriptsToHclTerraform(struct?: ClusterInitScripts | c
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClusterInitScriptsOutputReference extends cdktf.ComplexObject {
+export class ClusterInitScriptsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3289,11 +3385,11 @@ export class ClusterInitScriptsOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ClusterInitScripts | cdktf.IResolvable | undefined {
+  public get internalValue(): ClusterInitScripts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3330,7 +3426,7 @@ export class ClusterInitScriptsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ClusterInitScripts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ClusterInitScripts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3342,7 +3438,7 @@ export class ClusterInitScriptsOutputReference extends cdktf.ComplexObject {
       this._volumes.internalValue = undefined;
       this._workspace.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3472,15 +3568,15 @@ export class ClusterInitScriptsOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class ClusterInitScriptsList extends cdktf.ComplexList {
-  public internalValue? : ClusterInitScripts[] | cdktf.IResolvable
+export class ClusterInitScriptsList extends cdktn.ComplexList {
+  public internalValue? : ClusterInitScripts[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3493,41 +3589,41 @@ export class ClusterInitScriptsList extends cdktf.ComplexList {
 }
 export interface ClusterLibraryCran {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#package Cluster#package}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#package Cluster#package}
   */
   readonly package: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#repo Cluster#repo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#repo Cluster#repo}
   */
   readonly repo?: string;
 }
 
 export function clusterLibraryCranToTerraform(struct?: ClusterLibraryCranOutputReference | ClusterLibraryCran): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    package: cdktf.stringToTerraform(struct!.package),
-    repo: cdktf.stringToTerraform(struct!.repo),
+    package: cdktn.stringToTerraform(struct!.package),
+    repo: cdktn.stringToTerraform(struct!.repo),
   }
 }
 
 
 export function clusterLibraryCranToHclTerraform(struct?: ClusterLibraryCranOutputReference | ClusterLibraryCran): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     package: {
-      value: cdktf.stringToHclTerraform(struct!.package),
+      value: cdktn.stringToHclTerraform(struct!.package),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     repo: {
-      value: cdktf.stringToHclTerraform(struct!.repo),
+      value: cdktn.stringToHclTerraform(struct!.repo),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3538,14 +3634,14 @@ export function clusterLibraryCranToHclTerraform(struct?: ClusterLibraryCranOutp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClusterLibraryCranOutputReference extends cdktf.ComplexObject {
+export class ClusterLibraryCranOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3607,52 +3703,52 @@ export class ClusterLibraryCranOutputReference extends cdktf.ComplexObject {
 }
 export interface ClusterLibraryMaven {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#coordinates Cluster#coordinates}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#coordinates Cluster#coordinates}
   */
   readonly coordinates: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#exclusions Cluster#exclusions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#exclusions Cluster#exclusions}
   */
   readonly exclusions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#repo Cluster#repo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#repo Cluster#repo}
   */
   readonly repo?: string;
 }
 
 export function clusterLibraryMavenToTerraform(struct?: ClusterLibraryMavenOutputReference | ClusterLibraryMaven): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    coordinates: cdktf.stringToTerraform(struct!.coordinates),
-    exclusions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.exclusions),
-    repo: cdktf.stringToTerraform(struct!.repo),
+    coordinates: cdktn.stringToTerraform(struct!.coordinates),
+    exclusions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.exclusions),
+    repo: cdktn.stringToTerraform(struct!.repo),
   }
 }
 
 
 export function clusterLibraryMavenToHclTerraform(struct?: ClusterLibraryMavenOutputReference | ClusterLibraryMaven): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     coordinates: {
-      value: cdktf.stringToHclTerraform(struct!.coordinates),
+      value: cdktn.stringToHclTerraform(struct!.coordinates),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     exclusions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.exclusions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.exclusions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     repo: {
-      value: cdktf.stringToHclTerraform(struct!.repo),
+      value: cdktn.stringToHclTerraform(struct!.repo),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3663,14 +3759,14 @@ export function clusterLibraryMavenToHclTerraform(struct?: ClusterLibraryMavenOu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClusterLibraryMavenOutputReference extends cdktf.ComplexObject {
+export class ClusterLibraryMavenOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3754,41 +3850,41 @@ export class ClusterLibraryMavenOutputReference extends cdktf.ComplexObject {
 }
 export interface ClusterLibraryPypi {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#package Cluster#package}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#package Cluster#package}
   */
   readonly package: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#repo Cluster#repo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#repo Cluster#repo}
   */
   readonly repo?: string;
 }
 
 export function clusterLibraryPypiToTerraform(struct?: ClusterLibraryPypiOutputReference | ClusterLibraryPypi): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    package: cdktf.stringToTerraform(struct!.package),
-    repo: cdktf.stringToTerraform(struct!.repo),
+    package: cdktn.stringToTerraform(struct!.package),
+    repo: cdktn.stringToTerraform(struct!.repo),
   }
 }
 
 
 export function clusterLibraryPypiToHclTerraform(struct?: ClusterLibraryPypiOutputReference | ClusterLibraryPypi): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     package: {
-      value: cdktf.stringToHclTerraform(struct!.package),
+      value: cdktn.stringToHclTerraform(struct!.package),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     repo: {
-      value: cdktf.stringToHclTerraform(struct!.repo),
+      value: cdktn.stringToHclTerraform(struct!.repo),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3799,14 +3895,14 @@ export function clusterLibraryPypiToHclTerraform(struct?: ClusterLibraryPypiOutp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClusterLibraryPypiOutputReference extends cdktf.ComplexObject {
+export class ClusterLibraryPypiOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3868,51 +3964,51 @@ export class ClusterLibraryPypiOutputReference extends cdktf.ComplexObject {
 }
 export interface ClusterLibrary {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#egg Cluster#egg}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#egg Cluster#egg}
   */
   readonly egg?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#jar Cluster#jar}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#jar Cluster#jar}
   */
   readonly jar?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#requirements Cluster#requirements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#requirements Cluster#requirements}
   */
   readonly requirements?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#whl Cluster#whl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#whl Cluster#whl}
   */
   readonly whl?: string;
   /**
   * cran block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#cran Cluster#cran}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#cran Cluster#cran}
   */
   readonly cran?: ClusterLibraryCran;
   /**
   * maven block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#maven Cluster#maven}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#maven Cluster#maven}
   */
   readonly maven?: ClusterLibraryMaven;
   /**
   * pypi block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#pypi Cluster#pypi}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#pypi Cluster#pypi}
   */
   readonly pypi?: ClusterLibraryPypi;
 }
 
-export function clusterLibraryToTerraform(struct?: ClusterLibrary | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function clusterLibraryToTerraform(struct?: ClusterLibrary | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    egg: cdktf.stringToTerraform(struct!.egg),
-    jar: cdktf.stringToTerraform(struct!.jar),
-    requirements: cdktf.stringToTerraform(struct!.requirements),
-    whl: cdktf.stringToTerraform(struct!.whl),
+    egg: cdktn.stringToTerraform(struct!.egg),
+    jar: cdktn.stringToTerraform(struct!.jar),
+    requirements: cdktn.stringToTerraform(struct!.requirements),
+    whl: cdktn.stringToTerraform(struct!.whl),
     cran: clusterLibraryCranToTerraform(struct!.cran),
     maven: clusterLibraryMavenToTerraform(struct!.maven),
     pypi: clusterLibraryPypiToTerraform(struct!.pypi),
@@ -3920,32 +4016,32 @@ export function clusterLibraryToTerraform(struct?: ClusterLibrary | cdktf.IResol
 }
 
 
-export function clusterLibraryToHclTerraform(struct?: ClusterLibrary | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function clusterLibraryToHclTerraform(struct?: ClusterLibrary | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     egg: {
-      value: cdktf.stringToHclTerraform(struct!.egg),
+      value: cdktn.stringToHclTerraform(struct!.egg),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     jar: {
-      value: cdktf.stringToHclTerraform(struct!.jar),
+      value: cdktn.stringToHclTerraform(struct!.jar),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     requirements: {
-      value: cdktf.stringToHclTerraform(struct!.requirements),
+      value: cdktn.stringToHclTerraform(struct!.requirements),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     whl: {
-      value: cdktf.stringToHclTerraform(struct!.whl),
+      value: cdktn.stringToHclTerraform(struct!.whl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3974,9 +4070,9 @@ export function clusterLibraryToHclTerraform(struct?: ClusterLibrary | cdktf.IRe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClusterLibraryOutputReference extends cdktf.ComplexObject {
+export class ClusterLibraryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3984,11 +4080,11 @@ export class ClusterLibraryOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ClusterLibrary | cdktf.IResolvable | undefined {
+  public get internalValue(): ClusterLibrary | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4025,7 +4121,7 @@ export class ClusterLibraryOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ClusterLibrary | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ClusterLibrary | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -4037,7 +4133,7 @@ export class ClusterLibraryOutputReference extends cdktf.ComplexObject {
       this._maven.internalValue = undefined;
       this._pypi.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4167,15 +4263,15 @@ export class ClusterLibraryOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class ClusterLibraryList extends cdktf.ComplexList {
-  public internalValue? : ClusterLibrary[] | cdktf.IResolvable
+export class ClusterLibraryList extends cdktn.ComplexList {
+  public internalValue? : ClusterLibrary[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4188,30 +4284,30 @@ export class ClusterLibraryList extends cdktf.ComplexList {
 }
 export interface ClusterProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#workspace_id Cluster#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#workspace_id Cluster#workspace_id}
   */
   readonly workspaceId: string;
 }
 
 export function clusterProviderConfigToTerraform(struct?: ClusterProviderConfigOutputReference | ClusterProviderConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    workspace_id: cdktf.stringToTerraform(struct!.workspaceId),
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
   }
 }
 
 
 export function clusterProviderConfigToHclTerraform(struct?: ClusterProviderConfigOutputReference | ClusterProviderConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     workspace_id: {
-      value: cdktf.stringToHclTerraform(struct!.workspaceId),
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4222,14 +4318,14 @@ export function clusterProviderConfigToHclTerraform(struct?: ClusterProviderConf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClusterProviderConfigOutputReference extends cdktf.ComplexObject {
+export class ClusterProviderConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4269,52 +4365,52 @@ export class ClusterProviderConfigOutputReference extends cdktf.ComplexObject {
 }
 export interface ClusterTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#create Cluster#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#create Cluster#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#delete Cluster#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#delete Cluster#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#update Cluster#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#update Cluster#update}
   */
   readonly update?: string;
 }
 
-export function clusterTimeoutsToTerraform(struct?: ClusterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function clusterTimeoutsToTerraform(struct?: ClusterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function clusterTimeoutsToHclTerraform(struct?: ClusterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function clusterTimeoutsToHclTerraform(struct?: ClusterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4325,19 +4421,19 @@ export function clusterTimeoutsToHclTerraform(struct?: ClusterTimeouts | cdktf.I
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClusterTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ClusterTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ClusterTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ClusterTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4358,7 +4454,7 @@ export class ClusterTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ClusterTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ClusterTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -4366,7 +4462,7 @@ export class ClusterTimeoutsOutputReference extends cdktf.ComplexObject {
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4427,43 +4523,127 @@ export class ClusterTimeoutsOutputReference extends cdktf.ComplexObject {
     return this._update;
   }
 }
-export interface ClusterWorkloadTypeClients {
+export interface ClusterWorkerNodeTypeFlexibility {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#jobs Cluster#jobs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#alternate_node_type_ids Cluster#alternate_node_type_ids}
   */
-  readonly jobs?: boolean | cdktf.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#notebooks Cluster#notebooks}
-  */
-  readonly notebooks?: boolean | cdktf.IResolvable;
+  readonly alternateNodeTypeIds?: string[];
 }
 
-export function clusterWorkloadTypeClientsToTerraform(struct?: ClusterWorkloadTypeClientsOutputReference | ClusterWorkloadTypeClients): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function clusterWorkerNodeTypeFlexibilityToTerraform(struct?: ClusterWorkerNodeTypeFlexibilityOutputReference | ClusterWorkerNodeTypeFlexibility): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    jobs: cdktf.booleanToTerraform(struct!.jobs),
-    notebooks: cdktf.booleanToTerraform(struct!.notebooks),
+    alternate_node_type_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.alternateNodeTypeIds),
+  }
+}
+
+
+export function clusterWorkerNodeTypeFlexibilityToHclTerraform(struct?: ClusterWorkerNodeTypeFlexibilityOutputReference | ClusterWorkerNodeTypeFlexibility): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    alternate_node_type_ids: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.alternateNodeTypeIds),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ClusterWorkerNodeTypeFlexibilityOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ClusterWorkerNodeTypeFlexibility | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._alternateNodeTypeIds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.alternateNodeTypeIds = this._alternateNodeTypeIds;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ClusterWorkerNodeTypeFlexibility | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._alternateNodeTypeIds = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._alternateNodeTypeIds = value.alternateNodeTypeIds;
+    }
+  }
+
+  // alternate_node_type_ids - computed: false, optional: true, required: false
+  private _alternateNodeTypeIds?: string[]; 
+  public get alternateNodeTypeIds() {
+    return this.getListAttribute('alternate_node_type_ids');
+  }
+  public set alternateNodeTypeIds(value: string[]) {
+    this._alternateNodeTypeIds = value;
+  }
+  public resetAlternateNodeTypeIds() {
+    this._alternateNodeTypeIds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get alternateNodeTypeIdsInput() {
+    return this._alternateNodeTypeIds;
+  }
+}
+export interface ClusterWorkloadTypeClients {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#jobs Cluster#jobs}
+  */
+  readonly jobs?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#notebooks Cluster#notebooks}
+  */
+  readonly notebooks?: boolean | cdktn.IResolvable;
+}
+
+export function clusterWorkloadTypeClientsToTerraform(struct?: ClusterWorkloadTypeClientsOutputReference | ClusterWorkloadTypeClients): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    jobs: cdktn.booleanToTerraform(struct!.jobs),
+    notebooks: cdktn.booleanToTerraform(struct!.notebooks),
   }
 }
 
 
 export function clusterWorkloadTypeClientsToHclTerraform(struct?: ClusterWorkloadTypeClientsOutputReference | ClusterWorkloadTypeClients): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     jobs: {
-      value: cdktf.booleanToHclTerraform(struct!.jobs),
+      value: cdktn.booleanToHclTerraform(struct!.jobs),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     notebooks: {
-      value: cdktf.booleanToHclTerraform(struct!.notebooks),
+      value: cdktn.booleanToHclTerraform(struct!.notebooks),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -4474,14 +4654,14 @@ export function clusterWorkloadTypeClientsToHclTerraform(struct?: ClusterWorkloa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClusterWorkloadTypeClientsOutputReference extends cdktf.ComplexObject {
+export class ClusterWorkloadTypeClientsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4513,11 +4693,11 @@ export class ClusterWorkloadTypeClientsOutputReference extends cdktf.ComplexObje
   }
 
   // jobs - computed: false, optional: true, required: false
-  private _jobs?: boolean | cdktf.IResolvable; 
+  private _jobs?: boolean | cdktn.IResolvable; 
   public get jobs() {
     return this.getBooleanAttribute('jobs');
   }
-  public set jobs(value: boolean | cdktf.IResolvable) {
+  public set jobs(value: boolean | cdktn.IResolvable) {
     this._jobs = value;
   }
   public resetJobs() {
@@ -4529,11 +4709,11 @@ export class ClusterWorkloadTypeClientsOutputReference extends cdktf.ComplexObje
   }
 
   // notebooks - computed: false, optional: true, required: false
-  private _notebooks?: boolean | cdktf.IResolvable; 
+  private _notebooks?: boolean | cdktn.IResolvable; 
   public get notebooks() {
     return this.getBooleanAttribute('notebooks');
   }
-  public set notebooks(value: boolean | cdktf.IResolvable) {
+  public set notebooks(value: boolean | cdktn.IResolvable) {
     this._notebooks = value;
   }
   public resetNotebooks() {
@@ -4548,14 +4728,14 @@ export interface ClusterWorkloadType {
   /**
   * clients block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#clients Cluster#clients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#clients Cluster#clients}
   */
   readonly clients: ClusterWorkloadTypeClients;
 }
 
 export function clusterWorkloadTypeToTerraform(struct?: ClusterWorkloadTypeOutputReference | ClusterWorkloadType): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -4565,8 +4745,8 @@ export function clusterWorkloadTypeToTerraform(struct?: ClusterWorkloadTypeOutpu
 
 
 export function clusterWorkloadTypeToHclTerraform(struct?: ClusterWorkloadTypeOutputReference | ClusterWorkloadType): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -4582,14 +4762,14 @@ export function clusterWorkloadTypeToHclTerraform(struct?: ClusterWorkloadTypeOu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ClusterWorkloadTypeOutputReference extends cdktf.ComplexObject {
+export class ClusterWorkloadTypeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4629,9 +4809,9 @@ export class ClusterWorkloadTypeOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster databricks_cluster}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster databricks_cluster}
 */
-export class Cluster extends cdktf.TerraformResource {
+export class Cluster extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -4642,14 +4822,14 @@ export class Cluster extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Cluster resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Cluster resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Cluster to import
-  * @param importFromId The id of the existing Cluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Cluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Cluster to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_cluster", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_cluster", importId: importFromId, provider });
       }
 
   // ===========
@@ -4657,7 +4837,7 @@ export class Cluster extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/cluster databricks_cluster} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/cluster databricks_cluster} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -4668,7 +4848,7 @@ export class Cluster extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_cluster',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -4713,11 +4893,13 @@ export class Cluster extends cdktf.TerraformResource {
     this._clusterLogConf.internalValue = config.clusterLogConf;
     this._clusterMountInfo.internalValue = config.clusterMountInfo;
     this._dockerImage.internalValue = config.dockerImage;
+    this._driverNodeTypeFlexibility.internalValue = config.driverNodeTypeFlexibility;
     this._gcpAttributes.internalValue = config.gcpAttributes;
     this._initScripts.internalValue = config.initScripts;
     this._library.internalValue = config.library;
     this._providerConfig.internalValue = config.providerConfig;
     this._timeouts.internalValue = config.timeouts;
+    this._workerNodeTypeFlexibility.internalValue = config.workerNodeTypeFlexibility;
     this._workloadType.internalValue = config.workloadType;
   }
 
@@ -4726,11 +4908,11 @@ export class Cluster extends cdktf.TerraformResource {
   // ==========
 
   // apply_policy_default_values - computed: false, optional: true, required: false
-  private _applyPolicyDefaultValues?: boolean | cdktf.IResolvable; 
+  private _applyPolicyDefaultValues?: boolean | cdktn.IResolvable; 
   public get applyPolicyDefaultValues() {
     return this.getBooleanAttribute('apply_policy_default_values');
   }
-  public set applyPolicyDefaultValues(value: boolean | cdktf.IResolvable) {
+  public set applyPolicyDefaultValues(value: boolean | cdktn.IResolvable) {
     this._applyPolicyDefaultValues = value;
   }
   public resetApplyPolicyDefaultValues() {
@@ -4811,7 +4993,7 @@ export class Cluster extends cdktf.TerraformResource {
   }
 
   // default_tags - computed: true, optional: false, required: false
-  private _defaultTags = new cdktf.StringMap(this, "default_tags");
+  private _defaultTags = new cdktn.StringMap(this, "default_tags");
   public get defaultTags() {
     return this._defaultTags;
   }
@@ -4849,11 +5031,11 @@ export class Cluster extends cdktf.TerraformResource {
   }
 
   // enable_elastic_disk - computed: true, optional: true, required: false
-  private _enableElasticDisk?: boolean | cdktf.IResolvable; 
+  private _enableElasticDisk?: boolean | cdktn.IResolvable; 
   public get enableElasticDisk() {
     return this.getBooleanAttribute('enable_elastic_disk');
   }
-  public set enableElasticDisk(value: boolean | cdktf.IResolvable) {
+  public set enableElasticDisk(value: boolean | cdktn.IResolvable) {
     this._enableElasticDisk = value;
   }
   public resetEnableElasticDisk() {
@@ -4865,11 +5047,11 @@ export class Cluster extends cdktf.TerraformResource {
   }
 
   // enable_local_disk_encryption - computed: true, optional: true, required: false
-  private _enableLocalDiskEncryption?: boolean | cdktf.IResolvable; 
+  private _enableLocalDiskEncryption?: boolean | cdktn.IResolvable; 
   public get enableLocalDiskEncryption() {
     return this.getBooleanAttribute('enable_local_disk_encryption');
   }
-  public set enableLocalDiskEncryption(value: boolean | cdktf.IResolvable) {
+  public set enableLocalDiskEncryption(value: boolean | cdktn.IResolvable) {
     this._enableLocalDiskEncryption = value;
   }
   public resetEnableLocalDiskEncryption() {
@@ -4929,11 +5111,11 @@ export class Cluster extends cdktf.TerraformResource {
   }
 
   // is_pinned - computed: false, optional: true, required: false
-  private _isPinned?: boolean | cdktf.IResolvable; 
+  private _isPinned?: boolean | cdktn.IResolvable; 
   public get isPinned() {
     return this.getBooleanAttribute('is_pinned');
   }
-  public set isPinned(value: boolean | cdktf.IResolvable) {
+  public set isPinned(value: boolean | cdktn.IResolvable) {
     this._isPinned = value;
   }
   public resetIsPinned() {
@@ -4945,11 +5127,11 @@ export class Cluster extends cdktf.TerraformResource {
   }
 
   // is_single_node - computed: false, optional: true, required: false
-  private _isSingleNode?: boolean | cdktf.IResolvable; 
+  private _isSingleNode?: boolean | cdktn.IResolvable; 
   public get isSingleNode() {
     return this.getBooleanAttribute('is_single_node');
   }
-  public set isSingleNode(value: boolean | cdktf.IResolvable) {
+  public set isSingleNode(value: boolean | cdktn.IResolvable) {
     this._isSingleNode = value;
   }
   public resetIsSingleNode() {
@@ -4977,11 +5159,11 @@ export class Cluster extends cdktf.TerraformResource {
   }
 
   // no_wait - computed: false, optional: true, required: false
-  private _noWait?: boolean | cdktf.IResolvable; 
+  private _noWait?: boolean | cdktn.IResolvable; 
   public get noWait() {
     return this.getBooleanAttribute('no_wait');
   }
-  public set noWait(value: boolean | cdktf.IResolvable) {
+  public set noWait(value: boolean | cdktn.IResolvable) {
     this._noWait = value;
   }
   public resetNoWait() {
@@ -5176,11 +5358,11 @@ export class Cluster extends cdktf.TerraformResource {
   }
 
   // use_ml_runtime - computed: false, optional: true, required: false
-  private _useMlRuntime?: boolean | cdktf.IResolvable; 
+  private _useMlRuntime?: boolean | cdktn.IResolvable; 
   public get useMlRuntime() {
     return this.getBooleanAttribute('use_ml_runtime');
   }
-  public set useMlRuntime(value: boolean | cdktf.IResolvable) {
+  public set useMlRuntime(value: boolean | cdktn.IResolvable) {
     this._useMlRuntime = value;
   }
   public resetUseMlRuntime() {
@@ -5260,7 +5442,7 @@ export class Cluster extends cdktf.TerraformResource {
   public get clusterMountInfo() {
     return this._clusterMountInfo;
   }
-  public putClusterMountInfo(value: ClusterClusterMountInfo[] | cdktf.IResolvable) {
+  public putClusterMountInfo(value: ClusterClusterMountInfo[] | cdktn.IResolvable) {
     this._clusterMountInfo.internalValue = value;
   }
   public resetClusterMountInfo() {
@@ -5287,6 +5469,22 @@ export class Cluster extends cdktf.TerraformResource {
     return this._dockerImage.internalValue;
   }
 
+  // driver_node_type_flexibility - computed: false, optional: true, required: false
+  private _driverNodeTypeFlexibility = new ClusterDriverNodeTypeFlexibilityOutputReference(this, "driver_node_type_flexibility");
+  public get driverNodeTypeFlexibility() {
+    return this._driverNodeTypeFlexibility;
+  }
+  public putDriverNodeTypeFlexibility(value: ClusterDriverNodeTypeFlexibility) {
+    this._driverNodeTypeFlexibility.internalValue = value;
+  }
+  public resetDriverNodeTypeFlexibility() {
+    this._driverNodeTypeFlexibility.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get driverNodeTypeFlexibilityInput() {
+    return this._driverNodeTypeFlexibility.internalValue;
+  }
+
   // gcp_attributes - computed: false, optional: true, required: false
   private _gcpAttributes = new ClusterGcpAttributesOutputReference(this, "gcp_attributes");
   public get gcpAttributes() {
@@ -5308,7 +5506,7 @@ export class Cluster extends cdktf.TerraformResource {
   public get initScripts() {
     return this._initScripts;
   }
-  public putInitScripts(value: ClusterInitScripts[] | cdktf.IResolvable) {
+  public putInitScripts(value: ClusterInitScripts[] | cdktn.IResolvable) {
     this._initScripts.internalValue = value;
   }
   public resetInitScripts() {
@@ -5324,7 +5522,7 @@ export class Cluster extends cdktf.TerraformResource {
   public get library() {
     return this._library;
   }
-  public putLibrary(value: ClusterLibrary[] | cdktf.IResolvable) {
+  public putLibrary(value: ClusterLibrary[] | cdktn.IResolvable) {
     this._library.internalValue = value;
   }
   public resetLibrary() {
@@ -5367,6 +5565,22 @@ export class Cluster extends cdktf.TerraformResource {
     return this._timeouts.internalValue;
   }
 
+  // worker_node_type_flexibility - computed: false, optional: true, required: false
+  private _workerNodeTypeFlexibility = new ClusterWorkerNodeTypeFlexibilityOutputReference(this, "worker_node_type_flexibility");
+  public get workerNodeTypeFlexibility() {
+    return this._workerNodeTypeFlexibility;
+  }
+  public putWorkerNodeTypeFlexibility(value: ClusterWorkerNodeTypeFlexibility) {
+    this._workerNodeTypeFlexibility.internalValue = value;
+  }
+  public resetWorkerNodeTypeFlexibility() {
+    this._workerNodeTypeFlexibility.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workerNodeTypeFlexibilityInput() {
+    return this._workerNodeTypeFlexibility.internalValue;
+  }
+
   // workload_type - computed: false, optional: true, required: false
   private _workloadType = new ClusterWorkloadTypeOutputReference(this, "workload_type");
   public get workloadType() {
@@ -5389,45 +5603,47 @@ export class Cluster extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      apply_policy_default_values: cdktf.booleanToTerraform(this._applyPolicyDefaultValues),
-      autotermination_minutes: cdktf.numberToTerraform(this._autoterminationMinutes),
-      cluster_name: cdktf.stringToTerraform(this._clusterName),
-      custom_tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._customTags),
-      data_security_mode: cdktf.stringToTerraform(this._dataSecurityMode),
-      driver_instance_pool_id: cdktf.stringToTerraform(this._driverInstancePoolId),
-      driver_node_type_id: cdktf.stringToTerraform(this._driverNodeTypeId),
-      enable_elastic_disk: cdktf.booleanToTerraform(this._enableElasticDisk),
-      enable_local_disk_encryption: cdktf.booleanToTerraform(this._enableLocalDiskEncryption),
-      id: cdktf.stringToTerraform(this._id),
-      idempotency_token: cdktf.stringToTerraform(this._idempotencyToken),
-      instance_pool_id: cdktf.stringToTerraform(this._instancePoolId),
-      is_pinned: cdktf.booleanToTerraform(this._isPinned),
-      is_single_node: cdktf.booleanToTerraform(this._isSingleNode),
-      kind: cdktf.stringToTerraform(this._kind),
-      no_wait: cdktf.booleanToTerraform(this._noWait),
-      node_type_id: cdktf.stringToTerraform(this._nodeTypeId),
-      num_workers: cdktf.numberToTerraform(this._numWorkers),
-      policy_id: cdktf.stringToTerraform(this._policyId),
-      remote_disk_throughput: cdktf.numberToTerraform(this._remoteDiskThroughput),
-      runtime_engine: cdktf.stringToTerraform(this._runtimeEngine),
-      single_user_name: cdktf.stringToTerraform(this._singleUserName),
-      spark_conf: cdktf.hashMapper(cdktf.stringToTerraform)(this._sparkConf),
-      spark_env_vars: cdktf.hashMapper(cdktf.stringToTerraform)(this._sparkEnvVars),
-      spark_version: cdktf.stringToTerraform(this._sparkVersion),
-      ssh_public_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(this._sshPublicKeys),
-      total_initial_remote_disk_size: cdktf.numberToTerraform(this._totalInitialRemoteDiskSize),
-      use_ml_runtime: cdktf.booleanToTerraform(this._useMlRuntime),
+      apply_policy_default_values: cdktn.booleanToTerraform(this._applyPolicyDefaultValues),
+      autotermination_minutes: cdktn.numberToTerraform(this._autoterminationMinutes),
+      cluster_name: cdktn.stringToTerraform(this._clusterName),
+      custom_tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._customTags),
+      data_security_mode: cdktn.stringToTerraform(this._dataSecurityMode),
+      driver_instance_pool_id: cdktn.stringToTerraform(this._driverInstancePoolId),
+      driver_node_type_id: cdktn.stringToTerraform(this._driverNodeTypeId),
+      enable_elastic_disk: cdktn.booleanToTerraform(this._enableElasticDisk),
+      enable_local_disk_encryption: cdktn.booleanToTerraform(this._enableLocalDiskEncryption),
+      id: cdktn.stringToTerraform(this._id),
+      idempotency_token: cdktn.stringToTerraform(this._idempotencyToken),
+      instance_pool_id: cdktn.stringToTerraform(this._instancePoolId),
+      is_pinned: cdktn.booleanToTerraform(this._isPinned),
+      is_single_node: cdktn.booleanToTerraform(this._isSingleNode),
+      kind: cdktn.stringToTerraform(this._kind),
+      no_wait: cdktn.booleanToTerraform(this._noWait),
+      node_type_id: cdktn.stringToTerraform(this._nodeTypeId),
+      num_workers: cdktn.numberToTerraform(this._numWorkers),
+      policy_id: cdktn.stringToTerraform(this._policyId),
+      remote_disk_throughput: cdktn.numberToTerraform(this._remoteDiskThroughput),
+      runtime_engine: cdktn.stringToTerraform(this._runtimeEngine),
+      single_user_name: cdktn.stringToTerraform(this._singleUserName),
+      spark_conf: cdktn.hashMapper(cdktn.stringToTerraform)(this._sparkConf),
+      spark_env_vars: cdktn.hashMapper(cdktn.stringToTerraform)(this._sparkEnvVars),
+      spark_version: cdktn.stringToTerraform(this._sparkVersion),
+      ssh_public_keys: cdktn.listMapper(cdktn.stringToTerraform, false)(this._sshPublicKeys),
+      total_initial_remote_disk_size: cdktn.numberToTerraform(this._totalInitialRemoteDiskSize),
+      use_ml_runtime: cdktn.booleanToTerraform(this._useMlRuntime),
       autoscale: clusterAutoscaleToTerraform(this._autoscale.internalValue),
       aws_attributes: clusterAwsAttributesToTerraform(this._awsAttributes.internalValue),
       azure_attributes: clusterAzureAttributesToTerraform(this._azureAttributes.internalValue),
       cluster_log_conf: clusterClusterLogConfToTerraform(this._clusterLogConf.internalValue),
-      cluster_mount_info: cdktf.listMapper(clusterClusterMountInfoToTerraform, true)(this._clusterMountInfo.internalValue),
+      cluster_mount_info: cdktn.listMapper(clusterClusterMountInfoToTerraform, true)(this._clusterMountInfo.internalValue),
       docker_image: clusterDockerImageToTerraform(this._dockerImage.internalValue),
+      driver_node_type_flexibility: clusterDriverNodeTypeFlexibilityToTerraform(this._driverNodeTypeFlexibility.internalValue),
       gcp_attributes: clusterGcpAttributesToTerraform(this._gcpAttributes.internalValue),
-      init_scripts: cdktf.listMapper(clusterInitScriptsToTerraform, true)(this._initScripts.internalValue),
-      library: cdktf.listMapper(clusterLibraryToTerraform, true)(this._library.internalValue),
+      init_scripts: cdktn.listMapper(clusterInitScriptsToTerraform, true)(this._initScripts.internalValue),
+      library: cdktn.listMapper(clusterLibraryToTerraform, true)(this._library.internalValue),
       provider_config: clusterProviderConfigToTerraform(this._providerConfig.internalValue),
       timeouts: clusterTimeoutsToTerraform(this._timeouts.internalValue),
+      worker_node_type_flexibility: clusterWorkerNodeTypeFlexibilityToTerraform(this._workerNodeTypeFlexibility.internalValue),
       workload_type: clusterWorkloadTypeToTerraform(this._workloadType.internalValue),
     };
   }
@@ -5435,169 +5651,169 @@ export class Cluster extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       apply_policy_default_values: {
-        value: cdktf.booleanToHclTerraform(this._applyPolicyDefaultValues),
+        value: cdktn.booleanToHclTerraform(this._applyPolicyDefaultValues),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       autotermination_minutes: {
-        value: cdktf.numberToHclTerraform(this._autoterminationMinutes),
+        value: cdktn.numberToHclTerraform(this._autoterminationMinutes),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       cluster_name: {
-        value: cdktf.stringToHclTerraform(this._clusterName),
+        value: cdktn.stringToHclTerraform(this._clusterName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       custom_tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._customTags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._customTags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       data_security_mode: {
-        value: cdktf.stringToHclTerraform(this._dataSecurityMode),
+        value: cdktn.stringToHclTerraform(this._dataSecurityMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       driver_instance_pool_id: {
-        value: cdktf.stringToHclTerraform(this._driverInstancePoolId),
+        value: cdktn.stringToHclTerraform(this._driverInstancePoolId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       driver_node_type_id: {
-        value: cdktf.stringToHclTerraform(this._driverNodeTypeId),
+        value: cdktn.stringToHclTerraform(this._driverNodeTypeId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enable_elastic_disk: {
-        value: cdktf.booleanToHclTerraform(this._enableElasticDisk),
+        value: cdktn.booleanToHclTerraform(this._enableElasticDisk),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       enable_local_disk_encryption: {
-        value: cdktf.booleanToHclTerraform(this._enableLocalDiskEncryption),
+        value: cdktn.booleanToHclTerraform(this._enableLocalDiskEncryption),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       idempotency_token: {
-        value: cdktf.stringToHclTerraform(this._idempotencyToken),
+        value: cdktn.stringToHclTerraform(this._idempotencyToken),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance_pool_id: {
-        value: cdktf.stringToHclTerraform(this._instancePoolId),
+        value: cdktn.stringToHclTerraform(this._instancePoolId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       is_pinned: {
-        value: cdktf.booleanToHclTerraform(this._isPinned),
+        value: cdktn.booleanToHclTerraform(this._isPinned),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       is_single_node: {
-        value: cdktf.booleanToHclTerraform(this._isSingleNode),
+        value: cdktn.booleanToHclTerraform(this._isSingleNode),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       kind: {
-        value: cdktf.stringToHclTerraform(this._kind),
+        value: cdktn.stringToHclTerraform(this._kind),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       no_wait: {
-        value: cdktf.booleanToHclTerraform(this._noWait),
+        value: cdktn.booleanToHclTerraform(this._noWait),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       node_type_id: {
-        value: cdktf.stringToHclTerraform(this._nodeTypeId),
+        value: cdktn.stringToHclTerraform(this._nodeTypeId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       num_workers: {
-        value: cdktf.numberToHclTerraform(this._numWorkers),
+        value: cdktn.numberToHclTerraform(this._numWorkers),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       policy_id: {
-        value: cdktf.stringToHclTerraform(this._policyId),
+        value: cdktn.stringToHclTerraform(this._policyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       remote_disk_throughput: {
-        value: cdktf.numberToHclTerraform(this._remoteDiskThroughput),
+        value: cdktn.numberToHclTerraform(this._remoteDiskThroughput),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       runtime_engine: {
-        value: cdktf.stringToHclTerraform(this._runtimeEngine),
+        value: cdktn.stringToHclTerraform(this._runtimeEngine),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       single_user_name: {
-        value: cdktf.stringToHclTerraform(this._singleUserName),
+        value: cdktn.stringToHclTerraform(this._singleUserName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       spark_conf: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._sparkConf),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._sparkConf),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       spark_env_vars: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._sparkEnvVars),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._sparkEnvVars),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       spark_version: {
-        value: cdktf.stringToHclTerraform(this._sparkVersion),
+        value: cdktn.stringToHclTerraform(this._sparkVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ssh_public_keys: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._sshPublicKeys),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._sshPublicKeys),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       total_initial_remote_disk_size: {
-        value: cdktf.numberToHclTerraform(this._totalInitialRemoteDiskSize),
+        value: cdktn.numberToHclTerraform(this._totalInitialRemoteDiskSize),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       use_ml_runtime: {
-        value: cdktf.booleanToHclTerraform(this._useMlRuntime),
+        value: cdktn.booleanToHclTerraform(this._useMlRuntime),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
@@ -5627,7 +5843,7 @@ export class Cluster extends cdktf.TerraformResource {
         storageClassType: "ClusterClusterLogConfList",
       },
       cluster_mount_info: {
-        value: cdktf.listMapperHcl(clusterClusterMountInfoToHclTerraform, true)(this._clusterMountInfo.internalValue),
+        value: cdktn.listMapperHcl(clusterClusterMountInfoToHclTerraform, true)(this._clusterMountInfo.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ClusterClusterMountInfoList",
@@ -5638,6 +5854,12 @@ export class Cluster extends cdktf.TerraformResource {
         type: "list",
         storageClassType: "ClusterDockerImageList",
       },
+      driver_node_type_flexibility: {
+        value: clusterDriverNodeTypeFlexibilityToHclTerraform(this._driverNodeTypeFlexibility.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ClusterDriverNodeTypeFlexibilityList",
+      },
       gcp_attributes: {
         value: clusterGcpAttributesToHclTerraform(this._gcpAttributes.internalValue),
         isBlock: true,
@@ -5645,13 +5867,13 @@ export class Cluster extends cdktf.TerraformResource {
         storageClassType: "ClusterGcpAttributesList",
       },
       init_scripts: {
-        value: cdktf.listMapperHcl(clusterInitScriptsToHclTerraform, true)(this._initScripts.internalValue),
+        value: cdktn.listMapperHcl(clusterInitScriptsToHclTerraform, true)(this._initScripts.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ClusterInitScriptsList",
       },
       library: {
-        value: cdktf.listMapperHcl(clusterLibraryToHclTerraform, true)(this._library.internalValue),
+        value: cdktn.listMapperHcl(clusterLibraryToHclTerraform, true)(this._library.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "ClusterLibraryList",
@@ -5667,6 +5889,12 @@ export class Cluster extends cdktf.TerraformResource {
         isBlock: true,
         type: "struct",
         storageClassType: "ClusterTimeouts",
+      },
+      worker_node_type_flexibility: {
+        value: clusterWorkerNodeTypeFlexibilityToHclTerraform(this._workerNodeTypeFlexibility.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ClusterWorkerNodeTypeFlexibilityList",
       },
       workload_type: {
         value: clusterWorkloadTypeToHclTerraform(this._workloadType.internalValue),

@@ -1,161 +1,161 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/credential
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/credential
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CredentialConfig extends cdktf.TerraformMetaArguments {
+export interface CredentialConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/credential#comment Credential#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/credential#comment Credential#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/credential#created_at Credential#created_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/credential#created_at Credential#created_at}
   */
   readonly createdAt?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/credential#created_by Credential#created_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/credential#created_by Credential#created_by}
   */
   readonly createdBy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/credential#force_destroy Credential#force_destroy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/credential#force_destroy Credential#force_destroy}
   */
-  readonly forceDestroy?: boolean | cdktf.IResolvable;
+  readonly forceDestroy?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/credential#force_update Credential#force_update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/credential#force_update Credential#force_update}
   */
-  readonly forceUpdate?: boolean | cdktf.IResolvable;
+  readonly forceUpdate?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/credential#full_name Credential#full_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/credential#full_name Credential#full_name}
   */
   readonly fullName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/credential#id Credential#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/credential#id Credential#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/credential#isolation_mode Credential#isolation_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/credential#isolation_mode Credential#isolation_mode}
   */
   readonly isolationMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/credential#metastore_id Credential#metastore_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/credential#metastore_id Credential#metastore_id}
   */
   readonly metastoreId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/credential#name Credential#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/credential#name Credential#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/credential#owner Credential#owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/credential#owner Credential#owner}
   */
   readonly owner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/credential#purpose Credential#purpose}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/credential#purpose Credential#purpose}
   */
   readonly purpose: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/credential#read_only Credential#read_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/credential#read_only Credential#read_only}
   */
-  readonly readOnly?: boolean | cdktf.IResolvable;
+  readonly readOnly?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/credential#skip_validation Credential#skip_validation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/credential#skip_validation Credential#skip_validation}
   */
-  readonly skipValidation?: boolean | cdktf.IResolvable;
+  readonly skipValidation?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/credential#updated_at Credential#updated_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/credential#updated_at Credential#updated_at}
   */
   readonly updatedAt?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/credential#updated_by Credential#updated_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/credential#updated_by Credential#updated_by}
   */
   readonly updatedBy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/credential#used_for_managed_storage Credential#used_for_managed_storage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/credential#used_for_managed_storage Credential#used_for_managed_storage}
   */
-  readonly usedForManagedStorage?: boolean | cdktf.IResolvable;
+  readonly usedForManagedStorage?: boolean | cdktn.IResolvable;
   /**
   * aws_iam_role block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/credential#aws_iam_role Credential#aws_iam_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/credential#aws_iam_role Credential#aws_iam_role}
   */
   readonly awsIamRole?: CredentialAwsIamRole;
   /**
   * azure_managed_identity block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/credential#azure_managed_identity Credential#azure_managed_identity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/credential#azure_managed_identity Credential#azure_managed_identity}
   */
   readonly azureManagedIdentity?: CredentialAzureManagedIdentity;
   /**
   * azure_service_principal block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/credential#azure_service_principal Credential#azure_service_principal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/credential#azure_service_principal Credential#azure_service_principal}
   */
   readonly azureServicePrincipal?: CredentialAzureServicePrincipal;
   /**
   * databricks_gcp_service_account block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/credential#databricks_gcp_service_account Credential#databricks_gcp_service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/credential#databricks_gcp_service_account Credential#databricks_gcp_service_account}
   */
   readonly databricksGcpServiceAccount?: CredentialDatabricksGcpServiceAccount;
 }
 export interface CredentialAwsIamRole {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/credential#external_id Credential#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/credential#external_id Credential#external_id}
   */
   readonly externalId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/credential#role_arn Credential#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/credential#role_arn Credential#role_arn}
   */
   readonly roleArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/credential#unity_catalog_iam_arn Credential#unity_catalog_iam_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/credential#unity_catalog_iam_arn Credential#unity_catalog_iam_arn}
   */
   readonly unityCatalogIamArn?: string;
 }
 
 export function credentialAwsIamRoleToTerraform(struct?: CredentialAwsIamRoleOutputReference | CredentialAwsIamRole): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    external_id: cdktf.stringToTerraform(struct!.externalId),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
-    unity_catalog_iam_arn: cdktf.stringToTerraform(struct!.unityCatalogIamArn),
+    external_id: cdktn.stringToTerraform(struct!.externalId),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
+    unity_catalog_iam_arn: cdktn.stringToTerraform(struct!.unityCatalogIamArn),
   }
 }
 
 
 export function credentialAwsIamRoleToHclTerraform(struct?: CredentialAwsIamRoleOutputReference | CredentialAwsIamRole): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     external_id: {
-      value: cdktf.stringToHclTerraform(struct!.externalId),
+      value: cdktn.stringToHclTerraform(struct!.externalId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     unity_catalog_iam_arn: {
-      value: cdktf.stringToHclTerraform(struct!.unityCatalogIamArn),
+      value: cdktn.stringToHclTerraform(struct!.unityCatalogIamArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -166,14 +166,14 @@ export function credentialAwsIamRoleToHclTerraform(struct?: CredentialAwsIamRole
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CredentialAwsIamRoleOutputReference extends cdktf.ComplexObject {
+export class CredentialAwsIamRoleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -260,52 +260,52 @@ export class CredentialAwsIamRoleOutputReference extends cdktf.ComplexObject {
 }
 export interface CredentialAzureManagedIdentity {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/credential#access_connector_id Credential#access_connector_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/credential#access_connector_id Credential#access_connector_id}
   */
   readonly accessConnectorId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/credential#credential_id Credential#credential_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/credential#credential_id Credential#credential_id}
   */
   readonly credentialId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/credential#managed_identity_id Credential#managed_identity_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/credential#managed_identity_id Credential#managed_identity_id}
   */
   readonly managedIdentityId?: string;
 }
 
 export function credentialAzureManagedIdentityToTerraform(struct?: CredentialAzureManagedIdentityOutputReference | CredentialAzureManagedIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    access_connector_id: cdktf.stringToTerraform(struct!.accessConnectorId),
-    credential_id: cdktf.stringToTerraform(struct!.credentialId),
-    managed_identity_id: cdktf.stringToTerraform(struct!.managedIdentityId),
+    access_connector_id: cdktn.stringToTerraform(struct!.accessConnectorId),
+    credential_id: cdktn.stringToTerraform(struct!.credentialId),
+    managed_identity_id: cdktn.stringToTerraform(struct!.managedIdentityId),
   }
 }
 
 
 export function credentialAzureManagedIdentityToHclTerraform(struct?: CredentialAzureManagedIdentityOutputReference | CredentialAzureManagedIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     access_connector_id: {
-      value: cdktf.stringToHclTerraform(struct!.accessConnectorId),
+      value: cdktn.stringToHclTerraform(struct!.accessConnectorId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     credential_id: {
-      value: cdktf.stringToHclTerraform(struct!.credentialId),
+      value: cdktn.stringToHclTerraform(struct!.credentialId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     managed_identity_id: {
-      value: cdktf.stringToHclTerraform(struct!.managedIdentityId),
+      value: cdktn.stringToHclTerraform(struct!.managedIdentityId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -316,14 +316,14 @@ export function credentialAzureManagedIdentityToHclTerraform(struct?: Credential
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CredentialAzureManagedIdentityOutputReference extends cdktf.ComplexObject {
+export class CredentialAzureManagedIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -407,52 +407,52 @@ export class CredentialAzureManagedIdentityOutputReference extends cdktf.Complex
 }
 export interface CredentialAzureServicePrincipal {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/credential#application_id Credential#application_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/credential#application_id Credential#application_id}
   */
   readonly applicationId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/credential#client_secret Credential#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/credential#client_secret Credential#client_secret}
   */
   readonly clientSecret: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/credential#directory_id Credential#directory_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/credential#directory_id Credential#directory_id}
   */
   readonly directoryId: string;
 }
 
 export function credentialAzureServicePrincipalToTerraform(struct?: CredentialAzureServicePrincipalOutputReference | CredentialAzureServicePrincipal): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    application_id: cdktf.stringToTerraform(struct!.applicationId),
-    client_secret: cdktf.stringToTerraform(struct!.clientSecret),
-    directory_id: cdktf.stringToTerraform(struct!.directoryId),
+    application_id: cdktn.stringToTerraform(struct!.applicationId),
+    client_secret: cdktn.stringToTerraform(struct!.clientSecret),
+    directory_id: cdktn.stringToTerraform(struct!.directoryId),
   }
 }
 
 
 export function credentialAzureServicePrincipalToHclTerraform(struct?: CredentialAzureServicePrincipalOutputReference | CredentialAzureServicePrincipal): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     application_id: {
-      value: cdktf.stringToHclTerraform(struct!.applicationId),
+      value: cdktn.stringToHclTerraform(struct!.applicationId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_secret: {
-      value: cdktf.stringToHclTerraform(struct!.clientSecret),
+      value: cdktn.stringToHclTerraform(struct!.clientSecret),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     directory_id: {
-      value: cdktf.stringToHclTerraform(struct!.directoryId),
+      value: cdktn.stringToHclTerraform(struct!.directoryId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -463,14 +463,14 @@ export function credentialAzureServicePrincipalToHclTerraform(struct?: Credentia
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CredentialAzureServicePrincipalOutputReference extends cdktf.ComplexObject {
+export class CredentialAzureServicePrincipalOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -548,52 +548,52 @@ export class CredentialAzureServicePrincipalOutputReference extends cdktf.Comple
 }
 export interface CredentialDatabricksGcpServiceAccount {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/credential#credential_id Credential#credential_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/credential#credential_id Credential#credential_id}
   */
   readonly credentialId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/credential#email Credential#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/credential#email Credential#email}
   */
   readonly email?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/credential#private_key_id Credential#private_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/credential#private_key_id Credential#private_key_id}
   */
   readonly privateKeyId?: string;
 }
 
 export function credentialDatabricksGcpServiceAccountToTerraform(struct?: CredentialDatabricksGcpServiceAccountOutputReference | CredentialDatabricksGcpServiceAccount): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    credential_id: cdktf.stringToTerraform(struct!.credentialId),
-    email: cdktf.stringToTerraform(struct!.email),
-    private_key_id: cdktf.stringToTerraform(struct!.privateKeyId),
+    credential_id: cdktn.stringToTerraform(struct!.credentialId),
+    email: cdktn.stringToTerraform(struct!.email),
+    private_key_id: cdktn.stringToTerraform(struct!.privateKeyId),
   }
 }
 
 
 export function credentialDatabricksGcpServiceAccountToHclTerraform(struct?: CredentialDatabricksGcpServiceAccountOutputReference | CredentialDatabricksGcpServiceAccount): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     credential_id: {
-      value: cdktf.stringToHclTerraform(struct!.credentialId),
+      value: cdktn.stringToHclTerraform(struct!.credentialId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     email: {
-      value: cdktf.stringToHclTerraform(struct!.email),
+      value: cdktn.stringToHclTerraform(struct!.email),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     private_key_id: {
-      value: cdktf.stringToHclTerraform(struct!.privateKeyId),
+      value: cdktn.stringToHclTerraform(struct!.privateKeyId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -604,14 +604,14 @@ export function credentialDatabricksGcpServiceAccountToHclTerraform(struct?: Cre
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CredentialDatabricksGcpServiceAccountOutputReference extends cdktf.ComplexObject {
+export class CredentialDatabricksGcpServiceAccountOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -698,9 +698,9 @@ export class CredentialDatabricksGcpServiceAccountOutputReference extends cdktf.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/credential databricks_credential}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/credential databricks_credential}
 */
-export class Credential extends cdktf.TerraformResource {
+export class Credential extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -711,14 +711,14 @@ export class Credential extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Credential resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Credential resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Credential to import
-  * @param importFromId The id of the existing Credential that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/credential#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Credential that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/credential#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Credential to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_credential", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_credential", importId: importFromId, provider });
       }
 
   // ===========
@@ -726,7 +726,7 @@ export class Credential extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/credential databricks_credential} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/credential databricks_credential} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -737,7 +737,7 @@ export class Credential extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_credential',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -829,11 +829,11 @@ export class Credential extends cdktf.TerraformResource {
   }
 
   // force_destroy - computed: false, optional: true, required: false
-  private _forceDestroy?: boolean | cdktf.IResolvable; 
+  private _forceDestroy?: boolean | cdktn.IResolvable; 
   public get forceDestroy() {
     return this.getBooleanAttribute('force_destroy');
   }
-  public set forceDestroy(value: boolean | cdktf.IResolvable) {
+  public set forceDestroy(value: boolean | cdktn.IResolvable) {
     this._forceDestroy = value;
   }
   public resetForceDestroy() {
@@ -845,11 +845,11 @@ export class Credential extends cdktf.TerraformResource {
   }
 
   // force_update - computed: false, optional: true, required: false
-  private _forceUpdate?: boolean | cdktf.IResolvable; 
+  private _forceUpdate?: boolean | cdktn.IResolvable; 
   public get forceUpdate() {
     return this.getBooleanAttribute('force_update');
   }
-  public set forceUpdate(value: boolean | cdktf.IResolvable) {
+  public set forceUpdate(value: boolean | cdktn.IResolvable) {
     this._forceUpdate = value;
   }
   public resetForceUpdate() {
@@ -967,11 +967,11 @@ export class Credential extends cdktf.TerraformResource {
   }
 
   // read_only - computed: false, optional: true, required: false
-  private _readOnly?: boolean | cdktf.IResolvable; 
+  private _readOnly?: boolean | cdktn.IResolvable; 
   public get readOnly() {
     return this.getBooleanAttribute('read_only');
   }
-  public set readOnly(value: boolean | cdktf.IResolvable) {
+  public set readOnly(value: boolean | cdktn.IResolvable) {
     this._readOnly = value;
   }
   public resetReadOnly() {
@@ -983,11 +983,11 @@ export class Credential extends cdktf.TerraformResource {
   }
 
   // skip_validation - computed: false, optional: true, required: false
-  private _skipValidation?: boolean | cdktf.IResolvable; 
+  private _skipValidation?: boolean | cdktn.IResolvable; 
   public get skipValidation() {
     return this.getBooleanAttribute('skip_validation');
   }
-  public set skipValidation(value: boolean | cdktf.IResolvable) {
+  public set skipValidation(value: boolean | cdktn.IResolvable) {
     this._skipValidation = value;
   }
   public resetSkipValidation() {
@@ -1031,11 +1031,11 @@ export class Credential extends cdktf.TerraformResource {
   }
 
   // used_for_managed_storage - computed: true, optional: true, required: false
-  private _usedForManagedStorage?: boolean | cdktf.IResolvable; 
+  private _usedForManagedStorage?: boolean | cdktn.IResolvable; 
   public get usedForManagedStorage() {
     return this.getBooleanAttribute('used_for_managed_storage');
   }
-  public set usedForManagedStorage(value: boolean | cdktf.IResolvable) {
+  public set usedForManagedStorage(value: boolean | cdktn.IResolvable) {
     this._usedForManagedStorage = value;
   }
   public resetUsedForManagedStorage() {
@@ -1116,23 +1116,23 @@ export class Credential extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      comment: cdktf.stringToTerraform(this._comment),
-      created_at: cdktf.numberToTerraform(this._createdAt),
-      created_by: cdktf.stringToTerraform(this._createdBy),
-      force_destroy: cdktf.booleanToTerraform(this._forceDestroy),
-      force_update: cdktf.booleanToTerraform(this._forceUpdate),
-      full_name: cdktf.stringToTerraform(this._fullName),
-      id: cdktf.stringToTerraform(this._id),
-      isolation_mode: cdktf.stringToTerraform(this._isolationMode),
-      metastore_id: cdktf.stringToTerraform(this._metastoreId),
-      name: cdktf.stringToTerraform(this._name),
-      owner: cdktf.stringToTerraform(this._owner),
-      purpose: cdktf.stringToTerraform(this._purpose),
-      read_only: cdktf.booleanToTerraform(this._readOnly),
-      skip_validation: cdktf.booleanToTerraform(this._skipValidation),
-      updated_at: cdktf.numberToTerraform(this._updatedAt),
-      updated_by: cdktf.stringToTerraform(this._updatedBy),
-      used_for_managed_storage: cdktf.booleanToTerraform(this._usedForManagedStorage),
+      comment: cdktn.stringToTerraform(this._comment),
+      created_at: cdktn.numberToTerraform(this._createdAt),
+      created_by: cdktn.stringToTerraform(this._createdBy),
+      force_destroy: cdktn.booleanToTerraform(this._forceDestroy),
+      force_update: cdktn.booleanToTerraform(this._forceUpdate),
+      full_name: cdktn.stringToTerraform(this._fullName),
+      id: cdktn.stringToTerraform(this._id),
+      isolation_mode: cdktn.stringToTerraform(this._isolationMode),
+      metastore_id: cdktn.stringToTerraform(this._metastoreId),
+      name: cdktn.stringToTerraform(this._name),
+      owner: cdktn.stringToTerraform(this._owner),
+      purpose: cdktn.stringToTerraform(this._purpose),
+      read_only: cdktn.booleanToTerraform(this._readOnly),
+      skip_validation: cdktn.booleanToTerraform(this._skipValidation),
+      updated_at: cdktn.numberToTerraform(this._updatedAt),
+      updated_by: cdktn.stringToTerraform(this._updatedBy),
+      used_for_managed_storage: cdktn.booleanToTerraform(this._usedForManagedStorage),
       aws_iam_role: credentialAwsIamRoleToTerraform(this._awsIamRole.internalValue),
       azure_managed_identity: credentialAzureManagedIdentityToTerraform(this._azureManagedIdentity.internalValue),
       azure_service_principal: credentialAzureServicePrincipalToTerraform(this._azureServicePrincipal.internalValue),
@@ -1143,103 +1143,103 @@ export class Credential extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       comment: {
-        value: cdktf.stringToHclTerraform(this._comment),
+        value: cdktn.stringToHclTerraform(this._comment),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       created_at: {
-        value: cdktf.numberToHclTerraform(this._createdAt),
+        value: cdktn.numberToHclTerraform(this._createdAt),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       created_by: {
-        value: cdktf.stringToHclTerraform(this._createdBy),
+        value: cdktn.stringToHclTerraform(this._createdBy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       force_destroy: {
-        value: cdktf.booleanToHclTerraform(this._forceDestroy),
+        value: cdktn.booleanToHclTerraform(this._forceDestroy),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       force_update: {
-        value: cdktf.booleanToHclTerraform(this._forceUpdate),
+        value: cdktn.booleanToHclTerraform(this._forceUpdate),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       full_name: {
-        value: cdktf.stringToHclTerraform(this._fullName),
+        value: cdktn.stringToHclTerraform(this._fullName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       isolation_mode: {
-        value: cdktf.stringToHclTerraform(this._isolationMode),
+        value: cdktn.stringToHclTerraform(this._isolationMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       metastore_id: {
-        value: cdktf.stringToHclTerraform(this._metastoreId),
+        value: cdktn.stringToHclTerraform(this._metastoreId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       owner: {
-        value: cdktf.stringToHclTerraform(this._owner),
+        value: cdktn.stringToHclTerraform(this._owner),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       purpose: {
-        value: cdktf.stringToHclTerraform(this._purpose),
+        value: cdktn.stringToHclTerraform(this._purpose),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       read_only: {
-        value: cdktf.booleanToHclTerraform(this._readOnly),
+        value: cdktn.booleanToHclTerraform(this._readOnly),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       skip_validation: {
-        value: cdktf.booleanToHclTerraform(this._skipValidation),
+        value: cdktn.booleanToHclTerraform(this._skipValidation),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       updated_at: {
-        value: cdktf.numberToHclTerraform(this._updatedAt),
+        value: cdktn.numberToHclTerraform(this._updatedAt),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       updated_by: {
-        value: cdktf.stringToHclTerraform(this._updatedBy),
+        value: cdktn.stringToHclTerraform(this._updatedBy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       used_for_managed_storage: {
-        value: cdktf.booleanToHclTerraform(this._usedForManagedStorage),
+        value: cdktn.booleanToHclTerraform(this._usedForManagedStorage),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

@@ -1,55 +1,55 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/account_network_policies
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/account_network_policies
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataDatabricksAccountNetworkPoliciesConfig extends cdktf.TerraformMetaArguments {
+export interface DataDatabricksAccountNetworkPoliciesConfig extends cdktn.TerraformMetaArguments {
 }
 export interface DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedInternetDestinations {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/account_network_policies#destination DataDatabricksAccountNetworkPolicies#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/account_network_policies#destination DataDatabricksAccountNetworkPolicies#destination}
   */
   readonly destination?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/account_network_policies#internet_destination_type DataDatabricksAccountNetworkPolicies#internet_destination_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/account_network_policies#internet_destination_type DataDatabricksAccountNetworkPolicies#internet_destination_type}
   */
   readonly internetDestinationType?: string;
 }
 
-export function dataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedInternetDestinationsToTerraform(struct?: DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedInternetDestinations | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedInternetDestinationsToTerraform(struct?: DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedInternetDestinations | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    destination: cdktf.stringToTerraform(struct!.destination),
-    internet_destination_type: cdktf.stringToTerraform(struct!.internetDestinationType),
+    destination: cdktn.stringToTerraform(struct!.destination),
+    internet_destination_type: cdktn.stringToTerraform(struct!.internetDestinationType),
   }
 }
 
 
-export function dataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedInternetDestinationsToHclTerraform(struct?: DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedInternetDestinations | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedInternetDestinationsToHclTerraform(struct?: DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedInternetDestinations | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     destination: {
-      value: cdktf.stringToHclTerraform(struct!.destination),
+      value: cdktn.stringToHclTerraform(struct!.destination),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     internet_destination_type: {
-      value: cdktf.stringToHclTerraform(struct!.internetDestinationType),
+      value: cdktn.stringToHclTerraform(struct!.internetDestinationType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -60,9 +60,9 @@ export function dataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedInternetDestinationsOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedInternetDestinationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -70,11 +70,11 @@ export class DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowed
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedInternetDestinations | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedInternetDestinations | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -91,14 +91,14 @@ export class DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowed
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedInternetDestinations | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedInternetDestinations | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._destination = undefined;
       this._internetDestinationType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -143,15 +143,15 @@ export class DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowed
   }
 }
 
-export class DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedInternetDestinationsList extends cdktf.ComplexList {
-  public internalValue? : DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedInternetDestinations[] | cdktf.IResolvable
+export class DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedInternetDestinationsList extends cdktn.ComplexList {
+  public internalValue? : DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedInternetDestinations[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -164,74 +164,74 @@ export class DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowed
 }
 export interface DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedStorageDestinations {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/account_network_policies#azure_storage_account DataDatabricksAccountNetworkPolicies#azure_storage_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/account_network_policies#azure_storage_account DataDatabricksAccountNetworkPolicies#azure_storage_account}
   */
   readonly azureStorageAccount?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/account_network_policies#azure_storage_service DataDatabricksAccountNetworkPolicies#azure_storage_service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/account_network_policies#azure_storage_service DataDatabricksAccountNetworkPolicies#azure_storage_service}
   */
   readonly azureStorageService?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/account_network_policies#bucket_name DataDatabricksAccountNetworkPolicies#bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/account_network_policies#bucket_name DataDatabricksAccountNetworkPolicies#bucket_name}
   */
   readonly bucketName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/account_network_policies#region DataDatabricksAccountNetworkPolicies#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/account_network_policies#region DataDatabricksAccountNetworkPolicies#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/account_network_policies#storage_destination_type DataDatabricksAccountNetworkPolicies#storage_destination_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/account_network_policies#storage_destination_type DataDatabricksAccountNetworkPolicies#storage_destination_type}
   */
   readonly storageDestinationType?: string;
 }
 
-export function dataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedStorageDestinationsToTerraform(struct?: DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedStorageDestinations | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedStorageDestinationsToTerraform(struct?: DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedStorageDestinations | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    azure_storage_account: cdktf.stringToTerraform(struct!.azureStorageAccount),
-    azure_storage_service: cdktf.stringToTerraform(struct!.azureStorageService),
-    bucket_name: cdktf.stringToTerraform(struct!.bucketName),
-    region: cdktf.stringToTerraform(struct!.region),
-    storage_destination_type: cdktf.stringToTerraform(struct!.storageDestinationType),
+    azure_storage_account: cdktn.stringToTerraform(struct!.azureStorageAccount),
+    azure_storage_service: cdktn.stringToTerraform(struct!.azureStorageService),
+    bucket_name: cdktn.stringToTerraform(struct!.bucketName),
+    region: cdktn.stringToTerraform(struct!.region),
+    storage_destination_type: cdktn.stringToTerraform(struct!.storageDestinationType),
   }
 }
 
 
-export function dataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedStorageDestinationsToHclTerraform(struct?: DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedStorageDestinations | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedStorageDestinationsToHclTerraform(struct?: DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedStorageDestinations | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     azure_storage_account: {
-      value: cdktf.stringToHclTerraform(struct!.azureStorageAccount),
+      value: cdktn.stringToHclTerraform(struct!.azureStorageAccount),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     azure_storage_service: {
-      value: cdktf.stringToHclTerraform(struct!.azureStorageService),
+      value: cdktn.stringToHclTerraform(struct!.azureStorageService),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     bucket_name: {
-      value: cdktf.stringToHclTerraform(struct!.bucketName),
+      value: cdktn.stringToHclTerraform(struct!.bucketName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     region: {
-      value: cdktf.stringToHclTerraform(struct!.region),
+      value: cdktn.stringToHclTerraform(struct!.region),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     storage_destination_type: {
-      value: cdktf.stringToHclTerraform(struct!.storageDestinationType),
+      value: cdktn.stringToHclTerraform(struct!.storageDestinationType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -242,9 +242,9 @@ export function dataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedStorageDestinationsOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedStorageDestinationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -252,11 +252,11 @@ export class DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowed
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedStorageDestinations | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedStorageDestinations | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -285,7 +285,7 @@ export class DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowed
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedStorageDestinations | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedStorageDestinations | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -295,7 +295,7 @@ export class DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowed
       this._region = undefined;
       this._storageDestinationType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -391,15 +391,15 @@ export class DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowed
   }
 }
 
-export class DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedStorageDestinationsList extends cdktf.ComplexList {
-  public internalValue? : DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedStorageDestinations[] | cdktf.IResolvable
+export class DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedStorageDestinationsList extends cdktn.ComplexList {
+  public internalValue? : DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedStorageDestinations[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -412,41 +412,41 @@ export class DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowed
 }
 export interface DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessPolicyEnforcement {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/account_network_policies#dry_run_mode_product_filter DataDatabricksAccountNetworkPolicies#dry_run_mode_product_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/account_network_policies#dry_run_mode_product_filter DataDatabricksAccountNetworkPolicies#dry_run_mode_product_filter}
   */
   readonly dryRunModeProductFilter?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/account_network_policies#enforcement_mode DataDatabricksAccountNetworkPolicies#enforcement_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/account_network_policies#enforcement_mode DataDatabricksAccountNetworkPolicies#enforcement_mode}
   */
   readonly enforcementMode?: string;
 }
 
-export function dataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessPolicyEnforcementToTerraform(struct?: DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessPolicyEnforcement | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessPolicyEnforcementToTerraform(struct?: DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessPolicyEnforcement | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    dry_run_mode_product_filter: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.dryRunModeProductFilter),
-    enforcement_mode: cdktf.stringToTerraform(struct!.enforcementMode),
+    dry_run_mode_product_filter: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.dryRunModeProductFilter),
+    enforcement_mode: cdktn.stringToTerraform(struct!.enforcementMode),
   }
 }
 
 
-export function dataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessPolicyEnforcementToHclTerraform(struct?: DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessPolicyEnforcement | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessPolicyEnforcementToHclTerraform(struct?: DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessPolicyEnforcement | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     dry_run_mode_product_filter: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.dryRunModeProductFilter),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.dryRunModeProductFilter),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     enforcement_mode: {
-      value: cdktf.stringToHclTerraform(struct!.enforcementMode),
+      value: cdktn.stringToHclTerraform(struct!.enforcementMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -457,19 +457,19 @@ export function dataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessPoli
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessPolicyEnforcementOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessPolicyEnforcementOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessPolicyEnforcement | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessPolicyEnforcement | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -486,14 +486,14 @@ export class DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessPolicyE
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessPolicyEnforcement | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessPolicyEnforcement | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._dryRunModeProductFilter = undefined;
       this._enforcementMode = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -539,51 +539,51 @@ export class DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessPolicyE
 }
 export interface DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccess {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/account_network_policies#allowed_internet_destinations DataDatabricksAccountNetworkPolicies#allowed_internet_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/account_network_policies#allowed_internet_destinations DataDatabricksAccountNetworkPolicies#allowed_internet_destinations}
   */
-  readonly allowedInternetDestinations?: DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedInternetDestinations[] | cdktf.IResolvable;
+  readonly allowedInternetDestinations?: DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedInternetDestinations[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/account_network_policies#allowed_storage_destinations DataDatabricksAccountNetworkPolicies#allowed_storage_destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/account_network_policies#allowed_storage_destinations DataDatabricksAccountNetworkPolicies#allowed_storage_destinations}
   */
-  readonly allowedStorageDestinations?: DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedStorageDestinations[] | cdktf.IResolvable;
+  readonly allowedStorageDestinations?: DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedStorageDestinations[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/account_network_policies#policy_enforcement DataDatabricksAccountNetworkPolicies#policy_enforcement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/account_network_policies#policy_enforcement DataDatabricksAccountNetworkPolicies#policy_enforcement}
   */
   readonly policyEnforcement?: DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessPolicyEnforcement;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/account_network_policies#restriction_mode DataDatabricksAccountNetworkPolicies#restriction_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/account_network_policies#restriction_mode DataDatabricksAccountNetworkPolicies#restriction_mode}
   */
   readonly restrictionMode: string;
 }
 
-export function dataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessToTerraform(struct?: DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccess | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessToTerraform(struct?: DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccess | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_internet_destinations: cdktf.listMapper(dataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedInternetDestinationsToTerraform, false)(struct!.allowedInternetDestinations),
-    allowed_storage_destinations: cdktf.listMapper(dataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedStorageDestinationsToTerraform, false)(struct!.allowedStorageDestinations),
+    allowed_internet_destinations: cdktn.listMapper(dataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedInternetDestinationsToTerraform, false)(struct!.allowedInternetDestinations),
+    allowed_storage_destinations: cdktn.listMapper(dataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedStorageDestinationsToTerraform, false)(struct!.allowedStorageDestinations),
     policy_enforcement: dataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessPolicyEnforcementToTerraform(struct!.policyEnforcement),
-    restriction_mode: cdktf.stringToTerraform(struct!.restrictionMode),
+    restriction_mode: cdktn.stringToTerraform(struct!.restrictionMode),
   }
 }
 
 
-export function dataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessToHclTerraform(struct?: DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccess | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessToHclTerraform(struct?: DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccess | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allowed_internet_destinations: {
-      value: cdktf.listMapperHcl(dataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedInternetDestinationsToHclTerraform, false)(struct!.allowedInternetDestinations),
+      value: cdktn.listMapperHcl(dataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedInternetDestinationsToHclTerraform, false)(struct!.allowedInternetDestinations),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedInternetDestinationsList",
     },
     allowed_storage_destinations: {
-      value: cdktf.listMapperHcl(dataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedStorageDestinationsToHclTerraform, false)(struct!.allowedStorageDestinations),
+      value: cdktn.listMapperHcl(dataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedStorageDestinationsToHclTerraform, false)(struct!.allowedStorageDestinations),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedStorageDestinationsList",
@@ -595,7 +595,7 @@ export function dataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessToHc
       storageClassType: "DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessPolicyEnforcement",
     },
     restriction_mode: {
-      value: cdktf.stringToHclTerraform(struct!.restrictionMode),
+      value: cdktn.stringToHclTerraform(struct!.restrictionMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -606,19 +606,19 @@ export function dataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessToHc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccess | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccess | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -643,7 +643,7 @@ export class DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessOutputR
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccess | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccess | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -652,7 +652,7 @@ export class DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessOutputR
       this._policyEnforcement.internalValue = undefined;
       this._restrictionMode = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -671,7 +671,7 @@ export class DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessOutputR
   public get allowedInternetDestinations() {
     return this._allowedInternetDestinations;
   }
-  public putAllowedInternetDestinations(value: DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedInternetDestinations[] | cdktf.IResolvable) {
+  public putAllowedInternetDestinations(value: DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedInternetDestinations[] | cdktn.IResolvable) {
     this._allowedInternetDestinations.internalValue = value;
   }
   public resetAllowedInternetDestinations() {
@@ -687,7 +687,7 @@ export class DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessOutputR
   public get allowedStorageDestinations() {
     return this._allowedStorageDestinations;
   }
-  public putAllowedStorageDestinations(value: DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedStorageDestinations[] | cdktf.IResolvable) {
+  public putAllowedStorageDestinations(value: DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessAllowedStorageDestinations[] | cdktn.IResolvable) {
     this._allowedStorageDestinations.internalValue = value;
   }
   public resetAllowedStorageDestinations() {
@@ -729,14 +729,14 @@ export class DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccessOutputR
 }
 export interface DataDatabricksAccountNetworkPoliciesItemsEgress {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/account_network_policies#network_access DataDatabricksAccountNetworkPolicies#network_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/account_network_policies#network_access DataDatabricksAccountNetworkPolicies#network_access}
   */
   readonly networkAccess?: DataDatabricksAccountNetworkPoliciesItemsEgressNetworkAccess;
 }
 
 export function dataDatabricksAccountNetworkPoliciesItemsEgressToTerraform(struct?: DataDatabricksAccountNetworkPoliciesItemsEgress): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -746,8 +746,8 @@ export function dataDatabricksAccountNetworkPoliciesItemsEgressToTerraform(struc
 
 
 export function dataDatabricksAccountNetworkPoliciesItemsEgressToHclTerraform(struct?: DataDatabricksAccountNetworkPoliciesItemsEgress): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -763,14 +763,14 @@ export function dataDatabricksAccountNetworkPoliciesItemsEgressToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksAccountNetworkPoliciesItemsEgressOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksAccountNetworkPoliciesItemsEgressOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -813,30 +813,30 @@ export class DataDatabricksAccountNetworkPoliciesItemsEgressOutputReference exte
 }
 export interface DataDatabricksAccountNetworkPoliciesItems {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/account_network_policies#network_policy_id DataDatabricksAccountNetworkPolicies#network_policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/account_network_policies#network_policy_id DataDatabricksAccountNetworkPolicies#network_policy_id}
   */
   readonly networkPolicyId: string;
 }
 
 export function dataDatabricksAccountNetworkPoliciesItemsToTerraform(struct?: DataDatabricksAccountNetworkPoliciesItems): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    network_policy_id: cdktf.stringToTerraform(struct!.networkPolicyId),
+    network_policy_id: cdktn.stringToTerraform(struct!.networkPolicyId),
   }
 }
 
 
 export function dataDatabricksAccountNetworkPoliciesItemsToHclTerraform(struct?: DataDatabricksAccountNetworkPoliciesItems): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     network_policy_id: {
-      value: cdktf.stringToHclTerraform(struct!.networkPolicyId),
+      value: cdktn.stringToHclTerraform(struct!.networkPolicyId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -847,7 +847,7 @@ export function dataDatabricksAccountNetworkPoliciesItemsToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksAccountNetworkPoliciesItemsOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksAccountNetworkPoliciesItemsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -856,7 +856,7 @@ export class DataDatabricksAccountNetworkPoliciesItemsOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -906,15 +906,15 @@ export class DataDatabricksAccountNetworkPoliciesItemsOutputReference extends cd
   }
 }
 
-export class DataDatabricksAccountNetworkPoliciesItemsList extends cdktf.ComplexList {
-  public internalValue? : DataDatabricksAccountNetworkPoliciesItems[] | cdktf.IResolvable
+export class DataDatabricksAccountNetworkPoliciesItemsList extends cdktn.ComplexList {
+  public internalValue? : DataDatabricksAccountNetworkPoliciesItems[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -927,9 +927,9 @@ export class DataDatabricksAccountNetworkPoliciesItemsList extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/account_network_policies databricks_account_network_policies}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/account_network_policies databricks_account_network_policies}
 */
-export class DataDatabricksAccountNetworkPolicies extends cdktf.TerraformDataSource {
+export class DataDatabricksAccountNetworkPolicies extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -940,14 +940,14 @@ export class DataDatabricksAccountNetworkPolicies extends cdktf.TerraformDataSou
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataDatabricksAccountNetworkPolicies resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataDatabricksAccountNetworkPolicies resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksAccountNetworkPolicies to import
-  * @param importFromId The id of the existing DataDatabricksAccountNetworkPolicies that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/account_network_policies#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksAccountNetworkPolicies that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/account_network_policies#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksAccountNetworkPolicies to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_account_network_policies", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_account_network_policies", importId: importFromId, provider });
       }
 
   // ===========
@@ -955,7 +955,7 @@ export class DataDatabricksAccountNetworkPolicies extends cdktf.TerraformDataSou
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/account_network_policies databricks_account_network_policies} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/account_network_policies databricks_account_network_policies} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -966,7 +966,7 @@ export class DataDatabricksAccountNetworkPolicies extends cdktf.TerraformDataSou
       terraformResourceType: 'databricks_account_network_policies',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

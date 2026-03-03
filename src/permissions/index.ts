@@ -1,198 +1,208 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/permissions
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/permissions
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface PermissionsConfig extends cdktf.TerraformMetaArguments {
+export interface PermissionsConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/permissions#alert_v2_id Permissions#alert_v2_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/permissions#alert_v2_id Permissions#alert_v2_id}
   */
   readonly alertV2Id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/permissions#app_name Permissions#app_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/permissions#app_name Permissions#app_name}
   */
   readonly appName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/permissions#authorization Permissions#authorization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/permissions#authorization Permissions#authorization}
   */
   readonly authorization?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/permissions#cluster_id Permissions#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/permissions#cluster_id Permissions#cluster_id}
   */
   readonly clusterId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/permissions#cluster_policy_id Permissions#cluster_policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/permissions#cluster_policy_id Permissions#cluster_policy_id}
   */
   readonly clusterPolicyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/permissions#dashboard_id Permissions#dashboard_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/permissions#dashboard_id Permissions#dashboard_id}
   */
   readonly dashboardId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/permissions#database_instance_name Permissions#database_instance_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/permissions#database_instance_name Permissions#database_instance_name}
   */
   readonly databaseInstanceName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/permissions#directory_id Permissions#directory_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/permissions#database_project_name Permissions#database_project_name}
+  */
+  readonly databaseProjectName?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/permissions#directory_id Permissions#directory_id}
   */
   readonly directoryId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/permissions#directory_path Permissions#directory_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/permissions#directory_path Permissions#directory_path}
   */
   readonly directoryPath?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/permissions#experiment_id Permissions#experiment_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/permissions#experiment_id Permissions#experiment_id}
   */
   readonly experimentId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/permissions#id Permissions#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/permissions#id Permissions#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/permissions#instance_pool_id Permissions#instance_pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/permissions#instance_pool_id Permissions#instance_pool_id}
   */
   readonly instancePoolId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/permissions#job_id Permissions#job_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/permissions#job_id Permissions#job_id}
   */
   readonly jobId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/permissions#notebook_id Permissions#notebook_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/permissions#notebook_id Permissions#notebook_id}
   */
   readonly notebookId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/permissions#notebook_path Permissions#notebook_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/permissions#notebook_path Permissions#notebook_path}
   */
   readonly notebookPath?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/permissions#object_type Permissions#object_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/permissions#object_type Permissions#object_type}
   */
   readonly objectType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/permissions#pipeline_id Permissions#pipeline_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/permissions#pipeline_id Permissions#pipeline_id}
   */
   readonly pipelineId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/permissions#registered_model_id Permissions#registered_model_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/permissions#registered_model_id Permissions#registered_model_id}
   */
   readonly registeredModelId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/permissions#repo_id Permissions#repo_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/permissions#repo_id Permissions#repo_id}
   */
   readonly repoId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/permissions#repo_path Permissions#repo_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/permissions#repo_path Permissions#repo_path}
   */
   readonly repoPath?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/permissions#serving_endpoint_id Permissions#serving_endpoint_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/permissions#serving_endpoint_id Permissions#serving_endpoint_id}
   */
   readonly servingEndpointId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/permissions#sql_alert_id Permissions#sql_alert_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/permissions#sql_alert_id Permissions#sql_alert_id}
   */
   readonly sqlAlertId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/permissions#sql_dashboard_id Permissions#sql_dashboard_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/permissions#sql_dashboard_id Permissions#sql_dashboard_id}
   */
   readonly sqlDashboardId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/permissions#sql_endpoint_id Permissions#sql_endpoint_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/permissions#sql_endpoint_id Permissions#sql_endpoint_id}
   */
   readonly sqlEndpointId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/permissions#sql_query_id Permissions#sql_query_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/permissions#sql_query_id Permissions#sql_query_id}
   */
   readonly sqlQueryId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/permissions#vector_search_endpoint_id Permissions#vector_search_endpoint_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/permissions#vector_search_endpoint_id Permissions#vector_search_endpoint_id}
   */
   readonly vectorSearchEndpointId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/permissions#workspace_file_id Permissions#workspace_file_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/permissions#workspace_file_id Permissions#workspace_file_id}
   */
   readonly workspaceFileId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/permissions#workspace_file_path Permissions#workspace_file_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/permissions#workspace_file_path Permissions#workspace_file_path}
   */
   readonly workspaceFilePath?: string;
   /**
   * access_control block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/permissions#access_control Permissions#access_control}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/permissions#access_control Permissions#access_control}
   */
-  readonly accessControl: PermissionsAccessControl[] | cdktf.IResolvable;
+  readonly accessControl: PermissionsAccessControl[] | cdktn.IResolvable;
+  /**
+  * provider_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/permissions#provider_config Permissions#provider_config}
+  */
+  readonly providerConfig?: PermissionsProviderConfig;
 }
 export interface PermissionsAccessControl {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/permissions#group_name Permissions#group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/permissions#group_name Permissions#group_name}
   */
   readonly groupName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/permissions#permission_level Permissions#permission_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/permissions#permission_level Permissions#permission_level}
   */
   readonly permissionLevel?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/permissions#service_principal_name Permissions#service_principal_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/permissions#service_principal_name Permissions#service_principal_name}
   */
   readonly servicePrincipalName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/permissions#user_name Permissions#user_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/permissions#user_name Permissions#user_name}
   */
   readonly userName?: string;
 }
 
-export function permissionsAccessControlToTerraform(struct?: PermissionsAccessControl | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function permissionsAccessControlToTerraform(struct?: PermissionsAccessControl | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    group_name: cdktf.stringToTerraform(struct!.groupName),
-    permission_level: cdktf.stringToTerraform(struct!.permissionLevel),
-    service_principal_name: cdktf.stringToTerraform(struct!.servicePrincipalName),
-    user_name: cdktf.stringToTerraform(struct!.userName),
+    group_name: cdktn.stringToTerraform(struct!.groupName),
+    permission_level: cdktn.stringToTerraform(struct!.permissionLevel),
+    service_principal_name: cdktn.stringToTerraform(struct!.servicePrincipalName),
+    user_name: cdktn.stringToTerraform(struct!.userName),
   }
 }
 
 
-export function permissionsAccessControlToHclTerraform(struct?: PermissionsAccessControl | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function permissionsAccessControlToHclTerraform(struct?: PermissionsAccessControl | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     group_name: {
-      value: cdktf.stringToHclTerraform(struct!.groupName),
+      value: cdktn.stringToHclTerraform(struct!.groupName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     permission_level: {
-      value: cdktf.stringToHclTerraform(struct!.permissionLevel),
+      value: cdktn.stringToHclTerraform(struct!.permissionLevel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     service_principal_name: {
-      value: cdktf.stringToHclTerraform(struct!.servicePrincipalName),
+      value: cdktn.stringToHclTerraform(struct!.servicePrincipalName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     user_name: {
-      value: cdktf.stringToHclTerraform(struct!.userName),
+      value: cdktn.stringToHclTerraform(struct!.userName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -203,9 +213,9 @@ export function permissionsAccessControlToHclTerraform(struct?: PermissionsAcces
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PermissionsAccessControlOutputReference extends cdktf.ComplexObject {
+export class PermissionsAccessControlOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -213,11 +223,11 @@ export class PermissionsAccessControlOutputReference extends cdktf.ComplexObject
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PermissionsAccessControl | cdktf.IResolvable | undefined {
+  public get internalValue(): PermissionsAccessControl | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -242,7 +252,7 @@ export class PermissionsAccessControlOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PermissionsAccessControl | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PermissionsAccessControl | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -251,7 +261,7 @@ export class PermissionsAccessControlOutputReference extends cdktf.ComplexObject
       this._servicePrincipalName = undefined;
       this._userName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -330,15 +340,15 @@ export class PermissionsAccessControlOutputReference extends cdktf.ComplexObject
   }
 }
 
-export class PermissionsAccessControlList extends cdktf.ComplexList {
-  public internalValue? : PermissionsAccessControl[] | cdktf.IResolvable
+export class PermissionsAccessControlList extends cdktn.ComplexList {
+  public internalValue? : PermissionsAccessControl[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -349,11 +359,92 @@ export class PermissionsAccessControlList extends cdktf.ComplexList {
     return new PermissionsAccessControlOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface PermissionsProviderConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/permissions#workspace_id Permissions#workspace_id}
+  */
+  readonly workspaceId: string;
+}
+
+export function permissionsProviderConfigToTerraform(struct?: PermissionsProviderConfigOutputReference | PermissionsProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
+  }
+}
+
+
+export function permissionsProviderConfigToHclTerraform(struct?: PermissionsProviderConfigOutputReference | PermissionsProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    workspace_id: {
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class PermissionsProviderConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): PermissionsProviderConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._workspaceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workspaceId = this._workspaceId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: PermissionsProviderConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._workspaceId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._workspaceId = value.workspaceId;
+    }
+  }
+
+  // workspace_id - computed: false, optional: false, required: true
+  private _workspaceId?: string; 
+  public get workspaceId() {
+    return this.getStringAttribute('workspace_id');
+  }
+  public set workspaceId(value: string) {
+    this._workspaceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workspaceIdInput() {
+    return this._workspaceId;
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/permissions databricks_permissions}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/permissions databricks_permissions}
 */
-export class Permissions extends cdktf.TerraformResource {
+export class Permissions extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -364,14 +455,14 @@ export class Permissions extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Permissions resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Permissions resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Permissions to import
-  * @param importFromId The id of the existing Permissions that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/permissions#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Permissions that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/permissions#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Permissions to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_permissions", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_permissions", importId: importFromId, provider });
       }
 
   // ===========
@@ -379,7 +470,7 @@ export class Permissions extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/permissions databricks_permissions} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/permissions databricks_permissions} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -390,7 +481,7 @@ export class Permissions extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_permissions',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -408,6 +499,7 @@ export class Permissions extends cdktf.TerraformResource {
     this._clusterPolicyId = config.clusterPolicyId;
     this._dashboardId = config.dashboardId;
     this._databaseInstanceName = config.databaseInstanceName;
+    this._databaseProjectName = config.databaseProjectName;
     this._directoryId = config.directoryId;
     this._directoryPath = config.directoryPath;
     this._experimentId = config.experimentId;
@@ -430,6 +522,7 @@ export class Permissions extends cdktf.TerraformResource {
     this._workspaceFileId = config.workspaceFileId;
     this._workspaceFilePath = config.workspaceFilePath;
     this._accessControl.internalValue = config.accessControl;
+    this._providerConfig.internalValue = config.providerConfig;
   }
 
   // ==========
@@ -546,6 +639,22 @@ export class Permissions extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get databaseInstanceNameInput() {
     return this._databaseInstanceName;
+  }
+
+  // database_project_name - computed: false, optional: true, required: false
+  private _databaseProjectName?: string; 
+  public get databaseProjectName() {
+    return this.getStringAttribute('database_project_name');
+  }
+  public set databaseProjectName(value: string) {
+    this._databaseProjectName = value;
+  }
+  public resetDatabaseProjectName() {
+    this._databaseProjectName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get databaseProjectNameInput() {
+    return this._databaseProjectName;
   }
 
   // directory_id - computed: false, optional: true, required: false
@@ -889,12 +998,28 @@ export class Permissions extends cdktf.TerraformResource {
   public get accessControl() {
     return this._accessControl;
   }
-  public putAccessControl(value: PermissionsAccessControl[] | cdktf.IResolvable) {
+  public putAccessControl(value: PermissionsAccessControl[] | cdktn.IResolvable) {
     this._accessControl.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get accessControlInput() {
     return this._accessControl.internalValue;
+  }
+
+  // provider_config - computed: false, optional: true, required: false
+  private _providerConfig = new PermissionsProviderConfigOutputReference(this, "provider_config");
+  public get providerConfig() {
+    return this._providerConfig;
+  }
+  public putProviderConfig(value: PermissionsProviderConfig) {
+    this._providerConfig.internalValue = value;
+  }
+  public resetProviderConfig() {
+    this._providerConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerConfigInput() {
+    return this._providerConfig.internalValue;
   }
 
   // =========
@@ -903,213 +1028,227 @@ export class Permissions extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      alert_v2_id: cdktf.stringToTerraform(this._alertV2Id),
-      app_name: cdktf.stringToTerraform(this._appName),
-      authorization: cdktf.stringToTerraform(this._authorization),
-      cluster_id: cdktf.stringToTerraform(this._clusterId),
-      cluster_policy_id: cdktf.stringToTerraform(this._clusterPolicyId),
-      dashboard_id: cdktf.stringToTerraform(this._dashboardId),
-      database_instance_name: cdktf.stringToTerraform(this._databaseInstanceName),
-      directory_id: cdktf.stringToTerraform(this._directoryId),
-      directory_path: cdktf.stringToTerraform(this._directoryPath),
-      experiment_id: cdktf.stringToTerraform(this._experimentId),
-      id: cdktf.stringToTerraform(this._id),
-      instance_pool_id: cdktf.stringToTerraform(this._instancePoolId),
-      job_id: cdktf.stringToTerraform(this._jobId),
-      notebook_id: cdktf.stringToTerraform(this._notebookId),
-      notebook_path: cdktf.stringToTerraform(this._notebookPath),
-      object_type: cdktf.stringToTerraform(this._objectType),
-      pipeline_id: cdktf.stringToTerraform(this._pipelineId),
-      registered_model_id: cdktf.stringToTerraform(this._registeredModelId),
-      repo_id: cdktf.stringToTerraform(this._repoId),
-      repo_path: cdktf.stringToTerraform(this._repoPath),
-      serving_endpoint_id: cdktf.stringToTerraform(this._servingEndpointId),
-      sql_alert_id: cdktf.stringToTerraform(this._sqlAlertId),
-      sql_dashboard_id: cdktf.stringToTerraform(this._sqlDashboardId),
-      sql_endpoint_id: cdktf.stringToTerraform(this._sqlEndpointId),
-      sql_query_id: cdktf.stringToTerraform(this._sqlQueryId),
-      vector_search_endpoint_id: cdktf.stringToTerraform(this._vectorSearchEndpointId),
-      workspace_file_id: cdktf.stringToTerraform(this._workspaceFileId),
-      workspace_file_path: cdktf.stringToTerraform(this._workspaceFilePath),
-      access_control: cdktf.listMapper(permissionsAccessControlToTerraform, true)(this._accessControl.internalValue),
+      alert_v2_id: cdktn.stringToTerraform(this._alertV2Id),
+      app_name: cdktn.stringToTerraform(this._appName),
+      authorization: cdktn.stringToTerraform(this._authorization),
+      cluster_id: cdktn.stringToTerraform(this._clusterId),
+      cluster_policy_id: cdktn.stringToTerraform(this._clusterPolicyId),
+      dashboard_id: cdktn.stringToTerraform(this._dashboardId),
+      database_instance_name: cdktn.stringToTerraform(this._databaseInstanceName),
+      database_project_name: cdktn.stringToTerraform(this._databaseProjectName),
+      directory_id: cdktn.stringToTerraform(this._directoryId),
+      directory_path: cdktn.stringToTerraform(this._directoryPath),
+      experiment_id: cdktn.stringToTerraform(this._experimentId),
+      id: cdktn.stringToTerraform(this._id),
+      instance_pool_id: cdktn.stringToTerraform(this._instancePoolId),
+      job_id: cdktn.stringToTerraform(this._jobId),
+      notebook_id: cdktn.stringToTerraform(this._notebookId),
+      notebook_path: cdktn.stringToTerraform(this._notebookPath),
+      object_type: cdktn.stringToTerraform(this._objectType),
+      pipeline_id: cdktn.stringToTerraform(this._pipelineId),
+      registered_model_id: cdktn.stringToTerraform(this._registeredModelId),
+      repo_id: cdktn.stringToTerraform(this._repoId),
+      repo_path: cdktn.stringToTerraform(this._repoPath),
+      serving_endpoint_id: cdktn.stringToTerraform(this._servingEndpointId),
+      sql_alert_id: cdktn.stringToTerraform(this._sqlAlertId),
+      sql_dashboard_id: cdktn.stringToTerraform(this._sqlDashboardId),
+      sql_endpoint_id: cdktn.stringToTerraform(this._sqlEndpointId),
+      sql_query_id: cdktn.stringToTerraform(this._sqlQueryId),
+      vector_search_endpoint_id: cdktn.stringToTerraform(this._vectorSearchEndpointId),
+      workspace_file_id: cdktn.stringToTerraform(this._workspaceFileId),
+      workspace_file_path: cdktn.stringToTerraform(this._workspaceFilePath),
+      access_control: cdktn.listMapper(permissionsAccessControlToTerraform, true)(this._accessControl.internalValue),
+      provider_config: permissionsProviderConfigToTerraform(this._providerConfig.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       alert_v2_id: {
-        value: cdktf.stringToHclTerraform(this._alertV2Id),
+        value: cdktn.stringToHclTerraform(this._alertV2Id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       app_name: {
-        value: cdktf.stringToHclTerraform(this._appName),
+        value: cdktn.stringToHclTerraform(this._appName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       authorization: {
-        value: cdktf.stringToHclTerraform(this._authorization),
+        value: cdktn.stringToHclTerraform(this._authorization),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cluster_id: {
-        value: cdktf.stringToHclTerraform(this._clusterId),
+        value: cdktn.stringToHclTerraform(this._clusterId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cluster_policy_id: {
-        value: cdktf.stringToHclTerraform(this._clusterPolicyId),
+        value: cdktn.stringToHclTerraform(this._clusterPolicyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       dashboard_id: {
-        value: cdktf.stringToHclTerraform(this._dashboardId),
+        value: cdktn.stringToHclTerraform(this._dashboardId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       database_instance_name: {
-        value: cdktf.stringToHclTerraform(this._databaseInstanceName),
+        value: cdktn.stringToHclTerraform(this._databaseInstanceName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      database_project_name: {
+        value: cdktn.stringToHclTerraform(this._databaseProjectName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       directory_id: {
-        value: cdktf.stringToHclTerraform(this._directoryId),
+        value: cdktn.stringToHclTerraform(this._directoryId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       directory_path: {
-        value: cdktf.stringToHclTerraform(this._directoryPath),
+        value: cdktn.stringToHclTerraform(this._directoryPath),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       experiment_id: {
-        value: cdktf.stringToHclTerraform(this._experimentId),
+        value: cdktn.stringToHclTerraform(this._experimentId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance_pool_id: {
-        value: cdktf.stringToHclTerraform(this._instancePoolId),
+        value: cdktn.stringToHclTerraform(this._instancePoolId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       job_id: {
-        value: cdktf.stringToHclTerraform(this._jobId),
+        value: cdktn.stringToHclTerraform(this._jobId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       notebook_id: {
-        value: cdktf.stringToHclTerraform(this._notebookId),
+        value: cdktn.stringToHclTerraform(this._notebookId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       notebook_path: {
-        value: cdktf.stringToHclTerraform(this._notebookPath),
+        value: cdktn.stringToHclTerraform(this._notebookPath),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       object_type: {
-        value: cdktf.stringToHclTerraform(this._objectType),
+        value: cdktn.stringToHclTerraform(this._objectType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       pipeline_id: {
-        value: cdktf.stringToHclTerraform(this._pipelineId),
+        value: cdktn.stringToHclTerraform(this._pipelineId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       registered_model_id: {
-        value: cdktf.stringToHclTerraform(this._registeredModelId),
+        value: cdktn.stringToHclTerraform(this._registeredModelId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       repo_id: {
-        value: cdktf.stringToHclTerraform(this._repoId),
+        value: cdktn.stringToHclTerraform(this._repoId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       repo_path: {
-        value: cdktf.stringToHclTerraform(this._repoPath),
+        value: cdktn.stringToHclTerraform(this._repoPath),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       serving_endpoint_id: {
-        value: cdktf.stringToHclTerraform(this._servingEndpointId),
+        value: cdktn.stringToHclTerraform(this._servingEndpointId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sql_alert_id: {
-        value: cdktf.stringToHclTerraform(this._sqlAlertId),
+        value: cdktn.stringToHclTerraform(this._sqlAlertId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sql_dashboard_id: {
-        value: cdktf.stringToHclTerraform(this._sqlDashboardId),
+        value: cdktn.stringToHclTerraform(this._sqlDashboardId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sql_endpoint_id: {
-        value: cdktf.stringToHclTerraform(this._sqlEndpointId),
+        value: cdktn.stringToHclTerraform(this._sqlEndpointId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sql_query_id: {
-        value: cdktf.stringToHclTerraform(this._sqlQueryId),
+        value: cdktn.stringToHclTerraform(this._sqlQueryId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       vector_search_endpoint_id: {
-        value: cdktf.stringToHclTerraform(this._vectorSearchEndpointId),
+        value: cdktn.stringToHclTerraform(this._vectorSearchEndpointId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       workspace_file_id: {
-        value: cdktf.stringToHclTerraform(this._workspaceFileId),
+        value: cdktn.stringToHclTerraform(this._workspaceFileId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       workspace_file_path: {
-        value: cdktf.stringToHclTerraform(this._workspaceFilePath),
+        value: cdktn.stringToHclTerraform(this._workspaceFilePath),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       access_control: {
-        value: cdktf.listMapperHcl(permissionsAccessControlToHclTerraform, true)(this._accessControl.internalValue),
+        value: cdktn.listMapperHcl(permissionsAccessControlToHclTerraform, true)(this._accessControl.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "PermissionsAccessControlList",
+      },
+      provider_config: {
+        value: permissionsProviderConfigToHclTerraform(this._providerConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "PermissionsProviderConfigList",
       },
     };
 

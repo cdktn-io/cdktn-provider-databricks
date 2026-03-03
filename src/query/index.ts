@@ -1,105 +1,111 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/query
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/query
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface QueryConfig extends cdktf.TerraformMetaArguments {
+export interface QueryConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/query#apply_auto_limit Query#apply_auto_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/query#apply_auto_limit Query#apply_auto_limit}
   */
-  readonly applyAutoLimit?: boolean | cdktf.IResolvable;
+  readonly applyAutoLimit?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/query#catalog Query#catalog}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/query#catalog Query#catalog}
   */
   readonly catalog?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/query#description Query#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/query#description Query#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/query#display_name Query#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/query#display_name Query#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/query#owner_user_name Query#owner_user_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/query#owner_user_name Query#owner_user_name}
   */
   readonly ownerUserName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/query#parent_path Query#parent_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/query#parent_path Query#parent_path}
   */
   readonly parentPath?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/query#query_text Query#query_text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/query#query_text Query#query_text}
   */
   readonly queryText: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/query#run_as_mode Query#run_as_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/query#run_as_mode Query#run_as_mode}
   */
   readonly runAsMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/query#schema Query#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/query#schema Query#schema}
   */
   readonly schema?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/query#tags Query#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/query#tags Query#tags}
   */
   readonly tags?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/query#warehouse_id Query#warehouse_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/query#warehouse_id Query#warehouse_id}
   */
   readonly warehouseId: string;
   /**
   * parameter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/query#parameter Query#parameter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/query#parameter Query#parameter}
   */
-  readonly parameter?: QueryParameter[] | cdktf.IResolvable;
+  readonly parameter?: QueryParameter[] | cdktn.IResolvable;
+  /**
+  * provider_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/query#provider_config Query#provider_config}
+  */
+  readonly providerConfig?: QueryProviderConfig;
 }
 export interface QueryParameterDateRangeValueDateRangeValue {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/query#end Query#end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/query#end Query#end}
   */
   readonly end: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/query#start Query#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/query#start Query#start}
   */
   readonly start: string;
 }
 
 export function queryParameterDateRangeValueDateRangeValueToTerraform(struct?: QueryParameterDateRangeValueDateRangeValueOutputReference | QueryParameterDateRangeValueDateRangeValue): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    end: cdktf.stringToTerraform(struct!.end),
-    start: cdktf.stringToTerraform(struct!.start),
+    end: cdktn.stringToTerraform(struct!.end),
+    start: cdktn.stringToTerraform(struct!.start),
   }
 }
 
 
 export function queryParameterDateRangeValueDateRangeValueToHclTerraform(struct?: QueryParameterDateRangeValueDateRangeValueOutputReference | QueryParameterDateRangeValueDateRangeValue): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     end: {
-      value: cdktf.stringToHclTerraform(struct!.end),
+      value: cdktn.stringToHclTerraform(struct!.end),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     start: {
-      value: cdktf.stringToHclTerraform(struct!.start),
+      value: cdktn.stringToHclTerraform(struct!.start),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -110,14 +116,14 @@ export function queryParameterDateRangeValueDateRangeValueToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QueryParameterDateRangeValueDateRangeValueOutputReference extends cdktf.ComplexObject {
+export class QueryParameterDateRangeValueDateRangeValueOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -176,59 +182,59 @@ export class QueryParameterDateRangeValueDateRangeValueOutputReference extends c
 }
 export interface QueryParameterDateRangeValue {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/query#dynamic_date_range_value Query#dynamic_date_range_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/query#dynamic_date_range_value Query#dynamic_date_range_value}
   */
   readonly dynamicDateRangeValue?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/query#precision Query#precision}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/query#precision Query#precision}
   */
   readonly precision?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/query#start_day_of_week Query#start_day_of_week}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/query#start_day_of_week Query#start_day_of_week}
   */
   readonly startDayOfWeek?: number;
   /**
   * date_range_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/query#date_range_value Query#date_range_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/query#date_range_value Query#date_range_value}
   */
   readonly dateRangeValue?: QueryParameterDateRangeValueDateRangeValue;
 }
 
 export function queryParameterDateRangeValueToTerraform(struct?: QueryParameterDateRangeValueOutputReference | QueryParameterDateRangeValue): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    dynamic_date_range_value: cdktf.stringToTerraform(struct!.dynamicDateRangeValue),
-    precision: cdktf.stringToTerraform(struct!.precision),
-    start_day_of_week: cdktf.numberToTerraform(struct!.startDayOfWeek),
+    dynamic_date_range_value: cdktn.stringToTerraform(struct!.dynamicDateRangeValue),
+    precision: cdktn.stringToTerraform(struct!.precision),
+    start_day_of_week: cdktn.numberToTerraform(struct!.startDayOfWeek),
     date_range_value: queryParameterDateRangeValueDateRangeValueToTerraform(struct!.dateRangeValue),
   }
 }
 
 
 export function queryParameterDateRangeValueToHclTerraform(struct?: QueryParameterDateRangeValueOutputReference | QueryParameterDateRangeValue): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     dynamic_date_range_value: {
-      value: cdktf.stringToHclTerraform(struct!.dynamicDateRangeValue),
+      value: cdktn.stringToHclTerraform(struct!.dynamicDateRangeValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     precision: {
-      value: cdktf.stringToHclTerraform(struct!.precision),
+      value: cdktn.stringToHclTerraform(struct!.precision),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     start_day_of_week: {
-      value: cdktf.numberToHclTerraform(struct!.startDayOfWeek),
+      value: cdktn.numberToHclTerraform(struct!.startDayOfWeek),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -245,14 +251,14 @@ export function queryParameterDateRangeValueToHclTerraform(struct?: QueryParamet
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QueryParameterDateRangeValueOutputReference extends cdktf.ComplexObject {
+export class QueryParameterDateRangeValueOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -361,52 +367,52 @@ export class QueryParameterDateRangeValueOutputReference extends cdktf.ComplexOb
 }
 export interface QueryParameterDateValue {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/query#date_value Query#date_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/query#date_value Query#date_value}
   */
   readonly dateValue?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/query#dynamic_date_value Query#dynamic_date_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/query#dynamic_date_value Query#dynamic_date_value}
   */
   readonly dynamicDateValue?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/query#precision Query#precision}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/query#precision Query#precision}
   */
   readonly precision?: string;
 }
 
 export function queryParameterDateValueToTerraform(struct?: QueryParameterDateValueOutputReference | QueryParameterDateValue): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    date_value: cdktf.stringToTerraform(struct!.dateValue),
-    dynamic_date_value: cdktf.stringToTerraform(struct!.dynamicDateValue),
-    precision: cdktf.stringToTerraform(struct!.precision),
+    date_value: cdktn.stringToTerraform(struct!.dateValue),
+    dynamic_date_value: cdktn.stringToTerraform(struct!.dynamicDateValue),
+    precision: cdktn.stringToTerraform(struct!.precision),
   }
 }
 
 
 export function queryParameterDateValueToHclTerraform(struct?: QueryParameterDateValueOutputReference | QueryParameterDateValue): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     date_value: {
-      value: cdktf.stringToHclTerraform(struct!.dateValue),
+      value: cdktn.stringToHclTerraform(struct!.dateValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     dynamic_date_value: {
-      value: cdktf.stringToHclTerraform(struct!.dynamicDateValue),
+      value: cdktn.stringToHclTerraform(struct!.dynamicDateValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     precision: {
-      value: cdktf.stringToHclTerraform(struct!.precision),
+      value: cdktn.stringToHclTerraform(struct!.precision),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -417,14 +423,14 @@ export function queryParameterDateValueToHclTerraform(struct?: QueryParameterDat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QueryParameterDateValueOutputReference extends cdktf.ComplexObject {
+export class QueryParameterDateValueOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -511,52 +517,52 @@ export class QueryParameterDateValueOutputReference extends cdktf.ComplexObject 
 }
 export interface QueryParameterEnumValueMultiValuesOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/query#prefix Query#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/query#prefix Query#prefix}
   */
   readonly prefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/query#separator Query#separator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/query#separator Query#separator}
   */
   readonly separator?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/query#suffix Query#suffix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/query#suffix Query#suffix}
   */
   readonly suffix?: string;
 }
 
 export function queryParameterEnumValueMultiValuesOptionsToTerraform(struct?: QueryParameterEnumValueMultiValuesOptionsOutputReference | QueryParameterEnumValueMultiValuesOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    prefix: cdktf.stringToTerraform(struct!.prefix),
-    separator: cdktf.stringToTerraform(struct!.separator),
-    suffix: cdktf.stringToTerraform(struct!.suffix),
+    prefix: cdktn.stringToTerraform(struct!.prefix),
+    separator: cdktn.stringToTerraform(struct!.separator),
+    suffix: cdktn.stringToTerraform(struct!.suffix),
   }
 }
 
 
 export function queryParameterEnumValueMultiValuesOptionsToHclTerraform(struct?: QueryParameterEnumValueMultiValuesOptionsOutputReference | QueryParameterEnumValueMultiValuesOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     prefix: {
-      value: cdktf.stringToHclTerraform(struct!.prefix),
+      value: cdktn.stringToHclTerraform(struct!.prefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     separator: {
-      value: cdktf.stringToHclTerraform(struct!.separator),
+      value: cdktn.stringToHclTerraform(struct!.separator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     suffix: {
-      value: cdktf.stringToHclTerraform(struct!.suffix),
+      value: cdktn.stringToHclTerraform(struct!.suffix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -567,14 +573,14 @@ export function queryParameterEnumValueMultiValuesOptionsToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QueryParameterEnumValueMultiValuesOptionsOutputReference extends cdktf.ComplexObject {
+export class QueryParameterEnumValueMultiValuesOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -661,48 +667,48 @@ export class QueryParameterEnumValueMultiValuesOptionsOutputReference extends cd
 }
 export interface QueryParameterEnumValue {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/query#enum_options Query#enum_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/query#enum_options Query#enum_options}
   */
   readonly enumOptions?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/query#values Query#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/query#values Query#values}
   */
   readonly values?: string[];
   /**
   * multi_values_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/query#multi_values_options Query#multi_values_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/query#multi_values_options Query#multi_values_options}
   */
   readonly multiValuesOptions?: QueryParameterEnumValueMultiValuesOptions;
 }
 
 export function queryParameterEnumValueToTerraform(struct?: QueryParameterEnumValueOutputReference | QueryParameterEnumValue): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enum_options: cdktf.stringToTerraform(struct!.enumOptions),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    enum_options: cdktn.stringToTerraform(struct!.enumOptions),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
     multi_values_options: queryParameterEnumValueMultiValuesOptionsToTerraform(struct!.multiValuesOptions),
   }
 }
 
 
 export function queryParameterEnumValueToHclTerraform(struct?: QueryParameterEnumValueOutputReference | QueryParameterEnumValue): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enum_options: {
-      value: cdktf.stringToHclTerraform(struct!.enumOptions),
+      value: cdktn.stringToHclTerraform(struct!.enumOptions),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -719,14 +725,14 @@ export function queryParameterEnumValueToHclTerraform(struct?: QueryParameterEnu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QueryParameterEnumValueOutputReference extends cdktf.ComplexObject {
+export class QueryParameterEnumValueOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -813,30 +819,30 @@ export class QueryParameterEnumValueOutputReference extends cdktf.ComplexObject 
 }
 export interface QueryParameterNumericValue {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/query#value Query#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/query#value Query#value}
   */
   readonly value: number;
 }
 
 export function queryParameterNumericValueToTerraform(struct?: QueryParameterNumericValueOutputReference | QueryParameterNumericValue): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    value: cdktf.numberToTerraform(struct!.value),
+    value: cdktn.numberToTerraform(struct!.value),
   }
 }
 
 
 export function queryParameterNumericValueToHclTerraform(struct?: QueryParameterNumericValueOutputReference | QueryParameterNumericValue): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     value: {
-      value: cdktf.numberToHclTerraform(struct!.value),
+      value: cdktn.numberToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -847,14 +853,14 @@ export function queryParameterNumericValueToHclTerraform(struct?: QueryParameter
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QueryParameterNumericValueOutputReference extends cdktf.ComplexObject {
+export class QueryParameterNumericValueOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -894,52 +900,52 @@ export class QueryParameterNumericValueOutputReference extends cdktf.ComplexObje
 }
 export interface QueryParameterQueryBackedValueMultiValuesOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/query#prefix Query#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/query#prefix Query#prefix}
   */
   readonly prefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/query#separator Query#separator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/query#separator Query#separator}
   */
   readonly separator?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/query#suffix Query#suffix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/query#suffix Query#suffix}
   */
   readonly suffix?: string;
 }
 
 export function queryParameterQueryBackedValueMultiValuesOptionsToTerraform(struct?: QueryParameterQueryBackedValueMultiValuesOptionsOutputReference | QueryParameterQueryBackedValueMultiValuesOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    prefix: cdktf.stringToTerraform(struct!.prefix),
-    separator: cdktf.stringToTerraform(struct!.separator),
-    suffix: cdktf.stringToTerraform(struct!.suffix),
+    prefix: cdktn.stringToTerraform(struct!.prefix),
+    separator: cdktn.stringToTerraform(struct!.separator),
+    suffix: cdktn.stringToTerraform(struct!.suffix),
   }
 }
 
 
 export function queryParameterQueryBackedValueMultiValuesOptionsToHclTerraform(struct?: QueryParameterQueryBackedValueMultiValuesOptionsOutputReference | QueryParameterQueryBackedValueMultiValuesOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     prefix: {
-      value: cdktf.stringToHclTerraform(struct!.prefix),
+      value: cdktn.stringToHclTerraform(struct!.prefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     separator: {
-      value: cdktf.stringToHclTerraform(struct!.separator),
+      value: cdktn.stringToHclTerraform(struct!.separator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     suffix: {
-      value: cdktf.stringToHclTerraform(struct!.suffix),
+      value: cdktn.stringToHclTerraform(struct!.suffix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -950,14 +956,14 @@ export function queryParameterQueryBackedValueMultiValuesOptionsToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QueryParameterQueryBackedValueMultiValuesOptionsOutputReference extends cdktf.ComplexObject {
+export class QueryParameterQueryBackedValueMultiValuesOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1044,48 +1050,48 @@ export class QueryParameterQueryBackedValueMultiValuesOptionsOutputReference ext
 }
 export interface QueryParameterQueryBackedValue {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/query#query_id Query#query_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/query#query_id Query#query_id}
   */
   readonly queryId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/query#values Query#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/query#values Query#values}
   */
   readonly values?: string[];
   /**
   * multi_values_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/query#multi_values_options Query#multi_values_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/query#multi_values_options Query#multi_values_options}
   */
   readonly multiValuesOptions?: QueryParameterQueryBackedValueMultiValuesOptions;
 }
 
 export function queryParameterQueryBackedValueToTerraform(struct?: QueryParameterQueryBackedValueOutputReference | QueryParameterQueryBackedValue): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    query_id: cdktf.stringToTerraform(struct!.queryId),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    query_id: cdktn.stringToTerraform(struct!.queryId),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
     multi_values_options: queryParameterQueryBackedValueMultiValuesOptionsToTerraform(struct!.multiValuesOptions),
   }
 }
 
 
 export function queryParameterQueryBackedValueToHclTerraform(struct?: QueryParameterQueryBackedValueOutputReference | QueryParameterQueryBackedValue): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     query_id: {
-      value: cdktf.stringToHclTerraform(struct!.queryId),
+      value: cdktn.stringToHclTerraform(struct!.queryId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -1102,14 +1108,14 @@ export function queryParameterQueryBackedValueToHclTerraform(struct?: QueryParam
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QueryParameterQueryBackedValueOutputReference extends cdktf.ComplexObject {
+export class QueryParameterQueryBackedValueOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1193,30 +1199,30 @@ export class QueryParameterQueryBackedValueOutputReference extends cdktf.Complex
 }
 export interface QueryParameterTextValue {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/query#value Query#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/query#value Query#value}
   */
   readonly value: string;
 }
 
 export function queryParameterTextValueToTerraform(struct?: QueryParameterTextValueOutputReference | QueryParameterTextValue): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    value: cdktf.stringToTerraform(struct!.value),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
 export function queryParameterTextValueToHclTerraform(struct?: QueryParameterTextValueOutputReference | QueryParameterTextValue): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1227,14 +1233,14 @@ export function queryParameterTextValueToHclTerraform(struct?: QueryParameterTex
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QueryParameterTextValueOutputReference extends cdktf.ComplexObject {
+export class QueryParameterTextValueOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1274,59 +1280,59 @@ export class QueryParameterTextValueOutputReference extends cdktf.ComplexObject 
 }
 export interface QueryParameter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/query#name Query#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/query#name Query#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/query#title Query#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/query#title Query#title}
   */
   readonly title?: string;
   /**
   * date_range_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/query#date_range_value Query#date_range_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/query#date_range_value Query#date_range_value}
   */
   readonly dateRangeValue?: QueryParameterDateRangeValue;
   /**
   * date_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/query#date_value Query#date_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/query#date_value Query#date_value}
   */
   readonly dateValue?: QueryParameterDateValue;
   /**
   * enum_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/query#enum_value Query#enum_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/query#enum_value Query#enum_value}
   */
   readonly enumValue?: QueryParameterEnumValue;
   /**
   * numeric_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/query#numeric_value Query#numeric_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/query#numeric_value Query#numeric_value}
   */
   readonly numericValue?: QueryParameterNumericValue;
   /**
   * query_backed_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/query#query_backed_value Query#query_backed_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/query#query_backed_value Query#query_backed_value}
   */
   readonly queryBackedValue?: QueryParameterQueryBackedValue;
   /**
   * text_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/query#text_value Query#text_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/query#text_value Query#text_value}
   */
   readonly textValue?: QueryParameterTextValue;
 }
 
-export function queryParameterToTerraform(struct?: QueryParameter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function queryParameterToTerraform(struct?: QueryParameter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    title: cdktf.stringToTerraform(struct!.title),
+    name: cdktn.stringToTerraform(struct!.name),
+    title: cdktn.stringToTerraform(struct!.title),
     date_range_value: queryParameterDateRangeValueToTerraform(struct!.dateRangeValue),
     date_value: queryParameterDateValueToTerraform(struct!.dateValue),
     enum_value: queryParameterEnumValueToTerraform(struct!.enumValue),
@@ -1337,20 +1343,20 @@ export function queryParameterToTerraform(struct?: QueryParameter | cdktf.IResol
 }
 
 
-export function queryParameterToHclTerraform(struct?: QueryParameter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function queryParameterToHclTerraform(struct?: QueryParameter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title: {
-      value: cdktf.stringToHclTerraform(struct!.title),
+      value: cdktn.stringToHclTerraform(struct!.title),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1397,9 +1403,9 @@ export function queryParameterToHclTerraform(struct?: QueryParameter | cdktf.IRe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QueryParameterOutputReference extends cdktf.ComplexObject {
+export class QueryParameterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1407,11 +1413,11 @@ export class QueryParameterOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): QueryParameter | cdktf.IResolvable | undefined {
+  public get internalValue(): QueryParameter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1452,7 +1458,7 @@ export class QueryParameterOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: QueryParameter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: QueryParameter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1465,7 +1471,7 @@ export class QueryParameterOutputReference extends cdktf.ComplexObject {
       this._queryBackedValue.internalValue = undefined;
       this._textValue.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1609,15 +1615,15 @@ export class QueryParameterOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class QueryParameterList extends cdktf.ComplexList {
-  public internalValue? : QueryParameter[] | cdktf.IResolvable
+export class QueryParameterList extends cdktn.ComplexList {
+  public internalValue? : QueryParameter[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1628,11 +1634,92 @@ export class QueryParameterList extends cdktf.ComplexList {
     return new QueryParameterOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface QueryProviderConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/query#workspace_id Query#workspace_id}
+  */
+  readonly workspaceId: string;
+}
+
+export function queryProviderConfigToTerraform(struct?: QueryProviderConfigOutputReference | QueryProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
+  }
+}
+
+
+export function queryProviderConfigToHclTerraform(struct?: QueryProviderConfigOutputReference | QueryProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    workspace_id: {
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class QueryProviderConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): QueryProviderConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._workspaceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workspaceId = this._workspaceId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: QueryProviderConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._workspaceId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._workspaceId = value.workspaceId;
+    }
+  }
+
+  // workspace_id - computed: false, optional: false, required: true
+  private _workspaceId?: string; 
+  public get workspaceId() {
+    return this.getStringAttribute('workspace_id');
+  }
+  public set workspaceId(value: string) {
+    this._workspaceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workspaceIdInput() {
+    return this._workspaceId;
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/query databricks_query}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/query databricks_query}
 */
-export class Query extends cdktf.TerraformResource {
+export class Query extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1643,14 +1730,14 @@ export class Query extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Query resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Query resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Query to import
-  * @param importFromId The id of the existing Query that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/query#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Query that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/query#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Query to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_query", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_query", importId: importFromId, provider });
       }
 
   // ===========
@@ -1658,7 +1745,7 @@ export class Query extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/query databricks_query} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/query databricks_query} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1669,7 +1756,7 @@ export class Query extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_query',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -1692,6 +1779,7 @@ export class Query extends cdktf.TerraformResource {
     this._tags = config.tags;
     this._warehouseId = config.warehouseId;
     this._parameter.internalValue = config.parameter;
+    this._providerConfig.internalValue = config.providerConfig;
   }
 
   // ==========
@@ -1699,11 +1787,11 @@ export class Query extends cdktf.TerraformResource {
   // ==========
 
   // apply_auto_limit - computed: false, optional: true, required: false
-  private _applyAutoLimit?: boolean | cdktf.IResolvable; 
+  private _applyAutoLimit?: boolean | cdktn.IResolvable; 
   public get applyAutoLimit() {
     return this.getBooleanAttribute('apply_auto_limit');
   }
-  public set applyAutoLimit(value: boolean | cdktf.IResolvable) {
+  public set applyAutoLimit(value: boolean | cdktn.IResolvable) {
     this._applyAutoLimit = value;
   }
   public resetApplyAutoLimit() {
@@ -1895,7 +1983,7 @@ export class Query extends cdktf.TerraformResource {
   public get parameter() {
     return this._parameter;
   }
-  public putParameter(value: QueryParameter[] | cdktf.IResolvable) {
+  public putParameter(value: QueryParameter[] | cdktn.IResolvable) {
     this._parameter.internalValue = value;
   }
   public resetParameter() {
@@ -1906,100 +1994,123 @@ export class Query extends cdktf.TerraformResource {
     return this._parameter.internalValue;
   }
 
+  // provider_config - computed: false, optional: true, required: false
+  private _providerConfig = new QueryProviderConfigOutputReference(this, "provider_config");
+  public get providerConfig() {
+    return this._providerConfig;
+  }
+  public putProviderConfig(value: QueryProviderConfig) {
+    this._providerConfig.internalValue = value;
+  }
+  public resetProviderConfig() {
+    this._providerConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerConfigInput() {
+    return this._providerConfig.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      apply_auto_limit: cdktf.booleanToTerraform(this._applyAutoLimit),
-      catalog: cdktf.stringToTerraform(this._catalog),
-      description: cdktf.stringToTerraform(this._description),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      owner_user_name: cdktf.stringToTerraform(this._ownerUserName),
-      parent_path: cdktf.stringToTerraform(this._parentPath),
-      query_text: cdktf.stringToTerraform(this._queryText),
-      run_as_mode: cdktf.stringToTerraform(this._runAsMode),
-      schema: cdktf.stringToTerraform(this._schema),
-      tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),
-      warehouse_id: cdktf.stringToTerraform(this._warehouseId),
-      parameter: cdktf.listMapper(queryParameterToTerraform, true)(this._parameter.internalValue),
+      apply_auto_limit: cdktn.booleanToTerraform(this._applyAutoLimit),
+      catalog: cdktn.stringToTerraform(this._catalog),
+      description: cdktn.stringToTerraform(this._description),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      owner_user_name: cdktn.stringToTerraform(this._ownerUserName),
+      parent_path: cdktn.stringToTerraform(this._parentPath),
+      query_text: cdktn.stringToTerraform(this._queryText),
+      run_as_mode: cdktn.stringToTerraform(this._runAsMode),
+      schema: cdktn.stringToTerraform(this._schema),
+      tags: cdktn.listMapper(cdktn.stringToTerraform, false)(this._tags),
+      warehouse_id: cdktn.stringToTerraform(this._warehouseId),
+      parameter: cdktn.listMapper(queryParameterToTerraform, true)(this._parameter.internalValue),
+      provider_config: queryProviderConfigToTerraform(this._providerConfig.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       apply_auto_limit: {
-        value: cdktf.booleanToHclTerraform(this._applyAutoLimit),
+        value: cdktn.booleanToHclTerraform(this._applyAutoLimit),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       catalog: {
-        value: cdktf.stringToHclTerraform(this._catalog),
+        value: cdktn.stringToHclTerraform(this._catalog),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       owner_user_name: {
-        value: cdktf.stringToHclTerraform(this._ownerUserName),
+        value: cdktn.stringToHclTerraform(this._ownerUserName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parent_path: {
-        value: cdktf.stringToHclTerraform(this._parentPath),
+        value: cdktn.stringToHclTerraform(this._parentPath),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       query_text: {
-        value: cdktf.stringToHclTerraform(this._queryText),
+        value: cdktn.stringToHclTerraform(this._queryText),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       run_as_mode: {
-        value: cdktf.stringToHclTerraform(this._runAsMode),
+        value: cdktn.stringToHclTerraform(this._runAsMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       schema: {
-        value: cdktf.stringToHclTerraform(this._schema),
+        value: cdktn.stringToHclTerraform(this._schema),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tags),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._tags),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       warehouse_id: {
-        value: cdktf.stringToHclTerraform(this._warehouseId),
+        value: cdktn.stringToHclTerraform(this._warehouseId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parameter: {
-        value: cdktf.listMapperHcl(queryParameterToHclTerraform, true)(this._parameter.internalValue),
+        value: cdktn.listMapperHcl(queryParameterToHclTerraform, true)(this._parameter.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "QueryParameterList",
+      },
+      provider_config: {
+        value: queryProviderConfigToHclTerraform(this._providerConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "QueryProviderConfigList",
       },
     };
 

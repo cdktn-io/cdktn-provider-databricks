@@ -1,27 +1,27 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/workspace_network_option
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/workspace_network_option
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataDatabricksWorkspaceNetworkOptionConfig extends cdktf.TerraformMetaArguments {
+export interface DataDatabricksWorkspaceNetworkOptionConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/workspace_network_option#workspace_id DataDatabricksWorkspaceNetworkOption#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/workspace_network_option#workspace_id DataDatabricksWorkspaceNetworkOption#workspace_id}
   */
   readonly workspaceId: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/workspace_network_option databricks_workspace_network_option}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/workspace_network_option databricks_workspace_network_option}
 */
-export class DataDatabricksWorkspaceNetworkOption extends cdktf.TerraformDataSource {
+export class DataDatabricksWorkspaceNetworkOption extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -32,14 +32,14 @@ export class DataDatabricksWorkspaceNetworkOption extends cdktf.TerraformDataSou
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataDatabricksWorkspaceNetworkOption resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataDatabricksWorkspaceNetworkOption resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksWorkspaceNetworkOption to import
-  * @param importFromId The id of the existing DataDatabricksWorkspaceNetworkOption that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/workspace_network_option#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksWorkspaceNetworkOption that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/workspace_network_option#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksWorkspaceNetworkOption to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_workspace_network_option", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_workspace_network_option", importId: importFromId, provider });
       }
 
   // ===========
@@ -47,7 +47,7 @@ export class DataDatabricksWorkspaceNetworkOption extends cdktf.TerraformDataSou
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/workspace_network_option databricks_workspace_network_option} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/workspace_network_option databricks_workspace_network_option} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -58,7 +58,7 @@ export class DataDatabricksWorkspaceNetworkOption extends cdktf.TerraformDataSou
       terraformResourceType: 'databricks_workspace_network_option',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -100,14 +100,14 @@ export class DataDatabricksWorkspaceNetworkOption extends cdktf.TerraformDataSou
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      workspace_id: cdktf.numberToTerraform(this._workspaceId),
+      workspace_id: cdktn.numberToTerraform(this._workspaceId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       workspace_id: {
-        value: cdktf.numberToHclTerraform(this._workspaceId),
+        value: cdktn.numberToHclTerraform(this._workspaceId),
         isBlock: false,
         type: "simple",
         storageClassType: "number",

@@ -1,56 +1,60 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/tag_policy
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/tag_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface TagPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface TagPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/tag_policy#description TagPolicy#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/tag_policy#description TagPolicy#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/tag_policy#tag_key TagPolicy#tag_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/tag_policy#provider_config TagPolicy#provider_config}
+  */
+  readonly providerConfig?: TagPolicyProviderConfig;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/tag_policy#tag_key TagPolicy#tag_key}
   */
   readonly tagKey: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/tag_policy#values TagPolicy#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/tag_policy#values TagPolicy#values}
   */
-  readonly values?: TagPolicyValues[] | cdktf.IResolvable;
+  readonly values?: TagPolicyValues[] | cdktn.IResolvable;
 }
-export interface TagPolicyValues {
+export interface TagPolicyProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/tag_policy#name TagPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/tag_policy#workspace_id TagPolicy#workspace_id}
   */
-  readonly name: string;
+  readonly workspaceId: string;
 }
 
-export function tagPolicyValuesToTerraform(struct?: TagPolicyValues | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function tagPolicyProviderConfigToTerraform(struct?: TagPolicyProviderConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
   }
 }
 
 
-export function tagPolicyValuesToHclTerraform(struct?: TagPolicyValues | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function tagPolicyProviderConfigToHclTerraform(struct?: TagPolicyProviderConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
-    name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+    workspace_id: {
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -61,9 +65,100 @@ export function tagPolicyValuesToHclTerraform(struct?: TagPolicyValues | cdktf.I
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TagPolicyValuesOutputReference extends cdktf.ComplexObject {
+export class TagPolicyProviderConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): TagPolicyProviderConfig | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._workspaceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workspaceId = this._workspaceId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: TagPolicyProviderConfig | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._workspaceId = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._workspaceId = value.workspaceId;
+    }
+  }
+
+  // workspace_id - computed: false, optional: false, required: true
+  private _workspaceId?: string; 
+  public get workspaceId() {
+    return this.getStringAttribute('workspace_id');
+  }
+  public set workspaceId(value: string) {
+    this._workspaceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workspaceIdInput() {
+    return this._workspaceId;
+  }
+}
+export interface TagPolicyValues {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/tag_policy#name TagPolicy#name}
+  */
+  readonly name: string;
+}
+
+export function tagPolicyValuesToTerraform(struct?: TagPolicyValues | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    name: cdktn.stringToTerraform(struct!.name),
+  }
+}
+
+
+export function tagPolicyValuesToHclTerraform(struct?: TagPolicyValues | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktn.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class TagPolicyValuesOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -71,11 +166,11 @@ export class TagPolicyValuesOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): TagPolicyValues | cdktf.IResolvable | undefined {
+  public get internalValue(): TagPolicyValues | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -88,13 +183,13 @@ export class TagPolicyValuesOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: TagPolicyValues | cdktf.IResolvable | undefined) {
+  public set internalValue(value: TagPolicyValues | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -119,15 +214,15 @@ export class TagPolicyValuesOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class TagPolicyValuesList extends cdktf.ComplexList {
-  public internalValue? : TagPolicyValues[] | cdktf.IResolvable
+export class TagPolicyValuesList extends cdktn.ComplexList {
+  public internalValue? : TagPolicyValues[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -140,9 +235,9 @@ export class TagPolicyValuesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/tag_policy databricks_tag_policy}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/tag_policy databricks_tag_policy}
 */
-export class TagPolicy extends cdktf.TerraformResource {
+export class TagPolicy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -153,14 +248,14 @@ export class TagPolicy extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a TagPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a TagPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TagPolicy to import
-  * @param importFromId The id of the existing TagPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/tag_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing TagPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/tag_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TagPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_tag_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_tag_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -168,7 +263,7 @@ export class TagPolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/tag_policy databricks_tag_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/tag_policy databricks_tag_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -179,7 +274,7 @@ export class TagPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_tag_policy',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -191,6 +286,7 @@ export class TagPolicy extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._description = config.description;
+    this._providerConfig.internalValue = config.providerConfig;
     this._tagKey = config.tagKey;
     this._values.internalValue = config.values;
   }
@@ -225,6 +321,22 @@ export class TagPolicy extends cdktf.TerraformResource {
     return this.getStringAttribute('id');
   }
 
+  // provider_config - computed: false, optional: true, required: false
+  private _providerConfig = new TagPolicyProviderConfigOutputReference(this, "provider_config");
+  public get providerConfig() {
+    return this._providerConfig;
+  }
+  public putProviderConfig(value: TagPolicyProviderConfig) {
+    this._providerConfig.internalValue = value;
+  }
+  public resetProviderConfig() {
+    this._providerConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerConfigInput() {
+    return this._providerConfig.internalValue;
+  }
+
   // tag_key - computed: false, optional: false, required: true
   private _tagKey?: string; 
   public get tagKey() {
@@ -248,7 +360,7 @@ export class TagPolicy extends cdktf.TerraformResource {
   public get values() {
     return this._values;
   }
-  public putValues(value: TagPolicyValues[] | cdktf.IResolvable) {
+  public putValues(value: TagPolicyValues[] | cdktn.IResolvable) {
     this._values.internalValue = value;
   }
   public resetValues() {
@@ -265,28 +377,35 @@ export class TagPolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      tag_key: cdktf.stringToTerraform(this._tagKey),
-      values: cdktf.listMapper(tagPolicyValuesToTerraform, false)(this._values.internalValue),
+      description: cdktn.stringToTerraform(this._description),
+      provider_config: tagPolicyProviderConfigToTerraform(this._providerConfig.internalValue),
+      tag_key: cdktn.stringToTerraform(this._tagKey),
+      values: cdktn.listMapper(tagPolicyValuesToTerraform, false)(this._values.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
+      provider_config: {
+        value: tagPolicyProviderConfigToHclTerraform(this._providerConfig.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "TagPolicyProviderConfig",
+      },
       tag_key: {
-        value: cdktf.stringToHclTerraform(this._tagKey),
+        value: cdktn.stringToHclTerraform(this._tagKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       values: {
-        value: cdktf.listMapperHcl(tagPolicyValuesToHclTerraform, false)(this._values.internalValue),
+        value: cdktn.listMapperHcl(tagPolicyValuesToHclTerraform, false)(this._values.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "TagPolicyValuesList",

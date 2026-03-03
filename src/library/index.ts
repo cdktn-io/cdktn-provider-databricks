@@ -1,106 +1,106 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/library
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/library
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LibraryConfig extends cdktf.TerraformMetaArguments {
+export interface LibraryConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/library#cluster_id Library#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/library#cluster_id Library#cluster_id}
   */
   readonly clusterId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/library#egg Library#egg}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/library#egg Library#egg}
   */
   readonly egg?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/library#id Library#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/library#id Library#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/library#jar Library#jar}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/library#jar Library#jar}
   */
   readonly jar?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/library#requirements Library#requirements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/library#requirements Library#requirements}
   */
   readonly requirements?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/library#whl Library#whl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/library#whl Library#whl}
   */
   readonly whl?: string;
   /**
   * cran block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/library#cran Library#cran}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/library#cran Library#cran}
   */
-  readonly cran?: LibraryCran[] | cdktf.IResolvable;
+  readonly cran?: LibraryCran[] | cdktn.IResolvable;
   /**
   * maven block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/library#maven Library#maven}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/library#maven Library#maven}
   */
-  readonly maven?: LibraryMaven[] | cdktf.IResolvable;
+  readonly maven?: LibraryMaven[] | cdktn.IResolvable;
   /**
   * provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/library#provider_config Library#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/library#provider_config Library#provider_config}
   */
-  readonly providerConfig?: LibraryProviderConfig[] | cdktf.IResolvable;
+  readonly providerConfig?: LibraryProviderConfig[] | cdktn.IResolvable;
   /**
   * pypi block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/library#pypi Library#pypi}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/library#pypi Library#pypi}
   */
-  readonly pypi?: LibraryPypi[] | cdktf.IResolvable;
+  readonly pypi?: LibraryPypi[] | cdktn.IResolvable;
 }
 export interface LibraryCran {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/library#package Library#package}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/library#package Library#package}
   */
   readonly package: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/library#repo Library#repo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/library#repo Library#repo}
   */
   readonly repo?: string;
 }
 
-export function libraryCranToTerraform(struct?: LibraryCran | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function libraryCranToTerraform(struct?: LibraryCran | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    package: cdktf.stringToTerraform(struct!.package),
-    repo: cdktf.stringToTerraform(struct!.repo),
+    package: cdktn.stringToTerraform(struct!.package),
+    repo: cdktn.stringToTerraform(struct!.repo),
   }
 }
 
 
-export function libraryCranToHclTerraform(struct?: LibraryCran | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function libraryCranToHclTerraform(struct?: LibraryCran | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     package: {
-      value: cdktf.stringToHclTerraform(struct!.package),
+      value: cdktn.stringToHclTerraform(struct!.package),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     repo: {
-      value: cdktf.stringToHclTerraform(struct!.repo),
+      value: cdktn.stringToHclTerraform(struct!.repo),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -111,9 +111,9 @@ export function libraryCranToHclTerraform(struct?: LibraryCran | cdktf.IResolvab
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LibraryCranOutputReference extends cdktf.ComplexObject {
+export class LibraryCranOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -121,11 +121,11 @@ export class LibraryCranOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LibraryCran | cdktf.IResolvable | undefined {
+  public get internalValue(): LibraryCran | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -142,14 +142,14 @@ export class LibraryCranOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LibraryCran | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LibraryCran | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._package = undefined;
       this._repo = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -191,15 +191,15 @@ export class LibraryCranOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class LibraryCranList extends cdktf.ComplexList {
-  public internalValue? : LibraryCran[] | cdktf.IResolvable
+export class LibraryCranList extends cdktn.ComplexList {
+  public internalValue? : LibraryCran[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -212,52 +212,52 @@ export class LibraryCranList extends cdktf.ComplexList {
 }
 export interface LibraryMaven {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/library#coordinates Library#coordinates}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/library#coordinates Library#coordinates}
   */
   readonly coordinates: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/library#exclusions Library#exclusions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/library#exclusions Library#exclusions}
   */
   readonly exclusions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/library#repo Library#repo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/library#repo Library#repo}
   */
   readonly repo?: string;
 }
 
-export function libraryMavenToTerraform(struct?: LibraryMaven | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function libraryMavenToTerraform(struct?: LibraryMaven | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    coordinates: cdktf.stringToTerraform(struct!.coordinates),
-    exclusions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.exclusions),
-    repo: cdktf.stringToTerraform(struct!.repo),
+    coordinates: cdktn.stringToTerraform(struct!.coordinates),
+    exclusions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.exclusions),
+    repo: cdktn.stringToTerraform(struct!.repo),
   }
 }
 
 
-export function libraryMavenToHclTerraform(struct?: LibraryMaven | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function libraryMavenToHclTerraform(struct?: LibraryMaven | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     coordinates: {
-      value: cdktf.stringToHclTerraform(struct!.coordinates),
+      value: cdktn.stringToHclTerraform(struct!.coordinates),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     exclusions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.exclusions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.exclusions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     repo: {
-      value: cdktf.stringToHclTerraform(struct!.repo),
+      value: cdktn.stringToHclTerraform(struct!.repo),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -268,9 +268,9 @@ export function libraryMavenToHclTerraform(struct?: LibraryMaven | cdktf.IResolv
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LibraryMavenOutputReference extends cdktf.ComplexObject {
+export class LibraryMavenOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -278,11 +278,11 @@ export class LibraryMavenOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LibraryMaven | cdktf.IResolvable | undefined {
+  public get internalValue(): LibraryMaven | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -303,7 +303,7 @@ export class LibraryMavenOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LibraryMaven | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LibraryMaven | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -311,7 +311,7 @@ export class LibraryMavenOutputReference extends cdktf.ComplexObject {
       this._exclusions = undefined;
       this._repo = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -370,15 +370,15 @@ export class LibraryMavenOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class LibraryMavenList extends cdktf.ComplexList {
-  public internalValue? : LibraryMaven[] | cdktf.IResolvable
+export class LibraryMavenList extends cdktn.ComplexList {
+  public internalValue? : LibraryMaven[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -391,30 +391,30 @@ export class LibraryMavenList extends cdktf.ComplexList {
 }
 export interface LibraryProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/library#workspace_id Library#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/library#workspace_id Library#workspace_id}
   */
   readonly workspaceId: string;
 }
 
-export function libraryProviderConfigToTerraform(struct?: LibraryProviderConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function libraryProviderConfigToTerraform(struct?: LibraryProviderConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    workspace_id: cdktf.stringToTerraform(struct!.workspaceId),
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
   }
 }
 
 
-export function libraryProviderConfigToHclTerraform(struct?: LibraryProviderConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function libraryProviderConfigToHclTerraform(struct?: LibraryProviderConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     workspace_id: {
-      value: cdktf.stringToHclTerraform(struct!.workspaceId),
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -425,9 +425,9 @@ export function libraryProviderConfigToHclTerraform(struct?: LibraryProviderConf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LibraryProviderConfigOutputReference extends cdktf.ComplexObject {
+export class LibraryProviderConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -435,11 +435,11 @@ export class LibraryProviderConfigOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LibraryProviderConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): LibraryProviderConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -452,13 +452,13 @@ export class LibraryProviderConfigOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LibraryProviderConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LibraryProviderConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._workspaceId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -483,15 +483,15 @@ export class LibraryProviderConfigOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class LibraryProviderConfigList extends cdktf.ComplexList {
-  public internalValue? : LibraryProviderConfig[] | cdktf.IResolvable
+export class LibraryProviderConfigList extends cdktn.ComplexList {
+  public internalValue? : LibraryProviderConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -504,41 +504,41 @@ export class LibraryProviderConfigList extends cdktf.ComplexList {
 }
 export interface LibraryPypi {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/library#package Library#package}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/library#package Library#package}
   */
   readonly package: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/library#repo Library#repo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/library#repo Library#repo}
   */
   readonly repo?: string;
 }
 
-export function libraryPypiToTerraform(struct?: LibraryPypi | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function libraryPypiToTerraform(struct?: LibraryPypi | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    package: cdktf.stringToTerraform(struct!.package),
-    repo: cdktf.stringToTerraform(struct!.repo),
+    package: cdktn.stringToTerraform(struct!.package),
+    repo: cdktn.stringToTerraform(struct!.repo),
   }
 }
 
 
-export function libraryPypiToHclTerraform(struct?: LibraryPypi | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function libraryPypiToHclTerraform(struct?: LibraryPypi | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     package: {
-      value: cdktf.stringToHclTerraform(struct!.package),
+      value: cdktn.stringToHclTerraform(struct!.package),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     repo: {
-      value: cdktf.stringToHclTerraform(struct!.repo),
+      value: cdktn.stringToHclTerraform(struct!.repo),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -549,9 +549,9 @@ export function libraryPypiToHclTerraform(struct?: LibraryPypi | cdktf.IResolvab
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LibraryPypiOutputReference extends cdktf.ComplexObject {
+export class LibraryPypiOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -559,11 +559,11 @@ export class LibraryPypiOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LibraryPypi | cdktf.IResolvable | undefined {
+  public get internalValue(): LibraryPypi | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -580,14 +580,14 @@ export class LibraryPypiOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LibraryPypi | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LibraryPypi | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._package = undefined;
       this._repo = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -629,15 +629,15 @@ export class LibraryPypiOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class LibraryPypiList extends cdktf.ComplexList {
-  public internalValue? : LibraryPypi[] | cdktf.IResolvable
+export class LibraryPypiList extends cdktn.ComplexList {
+  public internalValue? : LibraryPypi[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -650,9 +650,9 @@ export class LibraryPypiList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/library databricks_library}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/library databricks_library}
 */
-export class Library extends cdktf.TerraformResource {
+export class Library extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -663,14 +663,14 @@ export class Library extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Library resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Library resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Library to import
-  * @param importFromId The id of the existing Library that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/library#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Library that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/library#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Library to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_library", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_library", importId: importFromId, provider });
       }
 
   // ===========
@@ -678,7 +678,7 @@ export class Library extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/library databricks_library} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/library databricks_library} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -689,7 +689,7 @@ export class Library extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_library',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -814,7 +814,7 @@ export class Library extends cdktf.TerraformResource {
   public get cran() {
     return this._cran;
   }
-  public putCran(value: LibraryCran[] | cdktf.IResolvable) {
+  public putCran(value: LibraryCran[] | cdktn.IResolvable) {
     this._cran.internalValue = value;
   }
   public resetCran() {
@@ -830,7 +830,7 @@ export class Library extends cdktf.TerraformResource {
   public get maven() {
     return this._maven;
   }
-  public putMaven(value: LibraryMaven[] | cdktf.IResolvable) {
+  public putMaven(value: LibraryMaven[] | cdktn.IResolvable) {
     this._maven.internalValue = value;
   }
   public resetMaven() {
@@ -846,7 +846,7 @@ export class Library extends cdktf.TerraformResource {
   public get providerConfig() {
     return this._providerConfig;
   }
-  public putProviderConfig(value: LibraryProviderConfig[] | cdktf.IResolvable) {
+  public putProviderConfig(value: LibraryProviderConfig[] | cdktn.IResolvable) {
     this._providerConfig.internalValue = value;
   }
   public resetProviderConfig() {
@@ -862,7 +862,7 @@ export class Library extends cdktf.TerraformResource {
   public get pypi() {
     return this._pypi;
   }
-  public putPypi(value: LibraryPypi[] | cdktf.IResolvable) {
+  public putPypi(value: LibraryPypi[] | cdktn.IResolvable) {
     this._pypi.internalValue = value;
   }
   public resetPypi() {
@@ -879,77 +879,77 @@ export class Library extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cluster_id: cdktf.stringToTerraform(this._clusterId),
-      egg: cdktf.stringToTerraform(this._egg),
-      id: cdktf.stringToTerraform(this._id),
-      jar: cdktf.stringToTerraform(this._jar),
-      requirements: cdktf.stringToTerraform(this._requirements),
-      whl: cdktf.stringToTerraform(this._whl),
-      cran: cdktf.listMapper(libraryCranToTerraform, true)(this._cran.internalValue),
-      maven: cdktf.listMapper(libraryMavenToTerraform, true)(this._maven.internalValue),
-      provider_config: cdktf.listMapper(libraryProviderConfigToTerraform, true)(this._providerConfig.internalValue),
-      pypi: cdktf.listMapper(libraryPypiToTerraform, true)(this._pypi.internalValue),
+      cluster_id: cdktn.stringToTerraform(this._clusterId),
+      egg: cdktn.stringToTerraform(this._egg),
+      id: cdktn.stringToTerraform(this._id),
+      jar: cdktn.stringToTerraform(this._jar),
+      requirements: cdktn.stringToTerraform(this._requirements),
+      whl: cdktn.stringToTerraform(this._whl),
+      cran: cdktn.listMapper(libraryCranToTerraform, true)(this._cran.internalValue),
+      maven: cdktn.listMapper(libraryMavenToTerraform, true)(this._maven.internalValue),
+      provider_config: cdktn.listMapper(libraryProviderConfigToTerraform, true)(this._providerConfig.internalValue),
+      pypi: cdktn.listMapper(libraryPypiToTerraform, true)(this._pypi.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       cluster_id: {
-        value: cdktf.stringToHclTerraform(this._clusterId),
+        value: cdktn.stringToHclTerraform(this._clusterId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       egg: {
-        value: cdktf.stringToHclTerraform(this._egg),
+        value: cdktn.stringToHclTerraform(this._egg),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       jar: {
-        value: cdktf.stringToHclTerraform(this._jar),
+        value: cdktn.stringToHclTerraform(this._jar),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       requirements: {
-        value: cdktf.stringToHclTerraform(this._requirements),
+        value: cdktn.stringToHclTerraform(this._requirements),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       whl: {
-        value: cdktf.stringToHclTerraform(this._whl),
+        value: cdktn.stringToHclTerraform(this._whl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cran: {
-        value: cdktf.listMapperHcl(libraryCranToHclTerraform, true)(this._cran.internalValue),
+        value: cdktn.listMapperHcl(libraryCranToHclTerraform, true)(this._cran.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "LibraryCranList",
       },
       maven: {
-        value: cdktf.listMapperHcl(libraryMavenToHclTerraform, true)(this._maven.internalValue),
+        value: cdktn.listMapperHcl(libraryMavenToHclTerraform, true)(this._maven.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "LibraryMavenList",
       },
       provider_config: {
-        value: cdktf.listMapperHcl(libraryProviderConfigToHclTerraform, true)(this._providerConfig.internalValue),
+        value: cdktn.listMapperHcl(libraryProviderConfigToHclTerraform, true)(this._providerConfig.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "LibraryProviderConfigList",
       },
       pypi: {
-        value: cdktf.listMapperHcl(libraryPypiToHclTerraform, true)(this._pypi.internalValue),
+        value: cdktn.listMapperHcl(libraryPypiToHclTerraform, true)(this._pypi.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "LibraryPypiList",

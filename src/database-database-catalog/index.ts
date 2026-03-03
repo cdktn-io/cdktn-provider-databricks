@@ -1,39 +1,134 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/database_database_catalog
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/database_database_catalog
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DatabaseDatabaseCatalogConfig extends cdktf.TerraformMetaArguments {
+export interface DatabaseDatabaseCatalogConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/database_database_catalog#create_database_if_not_exists DatabaseDatabaseCatalog#create_database_if_not_exists}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/database_database_catalog#create_database_if_not_exists DatabaseDatabaseCatalog#create_database_if_not_exists}
   */
-  readonly createDatabaseIfNotExists?: boolean | cdktf.IResolvable;
+  readonly createDatabaseIfNotExists?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/database_database_catalog#database_instance_name DatabaseDatabaseCatalog#database_instance_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/database_database_catalog#database_instance_name DatabaseDatabaseCatalog#database_instance_name}
   */
   readonly databaseInstanceName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/database_database_catalog#database_name DatabaseDatabaseCatalog#database_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/database_database_catalog#database_name DatabaseDatabaseCatalog#database_name}
   */
   readonly databaseName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/database_database_catalog#name DatabaseDatabaseCatalog#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/database_database_catalog#name DatabaseDatabaseCatalog#name}
   */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/database_database_catalog#provider_config DatabaseDatabaseCatalog#provider_config}
+  */
+  readonly providerConfig?: DatabaseDatabaseCatalogProviderConfig;
+}
+export interface DatabaseDatabaseCatalogProviderConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/database_database_catalog#workspace_id DatabaseDatabaseCatalog#workspace_id}
+  */
+  readonly workspaceId: string;
+}
+
+export function databaseDatabaseCatalogProviderConfigToTerraform(struct?: DatabaseDatabaseCatalogProviderConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
+  }
+}
+
+
+export function databaseDatabaseCatalogProviderConfigToHclTerraform(struct?: DatabaseDatabaseCatalogProviderConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    workspace_id: {
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DatabaseDatabaseCatalogProviderConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DatabaseDatabaseCatalogProviderConfig | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._workspaceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workspaceId = this._workspaceId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DatabaseDatabaseCatalogProviderConfig | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._workspaceId = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._workspaceId = value.workspaceId;
+    }
+  }
+
+  // workspace_id - computed: false, optional: false, required: true
+  private _workspaceId?: string; 
+  public get workspaceId() {
+    return this.getStringAttribute('workspace_id');
+  }
+  public set workspaceId(value: string) {
+    this._workspaceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workspaceIdInput() {
+    return this._workspaceId;
+  }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/database_database_catalog databricks_database_database_catalog}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/database_database_catalog databricks_database_database_catalog}
 */
-export class DatabaseDatabaseCatalog extends cdktf.TerraformResource {
+export class DatabaseDatabaseCatalog extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -44,14 +139,14 @@ export class DatabaseDatabaseCatalog extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DatabaseDatabaseCatalog resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DatabaseDatabaseCatalog resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DatabaseDatabaseCatalog to import
-  * @param importFromId The id of the existing DatabaseDatabaseCatalog that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/database_database_catalog#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DatabaseDatabaseCatalog that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/database_database_catalog#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DatabaseDatabaseCatalog to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_database_database_catalog", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_database_database_catalog", importId: importFromId, provider });
       }
 
   // ===========
@@ -59,7 +154,7 @@ export class DatabaseDatabaseCatalog extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/database_database_catalog databricks_database_database_catalog} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/database_database_catalog databricks_database_database_catalog} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -70,7 +165,7 @@ export class DatabaseDatabaseCatalog extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_database_database_catalog',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -85,6 +180,7 @@ export class DatabaseDatabaseCatalog extends cdktf.TerraformResource {
     this._databaseInstanceName = config.databaseInstanceName;
     this._databaseName = config.databaseName;
     this._name = config.name;
+    this._providerConfig.internalValue = config.providerConfig;
   }
 
   // ==========
@@ -92,11 +188,11 @@ export class DatabaseDatabaseCatalog extends cdktf.TerraformResource {
   // ==========
 
   // create_database_if_not_exists - computed: true, optional: true, required: false
-  private _createDatabaseIfNotExists?: boolean | cdktf.IResolvable; 
+  private _createDatabaseIfNotExists?: boolean | cdktn.IResolvable; 
   public get createDatabaseIfNotExists() {
     return this.getBooleanAttribute('create_database_if_not_exists');
   }
-  public set createDatabaseIfNotExists(value: boolean | cdktf.IResolvable) {
+  public set createDatabaseIfNotExists(value: boolean | cdktn.IResolvable) {
     this._createDatabaseIfNotExists = value;
   }
   public resetCreateDatabaseIfNotExists() {
@@ -146,6 +242,22 @@ export class DatabaseDatabaseCatalog extends cdktf.TerraformResource {
     return this._name;
   }
 
+  // provider_config - computed: false, optional: true, required: false
+  private _providerConfig = new DatabaseDatabaseCatalogProviderConfigOutputReference(this, "provider_config");
+  public get providerConfig() {
+    return this._providerConfig;
+  }
+  public putProviderConfig(value: DatabaseDatabaseCatalogProviderConfig) {
+    this._providerConfig.internalValue = value;
+  }
+  public resetProviderConfig() {
+    this._providerConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerConfigInput() {
+    return this._providerConfig.internalValue;
+  }
+
   // uid - computed: true, optional: false, required: false
   public get uid() {
     return this.getStringAttribute('uid');
@@ -157,38 +269,45 @@ export class DatabaseDatabaseCatalog extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      create_database_if_not_exists: cdktf.booleanToTerraform(this._createDatabaseIfNotExists),
-      database_instance_name: cdktf.stringToTerraform(this._databaseInstanceName),
-      database_name: cdktf.stringToTerraform(this._databaseName),
-      name: cdktf.stringToTerraform(this._name),
+      create_database_if_not_exists: cdktn.booleanToTerraform(this._createDatabaseIfNotExists),
+      database_instance_name: cdktn.stringToTerraform(this._databaseInstanceName),
+      database_name: cdktn.stringToTerraform(this._databaseName),
+      name: cdktn.stringToTerraform(this._name),
+      provider_config: databaseDatabaseCatalogProviderConfigToTerraform(this._providerConfig.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       create_database_if_not_exists: {
-        value: cdktf.booleanToHclTerraform(this._createDatabaseIfNotExists),
+        value: cdktn.booleanToHclTerraform(this._createDatabaseIfNotExists),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       database_instance_name: {
-        value: cdktf.stringToHclTerraform(this._databaseInstanceName),
+        value: cdktn.stringToHclTerraform(this._databaseInstanceName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       database_name: {
-        value: cdktf.stringToHclTerraform(this._databaseName),
+        value: cdktn.stringToHclTerraform(this._databaseName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      provider_config: {
+        value: databaseDatabaseCatalogProviderConfigToHclTerraform(this._providerConfig.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "DatabaseDatabaseCatalogProviderConfig",
       },
     };
 

@@ -1,67 +1,67 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/volume
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/volume
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataDatabricksVolumeConfig extends cdktf.TerraformMetaArguments {
+export interface DataDatabricksVolumeConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/volume#id DataDatabricksVolume#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/volume#id DataDatabricksVolume#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/volume#name DataDatabricksVolume#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/volume#name DataDatabricksVolume#name}
   */
   readonly name: string;
   /**
   * provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/volume#provider_config DataDatabricksVolume#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/volume#provider_config DataDatabricksVolume#provider_config}
   */
   readonly providerConfig?: DataDatabricksVolumeProviderConfig;
   /**
   * volume_info block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/volume#volume_info DataDatabricksVolume#volume_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/volume#volume_info DataDatabricksVolume#volume_info}
   */
   readonly volumeInfo?: DataDatabricksVolumeVolumeInfo;
 }
 export interface DataDatabricksVolumeProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/volume#workspace_id DataDatabricksVolume#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/volume#workspace_id DataDatabricksVolume#workspace_id}
   */
   readonly workspaceId: string;
 }
 
 export function dataDatabricksVolumeProviderConfigToTerraform(struct?: DataDatabricksVolumeProviderConfigOutputReference | DataDatabricksVolumeProviderConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    workspace_id: cdktf.stringToTerraform(struct!.workspaceId),
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
   }
 }
 
 
 export function dataDatabricksVolumeProviderConfigToHclTerraform(struct?: DataDatabricksVolumeProviderConfigOutputReference | DataDatabricksVolumeProviderConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     workspace_id: {
-      value: cdktf.stringToHclTerraform(struct!.workspaceId),
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -72,14 +72,14 @@ export function dataDatabricksVolumeProviderConfigToHclTerraform(struct?: DataDa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksVolumeProviderConfigOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksVolumeProviderConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -119,41 +119,41 @@ export class DataDatabricksVolumeProviderConfigOutputReference extends cdktf.Com
 }
 export interface DataDatabricksVolumeVolumeInfoEncryptionDetailsSseEncryptionDetails {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/volume#algorithm DataDatabricksVolume#algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/volume#algorithm DataDatabricksVolume#algorithm}
   */
   readonly algorithm?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/volume#aws_kms_key_arn DataDatabricksVolume#aws_kms_key_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/volume#aws_kms_key_arn DataDatabricksVolume#aws_kms_key_arn}
   */
   readonly awsKmsKeyArn?: string;
 }
 
 export function dataDatabricksVolumeVolumeInfoEncryptionDetailsSseEncryptionDetailsToTerraform(struct?: DataDatabricksVolumeVolumeInfoEncryptionDetailsSseEncryptionDetailsOutputReference | DataDatabricksVolumeVolumeInfoEncryptionDetailsSseEncryptionDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    algorithm: cdktf.stringToTerraform(struct!.algorithm),
-    aws_kms_key_arn: cdktf.stringToTerraform(struct!.awsKmsKeyArn),
+    algorithm: cdktn.stringToTerraform(struct!.algorithm),
+    aws_kms_key_arn: cdktn.stringToTerraform(struct!.awsKmsKeyArn),
   }
 }
 
 
 export function dataDatabricksVolumeVolumeInfoEncryptionDetailsSseEncryptionDetailsToHclTerraform(struct?: DataDatabricksVolumeVolumeInfoEncryptionDetailsSseEncryptionDetailsOutputReference | DataDatabricksVolumeVolumeInfoEncryptionDetailsSseEncryptionDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     algorithm: {
-      value: cdktf.stringToHclTerraform(struct!.algorithm),
+      value: cdktn.stringToHclTerraform(struct!.algorithm),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     aws_kms_key_arn: {
-      value: cdktf.stringToHclTerraform(struct!.awsKmsKeyArn),
+      value: cdktn.stringToHclTerraform(struct!.awsKmsKeyArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -164,14 +164,14 @@ export function dataDatabricksVolumeVolumeInfoEncryptionDetailsSseEncryptionDeta
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksVolumeVolumeInfoEncryptionDetailsSseEncryptionDetailsOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksVolumeVolumeInfoEncryptionDetailsSseEncryptionDetailsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -238,14 +238,14 @@ export interface DataDatabricksVolumeVolumeInfoEncryptionDetails {
   /**
   * sse_encryption_details block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/volume#sse_encryption_details DataDatabricksVolume#sse_encryption_details}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/volume#sse_encryption_details DataDatabricksVolume#sse_encryption_details}
   */
   readonly sseEncryptionDetails?: DataDatabricksVolumeVolumeInfoEncryptionDetailsSseEncryptionDetails;
 }
 
 export function dataDatabricksVolumeVolumeInfoEncryptionDetailsToTerraform(struct?: DataDatabricksVolumeVolumeInfoEncryptionDetailsOutputReference | DataDatabricksVolumeVolumeInfoEncryptionDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -255,8 +255,8 @@ export function dataDatabricksVolumeVolumeInfoEncryptionDetailsToTerraform(struc
 
 
 export function dataDatabricksVolumeVolumeInfoEncryptionDetailsToHclTerraform(struct?: DataDatabricksVolumeVolumeInfoEncryptionDetailsOutputReference | DataDatabricksVolumeVolumeInfoEncryptionDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -272,14 +272,14 @@ export function dataDatabricksVolumeVolumeInfoEncryptionDetailsToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksVolumeVolumeInfoEncryptionDetailsOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksVolumeVolumeInfoEncryptionDetailsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -322,202 +322,202 @@ export class DataDatabricksVolumeVolumeInfoEncryptionDetailsOutputReference exte
 }
 export interface DataDatabricksVolumeVolumeInfo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/volume#access_point DataDatabricksVolume#access_point}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/volume#access_point DataDatabricksVolume#access_point}
   */
   readonly accessPoint?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/volume#browse_only DataDatabricksVolume#browse_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/volume#browse_only DataDatabricksVolume#browse_only}
   */
-  readonly browseOnly?: boolean | cdktf.IResolvable;
+  readonly browseOnly?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/volume#catalog_name DataDatabricksVolume#catalog_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/volume#catalog_name DataDatabricksVolume#catalog_name}
   */
   readonly catalogName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/volume#comment DataDatabricksVolume#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/volume#comment DataDatabricksVolume#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/volume#created_at DataDatabricksVolume#created_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/volume#created_at DataDatabricksVolume#created_at}
   */
   readonly createdAt?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/volume#created_by DataDatabricksVolume#created_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/volume#created_by DataDatabricksVolume#created_by}
   */
   readonly createdBy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/volume#full_name DataDatabricksVolume#full_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/volume#full_name DataDatabricksVolume#full_name}
   */
   readonly fullName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/volume#metastore_id DataDatabricksVolume#metastore_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/volume#metastore_id DataDatabricksVolume#metastore_id}
   */
   readonly metastoreId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/volume#name DataDatabricksVolume#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/volume#name DataDatabricksVolume#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/volume#owner DataDatabricksVolume#owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/volume#owner DataDatabricksVolume#owner}
   */
   readonly owner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/volume#schema_name DataDatabricksVolume#schema_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/volume#schema_name DataDatabricksVolume#schema_name}
   */
   readonly schemaName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/volume#storage_location DataDatabricksVolume#storage_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/volume#storage_location DataDatabricksVolume#storage_location}
   */
   readonly storageLocation?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/volume#updated_at DataDatabricksVolume#updated_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/volume#updated_at DataDatabricksVolume#updated_at}
   */
   readonly updatedAt?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/volume#updated_by DataDatabricksVolume#updated_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/volume#updated_by DataDatabricksVolume#updated_by}
   */
   readonly updatedBy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/volume#volume_id DataDatabricksVolume#volume_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/volume#volume_id DataDatabricksVolume#volume_id}
   */
   readonly volumeId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/volume#volume_type DataDatabricksVolume#volume_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/volume#volume_type DataDatabricksVolume#volume_type}
   */
   readonly volumeType?: string;
   /**
   * encryption_details block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/volume#encryption_details DataDatabricksVolume#encryption_details}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/volume#encryption_details DataDatabricksVolume#encryption_details}
   */
   readonly encryptionDetails?: DataDatabricksVolumeVolumeInfoEncryptionDetails;
 }
 
 export function dataDatabricksVolumeVolumeInfoToTerraform(struct?: DataDatabricksVolumeVolumeInfoOutputReference | DataDatabricksVolumeVolumeInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    access_point: cdktf.stringToTerraform(struct!.accessPoint),
-    browse_only: cdktf.booleanToTerraform(struct!.browseOnly),
-    catalog_name: cdktf.stringToTerraform(struct!.catalogName),
-    comment: cdktf.stringToTerraform(struct!.comment),
-    created_at: cdktf.numberToTerraform(struct!.createdAt),
-    created_by: cdktf.stringToTerraform(struct!.createdBy),
-    full_name: cdktf.stringToTerraform(struct!.fullName),
-    metastore_id: cdktf.stringToTerraform(struct!.metastoreId),
-    name: cdktf.stringToTerraform(struct!.name),
-    owner: cdktf.stringToTerraform(struct!.owner),
-    schema_name: cdktf.stringToTerraform(struct!.schemaName),
-    storage_location: cdktf.stringToTerraform(struct!.storageLocation),
-    updated_at: cdktf.numberToTerraform(struct!.updatedAt),
-    updated_by: cdktf.stringToTerraform(struct!.updatedBy),
-    volume_id: cdktf.stringToTerraform(struct!.volumeId),
-    volume_type: cdktf.stringToTerraform(struct!.volumeType),
+    access_point: cdktn.stringToTerraform(struct!.accessPoint),
+    browse_only: cdktn.booleanToTerraform(struct!.browseOnly),
+    catalog_name: cdktn.stringToTerraform(struct!.catalogName),
+    comment: cdktn.stringToTerraform(struct!.comment),
+    created_at: cdktn.numberToTerraform(struct!.createdAt),
+    created_by: cdktn.stringToTerraform(struct!.createdBy),
+    full_name: cdktn.stringToTerraform(struct!.fullName),
+    metastore_id: cdktn.stringToTerraform(struct!.metastoreId),
+    name: cdktn.stringToTerraform(struct!.name),
+    owner: cdktn.stringToTerraform(struct!.owner),
+    schema_name: cdktn.stringToTerraform(struct!.schemaName),
+    storage_location: cdktn.stringToTerraform(struct!.storageLocation),
+    updated_at: cdktn.numberToTerraform(struct!.updatedAt),
+    updated_by: cdktn.stringToTerraform(struct!.updatedBy),
+    volume_id: cdktn.stringToTerraform(struct!.volumeId),
+    volume_type: cdktn.stringToTerraform(struct!.volumeType),
     encryption_details: dataDatabricksVolumeVolumeInfoEncryptionDetailsToTerraform(struct!.encryptionDetails),
   }
 }
 
 
 export function dataDatabricksVolumeVolumeInfoToHclTerraform(struct?: DataDatabricksVolumeVolumeInfoOutputReference | DataDatabricksVolumeVolumeInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     access_point: {
-      value: cdktf.stringToHclTerraform(struct!.accessPoint),
+      value: cdktn.stringToHclTerraform(struct!.accessPoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     browse_only: {
-      value: cdktf.booleanToHclTerraform(struct!.browseOnly),
+      value: cdktn.booleanToHclTerraform(struct!.browseOnly),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     catalog_name: {
-      value: cdktf.stringToHclTerraform(struct!.catalogName),
+      value: cdktn.stringToHclTerraform(struct!.catalogName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     comment: {
-      value: cdktf.stringToHclTerraform(struct!.comment),
+      value: cdktn.stringToHclTerraform(struct!.comment),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     created_at: {
-      value: cdktf.numberToHclTerraform(struct!.createdAt),
+      value: cdktn.numberToHclTerraform(struct!.createdAt),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     created_by: {
-      value: cdktf.stringToHclTerraform(struct!.createdBy),
+      value: cdktn.stringToHclTerraform(struct!.createdBy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     full_name: {
-      value: cdktf.stringToHclTerraform(struct!.fullName),
+      value: cdktn.stringToHclTerraform(struct!.fullName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     metastore_id: {
-      value: cdktf.stringToHclTerraform(struct!.metastoreId),
+      value: cdktn.stringToHclTerraform(struct!.metastoreId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     owner: {
-      value: cdktf.stringToHclTerraform(struct!.owner),
+      value: cdktn.stringToHclTerraform(struct!.owner),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     schema_name: {
-      value: cdktf.stringToHclTerraform(struct!.schemaName),
+      value: cdktn.stringToHclTerraform(struct!.schemaName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     storage_location: {
-      value: cdktf.stringToHclTerraform(struct!.storageLocation),
+      value: cdktn.stringToHclTerraform(struct!.storageLocation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     updated_at: {
-      value: cdktf.numberToHclTerraform(struct!.updatedAt),
+      value: cdktn.numberToHclTerraform(struct!.updatedAt),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     updated_by: {
-      value: cdktf.stringToHclTerraform(struct!.updatedBy),
+      value: cdktn.stringToHclTerraform(struct!.updatedBy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     volume_id: {
-      value: cdktf.stringToHclTerraform(struct!.volumeId),
+      value: cdktn.stringToHclTerraform(struct!.volumeId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     volume_type: {
-      value: cdktf.stringToHclTerraform(struct!.volumeType),
+      value: cdktn.stringToHclTerraform(struct!.volumeType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -534,14 +534,14 @@ export function dataDatabricksVolumeVolumeInfoToHclTerraform(struct?: DataDatabr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksVolumeVolumeInfoOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksVolumeVolumeInfoOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -679,11 +679,11 @@ export class DataDatabricksVolumeVolumeInfoOutputReference extends cdktf.Complex
   }
 
   // browse_only - computed: false, optional: true, required: false
-  private _browseOnly?: boolean | cdktf.IResolvable; 
+  private _browseOnly?: boolean | cdktn.IResolvable; 
   public get browseOnly() {
     return this.getBooleanAttribute('browse_only');
   }
-  public set browseOnly(value: boolean | cdktf.IResolvable) {
+  public set browseOnly(value: boolean | cdktn.IResolvable) {
     this._browseOnly = value;
   }
   public resetBrowseOnly() {
@@ -936,9 +936,9 @@ export class DataDatabricksVolumeVolumeInfoOutputReference extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/volume databricks_volume}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/volume databricks_volume}
 */
-export class DataDatabricksVolume extends cdktf.TerraformDataSource {
+export class DataDatabricksVolume extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -949,14 +949,14 @@ export class DataDatabricksVolume extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataDatabricksVolume resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataDatabricksVolume resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksVolume to import
-  * @param importFromId The id of the existing DataDatabricksVolume that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/volume#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksVolume that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/volume#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksVolume to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_volume", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_volume", importId: importFromId, provider });
       }
 
   // ===========
@@ -964,7 +964,7 @@ export class DataDatabricksVolume extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/volume databricks_volume} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/volume databricks_volume} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -975,7 +975,7 @@ export class DataDatabricksVolume extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_volume',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -1063,8 +1063,8 @@ export class DataDatabricksVolume extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
       provider_config: dataDatabricksVolumeProviderConfigToTerraform(this._providerConfig.internalValue),
       volume_info: dataDatabricksVolumeVolumeInfoToTerraform(this._volumeInfo.internalValue),
     };
@@ -1073,13 +1073,13 @@ export class DataDatabricksVolume extends cdktf.TerraformDataSource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

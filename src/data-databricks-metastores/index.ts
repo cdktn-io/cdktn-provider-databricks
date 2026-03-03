@@ -1,34 +1,34 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/metastores
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/metastores
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataDatabricksMetastoresConfig extends cdktf.TerraformMetaArguments {
+export interface DataDatabricksMetastoresConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/metastores#id DataDatabricksMetastores#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/metastores#id DataDatabricksMetastores#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/metastores#ids DataDatabricksMetastores#ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/metastores#ids DataDatabricksMetastores#ids}
   */
   readonly ids?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/metastores databricks_metastores}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/metastores databricks_metastores}
 */
-export class DataDatabricksMetastores extends cdktf.TerraformDataSource {
+export class DataDatabricksMetastores extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -39,14 +39,14 @@ export class DataDatabricksMetastores extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataDatabricksMetastores resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataDatabricksMetastores resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksMetastores to import
-  * @param importFromId The id of the existing DataDatabricksMetastores that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/metastores#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksMetastores that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/metastores#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksMetastores to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_metastores", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_metastores", importId: importFromId, provider });
       }
 
   // ===========
@@ -54,7 +54,7 @@ export class DataDatabricksMetastores extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/metastores databricks_metastores} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/metastores databricks_metastores} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -65,7 +65,7 @@ export class DataDatabricksMetastores extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_metastores',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -122,21 +122,21 @@ export class DataDatabricksMetastores extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      ids: cdktf.hashMapper(cdktf.stringToTerraform)(this._ids),
+      id: cdktn.stringToTerraform(this._id),
+      ids: cdktn.hashMapper(cdktn.stringToTerraform)(this._ids),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ids: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._ids),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._ids),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

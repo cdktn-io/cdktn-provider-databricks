@@ -1,145 +1,184 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/data_quality_monitor
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/data_quality_monitor
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataDatabricksDataQualityMonitorConfig extends cdktf.TerraformMetaArguments {
+export interface DataDatabricksDataQualityMonitorConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/data_quality_monitor#object_id DataDatabricksDataQualityMonitor#object_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/data_quality_monitor#object_id DataDatabricksDataQualityMonitor#object_id}
   */
   readonly objectId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/data_quality_monitor#object_type DataDatabricksDataQualityMonitor#object_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/data_quality_monitor#object_type DataDatabricksDataQualityMonitor#object_type}
   */
   readonly objectType: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/data_quality_monitor#provider_config DataDatabricksDataQualityMonitor#provider_config}
+  */
+  readonly providerConfig?: DataDatabricksDataQualityMonitorProviderConfig;
 }
 export interface DataDatabricksDataQualityMonitorAnomalyDetectionConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/data_quality_monitor#excluded_table_full_names DataDatabricksDataQualityMonitor#excluded_table_full_names}
+  */
+  readonly excludedTableFullNames?: string[];
 }
 
 export function dataDatabricksDataQualityMonitorAnomalyDetectionConfigToTerraform(struct?: DataDatabricksDataQualityMonitorAnomalyDetectionConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    excluded_table_full_names: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.excludedTableFullNames),
   }
 }
 
 
 export function dataDatabricksDataQualityMonitorAnomalyDetectionConfigToHclTerraform(struct?: DataDatabricksDataQualityMonitorAnomalyDetectionConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
+    excluded_table_full_names: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.excludedTableFullNames),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
   };
-  return attrs;
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksDataQualityMonitorAnomalyDetectionConfigOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksDataQualityMonitorAnomalyDetectionConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): DataDatabricksDataQualityMonitorAnomalyDetectionConfig | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._excludedTableFullNames !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.excludedTableFullNames = this._excludedTableFullNames;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: DataDatabricksDataQualityMonitorAnomalyDetectionConfig | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._excludedTableFullNames = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._excludedTableFullNames = value.excludedTableFullNames;
     }
+  }
+
+  // excluded_table_full_names - computed: true, optional: true, required: false
+  private _excludedTableFullNames?: string[]; 
+  public get excludedTableFullNames() {
+    return this.getListAttribute('excluded_table_full_names');
+  }
+  public set excludedTableFullNames(value: string[]) {
+    this._excludedTableFullNames = value;
+  }
+  public resetExcludedTableFullNames() {
+    this._excludedTableFullNames = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get excludedTableFullNamesInput() {
+    return this._excludedTableFullNames;
   }
 }
 export interface DataDatabricksDataQualityMonitorDataProfilingConfigCustomMetrics {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/data_quality_monitor#definition DataDatabricksDataQualityMonitor#definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/data_quality_monitor#definition DataDatabricksDataQualityMonitor#definition}
   */
   readonly definition: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/data_quality_monitor#input_columns DataDatabricksDataQualityMonitor#input_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/data_quality_monitor#input_columns DataDatabricksDataQualityMonitor#input_columns}
   */
   readonly inputColumns: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/data_quality_monitor#name DataDatabricksDataQualityMonitor#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/data_quality_monitor#name DataDatabricksDataQualityMonitor#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/data_quality_monitor#output_data_type DataDatabricksDataQualityMonitor#output_data_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/data_quality_monitor#output_data_type DataDatabricksDataQualityMonitor#output_data_type}
   */
   readonly outputDataType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/data_quality_monitor#type DataDatabricksDataQualityMonitor#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/data_quality_monitor#type DataDatabricksDataQualityMonitor#type}
   */
   readonly type: string;
 }
 
-export function dataDatabricksDataQualityMonitorDataProfilingConfigCustomMetricsToTerraform(struct?: DataDatabricksDataQualityMonitorDataProfilingConfigCustomMetrics | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksDataQualityMonitorDataProfilingConfigCustomMetricsToTerraform(struct?: DataDatabricksDataQualityMonitorDataProfilingConfigCustomMetrics | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    definition: cdktf.stringToTerraform(struct!.definition),
-    input_columns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.inputColumns),
-    name: cdktf.stringToTerraform(struct!.name),
-    output_data_type: cdktf.stringToTerraform(struct!.outputDataType),
-    type: cdktf.stringToTerraform(struct!.type),
+    definition: cdktn.stringToTerraform(struct!.definition),
+    input_columns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.inputColumns),
+    name: cdktn.stringToTerraform(struct!.name),
+    output_data_type: cdktn.stringToTerraform(struct!.outputDataType),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function dataDatabricksDataQualityMonitorDataProfilingConfigCustomMetricsToHclTerraform(struct?: DataDatabricksDataQualityMonitorDataProfilingConfigCustomMetrics | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksDataQualityMonitorDataProfilingConfigCustomMetricsToHclTerraform(struct?: DataDatabricksDataQualityMonitorDataProfilingConfigCustomMetrics | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     definition: {
-      value: cdktf.stringToHclTerraform(struct!.definition),
+      value: cdktn.stringToHclTerraform(struct!.definition),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     input_columns: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.inputColumns),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.inputColumns),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     output_data_type: {
-      value: cdktf.stringToHclTerraform(struct!.outputDataType),
+      value: cdktn.stringToHclTerraform(struct!.outputDataType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -150,9 +189,9 @@ export function dataDatabricksDataQualityMonitorDataProfilingConfigCustomMetrics
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksDataQualityMonitorDataProfilingConfigCustomMetricsOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksDataQualityMonitorDataProfilingConfigCustomMetricsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -160,11 +199,11 @@ export class DataDatabricksDataQualityMonitorDataProfilingConfigCustomMetricsOut
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataDatabricksDataQualityMonitorDataProfilingConfigCustomMetrics | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatabricksDataQualityMonitorDataProfilingConfigCustomMetrics | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -193,7 +232,7 @@ export class DataDatabricksDataQualityMonitorDataProfilingConfigCustomMetricsOut
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksDataQualityMonitorDataProfilingConfigCustomMetrics | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksDataQualityMonitorDataProfilingConfigCustomMetrics | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -203,7 +242,7 @@ export class DataDatabricksDataQualityMonitorDataProfilingConfigCustomMetricsOut
       this._outputDataType = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -284,15 +323,15 @@ export class DataDatabricksDataQualityMonitorDataProfilingConfigCustomMetricsOut
   }
 }
 
-export class DataDatabricksDataQualityMonitorDataProfilingConfigCustomMetricsList extends cdktf.ComplexList {
-  public internalValue? : DataDatabricksDataQualityMonitorDataProfilingConfigCustomMetrics[] | cdktf.IResolvable
+export class DataDatabricksDataQualityMonitorDataProfilingConfigCustomMetricsList extends cdktn.ComplexList {
+  public internalValue? : DataDatabricksDataQualityMonitorDataProfilingConfigCustomMetrics[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -305,85 +344,85 @@ export class DataDatabricksDataQualityMonitorDataProfilingConfigCustomMetricsLis
 }
 export interface DataDatabricksDataQualityMonitorDataProfilingConfigInferenceLog {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/data_quality_monitor#granularities DataDatabricksDataQualityMonitor#granularities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/data_quality_monitor#granularities DataDatabricksDataQualityMonitor#granularities}
   */
   readonly granularities: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/data_quality_monitor#label_column DataDatabricksDataQualityMonitor#label_column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/data_quality_monitor#label_column DataDatabricksDataQualityMonitor#label_column}
   */
   readonly labelColumn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/data_quality_monitor#model_id_column DataDatabricksDataQualityMonitor#model_id_column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/data_quality_monitor#model_id_column DataDatabricksDataQualityMonitor#model_id_column}
   */
   readonly modelIdColumn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/data_quality_monitor#prediction_column DataDatabricksDataQualityMonitor#prediction_column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/data_quality_monitor#prediction_column DataDatabricksDataQualityMonitor#prediction_column}
   */
   readonly predictionColumn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/data_quality_monitor#problem_type DataDatabricksDataQualityMonitor#problem_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/data_quality_monitor#problem_type DataDatabricksDataQualityMonitor#problem_type}
   */
   readonly problemType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/data_quality_monitor#timestamp_column DataDatabricksDataQualityMonitor#timestamp_column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/data_quality_monitor#timestamp_column DataDatabricksDataQualityMonitor#timestamp_column}
   */
   readonly timestampColumn: string;
 }
 
-export function dataDatabricksDataQualityMonitorDataProfilingConfigInferenceLogToTerraform(struct?: DataDatabricksDataQualityMonitorDataProfilingConfigInferenceLog | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksDataQualityMonitorDataProfilingConfigInferenceLogToTerraform(struct?: DataDatabricksDataQualityMonitorDataProfilingConfigInferenceLog | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    granularities: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.granularities),
-    label_column: cdktf.stringToTerraform(struct!.labelColumn),
-    model_id_column: cdktf.stringToTerraform(struct!.modelIdColumn),
-    prediction_column: cdktf.stringToTerraform(struct!.predictionColumn),
-    problem_type: cdktf.stringToTerraform(struct!.problemType),
-    timestamp_column: cdktf.stringToTerraform(struct!.timestampColumn),
+    granularities: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.granularities),
+    label_column: cdktn.stringToTerraform(struct!.labelColumn),
+    model_id_column: cdktn.stringToTerraform(struct!.modelIdColumn),
+    prediction_column: cdktn.stringToTerraform(struct!.predictionColumn),
+    problem_type: cdktn.stringToTerraform(struct!.problemType),
+    timestamp_column: cdktn.stringToTerraform(struct!.timestampColumn),
   }
 }
 
 
-export function dataDatabricksDataQualityMonitorDataProfilingConfigInferenceLogToHclTerraform(struct?: DataDatabricksDataQualityMonitorDataProfilingConfigInferenceLog | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksDataQualityMonitorDataProfilingConfigInferenceLogToHclTerraform(struct?: DataDatabricksDataQualityMonitorDataProfilingConfigInferenceLog | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     granularities: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.granularities),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.granularities),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     label_column: {
-      value: cdktf.stringToHclTerraform(struct!.labelColumn),
+      value: cdktn.stringToHclTerraform(struct!.labelColumn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     model_id_column: {
-      value: cdktf.stringToHclTerraform(struct!.modelIdColumn),
+      value: cdktn.stringToHclTerraform(struct!.modelIdColumn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     prediction_column: {
-      value: cdktf.stringToHclTerraform(struct!.predictionColumn),
+      value: cdktn.stringToHclTerraform(struct!.predictionColumn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     problem_type: {
-      value: cdktf.stringToHclTerraform(struct!.problemType),
+      value: cdktn.stringToHclTerraform(struct!.problemType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     timestamp_column: {
-      value: cdktf.stringToHclTerraform(struct!.timestampColumn),
+      value: cdktn.stringToHclTerraform(struct!.timestampColumn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -394,19 +433,19 @@ export function dataDatabricksDataQualityMonitorDataProfilingConfigInferenceLogT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksDataQualityMonitorDataProfilingConfigInferenceLogOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksDataQualityMonitorDataProfilingConfigInferenceLogOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataDatabricksDataQualityMonitorDataProfilingConfigInferenceLog | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatabricksDataQualityMonitorDataProfilingConfigInferenceLog | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -439,7 +478,7 @@ export class DataDatabricksDataQualityMonitorDataProfilingConfigInferenceLogOutp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksDataQualityMonitorDataProfilingConfigInferenceLog | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksDataQualityMonitorDataProfilingConfigInferenceLog | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -450,7 +489,7 @@ export class DataDatabricksDataQualityMonitorDataProfilingConfigInferenceLogOutp
       this._problemType = undefined;
       this._timestampColumn = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -549,30 +588,30 @@ export class DataDatabricksDataQualityMonitorDataProfilingConfigInferenceLogOutp
 }
 export interface DataDatabricksDataQualityMonitorDataProfilingConfigNotificationSettingsOnFailure {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/data_quality_monitor#email_addresses DataDatabricksDataQualityMonitor#email_addresses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/data_quality_monitor#email_addresses DataDatabricksDataQualityMonitor#email_addresses}
   */
   readonly emailAddresses?: string[];
 }
 
-export function dataDatabricksDataQualityMonitorDataProfilingConfigNotificationSettingsOnFailureToTerraform(struct?: DataDatabricksDataQualityMonitorDataProfilingConfigNotificationSettingsOnFailure | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksDataQualityMonitorDataProfilingConfigNotificationSettingsOnFailureToTerraform(struct?: DataDatabricksDataQualityMonitorDataProfilingConfigNotificationSettingsOnFailure | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    email_addresses: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.emailAddresses),
+    email_addresses: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.emailAddresses),
   }
 }
 
 
-export function dataDatabricksDataQualityMonitorDataProfilingConfigNotificationSettingsOnFailureToHclTerraform(struct?: DataDatabricksDataQualityMonitorDataProfilingConfigNotificationSettingsOnFailure | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksDataQualityMonitorDataProfilingConfigNotificationSettingsOnFailureToHclTerraform(struct?: DataDatabricksDataQualityMonitorDataProfilingConfigNotificationSettingsOnFailure | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     email_addresses: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.emailAddresses),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.emailAddresses),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -583,19 +622,19 @@ export function dataDatabricksDataQualityMonitorDataProfilingConfigNotificationS
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksDataQualityMonitorDataProfilingConfigNotificationSettingsOnFailureOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksDataQualityMonitorDataProfilingConfigNotificationSettingsOnFailureOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataDatabricksDataQualityMonitorDataProfilingConfigNotificationSettingsOnFailure | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatabricksDataQualityMonitorDataProfilingConfigNotificationSettingsOnFailure | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -608,13 +647,13 @@ export class DataDatabricksDataQualityMonitorDataProfilingConfigNotificationSett
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksDataQualityMonitorDataProfilingConfigNotificationSettingsOnFailure | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksDataQualityMonitorDataProfilingConfigNotificationSettingsOnFailure | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._emailAddresses = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -643,14 +682,14 @@ export class DataDatabricksDataQualityMonitorDataProfilingConfigNotificationSett
 }
 export interface DataDatabricksDataQualityMonitorDataProfilingConfigNotificationSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/data_quality_monitor#on_failure DataDatabricksDataQualityMonitor#on_failure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/data_quality_monitor#on_failure DataDatabricksDataQualityMonitor#on_failure}
   */
   readonly onFailure?: DataDatabricksDataQualityMonitorDataProfilingConfigNotificationSettingsOnFailure;
 }
 
-export function dataDatabricksDataQualityMonitorDataProfilingConfigNotificationSettingsToTerraform(struct?: DataDatabricksDataQualityMonitorDataProfilingConfigNotificationSettings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksDataQualityMonitorDataProfilingConfigNotificationSettingsToTerraform(struct?: DataDatabricksDataQualityMonitorDataProfilingConfigNotificationSettings | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -659,9 +698,9 @@ export function dataDatabricksDataQualityMonitorDataProfilingConfigNotificationS
 }
 
 
-export function dataDatabricksDataQualityMonitorDataProfilingConfigNotificationSettingsToHclTerraform(struct?: DataDatabricksDataQualityMonitorDataProfilingConfigNotificationSettings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksDataQualityMonitorDataProfilingConfigNotificationSettingsToHclTerraform(struct?: DataDatabricksDataQualityMonitorDataProfilingConfigNotificationSettings | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -677,19 +716,19 @@ export function dataDatabricksDataQualityMonitorDataProfilingConfigNotificationS
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksDataQualityMonitorDataProfilingConfigNotificationSettingsOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksDataQualityMonitorDataProfilingConfigNotificationSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataDatabricksDataQualityMonitorDataProfilingConfigNotificationSettings | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatabricksDataQualityMonitorDataProfilingConfigNotificationSettings | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -702,13 +741,13 @@ export class DataDatabricksDataQualityMonitorDataProfilingConfigNotificationSett
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksDataQualityMonitorDataProfilingConfigNotificationSettings | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksDataQualityMonitorDataProfilingConfigNotificationSettings | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._onFailure.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -737,41 +776,41 @@ export class DataDatabricksDataQualityMonitorDataProfilingConfigNotificationSett
 }
 export interface DataDatabricksDataQualityMonitorDataProfilingConfigSchedule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/data_quality_monitor#quartz_cron_expression DataDatabricksDataQualityMonitor#quartz_cron_expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/data_quality_monitor#quartz_cron_expression DataDatabricksDataQualityMonitor#quartz_cron_expression}
   */
   readonly quartzCronExpression: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/data_quality_monitor#timezone_id DataDatabricksDataQualityMonitor#timezone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/data_quality_monitor#timezone_id DataDatabricksDataQualityMonitor#timezone_id}
   */
   readonly timezoneId: string;
 }
 
-export function dataDatabricksDataQualityMonitorDataProfilingConfigScheduleToTerraform(struct?: DataDatabricksDataQualityMonitorDataProfilingConfigSchedule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksDataQualityMonitorDataProfilingConfigScheduleToTerraform(struct?: DataDatabricksDataQualityMonitorDataProfilingConfigSchedule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    quartz_cron_expression: cdktf.stringToTerraform(struct!.quartzCronExpression),
-    timezone_id: cdktf.stringToTerraform(struct!.timezoneId),
+    quartz_cron_expression: cdktn.stringToTerraform(struct!.quartzCronExpression),
+    timezone_id: cdktn.stringToTerraform(struct!.timezoneId),
   }
 }
 
 
-export function dataDatabricksDataQualityMonitorDataProfilingConfigScheduleToHclTerraform(struct?: DataDatabricksDataQualityMonitorDataProfilingConfigSchedule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksDataQualityMonitorDataProfilingConfigScheduleToHclTerraform(struct?: DataDatabricksDataQualityMonitorDataProfilingConfigSchedule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     quartz_cron_expression: {
-      value: cdktf.stringToHclTerraform(struct!.quartzCronExpression),
+      value: cdktn.stringToHclTerraform(struct!.quartzCronExpression),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     timezone_id: {
-      value: cdktf.stringToHclTerraform(struct!.timezoneId),
+      value: cdktn.stringToHclTerraform(struct!.timezoneId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -782,19 +821,19 @@ export function dataDatabricksDataQualityMonitorDataProfilingConfigScheduleToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksDataQualityMonitorDataProfilingConfigScheduleOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksDataQualityMonitorDataProfilingConfigScheduleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataDatabricksDataQualityMonitorDataProfilingConfigSchedule | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatabricksDataQualityMonitorDataProfilingConfigSchedule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -811,14 +850,14 @@ export class DataDatabricksDataQualityMonitorDataProfilingConfigScheduleOutputRe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksDataQualityMonitorDataProfilingConfigSchedule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksDataQualityMonitorDataProfilingConfigSchedule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._quartzCronExpression = undefined;
       this._timezoneId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -864,9 +903,9 @@ export class DataDatabricksDataQualityMonitorDataProfilingConfigScheduleOutputRe
 export interface DataDatabricksDataQualityMonitorDataProfilingConfigSnapshot {
 }
 
-export function dataDatabricksDataQualityMonitorDataProfilingConfigSnapshotToTerraform(struct?: DataDatabricksDataQualityMonitorDataProfilingConfigSnapshot | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksDataQualityMonitorDataProfilingConfigSnapshotToTerraform(struct?: DataDatabricksDataQualityMonitorDataProfilingConfigSnapshot | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -874,9 +913,9 @@ export function dataDatabricksDataQualityMonitorDataProfilingConfigSnapshotToTer
 }
 
 
-export function dataDatabricksDataQualityMonitorDataProfilingConfigSnapshotToHclTerraform(struct?: DataDatabricksDataQualityMonitorDataProfilingConfigSnapshot | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksDataQualityMonitorDataProfilingConfigSnapshotToHclTerraform(struct?: DataDatabricksDataQualityMonitorDataProfilingConfigSnapshot | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -884,19 +923,19 @@ export function dataDatabricksDataQualityMonitorDataProfilingConfigSnapshotToHcl
   return attrs;
 }
 
-export class DataDatabricksDataQualityMonitorDataProfilingConfigSnapshotOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksDataQualityMonitorDataProfilingConfigSnapshotOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataDatabricksDataQualityMonitorDataProfilingConfigSnapshot | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatabricksDataQualityMonitorDataProfilingConfigSnapshot | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -905,12 +944,12 @@ export class DataDatabricksDataQualityMonitorDataProfilingConfigSnapshotOutputRe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksDataQualityMonitorDataProfilingConfigSnapshot | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksDataQualityMonitorDataProfilingConfigSnapshot | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -922,41 +961,41 @@ export class DataDatabricksDataQualityMonitorDataProfilingConfigSnapshotOutputRe
 }
 export interface DataDatabricksDataQualityMonitorDataProfilingConfigTimeSeries {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/data_quality_monitor#granularities DataDatabricksDataQualityMonitor#granularities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/data_quality_monitor#granularities DataDatabricksDataQualityMonitor#granularities}
   */
   readonly granularities: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/data_quality_monitor#timestamp_column DataDatabricksDataQualityMonitor#timestamp_column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/data_quality_monitor#timestamp_column DataDatabricksDataQualityMonitor#timestamp_column}
   */
   readonly timestampColumn: string;
 }
 
-export function dataDatabricksDataQualityMonitorDataProfilingConfigTimeSeriesToTerraform(struct?: DataDatabricksDataQualityMonitorDataProfilingConfigTimeSeries | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksDataQualityMonitorDataProfilingConfigTimeSeriesToTerraform(struct?: DataDatabricksDataQualityMonitorDataProfilingConfigTimeSeries | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    granularities: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.granularities),
-    timestamp_column: cdktf.stringToTerraform(struct!.timestampColumn),
+    granularities: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.granularities),
+    timestamp_column: cdktn.stringToTerraform(struct!.timestampColumn),
   }
 }
 
 
-export function dataDatabricksDataQualityMonitorDataProfilingConfigTimeSeriesToHclTerraform(struct?: DataDatabricksDataQualityMonitorDataProfilingConfigTimeSeries | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksDataQualityMonitorDataProfilingConfigTimeSeriesToHclTerraform(struct?: DataDatabricksDataQualityMonitorDataProfilingConfigTimeSeries | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     granularities: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.granularities),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.granularities),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     timestamp_column: {
-      value: cdktf.stringToHclTerraform(struct!.timestampColumn),
+      value: cdktn.stringToHclTerraform(struct!.timestampColumn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -967,19 +1006,19 @@ export function dataDatabricksDataQualityMonitorDataProfilingConfigTimeSeriesToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksDataQualityMonitorDataProfilingConfigTimeSeriesOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksDataQualityMonitorDataProfilingConfigTimeSeriesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataDatabricksDataQualityMonitorDataProfilingConfigTimeSeries | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatabricksDataQualityMonitorDataProfilingConfigTimeSeries | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -996,14 +1035,14 @@ export class DataDatabricksDataQualityMonitorDataProfilingConfigTimeSeriesOutput
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksDataQualityMonitorDataProfilingConfigTimeSeries | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksDataQualityMonitorDataProfilingConfigTimeSeries | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._granularities = undefined;
       this._timestampColumn = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1043,97 +1082,97 @@ export class DataDatabricksDataQualityMonitorDataProfilingConfigTimeSeriesOutput
 }
 export interface DataDatabricksDataQualityMonitorDataProfilingConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/data_quality_monitor#assets_dir DataDatabricksDataQualityMonitor#assets_dir}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/data_quality_monitor#assets_dir DataDatabricksDataQualityMonitor#assets_dir}
   */
   readonly assetsDir?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/data_quality_monitor#baseline_table_name DataDatabricksDataQualityMonitor#baseline_table_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/data_quality_monitor#baseline_table_name DataDatabricksDataQualityMonitor#baseline_table_name}
   */
   readonly baselineTableName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/data_quality_monitor#custom_metrics DataDatabricksDataQualityMonitor#custom_metrics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/data_quality_monitor#custom_metrics DataDatabricksDataQualityMonitor#custom_metrics}
   */
-  readonly customMetrics?: DataDatabricksDataQualityMonitorDataProfilingConfigCustomMetrics[] | cdktf.IResolvable;
+  readonly customMetrics?: DataDatabricksDataQualityMonitorDataProfilingConfigCustomMetrics[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/data_quality_monitor#inference_log DataDatabricksDataQualityMonitor#inference_log}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/data_quality_monitor#inference_log DataDatabricksDataQualityMonitor#inference_log}
   */
   readonly inferenceLog?: DataDatabricksDataQualityMonitorDataProfilingConfigInferenceLog;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/data_quality_monitor#notification_settings DataDatabricksDataQualityMonitor#notification_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/data_quality_monitor#notification_settings DataDatabricksDataQualityMonitor#notification_settings}
   */
   readonly notificationSettings?: DataDatabricksDataQualityMonitorDataProfilingConfigNotificationSettings;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/data_quality_monitor#output_schema_id DataDatabricksDataQualityMonitor#output_schema_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/data_quality_monitor#output_schema_id DataDatabricksDataQualityMonitor#output_schema_id}
   */
   readonly outputSchemaId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/data_quality_monitor#schedule DataDatabricksDataQualityMonitor#schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/data_quality_monitor#schedule DataDatabricksDataQualityMonitor#schedule}
   */
   readonly schedule?: DataDatabricksDataQualityMonitorDataProfilingConfigSchedule;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/data_quality_monitor#skip_builtin_dashboard DataDatabricksDataQualityMonitor#skip_builtin_dashboard}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/data_quality_monitor#skip_builtin_dashboard DataDatabricksDataQualityMonitor#skip_builtin_dashboard}
   */
-  readonly skipBuiltinDashboard?: boolean | cdktf.IResolvable;
+  readonly skipBuiltinDashboard?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/data_quality_monitor#slicing_exprs DataDatabricksDataQualityMonitor#slicing_exprs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/data_quality_monitor#slicing_exprs DataDatabricksDataQualityMonitor#slicing_exprs}
   */
   readonly slicingExprs?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/data_quality_monitor#snapshot DataDatabricksDataQualityMonitor#snapshot}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/data_quality_monitor#snapshot DataDatabricksDataQualityMonitor#snapshot}
   */
   readonly snapshot?: DataDatabricksDataQualityMonitorDataProfilingConfigSnapshot;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/data_quality_monitor#time_series DataDatabricksDataQualityMonitor#time_series}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/data_quality_monitor#time_series DataDatabricksDataQualityMonitor#time_series}
   */
   readonly timeSeries?: DataDatabricksDataQualityMonitorDataProfilingConfigTimeSeries;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/data_quality_monitor#warehouse_id DataDatabricksDataQualityMonitor#warehouse_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/data_quality_monitor#warehouse_id DataDatabricksDataQualityMonitor#warehouse_id}
   */
   readonly warehouseId?: string;
 }
 
 export function dataDatabricksDataQualityMonitorDataProfilingConfigToTerraform(struct?: DataDatabricksDataQualityMonitorDataProfilingConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    assets_dir: cdktf.stringToTerraform(struct!.assetsDir),
-    baseline_table_name: cdktf.stringToTerraform(struct!.baselineTableName),
-    custom_metrics: cdktf.listMapper(dataDatabricksDataQualityMonitorDataProfilingConfigCustomMetricsToTerraform, false)(struct!.customMetrics),
+    assets_dir: cdktn.stringToTerraform(struct!.assetsDir),
+    baseline_table_name: cdktn.stringToTerraform(struct!.baselineTableName),
+    custom_metrics: cdktn.listMapper(dataDatabricksDataQualityMonitorDataProfilingConfigCustomMetricsToTerraform, false)(struct!.customMetrics),
     inference_log: dataDatabricksDataQualityMonitorDataProfilingConfigInferenceLogToTerraform(struct!.inferenceLog),
     notification_settings: dataDatabricksDataQualityMonitorDataProfilingConfigNotificationSettingsToTerraform(struct!.notificationSettings),
-    output_schema_id: cdktf.stringToTerraform(struct!.outputSchemaId),
+    output_schema_id: cdktn.stringToTerraform(struct!.outputSchemaId),
     schedule: dataDatabricksDataQualityMonitorDataProfilingConfigScheduleToTerraform(struct!.schedule),
-    skip_builtin_dashboard: cdktf.booleanToTerraform(struct!.skipBuiltinDashboard),
-    slicing_exprs: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.slicingExprs),
+    skip_builtin_dashboard: cdktn.booleanToTerraform(struct!.skipBuiltinDashboard),
+    slicing_exprs: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.slicingExprs),
     snapshot: dataDatabricksDataQualityMonitorDataProfilingConfigSnapshotToTerraform(struct!.snapshot),
     time_series: dataDatabricksDataQualityMonitorDataProfilingConfigTimeSeriesToTerraform(struct!.timeSeries),
-    warehouse_id: cdktf.stringToTerraform(struct!.warehouseId),
+    warehouse_id: cdktn.stringToTerraform(struct!.warehouseId),
   }
 }
 
 
 export function dataDatabricksDataQualityMonitorDataProfilingConfigToHclTerraform(struct?: DataDatabricksDataQualityMonitorDataProfilingConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     assets_dir: {
-      value: cdktf.stringToHclTerraform(struct!.assetsDir),
+      value: cdktn.stringToHclTerraform(struct!.assetsDir),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     baseline_table_name: {
-      value: cdktf.stringToHclTerraform(struct!.baselineTableName),
+      value: cdktn.stringToHclTerraform(struct!.baselineTableName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     custom_metrics: {
-      value: cdktf.listMapperHcl(dataDatabricksDataQualityMonitorDataProfilingConfigCustomMetricsToHclTerraform, false)(struct!.customMetrics),
+      value: cdktn.listMapperHcl(dataDatabricksDataQualityMonitorDataProfilingConfigCustomMetricsToHclTerraform, false)(struct!.customMetrics),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatabricksDataQualityMonitorDataProfilingConfigCustomMetricsList",
@@ -1151,7 +1190,7 @@ export function dataDatabricksDataQualityMonitorDataProfilingConfigToHclTerrafor
       storageClassType: "DataDatabricksDataQualityMonitorDataProfilingConfigNotificationSettings",
     },
     output_schema_id: {
-      value: cdktf.stringToHclTerraform(struct!.outputSchemaId),
+      value: cdktn.stringToHclTerraform(struct!.outputSchemaId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1163,13 +1202,13 @@ export function dataDatabricksDataQualityMonitorDataProfilingConfigToHclTerrafor
       storageClassType: "DataDatabricksDataQualityMonitorDataProfilingConfigSchedule",
     },
     skip_builtin_dashboard: {
-      value: cdktf.booleanToHclTerraform(struct!.skipBuiltinDashboard),
+      value: cdktn.booleanToHclTerraform(struct!.skipBuiltinDashboard),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     slicing_exprs: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.slicingExprs),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.slicingExprs),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -1187,7 +1226,7 @@ export function dataDatabricksDataQualityMonitorDataProfilingConfigToHclTerrafor
       storageClassType: "DataDatabricksDataQualityMonitorDataProfilingConfigTimeSeries",
     },
     warehouse_id: {
-      value: cdktf.stringToHclTerraform(struct!.warehouseId),
+      value: cdktn.stringToHclTerraform(struct!.warehouseId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1198,14 +1237,14 @@ export function dataDatabricksDataQualityMonitorDataProfilingConfigToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksDataQualityMonitorDataProfilingConfigOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksDataQualityMonitorDataProfilingConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -1333,7 +1372,7 @@ export class DataDatabricksDataQualityMonitorDataProfilingConfigOutputReference 
   public get customMetrics() {
     return this._customMetrics;
   }
-  public putCustomMetrics(value: DataDatabricksDataQualityMonitorDataProfilingConfigCustomMetrics[] | cdktf.IResolvable) {
+  public putCustomMetrics(value: DataDatabricksDataQualityMonitorDataProfilingConfigCustomMetrics[] | cdktn.IResolvable) {
     this._customMetrics.internalValue = value;
   }
   public resetCustomMetrics() {
@@ -1441,11 +1480,11 @@ export class DataDatabricksDataQualityMonitorDataProfilingConfigOutputReference 
   }
 
   // skip_builtin_dashboard - computed: true, optional: true, required: false
-  private _skipBuiltinDashboard?: boolean | cdktf.IResolvable; 
+  private _skipBuiltinDashboard?: boolean | cdktn.IResolvable; 
   public get skipBuiltinDashboard() {
     return this.getBooleanAttribute('skip_builtin_dashboard');
   }
-  public set skipBuiltinDashboard(value: boolean | cdktf.IResolvable) {
+  public set skipBuiltinDashboard(value: boolean | cdktn.IResolvable) {
     this._skipBuiltinDashboard = value;
   }
   public resetSkipBuiltinDashboard() {
@@ -1525,11 +1564,102 @@ export class DataDatabricksDataQualityMonitorDataProfilingConfigOutputReference 
     return this._warehouseId;
   }
 }
+export interface DataDatabricksDataQualityMonitorProviderConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/data_quality_monitor#workspace_id DataDatabricksDataQualityMonitor#workspace_id}
+  */
+  readonly workspaceId: string;
+}
+
+export function dataDatabricksDataQualityMonitorProviderConfigToTerraform(struct?: DataDatabricksDataQualityMonitorProviderConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
+  }
+}
+
+
+export function dataDatabricksDataQualityMonitorProviderConfigToHclTerraform(struct?: DataDatabricksDataQualityMonitorProviderConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    workspace_id: {
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataDatabricksDataQualityMonitorProviderConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatabricksDataQualityMonitorProviderConfig | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._workspaceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workspaceId = this._workspaceId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksDataQualityMonitorProviderConfig | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._workspaceId = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._workspaceId = value.workspaceId;
+    }
+  }
+
+  // workspace_id - computed: false, optional: false, required: true
+  private _workspaceId?: string; 
+  public get workspaceId() {
+    return this.getStringAttribute('workspace_id');
+  }
+  public set workspaceId(value: string) {
+    this._workspaceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workspaceIdInput() {
+    return this._workspaceId;
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/data_quality_monitor databricks_data_quality_monitor}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/data_quality_monitor databricks_data_quality_monitor}
 */
-export class DataDatabricksDataQualityMonitor extends cdktf.TerraformDataSource {
+export class DataDatabricksDataQualityMonitor extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -1540,14 +1670,14 @@ export class DataDatabricksDataQualityMonitor extends cdktf.TerraformDataSource 
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataDatabricksDataQualityMonitor resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataDatabricksDataQualityMonitor resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksDataQualityMonitor to import
-  * @param importFromId The id of the existing DataDatabricksDataQualityMonitor that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/data_quality_monitor#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksDataQualityMonitor that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/data_quality_monitor#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksDataQualityMonitor to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_data_quality_monitor", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_data_quality_monitor", importId: importFromId, provider });
       }
 
   // ===========
@@ -1555,7 +1685,7 @@ export class DataDatabricksDataQualityMonitor extends cdktf.TerraformDataSource 
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/data_quality_monitor databricks_data_quality_monitor} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/data_quality_monitor databricks_data_quality_monitor} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1566,7 +1696,7 @@ export class DataDatabricksDataQualityMonitor extends cdktf.TerraformDataSource 
       terraformResourceType: 'databricks_data_quality_monitor',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -1579,6 +1709,7 @@ export class DataDatabricksDataQualityMonitor extends cdktf.TerraformDataSource 
     });
     this._objectId = config.objectId;
     this._objectType = config.objectType;
+    this._providerConfig.internalValue = config.providerConfig;
   }
 
   // ==========
@@ -1623,30 +1754,53 @@ export class DataDatabricksDataQualityMonitor extends cdktf.TerraformDataSource 
     return this._objectType;
   }
 
+  // provider_config - computed: false, optional: true, required: false
+  private _providerConfig = new DataDatabricksDataQualityMonitorProviderConfigOutputReference(this, "provider_config");
+  public get providerConfig() {
+    return this._providerConfig;
+  }
+  public putProviderConfig(value: DataDatabricksDataQualityMonitorProviderConfig) {
+    this._providerConfig.internalValue = value;
+  }
+  public resetProviderConfig() {
+    this._providerConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerConfigInput() {
+    return this._providerConfig.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      object_id: cdktf.stringToTerraform(this._objectId),
-      object_type: cdktf.stringToTerraform(this._objectType),
+      object_id: cdktn.stringToTerraform(this._objectId),
+      object_type: cdktn.stringToTerraform(this._objectType),
+      provider_config: dataDatabricksDataQualityMonitorProviderConfigToTerraform(this._providerConfig.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       object_id: {
-        value: cdktf.stringToHclTerraform(this._objectId),
+        value: cdktn.stringToHclTerraform(this._objectId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       object_type: {
-        value: cdktf.stringToHclTerraform(this._objectType),
+        value: cdktn.stringToHclTerraform(this._objectType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      provider_config: {
+        value: dataDatabricksDataQualityMonitorProviderConfigToHclTerraform(this._providerConfig.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "DataDatabricksDataQualityMonitorProviderConfig",
       },
     };
 

@@ -1,149 +1,149 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/metastore_data_access
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/metastore_data_access
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MetastoreDataAccessConfig extends cdktf.TerraformMetaArguments {
+export interface MetastoreDataAccessConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/metastore_data_access#comment MetastoreDataAccess#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/metastore_data_access#comment MetastoreDataAccess#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/metastore_data_access#force_destroy MetastoreDataAccess#force_destroy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/metastore_data_access#force_destroy MetastoreDataAccess#force_destroy}
   */
-  readonly forceDestroy?: boolean | cdktf.IResolvable;
+  readonly forceDestroy?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/metastore_data_access#force_update MetastoreDataAccess#force_update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/metastore_data_access#force_update MetastoreDataAccess#force_update}
   */
-  readonly forceUpdate?: boolean | cdktf.IResolvable;
+  readonly forceUpdate?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/metastore_data_access#id MetastoreDataAccess#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/metastore_data_access#id MetastoreDataAccess#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/metastore_data_access#is_default MetastoreDataAccess#is_default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/metastore_data_access#is_default MetastoreDataAccess#is_default}
   */
-  readonly isDefault?: boolean | cdktf.IResolvable;
+  readonly isDefault?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/metastore_data_access#isolation_mode MetastoreDataAccess#isolation_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/metastore_data_access#isolation_mode MetastoreDataAccess#isolation_mode}
   */
   readonly isolationMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/metastore_data_access#metastore_id MetastoreDataAccess#metastore_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/metastore_data_access#metastore_id MetastoreDataAccess#metastore_id}
   */
   readonly metastoreId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/metastore_data_access#name MetastoreDataAccess#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/metastore_data_access#name MetastoreDataAccess#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/metastore_data_access#owner MetastoreDataAccess#owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/metastore_data_access#owner MetastoreDataAccess#owner}
   */
   readonly owner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/metastore_data_access#read_only MetastoreDataAccess#read_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/metastore_data_access#read_only MetastoreDataAccess#read_only}
   */
-  readonly readOnly?: boolean | cdktf.IResolvable;
+  readonly readOnly?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/metastore_data_access#skip_validation MetastoreDataAccess#skip_validation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/metastore_data_access#skip_validation MetastoreDataAccess#skip_validation}
   */
-  readonly skipValidation?: boolean | cdktf.IResolvable;
+  readonly skipValidation?: boolean | cdktn.IResolvable;
   /**
   * aws_iam_role block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/metastore_data_access#aws_iam_role MetastoreDataAccess#aws_iam_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/metastore_data_access#aws_iam_role MetastoreDataAccess#aws_iam_role}
   */
   readonly awsIamRole?: MetastoreDataAccessAwsIamRole;
   /**
   * azure_managed_identity block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/metastore_data_access#azure_managed_identity MetastoreDataAccess#azure_managed_identity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/metastore_data_access#azure_managed_identity MetastoreDataAccess#azure_managed_identity}
   */
   readonly azureManagedIdentity?: MetastoreDataAccessAzureManagedIdentity;
   /**
   * azure_service_principal block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/metastore_data_access#azure_service_principal MetastoreDataAccess#azure_service_principal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/metastore_data_access#azure_service_principal MetastoreDataAccess#azure_service_principal}
   */
   readonly azureServicePrincipal?: MetastoreDataAccessAzureServicePrincipal;
   /**
   * cloudflare_api_token block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/metastore_data_access#cloudflare_api_token MetastoreDataAccess#cloudflare_api_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/metastore_data_access#cloudflare_api_token MetastoreDataAccess#cloudflare_api_token}
   */
   readonly cloudflareApiToken?: MetastoreDataAccessCloudflareApiToken;
   /**
   * databricks_gcp_service_account block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/metastore_data_access#databricks_gcp_service_account MetastoreDataAccess#databricks_gcp_service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/metastore_data_access#databricks_gcp_service_account MetastoreDataAccess#databricks_gcp_service_account}
   */
   readonly databricksGcpServiceAccount?: MetastoreDataAccessDatabricksGcpServiceAccount;
   /**
   * gcp_service_account_key block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/metastore_data_access#gcp_service_account_key MetastoreDataAccess#gcp_service_account_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/metastore_data_access#gcp_service_account_key MetastoreDataAccess#gcp_service_account_key}
   */
   readonly gcpServiceAccountKey?: MetastoreDataAccessGcpServiceAccountKey;
 }
 export interface MetastoreDataAccessAwsIamRole {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/metastore_data_access#external_id MetastoreDataAccess#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/metastore_data_access#external_id MetastoreDataAccess#external_id}
   */
   readonly externalId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/metastore_data_access#role_arn MetastoreDataAccess#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/metastore_data_access#role_arn MetastoreDataAccess#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/metastore_data_access#unity_catalog_iam_arn MetastoreDataAccess#unity_catalog_iam_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/metastore_data_access#unity_catalog_iam_arn MetastoreDataAccess#unity_catalog_iam_arn}
   */
   readonly unityCatalogIamArn?: string;
 }
 
 export function metastoreDataAccessAwsIamRoleToTerraform(struct?: MetastoreDataAccessAwsIamRoleOutputReference | MetastoreDataAccessAwsIamRole): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    external_id: cdktf.stringToTerraform(struct!.externalId),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
-    unity_catalog_iam_arn: cdktf.stringToTerraform(struct!.unityCatalogIamArn),
+    external_id: cdktn.stringToTerraform(struct!.externalId),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
+    unity_catalog_iam_arn: cdktn.stringToTerraform(struct!.unityCatalogIamArn),
   }
 }
 
 
 export function metastoreDataAccessAwsIamRoleToHclTerraform(struct?: MetastoreDataAccessAwsIamRoleOutputReference | MetastoreDataAccessAwsIamRole): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     external_id: {
-      value: cdktf.stringToHclTerraform(struct!.externalId),
+      value: cdktn.stringToHclTerraform(struct!.externalId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     unity_catalog_iam_arn: {
-      value: cdktf.stringToHclTerraform(struct!.unityCatalogIamArn),
+      value: cdktn.stringToHclTerraform(struct!.unityCatalogIamArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -154,14 +154,14 @@ export function metastoreDataAccessAwsIamRoleToHclTerraform(struct?: MetastoreDa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MetastoreDataAccessAwsIamRoleOutputReference extends cdktf.ComplexObject {
+export class MetastoreDataAccessAwsIamRoleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -245,52 +245,52 @@ export class MetastoreDataAccessAwsIamRoleOutputReference extends cdktf.ComplexO
 }
 export interface MetastoreDataAccessAzureManagedIdentity {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/metastore_data_access#access_connector_id MetastoreDataAccess#access_connector_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/metastore_data_access#access_connector_id MetastoreDataAccess#access_connector_id}
   */
   readonly accessConnectorId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/metastore_data_access#credential_id MetastoreDataAccess#credential_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/metastore_data_access#credential_id MetastoreDataAccess#credential_id}
   */
   readonly credentialId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/metastore_data_access#managed_identity_id MetastoreDataAccess#managed_identity_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/metastore_data_access#managed_identity_id MetastoreDataAccess#managed_identity_id}
   */
   readonly managedIdentityId?: string;
 }
 
 export function metastoreDataAccessAzureManagedIdentityToTerraform(struct?: MetastoreDataAccessAzureManagedIdentityOutputReference | MetastoreDataAccessAzureManagedIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    access_connector_id: cdktf.stringToTerraform(struct!.accessConnectorId),
-    credential_id: cdktf.stringToTerraform(struct!.credentialId),
-    managed_identity_id: cdktf.stringToTerraform(struct!.managedIdentityId),
+    access_connector_id: cdktn.stringToTerraform(struct!.accessConnectorId),
+    credential_id: cdktn.stringToTerraform(struct!.credentialId),
+    managed_identity_id: cdktn.stringToTerraform(struct!.managedIdentityId),
   }
 }
 
 
 export function metastoreDataAccessAzureManagedIdentityToHclTerraform(struct?: MetastoreDataAccessAzureManagedIdentityOutputReference | MetastoreDataAccessAzureManagedIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     access_connector_id: {
-      value: cdktf.stringToHclTerraform(struct!.accessConnectorId),
+      value: cdktn.stringToHclTerraform(struct!.accessConnectorId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     credential_id: {
-      value: cdktf.stringToHclTerraform(struct!.credentialId),
+      value: cdktn.stringToHclTerraform(struct!.credentialId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     managed_identity_id: {
-      value: cdktf.stringToHclTerraform(struct!.managedIdentityId),
+      value: cdktn.stringToHclTerraform(struct!.managedIdentityId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -301,14 +301,14 @@ export function metastoreDataAccessAzureManagedIdentityToHclTerraform(struct?: M
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MetastoreDataAccessAzureManagedIdentityOutputReference extends cdktf.ComplexObject {
+export class MetastoreDataAccessAzureManagedIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -392,52 +392,52 @@ export class MetastoreDataAccessAzureManagedIdentityOutputReference extends cdkt
 }
 export interface MetastoreDataAccessAzureServicePrincipal {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/metastore_data_access#application_id MetastoreDataAccess#application_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/metastore_data_access#application_id MetastoreDataAccess#application_id}
   */
   readonly applicationId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/metastore_data_access#client_secret MetastoreDataAccess#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/metastore_data_access#client_secret MetastoreDataAccess#client_secret}
   */
   readonly clientSecret: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/metastore_data_access#directory_id MetastoreDataAccess#directory_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/metastore_data_access#directory_id MetastoreDataAccess#directory_id}
   */
   readonly directoryId: string;
 }
 
 export function metastoreDataAccessAzureServicePrincipalToTerraform(struct?: MetastoreDataAccessAzureServicePrincipalOutputReference | MetastoreDataAccessAzureServicePrincipal): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    application_id: cdktf.stringToTerraform(struct!.applicationId),
-    client_secret: cdktf.stringToTerraform(struct!.clientSecret),
-    directory_id: cdktf.stringToTerraform(struct!.directoryId),
+    application_id: cdktn.stringToTerraform(struct!.applicationId),
+    client_secret: cdktn.stringToTerraform(struct!.clientSecret),
+    directory_id: cdktn.stringToTerraform(struct!.directoryId),
   }
 }
 
 
 export function metastoreDataAccessAzureServicePrincipalToHclTerraform(struct?: MetastoreDataAccessAzureServicePrincipalOutputReference | MetastoreDataAccessAzureServicePrincipal): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     application_id: {
-      value: cdktf.stringToHclTerraform(struct!.applicationId),
+      value: cdktn.stringToHclTerraform(struct!.applicationId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_secret: {
-      value: cdktf.stringToHclTerraform(struct!.clientSecret),
+      value: cdktn.stringToHclTerraform(struct!.clientSecret),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     directory_id: {
-      value: cdktf.stringToHclTerraform(struct!.directoryId),
+      value: cdktn.stringToHclTerraform(struct!.directoryId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -448,14 +448,14 @@ export function metastoreDataAccessAzureServicePrincipalToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MetastoreDataAccessAzureServicePrincipalOutputReference extends cdktf.ComplexObject {
+export class MetastoreDataAccessAzureServicePrincipalOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -533,52 +533,52 @@ export class MetastoreDataAccessAzureServicePrincipalOutputReference extends cdk
 }
 export interface MetastoreDataAccessCloudflareApiToken {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/metastore_data_access#access_key_id MetastoreDataAccess#access_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/metastore_data_access#access_key_id MetastoreDataAccess#access_key_id}
   */
   readonly accessKeyId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/metastore_data_access#account_id MetastoreDataAccess#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/metastore_data_access#account_id MetastoreDataAccess#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/metastore_data_access#secret_access_key MetastoreDataAccess#secret_access_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/metastore_data_access#secret_access_key MetastoreDataAccess#secret_access_key}
   */
   readonly secretAccessKey: string;
 }
 
 export function metastoreDataAccessCloudflareApiTokenToTerraform(struct?: MetastoreDataAccessCloudflareApiTokenOutputReference | MetastoreDataAccessCloudflareApiToken): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    access_key_id: cdktf.stringToTerraform(struct!.accessKeyId),
-    account_id: cdktf.stringToTerraform(struct!.accountId),
-    secret_access_key: cdktf.stringToTerraform(struct!.secretAccessKey),
+    access_key_id: cdktn.stringToTerraform(struct!.accessKeyId),
+    account_id: cdktn.stringToTerraform(struct!.accountId),
+    secret_access_key: cdktn.stringToTerraform(struct!.secretAccessKey),
   }
 }
 
 
 export function metastoreDataAccessCloudflareApiTokenToHclTerraform(struct?: MetastoreDataAccessCloudflareApiTokenOutputReference | MetastoreDataAccessCloudflareApiToken): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     access_key_id: {
-      value: cdktf.stringToHclTerraform(struct!.accessKeyId),
+      value: cdktn.stringToHclTerraform(struct!.accessKeyId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     account_id: {
-      value: cdktf.stringToHclTerraform(struct!.accountId),
+      value: cdktn.stringToHclTerraform(struct!.accountId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     secret_access_key: {
-      value: cdktf.stringToHclTerraform(struct!.secretAccessKey),
+      value: cdktn.stringToHclTerraform(struct!.secretAccessKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -589,14 +589,14 @@ export function metastoreDataAccessCloudflareApiTokenToHclTerraform(struct?: Met
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MetastoreDataAccessCloudflareApiTokenOutputReference extends cdktf.ComplexObject {
+export class MetastoreDataAccessCloudflareApiTokenOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -674,41 +674,41 @@ export class MetastoreDataAccessCloudflareApiTokenOutputReference extends cdktf.
 }
 export interface MetastoreDataAccessDatabricksGcpServiceAccount {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/metastore_data_access#credential_id MetastoreDataAccess#credential_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/metastore_data_access#credential_id MetastoreDataAccess#credential_id}
   */
   readonly credentialId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/metastore_data_access#email MetastoreDataAccess#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/metastore_data_access#email MetastoreDataAccess#email}
   */
   readonly email?: string;
 }
 
 export function metastoreDataAccessDatabricksGcpServiceAccountToTerraform(struct?: MetastoreDataAccessDatabricksGcpServiceAccountOutputReference | MetastoreDataAccessDatabricksGcpServiceAccount): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    credential_id: cdktf.stringToTerraform(struct!.credentialId),
-    email: cdktf.stringToTerraform(struct!.email),
+    credential_id: cdktn.stringToTerraform(struct!.credentialId),
+    email: cdktn.stringToTerraform(struct!.email),
   }
 }
 
 
 export function metastoreDataAccessDatabricksGcpServiceAccountToHclTerraform(struct?: MetastoreDataAccessDatabricksGcpServiceAccountOutputReference | MetastoreDataAccessDatabricksGcpServiceAccount): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     credential_id: {
-      value: cdktf.stringToHclTerraform(struct!.credentialId),
+      value: cdktn.stringToHclTerraform(struct!.credentialId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     email: {
-      value: cdktf.stringToHclTerraform(struct!.email),
+      value: cdktn.stringToHclTerraform(struct!.email),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -719,14 +719,14 @@ export function metastoreDataAccessDatabricksGcpServiceAccountToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MetastoreDataAccessDatabricksGcpServiceAccountOutputReference extends cdktf.ComplexObject {
+export class MetastoreDataAccessDatabricksGcpServiceAccountOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -791,52 +791,52 @@ export class MetastoreDataAccessDatabricksGcpServiceAccountOutputReference exten
 }
 export interface MetastoreDataAccessGcpServiceAccountKey {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/metastore_data_access#email MetastoreDataAccess#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/metastore_data_access#email MetastoreDataAccess#email}
   */
   readonly email: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/metastore_data_access#private_key MetastoreDataAccess#private_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/metastore_data_access#private_key MetastoreDataAccess#private_key}
   */
   readonly privateKey: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/metastore_data_access#private_key_id MetastoreDataAccess#private_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/metastore_data_access#private_key_id MetastoreDataAccess#private_key_id}
   */
   readonly privateKeyId: string;
 }
 
 export function metastoreDataAccessGcpServiceAccountKeyToTerraform(struct?: MetastoreDataAccessGcpServiceAccountKeyOutputReference | MetastoreDataAccessGcpServiceAccountKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    email: cdktf.stringToTerraform(struct!.email),
-    private_key: cdktf.stringToTerraform(struct!.privateKey),
-    private_key_id: cdktf.stringToTerraform(struct!.privateKeyId),
+    email: cdktn.stringToTerraform(struct!.email),
+    private_key: cdktn.stringToTerraform(struct!.privateKey),
+    private_key_id: cdktn.stringToTerraform(struct!.privateKeyId),
   }
 }
 
 
 export function metastoreDataAccessGcpServiceAccountKeyToHclTerraform(struct?: MetastoreDataAccessGcpServiceAccountKeyOutputReference | MetastoreDataAccessGcpServiceAccountKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     email: {
-      value: cdktf.stringToHclTerraform(struct!.email),
+      value: cdktn.stringToHclTerraform(struct!.email),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     private_key: {
-      value: cdktf.stringToHclTerraform(struct!.privateKey),
+      value: cdktn.stringToHclTerraform(struct!.privateKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     private_key_id: {
-      value: cdktf.stringToHclTerraform(struct!.privateKeyId),
+      value: cdktn.stringToHclTerraform(struct!.privateKeyId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -847,14 +847,14 @@ export function metastoreDataAccessGcpServiceAccountKeyToHclTerraform(struct?: M
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MetastoreDataAccessGcpServiceAccountKeyOutputReference extends cdktf.ComplexObject {
+export class MetastoreDataAccessGcpServiceAccountKeyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -932,9 +932,9 @@ export class MetastoreDataAccessGcpServiceAccountKeyOutputReference extends cdkt
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/metastore_data_access databricks_metastore_data_access}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/metastore_data_access databricks_metastore_data_access}
 */
-export class MetastoreDataAccess extends cdktf.TerraformResource {
+export class MetastoreDataAccess extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -945,14 +945,14 @@ export class MetastoreDataAccess extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a MetastoreDataAccess resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a MetastoreDataAccess resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MetastoreDataAccess to import
-  * @param importFromId The id of the existing MetastoreDataAccess that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/metastore_data_access#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MetastoreDataAccess that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/metastore_data_access#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MetastoreDataAccess to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_metastore_data_access", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_metastore_data_access", importId: importFromId, provider });
       }
 
   // ===========
@@ -960,7 +960,7 @@ export class MetastoreDataAccess extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/metastore_data_access databricks_metastore_data_access} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/metastore_data_access databricks_metastore_data_access} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -971,7 +971,7 @@ export class MetastoreDataAccess extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_metastore_data_access',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -1022,11 +1022,11 @@ export class MetastoreDataAccess extends cdktf.TerraformResource {
   }
 
   // force_destroy - computed: false, optional: true, required: false
-  private _forceDestroy?: boolean | cdktf.IResolvable; 
+  private _forceDestroy?: boolean | cdktn.IResolvable; 
   public get forceDestroy() {
     return this.getBooleanAttribute('force_destroy');
   }
-  public set forceDestroy(value: boolean | cdktf.IResolvable) {
+  public set forceDestroy(value: boolean | cdktn.IResolvable) {
     this._forceDestroy = value;
   }
   public resetForceDestroy() {
@@ -1038,11 +1038,11 @@ export class MetastoreDataAccess extends cdktf.TerraformResource {
   }
 
   // force_update - computed: false, optional: true, required: false
-  private _forceUpdate?: boolean | cdktf.IResolvable; 
+  private _forceUpdate?: boolean | cdktn.IResolvable; 
   public get forceUpdate() {
     return this.getBooleanAttribute('force_update');
   }
-  public set forceUpdate(value: boolean | cdktf.IResolvable) {
+  public set forceUpdate(value: boolean | cdktn.IResolvable) {
     this._forceUpdate = value;
   }
   public resetForceUpdate() {
@@ -1070,11 +1070,11 @@ export class MetastoreDataAccess extends cdktf.TerraformResource {
   }
 
   // is_default - computed: false, optional: true, required: false
-  private _isDefault?: boolean | cdktf.IResolvable; 
+  private _isDefault?: boolean | cdktn.IResolvable; 
   public get isDefault() {
     return this.getBooleanAttribute('is_default');
   }
-  public set isDefault(value: boolean | cdktf.IResolvable) {
+  public set isDefault(value: boolean | cdktn.IResolvable) {
     this._isDefault = value;
   }
   public resetIsDefault() {
@@ -1147,11 +1147,11 @@ export class MetastoreDataAccess extends cdktf.TerraformResource {
   }
 
   // read_only - computed: false, optional: true, required: false
-  private _readOnly?: boolean | cdktf.IResolvable; 
+  private _readOnly?: boolean | cdktn.IResolvable; 
   public get readOnly() {
     return this.getBooleanAttribute('read_only');
   }
-  public set readOnly(value: boolean | cdktf.IResolvable) {
+  public set readOnly(value: boolean | cdktn.IResolvable) {
     this._readOnly = value;
   }
   public resetReadOnly() {
@@ -1163,11 +1163,11 @@ export class MetastoreDataAccess extends cdktf.TerraformResource {
   }
 
   // skip_validation - computed: false, optional: true, required: false
-  private _skipValidation?: boolean | cdktf.IResolvable; 
+  private _skipValidation?: boolean | cdktn.IResolvable; 
   public get skipValidation() {
     return this.getBooleanAttribute('skip_validation');
   }
-  public set skipValidation(value: boolean | cdktf.IResolvable) {
+  public set skipValidation(value: boolean | cdktn.IResolvable) {
     this._skipValidation = value;
   }
   public resetSkipValidation() {
@@ -1280,17 +1280,17 @@ export class MetastoreDataAccess extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      comment: cdktf.stringToTerraform(this._comment),
-      force_destroy: cdktf.booleanToTerraform(this._forceDestroy),
-      force_update: cdktf.booleanToTerraform(this._forceUpdate),
-      id: cdktf.stringToTerraform(this._id),
-      is_default: cdktf.booleanToTerraform(this._isDefault),
-      isolation_mode: cdktf.stringToTerraform(this._isolationMode),
-      metastore_id: cdktf.stringToTerraform(this._metastoreId),
-      name: cdktf.stringToTerraform(this._name),
-      owner: cdktf.stringToTerraform(this._owner),
-      read_only: cdktf.booleanToTerraform(this._readOnly),
-      skip_validation: cdktf.booleanToTerraform(this._skipValidation),
+      comment: cdktn.stringToTerraform(this._comment),
+      force_destroy: cdktn.booleanToTerraform(this._forceDestroy),
+      force_update: cdktn.booleanToTerraform(this._forceUpdate),
+      id: cdktn.stringToTerraform(this._id),
+      is_default: cdktn.booleanToTerraform(this._isDefault),
+      isolation_mode: cdktn.stringToTerraform(this._isolationMode),
+      metastore_id: cdktn.stringToTerraform(this._metastoreId),
+      name: cdktn.stringToTerraform(this._name),
+      owner: cdktn.stringToTerraform(this._owner),
+      read_only: cdktn.booleanToTerraform(this._readOnly),
+      skip_validation: cdktn.booleanToTerraform(this._skipValidation),
       aws_iam_role: metastoreDataAccessAwsIamRoleToTerraform(this._awsIamRole.internalValue),
       azure_managed_identity: metastoreDataAccessAzureManagedIdentityToTerraform(this._azureManagedIdentity.internalValue),
       azure_service_principal: metastoreDataAccessAzureServicePrincipalToTerraform(this._azureServicePrincipal.internalValue),
@@ -1303,67 +1303,67 @@ export class MetastoreDataAccess extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       comment: {
-        value: cdktf.stringToHclTerraform(this._comment),
+        value: cdktn.stringToHclTerraform(this._comment),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       force_destroy: {
-        value: cdktf.booleanToHclTerraform(this._forceDestroy),
+        value: cdktn.booleanToHclTerraform(this._forceDestroy),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       force_update: {
-        value: cdktf.booleanToHclTerraform(this._forceUpdate),
+        value: cdktn.booleanToHclTerraform(this._forceUpdate),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       is_default: {
-        value: cdktf.booleanToHclTerraform(this._isDefault),
+        value: cdktn.booleanToHclTerraform(this._isDefault),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       isolation_mode: {
-        value: cdktf.stringToHclTerraform(this._isolationMode),
+        value: cdktn.stringToHclTerraform(this._isolationMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       metastore_id: {
-        value: cdktf.stringToHclTerraform(this._metastoreId),
+        value: cdktn.stringToHclTerraform(this._metastoreId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       owner: {
-        value: cdktf.stringToHclTerraform(this._owner),
+        value: cdktn.stringToHclTerraform(this._owner),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       read_only: {
-        value: cdktf.booleanToHclTerraform(this._readOnly),
+        value: cdktn.booleanToHclTerraform(this._readOnly),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       skip_validation: {
-        value: cdktf.booleanToHclTerraform(this._skipValidation),
+        value: cdktn.booleanToHclTerraform(this._skipValidation),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

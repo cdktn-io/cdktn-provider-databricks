@@ -1,31 +1,35 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/database_synced_database_table
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/database_synced_database_table
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DatabaseSyncedDatabaseTableConfig extends cdktf.TerraformMetaArguments {
+export interface DatabaseSyncedDatabaseTableConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/database_synced_database_table#database_instance_name DatabaseSyncedDatabaseTable#database_instance_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/database_synced_database_table#database_instance_name DatabaseSyncedDatabaseTable#database_instance_name}
   */
   readonly databaseInstanceName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/database_synced_database_table#logical_database_name DatabaseSyncedDatabaseTable#logical_database_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/database_synced_database_table#logical_database_name DatabaseSyncedDatabaseTable#logical_database_name}
   */
   readonly logicalDatabaseName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/database_synced_database_table#name DatabaseSyncedDatabaseTable#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/database_synced_database_table#name DatabaseSyncedDatabaseTable#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/database_synced_database_table#spec DatabaseSyncedDatabaseTable#spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/database_synced_database_table#provider_config DatabaseSyncedDatabaseTable#provider_config}
+  */
+  readonly providerConfig?: DatabaseSyncedDatabaseTableProviderConfig;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/database_synced_database_table#spec DatabaseSyncedDatabaseTable#spec}
   */
   readonly spec?: DatabaseSyncedDatabaseTableSpec;
 }
@@ -33,8 +37,8 @@ export interface DatabaseSyncedDatabaseTableDataSynchronizationStatusContinuousU
 }
 
 export function databaseSyncedDatabaseTableDataSynchronizationStatusContinuousUpdateStatusInitialPipelineSyncProgressToTerraform(struct?: DatabaseSyncedDatabaseTableDataSynchronizationStatusContinuousUpdateStatusInitialPipelineSyncProgress): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -43,8 +47,8 @@ export function databaseSyncedDatabaseTableDataSynchronizationStatusContinuousUp
 
 
 export function databaseSyncedDatabaseTableDataSynchronizationStatusContinuousUpdateStatusInitialPipelineSyncProgressToHclTerraform(struct?: DatabaseSyncedDatabaseTableDataSynchronizationStatusContinuousUpdateStatusInitialPipelineSyncProgress): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -52,14 +56,14 @@ export function databaseSyncedDatabaseTableDataSynchronizationStatusContinuousUp
   return attrs;
 }
 
-export class DatabaseSyncedDatabaseTableDataSynchronizationStatusContinuousUpdateStatusInitialPipelineSyncProgressOutputReference extends cdktf.ComplexObject {
+export class DatabaseSyncedDatabaseTableDataSynchronizationStatusContinuousUpdateStatusInitialPipelineSyncProgressOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -111,9 +115,9 @@ export class DatabaseSyncedDatabaseTableDataSynchronizationStatusContinuousUpdat
 export interface DatabaseSyncedDatabaseTableDataSynchronizationStatusContinuousUpdateStatus {
 }
 
-export function databaseSyncedDatabaseTableDataSynchronizationStatusContinuousUpdateStatusToTerraform(struct?: DatabaseSyncedDatabaseTableDataSynchronizationStatusContinuousUpdateStatus | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function databaseSyncedDatabaseTableDataSynchronizationStatusContinuousUpdateStatusToTerraform(struct?: DatabaseSyncedDatabaseTableDataSynchronizationStatusContinuousUpdateStatus | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -121,9 +125,9 @@ export function databaseSyncedDatabaseTableDataSynchronizationStatusContinuousUp
 }
 
 
-export function databaseSyncedDatabaseTableDataSynchronizationStatusContinuousUpdateStatusToHclTerraform(struct?: DatabaseSyncedDatabaseTableDataSynchronizationStatusContinuousUpdateStatus | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function databaseSyncedDatabaseTableDataSynchronizationStatusContinuousUpdateStatusToHclTerraform(struct?: DatabaseSyncedDatabaseTableDataSynchronizationStatusContinuousUpdateStatus | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -131,19 +135,19 @@ export function databaseSyncedDatabaseTableDataSynchronizationStatusContinuousUp
   return attrs;
 }
 
-export class DatabaseSyncedDatabaseTableDataSynchronizationStatusContinuousUpdateStatusOutputReference extends cdktf.ComplexObject {
+export class DatabaseSyncedDatabaseTableDataSynchronizationStatusContinuousUpdateStatusOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DatabaseSyncedDatabaseTableDataSynchronizationStatusContinuousUpdateStatus | cdktf.IResolvable | undefined {
+  public get internalValue(): DatabaseSyncedDatabaseTableDataSynchronizationStatusContinuousUpdateStatus | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -152,12 +156,12 @@ export class DatabaseSyncedDatabaseTableDataSynchronizationStatusContinuousUpdat
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DatabaseSyncedDatabaseTableDataSynchronizationStatusContinuousUpdateStatus | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DatabaseSyncedDatabaseTableDataSynchronizationStatusContinuousUpdateStatus | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -186,9 +190,9 @@ export class DatabaseSyncedDatabaseTableDataSynchronizationStatusContinuousUpdat
 export interface DatabaseSyncedDatabaseTableDataSynchronizationStatusFailedStatus {
 }
 
-export function databaseSyncedDatabaseTableDataSynchronizationStatusFailedStatusToTerraform(struct?: DatabaseSyncedDatabaseTableDataSynchronizationStatusFailedStatus | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function databaseSyncedDatabaseTableDataSynchronizationStatusFailedStatusToTerraform(struct?: DatabaseSyncedDatabaseTableDataSynchronizationStatusFailedStatus | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -196,9 +200,9 @@ export function databaseSyncedDatabaseTableDataSynchronizationStatusFailedStatus
 }
 
 
-export function databaseSyncedDatabaseTableDataSynchronizationStatusFailedStatusToHclTerraform(struct?: DatabaseSyncedDatabaseTableDataSynchronizationStatusFailedStatus | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function databaseSyncedDatabaseTableDataSynchronizationStatusFailedStatusToHclTerraform(struct?: DatabaseSyncedDatabaseTableDataSynchronizationStatusFailedStatus | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -206,19 +210,19 @@ export function databaseSyncedDatabaseTableDataSynchronizationStatusFailedStatus
   return attrs;
 }
 
-export class DatabaseSyncedDatabaseTableDataSynchronizationStatusFailedStatusOutputReference extends cdktf.ComplexObject {
+export class DatabaseSyncedDatabaseTableDataSynchronizationStatusFailedStatusOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DatabaseSyncedDatabaseTableDataSynchronizationStatusFailedStatus | cdktf.IResolvable | undefined {
+  public get internalValue(): DatabaseSyncedDatabaseTableDataSynchronizationStatusFailedStatus | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -227,12 +231,12 @@ export class DatabaseSyncedDatabaseTableDataSynchronizationStatusFailedStatusOut
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DatabaseSyncedDatabaseTableDataSynchronizationStatusFailedStatus | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DatabaseSyncedDatabaseTableDataSynchronizationStatusFailedStatus | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -256,8 +260,8 @@ export interface DatabaseSyncedDatabaseTableDataSynchronizationStatusLastSyncDel
 }
 
 export function databaseSyncedDatabaseTableDataSynchronizationStatusLastSyncDeltaTableSyncInfoToTerraform(struct?: DatabaseSyncedDatabaseTableDataSynchronizationStatusLastSyncDeltaTableSyncInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -266,8 +270,8 @@ export function databaseSyncedDatabaseTableDataSynchronizationStatusLastSyncDelt
 
 
 export function databaseSyncedDatabaseTableDataSynchronizationStatusLastSyncDeltaTableSyncInfoToHclTerraform(struct?: DatabaseSyncedDatabaseTableDataSynchronizationStatusLastSyncDeltaTableSyncInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -275,14 +279,14 @@ export function databaseSyncedDatabaseTableDataSynchronizationStatusLastSyncDelt
   return attrs;
 }
 
-export class DatabaseSyncedDatabaseTableDataSynchronizationStatusLastSyncDeltaTableSyncInfoOutputReference extends cdktf.ComplexObject {
+export class DatabaseSyncedDatabaseTableDataSynchronizationStatusLastSyncDeltaTableSyncInfoOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -315,8 +319,8 @@ export interface DatabaseSyncedDatabaseTableDataSynchronizationStatusLastSync {
 }
 
 export function databaseSyncedDatabaseTableDataSynchronizationStatusLastSyncToTerraform(struct?: DatabaseSyncedDatabaseTableDataSynchronizationStatusLastSync): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -325,8 +329,8 @@ export function databaseSyncedDatabaseTableDataSynchronizationStatusLastSyncToTe
 
 
 export function databaseSyncedDatabaseTableDataSynchronizationStatusLastSyncToHclTerraform(struct?: DatabaseSyncedDatabaseTableDataSynchronizationStatusLastSync): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -334,14 +338,14 @@ export function databaseSyncedDatabaseTableDataSynchronizationStatusLastSyncToHc
   return attrs;
 }
 
-export class DatabaseSyncedDatabaseTableDataSynchronizationStatusLastSyncOutputReference extends cdktf.ComplexObject {
+export class DatabaseSyncedDatabaseTableDataSynchronizationStatusLastSyncOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -380,8 +384,8 @@ export interface DatabaseSyncedDatabaseTableDataSynchronizationStatusProvisionin
 }
 
 export function databaseSyncedDatabaseTableDataSynchronizationStatusProvisioningStatusInitialPipelineSyncProgressToTerraform(struct?: DatabaseSyncedDatabaseTableDataSynchronizationStatusProvisioningStatusInitialPipelineSyncProgress): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -390,8 +394,8 @@ export function databaseSyncedDatabaseTableDataSynchronizationStatusProvisioning
 
 
 export function databaseSyncedDatabaseTableDataSynchronizationStatusProvisioningStatusInitialPipelineSyncProgressToHclTerraform(struct?: DatabaseSyncedDatabaseTableDataSynchronizationStatusProvisioningStatusInitialPipelineSyncProgress): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -399,14 +403,14 @@ export function databaseSyncedDatabaseTableDataSynchronizationStatusProvisioning
   return attrs;
 }
 
-export class DatabaseSyncedDatabaseTableDataSynchronizationStatusProvisioningStatusInitialPipelineSyncProgressOutputReference extends cdktf.ComplexObject {
+export class DatabaseSyncedDatabaseTableDataSynchronizationStatusProvisioningStatusInitialPipelineSyncProgressOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -458,9 +462,9 @@ export class DatabaseSyncedDatabaseTableDataSynchronizationStatusProvisioningSta
 export interface DatabaseSyncedDatabaseTableDataSynchronizationStatusProvisioningStatus {
 }
 
-export function databaseSyncedDatabaseTableDataSynchronizationStatusProvisioningStatusToTerraform(struct?: DatabaseSyncedDatabaseTableDataSynchronizationStatusProvisioningStatus | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function databaseSyncedDatabaseTableDataSynchronizationStatusProvisioningStatusToTerraform(struct?: DatabaseSyncedDatabaseTableDataSynchronizationStatusProvisioningStatus | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -468,9 +472,9 @@ export function databaseSyncedDatabaseTableDataSynchronizationStatusProvisioning
 }
 
 
-export function databaseSyncedDatabaseTableDataSynchronizationStatusProvisioningStatusToHclTerraform(struct?: DatabaseSyncedDatabaseTableDataSynchronizationStatusProvisioningStatus | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function databaseSyncedDatabaseTableDataSynchronizationStatusProvisioningStatusToHclTerraform(struct?: DatabaseSyncedDatabaseTableDataSynchronizationStatusProvisioningStatus | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -478,19 +482,19 @@ export function databaseSyncedDatabaseTableDataSynchronizationStatusProvisioning
   return attrs;
 }
 
-export class DatabaseSyncedDatabaseTableDataSynchronizationStatusProvisioningStatusOutputReference extends cdktf.ComplexObject {
+export class DatabaseSyncedDatabaseTableDataSynchronizationStatusProvisioningStatusOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DatabaseSyncedDatabaseTableDataSynchronizationStatusProvisioningStatus | cdktf.IResolvable | undefined {
+  public get internalValue(): DatabaseSyncedDatabaseTableDataSynchronizationStatusProvisioningStatus | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -499,12 +503,12 @@ export class DatabaseSyncedDatabaseTableDataSynchronizationStatusProvisioningSta
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DatabaseSyncedDatabaseTableDataSynchronizationStatusProvisioningStatus | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DatabaseSyncedDatabaseTableDataSynchronizationStatusProvisioningStatus | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -524,8 +528,8 @@ export interface DatabaseSyncedDatabaseTableDataSynchronizationStatusTriggeredUp
 }
 
 export function databaseSyncedDatabaseTableDataSynchronizationStatusTriggeredUpdateStatusTriggeredUpdateProgressToTerraform(struct?: DatabaseSyncedDatabaseTableDataSynchronizationStatusTriggeredUpdateStatusTriggeredUpdateProgress): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -534,8 +538,8 @@ export function databaseSyncedDatabaseTableDataSynchronizationStatusTriggeredUpd
 
 
 export function databaseSyncedDatabaseTableDataSynchronizationStatusTriggeredUpdateStatusTriggeredUpdateProgressToHclTerraform(struct?: DatabaseSyncedDatabaseTableDataSynchronizationStatusTriggeredUpdateStatusTriggeredUpdateProgress): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -543,14 +547,14 @@ export function databaseSyncedDatabaseTableDataSynchronizationStatusTriggeredUpd
   return attrs;
 }
 
-export class DatabaseSyncedDatabaseTableDataSynchronizationStatusTriggeredUpdateStatusTriggeredUpdateProgressOutputReference extends cdktf.ComplexObject {
+export class DatabaseSyncedDatabaseTableDataSynchronizationStatusTriggeredUpdateStatusTriggeredUpdateProgressOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -602,9 +606,9 @@ export class DatabaseSyncedDatabaseTableDataSynchronizationStatusTriggeredUpdate
 export interface DatabaseSyncedDatabaseTableDataSynchronizationStatusTriggeredUpdateStatus {
 }
 
-export function databaseSyncedDatabaseTableDataSynchronizationStatusTriggeredUpdateStatusToTerraform(struct?: DatabaseSyncedDatabaseTableDataSynchronizationStatusTriggeredUpdateStatus | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function databaseSyncedDatabaseTableDataSynchronizationStatusTriggeredUpdateStatusToTerraform(struct?: DatabaseSyncedDatabaseTableDataSynchronizationStatusTriggeredUpdateStatus | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -612,9 +616,9 @@ export function databaseSyncedDatabaseTableDataSynchronizationStatusTriggeredUpd
 }
 
 
-export function databaseSyncedDatabaseTableDataSynchronizationStatusTriggeredUpdateStatusToHclTerraform(struct?: DatabaseSyncedDatabaseTableDataSynchronizationStatusTriggeredUpdateStatus | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function databaseSyncedDatabaseTableDataSynchronizationStatusTriggeredUpdateStatusToHclTerraform(struct?: DatabaseSyncedDatabaseTableDataSynchronizationStatusTriggeredUpdateStatus | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -622,19 +626,19 @@ export function databaseSyncedDatabaseTableDataSynchronizationStatusTriggeredUpd
   return attrs;
 }
 
-export class DatabaseSyncedDatabaseTableDataSynchronizationStatusTriggeredUpdateStatusOutputReference extends cdktf.ComplexObject {
+export class DatabaseSyncedDatabaseTableDataSynchronizationStatusTriggeredUpdateStatusOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DatabaseSyncedDatabaseTableDataSynchronizationStatusTriggeredUpdateStatus | cdktf.IResolvable | undefined {
+  public get internalValue(): DatabaseSyncedDatabaseTableDataSynchronizationStatusTriggeredUpdateStatus | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -643,12 +647,12 @@ export class DatabaseSyncedDatabaseTableDataSynchronizationStatusTriggeredUpdate
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DatabaseSyncedDatabaseTableDataSynchronizationStatusTriggeredUpdateStatus | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DatabaseSyncedDatabaseTableDataSynchronizationStatusTriggeredUpdateStatus | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -676,26 +680,26 @@ export class DatabaseSyncedDatabaseTableDataSynchronizationStatusTriggeredUpdate
 }
 export interface DatabaseSyncedDatabaseTableDataSynchronizationStatus {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/database_synced_database_table#continuous_update_status DatabaseSyncedDatabaseTable#continuous_update_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/database_synced_database_table#continuous_update_status DatabaseSyncedDatabaseTable#continuous_update_status}
   */
   readonly continuousUpdateStatus?: DatabaseSyncedDatabaseTableDataSynchronizationStatusContinuousUpdateStatus;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/database_synced_database_table#failed_status DatabaseSyncedDatabaseTable#failed_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/database_synced_database_table#failed_status DatabaseSyncedDatabaseTable#failed_status}
   */
   readonly failedStatus?: DatabaseSyncedDatabaseTableDataSynchronizationStatusFailedStatus;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/database_synced_database_table#provisioning_status DatabaseSyncedDatabaseTable#provisioning_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/database_synced_database_table#provisioning_status DatabaseSyncedDatabaseTable#provisioning_status}
   */
   readonly provisioningStatus?: DatabaseSyncedDatabaseTableDataSynchronizationStatusProvisioningStatus;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/database_synced_database_table#triggered_update_status DatabaseSyncedDatabaseTable#triggered_update_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/database_synced_database_table#triggered_update_status DatabaseSyncedDatabaseTable#triggered_update_status}
   */
   readonly triggeredUpdateStatus?: DatabaseSyncedDatabaseTableDataSynchronizationStatusTriggeredUpdateStatus;
 }
 
 export function databaseSyncedDatabaseTableDataSynchronizationStatusToTerraform(struct?: DatabaseSyncedDatabaseTableDataSynchronizationStatus): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -708,8 +712,8 @@ export function databaseSyncedDatabaseTableDataSynchronizationStatusToTerraform(
 
 
 export function databaseSyncedDatabaseTableDataSynchronizationStatusToHclTerraform(struct?: DatabaseSyncedDatabaseTableDataSynchronizationStatus): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -743,14 +747,14 @@ export function databaseSyncedDatabaseTableDataSynchronizationStatusToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatabaseSyncedDatabaseTableDataSynchronizationStatusOutputReference extends cdktf.ComplexObject {
+export class DatabaseSyncedDatabaseTableDataSynchronizationStatusOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -878,54 +882,32 @@ export class DatabaseSyncedDatabaseTableDataSynchronizationStatusOutputReference
     return this._triggeredUpdateStatus.internalValue;
   }
 }
-export interface DatabaseSyncedDatabaseTableSpecNewPipelineSpec {
+export interface DatabaseSyncedDatabaseTableProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/database_synced_database_table#budget_policy_id DatabaseSyncedDatabaseTable#budget_policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/database_synced_database_table#workspace_id DatabaseSyncedDatabaseTable#workspace_id}
   */
-  readonly budgetPolicyId?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/database_synced_database_table#storage_catalog DatabaseSyncedDatabaseTable#storage_catalog}
-  */
-  readonly storageCatalog?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/database_synced_database_table#storage_schema DatabaseSyncedDatabaseTable#storage_schema}
-  */
-  readonly storageSchema?: string;
+  readonly workspaceId: string;
 }
 
-export function databaseSyncedDatabaseTableSpecNewPipelineSpecToTerraform(struct?: DatabaseSyncedDatabaseTableSpecNewPipelineSpec | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function databaseSyncedDatabaseTableProviderConfigToTerraform(struct?: DatabaseSyncedDatabaseTableProviderConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    budget_policy_id: cdktf.stringToTerraform(struct!.budgetPolicyId),
-    storage_catalog: cdktf.stringToTerraform(struct!.storageCatalog),
-    storage_schema: cdktf.stringToTerraform(struct!.storageSchema),
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
   }
 }
 
 
-export function databaseSyncedDatabaseTableSpecNewPipelineSpecToHclTerraform(struct?: DatabaseSyncedDatabaseTableSpecNewPipelineSpec | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function databaseSyncedDatabaseTableProviderConfigToHclTerraform(struct?: DatabaseSyncedDatabaseTableProviderConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
-    budget_policy_id: {
-      value: cdktf.stringToHclTerraform(struct!.budgetPolicyId),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    storage_catalog: {
-      value: cdktf.stringToHclTerraform(struct!.storageCatalog),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    storage_schema: {
-      value: cdktf.stringToHclTerraform(struct!.storageSchema),
+    workspace_id: {
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -936,19 +918,132 @@ export function databaseSyncedDatabaseTableSpecNewPipelineSpecToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatabaseSyncedDatabaseTableSpecNewPipelineSpecOutputReference extends cdktf.ComplexObject {
+export class DatabaseSyncedDatabaseTableProviderConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DatabaseSyncedDatabaseTableSpecNewPipelineSpec | cdktf.IResolvable | undefined {
+  public get internalValue(): DatabaseSyncedDatabaseTableProviderConfig | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._workspaceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workspaceId = this._workspaceId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DatabaseSyncedDatabaseTableProviderConfig | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._workspaceId = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._workspaceId = value.workspaceId;
+    }
+  }
+
+  // workspace_id - computed: false, optional: false, required: true
+  private _workspaceId?: string; 
+  public get workspaceId() {
+    return this.getStringAttribute('workspace_id');
+  }
+  public set workspaceId(value: string) {
+    this._workspaceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workspaceIdInput() {
+    return this._workspaceId;
+  }
+}
+export interface DatabaseSyncedDatabaseTableSpecNewPipelineSpec {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/database_synced_database_table#budget_policy_id DatabaseSyncedDatabaseTable#budget_policy_id}
+  */
+  readonly budgetPolicyId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/database_synced_database_table#storage_catalog DatabaseSyncedDatabaseTable#storage_catalog}
+  */
+  readonly storageCatalog?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/database_synced_database_table#storage_schema DatabaseSyncedDatabaseTable#storage_schema}
+  */
+  readonly storageSchema?: string;
+}
+
+export function databaseSyncedDatabaseTableSpecNewPipelineSpecToTerraform(struct?: DatabaseSyncedDatabaseTableSpecNewPipelineSpec | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    budget_policy_id: cdktn.stringToTerraform(struct!.budgetPolicyId),
+    storage_catalog: cdktn.stringToTerraform(struct!.storageCatalog),
+    storage_schema: cdktn.stringToTerraform(struct!.storageSchema),
+  }
+}
+
+
+export function databaseSyncedDatabaseTableSpecNewPipelineSpecToHclTerraform(struct?: DatabaseSyncedDatabaseTableSpecNewPipelineSpec | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    budget_policy_id: {
+      value: cdktn.stringToHclTerraform(struct!.budgetPolicyId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    storage_catalog: {
+      value: cdktn.stringToHclTerraform(struct!.storageCatalog),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    storage_schema: {
+      value: cdktn.stringToHclTerraform(struct!.storageSchema),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DatabaseSyncedDatabaseTableSpecNewPipelineSpecOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DatabaseSyncedDatabaseTableSpecNewPipelineSpec | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -969,7 +1064,7 @@ export class DatabaseSyncedDatabaseTableSpecNewPipelineSpecOutputReference exten
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DatabaseSyncedDatabaseTableSpecNewPipelineSpec | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DatabaseSyncedDatabaseTableSpecNewPipelineSpec | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -977,7 +1072,7 @@ export class DatabaseSyncedDatabaseTableSpecNewPipelineSpecOutputReference exten
       this._storageCatalog = undefined;
       this._storageSchema = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1040,66 +1135,66 @@ export class DatabaseSyncedDatabaseTableSpecNewPipelineSpecOutputReference exten
 }
 export interface DatabaseSyncedDatabaseTableSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/database_synced_database_table#create_database_objects_if_missing DatabaseSyncedDatabaseTable#create_database_objects_if_missing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/database_synced_database_table#create_database_objects_if_missing DatabaseSyncedDatabaseTable#create_database_objects_if_missing}
   */
-  readonly createDatabaseObjectsIfMissing?: boolean | cdktf.IResolvable;
+  readonly createDatabaseObjectsIfMissing?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/database_synced_database_table#existing_pipeline_id DatabaseSyncedDatabaseTable#existing_pipeline_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/database_synced_database_table#existing_pipeline_id DatabaseSyncedDatabaseTable#existing_pipeline_id}
   */
   readonly existingPipelineId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/database_synced_database_table#new_pipeline_spec DatabaseSyncedDatabaseTable#new_pipeline_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/database_synced_database_table#new_pipeline_spec DatabaseSyncedDatabaseTable#new_pipeline_spec}
   */
   readonly newPipelineSpec?: DatabaseSyncedDatabaseTableSpecNewPipelineSpec;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/database_synced_database_table#primary_key_columns DatabaseSyncedDatabaseTable#primary_key_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/database_synced_database_table#primary_key_columns DatabaseSyncedDatabaseTable#primary_key_columns}
   */
   readonly primaryKeyColumns?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/database_synced_database_table#scheduling_policy DatabaseSyncedDatabaseTable#scheduling_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/database_synced_database_table#scheduling_policy DatabaseSyncedDatabaseTable#scheduling_policy}
   */
   readonly schedulingPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/database_synced_database_table#source_table_full_name DatabaseSyncedDatabaseTable#source_table_full_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/database_synced_database_table#source_table_full_name DatabaseSyncedDatabaseTable#source_table_full_name}
   */
   readonly sourceTableFullName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/database_synced_database_table#timeseries_key DatabaseSyncedDatabaseTable#timeseries_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/database_synced_database_table#timeseries_key DatabaseSyncedDatabaseTable#timeseries_key}
   */
   readonly timeseriesKey?: string;
 }
 
-export function databaseSyncedDatabaseTableSpecToTerraform(struct?: DatabaseSyncedDatabaseTableSpec | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function databaseSyncedDatabaseTableSpecToTerraform(struct?: DatabaseSyncedDatabaseTableSpec | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create_database_objects_if_missing: cdktf.booleanToTerraform(struct!.createDatabaseObjectsIfMissing),
-    existing_pipeline_id: cdktf.stringToTerraform(struct!.existingPipelineId),
+    create_database_objects_if_missing: cdktn.booleanToTerraform(struct!.createDatabaseObjectsIfMissing),
+    existing_pipeline_id: cdktn.stringToTerraform(struct!.existingPipelineId),
     new_pipeline_spec: databaseSyncedDatabaseTableSpecNewPipelineSpecToTerraform(struct!.newPipelineSpec),
-    primary_key_columns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.primaryKeyColumns),
-    scheduling_policy: cdktf.stringToTerraform(struct!.schedulingPolicy),
-    source_table_full_name: cdktf.stringToTerraform(struct!.sourceTableFullName),
-    timeseries_key: cdktf.stringToTerraform(struct!.timeseriesKey),
+    primary_key_columns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.primaryKeyColumns),
+    scheduling_policy: cdktn.stringToTerraform(struct!.schedulingPolicy),
+    source_table_full_name: cdktn.stringToTerraform(struct!.sourceTableFullName),
+    timeseries_key: cdktn.stringToTerraform(struct!.timeseriesKey),
   }
 }
 
 
-export function databaseSyncedDatabaseTableSpecToHclTerraform(struct?: DatabaseSyncedDatabaseTableSpec | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function databaseSyncedDatabaseTableSpecToHclTerraform(struct?: DatabaseSyncedDatabaseTableSpec | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create_database_objects_if_missing: {
-      value: cdktf.booleanToHclTerraform(struct!.createDatabaseObjectsIfMissing),
+      value: cdktn.booleanToHclTerraform(struct!.createDatabaseObjectsIfMissing),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     existing_pipeline_id: {
-      value: cdktf.stringToHclTerraform(struct!.existingPipelineId),
+      value: cdktn.stringToHclTerraform(struct!.existingPipelineId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1111,25 +1206,25 @@ export function databaseSyncedDatabaseTableSpecToHclTerraform(struct?: DatabaseS
       storageClassType: "DatabaseSyncedDatabaseTableSpecNewPipelineSpec",
     },
     primary_key_columns: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.primaryKeyColumns),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.primaryKeyColumns),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     scheduling_policy: {
-      value: cdktf.stringToHclTerraform(struct!.schedulingPolicy),
+      value: cdktn.stringToHclTerraform(struct!.schedulingPolicy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source_table_full_name: {
-      value: cdktf.stringToHclTerraform(struct!.sourceTableFullName),
+      value: cdktn.stringToHclTerraform(struct!.sourceTableFullName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     timeseries_key: {
-      value: cdktf.stringToHclTerraform(struct!.timeseriesKey),
+      value: cdktn.stringToHclTerraform(struct!.timeseriesKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1140,19 +1235,19 @@ export function databaseSyncedDatabaseTableSpecToHclTerraform(struct?: DatabaseS
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatabaseSyncedDatabaseTableSpecOutputReference extends cdktf.ComplexObject {
+export class DatabaseSyncedDatabaseTableSpecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DatabaseSyncedDatabaseTableSpec | cdktf.IResolvable | undefined {
+  public get internalValue(): DatabaseSyncedDatabaseTableSpec | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1189,7 +1284,7 @@ export class DatabaseSyncedDatabaseTableSpecOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DatabaseSyncedDatabaseTableSpec | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DatabaseSyncedDatabaseTableSpec | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1201,7 +1296,7 @@ export class DatabaseSyncedDatabaseTableSpecOutputReference extends cdktf.Comple
       this._sourceTableFullName = undefined;
       this._timeseriesKey = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1219,11 +1314,11 @@ export class DatabaseSyncedDatabaseTableSpecOutputReference extends cdktf.Comple
   }
 
   // create_database_objects_if_missing - computed: true, optional: true, required: false
-  private _createDatabaseObjectsIfMissing?: boolean | cdktf.IResolvable; 
+  private _createDatabaseObjectsIfMissing?: boolean | cdktn.IResolvable; 
   public get createDatabaseObjectsIfMissing() {
     return this.getBooleanAttribute('create_database_objects_if_missing');
   }
-  public set createDatabaseObjectsIfMissing(value: boolean | cdktf.IResolvable) {
+  public set createDatabaseObjectsIfMissing(value: boolean | cdktn.IResolvable) {
     this._createDatabaseObjectsIfMissing = value;
   }
   public resetCreateDatabaseObjectsIfMissing() {
@@ -1332,9 +1427,9 @@ export class DatabaseSyncedDatabaseTableSpecOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/database_synced_database_table databricks_database_synced_database_table}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/database_synced_database_table databricks_database_synced_database_table}
 */
-export class DatabaseSyncedDatabaseTable extends cdktf.TerraformResource {
+export class DatabaseSyncedDatabaseTable extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1345,14 +1440,14 @@ export class DatabaseSyncedDatabaseTable extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DatabaseSyncedDatabaseTable resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DatabaseSyncedDatabaseTable resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DatabaseSyncedDatabaseTable to import
-  * @param importFromId The id of the existing DatabaseSyncedDatabaseTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/database_synced_database_table#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DatabaseSyncedDatabaseTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/database_synced_database_table#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DatabaseSyncedDatabaseTable to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_database_synced_database_table", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_database_synced_database_table", importId: importFromId, provider });
       }
 
   // ===========
@@ -1360,7 +1455,7 @@ export class DatabaseSyncedDatabaseTable extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/database_synced_database_table databricks_database_synced_database_table} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/database_synced_database_table databricks_database_synced_database_table} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1371,7 +1466,7 @@ export class DatabaseSyncedDatabaseTable extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_database_synced_database_table',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -1385,6 +1480,7 @@ export class DatabaseSyncedDatabaseTable extends cdktf.TerraformResource {
     this._databaseInstanceName = config.databaseInstanceName;
     this._logicalDatabaseName = config.logicalDatabaseName;
     this._name = config.name;
+    this._providerConfig.internalValue = config.providerConfig;
     this._spec.internalValue = config.spec;
   }
 
@@ -1453,6 +1549,22 @@ export class DatabaseSyncedDatabaseTable extends cdktf.TerraformResource {
     return this._name;
   }
 
+  // provider_config - computed: false, optional: true, required: false
+  private _providerConfig = new DatabaseSyncedDatabaseTableProviderConfigOutputReference(this, "provider_config");
+  public get providerConfig() {
+    return this._providerConfig;
+  }
+  public putProviderConfig(value: DatabaseSyncedDatabaseTableProviderConfig) {
+    this._providerConfig.internalValue = value;
+  }
+  public resetProviderConfig() {
+    this._providerConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerConfigInput() {
+    return this._providerConfig.internalValue;
+  }
+
   // spec - computed: false, optional: true, required: false
   private _spec = new DatabaseSyncedDatabaseTableSpecOutputReference(this, "spec");
   public get spec() {
@@ -1480,9 +1592,10 @@ export class DatabaseSyncedDatabaseTable extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      database_instance_name: cdktf.stringToTerraform(this._databaseInstanceName),
-      logical_database_name: cdktf.stringToTerraform(this._logicalDatabaseName),
-      name: cdktf.stringToTerraform(this._name),
+      database_instance_name: cdktn.stringToTerraform(this._databaseInstanceName),
+      logical_database_name: cdktn.stringToTerraform(this._logicalDatabaseName),
+      name: cdktn.stringToTerraform(this._name),
+      provider_config: databaseSyncedDatabaseTableProviderConfigToTerraform(this._providerConfig.internalValue),
       spec: databaseSyncedDatabaseTableSpecToTerraform(this._spec.internalValue),
     };
   }
@@ -1490,22 +1603,28 @@ export class DatabaseSyncedDatabaseTable extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       database_instance_name: {
-        value: cdktf.stringToHclTerraform(this._databaseInstanceName),
+        value: cdktn.stringToHclTerraform(this._databaseInstanceName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       logical_database_name: {
-        value: cdktf.stringToHclTerraform(this._logicalDatabaseName),
+        value: cdktn.stringToHclTerraform(this._logicalDatabaseName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      provider_config: {
+        value: databaseSyncedDatabaseTableProviderConfigToHclTerraform(this._providerConfig.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "DatabaseSyncedDatabaseTableProviderConfig",
       },
       spec: {
         value: databaseSyncedDatabaseTableSpecToHclTerraform(this._spec.internalValue),

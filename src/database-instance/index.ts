@@ -1,110 +1,114 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/database_instance
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/database_instance
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DatabaseInstanceConfig extends cdktf.TerraformMetaArguments {
+export interface DatabaseInstanceConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/database_instance#capacity DatabaseInstance#capacity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/database_instance#capacity DatabaseInstance#capacity}
   */
   readonly capacity?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/database_instance#custom_tags DatabaseInstance#custom_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/database_instance#custom_tags DatabaseInstance#custom_tags}
   */
-  readonly customTags?: DatabaseInstanceCustomTags[] | cdktf.IResolvable;
+  readonly customTags?: DatabaseInstanceCustomTags[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/database_instance#enable_pg_native_login DatabaseInstance#enable_pg_native_login}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/database_instance#enable_pg_native_login DatabaseInstance#enable_pg_native_login}
   */
-  readonly enablePgNativeLogin?: boolean | cdktf.IResolvable;
+  readonly enablePgNativeLogin?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/database_instance#enable_readable_secondaries DatabaseInstance#enable_readable_secondaries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/database_instance#enable_readable_secondaries DatabaseInstance#enable_readable_secondaries}
   */
-  readonly enableReadableSecondaries?: boolean | cdktf.IResolvable;
+  readonly enableReadableSecondaries?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/database_instance#name DatabaseInstance#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/database_instance#name DatabaseInstance#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/database_instance#node_count DatabaseInstance#node_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/database_instance#node_count DatabaseInstance#node_count}
   */
   readonly nodeCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/database_instance#parent_instance_ref DatabaseInstance#parent_instance_ref}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/database_instance#parent_instance_ref DatabaseInstance#parent_instance_ref}
   */
   readonly parentInstanceRef?: DatabaseInstanceParentInstanceRef;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/database_instance#purge_on_delete DatabaseInstance#purge_on_delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/database_instance#provider_config DatabaseInstance#provider_config}
   */
-  readonly purgeOnDelete?: boolean | cdktf.IResolvable;
+  readonly providerConfig?: DatabaseInstanceProviderConfig;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/database_instance#retention_window_in_days DatabaseInstance#retention_window_in_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/database_instance#purge_on_delete DatabaseInstance#purge_on_delete}
+  */
+  readonly purgeOnDelete?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/database_instance#retention_window_in_days DatabaseInstance#retention_window_in_days}
   */
   readonly retentionWindowInDays?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/database_instance#stopped DatabaseInstance#stopped}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/database_instance#stopped DatabaseInstance#stopped}
   */
-  readonly stopped?: boolean | cdktf.IResolvable;
+  readonly stopped?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/database_instance#usage_policy_id DatabaseInstance#usage_policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/database_instance#usage_policy_id DatabaseInstance#usage_policy_id}
   */
   readonly usagePolicyId?: string;
 }
 export interface DatabaseInstanceChildInstanceRefs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/database_instance#branch_time DatabaseInstance#branch_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/database_instance#branch_time DatabaseInstance#branch_time}
   */
   readonly branchTime?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/database_instance#lsn DatabaseInstance#lsn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/database_instance#lsn DatabaseInstance#lsn}
   */
   readonly lsn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/database_instance#name DatabaseInstance#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/database_instance#name DatabaseInstance#name}
   */
   readonly name?: string;
 }
 
 export function databaseInstanceChildInstanceRefsToTerraform(struct?: DatabaseInstanceChildInstanceRefs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    branch_time: cdktf.stringToTerraform(struct!.branchTime),
-    lsn: cdktf.stringToTerraform(struct!.lsn),
-    name: cdktf.stringToTerraform(struct!.name),
+    branch_time: cdktn.stringToTerraform(struct!.branchTime),
+    lsn: cdktn.stringToTerraform(struct!.lsn),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
 export function databaseInstanceChildInstanceRefsToHclTerraform(struct?: DatabaseInstanceChildInstanceRefs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     branch_time: {
-      value: cdktf.stringToHclTerraform(struct!.branchTime),
+      value: cdktn.stringToHclTerraform(struct!.branchTime),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     lsn: {
-      value: cdktf.stringToHclTerraform(struct!.lsn),
+      value: cdktn.stringToHclTerraform(struct!.lsn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -115,7 +119,7 @@ export function databaseInstanceChildInstanceRefsToHclTerraform(struct?: Databas
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatabaseInstanceChildInstanceRefsOutputReference extends cdktf.ComplexObject {
+export class DatabaseInstanceChildInstanceRefsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -124,7 +128,7 @@ export class DatabaseInstanceChildInstanceRefsOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -220,15 +224,15 @@ export class DatabaseInstanceChildInstanceRefsOutputReference extends cdktf.Comp
   }
 }
 
-export class DatabaseInstanceChildInstanceRefsList extends cdktf.ComplexList {
-  public internalValue? : DatabaseInstanceChildInstanceRefs[] | cdktf.IResolvable
+export class DatabaseInstanceChildInstanceRefsList extends cdktn.ComplexList {
+  public internalValue? : DatabaseInstanceChildInstanceRefs[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -241,41 +245,41 @@ export class DatabaseInstanceChildInstanceRefsList extends cdktf.ComplexList {
 }
 export interface DatabaseInstanceCustomTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/database_instance#key DatabaseInstance#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/database_instance#key DatabaseInstance#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/database_instance#value DatabaseInstance#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/database_instance#value DatabaseInstance#value}
   */
   readonly value?: string;
 }
 
-export function databaseInstanceCustomTagsToTerraform(struct?: DatabaseInstanceCustomTags | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function databaseInstanceCustomTagsToTerraform(struct?: DatabaseInstanceCustomTags | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    value: cdktf.stringToTerraform(struct!.value),
+    key: cdktn.stringToTerraform(struct!.key),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function databaseInstanceCustomTagsToHclTerraform(struct?: DatabaseInstanceCustomTags | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function databaseInstanceCustomTagsToHclTerraform(struct?: DatabaseInstanceCustomTags | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -286,9 +290,9 @@ export function databaseInstanceCustomTagsToHclTerraform(struct?: DatabaseInstan
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatabaseInstanceCustomTagsOutputReference extends cdktf.ComplexObject {
+export class DatabaseInstanceCustomTagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -296,11 +300,11 @@ export class DatabaseInstanceCustomTagsOutputReference extends cdktf.ComplexObje
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DatabaseInstanceCustomTags | cdktf.IResolvable | undefined {
+  public get internalValue(): DatabaseInstanceCustomTags | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -317,14 +321,14 @@ export class DatabaseInstanceCustomTagsOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DatabaseInstanceCustomTags | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DatabaseInstanceCustomTags | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -369,15 +373,15 @@ export class DatabaseInstanceCustomTagsOutputReference extends cdktf.ComplexObje
   }
 }
 
-export class DatabaseInstanceCustomTagsList extends cdktf.ComplexList {
-  public internalValue? : DatabaseInstanceCustomTags[] | cdktf.IResolvable
+export class DatabaseInstanceCustomTagsList extends cdktn.ComplexList {
+  public internalValue? : DatabaseInstanceCustomTags[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -390,41 +394,41 @@ export class DatabaseInstanceCustomTagsList extends cdktf.ComplexList {
 }
 export interface DatabaseInstanceEffectiveCustomTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/database_instance#key DatabaseInstance#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/database_instance#key DatabaseInstance#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/database_instance#value DatabaseInstance#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/database_instance#value DatabaseInstance#value}
   */
   readonly value?: string;
 }
 
 export function databaseInstanceEffectiveCustomTagsToTerraform(struct?: DatabaseInstanceEffectiveCustomTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    value: cdktf.stringToTerraform(struct!.value),
+    key: cdktn.stringToTerraform(struct!.key),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
 export function databaseInstanceEffectiveCustomTagsToHclTerraform(struct?: DatabaseInstanceEffectiveCustomTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -435,7 +439,7 @@ export function databaseInstanceEffectiveCustomTagsToHclTerraform(struct?: Datab
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatabaseInstanceEffectiveCustomTagsOutputReference extends cdktf.ComplexObject {
+export class DatabaseInstanceEffectiveCustomTagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -444,7 +448,7 @@ export class DatabaseInstanceEffectiveCustomTagsOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -508,15 +512,15 @@ export class DatabaseInstanceEffectiveCustomTagsOutputReference extends cdktf.Co
   }
 }
 
-export class DatabaseInstanceEffectiveCustomTagsList extends cdktf.ComplexList {
-  public internalValue? : DatabaseInstanceEffectiveCustomTags[] | cdktf.IResolvable
+export class DatabaseInstanceEffectiveCustomTagsList extends cdktn.ComplexList {
+  public internalValue? : DatabaseInstanceEffectiveCustomTags[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -529,52 +533,52 @@ export class DatabaseInstanceEffectiveCustomTagsList extends cdktf.ComplexList {
 }
 export interface DatabaseInstanceParentInstanceRef {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/database_instance#branch_time DatabaseInstance#branch_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/database_instance#branch_time DatabaseInstance#branch_time}
   */
   readonly branchTime?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/database_instance#lsn DatabaseInstance#lsn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/database_instance#lsn DatabaseInstance#lsn}
   */
   readonly lsn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/database_instance#name DatabaseInstance#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/database_instance#name DatabaseInstance#name}
   */
   readonly name?: string;
 }
 
-export function databaseInstanceParentInstanceRefToTerraform(struct?: DatabaseInstanceParentInstanceRef | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function databaseInstanceParentInstanceRefToTerraform(struct?: DatabaseInstanceParentInstanceRef | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    branch_time: cdktf.stringToTerraform(struct!.branchTime),
-    lsn: cdktf.stringToTerraform(struct!.lsn),
-    name: cdktf.stringToTerraform(struct!.name),
+    branch_time: cdktn.stringToTerraform(struct!.branchTime),
+    lsn: cdktn.stringToTerraform(struct!.lsn),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function databaseInstanceParentInstanceRefToHclTerraform(struct?: DatabaseInstanceParentInstanceRef | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function databaseInstanceParentInstanceRefToHclTerraform(struct?: DatabaseInstanceParentInstanceRef | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     branch_time: {
-      value: cdktf.stringToHclTerraform(struct!.branchTime),
+      value: cdktn.stringToHclTerraform(struct!.branchTime),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     lsn: {
-      value: cdktf.stringToHclTerraform(struct!.lsn),
+      value: cdktn.stringToHclTerraform(struct!.lsn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -585,19 +589,19 @@ export function databaseInstanceParentInstanceRefToHclTerraform(struct?: Databas
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatabaseInstanceParentInstanceRefOutputReference extends cdktf.ComplexObject {
+export class DatabaseInstanceParentInstanceRefOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DatabaseInstanceParentInstanceRef | cdktf.IResolvable | undefined {
+  public get internalValue(): DatabaseInstanceParentInstanceRef | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -618,7 +622,7 @@ export class DatabaseInstanceParentInstanceRefOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DatabaseInstanceParentInstanceRef | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DatabaseInstanceParentInstanceRef | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -626,7 +630,7 @@ export class DatabaseInstanceParentInstanceRefOutputReference extends cdktf.Comp
       this._lsn = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -697,11 +701,102 @@ export class DatabaseInstanceParentInstanceRefOutputReference extends cdktf.Comp
     return this.getStringAttribute('uid');
   }
 }
+export interface DatabaseInstanceProviderConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/database_instance#workspace_id DatabaseInstance#workspace_id}
+  */
+  readonly workspaceId: string;
+}
+
+export function databaseInstanceProviderConfigToTerraform(struct?: DatabaseInstanceProviderConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
+  }
+}
+
+
+export function databaseInstanceProviderConfigToHclTerraform(struct?: DatabaseInstanceProviderConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    workspace_id: {
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DatabaseInstanceProviderConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DatabaseInstanceProviderConfig | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._workspaceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workspaceId = this._workspaceId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DatabaseInstanceProviderConfig | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._workspaceId = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._workspaceId = value.workspaceId;
+    }
+  }
+
+  // workspace_id - computed: false, optional: false, required: true
+  private _workspaceId?: string; 
+  public get workspaceId() {
+    return this.getStringAttribute('workspace_id');
+  }
+  public set workspaceId(value: string) {
+    this._workspaceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workspaceIdInput() {
+    return this._workspaceId;
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/database_instance databricks_database_instance}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/database_instance databricks_database_instance}
 */
-export class DatabaseInstance extends cdktf.TerraformResource {
+export class DatabaseInstance extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -712,14 +807,14 @@ export class DatabaseInstance extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DatabaseInstance resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DatabaseInstance resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DatabaseInstance to import
-  * @param importFromId The id of the existing DatabaseInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/database_instance#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DatabaseInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/database_instance#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DatabaseInstance to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_database_instance", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_database_instance", importId: importFromId, provider });
       }
 
   // ===========
@@ -727,7 +822,7 @@ export class DatabaseInstance extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/database_instance databricks_database_instance} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/database_instance databricks_database_instance} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -738,7 +833,7 @@ export class DatabaseInstance extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_database_instance',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -756,6 +851,7 @@ export class DatabaseInstance extends cdktf.TerraformResource {
     this._name = config.name;
     this._nodeCount = config.nodeCount;
     this._parentInstanceRef.internalValue = config.parentInstanceRef;
+    this._providerConfig.internalValue = config.providerConfig;
     this._purgeOnDelete = config.purgeOnDelete;
     this._retentionWindowInDays = config.retentionWindowInDays;
     this._stopped = config.stopped;
@@ -803,7 +899,7 @@ export class DatabaseInstance extends cdktf.TerraformResource {
   public get customTags() {
     return this._customTags;
   }
-  public putCustomTags(value: DatabaseInstanceCustomTags[] | cdktf.IResolvable) {
+  public putCustomTags(value: DatabaseInstanceCustomTags[] | cdktn.IResolvable) {
     this._customTags.internalValue = value;
   }
   public resetCustomTags() {
@@ -856,11 +952,11 @@ export class DatabaseInstance extends cdktf.TerraformResource {
   }
 
   // enable_pg_native_login - computed: true, optional: true, required: false
-  private _enablePgNativeLogin?: boolean | cdktf.IResolvable; 
+  private _enablePgNativeLogin?: boolean | cdktn.IResolvable; 
   public get enablePgNativeLogin() {
     return this.getBooleanAttribute('enable_pg_native_login');
   }
-  public set enablePgNativeLogin(value: boolean | cdktf.IResolvable) {
+  public set enablePgNativeLogin(value: boolean | cdktn.IResolvable) {
     this._enablePgNativeLogin = value;
   }
   public resetEnablePgNativeLogin() {
@@ -872,11 +968,11 @@ export class DatabaseInstance extends cdktf.TerraformResource {
   }
 
   // enable_readable_secondaries - computed: true, optional: true, required: false
-  private _enableReadableSecondaries?: boolean | cdktf.IResolvable; 
+  private _enableReadableSecondaries?: boolean | cdktn.IResolvable; 
   public get enableReadableSecondaries() {
     return this.getBooleanAttribute('enable_readable_secondaries');
   }
-  public set enableReadableSecondaries(value: boolean | cdktf.IResolvable) {
+  public set enableReadableSecondaries(value: boolean | cdktn.IResolvable) {
     this._enableReadableSecondaries = value;
   }
   public resetEnableReadableSecondaries() {
@@ -937,12 +1033,28 @@ export class DatabaseInstance extends cdktf.TerraformResource {
     return this.getStringAttribute('pg_version');
   }
 
+  // provider_config - computed: false, optional: true, required: false
+  private _providerConfig = new DatabaseInstanceProviderConfigOutputReference(this, "provider_config");
+  public get providerConfig() {
+    return this._providerConfig;
+  }
+  public putProviderConfig(value: DatabaseInstanceProviderConfig) {
+    this._providerConfig.internalValue = value;
+  }
+  public resetProviderConfig() {
+    this._providerConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerConfigInput() {
+    return this._providerConfig.internalValue;
+  }
+
   // purge_on_delete - computed: false, optional: true, required: false
-  private _purgeOnDelete?: boolean | cdktf.IResolvable; 
+  private _purgeOnDelete?: boolean | cdktn.IResolvable; 
   public get purgeOnDelete() {
     return this.getBooleanAttribute('purge_on_delete');
   }
-  public set purgeOnDelete(value: boolean | cdktf.IResolvable) {
+  public set purgeOnDelete(value: boolean | cdktn.IResolvable) {
     this._purgeOnDelete = value;
   }
   public resetPurgeOnDelete() {
@@ -985,11 +1097,11 @@ export class DatabaseInstance extends cdktf.TerraformResource {
   }
 
   // stopped - computed: true, optional: true, required: false
-  private _stopped?: boolean | cdktf.IResolvable; 
+  private _stopped?: boolean | cdktn.IResolvable; 
   public get stopped() {
     return this.getBooleanAttribute('stopped');
   }
-  public set stopped(value: boolean | cdktf.IResolvable) {
+  public set stopped(value: boolean | cdktn.IResolvable) {
     this._stopped = value;
   }
   public resetStopped() {
@@ -1027,54 +1139,55 @@ export class DatabaseInstance extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      capacity: cdktf.stringToTerraform(this._capacity),
-      custom_tags: cdktf.listMapper(databaseInstanceCustomTagsToTerraform, false)(this._customTags.internalValue),
-      enable_pg_native_login: cdktf.booleanToTerraform(this._enablePgNativeLogin),
-      enable_readable_secondaries: cdktf.booleanToTerraform(this._enableReadableSecondaries),
-      name: cdktf.stringToTerraform(this._name),
-      node_count: cdktf.numberToTerraform(this._nodeCount),
+      capacity: cdktn.stringToTerraform(this._capacity),
+      custom_tags: cdktn.listMapper(databaseInstanceCustomTagsToTerraform, false)(this._customTags.internalValue),
+      enable_pg_native_login: cdktn.booleanToTerraform(this._enablePgNativeLogin),
+      enable_readable_secondaries: cdktn.booleanToTerraform(this._enableReadableSecondaries),
+      name: cdktn.stringToTerraform(this._name),
+      node_count: cdktn.numberToTerraform(this._nodeCount),
       parent_instance_ref: databaseInstanceParentInstanceRefToTerraform(this._parentInstanceRef.internalValue),
-      purge_on_delete: cdktf.booleanToTerraform(this._purgeOnDelete),
-      retention_window_in_days: cdktf.numberToTerraform(this._retentionWindowInDays),
-      stopped: cdktf.booleanToTerraform(this._stopped),
-      usage_policy_id: cdktf.stringToTerraform(this._usagePolicyId),
+      provider_config: databaseInstanceProviderConfigToTerraform(this._providerConfig.internalValue),
+      purge_on_delete: cdktn.booleanToTerraform(this._purgeOnDelete),
+      retention_window_in_days: cdktn.numberToTerraform(this._retentionWindowInDays),
+      stopped: cdktn.booleanToTerraform(this._stopped),
+      usage_policy_id: cdktn.stringToTerraform(this._usagePolicyId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       capacity: {
-        value: cdktf.stringToHclTerraform(this._capacity),
+        value: cdktn.stringToHclTerraform(this._capacity),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       custom_tags: {
-        value: cdktf.listMapperHcl(databaseInstanceCustomTagsToHclTerraform, false)(this._customTags.internalValue),
+        value: cdktn.listMapperHcl(databaseInstanceCustomTagsToHclTerraform, false)(this._customTags.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DatabaseInstanceCustomTagsList",
       },
       enable_pg_native_login: {
-        value: cdktf.booleanToHclTerraform(this._enablePgNativeLogin),
+        value: cdktn.booleanToHclTerraform(this._enablePgNativeLogin),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       enable_readable_secondaries: {
-        value: cdktf.booleanToHclTerraform(this._enableReadableSecondaries),
+        value: cdktn.booleanToHclTerraform(this._enableReadableSecondaries),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       node_count: {
-        value: cdktf.numberToHclTerraform(this._nodeCount),
+        value: cdktn.numberToHclTerraform(this._nodeCount),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
@@ -1085,26 +1198,32 @@ export class DatabaseInstance extends cdktf.TerraformResource {
         type: "struct",
         storageClassType: "DatabaseInstanceParentInstanceRef",
       },
+      provider_config: {
+        value: databaseInstanceProviderConfigToHclTerraform(this._providerConfig.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "DatabaseInstanceProviderConfig",
+      },
       purge_on_delete: {
-        value: cdktf.booleanToHclTerraform(this._purgeOnDelete),
+        value: cdktn.booleanToHclTerraform(this._purgeOnDelete),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       retention_window_in_days: {
-        value: cdktf.numberToHclTerraform(this._retentionWindowInDays),
+        value: cdktn.numberToHclTerraform(this._retentionWindowInDays),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       stopped: {
-        value: cdktf.booleanToHclTerraform(this._stopped),
+        value: cdktn.booleanToHclTerraform(this._stopped),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       usage_policy_id: {
-        value: cdktf.stringToHclTerraform(this._usagePolicyId),
+        value: cdktn.stringToHclTerraform(this._usagePolicyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

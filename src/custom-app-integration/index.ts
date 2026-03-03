@@ -1,134 +1,134 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/custom_app_integration
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/custom_app_integration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CustomAppIntegrationConfig extends cdktf.TerraformMetaArguments {
+export interface CustomAppIntegrationConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/custom_app_integration#client_id CustomAppIntegration#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/custom_app_integration#client_id CustomAppIntegration#client_id}
   */
   readonly clientId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/custom_app_integration#client_secret CustomAppIntegration#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/custom_app_integration#client_secret CustomAppIntegration#client_secret}
   */
   readonly clientSecret?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/custom_app_integration#confidential CustomAppIntegration#confidential}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/custom_app_integration#confidential CustomAppIntegration#confidential}
   */
-  readonly confidential?: boolean | cdktf.IResolvable;
+  readonly confidential?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/custom_app_integration#create_time CustomAppIntegration#create_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/custom_app_integration#create_time CustomAppIntegration#create_time}
   */
   readonly createTime?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/custom_app_integration#created_by CustomAppIntegration#created_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/custom_app_integration#created_by CustomAppIntegration#created_by}
   */
   readonly createdBy?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/custom_app_integration#creator_username CustomAppIntegration#creator_username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/custom_app_integration#creator_username CustomAppIntegration#creator_username}
   */
   readonly creatorUsername?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/custom_app_integration#id CustomAppIntegration#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/custom_app_integration#id CustomAppIntegration#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/custom_app_integration#integration_id CustomAppIntegration#integration_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/custom_app_integration#integration_id CustomAppIntegration#integration_id}
   */
   readonly integrationId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/custom_app_integration#name CustomAppIntegration#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/custom_app_integration#name CustomAppIntegration#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/custom_app_integration#redirect_urls CustomAppIntegration#redirect_urls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/custom_app_integration#redirect_urls CustomAppIntegration#redirect_urls}
   */
   readonly redirectUrls?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/custom_app_integration#scopes CustomAppIntegration#scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/custom_app_integration#scopes CustomAppIntegration#scopes}
   */
   readonly scopes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/custom_app_integration#user_authorized_scopes CustomAppIntegration#user_authorized_scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/custom_app_integration#user_authorized_scopes CustomAppIntegration#user_authorized_scopes}
   */
   readonly userAuthorizedScopes?: string[];
   /**
   * token_access_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/custom_app_integration#token_access_policy CustomAppIntegration#token_access_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/custom_app_integration#token_access_policy CustomAppIntegration#token_access_policy}
   */
   readonly tokenAccessPolicy?: CustomAppIntegrationTokenAccessPolicy;
 }
 export interface CustomAppIntegrationTokenAccessPolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/custom_app_integration#absolute_session_lifetime_in_minutes CustomAppIntegration#absolute_session_lifetime_in_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/custom_app_integration#absolute_session_lifetime_in_minutes CustomAppIntegration#absolute_session_lifetime_in_minutes}
   */
   readonly absoluteSessionLifetimeInMinutes?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/custom_app_integration#access_token_ttl_in_minutes CustomAppIntegration#access_token_ttl_in_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/custom_app_integration#access_token_ttl_in_minutes CustomAppIntegration#access_token_ttl_in_minutes}
   */
   readonly accessTokenTtlInMinutes?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/custom_app_integration#enable_single_use_refresh_tokens CustomAppIntegration#enable_single_use_refresh_tokens}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/custom_app_integration#enable_single_use_refresh_tokens CustomAppIntegration#enable_single_use_refresh_tokens}
   */
-  readonly enableSingleUseRefreshTokens?: boolean | cdktf.IResolvable;
+  readonly enableSingleUseRefreshTokens?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/custom_app_integration#refresh_token_ttl_in_minutes CustomAppIntegration#refresh_token_ttl_in_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/custom_app_integration#refresh_token_ttl_in_minutes CustomAppIntegration#refresh_token_ttl_in_minutes}
   */
   readonly refreshTokenTtlInMinutes?: number;
 }
 
 export function customAppIntegrationTokenAccessPolicyToTerraform(struct?: CustomAppIntegrationTokenAccessPolicyOutputReference | CustomAppIntegrationTokenAccessPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    absolute_session_lifetime_in_minutes: cdktf.numberToTerraform(struct!.absoluteSessionLifetimeInMinutes),
-    access_token_ttl_in_minutes: cdktf.numberToTerraform(struct!.accessTokenTtlInMinutes),
-    enable_single_use_refresh_tokens: cdktf.booleanToTerraform(struct!.enableSingleUseRefreshTokens),
-    refresh_token_ttl_in_minutes: cdktf.numberToTerraform(struct!.refreshTokenTtlInMinutes),
+    absolute_session_lifetime_in_minutes: cdktn.numberToTerraform(struct!.absoluteSessionLifetimeInMinutes),
+    access_token_ttl_in_minutes: cdktn.numberToTerraform(struct!.accessTokenTtlInMinutes),
+    enable_single_use_refresh_tokens: cdktn.booleanToTerraform(struct!.enableSingleUseRefreshTokens),
+    refresh_token_ttl_in_minutes: cdktn.numberToTerraform(struct!.refreshTokenTtlInMinutes),
   }
 }
 
 
 export function customAppIntegrationTokenAccessPolicyToHclTerraform(struct?: CustomAppIntegrationTokenAccessPolicyOutputReference | CustomAppIntegrationTokenAccessPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     absolute_session_lifetime_in_minutes: {
-      value: cdktf.numberToHclTerraform(struct!.absoluteSessionLifetimeInMinutes),
+      value: cdktn.numberToHclTerraform(struct!.absoluteSessionLifetimeInMinutes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     access_token_ttl_in_minutes: {
-      value: cdktf.numberToHclTerraform(struct!.accessTokenTtlInMinutes),
+      value: cdktn.numberToHclTerraform(struct!.accessTokenTtlInMinutes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     enable_single_use_refresh_tokens: {
-      value: cdktf.booleanToHclTerraform(struct!.enableSingleUseRefreshTokens),
+      value: cdktn.booleanToHclTerraform(struct!.enableSingleUseRefreshTokens),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     refresh_token_ttl_in_minutes: {
-      value: cdktf.numberToHclTerraform(struct!.refreshTokenTtlInMinutes),
+      value: cdktn.numberToHclTerraform(struct!.refreshTokenTtlInMinutes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -139,14 +139,14 @@ export function customAppIntegrationTokenAccessPolicyToHclTerraform(struct?: Cus
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CustomAppIntegrationTokenAccessPolicyOutputReference extends cdktf.ComplexObject {
+export class CustomAppIntegrationTokenAccessPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -222,11 +222,11 @@ export class CustomAppIntegrationTokenAccessPolicyOutputReference extends cdktf.
   }
 
   // enable_single_use_refresh_tokens - computed: false, optional: true, required: false
-  private _enableSingleUseRefreshTokens?: boolean | cdktf.IResolvable; 
+  private _enableSingleUseRefreshTokens?: boolean | cdktn.IResolvable; 
   public get enableSingleUseRefreshTokens() {
     return this.getBooleanAttribute('enable_single_use_refresh_tokens');
   }
-  public set enableSingleUseRefreshTokens(value: boolean | cdktf.IResolvable) {
+  public set enableSingleUseRefreshTokens(value: boolean | cdktn.IResolvable) {
     this._enableSingleUseRefreshTokens = value;
   }
   public resetEnableSingleUseRefreshTokens() {
@@ -255,9 +255,9 @@ export class CustomAppIntegrationTokenAccessPolicyOutputReference extends cdktf.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/custom_app_integration databricks_custom_app_integration}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/custom_app_integration databricks_custom_app_integration}
 */
-export class CustomAppIntegration extends cdktf.TerraformResource {
+export class CustomAppIntegration extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -268,14 +268,14 @@ export class CustomAppIntegration extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CustomAppIntegration resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CustomAppIntegration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CustomAppIntegration to import
-  * @param importFromId The id of the existing CustomAppIntegration that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/custom_app_integration#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CustomAppIntegration that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/custom_app_integration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CustomAppIntegration to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_custom_app_integration", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_custom_app_integration", importId: importFromId, provider });
       }
 
   // ===========
@@ -283,7 +283,7 @@ export class CustomAppIntegration extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/custom_app_integration databricks_custom_app_integration} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/custom_app_integration databricks_custom_app_integration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -294,7 +294,7 @@ export class CustomAppIntegration extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_custom_app_integration',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -357,11 +357,11 @@ export class CustomAppIntegration extends cdktf.TerraformResource {
   }
 
   // confidential - computed: false, optional: true, required: false
-  private _confidential?: boolean | cdktf.IResolvable; 
+  private _confidential?: boolean | cdktn.IResolvable; 
   public get confidential() {
     return this.getBooleanAttribute('confidential');
   }
-  public set confidential(value: boolean | cdktf.IResolvable) {
+  public set confidential(value: boolean | cdktn.IResolvable) {
     this._confidential = value;
   }
   public resetConfidential() {
@@ -538,18 +538,18 @@ export class CustomAppIntegration extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      client_id: cdktf.stringToTerraform(this._clientId),
-      client_secret: cdktf.stringToTerraform(this._clientSecret),
-      confidential: cdktf.booleanToTerraform(this._confidential),
-      create_time: cdktf.stringToTerraform(this._createTime),
-      created_by: cdktf.numberToTerraform(this._createdBy),
-      creator_username: cdktf.stringToTerraform(this._creatorUsername),
-      id: cdktf.stringToTerraform(this._id),
-      integration_id: cdktf.stringToTerraform(this._integrationId),
-      name: cdktf.stringToTerraform(this._name),
-      redirect_urls: cdktf.listMapper(cdktf.stringToTerraform, false)(this._redirectUrls),
-      scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._scopes),
-      user_authorized_scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._userAuthorizedScopes),
+      client_id: cdktn.stringToTerraform(this._clientId),
+      client_secret: cdktn.stringToTerraform(this._clientSecret),
+      confidential: cdktn.booleanToTerraform(this._confidential),
+      create_time: cdktn.stringToTerraform(this._createTime),
+      created_by: cdktn.numberToTerraform(this._createdBy),
+      creator_username: cdktn.stringToTerraform(this._creatorUsername),
+      id: cdktn.stringToTerraform(this._id),
+      integration_id: cdktn.stringToTerraform(this._integrationId),
+      name: cdktn.stringToTerraform(this._name),
+      redirect_urls: cdktn.listMapper(cdktn.stringToTerraform, false)(this._redirectUrls),
+      scopes: cdktn.listMapper(cdktn.stringToTerraform, false)(this._scopes),
+      user_authorized_scopes: cdktn.listMapper(cdktn.stringToTerraform, false)(this._userAuthorizedScopes),
       token_access_policy: customAppIntegrationTokenAccessPolicyToTerraform(this._tokenAccessPolicy.internalValue),
     };
   }
@@ -557,73 +557,73 @@ export class CustomAppIntegration extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       client_id: {
-        value: cdktf.stringToHclTerraform(this._clientId),
+        value: cdktn.stringToHclTerraform(this._clientId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       client_secret: {
-        value: cdktf.stringToHclTerraform(this._clientSecret),
+        value: cdktn.stringToHclTerraform(this._clientSecret),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       confidential: {
-        value: cdktf.booleanToHclTerraform(this._confidential),
+        value: cdktn.booleanToHclTerraform(this._confidential),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       create_time: {
-        value: cdktf.stringToHclTerraform(this._createTime),
+        value: cdktn.stringToHclTerraform(this._createTime),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       created_by: {
-        value: cdktf.numberToHclTerraform(this._createdBy),
+        value: cdktn.numberToHclTerraform(this._createdBy),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       creator_username: {
-        value: cdktf.stringToHclTerraform(this._creatorUsername),
+        value: cdktn.stringToHclTerraform(this._creatorUsername),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       integration_id: {
-        value: cdktf.stringToHclTerraform(this._integrationId),
+        value: cdktn.stringToHclTerraform(this._integrationId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       redirect_urls: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._redirectUrls),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._redirectUrls),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       scopes: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._scopes),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._scopes),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       user_authorized_scopes: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._userAuthorizedScopes),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._userAuthorizedScopes),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",

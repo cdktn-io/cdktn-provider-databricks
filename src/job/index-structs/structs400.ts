@@ -1,29 +1,21 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 import { JobTaskForEachTaskTaskNewClusterAutoscale,
 jobTaskForEachTaskTaskNewClusterAutoscaleToTerraform,
 jobTaskForEachTaskTaskNewClusterAutoscaleToHclTerraform,
 JobTaskForEachTaskTaskNewClusterAutoscaleOutputReference,
-JobTaskForEachTaskTaskNewClusterAwsAttributes,
-jobTaskForEachTaskTaskNewClusterAwsAttributesToTerraform,
-jobTaskForEachTaskTaskNewClusterAwsAttributesToHclTerraform,
-JobTaskForEachTaskTaskNewClusterAwsAttributesOutputReference,
-JobTaskForEachTaskTaskNewClusterAzureAttributes,
-jobTaskForEachTaskTaskNewClusterAzureAttributesToTerraform,
-jobTaskForEachTaskTaskNewClusterAzureAttributesToHclTerraform,
-JobTaskForEachTaskTaskNewClusterAzureAttributesOutputReference,
-JobTaskForEachTaskTaskNewClusterClusterLogConf,
-jobTaskForEachTaskTaskNewClusterClusterLogConfToTerraform,
-jobTaskForEachTaskTaskNewClusterClusterLogConfToHclTerraform,
-JobTaskForEachTaskTaskNewClusterClusterLogConfOutputReference,
 JobTaskForEachTaskTaskCleanRoomsNotebookTask,
 jobTaskForEachTaskTaskCleanRoomsNotebookTaskToTerraform,
 jobTaskForEachTaskTaskCleanRoomsNotebookTaskToHclTerraform,
 JobTaskForEachTaskTaskCleanRoomsNotebookTaskOutputReference,
+JobTaskForEachTaskTaskCompute,
+jobTaskForEachTaskTaskComputeToTerraform,
+jobTaskForEachTaskTaskComputeToHclTerraform,
+JobTaskForEachTaskTaskComputeOutputReference,
 JobTaskForEachTaskTaskConditionTask,
 jobTaskForEachTaskTaskConditionTaskToTerraform,
 jobTaskForEachTaskTaskConditionTaskToHclTerraform,
@@ -68,6 +60,10 @@ JobTaskCleanRoomsNotebookTask,
 jobTaskCleanRoomsNotebookTaskToTerraform,
 jobTaskCleanRoomsNotebookTaskToHclTerraform,
 JobTaskCleanRoomsNotebookTaskOutputReference,
+JobTaskCompute,
+jobTaskComputeToTerraform,
+jobTaskComputeToHclTerraform,
+JobTaskComputeOutputReference,
 JobTaskConditionTask,
 jobTaskConditionTaskToTerraform,
 jobTaskConditionTaskToHclTerraform,
@@ -96,43 +92,131 @@ JobTaskEmailNotifications,
 jobTaskEmailNotificationsToTerraform,
 jobTaskEmailNotificationsToHclTerraform,
 JobTaskEmailNotificationsOutputReference } from './structs0'
-export interface JobTaskForEachTaskTaskNewClusterClusterMountInfoNetworkFilesystemInfo {
+export interface JobTaskForEachTaskTaskNewClusterAwsAttributes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#mount_options Job#mount_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#availability Job#availability}
   */
-  readonly mountOptions?: string;
+  readonly availability?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#server_address Job#server_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#ebs_volume_count Job#ebs_volume_count}
   */
-  readonly serverAddress: string;
+  readonly ebsVolumeCount?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#ebs_volume_iops Job#ebs_volume_iops}
+  */
+  readonly ebsVolumeIops?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#ebs_volume_size Job#ebs_volume_size}
+  */
+  readonly ebsVolumeSize?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#ebs_volume_throughput Job#ebs_volume_throughput}
+  */
+  readonly ebsVolumeThroughput?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#ebs_volume_type Job#ebs_volume_type}
+  */
+  readonly ebsVolumeType?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#first_on_demand Job#first_on_demand}
+  */
+  readonly firstOnDemand?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#instance_profile_arn Job#instance_profile_arn}
+  */
+  readonly instanceProfileArn?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#spot_bid_price_percent Job#spot_bid_price_percent}
+  */
+  readonly spotBidPricePercent?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#zone_id Job#zone_id}
+  */
+  readonly zoneId?: string;
 }
 
-export function jobTaskForEachTaskTaskNewClusterClusterMountInfoNetworkFilesystemInfoToTerraform(struct?: JobTaskForEachTaskTaskNewClusterClusterMountInfoNetworkFilesystemInfoOutputReference | JobTaskForEachTaskTaskNewClusterClusterMountInfoNetworkFilesystemInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobTaskForEachTaskTaskNewClusterAwsAttributesToTerraform(struct?: JobTaskForEachTaskTaskNewClusterAwsAttributesOutputReference | JobTaskForEachTaskTaskNewClusterAwsAttributes): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    mount_options: cdktf.stringToTerraform(struct!.mountOptions),
-    server_address: cdktf.stringToTerraform(struct!.serverAddress),
+    availability: cdktn.stringToTerraform(struct!.availability),
+    ebs_volume_count: cdktn.numberToTerraform(struct!.ebsVolumeCount),
+    ebs_volume_iops: cdktn.numberToTerraform(struct!.ebsVolumeIops),
+    ebs_volume_size: cdktn.numberToTerraform(struct!.ebsVolumeSize),
+    ebs_volume_throughput: cdktn.numberToTerraform(struct!.ebsVolumeThroughput),
+    ebs_volume_type: cdktn.stringToTerraform(struct!.ebsVolumeType),
+    first_on_demand: cdktn.numberToTerraform(struct!.firstOnDemand),
+    instance_profile_arn: cdktn.stringToTerraform(struct!.instanceProfileArn),
+    spot_bid_price_percent: cdktn.numberToTerraform(struct!.spotBidPricePercent),
+    zone_id: cdktn.stringToTerraform(struct!.zoneId),
   }
 }
 
 
-export function jobTaskForEachTaskTaskNewClusterClusterMountInfoNetworkFilesystemInfoToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterClusterMountInfoNetworkFilesystemInfoOutputReference | JobTaskForEachTaskTaskNewClusterClusterMountInfoNetworkFilesystemInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobTaskForEachTaskTaskNewClusterAwsAttributesToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterAwsAttributesOutputReference | JobTaskForEachTaskTaskNewClusterAwsAttributes): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
-    mount_options: {
-      value: cdktf.stringToHclTerraform(struct!.mountOptions),
+    availability: {
+      value: cdktn.stringToHclTerraform(struct!.availability),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
-    server_address: {
-      value: cdktf.stringToHclTerraform(struct!.serverAddress),
+    ebs_volume_count: {
+      value: cdktn.numberToHclTerraform(struct!.ebsVolumeCount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    ebs_volume_iops: {
+      value: cdktn.numberToHclTerraform(struct!.ebsVolumeIops),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    ebs_volume_size: {
+      value: cdktn.numberToHclTerraform(struct!.ebsVolumeSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    ebs_volume_throughput: {
+      value: cdktn.numberToHclTerraform(struct!.ebsVolumeThroughput),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    ebs_volume_type: {
+      value: cdktn.stringToHclTerraform(struct!.ebsVolumeType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    first_on_demand: {
+      value: cdktn.numberToHclTerraform(struct!.firstOnDemand),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    instance_profile_arn: {
+      value: cdktn.stringToHclTerraform(struct!.instanceProfileArn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    spot_bid_price_percent: {
+      value: cdktn.numberToHclTerraform(struct!.spotBidPricePercent),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    zone_id: {
+      value: cdktn.stringToHclTerraform(struct!.zoneId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -143,14 +227,1206 @@ export function jobTaskForEachTaskTaskNewClusterClusterMountInfoNetworkFilesyste
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskForEachTaskTaskNewClusterClusterMountInfoNetworkFilesystemInfoOutputReference extends cdktf.ComplexObject {
+export class JobTaskForEachTaskTaskNewClusterAwsAttributesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): JobTaskForEachTaskTaskNewClusterAwsAttributes | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._availability !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.availability = this._availability;
+    }
+    if (this._ebsVolumeCount !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ebsVolumeCount = this._ebsVolumeCount;
+    }
+    if (this._ebsVolumeIops !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ebsVolumeIops = this._ebsVolumeIops;
+    }
+    if (this._ebsVolumeSize !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ebsVolumeSize = this._ebsVolumeSize;
+    }
+    if (this._ebsVolumeThroughput !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ebsVolumeThroughput = this._ebsVolumeThroughput;
+    }
+    if (this._ebsVolumeType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ebsVolumeType = this._ebsVolumeType;
+    }
+    if (this._firstOnDemand !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.firstOnDemand = this._firstOnDemand;
+    }
+    if (this._instanceProfileArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.instanceProfileArn = this._instanceProfileArn;
+    }
+    if (this._spotBidPricePercent !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.spotBidPricePercent = this._spotBidPricePercent;
+    }
+    if (this._zoneId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.zoneId = this._zoneId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: JobTaskForEachTaskTaskNewClusterAwsAttributes | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._availability = undefined;
+      this._ebsVolumeCount = undefined;
+      this._ebsVolumeIops = undefined;
+      this._ebsVolumeSize = undefined;
+      this._ebsVolumeThroughput = undefined;
+      this._ebsVolumeType = undefined;
+      this._firstOnDemand = undefined;
+      this._instanceProfileArn = undefined;
+      this._spotBidPricePercent = undefined;
+      this._zoneId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._availability = value.availability;
+      this._ebsVolumeCount = value.ebsVolumeCount;
+      this._ebsVolumeIops = value.ebsVolumeIops;
+      this._ebsVolumeSize = value.ebsVolumeSize;
+      this._ebsVolumeThroughput = value.ebsVolumeThroughput;
+      this._ebsVolumeType = value.ebsVolumeType;
+      this._firstOnDemand = value.firstOnDemand;
+      this._instanceProfileArn = value.instanceProfileArn;
+      this._spotBidPricePercent = value.spotBidPricePercent;
+      this._zoneId = value.zoneId;
+    }
+  }
+
+  // availability - computed: false, optional: true, required: false
+  private _availability?: string; 
+  public get availability() {
+    return this.getStringAttribute('availability');
+  }
+  public set availability(value: string) {
+    this._availability = value;
+  }
+  public resetAvailability() {
+    this._availability = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get availabilityInput() {
+    return this._availability;
+  }
+
+  // ebs_volume_count - computed: false, optional: true, required: false
+  private _ebsVolumeCount?: number; 
+  public get ebsVolumeCount() {
+    return this.getNumberAttribute('ebs_volume_count');
+  }
+  public set ebsVolumeCount(value: number) {
+    this._ebsVolumeCount = value;
+  }
+  public resetEbsVolumeCount() {
+    this._ebsVolumeCount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ebsVolumeCountInput() {
+    return this._ebsVolumeCount;
+  }
+
+  // ebs_volume_iops - computed: false, optional: true, required: false
+  private _ebsVolumeIops?: number; 
+  public get ebsVolumeIops() {
+    return this.getNumberAttribute('ebs_volume_iops');
+  }
+  public set ebsVolumeIops(value: number) {
+    this._ebsVolumeIops = value;
+  }
+  public resetEbsVolumeIops() {
+    this._ebsVolumeIops = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ebsVolumeIopsInput() {
+    return this._ebsVolumeIops;
+  }
+
+  // ebs_volume_size - computed: false, optional: true, required: false
+  private _ebsVolumeSize?: number; 
+  public get ebsVolumeSize() {
+    return this.getNumberAttribute('ebs_volume_size');
+  }
+  public set ebsVolumeSize(value: number) {
+    this._ebsVolumeSize = value;
+  }
+  public resetEbsVolumeSize() {
+    this._ebsVolumeSize = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ebsVolumeSizeInput() {
+    return this._ebsVolumeSize;
+  }
+
+  // ebs_volume_throughput - computed: false, optional: true, required: false
+  private _ebsVolumeThroughput?: number; 
+  public get ebsVolumeThroughput() {
+    return this.getNumberAttribute('ebs_volume_throughput');
+  }
+  public set ebsVolumeThroughput(value: number) {
+    this._ebsVolumeThroughput = value;
+  }
+  public resetEbsVolumeThroughput() {
+    this._ebsVolumeThroughput = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ebsVolumeThroughputInput() {
+    return this._ebsVolumeThroughput;
+  }
+
+  // ebs_volume_type - computed: false, optional: true, required: false
+  private _ebsVolumeType?: string; 
+  public get ebsVolumeType() {
+    return this.getStringAttribute('ebs_volume_type');
+  }
+  public set ebsVolumeType(value: string) {
+    this._ebsVolumeType = value;
+  }
+  public resetEbsVolumeType() {
+    this._ebsVolumeType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ebsVolumeTypeInput() {
+    return this._ebsVolumeType;
+  }
+
+  // first_on_demand - computed: false, optional: true, required: false
+  private _firstOnDemand?: number; 
+  public get firstOnDemand() {
+    return this.getNumberAttribute('first_on_demand');
+  }
+  public set firstOnDemand(value: number) {
+    this._firstOnDemand = value;
+  }
+  public resetFirstOnDemand() {
+    this._firstOnDemand = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get firstOnDemandInput() {
+    return this._firstOnDemand;
+  }
+
+  // instance_profile_arn - computed: false, optional: true, required: false
+  private _instanceProfileArn?: string; 
+  public get instanceProfileArn() {
+    return this.getStringAttribute('instance_profile_arn');
+  }
+  public set instanceProfileArn(value: string) {
+    this._instanceProfileArn = value;
+  }
+  public resetInstanceProfileArn() {
+    this._instanceProfileArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instanceProfileArnInput() {
+    return this._instanceProfileArn;
+  }
+
+  // spot_bid_price_percent - computed: false, optional: true, required: false
+  private _spotBidPricePercent?: number; 
+  public get spotBidPricePercent() {
+    return this.getNumberAttribute('spot_bid_price_percent');
+  }
+  public set spotBidPricePercent(value: number) {
+    this._spotBidPricePercent = value;
+  }
+  public resetSpotBidPricePercent() {
+    this._spotBidPricePercent = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get spotBidPricePercentInput() {
+    return this._spotBidPricePercent;
+  }
+
+  // zone_id - computed: false, optional: true, required: false
+  private _zoneId?: string; 
+  public get zoneId() {
+    return this.getStringAttribute('zone_id');
+  }
+  public set zoneId(value: string) {
+    this._zoneId = value;
+  }
+  public resetZoneId() {
+    this._zoneId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get zoneIdInput() {
+    return this._zoneId;
+  }
+}
+export interface JobTaskForEachTaskTaskNewClusterAzureAttributesLogAnalyticsInfo {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#log_analytics_primary_key Job#log_analytics_primary_key}
+  */
+  readonly logAnalyticsPrimaryKey?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#log_analytics_workspace_id Job#log_analytics_workspace_id}
+  */
+  readonly logAnalyticsWorkspaceId?: string;
+}
+
+export function jobTaskForEachTaskTaskNewClusterAzureAttributesLogAnalyticsInfoToTerraform(struct?: JobTaskForEachTaskTaskNewClusterAzureAttributesLogAnalyticsInfoOutputReference | JobTaskForEachTaskTaskNewClusterAzureAttributesLogAnalyticsInfo): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    log_analytics_primary_key: cdktn.stringToTerraform(struct!.logAnalyticsPrimaryKey),
+    log_analytics_workspace_id: cdktn.stringToTerraform(struct!.logAnalyticsWorkspaceId),
+  }
+}
+
+
+export function jobTaskForEachTaskTaskNewClusterAzureAttributesLogAnalyticsInfoToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterAzureAttributesLogAnalyticsInfoOutputReference | JobTaskForEachTaskTaskNewClusterAzureAttributesLogAnalyticsInfo): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    log_analytics_primary_key: {
+      value: cdktn.stringToHclTerraform(struct!.logAnalyticsPrimaryKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    log_analytics_workspace_id: {
+      value: cdktn.stringToHclTerraform(struct!.logAnalyticsWorkspaceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class JobTaskForEachTaskTaskNewClusterAzureAttributesLogAnalyticsInfoOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): JobTaskForEachTaskTaskNewClusterAzureAttributesLogAnalyticsInfo | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._logAnalyticsPrimaryKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.logAnalyticsPrimaryKey = this._logAnalyticsPrimaryKey;
+    }
+    if (this._logAnalyticsWorkspaceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.logAnalyticsWorkspaceId = this._logAnalyticsWorkspaceId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: JobTaskForEachTaskTaskNewClusterAzureAttributesLogAnalyticsInfo | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._logAnalyticsPrimaryKey = undefined;
+      this._logAnalyticsWorkspaceId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._logAnalyticsPrimaryKey = value.logAnalyticsPrimaryKey;
+      this._logAnalyticsWorkspaceId = value.logAnalyticsWorkspaceId;
+    }
+  }
+
+  // log_analytics_primary_key - computed: false, optional: true, required: false
+  private _logAnalyticsPrimaryKey?: string; 
+  public get logAnalyticsPrimaryKey() {
+    return this.getStringAttribute('log_analytics_primary_key');
+  }
+  public set logAnalyticsPrimaryKey(value: string) {
+    this._logAnalyticsPrimaryKey = value;
+  }
+  public resetLogAnalyticsPrimaryKey() {
+    this._logAnalyticsPrimaryKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get logAnalyticsPrimaryKeyInput() {
+    return this._logAnalyticsPrimaryKey;
+  }
+
+  // log_analytics_workspace_id - computed: false, optional: true, required: false
+  private _logAnalyticsWorkspaceId?: string; 
+  public get logAnalyticsWorkspaceId() {
+    return this.getStringAttribute('log_analytics_workspace_id');
+  }
+  public set logAnalyticsWorkspaceId(value: string) {
+    this._logAnalyticsWorkspaceId = value;
+  }
+  public resetLogAnalyticsWorkspaceId() {
+    this._logAnalyticsWorkspaceId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get logAnalyticsWorkspaceIdInput() {
+    return this._logAnalyticsWorkspaceId;
+  }
+}
+export interface JobTaskForEachTaskTaskNewClusterAzureAttributes {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#availability Job#availability}
+  */
+  readonly availability?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#first_on_demand Job#first_on_demand}
+  */
+  readonly firstOnDemand?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#spot_bid_max_price Job#spot_bid_max_price}
+  */
+  readonly spotBidMaxPrice?: number;
+  /**
+  * log_analytics_info block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#log_analytics_info Job#log_analytics_info}
+  */
+  readonly logAnalyticsInfo?: JobTaskForEachTaskTaskNewClusterAzureAttributesLogAnalyticsInfo;
+}
+
+export function jobTaskForEachTaskTaskNewClusterAzureAttributesToTerraform(struct?: JobTaskForEachTaskTaskNewClusterAzureAttributesOutputReference | JobTaskForEachTaskTaskNewClusterAzureAttributes): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    availability: cdktn.stringToTerraform(struct!.availability),
+    first_on_demand: cdktn.numberToTerraform(struct!.firstOnDemand),
+    spot_bid_max_price: cdktn.numberToTerraform(struct!.spotBidMaxPrice),
+    log_analytics_info: jobTaskForEachTaskTaskNewClusterAzureAttributesLogAnalyticsInfoToTerraform(struct!.logAnalyticsInfo),
+  }
+}
+
+
+export function jobTaskForEachTaskTaskNewClusterAzureAttributesToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterAzureAttributesOutputReference | JobTaskForEachTaskTaskNewClusterAzureAttributes): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    availability: {
+      value: cdktn.stringToHclTerraform(struct!.availability),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    first_on_demand: {
+      value: cdktn.numberToHclTerraform(struct!.firstOnDemand),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    spot_bid_max_price: {
+      value: cdktn.numberToHclTerraform(struct!.spotBidMaxPrice),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    log_analytics_info: {
+      value: jobTaskForEachTaskTaskNewClusterAzureAttributesLogAnalyticsInfoToHclTerraform(struct!.logAnalyticsInfo),
+      isBlock: true,
+      type: "list",
+      storageClassType: "JobTaskForEachTaskTaskNewClusterAzureAttributesLogAnalyticsInfoList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class JobTaskForEachTaskTaskNewClusterAzureAttributesOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): JobTaskForEachTaskTaskNewClusterAzureAttributes | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._availability !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.availability = this._availability;
+    }
+    if (this._firstOnDemand !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.firstOnDemand = this._firstOnDemand;
+    }
+    if (this._spotBidMaxPrice !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.spotBidMaxPrice = this._spotBidMaxPrice;
+    }
+    if (this._logAnalyticsInfo?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.logAnalyticsInfo = this._logAnalyticsInfo?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: JobTaskForEachTaskTaskNewClusterAzureAttributes | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._availability = undefined;
+      this._firstOnDemand = undefined;
+      this._spotBidMaxPrice = undefined;
+      this._logAnalyticsInfo.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._availability = value.availability;
+      this._firstOnDemand = value.firstOnDemand;
+      this._spotBidMaxPrice = value.spotBidMaxPrice;
+      this._logAnalyticsInfo.internalValue = value.logAnalyticsInfo;
+    }
+  }
+
+  // availability - computed: false, optional: true, required: false
+  private _availability?: string; 
+  public get availability() {
+    return this.getStringAttribute('availability');
+  }
+  public set availability(value: string) {
+    this._availability = value;
+  }
+  public resetAvailability() {
+    this._availability = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get availabilityInput() {
+    return this._availability;
+  }
+
+  // first_on_demand - computed: false, optional: true, required: false
+  private _firstOnDemand?: number; 
+  public get firstOnDemand() {
+    return this.getNumberAttribute('first_on_demand');
+  }
+  public set firstOnDemand(value: number) {
+    this._firstOnDemand = value;
+  }
+  public resetFirstOnDemand() {
+    this._firstOnDemand = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get firstOnDemandInput() {
+    return this._firstOnDemand;
+  }
+
+  // spot_bid_max_price - computed: false, optional: true, required: false
+  private _spotBidMaxPrice?: number; 
+  public get spotBidMaxPrice() {
+    return this.getNumberAttribute('spot_bid_max_price');
+  }
+  public set spotBidMaxPrice(value: number) {
+    this._spotBidMaxPrice = value;
+  }
+  public resetSpotBidMaxPrice() {
+    this._spotBidMaxPrice = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get spotBidMaxPriceInput() {
+    return this._spotBidMaxPrice;
+  }
+
+  // log_analytics_info - computed: false, optional: true, required: false
+  private _logAnalyticsInfo = new JobTaskForEachTaskTaskNewClusterAzureAttributesLogAnalyticsInfoOutputReference(this, "log_analytics_info");
+  public get logAnalyticsInfo() {
+    return this._logAnalyticsInfo;
+  }
+  public putLogAnalyticsInfo(value: JobTaskForEachTaskTaskNewClusterAzureAttributesLogAnalyticsInfo) {
+    this._logAnalyticsInfo.internalValue = value;
+  }
+  public resetLogAnalyticsInfo() {
+    this._logAnalyticsInfo.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get logAnalyticsInfoInput() {
+    return this._logAnalyticsInfo.internalValue;
+  }
+}
+export interface JobTaskForEachTaskTaskNewClusterClusterLogConfDbfs {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#destination Job#destination}
+  */
+  readonly destination: string;
+}
+
+export function jobTaskForEachTaskTaskNewClusterClusterLogConfDbfsToTerraform(struct?: JobTaskForEachTaskTaskNewClusterClusterLogConfDbfsOutputReference | JobTaskForEachTaskTaskNewClusterClusterLogConfDbfs): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    destination: cdktn.stringToTerraform(struct!.destination),
+  }
+}
+
+
+export function jobTaskForEachTaskTaskNewClusterClusterLogConfDbfsToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterClusterLogConfDbfsOutputReference | JobTaskForEachTaskTaskNewClusterClusterLogConfDbfs): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    destination: {
+      value: cdktn.stringToHclTerraform(struct!.destination),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class JobTaskForEachTaskTaskNewClusterClusterLogConfDbfsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): JobTaskForEachTaskTaskNewClusterClusterLogConfDbfs | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._destination !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.destination = this._destination;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: JobTaskForEachTaskTaskNewClusterClusterLogConfDbfs | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._destination = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._destination = value.destination;
+    }
+  }
+
+  // destination - computed: false, optional: false, required: true
+  private _destination?: string; 
+  public get destination() {
+    return this.getStringAttribute('destination');
+  }
+  public set destination(value: string) {
+    this._destination = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get destinationInput() {
+    return this._destination;
+  }
+}
+export interface JobTaskForEachTaskTaskNewClusterClusterLogConfS3 {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#canned_acl Job#canned_acl}
+  */
+  readonly cannedAcl?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#destination Job#destination}
+  */
+  readonly destination: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#enable_encryption Job#enable_encryption}
+  */
+  readonly enableEncryption?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#encryption_type Job#encryption_type}
+  */
+  readonly encryptionType?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#endpoint Job#endpoint}
+  */
+  readonly endpoint?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#kms_key Job#kms_key}
+  */
+  readonly kmsKey?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#region Job#region}
+  */
+  readonly region?: string;
+}
+
+export function jobTaskForEachTaskTaskNewClusterClusterLogConfS3ToTerraform(struct?: JobTaskForEachTaskTaskNewClusterClusterLogConfS3OutputReference | JobTaskForEachTaskTaskNewClusterClusterLogConfS3): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    canned_acl: cdktn.stringToTerraform(struct!.cannedAcl),
+    destination: cdktn.stringToTerraform(struct!.destination),
+    enable_encryption: cdktn.booleanToTerraform(struct!.enableEncryption),
+    encryption_type: cdktn.stringToTerraform(struct!.encryptionType),
+    endpoint: cdktn.stringToTerraform(struct!.endpoint),
+    kms_key: cdktn.stringToTerraform(struct!.kmsKey),
+    region: cdktn.stringToTerraform(struct!.region),
+  }
+}
+
+
+export function jobTaskForEachTaskTaskNewClusterClusterLogConfS3ToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterClusterLogConfS3OutputReference | JobTaskForEachTaskTaskNewClusterClusterLogConfS3): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    canned_acl: {
+      value: cdktn.stringToHclTerraform(struct!.cannedAcl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    destination: {
+      value: cdktn.stringToHclTerraform(struct!.destination),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    enable_encryption: {
+      value: cdktn.booleanToHclTerraform(struct!.enableEncryption),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    encryption_type: {
+      value: cdktn.stringToHclTerraform(struct!.encryptionType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    endpoint: {
+      value: cdktn.stringToHclTerraform(struct!.endpoint),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    kms_key: {
+      value: cdktn.stringToHclTerraform(struct!.kmsKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    region: {
+      value: cdktn.stringToHclTerraform(struct!.region),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class JobTaskForEachTaskTaskNewClusterClusterLogConfS3OutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): JobTaskForEachTaskTaskNewClusterClusterLogConfS3 | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._cannedAcl !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cannedAcl = this._cannedAcl;
+    }
+    if (this._destination !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.destination = this._destination;
+    }
+    if (this._enableEncryption !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enableEncryption = this._enableEncryption;
+    }
+    if (this._encryptionType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.encryptionType = this._encryptionType;
+    }
+    if (this._endpoint !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.endpoint = this._endpoint;
+    }
+    if (this._kmsKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.kmsKey = this._kmsKey;
+    }
+    if (this._region !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.region = this._region;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: JobTaskForEachTaskTaskNewClusterClusterLogConfS3 | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._cannedAcl = undefined;
+      this._destination = undefined;
+      this._enableEncryption = undefined;
+      this._encryptionType = undefined;
+      this._endpoint = undefined;
+      this._kmsKey = undefined;
+      this._region = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._cannedAcl = value.cannedAcl;
+      this._destination = value.destination;
+      this._enableEncryption = value.enableEncryption;
+      this._encryptionType = value.encryptionType;
+      this._endpoint = value.endpoint;
+      this._kmsKey = value.kmsKey;
+      this._region = value.region;
+    }
+  }
+
+  // canned_acl - computed: false, optional: true, required: false
+  private _cannedAcl?: string; 
+  public get cannedAcl() {
+    return this.getStringAttribute('canned_acl');
+  }
+  public set cannedAcl(value: string) {
+    this._cannedAcl = value;
+  }
+  public resetCannedAcl() {
+    this._cannedAcl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cannedAclInput() {
+    return this._cannedAcl;
+  }
+
+  // destination - computed: false, optional: false, required: true
+  private _destination?: string; 
+  public get destination() {
+    return this.getStringAttribute('destination');
+  }
+  public set destination(value: string) {
+    this._destination = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get destinationInput() {
+    return this._destination;
+  }
+
+  // enable_encryption - computed: false, optional: true, required: false
+  private _enableEncryption?: boolean | cdktn.IResolvable; 
+  public get enableEncryption() {
+    return this.getBooleanAttribute('enable_encryption');
+  }
+  public set enableEncryption(value: boolean | cdktn.IResolvable) {
+    this._enableEncryption = value;
+  }
+  public resetEnableEncryption() {
+    this._enableEncryption = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableEncryptionInput() {
+    return this._enableEncryption;
+  }
+
+  // encryption_type - computed: false, optional: true, required: false
+  private _encryptionType?: string; 
+  public get encryptionType() {
+    return this.getStringAttribute('encryption_type');
+  }
+  public set encryptionType(value: string) {
+    this._encryptionType = value;
+  }
+  public resetEncryptionType() {
+    this._encryptionType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get encryptionTypeInput() {
+    return this._encryptionType;
+  }
+
+  // endpoint - computed: false, optional: true, required: false
+  private _endpoint?: string; 
+  public get endpoint() {
+    return this.getStringAttribute('endpoint');
+  }
+  public set endpoint(value: string) {
+    this._endpoint = value;
+  }
+  public resetEndpoint() {
+    this._endpoint = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get endpointInput() {
+    return this._endpoint;
+  }
+
+  // kms_key - computed: false, optional: true, required: false
+  private _kmsKey?: string; 
+  public get kmsKey() {
+    return this.getStringAttribute('kms_key');
+  }
+  public set kmsKey(value: string) {
+    this._kmsKey = value;
+  }
+  public resetKmsKey() {
+    this._kmsKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kmsKeyInput() {
+    return this._kmsKey;
+  }
+
+  // region - computed: false, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+}
+export interface JobTaskForEachTaskTaskNewClusterClusterLogConfVolumes {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#destination Job#destination}
+  */
+  readonly destination: string;
+}
+
+export function jobTaskForEachTaskTaskNewClusterClusterLogConfVolumesToTerraform(struct?: JobTaskForEachTaskTaskNewClusterClusterLogConfVolumesOutputReference | JobTaskForEachTaskTaskNewClusterClusterLogConfVolumes): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    destination: cdktn.stringToTerraform(struct!.destination),
+  }
+}
+
+
+export function jobTaskForEachTaskTaskNewClusterClusterLogConfVolumesToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterClusterLogConfVolumesOutputReference | JobTaskForEachTaskTaskNewClusterClusterLogConfVolumes): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    destination: {
+      value: cdktn.stringToHclTerraform(struct!.destination),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class JobTaskForEachTaskTaskNewClusterClusterLogConfVolumesOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): JobTaskForEachTaskTaskNewClusterClusterLogConfVolumes | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._destination !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.destination = this._destination;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: JobTaskForEachTaskTaskNewClusterClusterLogConfVolumes | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._destination = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._destination = value.destination;
+    }
+  }
+
+  // destination - computed: false, optional: false, required: true
+  private _destination?: string; 
+  public get destination() {
+    return this.getStringAttribute('destination');
+  }
+  public set destination(value: string) {
+    this._destination = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get destinationInput() {
+    return this._destination;
+  }
+}
+export interface JobTaskForEachTaskTaskNewClusterClusterLogConf {
+  /**
+  * dbfs block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#dbfs Job#dbfs}
+  */
+  readonly dbfs?: JobTaskForEachTaskTaskNewClusterClusterLogConfDbfs;
+  /**
+  * s3 block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#s3 Job#s3}
+  */
+  readonly s3?: JobTaskForEachTaskTaskNewClusterClusterLogConfS3;
+  /**
+  * volumes block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#volumes Job#volumes}
+  */
+  readonly volumes?: JobTaskForEachTaskTaskNewClusterClusterLogConfVolumes;
+}
+
+export function jobTaskForEachTaskTaskNewClusterClusterLogConfToTerraform(struct?: JobTaskForEachTaskTaskNewClusterClusterLogConfOutputReference | JobTaskForEachTaskTaskNewClusterClusterLogConf): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    dbfs: jobTaskForEachTaskTaskNewClusterClusterLogConfDbfsToTerraform(struct!.dbfs),
+    s3: jobTaskForEachTaskTaskNewClusterClusterLogConfS3ToTerraform(struct!.s3),
+    volumes: jobTaskForEachTaskTaskNewClusterClusterLogConfVolumesToTerraform(struct!.volumes),
+  }
+}
+
+
+export function jobTaskForEachTaskTaskNewClusterClusterLogConfToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterClusterLogConfOutputReference | JobTaskForEachTaskTaskNewClusterClusterLogConf): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    dbfs: {
+      value: jobTaskForEachTaskTaskNewClusterClusterLogConfDbfsToHclTerraform(struct!.dbfs),
+      isBlock: true,
+      type: "list",
+      storageClassType: "JobTaskForEachTaskTaskNewClusterClusterLogConfDbfsList",
+    },
+    s3: {
+      value: jobTaskForEachTaskTaskNewClusterClusterLogConfS3ToHclTerraform(struct!.s3),
+      isBlock: true,
+      type: "list",
+      storageClassType: "JobTaskForEachTaskTaskNewClusterClusterLogConfS3List",
+    },
+    volumes: {
+      value: jobTaskForEachTaskTaskNewClusterClusterLogConfVolumesToHclTerraform(struct!.volumes),
+      isBlock: true,
+      type: "list",
+      storageClassType: "JobTaskForEachTaskTaskNewClusterClusterLogConfVolumesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class JobTaskForEachTaskTaskNewClusterClusterLogConfOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): JobTaskForEachTaskTaskNewClusterClusterLogConf | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._dbfs?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dbfs = this._dbfs?.internalValue;
+    }
+    if (this._s3?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.s3 = this._s3?.internalValue;
+    }
+    if (this._volumes?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.volumes = this._volumes?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: JobTaskForEachTaskTaskNewClusterClusterLogConf | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._dbfs.internalValue = undefined;
+      this._s3.internalValue = undefined;
+      this._volumes.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._dbfs.internalValue = value.dbfs;
+      this._s3.internalValue = value.s3;
+      this._volumes.internalValue = value.volumes;
+    }
+  }
+
+  // dbfs - computed: false, optional: true, required: false
+  private _dbfs = new JobTaskForEachTaskTaskNewClusterClusterLogConfDbfsOutputReference(this, "dbfs");
+  public get dbfs() {
+    return this._dbfs;
+  }
+  public putDbfs(value: JobTaskForEachTaskTaskNewClusterClusterLogConfDbfs) {
+    this._dbfs.internalValue = value;
+  }
+  public resetDbfs() {
+    this._dbfs.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dbfsInput() {
+    return this._dbfs.internalValue;
+  }
+
+  // s3 - computed: false, optional: true, required: false
+  private _s3 = new JobTaskForEachTaskTaskNewClusterClusterLogConfS3OutputReference(this, "s3");
+  public get s3() {
+    return this._s3;
+  }
+  public putS3(value: JobTaskForEachTaskTaskNewClusterClusterLogConfS3) {
+    this._s3.internalValue = value;
+  }
+  public resetS3() {
+    this._s3.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get s3Input() {
+    return this._s3.internalValue;
+  }
+
+  // volumes - computed: false, optional: true, required: false
+  private _volumes = new JobTaskForEachTaskTaskNewClusterClusterLogConfVolumesOutputReference(this, "volumes");
+  public get volumes() {
+    return this._volumes;
+  }
+  public putVolumes(value: JobTaskForEachTaskTaskNewClusterClusterLogConfVolumes) {
+    this._volumes.internalValue = value;
+  }
+  public resetVolumes() {
+    this._volumes.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get volumesInput() {
+    return this._volumes.internalValue;
+  }
+}
+export interface JobTaskForEachTaskTaskNewClusterClusterMountInfoNetworkFilesystemInfo {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#mount_options Job#mount_options}
+  */
+  readonly mountOptions?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#server_address Job#server_address}
+  */
+  readonly serverAddress: string;
+}
+
+export function jobTaskForEachTaskTaskNewClusterClusterMountInfoNetworkFilesystemInfoToTerraform(struct?: JobTaskForEachTaskTaskNewClusterClusterMountInfoNetworkFilesystemInfoOutputReference | JobTaskForEachTaskTaskNewClusterClusterMountInfoNetworkFilesystemInfo): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    mount_options: cdktn.stringToTerraform(struct!.mountOptions),
+    server_address: cdktn.stringToTerraform(struct!.serverAddress),
+  }
+}
+
+
+export function jobTaskForEachTaskTaskNewClusterClusterMountInfoNetworkFilesystemInfoToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterClusterMountInfoNetworkFilesystemInfoOutputReference | JobTaskForEachTaskTaskNewClusterClusterMountInfoNetworkFilesystemInfo): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    mount_options: {
+      value: cdktn.stringToHclTerraform(struct!.mountOptions),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    server_address: {
+      value: cdktn.stringToHclTerraform(struct!.serverAddress),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class JobTaskForEachTaskTaskNewClusterClusterMountInfoNetworkFilesystemInfoOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -212,48 +1488,48 @@ export class JobTaskForEachTaskTaskNewClusterClusterMountInfoNetworkFilesystemIn
 }
 export interface JobTaskForEachTaskTaskNewClusterClusterMountInfo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#local_mount_dir_path Job#local_mount_dir_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#local_mount_dir_path Job#local_mount_dir_path}
   */
   readonly localMountDirPath: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#remote_mount_dir_path Job#remote_mount_dir_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#remote_mount_dir_path Job#remote_mount_dir_path}
   */
   readonly remoteMountDirPath?: string;
   /**
   * network_filesystem_info block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#network_filesystem_info Job#network_filesystem_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#network_filesystem_info Job#network_filesystem_info}
   */
   readonly networkFilesystemInfo: JobTaskForEachTaskTaskNewClusterClusterMountInfoNetworkFilesystemInfo;
 }
 
-export function jobTaskForEachTaskTaskNewClusterClusterMountInfoToTerraform(struct?: JobTaskForEachTaskTaskNewClusterClusterMountInfo | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobTaskForEachTaskTaskNewClusterClusterMountInfoToTerraform(struct?: JobTaskForEachTaskTaskNewClusterClusterMountInfo | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    local_mount_dir_path: cdktf.stringToTerraform(struct!.localMountDirPath),
-    remote_mount_dir_path: cdktf.stringToTerraform(struct!.remoteMountDirPath),
+    local_mount_dir_path: cdktn.stringToTerraform(struct!.localMountDirPath),
+    remote_mount_dir_path: cdktn.stringToTerraform(struct!.remoteMountDirPath),
     network_filesystem_info: jobTaskForEachTaskTaskNewClusterClusterMountInfoNetworkFilesystemInfoToTerraform(struct!.networkFilesystemInfo),
   }
 }
 
 
-export function jobTaskForEachTaskTaskNewClusterClusterMountInfoToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterClusterMountInfo | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobTaskForEachTaskTaskNewClusterClusterMountInfoToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterClusterMountInfo | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     local_mount_dir_path: {
-      value: cdktf.stringToHclTerraform(struct!.localMountDirPath),
+      value: cdktn.stringToHclTerraform(struct!.localMountDirPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     remote_mount_dir_path: {
-      value: cdktf.stringToHclTerraform(struct!.remoteMountDirPath),
+      value: cdktn.stringToHclTerraform(struct!.remoteMountDirPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -270,9 +1546,9 @@ export function jobTaskForEachTaskTaskNewClusterClusterMountInfoToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskForEachTaskTaskNewClusterClusterMountInfoOutputReference extends cdktf.ComplexObject {
+export class JobTaskForEachTaskTaskNewClusterClusterMountInfoOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -280,11 +1556,11 @@ export class JobTaskForEachTaskTaskNewClusterClusterMountInfoOutputReference ext
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobTaskForEachTaskTaskNewClusterClusterMountInfo | cdktf.IResolvable | undefined {
+  public get internalValue(): JobTaskForEachTaskTaskNewClusterClusterMountInfo | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -305,7 +1581,7 @@ export class JobTaskForEachTaskTaskNewClusterClusterMountInfoOutputReference ext
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobTaskForEachTaskTaskNewClusterClusterMountInfo | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobTaskForEachTaskTaskNewClusterClusterMountInfo | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -313,7 +1589,7 @@ export class JobTaskForEachTaskTaskNewClusterClusterMountInfoOutputReference ext
       this._remoteMountDirPath = undefined;
       this._networkFilesystemInfo.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -369,15 +1645,15 @@ export class JobTaskForEachTaskTaskNewClusterClusterMountInfoOutputReference ext
   }
 }
 
-export class JobTaskForEachTaskTaskNewClusterClusterMountInfoList extends cdktf.ComplexList {
-  public internalValue? : JobTaskForEachTaskTaskNewClusterClusterMountInfo[] | cdktf.IResolvable
+export class JobTaskForEachTaskTaskNewClusterClusterMountInfoList extends cdktn.ComplexList {
+  public internalValue? : JobTaskForEachTaskTaskNewClusterClusterMountInfo[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -390,41 +1666,41 @@ export class JobTaskForEachTaskTaskNewClusterClusterMountInfoList extends cdktf.
 }
 export interface JobTaskForEachTaskTaskNewClusterDockerImageBasicAuth {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#password Job#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#password Job#password}
   */
   readonly password: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#username Job#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#username Job#username}
   */
   readonly username: string;
 }
 
 export function jobTaskForEachTaskTaskNewClusterDockerImageBasicAuthToTerraform(struct?: JobTaskForEachTaskTaskNewClusterDockerImageBasicAuthOutputReference | JobTaskForEachTaskTaskNewClusterDockerImageBasicAuth): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    password: cdktf.stringToTerraform(struct!.password),
-    username: cdktf.stringToTerraform(struct!.username),
+    password: cdktn.stringToTerraform(struct!.password),
+    username: cdktn.stringToTerraform(struct!.username),
   }
 }
 
 
 export function jobTaskForEachTaskTaskNewClusterDockerImageBasicAuthToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterDockerImageBasicAuthOutputReference | JobTaskForEachTaskTaskNewClusterDockerImageBasicAuth): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     password: {
-      value: cdktf.stringToHclTerraform(struct!.password),
+      value: cdktn.stringToHclTerraform(struct!.password),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     username: {
-      value: cdktf.stringToHclTerraform(struct!.username),
+      value: cdktn.stringToHclTerraform(struct!.username),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -435,14 +1711,14 @@ export function jobTaskForEachTaskTaskNewClusterDockerImageBasicAuthToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskForEachTaskTaskNewClusterDockerImageBasicAuthOutputReference extends cdktf.ComplexObject {
+export class JobTaskForEachTaskTaskNewClusterDockerImageBasicAuthOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -501,37 +1777,37 @@ export class JobTaskForEachTaskTaskNewClusterDockerImageBasicAuthOutputReference
 }
 export interface JobTaskForEachTaskTaskNewClusterDockerImage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#url Job#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#url Job#url}
   */
   readonly url: string;
   /**
   * basic_auth block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#basic_auth Job#basic_auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#basic_auth Job#basic_auth}
   */
   readonly basicAuth?: JobTaskForEachTaskTaskNewClusterDockerImageBasicAuth;
 }
 
 export function jobTaskForEachTaskTaskNewClusterDockerImageToTerraform(struct?: JobTaskForEachTaskTaskNewClusterDockerImageOutputReference | JobTaskForEachTaskTaskNewClusterDockerImage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    url: cdktf.stringToTerraform(struct!.url),
+    url: cdktn.stringToTerraform(struct!.url),
     basic_auth: jobTaskForEachTaskTaskNewClusterDockerImageBasicAuthToTerraform(struct!.basicAuth),
   }
 }
 
 
 export function jobTaskForEachTaskTaskNewClusterDockerImageToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterDockerImageOutputReference | JobTaskForEachTaskTaskNewClusterDockerImage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     url: {
-      value: cdktf.stringToHclTerraform(struct!.url),
+      value: cdktn.stringToHclTerraform(struct!.url),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -548,14 +1824,14 @@ export function jobTaskForEachTaskTaskNewClusterDockerImageToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskForEachTaskTaskNewClusterDockerImageOutputReference extends cdktf.ComplexObject {
+export class JobTaskForEachTaskTaskNewClusterDockerImageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -615,98 +1891,182 @@ export class JobTaskForEachTaskTaskNewClusterDockerImageOutputReference extends 
     return this._basicAuth.internalValue;
   }
 }
+export interface JobTaskForEachTaskTaskNewClusterDriverNodeTypeFlexibility {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#alternate_node_type_ids Job#alternate_node_type_ids}
+  */
+  readonly alternateNodeTypeIds?: string[];
+}
+
+export function jobTaskForEachTaskTaskNewClusterDriverNodeTypeFlexibilityToTerraform(struct?: JobTaskForEachTaskTaskNewClusterDriverNodeTypeFlexibilityOutputReference | JobTaskForEachTaskTaskNewClusterDriverNodeTypeFlexibility): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    alternate_node_type_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.alternateNodeTypeIds),
+  }
+}
+
+
+export function jobTaskForEachTaskTaskNewClusterDriverNodeTypeFlexibilityToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterDriverNodeTypeFlexibilityOutputReference | JobTaskForEachTaskTaskNewClusterDriverNodeTypeFlexibility): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    alternate_node_type_ids: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.alternateNodeTypeIds),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class JobTaskForEachTaskTaskNewClusterDriverNodeTypeFlexibilityOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): JobTaskForEachTaskTaskNewClusterDriverNodeTypeFlexibility | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._alternateNodeTypeIds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.alternateNodeTypeIds = this._alternateNodeTypeIds;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: JobTaskForEachTaskTaskNewClusterDriverNodeTypeFlexibility | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._alternateNodeTypeIds = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._alternateNodeTypeIds = value.alternateNodeTypeIds;
+    }
+  }
+
+  // alternate_node_type_ids - computed: false, optional: true, required: false
+  private _alternateNodeTypeIds?: string[]; 
+  public get alternateNodeTypeIds() {
+    return this.getListAttribute('alternate_node_type_ids');
+  }
+  public set alternateNodeTypeIds(value: string[]) {
+    this._alternateNodeTypeIds = value;
+  }
+  public resetAlternateNodeTypeIds() {
+    this._alternateNodeTypeIds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get alternateNodeTypeIdsInput() {
+    return this._alternateNodeTypeIds;
+  }
+}
 export interface JobTaskForEachTaskTaskNewClusterGcpAttributes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#availability Job#availability}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#availability Job#availability}
   */
   readonly availability?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#boot_disk_size Job#boot_disk_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#boot_disk_size Job#boot_disk_size}
   */
   readonly bootDiskSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#first_on_demand Job#first_on_demand}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#first_on_demand Job#first_on_demand}
   */
   readonly firstOnDemand?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#google_service_account Job#google_service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#google_service_account Job#google_service_account}
   */
   readonly googleServiceAccount?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#local_ssd_count Job#local_ssd_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#local_ssd_count Job#local_ssd_count}
   */
   readonly localSsdCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#use_preemptible_executors Job#use_preemptible_executors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#use_preemptible_executors Job#use_preemptible_executors}
   */
-  readonly usePreemptibleExecutors?: boolean | cdktf.IResolvable;
+  readonly usePreemptibleExecutors?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#zone_id Job#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#zone_id Job#zone_id}
   */
   readonly zoneId?: string;
 }
 
 export function jobTaskForEachTaskTaskNewClusterGcpAttributesToTerraform(struct?: JobTaskForEachTaskTaskNewClusterGcpAttributesOutputReference | JobTaskForEachTaskTaskNewClusterGcpAttributes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    availability: cdktf.stringToTerraform(struct!.availability),
-    boot_disk_size: cdktf.numberToTerraform(struct!.bootDiskSize),
-    first_on_demand: cdktf.numberToTerraform(struct!.firstOnDemand),
-    google_service_account: cdktf.stringToTerraform(struct!.googleServiceAccount),
-    local_ssd_count: cdktf.numberToTerraform(struct!.localSsdCount),
-    use_preemptible_executors: cdktf.booleanToTerraform(struct!.usePreemptibleExecutors),
-    zone_id: cdktf.stringToTerraform(struct!.zoneId),
+    availability: cdktn.stringToTerraform(struct!.availability),
+    boot_disk_size: cdktn.numberToTerraform(struct!.bootDiskSize),
+    first_on_demand: cdktn.numberToTerraform(struct!.firstOnDemand),
+    google_service_account: cdktn.stringToTerraform(struct!.googleServiceAccount),
+    local_ssd_count: cdktn.numberToTerraform(struct!.localSsdCount),
+    use_preemptible_executors: cdktn.booleanToTerraform(struct!.usePreemptibleExecutors),
+    zone_id: cdktn.stringToTerraform(struct!.zoneId),
   }
 }
 
 
 export function jobTaskForEachTaskTaskNewClusterGcpAttributesToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterGcpAttributesOutputReference | JobTaskForEachTaskTaskNewClusterGcpAttributes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     availability: {
-      value: cdktf.stringToHclTerraform(struct!.availability),
+      value: cdktn.stringToHclTerraform(struct!.availability),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     boot_disk_size: {
-      value: cdktf.numberToHclTerraform(struct!.bootDiskSize),
+      value: cdktn.numberToHclTerraform(struct!.bootDiskSize),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     first_on_demand: {
-      value: cdktf.numberToHclTerraform(struct!.firstOnDemand),
+      value: cdktn.numberToHclTerraform(struct!.firstOnDemand),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     google_service_account: {
-      value: cdktf.stringToHclTerraform(struct!.googleServiceAccount),
+      value: cdktn.stringToHclTerraform(struct!.googleServiceAccount),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     local_ssd_count: {
-      value: cdktf.numberToHclTerraform(struct!.localSsdCount),
+      value: cdktn.numberToHclTerraform(struct!.localSsdCount),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     use_preemptible_executors: {
-      value: cdktf.booleanToHclTerraform(struct!.usePreemptibleExecutors),
+      value: cdktn.booleanToHclTerraform(struct!.usePreemptibleExecutors),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     zone_id: {
-      value: cdktf.stringToHclTerraform(struct!.zoneId),
+      value: cdktn.stringToHclTerraform(struct!.zoneId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -717,14 +2077,14 @@ export function jobTaskForEachTaskTaskNewClusterGcpAttributesToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskForEachTaskTaskNewClusterGcpAttributesOutputReference extends cdktf.ComplexObject {
+export class JobTaskForEachTaskTaskNewClusterGcpAttributesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -866,11 +2226,11 @@ export class JobTaskForEachTaskTaskNewClusterGcpAttributesOutputReference extend
   }
 
   // use_preemptible_executors - computed: false, optional: true, required: false
-  private _usePreemptibleExecutors?: boolean | cdktf.IResolvable; 
+  private _usePreemptibleExecutors?: boolean | cdktn.IResolvable; 
   public get usePreemptibleExecutors() {
     return this.getBooleanAttribute('use_preemptible_executors');
   }
-  public set usePreemptibleExecutors(value: boolean | cdktf.IResolvable) {
+  public set usePreemptibleExecutors(value: boolean | cdktn.IResolvable) {
     this._usePreemptibleExecutors = value;
   }
   public resetUsePreemptibleExecutors() {
@@ -899,30 +2259,30 @@ export class JobTaskForEachTaskTaskNewClusterGcpAttributesOutputReference extend
 }
 export interface JobTaskForEachTaskTaskNewClusterInitScriptsAbfss {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#destination Job#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#destination Job#destination}
   */
   readonly destination: string;
 }
 
 export function jobTaskForEachTaskTaskNewClusterInitScriptsAbfssToTerraform(struct?: JobTaskForEachTaskTaskNewClusterInitScriptsAbfssOutputReference | JobTaskForEachTaskTaskNewClusterInitScriptsAbfss): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    destination: cdktf.stringToTerraform(struct!.destination),
+    destination: cdktn.stringToTerraform(struct!.destination),
   }
 }
 
 
 export function jobTaskForEachTaskTaskNewClusterInitScriptsAbfssToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterInitScriptsAbfssOutputReference | JobTaskForEachTaskTaskNewClusterInitScriptsAbfss): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     destination: {
-      value: cdktf.stringToHclTerraform(struct!.destination),
+      value: cdktn.stringToHclTerraform(struct!.destination),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -933,14 +2293,14 @@ export function jobTaskForEachTaskTaskNewClusterInitScriptsAbfssToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskForEachTaskTaskNewClusterInitScriptsAbfssOutputReference extends cdktf.ComplexObject {
+export class JobTaskForEachTaskTaskNewClusterInitScriptsAbfssOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -980,30 +2340,30 @@ export class JobTaskForEachTaskTaskNewClusterInitScriptsAbfssOutputReference ext
 }
 export interface JobTaskForEachTaskTaskNewClusterInitScriptsDbfs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#destination Job#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#destination Job#destination}
   */
   readonly destination: string;
 }
 
 export function jobTaskForEachTaskTaskNewClusterInitScriptsDbfsToTerraform(struct?: JobTaskForEachTaskTaskNewClusterInitScriptsDbfsOutputReference | JobTaskForEachTaskTaskNewClusterInitScriptsDbfs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    destination: cdktf.stringToTerraform(struct!.destination),
+    destination: cdktn.stringToTerraform(struct!.destination),
   }
 }
 
 
 export function jobTaskForEachTaskTaskNewClusterInitScriptsDbfsToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterInitScriptsDbfsOutputReference | JobTaskForEachTaskTaskNewClusterInitScriptsDbfs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     destination: {
-      value: cdktf.stringToHclTerraform(struct!.destination),
+      value: cdktn.stringToHclTerraform(struct!.destination),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1014,14 +2374,14 @@ export function jobTaskForEachTaskTaskNewClusterInitScriptsDbfsToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskForEachTaskTaskNewClusterInitScriptsDbfsOutputReference extends cdktf.ComplexObject {
+export class JobTaskForEachTaskTaskNewClusterInitScriptsDbfsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1061,30 +2421,30 @@ export class JobTaskForEachTaskTaskNewClusterInitScriptsDbfsOutputReference exte
 }
 export interface JobTaskForEachTaskTaskNewClusterInitScriptsFile {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#destination Job#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#destination Job#destination}
   */
   readonly destination: string;
 }
 
 export function jobTaskForEachTaskTaskNewClusterInitScriptsFileToTerraform(struct?: JobTaskForEachTaskTaskNewClusterInitScriptsFileOutputReference | JobTaskForEachTaskTaskNewClusterInitScriptsFile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    destination: cdktf.stringToTerraform(struct!.destination),
+    destination: cdktn.stringToTerraform(struct!.destination),
   }
 }
 
 
 export function jobTaskForEachTaskTaskNewClusterInitScriptsFileToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterInitScriptsFileOutputReference | JobTaskForEachTaskTaskNewClusterInitScriptsFile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     destination: {
-      value: cdktf.stringToHclTerraform(struct!.destination),
+      value: cdktn.stringToHclTerraform(struct!.destination),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1095,14 +2455,14 @@ export function jobTaskForEachTaskTaskNewClusterInitScriptsFileToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskForEachTaskTaskNewClusterInitScriptsFileOutputReference extends cdktf.ComplexObject {
+export class JobTaskForEachTaskTaskNewClusterInitScriptsFileOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1142,30 +2502,30 @@ export class JobTaskForEachTaskTaskNewClusterInitScriptsFileOutputReference exte
 }
 export interface JobTaskForEachTaskTaskNewClusterInitScriptsGcs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#destination Job#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#destination Job#destination}
   */
   readonly destination: string;
 }
 
 export function jobTaskForEachTaskTaskNewClusterInitScriptsGcsToTerraform(struct?: JobTaskForEachTaskTaskNewClusterInitScriptsGcsOutputReference | JobTaskForEachTaskTaskNewClusterInitScriptsGcs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    destination: cdktf.stringToTerraform(struct!.destination),
+    destination: cdktn.stringToTerraform(struct!.destination),
   }
 }
 
 
 export function jobTaskForEachTaskTaskNewClusterInitScriptsGcsToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterInitScriptsGcsOutputReference | JobTaskForEachTaskTaskNewClusterInitScriptsGcs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     destination: {
-      value: cdktf.stringToHclTerraform(struct!.destination),
+      value: cdktn.stringToHclTerraform(struct!.destination),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1176,14 +2536,14 @@ export function jobTaskForEachTaskTaskNewClusterInitScriptsGcsToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskForEachTaskTaskNewClusterInitScriptsGcsOutputReference extends cdktf.ComplexObject {
+export class JobTaskForEachTaskTaskNewClusterInitScriptsGcsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1223,96 +2583,96 @@ export class JobTaskForEachTaskTaskNewClusterInitScriptsGcsOutputReference exten
 }
 export interface JobTaskForEachTaskTaskNewClusterInitScriptsS3 {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#canned_acl Job#canned_acl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#canned_acl Job#canned_acl}
   */
   readonly cannedAcl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#destination Job#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#destination Job#destination}
   */
   readonly destination: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#enable_encryption Job#enable_encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#enable_encryption Job#enable_encryption}
   */
-  readonly enableEncryption?: boolean | cdktf.IResolvable;
+  readonly enableEncryption?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#encryption_type Job#encryption_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#encryption_type Job#encryption_type}
   */
   readonly encryptionType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#endpoint Job#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#endpoint Job#endpoint}
   */
   readonly endpoint?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#kms_key Job#kms_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#kms_key Job#kms_key}
   */
   readonly kmsKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#region Job#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#region Job#region}
   */
   readonly region?: string;
 }
 
 export function jobTaskForEachTaskTaskNewClusterInitScriptsS3ToTerraform(struct?: JobTaskForEachTaskTaskNewClusterInitScriptsS3OutputReference | JobTaskForEachTaskTaskNewClusterInitScriptsS3): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    canned_acl: cdktf.stringToTerraform(struct!.cannedAcl),
-    destination: cdktf.stringToTerraform(struct!.destination),
-    enable_encryption: cdktf.booleanToTerraform(struct!.enableEncryption),
-    encryption_type: cdktf.stringToTerraform(struct!.encryptionType),
-    endpoint: cdktf.stringToTerraform(struct!.endpoint),
-    kms_key: cdktf.stringToTerraform(struct!.kmsKey),
-    region: cdktf.stringToTerraform(struct!.region),
+    canned_acl: cdktn.stringToTerraform(struct!.cannedAcl),
+    destination: cdktn.stringToTerraform(struct!.destination),
+    enable_encryption: cdktn.booleanToTerraform(struct!.enableEncryption),
+    encryption_type: cdktn.stringToTerraform(struct!.encryptionType),
+    endpoint: cdktn.stringToTerraform(struct!.endpoint),
+    kms_key: cdktn.stringToTerraform(struct!.kmsKey),
+    region: cdktn.stringToTerraform(struct!.region),
   }
 }
 
 
 export function jobTaskForEachTaskTaskNewClusterInitScriptsS3ToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterInitScriptsS3OutputReference | JobTaskForEachTaskTaskNewClusterInitScriptsS3): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     canned_acl: {
-      value: cdktf.stringToHclTerraform(struct!.cannedAcl),
+      value: cdktn.stringToHclTerraform(struct!.cannedAcl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     destination: {
-      value: cdktf.stringToHclTerraform(struct!.destination),
+      value: cdktn.stringToHclTerraform(struct!.destination),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     enable_encryption: {
-      value: cdktf.booleanToHclTerraform(struct!.enableEncryption),
+      value: cdktn.booleanToHclTerraform(struct!.enableEncryption),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     encryption_type: {
-      value: cdktf.stringToHclTerraform(struct!.encryptionType),
+      value: cdktn.stringToHclTerraform(struct!.encryptionType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     endpoint: {
-      value: cdktf.stringToHclTerraform(struct!.endpoint),
+      value: cdktn.stringToHclTerraform(struct!.endpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     kms_key: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKey),
+      value: cdktn.stringToHclTerraform(struct!.kmsKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     region: {
-      value: cdktf.stringToHclTerraform(struct!.region),
+      value: cdktn.stringToHclTerraform(struct!.region),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1323,14 +2683,14 @@ export function jobTaskForEachTaskTaskNewClusterInitScriptsS3ToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskForEachTaskTaskNewClusterInitScriptsS3OutputReference extends cdktf.ComplexObject {
+export class JobTaskForEachTaskTaskNewClusterInitScriptsS3OutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1421,11 +2781,11 @@ export class JobTaskForEachTaskTaskNewClusterInitScriptsS3OutputReference extend
   }
 
   // enable_encryption - computed: false, optional: true, required: false
-  private _enableEncryption?: boolean | cdktf.IResolvable; 
+  private _enableEncryption?: boolean | cdktn.IResolvable; 
   public get enableEncryption() {
     return this.getBooleanAttribute('enable_encryption');
   }
-  public set enableEncryption(value: boolean | cdktf.IResolvable) {
+  public set enableEncryption(value: boolean | cdktn.IResolvable) {
     this._enableEncryption = value;
   }
   public resetEnableEncryption() {
@@ -1502,30 +2862,30 @@ export class JobTaskForEachTaskTaskNewClusterInitScriptsS3OutputReference extend
 }
 export interface JobTaskForEachTaskTaskNewClusterInitScriptsVolumes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#destination Job#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#destination Job#destination}
   */
   readonly destination: string;
 }
 
 export function jobTaskForEachTaskTaskNewClusterInitScriptsVolumesToTerraform(struct?: JobTaskForEachTaskTaskNewClusterInitScriptsVolumesOutputReference | JobTaskForEachTaskTaskNewClusterInitScriptsVolumes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    destination: cdktf.stringToTerraform(struct!.destination),
+    destination: cdktn.stringToTerraform(struct!.destination),
   }
 }
 
 
 export function jobTaskForEachTaskTaskNewClusterInitScriptsVolumesToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterInitScriptsVolumesOutputReference | JobTaskForEachTaskTaskNewClusterInitScriptsVolumes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     destination: {
-      value: cdktf.stringToHclTerraform(struct!.destination),
+      value: cdktn.stringToHclTerraform(struct!.destination),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1536,14 +2896,14 @@ export function jobTaskForEachTaskTaskNewClusterInitScriptsVolumesToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskForEachTaskTaskNewClusterInitScriptsVolumesOutputReference extends cdktf.ComplexObject {
+export class JobTaskForEachTaskTaskNewClusterInitScriptsVolumesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1583,30 +2943,30 @@ export class JobTaskForEachTaskTaskNewClusterInitScriptsVolumesOutputReference e
 }
 export interface JobTaskForEachTaskTaskNewClusterInitScriptsWorkspace {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#destination Job#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#destination Job#destination}
   */
   readonly destination: string;
 }
 
 export function jobTaskForEachTaskTaskNewClusterInitScriptsWorkspaceToTerraform(struct?: JobTaskForEachTaskTaskNewClusterInitScriptsWorkspaceOutputReference | JobTaskForEachTaskTaskNewClusterInitScriptsWorkspace): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    destination: cdktf.stringToTerraform(struct!.destination),
+    destination: cdktn.stringToTerraform(struct!.destination),
   }
 }
 
 
 export function jobTaskForEachTaskTaskNewClusterInitScriptsWorkspaceToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterInitScriptsWorkspaceOutputReference | JobTaskForEachTaskTaskNewClusterInitScriptsWorkspace): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     destination: {
-      value: cdktf.stringToHclTerraform(struct!.destination),
+      value: cdktn.stringToHclTerraform(struct!.destination),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1617,14 +2977,14 @@ export function jobTaskForEachTaskTaskNewClusterInitScriptsWorkspaceToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskForEachTaskTaskNewClusterInitScriptsWorkspaceOutputReference extends cdktf.ComplexObject {
+export class JobTaskForEachTaskTaskNewClusterInitScriptsWorkspaceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1666,50 +3026,50 @@ export interface JobTaskForEachTaskTaskNewClusterInitScripts {
   /**
   * abfss block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#abfss Job#abfss}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#abfss Job#abfss}
   */
   readonly abfss?: JobTaskForEachTaskTaskNewClusterInitScriptsAbfss;
   /**
   * dbfs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#dbfs Job#dbfs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#dbfs Job#dbfs}
   */
   readonly dbfs?: JobTaskForEachTaskTaskNewClusterInitScriptsDbfs;
   /**
   * file block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#file Job#file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#file Job#file}
   */
   readonly file?: JobTaskForEachTaskTaskNewClusterInitScriptsFile;
   /**
   * gcs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#gcs Job#gcs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#gcs Job#gcs}
   */
   readonly gcs?: JobTaskForEachTaskTaskNewClusterInitScriptsGcs;
   /**
   * s3 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#s3 Job#s3}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#s3 Job#s3}
   */
   readonly s3?: JobTaskForEachTaskTaskNewClusterInitScriptsS3;
   /**
   * volumes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#volumes Job#volumes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#volumes Job#volumes}
   */
   readonly volumes?: JobTaskForEachTaskTaskNewClusterInitScriptsVolumes;
   /**
   * workspace block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#workspace Job#workspace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#workspace Job#workspace}
   */
   readonly workspace?: JobTaskForEachTaskTaskNewClusterInitScriptsWorkspace;
 }
 
-export function jobTaskForEachTaskTaskNewClusterInitScriptsToTerraform(struct?: JobTaskForEachTaskTaskNewClusterInitScripts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobTaskForEachTaskTaskNewClusterInitScriptsToTerraform(struct?: JobTaskForEachTaskTaskNewClusterInitScripts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1724,9 +3084,9 @@ export function jobTaskForEachTaskTaskNewClusterInitScriptsToTerraform(struct?: 
 }
 
 
-export function jobTaskForEachTaskTaskNewClusterInitScriptsToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterInitScripts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobTaskForEachTaskTaskNewClusterInitScriptsToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterInitScripts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1778,9 +3138,9 @@ export function jobTaskForEachTaskTaskNewClusterInitScriptsToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskForEachTaskTaskNewClusterInitScriptsOutputReference extends cdktf.ComplexObject {
+export class JobTaskForEachTaskTaskNewClusterInitScriptsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1788,11 +3148,11 @@ export class JobTaskForEachTaskTaskNewClusterInitScriptsOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobTaskForEachTaskTaskNewClusterInitScripts | cdktf.IResolvable | undefined {
+  public get internalValue(): JobTaskForEachTaskTaskNewClusterInitScripts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1829,7 +3189,7 @@ export class JobTaskForEachTaskTaskNewClusterInitScriptsOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobTaskForEachTaskTaskNewClusterInitScripts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobTaskForEachTaskTaskNewClusterInitScripts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1841,7 +3201,7 @@ export class JobTaskForEachTaskTaskNewClusterInitScriptsOutputReference extends 
       this._volumes.internalValue = undefined;
       this._workspace.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1971,15 +3331,15 @@ export class JobTaskForEachTaskTaskNewClusterInitScriptsOutputReference extends 
   }
 }
 
-export class JobTaskForEachTaskTaskNewClusterInitScriptsList extends cdktf.ComplexList {
-  public internalValue? : JobTaskForEachTaskTaskNewClusterInitScripts[] | cdktf.IResolvable
+export class JobTaskForEachTaskTaskNewClusterInitScriptsList extends cdktn.ComplexList {
+  public internalValue? : JobTaskForEachTaskTaskNewClusterInitScripts[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1992,41 +3352,41 @@ export class JobTaskForEachTaskTaskNewClusterInitScriptsList extends cdktf.Compl
 }
 export interface JobTaskForEachTaskTaskNewClusterLibraryCran {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#package Job#package}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#package Job#package}
   */
   readonly package: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#repo Job#repo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#repo Job#repo}
   */
   readonly repo?: string;
 }
 
 export function jobTaskForEachTaskTaskNewClusterLibraryCranToTerraform(struct?: JobTaskForEachTaskTaskNewClusterLibraryCranOutputReference | JobTaskForEachTaskTaskNewClusterLibraryCran): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    package: cdktf.stringToTerraform(struct!.package),
-    repo: cdktf.stringToTerraform(struct!.repo),
+    package: cdktn.stringToTerraform(struct!.package),
+    repo: cdktn.stringToTerraform(struct!.repo),
   }
 }
 
 
 export function jobTaskForEachTaskTaskNewClusterLibraryCranToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterLibraryCranOutputReference | JobTaskForEachTaskTaskNewClusterLibraryCran): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     package: {
-      value: cdktf.stringToHclTerraform(struct!.package),
+      value: cdktn.stringToHclTerraform(struct!.package),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     repo: {
-      value: cdktf.stringToHclTerraform(struct!.repo),
+      value: cdktn.stringToHclTerraform(struct!.repo),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2037,14 +3397,14 @@ export function jobTaskForEachTaskTaskNewClusterLibraryCranToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskForEachTaskTaskNewClusterLibraryCranOutputReference extends cdktf.ComplexObject {
+export class JobTaskForEachTaskTaskNewClusterLibraryCranOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2106,52 +3466,52 @@ export class JobTaskForEachTaskTaskNewClusterLibraryCranOutputReference extends 
 }
 export interface JobTaskForEachTaskTaskNewClusterLibraryMaven {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#coordinates Job#coordinates}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#coordinates Job#coordinates}
   */
   readonly coordinates: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#exclusions Job#exclusions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#exclusions Job#exclusions}
   */
   readonly exclusions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#repo Job#repo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#repo Job#repo}
   */
   readonly repo?: string;
 }
 
 export function jobTaskForEachTaskTaskNewClusterLibraryMavenToTerraform(struct?: JobTaskForEachTaskTaskNewClusterLibraryMavenOutputReference | JobTaskForEachTaskTaskNewClusterLibraryMaven): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    coordinates: cdktf.stringToTerraform(struct!.coordinates),
-    exclusions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.exclusions),
-    repo: cdktf.stringToTerraform(struct!.repo),
+    coordinates: cdktn.stringToTerraform(struct!.coordinates),
+    exclusions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.exclusions),
+    repo: cdktn.stringToTerraform(struct!.repo),
   }
 }
 
 
 export function jobTaskForEachTaskTaskNewClusterLibraryMavenToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterLibraryMavenOutputReference | JobTaskForEachTaskTaskNewClusterLibraryMaven): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     coordinates: {
-      value: cdktf.stringToHclTerraform(struct!.coordinates),
+      value: cdktn.stringToHclTerraform(struct!.coordinates),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     exclusions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.exclusions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.exclusions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     repo: {
-      value: cdktf.stringToHclTerraform(struct!.repo),
+      value: cdktn.stringToHclTerraform(struct!.repo),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2162,14 +3522,14 @@ export function jobTaskForEachTaskTaskNewClusterLibraryMavenToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskForEachTaskTaskNewClusterLibraryMavenOutputReference extends cdktf.ComplexObject {
+export class JobTaskForEachTaskTaskNewClusterLibraryMavenOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2253,30 +3613,30 @@ export class JobTaskForEachTaskTaskNewClusterLibraryMavenOutputReference extends
 }
 export interface JobTaskForEachTaskTaskNewClusterLibraryProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#workspace_id Job#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#workspace_id Job#workspace_id}
   */
   readonly workspaceId: string;
 }
 
 export function jobTaskForEachTaskTaskNewClusterLibraryProviderConfigToTerraform(struct?: JobTaskForEachTaskTaskNewClusterLibraryProviderConfigOutputReference | JobTaskForEachTaskTaskNewClusterLibraryProviderConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    workspace_id: cdktf.stringToTerraform(struct!.workspaceId),
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
   }
 }
 
 
 export function jobTaskForEachTaskTaskNewClusterLibraryProviderConfigToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterLibraryProviderConfigOutputReference | JobTaskForEachTaskTaskNewClusterLibraryProviderConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     workspace_id: {
-      value: cdktf.stringToHclTerraform(struct!.workspaceId),
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2287,14 +3647,14 @@ export function jobTaskForEachTaskTaskNewClusterLibraryProviderConfigToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskForEachTaskTaskNewClusterLibraryProviderConfigOutputReference extends cdktf.ComplexObject {
+export class JobTaskForEachTaskTaskNewClusterLibraryProviderConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2334,41 +3694,41 @@ export class JobTaskForEachTaskTaskNewClusterLibraryProviderConfigOutputReferenc
 }
 export interface JobTaskForEachTaskTaskNewClusterLibraryPypi {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#package Job#package}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#package Job#package}
   */
   readonly package: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#repo Job#repo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#repo Job#repo}
   */
   readonly repo?: string;
 }
 
 export function jobTaskForEachTaskTaskNewClusterLibraryPypiToTerraform(struct?: JobTaskForEachTaskTaskNewClusterLibraryPypiOutputReference | JobTaskForEachTaskTaskNewClusterLibraryPypi): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    package: cdktf.stringToTerraform(struct!.package),
-    repo: cdktf.stringToTerraform(struct!.repo),
+    package: cdktn.stringToTerraform(struct!.package),
+    repo: cdktn.stringToTerraform(struct!.repo),
   }
 }
 
 
 export function jobTaskForEachTaskTaskNewClusterLibraryPypiToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterLibraryPypiOutputReference | JobTaskForEachTaskTaskNewClusterLibraryPypi): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     package: {
-      value: cdktf.stringToHclTerraform(struct!.package),
+      value: cdktn.stringToHclTerraform(struct!.package),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     repo: {
-      value: cdktf.stringToHclTerraform(struct!.repo),
+      value: cdktn.stringToHclTerraform(struct!.repo),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2379,14 +3739,14 @@ export function jobTaskForEachTaskTaskNewClusterLibraryPypiToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskForEachTaskTaskNewClusterLibraryPypiOutputReference extends cdktf.ComplexObject {
+export class JobTaskForEachTaskTaskNewClusterLibraryPypiOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2448,57 +3808,57 @@ export class JobTaskForEachTaskTaskNewClusterLibraryPypiOutputReference extends 
 }
 export interface JobTaskForEachTaskTaskNewClusterLibrary {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#egg Job#egg}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#egg Job#egg}
   */
   readonly egg?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#jar Job#jar}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#jar Job#jar}
   */
   readonly jar?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#requirements Job#requirements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#requirements Job#requirements}
   */
   readonly requirements?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#whl Job#whl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#whl Job#whl}
   */
   readonly whl?: string;
   /**
   * cran block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#cran Job#cran}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#cran Job#cran}
   */
   readonly cran?: JobTaskForEachTaskTaskNewClusterLibraryCran;
   /**
   * maven block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#maven Job#maven}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#maven Job#maven}
   */
   readonly maven?: JobTaskForEachTaskTaskNewClusterLibraryMaven;
   /**
   * provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#provider_config Job#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#provider_config Job#provider_config}
   */
   readonly providerConfig?: JobTaskForEachTaskTaskNewClusterLibraryProviderConfig;
   /**
   * pypi block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#pypi Job#pypi}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#pypi Job#pypi}
   */
   readonly pypi?: JobTaskForEachTaskTaskNewClusterLibraryPypi;
 }
 
-export function jobTaskForEachTaskTaskNewClusterLibraryToTerraform(struct?: JobTaskForEachTaskTaskNewClusterLibrary | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobTaskForEachTaskTaskNewClusterLibraryToTerraform(struct?: JobTaskForEachTaskTaskNewClusterLibrary | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    egg: cdktf.stringToTerraform(struct!.egg),
-    jar: cdktf.stringToTerraform(struct!.jar),
-    requirements: cdktf.stringToTerraform(struct!.requirements),
-    whl: cdktf.stringToTerraform(struct!.whl),
+    egg: cdktn.stringToTerraform(struct!.egg),
+    jar: cdktn.stringToTerraform(struct!.jar),
+    requirements: cdktn.stringToTerraform(struct!.requirements),
+    whl: cdktn.stringToTerraform(struct!.whl),
     cran: jobTaskForEachTaskTaskNewClusterLibraryCranToTerraform(struct!.cran),
     maven: jobTaskForEachTaskTaskNewClusterLibraryMavenToTerraform(struct!.maven),
     provider_config: jobTaskForEachTaskTaskNewClusterLibraryProviderConfigToTerraform(struct!.providerConfig),
@@ -2507,32 +3867,32 @@ export function jobTaskForEachTaskTaskNewClusterLibraryToTerraform(struct?: JobT
 }
 
 
-export function jobTaskForEachTaskTaskNewClusterLibraryToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterLibrary | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobTaskForEachTaskTaskNewClusterLibraryToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterLibrary | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     egg: {
-      value: cdktf.stringToHclTerraform(struct!.egg),
+      value: cdktn.stringToHclTerraform(struct!.egg),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     jar: {
-      value: cdktf.stringToHclTerraform(struct!.jar),
+      value: cdktn.stringToHclTerraform(struct!.jar),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     requirements: {
-      value: cdktf.stringToHclTerraform(struct!.requirements),
+      value: cdktn.stringToHclTerraform(struct!.requirements),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     whl: {
-      value: cdktf.stringToHclTerraform(struct!.whl),
+      value: cdktn.stringToHclTerraform(struct!.whl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2567,9 +3927,9 @@ export function jobTaskForEachTaskTaskNewClusterLibraryToHclTerraform(struct?: J
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskForEachTaskTaskNewClusterLibraryOutputReference extends cdktf.ComplexObject {
+export class JobTaskForEachTaskTaskNewClusterLibraryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2577,11 +3937,11 @@ export class JobTaskForEachTaskTaskNewClusterLibraryOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobTaskForEachTaskTaskNewClusterLibrary | cdktf.IResolvable | undefined {
+  public get internalValue(): JobTaskForEachTaskTaskNewClusterLibrary | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2622,7 +3982,7 @@ export class JobTaskForEachTaskTaskNewClusterLibraryOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobTaskForEachTaskTaskNewClusterLibrary | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobTaskForEachTaskTaskNewClusterLibrary | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2635,7 +3995,7 @@ export class JobTaskForEachTaskTaskNewClusterLibraryOutputReference extends cdkt
       this._providerConfig.internalValue = undefined;
       this._pypi.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2782,15 +4142,15 @@ export class JobTaskForEachTaskTaskNewClusterLibraryOutputReference extends cdkt
   }
 }
 
-export class JobTaskForEachTaskTaskNewClusterLibraryList extends cdktf.ComplexList {
-  public internalValue? : JobTaskForEachTaskTaskNewClusterLibrary[] | cdktf.IResolvable
+export class JobTaskForEachTaskTaskNewClusterLibraryList extends cdktn.ComplexList {
+  public internalValue? : JobTaskForEachTaskTaskNewClusterLibrary[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2803,30 +4163,30 @@ export class JobTaskForEachTaskTaskNewClusterLibraryList extends cdktf.ComplexLi
 }
 export interface JobTaskForEachTaskTaskNewClusterProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#workspace_id Job#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#workspace_id Job#workspace_id}
   */
   readonly workspaceId: string;
 }
 
 export function jobTaskForEachTaskTaskNewClusterProviderConfigToTerraform(struct?: JobTaskForEachTaskTaskNewClusterProviderConfigOutputReference | JobTaskForEachTaskTaskNewClusterProviderConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    workspace_id: cdktf.stringToTerraform(struct!.workspaceId),
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
   }
 }
 
 
 export function jobTaskForEachTaskTaskNewClusterProviderConfigToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterProviderConfigOutputReference | JobTaskForEachTaskTaskNewClusterProviderConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     workspace_id: {
-      value: cdktf.stringToHclTerraform(struct!.workspaceId),
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2837,14 +4197,14 @@ export function jobTaskForEachTaskTaskNewClusterProviderConfigToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskForEachTaskTaskNewClusterProviderConfigOutputReference extends cdktf.ComplexObject {
+export class JobTaskForEachTaskTaskNewClusterProviderConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2882,43 +4242,127 @@ export class JobTaskForEachTaskTaskNewClusterProviderConfigOutputReference exten
     return this._workspaceId;
   }
 }
-export interface JobTaskForEachTaskTaskNewClusterWorkloadTypeClients {
+export interface JobTaskForEachTaskTaskNewClusterWorkerNodeTypeFlexibility {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#jobs Job#jobs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#alternate_node_type_ids Job#alternate_node_type_ids}
   */
-  readonly jobs?: boolean | cdktf.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#notebooks Job#notebooks}
-  */
-  readonly notebooks?: boolean | cdktf.IResolvable;
+  readonly alternateNodeTypeIds?: string[];
 }
 
-export function jobTaskForEachTaskTaskNewClusterWorkloadTypeClientsToTerraform(struct?: JobTaskForEachTaskTaskNewClusterWorkloadTypeClientsOutputReference | JobTaskForEachTaskTaskNewClusterWorkloadTypeClients): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobTaskForEachTaskTaskNewClusterWorkerNodeTypeFlexibilityToTerraform(struct?: JobTaskForEachTaskTaskNewClusterWorkerNodeTypeFlexibilityOutputReference | JobTaskForEachTaskTaskNewClusterWorkerNodeTypeFlexibility): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    jobs: cdktf.booleanToTerraform(struct!.jobs),
-    notebooks: cdktf.booleanToTerraform(struct!.notebooks),
+    alternate_node_type_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.alternateNodeTypeIds),
+  }
+}
+
+
+export function jobTaskForEachTaskTaskNewClusterWorkerNodeTypeFlexibilityToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterWorkerNodeTypeFlexibilityOutputReference | JobTaskForEachTaskTaskNewClusterWorkerNodeTypeFlexibility): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    alternate_node_type_ids: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.alternateNodeTypeIds),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class JobTaskForEachTaskTaskNewClusterWorkerNodeTypeFlexibilityOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): JobTaskForEachTaskTaskNewClusterWorkerNodeTypeFlexibility | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._alternateNodeTypeIds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.alternateNodeTypeIds = this._alternateNodeTypeIds;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: JobTaskForEachTaskTaskNewClusterWorkerNodeTypeFlexibility | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._alternateNodeTypeIds = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._alternateNodeTypeIds = value.alternateNodeTypeIds;
+    }
+  }
+
+  // alternate_node_type_ids - computed: false, optional: true, required: false
+  private _alternateNodeTypeIds?: string[]; 
+  public get alternateNodeTypeIds() {
+    return this.getListAttribute('alternate_node_type_ids');
+  }
+  public set alternateNodeTypeIds(value: string[]) {
+    this._alternateNodeTypeIds = value;
+  }
+  public resetAlternateNodeTypeIds() {
+    this._alternateNodeTypeIds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get alternateNodeTypeIdsInput() {
+    return this._alternateNodeTypeIds;
+  }
+}
+export interface JobTaskForEachTaskTaskNewClusterWorkloadTypeClients {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#jobs Job#jobs}
+  */
+  readonly jobs?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#notebooks Job#notebooks}
+  */
+  readonly notebooks?: boolean | cdktn.IResolvable;
+}
+
+export function jobTaskForEachTaskTaskNewClusterWorkloadTypeClientsToTerraform(struct?: JobTaskForEachTaskTaskNewClusterWorkloadTypeClientsOutputReference | JobTaskForEachTaskTaskNewClusterWorkloadTypeClients): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    jobs: cdktn.booleanToTerraform(struct!.jobs),
+    notebooks: cdktn.booleanToTerraform(struct!.notebooks),
   }
 }
 
 
 export function jobTaskForEachTaskTaskNewClusterWorkloadTypeClientsToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterWorkloadTypeClientsOutputReference | JobTaskForEachTaskTaskNewClusterWorkloadTypeClients): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     jobs: {
-      value: cdktf.booleanToHclTerraform(struct!.jobs),
+      value: cdktn.booleanToHclTerraform(struct!.jobs),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     notebooks: {
-      value: cdktf.booleanToHclTerraform(struct!.notebooks),
+      value: cdktn.booleanToHclTerraform(struct!.notebooks),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -2929,14 +4373,14 @@ export function jobTaskForEachTaskTaskNewClusterWorkloadTypeClientsToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskForEachTaskTaskNewClusterWorkloadTypeClientsOutputReference extends cdktf.ComplexObject {
+export class JobTaskForEachTaskTaskNewClusterWorkloadTypeClientsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2968,11 +4412,11 @@ export class JobTaskForEachTaskTaskNewClusterWorkloadTypeClientsOutputReference 
   }
 
   // jobs - computed: false, optional: true, required: false
-  private _jobs?: boolean | cdktf.IResolvable; 
+  private _jobs?: boolean | cdktn.IResolvable; 
   public get jobs() {
     return this.getBooleanAttribute('jobs');
   }
-  public set jobs(value: boolean | cdktf.IResolvable) {
+  public set jobs(value: boolean | cdktn.IResolvable) {
     this._jobs = value;
   }
   public resetJobs() {
@@ -2984,11 +4428,11 @@ export class JobTaskForEachTaskTaskNewClusterWorkloadTypeClientsOutputReference 
   }
 
   // notebooks - computed: false, optional: true, required: false
-  private _notebooks?: boolean | cdktf.IResolvable; 
+  private _notebooks?: boolean | cdktn.IResolvable; 
   public get notebooks() {
     return this.getBooleanAttribute('notebooks');
   }
-  public set notebooks(value: boolean | cdktf.IResolvable) {
+  public set notebooks(value: boolean | cdktn.IResolvable) {
     this._notebooks = value;
   }
   public resetNotebooks() {
@@ -3003,14 +4447,14 @@ export interface JobTaskForEachTaskTaskNewClusterWorkloadType {
   /**
   * clients block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#clients Job#clients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#clients Job#clients}
   */
   readonly clients: JobTaskForEachTaskTaskNewClusterWorkloadTypeClients;
 }
 
 export function jobTaskForEachTaskTaskNewClusterWorkloadTypeToTerraform(struct?: JobTaskForEachTaskTaskNewClusterWorkloadTypeOutputReference | JobTaskForEachTaskTaskNewClusterWorkloadType): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3020,8 +4464,8 @@ export function jobTaskForEachTaskTaskNewClusterWorkloadTypeToTerraform(struct?:
 
 
 export function jobTaskForEachTaskTaskNewClusterWorkloadTypeToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterWorkloadTypeOutputReference | JobTaskForEachTaskTaskNewClusterWorkloadType): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3037,14 +4481,14 @@ export function jobTaskForEachTaskTaskNewClusterWorkloadTypeToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskForEachTaskTaskNewClusterWorkloadTypeOutputReference extends cdktf.ComplexObject {
+export class JobTaskForEachTaskTaskNewClusterWorkloadTypeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3084,371 +4528,385 @@ export class JobTaskForEachTaskTaskNewClusterWorkloadTypeOutputReference extends
 }
 export interface JobTaskForEachTaskTaskNewCluster {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#apply_policy_default_values Job#apply_policy_default_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#apply_policy_default_values Job#apply_policy_default_values}
   */
-  readonly applyPolicyDefaultValues?: boolean | cdktf.IResolvable;
+  readonly applyPolicyDefaultValues?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#cluster_id Job#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#cluster_id Job#cluster_id}
   */
   readonly clusterId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#cluster_name Job#cluster_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#cluster_name Job#cluster_name}
   */
   readonly clusterName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#custom_tags Job#custom_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#custom_tags Job#custom_tags}
   */
   readonly customTags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#data_security_mode Job#data_security_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#data_security_mode Job#data_security_mode}
   */
   readonly dataSecurityMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#driver_instance_pool_id Job#driver_instance_pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#driver_instance_pool_id Job#driver_instance_pool_id}
   */
   readonly driverInstancePoolId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#driver_node_type_id Job#driver_node_type_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#driver_node_type_id Job#driver_node_type_id}
   */
   readonly driverNodeTypeId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#enable_elastic_disk Job#enable_elastic_disk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#enable_elastic_disk Job#enable_elastic_disk}
   */
-  readonly enableElasticDisk?: boolean | cdktf.IResolvable;
+  readonly enableElasticDisk?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#enable_local_disk_encryption Job#enable_local_disk_encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#enable_local_disk_encryption Job#enable_local_disk_encryption}
   */
-  readonly enableLocalDiskEncryption?: boolean | cdktf.IResolvable;
+  readonly enableLocalDiskEncryption?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#idempotency_token Job#idempotency_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#idempotency_token Job#idempotency_token}
   */
   readonly idempotencyToken?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#instance_pool_id Job#instance_pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#instance_pool_id Job#instance_pool_id}
   */
   readonly instancePoolId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#is_single_node Job#is_single_node}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#is_single_node Job#is_single_node}
   */
-  readonly isSingleNode?: boolean | cdktf.IResolvable;
+  readonly isSingleNode?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#kind Job#kind}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#kind Job#kind}
   */
   readonly kind?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#node_type_id Job#node_type_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#node_type_id Job#node_type_id}
   */
   readonly nodeTypeId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#num_workers Job#num_workers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#num_workers Job#num_workers}
   */
   readonly numWorkers?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#policy_id Job#policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#policy_id Job#policy_id}
   */
   readonly policyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#remote_disk_throughput Job#remote_disk_throughput}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#remote_disk_throughput Job#remote_disk_throughput}
   */
   readonly remoteDiskThroughput?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#runtime_engine Job#runtime_engine}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#runtime_engine Job#runtime_engine}
   */
   readonly runtimeEngine?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#single_user_name Job#single_user_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#single_user_name Job#single_user_name}
   */
   readonly singleUserName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#spark_conf Job#spark_conf}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#spark_conf Job#spark_conf}
   */
   readonly sparkConf?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#spark_env_vars Job#spark_env_vars}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#spark_env_vars Job#spark_env_vars}
   */
   readonly sparkEnvVars?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#spark_version Job#spark_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#spark_version Job#spark_version}
   */
   readonly sparkVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#ssh_public_keys Job#ssh_public_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#ssh_public_keys Job#ssh_public_keys}
   */
   readonly sshPublicKeys?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#total_initial_remote_disk_size Job#total_initial_remote_disk_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#total_initial_remote_disk_size Job#total_initial_remote_disk_size}
   */
   readonly totalInitialRemoteDiskSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#use_ml_runtime Job#use_ml_runtime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#use_ml_runtime Job#use_ml_runtime}
   */
-  readonly useMlRuntime?: boolean | cdktf.IResolvable;
+  readonly useMlRuntime?: boolean | cdktn.IResolvable;
   /**
   * autoscale block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#autoscale Job#autoscale}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#autoscale Job#autoscale}
   */
   readonly autoscale?: JobTaskForEachTaskTaskNewClusterAutoscale;
   /**
   * aws_attributes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#aws_attributes Job#aws_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#aws_attributes Job#aws_attributes}
   */
   readonly awsAttributes?: JobTaskForEachTaskTaskNewClusterAwsAttributes;
   /**
   * azure_attributes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#azure_attributes Job#azure_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#azure_attributes Job#azure_attributes}
   */
   readonly azureAttributes?: JobTaskForEachTaskTaskNewClusterAzureAttributes;
   /**
   * cluster_log_conf block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#cluster_log_conf Job#cluster_log_conf}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#cluster_log_conf Job#cluster_log_conf}
   */
   readonly clusterLogConf?: JobTaskForEachTaskTaskNewClusterClusterLogConf;
   /**
   * cluster_mount_info block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#cluster_mount_info Job#cluster_mount_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#cluster_mount_info Job#cluster_mount_info}
   */
-  readonly clusterMountInfo?: JobTaskForEachTaskTaskNewClusterClusterMountInfo[] | cdktf.IResolvable;
+  readonly clusterMountInfo?: JobTaskForEachTaskTaskNewClusterClusterMountInfo[] | cdktn.IResolvable;
   /**
   * docker_image block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#docker_image Job#docker_image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#docker_image Job#docker_image}
   */
   readonly dockerImage?: JobTaskForEachTaskTaskNewClusterDockerImage;
   /**
+  * driver_node_type_flexibility block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#driver_node_type_flexibility Job#driver_node_type_flexibility}
+  */
+  readonly driverNodeTypeFlexibility?: JobTaskForEachTaskTaskNewClusterDriverNodeTypeFlexibility;
+  /**
   * gcp_attributes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#gcp_attributes Job#gcp_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#gcp_attributes Job#gcp_attributes}
   */
   readonly gcpAttributes?: JobTaskForEachTaskTaskNewClusterGcpAttributes;
   /**
   * init_scripts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#init_scripts Job#init_scripts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#init_scripts Job#init_scripts}
   */
-  readonly initScripts?: JobTaskForEachTaskTaskNewClusterInitScripts[] | cdktf.IResolvable;
+  readonly initScripts?: JobTaskForEachTaskTaskNewClusterInitScripts[] | cdktn.IResolvable;
   /**
   * library block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#library Job#library}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#library Job#library}
   */
-  readonly library?: JobTaskForEachTaskTaskNewClusterLibrary[] | cdktf.IResolvable;
+  readonly library?: JobTaskForEachTaskTaskNewClusterLibrary[] | cdktn.IResolvable;
   /**
   * provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#provider_config Job#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#provider_config Job#provider_config}
   */
   readonly providerConfig?: JobTaskForEachTaskTaskNewClusterProviderConfig;
   /**
+  * worker_node_type_flexibility block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#worker_node_type_flexibility Job#worker_node_type_flexibility}
+  */
+  readonly workerNodeTypeFlexibility?: JobTaskForEachTaskTaskNewClusterWorkerNodeTypeFlexibility;
+  /**
   * workload_type block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#workload_type Job#workload_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#workload_type Job#workload_type}
   */
   readonly workloadType?: JobTaskForEachTaskTaskNewClusterWorkloadType;
 }
 
 export function jobTaskForEachTaskTaskNewClusterToTerraform(struct?: JobTaskForEachTaskTaskNewClusterOutputReference | JobTaskForEachTaskTaskNewCluster): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    apply_policy_default_values: cdktf.booleanToTerraform(struct!.applyPolicyDefaultValues),
-    cluster_id: cdktf.stringToTerraform(struct!.clusterId),
-    cluster_name: cdktf.stringToTerraform(struct!.clusterName),
-    custom_tags: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.customTags),
-    data_security_mode: cdktf.stringToTerraform(struct!.dataSecurityMode),
-    driver_instance_pool_id: cdktf.stringToTerraform(struct!.driverInstancePoolId),
-    driver_node_type_id: cdktf.stringToTerraform(struct!.driverNodeTypeId),
-    enable_elastic_disk: cdktf.booleanToTerraform(struct!.enableElasticDisk),
-    enable_local_disk_encryption: cdktf.booleanToTerraform(struct!.enableLocalDiskEncryption),
-    idempotency_token: cdktf.stringToTerraform(struct!.idempotencyToken),
-    instance_pool_id: cdktf.stringToTerraform(struct!.instancePoolId),
-    is_single_node: cdktf.booleanToTerraform(struct!.isSingleNode),
-    kind: cdktf.stringToTerraform(struct!.kind),
-    node_type_id: cdktf.stringToTerraform(struct!.nodeTypeId),
-    num_workers: cdktf.numberToTerraform(struct!.numWorkers),
-    policy_id: cdktf.stringToTerraform(struct!.policyId),
-    remote_disk_throughput: cdktf.numberToTerraform(struct!.remoteDiskThroughput),
-    runtime_engine: cdktf.stringToTerraform(struct!.runtimeEngine),
-    single_user_name: cdktf.stringToTerraform(struct!.singleUserName),
-    spark_conf: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.sparkConf),
-    spark_env_vars: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.sparkEnvVars),
-    spark_version: cdktf.stringToTerraform(struct!.sparkVersion),
-    ssh_public_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sshPublicKeys),
-    total_initial_remote_disk_size: cdktf.numberToTerraform(struct!.totalInitialRemoteDiskSize),
-    use_ml_runtime: cdktf.booleanToTerraform(struct!.useMlRuntime),
+    apply_policy_default_values: cdktn.booleanToTerraform(struct!.applyPolicyDefaultValues),
+    cluster_id: cdktn.stringToTerraform(struct!.clusterId),
+    cluster_name: cdktn.stringToTerraform(struct!.clusterName),
+    custom_tags: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.customTags),
+    data_security_mode: cdktn.stringToTerraform(struct!.dataSecurityMode),
+    driver_instance_pool_id: cdktn.stringToTerraform(struct!.driverInstancePoolId),
+    driver_node_type_id: cdktn.stringToTerraform(struct!.driverNodeTypeId),
+    enable_elastic_disk: cdktn.booleanToTerraform(struct!.enableElasticDisk),
+    enable_local_disk_encryption: cdktn.booleanToTerraform(struct!.enableLocalDiskEncryption),
+    idempotency_token: cdktn.stringToTerraform(struct!.idempotencyToken),
+    instance_pool_id: cdktn.stringToTerraform(struct!.instancePoolId),
+    is_single_node: cdktn.booleanToTerraform(struct!.isSingleNode),
+    kind: cdktn.stringToTerraform(struct!.kind),
+    node_type_id: cdktn.stringToTerraform(struct!.nodeTypeId),
+    num_workers: cdktn.numberToTerraform(struct!.numWorkers),
+    policy_id: cdktn.stringToTerraform(struct!.policyId),
+    remote_disk_throughput: cdktn.numberToTerraform(struct!.remoteDiskThroughput),
+    runtime_engine: cdktn.stringToTerraform(struct!.runtimeEngine),
+    single_user_name: cdktn.stringToTerraform(struct!.singleUserName),
+    spark_conf: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.sparkConf),
+    spark_env_vars: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.sparkEnvVars),
+    spark_version: cdktn.stringToTerraform(struct!.sparkVersion),
+    ssh_public_keys: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.sshPublicKeys),
+    total_initial_remote_disk_size: cdktn.numberToTerraform(struct!.totalInitialRemoteDiskSize),
+    use_ml_runtime: cdktn.booleanToTerraform(struct!.useMlRuntime),
     autoscale: jobTaskForEachTaskTaskNewClusterAutoscaleToTerraform(struct!.autoscale),
     aws_attributes: jobTaskForEachTaskTaskNewClusterAwsAttributesToTerraform(struct!.awsAttributes),
     azure_attributes: jobTaskForEachTaskTaskNewClusterAzureAttributesToTerraform(struct!.azureAttributes),
     cluster_log_conf: jobTaskForEachTaskTaskNewClusterClusterLogConfToTerraform(struct!.clusterLogConf),
-    cluster_mount_info: cdktf.listMapper(jobTaskForEachTaskTaskNewClusterClusterMountInfoToTerraform, true)(struct!.clusterMountInfo),
+    cluster_mount_info: cdktn.listMapper(jobTaskForEachTaskTaskNewClusterClusterMountInfoToTerraform, true)(struct!.clusterMountInfo),
     docker_image: jobTaskForEachTaskTaskNewClusterDockerImageToTerraform(struct!.dockerImage),
+    driver_node_type_flexibility: jobTaskForEachTaskTaskNewClusterDriverNodeTypeFlexibilityToTerraform(struct!.driverNodeTypeFlexibility),
     gcp_attributes: jobTaskForEachTaskTaskNewClusterGcpAttributesToTerraform(struct!.gcpAttributes),
-    init_scripts: cdktf.listMapper(jobTaskForEachTaskTaskNewClusterInitScriptsToTerraform, true)(struct!.initScripts),
-    library: cdktf.listMapper(jobTaskForEachTaskTaskNewClusterLibraryToTerraform, true)(struct!.library),
+    init_scripts: cdktn.listMapper(jobTaskForEachTaskTaskNewClusterInitScriptsToTerraform, true)(struct!.initScripts),
+    library: cdktn.listMapper(jobTaskForEachTaskTaskNewClusterLibraryToTerraform, true)(struct!.library),
     provider_config: jobTaskForEachTaskTaskNewClusterProviderConfigToTerraform(struct!.providerConfig),
+    worker_node_type_flexibility: jobTaskForEachTaskTaskNewClusterWorkerNodeTypeFlexibilityToTerraform(struct!.workerNodeTypeFlexibility),
     workload_type: jobTaskForEachTaskTaskNewClusterWorkloadTypeToTerraform(struct!.workloadType),
   }
 }
 
 
 export function jobTaskForEachTaskTaskNewClusterToHclTerraform(struct?: JobTaskForEachTaskTaskNewClusterOutputReference | JobTaskForEachTaskTaskNewCluster): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     apply_policy_default_values: {
-      value: cdktf.booleanToHclTerraform(struct!.applyPolicyDefaultValues),
+      value: cdktn.booleanToHclTerraform(struct!.applyPolicyDefaultValues),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     cluster_id: {
-      value: cdktf.stringToHclTerraform(struct!.clusterId),
+      value: cdktn.stringToHclTerraform(struct!.clusterId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cluster_name: {
-      value: cdktf.stringToHclTerraform(struct!.clusterName),
+      value: cdktn.stringToHclTerraform(struct!.clusterName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     custom_tags: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.customTags),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.customTags),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     data_security_mode: {
-      value: cdktf.stringToHclTerraform(struct!.dataSecurityMode),
+      value: cdktn.stringToHclTerraform(struct!.dataSecurityMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     driver_instance_pool_id: {
-      value: cdktf.stringToHclTerraform(struct!.driverInstancePoolId),
+      value: cdktn.stringToHclTerraform(struct!.driverInstancePoolId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     driver_node_type_id: {
-      value: cdktf.stringToHclTerraform(struct!.driverNodeTypeId),
+      value: cdktn.stringToHclTerraform(struct!.driverNodeTypeId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     enable_elastic_disk: {
-      value: cdktf.booleanToHclTerraform(struct!.enableElasticDisk),
+      value: cdktn.booleanToHclTerraform(struct!.enableElasticDisk),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     enable_local_disk_encryption: {
-      value: cdktf.booleanToHclTerraform(struct!.enableLocalDiskEncryption),
+      value: cdktn.booleanToHclTerraform(struct!.enableLocalDiskEncryption),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     idempotency_token: {
-      value: cdktf.stringToHclTerraform(struct!.idempotencyToken),
+      value: cdktn.stringToHclTerraform(struct!.idempotencyToken),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     instance_pool_id: {
-      value: cdktf.stringToHclTerraform(struct!.instancePoolId),
+      value: cdktn.stringToHclTerraform(struct!.instancePoolId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     is_single_node: {
-      value: cdktf.booleanToHclTerraform(struct!.isSingleNode),
+      value: cdktn.booleanToHclTerraform(struct!.isSingleNode),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     kind: {
-      value: cdktf.stringToHclTerraform(struct!.kind),
+      value: cdktn.stringToHclTerraform(struct!.kind),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     node_type_id: {
-      value: cdktf.stringToHclTerraform(struct!.nodeTypeId),
+      value: cdktn.stringToHclTerraform(struct!.nodeTypeId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     num_workers: {
-      value: cdktf.numberToHclTerraform(struct!.numWorkers),
+      value: cdktn.numberToHclTerraform(struct!.numWorkers),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     policy_id: {
-      value: cdktf.stringToHclTerraform(struct!.policyId),
+      value: cdktn.stringToHclTerraform(struct!.policyId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     remote_disk_throughput: {
-      value: cdktf.numberToHclTerraform(struct!.remoteDiskThroughput),
+      value: cdktn.numberToHclTerraform(struct!.remoteDiskThroughput),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     runtime_engine: {
-      value: cdktf.stringToHclTerraform(struct!.runtimeEngine),
+      value: cdktn.stringToHclTerraform(struct!.runtimeEngine),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     single_user_name: {
-      value: cdktf.stringToHclTerraform(struct!.singleUserName),
+      value: cdktn.stringToHclTerraform(struct!.singleUserName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     spark_conf: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.sparkConf),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.sparkConf),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     spark_env_vars: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.sparkEnvVars),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.sparkEnvVars),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     spark_version: {
-      value: cdktf.stringToHclTerraform(struct!.sparkVersion),
+      value: cdktn.stringToHclTerraform(struct!.sparkVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ssh_public_keys: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sshPublicKeys),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.sshPublicKeys),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     total_initial_remote_disk_size: {
-      value: cdktf.numberToHclTerraform(struct!.totalInitialRemoteDiskSize),
+      value: cdktn.numberToHclTerraform(struct!.totalInitialRemoteDiskSize),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     use_ml_runtime: {
-      value: cdktf.booleanToHclTerraform(struct!.useMlRuntime),
+      value: cdktn.booleanToHclTerraform(struct!.useMlRuntime),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -3478,7 +4936,7 @@ export function jobTaskForEachTaskTaskNewClusterToHclTerraform(struct?: JobTaskF
       storageClassType: "JobTaskForEachTaskTaskNewClusterClusterLogConfList",
     },
     cluster_mount_info: {
-      value: cdktf.listMapperHcl(jobTaskForEachTaskTaskNewClusterClusterMountInfoToHclTerraform, true)(struct!.clusterMountInfo),
+      value: cdktn.listMapperHcl(jobTaskForEachTaskTaskNewClusterClusterMountInfoToHclTerraform, true)(struct!.clusterMountInfo),
       isBlock: true,
       type: "list",
       storageClassType: "JobTaskForEachTaskTaskNewClusterClusterMountInfoList",
@@ -3489,6 +4947,12 @@ export function jobTaskForEachTaskTaskNewClusterToHclTerraform(struct?: JobTaskF
       type: "list",
       storageClassType: "JobTaskForEachTaskTaskNewClusterDockerImageList",
     },
+    driver_node_type_flexibility: {
+      value: jobTaskForEachTaskTaskNewClusterDriverNodeTypeFlexibilityToHclTerraform(struct!.driverNodeTypeFlexibility),
+      isBlock: true,
+      type: "list",
+      storageClassType: "JobTaskForEachTaskTaskNewClusterDriverNodeTypeFlexibilityList",
+    },
     gcp_attributes: {
       value: jobTaskForEachTaskTaskNewClusterGcpAttributesToHclTerraform(struct!.gcpAttributes),
       isBlock: true,
@@ -3496,13 +4960,13 @@ export function jobTaskForEachTaskTaskNewClusterToHclTerraform(struct?: JobTaskF
       storageClassType: "JobTaskForEachTaskTaskNewClusterGcpAttributesList",
     },
     init_scripts: {
-      value: cdktf.listMapperHcl(jobTaskForEachTaskTaskNewClusterInitScriptsToHclTerraform, true)(struct!.initScripts),
+      value: cdktn.listMapperHcl(jobTaskForEachTaskTaskNewClusterInitScriptsToHclTerraform, true)(struct!.initScripts),
       isBlock: true,
       type: "list",
       storageClassType: "JobTaskForEachTaskTaskNewClusterInitScriptsList",
     },
     library: {
-      value: cdktf.listMapperHcl(jobTaskForEachTaskTaskNewClusterLibraryToHclTerraform, true)(struct!.library),
+      value: cdktn.listMapperHcl(jobTaskForEachTaskTaskNewClusterLibraryToHclTerraform, true)(struct!.library),
       isBlock: true,
       type: "set",
       storageClassType: "JobTaskForEachTaskTaskNewClusterLibraryList",
@@ -3512,6 +4976,12 @@ export function jobTaskForEachTaskTaskNewClusterToHclTerraform(struct?: JobTaskF
       isBlock: true,
       type: "list",
       storageClassType: "JobTaskForEachTaskTaskNewClusterProviderConfigList",
+    },
+    worker_node_type_flexibility: {
+      value: jobTaskForEachTaskTaskNewClusterWorkerNodeTypeFlexibilityToHclTerraform(struct!.workerNodeTypeFlexibility),
+      isBlock: true,
+      type: "list",
+      storageClassType: "JobTaskForEachTaskTaskNewClusterWorkerNodeTypeFlexibilityList",
     },
     workload_type: {
       value: jobTaskForEachTaskTaskNewClusterWorkloadTypeToHclTerraform(struct!.workloadType),
@@ -3525,14 +4995,14 @@ export function jobTaskForEachTaskTaskNewClusterToHclTerraform(struct?: JobTaskF
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskForEachTaskTaskNewClusterOutputReference extends cdktf.ComplexObject {
+export class JobTaskForEachTaskTaskNewClusterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3663,6 +5133,10 @@ export class JobTaskForEachTaskTaskNewClusterOutputReference extends cdktf.Compl
       hasAnyValues = true;
       internalValueResult.dockerImage = this._dockerImage?.internalValue;
     }
+    if (this._driverNodeTypeFlexibility?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.driverNodeTypeFlexibility = this._driverNodeTypeFlexibility?.internalValue;
+    }
     if (this._gcpAttributes?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.gcpAttributes = this._gcpAttributes?.internalValue;
@@ -3678,6 +5152,10 @@ export class JobTaskForEachTaskTaskNewClusterOutputReference extends cdktf.Compl
     if (this._providerConfig?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.providerConfig = this._providerConfig?.internalValue;
+    }
+    if (this._workerNodeTypeFlexibility?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workerNodeTypeFlexibility = this._workerNodeTypeFlexibility?.internalValue;
     }
     if (this._workloadType?.internalValue !== undefined) {
       hasAnyValues = true;
@@ -3720,10 +5198,12 @@ export class JobTaskForEachTaskTaskNewClusterOutputReference extends cdktf.Compl
       this._clusterLogConf.internalValue = undefined;
       this._clusterMountInfo.internalValue = undefined;
       this._dockerImage.internalValue = undefined;
+      this._driverNodeTypeFlexibility.internalValue = undefined;
       this._gcpAttributes.internalValue = undefined;
       this._initScripts.internalValue = undefined;
       this._library.internalValue = undefined;
       this._providerConfig.internalValue = undefined;
+      this._workerNodeTypeFlexibility.internalValue = undefined;
       this._workloadType.internalValue = undefined;
     }
     else {
@@ -3759,20 +5239,22 @@ export class JobTaskForEachTaskTaskNewClusterOutputReference extends cdktf.Compl
       this._clusterLogConf.internalValue = value.clusterLogConf;
       this._clusterMountInfo.internalValue = value.clusterMountInfo;
       this._dockerImage.internalValue = value.dockerImage;
+      this._driverNodeTypeFlexibility.internalValue = value.driverNodeTypeFlexibility;
       this._gcpAttributes.internalValue = value.gcpAttributes;
       this._initScripts.internalValue = value.initScripts;
       this._library.internalValue = value.library;
       this._providerConfig.internalValue = value.providerConfig;
+      this._workerNodeTypeFlexibility.internalValue = value.workerNodeTypeFlexibility;
       this._workloadType.internalValue = value.workloadType;
     }
   }
 
   // apply_policy_default_values - computed: false, optional: true, required: false
-  private _applyPolicyDefaultValues?: boolean | cdktf.IResolvable; 
+  private _applyPolicyDefaultValues?: boolean | cdktn.IResolvable; 
   public get applyPolicyDefaultValues() {
     return this.getBooleanAttribute('apply_policy_default_values');
   }
-  public set applyPolicyDefaultValues(value: boolean | cdktf.IResolvable) {
+  public set applyPolicyDefaultValues(value: boolean | cdktn.IResolvable) {
     this._applyPolicyDefaultValues = value;
   }
   public resetApplyPolicyDefaultValues() {
@@ -3880,11 +5362,11 @@ export class JobTaskForEachTaskTaskNewClusterOutputReference extends cdktf.Compl
   }
 
   // enable_elastic_disk - computed: true, optional: true, required: false
-  private _enableElasticDisk?: boolean | cdktf.IResolvable; 
+  private _enableElasticDisk?: boolean | cdktn.IResolvable; 
   public get enableElasticDisk() {
     return this.getBooleanAttribute('enable_elastic_disk');
   }
-  public set enableElasticDisk(value: boolean | cdktf.IResolvable) {
+  public set enableElasticDisk(value: boolean | cdktn.IResolvable) {
     this._enableElasticDisk = value;
   }
   public resetEnableElasticDisk() {
@@ -3896,11 +5378,11 @@ export class JobTaskForEachTaskTaskNewClusterOutputReference extends cdktf.Compl
   }
 
   // enable_local_disk_encryption - computed: true, optional: true, required: false
-  private _enableLocalDiskEncryption?: boolean | cdktf.IResolvable; 
+  private _enableLocalDiskEncryption?: boolean | cdktn.IResolvable; 
   public get enableLocalDiskEncryption() {
     return this.getBooleanAttribute('enable_local_disk_encryption');
   }
-  public set enableLocalDiskEncryption(value: boolean | cdktf.IResolvable) {
+  public set enableLocalDiskEncryption(value: boolean | cdktn.IResolvable) {
     this._enableLocalDiskEncryption = value;
   }
   public resetEnableLocalDiskEncryption() {
@@ -3944,11 +5426,11 @@ export class JobTaskForEachTaskTaskNewClusterOutputReference extends cdktf.Compl
   }
 
   // is_single_node - computed: false, optional: true, required: false
-  private _isSingleNode?: boolean | cdktf.IResolvable; 
+  private _isSingleNode?: boolean | cdktn.IResolvable; 
   public get isSingleNode() {
     return this.getBooleanAttribute('is_single_node');
   }
-  public set isSingleNode(value: boolean | cdktf.IResolvable) {
+  public set isSingleNode(value: boolean | cdktn.IResolvable) {
     this._isSingleNode = value;
   }
   public resetIsSingleNode() {
@@ -4152,11 +5634,11 @@ export class JobTaskForEachTaskTaskNewClusterOutputReference extends cdktf.Compl
   }
 
   // use_ml_runtime - computed: false, optional: true, required: false
-  private _useMlRuntime?: boolean | cdktf.IResolvable; 
+  private _useMlRuntime?: boolean | cdktn.IResolvable; 
   public get useMlRuntime() {
     return this.getBooleanAttribute('use_ml_runtime');
   }
-  public set useMlRuntime(value: boolean | cdktf.IResolvable) {
+  public set useMlRuntime(value: boolean | cdktn.IResolvable) {
     this._useMlRuntime = value;
   }
   public resetUseMlRuntime() {
@@ -4236,7 +5718,7 @@ export class JobTaskForEachTaskTaskNewClusterOutputReference extends cdktf.Compl
   public get clusterMountInfo() {
     return this._clusterMountInfo;
   }
-  public putClusterMountInfo(value: JobTaskForEachTaskTaskNewClusterClusterMountInfo[] | cdktf.IResolvable) {
+  public putClusterMountInfo(value: JobTaskForEachTaskTaskNewClusterClusterMountInfo[] | cdktn.IResolvable) {
     this._clusterMountInfo.internalValue = value;
   }
   public resetClusterMountInfo() {
@@ -4263,6 +5745,22 @@ export class JobTaskForEachTaskTaskNewClusterOutputReference extends cdktf.Compl
     return this._dockerImage.internalValue;
   }
 
+  // driver_node_type_flexibility - computed: false, optional: true, required: false
+  private _driverNodeTypeFlexibility = new JobTaskForEachTaskTaskNewClusterDriverNodeTypeFlexibilityOutputReference(this, "driver_node_type_flexibility");
+  public get driverNodeTypeFlexibility() {
+    return this._driverNodeTypeFlexibility;
+  }
+  public putDriverNodeTypeFlexibility(value: JobTaskForEachTaskTaskNewClusterDriverNodeTypeFlexibility) {
+    this._driverNodeTypeFlexibility.internalValue = value;
+  }
+  public resetDriverNodeTypeFlexibility() {
+    this._driverNodeTypeFlexibility.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get driverNodeTypeFlexibilityInput() {
+    return this._driverNodeTypeFlexibility.internalValue;
+  }
+
   // gcp_attributes - computed: false, optional: true, required: false
   private _gcpAttributes = new JobTaskForEachTaskTaskNewClusterGcpAttributesOutputReference(this, "gcp_attributes");
   public get gcpAttributes() {
@@ -4284,7 +5782,7 @@ export class JobTaskForEachTaskTaskNewClusterOutputReference extends cdktf.Compl
   public get initScripts() {
     return this._initScripts;
   }
-  public putInitScripts(value: JobTaskForEachTaskTaskNewClusterInitScripts[] | cdktf.IResolvable) {
+  public putInitScripts(value: JobTaskForEachTaskTaskNewClusterInitScripts[] | cdktn.IResolvable) {
     this._initScripts.internalValue = value;
   }
   public resetInitScripts() {
@@ -4300,7 +5798,7 @@ export class JobTaskForEachTaskTaskNewClusterOutputReference extends cdktf.Compl
   public get library() {
     return this._library;
   }
-  public putLibrary(value: JobTaskForEachTaskTaskNewClusterLibrary[] | cdktf.IResolvable) {
+  public putLibrary(value: JobTaskForEachTaskTaskNewClusterLibrary[] | cdktn.IResolvable) {
     this._library.internalValue = value;
   }
   public resetLibrary() {
@@ -4327,6 +5825,22 @@ export class JobTaskForEachTaskTaskNewClusterOutputReference extends cdktf.Compl
     return this._providerConfig.internalValue;
   }
 
+  // worker_node_type_flexibility - computed: false, optional: true, required: false
+  private _workerNodeTypeFlexibility = new JobTaskForEachTaskTaskNewClusterWorkerNodeTypeFlexibilityOutputReference(this, "worker_node_type_flexibility");
+  public get workerNodeTypeFlexibility() {
+    return this._workerNodeTypeFlexibility;
+  }
+  public putWorkerNodeTypeFlexibility(value: JobTaskForEachTaskTaskNewClusterWorkerNodeTypeFlexibility) {
+    this._workerNodeTypeFlexibility.internalValue = value;
+  }
+  public resetWorkerNodeTypeFlexibility() {
+    this._workerNodeTypeFlexibility.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workerNodeTypeFlexibilityInput() {
+    return this._workerNodeTypeFlexibility.internalValue;
+  }
+
   // workload_type - computed: false, optional: true, required: false
   private _workloadType = new JobTaskForEachTaskTaskNewClusterWorkloadTypeOutputReference(this, "workload_type");
   public get workloadType() {
@@ -4345,63 +5859,63 @@ export class JobTaskForEachTaskTaskNewClusterOutputReference extends cdktf.Compl
 }
 export interface JobTaskForEachTaskTaskNotebookTask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#base_parameters Job#base_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#base_parameters Job#base_parameters}
   */
   readonly baseParameters?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#notebook_path Job#notebook_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#notebook_path Job#notebook_path}
   */
   readonly notebookPath: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#source Job#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#source Job#source}
   */
   readonly source?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#warehouse_id Job#warehouse_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#warehouse_id Job#warehouse_id}
   */
   readonly warehouseId?: string;
 }
 
 export function jobTaskForEachTaskTaskNotebookTaskToTerraform(struct?: JobTaskForEachTaskTaskNotebookTaskOutputReference | JobTaskForEachTaskTaskNotebookTask): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    base_parameters: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.baseParameters),
-    notebook_path: cdktf.stringToTerraform(struct!.notebookPath),
-    source: cdktf.stringToTerraform(struct!.source),
-    warehouse_id: cdktf.stringToTerraform(struct!.warehouseId),
+    base_parameters: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.baseParameters),
+    notebook_path: cdktn.stringToTerraform(struct!.notebookPath),
+    source: cdktn.stringToTerraform(struct!.source),
+    warehouse_id: cdktn.stringToTerraform(struct!.warehouseId),
   }
 }
 
 
 export function jobTaskForEachTaskTaskNotebookTaskToHclTerraform(struct?: JobTaskForEachTaskTaskNotebookTaskOutputReference | JobTaskForEachTaskTaskNotebookTask): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     base_parameters: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.baseParameters),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.baseParameters),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     notebook_path: {
-      value: cdktf.stringToHclTerraform(struct!.notebookPath),
+      value: cdktn.stringToHclTerraform(struct!.notebookPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source: {
-      value: cdktf.stringToHclTerraform(struct!.source),
+      value: cdktn.stringToHclTerraform(struct!.source),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     warehouse_id: {
-      value: cdktf.stringToHclTerraform(struct!.warehouseId),
+      value: cdktn.stringToHclTerraform(struct!.warehouseId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4412,14 +5926,14 @@ export function jobTaskForEachTaskTaskNotebookTaskToHclTerraform(struct?: JobTas
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskForEachTaskTaskNotebookTaskOutputReference extends cdktf.ComplexObject {
+export class JobTaskForEachTaskTaskNotebookTaskOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4525,52 +6039,52 @@ export class JobTaskForEachTaskTaskNotebookTaskOutputReference extends cdktf.Com
 }
 export interface JobTaskForEachTaskTaskNotificationSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#alert_on_last_attempt Job#alert_on_last_attempt}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#alert_on_last_attempt Job#alert_on_last_attempt}
   */
-  readonly alertOnLastAttempt?: boolean | cdktf.IResolvable;
+  readonly alertOnLastAttempt?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#no_alert_for_canceled_runs Job#no_alert_for_canceled_runs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#no_alert_for_canceled_runs Job#no_alert_for_canceled_runs}
   */
-  readonly noAlertForCanceledRuns?: boolean | cdktf.IResolvable;
+  readonly noAlertForCanceledRuns?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#no_alert_for_skipped_runs Job#no_alert_for_skipped_runs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#no_alert_for_skipped_runs Job#no_alert_for_skipped_runs}
   */
-  readonly noAlertForSkippedRuns?: boolean | cdktf.IResolvable;
+  readonly noAlertForSkippedRuns?: boolean | cdktn.IResolvable;
 }
 
 export function jobTaskForEachTaskTaskNotificationSettingsToTerraform(struct?: JobTaskForEachTaskTaskNotificationSettingsOutputReference | JobTaskForEachTaskTaskNotificationSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    alert_on_last_attempt: cdktf.booleanToTerraform(struct!.alertOnLastAttempt),
-    no_alert_for_canceled_runs: cdktf.booleanToTerraform(struct!.noAlertForCanceledRuns),
-    no_alert_for_skipped_runs: cdktf.booleanToTerraform(struct!.noAlertForSkippedRuns),
+    alert_on_last_attempt: cdktn.booleanToTerraform(struct!.alertOnLastAttempt),
+    no_alert_for_canceled_runs: cdktn.booleanToTerraform(struct!.noAlertForCanceledRuns),
+    no_alert_for_skipped_runs: cdktn.booleanToTerraform(struct!.noAlertForSkippedRuns),
   }
 }
 
 
 export function jobTaskForEachTaskTaskNotificationSettingsToHclTerraform(struct?: JobTaskForEachTaskTaskNotificationSettingsOutputReference | JobTaskForEachTaskTaskNotificationSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     alert_on_last_attempt: {
-      value: cdktf.booleanToHclTerraform(struct!.alertOnLastAttempt),
+      value: cdktn.booleanToHclTerraform(struct!.alertOnLastAttempt),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     no_alert_for_canceled_runs: {
-      value: cdktf.booleanToHclTerraform(struct!.noAlertForCanceledRuns),
+      value: cdktn.booleanToHclTerraform(struct!.noAlertForCanceledRuns),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     no_alert_for_skipped_runs: {
-      value: cdktf.booleanToHclTerraform(struct!.noAlertForSkippedRuns),
+      value: cdktn.booleanToHclTerraform(struct!.noAlertForSkippedRuns),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -4581,14 +6095,14 @@ export function jobTaskForEachTaskTaskNotificationSettingsToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskForEachTaskTaskNotificationSettingsOutputReference extends cdktf.ComplexObject {
+export class JobTaskForEachTaskTaskNotificationSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4626,11 +6140,11 @@ export class JobTaskForEachTaskTaskNotificationSettingsOutputReference extends c
   }
 
   // alert_on_last_attempt - computed: false, optional: true, required: false
-  private _alertOnLastAttempt?: boolean | cdktf.IResolvable; 
+  private _alertOnLastAttempt?: boolean | cdktn.IResolvable; 
   public get alertOnLastAttempt() {
     return this.getBooleanAttribute('alert_on_last_attempt');
   }
-  public set alertOnLastAttempt(value: boolean | cdktf.IResolvable) {
+  public set alertOnLastAttempt(value: boolean | cdktn.IResolvable) {
     this._alertOnLastAttempt = value;
   }
   public resetAlertOnLastAttempt() {
@@ -4642,11 +6156,11 @@ export class JobTaskForEachTaskTaskNotificationSettingsOutputReference extends c
   }
 
   // no_alert_for_canceled_runs - computed: false, optional: true, required: false
-  private _noAlertForCanceledRuns?: boolean | cdktf.IResolvable; 
+  private _noAlertForCanceledRuns?: boolean | cdktn.IResolvable; 
   public get noAlertForCanceledRuns() {
     return this.getBooleanAttribute('no_alert_for_canceled_runs');
   }
-  public set noAlertForCanceledRuns(value: boolean | cdktf.IResolvable) {
+  public set noAlertForCanceledRuns(value: boolean | cdktn.IResolvable) {
     this._noAlertForCanceledRuns = value;
   }
   public resetNoAlertForCanceledRuns() {
@@ -4658,11 +6172,11 @@ export class JobTaskForEachTaskTaskNotificationSettingsOutputReference extends c
   }
 
   // no_alert_for_skipped_runs - computed: false, optional: true, required: false
-  private _noAlertForSkippedRuns?: boolean | cdktf.IResolvable; 
+  private _noAlertForSkippedRuns?: boolean | cdktn.IResolvable; 
   public get noAlertForSkippedRuns() {
     return this.getBooleanAttribute('no_alert_for_skipped_runs');
   }
-  public set noAlertForSkippedRuns(value: boolean | cdktf.IResolvable) {
+  public set noAlertForSkippedRuns(value: boolean | cdktn.IResolvable) {
     this._noAlertForSkippedRuns = value;
   }
   public resetNoAlertForSkippedRuns() {
@@ -4675,41 +6189,41 @@ export class JobTaskForEachTaskTaskNotificationSettingsOutputReference extends c
 }
 export interface JobTaskForEachTaskTaskPipelineTask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#full_refresh Job#full_refresh}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#full_refresh Job#full_refresh}
   */
-  readonly fullRefresh?: boolean | cdktf.IResolvable;
+  readonly fullRefresh?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#pipeline_id Job#pipeline_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#pipeline_id Job#pipeline_id}
   */
   readonly pipelineId: string;
 }
 
 export function jobTaskForEachTaskTaskPipelineTaskToTerraform(struct?: JobTaskForEachTaskTaskPipelineTaskOutputReference | JobTaskForEachTaskTaskPipelineTask): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    full_refresh: cdktf.booleanToTerraform(struct!.fullRefresh),
-    pipeline_id: cdktf.stringToTerraform(struct!.pipelineId),
+    full_refresh: cdktn.booleanToTerraform(struct!.fullRefresh),
+    pipeline_id: cdktn.stringToTerraform(struct!.pipelineId),
   }
 }
 
 
 export function jobTaskForEachTaskTaskPipelineTaskToHclTerraform(struct?: JobTaskForEachTaskTaskPipelineTaskOutputReference | JobTaskForEachTaskTaskPipelineTask): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     full_refresh: {
-      value: cdktf.booleanToHclTerraform(struct!.fullRefresh),
+      value: cdktn.booleanToHclTerraform(struct!.fullRefresh),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     pipeline_id: {
-      value: cdktf.stringToHclTerraform(struct!.pipelineId),
+      value: cdktn.stringToHclTerraform(struct!.pipelineId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4720,14 +6234,14 @@ export function jobTaskForEachTaskTaskPipelineTaskToHclTerraform(struct?: JobTas
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskForEachTaskTaskPipelineTaskOutputReference extends cdktf.ComplexObject {
+export class JobTaskForEachTaskTaskPipelineTaskOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4759,11 +6273,11 @@ export class JobTaskForEachTaskTaskPipelineTaskOutputReference extends cdktf.Com
   }
 
   // full_refresh - computed: false, optional: true, required: false
-  private _fullRefresh?: boolean | cdktf.IResolvable; 
+  private _fullRefresh?: boolean | cdktn.IResolvable; 
   public get fullRefresh() {
     return this.getBooleanAttribute('full_refresh');
   }
-  public set fullRefresh(value: boolean | cdktf.IResolvable) {
+  public set fullRefresh(value: boolean | cdktn.IResolvable) {
     this._fullRefresh = value;
   }
   public resetFullRefresh() {
@@ -4789,74 +6303,74 @@ export class JobTaskForEachTaskTaskPipelineTaskOutputReference extends cdktf.Com
 }
 export interface JobTaskForEachTaskTaskPowerBiTaskPowerBiModel {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#authentication_method Job#authentication_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#authentication_method Job#authentication_method}
   */
   readonly authenticationMethod?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#model_name Job#model_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#model_name Job#model_name}
   */
   readonly modelName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#overwrite_existing Job#overwrite_existing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#overwrite_existing Job#overwrite_existing}
   */
-  readonly overwriteExisting?: boolean | cdktf.IResolvable;
+  readonly overwriteExisting?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#storage_mode Job#storage_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#storage_mode Job#storage_mode}
   */
   readonly storageMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#workspace_name Job#workspace_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#workspace_name Job#workspace_name}
   */
   readonly workspaceName?: string;
 }
 
 export function jobTaskForEachTaskTaskPowerBiTaskPowerBiModelToTerraform(struct?: JobTaskForEachTaskTaskPowerBiTaskPowerBiModelOutputReference | JobTaskForEachTaskTaskPowerBiTaskPowerBiModel): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    authentication_method: cdktf.stringToTerraform(struct!.authenticationMethod),
-    model_name: cdktf.stringToTerraform(struct!.modelName),
-    overwrite_existing: cdktf.booleanToTerraform(struct!.overwriteExisting),
-    storage_mode: cdktf.stringToTerraform(struct!.storageMode),
-    workspace_name: cdktf.stringToTerraform(struct!.workspaceName),
+    authentication_method: cdktn.stringToTerraform(struct!.authenticationMethod),
+    model_name: cdktn.stringToTerraform(struct!.modelName),
+    overwrite_existing: cdktn.booleanToTerraform(struct!.overwriteExisting),
+    storage_mode: cdktn.stringToTerraform(struct!.storageMode),
+    workspace_name: cdktn.stringToTerraform(struct!.workspaceName),
   }
 }
 
 
 export function jobTaskForEachTaskTaskPowerBiTaskPowerBiModelToHclTerraform(struct?: JobTaskForEachTaskTaskPowerBiTaskPowerBiModelOutputReference | JobTaskForEachTaskTaskPowerBiTaskPowerBiModel): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     authentication_method: {
-      value: cdktf.stringToHclTerraform(struct!.authenticationMethod),
+      value: cdktn.stringToHclTerraform(struct!.authenticationMethod),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     model_name: {
-      value: cdktf.stringToHclTerraform(struct!.modelName),
+      value: cdktn.stringToHclTerraform(struct!.modelName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     overwrite_existing: {
-      value: cdktf.booleanToHclTerraform(struct!.overwriteExisting),
+      value: cdktn.booleanToHclTerraform(struct!.overwriteExisting),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     storage_mode: {
-      value: cdktf.stringToHclTerraform(struct!.storageMode),
+      value: cdktn.stringToHclTerraform(struct!.storageMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     workspace_name: {
-      value: cdktf.stringToHclTerraform(struct!.workspaceName),
+      value: cdktn.stringToHclTerraform(struct!.workspaceName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4867,14 +6381,14 @@ export function jobTaskForEachTaskTaskPowerBiTaskPowerBiModelToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskForEachTaskTaskPowerBiTaskPowerBiModelOutputReference extends cdktf.ComplexObject {
+export class JobTaskForEachTaskTaskPowerBiTaskPowerBiModelOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4956,11 +6470,11 @@ export class JobTaskForEachTaskTaskPowerBiTaskPowerBiModelOutputReference extend
   }
 
   // overwrite_existing - computed: false, optional: true, required: false
-  private _overwriteExisting?: boolean | cdktf.IResolvable; 
+  private _overwriteExisting?: boolean | cdktn.IResolvable; 
   public get overwriteExisting() {
     return this.getBooleanAttribute('overwrite_existing');
   }
-  public set overwriteExisting(value: boolean | cdktf.IResolvable) {
+  public set overwriteExisting(value: boolean | cdktn.IResolvable) {
     this._overwriteExisting = value;
   }
   public resetOverwriteExisting() {
@@ -5005,63 +6519,63 @@ export class JobTaskForEachTaskTaskPowerBiTaskPowerBiModelOutputReference extend
 }
 export interface JobTaskForEachTaskTaskPowerBiTaskTables {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#catalog Job#catalog}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#catalog Job#catalog}
   */
   readonly catalog?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#name Job#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#name Job#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#schema Job#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#schema Job#schema}
   */
   readonly schema?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#storage_mode Job#storage_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#storage_mode Job#storage_mode}
   */
   readonly storageMode?: string;
 }
 
-export function jobTaskForEachTaskTaskPowerBiTaskTablesToTerraform(struct?: JobTaskForEachTaskTaskPowerBiTaskTables | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobTaskForEachTaskTaskPowerBiTaskTablesToTerraform(struct?: JobTaskForEachTaskTaskPowerBiTaskTables | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    catalog: cdktf.stringToTerraform(struct!.catalog),
-    name: cdktf.stringToTerraform(struct!.name),
-    schema: cdktf.stringToTerraform(struct!.schema),
-    storage_mode: cdktf.stringToTerraform(struct!.storageMode),
+    catalog: cdktn.stringToTerraform(struct!.catalog),
+    name: cdktn.stringToTerraform(struct!.name),
+    schema: cdktn.stringToTerraform(struct!.schema),
+    storage_mode: cdktn.stringToTerraform(struct!.storageMode),
   }
 }
 
 
-export function jobTaskForEachTaskTaskPowerBiTaskTablesToHclTerraform(struct?: JobTaskForEachTaskTaskPowerBiTaskTables | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobTaskForEachTaskTaskPowerBiTaskTablesToHclTerraform(struct?: JobTaskForEachTaskTaskPowerBiTaskTables | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     catalog: {
-      value: cdktf.stringToHclTerraform(struct!.catalog),
+      value: cdktn.stringToHclTerraform(struct!.catalog),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     schema: {
-      value: cdktf.stringToHclTerraform(struct!.schema),
+      value: cdktn.stringToHclTerraform(struct!.schema),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     storage_mode: {
-      value: cdktf.stringToHclTerraform(struct!.storageMode),
+      value: cdktn.stringToHclTerraform(struct!.storageMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5072,9 +6586,9 @@ export function jobTaskForEachTaskTaskPowerBiTaskTablesToHclTerraform(struct?: J
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskForEachTaskTaskPowerBiTaskTablesOutputReference extends cdktf.ComplexObject {
+export class JobTaskForEachTaskTaskPowerBiTaskTablesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5082,11 +6596,11 @@ export class JobTaskForEachTaskTaskPowerBiTaskTablesOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobTaskForEachTaskTaskPowerBiTaskTables | cdktf.IResolvable | undefined {
+  public get internalValue(): JobTaskForEachTaskTaskPowerBiTaskTables | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5111,7 +6625,7 @@ export class JobTaskForEachTaskTaskPowerBiTaskTablesOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobTaskForEachTaskTaskPowerBiTaskTables | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobTaskForEachTaskTaskPowerBiTaskTables | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -5120,7 +6634,7 @@ export class JobTaskForEachTaskTaskPowerBiTaskTablesOutputReference extends cdkt
       this._schema = undefined;
       this._storageMode = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5199,15 +6713,15 @@ export class JobTaskForEachTaskTaskPowerBiTaskTablesOutputReference extends cdkt
   }
 }
 
-export class JobTaskForEachTaskTaskPowerBiTaskTablesList extends cdktf.ComplexList {
-  public internalValue? : JobTaskForEachTaskTaskPowerBiTaskTables[] | cdktf.IResolvable
+export class JobTaskForEachTaskTaskPowerBiTaskTablesList extends cdktn.ComplexList {
+  public internalValue? : JobTaskForEachTaskTaskPowerBiTaskTables[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5220,66 +6734,66 @@ export class JobTaskForEachTaskTaskPowerBiTaskTablesList extends cdktf.ComplexLi
 }
 export interface JobTaskForEachTaskTaskPowerBiTask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#connection_resource_name Job#connection_resource_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#connection_resource_name Job#connection_resource_name}
   */
   readonly connectionResourceName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#refresh_after_update Job#refresh_after_update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#refresh_after_update Job#refresh_after_update}
   */
-  readonly refreshAfterUpdate?: boolean | cdktf.IResolvable;
+  readonly refreshAfterUpdate?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#warehouse_id Job#warehouse_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#warehouse_id Job#warehouse_id}
   */
   readonly warehouseId?: string;
   /**
   * power_bi_model block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#power_bi_model Job#power_bi_model}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#power_bi_model Job#power_bi_model}
   */
   readonly powerBiModel?: JobTaskForEachTaskTaskPowerBiTaskPowerBiModel;
   /**
   * tables block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#tables Job#tables}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#tables Job#tables}
   */
-  readonly tables?: JobTaskForEachTaskTaskPowerBiTaskTables[] | cdktf.IResolvable;
+  readonly tables?: JobTaskForEachTaskTaskPowerBiTaskTables[] | cdktn.IResolvable;
 }
 
 export function jobTaskForEachTaskTaskPowerBiTaskToTerraform(struct?: JobTaskForEachTaskTaskPowerBiTaskOutputReference | JobTaskForEachTaskTaskPowerBiTask): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    connection_resource_name: cdktf.stringToTerraform(struct!.connectionResourceName),
-    refresh_after_update: cdktf.booleanToTerraform(struct!.refreshAfterUpdate),
-    warehouse_id: cdktf.stringToTerraform(struct!.warehouseId),
+    connection_resource_name: cdktn.stringToTerraform(struct!.connectionResourceName),
+    refresh_after_update: cdktn.booleanToTerraform(struct!.refreshAfterUpdate),
+    warehouse_id: cdktn.stringToTerraform(struct!.warehouseId),
     power_bi_model: jobTaskForEachTaskTaskPowerBiTaskPowerBiModelToTerraform(struct!.powerBiModel),
-    tables: cdktf.listMapper(jobTaskForEachTaskTaskPowerBiTaskTablesToTerraform, true)(struct!.tables),
+    tables: cdktn.listMapper(jobTaskForEachTaskTaskPowerBiTaskTablesToTerraform, true)(struct!.tables),
   }
 }
 
 
 export function jobTaskForEachTaskTaskPowerBiTaskToHclTerraform(struct?: JobTaskForEachTaskTaskPowerBiTaskOutputReference | JobTaskForEachTaskTaskPowerBiTask): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     connection_resource_name: {
-      value: cdktf.stringToHclTerraform(struct!.connectionResourceName),
+      value: cdktn.stringToHclTerraform(struct!.connectionResourceName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     refresh_after_update: {
-      value: cdktf.booleanToHclTerraform(struct!.refreshAfterUpdate),
+      value: cdktn.booleanToHclTerraform(struct!.refreshAfterUpdate),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     warehouse_id: {
-      value: cdktf.stringToHclTerraform(struct!.warehouseId),
+      value: cdktn.stringToHclTerraform(struct!.warehouseId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5291,7 +6805,7 @@ export function jobTaskForEachTaskTaskPowerBiTaskToHclTerraform(struct?: JobTask
       storageClassType: "JobTaskForEachTaskTaskPowerBiTaskPowerBiModelList",
     },
     tables: {
-      value: cdktf.listMapperHcl(jobTaskForEachTaskTaskPowerBiTaskTablesToHclTerraform, true)(struct!.tables),
+      value: cdktn.listMapperHcl(jobTaskForEachTaskTaskPowerBiTaskTablesToHclTerraform, true)(struct!.tables),
       isBlock: true,
       type: "list",
       storageClassType: "JobTaskForEachTaskTaskPowerBiTaskTablesList",
@@ -5302,14 +6816,14 @@ export function jobTaskForEachTaskTaskPowerBiTaskToHclTerraform(struct?: JobTask
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskForEachTaskTaskPowerBiTaskOutputReference extends cdktf.ComplexObject {
+export class JobTaskForEachTaskTaskPowerBiTaskOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5375,11 +6889,11 @@ export class JobTaskForEachTaskTaskPowerBiTaskOutputReference extends cdktf.Comp
   }
 
   // refresh_after_update - computed: false, optional: true, required: false
-  private _refreshAfterUpdate?: boolean | cdktf.IResolvable; 
+  private _refreshAfterUpdate?: boolean | cdktn.IResolvable; 
   public get refreshAfterUpdate() {
     return this.getBooleanAttribute('refresh_after_update');
   }
-  public set refreshAfterUpdate(value: boolean | cdktf.IResolvable) {
+  public set refreshAfterUpdate(value: boolean | cdktn.IResolvable) {
     this._refreshAfterUpdate = value;
   }
   public resetRefreshAfterUpdate() {
@@ -5427,7 +6941,7 @@ export class JobTaskForEachTaskTaskPowerBiTaskOutputReference extends cdktf.Comp
   public get tables() {
     return this._tables;
   }
-  public putTables(value: JobTaskForEachTaskTaskPowerBiTaskTables[] | cdktf.IResolvable) {
+  public putTables(value: JobTaskForEachTaskTaskPowerBiTaskTables[] | cdktn.IResolvable) {
     this._tables.internalValue = value;
   }
   public resetTables() {
@@ -5440,63 +6954,63 @@ export class JobTaskForEachTaskTaskPowerBiTaskOutputReference extends cdktf.Comp
 }
 export interface JobTaskForEachTaskTaskPythonWheelTask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#entry_point Job#entry_point}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#entry_point Job#entry_point}
   */
   readonly entryPoint?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#named_parameters Job#named_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#named_parameters Job#named_parameters}
   */
   readonly namedParameters?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#package_name Job#package_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#package_name Job#package_name}
   */
   readonly packageName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#parameters Job#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#parameters Job#parameters}
   */
   readonly parameters?: string[];
 }
 
 export function jobTaskForEachTaskTaskPythonWheelTaskToTerraform(struct?: JobTaskForEachTaskTaskPythonWheelTaskOutputReference | JobTaskForEachTaskTaskPythonWheelTask): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    entry_point: cdktf.stringToTerraform(struct!.entryPoint),
-    named_parameters: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.namedParameters),
-    package_name: cdktf.stringToTerraform(struct!.packageName),
-    parameters: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.parameters),
+    entry_point: cdktn.stringToTerraform(struct!.entryPoint),
+    named_parameters: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.namedParameters),
+    package_name: cdktn.stringToTerraform(struct!.packageName),
+    parameters: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.parameters),
   }
 }
 
 
 export function jobTaskForEachTaskTaskPythonWheelTaskToHclTerraform(struct?: JobTaskForEachTaskTaskPythonWheelTaskOutputReference | JobTaskForEachTaskTaskPythonWheelTask): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     entry_point: {
-      value: cdktf.stringToHclTerraform(struct!.entryPoint),
+      value: cdktn.stringToHclTerraform(struct!.entryPoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     named_parameters: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.namedParameters),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.namedParameters),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     package_name: {
-      value: cdktf.stringToHclTerraform(struct!.packageName),
+      value: cdktn.stringToHclTerraform(struct!.packageName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     parameters: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.parameters),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.parameters),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -5507,14 +7021,14 @@ export function jobTaskForEachTaskTaskPythonWheelTaskToHclTerraform(struct?: Job
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskForEachTaskTaskPythonWheelTaskOutputReference extends cdktf.ComplexObject {
+export class JobTaskForEachTaskTaskPythonWheelTaskOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5623,30 +7137,30 @@ export class JobTaskForEachTaskTaskPythonWheelTaskOutputReference extends cdktf.
 }
 export interface JobTaskForEachTaskTaskRunJobTaskPipelineParams {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#full_refresh Job#full_refresh}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#full_refresh Job#full_refresh}
   */
-  readonly fullRefresh?: boolean | cdktf.IResolvable;
+  readonly fullRefresh?: boolean | cdktn.IResolvable;
 }
 
 export function jobTaskForEachTaskTaskRunJobTaskPipelineParamsToTerraform(struct?: JobTaskForEachTaskTaskRunJobTaskPipelineParamsOutputReference | JobTaskForEachTaskTaskRunJobTaskPipelineParams): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    full_refresh: cdktf.booleanToTerraform(struct!.fullRefresh),
+    full_refresh: cdktn.booleanToTerraform(struct!.fullRefresh),
   }
 }
 
 
 export function jobTaskForEachTaskTaskRunJobTaskPipelineParamsToHclTerraform(struct?: JobTaskForEachTaskTaskRunJobTaskPipelineParamsOutputReference | JobTaskForEachTaskTaskRunJobTaskPipelineParams): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     full_refresh: {
-      value: cdktf.booleanToHclTerraform(struct!.fullRefresh),
+      value: cdktn.booleanToHclTerraform(struct!.fullRefresh),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -5657,14 +7171,14 @@ export function jobTaskForEachTaskTaskRunJobTaskPipelineParamsToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskForEachTaskTaskRunJobTaskPipelineParamsOutputReference extends cdktf.ComplexObject {
+export class JobTaskForEachTaskTaskRunJobTaskPipelineParamsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5690,11 +7204,11 @@ export class JobTaskForEachTaskTaskRunJobTaskPipelineParamsOutputReference exten
   }
 
   // full_refresh - computed: false, optional: true, required: false
-  private _fullRefresh?: boolean | cdktf.IResolvable; 
+  private _fullRefresh?: boolean | cdktn.IResolvable; 
   public get fullRefresh() {
     return this.getBooleanAttribute('full_refresh');
   }
-  public set fullRefresh(value: boolean | cdktf.IResolvable) {
+  public set fullRefresh(value: boolean | cdktn.IResolvable) {
     this._fullRefresh = value;
   }
   public resetFullRefresh() {
@@ -5707,125 +7221,125 @@ export class JobTaskForEachTaskTaskRunJobTaskPipelineParamsOutputReference exten
 }
 export interface JobTaskForEachTaskTaskRunJobTask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#dbt_commands Job#dbt_commands}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#dbt_commands Job#dbt_commands}
   */
   readonly dbtCommands?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#jar_params Job#jar_params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#jar_params Job#jar_params}
   */
   readonly jarParams?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#job_id Job#job_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#job_id Job#job_id}
   */
   readonly jobId: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#job_parameters Job#job_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#job_parameters Job#job_parameters}
   */
   readonly jobParameters?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#notebook_params Job#notebook_params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#notebook_params Job#notebook_params}
   */
   readonly notebookParams?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#python_named_params Job#python_named_params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#python_named_params Job#python_named_params}
   */
   readonly pythonNamedParams?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#python_params Job#python_params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#python_params Job#python_params}
   */
   readonly pythonParams?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#spark_submit_params Job#spark_submit_params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#spark_submit_params Job#spark_submit_params}
   */
   readonly sparkSubmitParams?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#sql_params Job#sql_params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#sql_params Job#sql_params}
   */
   readonly sqlParams?: { [key: string]: string };
   /**
   * pipeline_params block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#pipeline_params Job#pipeline_params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#pipeline_params Job#pipeline_params}
   */
   readonly pipelineParams?: JobTaskForEachTaskTaskRunJobTaskPipelineParams;
 }
 
 export function jobTaskForEachTaskTaskRunJobTaskToTerraform(struct?: JobTaskForEachTaskTaskRunJobTaskOutputReference | JobTaskForEachTaskTaskRunJobTask): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    dbt_commands: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.dbtCommands),
-    jar_params: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.jarParams),
-    job_id: cdktf.numberToTerraform(struct!.jobId),
-    job_parameters: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.jobParameters),
-    notebook_params: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.notebookParams),
-    python_named_params: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.pythonNamedParams),
-    python_params: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.pythonParams),
-    spark_submit_params: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sparkSubmitParams),
-    sql_params: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.sqlParams),
+    dbt_commands: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.dbtCommands),
+    jar_params: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.jarParams),
+    job_id: cdktn.numberToTerraform(struct!.jobId),
+    job_parameters: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.jobParameters),
+    notebook_params: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.notebookParams),
+    python_named_params: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.pythonNamedParams),
+    python_params: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.pythonParams),
+    spark_submit_params: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.sparkSubmitParams),
+    sql_params: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.sqlParams),
     pipeline_params: jobTaskForEachTaskTaskRunJobTaskPipelineParamsToTerraform(struct!.pipelineParams),
   }
 }
 
 
 export function jobTaskForEachTaskTaskRunJobTaskToHclTerraform(struct?: JobTaskForEachTaskTaskRunJobTaskOutputReference | JobTaskForEachTaskTaskRunJobTask): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     dbt_commands: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.dbtCommands),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.dbtCommands),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     jar_params: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.jarParams),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.jarParams),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     job_id: {
-      value: cdktf.numberToHclTerraform(struct!.jobId),
+      value: cdktn.numberToHclTerraform(struct!.jobId),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     job_parameters: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.jobParameters),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.jobParameters),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     notebook_params: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.notebookParams),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.notebookParams),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     python_named_params: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.pythonNamedParams),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.pythonNamedParams),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     python_params: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.pythonParams),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.pythonParams),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     spark_submit_params: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sparkSubmitParams),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.sparkSubmitParams),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     sql_params: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.sqlParams),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.sqlParams),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
@@ -5842,14 +7356,14 @@ export function jobTaskForEachTaskTaskRunJobTaskToHclTerraform(struct?: JobTaskF
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskForEachTaskTaskRunJobTaskOutputReference extends cdktf.ComplexObject {
+export class JobTaskForEachTaskTaskRunJobTaskOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6087,63 +7601,63 @@ export class JobTaskForEachTaskTaskRunJobTaskOutputReference extends cdktf.Compl
 }
 export interface JobTaskForEachTaskTaskSparkJarTask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#jar_uri Job#jar_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#jar_uri Job#jar_uri}
   */
   readonly jarUri?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#main_class_name Job#main_class_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#main_class_name Job#main_class_name}
   */
   readonly mainClassName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#parameters Job#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#parameters Job#parameters}
   */
   readonly parameters?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#run_as_repl Job#run_as_repl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#run_as_repl Job#run_as_repl}
   */
-  readonly runAsRepl?: boolean | cdktf.IResolvable;
+  readonly runAsRepl?: boolean | cdktn.IResolvable;
 }
 
 export function jobTaskForEachTaskTaskSparkJarTaskToTerraform(struct?: JobTaskForEachTaskTaskSparkJarTaskOutputReference | JobTaskForEachTaskTaskSparkJarTask): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    jar_uri: cdktf.stringToTerraform(struct!.jarUri),
-    main_class_name: cdktf.stringToTerraform(struct!.mainClassName),
-    parameters: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.parameters),
-    run_as_repl: cdktf.booleanToTerraform(struct!.runAsRepl),
+    jar_uri: cdktn.stringToTerraform(struct!.jarUri),
+    main_class_name: cdktn.stringToTerraform(struct!.mainClassName),
+    parameters: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.parameters),
+    run_as_repl: cdktn.booleanToTerraform(struct!.runAsRepl),
   }
 }
 
 
 export function jobTaskForEachTaskTaskSparkJarTaskToHclTerraform(struct?: JobTaskForEachTaskTaskSparkJarTaskOutputReference | JobTaskForEachTaskTaskSparkJarTask): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     jar_uri: {
-      value: cdktf.stringToHclTerraform(struct!.jarUri),
+      value: cdktn.stringToHclTerraform(struct!.jarUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     main_class_name: {
-      value: cdktf.stringToHclTerraform(struct!.mainClassName),
+      value: cdktn.stringToHclTerraform(struct!.mainClassName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     parameters: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.parameters),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.parameters),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     run_as_repl: {
-      value: cdktf.booleanToHclTerraform(struct!.runAsRepl),
+      value: cdktn.booleanToHclTerraform(struct!.runAsRepl),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -6154,14 +7668,14 @@ export function jobTaskForEachTaskTaskSparkJarTaskToHclTerraform(struct?: JobTas
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskForEachTaskTaskSparkJarTaskOutputReference extends cdktf.ComplexObject {
+export class JobTaskForEachTaskTaskSparkJarTaskOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6253,11 +7767,11 @@ export class JobTaskForEachTaskTaskSparkJarTaskOutputReference extends cdktf.Com
   }
 
   // run_as_repl - computed: false, optional: true, required: false
-  private _runAsRepl?: boolean | cdktf.IResolvable; 
+  private _runAsRepl?: boolean | cdktn.IResolvable; 
   public get runAsRepl() {
     return this.getBooleanAttribute('run_as_repl');
   }
-  public set runAsRepl(value: boolean | cdktf.IResolvable) {
+  public set runAsRepl(value: boolean | cdktn.IResolvable) {
     this._runAsRepl = value;
   }
   public resetRunAsRepl() {
@@ -6270,52 +7784,52 @@ export class JobTaskForEachTaskTaskSparkJarTaskOutputReference extends cdktf.Com
 }
 export interface JobTaskForEachTaskTaskSparkPythonTask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#parameters Job#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#parameters Job#parameters}
   */
   readonly parameters?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#python_file Job#python_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#python_file Job#python_file}
   */
   readonly pythonFile: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#source Job#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#source Job#source}
   */
   readonly source?: string;
 }
 
 export function jobTaskForEachTaskTaskSparkPythonTaskToTerraform(struct?: JobTaskForEachTaskTaskSparkPythonTaskOutputReference | JobTaskForEachTaskTaskSparkPythonTask): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    parameters: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.parameters),
-    python_file: cdktf.stringToTerraform(struct!.pythonFile),
-    source: cdktf.stringToTerraform(struct!.source),
+    parameters: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.parameters),
+    python_file: cdktn.stringToTerraform(struct!.pythonFile),
+    source: cdktn.stringToTerraform(struct!.source),
   }
 }
 
 
 export function jobTaskForEachTaskTaskSparkPythonTaskToHclTerraform(struct?: JobTaskForEachTaskTaskSparkPythonTaskOutputReference | JobTaskForEachTaskTaskSparkPythonTask): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     parameters: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.parameters),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.parameters),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     python_file: {
-      value: cdktf.stringToHclTerraform(struct!.pythonFile),
+      value: cdktn.stringToHclTerraform(struct!.pythonFile),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source: {
-      value: cdktf.stringToHclTerraform(struct!.source),
+      value: cdktn.stringToHclTerraform(struct!.source),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6326,14 +7840,14 @@ export function jobTaskForEachTaskTaskSparkPythonTaskToHclTerraform(struct?: Job
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskForEachTaskTaskSparkPythonTaskOutputReference extends cdktf.ComplexObject {
+export class JobTaskForEachTaskTaskSparkPythonTaskOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6417,30 +7931,30 @@ export class JobTaskForEachTaskTaskSparkPythonTaskOutputReference extends cdktf.
 }
 export interface JobTaskForEachTaskTaskSparkSubmitTask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#parameters Job#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#parameters Job#parameters}
   */
   readonly parameters?: string[];
 }
 
 export function jobTaskForEachTaskTaskSparkSubmitTaskToTerraform(struct?: JobTaskForEachTaskTaskSparkSubmitTaskOutputReference | JobTaskForEachTaskTaskSparkSubmitTask): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    parameters: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.parameters),
+    parameters: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.parameters),
   }
 }
 
 
 export function jobTaskForEachTaskTaskSparkSubmitTaskToHclTerraform(struct?: JobTaskForEachTaskTaskSparkSubmitTaskOutputReference | JobTaskForEachTaskTaskSparkSubmitTask): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     parameters: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.parameters),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.parameters),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -6451,14 +7965,14 @@ export function jobTaskForEachTaskTaskSparkSubmitTaskToHclTerraform(struct?: Job
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskForEachTaskTaskSparkSubmitTaskOutputReference extends cdktf.ComplexObject {
+export class JobTaskForEachTaskTaskSparkSubmitTaskOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6501,41 +8015,41 @@ export class JobTaskForEachTaskTaskSparkSubmitTaskOutputReference extends cdktf.
 }
 export interface JobTaskForEachTaskTaskSqlTaskAlertSubscriptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#destination_id Job#destination_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#destination_id Job#destination_id}
   */
   readonly destinationId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#user_name Job#user_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#user_name Job#user_name}
   */
   readonly userName?: string;
 }
 
-export function jobTaskForEachTaskTaskSqlTaskAlertSubscriptionsToTerraform(struct?: JobTaskForEachTaskTaskSqlTaskAlertSubscriptions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobTaskForEachTaskTaskSqlTaskAlertSubscriptionsToTerraform(struct?: JobTaskForEachTaskTaskSqlTaskAlertSubscriptions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    destination_id: cdktf.stringToTerraform(struct!.destinationId),
-    user_name: cdktf.stringToTerraform(struct!.userName),
+    destination_id: cdktn.stringToTerraform(struct!.destinationId),
+    user_name: cdktn.stringToTerraform(struct!.userName),
   }
 }
 
 
-export function jobTaskForEachTaskTaskSqlTaskAlertSubscriptionsToHclTerraform(struct?: JobTaskForEachTaskTaskSqlTaskAlertSubscriptions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobTaskForEachTaskTaskSqlTaskAlertSubscriptionsToHclTerraform(struct?: JobTaskForEachTaskTaskSqlTaskAlertSubscriptions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     destination_id: {
-      value: cdktf.stringToHclTerraform(struct!.destinationId),
+      value: cdktn.stringToHclTerraform(struct!.destinationId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     user_name: {
-      value: cdktf.stringToHclTerraform(struct!.userName),
+      value: cdktn.stringToHclTerraform(struct!.userName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6546,9 +8060,9 @@ export function jobTaskForEachTaskTaskSqlTaskAlertSubscriptionsToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskForEachTaskTaskSqlTaskAlertSubscriptionsOutputReference extends cdktf.ComplexObject {
+export class JobTaskForEachTaskTaskSqlTaskAlertSubscriptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6556,11 +8070,11 @@ export class JobTaskForEachTaskTaskSqlTaskAlertSubscriptionsOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobTaskForEachTaskTaskSqlTaskAlertSubscriptions | cdktf.IResolvable | undefined {
+  public get internalValue(): JobTaskForEachTaskTaskSqlTaskAlertSubscriptions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6577,14 +8091,14 @@ export class JobTaskForEachTaskTaskSqlTaskAlertSubscriptionsOutputReference exte
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobTaskForEachTaskTaskSqlTaskAlertSubscriptions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobTaskForEachTaskTaskSqlTaskAlertSubscriptions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._destinationId = undefined;
       this._userName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6629,15 +8143,15 @@ export class JobTaskForEachTaskTaskSqlTaskAlertSubscriptionsOutputReference exte
   }
 }
 
-export class JobTaskForEachTaskTaskSqlTaskAlertSubscriptionsList extends cdktf.ComplexList {
-  public internalValue? : JobTaskForEachTaskTaskSqlTaskAlertSubscriptions[] | cdktf.IResolvable
+export class JobTaskForEachTaskTaskSqlTaskAlertSubscriptionsList extends cdktn.ComplexList {
+  public internalValue? : JobTaskForEachTaskTaskSqlTaskAlertSubscriptions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6650,54 +8164,54 @@ export class JobTaskForEachTaskTaskSqlTaskAlertSubscriptionsList extends cdktf.C
 }
 export interface JobTaskForEachTaskTaskSqlTaskAlert {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#alert_id Job#alert_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#alert_id Job#alert_id}
   */
   readonly alertId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#pause_subscriptions Job#pause_subscriptions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#pause_subscriptions Job#pause_subscriptions}
   */
-  readonly pauseSubscriptions?: boolean | cdktf.IResolvable;
+  readonly pauseSubscriptions?: boolean | cdktn.IResolvable;
   /**
   * subscriptions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#subscriptions Job#subscriptions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#subscriptions Job#subscriptions}
   */
-  readonly subscriptions?: JobTaskForEachTaskTaskSqlTaskAlertSubscriptions[] | cdktf.IResolvable;
+  readonly subscriptions?: JobTaskForEachTaskTaskSqlTaskAlertSubscriptions[] | cdktn.IResolvable;
 }
 
 export function jobTaskForEachTaskTaskSqlTaskAlertToTerraform(struct?: JobTaskForEachTaskTaskSqlTaskAlertOutputReference | JobTaskForEachTaskTaskSqlTaskAlert): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    alert_id: cdktf.stringToTerraform(struct!.alertId),
-    pause_subscriptions: cdktf.booleanToTerraform(struct!.pauseSubscriptions),
-    subscriptions: cdktf.listMapper(jobTaskForEachTaskTaskSqlTaskAlertSubscriptionsToTerraform, true)(struct!.subscriptions),
+    alert_id: cdktn.stringToTerraform(struct!.alertId),
+    pause_subscriptions: cdktn.booleanToTerraform(struct!.pauseSubscriptions),
+    subscriptions: cdktn.listMapper(jobTaskForEachTaskTaskSqlTaskAlertSubscriptionsToTerraform, true)(struct!.subscriptions),
   }
 }
 
 
 export function jobTaskForEachTaskTaskSqlTaskAlertToHclTerraform(struct?: JobTaskForEachTaskTaskSqlTaskAlertOutputReference | JobTaskForEachTaskTaskSqlTaskAlert): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     alert_id: {
-      value: cdktf.stringToHclTerraform(struct!.alertId),
+      value: cdktn.stringToHclTerraform(struct!.alertId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     pause_subscriptions: {
-      value: cdktf.booleanToHclTerraform(struct!.pauseSubscriptions),
+      value: cdktn.booleanToHclTerraform(struct!.pauseSubscriptions),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     subscriptions: {
-      value: cdktf.listMapperHcl(jobTaskForEachTaskTaskSqlTaskAlertSubscriptionsToHclTerraform, true)(struct!.subscriptions),
+      value: cdktn.listMapperHcl(jobTaskForEachTaskTaskSqlTaskAlertSubscriptionsToHclTerraform, true)(struct!.subscriptions),
       isBlock: true,
       type: "list",
       storageClassType: "JobTaskForEachTaskTaskSqlTaskAlertSubscriptionsList",
@@ -6708,14 +8222,14 @@ export function jobTaskForEachTaskTaskSqlTaskAlertToHclTerraform(struct?: JobTas
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskForEachTaskTaskSqlTaskAlertOutputReference extends cdktf.ComplexObject {
+export class JobTaskForEachTaskTaskSqlTaskAlertOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6766,11 +8280,11 @@ export class JobTaskForEachTaskTaskSqlTaskAlertOutputReference extends cdktf.Com
   }
 
   // pause_subscriptions - computed: false, optional: true, required: false
-  private _pauseSubscriptions?: boolean | cdktf.IResolvable; 
+  private _pauseSubscriptions?: boolean | cdktn.IResolvable; 
   public get pauseSubscriptions() {
     return this.getBooleanAttribute('pause_subscriptions');
   }
-  public set pauseSubscriptions(value: boolean | cdktf.IResolvable) {
+  public set pauseSubscriptions(value: boolean | cdktn.IResolvable) {
     this._pauseSubscriptions = value;
   }
   public resetPauseSubscriptions() {
@@ -6786,7 +8300,7 @@ export class JobTaskForEachTaskTaskSqlTaskAlertOutputReference extends cdktf.Com
   public get subscriptions() {
     return this._subscriptions;
   }
-  public putSubscriptions(value: JobTaskForEachTaskTaskSqlTaskAlertSubscriptions[] | cdktf.IResolvable) {
+  public putSubscriptions(value: JobTaskForEachTaskTaskSqlTaskAlertSubscriptions[] | cdktn.IResolvable) {
     this._subscriptions.internalValue = value;
   }
   public resetSubscriptions() {
@@ -6799,41 +8313,41 @@ export class JobTaskForEachTaskTaskSqlTaskAlertOutputReference extends cdktf.Com
 }
 export interface JobTaskForEachTaskTaskSqlTaskDashboardSubscriptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#destination_id Job#destination_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#destination_id Job#destination_id}
   */
   readonly destinationId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#user_name Job#user_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#user_name Job#user_name}
   */
   readonly userName?: string;
 }
 
-export function jobTaskForEachTaskTaskSqlTaskDashboardSubscriptionsToTerraform(struct?: JobTaskForEachTaskTaskSqlTaskDashboardSubscriptions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobTaskForEachTaskTaskSqlTaskDashboardSubscriptionsToTerraform(struct?: JobTaskForEachTaskTaskSqlTaskDashboardSubscriptions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    destination_id: cdktf.stringToTerraform(struct!.destinationId),
-    user_name: cdktf.stringToTerraform(struct!.userName),
+    destination_id: cdktn.stringToTerraform(struct!.destinationId),
+    user_name: cdktn.stringToTerraform(struct!.userName),
   }
 }
 
 
-export function jobTaskForEachTaskTaskSqlTaskDashboardSubscriptionsToHclTerraform(struct?: JobTaskForEachTaskTaskSqlTaskDashboardSubscriptions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobTaskForEachTaskTaskSqlTaskDashboardSubscriptionsToHclTerraform(struct?: JobTaskForEachTaskTaskSqlTaskDashboardSubscriptions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     destination_id: {
-      value: cdktf.stringToHclTerraform(struct!.destinationId),
+      value: cdktn.stringToHclTerraform(struct!.destinationId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     user_name: {
-      value: cdktf.stringToHclTerraform(struct!.userName),
+      value: cdktn.stringToHclTerraform(struct!.userName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6844,9 +8358,9 @@ export function jobTaskForEachTaskTaskSqlTaskDashboardSubscriptionsToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskForEachTaskTaskSqlTaskDashboardSubscriptionsOutputReference extends cdktf.ComplexObject {
+export class JobTaskForEachTaskTaskSqlTaskDashboardSubscriptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6854,11 +8368,11 @@ export class JobTaskForEachTaskTaskSqlTaskDashboardSubscriptionsOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobTaskForEachTaskTaskSqlTaskDashboardSubscriptions | cdktf.IResolvable | undefined {
+  public get internalValue(): JobTaskForEachTaskTaskSqlTaskDashboardSubscriptions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6875,14 +8389,14 @@ export class JobTaskForEachTaskTaskSqlTaskDashboardSubscriptionsOutputReference 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobTaskForEachTaskTaskSqlTaskDashboardSubscriptions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobTaskForEachTaskTaskSqlTaskDashboardSubscriptions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._destinationId = undefined;
       this._userName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6927,15 +8441,15 @@ export class JobTaskForEachTaskTaskSqlTaskDashboardSubscriptionsOutputReference 
   }
 }
 
-export class JobTaskForEachTaskTaskSqlTaskDashboardSubscriptionsList extends cdktf.ComplexList {
-  public internalValue? : JobTaskForEachTaskTaskSqlTaskDashboardSubscriptions[] | cdktf.IResolvable
+export class JobTaskForEachTaskTaskSqlTaskDashboardSubscriptionsList extends cdktn.ComplexList {
+  public internalValue? : JobTaskForEachTaskTaskSqlTaskDashboardSubscriptions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6948,65 +8462,65 @@ export class JobTaskForEachTaskTaskSqlTaskDashboardSubscriptionsList extends cdk
 }
 export interface JobTaskForEachTaskTaskSqlTaskDashboard {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#custom_subject Job#custom_subject}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#custom_subject Job#custom_subject}
   */
   readonly customSubject?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#dashboard_id Job#dashboard_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#dashboard_id Job#dashboard_id}
   */
   readonly dashboardId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#pause_subscriptions Job#pause_subscriptions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#pause_subscriptions Job#pause_subscriptions}
   */
-  readonly pauseSubscriptions?: boolean | cdktf.IResolvable;
+  readonly pauseSubscriptions?: boolean | cdktn.IResolvable;
   /**
   * subscriptions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#subscriptions Job#subscriptions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#subscriptions Job#subscriptions}
   */
-  readonly subscriptions?: JobTaskForEachTaskTaskSqlTaskDashboardSubscriptions[] | cdktf.IResolvable;
+  readonly subscriptions?: JobTaskForEachTaskTaskSqlTaskDashboardSubscriptions[] | cdktn.IResolvable;
 }
 
 export function jobTaskForEachTaskTaskSqlTaskDashboardToTerraform(struct?: JobTaskForEachTaskTaskSqlTaskDashboardOutputReference | JobTaskForEachTaskTaskSqlTaskDashboard): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    custom_subject: cdktf.stringToTerraform(struct!.customSubject),
-    dashboard_id: cdktf.stringToTerraform(struct!.dashboardId),
-    pause_subscriptions: cdktf.booleanToTerraform(struct!.pauseSubscriptions),
-    subscriptions: cdktf.listMapper(jobTaskForEachTaskTaskSqlTaskDashboardSubscriptionsToTerraform, true)(struct!.subscriptions),
+    custom_subject: cdktn.stringToTerraform(struct!.customSubject),
+    dashboard_id: cdktn.stringToTerraform(struct!.dashboardId),
+    pause_subscriptions: cdktn.booleanToTerraform(struct!.pauseSubscriptions),
+    subscriptions: cdktn.listMapper(jobTaskForEachTaskTaskSqlTaskDashboardSubscriptionsToTerraform, true)(struct!.subscriptions),
   }
 }
 
 
 export function jobTaskForEachTaskTaskSqlTaskDashboardToHclTerraform(struct?: JobTaskForEachTaskTaskSqlTaskDashboardOutputReference | JobTaskForEachTaskTaskSqlTaskDashboard): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     custom_subject: {
-      value: cdktf.stringToHclTerraform(struct!.customSubject),
+      value: cdktn.stringToHclTerraform(struct!.customSubject),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     dashboard_id: {
-      value: cdktf.stringToHclTerraform(struct!.dashboardId),
+      value: cdktn.stringToHclTerraform(struct!.dashboardId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     pause_subscriptions: {
-      value: cdktf.booleanToHclTerraform(struct!.pauseSubscriptions),
+      value: cdktn.booleanToHclTerraform(struct!.pauseSubscriptions),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     subscriptions: {
-      value: cdktf.listMapperHcl(jobTaskForEachTaskTaskSqlTaskDashboardSubscriptionsToHclTerraform, true)(struct!.subscriptions),
+      value: cdktn.listMapperHcl(jobTaskForEachTaskTaskSqlTaskDashboardSubscriptionsToHclTerraform, true)(struct!.subscriptions),
       isBlock: true,
       type: "list",
       storageClassType: "JobTaskForEachTaskTaskSqlTaskDashboardSubscriptionsList",
@@ -7017,14 +8531,14 @@ export function jobTaskForEachTaskTaskSqlTaskDashboardToHclTerraform(struct?: Jo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskForEachTaskTaskSqlTaskDashboardOutputReference extends cdktf.ComplexObject {
+export class JobTaskForEachTaskTaskSqlTaskDashboardOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -7097,11 +8611,11 @@ export class JobTaskForEachTaskTaskSqlTaskDashboardOutputReference extends cdktf
   }
 
   // pause_subscriptions - computed: false, optional: true, required: false
-  private _pauseSubscriptions?: boolean | cdktf.IResolvable; 
+  private _pauseSubscriptions?: boolean | cdktn.IResolvable; 
   public get pauseSubscriptions() {
     return this.getBooleanAttribute('pause_subscriptions');
   }
-  public set pauseSubscriptions(value: boolean | cdktf.IResolvable) {
+  public set pauseSubscriptions(value: boolean | cdktn.IResolvable) {
     this._pauseSubscriptions = value;
   }
   public resetPauseSubscriptions() {
@@ -7117,7 +8631,7 @@ export class JobTaskForEachTaskTaskSqlTaskDashboardOutputReference extends cdktf
   public get subscriptions() {
     return this._subscriptions;
   }
-  public putSubscriptions(value: JobTaskForEachTaskTaskSqlTaskDashboardSubscriptions[] | cdktf.IResolvable) {
+  public putSubscriptions(value: JobTaskForEachTaskTaskSqlTaskDashboardSubscriptions[] | cdktn.IResolvable) {
     this._subscriptions.internalValue = value;
   }
   public resetSubscriptions() {
@@ -7130,41 +8644,41 @@ export class JobTaskForEachTaskTaskSqlTaskDashboardOutputReference extends cdktf
 }
 export interface JobTaskForEachTaskTaskSqlTaskFile {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#path Job#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#path Job#path}
   */
   readonly path: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#source Job#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#source Job#source}
   */
   readonly source?: string;
 }
 
 export function jobTaskForEachTaskTaskSqlTaskFileToTerraform(struct?: JobTaskForEachTaskTaskSqlTaskFileOutputReference | JobTaskForEachTaskTaskSqlTaskFile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    path: cdktf.stringToTerraform(struct!.path),
-    source: cdktf.stringToTerraform(struct!.source),
+    path: cdktn.stringToTerraform(struct!.path),
+    source: cdktn.stringToTerraform(struct!.source),
   }
 }
 
 
 export function jobTaskForEachTaskTaskSqlTaskFileToHclTerraform(struct?: JobTaskForEachTaskTaskSqlTaskFileOutputReference | JobTaskForEachTaskTaskSqlTaskFile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source: {
-      value: cdktf.stringToHclTerraform(struct!.source),
+      value: cdktn.stringToHclTerraform(struct!.source),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7175,14 +8689,14 @@ export function jobTaskForEachTaskTaskSqlTaskFileToHclTerraform(struct?: JobTask
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskForEachTaskTaskSqlTaskFileOutputReference extends cdktf.ComplexObject {
+export class JobTaskForEachTaskTaskSqlTaskFileOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -7244,30 +8758,30 @@ export class JobTaskForEachTaskTaskSqlTaskFileOutputReference extends cdktf.Comp
 }
 export interface JobTaskForEachTaskTaskSqlTaskQuery {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#query_id Job#query_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#query_id Job#query_id}
   */
   readonly queryId: string;
 }
 
 export function jobTaskForEachTaskTaskSqlTaskQueryToTerraform(struct?: JobTaskForEachTaskTaskSqlTaskQueryOutputReference | JobTaskForEachTaskTaskSqlTaskQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    query_id: cdktf.stringToTerraform(struct!.queryId),
+    query_id: cdktn.stringToTerraform(struct!.queryId),
   }
 }
 
 
 export function jobTaskForEachTaskTaskSqlTaskQueryToHclTerraform(struct?: JobTaskForEachTaskTaskSqlTaskQueryOutputReference | JobTaskForEachTaskTaskSqlTaskQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     query_id: {
-      value: cdktf.stringToHclTerraform(struct!.queryId),
+      value: cdktn.stringToHclTerraform(struct!.queryId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7278,14 +8792,14 @@ export function jobTaskForEachTaskTaskSqlTaskQueryToHclTerraform(struct?: JobTas
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskForEachTaskTaskSqlTaskQueryOutputReference extends cdktf.ComplexObject {
+export class JobTaskForEachTaskTaskSqlTaskQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -7325,47 +8839,47 @@ export class JobTaskForEachTaskTaskSqlTaskQueryOutputReference extends cdktf.Com
 }
 export interface JobTaskForEachTaskTaskSqlTask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#parameters Job#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#parameters Job#parameters}
   */
   readonly parameters?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#warehouse_id Job#warehouse_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#warehouse_id Job#warehouse_id}
   */
   readonly warehouseId: string;
   /**
   * alert block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#alert Job#alert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#alert Job#alert}
   */
   readonly alert?: JobTaskForEachTaskTaskSqlTaskAlert;
   /**
   * dashboard block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#dashboard Job#dashboard}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#dashboard Job#dashboard}
   */
   readonly dashboard?: JobTaskForEachTaskTaskSqlTaskDashboard;
   /**
   * file block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#file Job#file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#file Job#file}
   */
   readonly file?: JobTaskForEachTaskTaskSqlTaskFile;
   /**
   * query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#query Job#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#query Job#query}
   */
   readonly query?: JobTaskForEachTaskTaskSqlTaskQuery;
 }
 
 export function jobTaskForEachTaskTaskSqlTaskToTerraform(struct?: JobTaskForEachTaskTaskSqlTaskOutputReference | JobTaskForEachTaskTaskSqlTask): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    parameters: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.parameters),
-    warehouse_id: cdktf.stringToTerraform(struct!.warehouseId),
+    parameters: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.parameters),
+    warehouse_id: cdktn.stringToTerraform(struct!.warehouseId),
     alert: jobTaskForEachTaskTaskSqlTaskAlertToTerraform(struct!.alert),
     dashboard: jobTaskForEachTaskTaskSqlTaskDashboardToTerraform(struct!.dashboard),
     file: jobTaskForEachTaskTaskSqlTaskFileToTerraform(struct!.file),
@@ -7375,19 +8889,19 @@ export function jobTaskForEachTaskTaskSqlTaskToTerraform(struct?: JobTaskForEach
 
 
 export function jobTaskForEachTaskTaskSqlTaskToHclTerraform(struct?: JobTaskForEachTaskTaskSqlTaskOutputReference | JobTaskForEachTaskTaskSqlTask): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     parameters: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.parameters),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.parameters),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     warehouse_id: {
-      value: cdktf.stringToHclTerraform(struct!.warehouseId),
+      value: cdktn.stringToHclTerraform(struct!.warehouseId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7422,14 +8936,14 @@ export function jobTaskForEachTaskTaskSqlTaskToHclTerraform(struct?: JobTaskForE
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskForEachTaskTaskSqlTaskOutputReference extends cdktf.ComplexObject {
+export class JobTaskForEachTaskTaskSqlTaskOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -7579,7 +9093,7 @@ export class JobTaskForEachTaskTaskSqlTaskOutputReference extends cdktf.ComplexO
 }
 export interface JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceeded {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#id Job#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#id Job#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -7587,25 +9101,25 @@ export interface JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThre
   readonly id: string;
 }
 
-export function jobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceededToTerraform(struct?: JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceeded | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceededToTerraform(struct?: JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceeded | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
+    id: cdktn.stringToTerraform(struct!.id),
   }
 }
 
 
-export function jobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceededToHclTerraform(struct?: JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceeded | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceededToHclTerraform(struct?: JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceeded | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7616,9 +9130,9 @@ export function jobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThres
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceededOutputReference extends cdktf.ComplexObject {
+export class JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceededOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -7626,11 +9140,11 @@ export class JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThreshol
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceeded | cdktf.IResolvable | undefined {
+  public get internalValue(): JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceeded | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7643,13 +9157,13 @@ export class JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThreshol
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceeded | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceeded | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._id = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7674,15 +9188,15 @@ export class JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThreshol
   }
 }
 
-export class JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceededList extends cdktf.ComplexList {
-  public internalValue? : JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceeded[] | cdktf.IResolvable
+export class JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceededList extends cdktn.ComplexList {
+  public internalValue? : JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceeded[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7695,7 +9209,7 @@ export class JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThreshol
 }
 export interface JobTaskForEachTaskTaskWebhookNotificationsOnFailure {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#id Job#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#id Job#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -7703,25 +9217,25 @@ export interface JobTaskForEachTaskTaskWebhookNotificationsOnFailure {
   readonly id: string;
 }
 
-export function jobTaskForEachTaskTaskWebhookNotificationsOnFailureToTerraform(struct?: JobTaskForEachTaskTaskWebhookNotificationsOnFailure | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobTaskForEachTaskTaskWebhookNotificationsOnFailureToTerraform(struct?: JobTaskForEachTaskTaskWebhookNotificationsOnFailure | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
+    id: cdktn.stringToTerraform(struct!.id),
   }
 }
 
 
-export function jobTaskForEachTaskTaskWebhookNotificationsOnFailureToHclTerraform(struct?: JobTaskForEachTaskTaskWebhookNotificationsOnFailure | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobTaskForEachTaskTaskWebhookNotificationsOnFailureToHclTerraform(struct?: JobTaskForEachTaskTaskWebhookNotificationsOnFailure | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7732,9 +9246,9 @@ export function jobTaskForEachTaskTaskWebhookNotificationsOnFailureToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskForEachTaskTaskWebhookNotificationsOnFailureOutputReference extends cdktf.ComplexObject {
+export class JobTaskForEachTaskTaskWebhookNotificationsOnFailureOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -7742,11 +9256,11 @@ export class JobTaskForEachTaskTaskWebhookNotificationsOnFailureOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobTaskForEachTaskTaskWebhookNotificationsOnFailure | cdktf.IResolvable | undefined {
+  public get internalValue(): JobTaskForEachTaskTaskWebhookNotificationsOnFailure | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7759,13 +9273,13 @@ export class JobTaskForEachTaskTaskWebhookNotificationsOnFailureOutputReference 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobTaskForEachTaskTaskWebhookNotificationsOnFailure | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobTaskForEachTaskTaskWebhookNotificationsOnFailure | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._id = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7790,15 +9304,15 @@ export class JobTaskForEachTaskTaskWebhookNotificationsOnFailureOutputReference 
   }
 }
 
-export class JobTaskForEachTaskTaskWebhookNotificationsOnFailureList extends cdktf.ComplexList {
-  public internalValue? : JobTaskForEachTaskTaskWebhookNotificationsOnFailure[] | cdktf.IResolvable
+export class JobTaskForEachTaskTaskWebhookNotificationsOnFailureList extends cdktn.ComplexList {
+  public internalValue? : JobTaskForEachTaskTaskWebhookNotificationsOnFailure[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7811,7 +9325,7 @@ export class JobTaskForEachTaskTaskWebhookNotificationsOnFailureList extends cdk
 }
 export interface JobTaskForEachTaskTaskWebhookNotificationsOnStart {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#id Job#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#id Job#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -7819,25 +9333,25 @@ export interface JobTaskForEachTaskTaskWebhookNotificationsOnStart {
   readonly id: string;
 }
 
-export function jobTaskForEachTaskTaskWebhookNotificationsOnStartToTerraform(struct?: JobTaskForEachTaskTaskWebhookNotificationsOnStart | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobTaskForEachTaskTaskWebhookNotificationsOnStartToTerraform(struct?: JobTaskForEachTaskTaskWebhookNotificationsOnStart | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
+    id: cdktn.stringToTerraform(struct!.id),
   }
 }
 
 
-export function jobTaskForEachTaskTaskWebhookNotificationsOnStartToHclTerraform(struct?: JobTaskForEachTaskTaskWebhookNotificationsOnStart | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobTaskForEachTaskTaskWebhookNotificationsOnStartToHclTerraform(struct?: JobTaskForEachTaskTaskWebhookNotificationsOnStart | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7848,9 +9362,9 @@ export function jobTaskForEachTaskTaskWebhookNotificationsOnStartToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskForEachTaskTaskWebhookNotificationsOnStartOutputReference extends cdktf.ComplexObject {
+export class JobTaskForEachTaskTaskWebhookNotificationsOnStartOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -7858,11 +9372,11 @@ export class JobTaskForEachTaskTaskWebhookNotificationsOnStartOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobTaskForEachTaskTaskWebhookNotificationsOnStart | cdktf.IResolvable | undefined {
+  public get internalValue(): JobTaskForEachTaskTaskWebhookNotificationsOnStart | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7875,13 +9389,13 @@ export class JobTaskForEachTaskTaskWebhookNotificationsOnStartOutputReference ex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobTaskForEachTaskTaskWebhookNotificationsOnStart | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobTaskForEachTaskTaskWebhookNotificationsOnStart | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._id = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7906,15 +9420,15 @@ export class JobTaskForEachTaskTaskWebhookNotificationsOnStartOutputReference ex
   }
 }
 
-export class JobTaskForEachTaskTaskWebhookNotificationsOnStartList extends cdktf.ComplexList {
-  public internalValue? : JobTaskForEachTaskTaskWebhookNotificationsOnStart[] | cdktf.IResolvable
+export class JobTaskForEachTaskTaskWebhookNotificationsOnStartList extends cdktn.ComplexList {
+  public internalValue? : JobTaskForEachTaskTaskWebhookNotificationsOnStart[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7927,7 +9441,7 @@ export class JobTaskForEachTaskTaskWebhookNotificationsOnStartList extends cdktf
 }
 export interface JobTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceeded {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#id Job#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#id Job#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -7935,25 +9449,25 @@ export interface JobTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExc
   readonly id: string;
 }
 
-export function jobTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceededToTerraform(struct?: JobTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceeded | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceededToTerraform(struct?: JobTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceeded | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
+    id: cdktn.stringToTerraform(struct!.id),
   }
 }
 
 
-export function jobTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceededToHclTerraform(struct?: JobTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceeded | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceededToHclTerraform(struct?: JobTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceeded | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7964,9 +9478,9 @@ export function jobTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExce
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceededOutputReference extends cdktf.ComplexObject {
+export class JobTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceededOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -7974,11 +9488,11 @@ export class JobTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceede
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceeded | cdktf.IResolvable | undefined {
+  public get internalValue(): JobTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceeded | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7991,13 +9505,13 @@ export class JobTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceede
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceeded | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceeded | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._id = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -8022,15 +9536,15 @@ export class JobTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceede
   }
 }
 
-export class JobTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceededList extends cdktf.ComplexList {
-  public internalValue? : JobTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceeded[] | cdktf.IResolvable
+export class JobTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceededList extends cdktn.ComplexList {
+  public internalValue? : JobTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceeded[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -8043,7 +9557,7 @@ export class JobTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceede
 }
 export interface JobTaskForEachTaskTaskWebhookNotificationsOnSuccess {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#id Job#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#id Job#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -8051,25 +9565,25 @@ export interface JobTaskForEachTaskTaskWebhookNotificationsOnSuccess {
   readonly id: string;
 }
 
-export function jobTaskForEachTaskTaskWebhookNotificationsOnSuccessToTerraform(struct?: JobTaskForEachTaskTaskWebhookNotificationsOnSuccess | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobTaskForEachTaskTaskWebhookNotificationsOnSuccessToTerraform(struct?: JobTaskForEachTaskTaskWebhookNotificationsOnSuccess | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
+    id: cdktn.stringToTerraform(struct!.id),
   }
 }
 
 
-export function jobTaskForEachTaskTaskWebhookNotificationsOnSuccessToHclTerraform(struct?: JobTaskForEachTaskTaskWebhookNotificationsOnSuccess | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobTaskForEachTaskTaskWebhookNotificationsOnSuccessToHclTerraform(struct?: JobTaskForEachTaskTaskWebhookNotificationsOnSuccess | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -8080,9 +9594,9 @@ export function jobTaskForEachTaskTaskWebhookNotificationsOnSuccessToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskForEachTaskTaskWebhookNotificationsOnSuccessOutputReference extends cdktf.ComplexObject {
+export class JobTaskForEachTaskTaskWebhookNotificationsOnSuccessOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -8090,11 +9604,11 @@ export class JobTaskForEachTaskTaskWebhookNotificationsOnSuccessOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobTaskForEachTaskTaskWebhookNotificationsOnSuccess | cdktf.IResolvable | undefined {
+  public get internalValue(): JobTaskForEachTaskTaskWebhookNotificationsOnSuccess | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -8107,13 +9621,13 @@ export class JobTaskForEachTaskTaskWebhookNotificationsOnSuccessOutputReference 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobTaskForEachTaskTaskWebhookNotificationsOnSuccess | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobTaskForEachTaskTaskWebhookNotificationsOnSuccess | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._id = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -8138,15 +9652,15 @@ export class JobTaskForEachTaskTaskWebhookNotificationsOnSuccessOutputReference 
   }
 }
 
-export class JobTaskForEachTaskTaskWebhookNotificationsOnSuccessList extends cdktf.ComplexList {
-  public internalValue? : JobTaskForEachTaskTaskWebhookNotificationsOnSuccess[] | cdktf.IResolvable
+export class JobTaskForEachTaskTaskWebhookNotificationsOnSuccessList extends cdktn.ComplexList {
+  public internalValue? : JobTaskForEachTaskTaskWebhookNotificationsOnSuccess[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -8161,82 +9675,82 @@ export interface JobTaskForEachTaskTaskWebhookNotifications {
   /**
   * on_duration_warning_threshold_exceeded block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#on_duration_warning_threshold_exceeded Job#on_duration_warning_threshold_exceeded}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#on_duration_warning_threshold_exceeded Job#on_duration_warning_threshold_exceeded}
   */
-  readonly onDurationWarningThresholdExceeded?: JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceeded[] | cdktf.IResolvable;
+  readonly onDurationWarningThresholdExceeded?: JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceeded[] | cdktn.IResolvable;
   /**
   * on_failure block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#on_failure Job#on_failure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#on_failure Job#on_failure}
   */
-  readonly onFailure?: JobTaskForEachTaskTaskWebhookNotificationsOnFailure[] | cdktf.IResolvable;
+  readonly onFailure?: JobTaskForEachTaskTaskWebhookNotificationsOnFailure[] | cdktn.IResolvable;
   /**
   * on_start block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#on_start Job#on_start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#on_start Job#on_start}
   */
-  readonly onStart?: JobTaskForEachTaskTaskWebhookNotificationsOnStart[] | cdktf.IResolvable;
+  readonly onStart?: JobTaskForEachTaskTaskWebhookNotificationsOnStart[] | cdktn.IResolvable;
   /**
   * on_streaming_backlog_exceeded block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#on_streaming_backlog_exceeded Job#on_streaming_backlog_exceeded}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#on_streaming_backlog_exceeded Job#on_streaming_backlog_exceeded}
   */
-  readonly onStreamingBacklogExceeded?: JobTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceeded[] | cdktf.IResolvable;
+  readonly onStreamingBacklogExceeded?: JobTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceeded[] | cdktn.IResolvable;
   /**
   * on_success block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#on_success Job#on_success}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#on_success Job#on_success}
   */
-  readonly onSuccess?: JobTaskForEachTaskTaskWebhookNotificationsOnSuccess[] | cdktf.IResolvable;
+  readonly onSuccess?: JobTaskForEachTaskTaskWebhookNotificationsOnSuccess[] | cdktn.IResolvable;
 }
 
 export function jobTaskForEachTaskTaskWebhookNotificationsToTerraform(struct?: JobTaskForEachTaskTaskWebhookNotificationsOutputReference | JobTaskForEachTaskTaskWebhookNotifications): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    on_duration_warning_threshold_exceeded: cdktf.listMapper(jobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceededToTerraform, true)(struct!.onDurationWarningThresholdExceeded),
-    on_failure: cdktf.listMapper(jobTaskForEachTaskTaskWebhookNotificationsOnFailureToTerraform, true)(struct!.onFailure),
-    on_start: cdktf.listMapper(jobTaskForEachTaskTaskWebhookNotificationsOnStartToTerraform, true)(struct!.onStart),
-    on_streaming_backlog_exceeded: cdktf.listMapper(jobTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceededToTerraform, true)(struct!.onStreamingBacklogExceeded),
-    on_success: cdktf.listMapper(jobTaskForEachTaskTaskWebhookNotificationsOnSuccessToTerraform, true)(struct!.onSuccess),
+    on_duration_warning_threshold_exceeded: cdktn.listMapper(jobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceededToTerraform, true)(struct!.onDurationWarningThresholdExceeded),
+    on_failure: cdktn.listMapper(jobTaskForEachTaskTaskWebhookNotificationsOnFailureToTerraform, true)(struct!.onFailure),
+    on_start: cdktn.listMapper(jobTaskForEachTaskTaskWebhookNotificationsOnStartToTerraform, true)(struct!.onStart),
+    on_streaming_backlog_exceeded: cdktn.listMapper(jobTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceededToTerraform, true)(struct!.onStreamingBacklogExceeded),
+    on_success: cdktn.listMapper(jobTaskForEachTaskTaskWebhookNotificationsOnSuccessToTerraform, true)(struct!.onSuccess),
   }
 }
 
 
 export function jobTaskForEachTaskTaskWebhookNotificationsToHclTerraform(struct?: JobTaskForEachTaskTaskWebhookNotificationsOutputReference | JobTaskForEachTaskTaskWebhookNotifications): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     on_duration_warning_threshold_exceeded: {
-      value: cdktf.listMapperHcl(jobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceededToHclTerraform, true)(struct!.onDurationWarningThresholdExceeded),
+      value: cdktn.listMapperHcl(jobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceededToHclTerraform, true)(struct!.onDurationWarningThresholdExceeded),
       isBlock: true,
       type: "list",
       storageClassType: "JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceededList",
     },
     on_failure: {
-      value: cdktf.listMapperHcl(jobTaskForEachTaskTaskWebhookNotificationsOnFailureToHclTerraform, true)(struct!.onFailure),
+      value: cdktn.listMapperHcl(jobTaskForEachTaskTaskWebhookNotificationsOnFailureToHclTerraform, true)(struct!.onFailure),
       isBlock: true,
       type: "list",
       storageClassType: "JobTaskForEachTaskTaskWebhookNotificationsOnFailureList",
     },
     on_start: {
-      value: cdktf.listMapperHcl(jobTaskForEachTaskTaskWebhookNotificationsOnStartToHclTerraform, true)(struct!.onStart),
+      value: cdktn.listMapperHcl(jobTaskForEachTaskTaskWebhookNotificationsOnStartToHclTerraform, true)(struct!.onStart),
       isBlock: true,
       type: "list",
       storageClassType: "JobTaskForEachTaskTaskWebhookNotificationsOnStartList",
     },
     on_streaming_backlog_exceeded: {
-      value: cdktf.listMapperHcl(jobTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceededToHclTerraform, true)(struct!.onStreamingBacklogExceeded),
+      value: cdktn.listMapperHcl(jobTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceededToHclTerraform, true)(struct!.onStreamingBacklogExceeded),
       isBlock: true,
       type: "list",
       storageClassType: "JobTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceededList",
     },
     on_success: {
-      value: cdktf.listMapperHcl(jobTaskForEachTaskTaskWebhookNotificationsOnSuccessToHclTerraform, true)(struct!.onSuccess),
+      value: cdktn.listMapperHcl(jobTaskForEachTaskTaskWebhookNotificationsOnSuccessToHclTerraform, true)(struct!.onSuccess),
       isBlock: true,
       type: "list",
       storageClassType: "JobTaskForEachTaskTaskWebhookNotificationsOnSuccessList",
@@ -8247,14 +9761,14 @@ export function jobTaskForEachTaskTaskWebhookNotificationsToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskForEachTaskTaskWebhookNotificationsOutputReference extends cdktf.ComplexObject {
+export class JobTaskForEachTaskTaskWebhookNotificationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -8308,7 +9822,7 @@ export class JobTaskForEachTaskTaskWebhookNotificationsOutputReference extends c
   public get onDurationWarningThresholdExceeded() {
     return this._onDurationWarningThresholdExceeded;
   }
-  public putOnDurationWarningThresholdExceeded(value: JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceeded[] | cdktf.IResolvable) {
+  public putOnDurationWarningThresholdExceeded(value: JobTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceeded[] | cdktn.IResolvable) {
     this._onDurationWarningThresholdExceeded.internalValue = value;
   }
   public resetOnDurationWarningThresholdExceeded() {
@@ -8324,7 +9838,7 @@ export class JobTaskForEachTaskTaskWebhookNotificationsOutputReference extends c
   public get onFailure() {
     return this._onFailure;
   }
-  public putOnFailure(value: JobTaskForEachTaskTaskWebhookNotificationsOnFailure[] | cdktf.IResolvable) {
+  public putOnFailure(value: JobTaskForEachTaskTaskWebhookNotificationsOnFailure[] | cdktn.IResolvable) {
     this._onFailure.internalValue = value;
   }
   public resetOnFailure() {
@@ -8340,7 +9854,7 @@ export class JobTaskForEachTaskTaskWebhookNotificationsOutputReference extends c
   public get onStart() {
     return this._onStart;
   }
-  public putOnStart(value: JobTaskForEachTaskTaskWebhookNotificationsOnStart[] | cdktf.IResolvable) {
+  public putOnStart(value: JobTaskForEachTaskTaskWebhookNotificationsOnStart[] | cdktn.IResolvable) {
     this._onStart.internalValue = value;
   }
   public resetOnStart() {
@@ -8356,7 +9870,7 @@ export class JobTaskForEachTaskTaskWebhookNotificationsOutputReference extends c
   public get onStreamingBacklogExceeded() {
     return this._onStreamingBacklogExceeded;
   }
-  public putOnStreamingBacklogExceeded(value: JobTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceeded[] | cdktf.IResolvable) {
+  public putOnStreamingBacklogExceeded(value: JobTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceeded[] | cdktn.IResolvable) {
     this._onStreamingBacklogExceeded.internalValue = value;
   }
   public resetOnStreamingBacklogExceeded() {
@@ -8372,7 +9886,7 @@ export class JobTaskForEachTaskTaskWebhookNotificationsOutputReference extends c
   public get onSuccess() {
     return this._onSuccess;
   }
-  public putOnSuccess(value: JobTaskForEachTaskTaskWebhookNotificationsOnSuccess[] | cdktf.IResolvable) {
+  public putOnSuccess(value: JobTaskForEachTaskTaskWebhookNotificationsOnSuccess[] | cdktn.IResolvable) {
     this._onSuccess.internalValue = value;
   }
   public resetOnSuccess() {
@@ -8385,222 +9899,229 @@ export class JobTaskForEachTaskTaskWebhookNotificationsOutputReference extends c
 }
 export interface JobTaskForEachTaskTask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#description Job#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#description Job#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#disable_auto_optimization Job#disable_auto_optimization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#disable_auto_optimization Job#disable_auto_optimization}
   */
-  readonly disableAutoOptimization?: boolean | cdktf.IResolvable;
+  readonly disableAutoOptimization?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#disabled Job#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#disabled Job#disabled}
   */
-  readonly disabled?: boolean | cdktf.IResolvable;
+  readonly disabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#environment_key Job#environment_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#environment_key Job#environment_key}
   */
   readonly environmentKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#existing_cluster_id Job#existing_cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#existing_cluster_id Job#existing_cluster_id}
   */
   readonly existingClusterId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#job_cluster_key Job#job_cluster_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#job_cluster_key Job#job_cluster_key}
   */
   readonly jobClusterKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#max_retries Job#max_retries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#max_retries Job#max_retries}
   */
   readonly maxRetries?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#min_retry_interval_millis Job#min_retry_interval_millis}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#min_retry_interval_millis Job#min_retry_interval_millis}
   */
   readonly minRetryIntervalMillis?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#retry_on_timeout Job#retry_on_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#retry_on_timeout Job#retry_on_timeout}
   */
-  readonly retryOnTimeout?: boolean | cdktf.IResolvable;
+  readonly retryOnTimeout?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#run_if Job#run_if}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#run_if Job#run_if}
   */
   readonly runIf?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#task_key Job#task_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#task_key Job#task_key}
   */
   readonly taskKey: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#timeout_seconds Job#timeout_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#timeout_seconds Job#timeout_seconds}
   */
   readonly timeoutSeconds?: number;
   /**
   * clean_rooms_notebook_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#clean_rooms_notebook_task Job#clean_rooms_notebook_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#clean_rooms_notebook_task Job#clean_rooms_notebook_task}
   */
   readonly cleanRoomsNotebookTask?: JobTaskForEachTaskTaskCleanRoomsNotebookTask;
   /**
+  * compute block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#compute Job#compute}
+  */
+  readonly compute?: JobTaskForEachTaskTaskCompute;
+  /**
   * condition_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#condition_task Job#condition_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#condition_task Job#condition_task}
   */
   readonly conditionTask?: JobTaskForEachTaskTaskConditionTask;
   /**
   * dashboard_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#dashboard_task Job#dashboard_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#dashboard_task Job#dashboard_task}
   */
   readonly dashboardTask?: JobTaskForEachTaskTaskDashboardTask;
   /**
   * dbt_cloud_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#dbt_cloud_task Job#dbt_cloud_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#dbt_cloud_task Job#dbt_cloud_task}
   */
   readonly dbtCloudTask?: JobTaskForEachTaskTaskDbtCloudTask;
   /**
   * dbt_platform_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#dbt_platform_task Job#dbt_platform_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#dbt_platform_task Job#dbt_platform_task}
   */
   readonly dbtPlatformTask?: JobTaskForEachTaskTaskDbtPlatformTask;
   /**
   * dbt_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#dbt_task Job#dbt_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#dbt_task Job#dbt_task}
   */
   readonly dbtTask?: JobTaskForEachTaskTaskDbtTask;
   /**
   * depends_on block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#depends_on Job#depends_on}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#depends_on Job#depends_on}
   */
-  readonly dependsOn?: JobTaskForEachTaskTaskDependsOn[] | cdktf.IResolvable;
+  readonly dependsOn?: JobTaskForEachTaskTaskDependsOn[] | cdktn.IResolvable;
   /**
   * email_notifications block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#email_notifications Job#email_notifications}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#email_notifications Job#email_notifications}
   */
   readonly emailNotifications?: JobTaskForEachTaskTaskEmailNotifications;
   /**
   * gen_ai_compute_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#gen_ai_compute_task Job#gen_ai_compute_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#gen_ai_compute_task Job#gen_ai_compute_task}
   */
   readonly genAiComputeTask?: JobTaskForEachTaskTaskGenAiComputeTask;
   /**
   * health block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#health Job#health}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#health Job#health}
   */
   readonly health?: JobTaskForEachTaskTaskHealth;
   /**
   * library block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#library Job#library}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#library Job#library}
   */
-  readonly library?: JobTaskForEachTaskTaskLibrary[] | cdktf.IResolvable;
+  readonly library?: JobTaskForEachTaskTaskLibrary[] | cdktn.IResolvable;
   /**
   * new_cluster block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#new_cluster Job#new_cluster}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#new_cluster Job#new_cluster}
   */
   readonly newCluster?: JobTaskForEachTaskTaskNewCluster;
   /**
   * notebook_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#notebook_task Job#notebook_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#notebook_task Job#notebook_task}
   */
   readonly notebookTask?: JobTaskForEachTaskTaskNotebookTask;
   /**
   * notification_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#notification_settings Job#notification_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#notification_settings Job#notification_settings}
   */
   readonly notificationSettings?: JobTaskForEachTaskTaskNotificationSettings;
   /**
   * pipeline_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#pipeline_task Job#pipeline_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#pipeline_task Job#pipeline_task}
   */
   readonly pipelineTask?: JobTaskForEachTaskTaskPipelineTask;
   /**
   * power_bi_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#power_bi_task Job#power_bi_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#power_bi_task Job#power_bi_task}
   */
   readonly powerBiTask?: JobTaskForEachTaskTaskPowerBiTask;
   /**
   * python_wheel_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#python_wheel_task Job#python_wheel_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#python_wheel_task Job#python_wheel_task}
   */
   readonly pythonWheelTask?: JobTaskForEachTaskTaskPythonWheelTask;
   /**
   * run_job_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#run_job_task Job#run_job_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#run_job_task Job#run_job_task}
   */
   readonly runJobTask?: JobTaskForEachTaskTaskRunJobTask;
   /**
   * spark_jar_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#spark_jar_task Job#spark_jar_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#spark_jar_task Job#spark_jar_task}
   */
   readonly sparkJarTask?: JobTaskForEachTaskTaskSparkJarTask;
   /**
   * spark_python_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#spark_python_task Job#spark_python_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#spark_python_task Job#spark_python_task}
   */
   readonly sparkPythonTask?: JobTaskForEachTaskTaskSparkPythonTask;
   /**
   * spark_submit_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#spark_submit_task Job#spark_submit_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#spark_submit_task Job#spark_submit_task}
   */
   readonly sparkSubmitTask?: JobTaskForEachTaskTaskSparkSubmitTask;
   /**
   * sql_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#sql_task Job#sql_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#sql_task Job#sql_task}
   */
   readonly sqlTask?: JobTaskForEachTaskTaskSqlTask;
   /**
   * webhook_notifications block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#webhook_notifications Job#webhook_notifications}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#webhook_notifications Job#webhook_notifications}
   */
   readonly webhookNotifications?: JobTaskForEachTaskTaskWebhookNotifications;
 }
 
 export function jobTaskForEachTaskTaskToTerraform(struct?: JobTaskForEachTaskTaskOutputReference | JobTaskForEachTaskTask): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    disable_auto_optimization: cdktf.booleanToTerraform(struct!.disableAutoOptimization),
-    disabled: cdktf.booleanToTerraform(struct!.disabled),
-    environment_key: cdktf.stringToTerraform(struct!.environmentKey),
-    existing_cluster_id: cdktf.stringToTerraform(struct!.existingClusterId),
-    job_cluster_key: cdktf.stringToTerraform(struct!.jobClusterKey),
-    max_retries: cdktf.numberToTerraform(struct!.maxRetries),
-    min_retry_interval_millis: cdktf.numberToTerraform(struct!.minRetryIntervalMillis),
-    retry_on_timeout: cdktf.booleanToTerraform(struct!.retryOnTimeout),
-    run_if: cdktf.stringToTerraform(struct!.runIf),
-    task_key: cdktf.stringToTerraform(struct!.taskKey),
-    timeout_seconds: cdktf.numberToTerraform(struct!.timeoutSeconds),
+    description: cdktn.stringToTerraform(struct!.description),
+    disable_auto_optimization: cdktn.booleanToTerraform(struct!.disableAutoOptimization),
+    disabled: cdktn.booleanToTerraform(struct!.disabled),
+    environment_key: cdktn.stringToTerraform(struct!.environmentKey),
+    existing_cluster_id: cdktn.stringToTerraform(struct!.existingClusterId),
+    job_cluster_key: cdktn.stringToTerraform(struct!.jobClusterKey),
+    max_retries: cdktn.numberToTerraform(struct!.maxRetries),
+    min_retry_interval_millis: cdktn.numberToTerraform(struct!.minRetryIntervalMillis),
+    retry_on_timeout: cdktn.booleanToTerraform(struct!.retryOnTimeout),
+    run_if: cdktn.stringToTerraform(struct!.runIf),
+    task_key: cdktn.stringToTerraform(struct!.taskKey),
+    timeout_seconds: cdktn.numberToTerraform(struct!.timeoutSeconds),
     clean_rooms_notebook_task: jobTaskForEachTaskTaskCleanRoomsNotebookTaskToTerraform(struct!.cleanRoomsNotebookTask),
+    compute: jobTaskForEachTaskTaskComputeToTerraform(struct!.compute),
     condition_task: jobTaskForEachTaskTaskConditionTaskToTerraform(struct!.conditionTask),
     dashboard_task: jobTaskForEachTaskTaskDashboardTaskToTerraform(struct!.dashboardTask),
     dbt_cloud_task: jobTaskForEachTaskTaskDbtCloudTaskToTerraform(struct!.dbtCloudTask),
     dbt_platform_task: jobTaskForEachTaskTaskDbtPlatformTaskToTerraform(struct!.dbtPlatformTask),
     dbt_task: jobTaskForEachTaskTaskDbtTaskToTerraform(struct!.dbtTask),
-    depends_on: cdktf.listMapper(jobTaskForEachTaskTaskDependsOnToTerraform, true)(struct!.dependsOn),
+    depends_on: cdktn.listMapper(jobTaskForEachTaskTaskDependsOnToTerraform, true)(struct!.dependsOn),
     email_notifications: jobTaskForEachTaskTaskEmailNotificationsToTerraform(struct!.emailNotifications),
     gen_ai_compute_task: jobTaskForEachTaskTaskGenAiComputeTaskToTerraform(struct!.genAiComputeTask),
     health: jobTaskForEachTaskTaskHealthToTerraform(struct!.health),
-    library: cdktf.listMapper(jobTaskForEachTaskTaskLibraryToTerraform, true)(struct!.library),
+    library: cdktn.listMapper(jobTaskForEachTaskTaskLibraryToTerraform, true)(struct!.library),
     new_cluster: jobTaskForEachTaskTaskNewClusterToTerraform(struct!.newCluster),
     notebook_task: jobTaskForEachTaskTaskNotebookTaskToTerraform(struct!.notebookTask),
     notification_settings: jobTaskForEachTaskTaskNotificationSettingsToTerraform(struct!.notificationSettings),
@@ -8618,79 +10139,79 @@ export function jobTaskForEachTaskTaskToTerraform(struct?: JobTaskForEachTaskTas
 
 
 export function jobTaskForEachTaskTaskToHclTerraform(struct?: JobTaskForEachTaskTaskOutputReference | JobTaskForEachTaskTask): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     disable_auto_optimization: {
-      value: cdktf.booleanToHclTerraform(struct!.disableAutoOptimization),
+      value: cdktn.booleanToHclTerraform(struct!.disableAutoOptimization),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     disabled: {
-      value: cdktf.booleanToHclTerraform(struct!.disabled),
+      value: cdktn.booleanToHclTerraform(struct!.disabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     environment_key: {
-      value: cdktf.stringToHclTerraform(struct!.environmentKey),
+      value: cdktn.stringToHclTerraform(struct!.environmentKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     existing_cluster_id: {
-      value: cdktf.stringToHclTerraform(struct!.existingClusterId),
+      value: cdktn.stringToHclTerraform(struct!.existingClusterId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     job_cluster_key: {
-      value: cdktf.stringToHclTerraform(struct!.jobClusterKey),
+      value: cdktn.stringToHclTerraform(struct!.jobClusterKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     max_retries: {
-      value: cdktf.numberToHclTerraform(struct!.maxRetries),
+      value: cdktn.numberToHclTerraform(struct!.maxRetries),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     min_retry_interval_millis: {
-      value: cdktf.numberToHclTerraform(struct!.minRetryIntervalMillis),
+      value: cdktn.numberToHclTerraform(struct!.minRetryIntervalMillis),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     retry_on_timeout: {
-      value: cdktf.booleanToHclTerraform(struct!.retryOnTimeout),
+      value: cdktn.booleanToHclTerraform(struct!.retryOnTimeout),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     run_if: {
-      value: cdktf.stringToHclTerraform(struct!.runIf),
+      value: cdktn.stringToHclTerraform(struct!.runIf),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     task_key: {
-      value: cdktf.stringToHclTerraform(struct!.taskKey),
+      value: cdktn.stringToHclTerraform(struct!.taskKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     timeout_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.timeoutSeconds),
+      value: cdktn.numberToHclTerraform(struct!.timeoutSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -8700,6 +10221,12 @@ export function jobTaskForEachTaskTaskToHclTerraform(struct?: JobTaskForEachTask
       isBlock: true,
       type: "list",
       storageClassType: "JobTaskForEachTaskTaskCleanRoomsNotebookTaskList",
+    },
+    compute: {
+      value: jobTaskForEachTaskTaskComputeToHclTerraform(struct!.compute),
+      isBlock: true,
+      type: "list",
+      storageClassType: "JobTaskForEachTaskTaskComputeList",
     },
     condition_task: {
       value: jobTaskForEachTaskTaskConditionTaskToHclTerraform(struct!.conditionTask),
@@ -8732,7 +10259,7 @@ export function jobTaskForEachTaskTaskToHclTerraform(struct?: JobTaskForEachTask
       storageClassType: "JobTaskForEachTaskTaskDbtTaskList",
     },
     depends_on: {
-      value: cdktf.listMapperHcl(jobTaskForEachTaskTaskDependsOnToHclTerraform, true)(struct!.dependsOn),
+      value: cdktn.listMapperHcl(jobTaskForEachTaskTaskDependsOnToHclTerraform, true)(struct!.dependsOn),
       isBlock: true,
       type: "list",
       storageClassType: "JobTaskForEachTaskTaskDependsOnList",
@@ -8756,7 +10283,7 @@ export function jobTaskForEachTaskTaskToHclTerraform(struct?: JobTaskForEachTask
       storageClassType: "JobTaskForEachTaskTaskHealthList",
     },
     library: {
-      value: cdktf.listMapperHcl(jobTaskForEachTaskTaskLibraryToHclTerraform, true)(struct!.library),
+      value: cdktn.listMapperHcl(jobTaskForEachTaskTaskLibraryToHclTerraform, true)(struct!.library),
       isBlock: true,
       type: "list",
       storageClassType: "JobTaskForEachTaskTaskLibraryList",
@@ -8839,14 +10366,14 @@ export function jobTaskForEachTaskTaskToHclTerraform(struct?: JobTaskForEachTask
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskForEachTaskTaskOutputReference extends cdktf.ComplexObject {
+export class JobTaskForEachTaskTaskOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -8904,6 +10431,10 @@ export class JobTaskForEachTaskTaskOutputReference extends cdktf.ComplexObject {
     if (this._cleanRoomsNotebookTask?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.cleanRoomsNotebookTask = this._cleanRoomsNotebookTask?.internalValue;
+    }
+    if (this._compute?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.compute = this._compute?.internalValue;
     }
     if (this._conditionTask?.internalValue !== undefined) {
       hasAnyValues = true;
@@ -9012,6 +10543,7 @@ export class JobTaskForEachTaskTaskOutputReference extends cdktf.ComplexObject {
       this._taskKey = undefined;
       this._timeoutSeconds = undefined;
       this._cleanRoomsNotebookTask.internalValue = undefined;
+      this._compute.internalValue = undefined;
       this._conditionTask.internalValue = undefined;
       this._dashboardTask.internalValue = undefined;
       this._dbtCloudTask.internalValue = undefined;
@@ -9050,6 +10582,7 @@ export class JobTaskForEachTaskTaskOutputReference extends cdktf.ComplexObject {
       this._taskKey = value.taskKey;
       this._timeoutSeconds = value.timeoutSeconds;
       this._cleanRoomsNotebookTask.internalValue = value.cleanRoomsNotebookTask;
+      this._compute.internalValue = value.compute;
       this._conditionTask.internalValue = value.conditionTask;
       this._dashboardTask.internalValue = value.dashboardTask;
       this._dbtCloudTask.internalValue = value.dbtCloudTask;
@@ -9092,11 +10625,11 @@ export class JobTaskForEachTaskTaskOutputReference extends cdktf.ComplexObject {
   }
 
   // disable_auto_optimization - computed: false, optional: true, required: false
-  private _disableAutoOptimization?: boolean | cdktf.IResolvable; 
+  private _disableAutoOptimization?: boolean | cdktn.IResolvable; 
   public get disableAutoOptimization() {
     return this.getBooleanAttribute('disable_auto_optimization');
   }
-  public set disableAutoOptimization(value: boolean | cdktf.IResolvable) {
+  public set disableAutoOptimization(value: boolean | cdktn.IResolvable) {
     this._disableAutoOptimization = value;
   }
   public resetDisableAutoOptimization() {
@@ -9108,11 +10641,11 @@ export class JobTaskForEachTaskTaskOutputReference extends cdktf.ComplexObject {
   }
 
   // disabled - computed: false, optional: true, required: false
-  private _disabled?: boolean | cdktf.IResolvable; 
+  private _disabled?: boolean | cdktn.IResolvable; 
   public get disabled() {
     return this.getBooleanAttribute('disabled');
   }
-  public set disabled(value: boolean | cdktf.IResolvable) {
+  public set disabled(value: boolean | cdktn.IResolvable) {
     this._disabled = value;
   }
   public resetDisabled() {
@@ -9204,11 +10737,11 @@ export class JobTaskForEachTaskTaskOutputReference extends cdktf.ComplexObject {
   }
 
   // retry_on_timeout - computed: true, optional: true, required: false
-  private _retryOnTimeout?: boolean | cdktf.IResolvable; 
+  private _retryOnTimeout?: boolean | cdktn.IResolvable; 
   public get retryOnTimeout() {
     return this.getBooleanAttribute('retry_on_timeout');
   }
-  public set retryOnTimeout(value: boolean | cdktf.IResolvable) {
+  public set retryOnTimeout(value: boolean | cdktn.IResolvable) {
     this._retryOnTimeout = value;
   }
   public resetRetryOnTimeout() {
@@ -9278,6 +10811,22 @@ export class JobTaskForEachTaskTaskOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get cleanRoomsNotebookTaskInput() {
     return this._cleanRoomsNotebookTask.internalValue;
+  }
+
+  // compute - computed: false, optional: true, required: false
+  private _compute = new JobTaskForEachTaskTaskComputeOutputReference(this, "compute");
+  public get compute() {
+    return this._compute;
+  }
+  public putCompute(value: JobTaskForEachTaskTaskCompute) {
+    this._compute.internalValue = value;
+  }
+  public resetCompute() {
+    this._compute.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get computeInput() {
+    return this._compute.internalValue;
   }
 
   // condition_task - computed: false, optional: true, required: false
@@ -9365,7 +10914,7 @@ export class JobTaskForEachTaskTaskOutputReference extends cdktf.ComplexObject {
   public get dependsOn() {
     return this._dependsOn;
   }
-  public putDependsOn(value: JobTaskForEachTaskTaskDependsOn[] | cdktf.IResolvable) {
+  public putDependsOn(value: JobTaskForEachTaskTaskDependsOn[] | cdktn.IResolvable) {
     this._dependsOn.internalValue = value;
   }
   public resetDependsOn() {
@@ -9429,7 +10978,7 @@ export class JobTaskForEachTaskTaskOutputReference extends cdktf.ComplexObject {
   public get library() {
     return this._library;
   }
-  public putLibrary(value: JobTaskForEachTaskTaskLibrary[] | cdktf.IResolvable) {
+  public putLibrary(value: JobTaskForEachTaskTaskLibrary[] | cdktn.IResolvable) {
     this._library.internalValue = value;
   }
   public resetLibrary() {
@@ -9634,48 +11183,48 @@ export class JobTaskForEachTaskTaskOutputReference extends cdktf.ComplexObject {
 }
 export interface JobTaskForEachTask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#concurrency Job#concurrency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#concurrency Job#concurrency}
   */
   readonly concurrency?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#inputs Job#inputs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#inputs Job#inputs}
   */
   readonly inputs: string;
   /**
   * task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#task Job#task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#task Job#task}
   */
   readonly task: JobTaskForEachTaskTask;
 }
 
 export function jobTaskForEachTaskToTerraform(struct?: JobTaskForEachTaskOutputReference | JobTaskForEachTask): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    concurrency: cdktf.numberToTerraform(struct!.concurrency),
-    inputs: cdktf.stringToTerraform(struct!.inputs),
+    concurrency: cdktn.numberToTerraform(struct!.concurrency),
+    inputs: cdktn.stringToTerraform(struct!.inputs),
     task: jobTaskForEachTaskTaskToTerraform(struct!.task),
   }
 }
 
 
 export function jobTaskForEachTaskToHclTerraform(struct?: JobTaskForEachTaskOutputReference | JobTaskForEachTask): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     concurrency: {
-      value: cdktf.numberToHclTerraform(struct!.concurrency),
+      value: cdktn.numberToHclTerraform(struct!.concurrency),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     inputs: {
-      value: cdktf.stringToHclTerraform(struct!.inputs),
+      value: cdktn.stringToHclTerraform(struct!.inputs),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -9692,14 +11241,14 @@ export function jobTaskForEachTaskToHclTerraform(struct?: JobTaskForEachTaskOutp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskForEachTaskOutputReference extends cdktf.ComplexObject {
+export class JobTaskForEachTaskOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -9780,52 +11329,52 @@ export class JobTaskForEachTaskOutputReference extends cdktf.ComplexObject {
 }
 export interface JobTaskGenAiComputeTaskCompute {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#gpu_node_pool_id Job#gpu_node_pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#gpu_node_pool_id Job#gpu_node_pool_id}
   */
   readonly gpuNodePoolId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#gpu_type Job#gpu_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#gpu_type Job#gpu_type}
   */
   readonly gpuType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#num_gpus Job#num_gpus}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#num_gpus Job#num_gpus}
   */
   readonly numGpus: number;
 }
 
 export function jobTaskGenAiComputeTaskComputeToTerraform(struct?: JobTaskGenAiComputeTaskComputeOutputReference | JobTaskGenAiComputeTaskCompute): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    gpu_node_pool_id: cdktf.stringToTerraform(struct!.gpuNodePoolId),
-    gpu_type: cdktf.stringToTerraform(struct!.gpuType),
-    num_gpus: cdktf.numberToTerraform(struct!.numGpus),
+    gpu_node_pool_id: cdktn.stringToTerraform(struct!.gpuNodePoolId),
+    gpu_type: cdktn.stringToTerraform(struct!.gpuType),
+    num_gpus: cdktn.numberToTerraform(struct!.numGpus),
   }
 }
 
 
 export function jobTaskGenAiComputeTaskComputeToHclTerraform(struct?: JobTaskGenAiComputeTaskComputeOutputReference | JobTaskGenAiComputeTaskCompute): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     gpu_node_pool_id: {
-      value: cdktf.stringToHclTerraform(struct!.gpuNodePoolId),
+      value: cdktn.stringToHclTerraform(struct!.gpuNodePoolId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     gpu_type: {
-      value: cdktf.stringToHclTerraform(struct!.gpuType),
+      value: cdktn.stringToHclTerraform(struct!.gpuType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     num_gpus: {
-      value: cdktf.numberToHclTerraform(struct!.numGpus),
+      value: cdktn.numberToHclTerraform(struct!.numGpus),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -9836,14 +11385,14 @@ export function jobTaskGenAiComputeTaskComputeToHclTerraform(struct?: JobTaskGen
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskGenAiComputeTaskComputeOutputReference extends cdktf.ComplexObject {
+export class JobTaskGenAiComputeTaskComputeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -9927,103 +11476,103 @@ export class JobTaskGenAiComputeTaskComputeOutputReference extends cdktf.Complex
 }
 export interface JobTaskGenAiComputeTask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#command Job#command}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#command Job#command}
   */
   readonly command?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#dl_runtime_image Job#dl_runtime_image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#dl_runtime_image Job#dl_runtime_image}
   */
   readonly dlRuntimeImage: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#mlflow_experiment_name Job#mlflow_experiment_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#mlflow_experiment_name Job#mlflow_experiment_name}
   */
   readonly mlflowExperimentName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#source Job#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#source Job#source}
   */
   readonly source?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#training_script_path Job#training_script_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#training_script_path Job#training_script_path}
   */
   readonly trainingScriptPath?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#yaml_parameters Job#yaml_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#yaml_parameters Job#yaml_parameters}
   */
   readonly yamlParameters?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#yaml_parameters_file_path Job#yaml_parameters_file_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#yaml_parameters_file_path Job#yaml_parameters_file_path}
   */
   readonly yamlParametersFilePath?: string;
   /**
   * compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#compute Job#compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#compute Job#compute}
   */
   readonly compute?: JobTaskGenAiComputeTaskCompute;
 }
 
 export function jobTaskGenAiComputeTaskToTerraform(struct?: JobTaskGenAiComputeTaskOutputReference | JobTaskGenAiComputeTask): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    command: cdktf.stringToTerraform(struct!.command),
-    dl_runtime_image: cdktf.stringToTerraform(struct!.dlRuntimeImage),
-    mlflow_experiment_name: cdktf.stringToTerraform(struct!.mlflowExperimentName),
-    source: cdktf.stringToTerraform(struct!.source),
-    training_script_path: cdktf.stringToTerraform(struct!.trainingScriptPath),
-    yaml_parameters: cdktf.stringToTerraform(struct!.yamlParameters),
-    yaml_parameters_file_path: cdktf.stringToTerraform(struct!.yamlParametersFilePath),
+    command: cdktn.stringToTerraform(struct!.command),
+    dl_runtime_image: cdktn.stringToTerraform(struct!.dlRuntimeImage),
+    mlflow_experiment_name: cdktn.stringToTerraform(struct!.mlflowExperimentName),
+    source: cdktn.stringToTerraform(struct!.source),
+    training_script_path: cdktn.stringToTerraform(struct!.trainingScriptPath),
+    yaml_parameters: cdktn.stringToTerraform(struct!.yamlParameters),
+    yaml_parameters_file_path: cdktn.stringToTerraform(struct!.yamlParametersFilePath),
     compute: jobTaskGenAiComputeTaskComputeToTerraform(struct!.compute),
   }
 }
 
 
 export function jobTaskGenAiComputeTaskToHclTerraform(struct?: JobTaskGenAiComputeTaskOutputReference | JobTaskGenAiComputeTask): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     command: {
-      value: cdktf.stringToHclTerraform(struct!.command),
+      value: cdktn.stringToHclTerraform(struct!.command),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     dl_runtime_image: {
-      value: cdktf.stringToHclTerraform(struct!.dlRuntimeImage),
+      value: cdktn.stringToHclTerraform(struct!.dlRuntimeImage),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     mlflow_experiment_name: {
-      value: cdktf.stringToHclTerraform(struct!.mlflowExperimentName),
+      value: cdktn.stringToHclTerraform(struct!.mlflowExperimentName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source: {
-      value: cdktf.stringToHclTerraform(struct!.source),
+      value: cdktn.stringToHclTerraform(struct!.source),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     training_script_path: {
-      value: cdktf.stringToHclTerraform(struct!.trainingScriptPath),
+      value: cdktn.stringToHclTerraform(struct!.trainingScriptPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     yaml_parameters: {
-      value: cdktf.stringToHclTerraform(struct!.yamlParameters),
+      value: cdktn.stringToHclTerraform(struct!.yamlParameters),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     yaml_parameters_file_path: {
-      value: cdktf.stringToHclTerraform(struct!.yamlParametersFilePath),
+      value: cdktn.stringToHclTerraform(struct!.yamlParametersFilePath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -10040,14 +11589,14 @@ export function jobTaskGenAiComputeTaskToHclTerraform(struct?: JobTaskGenAiCompu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskGenAiComputeTaskOutputReference extends cdktf.ComplexObject {
+export class JobTaskGenAiComputeTaskOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -10241,52 +11790,52 @@ export class JobTaskGenAiComputeTaskOutputReference extends cdktf.ComplexObject 
 }
 export interface JobTaskHealthRules {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#metric Job#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#metric Job#metric}
   */
   readonly metric: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#op Job#op}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#op Job#op}
   */
   readonly op: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#value Job#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#value Job#value}
   */
   readonly value: number;
 }
 
-export function jobTaskHealthRulesToTerraform(struct?: JobTaskHealthRules | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobTaskHealthRulesToTerraform(struct?: JobTaskHealthRules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    metric: cdktf.stringToTerraform(struct!.metric),
-    op: cdktf.stringToTerraform(struct!.op),
-    value: cdktf.numberToTerraform(struct!.value),
+    metric: cdktn.stringToTerraform(struct!.metric),
+    op: cdktn.stringToTerraform(struct!.op),
+    value: cdktn.numberToTerraform(struct!.value),
   }
 }
 
 
-export function jobTaskHealthRulesToHclTerraform(struct?: JobTaskHealthRules | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobTaskHealthRulesToHclTerraform(struct?: JobTaskHealthRules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     metric: {
-      value: cdktf.stringToHclTerraform(struct!.metric),
+      value: cdktn.stringToHclTerraform(struct!.metric),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     op: {
-      value: cdktf.stringToHclTerraform(struct!.op),
+      value: cdktn.stringToHclTerraform(struct!.op),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.numberToHclTerraform(struct!.value),
+      value: cdktn.numberToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -10297,9 +11846,9 @@ export function jobTaskHealthRulesToHclTerraform(struct?: JobTaskHealthRules | c
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskHealthRulesOutputReference extends cdktf.ComplexObject {
+export class JobTaskHealthRulesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -10307,11 +11856,11 @@ export class JobTaskHealthRulesOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobTaskHealthRules | cdktf.IResolvable | undefined {
+  public get internalValue(): JobTaskHealthRules | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -10332,7 +11881,7 @@ export class JobTaskHealthRulesOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobTaskHealthRules | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobTaskHealthRules | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -10340,7 +11889,7 @@ export class JobTaskHealthRulesOutputReference extends cdktf.ComplexObject {
       this._op = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -10393,15 +11942,15 @@ export class JobTaskHealthRulesOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class JobTaskHealthRulesList extends cdktf.ComplexList {
-  public internalValue? : JobTaskHealthRules[] | cdktf.IResolvable
+export class JobTaskHealthRulesList extends cdktn.ComplexList {
+  public internalValue? : JobTaskHealthRules[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -10416,30 +11965,30 @@ export interface JobTaskHealth {
   /**
   * rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#rules Job#rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#rules Job#rules}
   */
-  readonly rules: JobTaskHealthRules[] | cdktf.IResolvable;
+  readonly rules: JobTaskHealthRules[] | cdktn.IResolvable;
 }
 
 export function jobTaskHealthToTerraform(struct?: JobTaskHealthOutputReference | JobTaskHealth): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    rules: cdktf.listMapper(jobTaskHealthRulesToTerraform, true)(struct!.rules),
+    rules: cdktn.listMapper(jobTaskHealthRulesToTerraform, true)(struct!.rules),
   }
 }
 
 
 export function jobTaskHealthToHclTerraform(struct?: JobTaskHealthOutputReference | JobTaskHealth): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     rules: {
-      value: cdktf.listMapperHcl(jobTaskHealthRulesToHclTerraform, true)(struct!.rules),
+      value: cdktn.listMapperHcl(jobTaskHealthRulesToHclTerraform, true)(struct!.rules),
       isBlock: true,
       type: "list",
       storageClassType: "JobTaskHealthRulesList",
@@ -10450,14 +11999,14 @@ export function jobTaskHealthToHclTerraform(struct?: JobTaskHealthOutputReferenc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskHealthOutputReference extends cdktf.ComplexObject {
+export class JobTaskHealthOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -10487,7 +12036,7 @@ export class JobTaskHealthOutputReference extends cdktf.ComplexObject {
   public get rules() {
     return this._rules;
   }
-  public putRules(value: JobTaskHealthRules[] | cdktf.IResolvable) {
+  public putRules(value: JobTaskHealthRules[] | cdktn.IResolvable) {
     this._rules.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -10497,41 +12046,41 @@ export class JobTaskHealthOutputReference extends cdktf.ComplexObject {
 }
 export interface JobTaskLibraryCran {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#package Job#package}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#package Job#package}
   */
   readonly package: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#repo Job#repo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#repo Job#repo}
   */
   readonly repo?: string;
 }
 
 export function jobTaskLibraryCranToTerraform(struct?: JobTaskLibraryCranOutputReference | JobTaskLibraryCran): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    package: cdktf.stringToTerraform(struct!.package),
-    repo: cdktf.stringToTerraform(struct!.repo),
+    package: cdktn.stringToTerraform(struct!.package),
+    repo: cdktn.stringToTerraform(struct!.repo),
   }
 }
 
 
 export function jobTaskLibraryCranToHclTerraform(struct?: JobTaskLibraryCranOutputReference | JobTaskLibraryCran): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     package: {
-      value: cdktf.stringToHclTerraform(struct!.package),
+      value: cdktn.stringToHclTerraform(struct!.package),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     repo: {
-      value: cdktf.stringToHclTerraform(struct!.repo),
+      value: cdktn.stringToHclTerraform(struct!.repo),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -10542,14 +12091,14 @@ export function jobTaskLibraryCranToHclTerraform(struct?: JobTaskLibraryCranOutp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskLibraryCranOutputReference extends cdktf.ComplexObject {
+export class JobTaskLibraryCranOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -10611,52 +12160,52 @@ export class JobTaskLibraryCranOutputReference extends cdktf.ComplexObject {
 }
 export interface JobTaskLibraryMaven {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#coordinates Job#coordinates}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#coordinates Job#coordinates}
   */
   readonly coordinates: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#exclusions Job#exclusions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#exclusions Job#exclusions}
   */
   readonly exclusions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#repo Job#repo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#repo Job#repo}
   */
   readonly repo?: string;
 }
 
 export function jobTaskLibraryMavenToTerraform(struct?: JobTaskLibraryMavenOutputReference | JobTaskLibraryMaven): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    coordinates: cdktf.stringToTerraform(struct!.coordinates),
-    exclusions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.exclusions),
-    repo: cdktf.stringToTerraform(struct!.repo),
+    coordinates: cdktn.stringToTerraform(struct!.coordinates),
+    exclusions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.exclusions),
+    repo: cdktn.stringToTerraform(struct!.repo),
   }
 }
 
 
 export function jobTaskLibraryMavenToHclTerraform(struct?: JobTaskLibraryMavenOutputReference | JobTaskLibraryMaven): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     coordinates: {
-      value: cdktf.stringToHclTerraform(struct!.coordinates),
+      value: cdktn.stringToHclTerraform(struct!.coordinates),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     exclusions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.exclusions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.exclusions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     repo: {
-      value: cdktf.stringToHclTerraform(struct!.repo),
+      value: cdktn.stringToHclTerraform(struct!.repo),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -10667,14 +12216,14 @@ export function jobTaskLibraryMavenToHclTerraform(struct?: JobTaskLibraryMavenOu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskLibraryMavenOutputReference extends cdktf.ComplexObject {
+export class JobTaskLibraryMavenOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -10758,30 +12307,30 @@ export class JobTaskLibraryMavenOutputReference extends cdktf.ComplexObject {
 }
 export interface JobTaskLibraryProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#workspace_id Job#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#workspace_id Job#workspace_id}
   */
   readonly workspaceId: string;
 }
 
 export function jobTaskLibraryProviderConfigToTerraform(struct?: JobTaskLibraryProviderConfigOutputReference | JobTaskLibraryProviderConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    workspace_id: cdktf.stringToTerraform(struct!.workspaceId),
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
   }
 }
 
 
 export function jobTaskLibraryProviderConfigToHclTerraform(struct?: JobTaskLibraryProviderConfigOutputReference | JobTaskLibraryProviderConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     workspace_id: {
-      value: cdktf.stringToHclTerraform(struct!.workspaceId),
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -10792,14 +12341,14 @@ export function jobTaskLibraryProviderConfigToHclTerraform(struct?: JobTaskLibra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskLibraryProviderConfigOutputReference extends cdktf.ComplexObject {
+export class JobTaskLibraryProviderConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -10839,41 +12388,41 @@ export class JobTaskLibraryProviderConfigOutputReference extends cdktf.ComplexOb
 }
 export interface JobTaskLibraryPypi {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#package Job#package}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#package Job#package}
   */
   readonly package: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#repo Job#repo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#repo Job#repo}
   */
   readonly repo?: string;
 }
 
 export function jobTaskLibraryPypiToTerraform(struct?: JobTaskLibraryPypiOutputReference | JobTaskLibraryPypi): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    package: cdktf.stringToTerraform(struct!.package),
-    repo: cdktf.stringToTerraform(struct!.repo),
+    package: cdktn.stringToTerraform(struct!.package),
+    repo: cdktn.stringToTerraform(struct!.repo),
   }
 }
 
 
 export function jobTaskLibraryPypiToHclTerraform(struct?: JobTaskLibraryPypiOutputReference | JobTaskLibraryPypi): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     package: {
-      value: cdktf.stringToHclTerraform(struct!.package),
+      value: cdktn.stringToHclTerraform(struct!.package),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     repo: {
-      value: cdktf.stringToHclTerraform(struct!.repo),
+      value: cdktn.stringToHclTerraform(struct!.repo),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -10884,14 +12433,14 @@ export function jobTaskLibraryPypiToHclTerraform(struct?: JobTaskLibraryPypiOutp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskLibraryPypiOutputReference extends cdktf.ComplexObject {
+export class JobTaskLibraryPypiOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -10953,57 +12502,57 @@ export class JobTaskLibraryPypiOutputReference extends cdktf.ComplexObject {
 }
 export interface JobTaskLibrary {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#egg Job#egg}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#egg Job#egg}
   */
   readonly egg?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#jar Job#jar}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#jar Job#jar}
   */
   readonly jar?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#requirements Job#requirements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#requirements Job#requirements}
   */
   readonly requirements?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#whl Job#whl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#whl Job#whl}
   */
   readonly whl?: string;
   /**
   * cran block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#cran Job#cran}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#cran Job#cran}
   */
   readonly cran?: JobTaskLibraryCran;
   /**
   * maven block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#maven Job#maven}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#maven Job#maven}
   */
   readonly maven?: JobTaskLibraryMaven;
   /**
   * provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#provider_config Job#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#provider_config Job#provider_config}
   */
   readonly providerConfig?: JobTaskLibraryProviderConfig;
   /**
   * pypi block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#pypi Job#pypi}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#pypi Job#pypi}
   */
   readonly pypi?: JobTaskLibraryPypi;
 }
 
-export function jobTaskLibraryToTerraform(struct?: JobTaskLibrary | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobTaskLibraryToTerraform(struct?: JobTaskLibrary | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    egg: cdktf.stringToTerraform(struct!.egg),
-    jar: cdktf.stringToTerraform(struct!.jar),
-    requirements: cdktf.stringToTerraform(struct!.requirements),
-    whl: cdktf.stringToTerraform(struct!.whl),
+    egg: cdktn.stringToTerraform(struct!.egg),
+    jar: cdktn.stringToTerraform(struct!.jar),
+    requirements: cdktn.stringToTerraform(struct!.requirements),
+    whl: cdktn.stringToTerraform(struct!.whl),
     cran: jobTaskLibraryCranToTerraform(struct!.cran),
     maven: jobTaskLibraryMavenToTerraform(struct!.maven),
     provider_config: jobTaskLibraryProviderConfigToTerraform(struct!.providerConfig),
@@ -11012,32 +12561,32 @@ export function jobTaskLibraryToTerraform(struct?: JobTaskLibrary | cdktf.IResol
 }
 
 
-export function jobTaskLibraryToHclTerraform(struct?: JobTaskLibrary | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobTaskLibraryToHclTerraform(struct?: JobTaskLibrary | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     egg: {
-      value: cdktf.stringToHclTerraform(struct!.egg),
+      value: cdktn.stringToHclTerraform(struct!.egg),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     jar: {
-      value: cdktf.stringToHclTerraform(struct!.jar),
+      value: cdktn.stringToHclTerraform(struct!.jar),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     requirements: {
-      value: cdktf.stringToHclTerraform(struct!.requirements),
+      value: cdktn.stringToHclTerraform(struct!.requirements),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     whl: {
-      value: cdktf.stringToHclTerraform(struct!.whl),
+      value: cdktn.stringToHclTerraform(struct!.whl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -11072,9 +12621,9 @@ export function jobTaskLibraryToHclTerraform(struct?: JobTaskLibrary | cdktf.IRe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskLibraryOutputReference extends cdktf.ComplexObject {
+export class JobTaskLibraryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -11082,11 +12631,11 @@ export class JobTaskLibraryOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobTaskLibrary | cdktf.IResolvable | undefined {
+  public get internalValue(): JobTaskLibrary | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -11127,7 +12676,7 @@ export class JobTaskLibraryOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobTaskLibrary | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobTaskLibrary | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -11140,7 +12689,7 @@ export class JobTaskLibraryOutputReference extends cdktf.ComplexObject {
       this._providerConfig.internalValue = undefined;
       this._pypi.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -11287,15 +12836,15 @@ export class JobTaskLibraryOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class JobTaskLibraryList extends cdktf.ComplexList {
-  public internalValue? : JobTaskLibrary[] | cdktf.IResolvable
+export class JobTaskLibraryList extends cdktn.ComplexList {
+  public internalValue? : JobTaskLibrary[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -11308,41 +12857,41 @@ export class JobTaskLibraryList extends cdktf.ComplexList {
 }
 export interface JobTaskNewClusterAutoscale {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#max_workers Job#max_workers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#max_workers Job#max_workers}
   */
   readonly maxWorkers?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#min_workers Job#min_workers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#min_workers Job#min_workers}
   */
   readonly minWorkers?: number;
 }
 
 export function jobTaskNewClusterAutoscaleToTerraform(struct?: JobTaskNewClusterAutoscaleOutputReference | JobTaskNewClusterAutoscale): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    max_workers: cdktf.numberToTerraform(struct!.maxWorkers),
-    min_workers: cdktf.numberToTerraform(struct!.minWorkers),
+    max_workers: cdktn.numberToTerraform(struct!.maxWorkers),
+    min_workers: cdktn.numberToTerraform(struct!.minWorkers),
   }
 }
 
 
 export function jobTaskNewClusterAutoscaleToHclTerraform(struct?: JobTaskNewClusterAutoscaleOutputReference | JobTaskNewClusterAutoscale): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     max_workers: {
-      value: cdktf.numberToHclTerraform(struct!.maxWorkers),
+      value: cdktn.numberToHclTerraform(struct!.maxWorkers),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     min_workers: {
-      value: cdktf.numberToHclTerraform(struct!.minWorkers),
+      value: cdktn.numberToHclTerraform(struct!.minWorkers),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -11353,14 +12902,14 @@ export function jobTaskNewClusterAutoscaleToHclTerraform(struct?: JobTaskNewClus
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskNewClusterAutoscaleOutputReference extends cdktf.ComplexObject {
+export class JobTaskNewClusterAutoscaleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -11425,129 +12974,129 @@ export class JobTaskNewClusterAutoscaleOutputReference extends cdktf.ComplexObje
 }
 export interface JobTaskNewClusterAwsAttributes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#availability Job#availability}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#availability Job#availability}
   */
   readonly availability?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#ebs_volume_count Job#ebs_volume_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#ebs_volume_count Job#ebs_volume_count}
   */
   readonly ebsVolumeCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#ebs_volume_iops Job#ebs_volume_iops}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#ebs_volume_iops Job#ebs_volume_iops}
   */
   readonly ebsVolumeIops?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#ebs_volume_size Job#ebs_volume_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#ebs_volume_size Job#ebs_volume_size}
   */
   readonly ebsVolumeSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#ebs_volume_throughput Job#ebs_volume_throughput}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#ebs_volume_throughput Job#ebs_volume_throughput}
   */
   readonly ebsVolumeThroughput?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#ebs_volume_type Job#ebs_volume_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#ebs_volume_type Job#ebs_volume_type}
   */
   readonly ebsVolumeType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#first_on_demand Job#first_on_demand}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#first_on_demand Job#first_on_demand}
   */
   readonly firstOnDemand?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#instance_profile_arn Job#instance_profile_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#instance_profile_arn Job#instance_profile_arn}
   */
   readonly instanceProfileArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#spot_bid_price_percent Job#spot_bid_price_percent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#spot_bid_price_percent Job#spot_bid_price_percent}
   */
   readonly spotBidPricePercent?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#zone_id Job#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#zone_id Job#zone_id}
   */
   readonly zoneId?: string;
 }
 
 export function jobTaskNewClusterAwsAttributesToTerraform(struct?: JobTaskNewClusterAwsAttributesOutputReference | JobTaskNewClusterAwsAttributes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    availability: cdktf.stringToTerraform(struct!.availability),
-    ebs_volume_count: cdktf.numberToTerraform(struct!.ebsVolumeCount),
-    ebs_volume_iops: cdktf.numberToTerraform(struct!.ebsVolumeIops),
-    ebs_volume_size: cdktf.numberToTerraform(struct!.ebsVolumeSize),
-    ebs_volume_throughput: cdktf.numberToTerraform(struct!.ebsVolumeThroughput),
-    ebs_volume_type: cdktf.stringToTerraform(struct!.ebsVolumeType),
-    first_on_demand: cdktf.numberToTerraform(struct!.firstOnDemand),
-    instance_profile_arn: cdktf.stringToTerraform(struct!.instanceProfileArn),
-    spot_bid_price_percent: cdktf.numberToTerraform(struct!.spotBidPricePercent),
-    zone_id: cdktf.stringToTerraform(struct!.zoneId),
+    availability: cdktn.stringToTerraform(struct!.availability),
+    ebs_volume_count: cdktn.numberToTerraform(struct!.ebsVolumeCount),
+    ebs_volume_iops: cdktn.numberToTerraform(struct!.ebsVolumeIops),
+    ebs_volume_size: cdktn.numberToTerraform(struct!.ebsVolumeSize),
+    ebs_volume_throughput: cdktn.numberToTerraform(struct!.ebsVolumeThroughput),
+    ebs_volume_type: cdktn.stringToTerraform(struct!.ebsVolumeType),
+    first_on_demand: cdktn.numberToTerraform(struct!.firstOnDemand),
+    instance_profile_arn: cdktn.stringToTerraform(struct!.instanceProfileArn),
+    spot_bid_price_percent: cdktn.numberToTerraform(struct!.spotBidPricePercent),
+    zone_id: cdktn.stringToTerraform(struct!.zoneId),
   }
 }
 
 
 export function jobTaskNewClusterAwsAttributesToHclTerraform(struct?: JobTaskNewClusterAwsAttributesOutputReference | JobTaskNewClusterAwsAttributes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     availability: {
-      value: cdktf.stringToHclTerraform(struct!.availability),
+      value: cdktn.stringToHclTerraform(struct!.availability),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ebs_volume_count: {
-      value: cdktf.numberToHclTerraform(struct!.ebsVolumeCount),
+      value: cdktn.numberToHclTerraform(struct!.ebsVolumeCount),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     ebs_volume_iops: {
-      value: cdktf.numberToHclTerraform(struct!.ebsVolumeIops),
+      value: cdktn.numberToHclTerraform(struct!.ebsVolumeIops),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     ebs_volume_size: {
-      value: cdktf.numberToHclTerraform(struct!.ebsVolumeSize),
+      value: cdktn.numberToHclTerraform(struct!.ebsVolumeSize),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     ebs_volume_throughput: {
-      value: cdktf.numberToHclTerraform(struct!.ebsVolumeThroughput),
+      value: cdktn.numberToHclTerraform(struct!.ebsVolumeThroughput),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     ebs_volume_type: {
-      value: cdktf.stringToHclTerraform(struct!.ebsVolumeType),
+      value: cdktn.stringToHclTerraform(struct!.ebsVolumeType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     first_on_demand: {
-      value: cdktf.numberToHclTerraform(struct!.firstOnDemand),
+      value: cdktn.numberToHclTerraform(struct!.firstOnDemand),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     instance_profile_arn: {
-      value: cdktf.stringToHclTerraform(struct!.instanceProfileArn),
+      value: cdktn.stringToHclTerraform(struct!.instanceProfileArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     spot_bid_price_percent: {
-      value: cdktf.numberToHclTerraform(struct!.spotBidPricePercent),
+      value: cdktn.numberToHclTerraform(struct!.spotBidPricePercent),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     zone_id: {
-      value: cdktf.stringToHclTerraform(struct!.zoneId),
+      value: cdktn.stringToHclTerraform(struct!.zoneId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -11558,14 +13107,14 @@ export function jobTaskNewClusterAwsAttributesToHclTerraform(struct?: JobTaskNew
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskNewClusterAwsAttributesOutputReference extends cdktf.ComplexObject {
+export class JobTaskNewClusterAwsAttributesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -11806,41 +13355,41 @@ export class JobTaskNewClusterAwsAttributesOutputReference extends cdktf.Complex
 }
 export interface JobTaskNewClusterAzureAttributesLogAnalyticsInfo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#log_analytics_primary_key Job#log_analytics_primary_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#log_analytics_primary_key Job#log_analytics_primary_key}
   */
   readonly logAnalyticsPrimaryKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#log_analytics_workspace_id Job#log_analytics_workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#log_analytics_workspace_id Job#log_analytics_workspace_id}
   */
   readonly logAnalyticsWorkspaceId?: string;
 }
 
 export function jobTaskNewClusterAzureAttributesLogAnalyticsInfoToTerraform(struct?: JobTaskNewClusterAzureAttributesLogAnalyticsInfoOutputReference | JobTaskNewClusterAzureAttributesLogAnalyticsInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    log_analytics_primary_key: cdktf.stringToTerraform(struct!.logAnalyticsPrimaryKey),
-    log_analytics_workspace_id: cdktf.stringToTerraform(struct!.logAnalyticsWorkspaceId),
+    log_analytics_primary_key: cdktn.stringToTerraform(struct!.logAnalyticsPrimaryKey),
+    log_analytics_workspace_id: cdktn.stringToTerraform(struct!.logAnalyticsWorkspaceId),
   }
 }
 
 
 export function jobTaskNewClusterAzureAttributesLogAnalyticsInfoToHclTerraform(struct?: JobTaskNewClusterAzureAttributesLogAnalyticsInfoOutputReference | JobTaskNewClusterAzureAttributesLogAnalyticsInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     log_analytics_primary_key: {
-      value: cdktf.stringToHclTerraform(struct!.logAnalyticsPrimaryKey),
+      value: cdktn.stringToHclTerraform(struct!.logAnalyticsPrimaryKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     log_analytics_workspace_id: {
-      value: cdktf.stringToHclTerraform(struct!.logAnalyticsWorkspaceId),
+      value: cdktn.stringToHclTerraform(struct!.logAnalyticsWorkspaceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -11851,14 +13400,14 @@ export function jobTaskNewClusterAzureAttributesLogAnalyticsInfoToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskNewClusterAzureAttributesLogAnalyticsInfoOutputReference extends cdktf.ComplexObject {
+export class JobTaskNewClusterAzureAttributesLogAnalyticsInfoOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -11923,59 +13472,59 @@ export class JobTaskNewClusterAzureAttributesLogAnalyticsInfoOutputReference ext
 }
 export interface JobTaskNewClusterAzureAttributes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#availability Job#availability}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#availability Job#availability}
   */
   readonly availability?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#first_on_demand Job#first_on_demand}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#first_on_demand Job#first_on_demand}
   */
   readonly firstOnDemand?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#spot_bid_max_price Job#spot_bid_max_price}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#spot_bid_max_price Job#spot_bid_max_price}
   */
   readonly spotBidMaxPrice?: number;
   /**
   * log_analytics_info block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#log_analytics_info Job#log_analytics_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#log_analytics_info Job#log_analytics_info}
   */
   readonly logAnalyticsInfo?: JobTaskNewClusterAzureAttributesLogAnalyticsInfo;
 }
 
 export function jobTaskNewClusterAzureAttributesToTerraform(struct?: JobTaskNewClusterAzureAttributesOutputReference | JobTaskNewClusterAzureAttributes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    availability: cdktf.stringToTerraform(struct!.availability),
-    first_on_demand: cdktf.numberToTerraform(struct!.firstOnDemand),
-    spot_bid_max_price: cdktf.numberToTerraform(struct!.spotBidMaxPrice),
+    availability: cdktn.stringToTerraform(struct!.availability),
+    first_on_demand: cdktn.numberToTerraform(struct!.firstOnDemand),
+    spot_bid_max_price: cdktn.numberToTerraform(struct!.spotBidMaxPrice),
     log_analytics_info: jobTaskNewClusterAzureAttributesLogAnalyticsInfoToTerraform(struct!.logAnalyticsInfo),
   }
 }
 
 
 export function jobTaskNewClusterAzureAttributesToHclTerraform(struct?: JobTaskNewClusterAzureAttributesOutputReference | JobTaskNewClusterAzureAttributes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     availability: {
-      value: cdktf.stringToHclTerraform(struct!.availability),
+      value: cdktn.stringToHclTerraform(struct!.availability),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     first_on_demand: {
-      value: cdktf.numberToHclTerraform(struct!.firstOnDemand),
+      value: cdktn.numberToHclTerraform(struct!.firstOnDemand),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     spot_bid_max_price: {
-      value: cdktf.numberToHclTerraform(struct!.spotBidMaxPrice),
+      value: cdktn.numberToHclTerraform(struct!.spotBidMaxPrice),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -11992,14 +13541,14 @@ export function jobTaskNewClusterAzureAttributesToHclTerraform(struct?: JobTaskN
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskNewClusterAzureAttributesOutputReference extends cdktf.ComplexObject {
+export class JobTaskNewClusterAzureAttributesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -12108,30 +13657,30 @@ export class JobTaskNewClusterAzureAttributesOutputReference extends cdktf.Compl
 }
 export interface JobTaskNewClusterClusterLogConfDbfs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#destination Job#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#destination Job#destination}
   */
   readonly destination: string;
 }
 
 export function jobTaskNewClusterClusterLogConfDbfsToTerraform(struct?: JobTaskNewClusterClusterLogConfDbfsOutputReference | JobTaskNewClusterClusterLogConfDbfs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    destination: cdktf.stringToTerraform(struct!.destination),
+    destination: cdktn.stringToTerraform(struct!.destination),
   }
 }
 
 
 export function jobTaskNewClusterClusterLogConfDbfsToHclTerraform(struct?: JobTaskNewClusterClusterLogConfDbfsOutputReference | JobTaskNewClusterClusterLogConfDbfs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     destination: {
-      value: cdktf.stringToHclTerraform(struct!.destination),
+      value: cdktn.stringToHclTerraform(struct!.destination),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -12142,14 +13691,14 @@ export function jobTaskNewClusterClusterLogConfDbfsToHclTerraform(struct?: JobTa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskNewClusterClusterLogConfDbfsOutputReference extends cdktf.ComplexObject {
+export class JobTaskNewClusterClusterLogConfDbfsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -12189,96 +13738,96 @@ export class JobTaskNewClusterClusterLogConfDbfsOutputReference extends cdktf.Co
 }
 export interface JobTaskNewClusterClusterLogConfS3 {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#canned_acl Job#canned_acl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#canned_acl Job#canned_acl}
   */
   readonly cannedAcl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#destination Job#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#destination Job#destination}
   */
   readonly destination: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#enable_encryption Job#enable_encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#enable_encryption Job#enable_encryption}
   */
-  readonly enableEncryption?: boolean | cdktf.IResolvable;
+  readonly enableEncryption?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#encryption_type Job#encryption_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#encryption_type Job#encryption_type}
   */
   readonly encryptionType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#endpoint Job#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#endpoint Job#endpoint}
   */
   readonly endpoint?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#kms_key Job#kms_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#kms_key Job#kms_key}
   */
   readonly kmsKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#region Job#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#region Job#region}
   */
   readonly region?: string;
 }
 
 export function jobTaskNewClusterClusterLogConfS3ToTerraform(struct?: JobTaskNewClusterClusterLogConfS3OutputReference | JobTaskNewClusterClusterLogConfS3): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    canned_acl: cdktf.stringToTerraform(struct!.cannedAcl),
-    destination: cdktf.stringToTerraform(struct!.destination),
-    enable_encryption: cdktf.booleanToTerraform(struct!.enableEncryption),
-    encryption_type: cdktf.stringToTerraform(struct!.encryptionType),
-    endpoint: cdktf.stringToTerraform(struct!.endpoint),
-    kms_key: cdktf.stringToTerraform(struct!.kmsKey),
-    region: cdktf.stringToTerraform(struct!.region),
+    canned_acl: cdktn.stringToTerraform(struct!.cannedAcl),
+    destination: cdktn.stringToTerraform(struct!.destination),
+    enable_encryption: cdktn.booleanToTerraform(struct!.enableEncryption),
+    encryption_type: cdktn.stringToTerraform(struct!.encryptionType),
+    endpoint: cdktn.stringToTerraform(struct!.endpoint),
+    kms_key: cdktn.stringToTerraform(struct!.kmsKey),
+    region: cdktn.stringToTerraform(struct!.region),
   }
 }
 
 
 export function jobTaskNewClusterClusterLogConfS3ToHclTerraform(struct?: JobTaskNewClusterClusterLogConfS3OutputReference | JobTaskNewClusterClusterLogConfS3): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     canned_acl: {
-      value: cdktf.stringToHclTerraform(struct!.cannedAcl),
+      value: cdktn.stringToHclTerraform(struct!.cannedAcl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     destination: {
-      value: cdktf.stringToHclTerraform(struct!.destination),
+      value: cdktn.stringToHclTerraform(struct!.destination),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     enable_encryption: {
-      value: cdktf.booleanToHclTerraform(struct!.enableEncryption),
+      value: cdktn.booleanToHclTerraform(struct!.enableEncryption),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     encryption_type: {
-      value: cdktf.stringToHclTerraform(struct!.encryptionType),
+      value: cdktn.stringToHclTerraform(struct!.encryptionType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     endpoint: {
-      value: cdktf.stringToHclTerraform(struct!.endpoint),
+      value: cdktn.stringToHclTerraform(struct!.endpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     kms_key: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKey),
+      value: cdktn.stringToHclTerraform(struct!.kmsKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     region: {
-      value: cdktf.stringToHclTerraform(struct!.region),
+      value: cdktn.stringToHclTerraform(struct!.region),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -12289,14 +13838,14 @@ export function jobTaskNewClusterClusterLogConfS3ToHclTerraform(struct?: JobTask
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskNewClusterClusterLogConfS3OutputReference extends cdktf.ComplexObject {
+export class JobTaskNewClusterClusterLogConfS3OutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -12387,11 +13936,11 @@ export class JobTaskNewClusterClusterLogConfS3OutputReference extends cdktf.Comp
   }
 
   // enable_encryption - computed: false, optional: true, required: false
-  private _enableEncryption?: boolean | cdktf.IResolvable; 
+  private _enableEncryption?: boolean | cdktn.IResolvable; 
   public get enableEncryption() {
     return this.getBooleanAttribute('enable_encryption');
   }
-  public set enableEncryption(value: boolean | cdktf.IResolvable) {
+  public set enableEncryption(value: boolean | cdktn.IResolvable) {
     this._enableEncryption = value;
   }
   public resetEnableEncryption() {
@@ -12468,30 +14017,30 @@ export class JobTaskNewClusterClusterLogConfS3OutputReference extends cdktf.Comp
 }
 export interface JobTaskNewClusterClusterLogConfVolumes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#destination Job#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#destination Job#destination}
   */
   readonly destination: string;
 }
 
 export function jobTaskNewClusterClusterLogConfVolumesToTerraform(struct?: JobTaskNewClusterClusterLogConfVolumesOutputReference | JobTaskNewClusterClusterLogConfVolumes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    destination: cdktf.stringToTerraform(struct!.destination),
+    destination: cdktn.stringToTerraform(struct!.destination),
   }
 }
 
 
 export function jobTaskNewClusterClusterLogConfVolumesToHclTerraform(struct?: JobTaskNewClusterClusterLogConfVolumesOutputReference | JobTaskNewClusterClusterLogConfVolumes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     destination: {
-      value: cdktf.stringToHclTerraform(struct!.destination),
+      value: cdktn.stringToHclTerraform(struct!.destination),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -12502,14 +14051,14 @@ export function jobTaskNewClusterClusterLogConfVolumesToHclTerraform(struct?: Jo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskNewClusterClusterLogConfVolumesOutputReference extends cdktf.ComplexObject {
+export class JobTaskNewClusterClusterLogConfVolumesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -12551,26 +14100,26 @@ export interface JobTaskNewClusterClusterLogConf {
   /**
   * dbfs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#dbfs Job#dbfs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#dbfs Job#dbfs}
   */
   readonly dbfs?: JobTaskNewClusterClusterLogConfDbfs;
   /**
   * s3 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#s3 Job#s3}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#s3 Job#s3}
   */
   readonly s3?: JobTaskNewClusterClusterLogConfS3;
   /**
   * volumes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#volumes Job#volumes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#volumes Job#volumes}
   */
   readonly volumes?: JobTaskNewClusterClusterLogConfVolumes;
 }
 
 export function jobTaskNewClusterClusterLogConfToTerraform(struct?: JobTaskNewClusterClusterLogConfOutputReference | JobTaskNewClusterClusterLogConf): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -12582,8 +14131,8 @@ export function jobTaskNewClusterClusterLogConfToTerraform(struct?: JobTaskNewCl
 
 
 export function jobTaskNewClusterClusterLogConfToHclTerraform(struct?: JobTaskNewClusterClusterLogConfOutputReference | JobTaskNewClusterClusterLogConf): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -12611,14 +14160,14 @@ export function jobTaskNewClusterClusterLogConfToHclTerraform(struct?: JobTaskNe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskNewClusterClusterLogConfOutputReference extends cdktf.ComplexObject {
+export class JobTaskNewClusterClusterLogConfOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -12705,41 +14254,41 @@ export class JobTaskNewClusterClusterLogConfOutputReference extends cdktf.Comple
 }
 export interface JobTaskNewClusterClusterMountInfoNetworkFilesystemInfo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#mount_options Job#mount_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#mount_options Job#mount_options}
   */
   readonly mountOptions?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#server_address Job#server_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#server_address Job#server_address}
   */
   readonly serverAddress: string;
 }
 
 export function jobTaskNewClusterClusterMountInfoNetworkFilesystemInfoToTerraform(struct?: JobTaskNewClusterClusterMountInfoNetworkFilesystemInfoOutputReference | JobTaskNewClusterClusterMountInfoNetworkFilesystemInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    mount_options: cdktf.stringToTerraform(struct!.mountOptions),
-    server_address: cdktf.stringToTerraform(struct!.serverAddress),
+    mount_options: cdktn.stringToTerraform(struct!.mountOptions),
+    server_address: cdktn.stringToTerraform(struct!.serverAddress),
   }
 }
 
 
 export function jobTaskNewClusterClusterMountInfoNetworkFilesystemInfoToHclTerraform(struct?: JobTaskNewClusterClusterMountInfoNetworkFilesystemInfoOutputReference | JobTaskNewClusterClusterMountInfoNetworkFilesystemInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     mount_options: {
-      value: cdktf.stringToHclTerraform(struct!.mountOptions),
+      value: cdktn.stringToHclTerraform(struct!.mountOptions),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     server_address: {
-      value: cdktf.stringToHclTerraform(struct!.serverAddress),
+      value: cdktn.stringToHclTerraform(struct!.serverAddress),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -12750,14 +14299,14 @@ export function jobTaskNewClusterClusterMountInfoNetworkFilesystemInfoToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskNewClusterClusterMountInfoNetworkFilesystemInfoOutputReference extends cdktf.ComplexObject {
+export class JobTaskNewClusterClusterMountInfoNetworkFilesystemInfoOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -12819,48 +14368,48 @@ export class JobTaskNewClusterClusterMountInfoNetworkFilesystemInfoOutputReferen
 }
 export interface JobTaskNewClusterClusterMountInfo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#local_mount_dir_path Job#local_mount_dir_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#local_mount_dir_path Job#local_mount_dir_path}
   */
   readonly localMountDirPath: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#remote_mount_dir_path Job#remote_mount_dir_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#remote_mount_dir_path Job#remote_mount_dir_path}
   */
   readonly remoteMountDirPath?: string;
   /**
   * network_filesystem_info block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#network_filesystem_info Job#network_filesystem_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#network_filesystem_info Job#network_filesystem_info}
   */
   readonly networkFilesystemInfo: JobTaskNewClusterClusterMountInfoNetworkFilesystemInfo;
 }
 
-export function jobTaskNewClusterClusterMountInfoToTerraform(struct?: JobTaskNewClusterClusterMountInfo | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobTaskNewClusterClusterMountInfoToTerraform(struct?: JobTaskNewClusterClusterMountInfo | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    local_mount_dir_path: cdktf.stringToTerraform(struct!.localMountDirPath),
-    remote_mount_dir_path: cdktf.stringToTerraform(struct!.remoteMountDirPath),
+    local_mount_dir_path: cdktn.stringToTerraform(struct!.localMountDirPath),
+    remote_mount_dir_path: cdktn.stringToTerraform(struct!.remoteMountDirPath),
     network_filesystem_info: jobTaskNewClusterClusterMountInfoNetworkFilesystemInfoToTerraform(struct!.networkFilesystemInfo),
   }
 }
 
 
-export function jobTaskNewClusterClusterMountInfoToHclTerraform(struct?: JobTaskNewClusterClusterMountInfo | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobTaskNewClusterClusterMountInfoToHclTerraform(struct?: JobTaskNewClusterClusterMountInfo | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     local_mount_dir_path: {
-      value: cdktf.stringToHclTerraform(struct!.localMountDirPath),
+      value: cdktn.stringToHclTerraform(struct!.localMountDirPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     remote_mount_dir_path: {
-      value: cdktf.stringToHclTerraform(struct!.remoteMountDirPath),
+      value: cdktn.stringToHclTerraform(struct!.remoteMountDirPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -12877,9 +14426,9 @@ export function jobTaskNewClusterClusterMountInfoToHclTerraform(struct?: JobTask
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskNewClusterClusterMountInfoOutputReference extends cdktf.ComplexObject {
+export class JobTaskNewClusterClusterMountInfoOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -12887,11 +14436,11 @@ export class JobTaskNewClusterClusterMountInfoOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobTaskNewClusterClusterMountInfo | cdktf.IResolvable | undefined {
+  public get internalValue(): JobTaskNewClusterClusterMountInfo | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -12912,7 +14461,7 @@ export class JobTaskNewClusterClusterMountInfoOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobTaskNewClusterClusterMountInfo | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobTaskNewClusterClusterMountInfo | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -12920,7 +14469,7 @@ export class JobTaskNewClusterClusterMountInfoOutputReference extends cdktf.Comp
       this._remoteMountDirPath = undefined;
       this._networkFilesystemInfo.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -12976,15 +14525,15 @@ export class JobTaskNewClusterClusterMountInfoOutputReference extends cdktf.Comp
   }
 }
 
-export class JobTaskNewClusterClusterMountInfoList extends cdktf.ComplexList {
-  public internalValue? : JobTaskNewClusterClusterMountInfo[] | cdktf.IResolvable
+export class JobTaskNewClusterClusterMountInfoList extends cdktn.ComplexList {
+  public internalValue? : JobTaskNewClusterClusterMountInfo[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -12997,41 +14546,41 @@ export class JobTaskNewClusterClusterMountInfoList extends cdktf.ComplexList {
 }
 export interface JobTaskNewClusterDockerImageBasicAuth {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#password Job#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#password Job#password}
   */
   readonly password: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#username Job#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#username Job#username}
   */
   readonly username: string;
 }
 
 export function jobTaskNewClusterDockerImageBasicAuthToTerraform(struct?: JobTaskNewClusterDockerImageBasicAuthOutputReference | JobTaskNewClusterDockerImageBasicAuth): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    password: cdktf.stringToTerraform(struct!.password),
-    username: cdktf.stringToTerraform(struct!.username),
+    password: cdktn.stringToTerraform(struct!.password),
+    username: cdktn.stringToTerraform(struct!.username),
   }
 }
 
 
 export function jobTaskNewClusterDockerImageBasicAuthToHclTerraform(struct?: JobTaskNewClusterDockerImageBasicAuthOutputReference | JobTaskNewClusterDockerImageBasicAuth): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     password: {
-      value: cdktf.stringToHclTerraform(struct!.password),
+      value: cdktn.stringToHclTerraform(struct!.password),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     username: {
-      value: cdktf.stringToHclTerraform(struct!.username),
+      value: cdktn.stringToHclTerraform(struct!.username),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -13042,14 +14591,14 @@ export function jobTaskNewClusterDockerImageBasicAuthToHclTerraform(struct?: Job
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskNewClusterDockerImageBasicAuthOutputReference extends cdktf.ComplexObject {
+export class JobTaskNewClusterDockerImageBasicAuthOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -13108,37 +14657,37 @@ export class JobTaskNewClusterDockerImageBasicAuthOutputReference extends cdktf.
 }
 export interface JobTaskNewClusterDockerImage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#url Job#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#url Job#url}
   */
   readonly url: string;
   /**
   * basic_auth block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#basic_auth Job#basic_auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#basic_auth Job#basic_auth}
   */
   readonly basicAuth?: JobTaskNewClusterDockerImageBasicAuth;
 }
 
 export function jobTaskNewClusterDockerImageToTerraform(struct?: JobTaskNewClusterDockerImageOutputReference | JobTaskNewClusterDockerImage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    url: cdktf.stringToTerraform(struct!.url),
+    url: cdktn.stringToTerraform(struct!.url),
     basic_auth: jobTaskNewClusterDockerImageBasicAuthToTerraform(struct!.basicAuth),
   }
 }
 
 
 export function jobTaskNewClusterDockerImageToHclTerraform(struct?: JobTaskNewClusterDockerImageOutputReference | JobTaskNewClusterDockerImage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     url: {
-      value: cdktf.stringToHclTerraform(struct!.url),
+      value: cdktn.stringToHclTerraform(struct!.url),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -13155,14 +14704,14 @@ export function jobTaskNewClusterDockerImageToHclTerraform(struct?: JobTaskNewCl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskNewClusterDockerImageOutputReference extends cdktf.ComplexObject {
+export class JobTaskNewClusterDockerImageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -13222,98 +14771,182 @@ export class JobTaskNewClusterDockerImageOutputReference extends cdktf.ComplexOb
     return this._basicAuth.internalValue;
   }
 }
+export interface JobTaskNewClusterDriverNodeTypeFlexibility {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#alternate_node_type_ids Job#alternate_node_type_ids}
+  */
+  readonly alternateNodeTypeIds?: string[];
+}
+
+export function jobTaskNewClusterDriverNodeTypeFlexibilityToTerraform(struct?: JobTaskNewClusterDriverNodeTypeFlexibilityOutputReference | JobTaskNewClusterDriverNodeTypeFlexibility): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    alternate_node_type_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.alternateNodeTypeIds),
+  }
+}
+
+
+export function jobTaskNewClusterDriverNodeTypeFlexibilityToHclTerraform(struct?: JobTaskNewClusterDriverNodeTypeFlexibilityOutputReference | JobTaskNewClusterDriverNodeTypeFlexibility): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    alternate_node_type_ids: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.alternateNodeTypeIds),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class JobTaskNewClusterDriverNodeTypeFlexibilityOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): JobTaskNewClusterDriverNodeTypeFlexibility | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._alternateNodeTypeIds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.alternateNodeTypeIds = this._alternateNodeTypeIds;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: JobTaskNewClusterDriverNodeTypeFlexibility | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._alternateNodeTypeIds = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._alternateNodeTypeIds = value.alternateNodeTypeIds;
+    }
+  }
+
+  // alternate_node_type_ids - computed: false, optional: true, required: false
+  private _alternateNodeTypeIds?: string[]; 
+  public get alternateNodeTypeIds() {
+    return this.getListAttribute('alternate_node_type_ids');
+  }
+  public set alternateNodeTypeIds(value: string[]) {
+    this._alternateNodeTypeIds = value;
+  }
+  public resetAlternateNodeTypeIds() {
+    this._alternateNodeTypeIds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get alternateNodeTypeIdsInput() {
+    return this._alternateNodeTypeIds;
+  }
+}
 export interface JobTaskNewClusterGcpAttributes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#availability Job#availability}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#availability Job#availability}
   */
   readonly availability?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#boot_disk_size Job#boot_disk_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#boot_disk_size Job#boot_disk_size}
   */
   readonly bootDiskSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#first_on_demand Job#first_on_demand}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#first_on_demand Job#first_on_demand}
   */
   readonly firstOnDemand?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#google_service_account Job#google_service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#google_service_account Job#google_service_account}
   */
   readonly googleServiceAccount?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#local_ssd_count Job#local_ssd_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#local_ssd_count Job#local_ssd_count}
   */
   readonly localSsdCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#use_preemptible_executors Job#use_preemptible_executors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#use_preemptible_executors Job#use_preemptible_executors}
   */
-  readonly usePreemptibleExecutors?: boolean | cdktf.IResolvable;
+  readonly usePreemptibleExecutors?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#zone_id Job#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#zone_id Job#zone_id}
   */
   readonly zoneId?: string;
 }
 
 export function jobTaskNewClusterGcpAttributesToTerraform(struct?: JobTaskNewClusterGcpAttributesOutputReference | JobTaskNewClusterGcpAttributes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    availability: cdktf.stringToTerraform(struct!.availability),
-    boot_disk_size: cdktf.numberToTerraform(struct!.bootDiskSize),
-    first_on_demand: cdktf.numberToTerraform(struct!.firstOnDemand),
-    google_service_account: cdktf.stringToTerraform(struct!.googleServiceAccount),
-    local_ssd_count: cdktf.numberToTerraform(struct!.localSsdCount),
-    use_preemptible_executors: cdktf.booleanToTerraform(struct!.usePreemptibleExecutors),
-    zone_id: cdktf.stringToTerraform(struct!.zoneId),
+    availability: cdktn.stringToTerraform(struct!.availability),
+    boot_disk_size: cdktn.numberToTerraform(struct!.bootDiskSize),
+    first_on_demand: cdktn.numberToTerraform(struct!.firstOnDemand),
+    google_service_account: cdktn.stringToTerraform(struct!.googleServiceAccount),
+    local_ssd_count: cdktn.numberToTerraform(struct!.localSsdCount),
+    use_preemptible_executors: cdktn.booleanToTerraform(struct!.usePreemptibleExecutors),
+    zone_id: cdktn.stringToTerraform(struct!.zoneId),
   }
 }
 
 
 export function jobTaskNewClusterGcpAttributesToHclTerraform(struct?: JobTaskNewClusterGcpAttributesOutputReference | JobTaskNewClusterGcpAttributes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     availability: {
-      value: cdktf.stringToHclTerraform(struct!.availability),
+      value: cdktn.stringToHclTerraform(struct!.availability),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     boot_disk_size: {
-      value: cdktf.numberToHclTerraform(struct!.bootDiskSize),
+      value: cdktn.numberToHclTerraform(struct!.bootDiskSize),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     first_on_demand: {
-      value: cdktf.numberToHclTerraform(struct!.firstOnDemand),
+      value: cdktn.numberToHclTerraform(struct!.firstOnDemand),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     google_service_account: {
-      value: cdktf.stringToHclTerraform(struct!.googleServiceAccount),
+      value: cdktn.stringToHclTerraform(struct!.googleServiceAccount),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     local_ssd_count: {
-      value: cdktf.numberToHclTerraform(struct!.localSsdCount),
+      value: cdktn.numberToHclTerraform(struct!.localSsdCount),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     use_preemptible_executors: {
-      value: cdktf.booleanToHclTerraform(struct!.usePreemptibleExecutors),
+      value: cdktn.booleanToHclTerraform(struct!.usePreemptibleExecutors),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     zone_id: {
-      value: cdktf.stringToHclTerraform(struct!.zoneId),
+      value: cdktn.stringToHclTerraform(struct!.zoneId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -13324,14 +14957,14 @@ export function jobTaskNewClusterGcpAttributesToHclTerraform(struct?: JobTaskNew
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskNewClusterGcpAttributesOutputReference extends cdktf.ComplexObject {
+export class JobTaskNewClusterGcpAttributesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -13473,11 +15106,11 @@ export class JobTaskNewClusterGcpAttributesOutputReference extends cdktf.Complex
   }
 
   // use_preemptible_executors - computed: false, optional: true, required: false
-  private _usePreemptibleExecutors?: boolean | cdktf.IResolvable; 
+  private _usePreemptibleExecutors?: boolean | cdktn.IResolvable; 
   public get usePreemptibleExecutors() {
     return this.getBooleanAttribute('use_preemptible_executors');
   }
-  public set usePreemptibleExecutors(value: boolean | cdktf.IResolvable) {
+  public set usePreemptibleExecutors(value: boolean | cdktn.IResolvable) {
     this._usePreemptibleExecutors = value;
   }
   public resetUsePreemptibleExecutors() {
@@ -13506,30 +15139,30 @@ export class JobTaskNewClusterGcpAttributesOutputReference extends cdktf.Complex
 }
 export interface JobTaskNewClusterInitScriptsAbfss {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#destination Job#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#destination Job#destination}
   */
   readonly destination: string;
 }
 
 export function jobTaskNewClusterInitScriptsAbfssToTerraform(struct?: JobTaskNewClusterInitScriptsAbfssOutputReference | JobTaskNewClusterInitScriptsAbfss): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    destination: cdktf.stringToTerraform(struct!.destination),
+    destination: cdktn.stringToTerraform(struct!.destination),
   }
 }
 
 
 export function jobTaskNewClusterInitScriptsAbfssToHclTerraform(struct?: JobTaskNewClusterInitScriptsAbfssOutputReference | JobTaskNewClusterInitScriptsAbfss): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     destination: {
-      value: cdktf.stringToHclTerraform(struct!.destination),
+      value: cdktn.stringToHclTerraform(struct!.destination),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -13540,14 +15173,14 @@ export function jobTaskNewClusterInitScriptsAbfssToHclTerraform(struct?: JobTask
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskNewClusterInitScriptsAbfssOutputReference extends cdktf.ComplexObject {
+export class JobTaskNewClusterInitScriptsAbfssOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -13587,30 +15220,30 @@ export class JobTaskNewClusterInitScriptsAbfssOutputReference extends cdktf.Comp
 }
 export interface JobTaskNewClusterInitScriptsDbfs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#destination Job#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#destination Job#destination}
   */
   readonly destination: string;
 }
 
 export function jobTaskNewClusterInitScriptsDbfsToTerraform(struct?: JobTaskNewClusterInitScriptsDbfsOutputReference | JobTaskNewClusterInitScriptsDbfs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    destination: cdktf.stringToTerraform(struct!.destination),
+    destination: cdktn.stringToTerraform(struct!.destination),
   }
 }
 
 
 export function jobTaskNewClusterInitScriptsDbfsToHclTerraform(struct?: JobTaskNewClusterInitScriptsDbfsOutputReference | JobTaskNewClusterInitScriptsDbfs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     destination: {
-      value: cdktf.stringToHclTerraform(struct!.destination),
+      value: cdktn.stringToHclTerraform(struct!.destination),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -13621,14 +15254,14 @@ export function jobTaskNewClusterInitScriptsDbfsToHclTerraform(struct?: JobTaskN
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskNewClusterInitScriptsDbfsOutputReference extends cdktf.ComplexObject {
+export class JobTaskNewClusterInitScriptsDbfsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -13668,30 +15301,30 @@ export class JobTaskNewClusterInitScriptsDbfsOutputReference extends cdktf.Compl
 }
 export interface JobTaskNewClusterInitScriptsFile {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#destination Job#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#destination Job#destination}
   */
   readonly destination: string;
 }
 
 export function jobTaskNewClusterInitScriptsFileToTerraform(struct?: JobTaskNewClusterInitScriptsFileOutputReference | JobTaskNewClusterInitScriptsFile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    destination: cdktf.stringToTerraform(struct!.destination),
+    destination: cdktn.stringToTerraform(struct!.destination),
   }
 }
 
 
 export function jobTaskNewClusterInitScriptsFileToHclTerraform(struct?: JobTaskNewClusterInitScriptsFileOutputReference | JobTaskNewClusterInitScriptsFile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     destination: {
-      value: cdktf.stringToHclTerraform(struct!.destination),
+      value: cdktn.stringToHclTerraform(struct!.destination),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -13702,14 +15335,14 @@ export function jobTaskNewClusterInitScriptsFileToHclTerraform(struct?: JobTaskN
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskNewClusterInitScriptsFileOutputReference extends cdktf.ComplexObject {
+export class JobTaskNewClusterInitScriptsFileOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -13749,30 +15382,30 @@ export class JobTaskNewClusterInitScriptsFileOutputReference extends cdktf.Compl
 }
 export interface JobTaskNewClusterInitScriptsGcs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#destination Job#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#destination Job#destination}
   */
   readonly destination: string;
 }
 
 export function jobTaskNewClusterInitScriptsGcsToTerraform(struct?: JobTaskNewClusterInitScriptsGcsOutputReference | JobTaskNewClusterInitScriptsGcs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    destination: cdktf.stringToTerraform(struct!.destination),
+    destination: cdktn.stringToTerraform(struct!.destination),
   }
 }
 
 
 export function jobTaskNewClusterInitScriptsGcsToHclTerraform(struct?: JobTaskNewClusterInitScriptsGcsOutputReference | JobTaskNewClusterInitScriptsGcs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     destination: {
-      value: cdktf.stringToHclTerraform(struct!.destination),
+      value: cdktn.stringToHclTerraform(struct!.destination),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -13783,14 +15416,14 @@ export function jobTaskNewClusterInitScriptsGcsToHclTerraform(struct?: JobTaskNe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskNewClusterInitScriptsGcsOutputReference extends cdktf.ComplexObject {
+export class JobTaskNewClusterInitScriptsGcsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -13830,96 +15463,96 @@ export class JobTaskNewClusterInitScriptsGcsOutputReference extends cdktf.Comple
 }
 export interface JobTaskNewClusterInitScriptsS3 {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#canned_acl Job#canned_acl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#canned_acl Job#canned_acl}
   */
   readonly cannedAcl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#destination Job#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#destination Job#destination}
   */
   readonly destination: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#enable_encryption Job#enable_encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#enable_encryption Job#enable_encryption}
   */
-  readonly enableEncryption?: boolean | cdktf.IResolvable;
+  readonly enableEncryption?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#encryption_type Job#encryption_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#encryption_type Job#encryption_type}
   */
   readonly encryptionType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#endpoint Job#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#endpoint Job#endpoint}
   */
   readonly endpoint?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#kms_key Job#kms_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#kms_key Job#kms_key}
   */
   readonly kmsKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#region Job#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#region Job#region}
   */
   readonly region?: string;
 }
 
 export function jobTaskNewClusterInitScriptsS3ToTerraform(struct?: JobTaskNewClusterInitScriptsS3OutputReference | JobTaskNewClusterInitScriptsS3): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    canned_acl: cdktf.stringToTerraform(struct!.cannedAcl),
-    destination: cdktf.stringToTerraform(struct!.destination),
-    enable_encryption: cdktf.booleanToTerraform(struct!.enableEncryption),
-    encryption_type: cdktf.stringToTerraform(struct!.encryptionType),
-    endpoint: cdktf.stringToTerraform(struct!.endpoint),
-    kms_key: cdktf.stringToTerraform(struct!.kmsKey),
-    region: cdktf.stringToTerraform(struct!.region),
+    canned_acl: cdktn.stringToTerraform(struct!.cannedAcl),
+    destination: cdktn.stringToTerraform(struct!.destination),
+    enable_encryption: cdktn.booleanToTerraform(struct!.enableEncryption),
+    encryption_type: cdktn.stringToTerraform(struct!.encryptionType),
+    endpoint: cdktn.stringToTerraform(struct!.endpoint),
+    kms_key: cdktn.stringToTerraform(struct!.kmsKey),
+    region: cdktn.stringToTerraform(struct!.region),
   }
 }
 
 
 export function jobTaskNewClusterInitScriptsS3ToHclTerraform(struct?: JobTaskNewClusterInitScriptsS3OutputReference | JobTaskNewClusterInitScriptsS3): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     canned_acl: {
-      value: cdktf.stringToHclTerraform(struct!.cannedAcl),
+      value: cdktn.stringToHclTerraform(struct!.cannedAcl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     destination: {
-      value: cdktf.stringToHclTerraform(struct!.destination),
+      value: cdktn.stringToHclTerraform(struct!.destination),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     enable_encryption: {
-      value: cdktf.booleanToHclTerraform(struct!.enableEncryption),
+      value: cdktn.booleanToHclTerraform(struct!.enableEncryption),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     encryption_type: {
-      value: cdktf.stringToHclTerraform(struct!.encryptionType),
+      value: cdktn.stringToHclTerraform(struct!.encryptionType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     endpoint: {
-      value: cdktf.stringToHclTerraform(struct!.endpoint),
+      value: cdktn.stringToHclTerraform(struct!.endpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     kms_key: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKey),
+      value: cdktn.stringToHclTerraform(struct!.kmsKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     region: {
-      value: cdktf.stringToHclTerraform(struct!.region),
+      value: cdktn.stringToHclTerraform(struct!.region),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -13930,14 +15563,14 @@ export function jobTaskNewClusterInitScriptsS3ToHclTerraform(struct?: JobTaskNew
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskNewClusterInitScriptsS3OutputReference extends cdktf.ComplexObject {
+export class JobTaskNewClusterInitScriptsS3OutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -14028,11 +15661,11 @@ export class JobTaskNewClusterInitScriptsS3OutputReference extends cdktf.Complex
   }
 
   // enable_encryption - computed: false, optional: true, required: false
-  private _enableEncryption?: boolean | cdktf.IResolvable; 
+  private _enableEncryption?: boolean | cdktn.IResolvable; 
   public get enableEncryption() {
     return this.getBooleanAttribute('enable_encryption');
   }
-  public set enableEncryption(value: boolean | cdktf.IResolvable) {
+  public set enableEncryption(value: boolean | cdktn.IResolvable) {
     this._enableEncryption = value;
   }
   public resetEnableEncryption() {
@@ -14109,30 +15742,30 @@ export class JobTaskNewClusterInitScriptsS3OutputReference extends cdktf.Complex
 }
 export interface JobTaskNewClusterInitScriptsVolumes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#destination Job#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#destination Job#destination}
   */
   readonly destination: string;
 }
 
 export function jobTaskNewClusterInitScriptsVolumesToTerraform(struct?: JobTaskNewClusterInitScriptsVolumesOutputReference | JobTaskNewClusterInitScriptsVolumes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    destination: cdktf.stringToTerraform(struct!.destination),
+    destination: cdktn.stringToTerraform(struct!.destination),
   }
 }
 
 
 export function jobTaskNewClusterInitScriptsVolumesToHclTerraform(struct?: JobTaskNewClusterInitScriptsVolumesOutputReference | JobTaskNewClusterInitScriptsVolumes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     destination: {
-      value: cdktf.stringToHclTerraform(struct!.destination),
+      value: cdktn.stringToHclTerraform(struct!.destination),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -14143,14 +15776,14 @@ export function jobTaskNewClusterInitScriptsVolumesToHclTerraform(struct?: JobTa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskNewClusterInitScriptsVolumesOutputReference extends cdktf.ComplexObject {
+export class JobTaskNewClusterInitScriptsVolumesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -14190,30 +15823,30 @@ export class JobTaskNewClusterInitScriptsVolumesOutputReference extends cdktf.Co
 }
 export interface JobTaskNewClusterInitScriptsWorkspace {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#destination Job#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#destination Job#destination}
   */
   readonly destination: string;
 }
 
 export function jobTaskNewClusterInitScriptsWorkspaceToTerraform(struct?: JobTaskNewClusterInitScriptsWorkspaceOutputReference | JobTaskNewClusterInitScriptsWorkspace): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    destination: cdktf.stringToTerraform(struct!.destination),
+    destination: cdktn.stringToTerraform(struct!.destination),
   }
 }
 
 
 export function jobTaskNewClusterInitScriptsWorkspaceToHclTerraform(struct?: JobTaskNewClusterInitScriptsWorkspaceOutputReference | JobTaskNewClusterInitScriptsWorkspace): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     destination: {
-      value: cdktf.stringToHclTerraform(struct!.destination),
+      value: cdktn.stringToHclTerraform(struct!.destination),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -14224,14 +15857,14 @@ export function jobTaskNewClusterInitScriptsWorkspaceToHclTerraform(struct?: Job
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskNewClusterInitScriptsWorkspaceOutputReference extends cdktf.ComplexObject {
+export class JobTaskNewClusterInitScriptsWorkspaceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -14273,50 +15906,50 @@ export interface JobTaskNewClusterInitScripts {
   /**
   * abfss block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#abfss Job#abfss}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#abfss Job#abfss}
   */
   readonly abfss?: JobTaskNewClusterInitScriptsAbfss;
   /**
   * dbfs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#dbfs Job#dbfs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#dbfs Job#dbfs}
   */
   readonly dbfs?: JobTaskNewClusterInitScriptsDbfs;
   /**
   * file block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#file Job#file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#file Job#file}
   */
   readonly file?: JobTaskNewClusterInitScriptsFile;
   /**
   * gcs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#gcs Job#gcs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#gcs Job#gcs}
   */
   readonly gcs?: JobTaskNewClusterInitScriptsGcs;
   /**
   * s3 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#s3 Job#s3}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#s3 Job#s3}
   */
   readonly s3?: JobTaskNewClusterInitScriptsS3;
   /**
   * volumes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#volumes Job#volumes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#volumes Job#volumes}
   */
   readonly volumes?: JobTaskNewClusterInitScriptsVolumes;
   /**
   * workspace block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#workspace Job#workspace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#workspace Job#workspace}
   */
   readonly workspace?: JobTaskNewClusterInitScriptsWorkspace;
 }
 
-export function jobTaskNewClusterInitScriptsToTerraform(struct?: JobTaskNewClusterInitScripts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobTaskNewClusterInitScriptsToTerraform(struct?: JobTaskNewClusterInitScripts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -14331,9 +15964,9 @@ export function jobTaskNewClusterInitScriptsToTerraform(struct?: JobTaskNewClust
 }
 
 
-export function jobTaskNewClusterInitScriptsToHclTerraform(struct?: JobTaskNewClusterInitScripts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobTaskNewClusterInitScriptsToHclTerraform(struct?: JobTaskNewClusterInitScripts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -14385,9 +16018,9 @@ export function jobTaskNewClusterInitScriptsToHclTerraform(struct?: JobTaskNewCl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskNewClusterInitScriptsOutputReference extends cdktf.ComplexObject {
+export class JobTaskNewClusterInitScriptsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -14395,11 +16028,11 @@ export class JobTaskNewClusterInitScriptsOutputReference extends cdktf.ComplexOb
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobTaskNewClusterInitScripts | cdktf.IResolvable | undefined {
+  public get internalValue(): JobTaskNewClusterInitScripts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -14436,7 +16069,7 @@ export class JobTaskNewClusterInitScriptsOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobTaskNewClusterInitScripts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobTaskNewClusterInitScripts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -14448,7 +16081,7 @@ export class JobTaskNewClusterInitScriptsOutputReference extends cdktf.ComplexOb
       this._volumes.internalValue = undefined;
       this._workspace.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -14578,15 +16211,15 @@ export class JobTaskNewClusterInitScriptsOutputReference extends cdktf.ComplexOb
   }
 }
 
-export class JobTaskNewClusterInitScriptsList extends cdktf.ComplexList {
-  public internalValue? : JobTaskNewClusterInitScripts[] | cdktf.IResolvable
+export class JobTaskNewClusterInitScriptsList extends cdktn.ComplexList {
+  public internalValue? : JobTaskNewClusterInitScripts[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -14599,41 +16232,41 @@ export class JobTaskNewClusterInitScriptsList extends cdktf.ComplexList {
 }
 export interface JobTaskNewClusterLibraryCran {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#package Job#package}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#package Job#package}
   */
   readonly package: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#repo Job#repo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#repo Job#repo}
   */
   readonly repo?: string;
 }
 
 export function jobTaskNewClusterLibraryCranToTerraform(struct?: JobTaskNewClusterLibraryCranOutputReference | JobTaskNewClusterLibraryCran): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    package: cdktf.stringToTerraform(struct!.package),
-    repo: cdktf.stringToTerraform(struct!.repo),
+    package: cdktn.stringToTerraform(struct!.package),
+    repo: cdktn.stringToTerraform(struct!.repo),
   }
 }
 
 
 export function jobTaskNewClusterLibraryCranToHclTerraform(struct?: JobTaskNewClusterLibraryCranOutputReference | JobTaskNewClusterLibraryCran): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     package: {
-      value: cdktf.stringToHclTerraform(struct!.package),
+      value: cdktn.stringToHclTerraform(struct!.package),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     repo: {
-      value: cdktf.stringToHclTerraform(struct!.repo),
+      value: cdktn.stringToHclTerraform(struct!.repo),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -14644,14 +16277,14 @@ export function jobTaskNewClusterLibraryCranToHclTerraform(struct?: JobTaskNewCl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskNewClusterLibraryCranOutputReference extends cdktf.ComplexObject {
+export class JobTaskNewClusterLibraryCranOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -14713,52 +16346,52 @@ export class JobTaskNewClusterLibraryCranOutputReference extends cdktf.ComplexOb
 }
 export interface JobTaskNewClusterLibraryMaven {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#coordinates Job#coordinates}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#coordinates Job#coordinates}
   */
   readonly coordinates: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#exclusions Job#exclusions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#exclusions Job#exclusions}
   */
   readonly exclusions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#repo Job#repo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#repo Job#repo}
   */
   readonly repo?: string;
 }
 
 export function jobTaskNewClusterLibraryMavenToTerraform(struct?: JobTaskNewClusterLibraryMavenOutputReference | JobTaskNewClusterLibraryMaven): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    coordinates: cdktf.stringToTerraform(struct!.coordinates),
-    exclusions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.exclusions),
-    repo: cdktf.stringToTerraform(struct!.repo),
+    coordinates: cdktn.stringToTerraform(struct!.coordinates),
+    exclusions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.exclusions),
+    repo: cdktn.stringToTerraform(struct!.repo),
   }
 }
 
 
 export function jobTaskNewClusterLibraryMavenToHclTerraform(struct?: JobTaskNewClusterLibraryMavenOutputReference | JobTaskNewClusterLibraryMaven): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     coordinates: {
-      value: cdktf.stringToHclTerraform(struct!.coordinates),
+      value: cdktn.stringToHclTerraform(struct!.coordinates),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     exclusions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.exclusions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.exclusions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     repo: {
-      value: cdktf.stringToHclTerraform(struct!.repo),
+      value: cdktn.stringToHclTerraform(struct!.repo),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -14769,14 +16402,14 @@ export function jobTaskNewClusterLibraryMavenToHclTerraform(struct?: JobTaskNewC
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskNewClusterLibraryMavenOutputReference extends cdktf.ComplexObject {
+export class JobTaskNewClusterLibraryMavenOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -14860,30 +16493,30 @@ export class JobTaskNewClusterLibraryMavenOutputReference extends cdktf.ComplexO
 }
 export interface JobTaskNewClusterLibraryProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#workspace_id Job#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#workspace_id Job#workspace_id}
   */
   readonly workspaceId: string;
 }
 
 export function jobTaskNewClusterLibraryProviderConfigToTerraform(struct?: JobTaskNewClusterLibraryProviderConfigOutputReference | JobTaskNewClusterLibraryProviderConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    workspace_id: cdktf.stringToTerraform(struct!.workspaceId),
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
   }
 }
 
 
 export function jobTaskNewClusterLibraryProviderConfigToHclTerraform(struct?: JobTaskNewClusterLibraryProviderConfigOutputReference | JobTaskNewClusterLibraryProviderConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     workspace_id: {
-      value: cdktf.stringToHclTerraform(struct!.workspaceId),
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -14894,14 +16527,14 @@ export function jobTaskNewClusterLibraryProviderConfigToHclTerraform(struct?: Jo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskNewClusterLibraryProviderConfigOutputReference extends cdktf.ComplexObject {
+export class JobTaskNewClusterLibraryProviderConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -14941,41 +16574,41 @@ export class JobTaskNewClusterLibraryProviderConfigOutputReference extends cdktf
 }
 export interface JobTaskNewClusterLibraryPypi {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#package Job#package}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#package Job#package}
   */
   readonly package: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#repo Job#repo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#repo Job#repo}
   */
   readonly repo?: string;
 }
 
 export function jobTaskNewClusterLibraryPypiToTerraform(struct?: JobTaskNewClusterLibraryPypiOutputReference | JobTaskNewClusterLibraryPypi): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    package: cdktf.stringToTerraform(struct!.package),
-    repo: cdktf.stringToTerraform(struct!.repo),
+    package: cdktn.stringToTerraform(struct!.package),
+    repo: cdktn.stringToTerraform(struct!.repo),
   }
 }
 
 
 export function jobTaskNewClusterLibraryPypiToHclTerraform(struct?: JobTaskNewClusterLibraryPypiOutputReference | JobTaskNewClusterLibraryPypi): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     package: {
-      value: cdktf.stringToHclTerraform(struct!.package),
+      value: cdktn.stringToHclTerraform(struct!.package),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     repo: {
-      value: cdktf.stringToHclTerraform(struct!.repo),
+      value: cdktn.stringToHclTerraform(struct!.repo),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -14986,14 +16619,14 @@ export function jobTaskNewClusterLibraryPypiToHclTerraform(struct?: JobTaskNewCl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskNewClusterLibraryPypiOutputReference extends cdktf.ComplexObject {
+export class JobTaskNewClusterLibraryPypiOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -15055,57 +16688,57 @@ export class JobTaskNewClusterLibraryPypiOutputReference extends cdktf.ComplexOb
 }
 export interface JobTaskNewClusterLibrary {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#egg Job#egg}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#egg Job#egg}
   */
   readonly egg?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#jar Job#jar}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#jar Job#jar}
   */
   readonly jar?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#requirements Job#requirements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#requirements Job#requirements}
   */
   readonly requirements?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#whl Job#whl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#whl Job#whl}
   */
   readonly whl?: string;
   /**
   * cran block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#cran Job#cran}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#cran Job#cran}
   */
   readonly cran?: JobTaskNewClusterLibraryCran;
   /**
   * maven block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#maven Job#maven}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#maven Job#maven}
   */
   readonly maven?: JobTaskNewClusterLibraryMaven;
   /**
   * provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#provider_config Job#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#provider_config Job#provider_config}
   */
   readonly providerConfig?: JobTaskNewClusterLibraryProviderConfig;
   /**
   * pypi block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#pypi Job#pypi}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#pypi Job#pypi}
   */
   readonly pypi?: JobTaskNewClusterLibraryPypi;
 }
 
-export function jobTaskNewClusterLibraryToTerraform(struct?: JobTaskNewClusterLibrary | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobTaskNewClusterLibraryToTerraform(struct?: JobTaskNewClusterLibrary | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    egg: cdktf.stringToTerraform(struct!.egg),
-    jar: cdktf.stringToTerraform(struct!.jar),
-    requirements: cdktf.stringToTerraform(struct!.requirements),
-    whl: cdktf.stringToTerraform(struct!.whl),
+    egg: cdktn.stringToTerraform(struct!.egg),
+    jar: cdktn.stringToTerraform(struct!.jar),
+    requirements: cdktn.stringToTerraform(struct!.requirements),
+    whl: cdktn.stringToTerraform(struct!.whl),
     cran: jobTaskNewClusterLibraryCranToTerraform(struct!.cran),
     maven: jobTaskNewClusterLibraryMavenToTerraform(struct!.maven),
     provider_config: jobTaskNewClusterLibraryProviderConfigToTerraform(struct!.providerConfig),
@@ -15114,32 +16747,32 @@ export function jobTaskNewClusterLibraryToTerraform(struct?: JobTaskNewClusterLi
 }
 
 
-export function jobTaskNewClusterLibraryToHclTerraform(struct?: JobTaskNewClusterLibrary | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobTaskNewClusterLibraryToHclTerraform(struct?: JobTaskNewClusterLibrary | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     egg: {
-      value: cdktf.stringToHclTerraform(struct!.egg),
+      value: cdktn.stringToHclTerraform(struct!.egg),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     jar: {
-      value: cdktf.stringToHclTerraform(struct!.jar),
+      value: cdktn.stringToHclTerraform(struct!.jar),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     requirements: {
-      value: cdktf.stringToHclTerraform(struct!.requirements),
+      value: cdktn.stringToHclTerraform(struct!.requirements),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     whl: {
-      value: cdktf.stringToHclTerraform(struct!.whl),
+      value: cdktn.stringToHclTerraform(struct!.whl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -15174,9 +16807,9 @@ export function jobTaskNewClusterLibraryToHclTerraform(struct?: JobTaskNewCluste
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskNewClusterLibraryOutputReference extends cdktf.ComplexObject {
+export class JobTaskNewClusterLibraryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -15184,11 +16817,11 @@ export class JobTaskNewClusterLibraryOutputReference extends cdktf.ComplexObject
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobTaskNewClusterLibrary | cdktf.IResolvable | undefined {
+  public get internalValue(): JobTaskNewClusterLibrary | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -15229,7 +16862,7 @@ export class JobTaskNewClusterLibraryOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobTaskNewClusterLibrary | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobTaskNewClusterLibrary | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -15242,7 +16875,7 @@ export class JobTaskNewClusterLibraryOutputReference extends cdktf.ComplexObject
       this._providerConfig.internalValue = undefined;
       this._pypi.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -15389,15 +17022,15 @@ export class JobTaskNewClusterLibraryOutputReference extends cdktf.ComplexObject
   }
 }
 
-export class JobTaskNewClusterLibraryList extends cdktf.ComplexList {
-  public internalValue? : JobTaskNewClusterLibrary[] | cdktf.IResolvable
+export class JobTaskNewClusterLibraryList extends cdktn.ComplexList {
+  public internalValue? : JobTaskNewClusterLibrary[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -15410,30 +17043,30 @@ export class JobTaskNewClusterLibraryList extends cdktf.ComplexList {
 }
 export interface JobTaskNewClusterProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#workspace_id Job#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#workspace_id Job#workspace_id}
   */
   readonly workspaceId: string;
 }
 
 export function jobTaskNewClusterProviderConfigToTerraform(struct?: JobTaskNewClusterProviderConfigOutputReference | JobTaskNewClusterProviderConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    workspace_id: cdktf.stringToTerraform(struct!.workspaceId),
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
   }
 }
 
 
 export function jobTaskNewClusterProviderConfigToHclTerraform(struct?: JobTaskNewClusterProviderConfigOutputReference | JobTaskNewClusterProviderConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     workspace_id: {
-      value: cdktf.stringToHclTerraform(struct!.workspaceId),
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -15444,14 +17077,14 @@ export function jobTaskNewClusterProviderConfigToHclTerraform(struct?: JobTaskNe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskNewClusterProviderConfigOutputReference extends cdktf.ComplexObject {
+export class JobTaskNewClusterProviderConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -15489,43 +17122,127 @@ export class JobTaskNewClusterProviderConfigOutputReference extends cdktf.Comple
     return this._workspaceId;
   }
 }
-export interface JobTaskNewClusterWorkloadTypeClients {
+export interface JobTaskNewClusterWorkerNodeTypeFlexibility {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#jobs Job#jobs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#alternate_node_type_ids Job#alternate_node_type_ids}
   */
-  readonly jobs?: boolean | cdktf.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#notebooks Job#notebooks}
-  */
-  readonly notebooks?: boolean | cdktf.IResolvable;
+  readonly alternateNodeTypeIds?: string[];
 }
 
-export function jobTaskNewClusterWorkloadTypeClientsToTerraform(struct?: JobTaskNewClusterWorkloadTypeClientsOutputReference | JobTaskNewClusterWorkloadTypeClients): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobTaskNewClusterWorkerNodeTypeFlexibilityToTerraform(struct?: JobTaskNewClusterWorkerNodeTypeFlexibilityOutputReference | JobTaskNewClusterWorkerNodeTypeFlexibility): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    jobs: cdktf.booleanToTerraform(struct!.jobs),
-    notebooks: cdktf.booleanToTerraform(struct!.notebooks),
+    alternate_node_type_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.alternateNodeTypeIds),
+  }
+}
+
+
+export function jobTaskNewClusterWorkerNodeTypeFlexibilityToHclTerraform(struct?: JobTaskNewClusterWorkerNodeTypeFlexibilityOutputReference | JobTaskNewClusterWorkerNodeTypeFlexibility): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    alternate_node_type_ids: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.alternateNodeTypeIds),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class JobTaskNewClusterWorkerNodeTypeFlexibilityOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): JobTaskNewClusterWorkerNodeTypeFlexibility | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._alternateNodeTypeIds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.alternateNodeTypeIds = this._alternateNodeTypeIds;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: JobTaskNewClusterWorkerNodeTypeFlexibility | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._alternateNodeTypeIds = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._alternateNodeTypeIds = value.alternateNodeTypeIds;
+    }
+  }
+
+  // alternate_node_type_ids - computed: false, optional: true, required: false
+  private _alternateNodeTypeIds?: string[]; 
+  public get alternateNodeTypeIds() {
+    return this.getListAttribute('alternate_node_type_ids');
+  }
+  public set alternateNodeTypeIds(value: string[]) {
+    this._alternateNodeTypeIds = value;
+  }
+  public resetAlternateNodeTypeIds() {
+    this._alternateNodeTypeIds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get alternateNodeTypeIdsInput() {
+    return this._alternateNodeTypeIds;
+  }
+}
+export interface JobTaskNewClusterWorkloadTypeClients {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#jobs Job#jobs}
+  */
+  readonly jobs?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#notebooks Job#notebooks}
+  */
+  readonly notebooks?: boolean | cdktn.IResolvable;
+}
+
+export function jobTaskNewClusterWorkloadTypeClientsToTerraform(struct?: JobTaskNewClusterWorkloadTypeClientsOutputReference | JobTaskNewClusterWorkloadTypeClients): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    jobs: cdktn.booleanToTerraform(struct!.jobs),
+    notebooks: cdktn.booleanToTerraform(struct!.notebooks),
   }
 }
 
 
 export function jobTaskNewClusterWorkloadTypeClientsToHclTerraform(struct?: JobTaskNewClusterWorkloadTypeClientsOutputReference | JobTaskNewClusterWorkloadTypeClients): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     jobs: {
-      value: cdktf.booleanToHclTerraform(struct!.jobs),
+      value: cdktn.booleanToHclTerraform(struct!.jobs),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     notebooks: {
-      value: cdktf.booleanToHclTerraform(struct!.notebooks),
+      value: cdktn.booleanToHclTerraform(struct!.notebooks),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -15536,14 +17253,14 @@ export function jobTaskNewClusterWorkloadTypeClientsToHclTerraform(struct?: JobT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskNewClusterWorkloadTypeClientsOutputReference extends cdktf.ComplexObject {
+export class JobTaskNewClusterWorkloadTypeClientsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -15575,11 +17292,11 @@ export class JobTaskNewClusterWorkloadTypeClientsOutputReference extends cdktf.C
   }
 
   // jobs - computed: false, optional: true, required: false
-  private _jobs?: boolean | cdktf.IResolvable; 
+  private _jobs?: boolean | cdktn.IResolvable; 
   public get jobs() {
     return this.getBooleanAttribute('jobs');
   }
-  public set jobs(value: boolean | cdktf.IResolvable) {
+  public set jobs(value: boolean | cdktn.IResolvable) {
     this._jobs = value;
   }
   public resetJobs() {
@@ -15591,11 +17308,11 @@ export class JobTaskNewClusterWorkloadTypeClientsOutputReference extends cdktf.C
   }
 
   // notebooks - computed: false, optional: true, required: false
-  private _notebooks?: boolean | cdktf.IResolvable; 
+  private _notebooks?: boolean | cdktn.IResolvable; 
   public get notebooks() {
     return this.getBooleanAttribute('notebooks');
   }
-  public set notebooks(value: boolean | cdktf.IResolvable) {
+  public set notebooks(value: boolean | cdktn.IResolvable) {
     this._notebooks = value;
   }
   public resetNotebooks() {
@@ -15610,14 +17327,14 @@ export interface JobTaskNewClusterWorkloadType {
   /**
   * clients block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#clients Job#clients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#clients Job#clients}
   */
   readonly clients: JobTaskNewClusterWorkloadTypeClients;
 }
 
 export function jobTaskNewClusterWorkloadTypeToTerraform(struct?: JobTaskNewClusterWorkloadTypeOutputReference | JobTaskNewClusterWorkloadType): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -15627,8 +17344,8 @@ export function jobTaskNewClusterWorkloadTypeToTerraform(struct?: JobTaskNewClus
 
 
 export function jobTaskNewClusterWorkloadTypeToHclTerraform(struct?: JobTaskNewClusterWorkloadTypeOutputReference | JobTaskNewClusterWorkloadType): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -15644,14 +17361,14 @@ export function jobTaskNewClusterWorkloadTypeToHclTerraform(struct?: JobTaskNewC
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskNewClusterWorkloadTypeOutputReference extends cdktf.ComplexObject {
+export class JobTaskNewClusterWorkloadTypeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -15691,382 +17408,396 @@ export class JobTaskNewClusterWorkloadTypeOutputReference extends cdktf.ComplexO
 }
 export interface JobTaskNewCluster {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#__apply_policy_default_values_allow_list Job#__apply_policy_default_values_allow_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#__apply_policy_default_values_allow_list Job#__apply_policy_default_values_allow_list}
   */
   readonly applyPolicyDefaultValuesAllowList?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#apply_policy_default_values Job#apply_policy_default_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#apply_policy_default_values Job#apply_policy_default_values}
   */
-  readonly applyPolicyDefaultValues?: boolean | cdktf.IResolvable;
+  readonly applyPolicyDefaultValues?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#cluster_id Job#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#cluster_id Job#cluster_id}
   */
   readonly clusterId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#cluster_name Job#cluster_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#cluster_name Job#cluster_name}
   */
   readonly clusterName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#custom_tags Job#custom_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#custom_tags Job#custom_tags}
   */
   readonly customTags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#data_security_mode Job#data_security_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#data_security_mode Job#data_security_mode}
   */
   readonly dataSecurityMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#driver_instance_pool_id Job#driver_instance_pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#driver_instance_pool_id Job#driver_instance_pool_id}
   */
   readonly driverInstancePoolId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#driver_node_type_id Job#driver_node_type_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#driver_node_type_id Job#driver_node_type_id}
   */
   readonly driverNodeTypeId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#enable_elastic_disk Job#enable_elastic_disk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#enable_elastic_disk Job#enable_elastic_disk}
   */
-  readonly enableElasticDisk?: boolean | cdktf.IResolvable;
+  readonly enableElasticDisk?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#enable_local_disk_encryption Job#enable_local_disk_encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#enable_local_disk_encryption Job#enable_local_disk_encryption}
   */
-  readonly enableLocalDiskEncryption?: boolean | cdktf.IResolvable;
+  readonly enableLocalDiskEncryption?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#idempotency_token Job#idempotency_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#idempotency_token Job#idempotency_token}
   */
   readonly idempotencyToken?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#instance_pool_id Job#instance_pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#instance_pool_id Job#instance_pool_id}
   */
   readonly instancePoolId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#is_single_node Job#is_single_node}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#is_single_node Job#is_single_node}
   */
-  readonly isSingleNode?: boolean | cdktf.IResolvable;
+  readonly isSingleNode?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#kind Job#kind}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#kind Job#kind}
   */
   readonly kind?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#node_type_id Job#node_type_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#node_type_id Job#node_type_id}
   */
   readonly nodeTypeId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#num_workers Job#num_workers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#num_workers Job#num_workers}
   */
   readonly numWorkers?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#policy_id Job#policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#policy_id Job#policy_id}
   */
   readonly policyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#remote_disk_throughput Job#remote_disk_throughput}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#remote_disk_throughput Job#remote_disk_throughput}
   */
   readonly remoteDiskThroughput?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#runtime_engine Job#runtime_engine}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#runtime_engine Job#runtime_engine}
   */
   readonly runtimeEngine?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#single_user_name Job#single_user_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#single_user_name Job#single_user_name}
   */
   readonly singleUserName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#spark_conf Job#spark_conf}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#spark_conf Job#spark_conf}
   */
   readonly sparkConf?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#spark_env_vars Job#spark_env_vars}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#spark_env_vars Job#spark_env_vars}
   */
   readonly sparkEnvVars?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#spark_version Job#spark_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#spark_version Job#spark_version}
   */
   readonly sparkVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#ssh_public_keys Job#ssh_public_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#ssh_public_keys Job#ssh_public_keys}
   */
   readonly sshPublicKeys?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#total_initial_remote_disk_size Job#total_initial_remote_disk_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#total_initial_remote_disk_size Job#total_initial_remote_disk_size}
   */
   readonly totalInitialRemoteDiskSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#use_ml_runtime Job#use_ml_runtime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#use_ml_runtime Job#use_ml_runtime}
   */
-  readonly useMlRuntime?: boolean | cdktf.IResolvable;
+  readonly useMlRuntime?: boolean | cdktn.IResolvable;
   /**
   * autoscale block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#autoscale Job#autoscale}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#autoscale Job#autoscale}
   */
   readonly autoscale?: JobTaskNewClusterAutoscale;
   /**
   * aws_attributes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#aws_attributes Job#aws_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#aws_attributes Job#aws_attributes}
   */
   readonly awsAttributes?: JobTaskNewClusterAwsAttributes;
   /**
   * azure_attributes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#azure_attributes Job#azure_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#azure_attributes Job#azure_attributes}
   */
   readonly azureAttributes?: JobTaskNewClusterAzureAttributes;
   /**
   * cluster_log_conf block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#cluster_log_conf Job#cluster_log_conf}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#cluster_log_conf Job#cluster_log_conf}
   */
   readonly clusterLogConf?: JobTaskNewClusterClusterLogConf;
   /**
   * cluster_mount_info block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#cluster_mount_info Job#cluster_mount_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#cluster_mount_info Job#cluster_mount_info}
   */
-  readonly clusterMountInfo?: JobTaskNewClusterClusterMountInfo[] | cdktf.IResolvable;
+  readonly clusterMountInfo?: JobTaskNewClusterClusterMountInfo[] | cdktn.IResolvable;
   /**
   * docker_image block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#docker_image Job#docker_image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#docker_image Job#docker_image}
   */
   readonly dockerImage?: JobTaskNewClusterDockerImage;
   /**
+  * driver_node_type_flexibility block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#driver_node_type_flexibility Job#driver_node_type_flexibility}
+  */
+  readonly driverNodeTypeFlexibility?: JobTaskNewClusterDriverNodeTypeFlexibility;
+  /**
   * gcp_attributes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#gcp_attributes Job#gcp_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#gcp_attributes Job#gcp_attributes}
   */
   readonly gcpAttributes?: JobTaskNewClusterGcpAttributes;
   /**
   * init_scripts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#init_scripts Job#init_scripts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#init_scripts Job#init_scripts}
   */
-  readonly initScripts?: JobTaskNewClusterInitScripts[] | cdktf.IResolvable;
+  readonly initScripts?: JobTaskNewClusterInitScripts[] | cdktn.IResolvable;
   /**
   * library block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#library Job#library}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#library Job#library}
   */
-  readonly library?: JobTaskNewClusterLibrary[] | cdktf.IResolvable;
+  readonly library?: JobTaskNewClusterLibrary[] | cdktn.IResolvable;
   /**
   * provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#provider_config Job#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#provider_config Job#provider_config}
   */
   readonly providerConfig?: JobTaskNewClusterProviderConfig;
   /**
+  * worker_node_type_flexibility block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#worker_node_type_flexibility Job#worker_node_type_flexibility}
+  */
+  readonly workerNodeTypeFlexibility?: JobTaskNewClusterWorkerNodeTypeFlexibility;
+  /**
   * workload_type block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#workload_type Job#workload_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#workload_type Job#workload_type}
   */
   readonly workloadType?: JobTaskNewClusterWorkloadType;
 }
 
 export function jobTaskNewClusterToTerraform(struct?: JobTaskNewClusterOutputReference | JobTaskNewCluster): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    __apply_policy_default_values_allow_list: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.applyPolicyDefaultValuesAllowList),
-    apply_policy_default_values: cdktf.booleanToTerraform(struct!.applyPolicyDefaultValues),
-    cluster_id: cdktf.stringToTerraform(struct!.clusterId),
-    cluster_name: cdktf.stringToTerraform(struct!.clusterName),
-    custom_tags: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.customTags),
-    data_security_mode: cdktf.stringToTerraform(struct!.dataSecurityMode),
-    driver_instance_pool_id: cdktf.stringToTerraform(struct!.driverInstancePoolId),
-    driver_node_type_id: cdktf.stringToTerraform(struct!.driverNodeTypeId),
-    enable_elastic_disk: cdktf.booleanToTerraform(struct!.enableElasticDisk),
-    enable_local_disk_encryption: cdktf.booleanToTerraform(struct!.enableLocalDiskEncryption),
-    idempotency_token: cdktf.stringToTerraform(struct!.idempotencyToken),
-    instance_pool_id: cdktf.stringToTerraform(struct!.instancePoolId),
-    is_single_node: cdktf.booleanToTerraform(struct!.isSingleNode),
-    kind: cdktf.stringToTerraform(struct!.kind),
-    node_type_id: cdktf.stringToTerraform(struct!.nodeTypeId),
-    num_workers: cdktf.numberToTerraform(struct!.numWorkers),
-    policy_id: cdktf.stringToTerraform(struct!.policyId),
-    remote_disk_throughput: cdktf.numberToTerraform(struct!.remoteDiskThroughput),
-    runtime_engine: cdktf.stringToTerraform(struct!.runtimeEngine),
-    single_user_name: cdktf.stringToTerraform(struct!.singleUserName),
-    spark_conf: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.sparkConf),
-    spark_env_vars: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.sparkEnvVars),
-    spark_version: cdktf.stringToTerraform(struct!.sparkVersion),
-    ssh_public_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sshPublicKeys),
-    total_initial_remote_disk_size: cdktf.numberToTerraform(struct!.totalInitialRemoteDiskSize),
-    use_ml_runtime: cdktf.booleanToTerraform(struct!.useMlRuntime),
+    __apply_policy_default_values_allow_list: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.applyPolicyDefaultValuesAllowList),
+    apply_policy_default_values: cdktn.booleanToTerraform(struct!.applyPolicyDefaultValues),
+    cluster_id: cdktn.stringToTerraform(struct!.clusterId),
+    cluster_name: cdktn.stringToTerraform(struct!.clusterName),
+    custom_tags: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.customTags),
+    data_security_mode: cdktn.stringToTerraform(struct!.dataSecurityMode),
+    driver_instance_pool_id: cdktn.stringToTerraform(struct!.driverInstancePoolId),
+    driver_node_type_id: cdktn.stringToTerraform(struct!.driverNodeTypeId),
+    enable_elastic_disk: cdktn.booleanToTerraform(struct!.enableElasticDisk),
+    enable_local_disk_encryption: cdktn.booleanToTerraform(struct!.enableLocalDiskEncryption),
+    idempotency_token: cdktn.stringToTerraform(struct!.idempotencyToken),
+    instance_pool_id: cdktn.stringToTerraform(struct!.instancePoolId),
+    is_single_node: cdktn.booleanToTerraform(struct!.isSingleNode),
+    kind: cdktn.stringToTerraform(struct!.kind),
+    node_type_id: cdktn.stringToTerraform(struct!.nodeTypeId),
+    num_workers: cdktn.numberToTerraform(struct!.numWorkers),
+    policy_id: cdktn.stringToTerraform(struct!.policyId),
+    remote_disk_throughput: cdktn.numberToTerraform(struct!.remoteDiskThroughput),
+    runtime_engine: cdktn.stringToTerraform(struct!.runtimeEngine),
+    single_user_name: cdktn.stringToTerraform(struct!.singleUserName),
+    spark_conf: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.sparkConf),
+    spark_env_vars: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.sparkEnvVars),
+    spark_version: cdktn.stringToTerraform(struct!.sparkVersion),
+    ssh_public_keys: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.sshPublicKeys),
+    total_initial_remote_disk_size: cdktn.numberToTerraform(struct!.totalInitialRemoteDiskSize),
+    use_ml_runtime: cdktn.booleanToTerraform(struct!.useMlRuntime),
     autoscale: jobTaskNewClusterAutoscaleToTerraform(struct!.autoscale),
     aws_attributes: jobTaskNewClusterAwsAttributesToTerraform(struct!.awsAttributes),
     azure_attributes: jobTaskNewClusterAzureAttributesToTerraform(struct!.azureAttributes),
     cluster_log_conf: jobTaskNewClusterClusterLogConfToTerraform(struct!.clusterLogConf),
-    cluster_mount_info: cdktf.listMapper(jobTaskNewClusterClusterMountInfoToTerraform, true)(struct!.clusterMountInfo),
+    cluster_mount_info: cdktn.listMapper(jobTaskNewClusterClusterMountInfoToTerraform, true)(struct!.clusterMountInfo),
     docker_image: jobTaskNewClusterDockerImageToTerraform(struct!.dockerImage),
+    driver_node_type_flexibility: jobTaskNewClusterDriverNodeTypeFlexibilityToTerraform(struct!.driverNodeTypeFlexibility),
     gcp_attributes: jobTaskNewClusterGcpAttributesToTerraform(struct!.gcpAttributes),
-    init_scripts: cdktf.listMapper(jobTaskNewClusterInitScriptsToTerraform, true)(struct!.initScripts),
-    library: cdktf.listMapper(jobTaskNewClusterLibraryToTerraform, true)(struct!.library),
+    init_scripts: cdktn.listMapper(jobTaskNewClusterInitScriptsToTerraform, true)(struct!.initScripts),
+    library: cdktn.listMapper(jobTaskNewClusterLibraryToTerraform, true)(struct!.library),
     provider_config: jobTaskNewClusterProviderConfigToTerraform(struct!.providerConfig),
+    worker_node_type_flexibility: jobTaskNewClusterWorkerNodeTypeFlexibilityToTerraform(struct!.workerNodeTypeFlexibility),
     workload_type: jobTaskNewClusterWorkloadTypeToTerraform(struct!.workloadType),
   }
 }
 
 
 export function jobTaskNewClusterToHclTerraform(struct?: JobTaskNewClusterOutputReference | JobTaskNewCluster): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     __apply_policy_default_values_allow_list: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.applyPolicyDefaultValuesAllowList),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.applyPolicyDefaultValuesAllowList),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     apply_policy_default_values: {
-      value: cdktf.booleanToHclTerraform(struct!.applyPolicyDefaultValues),
+      value: cdktn.booleanToHclTerraform(struct!.applyPolicyDefaultValues),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     cluster_id: {
-      value: cdktf.stringToHclTerraform(struct!.clusterId),
+      value: cdktn.stringToHclTerraform(struct!.clusterId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cluster_name: {
-      value: cdktf.stringToHclTerraform(struct!.clusterName),
+      value: cdktn.stringToHclTerraform(struct!.clusterName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     custom_tags: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.customTags),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.customTags),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     data_security_mode: {
-      value: cdktf.stringToHclTerraform(struct!.dataSecurityMode),
+      value: cdktn.stringToHclTerraform(struct!.dataSecurityMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     driver_instance_pool_id: {
-      value: cdktf.stringToHclTerraform(struct!.driverInstancePoolId),
+      value: cdktn.stringToHclTerraform(struct!.driverInstancePoolId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     driver_node_type_id: {
-      value: cdktf.stringToHclTerraform(struct!.driverNodeTypeId),
+      value: cdktn.stringToHclTerraform(struct!.driverNodeTypeId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     enable_elastic_disk: {
-      value: cdktf.booleanToHclTerraform(struct!.enableElasticDisk),
+      value: cdktn.booleanToHclTerraform(struct!.enableElasticDisk),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     enable_local_disk_encryption: {
-      value: cdktf.booleanToHclTerraform(struct!.enableLocalDiskEncryption),
+      value: cdktn.booleanToHclTerraform(struct!.enableLocalDiskEncryption),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     idempotency_token: {
-      value: cdktf.stringToHclTerraform(struct!.idempotencyToken),
+      value: cdktn.stringToHclTerraform(struct!.idempotencyToken),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     instance_pool_id: {
-      value: cdktf.stringToHclTerraform(struct!.instancePoolId),
+      value: cdktn.stringToHclTerraform(struct!.instancePoolId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     is_single_node: {
-      value: cdktf.booleanToHclTerraform(struct!.isSingleNode),
+      value: cdktn.booleanToHclTerraform(struct!.isSingleNode),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     kind: {
-      value: cdktf.stringToHclTerraform(struct!.kind),
+      value: cdktn.stringToHclTerraform(struct!.kind),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     node_type_id: {
-      value: cdktf.stringToHclTerraform(struct!.nodeTypeId),
+      value: cdktn.stringToHclTerraform(struct!.nodeTypeId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     num_workers: {
-      value: cdktf.numberToHclTerraform(struct!.numWorkers),
+      value: cdktn.numberToHclTerraform(struct!.numWorkers),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     policy_id: {
-      value: cdktf.stringToHclTerraform(struct!.policyId),
+      value: cdktn.stringToHclTerraform(struct!.policyId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     remote_disk_throughput: {
-      value: cdktf.numberToHclTerraform(struct!.remoteDiskThroughput),
+      value: cdktn.numberToHclTerraform(struct!.remoteDiskThroughput),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     runtime_engine: {
-      value: cdktf.stringToHclTerraform(struct!.runtimeEngine),
+      value: cdktn.stringToHclTerraform(struct!.runtimeEngine),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     single_user_name: {
-      value: cdktf.stringToHclTerraform(struct!.singleUserName),
+      value: cdktn.stringToHclTerraform(struct!.singleUserName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     spark_conf: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.sparkConf),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.sparkConf),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     spark_env_vars: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.sparkEnvVars),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.sparkEnvVars),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     spark_version: {
-      value: cdktf.stringToHclTerraform(struct!.sparkVersion),
+      value: cdktn.stringToHclTerraform(struct!.sparkVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ssh_public_keys: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sshPublicKeys),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.sshPublicKeys),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     total_initial_remote_disk_size: {
-      value: cdktf.numberToHclTerraform(struct!.totalInitialRemoteDiskSize),
+      value: cdktn.numberToHclTerraform(struct!.totalInitialRemoteDiskSize),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     use_ml_runtime: {
-      value: cdktf.booleanToHclTerraform(struct!.useMlRuntime),
+      value: cdktn.booleanToHclTerraform(struct!.useMlRuntime),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -16096,7 +17827,7 @@ export function jobTaskNewClusterToHclTerraform(struct?: JobTaskNewClusterOutput
       storageClassType: "JobTaskNewClusterClusterLogConfList",
     },
     cluster_mount_info: {
-      value: cdktf.listMapperHcl(jobTaskNewClusterClusterMountInfoToHclTerraform, true)(struct!.clusterMountInfo),
+      value: cdktn.listMapperHcl(jobTaskNewClusterClusterMountInfoToHclTerraform, true)(struct!.clusterMountInfo),
       isBlock: true,
       type: "list",
       storageClassType: "JobTaskNewClusterClusterMountInfoList",
@@ -16107,6 +17838,12 @@ export function jobTaskNewClusterToHclTerraform(struct?: JobTaskNewClusterOutput
       type: "list",
       storageClassType: "JobTaskNewClusterDockerImageList",
     },
+    driver_node_type_flexibility: {
+      value: jobTaskNewClusterDriverNodeTypeFlexibilityToHclTerraform(struct!.driverNodeTypeFlexibility),
+      isBlock: true,
+      type: "list",
+      storageClassType: "JobTaskNewClusterDriverNodeTypeFlexibilityList",
+    },
     gcp_attributes: {
       value: jobTaskNewClusterGcpAttributesToHclTerraform(struct!.gcpAttributes),
       isBlock: true,
@@ -16114,13 +17851,13 @@ export function jobTaskNewClusterToHclTerraform(struct?: JobTaskNewClusterOutput
       storageClassType: "JobTaskNewClusterGcpAttributesList",
     },
     init_scripts: {
-      value: cdktf.listMapperHcl(jobTaskNewClusterInitScriptsToHclTerraform, true)(struct!.initScripts),
+      value: cdktn.listMapperHcl(jobTaskNewClusterInitScriptsToHclTerraform, true)(struct!.initScripts),
       isBlock: true,
       type: "list",
       storageClassType: "JobTaskNewClusterInitScriptsList",
     },
     library: {
-      value: cdktf.listMapperHcl(jobTaskNewClusterLibraryToHclTerraform, true)(struct!.library),
+      value: cdktn.listMapperHcl(jobTaskNewClusterLibraryToHclTerraform, true)(struct!.library),
       isBlock: true,
       type: "set",
       storageClassType: "JobTaskNewClusterLibraryList",
@@ -16130,6 +17867,12 @@ export function jobTaskNewClusterToHclTerraform(struct?: JobTaskNewClusterOutput
       isBlock: true,
       type: "list",
       storageClassType: "JobTaskNewClusterProviderConfigList",
+    },
+    worker_node_type_flexibility: {
+      value: jobTaskNewClusterWorkerNodeTypeFlexibilityToHclTerraform(struct!.workerNodeTypeFlexibility),
+      isBlock: true,
+      type: "list",
+      storageClassType: "JobTaskNewClusterWorkerNodeTypeFlexibilityList",
     },
     workload_type: {
       value: jobTaskNewClusterWorkloadTypeToHclTerraform(struct!.workloadType),
@@ -16143,14 +17886,14 @@ export function jobTaskNewClusterToHclTerraform(struct?: JobTaskNewClusterOutput
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskNewClusterOutputReference extends cdktf.ComplexObject {
+export class JobTaskNewClusterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -16285,6 +18028,10 @@ export class JobTaskNewClusterOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.dockerImage = this._dockerImage?.internalValue;
     }
+    if (this._driverNodeTypeFlexibility?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.driverNodeTypeFlexibility = this._driverNodeTypeFlexibility?.internalValue;
+    }
     if (this._gcpAttributes?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.gcpAttributes = this._gcpAttributes?.internalValue;
@@ -16300,6 +18047,10 @@ export class JobTaskNewClusterOutputReference extends cdktf.ComplexObject {
     if (this._providerConfig?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.providerConfig = this._providerConfig?.internalValue;
+    }
+    if (this._workerNodeTypeFlexibility?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workerNodeTypeFlexibility = this._workerNodeTypeFlexibility?.internalValue;
     }
     if (this._workloadType?.internalValue !== undefined) {
       hasAnyValues = true;
@@ -16343,10 +18094,12 @@ export class JobTaskNewClusterOutputReference extends cdktf.ComplexObject {
       this._clusterLogConf.internalValue = undefined;
       this._clusterMountInfo.internalValue = undefined;
       this._dockerImage.internalValue = undefined;
+      this._driverNodeTypeFlexibility.internalValue = undefined;
       this._gcpAttributes.internalValue = undefined;
       this._initScripts.internalValue = undefined;
       this._library.internalValue = undefined;
       this._providerConfig.internalValue = undefined;
+      this._workerNodeTypeFlexibility.internalValue = undefined;
       this._workloadType.internalValue = undefined;
     }
     else {
@@ -16383,10 +18136,12 @@ export class JobTaskNewClusterOutputReference extends cdktf.ComplexObject {
       this._clusterLogConf.internalValue = value.clusterLogConf;
       this._clusterMountInfo.internalValue = value.clusterMountInfo;
       this._dockerImage.internalValue = value.dockerImage;
+      this._driverNodeTypeFlexibility.internalValue = value.driverNodeTypeFlexibility;
       this._gcpAttributes.internalValue = value.gcpAttributes;
       this._initScripts.internalValue = value.initScripts;
       this._library.internalValue = value.library;
       this._providerConfig.internalValue = value.providerConfig;
+      this._workerNodeTypeFlexibility.internalValue = value.workerNodeTypeFlexibility;
       this._workloadType.internalValue = value.workloadType;
     }
   }
@@ -16408,11 +18163,11 @@ export class JobTaskNewClusterOutputReference extends cdktf.ComplexObject {
   }
 
   // apply_policy_default_values - computed: false, optional: true, required: false
-  private _applyPolicyDefaultValues?: boolean | cdktf.IResolvable; 
+  private _applyPolicyDefaultValues?: boolean | cdktn.IResolvable; 
   public get applyPolicyDefaultValues() {
     return this.getBooleanAttribute('apply_policy_default_values');
   }
-  public set applyPolicyDefaultValues(value: boolean | cdktf.IResolvable) {
+  public set applyPolicyDefaultValues(value: boolean | cdktn.IResolvable) {
     this._applyPolicyDefaultValues = value;
   }
   public resetApplyPolicyDefaultValues() {
@@ -16520,11 +18275,11 @@ export class JobTaskNewClusterOutputReference extends cdktf.ComplexObject {
   }
 
   // enable_elastic_disk - computed: true, optional: true, required: false
-  private _enableElasticDisk?: boolean | cdktf.IResolvable; 
+  private _enableElasticDisk?: boolean | cdktn.IResolvable; 
   public get enableElasticDisk() {
     return this.getBooleanAttribute('enable_elastic_disk');
   }
-  public set enableElasticDisk(value: boolean | cdktf.IResolvable) {
+  public set enableElasticDisk(value: boolean | cdktn.IResolvable) {
     this._enableElasticDisk = value;
   }
   public resetEnableElasticDisk() {
@@ -16536,11 +18291,11 @@ export class JobTaskNewClusterOutputReference extends cdktf.ComplexObject {
   }
 
   // enable_local_disk_encryption - computed: true, optional: true, required: false
-  private _enableLocalDiskEncryption?: boolean | cdktf.IResolvable; 
+  private _enableLocalDiskEncryption?: boolean | cdktn.IResolvable; 
   public get enableLocalDiskEncryption() {
     return this.getBooleanAttribute('enable_local_disk_encryption');
   }
-  public set enableLocalDiskEncryption(value: boolean | cdktf.IResolvable) {
+  public set enableLocalDiskEncryption(value: boolean | cdktn.IResolvable) {
     this._enableLocalDiskEncryption = value;
   }
   public resetEnableLocalDiskEncryption() {
@@ -16584,11 +18339,11 @@ export class JobTaskNewClusterOutputReference extends cdktf.ComplexObject {
   }
 
   // is_single_node - computed: false, optional: true, required: false
-  private _isSingleNode?: boolean | cdktf.IResolvable; 
+  private _isSingleNode?: boolean | cdktn.IResolvable; 
   public get isSingleNode() {
     return this.getBooleanAttribute('is_single_node');
   }
-  public set isSingleNode(value: boolean | cdktf.IResolvable) {
+  public set isSingleNode(value: boolean | cdktn.IResolvable) {
     this._isSingleNode = value;
   }
   public resetIsSingleNode() {
@@ -16792,11 +18547,11 @@ export class JobTaskNewClusterOutputReference extends cdktf.ComplexObject {
   }
 
   // use_ml_runtime - computed: false, optional: true, required: false
-  private _useMlRuntime?: boolean | cdktf.IResolvable; 
+  private _useMlRuntime?: boolean | cdktn.IResolvable; 
   public get useMlRuntime() {
     return this.getBooleanAttribute('use_ml_runtime');
   }
-  public set useMlRuntime(value: boolean | cdktf.IResolvable) {
+  public set useMlRuntime(value: boolean | cdktn.IResolvable) {
     this._useMlRuntime = value;
   }
   public resetUseMlRuntime() {
@@ -16876,7 +18631,7 @@ export class JobTaskNewClusterOutputReference extends cdktf.ComplexObject {
   public get clusterMountInfo() {
     return this._clusterMountInfo;
   }
-  public putClusterMountInfo(value: JobTaskNewClusterClusterMountInfo[] | cdktf.IResolvable) {
+  public putClusterMountInfo(value: JobTaskNewClusterClusterMountInfo[] | cdktn.IResolvable) {
     this._clusterMountInfo.internalValue = value;
   }
   public resetClusterMountInfo() {
@@ -16903,6 +18658,22 @@ export class JobTaskNewClusterOutputReference extends cdktf.ComplexObject {
     return this._dockerImage.internalValue;
   }
 
+  // driver_node_type_flexibility - computed: false, optional: true, required: false
+  private _driverNodeTypeFlexibility = new JobTaskNewClusterDriverNodeTypeFlexibilityOutputReference(this, "driver_node_type_flexibility");
+  public get driverNodeTypeFlexibility() {
+    return this._driverNodeTypeFlexibility;
+  }
+  public putDriverNodeTypeFlexibility(value: JobTaskNewClusterDriverNodeTypeFlexibility) {
+    this._driverNodeTypeFlexibility.internalValue = value;
+  }
+  public resetDriverNodeTypeFlexibility() {
+    this._driverNodeTypeFlexibility.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get driverNodeTypeFlexibilityInput() {
+    return this._driverNodeTypeFlexibility.internalValue;
+  }
+
   // gcp_attributes - computed: false, optional: true, required: false
   private _gcpAttributes = new JobTaskNewClusterGcpAttributesOutputReference(this, "gcp_attributes");
   public get gcpAttributes() {
@@ -16924,7 +18695,7 @@ export class JobTaskNewClusterOutputReference extends cdktf.ComplexObject {
   public get initScripts() {
     return this._initScripts;
   }
-  public putInitScripts(value: JobTaskNewClusterInitScripts[] | cdktf.IResolvable) {
+  public putInitScripts(value: JobTaskNewClusterInitScripts[] | cdktn.IResolvable) {
     this._initScripts.internalValue = value;
   }
   public resetInitScripts() {
@@ -16940,7 +18711,7 @@ export class JobTaskNewClusterOutputReference extends cdktf.ComplexObject {
   public get library() {
     return this._library;
   }
-  public putLibrary(value: JobTaskNewClusterLibrary[] | cdktf.IResolvable) {
+  public putLibrary(value: JobTaskNewClusterLibrary[] | cdktn.IResolvable) {
     this._library.internalValue = value;
   }
   public resetLibrary() {
@@ -16967,6 +18738,22 @@ export class JobTaskNewClusterOutputReference extends cdktf.ComplexObject {
     return this._providerConfig.internalValue;
   }
 
+  // worker_node_type_flexibility - computed: false, optional: true, required: false
+  private _workerNodeTypeFlexibility = new JobTaskNewClusterWorkerNodeTypeFlexibilityOutputReference(this, "worker_node_type_flexibility");
+  public get workerNodeTypeFlexibility() {
+    return this._workerNodeTypeFlexibility;
+  }
+  public putWorkerNodeTypeFlexibility(value: JobTaskNewClusterWorkerNodeTypeFlexibility) {
+    this._workerNodeTypeFlexibility.internalValue = value;
+  }
+  public resetWorkerNodeTypeFlexibility() {
+    this._workerNodeTypeFlexibility.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workerNodeTypeFlexibilityInput() {
+    return this._workerNodeTypeFlexibility.internalValue;
+  }
+
   // workload_type - computed: false, optional: true, required: false
   private _workloadType = new JobTaskNewClusterWorkloadTypeOutputReference(this, "workload_type");
   public get workloadType() {
@@ -16985,63 +18772,63 @@ export class JobTaskNewClusterOutputReference extends cdktf.ComplexObject {
 }
 export interface JobTaskNotebookTask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#base_parameters Job#base_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#base_parameters Job#base_parameters}
   */
   readonly baseParameters?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#notebook_path Job#notebook_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#notebook_path Job#notebook_path}
   */
   readonly notebookPath: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#source Job#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#source Job#source}
   */
   readonly source?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#warehouse_id Job#warehouse_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#warehouse_id Job#warehouse_id}
   */
   readonly warehouseId?: string;
 }
 
 export function jobTaskNotebookTaskToTerraform(struct?: JobTaskNotebookTaskOutputReference | JobTaskNotebookTask): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    base_parameters: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.baseParameters),
-    notebook_path: cdktf.stringToTerraform(struct!.notebookPath),
-    source: cdktf.stringToTerraform(struct!.source),
-    warehouse_id: cdktf.stringToTerraform(struct!.warehouseId),
+    base_parameters: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.baseParameters),
+    notebook_path: cdktn.stringToTerraform(struct!.notebookPath),
+    source: cdktn.stringToTerraform(struct!.source),
+    warehouse_id: cdktn.stringToTerraform(struct!.warehouseId),
   }
 }
 
 
 export function jobTaskNotebookTaskToHclTerraform(struct?: JobTaskNotebookTaskOutputReference | JobTaskNotebookTask): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     base_parameters: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.baseParameters),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.baseParameters),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     notebook_path: {
-      value: cdktf.stringToHclTerraform(struct!.notebookPath),
+      value: cdktn.stringToHclTerraform(struct!.notebookPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source: {
-      value: cdktf.stringToHclTerraform(struct!.source),
+      value: cdktn.stringToHclTerraform(struct!.source),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     warehouse_id: {
-      value: cdktf.stringToHclTerraform(struct!.warehouseId),
+      value: cdktn.stringToHclTerraform(struct!.warehouseId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -17052,14 +18839,14 @@ export function jobTaskNotebookTaskToHclTerraform(struct?: JobTaskNotebookTaskOu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskNotebookTaskOutputReference extends cdktf.ComplexObject {
+export class JobTaskNotebookTaskOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -17165,52 +18952,52 @@ export class JobTaskNotebookTaskOutputReference extends cdktf.ComplexObject {
 }
 export interface JobTaskNotificationSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#alert_on_last_attempt Job#alert_on_last_attempt}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#alert_on_last_attempt Job#alert_on_last_attempt}
   */
-  readonly alertOnLastAttempt?: boolean | cdktf.IResolvable;
+  readonly alertOnLastAttempt?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#no_alert_for_canceled_runs Job#no_alert_for_canceled_runs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#no_alert_for_canceled_runs Job#no_alert_for_canceled_runs}
   */
-  readonly noAlertForCanceledRuns?: boolean | cdktf.IResolvable;
+  readonly noAlertForCanceledRuns?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#no_alert_for_skipped_runs Job#no_alert_for_skipped_runs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#no_alert_for_skipped_runs Job#no_alert_for_skipped_runs}
   */
-  readonly noAlertForSkippedRuns?: boolean | cdktf.IResolvable;
+  readonly noAlertForSkippedRuns?: boolean | cdktn.IResolvable;
 }
 
 export function jobTaskNotificationSettingsToTerraform(struct?: JobTaskNotificationSettingsOutputReference | JobTaskNotificationSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    alert_on_last_attempt: cdktf.booleanToTerraform(struct!.alertOnLastAttempt),
-    no_alert_for_canceled_runs: cdktf.booleanToTerraform(struct!.noAlertForCanceledRuns),
-    no_alert_for_skipped_runs: cdktf.booleanToTerraform(struct!.noAlertForSkippedRuns),
+    alert_on_last_attempt: cdktn.booleanToTerraform(struct!.alertOnLastAttempt),
+    no_alert_for_canceled_runs: cdktn.booleanToTerraform(struct!.noAlertForCanceledRuns),
+    no_alert_for_skipped_runs: cdktn.booleanToTerraform(struct!.noAlertForSkippedRuns),
   }
 }
 
 
 export function jobTaskNotificationSettingsToHclTerraform(struct?: JobTaskNotificationSettingsOutputReference | JobTaskNotificationSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     alert_on_last_attempt: {
-      value: cdktf.booleanToHclTerraform(struct!.alertOnLastAttempt),
+      value: cdktn.booleanToHclTerraform(struct!.alertOnLastAttempt),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     no_alert_for_canceled_runs: {
-      value: cdktf.booleanToHclTerraform(struct!.noAlertForCanceledRuns),
+      value: cdktn.booleanToHclTerraform(struct!.noAlertForCanceledRuns),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     no_alert_for_skipped_runs: {
-      value: cdktf.booleanToHclTerraform(struct!.noAlertForSkippedRuns),
+      value: cdktn.booleanToHclTerraform(struct!.noAlertForSkippedRuns),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -17221,14 +19008,14 @@ export function jobTaskNotificationSettingsToHclTerraform(struct?: JobTaskNotifi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskNotificationSettingsOutputReference extends cdktf.ComplexObject {
+export class JobTaskNotificationSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -17266,11 +19053,11 @@ export class JobTaskNotificationSettingsOutputReference extends cdktf.ComplexObj
   }
 
   // alert_on_last_attempt - computed: false, optional: true, required: false
-  private _alertOnLastAttempt?: boolean | cdktf.IResolvable; 
+  private _alertOnLastAttempt?: boolean | cdktn.IResolvable; 
   public get alertOnLastAttempt() {
     return this.getBooleanAttribute('alert_on_last_attempt');
   }
-  public set alertOnLastAttempt(value: boolean | cdktf.IResolvable) {
+  public set alertOnLastAttempt(value: boolean | cdktn.IResolvable) {
     this._alertOnLastAttempt = value;
   }
   public resetAlertOnLastAttempt() {
@@ -17282,11 +19069,11 @@ export class JobTaskNotificationSettingsOutputReference extends cdktf.ComplexObj
   }
 
   // no_alert_for_canceled_runs - computed: false, optional: true, required: false
-  private _noAlertForCanceledRuns?: boolean | cdktf.IResolvable; 
+  private _noAlertForCanceledRuns?: boolean | cdktn.IResolvable; 
   public get noAlertForCanceledRuns() {
     return this.getBooleanAttribute('no_alert_for_canceled_runs');
   }
-  public set noAlertForCanceledRuns(value: boolean | cdktf.IResolvable) {
+  public set noAlertForCanceledRuns(value: boolean | cdktn.IResolvable) {
     this._noAlertForCanceledRuns = value;
   }
   public resetNoAlertForCanceledRuns() {
@@ -17298,11 +19085,11 @@ export class JobTaskNotificationSettingsOutputReference extends cdktf.ComplexObj
   }
 
   // no_alert_for_skipped_runs - computed: false, optional: true, required: false
-  private _noAlertForSkippedRuns?: boolean | cdktf.IResolvable; 
+  private _noAlertForSkippedRuns?: boolean | cdktn.IResolvable; 
   public get noAlertForSkippedRuns() {
     return this.getBooleanAttribute('no_alert_for_skipped_runs');
   }
-  public set noAlertForSkippedRuns(value: boolean | cdktf.IResolvable) {
+  public set noAlertForSkippedRuns(value: boolean | cdktn.IResolvable) {
     this._noAlertForSkippedRuns = value;
   }
   public resetNoAlertForSkippedRuns() {
@@ -17315,41 +19102,41 @@ export class JobTaskNotificationSettingsOutputReference extends cdktf.ComplexObj
 }
 export interface JobTaskPipelineTask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#full_refresh Job#full_refresh}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#full_refresh Job#full_refresh}
   */
-  readonly fullRefresh?: boolean | cdktf.IResolvable;
+  readonly fullRefresh?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#pipeline_id Job#pipeline_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#pipeline_id Job#pipeline_id}
   */
   readonly pipelineId: string;
 }
 
 export function jobTaskPipelineTaskToTerraform(struct?: JobTaskPipelineTaskOutputReference | JobTaskPipelineTask): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    full_refresh: cdktf.booleanToTerraform(struct!.fullRefresh),
-    pipeline_id: cdktf.stringToTerraform(struct!.pipelineId),
+    full_refresh: cdktn.booleanToTerraform(struct!.fullRefresh),
+    pipeline_id: cdktn.stringToTerraform(struct!.pipelineId),
   }
 }
 
 
 export function jobTaskPipelineTaskToHclTerraform(struct?: JobTaskPipelineTaskOutputReference | JobTaskPipelineTask): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     full_refresh: {
-      value: cdktf.booleanToHclTerraform(struct!.fullRefresh),
+      value: cdktn.booleanToHclTerraform(struct!.fullRefresh),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     pipeline_id: {
-      value: cdktf.stringToHclTerraform(struct!.pipelineId),
+      value: cdktn.stringToHclTerraform(struct!.pipelineId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -17360,14 +19147,14 @@ export function jobTaskPipelineTaskToHclTerraform(struct?: JobTaskPipelineTaskOu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskPipelineTaskOutputReference extends cdktf.ComplexObject {
+export class JobTaskPipelineTaskOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -17399,11 +19186,11 @@ export class JobTaskPipelineTaskOutputReference extends cdktf.ComplexObject {
   }
 
   // full_refresh - computed: false, optional: true, required: false
-  private _fullRefresh?: boolean | cdktf.IResolvable; 
+  private _fullRefresh?: boolean | cdktn.IResolvable; 
   public get fullRefresh() {
     return this.getBooleanAttribute('full_refresh');
   }
-  public set fullRefresh(value: boolean | cdktf.IResolvable) {
+  public set fullRefresh(value: boolean | cdktn.IResolvable) {
     this._fullRefresh = value;
   }
   public resetFullRefresh() {
@@ -17429,74 +19216,74 @@ export class JobTaskPipelineTaskOutputReference extends cdktf.ComplexObject {
 }
 export interface JobTaskPowerBiTaskPowerBiModel {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#authentication_method Job#authentication_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#authentication_method Job#authentication_method}
   */
   readonly authenticationMethod?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#model_name Job#model_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#model_name Job#model_name}
   */
   readonly modelName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#overwrite_existing Job#overwrite_existing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#overwrite_existing Job#overwrite_existing}
   */
-  readonly overwriteExisting?: boolean | cdktf.IResolvable;
+  readonly overwriteExisting?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#storage_mode Job#storage_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#storage_mode Job#storage_mode}
   */
   readonly storageMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#workspace_name Job#workspace_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#workspace_name Job#workspace_name}
   */
   readonly workspaceName?: string;
 }
 
 export function jobTaskPowerBiTaskPowerBiModelToTerraform(struct?: JobTaskPowerBiTaskPowerBiModelOutputReference | JobTaskPowerBiTaskPowerBiModel): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    authentication_method: cdktf.stringToTerraform(struct!.authenticationMethod),
-    model_name: cdktf.stringToTerraform(struct!.modelName),
-    overwrite_existing: cdktf.booleanToTerraform(struct!.overwriteExisting),
-    storage_mode: cdktf.stringToTerraform(struct!.storageMode),
-    workspace_name: cdktf.stringToTerraform(struct!.workspaceName),
+    authentication_method: cdktn.stringToTerraform(struct!.authenticationMethod),
+    model_name: cdktn.stringToTerraform(struct!.modelName),
+    overwrite_existing: cdktn.booleanToTerraform(struct!.overwriteExisting),
+    storage_mode: cdktn.stringToTerraform(struct!.storageMode),
+    workspace_name: cdktn.stringToTerraform(struct!.workspaceName),
   }
 }
 
 
 export function jobTaskPowerBiTaskPowerBiModelToHclTerraform(struct?: JobTaskPowerBiTaskPowerBiModelOutputReference | JobTaskPowerBiTaskPowerBiModel): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     authentication_method: {
-      value: cdktf.stringToHclTerraform(struct!.authenticationMethod),
+      value: cdktn.stringToHclTerraform(struct!.authenticationMethod),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     model_name: {
-      value: cdktf.stringToHclTerraform(struct!.modelName),
+      value: cdktn.stringToHclTerraform(struct!.modelName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     overwrite_existing: {
-      value: cdktf.booleanToHclTerraform(struct!.overwriteExisting),
+      value: cdktn.booleanToHclTerraform(struct!.overwriteExisting),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     storage_mode: {
-      value: cdktf.stringToHclTerraform(struct!.storageMode),
+      value: cdktn.stringToHclTerraform(struct!.storageMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     workspace_name: {
-      value: cdktf.stringToHclTerraform(struct!.workspaceName),
+      value: cdktn.stringToHclTerraform(struct!.workspaceName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -17507,14 +19294,14 @@ export function jobTaskPowerBiTaskPowerBiModelToHclTerraform(struct?: JobTaskPow
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskPowerBiTaskPowerBiModelOutputReference extends cdktf.ComplexObject {
+export class JobTaskPowerBiTaskPowerBiModelOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -17596,11 +19383,11 @@ export class JobTaskPowerBiTaskPowerBiModelOutputReference extends cdktf.Complex
   }
 
   // overwrite_existing - computed: false, optional: true, required: false
-  private _overwriteExisting?: boolean | cdktf.IResolvable; 
+  private _overwriteExisting?: boolean | cdktn.IResolvable; 
   public get overwriteExisting() {
     return this.getBooleanAttribute('overwrite_existing');
   }
-  public set overwriteExisting(value: boolean | cdktf.IResolvable) {
+  public set overwriteExisting(value: boolean | cdktn.IResolvable) {
     this._overwriteExisting = value;
   }
   public resetOverwriteExisting() {
@@ -17645,63 +19432,63 @@ export class JobTaskPowerBiTaskPowerBiModelOutputReference extends cdktf.Complex
 }
 export interface JobTaskPowerBiTaskTables {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#catalog Job#catalog}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#catalog Job#catalog}
   */
   readonly catalog?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#name Job#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#name Job#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#schema Job#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#schema Job#schema}
   */
   readonly schema?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#storage_mode Job#storage_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#storage_mode Job#storage_mode}
   */
   readonly storageMode?: string;
 }
 
-export function jobTaskPowerBiTaskTablesToTerraform(struct?: JobTaskPowerBiTaskTables | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobTaskPowerBiTaskTablesToTerraform(struct?: JobTaskPowerBiTaskTables | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    catalog: cdktf.stringToTerraform(struct!.catalog),
-    name: cdktf.stringToTerraform(struct!.name),
-    schema: cdktf.stringToTerraform(struct!.schema),
-    storage_mode: cdktf.stringToTerraform(struct!.storageMode),
+    catalog: cdktn.stringToTerraform(struct!.catalog),
+    name: cdktn.stringToTerraform(struct!.name),
+    schema: cdktn.stringToTerraform(struct!.schema),
+    storage_mode: cdktn.stringToTerraform(struct!.storageMode),
   }
 }
 
 
-export function jobTaskPowerBiTaskTablesToHclTerraform(struct?: JobTaskPowerBiTaskTables | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobTaskPowerBiTaskTablesToHclTerraform(struct?: JobTaskPowerBiTaskTables | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     catalog: {
-      value: cdktf.stringToHclTerraform(struct!.catalog),
+      value: cdktn.stringToHclTerraform(struct!.catalog),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     schema: {
-      value: cdktf.stringToHclTerraform(struct!.schema),
+      value: cdktn.stringToHclTerraform(struct!.schema),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     storage_mode: {
-      value: cdktf.stringToHclTerraform(struct!.storageMode),
+      value: cdktn.stringToHclTerraform(struct!.storageMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -17712,9 +19499,9 @@ export function jobTaskPowerBiTaskTablesToHclTerraform(struct?: JobTaskPowerBiTa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskPowerBiTaskTablesOutputReference extends cdktf.ComplexObject {
+export class JobTaskPowerBiTaskTablesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -17722,11 +19509,11 @@ export class JobTaskPowerBiTaskTablesOutputReference extends cdktf.ComplexObject
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobTaskPowerBiTaskTables | cdktf.IResolvable | undefined {
+  public get internalValue(): JobTaskPowerBiTaskTables | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -17751,7 +19538,7 @@ export class JobTaskPowerBiTaskTablesOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobTaskPowerBiTaskTables | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobTaskPowerBiTaskTables | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -17760,7 +19547,7 @@ export class JobTaskPowerBiTaskTablesOutputReference extends cdktf.ComplexObject
       this._schema = undefined;
       this._storageMode = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -17839,15 +19626,15 @@ export class JobTaskPowerBiTaskTablesOutputReference extends cdktf.ComplexObject
   }
 }
 
-export class JobTaskPowerBiTaskTablesList extends cdktf.ComplexList {
-  public internalValue? : JobTaskPowerBiTaskTables[] | cdktf.IResolvable
+export class JobTaskPowerBiTaskTablesList extends cdktn.ComplexList {
+  public internalValue? : JobTaskPowerBiTaskTables[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -17860,66 +19647,66 @@ export class JobTaskPowerBiTaskTablesList extends cdktf.ComplexList {
 }
 export interface JobTaskPowerBiTask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#connection_resource_name Job#connection_resource_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#connection_resource_name Job#connection_resource_name}
   */
   readonly connectionResourceName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#refresh_after_update Job#refresh_after_update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#refresh_after_update Job#refresh_after_update}
   */
-  readonly refreshAfterUpdate?: boolean | cdktf.IResolvable;
+  readonly refreshAfterUpdate?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#warehouse_id Job#warehouse_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#warehouse_id Job#warehouse_id}
   */
   readonly warehouseId?: string;
   /**
   * power_bi_model block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#power_bi_model Job#power_bi_model}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#power_bi_model Job#power_bi_model}
   */
   readonly powerBiModel?: JobTaskPowerBiTaskPowerBiModel;
   /**
   * tables block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#tables Job#tables}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#tables Job#tables}
   */
-  readonly tables?: JobTaskPowerBiTaskTables[] | cdktf.IResolvable;
+  readonly tables?: JobTaskPowerBiTaskTables[] | cdktn.IResolvable;
 }
 
 export function jobTaskPowerBiTaskToTerraform(struct?: JobTaskPowerBiTaskOutputReference | JobTaskPowerBiTask): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    connection_resource_name: cdktf.stringToTerraform(struct!.connectionResourceName),
-    refresh_after_update: cdktf.booleanToTerraform(struct!.refreshAfterUpdate),
-    warehouse_id: cdktf.stringToTerraform(struct!.warehouseId),
+    connection_resource_name: cdktn.stringToTerraform(struct!.connectionResourceName),
+    refresh_after_update: cdktn.booleanToTerraform(struct!.refreshAfterUpdate),
+    warehouse_id: cdktn.stringToTerraform(struct!.warehouseId),
     power_bi_model: jobTaskPowerBiTaskPowerBiModelToTerraform(struct!.powerBiModel),
-    tables: cdktf.listMapper(jobTaskPowerBiTaskTablesToTerraform, true)(struct!.tables),
+    tables: cdktn.listMapper(jobTaskPowerBiTaskTablesToTerraform, true)(struct!.tables),
   }
 }
 
 
 export function jobTaskPowerBiTaskToHclTerraform(struct?: JobTaskPowerBiTaskOutputReference | JobTaskPowerBiTask): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     connection_resource_name: {
-      value: cdktf.stringToHclTerraform(struct!.connectionResourceName),
+      value: cdktn.stringToHclTerraform(struct!.connectionResourceName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     refresh_after_update: {
-      value: cdktf.booleanToHclTerraform(struct!.refreshAfterUpdate),
+      value: cdktn.booleanToHclTerraform(struct!.refreshAfterUpdate),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     warehouse_id: {
-      value: cdktf.stringToHclTerraform(struct!.warehouseId),
+      value: cdktn.stringToHclTerraform(struct!.warehouseId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -17931,7 +19718,7 @@ export function jobTaskPowerBiTaskToHclTerraform(struct?: JobTaskPowerBiTaskOutp
       storageClassType: "JobTaskPowerBiTaskPowerBiModelList",
     },
     tables: {
-      value: cdktf.listMapperHcl(jobTaskPowerBiTaskTablesToHclTerraform, true)(struct!.tables),
+      value: cdktn.listMapperHcl(jobTaskPowerBiTaskTablesToHclTerraform, true)(struct!.tables),
       isBlock: true,
       type: "list",
       storageClassType: "JobTaskPowerBiTaskTablesList",
@@ -17942,14 +19729,14 @@ export function jobTaskPowerBiTaskToHclTerraform(struct?: JobTaskPowerBiTaskOutp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskPowerBiTaskOutputReference extends cdktf.ComplexObject {
+export class JobTaskPowerBiTaskOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -18015,11 +19802,11 @@ export class JobTaskPowerBiTaskOutputReference extends cdktf.ComplexObject {
   }
 
   // refresh_after_update - computed: false, optional: true, required: false
-  private _refreshAfterUpdate?: boolean | cdktf.IResolvable; 
+  private _refreshAfterUpdate?: boolean | cdktn.IResolvable; 
   public get refreshAfterUpdate() {
     return this.getBooleanAttribute('refresh_after_update');
   }
-  public set refreshAfterUpdate(value: boolean | cdktf.IResolvable) {
+  public set refreshAfterUpdate(value: boolean | cdktn.IResolvable) {
     this._refreshAfterUpdate = value;
   }
   public resetRefreshAfterUpdate() {
@@ -18067,7 +19854,7 @@ export class JobTaskPowerBiTaskOutputReference extends cdktf.ComplexObject {
   public get tables() {
     return this._tables;
   }
-  public putTables(value: JobTaskPowerBiTaskTables[] | cdktf.IResolvable) {
+  public putTables(value: JobTaskPowerBiTaskTables[] | cdktn.IResolvable) {
     this._tables.internalValue = value;
   }
   public resetTables() {
@@ -18080,63 +19867,63 @@ export class JobTaskPowerBiTaskOutputReference extends cdktf.ComplexObject {
 }
 export interface JobTaskPythonWheelTask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#entry_point Job#entry_point}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#entry_point Job#entry_point}
   */
   readonly entryPoint?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#named_parameters Job#named_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#named_parameters Job#named_parameters}
   */
   readonly namedParameters?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#package_name Job#package_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#package_name Job#package_name}
   */
   readonly packageName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#parameters Job#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#parameters Job#parameters}
   */
   readonly parameters?: string[];
 }
 
 export function jobTaskPythonWheelTaskToTerraform(struct?: JobTaskPythonWheelTaskOutputReference | JobTaskPythonWheelTask): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    entry_point: cdktf.stringToTerraform(struct!.entryPoint),
-    named_parameters: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.namedParameters),
-    package_name: cdktf.stringToTerraform(struct!.packageName),
-    parameters: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.parameters),
+    entry_point: cdktn.stringToTerraform(struct!.entryPoint),
+    named_parameters: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.namedParameters),
+    package_name: cdktn.stringToTerraform(struct!.packageName),
+    parameters: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.parameters),
   }
 }
 
 
 export function jobTaskPythonWheelTaskToHclTerraform(struct?: JobTaskPythonWheelTaskOutputReference | JobTaskPythonWheelTask): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     entry_point: {
-      value: cdktf.stringToHclTerraform(struct!.entryPoint),
+      value: cdktn.stringToHclTerraform(struct!.entryPoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     named_parameters: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.namedParameters),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.namedParameters),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     package_name: {
-      value: cdktf.stringToHclTerraform(struct!.packageName),
+      value: cdktn.stringToHclTerraform(struct!.packageName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     parameters: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.parameters),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.parameters),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -18147,14 +19934,14 @@ export function jobTaskPythonWheelTaskToHclTerraform(struct?: JobTaskPythonWheel
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskPythonWheelTaskOutputReference extends cdktf.ComplexObject {
+export class JobTaskPythonWheelTaskOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -18263,30 +20050,30 @@ export class JobTaskPythonWheelTaskOutputReference extends cdktf.ComplexObject {
 }
 export interface JobTaskRunJobTaskPipelineParams {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#full_refresh Job#full_refresh}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#full_refresh Job#full_refresh}
   */
-  readonly fullRefresh?: boolean | cdktf.IResolvable;
+  readonly fullRefresh?: boolean | cdktn.IResolvable;
 }
 
 export function jobTaskRunJobTaskPipelineParamsToTerraform(struct?: JobTaskRunJobTaskPipelineParamsOutputReference | JobTaskRunJobTaskPipelineParams): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    full_refresh: cdktf.booleanToTerraform(struct!.fullRefresh),
+    full_refresh: cdktn.booleanToTerraform(struct!.fullRefresh),
   }
 }
 
 
 export function jobTaskRunJobTaskPipelineParamsToHclTerraform(struct?: JobTaskRunJobTaskPipelineParamsOutputReference | JobTaskRunJobTaskPipelineParams): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     full_refresh: {
-      value: cdktf.booleanToHclTerraform(struct!.fullRefresh),
+      value: cdktn.booleanToHclTerraform(struct!.fullRefresh),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -18297,14 +20084,14 @@ export function jobTaskRunJobTaskPipelineParamsToHclTerraform(struct?: JobTaskRu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskRunJobTaskPipelineParamsOutputReference extends cdktf.ComplexObject {
+export class JobTaskRunJobTaskPipelineParamsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -18330,11 +20117,11 @@ export class JobTaskRunJobTaskPipelineParamsOutputReference extends cdktf.Comple
   }
 
   // full_refresh - computed: false, optional: true, required: false
-  private _fullRefresh?: boolean | cdktf.IResolvable; 
+  private _fullRefresh?: boolean | cdktn.IResolvable; 
   public get fullRefresh() {
     return this.getBooleanAttribute('full_refresh');
   }
-  public set fullRefresh(value: boolean | cdktf.IResolvable) {
+  public set fullRefresh(value: boolean | cdktn.IResolvable) {
     this._fullRefresh = value;
   }
   public resetFullRefresh() {
@@ -18347,125 +20134,125 @@ export class JobTaskRunJobTaskPipelineParamsOutputReference extends cdktf.Comple
 }
 export interface JobTaskRunJobTask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#dbt_commands Job#dbt_commands}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#dbt_commands Job#dbt_commands}
   */
   readonly dbtCommands?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#jar_params Job#jar_params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#jar_params Job#jar_params}
   */
   readonly jarParams?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#job_id Job#job_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#job_id Job#job_id}
   */
   readonly jobId: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#job_parameters Job#job_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#job_parameters Job#job_parameters}
   */
   readonly jobParameters?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#notebook_params Job#notebook_params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#notebook_params Job#notebook_params}
   */
   readonly notebookParams?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#python_named_params Job#python_named_params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#python_named_params Job#python_named_params}
   */
   readonly pythonNamedParams?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#python_params Job#python_params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#python_params Job#python_params}
   */
   readonly pythonParams?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#spark_submit_params Job#spark_submit_params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#spark_submit_params Job#spark_submit_params}
   */
   readonly sparkSubmitParams?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#sql_params Job#sql_params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#sql_params Job#sql_params}
   */
   readonly sqlParams?: { [key: string]: string };
   /**
   * pipeline_params block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#pipeline_params Job#pipeline_params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#pipeline_params Job#pipeline_params}
   */
   readonly pipelineParams?: JobTaskRunJobTaskPipelineParams;
 }
 
 export function jobTaskRunJobTaskToTerraform(struct?: JobTaskRunJobTaskOutputReference | JobTaskRunJobTask): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    dbt_commands: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.dbtCommands),
-    jar_params: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.jarParams),
-    job_id: cdktf.numberToTerraform(struct!.jobId),
-    job_parameters: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.jobParameters),
-    notebook_params: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.notebookParams),
-    python_named_params: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.pythonNamedParams),
-    python_params: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.pythonParams),
-    spark_submit_params: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sparkSubmitParams),
-    sql_params: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.sqlParams),
+    dbt_commands: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.dbtCommands),
+    jar_params: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.jarParams),
+    job_id: cdktn.numberToTerraform(struct!.jobId),
+    job_parameters: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.jobParameters),
+    notebook_params: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.notebookParams),
+    python_named_params: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.pythonNamedParams),
+    python_params: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.pythonParams),
+    spark_submit_params: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.sparkSubmitParams),
+    sql_params: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.sqlParams),
     pipeline_params: jobTaskRunJobTaskPipelineParamsToTerraform(struct!.pipelineParams),
   }
 }
 
 
 export function jobTaskRunJobTaskToHclTerraform(struct?: JobTaskRunJobTaskOutputReference | JobTaskRunJobTask): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     dbt_commands: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.dbtCommands),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.dbtCommands),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     jar_params: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.jarParams),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.jarParams),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     job_id: {
-      value: cdktf.numberToHclTerraform(struct!.jobId),
+      value: cdktn.numberToHclTerraform(struct!.jobId),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     job_parameters: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.jobParameters),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.jobParameters),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     notebook_params: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.notebookParams),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.notebookParams),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     python_named_params: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.pythonNamedParams),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.pythonNamedParams),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     python_params: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.pythonParams),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.pythonParams),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     spark_submit_params: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sparkSubmitParams),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.sparkSubmitParams),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     sql_params: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.sqlParams),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.sqlParams),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
@@ -18482,14 +20269,14 @@ export function jobTaskRunJobTaskToHclTerraform(struct?: JobTaskRunJobTaskOutput
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskRunJobTaskOutputReference extends cdktf.ComplexObject {
+export class JobTaskRunJobTaskOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -18727,63 +20514,63 @@ export class JobTaskRunJobTaskOutputReference extends cdktf.ComplexObject {
 }
 export interface JobTaskSparkJarTask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#jar_uri Job#jar_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#jar_uri Job#jar_uri}
   */
   readonly jarUri?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#main_class_name Job#main_class_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#main_class_name Job#main_class_name}
   */
   readonly mainClassName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#parameters Job#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#parameters Job#parameters}
   */
   readonly parameters?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#run_as_repl Job#run_as_repl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#run_as_repl Job#run_as_repl}
   */
-  readonly runAsRepl?: boolean | cdktf.IResolvable;
+  readonly runAsRepl?: boolean | cdktn.IResolvable;
 }
 
 export function jobTaskSparkJarTaskToTerraform(struct?: JobTaskSparkJarTaskOutputReference | JobTaskSparkJarTask): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    jar_uri: cdktf.stringToTerraform(struct!.jarUri),
-    main_class_name: cdktf.stringToTerraform(struct!.mainClassName),
-    parameters: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.parameters),
-    run_as_repl: cdktf.booleanToTerraform(struct!.runAsRepl),
+    jar_uri: cdktn.stringToTerraform(struct!.jarUri),
+    main_class_name: cdktn.stringToTerraform(struct!.mainClassName),
+    parameters: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.parameters),
+    run_as_repl: cdktn.booleanToTerraform(struct!.runAsRepl),
   }
 }
 
 
 export function jobTaskSparkJarTaskToHclTerraform(struct?: JobTaskSparkJarTaskOutputReference | JobTaskSparkJarTask): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     jar_uri: {
-      value: cdktf.stringToHclTerraform(struct!.jarUri),
+      value: cdktn.stringToHclTerraform(struct!.jarUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     main_class_name: {
-      value: cdktf.stringToHclTerraform(struct!.mainClassName),
+      value: cdktn.stringToHclTerraform(struct!.mainClassName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     parameters: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.parameters),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.parameters),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     run_as_repl: {
-      value: cdktf.booleanToHclTerraform(struct!.runAsRepl),
+      value: cdktn.booleanToHclTerraform(struct!.runAsRepl),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -18794,14 +20581,14 @@ export function jobTaskSparkJarTaskToHclTerraform(struct?: JobTaskSparkJarTaskOu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskSparkJarTaskOutputReference extends cdktf.ComplexObject {
+export class JobTaskSparkJarTaskOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -18893,11 +20680,11 @@ export class JobTaskSparkJarTaskOutputReference extends cdktf.ComplexObject {
   }
 
   // run_as_repl - computed: true, optional: true, required: false
-  private _runAsRepl?: boolean | cdktf.IResolvable; 
+  private _runAsRepl?: boolean | cdktn.IResolvable; 
   public get runAsRepl() {
     return this.getBooleanAttribute('run_as_repl');
   }
-  public set runAsRepl(value: boolean | cdktf.IResolvable) {
+  public set runAsRepl(value: boolean | cdktn.IResolvable) {
     this._runAsRepl = value;
   }
   public resetRunAsRepl() {
@@ -18910,52 +20697,52 @@ export class JobTaskSparkJarTaskOutputReference extends cdktf.ComplexObject {
 }
 export interface JobTaskSparkPythonTask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#parameters Job#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#parameters Job#parameters}
   */
   readonly parameters?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#python_file Job#python_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#python_file Job#python_file}
   */
   readonly pythonFile: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#source Job#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#source Job#source}
   */
   readonly source?: string;
 }
 
 export function jobTaskSparkPythonTaskToTerraform(struct?: JobTaskSparkPythonTaskOutputReference | JobTaskSparkPythonTask): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    parameters: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.parameters),
-    python_file: cdktf.stringToTerraform(struct!.pythonFile),
-    source: cdktf.stringToTerraform(struct!.source),
+    parameters: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.parameters),
+    python_file: cdktn.stringToTerraform(struct!.pythonFile),
+    source: cdktn.stringToTerraform(struct!.source),
   }
 }
 
 
 export function jobTaskSparkPythonTaskToHclTerraform(struct?: JobTaskSparkPythonTaskOutputReference | JobTaskSparkPythonTask): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     parameters: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.parameters),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.parameters),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     python_file: {
-      value: cdktf.stringToHclTerraform(struct!.pythonFile),
+      value: cdktn.stringToHclTerraform(struct!.pythonFile),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source: {
-      value: cdktf.stringToHclTerraform(struct!.source),
+      value: cdktn.stringToHclTerraform(struct!.source),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -18966,14 +20753,14 @@ export function jobTaskSparkPythonTaskToHclTerraform(struct?: JobTaskSparkPython
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskSparkPythonTaskOutputReference extends cdktf.ComplexObject {
+export class JobTaskSparkPythonTaskOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -19057,30 +20844,30 @@ export class JobTaskSparkPythonTaskOutputReference extends cdktf.ComplexObject {
 }
 export interface JobTaskSparkSubmitTask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#parameters Job#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#parameters Job#parameters}
   */
   readonly parameters?: string[];
 }
 
 export function jobTaskSparkSubmitTaskToTerraform(struct?: JobTaskSparkSubmitTaskOutputReference | JobTaskSparkSubmitTask): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    parameters: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.parameters),
+    parameters: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.parameters),
   }
 }
 
 
 export function jobTaskSparkSubmitTaskToHclTerraform(struct?: JobTaskSparkSubmitTaskOutputReference | JobTaskSparkSubmitTask): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     parameters: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.parameters),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.parameters),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -19091,14 +20878,14 @@ export function jobTaskSparkSubmitTaskToHclTerraform(struct?: JobTaskSparkSubmit
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskSparkSubmitTaskOutputReference extends cdktf.ComplexObject {
+export class JobTaskSparkSubmitTaskOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -19141,41 +20928,41 @@ export class JobTaskSparkSubmitTaskOutputReference extends cdktf.ComplexObject {
 }
 export interface JobTaskSqlTaskAlertSubscriptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#destination_id Job#destination_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#destination_id Job#destination_id}
   */
   readonly destinationId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#user_name Job#user_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#user_name Job#user_name}
   */
   readonly userName?: string;
 }
 
-export function jobTaskSqlTaskAlertSubscriptionsToTerraform(struct?: JobTaskSqlTaskAlertSubscriptions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobTaskSqlTaskAlertSubscriptionsToTerraform(struct?: JobTaskSqlTaskAlertSubscriptions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    destination_id: cdktf.stringToTerraform(struct!.destinationId),
-    user_name: cdktf.stringToTerraform(struct!.userName),
+    destination_id: cdktn.stringToTerraform(struct!.destinationId),
+    user_name: cdktn.stringToTerraform(struct!.userName),
   }
 }
 
 
-export function jobTaskSqlTaskAlertSubscriptionsToHclTerraform(struct?: JobTaskSqlTaskAlertSubscriptions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobTaskSqlTaskAlertSubscriptionsToHclTerraform(struct?: JobTaskSqlTaskAlertSubscriptions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     destination_id: {
-      value: cdktf.stringToHclTerraform(struct!.destinationId),
+      value: cdktn.stringToHclTerraform(struct!.destinationId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     user_name: {
-      value: cdktf.stringToHclTerraform(struct!.userName),
+      value: cdktn.stringToHclTerraform(struct!.userName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -19186,9 +20973,9 @@ export function jobTaskSqlTaskAlertSubscriptionsToHclTerraform(struct?: JobTaskS
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskSqlTaskAlertSubscriptionsOutputReference extends cdktf.ComplexObject {
+export class JobTaskSqlTaskAlertSubscriptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -19196,11 +20983,11 @@ export class JobTaskSqlTaskAlertSubscriptionsOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobTaskSqlTaskAlertSubscriptions | cdktf.IResolvable | undefined {
+  public get internalValue(): JobTaskSqlTaskAlertSubscriptions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -19217,14 +21004,14 @@ export class JobTaskSqlTaskAlertSubscriptionsOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobTaskSqlTaskAlertSubscriptions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobTaskSqlTaskAlertSubscriptions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._destinationId = undefined;
       this._userName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -19269,15 +21056,15 @@ export class JobTaskSqlTaskAlertSubscriptionsOutputReference extends cdktf.Compl
   }
 }
 
-export class JobTaskSqlTaskAlertSubscriptionsList extends cdktf.ComplexList {
-  public internalValue? : JobTaskSqlTaskAlertSubscriptions[] | cdktf.IResolvable
+export class JobTaskSqlTaskAlertSubscriptionsList extends cdktn.ComplexList {
+  public internalValue? : JobTaskSqlTaskAlertSubscriptions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -19290,54 +21077,54 @@ export class JobTaskSqlTaskAlertSubscriptionsList extends cdktf.ComplexList {
 }
 export interface JobTaskSqlTaskAlert {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#alert_id Job#alert_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#alert_id Job#alert_id}
   */
   readonly alertId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#pause_subscriptions Job#pause_subscriptions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#pause_subscriptions Job#pause_subscriptions}
   */
-  readonly pauseSubscriptions?: boolean | cdktf.IResolvable;
+  readonly pauseSubscriptions?: boolean | cdktn.IResolvable;
   /**
   * subscriptions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#subscriptions Job#subscriptions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#subscriptions Job#subscriptions}
   */
-  readonly subscriptions?: JobTaskSqlTaskAlertSubscriptions[] | cdktf.IResolvable;
+  readonly subscriptions?: JobTaskSqlTaskAlertSubscriptions[] | cdktn.IResolvable;
 }
 
 export function jobTaskSqlTaskAlertToTerraform(struct?: JobTaskSqlTaskAlertOutputReference | JobTaskSqlTaskAlert): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    alert_id: cdktf.stringToTerraform(struct!.alertId),
-    pause_subscriptions: cdktf.booleanToTerraform(struct!.pauseSubscriptions),
-    subscriptions: cdktf.listMapper(jobTaskSqlTaskAlertSubscriptionsToTerraform, true)(struct!.subscriptions),
+    alert_id: cdktn.stringToTerraform(struct!.alertId),
+    pause_subscriptions: cdktn.booleanToTerraform(struct!.pauseSubscriptions),
+    subscriptions: cdktn.listMapper(jobTaskSqlTaskAlertSubscriptionsToTerraform, true)(struct!.subscriptions),
   }
 }
 
 
 export function jobTaskSqlTaskAlertToHclTerraform(struct?: JobTaskSqlTaskAlertOutputReference | JobTaskSqlTaskAlert): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     alert_id: {
-      value: cdktf.stringToHclTerraform(struct!.alertId),
+      value: cdktn.stringToHclTerraform(struct!.alertId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     pause_subscriptions: {
-      value: cdktf.booleanToHclTerraform(struct!.pauseSubscriptions),
+      value: cdktn.booleanToHclTerraform(struct!.pauseSubscriptions),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     subscriptions: {
-      value: cdktf.listMapperHcl(jobTaskSqlTaskAlertSubscriptionsToHclTerraform, true)(struct!.subscriptions),
+      value: cdktn.listMapperHcl(jobTaskSqlTaskAlertSubscriptionsToHclTerraform, true)(struct!.subscriptions),
       isBlock: true,
       type: "list",
       storageClassType: "JobTaskSqlTaskAlertSubscriptionsList",
@@ -19348,14 +21135,14 @@ export function jobTaskSqlTaskAlertToHclTerraform(struct?: JobTaskSqlTaskAlertOu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskSqlTaskAlertOutputReference extends cdktf.ComplexObject {
+export class JobTaskSqlTaskAlertOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -19406,11 +21193,11 @@ export class JobTaskSqlTaskAlertOutputReference extends cdktf.ComplexObject {
   }
 
   // pause_subscriptions - computed: false, optional: true, required: false
-  private _pauseSubscriptions?: boolean | cdktf.IResolvable; 
+  private _pauseSubscriptions?: boolean | cdktn.IResolvable; 
   public get pauseSubscriptions() {
     return this.getBooleanAttribute('pause_subscriptions');
   }
-  public set pauseSubscriptions(value: boolean | cdktf.IResolvable) {
+  public set pauseSubscriptions(value: boolean | cdktn.IResolvable) {
     this._pauseSubscriptions = value;
   }
   public resetPauseSubscriptions() {
@@ -19426,7 +21213,7 @@ export class JobTaskSqlTaskAlertOutputReference extends cdktf.ComplexObject {
   public get subscriptions() {
     return this._subscriptions;
   }
-  public putSubscriptions(value: JobTaskSqlTaskAlertSubscriptions[] | cdktf.IResolvable) {
+  public putSubscriptions(value: JobTaskSqlTaskAlertSubscriptions[] | cdktn.IResolvable) {
     this._subscriptions.internalValue = value;
   }
   public resetSubscriptions() {
@@ -19439,41 +21226,41 @@ export class JobTaskSqlTaskAlertOutputReference extends cdktf.ComplexObject {
 }
 export interface JobTaskSqlTaskDashboardSubscriptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#destination_id Job#destination_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#destination_id Job#destination_id}
   */
   readonly destinationId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#user_name Job#user_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#user_name Job#user_name}
   */
   readonly userName?: string;
 }
 
-export function jobTaskSqlTaskDashboardSubscriptionsToTerraform(struct?: JobTaskSqlTaskDashboardSubscriptions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobTaskSqlTaskDashboardSubscriptionsToTerraform(struct?: JobTaskSqlTaskDashboardSubscriptions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    destination_id: cdktf.stringToTerraform(struct!.destinationId),
-    user_name: cdktf.stringToTerraform(struct!.userName),
+    destination_id: cdktn.stringToTerraform(struct!.destinationId),
+    user_name: cdktn.stringToTerraform(struct!.userName),
   }
 }
 
 
-export function jobTaskSqlTaskDashboardSubscriptionsToHclTerraform(struct?: JobTaskSqlTaskDashboardSubscriptions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobTaskSqlTaskDashboardSubscriptionsToHclTerraform(struct?: JobTaskSqlTaskDashboardSubscriptions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     destination_id: {
-      value: cdktf.stringToHclTerraform(struct!.destinationId),
+      value: cdktn.stringToHclTerraform(struct!.destinationId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     user_name: {
-      value: cdktf.stringToHclTerraform(struct!.userName),
+      value: cdktn.stringToHclTerraform(struct!.userName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -19484,9 +21271,9 @@ export function jobTaskSqlTaskDashboardSubscriptionsToHclTerraform(struct?: JobT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskSqlTaskDashboardSubscriptionsOutputReference extends cdktf.ComplexObject {
+export class JobTaskSqlTaskDashboardSubscriptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -19494,11 +21281,11 @@ export class JobTaskSqlTaskDashboardSubscriptionsOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobTaskSqlTaskDashboardSubscriptions | cdktf.IResolvable | undefined {
+  public get internalValue(): JobTaskSqlTaskDashboardSubscriptions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -19515,14 +21302,14 @@ export class JobTaskSqlTaskDashboardSubscriptionsOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobTaskSqlTaskDashboardSubscriptions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobTaskSqlTaskDashboardSubscriptions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._destinationId = undefined;
       this._userName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -19567,15 +21354,15 @@ export class JobTaskSqlTaskDashboardSubscriptionsOutputReference extends cdktf.C
   }
 }
 
-export class JobTaskSqlTaskDashboardSubscriptionsList extends cdktf.ComplexList {
-  public internalValue? : JobTaskSqlTaskDashboardSubscriptions[] | cdktf.IResolvable
+export class JobTaskSqlTaskDashboardSubscriptionsList extends cdktn.ComplexList {
+  public internalValue? : JobTaskSqlTaskDashboardSubscriptions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -19588,65 +21375,65 @@ export class JobTaskSqlTaskDashboardSubscriptionsList extends cdktf.ComplexList 
 }
 export interface JobTaskSqlTaskDashboard {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#custom_subject Job#custom_subject}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#custom_subject Job#custom_subject}
   */
   readonly customSubject?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#dashboard_id Job#dashboard_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#dashboard_id Job#dashboard_id}
   */
   readonly dashboardId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#pause_subscriptions Job#pause_subscriptions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#pause_subscriptions Job#pause_subscriptions}
   */
-  readonly pauseSubscriptions?: boolean | cdktf.IResolvable;
+  readonly pauseSubscriptions?: boolean | cdktn.IResolvable;
   /**
   * subscriptions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#subscriptions Job#subscriptions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#subscriptions Job#subscriptions}
   */
-  readonly subscriptions?: JobTaskSqlTaskDashboardSubscriptions[] | cdktf.IResolvable;
+  readonly subscriptions?: JobTaskSqlTaskDashboardSubscriptions[] | cdktn.IResolvable;
 }
 
 export function jobTaskSqlTaskDashboardToTerraform(struct?: JobTaskSqlTaskDashboardOutputReference | JobTaskSqlTaskDashboard): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    custom_subject: cdktf.stringToTerraform(struct!.customSubject),
-    dashboard_id: cdktf.stringToTerraform(struct!.dashboardId),
-    pause_subscriptions: cdktf.booleanToTerraform(struct!.pauseSubscriptions),
-    subscriptions: cdktf.listMapper(jobTaskSqlTaskDashboardSubscriptionsToTerraform, true)(struct!.subscriptions),
+    custom_subject: cdktn.stringToTerraform(struct!.customSubject),
+    dashboard_id: cdktn.stringToTerraform(struct!.dashboardId),
+    pause_subscriptions: cdktn.booleanToTerraform(struct!.pauseSubscriptions),
+    subscriptions: cdktn.listMapper(jobTaskSqlTaskDashboardSubscriptionsToTerraform, true)(struct!.subscriptions),
   }
 }
 
 
 export function jobTaskSqlTaskDashboardToHclTerraform(struct?: JobTaskSqlTaskDashboardOutputReference | JobTaskSqlTaskDashboard): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     custom_subject: {
-      value: cdktf.stringToHclTerraform(struct!.customSubject),
+      value: cdktn.stringToHclTerraform(struct!.customSubject),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     dashboard_id: {
-      value: cdktf.stringToHclTerraform(struct!.dashboardId),
+      value: cdktn.stringToHclTerraform(struct!.dashboardId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     pause_subscriptions: {
-      value: cdktf.booleanToHclTerraform(struct!.pauseSubscriptions),
+      value: cdktn.booleanToHclTerraform(struct!.pauseSubscriptions),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     subscriptions: {
-      value: cdktf.listMapperHcl(jobTaskSqlTaskDashboardSubscriptionsToHclTerraform, true)(struct!.subscriptions),
+      value: cdktn.listMapperHcl(jobTaskSqlTaskDashboardSubscriptionsToHclTerraform, true)(struct!.subscriptions),
       isBlock: true,
       type: "list",
       storageClassType: "JobTaskSqlTaskDashboardSubscriptionsList",
@@ -19657,14 +21444,14 @@ export function jobTaskSqlTaskDashboardToHclTerraform(struct?: JobTaskSqlTaskDas
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskSqlTaskDashboardOutputReference extends cdktf.ComplexObject {
+export class JobTaskSqlTaskDashboardOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -19737,11 +21524,11 @@ export class JobTaskSqlTaskDashboardOutputReference extends cdktf.ComplexObject 
   }
 
   // pause_subscriptions - computed: false, optional: true, required: false
-  private _pauseSubscriptions?: boolean | cdktf.IResolvable; 
+  private _pauseSubscriptions?: boolean | cdktn.IResolvable; 
   public get pauseSubscriptions() {
     return this.getBooleanAttribute('pause_subscriptions');
   }
-  public set pauseSubscriptions(value: boolean | cdktf.IResolvable) {
+  public set pauseSubscriptions(value: boolean | cdktn.IResolvable) {
     this._pauseSubscriptions = value;
   }
   public resetPauseSubscriptions() {
@@ -19757,7 +21544,7 @@ export class JobTaskSqlTaskDashboardOutputReference extends cdktf.ComplexObject 
   public get subscriptions() {
     return this._subscriptions;
   }
-  public putSubscriptions(value: JobTaskSqlTaskDashboardSubscriptions[] | cdktf.IResolvable) {
+  public putSubscriptions(value: JobTaskSqlTaskDashboardSubscriptions[] | cdktn.IResolvable) {
     this._subscriptions.internalValue = value;
   }
   public resetSubscriptions() {
@@ -19770,41 +21557,41 @@ export class JobTaskSqlTaskDashboardOutputReference extends cdktf.ComplexObject 
 }
 export interface JobTaskSqlTaskFile {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#path Job#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#path Job#path}
   */
   readonly path: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#source Job#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#source Job#source}
   */
   readonly source?: string;
 }
 
 export function jobTaskSqlTaskFileToTerraform(struct?: JobTaskSqlTaskFileOutputReference | JobTaskSqlTaskFile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    path: cdktf.stringToTerraform(struct!.path),
-    source: cdktf.stringToTerraform(struct!.source),
+    path: cdktn.stringToTerraform(struct!.path),
+    source: cdktn.stringToTerraform(struct!.source),
   }
 }
 
 
 export function jobTaskSqlTaskFileToHclTerraform(struct?: JobTaskSqlTaskFileOutputReference | JobTaskSqlTaskFile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source: {
-      value: cdktf.stringToHclTerraform(struct!.source),
+      value: cdktn.stringToHclTerraform(struct!.source),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -19815,14 +21602,14 @@ export function jobTaskSqlTaskFileToHclTerraform(struct?: JobTaskSqlTaskFileOutp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskSqlTaskFileOutputReference extends cdktf.ComplexObject {
+export class JobTaskSqlTaskFileOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -19884,30 +21671,30 @@ export class JobTaskSqlTaskFileOutputReference extends cdktf.ComplexObject {
 }
 export interface JobTaskSqlTaskQuery {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#query_id Job#query_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#query_id Job#query_id}
   */
   readonly queryId: string;
 }
 
 export function jobTaskSqlTaskQueryToTerraform(struct?: JobTaskSqlTaskQueryOutputReference | JobTaskSqlTaskQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    query_id: cdktf.stringToTerraform(struct!.queryId),
+    query_id: cdktn.stringToTerraform(struct!.queryId),
   }
 }
 
 
 export function jobTaskSqlTaskQueryToHclTerraform(struct?: JobTaskSqlTaskQueryOutputReference | JobTaskSqlTaskQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     query_id: {
-      value: cdktf.stringToHclTerraform(struct!.queryId),
+      value: cdktn.stringToHclTerraform(struct!.queryId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -19918,14 +21705,14 @@ export function jobTaskSqlTaskQueryToHclTerraform(struct?: JobTaskSqlTaskQueryOu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskSqlTaskQueryOutputReference extends cdktf.ComplexObject {
+export class JobTaskSqlTaskQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -19965,47 +21752,47 @@ export class JobTaskSqlTaskQueryOutputReference extends cdktf.ComplexObject {
 }
 export interface JobTaskSqlTask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#parameters Job#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#parameters Job#parameters}
   */
   readonly parameters?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#warehouse_id Job#warehouse_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#warehouse_id Job#warehouse_id}
   */
   readonly warehouseId: string;
   /**
   * alert block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#alert Job#alert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#alert Job#alert}
   */
   readonly alert?: JobTaskSqlTaskAlert;
   /**
   * dashboard block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#dashboard Job#dashboard}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#dashboard Job#dashboard}
   */
   readonly dashboard?: JobTaskSqlTaskDashboard;
   /**
   * file block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#file Job#file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#file Job#file}
   */
   readonly file?: JobTaskSqlTaskFile;
   /**
   * query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#query Job#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#query Job#query}
   */
   readonly query?: JobTaskSqlTaskQuery;
 }
 
 export function jobTaskSqlTaskToTerraform(struct?: JobTaskSqlTaskOutputReference | JobTaskSqlTask): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    parameters: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.parameters),
-    warehouse_id: cdktf.stringToTerraform(struct!.warehouseId),
+    parameters: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.parameters),
+    warehouse_id: cdktn.stringToTerraform(struct!.warehouseId),
     alert: jobTaskSqlTaskAlertToTerraform(struct!.alert),
     dashboard: jobTaskSqlTaskDashboardToTerraform(struct!.dashboard),
     file: jobTaskSqlTaskFileToTerraform(struct!.file),
@@ -20015,19 +21802,19 @@ export function jobTaskSqlTaskToTerraform(struct?: JobTaskSqlTaskOutputReference
 
 
 export function jobTaskSqlTaskToHclTerraform(struct?: JobTaskSqlTaskOutputReference | JobTaskSqlTask): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     parameters: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.parameters),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.parameters),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     warehouse_id: {
-      value: cdktf.stringToHclTerraform(struct!.warehouseId),
+      value: cdktn.stringToHclTerraform(struct!.warehouseId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -20062,14 +21849,14 @@ export function jobTaskSqlTaskToHclTerraform(struct?: JobTaskSqlTaskOutputRefere
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskSqlTaskOutputReference extends cdktf.ComplexObject {
+export class JobTaskSqlTaskOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -20219,7 +22006,7 @@ export class JobTaskSqlTaskOutputReference extends cdktf.ComplexObject {
 }
 export interface JobTaskWebhookNotificationsOnDurationWarningThresholdExceeded {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#id Job#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#id Job#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -20227,25 +22014,25 @@ export interface JobTaskWebhookNotificationsOnDurationWarningThresholdExceeded {
   readonly id: string;
 }
 
-export function jobTaskWebhookNotificationsOnDurationWarningThresholdExceededToTerraform(struct?: JobTaskWebhookNotificationsOnDurationWarningThresholdExceeded | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobTaskWebhookNotificationsOnDurationWarningThresholdExceededToTerraform(struct?: JobTaskWebhookNotificationsOnDurationWarningThresholdExceeded | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
+    id: cdktn.stringToTerraform(struct!.id),
   }
 }
 
 
-export function jobTaskWebhookNotificationsOnDurationWarningThresholdExceededToHclTerraform(struct?: JobTaskWebhookNotificationsOnDurationWarningThresholdExceeded | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobTaskWebhookNotificationsOnDurationWarningThresholdExceededToHclTerraform(struct?: JobTaskWebhookNotificationsOnDurationWarningThresholdExceeded | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -20256,9 +22043,9 @@ export function jobTaskWebhookNotificationsOnDurationWarningThresholdExceededToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskWebhookNotificationsOnDurationWarningThresholdExceededOutputReference extends cdktf.ComplexObject {
+export class JobTaskWebhookNotificationsOnDurationWarningThresholdExceededOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -20266,11 +22053,11 @@ export class JobTaskWebhookNotificationsOnDurationWarningThresholdExceededOutput
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobTaskWebhookNotificationsOnDurationWarningThresholdExceeded | cdktf.IResolvable | undefined {
+  public get internalValue(): JobTaskWebhookNotificationsOnDurationWarningThresholdExceeded | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -20283,13 +22070,13 @@ export class JobTaskWebhookNotificationsOnDurationWarningThresholdExceededOutput
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobTaskWebhookNotificationsOnDurationWarningThresholdExceeded | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobTaskWebhookNotificationsOnDurationWarningThresholdExceeded | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._id = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -20314,15 +22101,15 @@ export class JobTaskWebhookNotificationsOnDurationWarningThresholdExceededOutput
   }
 }
 
-export class JobTaskWebhookNotificationsOnDurationWarningThresholdExceededList extends cdktf.ComplexList {
-  public internalValue? : JobTaskWebhookNotificationsOnDurationWarningThresholdExceeded[] | cdktf.IResolvable
+export class JobTaskWebhookNotificationsOnDurationWarningThresholdExceededList extends cdktn.ComplexList {
+  public internalValue? : JobTaskWebhookNotificationsOnDurationWarningThresholdExceeded[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -20335,7 +22122,7 @@ export class JobTaskWebhookNotificationsOnDurationWarningThresholdExceededList e
 }
 export interface JobTaskWebhookNotificationsOnFailure {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#id Job#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#id Job#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -20343,25 +22130,25 @@ export interface JobTaskWebhookNotificationsOnFailure {
   readonly id: string;
 }
 
-export function jobTaskWebhookNotificationsOnFailureToTerraform(struct?: JobTaskWebhookNotificationsOnFailure | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobTaskWebhookNotificationsOnFailureToTerraform(struct?: JobTaskWebhookNotificationsOnFailure | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
+    id: cdktn.stringToTerraform(struct!.id),
   }
 }
 
 
-export function jobTaskWebhookNotificationsOnFailureToHclTerraform(struct?: JobTaskWebhookNotificationsOnFailure | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobTaskWebhookNotificationsOnFailureToHclTerraform(struct?: JobTaskWebhookNotificationsOnFailure | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -20372,9 +22159,9 @@ export function jobTaskWebhookNotificationsOnFailureToHclTerraform(struct?: JobT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskWebhookNotificationsOnFailureOutputReference extends cdktf.ComplexObject {
+export class JobTaskWebhookNotificationsOnFailureOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -20382,11 +22169,11 @@ export class JobTaskWebhookNotificationsOnFailureOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobTaskWebhookNotificationsOnFailure | cdktf.IResolvable | undefined {
+  public get internalValue(): JobTaskWebhookNotificationsOnFailure | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -20399,13 +22186,13 @@ export class JobTaskWebhookNotificationsOnFailureOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobTaskWebhookNotificationsOnFailure | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobTaskWebhookNotificationsOnFailure | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._id = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -20430,15 +22217,15 @@ export class JobTaskWebhookNotificationsOnFailureOutputReference extends cdktf.C
   }
 }
 
-export class JobTaskWebhookNotificationsOnFailureList extends cdktf.ComplexList {
-  public internalValue? : JobTaskWebhookNotificationsOnFailure[] | cdktf.IResolvable
+export class JobTaskWebhookNotificationsOnFailureList extends cdktn.ComplexList {
+  public internalValue? : JobTaskWebhookNotificationsOnFailure[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -20451,7 +22238,7 @@ export class JobTaskWebhookNotificationsOnFailureList extends cdktf.ComplexList 
 }
 export interface JobTaskWebhookNotificationsOnStart {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#id Job#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#id Job#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -20459,25 +22246,25 @@ export interface JobTaskWebhookNotificationsOnStart {
   readonly id: string;
 }
 
-export function jobTaskWebhookNotificationsOnStartToTerraform(struct?: JobTaskWebhookNotificationsOnStart | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobTaskWebhookNotificationsOnStartToTerraform(struct?: JobTaskWebhookNotificationsOnStart | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
+    id: cdktn.stringToTerraform(struct!.id),
   }
 }
 
 
-export function jobTaskWebhookNotificationsOnStartToHclTerraform(struct?: JobTaskWebhookNotificationsOnStart | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobTaskWebhookNotificationsOnStartToHclTerraform(struct?: JobTaskWebhookNotificationsOnStart | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -20488,9 +22275,9 @@ export function jobTaskWebhookNotificationsOnStartToHclTerraform(struct?: JobTas
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskWebhookNotificationsOnStartOutputReference extends cdktf.ComplexObject {
+export class JobTaskWebhookNotificationsOnStartOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -20498,11 +22285,11 @@ export class JobTaskWebhookNotificationsOnStartOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobTaskWebhookNotificationsOnStart | cdktf.IResolvable | undefined {
+  public get internalValue(): JobTaskWebhookNotificationsOnStart | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -20515,13 +22302,13 @@ export class JobTaskWebhookNotificationsOnStartOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobTaskWebhookNotificationsOnStart | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobTaskWebhookNotificationsOnStart | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._id = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -20546,15 +22333,15 @@ export class JobTaskWebhookNotificationsOnStartOutputReference extends cdktf.Com
   }
 }
 
-export class JobTaskWebhookNotificationsOnStartList extends cdktf.ComplexList {
-  public internalValue? : JobTaskWebhookNotificationsOnStart[] | cdktf.IResolvable
+export class JobTaskWebhookNotificationsOnStartList extends cdktn.ComplexList {
+  public internalValue? : JobTaskWebhookNotificationsOnStart[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -20567,7 +22354,7 @@ export class JobTaskWebhookNotificationsOnStartList extends cdktf.ComplexList {
 }
 export interface JobTaskWebhookNotificationsOnStreamingBacklogExceeded {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#id Job#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#id Job#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -20575,25 +22362,25 @@ export interface JobTaskWebhookNotificationsOnStreamingBacklogExceeded {
   readonly id: string;
 }
 
-export function jobTaskWebhookNotificationsOnStreamingBacklogExceededToTerraform(struct?: JobTaskWebhookNotificationsOnStreamingBacklogExceeded | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobTaskWebhookNotificationsOnStreamingBacklogExceededToTerraform(struct?: JobTaskWebhookNotificationsOnStreamingBacklogExceeded | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
+    id: cdktn.stringToTerraform(struct!.id),
   }
 }
 
 
-export function jobTaskWebhookNotificationsOnStreamingBacklogExceededToHclTerraform(struct?: JobTaskWebhookNotificationsOnStreamingBacklogExceeded | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobTaskWebhookNotificationsOnStreamingBacklogExceededToHclTerraform(struct?: JobTaskWebhookNotificationsOnStreamingBacklogExceeded | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -20604,9 +22391,9 @@ export function jobTaskWebhookNotificationsOnStreamingBacklogExceededToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskWebhookNotificationsOnStreamingBacklogExceededOutputReference extends cdktf.ComplexObject {
+export class JobTaskWebhookNotificationsOnStreamingBacklogExceededOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -20614,11 +22401,11 @@ export class JobTaskWebhookNotificationsOnStreamingBacklogExceededOutputReferenc
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobTaskWebhookNotificationsOnStreamingBacklogExceeded | cdktf.IResolvable | undefined {
+  public get internalValue(): JobTaskWebhookNotificationsOnStreamingBacklogExceeded | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -20631,13 +22418,13 @@ export class JobTaskWebhookNotificationsOnStreamingBacklogExceededOutputReferenc
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobTaskWebhookNotificationsOnStreamingBacklogExceeded | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobTaskWebhookNotificationsOnStreamingBacklogExceeded | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._id = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -20662,15 +22449,15 @@ export class JobTaskWebhookNotificationsOnStreamingBacklogExceededOutputReferenc
   }
 }
 
-export class JobTaskWebhookNotificationsOnStreamingBacklogExceededList extends cdktf.ComplexList {
-  public internalValue? : JobTaskWebhookNotificationsOnStreamingBacklogExceeded[] | cdktf.IResolvable
+export class JobTaskWebhookNotificationsOnStreamingBacklogExceededList extends cdktn.ComplexList {
+  public internalValue? : JobTaskWebhookNotificationsOnStreamingBacklogExceeded[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -20683,7 +22470,7 @@ export class JobTaskWebhookNotificationsOnStreamingBacklogExceededList extends c
 }
 export interface JobTaskWebhookNotificationsOnSuccess {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#id Job#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#id Job#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -20691,25 +22478,25 @@ export interface JobTaskWebhookNotificationsOnSuccess {
   readonly id: string;
 }
 
-export function jobTaskWebhookNotificationsOnSuccessToTerraform(struct?: JobTaskWebhookNotificationsOnSuccess | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobTaskWebhookNotificationsOnSuccessToTerraform(struct?: JobTaskWebhookNotificationsOnSuccess | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
+    id: cdktn.stringToTerraform(struct!.id),
   }
 }
 
 
-export function jobTaskWebhookNotificationsOnSuccessToHclTerraform(struct?: JobTaskWebhookNotificationsOnSuccess | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobTaskWebhookNotificationsOnSuccessToHclTerraform(struct?: JobTaskWebhookNotificationsOnSuccess | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -20720,9 +22507,9 @@ export function jobTaskWebhookNotificationsOnSuccessToHclTerraform(struct?: JobT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskWebhookNotificationsOnSuccessOutputReference extends cdktf.ComplexObject {
+export class JobTaskWebhookNotificationsOnSuccessOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -20730,11 +22517,11 @@ export class JobTaskWebhookNotificationsOnSuccessOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobTaskWebhookNotificationsOnSuccess | cdktf.IResolvable | undefined {
+  public get internalValue(): JobTaskWebhookNotificationsOnSuccess | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -20747,13 +22534,13 @@ export class JobTaskWebhookNotificationsOnSuccessOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobTaskWebhookNotificationsOnSuccess | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobTaskWebhookNotificationsOnSuccess | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._id = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -20778,15 +22565,15 @@ export class JobTaskWebhookNotificationsOnSuccessOutputReference extends cdktf.C
   }
 }
 
-export class JobTaskWebhookNotificationsOnSuccessList extends cdktf.ComplexList {
-  public internalValue? : JobTaskWebhookNotificationsOnSuccess[] | cdktf.IResolvable
+export class JobTaskWebhookNotificationsOnSuccessList extends cdktn.ComplexList {
+  public internalValue? : JobTaskWebhookNotificationsOnSuccess[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -20801,82 +22588,82 @@ export interface JobTaskWebhookNotifications {
   /**
   * on_duration_warning_threshold_exceeded block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#on_duration_warning_threshold_exceeded Job#on_duration_warning_threshold_exceeded}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#on_duration_warning_threshold_exceeded Job#on_duration_warning_threshold_exceeded}
   */
-  readonly onDurationWarningThresholdExceeded?: JobTaskWebhookNotificationsOnDurationWarningThresholdExceeded[] | cdktf.IResolvable;
+  readonly onDurationWarningThresholdExceeded?: JobTaskWebhookNotificationsOnDurationWarningThresholdExceeded[] | cdktn.IResolvable;
   /**
   * on_failure block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#on_failure Job#on_failure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#on_failure Job#on_failure}
   */
-  readonly onFailure?: JobTaskWebhookNotificationsOnFailure[] | cdktf.IResolvable;
+  readonly onFailure?: JobTaskWebhookNotificationsOnFailure[] | cdktn.IResolvable;
   /**
   * on_start block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#on_start Job#on_start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#on_start Job#on_start}
   */
-  readonly onStart?: JobTaskWebhookNotificationsOnStart[] | cdktf.IResolvable;
+  readonly onStart?: JobTaskWebhookNotificationsOnStart[] | cdktn.IResolvable;
   /**
   * on_streaming_backlog_exceeded block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#on_streaming_backlog_exceeded Job#on_streaming_backlog_exceeded}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#on_streaming_backlog_exceeded Job#on_streaming_backlog_exceeded}
   */
-  readonly onStreamingBacklogExceeded?: JobTaskWebhookNotificationsOnStreamingBacklogExceeded[] | cdktf.IResolvable;
+  readonly onStreamingBacklogExceeded?: JobTaskWebhookNotificationsOnStreamingBacklogExceeded[] | cdktn.IResolvable;
   /**
   * on_success block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#on_success Job#on_success}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#on_success Job#on_success}
   */
-  readonly onSuccess?: JobTaskWebhookNotificationsOnSuccess[] | cdktf.IResolvable;
+  readonly onSuccess?: JobTaskWebhookNotificationsOnSuccess[] | cdktn.IResolvable;
 }
 
 export function jobTaskWebhookNotificationsToTerraform(struct?: JobTaskWebhookNotificationsOutputReference | JobTaskWebhookNotifications): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    on_duration_warning_threshold_exceeded: cdktf.listMapper(jobTaskWebhookNotificationsOnDurationWarningThresholdExceededToTerraform, true)(struct!.onDurationWarningThresholdExceeded),
-    on_failure: cdktf.listMapper(jobTaskWebhookNotificationsOnFailureToTerraform, true)(struct!.onFailure),
-    on_start: cdktf.listMapper(jobTaskWebhookNotificationsOnStartToTerraform, true)(struct!.onStart),
-    on_streaming_backlog_exceeded: cdktf.listMapper(jobTaskWebhookNotificationsOnStreamingBacklogExceededToTerraform, true)(struct!.onStreamingBacklogExceeded),
-    on_success: cdktf.listMapper(jobTaskWebhookNotificationsOnSuccessToTerraform, true)(struct!.onSuccess),
+    on_duration_warning_threshold_exceeded: cdktn.listMapper(jobTaskWebhookNotificationsOnDurationWarningThresholdExceededToTerraform, true)(struct!.onDurationWarningThresholdExceeded),
+    on_failure: cdktn.listMapper(jobTaskWebhookNotificationsOnFailureToTerraform, true)(struct!.onFailure),
+    on_start: cdktn.listMapper(jobTaskWebhookNotificationsOnStartToTerraform, true)(struct!.onStart),
+    on_streaming_backlog_exceeded: cdktn.listMapper(jobTaskWebhookNotificationsOnStreamingBacklogExceededToTerraform, true)(struct!.onStreamingBacklogExceeded),
+    on_success: cdktn.listMapper(jobTaskWebhookNotificationsOnSuccessToTerraform, true)(struct!.onSuccess),
   }
 }
 
 
 export function jobTaskWebhookNotificationsToHclTerraform(struct?: JobTaskWebhookNotificationsOutputReference | JobTaskWebhookNotifications): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     on_duration_warning_threshold_exceeded: {
-      value: cdktf.listMapperHcl(jobTaskWebhookNotificationsOnDurationWarningThresholdExceededToHclTerraform, true)(struct!.onDurationWarningThresholdExceeded),
+      value: cdktn.listMapperHcl(jobTaskWebhookNotificationsOnDurationWarningThresholdExceededToHclTerraform, true)(struct!.onDurationWarningThresholdExceeded),
       isBlock: true,
       type: "list",
       storageClassType: "JobTaskWebhookNotificationsOnDurationWarningThresholdExceededList",
     },
     on_failure: {
-      value: cdktf.listMapperHcl(jobTaskWebhookNotificationsOnFailureToHclTerraform, true)(struct!.onFailure),
+      value: cdktn.listMapperHcl(jobTaskWebhookNotificationsOnFailureToHclTerraform, true)(struct!.onFailure),
       isBlock: true,
       type: "list",
       storageClassType: "JobTaskWebhookNotificationsOnFailureList",
     },
     on_start: {
-      value: cdktf.listMapperHcl(jobTaskWebhookNotificationsOnStartToHclTerraform, true)(struct!.onStart),
+      value: cdktn.listMapperHcl(jobTaskWebhookNotificationsOnStartToHclTerraform, true)(struct!.onStart),
       isBlock: true,
       type: "list",
       storageClassType: "JobTaskWebhookNotificationsOnStartList",
     },
     on_streaming_backlog_exceeded: {
-      value: cdktf.listMapperHcl(jobTaskWebhookNotificationsOnStreamingBacklogExceededToHclTerraform, true)(struct!.onStreamingBacklogExceeded),
+      value: cdktn.listMapperHcl(jobTaskWebhookNotificationsOnStreamingBacklogExceededToHclTerraform, true)(struct!.onStreamingBacklogExceeded),
       isBlock: true,
       type: "list",
       storageClassType: "JobTaskWebhookNotificationsOnStreamingBacklogExceededList",
     },
     on_success: {
-      value: cdktf.listMapperHcl(jobTaskWebhookNotificationsOnSuccessToHclTerraform, true)(struct!.onSuccess),
+      value: cdktn.listMapperHcl(jobTaskWebhookNotificationsOnSuccessToHclTerraform, true)(struct!.onSuccess),
       isBlock: true,
       type: "list",
       storageClassType: "JobTaskWebhookNotificationsOnSuccessList",
@@ -20887,14 +22674,14 @@ export function jobTaskWebhookNotificationsToHclTerraform(struct?: JobTaskWebhoo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskWebhookNotificationsOutputReference extends cdktf.ComplexObject {
+export class JobTaskWebhookNotificationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -20948,7 +22735,7 @@ export class JobTaskWebhookNotificationsOutputReference extends cdktf.ComplexObj
   public get onDurationWarningThresholdExceeded() {
     return this._onDurationWarningThresholdExceeded;
   }
-  public putOnDurationWarningThresholdExceeded(value: JobTaskWebhookNotificationsOnDurationWarningThresholdExceeded[] | cdktf.IResolvable) {
+  public putOnDurationWarningThresholdExceeded(value: JobTaskWebhookNotificationsOnDurationWarningThresholdExceeded[] | cdktn.IResolvable) {
     this._onDurationWarningThresholdExceeded.internalValue = value;
   }
   public resetOnDurationWarningThresholdExceeded() {
@@ -20964,7 +22751,7 @@ export class JobTaskWebhookNotificationsOutputReference extends cdktf.ComplexObj
   public get onFailure() {
     return this._onFailure;
   }
-  public putOnFailure(value: JobTaskWebhookNotificationsOnFailure[] | cdktf.IResolvable) {
+  public putOnFailure(value: JobTaskWebhookNotificationsOnFailure[] | cdktn.IResolvable) {
     this._onFailure.internalValue = value;
   }
   public resetOnFailure() {
@@ -20980,7 +22767,7 @@ export class JobTaskWebhookNotificationsOutputReference extends cdktf.ComplexObj
   public get onStart() {
     return this._onStart;
   }
-  public putOnStart(value: JobTaskWebhookNotificationsOnStart[] | cdktf.IResolvable) {
+  public putOnStart(value: JobTaskWebhookNotificationsOnStart[] | cdktn.IResolvable) {
     this._onStart.internalValue = value;
   }
   public resetOnStart() {
@@ -20996,7 +22783,7 @@ export class JobTaskWebhookNotificationsOutputReference extends cdktf.ComplexObj
   public get onStreamingBacklogExceeded() {
     return this._onStreamingBacklogExceeded;
   }
-  public putOnStreamingBacklogExceeded(value: JobTaskWebhookNotificationsOnStreamingBacklogExceeded[] | cdktf.IResolvable) {
+  public putOnStreamingBacklogExceeded(value: JobTaskWebhookNotificationsOnStreamingBacklogExceeded[] | cdktn.IResolvable) {
     this._onStreamingBacklogExceeded.internalValue = value;
   }
   public resetOnStreamingBacklogExceeded() {
@@ -21012,7 +22799,7 @@ export class JobTaskWebhookNotificationsOutputReference extends cdktf.ComplexObj
   public get onSuccess() {
     return this._onSuccess;
   }
-  public putOnSuccess(value: JobTaskWebhookNotificationsOnSuccess[] | cdktf.IResolvable) {
+  public putOnSuccess(value: JobTaskWebhookNotificationsOnSuccess[] | cdktn.IResolvable) {
     this._onSuccess.internalValue = value;
   }
   public resetOnSuccess() {
@@ -21025,229 +22812,236 @@ export class JobTaskWebhookNotificationsOutputReference extends cdktf.ComplexObj
 }
 export interface JobTask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#description Job#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#description Job#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#disable_auto_optimization Job#disable_auto_optimization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#disable_auto_optimization Job#disable_auto_optimization}
   */
-  readonly disableAutoOptimization?: boolean | cdktf.IResolvable;
+  readonly disableAutoOptimization?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#disabled Job#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#disabled Job#disabled}
   */
-  readonly disabled?: boolean | cdktf.IResolvable;
+  readonly disabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#environment_key Job#environment_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#environment_key Job#environment_key}
   */
   readonly environmentKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#existing_cluster_id Job#existing_cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#existing_cluster_id Job#existing_cluster_id}
   */
   readonly existingClusterId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#job_cluster_key Job#job_cluster_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#job_cluster_key Job#job_cluster_key}
   */
   readonly jobClusterKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#max_retries Job#max_retries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#max_retries Job#max_retries}
   */
   readonly maxRetries?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#min_retry_interval_millis Job#min_retry_interval_millis}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#min_retry_interval_millis Job#min_retry_interval_millis}
   */
   readonly minRetryIntervalMillis?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#retry_on_timeout Job#retry_on_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#retry_on_timeout Job#retry_on_timeout}
   */
-  readonly retryOnTimeout?: boolean | cdktf.IResolvable;
+  readonly retryOnTimeout?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#run_if Job#run_if}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#run_if Job#run_if}
   */
   readonly runIf?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#task_key Job#task_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#task_key Job#task_key}
   */
   readonly taskKey: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#timeout_seconds Job#timeout_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#timeout_seconds Job#timeout_seconds}
   */
   readonly timeoutSeconds?: number;
   /**
   * clean_rooms_notebook_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#clean_rooms_notebook_task Job#clean_rooms_notebook_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#clean_rooms_notebook_task Job#clean_rooms_notebook_task}
   */
   readonly cleanRoomsNotebookTask?: JobTaskCleanRoomsNotebookTask;
   /**
+  * compute block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#compute Job#compute}
+  */
+  readonly compute?: JobTaskCompute;
+  /**
   * condition_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#condition_task Job#condition_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#condition_task Job#condition_task}
   */
   readonly conditionTask?: JobTaskConditionTask;
   /**
   * dashboard_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#dashboard_task Job#dashboard_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#dashboard_task Job#dashboard_task}
   */
   readonly dashboardTask?: JobTaskDashboardTask;
   /**
   * dbt_cloud_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#dbt_cloud_task Job#dbt_cloud_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#dbt_cloud_task Job#dbt_cloud_task}
   */
   readonly dbtCloudTask?: JobTaskDbtCloudTask;
   /**
   * dbt_platform_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#dbt_platform_task Job#dbt_platform_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#dbt_platform_task Job#dbt_platform_task}
   */
   readonly dbtPlatformTask?: JobTaskDbtPlatformTask;
   /**
   * dbt_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#dbt_task Job#dbt_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#dbt_task Job#dbt_task}
   */
   readonly dbtTask?: JobTaskDbtTask;
   /**
   * depends_on block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#depends_on Job#depends_on}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#depends_on Job#depends_on}
   */
-  readonly dependsOn?: JobTaskDependsOn[] | cdktf.IResolvable;
+  readonly dependsOn?: JobTaskDependsOn[] | cdktn.IResolvable;
   /**
   * email_notifications block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#email_notifications Job#email_notifications}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#email_notifications Job#email_notifications}
   */
   readonly emailNotifications?: JobTaskEmailNotifications;
   /**
   * for_each_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#for_each_task Job#for_each_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#for_each_task Job#for_each_task}
   */
   readonly forEachTask?: JobTaskForEachTask;
   /**
   * gen_ai_compute_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#gen_ai_compute_task Job#gen_ai_compute_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#gen_ai_compute_task Job#gen_ai_compute_task}
   */
   readonly genAiComputeTask?: JobTaskGenAiComputeTask;
   /**
   * health block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#health Job#health}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#health Job#health}
   */
   readonly health?: JobTaskHealth;
   /**
   * library block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#library Job#library}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#library Job#library}
   */
-  readonly library?: JobTaskLibrary[] | cdktf.IResolvable;
+  readonly library?: JobTaskLibrary[] | cdktn.IResolvable;
   /**
   * new_cluster block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#new_cluster Job#new_cluster}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#new_cluster Job#new_cluster}
   */
   readonly newCluster?: JobTaskNewCluster;
   /**
   * notebook_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#notebook_task Job#notebook_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#notebook_task Job#notebook_task}
   */
   readonly notebookTask?: JobTaskNotebookTask;
   /**
   * notification_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#notification_settings Job#notification_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#notification_settings Job#notification_settings}
   */
   readonly notificationSettings?: JobTaskNotificationSettings;
   /**
   * pipeline_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#pipeline_task Job#pipeline_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#pipeline_task Job#pipeline_task}
   */
   readonly pipelineTask?: JobTaskPipelineTask;
   /**
   * power_bi_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#power_bi_task Job#power_bi_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#power_bi_task Job#power_bi_task}
   */
   readonly powerBiTask?: JobTaskPowerBiTask;
   /**
   * python_wheel_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#python_wheel_task Job#python_wheel_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#python_wheel_task Job#python_wheel_task}
   */
   readonly pythonWheelTask?: JobTaskPythonWheelTask;
   /**
   * run_job_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#run_job_task Job#run_job_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#run_job_task Job#run_job_task}
   */
   readonly runJobTask?: JobTaskRunJobTask;
   /**
   * spark_jar_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#spark_jar_task Job#spark_jar_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#spark_jar_task Job#spark_jar_task}
   */
   readonly sparkJarTask?: JobTaskSparkJarTask;
   /**
   * spark_python_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#spark_python_task Job#spark_python_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#spark_python_task Job#spark_python_task}
   */
   readonly sparkPythonTask?: JobTaskSparkPythonTask;
   /**
   * spark_submit_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#spark_submit_task Job#spark_submit_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#spark_submit_task Job#spark_submit_task}
   */
   readonly sparkSubmitTask?: JobTaskSparkSubmitTask;
   /**
   * sql_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#sql_task Job#sql_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#sql_task Job#sql_task}
   */
   readonly sqlTask?: JobTaskSqlTask;
   /**
   * webhook_notifications block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#webhook_notifications Job#webhook_notifications}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#webhook_notifications Job#webhook_notifications}
   */
   readonly webhookNotifications?: JobTaskWebhookNotifications;
 }
 
-export function jobTaskToTerraform(struct?: JobTask | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobTaskToTerraform(struct?: JobTask | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    disable_auto_optimization: cdktf.booleanToTerraform(struct!.disableAutoOptimization),
-    disabled: cdktf.booleanToTerraform(struct!.disabled),
-    environment_key: cdktf.stringToTerraform(struct!.environmentKey),
-    existing_cluster_id: cdktf.stringToTerraform(struct!.existingClusterId),
-    job_cluster_key: cdktf.stringToTerraform(struct!.jobClusterKey),
-    max_retries: cdktf.numberToTerraform(struct!.maxRetries),
-    min_retry_interval_millis: cdktf.numberToTerraform(struct!.minRetryIntervalMillis),
-    retry_on_timeout: cdktf.booleanToTerraform(struct!.retryOnTimeout),
-    run_if: cdktf.stringToTerraform(struct!.runIf),
-    task_key: cdktf.stringToTerraform(struct!.taskKey),
-    timeout_seconds: cdktf.numberToTerraform(struct!.timeoutSeconds),
+    description: cdktn.stringToTerraform(struct!.description),
+    disable_auto_optimization: cdktn.booleanToTerraform(struct!.disableAutoOptimization),
+    disabled: cdktn.booleanToTerraform(struct!.disabled),
+    environment_key: cdktn.stringToTerraform(struct!.environmentKey),
+    existing_cluster_id: cdktn.stringToTerraform(struct!.existingClusterId),
+    job_cluster_key: cdktn.stringToTerraform(struct!.jobClusterKey),
+    max_retries: cdktn.numberToTerraform(struct!.maxRetries),
+    min_retry_interval_millis: cdktn.numberToTerraform(struct!.minRetryIntervalMillis),
+    retry_on_timeout: cdktn.booleanToTerraform(struct!.retryOnTimeout),
+    run_if: cdktn.stringToTerraform(struct!.runIf),
+    task_key: cdktn.stringToTerraform(struct!.taskKey),
+    timeout_seconds: cdktn.numberToTerraform(struct!.timeoutSeconds),
     clean_rooms_notebook_task: jobTaskCleanRoomsNotebookTaskToTerraform(struct!.cleanRoomsNotebookTask),
+    compute: jobTaskComputeToTerraform(struct!.compute),
     condition_task: jobTaskConditionTaskToTerraform(struct!.conditionTask),
     dashboard_task: jobTaskDashboardTaskToTerraform(struct!.dashboardTask),
     dbt_cloud_task: jobTaskDbtCloudTaskToTerraform(struct!.dbtCloudTask),
     dbt_platform_task: jobTaskDbtPlatformTaskToTerraform(struct!.dbtPlatformTask),
     dbt_task: jobTaskDbtTaskToTerraform(struct!.dbtTask),
-    depends_on: cdktf.listMapper(jobTaskDependsOnToTerraform, true)(struct!.dependsOn),
+    depends_on: cdktn.listMapper(jobTaskDependsOnToTerraform, true)(struct!.dependsOn),
     email_notifications: jobTaskEmailNotificationsToTerraform(struct!.emailNotifications),
     for_each_task: jobTaskForEachTaskToTerraform(struct!.forEachTask),
     gen_ai_compute_task: jobTaskGenAiComputeTaskToTerraform(struct!.genAiComputeTask),
     health: jobTaskHealthToTerraform(struct!.health),
-    library: cdktf.listMapper(jobTaskLibraryToTerraform, true)(struct!.library),
+    library: cdktn.listMapper(jobTaskLibraryToTerraform, true)(struct!.library),
     new_cluster: jobTaskNewClusterToTerraform(struct!.newCluster),
     notebook_task: jobTaskNotebookTaskToTerraform(struct!.notebookTask),
     notification_settings: jobTaskNotificationSettingsToTerraform(struct!.notificationSettings),
@@ -21264,80 +23058,80 @@ export function jobTaskToTerraform(struct?: JobTask | cdktf.IResolvable): any {
 }
 
 
-export function jobTaskToHclTerraform(struct?: JobTask | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jobTaskToHclTerraform(struct?: JobTask | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     disable_auto_optimization: {
-      value: cdktf.booleanToHclTerraform(struct!.disableAutoOptimization),
+      value: cdktn.booleanToHclTerraform(struct!.disableAutoOptimization),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     disabled: {
-      value: cdktf.booleanToHclTerraform(struct!.disabled),
+      value: cdktn.booleanToHclTerraform(struct!.disabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     environment_key: {
-      value: cdktf.stringToHclTerraform(struct!.environmentKey),
+      value: cdktn.stringToHclTerraform(struct!.environmentKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     existing_cluster_id: {
-      value: cdktf.stringToHclTerraform(struct!.existingClusterId),
+      value: cdktn.stringToHclTerraform(struct!.existingClusterId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     job_cluster_key: {
-      value: cdktf.stringToHclTerraform(struct!.jobClusterKey),
+      value: cdktn.stringToHclTerraform(struct!.jobClusterKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     max_retries: {
-      value: cdktf.numberToHclTerraform(struct!.maxRetries),
+      value: cdktn.numberToHclTerraform(struct!.maxRetries),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     min_retry_interval_millis: {
-      value: cdktf.numberToHclTerraform(struct!.minRetryIntervalMillis),
+      value: cdktn.numberToHclTerraform(struct!.minRetryIntervalMillis),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     retry_on_timeout: {
-      value: cdktf.booleanToHclTerraform(struct!.retryOnTimeout),
+      value: cdktn.booleanToHclTerraform(struct!.retryOnTimeout),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     run_if: {
-      value: cdktf.stringToHclTerraform(struct!.runIf),
+      value: cdktn.stringToHclTerraform(struct!.runIf),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     task_key: {
-      value: cdktf.stringToHclTerraform(struct!.taskKey),
+      value: cdktn.stringToHclTerraform(struct!.taskKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     timeout_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.timeoutSeconds),
+      value: cdktn.numberToHclTerraform(struct!.timeoutSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -21347,6 +23141,12 @@ export function jobTaskToHclTerraform(struct?: JobTask | cdktf.IResolvable): any
       isBlock: true,
       type: "list",
       storageClassType: "JobTaskCleanRoomsNotebookTaskList",
+    },
+    compute: {
+      value: jobTaskComputeToHclTerraform(struct!.compute),
+      isBlock: true,
+      type: "list",
+      storageClassType: "JobTaskComputeList",
     },
     condition_task: {
       value: jobTaskConditionTaskToHclTerraform(struct!.conditionTask),
@@ -21379,7 +23179,7 @@ export function jobTaskToHclTerraform(struct?: JobTask | cdktf.IResolvable): any
       storageClassType: "JobTaskDbtTaskList",
     },
     depends_on: {
-      value: cdktf.listMapperHcl(jobTaskDependsOnToHclTerraform, true)(struct!.dependsOn),
+      value: cdktn.listMapperHcl(jobTaskDependsOnToHclTerraform, true)(struct!.dependsOn),
       isBlock: true,
       type: "list",
       storageClassType: "JobTaskDependsOnList",
@@ -21409,7 +23209,7 @@ export function jobTaskToHclTerraform(struct?: JobTask | cdktf.IResolvable): any
       storageClassType: "JobTaskHealthList",
     },
     library: {
-      value: cdktf.listMapperHcl(jobTaskLibraryToHclTerraform, true)(struct!.library),
+      value: cdktn.listMapperHcl(jobTaskLibraryToHclTerraform, true)(struct!.library),
       isBlock: true,
       type: "list",
       storageClassType: "JobTaskLibraryList",
@@ -21492,9 +23292,9 @@ export function jobTaskToHclTerraform(struct?: JobTask | cdktf.IResolvable): any
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JobTaskOutputReference extends cdktf.ComplexObject {
+export class JobTaskOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -21502,11 +23302,11 @@ export class JobTaskOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JobTask | cdktf.IResolvable | undefined {
+  public get internalValue(): JobTask | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -21563,6 +23363,10 @@ export class JobTaskOutputReference extends cdktf.ComplexObject {
     if (this._cleanRoomsNotebookTask?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.cleanRoomsNotebookTask = this._cleanRoomsNotebookTask?.internalValue;
+    }
+    if (this._compute?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.compute = this._compute?.internalValue;
     }
     if (this._conditionTask?.internalValue !== undefined) {
       hasAnyValues = true;
@@ -21659,7 +23463,7 @@ export class JobTaskOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JobTask | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JobTask | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -21676,6 +23480,7 @@ export class JobTaskOutputReference extends cdktf.ComplexObject {
       this._taskKey = undefined;
       this._timeoutSeconds = undefined;
       this._cleanRoomsNotebookTask.internalValue = undefined;
+      this._compute.internalValue = undefined;
       this._conditionTask.internalValue = undefined;
       this._dashboardTask.internalValue = undefined;
       this._dbtCloudTask.internalValue = undefined;
@@ -21700,7 +23505,7 @@ export class JobTaskOutputReference extends cdktf.ComplexObject {
       this._sqlTask.internalValue = undefined;
       this._webhookNotifications.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -21720,6 +23525,7 @@ export class JobTaskOutputReference extends cdktf.ComplexObject {
       this._taskKey = value.taskKey;
       this._timeoutSeconds = value.timeoutSeconds;
       this._cleanRoomsNotebookTask.internalValue = value.cleanRoomsNotebookTask;
+      this._compute.internalValue = value.compute;
       this._conditionTask.internalValue = value.conditionTask;
       this._dashboardTask.internalValue = value.dashboardTask;
       this._dbtCloudTask.internalValue = value.dbtCloudTask;
@@ -21763,11 +23569,11 @@ export class JobTaskOutputReference extends cdktf.ComplexObject {
   }
 
   // disable_auto_optimization - computed: false, optional: true, required: false
-  private _disableAutoOptimization?: boolean | cdktf.IResolvable; 
+  private _disableAutoOptimization?: boolean | cdktn.IResolvable; 
   public get disableAutoOptimization() {
     return this.getBooleanAttribute('disable_auto_optimization');
   }
-  public set disableAutoOptimization(value: boolean | cdktf.IResolvable) {
+  public set disableAutoOptimization(value: boolean | cdktn.IResolvable) {
     this._disableAutoOptimization = value;
   }
   public resetDisableAutoOptimization() {
@@ -21779,11 +23585,11 @@ export class JobTaskOutputReference extends cdktf.ComplexObject {
   }
 
   // disabled - computed: false, optional: true, required: false
-  private _disabled?: boolean | cdktf.IResolvable; 
+  private _disabled?: boolean | cdktn.IResolvable; 
   public get disabled() {
     return this.getBooleanAttribute('disabled');
   }
-  public set disabled(value: boolean | cdktf.IResolvable) {
+  public set disabled(value: boolean | cdktn.IResolvable) {
     this._disabled = value;
   }
   public resetDisabled() {
@@ -21875,11 +23681,11 @@ export class JobTaskOutputReference extends cdktf.ComplexObject {
   }
 
   // retry_on_timeout - computed: true, optional: true, required: false
-  private _retryOnTimeout?: boolean | cdktf.IResolvable; 
+  private _retryOnTimeout?: boolean | cdktn.IResolvable; 
   public get retryOnTimeout() {
     return this.getBooleanAttribute('retry_on_timeout');
   }
-  public set retryOnTimeout(value: boolean | cdktf.IResolvable) {
+  public set retryOnTimeout(value: boolean | cdktn.IResolvable) {
     this._retryOnTimeout = value;
   }
   public resetRetryOnTimeout() {
@@ -21949,6 +23755,22 @@ export class JobTaskOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get cleanRoomsNotebookTaskInput() {
     return this._cleanRoomsNotebookTask.internalValue;
+  }
+
+  // compute - computed: false, optional: true, required: false
+  private _compute = new JobTaskComputeOutputReference(this, "compute");
+  public get compute() {
+    return this._compute;
+  }
+  public putCompute(value: JobTaskCompute) {
+    this._compute.internalValue = value;
+  }
+  public resetCompute() {
+    this._compute.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get computeInput() {
+    return this._compute.internalValue;
   }
 
   // condition_task - computed: false, optional: true, required: false
@@ -22036,7 +23858,7 @@ export class JobTaskOutputReference extends cdktf.ComplexObject {
   public get dependsOn() {
     return this._dependsOn;
   }
-  public putDependsOn(value: JobTaskDependsOn[] | cdktf.IResolvable) {
+  public putDependsOn(value: JobTaskDependsOn[] | cdktn.IResolvable) {
     this._dependsOn.internalValue = value;
   }
   public resetDependsOn() {
@@ -22116,7 +23938,7 @@ export class JobTaskOutputReference extends cdktf.ComplexObject {
   public get library() {
     return this._library;
   }
-  public putLibrary(value: JobTaskLibrary[] | cdktf.IResolvable) {
+  public putLibrary(value: JobTaskLibrary[] | cdktn.IResolvable) {
     this._library.internalValue = value;
   }
   public resetLibrary() {
@@ -22320,15 +24142,15 @@ export class JobTaskOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class JobTaskList extends cdktf.ComplexList {
-  public internalValue? : JobTask[] | cdktf.IResolvable
+export class JobTaskList extends cdktn.ComplexList {
+  public internalValue? : JobTask[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -22337,1471 +24159,5 @@ export class JobTaskList extends cdktf.ComplexList {
   */
   public get(index: number): JobTaskOutputReference {
     return new JobTaskOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface JobTimeouts {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#create Job#create}
-  */
-  readonly create?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#update Job#update}
-  */
-  readonly update?: string;
-}
-
-export function jobTimeoutsToTerraform(struct?: JobTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    create: cdktf.stringToTerraform(struct!.create),
-    update: cdktf.stringToTerraform(struct!.update),
-  }
-}
-
-
-export function jobTimeoutsToHclTerraform(struct?: JobTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-    create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class JobTimeoutsOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false);
-  }
-
-  public get internalValue(): JobTimeouts | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._create !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.create = this._create;
-    }
-    if (this._update !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.update = this._update;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: JobTimeouts | cdktf.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._create = undefined;
-      this._update = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._create = value.create;
-      this._update = value.update;
-    }
-  }
-
-  // create - computed: false, optional: true, required: false
-  private _create?: string; 
-  public get create() {
-    return this.getStringAttribute('create');
-  }
-  public set create(value: string) {
-    this._create = value;
-  }
-  public resetCreate() {
-    this._create = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get createInput() {
-    return this._create;
-  }
-
-  // update - computed: false, optional: true, required: false
-  private _update?: string; 
-  public get update() {
-    return this.getStringAttribute('update');
-  }
-  public set update(value: string) {
-    this._update = value;
-  }
-  public resetUpdate() {
-    this._update = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get updateInput() {
-    return this._update;
-  }
-}
-export interface JobTriggerFileArrival {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#min_time_between_triggers_seconds Job#min_time_between_triggers_seconds}
-  */
-  readonly minTimeBetweenTriggersSeconds?: number;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#url Job#url}
-  */
-  readonly url: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#wait_after_last_change_seconds Job#wait_after_last_change_seconds}
-  */
-  readonly waitAfterLastChangeSeconds?: number;
-}
-
-export function jobTriggerFileArrivalToTerraform(struct?: JobTriggerFileArrivalOutputReference | JobTriggerFileArrival): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    min_time_between_triggers_seconds: cdktf.numberToTerraform(struct!.minTimeBetweenTriggersSeconds),
-    url: cdktf.stringToTerraform(struct!.url),
-    wait_after_last_change_seconds: cdktf.numberToTerraform(struct!.waitAfterLastChangeSeconds),
-  }
-}
-
-
-export function jobTriggerFileArrivalToHclTerraform(struct?: JobTriggerFileArrivalOutputReference | JobTriggerFileArrival): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-    min_time_between_triggers_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.minTimeBetweenTriggersSeconds),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "number",
-    },
-    url: {
-      value: cdktf.stringToHclTerraform(struct!.url),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    wait_after_last_change_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.waitAfterLastChangeSeconds),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "number",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class JobTriggerFileArrivalOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): JobTriggerFileArrival | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._minTimeBetweenTriggersSeconds !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.minTimeBetweenTriggersSeconds = this._minTimeBetweenTriggersSeconds;
-    }
-    if (this._url !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.url = this._url;
-    }
-    if (this._waitAfterLastChangeSeconds !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.waitAfterLastChangeSeconds = this._waitAfterLastChangeSeconds;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: JobTriggerFileArrival | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._minTimeBetweenTriggersSeconds = undefined;
-      this._url = undefined;
-      this._waitAfterLastChangeSeconds = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._minTimeBetweenTriggersSeconds = value.minTimeBetweenTriggersSeconds;
-      this._url = value.url;
-      this._waitAfterLastChangeSeconds = value.waitAfterLastChangeSeconds;
-    }
-  }
-
-  // min_time_between_triggers_seconds - computed: false, optional: true, required: false
-  private _minTimeBetweenTriggersSeconds?: number; 
-  public get minTimeBetweenTriggersSeconds() {
-    return this.getNumberAttribute('min_time_between_triggers_seconds');
-  }
-  public set minTimeBetweenTriggersSeconds(value: number) {
-    this._minTimeBetweenTriggersSeconds = value;
-  }
-  public resetMinTimeBetweenTriggersSeconds() {
-    this._minTimeBetweenTriggersSeconds = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get minTimeBetweenTriggersSecondsInput() {
-    return this._minTimeBetweenTriggersSeconds;
-  }
-
-  // url - computed: false, optional: false, required: true
-  private _url?: string; 
-  public get url() {
-    return this.getStringAttribute('url');
-  }
-  public set url(value: string) {
-    this._url = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get urlInput() {
-    return this._url;
-  }
-
-  // wait_after_last_change_seconds - computed: false, optional: true, required: false
-  private _waitAfterLastChangeSeconds?: number; 
-  public get waitAfterLastChangeSeconds() {
-    return this.getNumberAttribute('wait_after_last_change_seconds');
-  }
-  public set waitAfterLastChangeSeconds(value: number) {
-    this._waitAfterLastChangeSeconds = value;
-  }
-  public resetWaitAfterLastChangeSeconds() {
-    this._waitAfterLastChangeSeconds = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get waitAfterLastChangeSecondsInput() {
-    return this._waitAfterLastChangeSeconds;
-  }
-}
-export interface JobTriggerModel {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#aliases Job#aliases}
-  */
-  readonly aliases?: string[];
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#condition Job#condition}
-  */
-  readonly condition: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#min_time_between_triggers_seconds Job#min_time_between_triggers_seconds}
-  */
-  readonly minTimeBetweenTriggersSeconds?: number;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#securable_name Job#securable_name}
-  */
-  readonly securableName?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#wait_after_last_change_seconds Job#wait_after_last_change_seconds}
-  */
-  readonly waitAfterLastChangeSeconds?: number;
-}
-
-export function jobTriggerModelToTerraform(struct?: JobTriggerModelOutputReference | JobTriggerModel): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    aliases: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.aliases),
-    condition: cdktf.stringToTerraform(struct!.condition),
-    min_time_between_triggers_seconds: cdktf.numberToTerraform(struct!.minTimeBetweenTriggersSeconds),
-    securable_name: cdktf.stringToTerraform(struct!.securableName),
-    wait_after_last_change_seconds: cdktf.numberToTerraform(struct!.waitAfterLastChangeSeconds),
-  }
-}
-
-
-export function jobTriggerModelToHclTerraform(struct?: JobTriggerModelOutputReference | JobTriggerModel): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-    aliases: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.aliases),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-    condition: {
-      value: cdktf.stringToHclTerraform(struct!.condition),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    min_time_between_triggers_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.minTimeBetweenTriggersSeconds),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "number",
-    },
-    securable_name: {
-      value: cdktf.stringToHclTerraform(struct!.securableName),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    wait_after_last_change_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.waitAfterLastChangeSeconds),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "number",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class JobTriggerModelOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): JobTriggerModel | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._aliases !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.aliases = this._aliases;
-    }
-    if (this._condition !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.condition = this._condition;
-    }
-    if (this._minTimeBetweenTriggersSeconds !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.minTimeBetweenTriggersSeconds = this._minTimeBetweenTriggersSeconds;
-    }
-    if (this._securableName !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.securableName = this._securableName;
-    }
-    if (this._waitAfterLastChangeSeconds !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.waitAfterLastChangeSeconds = this._waitAfterLastChangeSeconds;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: JobTriggerModel | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._aliases = undefined;
-      this._condition = undefined;
-      this._minTimeBetweenTriggersSeconds = undefined;
-      this._securableName = undefined;
-      this._waitAfterLastChangeSeconds = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._aliases = value.aliases;
-      this._condition = value.condition;
-      this._minTimeBetweenTriggersSeconds = value.minTimeBetweenTriggersSeconds;
-      this._securableName = value.securableName;
-      this._waitAfterLastChangeSeconds = value.waitAfterLastChangeSeconds;
-    }
-  }
-
-  // aliases - computed: false, optional: true, required: false
-  private _aliases?: string[]; 
-  public get aliases() {
-    return this.getListAttribute('aliases');
-  }
-  public set aliases(value: string[]) {
-    this._aliases = value;
-  }
-  public resetAliases() {
-    this._aliases = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get aliasesInput() {
-    return this._aliases;
-  }
-
-  // condition - computed: false, optional: false, required: true
-  private _condition?: string; 
-  public get condition() {
-    return this.getStringAttribute('condition');
-  }
-  public set condition(value: string) {
-    this._condition = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get conditionInput() {
-    return this._condition;
-  }
-
-  // min_time_between_triggers_seconds - computed: false, optional: true, required: false
-  private _minTimeBetweenTriggersSeconds?: number; 
-  public get minTimeBetweenTriggersSeconds() {
-    return this.getNumberAttribute('min_time_between_triggers_seconds');
-  }
-  public set minTimeBetweenTriggersSeconds(value: number) {
-    this._minTimeBetweenTriggersSeconds = value;
-  }
-  public resetMinTimeBetweenTriggersSeconds() {
-    this._minTimeBetweenTriggersSeconds = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get minTimeBetweenTriggersSecondsInput() {
-    return this._minTimeBetweenTriggersSeconds;
-  }
-
-  // securable_name - computed: false, optional: true, required: false
-  private _securableName?: string; 
-  public get securableName() {
-    return this.getStringAttribute('securable_name');
-  }
-  public set securableName(value: string) {
-    this._securableName = value;
-  }
-  public resetSecurableName() {
-    this._securableName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get securableNameInput() {
-    return this._securableName;
-  }
-
-  // wait_after_last_change_seconds - computed: false, optional: true, required: false
-  private _waitAfterLastChangeSeconds?: number; 
-  public get waitAfterLastChangeSeconds() {
-    return this.getNumberAttribute('wait_after_last_change_seconds');
-  }
-  public set waitAfterLastChangeSeconds(value: number) {
-    this._waitAfterLastChangeSeconds = value;
-  }
-  public resetWaitAfterLastChangeSeconds() {
-    this._waitAfterLastChangeSeconds = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get waitAfterLastChangeSecondsInput() {
-    return this._waitAfterLastChangeSeconds;
-  }
-}
-export interface JobTriggerPeriodic {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#interval Job#interval}
-  */
-  readonly interval: number;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#unit Job#unit}
-  */
-  readonly unit: string;
-}
-
-export function jobTriggerPeriodicToTerraform(struct?: JobTriggerPeriodicOutputReference | JobTriggerPeriodic): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    interval: cdktf.numberToTerraform(struct!.interval),
-    unit: cdktf.stringToTerraform(struct!.unit),
-  }
-}
-
-
-export function jobTriggerPeriodicToHclTerraform(struct?: JobTriggerPeriodicOutputReference | JobTriggerPeriodic): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-    interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "number",
-    },
-    unit: {
-      value: cdktf.stringToHclTerraform(struct!.unit),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class JobTriggerPeriodicOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): JobTriggerPeriodic | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._interval !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.interval = this._interval;
-    }
-    if (this._unit !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.unit = this._unit;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: JobTriggerPeriodic | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._interval = undefined;
-      this._unit = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._interval = value.interval;
-      this._unit = value.unit;
-    }
-  }
-
-  // interval - computed: false, optional: false, required: true
-  private _interval?: number; 
-  public get interval() {
-    return this.getNumberAttribute('interval');
-  }
-  public set interval(value: number) {
-    this._interval = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get intervalInput() {
-    return this._interval;
-  }
-
-  // unit - computed: false, optional: false, required: true
-  private _unit?: string; 
-  public get unit() {
-    return this.getStringAttribute('unit');
-  }
-  public set unit(value: string) {
-    this._unit = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get unitInput() {
-    return this._unit;
-  }
-}
-export interface JobTriggerTableUpdate {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#condition Job#condition}
-  */
-  readonly condition?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#min_time_between_triggers_seconds Job#min_time_between_triggers_seconds}
-  */
-  readonly minTimeBetweenTriggersSeconds?: number;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#table_names Job#table_names}
-  */
-  readonly tableNames: string[];
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#wait_after_last_change_seconds Job#wait_after_last_change_seconds}
-  */
-  readonly waitAfterLastChangeSeconds?: number;
-}
-
-export function jobTriggerTableUpdateToTerraform(struct?: JobTriggerTableUpdateOutputReference | JobTriggerTableUpdate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    condition: cdktf.stringToTerraform(struct!.condition),
-    min_time_between_triggers_seconds: cdktf.numberToTerraform(struct!.minTimeBetweenTriggersSeconds),
-    table_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.tableNames),
-    wait_after_last_change_seconds: cdktf.numberToTerraform(struct!.waitAfterLastChangeSeconds),
-  }
-}
-
-
-export function jobTriggerTableUpdateToHclTerraform(struct?: JobTriggerTableUpdateOutputReference | JobTriggerTableUpdate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-    condition: {
-      value: cdktf.stringToHclTerraform(struct!.condition),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    min_time_between_triggers_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.minTimeBetweenTriggersSeconds),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "number",
-    },
-    table_names: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.tableNames),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-    wait_after_last_change_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.waitAfterLastChangeSeconds),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "number",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class JobTriggerTableUpdateOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): JobTriggerTableUpdate | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._condition !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.condition = this._condition;
-    }
-    if (this._minTimeBetweenTriggersSeconds !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.minTimeBetweenTriggersSeconds = this._minTimeBetweenTriggersSeconds;
-    }
-    if (this._tableNames !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.tableNames = this._tableNames;
-    }
-    if (this._waitAfterLastChangeSeconds !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.waitAfterLastChangeSeconds = this._waitAfterLastChangeSeconds;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: JobTriggerTableUpdate | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._condition = undefined;
-      this._minTimeBetweenTriggersSeconds = undefined;
-      this._tableNames = undefined;
-      this._waitAfterLastChangeSeconds = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._condition = value.condition;
-      this._minTimeBetweenTriggersSeconds = value.minTimeBetweenTriggersSeconds;
-      this._tableNames = value.tableNames;
-      this._waitAfterLastChangeSeconds = value.waitAfterLastChangeSeconds;
-    }
-  }
-
-  // condition - computed: false, optional: true, required: false
-  private _condition?: string; 
-  public get condition() {
-    return this.getStringAttribute('condition');
-  }
-  public set condition(value: string) {
-    this._condition = value;
-  }
-  public resetCondition() {
-    this._condition = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get conditionInput() {
-    return this._condition;
-  }
-
-  // min_time_between_triggers_seconds - computed: false, optional: true, required: false
-  private _minTimeBetweenTriggersSeconds?: number; 
-  public get minTimeBetweenTriggersSeconds() {
-    return this.getNumberAttribute('min_time_between_triggers_seconds');
-  }
-  public set minTimeBetweenTriggersSeconds(value: number) {
-    this._minTimeBetweenTriggersSeconds = value;
-  }
-  public resetMinTimeBetweenTriggersSeconds() {
-    this._minTimeBetweenTriggersSeconds = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get minTimeBetweenTriggersSecondsInput() {
-    return this._minTimeBetweenTriggersSeconds;
-  }
-
-  // table_names - computed: false, optional: false, required: true
-  private _tableNames?: string[]; 
-  public get tableNames() {
-    return this.getListAttribute('table_names');
-  }
-  public set tableNames(value: string[]) {
-    this._tableNames = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tableNamesInput() {
-    return this._tableNames;
-  }
-
-  // wait_after_last_change_seconds - computed: false, optional: true, required: false
-  private _waitAfterLastChangeSeconds?: number; 
-  public get waitAfterLastChangeSeconds() {
-    return this.getNumberAttribute('wait_after_last_change_seconds');
-  }
-  public set waitAfterLastChangeSeconds(value: number) {
-    this._waitAfterLastChangeSeconds = value;
-  }
-  public resetWaitAfterLastChangeSeconds() {
-    this._waitAfterLastChangeSeconds = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get waitAfterLastChangeSecondsInput() {
-    return this._waitAfterLastChangeSeconds;
-  }
-}
-export interface JobTrigger {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#pause_status Job#pause_status}
-  */
-  readonly pauseStatus?: string;
-  /**
-  * file_arrival block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#file_arrival Job#file_arrival}
-  */
-  readonly fileArrival?: JobTriggerFileArrival;
-  /**
-  * model block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#model Job#model}
-  */
-  readonly model?: JobTriggerModel;
-  /**
-  * periodic block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#periodic Job#periodic}
-  */
-  readonly periodic?: JobTriggerPeriodic;
-  /**
-  * table_update block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#table_update Job#table_update}
-  */
-  readonly tableUpdate?: JobTriggerTableUpdate;
-}
-
-export function jobTriggerToTerraform(struct?: JobTriggerOutputReference | JobTrigger): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    pause_status: cdktf.stringToTerraform(struct!.pauseStatus),
-    file_arrival: jobTriggerFileArrivalToTerraform(struct!.fileArrival),
-    model: jobTriggerModelToTerraform(struct!.model),
-    periodic: jobTriggerPeriodicToTerraform(struct!.periodic),
-    table_update: jobTriggerTableUpdateToTerraform(struct!.tableUpdate),
-  }
-}
-
-
-export function jobTriggerToHclTerraform(struct?: JobTriggerOutputReference | JobTrigger): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-    pause_status: {
-      value: cdktf.stringToHclTerraform(struct!.pauseStatus),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    file_arrival: {
-      value: jobTriggerFileArrivalToHclTerraform(struct!.fileArrival),
-      isBlock: true,
-      type: "list",
-      storageClassType: "JobTriggerFileArrivalList",
-    },
-    model: {
-      value: jobTriggerModelToHclTerraform(struct!.model),
-      isBlock: true,
-      type: "list",
-      storageClassType: "JobTriggerModelList",
-    },
-    periodic: {
-      value: jobTriggerPeriodicToHclTerraform(struct!.periodic),
-      isBlock: true,
-      type: "list",
-      storageClassType: "JobTriggerPeriodicList",
-    },
-    table_update: {
-      value: jobTriggerTableUpdateToHclTerraform(struct!.tableUpdate),
-      isBlock: true,
-      type: "list",
-      storageClassType: "JobTriggerTableUpdateList",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class JobTriggerOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): JobTrigger | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._pauseStatus !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.pauseStatus = this._pauseStatus;
-    }
-    if (this._fileArrival?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.fileArrival = this._fileArrival?.internalValue;
-    }
-    if (this._model?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.model = this._model?.internalValue;
-    }
-    if (this._periodic?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.periodic = this._periodic?.internalValue;
-    }
-    if (this._tableUpdate?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.tableUpdate = this._tableUpdate?.internalValue;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: JobTrigger | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._pauseStatus = undefined;
-      this._fileArrival.internalValue = undefined;
-      this._model.internalValue = undefined;
-      this._periodic.internalValue = undefined;
-      this._tableUpdate.internalValue = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._pauseStatus = value.pauseStatus;
-      this._fileArrival.internalValue = value.fileArrival;
-      this._model.internalValue = value.model;
-      this._periodic.internalValue = value.periodic;
-      this._tableUpdate.internalValue = value.tableUpdate;
-    }
-  }
-
-  // pause_status - computed: false, optional: true, required: false
-  private _pauseStatus?: string; 
-  public get pauseStatus() {
-    return this.getStringAttribute('pause_status');
-  }
-  public set pauseStatus(value: string) {
-    this._pauseStatus = value;
-  }
-  public resetPauseStatus() {
-    this._pauseStatus = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get pauseStatusInput() {
-    return this._pauseStatus;
-  }
-
-  // file_arrival - computed: false, optional: true, required: false
-  private _fileArrival = new JobTriggerFileArrivalOutputReference(this, "file_arrival");
-  public get fileArrival() {
-    return this._fileArrival;
-  }
-  public putFileArrival(value: JobTriggerFileArrival) {
-    this._fileArrival.internalValue = value;
-  }
-  public resetFileArrival() {
-    this._fileArrival.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get fileArrivalInput() {
-    return this._fileArrival.internalValue;
-  }
-
-  // model - computed: false, optional: true, required: false
-  private _model = new JobTriggerModelOutputReference(this, "model");
-  public get model() {
-    return this._model;
-  }
-  public putModel(value: JobTriggerModel) {
-    this._model.internalValue = value;
-  }
-  public resetModel() {
-    this._model.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get modelInput() {
-    return this._model.internalValue;
-  }
-
-  // periodic - computed: false, optional: true, required: false
-  private _periodic = new JobTriggerPeriodicOutputReference(this, "periodic");
-  public get periodic() {
-    return this._periodic;
-  }
-  public putPeriodic(value: JobTriggerPeriodic) {
-    this._periodic.internalValue = value;
-  }
-  public resetPeriodic() {
-    this._periodic.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get periodicInput() {
-    return this._periodic.internalValue;
-  }
-
-  // table_update - computed: false, optional: true, required: false
-  private _tableUpdate = new JobTriggerTableUpdateOutputReference(this, "table_update");
-  public get tableUpdate() {
-    return this._tableUpdate;
-  }
-  public putTableUpdate(value: JobTriggerTableUpdate) {
-    this._tableUpdate.internalValue = value;
-  }
-  public resetTableUpdate() {
-    this._tableUpdate.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get tableUpdateInput() {
-    return this._tableUpdate.internalValue;
-  }
-}
-export interface JobWebhookNotificationsOnDurationWarningThresholdExceeded {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#id Job#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id: string;
-}
-
-export function jobWebhookNotificationsOnDurationWarningThresholdExceededToTerraform(struct?: JobWebhookNotificationsOnDurationWarningThresholdExceeded | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    id: cdktf.stringToTerraform(struct!.id),
-  }
-}
-
-
-export function jobWebhookNotificationsOnDurationWarningThresholdExceededToHclTerraform(struct?: JobWebhookNotificationsOnDurationWarningThresholdExceeded | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-    id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class JobWebhookNotificationsOnDurationWarningThresholdExceededOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): JobWebhookNotificationsOnDurationWarningThresholdExceeded | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._id !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.id = this._id;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: JobWebhookNotificationsOnDurationWarningThresholdExceeded | cdktf.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._id = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._id = value.id;
-    }
-  }
-
-  // id - computed: false, optional: false, required: true
-  private _id?: string; 
-  public get id() {
-    return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
-  }
-}
-
-export class JobWebhookNotificationsOnDurationWarningThresholdExceededList extends cdktf.ComplexList {
-  public internalValue? : JobWebhookNotificationsOnDurationWarningThresholdExceeded[] | cdktf.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): JobWebhookNotificationsOnDurationWarningThresholdExceededOutputReference {
-    return new JobWebhookNotificationsOnDurationWarningThresholdExceededOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface JobWebhookNotificationsOnFailure {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#id Job#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id: string;
-}
-
-export function jobWebhookNotificationsOnFailureToTerraform(struct?: JobWebhookNotificationsOnFailure | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    id: cdktf.stringToTerraform(struct!.id),
-  }
-}
-
-
-export function jobWebhookNotificationsOnFailureToHclTerraform(struct?: JobWebhookNotificationsOnFailure | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-    id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class JobWebhookNotificationsOnFailureOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): JobWebhookNotificationsOnFailure | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._id !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.id = this._id;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: JobWebhookNotificationsOnFailure | cdktf.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._id = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._id = value.id;
-    }
-  }
-
-  // id - computed: false, optional: false, required: true
-  private _id?: string; 
-  public get id() {
-    return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
-  }
-}
-
-export class JobWebhookNotificationsOnFailureList extends cdktf.ComplexList {
-  public internalValue? : JobWebhookNotificationsOnFailure[] | cdktf.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): JobWebhookNotificationsOnFailureOutputReference {
-    return new JobWebhookNotificationsOnFailureOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface JobWebhookNotificationsOnStart {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#id Job#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id: string;
-}
-
-export function jobWebhookNotificationsOnStartToTerraform(struct?: JobWebhookNotificationsOnStart | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    id: cdktf.stringToTerraform(struct!.id),
-  }
-}
-
-
-export function jobWebhookNotificationsOnStartToHclTerraform(struct?: JobWebhookNotificationsOnStart | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-    id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class JobWebhookNotificationsOnStartOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): JobWebhookNotificationsOnStart | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._id !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.id = this._id;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: JobWebhookNotificationsOnStart | cdktf.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._id = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._id = value.id;
-    }
-  }
-
-  // id - computed: false, optional: false, required: true
-  private _id?: string; 
-  public get id() {
-    return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
-  }
-}
-
-export class JobWebhookNotificationsOnStartList extends cdktf.ComplexList {
-  public internalValue? : JobWebhookNotificationsOnStart[] | cdktf.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): JobWebhookNotificationsOnStartOutputReference {
-    return new JobWebhookNotificationsOnStartOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface JobWebhookNotificationsOnStreamingBacklogExceeded {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#id Job#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id: string;
-}
-
-export function jobWebhookNotificationsOnStreamingBacklogExceededToTerraform(struct?: JobWebhookNotificationsOnStreamingBacklogExceeded | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    id: cdktf.stringToTerraform(struct!.id),
-  }
-}
-
-
-export function jobWebhookNotificationsOnStreamingBacklogExceededToHclTerraform(struct?: JobWebhookNotificationsOnStreamingBacklogExceeded | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-    id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class JobWebhookNotificationsOnStreamingBacklogExceededOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): JobWebhookNotificationsOnStreamingBacklogExceeded | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._id !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.id = this._id;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: JobWebhookNotificationsOnStreamingBacklogExceeded | cdktf.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._id = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._id = value.id;
-    }
-  }
-
-  // id - computed: false, optional: false, required: true
-  private _id?: string; 
-  public get id() {
-    return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
-  }
-}
-
-export class JobWebhookNotificationsOnStreamingBacklogExceededList extends cdktf.ComplexList {
-  public internalValue? : JobWebhookNotificationsOnStreamingBacklogExceeded[] | cdktf.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): JobWebhookNotificationsOnStreamingBacklogExceededOutputReference {
-    return new JobWebhookNotificationsOnStreamingBacklogExceededOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }

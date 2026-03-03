@@ -1,104 +1,104 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/clusters
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/clusters
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataDatabricksClustersConfig extends cdktf.TerraformMetaArguments {
+export interface DataDatabricksClustersConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/clusters#cluster_name_contains DataDatabricksClusters#cluster_name_contains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/clusters#cluster_name_contains DataDatabricksClusters#cluster_name_contains}
   */
   readonly clusterNameContains?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/clusters#id DataDatabricksClusters#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/clusters#id DataDatabricksClusters#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/clusters#ids DataDatabricksClusters#ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/clusters#ids DataDatabricksClusters#ids}
   */
   readonly ids?: string[];
   /**
   * filter_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/clusters#filter_by DataDatabricksClusters#filter_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/clusters#filter_by DataDatabricksClusters#filter_by}
   */
   readonly filterBy?: DataDatabricksClustersFilterBy;
   /**
   * provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/clusters#provider_config DataDatabricksClusters#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/clusters#provider_config DataDatabricksClusters#provider_config}
   */
   readonly providerConfig?: DataDatabricksClustersProviderConfig;
 }
 export interface DataDatabricksClustersFilterBy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/clusters#cluster_sources DataDatabricksClusters#cluster_sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/clusters#cluster_sources DataDatabricksClusters#cluster_sources}
   */
   readonly clusterSources?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/clusters#cluster_states DataDatabricksClusters#cluster_states}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/clusters#cluster_states DataDatabricksClusters#cluster_states}
   */
   readonly clusterStates?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/clusters#is_pinned DataDatabricksClusters#is_pinned}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/clusters#is_pinned DataDatabricksClusters#is_pinned}
   */
-  readonly isPinned?: boolean | cdktf.IResolvable;
+  readonly isPinned?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/clusters#policy_id DataDatabricksClusters#policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/clusters#policy_id DataDatabricksClusters#policy_id}
   */
   readonly policyId?: string;
 }
 
 export function dataDatabricksClustersFilterByToTerraform(struct?: DataDatabricksClustersFilterByOutputReference | DataDatabricksClustersFilterBy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cluster_sources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.clusterSources),
-    cluster_states: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.clusterStates),
-    is_pinned: cdktf.booleanToTerraform(struct!.isPinned),
-    policy_id: cdktf.stringToTerraform(struct!.policyId),
+    cluster_sources: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.clusterSources),
+    cluster_states: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.clusterStates),
+    is_pinned: cdktn.booleanToTerraform(struct!.isPinned),
+    policy_id: cdktn.stringToTerraform(struct!.policyId),
   }
 }
 
 
 export function dataDatabricksClustersFilterByToHclTerraform(struct?: DataDatabricksClustersFilterByOutputReference | DataDatabricksClustersFilterBy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cluster_sources: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.clusterSources),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.clusterSources),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     cluster_states: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.clusterStates),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.clusterStates),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     is_pinned: {
-      value: cdktf.booleanToHclTerraform(struct!.isPinned),
+      value: cdktn.booleanToHclTerraform(struct!.isPinned),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     policy_id: {
-      value: cdktf.stringToHclTerraform(struct!.policyId),
+      value: cdktn.stringToHclTerraform(struct!.policyId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -109,14 +109,14 @@ export function dataDatabricksClustersFilterByToHclTerraform(struct?: DataDatabr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksClustersFilterByOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksClustersFilterByOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -192,11 +192,11 @@ export class DataDatabricksClustersFilterByOutputReference extends cdktf.Complex
   }
 
   // is_pinned - computed: false, optional: true, required: false
-  private _isPinned?: boolean | cdktf.IResolvable; 
+  private _isPinned?: boolean | cdktn.IResolvable; 
   public get isPinned() {
     return this.getBooleanAttribute('is_pinned');
   }
-  public set isPinned(value: boolean | cdktf.IResolvable) {
+  public set isPinned(value: boolean | cdktn.IResolvable) {
     this._isPinned = value;
   }
   public resetIsPinned() {
@@ -225,30 +225,30 @@ export class DataDatabricksClustersFilterByOutputReference extends cdktf.Complex
 }
 export interface DataDatabricksClustersProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/clusters#workspace_id DataDatabricksClusters#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/clusters#workspace_id DataDatabricksClusters#workspace_id}
   */
   readonly workspaceId: string;
 }
 
 export function dataDatabricksClustersProviderConfigToTerraform(struct?: DataDatabricksClustersProviderConfigOutputReference | DataDatabricksClustersProviderConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    workspace_id: cdktf.stringToTerraform(struct!.workspaceId),
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
   }
 }
 
 
 export function dataDatabricksClustersProviderConfigToHclTerraform(struct?: DataDatabricksClustersProviderConfigOutputReference | DataDatabricksClustersProviderConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     workspace_id: {
-      value: cdktf.stringToHclTerraform(struct!.workspaceId),
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -259,14 +259,14 @@ export function dataDatabricksClustersProviderConfigToHclTerraform(struct?: Data
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksClustersProviderConfigOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksClustersProviderConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -306,9 +306,9 @@ export class DataDatabricksClustersProviderConfigOutputReference extends cdktf.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/clusters databricks_clusters}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/clusters databricks_clusters}
 */
-export class DataDatabricksClusters extends cdktf.TerraformDataSource {
+export class DataDatabricksClusters extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -319,14 +319,14 @@ export class DataDatabricksClusters extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataDatabricksClusters resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataDatabricksClusters resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksClusters to import
-  * @param importFromId The id of the existing DataDatabricksClusters that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/clusters#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksClusters that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/clusters#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksClusters to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_clusters", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_clusters", importId: importFromId, provider });
       }
 
   // ===========
@@ -334,7 +334,7 @@ export class DataDatabricksClusters extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/clusters databricks_clusters} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/clusters databricks_clusters} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -345,7 +345,7 @@ export class DataDatabricksClusters extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_clusters',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -402,7 +402,7 @@ export class DataDatabricksClusters extends cdktf.TerraformDataSource {
   // ids - computed: true, optional: true, required: false
   private _ids?: string[]; 
   public get ids() {
-    return cdktf.Fn.tolist(this.getListAttribute('ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('ids'));
   }
   public set ids(value: string[]) {
     this._ids = value;
@@ -453,9 +453,9 @@ export class DataDatabricksClusters extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cluster_name_contains: cdktf.stringToTerraform(this._clusterNameContains),
-      id: cdktf.stringToTerraform(this._id),
-      ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._ids),
+      cluster_name_contains: cdktn.stringToTerraform(this._clusterNameContains),
+      id: cdktn.stringToTerraform(this._id),
+      ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._ids),
       filter_by: dataDatabricksClustersFilterByToTerraform(this._filterBy.internalValue),
       provider_config: dataDatabricksClustersProviderConfigToTerraform(this._providerConfig.internalValue),
     };
@@ -464,19 +464,19 @@ export class DataDatabricksClusters extends cdktf.TerraformDataSource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       cluster_name_contains: {
-        value: cdktf.stringToHclTerraform(this._clusterNameContains),
+        value: cdktn.stringToHclTerraform(this._clusterNameContains),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._ids),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._ids),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",

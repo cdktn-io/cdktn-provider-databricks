@@ -1,15 +1,15 @@
-# `grant` Submodule <a name="`grant` Submodule" id="@cdktf/provider-databricks.grant"></a>
+# `grant` Submodule <a name="`grant` Submodule" id="@cdktn/provider-databricks.grant"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### Grant <a name="Grant" id="@cdktf/provider-databricks.grant.Grant"></a>
+### Grant <a name="Grant" id="@cdktn/provider-databricks.grant.Grant"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant databricks_grant}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant databricks_grant}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-databricks.grant.Grant.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.grant.Grant.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_databricks import grant
+from cdktn_provider_databricks import grant
 
 grant.Grant(
   scope: Construct,
@@ -32,6 +32,7 @@ grant.Grant(
   metastore: str = None,
   model: str = None,
   pipeline: str = None,
+  provider_config: GrantProviderConfig = None,
   recipient: str = None,
   schema: str = None,
   share: str = None,
@@ -43,36 +44,37 @@ grant.Grant(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.Initializer.parameter.principal">principal</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#principal Grant#principal}. |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.Initializer.parameter.privileges">privileges</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#privileges Grant#privileges}. |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.Initializer.parameter.catalog">catalog</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#catalog Grant#catalog}. |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.Initializer.parameter.credential">credential</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#credential Grant#credential}. |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.Initializer.parameter.externalLocation">external_location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#external_location Grant#external_location}. |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.Initializer.parameter.foreignConnection">foreign_connection</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#foreign_connection Grant#foreign_connection}. |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.Initializer.parameter.function">function</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#function Grant#function}. |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#id Grant#id}. |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.Initializer.parameter.metastore">metastore</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#metastore Grant#metastore}. |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.Initializer.parameter.model">model</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#model Grant#model}. |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.Initializer.parameter.pipeline">pipeline</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#pipeline Grant#pipeline}. |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.Initializer.parameter.recipient">recipient</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#recipient Grant#recipient}. |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.Initializer.parameter.schema">schema</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#schema Grant#schema}. |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.Initializer.parameter.share">share</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#share Grant#share}. |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.Initializer.parameter.storageCredential">storage_credential</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#storage_credential Grant#storage_credential}. |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.Initializer.parameter.table">table</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#table Grant#table}. |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.Initializer.parameter.volume">volume</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#volume Grant#volume}. |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.principal">principal</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#principal Grant#principal}. |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.privileges">privileges</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#privileges Grant#privileges}. |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.catalog">catalog</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#catalog Grant#catalog}. |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.credential">credential</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#credential Grant#credential}. |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.externalLocation">external_location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#external_location Grant#external_location}. |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.foreignConnection">foreign_connection</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#foreign_connection Grant#foreign_connection}. |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.function">function</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#function Grant#function}. |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#id Grant#id}. |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.metastore">metastore</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#metastore Grant#metastore}. |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.model">model</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#model Grant#model}. |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.pipeline">pipeline</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#pipeline Grant#pipeline}. |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.grant.GrantProviderConfig">GrantProviderConfig</a></code> | provider_config block. |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.recipient">recipient</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#recipient Grant#recipient}. |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.schema">schema</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#schema Grant#schema}. |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.share">share</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#share Grant#share}. |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.storageCredential">storage_credential</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#storage_credential Grant#storage_credential}. |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.table">table</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#table Grant#table}. |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.Initializer.parameter.volume">volume</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#volume Grant#volume}. |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-databricks.grant.Grant.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-databricks.grant.Grant.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -80,7 +82,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-databricks.grant.Grant.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-databricks.grant.Grant.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -90,184 +92,194 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-databricks.grant.Grant.Initializer.parameter.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-databricks.grant.Grant.Initializer.parameter.connection"></a>
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
-
----
-
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-databricks.grant.Grant.Initializer.parameter.count"></a>
-
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-databricks.grant.Grant.Initializer.parameter.dependsOn"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-databricks.grant.Grant.Initializer.parameter.count"></a>
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
-
----
-
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-databricks.grant.Grant.Initializer.parameter.forEach"></a>
-
-- *Type:* cdktf.ITerraformIterator
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-databricks.grant.Grant.Initializer.parameter.lifecycle"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-databricks.grant.Grant.Initializer.parameter.dependsOn"></a>
 
-- *Type:* cdktf.TerraformResourceLifecycle
-
----
-
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-databricks.grant.Grant.Initializer.parameter.provider"></a>
-
-- *Type:* cdktf.TerraformProvider
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-databricks.grant.Grant.Initializer.parameter.provisioners"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-databricks.grant.Grant.Initializer.parameter.forEach"></a>
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `principal`<sup>Required</sup> <a name="principal" id="@cdktf/provider-databricks.grant.Grant.Initializer.parameter.principal"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-databricks.grant.Grant.Initializer.parameter.lifecycle"></a>
+
+- *Type:* cdktn.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-databricks.grant.Grant.Initializer.parameter.provider"></a>
+
+- *Type:* cdktn.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-databricks.grant.Grant.Initializer.parameter.provisioners"></a>
+
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
+
+---
+
+##### `principal`<sup>Required</sup> <a name="principal" id="@cdktn/provider-databricks.grant.Grant.Initializer.parameter.principal"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#principal Grant#principal}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#principal Grant#principal}.
 
 ---
 
-##### `privileges`<sup>Required</sup> <a name="privileges" id="@cdktf/provider-databricks.grant.Grant.Initializer.parameter.privileges"></a>
+##### `privileges`<sup>Required</sup> <a name="privileges" id="@cdktn/provider-databricks.grant.Grant.Initializer.parameter.privileges"></a>
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#privileges Grant#privileges}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#privileges Grant#privileges}.
 
 ---
 
-##### `catalog`<sup>Optional</sup> <a name="catalog" id="@cdktf/provider-databricks.grant.Grant.Initializer.parameter.catalog"></a>
+##### `catalog`<sup>Optional</sup> <a name="catalog" id="@cdktn/provider-databricks.grant.Grant.Initializer.parameter.catalog"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#catalog Grant#catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#catalog Grant#catalog}.
 
 ---
 
-##### `credential`<sup>Optional</sup> <a name="credential" id="@cdktf/provider-databricks.grant.Grant.Initializer.parameter.credential"></a>
+##### `credential`<sup>Optional</sup> <a name="credential" id="@cdktn/provider-databricks.grant.Grant.Initializer.parameter.credential"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#credential Grant#credential}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#credential Grant#credential}.
 
 ---
 
-##### `external_location`<sup>Optional</sup> <a name="external_location" id="@cdktf/provider-databricks.grant.Grant.Initializer.parameter.externalLocation"></a>
+##### `external_location`<sup>Optional</sup> <a name="external_location" id="@cdktn/provider-databricks.grant.Grant.Initializer.parameter.externalLocation"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#external_location Grant#external_location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#external_location Grant#external_location}.
 
 ---
 
-##### `foreign_connection`<sup>Optional</sup> <a name="foreign_connection" id="@cdktf/provider-databricks.grant.Grant.Initializer.parameter.foreignConnection"></a>
+##### `foreign_connection`<sup>Optional</sup> <a name="foreign_connection" id="@cdktn/provider-databricks.grant.Grant.Initializer.parameter.foreignConnection"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#foreign_connection Grant#foreign_connection}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#foreign_connection Grant#foreign_connection}.
 
 ---
 
-##### `function`<sup>Optional</sup> <a name="function" id="@cdktf/provider-databricks.grant.Grant.Initializer.parameter.function"></a>
+##### `function`<sup>Optional</sup> <a name="function" id="@cdktn/provider-databricks.grant.Grant.Initializer.parameter.function"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#function Grant#function}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#function Grant#function}.
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-databricks.grant.Grant.Initializer.parameter.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-databricks.grant.Grant.Initializer.parameter.id"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#id Grant#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#id Grant#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `metastore`<sup>Optional</sup> <a name="metastore" id="@cdktf/provider-databricks.grant.Grant.Initializer.parameter.metastore"></a>
+##### `metastore`<sup>Optional</sup> <a name="metastore" id="@cdktn/provider-databricks.grant.Grant.Initializer.parameter.metastore"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#metastore Grant#metastore}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#metastore Grant#metastore}.
 
 ---
 
-##### `model`<sup>Optional</sup> <a name="model" id="@cdktf/provider-databricks.grant.Grant.Initializer.parameter.model"></a>
+##### `model`<sup>Optional</sup> <a name="model" id="@cdktn/provider-databricks.grant.Grant.Initializer.parameter.model"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#model Grant#model}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#model Grant#model}.
 
 ---
 
-##### `pipeline`<sup>Optional</sup> <a name="pipeline" id="@cdktf/provider-databricks.grant.Grant.Initializer.parameter.pipeline"></a>
+##### `pipeline`<sup>Optional</sup> <a name="pipeline" id="@cdktn/provider-databricks.grant.Grant.Initializer.parameter.pipeline"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#pipeline Grant#pipeline}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#pipeline Grant#pipeline}.
 
 ---
 
-##### `recipient`<sup>Optional</sup> <a name="recipient" id="@cdktf/provider-databricks.grant.Grant.Initializer.parameter.recipient"></a>
+##### `provider_config`<sup>Optional</sup> <a name="provider_config" id="@cdktn/provider-databricks.grant.Grant.Initializer.parameter.providerConfig"></a>
 
-- *Type:* str
+- *Type:* <a href="#@cdktn/provider-databricks.grant.GrantProviderConfig">GrantProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#recipient Grant#recipient}.
+provider_config block.
 
----
-
-##### `schema`<sup>Optional</sup> <a name="schema" id="@cdktf/provider-databricks.grant.Grant.Initializer.parameter.schema"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#schema Grant#schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#provider_config Grant#provider_config}
 
 ---
 
-##### `share`<sup>Optional</sup> <a name="share" id="@cdktf/provider-databricks.grant.Grant.Initializer.parameter.share"></a>
+##### `recipient`<sup>Optional</sup> <a name="recipient" id="@cdktn/provider-databricks.grant.Grant.Initializer.parameter.recipient"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#share Grant#share}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#recipient Grant#recipient}.
 
 ---
 
-##### `storage_credential`<sup>Optional</sup> <a name="storage_credential" id="@cdktf/provider-databricks.grant.Grant.Initializer.parameter.storageCredential"></a>
+##### `schema`<sup>Optional</sup> <a name="schema" id="@cdktn/provider-databricks.grant.Grant.Initializer.parameter.schema"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#storage_credential Grant#storage_credential}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#schema Grant#schema}.
 
 ---
 
-##### `table`<sup>Optional</sup> <a name="table" id="@cdktf/provider-databricks.grant.Grant.Initializer.parameter.table"></a>
+##### `share`<sup>Optional</sup> <a name="share" id="@cdktn/provider-databricks.grant.Grant.Initializer.parameter.share"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#table Grant#table}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#share Grant#share}.
 
 ---
 
-##### `volume`<sup>Optional</sup> <a name="volume" id="@cdktf/provider-databricks.grant.Grant.Initializer.parameter.volume"></a>
+##### `storage_credential`<sup>Optional</sup> <a name="storage_credential" id="@cdktn/provider-databricks.grant.Grant.Initializer.parameter.storageCredential"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#volume Grant#volume}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#storage_credential Grant#storage_credential}.
+
+---
+
+##### `table`<sup>Optional</sup> <a name="table" id="@cdktn/provider-databricks.grant.Grant.Initializer.parameter.table"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#table Grant#table}.
+
+---
+
+##### `volume`<sup>Optional</sup> <a name="volume" id="@cdktn/provider-databricks.grant.Grant.Initializer.parameter.volume"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#volume Grant#volume}.
 
 ---
 
@@ -275,48 +287,50 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.toString">to_string</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.addOverride">add_override</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.toMetadata">to_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.hasResourceMove">has_resource_move</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.importFrom">import_from</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.resetCatalog">reset_catalog</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.resetCredential">reset_credential</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.resetExternalLocation">reset_external_location</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.resetForeignConnection">reset_foreign_connection</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.resetFunction">reset_function</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.resetId">reset_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.resetMetastore">reset_metastore</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.resetModel">reset_model</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.resetPipeline">reset_pipeline</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.resetRecipient">reset_recipient</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.resetSchema">reset_schema</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.resetShare">reset_share</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.resetStorageCredential">reset_storage_credential</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.resetTable">reset_table</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.resetVolume">reset_volume</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.hasResourceMove">has_resource_move</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.importFrom">import_from</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.putProviderConfig">put_provider_config</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.resetCatalog">reset_catalog</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.resetCredential">reset_credential</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.resetExternalLocation">reset_external_location</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.resetForeignConnection">reset_foreign_connection</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.resetFunction">reset_function</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.resetMetastore">reset_metastore</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.resetModel">reset_model</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.resetPipeline">reset_pipeline</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.resetProviderConfig">reset_provider_config</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.resetRecipient">reset_recipient</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.resetSchema">reset_schema</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.resetShare">reset_share</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.resetStorageCredential">reset_storage_credential</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.resetTable">reset_table</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.resetVolume">reset_volume</a></code> | *No description.* |
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-databricks.grant.Grant.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-databricks.grant.Grant.toString"></a>
 
 ```python
 def to_string() -> str
@@ -324,7 +338,7 @@ def to_string() -> str
 
 Returns a string representation of this construct.
 
-##### `add_override` <a name="add_override" id="@cdktf/provider-databricks.grant.Grant.addOverride"></a>
+##### `add_override` <a name="add_override" id="@cdktn/provider-databricks.grant.Grant.addOverride"></a>
 
 ```python
 def add_override(
@@ -333,19 +347,19 @@ def add_override(
 ) -> None
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-databricks.grant.Grant.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-databricks.grant.Grant.addOverride.parameter.path"></a>
 
 - *Type:* str
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-databricks.grant.Grant.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.grant.Grant.addOverride.parameter.value"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-databricks.grant.Grant.overrideLogicalId"></a>
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-databricks.grant.Grant.overrideLogicalId"></a>
 
 ```python
 def override_logical_id(
@@ -355,7 +369,7 @@ def override_logical_id(
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-databricks.grant.Grant.overrideLogicalId.parameter.newLogicalId"></a>
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-databricks.grant.Grant.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* str
 
@@ -363,7 +377,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-databricks.grant.Grant.resetOverrideLogicalId"></a>
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-databricks.grant.Grant.resetOverrideLogicalId"></a>
 
 ```python
 def reset_override_logical_id() -> None
@@ -371,19 +385,19 @@ def reset_override_logical_id() -> None
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-databricks.grant.Grant.toHclTerraform"></a>
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-databricks.grant.Grant.toHclTerraform"></a>
 
 ```python
 def to_hcl_terraform() -> typing.Any
 ```
 
-##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-databricks.grant.Grant.toMetadata"></a>
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-databricks.grant.Grant.toMetadata"></a>
 
 ```python
 def to_metadata() -> typing.Any
 ```
 
-##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-databricks.grant.Grant.toTerraform"></a>
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-databricks.grant.Grant.toTerraform"></a>
 
 ```python
 def to_terraform() -> typing.Any
@@ -391,7 +405,7 @@ def to_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `add_move_target` <a name="add_move_target" id="@cdktf/provider-databricks.grant.Grant.addMoveTarget"></a>
+##### `add_move_target` <a name="add_move_target" id="@cdktn/provider-databricks.grant.Grant.addMoveTarget"></a>
 
 ```python
 def add_move_target(
@@ -401,7 +415,7 @@ def add_move_target(
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-databricks.grant.Grant.addMoveTarget.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-databricks.grant.Grant.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -409,7 +423,7 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-databricks.grant.Grant.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-databricks.grant.Grant.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -417,13 +431,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.grant.Grant.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.grant.Grant.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-databricks.grant.Grant.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-databricks.grant.Grant.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -431,13 +445,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.grant.Grant.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.grant.Grant.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-databricks.grant.Grant.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-databricks.grant.Grant.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -445,13 +459,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.grant.Grant.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.grant.Grant.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-databricks.grant.Grant.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-databricks.grant.Grant.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -459,13 +473,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.grant.Grant.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.grant.Grant.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-databricks.grant.Grant.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-databricks.grant.Grant.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -473,13 +487,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.grant.Grant.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.grant.Grant.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-databricks.grant.Grant.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-databricks.grant.Grant.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -487,13 +501,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.grant.Grant.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.grant.Grant.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-databricks.grant.Grant.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-databricks.grant.Grant.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -501,13 +515,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.grant.Grant.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.grant.Grant.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-databricks.grant.Grant.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-databricks.grant.Grant.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -515,13 +529,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.grant.Grant.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.grant.Grant.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-databricks.grant.Grant.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-databricks.grant.Grant.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -529,19 +543,19 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.grant.Grant.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.grant.Grant.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-databricks.grant.Grant.hasResourceMove"></a>
+##### `has_resource_move` <a name="has_resource_move" id="@cdktn/provider-databricks.grant.Grant.hasResourceMove"></a>
 
 ```python
 def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `import_from` <a name="import_from" id="@cdktf/provider-databricks.grant.Grant.importFrom"></a>
+##### `import_from` <a name="import_from" id="@cdktn/provider-databricks.grant.Grant.importFrom"></a>
 
 ```python
 def import_from(
@@ -550,19 +564,19 @@ def import_from(
 ) -> None
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-databricks.grant.Grant.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-databricks.grant.Grant.importFrom.parameter.id"></a>
 
 - *Type:* str
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-databricks.grant.Grant.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-databricks.grant.Grant.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-databricks.grant.Grant.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-databricks.grant.Grant.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -570,13 +584,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-databricks.grant.Grant.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.grant.Grant.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `move_from_id` <a name="move_from_id" id="@cdktf/provider-databricks.grant.Grant.moveFromId"></a>
+##### `move_from_id` <a name="move_from_id" id="@cdktn/provider-databricks.grant.Grant.moveFromId"></a>
 
 ```python
 def move_from_id(
@@ -588,7 +602,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-databricks.grant.Grant.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-databricks.grant.Grant.moveFromId.parameter.id"></a>
 
 - *Type:* str
 
@@ -596,7 +610,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `move_to` <a name="move_to" id="@cdktf/provider-databricks.grant.Grant.moveTo"></a>
+##### `move_to` <a name="move_to" id="@cdktn/provider-databricks.grant.Grant.moveTo"></a>
 
 ```python
 def move_to(
@@ -607,7 +621,7 @@ def move_to(
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-databricks.grant.Grant.moveTo.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-databricks.grant.Grant.moveTo.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -615,7 +629,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-databricks.grant.Grant.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-databricks.grant.Grant.moveTo.parameter.index"></a>
 
 - *Type:* str | typing.Union[int, float]
 
@@ -623,7 +637,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `move_to_id` <a name="move_to_id" id="@cdktf/provider-databricks.grant.Grant.moveToId"></a>
+##### `move_to_id` <a name="move_to_id" id="@cdktn/provider-databricks.grant.Grant.moveToId"></a>
 
 ```python
 def move_to_id(
@@ -633,7 +647,7 @@ def move_to_id(
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-databricks.grant.Grant.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-databricks.grant.Grant.moveToId.parameter.id"></a>
 
 - *Type:* str
 
@@ -641,91 +655,113 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `reset_catalog` <a name="reset_catalog" id="@cdktf/provider-databricks.grant.Grant.resetCatalog"></a>
+##### `put_provider_config` <a name="put_provider_config" id="@cdktn/provider-databricks.grant.Grant.putProviderConfig"></a>
+
+```python
+def put_provider_config(
+  workspace_id: str
+) -> None
+```
+
+###### `workspace_id`<sup>Required</sup> <a name="workspace_id" id="@cdktn/provider-databricks.grant.Grant.putProviderConfig.parameter.workspaceId"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#workspace_id Grant#workspace_id}.
+
+---
+
+##### `reset_catalog` <a name="reset_catalog" id="@cdktn/provider-databricks.grant.Grant.resetCatalog"></a>
 
 ```python
 def reset_catalog() -> None
 ```
 
-##### `reset_credential` <a name="reset_credential" id="@cdktf/provider-databricks.grant.Grant.resetCredential"></a>
+##### `reset_credential` <a name="reset_credential" id="@cdktn/provider-databricks.grant.Grant.resetCredential"></a>
 
 ```python
 def reset_credential() -> None
 ```
 
-##### `reset_external_location` <a name="reset_external_location" id="@cdktf/provider-databricks.grant.Grant.resetExternalLocation"></a>
+##### `reset_external_location` <a name="reset_external_location" id="@cdktn/provider-databricks.grant.Grant.resetExternalLocation"></a>
 
 ```python
 def reset_external_location() -> None
 ```
 
-##### `reset_foreign_connection` <a name="reset_foreign_connection" id="@cdktf/provider-databricks.grant.Grant.resetForeignConnection"></a>
+##### `reset_foreign_connection` <a name="reset_foreign_connection" id="@cdktn/provider-databricks.grant.Grant.resetForeignConnection"></a>
 
 ```python
 def reset_foreign_connection() -> None
 ```
 
-##### `reset_function` <a name="reset_function" id="@cdktf/provider-databricks.grant.Grant.resetFunction"></a>
+##### `reset_function` <a name="reset_function" id="@cdktn/provider-databricks.grant.Grant.resetFunction"></a>
 
 ```python
 def reset_function() -> None
 ```
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-databricks.grant.Grant.resetId"></a>
+##### `reset_id` <a name="reset_id" id="@cdktn/provider-databricks.grant.Grant.resetId"></a>
 
 ```python
 def reset_id() -> None
 ```
 
-##### `reset_metastore` <a name="reset_metastore" id="@cdktf/provider-databricks.grant.Grant.resetMetastore"></a>
+##### `reset_metastore` <a name="reset_metastore" id="@cdktn/provider-databricks.grant.Grant.resetMetastore"></a>
 
 ```python
 def reset_metastore() -> None
 ```
 
-##### `reset_model` <a name="reset_model" id="@cdktf/provider-databricks.grant.Grant.resetModel"></a>
+##### `reset_model` <a name="reset_model" id="@cdktn/provider-databricks.grant.Grant.resetModel"></a>
 
 ```python
 def reset_model() -> None
 ```
 
-##### `reset_pipeline` <a name="reset_pipeline" id="@cdktf/provider-databricks.grant.Grant.resetPipeline"></a>
+##### `reset_pipeline` <a name="reset_pipeline" id="@cdktn/provider-databricks.grant.Grant.resetPipeline"></a>
 
 ```python
 def reset_pipeline() -> None
 ```
 
-##### `reset_recipient` <a name="reset_recipient" id="@cdktf/provider-databricks.grant.Grant.resetRecipient"></a>
+##### `reset_provider_config` <a name="reset_provider_config" id="@cdktn/provider-databricks.grant.Grant.resetProviderConfig"></a>
+
+```python
+def reset_provider_config() -> None
+```
+
+##### `reset_recipient` <a name="reset_recipient" id="@cdktn/provider-databricks.grant.Grant.resetRecipient"></a>
 
 ```python
 def reset_recipient() -> None
 ```
 
-##### `reset_schema` <a name="reset_schema" id="@cdktf/provider-databricks.grant.Grant.resetSchema"></a>
+##### `reset_schema` <a name="reset_schema" id="@cdktn/provider-databricks.grant.Grant.resetSchema"></a>
 
 ```python
 def reset_schema() -> None
 ```
 
-##### `reset_share` <a name="reset_share" id="@cdktf/provider-databricks.grant.Grant.resetShare"></a>
+##### `reset_share` <a name="reset_share" id="@cdktn/provider-databricks.grant.Grant.resetShare"></a>
 
 ```python
 def reset_share() -> None
 ```
 
-##### `reset_storage_credential` <a name="reset_storage_credential" id="@cdktf/provider-databricks.grant.Grant.resetStorageCredential"></a>
+##### `reset_storage_credential` <a name="reset_storage_credential" id="@cdktn/provider-databricks.grant.Grant.resetStorageCredential"></a>
 
 ```python
 def reset_storage_credential() -> None
 ```
 
-##### `reset_table` <a name="reset_table" id="@cdktf/provider-databricks.grant.Grant.resetTable"></a>
+##### `reset_table` <a name="reset_table" id="@cdktn/provider-databricks.grant.Grant.resetTable"></a>
 
 ```python
 def reset_table() -> None
 ```
 
-##### `reset_volume` <a name="reset_volume" id="@cdktf/provider-databricks.grant.Grant.resetVolume"></a>
+##### `reset_volume` <a name="reset_volume" id="@cdktn/provider-databricks.grant.Grant.resetVolume"></a>
 
 ```python
 def reset_volume() -> None
@@ -735,17 +771,17 @@ def reset_volume() -> None
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.isTerraformElement">is_terraform_element</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a Grant resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTN code for importing a Grant resource upon running "cdktn plan <stack-name>". |
 
 ---
 
-##### `is_construct` <a name="is_construct" id="@cdktf/provider-databricks.grant.Grant.isConstruct"></a>
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-databricks.grant.Grant.isConstruct"></a>
 
 ```python
-from cdktf_cdktf_provider_databricks import grant
+from cdktn_provider_databricks import grant
 
 grant.Grant.is_construct(
   x: typing.Any
@@ -768,7 +804,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-databricks.grant.Grant.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-databricks.grant.Grant.isConstruct.parameter.x"></a>
 
 - *Type:* typing.Any
 
@@ -776,42 +812,42 @@ Any object.
 
 ---
 
-##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-databricks.grant.Grant.isTerraformElement"></a>
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-databricks.grant.Grant.isTerraformElement"></a>
 
 ```python
-from cdktf_cdktf_provider_databricks import grant
+from cdktn_provider_databricks import grant
 
 grant.Grant.is_terraform_element(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-databricks.grant.Grant.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-databricks.grant.Grant.isTerraformElement.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktf/provider-databricks.grant.Grant.isTerraformResource"></a>
+##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktn/provider-databricks.grant.Grant.isTerraformResource"></a>
 
 ```python
-from cdktf_cdktf_provider_databricks import grant
+from cdktn_provider_databricks import grant
 
 grant.Grant.is_terraform_resource(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-databricks.grant.Grant.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-databricks.grant.Grant.isTerraformResource.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-databricks.grant.Grant.generateConfigForImport"></a>
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-databricks.grant.Grant.generateConfigForImport"></a>
 
 ```python
-from cdktf_cdktf_provider_databricks import grant
+from cdktn_provider_databricks import grant
 
 grant.Grant.generate_config_for_import(
   scope: Construct,
@@ -821,9 +857,9 @@ grant.Grant.generate_config_for_import(
 )
 ```
 
-Generates CDKTF code for importing a Grant resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a Grant resource upon running "cdktn plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-databricks.grant.Grant.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-databricks.grant.Grant.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -831,7 +867,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-databricks.grant.Grant.generateConfigForImport.parameter.importToId"></a>
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-databricks.grant.Grant.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* str
 
@@ -839,19 +875,19 @@ The construct id used in the generated config for the Grant to import.
 
 ---
 
-###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-databricks.grant.Grant.generateConfigForImport.parameter.importFromId"></a>
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-databricks.grant.Grant.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* str
 
 The id of the existing Grant that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-databricks.grant.Grant.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-databricks.grant.Grant.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the Grant to import is found.
 
@@ -861,58 +897,60 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.property.catalogInput">catalog_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.property.credentialInput">credential_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.property.externalLocationInput">external_location_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.property.foreignConnectionInput">foreign_connection_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.property.functionInput">function_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.property.metastoreInput">metastore_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.property.modelInput">model_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.property.pipelineInput">pipeline_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.property.principalInput">principal_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.property.privilegesInput">privileges_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.property.recipientInput">recipient_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.property.schemaInput">schema_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.property.shareInput">share_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.property.storageCredentialInput">storage_credential_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.property.tableInput">table_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.property.volumeInput">volume_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.property.catalog">catalog</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.property.credential">credential</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.property.externalLocation">external_location</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.property.foreignConnection">foreign_connection</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.property.function">function</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.property.metastore">metastore</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.property.model">model</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.property.pipeline">pipeline</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.property.principal">principal</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.property.privileges">privileges</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.property.recipient">recipient</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.property.schema">schema</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.property.share">share</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.property.storageCredential">storage_credential</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.property.table">table</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.property.volume">volume</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.property.cdktfStack">cdktf_stack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.property.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.grant.GrantProviderConfigOutputReference">GrantProviderConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.property.catalogInput">catalog_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.property.credentialInput">credential_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.property.externalLocationInput">external_location_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.property.foreignConnectionInput">foreign_connection_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.property.functionInput">function_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.property.metastoreInput">metastore_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.property.modelInput">model_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.property.pipelineInput">pipeline_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.property.principalInput">principal_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.property.privilegesInput">privileges_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.property.providerConfigInput">provider_config_input</a></code> | <code><a href="#@cdktn/provider-databricks.grant.GrantProviderConfig">GrantProviderConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.property.recipientInput">recipient_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.property.schemaInput">schema_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.property.shareInput">share_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.property.storageCredentialInput">storage_credential_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.property.tableInput">table_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.property.volumeInput">volume_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.property.catalog">catalog</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.property.credential">credential</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.property.externalLocation">external_location</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.property.foreignConnection">foreign_connection</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.property.function">function</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.property.metastore">metastore</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.property.model">model</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.property.pipeline">pipeline</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.property.principal">principal</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.property.privileges">privileges</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.property.recipient">recipient</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.property.schema">schema</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.property.share">share</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.property.storageCredential">storage_credential</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.property.table">table</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.property.volume">volume</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-databricks.grant.Grant.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-databricks.grant.Grant.property.node"></a>
 
 ```python
 node: Node
@@ -924,17 +962,17 @@ The tree node.
 
 ---
 
-##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-databricks.grant.Grant.property.cdktfStack"></a>
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-databricks.grant.Grant.property.cdktfStack"></a>
 
 ```python
 cdktf_stack: TerraformStack
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-databricks.grant.Grant.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.grant.Grant.property.fqn"></a>
 
 ```python
 fqn: str
@@ -944,7 +982,7 @@ fqn: str
 
 ---
 
-##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-databricks.grant.Grant.property.friendlyUniqueId"></a>
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-databricks.grant.Grant.property.friendlyUniqueId"></a>
 
 ```python
 friendly_unique_id: str
@@ -954,7 +992,7 @@ friendly_unique_id: str
 
 ---
 
-##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktf/provider-databricks.grant.Grant.property.terraformMetaArguments"></a>
+##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktn/provider-databricks.grant.Grant.property.terraformMetaArguments"></a>
 
 ```python
 terraform_meta_arguments: typing.Mapping[typing.Any]
@@ -964,7 +1002,7 @@ terraform_meta_arguments: typing.Mapping[typing.Any]
 
 ---
 
-##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-databricks.grant.Grant.property.terraformResourceType"></a>
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-databricks.grant.Grant.property.terraformResourceType"></a>
 
 ```python
 terraform_resource_type: str
@@ -974,37 +1012,37 @@ terraform_resource_type: str
 
 ---
 
-##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-databricks.grant.Grant.property.terraformGeneratorMetadata"></a>
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-databricks.grant.Grant.property.terraformGeneratorMetadata"></a>
 
 ```python
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-databricks.grant.Grant.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-databricks.grant.Grant.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-databricks.grant.Grant.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-databricks.grant.Grant.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-databricks.grant.Grant.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-databricks.grant.Grant.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[str]
@@ -1014,47 +1052,57 @@ depends_on: typing.List[str]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-databricks.grant.Grant.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-databricks.grant.Grant.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-databricks.grant.Grant.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-databricks.grant.Grant.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-databricks.grant.Grant.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-databricks.grant.Grant.property.provider"></a>
 
 ```python
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-databricks.grant.Grant.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-databricks.grant.Grant.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
-##### `catalog_input`<sup>Optional</sup> <a name="catalog_input" id="@cdktf/provider-databricks.grant.Grant.property.catalogInput"></a>
+##### `provider_config`<sup>Required</sup> <a name="provider_config" id="@cdktn/provider-databricks.grant.Grant.property.providerConfig"></a>
+
+```python
+provider_config: GrantProviderConfigOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.grant.GrantProviderConfigOutputReference">GrantProviderConfigOutputReference</a>
+
+---
+
+##### `catalog_input`<sup>Optional</sup> <a name="catalog_input" id="@cdktn/provider-databricks.grant.Grant.property.catalogInput"></a>
 
 ```python
 catalog_input: str
@@ -1064,7 +1112,7 @@ catalog_input: str
 
 ---
 
-##### `credential_input`<sup>Optional</sup> <a name="credential_input" id="@cdktf/provider-databricks.grant.Grant.property.credentialInput"></a>
+##### `credential_input`<sup>Optional</sup> <a name="credential_input" id="@cdktn/provider-databricks.grant.Grant.property.credentialInput"></a>
 
 ```python
 credential_input: str
@@ -1074,7 +1122,7 @@ credential_input: str
 
 ---
 
-##### `external_location_input`<sup>Optional</sup> <a name="external_location_input" id="@cdktf/provider-databricks.grant.Grant.property.externalLocationInput"></a>
+##### `external_location_input`<sup>Optional</sup> <a name="external_location_input" id="@cdktn/provider-databricks.grant.Grant.property.externalLocationInput"></a>
 
 ```python
 external_location_input: str
@@ -1084,7 +1132,7 @@ external_location_input: str
 
 ---
 
-##### `foreign_connection_input`<sup>Optional</sup> <a name="foreign_connection_input" id="@cdktf/provider-databricks.grant.Grant.property.foreignConnectionInput"></a>
+##### `foreign_connection_input`<sup>Optional</sup> <a name="foreign_connection_input" id="@cdktn/provider-databricks.grant.Grant.property.foreignConnectionInput"></a>
 
 ```python
 foreign_connection_input: str
@@ -1094,7 +1142,7 @@ foreign_connection_input: str
 
 ---
 
-##### `function_input`<sup>Optional</sup> <a name="function_input" id="@cdktf/provider-databricks.grant.Grant.property.functionInput"></a>
+##### `function_input`<sup>Optional</sup> <a name="function_input" id="@cdktn/provider-databricks.grant.Grant.property.functionInput"></a>
 
 ```python
 function_input: str
@@ -1104,7 +1152,7 @@ function_input: str
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-databricks.grant.Grant.property.idInput"></a>
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-databricks.grant.Grant.property.idInput"></a>
 
 ```python
 id_input: str
@@ -1114,7 +1162,7 @@ id_input: str
 
 ---
 
-##### `metastore_input`<sup>Optional</sup> <a name="metastore_input" id="@cdktf/provider-databricks.grant.Grant.property.metastoreInput"></a>
+##### `metastore_input`<sup>Optional</sup> <a name="metastore_input" id="@cdktn/provider-databricks.grant.Grant.property.metastoreInput"></a>
 
 ```python
 metastore_input: str
@@ -1124,7 +1172,7 @@ metastore_input: str
 
 ---
 
-##### `model_input`<sup>Optional</sup> <a name="model_input" id="@cdktf/provider-databricks.grant.Grant.property.modelInput"></a>
+##### `model_input`<sup>Optional</sup> <a name="model_input" id="@cdktn/provider-databricks.grant.Grant.property.modelInput"></a>
 
 ```python
 model_input: str
@@ -1134,7 +1182,7 @@ model_input: str
 
 ---
 
-##### `pipeline_input`<sup>Optional</sup> <a name="pipeline_input" id="@cdktf/provider-databricks.grant.Grant.property.pipelineInput"></a>
+##### `pipeline_input`<sup>Optional</sup> <a name="pipeline_input" id="@cdktn/provider-databricks.grant.Grant.property.pipelineInput"></a>
 
 ```python
 pipeline_input: str
@@ -1144,7 +1192,7 @@ pipeline_input: str
 
 ---
 
-##### `principal_input`<sup>Optional</sup> <a name="principal_input" id="@cdktf/provider-databricks.grant.Grant.property.principalInput"></a>
+##### `principal_input`<sup>Optional</sup> <a name="principal_input" id="@cdktn/provider-databricks.grant.Grant.property.principalInput"></a>
 
 ```python
 principal_input: str
@@ -1154,7 +1202,7 @@ principal_input: str
 
 ---
 
-##### `privileges_input`<sup>Optional</sup> <a name="privileges_input" id="@cdktf/provider-databricks.grant.Grant.property.privilegesInput"></a>
+##### `privileges_input`<sup>Optional</sup> <a name="privileges_input" id="@cdktn/provider-databricks.grant.Grant.property.privilegesInput"></a>
 
 ```python
 privileges_input: typing.List[str]
@@ -1164,7 +1212,17 @@ privileges_input: typing.List[str]
 
 ---
 
-##### `recipient_input`<sup>Optional</sup> <a name="recipient_input" id="@cdktf/provider-databricks.grant.Grant.property.recipientInput"></a>
+##### `provider_config_input`<sup>Optional</sup> <a name="provider_config_input" id="@cdktn/provider-databricks.grant.Grant.property.providerConfigInput"></a>
+
+```python
+provider_config_input: GrantProviderConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.grant.GrantProviderConfig">GrantProviderConfig</a>
+
+---
+
+##### `recipient_input`<sup>Optional</sup> <a name="recipient_input" id="@cdktn/provider-databricks.grant.Grant.property.recipientInput"></a>
 
 ```python
 recipient_input: str
@@ -1174,7 +1232,7 @@ recipient_input: str
 
 ---
 
-##### `schema_input`<sup>Optional</sup> <a name="schema_input" id="@cdktf/provider-databricks.grant.Grant.property.schemaInput"></a>
+##### `schema_input`<sup>Optional</sup> <a name="schema_input" id="@cdktn/provider-databricks.grant.Grant.property.schemaInput"></a>
 
 ```python
 schema_input: str
@@ -1184,7 +1242,7 @@ schema_input: str
 
 ---
 
-##### `share_input`<sup>Optional</sup> <a name="share_input" id="@cdktf/provider-databricks.grant.Grant.property.shareInput"></a>
+##### `share_input`<sup>Optional</sup> <a name="share_input" id="@cdktn/provider-databricks.grant.Grant.property.shareInput"></a>
 
 ```python
 share_input: str
@@ -1194,7 +1252,7 @@ share_input: str
 
 ---
 
-##### `storage_credential_input`<sup>Optional</sup> <a name="storage_credential_input" id="@cdktf/provider-databricks.grant.Grant.property.storageCredentialInput"></a>
+##### `storage_credential_input`<sup>Optional</sup> <a name="storage_credential_input" id="@cdktn/provider-databricks.grant.Grant.property.storageCredentialInput"></a>
 
 ```python
 storage_credential_input: str
@@ -1204,7 +1262,7 @@ storage_credential_input: str
 
 ---
 
-##### `table_input`<sup>Optional</sup> <a name="table_input" id="@cdktf/provider-databricks.grant.Grant.property.tableInput"></a>
+##### `table_input`<sup>Optional</sup> <a name="table_input" id="@cdktn/provider-databricks.grant.Grant.property.tableInput"></a>
 
 ```python
 table_input: str
@@ -1214,7 +1272,7 @@ table_input: str
 
 ---
 
-##### `volume_input`<sup>Optional</sup> <a name="volume_input" id="@cdktf/provider-databricks.grant.Grant.property.volumeInput"></a>
+##### `volume_input`<sup>Optional</sup> <a name="volume_input" id="@cdktn/provider-databricks.grant.Grant.property.volumeInput"></a>
 
 ```python
 volume_input: str
@@ -1224,7 +1282,7 @@ volume_input: str
 
 ---
 
-##### `catalog`<sup>Required</sup> <a name="catalog" id="@cdktf/provider-databricks.grant.Grant.property.catalog"></a>
+##### `catalog`<sup>Required</sup> <a name="catalog" id="@cdktn/provider-databricks.grant.Grant.property.catalog"></a>
 
 ```python
 catalog: str
@@ -1234,7 +1292,7 @@ catalog: str
 
 ---
 
-##### `credential`<sup>Required</sup> <a name="credential" id="@cdktf/provider-databricks.grant.Grant.property.credential"></a>
+##### `credential`<sup>Required</sup> <a name="credential" id="@cdktn/provider-databricks.grant.Grant.property.credential"></a>
 
 ```python
 credential: str
@@ -1244,7 +1302,7 @@ credential: str
 
 ---
 
-##### `external_location`<sup>Required</sup> <a name="external_location" id="@cdktf/provider-databricks.grant.Grant.property.externalLocation"></a>
+##### `external_location`<sup>Required</sup> <a name="external_location" id="@cdktn/provider-databricks.grant.Grant.property.externalLocation"></a>
 
 ```python
 external_location: str
@@ -1254,7 +1312,7 @@ external_location: str
 
 ---
 
-##### `foreign_connection`<sup>Required</sup> <a name="foreign_connection" id="@cdktf/provider-databricks.grant.Grant.property.foreignConnection"></a>
+##### `foreign_connection`<sup>Required</sup> <a name="foreign_connection" id="@cdktn/provider-databricks.grant.Grant.property.foreignConnection"></a>
 
 ```python
 foreign_connection: str
@@ -1264,7 +1322,7 @@ foreign_connection: str
 
 ---
 
-##### `function`<sup>Required</sup> <a name="function" id="@cdktf/provider-databricks.grant.Grant.property.function"></a>
+##### `function`<sup>Required</sup> <a name="function" id="@cdktn/provider-databricks.grant.Grant.property.function"></a>
 
 ```python
 function: str
@@ -1274,7 +1332,7 @@ function: str
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-databricks.grant.Grant.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-databricks.grant.Grant.property.id"></a>
 
 ```python
 id: str
@@ -1284,7 +1342,7 @@ id: str
 
 ---
 
-##### `metastore`<sup>Required</sup> <a name="metastore" id="@cdktf/provider-databricks.grant.Grant.property.metastore"></a>
+##### `metastore`<sup>Required</sup> <a name="metastore" id="@cdktn/provider-databricks.grant.Grant.property.metastore"></a>
 
 ```python
 metastore: str
@@ -1294,7 +1352,7 @@ metastore: str
 
 ---
 
-##### `model`<sup>Required</sup> <a name="model" id="@cdktf/provider-databricks.grant.Grant.property.model"></a>
+##### `model`<sup>Required</sup> <a name="model" id="@cdktn/provider-databricks.grant.Grant.property.model"></a>
 
 ```python
 model: str
@@ -1304,7 +1362,7 @@ model: str
 
 ---
 
-##### `pipeline`<sup>Required</sup> <a name="pipeline" id="@cdktf/provider-databricks.grant.Grant.property.pipeline"></a>
+##### `pipeline`<sup>Required</sup> <a name="pipeline" id="@cdktn/provider-databricks.grant.Grant.property.pipeline"></a>
 
 ```python
 pipeline: str
@@ -1314,7 +1372,7 @@ pipeline: str
 
 ---
 
-##### `principal`<sup>Required</sup> <a name="principal" id="@cdktf/provider-databricks.grant.Grant.property.principal"></a>
+##### `principal`<sup>Required</sup> <a name="principal" id="@cdktn/provider-databricks.grant.Grant.property.principal"></a>
 
 ```python
 principal: str
@@ -1324,7 +1382,7 @@ principal: str
 
 ---
 
-##### `privileges`<sup>Required</sup> <a name="privileges" id="@cdktf/provider-databricks.grant.Grant.property.privileges"></a>
+##### `privileges`<sup>Required</sup> <a name="privileges" id="@cdktn/provider-databricks.grant.Grant.property.privileges"></a>
 
 ```python
 privileges: typing.List[str]
@@ -1334,7 +1392,7 @@ privileges: typing.List[str]
 
 ---
 
-##### `recipient`<sup>Required</sup> <a name="recipient" id="@cdktf/provider-databricks.grant.Grant.property.recipient"></a>
+##### `recipient`<sup>Required</sup> <a name="recipient" id="@cdktn/provider-databricks.grant.Grant.property.recipient"></a>
 
 ```python
 recipient: str
@@ -1344,7 +1402,7 @@ recipient: str
 
 ---
 
-##### `schema`<sup>Required</sup> <a name="schema" id="@cdktf/provider-databricks.grant.Grant.property.schema"></a>
+##### `schema`<sup>Required</sup> <a name="schema" id="@cdktn/provider-databricks.grant.Grant.property.schema"></a>
 
 ```python
 schema: str
@@ -1354,7 +1412,7 @@ schema: str
 
 ---
 
-##### `share`<sup>Required</sup> <a name="share" id="@cdktf/provider-databricks.grant.Grant.property.share"></a>
+##### `share`<sup>Required</sup> <a name="share" id="@cdktn/provider-databricks.grant.Grant.property.share"></a>
 
 ```python
 share: str
@@ -1364,7 +1422,7 @@ share: str
 
 ---
 
-##### `storage_credential`<sup>Required</sup> <a name="storage_credential" id="@cdktf/provider-databricks.grant.Grant.property.storageCredential"></a>
+##### `storage_credential`<sup>Required</sup> <a name="storage_credential" id="@cdktn/provider-databricks.grant.Grant.property.storageCredential"></a>
 
 ```python
 storage_credential: str
@@ -1374,7 +1432,7 @@ storage_credential: str
 
 ---
 
-##### `table`<sup>Required</sup> <a name="table" id="@cdktf/provider-databricks.grant.Grant.property.table"></a>
+##### `table`<sup>Required</sup> <a name="table" id="@cdktn/provider-databricks.grant.Grant.property.table"></a>
 
 ```python
 table: str
@@ -1384,7 +1442,7 @@ table: str
 
 ---
 
-##### `volume`<sup>Required</sup> <a name="volume" id="@cdktf/provider-databricks.grant.Grant.property.volume"></a>
+##### `volume`<sup>Required</sup> <a name="volume" id="@cdktn/provider-databricks.grant.Grant.property.volume"></a>
 
 ```python
 volume: str
@@ -1398,11 +1456,11 @@ volume: str
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.grant.Grant.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.Grant.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-databricks.grant.Grant.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-databricks.grant.Grant.property.tfResourceType"></a>
 
 ```python
 tfResourceType: str
@@ -1414,12 +1472,12 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### GrantConfig <a name="GrantConfig" id="@cdktf/provider-databricks.grant.GrantConfig"></a>
+### GrantConfig <a name="GrantConfig" id="@cdktn/provider-databricks.grant.GrantConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-databricks.grant.GrantConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.grant.GrantConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_databricks import grant
+from cdktn_provider_databricks import grant
 
 grant.GrantConfig(
   connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
@@ -1440,6 +1498,7 @@ grant.GrantConfig(
   metastore: str = None,
   model: str = None,
   pipeline: str = None,
+  provider_config: GrantProviderConfig = None,
   recipient: str = None,
   schema: str = None,
   share: str = None,
@@ -1453,104 +1512,105 @@ grant.GrantConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-databricks.grant.GrantConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.GrantConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.GrantConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.GrantConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.GrantConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.GrantConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.GrantConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-databricks.grant.GrantConfig.property.principal">principal</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#principal Grant#principal}. |
-| <code><a href="#@cdktf/provider-databricks.grant.GrantConfig.property.privileges">privileges</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#privileges Grant#privileges}. |
-| <code><a href="#@cdktf/provider-databricks.grant.GrantConfig.property.catalog">catalog</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#catalog Grant#catalog}. |
-| <code><a href="#@cdktf/provider-databricks.grant.GrantConfig.property.credential">credential</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#credential Grant#credential}. |
-| <code><a href="#@cdktf/provider-databricks.grant.GrantConfig.property.externalLocation">external_location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#external_location Grant#external_location}. |
-| <code><a href="#@cdktf/provider-databricks.grant.GrantConfig.property.foreignConnection">foreign_connection</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#foreign_connection Grant#foreign_connection}. |
-| <code><a href="#@cdktf/provider-databricks.grant.GrantConfig.property.function">function</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#function Grant#function}. |
-| <code><a href="#@cdktf/provider-databricks.grant.GrantConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#id Grant#id}. |
-| <code><a href="#@cdktf/provider-databricks.grant.GrantConfig.property.metastore">metastore</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#metastore Grant#metastore}. |
-| <code><a href="#@cdktf/provider-databricks.grant.GrantConfig.property.model">model</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#model Grant#model}. |
-| <code><a href="#@cdktf/provider-databricks.grant.GrantConfig.property.pipeline">pipeline</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#pipeline Grant#pipeline}. |
-| <code><a href="#@cdktf/provider-databricks.grant.GrantConfig.property.recipient">recipient</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#recipient Grant#recipient}. |
-| <code><a href="#@cdktf/provider-databricks.grant.GrantConfig.property.schema">schema</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#schema Grant#schema}. |
-| <code><a href="#@cdktf/provider-databricks.grant.GrantConfig.property.share">share</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#share Grant#share}. |
-| <code><a href="#@cdktf/provider-databricks.grant.GrantConfig.property.storageCredential">storage_credential</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#storage_credential Grant#storage_credential}. |
-| <code><a href="#@cdktf/provider-databricks.grant.GrantConfig.property.table">table</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#table Grant#table}. |
-| <code><a href="#@cdktf/provider-databricks.grant.GrantConfig.property.volume">volume</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#volume Grant#volume}. |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.principal">principal</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#principal Grant#principal}. |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.privileges">privileges</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#privileges Grant#privileges}. |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.catalog">catalog</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#catalog Grant#catalog}. |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.credential">credential</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#credential Grant#credential}. |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.externalLocation">external_location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#external_location Grant#external_location}. |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.foreignConnection">foreign_connection</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#foreign_connection Grant#foreign_connection}. |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.function">function</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#function Grant#function}. |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#id Grant#id}. |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.metastore">metastore</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#metastore Grant#metastore}. |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.model">model</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#model Grant#model}. |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.pipeline">pipeline</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#pipeline Grant#pipeline}. |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.grant.GrantProviderConfig">GrantProviderConfig</a></code> | provider_config block. |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.recipient">recipient</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#recipient Grant#recipient}. |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.schema">schema</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#schema Grant#schema}. |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.share">share</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#share Grant#share}. |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.storageCredential">storage_credential</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#storage_credential Grant#storage_credential}. |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.table">table</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#table Grant#table}. |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantConfig.property.volume">volume</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#volume Grant#volume}. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-databricks.grant.GrantConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-databricks.grant.GrantConfig.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-databricks.grant.GrantConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-databricks.grant.GrantConfig.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-databricks.grant.GrantConfig.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-databricks.grant.GrantConfig.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[ITerraformDependable]
 ```
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-databricks.grant.GrantConfig.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-databricks.grant.GrantConfig.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-databricks.grant.GrantConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-databricks.grant.GrantConfig.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-databricks.grant.GrantConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-databricks.grant.GrantConfig.property.provider"></a>
 
 ```python
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-databricks.grant.GrantConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-databricks.grant.GrantConfig.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
-##### `principal`<sup>Required</sup> <a name="principal" id="@cdktf/provider-databricks.grant.GrantConfig.property.principal"></a>
+##### `principal`<sup>Required</sup> <a name="principal" id="@cdktn/provider-databricks.grant.GrantConfig.property.principal"></a>
 
 ```python
 principal: str
@@ -1558,11 +1618,11 @@ principal: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#principal Grant#principal}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#principal Grant#principal}.
 
 ---
 
-##### `privileges`<sup>Required</sup> <a name="privileges" id="@cdktf/provider-databricks.grant.GrantConfig.property.privileges"></a>
+##### `privileges`<sup>Required</sup> <a name="privileges" id="@cdktn/provider-databricks.grant.GrantConfig.property.privileges"></a>
 
 ```python
 privileges: typing.List[str]
@@ -1570,11 +1630,11 @@ privileges: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#privileges Grant#privileges}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#privileges Grant#privileges}.
 
 ---
 
-##### `catalog`<sup>Optional</sup> <a name="catalog" id="@cdktf/provider-databricks.grant.GrantConfig.property.catalog"></a>
+##### `catalog`<sup>Optional</sup> <a name="catalog" id="@cdktn/provider-databricks.grant.GrantConfig.property.catalog"></a>
 
 ```python
 catalog: str
@@ -1582,11 +1642,11 @@ catalog: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#catalog Grant#catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#catalog Grant#catalog}.
 
 ---
 
-##### `credential`<sup>Optional</sup> <a name="credential" id="@cdktf/provider-databricks.grant.GrantConfig.property.credential"></a>
+##### `credential`<sup>Optional</sup> <a name="credential" id="@cdktn/provider-databricks.grant.GrantConfig.property.credential"></a>
 
 ```python
 credential: str
@@ -1594,11 +1654,11 @@ credential: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#credential Grant#credential}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#credential Grant#credential}.
 
 ---
 
-##### `external_location`<sup>Optional</sup> <a name="external_location" id="@cdktf/provider-databricks.grant.GrantConfig.property.externalLocation"></a>
+##### `external_location`<sup>Optional</sup> <a name="external_location" id="@cdktn/provider-databricks.grant.GrantConfig.property.externalLocation"></a>
 
 ```python
 external_location: str
@@ -1606,11 +1666,11 @@ external_location: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#external_location Grant#external_location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#external_location Grant#external_location}.
 
 ---
 
-##### `foreign_connection`<sup>Optional</sup> <a name="foreign_connection" id="@cdktf/provider-databricks.grant.GrantConfig.property.foreignConnection"></a>
+##### `foreign_connection`<sup>Optional</sup> <a name="foreign_connection" id="@cdktn/provider-databricks.grant.GrantConfig.property.foreignConnection"></a>
 
 ```python
 foreign_connection: str
@@ -1618,11 +1678,11 @@ foreign_connection: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#foreign_connection Grant#foreign_connection}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#foreign_connection Grant#foreign_connection}.
 
 ---
 
-##### `function`<sup>Optional</sup> <a name="function" id="@cdktf/provider-databricks.grant.GrantConfig.property.function"></a>
+##### `function`<sup>Optional</sup> <a name="function" id="@cdktn/provider-databricks.grant.GrantConfig.property.function"></a>
 
 ```python
 function: str
@@ -1630,11 +1690,11 @@ function: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#function Grant#function}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#function Grant#function}.
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-databricks.grant.GrantConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-databricks.grant.GrantConfig.property.id"></a>
 
 ```python
 id: str
@@ -1642,14 +1702,14 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#id Grant#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#id Grant#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `metastore`<sup>Optional</sup> <a name="metastore" id="@cdktf/provider-databricks.grant.GrantConfig.property.metastore"></a>
+##### `metastore`<sup>Optional</sup> <a name="metastore" id="@cdktn/provider-databricks.grant.GrantConfig.property.metastore"></a>
 
 ```python
 metastore: str
@@ -1657,11 +1717,11 @@ metastore: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#metastore Grant#metastore}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#metastore Grant#metastore}.
 
 ---
 
-##### `model`<sup>Optional</sup> <a name="model" id="@cdktf/provider-databricks.grant.GrantConfig.property.model"></a>
+##### `model`<sup>Optional</sup> <a name="model" id="@cdktn/provider-databricks.grant.GrantConfig.property.model"></a>
 
 ```python
 model: str
@@ -1669,11 +1729,11 @@ model: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#model Grant#model}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#model Grant#model}.
 
 ---
 
-##### `pipeline`<sup>Optional</sup> <a name="pipeline" id="@cdktf/provider-databricks.grant.GrantConfig.property.pipeline"></a>
+##### `pipeline`<sup>Optional</sup> <a name="pipeline" id="@cdktn/provider-databricks.grant.GrantConfig.property.pipeline"></a>
 
 ```python
 pipeline: str
@@ -1681,11 +1741,25 @@ pipeline: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#pipeline Grant#pipeline}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#pipeline Grant#pipeline}.
 
 ---
 
-##### `recipient`<sup>Optional</sup> <a name="recipient" id="@cdktf/provider-databricks.grant.GrantConfig.property.recipient"></a>
+##### `provider_config`<sup>Optional</sup> <a name="provider_config" id="@cdktn/provider-databricks.grant.GrantConfig.property.providerConfig"></a>
+
+```python
+provider_config: GrantProviderConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.grant.GrantProviderConfig">GrantProviderConfig</a>
+
+provider_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#provider_config Grant#provider_config}
+
+---
+
+##### `recipient`<sup>Optional</sup> <a name="recipient" id="@cdktn/provider-databricks.grant.GrantConfig.property.recipient"></a>
 
 ```python
 recipient: str
@@ -1693,11 +1767,11 @@ recipient: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#recipient Grant#recipient}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#recipient Grant#recipient}.
 
 ---
 
-##### `schema`<sup>Optional</sup> <a name="schema" id="@cdktf/provider-databricks.grant.GrantConfig.property.schema"></a>
+##### `schema`<sup>Optional</sup> <a name="schema" id="@cdktn/provider-databricks.grant.GrantConfig.property.schema"></a>
 
 ```python
 schema: str
@@ -1705,11 +1779,11 @@ schema: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#schema Grant#schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#schema Grant#schema}.
 
 ---
 
-##### `share`<sup>Optional</sup> <a name="share" id="@cdktf/provider-databricks.grant.GrantConfig.property.share"></a>
+##### `share`<sup>Optional</sup> <a name="share" id="@cdktn/provider-databricks.grant.GrantConfig.property.share"></a>
 
 ```python
 share: str
@@ -1717,11 +1791,11 @@ share: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#share Grant#share}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#share Grant#share}.
 
 ---
 
-##### `storage_credential`<sup>Optional</sup> <a name="storage_credential" id="@cdktf/provider-databricks.grant.GrantConfig.property.storageCredential"></a>
+##### `storage_credential`<sup>Optional</sup> <a name="storage_credential" id="@cdktn/provider-databricks.grant.GrantConfig.property.storageCredential"></a>
 
 ```python
 storage_credential: str
@@ -1729,11 +1803,11 @@ storage_credential: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#storage_credential Grant#storage_credential}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#storage_credential Grant#storage_credential}.
 
 ---
 
-##### `table`<sup>Optional</sup> <a name="table" id="@cdktf/provider-databricks.grant.GrantConfig.property.table"></a>
+##### `table`<sup>Optional</sup> <a name="table" id="@cdktn/provider-databricks.grant.GrantConfig.property.table"></a>
 
 ```python
 table: str
@@ -1741,11 +1815,11 @@ table: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#table Grant#table}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#table Grant#table}.
 
 ---
 
-##### `volume`<sup>Optional</sup> <a name="volume" id="@cdktf/provider-databricks.grant.GrantConfig.property.volume"></a>
+##### `volume`<sup>Optional</sup> <a name="volume" id="@cdktn/provider-databricks.grant.GrantConfig.property.volume"></a>
 
 ```python
 volume: str
@@ -1753,7 +1827,336 @@ volume: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/grant#volume Grant#volume}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#volume Grant#volume}.
+
+---
+
+### GrantProviderConfig <a name="GrantProviderConfig" id="@cdktn/provider-databricks.grant.GrantProviderConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.grant.GrantProviderConfig.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import grant
+
+grant.GrantProviderConfig(
+  workspace_id: str
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantProviderConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#workspace_id Grant#workspace_id}. |
+
+---
+
+##### `workspace_id`<sup>Required</sup> <a name="workspace_id" id="@cdktn/provider-databricks.grant.GrantProviderConfig.property.workspaceId"></a>
+
+```python
+workspace_id: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/grant#workspace_id Grant#workspace_id}.
+
+---
+
+## Classes <a name="Classes" id="Classes"></a>
+
+### GrantProviderConfigOutputReference <a name="GrantProviderConfigOutputReference" id="@cdktn/provider-databricks.grant.GrantProviderConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.grant.GrantProviderConfigOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import grant
+
+grant.GrantProviderConfigOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantProviderConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantProviderConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-databricks.grant.GrantProviderConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.grant.GrantProviderConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantProviderConfigOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantProviderConfigOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantProviderConfigOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantProviderConfigOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantProviderConfigOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantProviderConfigOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantProviderConfigOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantProviderConfigOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantProviderConfigOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantProviderConfigOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantProviderConfigOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantProviderConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantProviderConfigOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-databricks.grant.GrantProviderConfigOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-databricks.grant.GrantProviderConfigOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.grant.GrantProviderConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-databricks.grant.GrantProviderConfigOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.grant.GrantProviderConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-databricks.grant.GrantProviderConfigOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.grant.GrantProviderConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-databricks.grant.GrantProviderConfigOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.grant.GrantProviderConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-databricks.grant.GrantProviderConfigOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.grant.GrantProviderConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-databricks.grant.GrantProviderConfigOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.grant.GrantProviderConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-databricks.grant.GrantProviderConfigOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.grant.GrantProviderConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-databricks.grant.GrantProviderConfigOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.grant.GrantProviderConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-databricks.grant.GrantProviderConfigOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.grant.GrantProviderConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-databricks.grant.GrantProviderConfigOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.grant.GrantProviderConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.grant.GrantProviderConfigOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.grant.GrantProviderConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-databricks.grant.GrantProviderConfigOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantProviderConfigOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantProviderConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantProviderConfigOutputReference.property.workspaceIdInput">workspace_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantProviderConfigOutputReference.property.workspaceId">workspace_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.grant.GrantProviderConfigOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-databricks.grant.GrantProviderConfig">GrantProviderConfig</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-databricks.grant.GrantProviderConfigOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.grant.GrantProviderConfigOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `workspace_id_input`<sup>Optional</sup> <a name="workspace_id_input" id="@cdktn/provider-databricks.grant.GrantProviderConfigOutputReference.property.workspaceIdInput"></a>
+
+```python
+workspace_id_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `workspace_id`<sup>Required</sup> <a name="workspace_id" id="@cdktn/provider-databricks.grant.GrantProviderConfigOutputReference.property.workspaceId"></a>
+
+```python
+workspace_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-databricks.grant.GrantProviderConfigOutputReference.property.internalValue"></a>
+
+```python
+internal_value: GrantProviderConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.grant.GrantProviderConfig">GrantProviderConfig</a>
 
 ---
 

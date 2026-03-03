@@ -1,188 +1,194 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mount
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mount
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MountConfig extends cdktf.TerraformMetaArguments {
+export interface MountConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mount#cluster_id Mount#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mount#cluster_id Mount#cluster_id}
   */
   readonly clusterId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mount#encryption_type Mount#encryption_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mount#encryption_type Mount#encryption_type}
   */
   readonly encryptionType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mount#extra_configs Mount#extra_configs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mount#extra_configs Mount#extra_configs}
   */
   readonly extraConfigs?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mount#id Mount#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mount#id Mount#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mount#name Mount#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mount#name Mount#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mount#resource_id Mount#resource_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mount#resource_id Mount#resource_id}
   */
   readonly resourceId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mount#uri Mount#uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mount#uri Mount#uri}
   */
   readonly uri?: string;
   /**
   * abfs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mount#abfs Mount#abfs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mount#abfs Mount#abfs}
   */
   readonly abfs?: MountAbfs;
   /**
   * adl block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mount#adl Mount#adl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mount#adl Mount#adl}
   */
   readonly adl?: MountAdl;
   /**
   * gs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mount#gs Mount#gs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mount#gs Mount#gs}
   */
   readonly gs?: MountGs;
   /**
+  * provider_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mount#provider_config Mount#provider_config}
+  */
+  readonly providerConfig?: MountProviderConfig;
+  /**
   * s3 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mount#s3 Mount#s3}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mount#s3 Mount#s3}
   */
   readonly s3?: MountS3;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mount#timeouts Mount#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mount#timeouts Mount#timeouts}
   */
   readonly timeouts?: MountTimeouts;
   /**
   * wasb block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mount#wasb Mount#wasb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mount#wasb Mount#wasb}
   */
   readonly wasb?: MountWasb;
 }
 export interface MountAbfs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mount#client_id Mount#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mount#client_id Mount#client_id}
   */
   readonly clientId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mount#client_secret_key Mount#client_secret_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mount#client_secret_key Mount#client_secret_key}
   */
   readonly clientSecretKey: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mount#client_secret_scope Mount#client_secret_scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mount#client_secret_scope Mount#client_secret_scope}
   */
   readonly clientSecretScope: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mount#container_name Mount#container_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mount#container_name Mount#container_name}
   */
   readonly containerName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mount#directory Mount#directory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mount#directory Mount#directory}
   */
   readonly directory?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mount#initialize_file_system Mount#initialize_file_system}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mount#initialize_file_system Mount#initialize_file_system}
   */
-  readonly initializeFileSystem: boolean | cdktf.IResolvable;
+  readonly initializeFileSystem: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mount#storage_account_name Mount#storage_account_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mount#storage_account_name Mount#storage_account_name}
   */
   readonly storageAccountName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mount#tenant_id Mount#tenant_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mount#tenant_id Mount#tenant_id}
   */
   readonly tenantId?: string;
 }
 
 export function mountAbfsToTerraform(struct?: MountAbfsOutputReference | MountAbfs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    client_id: cdktf.stringToTerraform(struct!.clientId),
-    client_secret_key: cdktf.stringToTerraform(struct!.clientSecretKey),
-    client_secret_scope: cdktf.stringToTerraform(struct!.clientSecretScope),
-    container_name: cdktf.stringToTerraform(struct!.containerName),
-    directory: cdktf.stringToTerraform(struct!.directory),
-    initialize_file_system: cdktf.booleanToTerraform(struct!.initializeFileSystem),
-    storage_account_name: cdktf.stringToTerraform(struct!.storageAccountName),
-    tenant_id: cdktf.stringToTerraform(struct!.tenantId),
+    client_id: cdktn.stringToTerraform(struct!.clientId),
+    client_secret_key: cdktn.stringToTerraform(struct!.clientSecretKey),
+    client_secret_scope: cdktn.stringToTerraform(struct!.clientSecretScope),
+    container_name: cdktn.stringToTerraform(struct!.containerName),
+    directory: cdktn.stringToTerraform(struct!.directory),
+    initialize_file_system: cdktn.booleanToTerraform(struct!.initializeFileSystem),
+    storage_account_name: cdktn.stringToTerraform(struct!.storageAccountName),
+    tenant_id: cdktn.stringToTerraform(struct!.tenantId),
   }
 }
 
 
 export function mountAbfsToHclTerraform(struct?: MountAbfsOutputReference | MountAbfs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     client_id: {
-      value: cdktf.stringToHclTerraform(struct!.clientId),
+      value: cdktn.stringToHclTerraform(struct!.clientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_secret_key: {
-      value: cdktf.stringToHclTerraform(struct!.clientSecretKey),
+      value: cdktn.stringToHclTerraform(struct!.clientSecretKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_secret_scope: {
-      value: cdktf.stringToHclTerraform(struct!.clientSecretScope),
+      value: cdktn.stringToHclTerraform(struct!.clientSecretScope),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     container_name: {
-      value: cdktf.stringToHclTerraform(struct!.containerName),
+      value: cdktn.stringToHclTerraform(struct!.containerName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     directory: {
-      value: cdktf.stringToHclTerraform(struct!.directory),
+      value: cdktn.stringToHclTerraform(struct!.directory),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     initialize_file_system: {
-      value: cdktf.booleanToHclTerraform(struct!.initializeFileSystem),
+      value: cdktn.booleanToHclTerraform(struct!.initializeFileSystem),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     storage_account_name: {
-      value: cdktf.stringToHclTerraform(struct!.storageAccountName),
+      value: cdktn.stringToHclTerraform(struct!.storageAccountName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tenant_id: {
-      value: cdktf.stringToHclTerraform(struct!.tenantId),
+      value: cdktn.stringToHclTerraform(struct!.tenantId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -193,14 +199,14 @@ export function mountAbfsToHclTerraform(struct?: MountAbfsOutputReference | Moun
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MountAbfsOutputReference extends cdktf.ComplexObject {
+export class MountAbfsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -339,11 +345,11 @@ export class MountAbfsOutputReference extends cdktf.ComplexObject {
   }
 
   // initialize_file_system - computed: false, optional: false, required: true
-  private _initializeFileSystem?: boolean | cdktf.IResolvable; 
+  private _initializeFileSystem?: boolean | cdktn.IResolvable; 
   public get initializeFileSystem() {
     return this.getBooleanAttribute('initialize_file_system');
   }
-  public set initializeFileSystem(value: boolean | cdktf.IResolvable) {
+  public set initializeFileSystem(value: boolean | cdktn.IResolvable) {
     this._initializeFileSystem = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -385,96 +391,96 @@ export class MountAbfsOutputReference extends cdktf.ComplexObject {
 }
 export interface MountAdl {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mount#client_id Mount#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mount#client_id Mount#client_id}
   */
   readonly clientId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mount#client_secret_key Mount#client_secret_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mount#client_secret_key Mount#client_secret_key}
   */
   readonly clientSecretKey: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mount#client_secret_scope Mount#client_secret_scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mount#client_secret_scope Mount#client_secret_scope}
   */
   readonly clientSecretScope: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mount#directory Mount#directory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mount#directory Mount#directory}
   */
   readonly directory?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mount#spark_conf_prefix Mount#spark_conf_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mount#spark_conf_prefix Mount#spark_conf_prefix}
   */
   readonly sparkConfPrefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mount#storage_resource_name Mount#storage_resource_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mount#storage_resource_name Mount#storage_resource_name}
   */
   readonly storageResourceName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mount#tenant_id Mount#tenant_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mount#tenant_id Mount#tenant_id}
   */
   readonly tenantId?: string;
 }
 
 export function mountAdlToTerraform(struct?: MountAdlOutputReference | MountAdl): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    client_id: cdktf.stringToTerraform(struct!.clientId),
-    client_secret_key: cdktf.stringToTerraform(struct!.clientSecretKey),
-    client_secret_scope: cdktf.stringToTerraform(struct!.clientSecretScope),
-    directory: cdktf.stringToTerraform(struct!.directory),
-    spark_conf_prefix: cdktf.stringToTerraform(struct!.sparkConfPrefix),
-    storage_resource_name: cdktf.stringToTerraform(struct!.storageResourceName),
-    tenant_id: cdktf.stringToTerraform(struct!.tenantId),
+    client_id: cdktn.stringToTerraform(struct!.clientId),
+    client_secret_key: cdktn.stringToTerraform(struct!.clientSecretKey),
+    client_secret_scope: cdktn.stringToTerraform(struct!.clientSecretScope),
+    directory: cdktn.stringToTerraform(struct!.directory),
+    spark_conf_prefix: cdktn.stringToTerraform(struct!.sparkConfPrefix),
+    storage_resource_name: cdktn.stringToTerraform(struct!.storageResourceName),
+    tenant_id: cdktn.stringToTerraform(struct!.tenantId),
   }
 }
 
 
 export function mountAdlToHclTerraform(struct?: MountAdlOutputReference | MountAdl): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     client_id: {
-      value: cdktf.stringToHclTerraform(struct!.clientId),
+      value: cdktn.stringToHclTerraform(struct!.clientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_secret_key: {
-      value: cdktf.stringToHclTerraform(struct!.clientSecretKey),
+      value: cdktn.stringToHclTerraform(struct!.clientSecretKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_secret_scope: {
-      value: cdktf.stringToHclTerraform(struct!.clientSecretScope),
+      value: cdktn.stringToHclTerraform(struct!.clientSecretScope),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     directory: {
-      value: cdktf.stringToHclTerraform(struct!.directory),
+      value: cdktn.stringToHclTerraform(struct!.directory),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     spark_conf_prefix: {
-      value: cdktf.stringToHclTerraform(struct!.sparkConfPrefix),
+      value: cdktn.stringToHclTerraform(struct!.sparkConfPrefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     storage_resource_name: {
-      value: cdktf.stringToHclTerraform(struct!.storageResourceName),
+      value: cdktn.stringToHclTerraform(struct!.storageResourceName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tenant_id: {
-      value: cdktf.stringToHclTerraform(struct!.tenantId),
+      value: cdktn.stringToHclTerraform(struct!.tenantId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -485,14 +491,14 @@ export function mountAdlToHclTerraform(struct?: MountAdlOutputReference | MountA
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MountAdlOutputReference extends cdktf.ComplexObject {
+export class MountAdlOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -658,41 +664,41 @@ export class MountAdlOutputReference extends cdktf.ComplexObject {
 }
 export interface MountGs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mount#bucket_name Mount#bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mount#bucket_name Mount#bucket_name}
   */
   readonly bucketName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mount#service_account Mount#service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mount#service_account Mount#service_account}
   */
   readonly serviceAccount?: string;
 }
 
 export function mountGsToTerraform(struct?: MountGsOutputReference | MountGs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket_name: cdktf.stringToTerraform(struct!.bucketName),
-    service_account: cdktf.stringToTerraform(struct!.serviceAccount),
+    bucket_name: cdktn.stringToTerraform(struct!.bucketName),
+    service_account: cdktn.stringToTerraform(struct!.serviceAccount),
   }
 }
 
 
 export function mountGsToHclTerraform(struct?: MountGsOutputReference | MountGs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bucket_name: {
-      value: cdktf.stringToHclTerraform(struct!.bucketName),
+      value: cdktn.stringToHclTerraform(struct!.bucketName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     service_account: {
-      value: cdktf.stringToHclTerraform(struct!.serviceAccount),
+      value: cdktn.stringToHclTerraform(struct!.serviceAccount),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -703,14 +709,14 @@ export function mountGsToHclTerraform(struct?: MountGsOutputReference | MountGs)
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MountGsOutputReference extends cdktf.ComplexObject {
+export class MountGsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -770,43 +776,32 @@ export class MountGsOutputReference extends cdktf.ComplexObject {
     return this._serviceAccount;
   }
 }
-export interface MountS3 {
+export interface MountProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mount#bucket_name Mount#bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mount#workspace_id Mount#workspace_id}
   */
-  readonly bucketName: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mount#instance_profile Mount#instance_profile}
-  */
-  readonly instanceProfile?: string;
+  readonly workspaceId: string;
 }
 
-export function mountS3ToTerraform(struct?: MountS3OutputReference | MountS3): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mountProviderConfigToTerraform(struct?: MountProviderConfigOutputReference | MountProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket_name: cdktf.stringToTerraform(struct!.bucketName),
-    instance_profile: cdktf.stringToTerraform(struct!.instanceProfile),
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
   }
 }
 
 
-export function mountS3ToHclTerraform(struct?: MountS3OutputReference | MountS3): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mountProviderConfigToHclTerraform(struct?: MountProviderConfigOutputReference | MountProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
-    bucket_name: {
-      value: cdktf.stringToHclTerraform(struct!.bucketName),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    instance_profile: {
-      value: cdktf.stringToHclTerraform(struct!.instanceProfile),
+    workspace_id: {
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -817,14 +812,106 @@ export function mountS3ToHclTerraform(struct?: MountS3OutputReference | MountS3)
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MountS3OutputReference extends cdktf.ComplexObject {
+export class MountProviderConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): MountProviderConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._workspaceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workspaceId = this._workspaceId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MountProviderConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._workspaceId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._workspaceId = value.workspaceId;
+    }
+  }
+
+  // workspace_id - computed: false, optional: false, required: true
+  private _workspaceId?: string; 
+  public get workspaceId() {
+    return this.getStringAttribute('workspace_id');
+  }
+  public set workspaceId(value: string) {
+    this._workspaceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workspaceIdInput() {
+    return this._workspaceId;
+  }
+}
+export interface MountS3 {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mount#bucket_name Mount#bucket_name}
+  */
+  readonly bucketName: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mount#instance_profile Mount#instance_profile}
+  */
+  readonly instanceProfile?: string;
+}
+
+export function mountS3ToTerraform(struct?: MountS3OutputReference | MountS3): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    bucket_name: cdktn.stringToTerraform(struct!.bucketName),
+    instance_profile: cdktn.stringToTerraform(struct!.instanceProfile),
+  }
+}
+
+
+export function mountS3ToHclTerraform(struct?: MountS3OutputReference | MountS3): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bucket_name: {
+      value: cdktn.stringToHclTerraform(struct!.bucketName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    instance_profile: {
+      value: cdktn.stringToHclTerraform(struct!.instanceProfile),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class MountS3OutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -886,30 +973,30 @@ export class MountS3OutputReference extends cdktf.ComplexObject {
 }
 export interface MountTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mount#default Mount#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mount#default Mount#default}
   */
   readonly default?: string;
 }
 
-export function mountTimeoutsToTerraform(struct?: MountTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mountTimeoutsToTerraform(struct?: MountTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    default: cdktf.stringToTerraform(struct!.default),
+    default: cdktn.stringToTerraform(struct!.default),
   }
 }
 
 
-export function mountTimeoutsToHclTerraform(struct?: MountTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mountTimeoutsToHclTerraform(struct?: MountTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     default: {
-      value: cdktf.stringToHclTerraform(struct!.default),
+      value: cdktn.stringToHclTerraform(struct!.default),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -920,19 +1007,19 @@ export function mountTimeoutsToHclTerraform(struct?: MountTimeouts | cdktf.IReso
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MountTimeoutsOutputReference extends cdktf.ComplexObject {
+export class MountTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): MountTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): MountTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -945,13 +1032,13 @@ export class MountTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MountTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MountTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._default = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -980,85 +1067,85 @@ export class MountTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 export interface MountWasb {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mount#auth_type Mount#auth_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mount#auth_type Mount#auth_type}
   */
   readonly authType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mount#container_name Mount#container_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mount#container_name Mount#container_name}
   */
   readonly containerName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mount#directory Mount#directory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mount#directory Mount#directory}
   */
   readonly directory?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mount#storage_account_name Mount#storage_account_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mount#storage_account_name Mount#storage_account_name}
   */
   readonly storageAccountName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mount#token_secret_key Mount#token_secret_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mount#token_secret_key Mount#token_secret_key}
   */
   readonly tokenSecretKey: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mount#token_secret_scope Mount#token_secret_scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mount#token_secret_scope Mount#token_secret_scope}
   */
   readonly tokenSecretScope: string;
 }
 
 export function mountWasbToTerraform(struct?: MountWasbOutputReference | MountWasb): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    auth_type: cdktf.stringToTerraform(struct!.authType),
-    container_name: cdktf.stringToTerraform(struct!.containerName),
-    directory: cdktf.stringToTerraform(struct!.directory),
-    storage_account_name: cdktf.stringToTerraform(struct!.storageAccountName),
-    token_secret_key: cdktf.stringToTerraform(struct!.tokenSecretKey),
-    token_secret_scope: cdktf.stringToTerraform(struct!.tokenSecretScope),
+    auth_type: cdktn.stringToTerraform(struct!.authType),
+    container_name: cdktn.stringToTerraform(struct!.containerName),
+    directory: cdktn.stringToTerraform(struct!.directory),
+    storage_account_name: cdktn.stringToTerraform(struct!.storageAccountName),
+    token_secret_key: cdktn.stringToTerraform(struct!.tokenSecretKey),
+    token_secret_scope: cdktn.stringToTerraform(struct!.tokenSecretScope),
   }
 }
 
 
 export function mountWasbToHclTerraform(struct?: MountWasbOutputReference | MountWasb): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     auth_type: {
-      value: cdktf.stringToHclTerraform(struct!.authType),
+      value: cdktn.stringToHclTerraform(struct!.authType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     container_name: {
-      value: cdktf.stringToHclTerraform(struct!.containerName),
+      value: cdktn.stringToHclTerraform(struct!.containerName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     directory: {
-      value: cdktf.stringToHclTerraform(struct!.directory),
+      value: cdktn.stringToHclTerraform(struct!.directory),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     storage_account_name: {
-      value: cdktf.stringToHclTerraform(struct!.storageAccountName),
+      value: cdktn.stringToHclTerraform(struct!.storageAccountName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     token_secret_key: {
-      value: cdktf.stringToHclTerraform(struct!.tokenSecretKey),
+      value: cdktn.stringToHclTerraform(struct!.tokenSecretKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     token_secret_scope: {
-      value: cdktf.stringToHclTerraform(struct!.tokenSecretScope),
+      value: cdktn.stringToHclTerraform(struct!.tokenSecretScope),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1069,14 +1156,14 @@ export function mountWasbToHclTerraform(struct?: MountWasbOutputReference | Moun
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MountWasbOutputReference extends cdktf.ComplexObject {
+export class MountWasbOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1220,9 +1307,9 @@ export class MountWasbOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mount databricks_mount}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mount databricks_mount}
 */
-export class Mount extends cdktf.TerraformResource {
+export class Mount extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1233,14 +1320,14 @@ export class Mount extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Mount resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Mount resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Mount to import
-  * @param importFromId The id of the existing Mount that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mount#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Mount that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mount#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Mount to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_mount", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_mount", importId: importFromId, provider });
       }
 
   // ===========
@@ -1248,7 +1335,7 @@ export class Mount extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mount databricks_mount} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mount databricks_mount} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1259,7 +1346,7 @@ export class Mount extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_mount',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -1280,6 +1367,7 @@ export class Mount extends cdktf.TerraformResource {
     this._abfs.internalValue = config.abfs;
     this._adl.internalValue = config.adl;
     this._gs.internalValue = config.gs;
+    this._providerConfig.internalValue = config.providerConfig;
     this._s3.internalValue = config.s3;
     this._timeouts.internalValue = config.timeouts;
     this._wasb.internalValue = config.wasb;
@@ -1454,6 +1542,22 @@ export class Mount extends cdktf.TerraformResource {
     return this._gs.internalValue;
   }
 
+  // provider_config - computed: false, optional: true, required: false
+  private _providerConfig = new MountProviderConfigOutputReference(this, "provider_config");
+  public get providerConfig() {
+    return this._providerConfig;
+  }
+  public putProviderConfig(value: MountProviderConfig) {
+    this._providerConfig.internalValue = value;
+  }
+  public resetProviderConfig() {
+    this._providerConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerConfigInput() {
+    return this._providerConfig.internalValue;
+  }
+
   // s3 - computed: false, optional: true, required: false
   private _s3 = new MountS3OutputReference(this, "s3");
   public get s3() {
@@ -1508,16 +1612,17 @@ export class Mount extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cluster_id: cdktf.stringToTerraform(this._clusterId),
-      encryption_type: cdktf.stringToTerraform(this._encryptionType),
-      extra_configs: cdktf.hashMapper(cdktf.stringToTerraform)(this._extraConfigs),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      resource_id: cdktf.stringToTerraform(this._resourceId),
-      uri: cdktf.stringToTerraform(this._uri),
+      cluster_id: cdktn.stringToTerraform(this._clusterId),
+      encryption_type: cdktn.stringToTerraform(this._encryptionType),
+      extra_configs: cdktn.hashMapper(cdktn.stringToTerraform)(this._extraConfigs),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      resource_id: cdktn.stringToTerraform(this._resourceId),
+      uri: cdktn.stringToTerraform(this._uri),
       abfs: mountAbfsToTerraform(this._abfs.internalValue),
       adl: mountAdlToTerraform(this._adl.internalValue),
       gs: mountGsToTerraform(this._gs.internalValue),
+      provider_config: mountProviderConfigToTerraform(this._providerConfig.internalValue),
       s3: mountS3ToTerraform(this._s3.internalValue),
       timeouts: mountTimeoutsToTerraform(this._timeouts.internalValue),
       wasb: mountWasbToTerraform(this._wasb.internalValue),
@@ -1527,43 +1632,43 @@ export class Mount extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       cluster_id: {
-        value: cdktf.stringToHclTerraform(this._clusterId),
+        value: cdktn.stringToHclTerraform(this._clusterId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       encryption_type: {
-        value: cdktf.stringToHclTerraform(this._encryptionType),
+        value: cdktn.stringToHclTerraform(this._encryptionType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       extra_configs: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._extraConfigs),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._extraConfigs),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_id: {
-        value: cdktf.stringToHclTerraform(this._resourceId),
+        value: cdktn.stringToHclTerraform(this._resourceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       uri: {
-        value: cdktf.stringToHclTerraform(this._uri),
+        value: cdktn.stringToHclTerraform(this._uri),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -1585,6 +1690,12 @@ export class Mount extends cdktf.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "MountGsList",
+      },
+      provider_config: {
+        value: mountProviderConfigToHclTerraform(this._providerConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "MountProviderConfigList",
       },
       s3: {
         value: mountS3ToHclTerraform(this._s3.internalValue),

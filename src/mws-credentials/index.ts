@@ -1,54 +1,54 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_credentials
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_credentials
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MwsCredentialsConfig extends cdktf.TerraformMetaArguments {
+export interface MwsCredentialsConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_credentials#account_id MwsCredentials#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_credentials#account_id MwsCredentials#account_id}
   */
   readonly accountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_credentials#creation_time MwsCredentials#creation_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_credentials#creation_time MwsCredentials#creation_time}
   */
   readonly creationTime?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_credentials#credentials_id MwsCredentials#credentials_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_credentials#credentials_id MwsCredentials#credentials_id}
   */
   readonly credentialsId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_credentials#credentials_name MwsCredentials#credentials_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_credentials#credentials_name MwsCredentials#credentials_name}
   */
   readonly credentialsName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_credentials#external_id MwsCredentials#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_credentials#external_id MwsCredentials#external_id}
   */
   readonly externalId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_credentials#id MwsCredentials#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_credentials#id MwsCredentials#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_credentials#role_arn MwsCredentials#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_credentials#role_arn MwsCredentials#role_arn}
   */
   readonly roleArn: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_credentials databricks_mws_credentials}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_credentials databricks_mws_credentials}
 */
-export class MwsCredentials extends cdktf.TerraformResource {
+export class MwsCredentials extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -59,14 +59,14 @@ export class MwsCredentials extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a MwsCredentials resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a MwsCredentials resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MwsCredentials to import
-  * @param importFromId The id of the existing MwsCredentials that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_credentials#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MwsCredentials that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_credentials#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MwsCredentials to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_mws_credentials", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_mws_credentials", importId: importFromId, provider });
       }
 
   // ===========
@@ -74,7 +74,7 @@ export class MwsCredentials extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_credentials databricks_mws_credentials} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_credentials databricks_mws_credentials} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +85,7 @@ export class MwsCredentials extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_mws_credentials',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -221,56 +221,56 @@ export class MwsCredentials extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      creation_time: cdktf.numberToTerraform(this._creationTime),
-      credentials_id: cdktf.stringToTerraform(this._credentialsId),
-      credentials_name: cdktf.stringToTerraform(this._credentialsName),
-      external_id: cdktf.stringToTerraform(this._externalId),
-      id: cdktf.stringToTerraform(this._id),
-      role_arn: cdktf.stringToTerraform(this._roleArn),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      creation_time: cdktn.numberToTerraform(this._creationTime),
+      credentials_id: cdktn.stringToTerraform(this._credentialsId),
+      credentials_name: cdktn.stringToTerraform(this._credentialsName),
+      external_id: cdktn.stringToTerraform(this._externalId),
+      id: cdktn.stringToTerraform(this._id),
+      role_arn: cdktn.stringToTerraform(this._roleArn),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       creation_time: {
-        value: cdktf.numberToHclTerraform(this._creationTime),
+        value: cdktn.numberToHclTerraform(this._creationTime),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       credentials_id: {
-        value: cdktf.stringToHclTerraform(this._credentialsId),
+        value: cdktn.stringToHclTerraform(this._credentialsId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       credentials_name: {
-        value: cdktf.stringToHclTerraform(this._credentialsName),
+        value: cdktn.stringToHclTerraform(this._credentialsName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       external_id: {
-        value: cdktf.stringToHclTerraform(this._externalId),
+        value: cdktn.stringToHclTerraform(this._externalId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role_arn: {
-        value: cdktf.stringToHclTerraform(this._roleArn),
+        value: cdktn.stringToHclTerraform(this._roleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -1,52 +1,52 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/shares
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/shares
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataDatabricksSharesConfig extends cdktf.TerraformMetaArguments {
+export interface DataDatabricksSharesConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/shares#provider_config DataDatabricksShares#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/shares#provider_config DataDatabricksShares#provider_config}
   */
   readonly providerConfig?: DataDatabricksSharesProviderConfig;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/shares#shares DataDatabricksShares#shares}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/shares#shares DataDatabricksShares#shares}
   */
   readonly shares?: string[];
 }
 export interface DataDatabricksSharesProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/shares#workspace_id DataDatabricksShares#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/shares#workspace_id DataDatabricksShares#workspace_id}
   */
   readonly workspaceId: string;
 }
 
-export function dataDatabricksSharesProviderConfigToTerraform(struct?: DataDatabricksSharesProviderConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksSharesProviderConfigToTerraform(struct?: DataDatabricksSharesProviderConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    workspace_id: cdktf.stringToTerraform(struct!.workspaceId),
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
   }
 }
 
 
-export function dataDatabricksSharesProviderConfigToHclTerraform(struct?: DataDatabricksSharesProviderConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksSharesProviderConfigToHclTerraform(struct?: DataDatabricksSharesProviderConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     workspace_id: {
-      value: cdktf.stringToHclTerraform(struct!.workspaceId),
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -57,19 +57,19 @@ export function dataDatabricksSharesProviderConfigToHclTerraform(struct?: DataDa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksSharesProviderConfigOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksSharesProviderConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataDatabricksSharesProviderConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatabricksSharesProviderConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -82,13 +82,13 @@ export class DataDatabricksSharesProviderConfigOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksSharesProviderConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksSharesProviderConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._workspaceId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -114,9 +114,9 @@ export class DataDatabricksSharesProviderConfigOutputReference extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/shares databricks_shares}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/shares databricks_shares}
 */
-export class DataDatabricksShares extends cdktf.TerraformDataSource {
+export class DataDatabricksShares extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -127,14 +127,14 @@ export class DataDatabricksShares extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataDatabricksShares resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataDatabricksShares resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksShares to import
-  * @param importFromId The id of the existing DataDatabricksShares that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/shares#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksShares that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/shares#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksShares to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_shares", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_shares", importId: importFromId, provider });
       }
 
   // ===========
@@ -142,7 +142,7 @@ export class DataDatabricksShares extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/shares databricks_shares} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/shares databricks_shares} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -153,7 +153,7 @@ export class DataDatabricksShares extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_shares',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -211,7 +211,7 @@ export class DataDatabricksShares extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       provider_config: dataDatabricksSharesProviderConfigToTerraform(this._providerConfig.internalValue),
-      shares: cdktf.listMapper(cdktf.stringToTerraform, false)(this._shares),
+      shares: cdktn.listMapper(cdktn.stringToTerraform, false)(this._shares),
     };
   }
 
@@ -224,7 +224,7 @@ export class DataDatabricksShares extends cdktf.TerraformDataSource {
         storageClassType: "DataDatabricksSharesProviderConfig",
       },
       shares: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._shares),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._shares),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",

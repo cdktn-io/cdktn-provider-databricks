@@ -1,95 +1,103 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/alert_v2
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/alert_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AlertV2Config extends cdktf.TerraformMetaArguments {
+export interface AlertV2Config extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/alert_v2#custom_description AlertV2#custom_description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/alert_v2#custom_description AlertV2#custom_description}
   */
   readonly customDescription?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/alert_v2#custom_summary AlertV2#custom_summary}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/alert_v2#custom_summary AlertV2#custom_summary}
   */
   readonly customSummary?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/alert_v2#display_name AlertV2#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/alert_v2#display_name AlertV2#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/alert_v2#evaluation AlertV2#evaluation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/alert_v2#evaluation AlertV2#evaluation}
   */
   readonly evaluation: AlertV2Evaluation;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/alert_v2#parent_path AlertV2#parent_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/alert_v2#parent_path AlertV2#parent_path}
   */
   readonly parentPath?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/alert_v2#query_text AlertV2#query_text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/alert_v2#provider_config AlertV2#provider_config}
+  */
+  readonly providerConfig?: AlertV2ProviderConfig;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/alert_v2#purge_on_delete AlertV2#purge_on_delete}
+  */
+  readonly purgeOnDelete?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/alert_v2#query_text AlertV2#query_text}
   */
   readonly queryText: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/alert_v2#run_as AlertV2#run_as}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/alert_v2#run_as AlertV2#run_as}
   */
   readonly runAs?: AlertV2RunAs;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/alert_v2#run_as_user_name AlertV2#run_as_user_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/alert_v2#run_as_user_name AlertV2#run_as_user_name}
   */
   readonly runAsUserName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/alert_v2#schedule AlertV2#schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/alert_v2#schedule AlertV2#schedule}
   */
   readonly schedule: AlertV2Schedule;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/alert_v2#warehouse_id AlertV2#warehouse_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/alert_v2#warehouse_id AlertV2#warehouse_id}
   */
   readonly warehouseId: string;
 }
 export interface AlertV2EffectiveRunAs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/alert_v2#service_principal_name AlertV2#service_principal_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/alert_v2#service_principal_name AlertV2#service_principal_name}
   */
   readonly servicePrincipalName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/alert_v2#user_name AlertV2#user_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/alert_v2#user_name AlertV2#user_name}
   */
   readonly userName?: string;
 }
 
 export function alertV2EffectiveRunAsToTerraform(struct?: AlertV2EffectiveRunAs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    service_principal_name: cdktf.stringToTerraform(struct!.servicePrincipalName),
-    user_name: cdktf.stringToTerraform(struct!.userName),
+    service_principal_name: cdktn.stringToTerraform(struct!.servicePrincipalName),
+    user_name: cdktn.stringToTerraform(struct!.userName),
   }
 }
 
 
 export function alertV2EffectiveRunAsToHclTerraform(struct?: AlertV2EffectiveRunAs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     service_principal_name: {
-      value: cdktf.stringToHclTerraform(struct!.servicePrincipalName),
+      value: cdktn.stringToHclTerraform(struct!.servicePrincipalName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     user_name: {
-      value: cdktf.stringToHclTerraform(struct!.userName),
+      value: cdktn.stringToHclTerraform(struct!.userName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -100,14 +108,14 @@ export function alertV2EffectiveRunAsToHclTerraform(struct?: AlertV2EffectiveRun
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AlertV2EffectiveRunAsOutputReference extends cdktf.ComplexObject {
+export class AlertV2EffectiveRunAsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -172,41 +180,41 @@ export class AlertV2EffectiveRunAsOutputReference extends cdktf.ComplexObject {
 }
 export interface AlertV2EvaluationNotificationSubscriptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/alert_v2#destination_id AlertV2#destination_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/alert_v2#destination_id AlertV2#destination_id}
   */
   readonly destinationId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/alert_v2#user_email AlertV2#user_email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/alert_v2#user_email AlertV2#user_email}
   */
   readonly userEmail?: string;
 }
 
-export function alertV2EvaluationNotificationSubscriptionsToTerraform(struct?: AlertV2EvaluationNotificationSubscriptions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function alertV2EvaluationNotificationSubscriptionsToTerraform(struct?: AlertV2EvaluationNotificationSubscriptions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    destination_id: cdktf.stringToTerraform(struct!.destinationId),
-    user_email: cdktf.stringToTerraform(struct!.userEmail),
+    destination_id: cdktn.stringToTerraform(struct!.destinationId),
+    user_email: cdktn.stringToTerraform(struct!.userEmail),
   }
 }
 
 
-export function alertV2EvaluationNotificationSubscriptionsToHclTerraform(struct?: AlertV2EvaluationNotificationSubscriptions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function alertV2EvaluationNotificationSubscriptionsToHclTerraform(struct?: AlertV2EvaluationNotificationSubscriptions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     destination_id: {
-      value: cdktf.stringToHclTerraform(struct!.destinationId),
+      value: cdktn.stringToHclTerraform(struct!.destinationId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     user_email: {
-      value: cdktf.stringToHclTerraform(struct!.userEmail),
+      value: cdktn.stringToHclTerraform(struct!.userEmail),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -217,9 +225,9 @@ export function alertV2EvaluationNotificationSubscriptionsToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AlertV2EvaluationNotificationSubscriptionsOutputReference extends cdktf.ComplexObject {
+export class AlertV2EvaluationNotificationSubscriptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -227,11 +235,11 @@ export class AlertV2EvaluationNotificationSubscriptionsOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AlertV2EvaluationNotificationSubscriptions | cdktf.IResolvable | undefined {
+  public get internalValue(): AlertV2EvaluationNotificationSubscriptions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -248,14 +256,14 @@ export class AlertV2EvaluationNotificationSubscriptionsOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AlertV2EvaluationNotificationSubscriptions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AlertV2EvaluationNotificationSubscriptions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._destinationId = undefined;
       this._userEmail = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -300,15 +308,15 @@ export class AlertV2EvaluationNotificationSubscriptionsOutputReference extends c
   }
 }
 
-export class AlertV2EvaluationNotificationSubscriptionsList extends cdktf.ComplexList {
-  public internalValue? : AlertV2EvaluationNotificationSubscriptions[] | cdktf.IResolvable
+export class AlertV2EvaluationNotificationSubscriptionsList extends cdktn.ComplexList {
+  public internalValue? : AlertV2EvaluationNotificationSubscriptions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -321,52 +329,52 @@ export class AlertV2EvaluationNotificationSubscriptionsList extends cdktf.Comple
 }
 export interface AlertV2EvaluationNotification {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/alert_v2#notify_on_ok AlertV2#notify_on_ok}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/alert_v2#notify_on_ok AlertV2#notify_on_ok}
   */
-  readonly notifyOnOk?: boolean | cdktf.IResolvable;
+  readonly notifyOnOk?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/alert_v2#retrigger_seconds AlertV2#retrigger_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/alert_v2#retrigger_seconds AlertV2#retrigger_seconds}
   */
   readonly retriggerSeconds?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/alert_v2#subscriptions AlertV2#subscriptions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/alert_v2#subscriptions AlertV2#subscriptions}
   */
-  readonly subscriptions?: AlertV2EvaluationNotificationSubscriptions[] | cdktf.IResolvable;
+  readonly subscriptions?: AlertV2EvaluationNotificationSubscriptions[] | cdktn.IResolvable;
 }
 
-export function alertV2EvaluationNotificationToTerraform(struct?: AlertV2EvaluationNotification | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function alertV2EvaluationNotificationToTerraform(struct?: AlertV2EvaluationNotification | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    notify_on_ok: cdktf.booleanToTerraform(struct!.notifyOnOk),
-    retrigger_seconds: cdktf.numberToTerraform(struct!.retriggerSeconds),
-    subscriptions: cdktf.listMapper(alertV2EvaluationNotificationSubscriptionsToTerraform, false)(struct!.subscriptions),
+    notify_on_ok: cdktn.booleanToTerraform(struct!.notifyOnOk),
+    retrigger_seconds: cdktn.numberToTerraform(struct!.retriggerSeconds),
+    subscriptions: cdktn.listMapper(alertV2EvaluationNotificationSubscriptionsToTerraform, false)(struct!.subscriptions),
   }
 }
 
 
-export function alertV2EvaluationNotificationToHclTerraform(struct?: AlertV2EvaluationNotification | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function alertV2EvaluationNotificationToHclTerraform(struct?: AlertV2EvaluationNotification | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     notify_on_ok: {
-      value: cdktf.booleanToHclTerraform(struct!.notifyOnOk),
+      value: cdktn.booleanToHclTerraform(struct!.notifyOnOk),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     retrigger_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.retriggerSeconds),
+      value: cdktn.numberToHclTerraform(struct!.retriggerSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     subscriptions: {
-      value: cdktf.listMapperHcl(alertV2EvaluationNotificationSubscriptionsToHclTerraform, false)(struct!.subscriptions),
+      value: cdktn.listMapperHcl(alertV2EvaluationNotificationSubscriptionsToHclTerraform, false)(struct!.subscriptions),
       isBlock: true,
       type: "set",
       storageClassType: "AlertV2EvaluationNotificationSubscriptionsList",
@@ -377,19 +385,19 @@ export function alertV2EvaluationNotificationToHclTerraform(struct?: AlertV2Eval
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AlertV2EvaluationNotificationOutputReference extends cdktf.ComplexObject {
+export class AlertV2EvaluationNotificationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): AlertV2EvaluationNotification | cdktf.IResolvable | undefined {
+  public get internalValue(): AlertV2EvaluationNotification | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -410,7 +418,7 @@ export class AlertV2EvaluationNotificationOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AlertV2EvaluationNotification | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AlertV2EvaluationNotification | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -418,7 +426,7 @@ export class AlertV2EvaluationNotificationOutputReference extends cdktf.ComplexO
       this._retriggerSeconds = undefined;
       this._subscriptions.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -442,11 +450,11 @@ export class AlertV2EvaluationNotificationOutputReference extends cdktf.ComplexO
   }
 
   // notify_on_ok - computed: false, optional: true, required: false
-  private _notifyOnOk?: boolean | cdktf.IResolvable; 
+  private _notifyOnOk?: boolean | cdktn.IResolvable; 
   public get notifyOnOk() {
     return this.getBooleanAttribute('notify_on_ok');
   }
-  public set notifyOnOk(value: boolean | cdktf.IResolvable) {
+  public set notifyOnOk(value: boolean | cdktn.IResolvable) {
     this._notifyOnOk = value;
   }
   public resetNotifyOnOk() {
@@ -478,7 +486,7 @@ export class AlertV2EvaluationNotificationOutputReference extends cdktf.ComplexO
   public get subscriptions() {
     return this._subscriptions;
   }
-  public putSubscriptions(value: AlertV2EvaluationNotificationSubscriptions[] | cdktf.IResolvable) {
+  public putSubscriptions(value: AlertV2EvaluationNotificationSubscriptions[] | cdktn.IResolvable) {
     this._subscriptions.internalValue = value;
   }
   public resetSubscriptions() {
@@ -491,52 +499,52 @@ export class AlertV2EvaluationNotificationOutputReference extends cdktf.ComplexO
 }
 export interface AlertV2EvaluationSource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/alert_v2#aggregation AlertV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/alert_v2#aggregation AlertV2#aggregation}
   */
   readonly aggregation?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/alert_v2#display AlertV2#display}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/alert_v2#display AlertV2#display}
   */
   readonly display?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/alert_v2#name AlertV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/alert_v2#name AlertV2#name}
   */
   readonly name: string;
 }
 
-export function alertV2EvaluationSourceToTerraform(struct?: AlertV2EvaluationSource | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function alertV2EvaluationSourceToTerraform(struct?: AlertV2EvaluationSource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    display: cdktf.stringToTerraform(struct!.display),
-    name: cdktf.stringToTerraform(struct!.name),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    display: cdktn.stringToTerraform(struct!.display),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function alertV2EvaluationSourceToHclTerraform(struct?: AlertV2EvaluationSource | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function alertV2EvaluationSourceToHclTerraform(struct?: AlertV2EvaluationSource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     display: {
-      value: cdktf.stringToHclTerraform(struct!.display),
+      value: cdktn.stringToHclTerraform(struct!.display),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -547,19 +555,19 @@ export function alertV2EvaluationSourceToHclTerraform(struct?: AlertV2Evaluation
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AlertV2EvaluationSourceOutputReference extends cdktf.ComplexObject {
+export class AlertV2EvaluationSourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): AlertV2EvaluationSource | cdktf.IResolvable | undefined {
+  public get internalValue(): AlertV2EvaluationSource | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -580,7 +588,7 @@ export class AlertV2EvaluationSourceOutputReference extends cdktf.ComplexObject 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AlertV2EvaluationSource | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AlertV2EvaluationSource | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -588,7 +596,7 @@ export class AlertV2EvaluationSourceOutputReference extends cdktf.ComplexObject 
       this._display = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -648,52 +656,52 @@ export class AlertV2EvaluationSourceOutputReference extends cdktf.ComplexObject 
 }
 export interface AlertV2EvaluationThresholdColumn {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/alert_v2#aggregation AlertV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/alert_v2#aggregation AlertV2#aggregation}
   */
   readonly aggregation?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/alert_v2#display AlertV2#display}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/alert_v2#display AlertV2#display}
   */
   readonly display?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/alert_v2#name AlertV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/alert_v2#name AlertV2#name}
   */
   readonly name: string;
 }
 
-export function alertV2EvaluationThresholdColumnToTerraform(struct?: AlertV2EvaluationThresholdColumn | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function alertV2EvaluationThresholdColumnToTerraform(struct?: AlertV2EvaluationThresholdColumn | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    display: cdktf.stringToTerraform(struct!.display),
-    name: cdktf.stringToTerraform(struct!.name),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    display: cdktn.stringToTerraform(struct!.display),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function alertV2EvaluationThresholdColumnToHclTerraform(struct?: AlertV2EvaluationThresholdColumn | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function alertV2EvaluationThresholdColumnToHclTerraform(struct?: AlertV2EvaluationThresholdColumn | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     display: {
-      value: cdktf.stringToHclTerraform(struct!.display),
+      value: cdktn.stringToHclTerraform(struct!.display),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -704,19 +712,19 @@ export function alertV2EvaluationThresholdColumnToHclTerraform(struct?: AlertV2E
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AlertV2EvaluationThresholdColumnOutputReference extends cdktf.ComplexObject {
+export class AlertV2EvaluationThresholdColumnOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): AlertV2EvaluationThresholdColumn | cdktf.IResolvable | undefined {
+  public get internalValue(): AlertV2EvaluationThresholdColumn | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -737,7 +745,7 @@ export class AlertV2EvaluationThresholdColumnOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AlertV2EvaluationThresholdColumn | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AlertV2EvaluationThresholdColumn | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -745,7 +753,7 @@ export class AlertV2EvaluationThresholdColumnOutputReference extends cdktf.Compl
       this._display = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -805,52 +813,52 @@ export class AlertV2EvaluationThresholdColumnOutputReference extends cdktf.Compl
 }
 export interface AlertV2EvaluationThresholdValue {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/alert_v2#bool_value AlertV2#bool_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/alert_v2#bool_value AlertV2#bool_value}
   */
-  readonly boolValue?: boolean | cdktf.IResolvable;
+  readonly boolValue?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/alert_v2#double_value AlertV2#double_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/alert_v2#double_value AlertV2#double_value}
   */
   readonly doubleValue?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/alert_v2#string_value AlertV2#string_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/alert_v2#string_value AlertV2#string_value}
   */
   readonly stringValue?: string;
 }
 
-export function alertV2EvaluationThresholdValueToTerraform(struct?: AlertV2EvaluationThresholdValue | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function alertV2EvaluationThresholdValueToTerraform(struct?: AlertV2EvaluationThresholdValue | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bool_value: cdktf.booleanToTerraform(struct!.boolValue),
-    double_value: cdktf.numberToTerraform(struct!.doubleValue),
-    string_value: cdktf.stringToTerraform(struct!.stringValue),
+    bool_value: cdktn.booleanToTerraform(struct!.boolValue),
+    double_value: cdktn.numberToTerraform(struct!.doubleValue),
+    string_value: cdktn.stringToTerraform(struct!.stringValue),
   }
 }
 
 
-export function alertV2EvaluationThresholdValueToHclTerraform(struct?: AlertV2EvaluationThresholdValue | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function alertV2EvaluationThresholdValueToHclTerraform(struct?: AlertV2EvaluationThresholdValue | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bool_value: {
-      value: cdktf.booleanToHclTerraform(struct!.boolValue),
+      value: cdktn.booleanToHclTerraform(struct!.boolValue),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     double_value: {
-      value: cdktf.numberToHclTerraform(struct!.doubleValue),
+      value: cdktn.numberToHclTerraform(struct!.doubleValue),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     string_value: {
-      value: cdktf.stringToHclTerraform(struct!.stringValue),
+      value: cdktn.stringToHclTerraform(struct!.stringValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -861,19 +869,19 @@ export function alertV2EvaluationThresholdValueToHclTerraform(struct?: AlertV2Ev
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AlertV2EvaluationThresholdValueOutputReference extends cdktf.ComplexObject {
+export class AlertV2EvaluationThresholdValueOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): AlertV2EvaluationThresholdValue | cdktf.IResolvable | undefined {
+  public get internalValue(): AlertV2EvaluationThresholdValue | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -894,7 +902,7 @@ export class AlertV2EvaluationThresholdValueOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AlertV2EvaluationThresholdValue | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AlertV2EvaluationThresholdValue | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -902,7 +910,7 @@ export class AlertV2EvaluationThresholdValueOutputReference extends cdktf.Comple
       this._doubleValue = undefined;
       this._stringValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -916,11 +924,11 @@ export class AlertV2EvaluationThresholdValueOutputReference extends cdktf.Comple
   }
 
   // bool_value - computed: false, optional: true, required: false
-  private _boolValue?: boolean | cdktf.IResolvable; 
+  private _boolValue?: boolean | cdktn.IResolvable; 
   public get boolValue() {
     return this.getBooleanAttribute('bool_value');
   }
-  public set boolValue(value: boolean | cdktf.IResolvable) {
+  public set boolValue(value: boolean | cdktn.IResolvable) {
     this._boolValue = value;
   }
   public resetBoolValue() {
@@ -965,18 +973,18 @@ export class AlertV2EvaluationThresholdValueOutputReference extends cdktf.Comple
 }
 export interface AlertV2EvaluationThreshold {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/alert_v2#column AlertV2#column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/alert_v2#column AlertV2#column}
   */
   readonly column?: AlertV2EvaluationThresholdColumn;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/alert_v2#value AlertV2#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/alert_v2#value AlertV2#value}
   */
   readonly value?: AlertV2EvaluationThresholdValue;
 }
 
-export function alertV2EvaluationThresholdToTerraform(struct?: AlertV2EvaluationThreshold | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function alertV2EvaluationThresholdToTerraform(struct?: AlertV2EvaluationThreshold | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -986,9 +994,9 @@ export function alertV2EvaluationThresholdToTerraform(struct?: AlertV2Evaluation
 }
 
 
-export function alertV2EvaluationThresholdToHclTerraform(struct?: AlertV2EvaluationThreshold | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function alertV2EvaluationThresholdToHclTerraform(struct?: AlertV2EvaluationThreshold | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1010,19 +1018,19 @@ export function alertV2EvaluationThresholdToHclTerraform(struct?: AlertV2Evaluat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AlertV2EvaluationThresholdOutputReference extends cdktf.ComplexObject {
+export class AlertV2EvaluationThresholdOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): AlertV2EvaluationThreshold | cdktf.IResolvable | undefined {
+  public get internalValue(): AlertV2EvaluationThreshold | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1039,14 +1047,14 @@ export class AlertV2EvaluationThresholdOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AlertV2EvaluationThreshold | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AlertV2EvaluationThreshold | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._column.internalValue = undefined;
       this._value.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1092,35 +1100,35 @@ export class AlertV2EvaluationThresholdOutputReference extends cdktf.ComplexObje
 }
 export interface AlertV2Evaluation {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/alert_v2#comparison_operator AlertV2#comparison_operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/alert_v2#comparison_operator AlertV2#comparison_operator}
   */
   readonly comparisonOperator: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/alert_v2#empty_result_state AlertV2#empty_result_state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/alert_v2#empty_result_state AlertV2#empty_result_state}
   */
   readonly emptyResultState?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/alert_v2#notification AlertV2#notification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/alert_v2#notification AlertV2#notification}
   */
   readonly notification?: AlertV2EvaluationNotification;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/alert_v2#source AlertV2#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/alert_v2#source AlertV2#source}
   */
   readonly source: AlertV2EvaluationSource;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/alert_v2#threshold AlertV2#threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/alert_v2#threshold AlertV2#threshold}
   */
   readonly threshold?: AlertV2EvaluationThreshold;
 }
 
-export function alertV2EvaluationToTerraform(struct?: AlertV2Evaluation | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function alertV2EvaluationToTerraform(struct?: AlertV2Evaluation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparison_operator: cdktf.stringToTerraform(struct!.comparisonOperator),
-    empty_result_state: cdktf.stringToTerraform(struct!.emptyResultState),
+    comparison_operator: cdktn.stringToTerraform(struct!.comparisonOperator),
+    empty_result_state: cdktn.stringToTerraform(struct!.emptyResultState),
     notification: alertV2EvaluationNotificationToTerraform(struct!.notification),
     source: alertV2EvaluationSourceToTerraform(struct!.source),
     threshold: alertV2EvaluationThresholdToTerraform(struct!.threshold),
@@ -1128,20 +1136,20 @@ export function alertV2EvaluationToTerraform(struct?: AlertV2Evaluation | cdktf.
 }
 
 
-export function alertV2EvaluationToHclTerraform(struct?: AlertV2Evaluation | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function alertV2EvaluationToHclTerraform(struct?: AlertV2Evaluation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparison_operator: {
-      value: cdktf.stringToHclTerraform(struct!.comparisonOperator),
+      value: cdktn.stringToHclTerraform(struct!.comparisonOperator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     empty_result_state: {
-      value: cdktf.stringToHclTerraform(struct!.emptyResultState),
+      value: cdktn.stringToHclTerraform(struct!.emptyResultState),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1170,19 +1178,19 @@ export function alertV2EvaluationToHclTerraform(struct?: AlertV2Evaluation | cdk
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AlertV2EvaluationOutputReference extends cdktf.ComplexObject {
+export class AlertV2EvaluationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): AlertV2Evaluation | cdktf.IResolvable | undefined {
+  public get internalValue(): AlertV2Evaluation | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1211,7 +1219,7 @@ export class AlertV2EvaluationOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AlertV2Evaluation | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AlertV2Evaluation | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1221,7 +1229,7 @@ export class AlertV2EvaluationOutputReference extends cdktf.ComplexObject {
       this._source.internalValue = undefined;
       this._threshold.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1320,43 +1328,32 @@ export class AlertV2EvaluationOutputReference extends cdktf.ComplexObject {
     return this._threshold.internalValue;
   }
 }
-export interface AlertV2RunAs {
+export interface AlertV2ProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/alert_v2#service_principal_name AlertV2#service_principal_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/alert_v2#workspace_id AlertV2#workspace_id}
   */
-  readonly servicePrincipalName?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/alert_v2#user_name AlertV2#user_name}
-  */
-  readonly userName?: string;
+  readonly workspaceId: string;
 }
 
-export function alertV2RunAsToTerraform(struct?: AlertV2RunAs | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function alertV2ProviderConfigToTerraform(struct?: AlertV2ProviderConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    service_principal_name: cdktf.stringToTerraform(struct!.servicePrincipalName),
-    user_name: cdktf.stringToTerraform(struct!.userName),
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
   }
 }
 
 
-export function alertV2RunAsToHclTerraform(struct?: AlertV2RunAs | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function alertV2ProviderConfigToHclTerraform(struct?: AlertV2ProviderConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
-    service_principal_name: {
-      value: cdktf.stringToHclTerraform(struct!.servicePrincipalName),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    user_name: {
-      value: cdktf.stringToHclTerraform(struct!.userName),
+    workspace_id: {
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1367,19 +1364,121 @@ export function alertV2RunAsToHclTerraform(struct?: AlertV2RunAs | cdktf.IResolv
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AlertV2RunAsOutputReference extends cdktf.ComplexObject {
+export class AlertV2ProviderConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): AlertV2RunAs | cdktf.IResolvable | undefined {
+  public get internalValue(): AlertV2ProviderConfig | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._workspaceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workspaceId = this._workspaceId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AlertV2ProviderConfig | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._workspaceId = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._workspaceId = value.workspaceId;
+    }
+  }
+
+  // workspace_id - computed: false, optional: false, required: true
+  private _workspaceId?: string; 
+  public get workspaceId() {
+    return this.getStringAttribute('workspace_id');
+  }
+  public set workspaceId(value: string) {
+    this._workspaceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workspaceIdInput() {
+    return this._workspaceId;
+  }
+}
+export interface AlertV2RunAs {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/alert_v2#service_principal_name AlertV2#service_principal_name}
+  */
+  readonly servicePrincipalName?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/alert_v2#user_name AlertV2#user_name}
+  */
+  readonly userName?: string;
+}
+
+export function alertV2RunAsToTerraform(struct?: AlertV2RunAs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    service_principal_name: cdktn.stringToTerraform(struct!.servicePrincipalName),
+    user_name: cdktn.stringToTerraform(struct!.userName),
+  }
+}
+
+
+export function alertV2RunAsToHclTerraform(struct?: AlertV2RunAs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    service_principal_name: {
+      value: cdktn.stringToHclTerraform(struct!.servicePrincipalName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    user_name: {
+      value: cdktn.stringToHclTerraform(struct!.userName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class AlertV2RunAsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): AlertV2RunAs | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1396,14 +1495,14 @@ export class AlertV2RunAsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AlertV2RunAs | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AlertV2RunAs | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._servicePrincipalName = undefined;
       this._userName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1449,52 +1548,52 @@ export class AlertV2RunAsOutputReference extends cdktf.ComplexObject {
 }
 export interface AlertV2Schedule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/alert_v2#pause_status AlertV2#pause_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/alert_v2#pause_status AlertV2#pause_status}
   */
   readonly pauseStatus?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/alert_v2#quartz_cron_schedule AlertV2#quartz_cron_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/alert_v2#quartz_cron_schedule AlertV2#quartz_cron_schedule}
   */
   readonly quartzCronSchedule: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/alert_v2#timezone_id AlertV2#timezone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/alert_v2#timezone_id AlertV2#timezone_id}
   */
   readonly timezoneId: string;
 }
 
-export function alertV2ScheduleToTerraform(struct?: AlertV2Schedule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function alertV2ScheduleToTerraform(struct?: AlertV2Schedule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    pause_status: cdktf.stringToTerraform(struct!.pauseStatus),
-    quartz_cron_schedule: cdktf.stringToTerraform(struct!.quartzCronSchedule),
-    timezone_id: cdktf.stringToTerraform(struct!.timezoneId),
+    pause_status: cdktn.stringToTerraform(struct!.pauseStatus),
+    quartz_cron_schedule: cdktn.stringToTerraform(struct!.quartzCronSchedule),
+    timezone_id: cdktn.stringToTerraform(struct!.timezoneId),
   }
 }
 
 
-export function alertV2ScheduleToHclTerraform(struct?: AlertV2Schedule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function alertV2ScheduleToHclTerraform(struct?: AlertV2Schedule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     pause_status: {
-      value: cdktf.stringToHclTerraform(struct!.pauseStatus),
+      value: cdktn.stringToHclTerraform(struct!.pauseStatus),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     quartz_cron_schedule: {
-      value: cdktf.stringToHclTerraform(struct!.quartzCronSchedule),
+      value: cdktn.stringToHclTerraform(struct!.quartzCronSchedule),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     timezone_id: {
-      value: cdktf.stringToHclTerraform(struct!.timezoneId),
+      value: cdktn.stringToHclTerraform(struct!.timezoneId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1505,19 +1604,19 @@ export function alertV2ScheduleToHclTerraform(struct?: AlertV2Schedule | cdktf.I
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AlertV2ScheduleOutputReference extends cdktf.ComplexObject {
+export class AlertV2ScheduleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): AlertV2Schedule | cdktf.IResolvable | undefined {
+  public get internalValue(): AlertV2Schedule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1538,7 +1637,7 @@ export class AlertV2ScheduleOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AlertV2Schedule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AlertV2Schedule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1546,7 +1645,7 @@ export class AlertV2ScheduleOutputReference extends cdktf.ComplexObject {
       this._quartzCronSchedule = undefined;
       this._timezoneId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1603,9 +1702,9 @@ export class AlertV2ScheduleOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/alert_v2 databricks_alert_v2}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/alert_v2 databricks_alert_v2}
 */
-export class AlertV2 extends cdktf.TerraformResource {
+export class AlertV2 extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1616,14 +1715,14 @@ export class AlertV2 extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AlertV2 resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AlertV2 resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AlertV2 to import
-  * @param importFromId The id of the existing AlertV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/alert_v2#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AlertV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/alert_v2#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AlertV2 to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_alert_v2", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_alert_v2", importId: importFromId, provider });
       }
 
   // ===========
@@ -1631,7 +1730,7 @@ export class AlertV2 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/alert_v2 databricks_alert_v2} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/alert_v2 databricks_alert_v2} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1642,7 +1741,7 @@ export class AlertV2 extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_alert_v2',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -1658,6 +1757,8 @@ export class AlertV2 extends cdktf.TerraformResource {
     this._displayName = config.displayName;
     this._evaluation.internalValue = config.evaluation;
     this._parentPath = config.parentPath;
+    this._providerConfig.internalValue = config.providerConfig;
+    this._purgeOnDelete = config.purgeOnDelete;
     this._queryText = config.queryText;
     this._runAs.internalValue = config.runAs;
     this._runAsUserName = config.runAsUserName;
@@ -1769,6 +1870,38 @@ export class AlertV2 extends cdktf.TerraformResource {
     return this._parentPath;
   }
 
+  // provider_config - computed: false, optional: true, required: false
+  private _providerConfig = new AlertV2ProviderConfigOutputReference(this, "provider_config");
+  public get providerConfig() {
+    return this._providerConfig;
+  }
+  public putProviderConfig(value: AlertV2ProviderConfig) {
+    this._providerConfig.internalValue = value;
+  }
+  public resetProviderConfig() {
+    this._providerConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerConfigInput() {
+    return this._providerConfig.internalValue;
+  }
+
+  // purge_on_delete - computed: false, optional: true, required: false
+  private _purgeOnDelete?: boolean | cdktn.IResolvable; 
+  public get purgeOnDelete() {
+    return this.getBooleanAttribute('purge_on_delete');
+  }
+  public set purgeOnDelete(value: boolean | cdktn.IResolvable) {
+    this._purgeOnDelete = value;
+  }
+  public resetPurgeOnDelete() {
+    this._purgeOnDelete = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get purgeOnDeleteInput() {
+    return this._purgeOnDelete;
+  }
+
   // query_text - computed: false, optional: false, required: true
   private _queryText?: string; 
   public get queryText() {
@@ -1851,35 +1984,37 @@ export class AlertV2 extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      custom_description: cdktf.stringToTerraform(this._customDescription),
-      custom_summary: cdktf.stringToTerraform(this._customSummary),
-      display_name: cdktf.stringToTerraform(this._displayName),
+      custom_description: cdktn.stringToTerraform(this._customDescription),
+      custom_summary: cdktn.stringToTerraform(this._customSummary),
+      display_name: cdktn.stringToTerraform(this._displayName),
       evaluation: alertV2EvaluationToTerraform(this._evaluation.internalValue),
-      parent_path: cdktf.stringToTerraform(this._parentPath),
-      query_text: cdktf.stringToTerraform(this._queryText),
+      parent_path: cdktn.stringToTerraform(this._parentPath),
+      provider_config: alertV2ProviderConfigToTerraform(this._providerConfig.internalValue),
+      purge_on_delete: cdktn.booleanToTerraform(this._purgeOnDelete),
+      query_text: cdktn.stringToTerraform(this._queryText),
       run_as: alertV2RunAsToTerraform(this._runAs.internalValue),
-      run_as_user_name: cdktf.stringToTerraform(this._runAsUserName),
+      run_as_user_name: cdktn.stringToTerraform(this._runAsUserName),
       schedule: alertV2ScheduleToTerraform(this._schedule.internalValue),
-      warehouse_id: cdktf.stringToTerraform(this._warehouseId),
+      warehouse_id: cdktn.stringToTerraform(this._warehouseId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       custom_description: {
-        value: cdktf.stringToHclTerraform(this._customDescription),
+        value: cdktn.stringToHclTerraform(this._customDescription),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       custom_summary: {
-        value: cdktf.stringToHclTerraform(this._customSummary),
+        value: cdktn.stringToHclTerraform(this._customSummary),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -1891,13 +2026,25 @@ export class AlertV2 extends cdktf.TerraformResource {
         storageClassType: "AlertV2Evaluation",
       },
       parent_path: {
-        value: cdktf.stringToHclTerraform(this._parentPath),
+        value: cdktn.stringToHclTerraform(this._parentPath),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
+      provider_config: {
+        value: alertV2ProviderConfigToHclTerraform(this._providerConfig.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "AlertV2ProviderConfig",
+      },
+      purge_on_delete: {
+        value: cdktn.booleanToHclTerraform(this._purgeOnDelete),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
       query_text: {
-        value: cdktf.stringToHclTerraform(this._queryText),
+        value: cdktn.stringToHclTerraform(this._queryText),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -1909,7 +2056,7 @@ export class AlertV2 extends cdktf.TerraformResource {
         storageClassType: "AlertV2RunAs",
       },
       run_as_user_name: {
-        value: cdktf.stringToHclTerraform(this._runAsUserName),
+        value: cdktn.stringToHclTerraform(this._runAsUserName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -1921,7 +2068,7 @@ export class AlertV2 extends cdktf.TerraformResource {
         storageClassType: "AlertV2Schedule",
       },
       warehouse_id: {
-        value: cdktf.stringToHclTerraform(this._warehouseId),
+        value: cdktn.stringToHclTerraform(this._warehouseId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

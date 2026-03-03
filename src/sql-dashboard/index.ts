@@ -1,58 +1,145 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_dashboard
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_dashboard
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SqlDashboardConfig extends cdktf.TerraformMetaArguments {
+export interface SqlDashboardConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_dashboard#created_at SqlDashboard#created_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_dashboard#created_at SqlDashboard#created_at}
   */
   readonly createdAt?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_dashboard#dashboard_filters_enabled SqlDashboard#dashboard_filters_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_dashboard#dashboard_filters_enabled SqlDashboard#dashboard_filters_enabled}
   */
-  readonly dashboardFiltersEnabled?: boolean | cdktf.IResolvable;
+  readonly dashboardFiltersEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_dashboard#id SqlDashboard#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_dashboard#id SqlDashboard#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_dashboard#name SqlDashboard#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_dashboard#name SqlDashboard#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_dashboard#parent SqlDashboard#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_dashboard#parent SqlDashboard#parent}
   */
   readonly parent?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_dashboard#run_as_role SqlDashboard#run_as_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_dashboard#run_as_role SqlDashboard#run_as_role}
   */
   readonly runAsRole?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_dashboard#tags SqlDashboard#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_dashboard#tags SqlDashboard#tags}
   */
   readonly tags?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_dashboard#updated_at SqlDashboard#updated_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_dashboard#updated_at SqlDashboard#updated_at}
   */
   readonly updatedAt?: string;
+  /**
+  * provider_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_dashboard#provider_config SqlDashboard#provider_config}
+  */
+  readonly providerConfig?: SqlDashboardProviderConfig;
+}
+export interface SqlDashboardProviderConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_dashboard#workspace_id SqlDashboard#workspace_id}
+  */
+  readonly workspaceId: string;
+}
+
+export function sqlDashboardProviderConfigToTerraform(struct?: SqlDashboardProviderConfigOutputReference | SqlDashboardProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
+  }
+}
+
+
+export function sqlDashboardProviderConfigToHclTerraform(struct?: SqlDashboardProviderConfigOutputReference | SqlDashboardProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    workspace_id: {
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class SqlDashboardProviderConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): SqlDashboardProviderConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._workspaceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workspaceId = this._workspaceId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SqlDashboardProviderConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._workspaceId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._workspaceId = value.workspaceId;
+    }
+  }
+
+  // workspace_id - computed: false, optional: false, required: true
+  private _workspaceId?: string; 
+  public get workspaceId() {
+    return this.getStringAttribute('workspace_id');
+  }
+  public set workspaceId(value: string) {
+    this._workspaceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workspaceIdInput() {
+    return this._workspaceId;
+  }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_dashboard databricks_sql_dashboard}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_dashboard databricks_sql_dashboard}
 */
-export class SqlDashboard extends cdktf.TerraformResource {
+export class SqlDashboard extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -63,14 +150,14 @@ export class SqlDashboard extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SqlDashboard resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SqlDashboard resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SqlDashboard to import
-  * @param importFromId The id of the existing SqlDashboard that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_dashboard#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SqlDashboard that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_dashboard#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SqlDashboard to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_sql_dashboard", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_sql_dashboard", importId: importFromId, provider });
       }
 
   // ===========
@@ -78,7 +165,7 @@ export class SqlDashboard extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_dashboard databricks_sql_dashboard} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_dashboard databricks_sql_dashboard} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -89,7 +176,7 @@ export class SqlDashboard extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_sql_dashboard',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -108,6 +195,7 @@ export class SqlDashboard extends cdktf.TerraformResource {
     this._runAsRole = config.runAsRole;
     this._tags = config.tags;
     this._updatedAt = config.updatedAt;
+    this._providerConfig.internalValue = config.providerConfig;
   }
 
   // ==========
@@ -131,11 +219,11 @@ export class SqlDashboard extends cdktf.TerraformResource {
   }
 
   // dashboard_filters_enabled - computed: false, optional: true, required: false
-  private _dashboardFiltersEnabled?: boolean | cdktf.IResolvable; 
+  private _dashboardFiltersEnabled?: boolean | cdktn.IResolvable; 
   public get dashboardFiltersEnabled() {
     return this.getBooleanAttribute('dashboard_filters_enabled');
   }
-  public set dashboardFiltersEnabled(value: boolean | cdktf.IResolvable) {
+  public set dashboardFiltersEnabled(value: boolean | cdktn.IResolvable) {
     this._dashboardFiltersEnabled = value;
   }
   public resetDashboardFiltersEnabled() {
@@ -239,72 +327,95 @@ export class SqlDashboard extends cdktf.TerraformResource {
     return this._updatedAt;
   }
 
+  // provider_config - computed: false, optional: true, required: false
+  private _providerConfig = new SqlDashboardProviderConfigOutputReference(this, "provider_config");
+  public get providerConfig() {
+    return this._providerConfig;
+  }
+  public putProviderConfig(value: SqlDashboardProviderConfig) {
+    this._providerConfig.internalValue = value;
+  }
+  public resetProviderConfig() {
+    this._providerConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerConfigInput() {
+    return this._providerConfig.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      created_at: cdktf.stringToTerraform(this._createdAt),
-      dashboard_filters_enabled: cdktf.booleanToTerraform(this._dashboardFiltersEnabled),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      parent: cdktf.stringToTerraform(this._parent),
-      run_as_role: cdktf.stringToTerraform(this._runAsRole),
-      tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),
-      updated_at: cdktf.stringToTerraform(this._updatedAt),
+      created_at: cdktn.stringToTerraform(this._createdAt),
+      dashboard_filters_enabled: cdktn.booleanToTerraform(this._dashboardFiltersEnabled),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      parent: cdktn.stringToTerraform(this._parent),
+      run_as_role: cdktn.stringToTerraform(this._runAsRole),
+      tags: cdktn.listMapper(cdktn.stringToTerraform, false)(this._tags),
+      updated_at: cdktn.stringToTerraform(this._updatedAt),
+      provider_config: sqlDashboardProviderConfigToTerraform(this._providerConfig.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       created_at: {
-        value: cdktf.stringToHclTerraform(this._createdAt),
+        value: cdktn.stringToHclTerraform(this._createdAt),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       dashboard_filters_enabled: {
-        value: cdktf.booleanToHclTerraform(this._dashboardFiltersEnabled),
+        value: cdktn.booleanToHclTerraform(this._dashboardFiltersEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parent: {
-        value: cdktf.stringToHclTerraform(this._parent),
+        value: cdktn.stringToHclTerraform(this._parent),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       run_as_role: {
-        value: cdktf.stringToHclTerraform(this._runAsRole),
+        value: cdktn.stringToHclTerraform(this._runAsRole),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tags),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._tags),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       updated_at: {
-        value: cdktf.stringToHclTerraform(this._updatedAt),
+        value: cdktn.stringToHclTerraform(this._updatedAt),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      provider_config: {
+        value: sqlDashboardProviderConfigToHclTerraform(this._providerConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SqlDashboardProviderConfigList",
       },
     };
 

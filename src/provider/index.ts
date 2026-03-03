@@ -1,181 +1,189 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
 export interface DatabricksProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#account_id DatabricksProvider#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#account_id DatabricksProvider#account_id}
   */
   readonly accountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#actions_id_token_request_token DatabricksProvider#actions_id_token_request_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#actions_id_token_request_token DatabricksProvider#actions_id_token_request_token}
   */
   readonly actionsIdTokenRequestToken?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#actions_id_token_request_url DatabricksProvider#actions_id_token_request_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#actions_id_token_request_url DatabricksProvider#actions_id_token_request_url}
   */
   readonly actionsIdTokenRequestUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#audience DatabricksProvider#audience}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#audience DatabricksProvider#audience}
   */
   readonly audience?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#auth_type DatabricksProvider#auth_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#auth_type DatabricksProvider#auth_type}
   */
   readonly authType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#azure_client_id DatabricksProvider#azure_client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#azure_client_id DatabricksProvider#azure_client_id}
   */
   readonly azureClientId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#azure_client_secret DatabricksProvider#azure_client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#azure_client_secret DatabricksProvider#azure_client_secret}
   */
   readonly azureClientSecret?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#azure_environment DatabricksProvider#azure_environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#azure_environment DatabricksProvider#azure_environment}
   */
   readonly azureEnvironment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#azure_login_app_id DatabricksProvider#azure_login_app_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#azure_login_app_id DatabricksProvider#azure_login_app_id}
   */
   readonly azureLoginAppId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#azure_tenant_id DatabricksProvider#azure_tenant_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#azure_tenant_id DatabricksProvider#azure_tenant_id}
   */
   readonly azureTenantId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#azure_use_msi DatabricksProvider#azure_use_msi}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#azure_use_msi DatabricksProvider#azure_use_msi}
   */
-  readonly azureUseMsi?: boolean | cdktf.IResolvable;
+  readonly azureUseMsi?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#azure_workspace_resource_id DatabricksProvider#azure_workspace_resource_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#azure_workspace_resource_id DatabricksProvider#azure_workspace_resource_id}
   */
   readonly azureWorkspaceResourceId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#client_id DatabricksProvider#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#client_id DatabricksProvider#client_id}
   */
   readonly clientId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#client_secret DatabricksProvider#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#client_secret DatabricksProvider#client_secret}
   */
   readonly clientSecret?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#cluster_id DatabricksProvider#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#cluster_id DatabricksProvider#cluster_id}
   */
   readonly clusterId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#config_file DatabricksProvider#config_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#config_file DatabricksProvider#config_file}
   */
   readonly configFile?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#databricks_cli_path DatabricksProvider#databricks_cli_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#databricks_cli_path DatabricksProvider#databricks_cli_path}
   */
   readonly databricksCliPath?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#databricks_id_token_filepath DatabricksProvider#databricks_id_token_filepath}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#databricks_id_token_filepath DatabricksProvider#databricks_id_token_filepath}
   */
   readonly databricksIdTokenFilepath?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#debug_headers DatabricksProvider#debug_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#debug_headers DatabricksProvider#debug_headers}
   */
-  readonly debugHeaders?: boolean | cdktf.IResolvable;
+  readonly debugHeaders?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#debug_truncate_bytes DatabricksProvider#debug_truncate_bytes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#debug_truncate_bytes DatabricksProvider#debug_truncate_bytes}
   */
   readonly debugTruncateBytes?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#experimental_is_unified_host DatabricksProvider#experimental_is_unified_host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#disable_oauth_refresh_token DatabricksProvider#disable_oauth_refresh_token}
   */
-  readonly experimentalIsUnifiedHost?: boolean | cdktf.IResolvable;
+  readonly disableOauthRefreshToken?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#google_credentials DatabricksProvider#google_credentials}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#experimental_is_unified_host DatabricksProvider#experimental_is_unified_host}
+  */
+  readonly experimentalIsUnifiedHost?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#google_credentials DatabricksProvider#google_credentials}
   */
   readonly googleCredentials?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#google_service_account DatabricksProvider#google_service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#google_service_account DatabricksProvider#google_service_account}
   */
   readonly googleServiceAccount?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#host DatabricksProvider#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#host DatabricksProvider#host}
   */
   readonly host?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#http_timeout_seconds DatabricksProvider#http_timeout_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#http_timeout_seconds DatabricksProvider#http_timeout_seconds}
   */
   readonly httpTimeoutSeconds?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#metadata_service_url DatabricksProvider#metadata_service_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#metadata_service_url DatabricksProvider#metadata_service_url}
   */
   readonly metadataServiceUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#oauth_callback_port DatabricksProvider#oauth_callback_port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#oauth_callback_port DatabricksProvider#oauth_callback_port}
   */
   readonly oauthCallbackPort?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#oidc_token_env DatabricksProvider#oidc_token_env}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#oidc_token_env DatabricksProvider#oidc_token_env}
   */
   readonly oidcTokenEnv?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#password DatabricksProvider#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#password DatabricksProvider#password}
   */
   readonly password?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#profile DatabricksProvider#profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#profile DatabricksProvider#profile}
   */
   readonly profile?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#rate_limit DatabricksProvider#rate_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#rate_limit DatabricksProvider#rate_limit}
   */
   readonly rateLimit?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#retry_timeout_seconds DatabricksProvider#retry_timeout_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#retry_timeout_seconds DatabricksProvider#retry_timeout_seconds}
   */
   readonly retryTimeoutSeconds?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#serverless_compute_id DatabricksProvider#serverless_compute_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#scopes DatabricksProvider#scopes}
+  */
+  readonly scopes?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#serverless_compute_id DatabricksProvider#serverless_compute_id}
   */
   readonly serverlessComputeId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#skip_verify DatabricksProvider#skip_verify}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#skip_verify DatabricksProvider#skip_verify}
   */
-  readonly skipVerify?: boolean | cdktf.IResolvable;
+  readonly skipVerify?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#token DatabricksProvider#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#token DatabricksProvider#token}
   */
   readonly token?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#username DatabricksProvider#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#username DatabricksProvider#username}
   */
   readonly username?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#warehouse_id DatabricksProvider#warehouse_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#warehouse_id DatabricksProvider#warehouse_id}
   */
   readonly warehouseId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#workspace_id DatabricksProvider#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#workspace_id DatabricksProvider#workspace_id}
   */
   readonly workspaceId?: string;
   /**
   * Alias name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#alias DatabricksProvider#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#alias DatabricksProvider#alias}
   */
   readonly alias?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs databricks}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs databricks}
 */
-export class DatabricksProvider extends cdktf.TerraformProvider {
+export class DatabricksProvider extends cdktn.TerraformProvider {
 
   // =================
   // STATIC PROPERTIES
@@ -186,14 +194,14 @@ export class DatabricksProvider extends cdktf.TerraformProvider {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DatabricksProvider resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DatabricksProvider resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DatabricksProvider to import
-  * @param importFromId The id of the existing DatabricksProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DatabricksProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DatabricksProvider to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks", importId: importFromId, provider });
       }
 
   // ===========
@@ -201,7 +209,7 @@ export class DatabricksProvider extends cdktf.TerraformProvider {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs databricks} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs databricks} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -212,7 +220,7 @@ export class DatabricksProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'databricks',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       terraformProviderSource: 'databricks/databricks'
@@ -237,6 +245,7 @@ export class DatabricksProvider extends cdktf.TerraformProvider {
     this._databricksIdTokenFilepath = config.databricksIdTokenFilepath;
     this._debugHeaders = config.debugHeaders;
     this._debugTruncateBytes = config.debugTruncateBytes;
+    this._disableOauthRefreshToken = config.disableOauthRefreshToken;
     this._experimentalIsUnifiedHost = config.experimentalIsUnifiedHost;
     this._googleCredentials = config.googleCredentials;
     this._googleServiceAccount = config.googleServiceAccount;
@@ -249,6 +258,7 @@ export class DatabricksProvider extends cdktf.TerraformProvider {
     this._profile = config.profile;
     this._rateLimit = config.rateLimit;
     this._retryTimeoutSeconds = config.retryTimeoutSeconds;
+    this._scopes = config.scopes;
     this._serverlessComputeId = config.serverlessComputeId;
     this._skipVerify = config.skipVerify;
     this._token = config.token;
@@ -423,11 +433,11 @@ export class DatabricksProvider extends cdktf.TerraformProvider {
   }
 
   // azure_use_msi - computed: false, optional: true, required: false
-  private _azureUseMsi?: boolean | cdktf.IResolvable; 
+  private _azureUseMsi?: boolean | cdktn.IResolvable; 
   public get azureUseMsi() {
     return this._azureUseMsi;
   }
-  public set azureUseMsi(value: boolean | cdktf.IResolvable | undefined) {
+  public set azureUseMsi(value: boolean | cdktn.IResolvable | undefined) {
     this._azureUseMsi = value;
   }
   public resetAzureUseMsi() {
@@ -551,11 +561,11 @@ export class DatabricksProvider extends cdktf.TerraformProvider {
   }
 
   // debug_headers - computed: false, optional: true, required: false
-  private _debugHeaders?: boolean | cdktf.IResolvable; 
+  private _debugHeaders?: boolean | cdktn.IResolvable; 
   public get debugHeaders() {
     return this._debugHeaders;
   }
-  public set debugHeaders(value: boolean | cdktf.IResolvable | undefined) {
+  public set debugHeaders(value: boolean | cdktn.IResolvable | undefined) {
     this._debugHeaders = value;
   }
   public resetDebugHeaders() {
@@ -582,12 +592,28 @@ export class DatabricksProvider extends cdktf.TerraformProvider {
     return this._debugTruncateBytes;
   }
 
+  // disable_oauth_refresh_token - computed: false, optional: true, required: false
+  private _disableOauthRefreshToken?: boolean | cdktn.IResolvable; 
+  public get disableOauthRefreshToken() {
+    return this._disableOauthRefreshToken;
+  }
+  public set disableOauthRefreshToken(value: boolean | cdktn.IResolvable | undefined) {
+    this._disableOauthRefreshToken = value;
+  }
+  public resetDisableOauthRefreshToken() {
+    this._disableOauthRefreshToken = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get disableOauthRefreshTokenInput() {
+    return this._disableOauthRefreshToken;
+  }
+
   // experimental_is_unified_host - computed: false, optional: true, required: false
-  private _experimentalIsUnifiedHost?: boolean | cdktf.IResolvable; 
+  private _experimentalIsUnifiedHost?: boolean | cdktn.IResolvable; 
   public get experimentalIsUnifiedHost() {
     return this._experimentalIsUnifiedHost;
   }
-  public set experimentalIsUnifiedHost(value: boolean | cdktf.IResolvable | undefined) {
+  public set experimentalIsUnifiedHost(value: boolean | cdktn.IResolvable | undefined) {
     this._experimentalIsUnifiedHost = value;
   }
   public resetExperimentalIsUnifiedHost() {
@@ -774,6 +800,22 @@ export class DatabricksProvider extends cdktf.TerraformProvider {
     return this._retryTimeoutSeconds;
   }
 
+  // scopes - computed: false, optional: true, required: false
+  private _scopes?: string[]; 
+  public get scopes() {
+    return this._scopes;
+  }
+  public set scopes(value: string[] | undefined) {
+    this._scopes = value;
+  }
+  public resetScopes() {
+    this._scopes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scopesInput() {
+    return this._scopes;
+  }
+
   // serverless_compute_id - computed: false, optional: true, required: false
   private _serverlessComputeId?: string; 
   public get serverlessComputeId() {
@@ -791,11 +833,11 @@ export class DatabricksProvider extends cdktf.TerraformProvider {
   }
 
   // skip_verify - computed: false, optional: true, required: false
-  private _skipVerify?: boolean | cdktf.IResolvable; 
+  private _skipVerify?: boolean | cdktn.IResolvable; 
   public get skipVerify() {
     return this._skipVerify;
   }
-  public set skipVerify(value: boolean | cdktf.IResolvable | undefined) {
+  public set skipVerify(value: boolean | cdktn.IResolvable | undefined) {
     this._skipVerify = value;
   }
   public resetSkipVerify() {
@@ -892,280 +934,294 @@ export class DatabricksProvider extends cdktf.TerraformProvider {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      actions_id_token_request_token: cdktf.stringToTerraform(this._actionsIdTokenRequestToken),
-      actions_id_token_request_url: cdktf.stringToTerraform(this._actionsIdTokenRequestUrl),
-      audience: cdktf.stringToTerraform(this._audience),
-      auth_type: cdktf.stringToTerraform(this._authType),
-      azure_client_id: cdktf.stringToTerraform(this._azureClientId),
-      azure_client_secret: cdktf.stringToTerraform(this._azureClientSecret),
-      azure_environment: cdktf.stringToTerraform(this._azureEnvironment),
-      azure_login_app_id: cdktf.stringToTerraform(this._azureLoginAppId),
-      azure_tenant_id: cdktf.stringToTerraform(this._azureTenantId),
-      azure_use_msi: cdktf.booleanToTerraform(this._azureUseMsi),
-      azure_workspace_resource_id: cdktf.stringToTerraform(this._azureWorkspaceResourceId),
-      client_id: cdktf.stringToTerraform(this._clientId),
-      client_secret: cdktf.stringToTerraform(this._clientSecret),
-      cluster_id: cdktf.stringToTerraform(this._clusterId),
-      config_file: cdktf.stringToTerraform(this._configFile),
-      databricks_cli_path: cdktf.stringToTerraform(this._databricksCliPath),
-      databricks_id_token_filepath: cdktf.stringToTerraform(this._databricksIdTokenFilepath),
-      debug_headers: cdktf.booleanToTerraform(this._debugHeaders),
-      debug_truncate_bytes: cdktf.numberToTerraform(this._debugTruncateBytes),
-      experimental_is_unified_host: cdktf.booleanToTerraform(this._experimentalIsUnifiedHost),
-      google_credentials: cdktf.stringToTerraform(this._googleCredentials),
-      google_service_account: cdktf.stringToTerraform(this._googleServiceAccount),
-      host: cdktf.stringToTerraform(this._host),
-      http_timeout_seconds: cdktf.numberToTerraform(this._httpTimeoutSeconds),
-      metadata_service_url: cdktf.stringToTerraform(this._metadataServiceUrl),
-      oauth_callback_port: cdktf.numberToTerraform(this._oauthCallbackPort),
-      oidc_token_env: cdktf.stringToTerraform(this._oidcTokenEnv),
-      password: cdktf.stringToTerraform(this._password),
-      profile: cdktf.stringToTerraform(this._profile),
-      rate_limit: cdktf.numberToTerraform(this._rateLimit),
-      retry_timeout_seconds: cdktf.numberToTerraform(this._retryTimeoutSeconds),
-      serverless_compute_id: cdktf.stringToTerraform(this._serverlessComputeId),
-      skip_verify: cdktf.booleanToTerraform(this._skipVerify),
-      token: cdktf.stringToTerraform(this._token),
-      username: cdktf.stringToTerraform(this._username),
-      warehouse_id: cdktf.stringToTerraform(this._warehouseId),
-      workspace_id: cdktf.stringToTerraform(this._workspaceId),
-      alias: cdktf.stringToTerraform(this._alias),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      actions_id_token_request_token: cdktn.stringToTerraform(this._actionsIdTokenRequestToken),
+      actions_id_token_request_url: cdktn.stringToTerraform(this._actionsIdTokenRequestUrl),
+      audience: cdktn.stringToTerraform(this._audience),
+      auth_type: cdktn.stringToTerraform(this._authType),
+      azure_client_id: cdktn.stringToTerraform(this._azureClientId),
+      azure_client_secret: cdktn.stringToTerraform(this._azureClientSecret),
+      azure_environment: cdktn.stringToTerraform(this._azureEnvironment),
+      azure_login_app_id: cdktn.stringToTerraform(this._azureLoginAppId),
+      azure_tenant_id: cdktn.stringToTerraform(this._azureTenantId),
+      azure_use_msi: cdktn.booleanToTerraform(this._azureUseMsi),
+      azure_workspace_resource_id: cdktn.stringToTerraform(this._azureWorkspaceResourceId),
+      client_id: cdktn.stringToTerraform(this._clientId),
+      client_secret: cdktn.stringToTerraform(this._clientSecret),
+      cluster_id: cdktn.stringToTerraform(this._clusterId),
+      config_file: cdktn.stringToTerraform(this._configFile),
+      databricks_cli_path: cdktn.stringToTerraform(this._databricksCliPath),
+      databricks_id_token_filepath: cdktn.stringToTerraform(this._databricksIdTokenFilepath),
+      debug_headers: cdktn.booleanToTerraform(this._debugHeaders),
+      debug_truncate_bytes: cdktn.numberToTerraform(this._debugTruncateBytes),
+      disable_oauth_refresh_token: cdktn.booleanToTerraform(this._disableOauthRefreshToken),
+      experimental_is_unified_host: cdktn.booleanToTerraform(this._experimentalIsUnifiedHost),
+      google_credentials: cdktn.stringToTerraform(this._googleCredentials),
+      google_service_account: cdktn.stringToTerraform(this._googleServiceAccount),
+      host: cdktn.stringToTerraform(this._host),
+      http_timeout_seconds: cdktn.numberToTerraform(this._httpTimeoutSeconds),
+      metadata_service_url: cdktn.stringToTerraform(this._metadataServiceUrl),
+      oauth_callback_port: cdktn.numberToTerraform(this._oauthCallbackPort),
+      oidc_token_env: cdktn.stringToTerraform(this._oidcTokenEnv),
+      password: cdktn.stringToTerraform(this._password),
+      profile: cdktn.stringToTerraform(this._profile),
+      rate_limit: cdktn.numberToTerraform(this._rateLimit),
+      retry_timeout_seconds: cdktn.numberToTerraform(this._retryTimeoutSeconds),
+      scopes: cdktn.listMapper(cdktn.stringToTerraform, false)(this._scopes),
+      serverless_compute_id: cdktn.stringToTerraform(this._serverlessComputeId),
+      skip_verify: cdktn.booleanToTerraform(this._skipVerify),
+      token: cdktn.stringToTerraform(this._token),
+      username: cdktn.stringToTerraform(this._username),
+      warehouse_id: cdktn.stringToTerraform(this._warehouseId),
+      workspace_id: cdktn.stringToTerraform(this._workspaceId),
+      alias: cdktn.stringToTerraform(this._alias),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       actions_id_token_request_token: {
-        value: cdktf.stringToHclTerraform(this._actionsIdTokenRequestToken),
+        value: cdktn.stringToHclTerraform(this._actionsIdTokenRequestToken),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       actions_id_token_request_url: {
-        value: cdktf.stringToHclTerraform(this._actionsIdTokenRequestUrl),
+        value: cdktn.stringToHclTerraform(this._actionsIdTokenRequestUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       audience: {
-        value: cdktf.stringToHclTerraform(this._audience),
+        value: cdktn.stringToHclTerraform(this._audience),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       auth_type: {
-        value: cdktf.stringToHclTerraform(this._authType),
+        value: cdktn.stringToHclTerraform(this._authType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       azure_client_id: {
-        value: cdktf.stringToHclTerraform(this._azureClientId),
+        value: cdktn.stringToHclTerraform(this._azureClientId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       azure_client_secret: {
-        value: cdktf.stringToHclTerraform(this._azureClientSecret),
+        value: cdktn.stringToHclTerraform(this._azureClientSecret),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       azure_environment: {
-        value: cdktf.stringToHclTerraform(this._azureEnvironment),
+        value: cdktn.stringToHclTerraform(this._azureEnvironment),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       azure_login_app_id: {
-        value: cdktf.stringToHclTerraform(this._azureLoginAppId),
+        value: cdktn.stringToHclTerraform(this._azureLoginAppId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       azure_tenant_id: {
-        value: cdktf.stringToHclTerraform(this._azureTenantId),
+        value: cdktn.stringToHclTerraform(this._azureTenantId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       azure_use_msi: {
-        value: cdktf.booleanToHclTerraform(this._azureUseMsi),
+        value: cdktn.booleanToHclTerraform(this._azureUseMsi),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       azure_workspace_resource_id: {
-        value: cdktf.stringToHclTerraform(this._azureWorkspaceResourceId),
+        value: cdktn.stringToHclTerraform(this._azureWorkspaceResourceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       client_id: {
-        value: cdktf.stringToHclTerraform(this._clientId),
+        value: cdktn.stringToHclTerraform(this._clientId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       client_secret: {
-        value: cdktf.stringToHclTerraform(this._clientSecret),
+        value: cdktn.stringToHclTerraform(this._clientSecret),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cluster_id: {
-        value: cdktf.stringToHclTerraform(this._clusterId),
+        value: cdktn.stringToHclTerraform(this._clusterId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       config_file: {
-        value: cdktf.stringToHclTerraform(this._configFile),
+        value: cdktn.stringToHclTerraform(this._configFile),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       databricks_cli_path: {
-        value: cdktf.stringToHclTerraform(this._databricksCliPath),
+        value: cdktn.stringToHclTerraform(this._databricksCliPath),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       databricks_id_token_filepath: {
-        value: cdktf.stringToHclTerraform(this._databricksIdTokenFilepath),
+        value: cdktn.stringToHclTerraform(this._databricksIdTokenFilepath),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       debug_headers: {
-        value: cdktf.booleanToHclTerraform(this._debugHeaders),
+        value: cdktn.booleanToHclTerraform(this._debugHeaders),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       debug_truncate_bytes: {
-        value: cdktf.numberToHclTerraform(this._debugTruncateBytes),
+        value: cdktn.numberToHclTerraform(this._debugTruncateBytes),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
+      disable_oauth_refresh_token: {
+        value: cdktn.booleanToHclTerraform(this._disableOauthRefreshToken),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
       experimental_is_unified_host: {
-        value: cdktf.booleanToHclTerraform(this._experimentalIsUnifiedHost),
+        value: cdktn.booleanToHclTerraform(this._experimentalIsUnifiedHost),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       google_credentials: {
-        value: cdktf.stringToHclTerraform(this._googleCredentials),
+        value: cdktn.stringToHclTerraform(this._googleCredentials),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       google_service_account: {
-        value: cdktf.stringToHclTerraform(this._googleServiceAccount),
+        value: cdktn.stringToHclTerraform(this._googleServiceAccount),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       host: {
-        value: cdktf.stringToHclTerraform(this._host),
+        value: cdktn.stringToHclTerraform(this._host),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       http_timeout_seconds: {
-        value: cdktf.numberToHclTerraform(this._httpTimeoutSeconds),
+        value: cdktn.numberToHclTerraform(this._httpTimeoutSeconds),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       metadata_service_url: {
-        value: cdktf.stringToHclTerraform(this._metadataServiceUrl),
+        value: cdktn.stringToHclTerraform(this._metadataServiceUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       oauth_callback_port: {
-        value: cdktf.numberToHclTerraform(this._oauthCallbackPort),
+        value: cdktn.numberToHclTerraform(this._oauthCallbackPort),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       oidc_token_env: {
-        value: cdktf.stringToHclTerraform(this._oidcTokenEnv),
+        value: cdktn.stringToHclTerraform(this._oidcTokenEnv),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       password: {
-        value: cdktf.stringToHclTerraform(this._password),
+        value: cdktn.stringToHclTerraform(this._password),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       profile: {
-        value: cdktf.stringToHclTerraform(this._profile),
+        value: cdktn.stringToHclTerraform(this._profile),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       rate_limit: {
-        value: cdktf.numberToHclTerraform(this._rateLimit),
+        value: cdktn.numberToHclTerraform(this._rateLimit),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       retry_timeout_seconds: {
-        value: cdktf.numberToHclTerraform(this._retryTimeoutSeconds),
+        value: cdktn.numberToHclTerraform(this._retryTimeoutSeconds),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
+      scopes: {
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._scopes),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
       serverless_compute_id: {
-        value: cdktf.stringToHclTerraform(this._serverlessComputeId),
+        value: cdktn.stringToHclTerraform(this._serverlessComputeId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       skip_verify: {
-        value: cdktf.booleanToHclTerraform(this._skipVerify),
+        value: cdktn.booleanToHclTerraform(this._skipVerify),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       token: {
-        value: cdktf.stringToHclTerraform(this._token),
+        value: cdktn.stringToHclTerraform(this._token),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       username: {
-        value: cdktf.stringToHclTerraform(this._username),
+        value: cdktn.stringToHclTerraform(this._username),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       warehouse_id: {
-        value: cdktf.stringToHclTerraform(this._warehouseId),
+        value: cdktn.stringToHclTerraform(this._warehouseId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       workspace_id: {
-        value: cdktf.stringToHclTerraform(this._workspaceId),
+        value: cdktn.stringToHclTerraform(this._workspaceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       alias: {
-        value: cdktf.stringToHclTerraform(this._alias),
+        value: cdktn.stringToHclTerraform(this._alias),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
