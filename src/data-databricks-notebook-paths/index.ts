@@ -1,39 +1,45 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/notebook_paths
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/notebook_paths
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataDatabricksNotebookPathsConfig extends cdktf.TerraformMetaArguments {
+export interface DataDatabricksNotebookPathsConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/notebook_paths#id DataDatabricksNotebookPaths#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/notebook_paths#id DataDatabricksNotebookPaths#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/notebook_paths#path DataDatabricksNotebookPaths#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/notebook_paths#path DataDatabricksNotebookPaths#path}
   */
   readonly path: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/notebook_paths#recursive DataDatabricksNotebookPaths#recursive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/notebook_paths#recursive DataDatabricksNotebookPaths#recursive}
   */
-  readonly recursive: boolean | cdktf.IResolvable;
+  readonly recursive: boolean | cdktn.IResolvable;
+  /**
+  * provider_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/notebook_paths#provider_config DataDatabricksNotebookPaths#provider_config}
+  */
+  readonly providerConfig?: DataDatabricksNotebookPathsProviderConfig;
 }
 export interface DataDatabricksNotebookPathsNotebookPathListStruct {
 }
 
 export function dataDatabricksNotebookPathsNotebookPathListStructToTerraform(struct?: DataDatabricksNotebookPathsNotebookPathListStruct): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -42,8 +48,8 @@ export function dataDatabricksNotebookPathsNotebookPathListStructToTerraform(str
 
 
 export function dataDatabricksNotebookPathsNotebookPathListStructToHclTerraform(struct?: DataDatabricksNotebookPathsNotebookPathListStruct): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -51,7 +57,7 @@ export function dataDatabricksNotebookPathsNotebookPathListStructToHclTerraform(
   return attrs;
 }
 
-export class DataDatabricksNotebookPathsNotebookPathListStructOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksNotebookPathsNotebookPathListStructOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -60,7 +66,7 @@ export class DataDatabricksNotebookPathsNotebookPathListStructOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -90,14 +96,14 @@ export class DataDatabricksNotebookPathsNotebookPathListStructOutputReference ex
   }
 }
 
-export class DataDatabricksNotebookPathsNotebookPathListStructList extends cdktf.ComplexList {
+export class DataDatabricksNotebookPathsNotebookPathListStructList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -108,11 +114,92 @@ export class DataDatabricksNotebookPathsNotebookPathListStructList extends cdktf
     return new DataDatabricksNotebookPathsNotebookPathListStructOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataDatabricksNotebookPathsProviderConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/notebook_paths#workspace_id DataDatabricksNotebookPaths#workspace_id}
+  */
+  readonly workspaceId: string;
+}
+
+export function dataDatabricksNotebookPathsProviderConfigToTerraform(struct?: DataDatabricksNotebookPathsProviderConfigOutputReference | DataDatabricksNotebookPathsProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
+  }
+}
+
+
+export function dataDatabricksNotebookPathsProviderConfigToHclTerraform(struct?: DataDatabricksNotebookPathsProviderConfigOutputReference | DataDatabricksNotebookPathsProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    workspace_id: {
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataDatabricksNotebookPathsProviderConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DataDatabricksNotebookPathsProviderConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._workspaceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workspaceId = this._workspaceId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksNotebookPathsProviderConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._workspaceId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._workspaceId = value.workspaceId;
+    }
+  }
+
+  // workspace_id - computed: false, optional: false, required: true
+  private _workspaceId?: string; 
+  public get workspaceId() {
+    return this.getStringAttribute('workspace_id');
+  }
+  public set workspaceId(value: string) {
+    this._workspaceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workspaceIdInput() {
+    return this._workspaceId;
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/notebook_paths databricks_notebook_paths}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/notebook_paths databricks_notebook_paths}
 */
-export class DataDatabricksNotebookPaths extends cdktf.TerraformDataSource {
+export class DataDatabricksNotebookPaths extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -123,14 +210,14 @@ export class DataDatabricksNotebookPaths extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataDatabricksNotebookPaths resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataDatabricksNotebookPaths resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksNotebookPaths to import
-  * @param importFromId The id of the existing DataDatabricksNotebookPaths that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/notebook_paths#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksNotebookPaths that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/notebook_paths#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksNotebookPaths to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_notebook_paths", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_notebook_paths", importId: importFromId, provider });
       }
 
   // ===========
@@ -138,7 +225,7 @@ export class DataDatabricksNotebookPaths extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/notebook_paths databricks_notebook_paths} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/notebook_paths databricks_notebook_paths} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -149,7 +236,7 @@ export class DataDatabricksNotebookPaths extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_notebook_paths',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -163,6 +250,7 @@ export class DataDatabricksNotebookPaths extends cdktf.TerraformDataSource {
     this._id = config.id;
     this._path = config.path;
     this._recursive = config.recursive;
+    this._providerConfig.internalValue = config.providerConfig;
   }
 
   // ==========
@@ -205,16 +293,32 @@ export class DataDatabricksNotebookPaths extends cdktf.TerraformDataSource {
   }
 
   // recursive - computed: false, optional: false, required: true
-  private _recursive?: boolean | cdktf.IResolvable; 
+  private _recursive?: boolean | cdktn.IResolvable; 
   public get recursive() {
     return this.getBooleanAttribute('recursive');
   }
-  public set recursive(value: boolean | cdktf.IResolvable) {
+  public set recursive(value: boolean | cdktn.IResolvable) {
     this._recursive = value;
   }
   // Temporarily expose input value. Use with caution.
   public get recursiveInput() {
     return this._recursive;
+  }
+
+  // provider_config - computed: false, optional: true, required: false
+  private _providerConfig = new DataDatabricksNotebookPathsProviderConfigOutputReference(this, "provider_config");
+  public get providerConfig() {
+    return this._providerConfig;
+  }
+  public putProviderConfig(value: DataDatabricksNotebookPathsProviderConfig) {
+    this._providerConfig.internalValue = value;
+  }
+  public resetProviderConfig() {
+    this._providerConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerConfigInput() {
+    return this._providerConfig.internalValue;
   }
 
   // =========
@@ -223,31 +327,38 @@ export class DataDatabricksNotebookPaths extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      path: cdktf.stringToTerraform(this._path),
-      recursive: cdktf.booleanToTerraform(this._recursive),
+      id: cdktn.stringToTerraform(this._id),
+      path: cdktn.stringToTerraform(this._path),
+      recursive: cdktn.booleanToTerraform(this._recursive),
+      provider_config: dataDatabricksNotebookPathsProviderConfigToTerraform(this._providerConfig.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       path: {
-        value: cdktf.stringToHclTerraform(this._path),
+        value: cdktn.stringToHclTerraform(this._path),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       recursive: {
-        value: cdktf.booleanToHclTerraform(this._recursive),
+        value: cdktn.booleanToHclTerraform(this._recursive),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
+      },
+      provider_config: {
+        value: dataDatabricksNotebookPathsProviderConfigToHclTerraform(this._providerConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataDatabricksNotebookPathsProviderConfigList",
       },
     };
 

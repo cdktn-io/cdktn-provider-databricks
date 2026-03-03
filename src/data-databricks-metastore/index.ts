@@ -1,267 +1,267 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/metastore
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/metastore
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataDatabricksMetastoreConfig extends cdktf.TerraformMetaArguments {
+export interface DataDatabricksMetastoreConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/metastore#id DataDatabricksMetastore#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/metastore#id DataDatabricksMetastore#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/metastore#metastore_id DataDatabricksMetastore#metastore_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/metastore#metastore_id DataDatabricksMetastore#metastore_id}
   */
   readonly metastoreId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/metastore#name DataDatabricksMetastore#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/metastore#name DataDatabricksMetastore#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/metastore#region DataDatabricksMetastore#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/metastore#region DataDatabricksMetastore#region}
   */
   readonly region?: string;
   /**
   * metastore_info block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/metastore#metastore_info DataDatabricksMetastore#metastore_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/metastore#metastore_info DataDatabricksMetastore#metastore_info}
   */
   readonly metastoreInfo?: DataDatabricksMetastoreMetastoreInfo;
 }
 export interface DataDatabricksMetastoreMetastoreInfo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/metastore#cloud DataDatabricksMetastore#cloud}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/metastore#cloud DataDatabricksMetastore#cloud}
   */
   readonly cloud?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/metastore#created_at DataDatabricksMetastore#created_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/metastore#created_at DataDatabricksMetastore#created_at}
   */
   readonly createdAt?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/metastore#created_by DataDatabricksMetastore#created_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/metastore#created_by DataDatabricksMetastore#created_by}
   */
   readonly createdBy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/metastore#default_data_access_config_id DataDatabricksMetastore#default_data_access_config_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/metastore#default_data_access_config_id DataDatabricksMetastore#default_data_access_config_id}
   */
   readonly defaultDataAccessConfigId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/metastore#delta_sharing_organization_name DataDatabricksMetastore#delta_sharing_organization_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/metastore#delta_sharing_organization_name DataDatabricksMetastore#delta_sharing_organization_name}
   */
   readonly deltaSharingOrganizationName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/metastore#delta_sharing_recipient_token_lifetime_in_seconds DataDatabricksMetastore#delta_sharing_recipient_token_lifetime_in_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/metastore#delta_sharing_recipient_token_lifetime_in_seconds DataDatabricksMetastore#delta_sharing_recipient_token_lifetime_in_seconds}
   */
   readonly deltaSharingRecipientTokenLifetimeInSeconds?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/metastore#delta_sharing_scope DataDatabricksMetastore#delta_sharing_scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/metastore#delta_sharing_scope DataDatabricksMetastore#delta_sharing_scope}
   */
   readonly deltaSharingScope?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/metastore#external_access_enabled DataDatabricksMetastore#external_access_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/metastore#external_access_enabled DataDatabricksMetastore#external_access_enabled}
   */
-  readonly externalAccessEnabled?: boolean | cdktf.IResolvable;
+  readonly externalAccessEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/metastore#global_metastore_id DataDatabricksMetastore#global_metastore_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/metastore#global_metastore_id DataDatabricksMetastore#global_metastore_id}
   */
   readonly globalMetastoreId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/metastore#metastore_id DataDatabricksMetastore#metastore_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/metastore#metastore_id DataDatabricksMetastore#metastore_id}
   */
   readonly metastoreId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/metastore#name DataDatabricksMetastore#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/metastore#name DataDatabricksMetastore#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/metastore#owner DataDatabricksMetastore#owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/metastore#owner DataDatabricksMetastore#owner}
   */
   readonly owner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/metastore#privilege_model_version DataDatabricksMetastore#privilege_model_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/metastore#privilege_model_version DataDatabricksMetastore#privilege_model_version}
   */
   readonly privilegeModelVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/metastore#region DataDatabricksMetastore#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/metastore#region DataDatabricksMetastore#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/metastore#storage_root DataDatabricksMetastore#storage_root}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/metastore#storage_root DataDatabricksMetastore#storage_root}
   */
   readonly storageRoot?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/metastore#storage_root_credential_id DataDatabricksMetastore#storage_root_credential_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/metastore#storage_root_credential_id DataDatabricksMetastore#storage_root_credential_id}
   */
   readonly storageRootCredentialId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/metastore#storage_root_credential_name DataDatabricksMetastore#storage_root_credential_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/metastore#storage_root_credential_name DataDatabricksMetastore#storage_root_credential_name}
   */
   readonly storageRootCredentialName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/metastore#updated_at DataDatabricksMetastore#updated_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/metastore#updated_at DataDatabricksMetastore#updated_at}
   */
   readonly updatedAt?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/metastore#updated_by DataDatabricksMetastore#updated_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/metastore#updated_by DataDatabricksMetastore#updated_by}
   */
   readonly updatedBy?: string;
 }
 
 export function dataDatabricksMetastoreMetastoreInfoToTerraform(struct?: DataDatabricksMetastoreMetastoreInfoOutputReference | DataDatabricksMetastoreMetastoreInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cloud: cdktf.stringToTerraform(struct!.cloud),
-    created_at: cdktf.numberToTerraform(struct!.createdAt),
-    created_by: cdktf.stringToTerraform(struct!.createdBy),
-    default_data_access_config_id: cdktf.stringToTerraform(struct!.defaultDataAccessConfigId),
-    delta_sharing_organization_name: cdktf.stringToTerraform(struct!.deltaSharingOrganizationName),
-    delta_sharing_recipient_token_lifetime_in_seconds: cdktf.numberToTerraform(struct!.deltaSharingRecipientTokenLifetimeInSeconds),
-    delta_sharing_scope: cdktf.stringToTerraform(struct!.deltaSharingScope),
-    external_access_enabled: cdktf.booleanToTerraform(struct!.externalAccessEnabled),
-    global_metastore_id: cdktf.stringToTerraform(struct!.globalMetastoreId),
-    metastore_id: cdktf.stringToTerraform(struct!.metastoreId),
-    name: cdktf.stringToTerraform(struct!.name),
-    owner: cdktf.stringToTerraform(struct!.owner),
-    privilege_model_version: cdktf.stringToTerraform(struct!.privilegeModelVersion),
-    region: cdktf.stringToTerraform(struct!.region),
-    storage_root: cdktf.stringToTerraform(struct!.storageRoot),
-    storage_root_credential_id: cdktf.stringToTerraform(struct!.storageRootCredentialId),
-    storage_root_credential_name: cdktf.stringToTerraform(struct!.storageRootCredentialName),
-    updated_at: cdktf.numberToTerraform(struct!.updatedAt),
-    updated_by: cdktf.stringToTerraform(struct!.updatedBy),
+    cloud: cdktn.stringToTerraform(struct!.cloud),
+    created_at: cdktn.numberToTerraform(struct!.createdAt),
+    created_by: cdktn.stringToTerraform(struct!.createdBy),
+    default_data_access_config_id: cdktn.stringToTerraform(struct!.defaultDataAccessConfigId),
+    delta_sharing_organization_name: cdktn.stringToTerraform(struct!.deltaSharingOrganizationName),
+    delta_sharing_recipient_token_lifetime_in_seconds: cdktn.numberToTerraform(struct!.deltaSharingRecipientTokenLifetimeInSeconds),
+    delta_sharing_scope: cdktn.stringToTerraform(struct!.deltaSharingScope),
+    external_access_enabled: cdktn.booleanToTerraform(struct!.externalAccessEnabled),
+    global_metastore_id: cdktn.stringToTerraform(struct!.globalMetastoreId),
+    metastore_id: cdktn.stringToTerraform(struct!.metastoreId),
+    name: cdktn.stringToTerraform(struct!.name),
+    owner: cdktn.stringToTerraform(struct!.owner),
+    privilege_model_version: cdktn.stringToTerraform(struct!.privilegeModelVersion),
+    region: cdktn.stringToTerraform(struct!.region),
+    storage_root: cdktn.stringToTerraform(struct!.storageRoot),
+    storage_root_credential_id: cdktn.stringToTerraform(struct!.storageRootCredentialId),
+    storage_root_credential_name: cdktn.stringToTerraform(struct!.storageRootCredentialName),
+    updated_at: cdktn.numberToTerraform(struct!.updatedAt),
+    updated_by: cdktn.stringToTerraform(struct!.updatedBy),
   }
 }
 
 
 export function dataDatabricksMetastoreMetastoreInfoToHclTerraform(struct?: DataDatabricksMetastoreMetastoreInfoOutputReference | DataDatabricksMetastoreMetastoreInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cloud: {
-      value: cdktf.stringToHclTerraform(struct!.cloud),
+      value: cdktn.stringToHclTerraform(struct!.cloud),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     created_at: {
-      value: cdktf.numberToHclTerraform(struct!.createdAt),
+      value: cdktn.numberToHclTerraform(struct!.createdAt),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     created_by: {
-      value: cdktf.stringToHclTerraform(struct!.createdBy),
+      value: cdktn.stringToHclTerraform(struct!.createdBy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     default_data_access_config_id: {
-      value: cdktf.stringToHclTerraform(struct!.defaultDataAccessConfigId),
+      value: cdktn.stringToHclTerraform(struct!.defaultDataAccessConfigId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delta_sharing_organization_name: {
-      value: cdktf.stringToHclTerraform(struct!.deltaSharingOrganizationName),
+      value: cdktn.stringToHclTerraform(struct!.deltaSharingOrganizationName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delta_sharing_recipient_token_lifetime_in_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.deltaSharingRecipientTokenLifetimeInSeconds),
+      value: cdktn.numberToHclTerraform(struct!.deltaSharingRecipientTokenLifetimeInSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     delta_sharing_scope: {
-      value: cdktf.stringToHclTerraform(struct!.deltaSharingScope),
+      value: cdktn.stringToHclTerraform(struct!.deltaSharingScope),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     external_access_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.externalAccessEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.externalAccessEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     global_metastore_id: {
-      value: cdktf.stringToHclTerraform(struct!.globalMetastoreId),
+      value: cdktn.stringToHclTerraform(struct!.globalMetastoreId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     metastore_id: {
-      value: cdktf.stringToHclTerraform(struct!.metastoreId),
+      value: cdktn.stringToHclTerraform(struct!.metastoreId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     owner: {
-      value: cdktf.stringToHclTerraform(struct!.owner),
+      value: cdktn.stringToHclTerraform(struct!.owner),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     privilege_model_version: {
-      value: cdktf.stringToHclTerraform(struct!.privilegeModelVersion),
+      value: cdktn.stringToHclTerraform(struct!.privilegeModelVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     region: {
-      value: cdktf.stringToHclTerraform(struct!.region),
+      value: cdktn.stringToHclTerraform(struct!.region),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     storage_root: {
-      value: cdktf.stringToHclTerraform(struct!.storageRoot),
+      value: cdktn.stringToHclTerraform(struct!.storageRoot),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     storage_root_credential_id: {
-      value: cdktf.stringToHclTerraform(struct!.storageRootCredentialId),
+      value: cdktn.stringToHclTerraform(struct!.storageRootCredentialId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     storage_root_credential_name: {
-      value: cdktf.stringToHclTerraform(struct!.storageRootCredentialName),
+      value: cdktn.stringToHclTerraform(struct!.storageRootCredentialName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     updated_at: {
-      value: cdktf.numberToHclTerraform(struct!.updatedAt),
+      value: cdktn.numberToHclTerraform(struct!.updatedAt),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     updated_by: {
-      value: cdktf.stringToHclTerraform(struct!.updatedBy),
+      value: cdktn.stringToHclTerraform(struct!.updatedBy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -272,14 +272,14 @@ export function dataDatabricksMetastoreMetastoreInfoToHclTerraform(struct?: Data
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksMetastoreMetastoreInfoOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksMetastoreMetastoreInfoOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -525,11 +525,11 @@ export class DataDatabricksMetastoreMetastoreInfoOutputReference extends cdktf.C
   }
 
   // external_access_enabled - computed: false, optional: true, required: false
-  private _externalAccessEnabled?: boolean | cdktf.IResolvable; 
+  private _externalAccessEnabled?: boolean | cdktn.IResolvable; 
   public get externalAccessEnabled() {
     return this.getBooleanAttribute('external_access_enabled');
   }
-  public set externalAccessEnabled(value: boolean | cdktf.IResolvable) {
+  public set externalAccessEnabled(value: boolean | cdktn.IResolvable) {
     this._externalAccessEnabled = value;
   }
   public resetExternalAccessEnabled() {
@@ -718,9 +718,9 @@ export class DataDatabricksMetastoreMetastoreInfoOutputReference extends cdktf.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/metastore databricks_metastore}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/metastore databricks_metastore}
 */
-export class DataDatabricksMetastore extends cdktf.TerraformDataSource {
+export class DataDatabricksMetastore extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -731,14 +731,14 @@ export class DataDatabricksMetastore extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataDatabricksMetastore resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataDatabricksMetastore resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksMetastore to import
-  * @param importFromId The id of the existing DataDatabricksMetastore that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/metastore#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksMetastore that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/metastore#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksMetastore to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_metastore", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_metastore", importId: importFromId, provider });
       }
 
   // ===========
@@ -746,7 +746,7 @@ export class DataDatabricksMetastore extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/metastore databricks_metastore} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/metastore databricks_metastore} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -757,7 +757,7 @@ export class DataDatabricksMetastore extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_metastore',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -865,10 +865,10 @@ export class DataDatabricksMetastore extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      metastore_id: cdktf.stringToTerraform(this._metastoreId),
-      name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
+      id: cdktn.stringToTerraform(this._id),
+      metastore_id: cdktn.stringToTerraform(this._metastoreId),
+      name: cdktn.stringToTerraform(this._name),
+      region: cdktn.stringToTerraform(this._region),
       metastore_info: dataDatabricksMetastoreMetastoreInfoToTerraform(this._metastoreInfo.internalValue),
     };
   }
@@ -876,25 +876,25 @@ export class DataDatabricksMetastore extends cdktf.TerraformDataSource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       metastore_id: {
-        value: cdktf.stringToHclTerraform(this._metastoreId),
+        value: cdktn.stringToHclTerraform(this._metastoreId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

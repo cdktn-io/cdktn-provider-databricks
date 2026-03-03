@@ -1,69 +1,69 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/jobs
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/jobs
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataDatabricksJobsConfig extends cdktf.TerraformMetaArguments {
+export interface DataDatabricksJobsConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/jobs#id DataDatabricksJobs#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/jobs#id DataDatabricksJobs#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/jobs#ids DataDatabricksJobs#ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/jobs#ids DataDatabricksJobs#ids}
   */
   readonly ids?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/jobs#job_name_contains DataDatabricksJobs#job_name_contains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/jobs#job_name_contains DataDatabricksJobs#job_name_contains}
   */
   readonly jobNameContains?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/jobs#key DataDatabricksJobs#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/jobs#key DataDatabricksJobs#key}
   */
   readonly key?: string;
   /**
   * provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/jobs#provider_config DataDatabricksJobs#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/jobs#provider_config DataDatabricksJobs#provider_config}
   */
   readonly providerConfig?: DataDatabricksJobsProviderConfig;
 }
 export interface DataDatabricksJobsProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/jobs#workspace_id DataDatabricksJobs#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/jobs#workspace_id DataDatabricksJobs#workspace_id}
   */
   readonly workspaceId: string;
 }
 
 export function dataDatabricksJobsProviderConfigToTerraform(struct?: DataDatabricksJobsProviderConfigOutputReference | DataDatabricksJobsProviderConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    workspace_id: cdktf.stringToTerraform(struct!.workspaceId),
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
   }
 }
 
 
 export function dataDatabricksJobsProviderConfigToHclTerraform(struct?: DataDatabricksJobsProviderConfigOutputReference | DataDatabricksJobsProviderConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     workspace_id: {
-      value: cdktf.stringToHclTerraform(struct!.workspaceId),
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -74,14 +74,14 @@ export function dataDatabricksJobsProviderConfigToHclTerraform(struct?: DataData
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksJobsProviderConfigOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksJobsProviderConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -121,9 +121,9 @@ export class DataDatabricksJobsProviderConfigOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/jobs databricks_jobs}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/jobs databricks_jobs}
 */
-export class DataDatabricksJobs extends cdktf.TerraformDataSource {
+export class DataDatabricksJobs extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -134,14 +134,14 @@ export class DataDatabricksJobs extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataDatabricksJobs resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataDatabricksJobs resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksJobs to import
-  * @param importFromId The id of the existing DataDatabricksJobs that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/jobs#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksJobs that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/jobs#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksJobs to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_jobs", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_jobs", importId: importFromId, provider });
       }
 
   // ===========
@@ -149,7 +149,7 @@ export class DataDatabricksJobs extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/jobs databricks_jobs} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/jobs databricks_jobs} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -160,7 +160,7 @@ export class DataDatabricksJobs extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_jobs',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -268,10 +268,10 @@ export class DataDatabricksJobs extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      ids: cdktf.hashMapper(cdktf.stringToTerraform)(this._ids),
-      job_name_contains: cdktf.stringToTerraform(this._jobNameContains),
-      key: cdktf.stringToTerraform(this._key),
+      id: cdktn.stringToTerraform(this._id),
+      ids: cdktn.hashMapper(cdktn.stringToTerraform)(this._ids),
+      job_name_contains: cdktn.stringToTerraform(this._jobNameContains),
+      key: cdktn.stringToTerraform(this._key),
       provider_config: dataDatabricksJobsProviderConfigToTerraform(this._providerConfig.internalValue),
     };
   }
@@ -279,25 +279,25 @@ export class DataDatabricksJobs extends cdktf.TerraformDataSource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ids: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._ids),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._ids),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       job_name_contains: {
-        value: cdktf.stringToHclTerraform(this._jobNameContains),
+        value: cdktn.stringToHclTerraform(this._jobNameContains),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       key: {
-        value: cdktf.stringToHclTerraform(this._key),
+        value: cdktn.stringToHclTerraform(this._key),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

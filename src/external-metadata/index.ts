@@ -1,55 +1,150 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/external_metadata
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/external_metadata
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ExternalMetadataConfig extends cdktf.TerraformMetaArguments {
+export interface ExternalMetadataConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/external_metadata#columns ExternalMetadata#columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/external_metadata#columns ExternalMetadata#columns}
   */
   readonly columns?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/external_metadata#description ExternalMetadata#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/external_metadata#description ExternalMetadata#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/external_metadata#entity_type ExternalMetadata#entity_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/external_metadata#entity_type ExternalMetadata#entity_type}
   */
   readonly entityType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/external_metadata#name ExternalMetadata#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/external_metadata#name ExternalMetadata#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/external_metadata#owner ExternalMetadata#owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/external_metadata#owner ExternalMetadata#owner}
   */
   readonly owner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/external_metadata#properties ExternalMetadata#properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/external_metadata#properties ExternalMetadata#properties}
   */
   readonly properties?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/external_metadata#system_type ExternalMetadata#system_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/external_metadata#provider_config ExternalMetadata#provider_config}
+  */
+  readonly providerConfig?: ExternalMetadataProviderConfig;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/external_metadata#system_type ExternalMetadata#system_type}
   */
   readonly systemType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/external_metadata#url ExternalMetadata#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/external_metadata#url ExternalMetadata#url}
   */
   readonly url?: string;
 }
+export interface ExternalMetadataProviderConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/external_metadata#workspace_id ExternalMetadata#workspace_id}
+  */
+  readonly workspaceId: string;
+}
+
+export function externalMetadataProviderConfigToTerraform(struct?: ExternalMetadataProviderConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
+  }
+}
+
+
+export function externalMetadataProviderConfigToHclTerraform(struct?: ExternalMetadataProviderConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    workspace_id: {
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ExternalMetadataProviderConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): ExternalMetadataProviderConfig | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._workspaceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workspaceId = this._workspaceId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ExternalMetadataProviderConfig | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._workspaceId = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._workspaceId = value.workspaceId;
+    }
+  }
+
+  // workspace_id - computed: false, optional: false, required: true
+  private _workspaceId?: string; 
+  public get workspaceId() {
+    return this.getStringAttribute('workspace_id');
+  }
+  public set workspaceId(value: string) {
+    this._workspaceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workspaceIdInput() {
+    return this._workspaceId;
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/external_metadata databricks_external_metadata}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/external_metadata databricks_external_metadata}
 */
-export class ExternalMetadata extends cdktf.TerraformResource {
+export class ExternalMetadata extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -60,14 +155,14 @@ export class ExternalMetadata extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ExternalMetadata resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ExternalMetadata resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ExternalMetadata to import
-  * @param importFromId The id of the existing ExternalMetadata that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/external_metadata#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ExternalMetadata that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/external_metadata#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ExternalMetadata to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_external_metadata", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_external_metadata", importId: importFromId, provider });
       }
 
   // ===========
@@ -75,7 +170,7 @@ export class ExternalMetadata extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/external_metadata databricks_external_metadata} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/external_metadata databricks_external_metadata} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -86,7 +181,7 @@ export class ExternalMetadata extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_external_metadata',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -103,6 +198,7 @@ export class ExternalMetadata extends cdktf.TerraformResource {
     this._name = config.name;
     this._owner = config.owner;
     this._properties = config.properties;
+    this._providerConfig.internalValue = config.providerConfig;
     this._systemType = config.systemType;
     this._url = config.url;
   }
@@ -221,6 +317,22 @@ export class ExternalMetadata extends cdktf.TerraformResource {
     return this._properties;
   }
 
+  // provider_config - computed: false, optional: true, required: false
+  private _providerConfig = new ExternalMetadataProviderConfigOutputReference(this, "provider_config");
+  public get providerConfig() {
+    return this._providerConfig;
+  }
+  public putProviderConfig(value: ExternalMetadataProviderConfig) {
+    this._providerConfig.internalValue = value;
+  }
+  public resetProviderConfig() {
+    this._providerConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerConfigInput() {
+    return this._providerConfig.internalValue;
+  }
+
   // system_type - computed: false, optional: false, required: true
   private _systemType?: string; 
   public get systemType() {
@@ -266,63 +378,70 @@ export class ExternalMetadata extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      columns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._columns),
-      description: cdktf.stringToTerraform(this._description),
-      entity_type: cdktf.stringToTerraform(this._entityType),
-      name: cdktf.stringToTerraform(this._name),
-      owner: cdktf.stringToTerraform(this._owner),
-      properties: cdktf.hashMapper(cdktf.stringToTerraform)(this._properties),
-      system_type: cdktf.stringToTerraform(this._systemType),
-      url: cdktf.stringToTerraform(this._url),
+      columns: cdktn.listMapper(cdktn.stringToTerraform, false)(this._columns),
+      description: cdktn.stringToTerraform(this._description),
+      entity_type: cdktn.stringToTerraform(this._entityType),
+      name: cdktn.stringToTerraform(this._name),
+      owner: cdktn.stringToTerraform(this._owner),
+      properties: cdktn.hashMapper(cdktn.stringToTerraform)(this._properties),
+      provider_config: externalMetadataProviderConfigToTerraform(this._providerConfig.internalValue),
+      system_type: cdktn.stringToTerraform(this._systemType),
+      url: cdktn.stringToTerraform(this._url),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       columns: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._columns),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._columns),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       entity_type: {
-        value: cdktf.stringToHclTerraform(this._entityType),
+        value: cdktn.stringToHclTerraform(this._entityType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       owner: {
-        value: cdktf.stringToHclTerraform(this._owner),
+        value: cdktn.stringToHclTerraform(this._owner),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       properties: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._properties),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._properties),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
+      provider_config: {
+        value: externalMetadataProviderConfigToHclTerraform(this._providerConfig.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "ExternalMetadataProviderConfig",
+      },
       system_type: {
-        value: cdktf.stringToHclTerraform(this._systemType),
+        value: cdktn.stringToHclTerraform(this._systemType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       url: {
-        value: cdktf.stringToHclTerraform(this._url),
+        value: cdktn.stringToHclTerraform(this._url),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

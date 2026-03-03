@@ -1,90 +1,96 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_endpoint
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_endpoint
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SqlEndpointConfig extends cdktf.TerraformMetaArguments {
+export interface SqlEndpointConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_endpoint#auto_stop_mins SqlEndpoint#auto_stop_mins}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_endpoint#auto_stop_mins SqlEndpoint#auto_stop_mins}
   */
   readonly autoStopMins?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_endpoint#cluster_size SqlEndpoint#cluster_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_endpoint#cluster_size SqlEndpoint#cluster_size}
   */
   readonly clusterSize: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_endpoint#data_source_id SqlEndpoint#data_source_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_endpoint#data_source_id SqlEndpoint#data_source_id}
   */
   readonly dataSourceId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_endpoint#enable_photon SqlEndpoint#enable_photon}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_endpoint#enable_photon SqlEndpoint#enable_photon}
   */
-  readonly enablePhoton?: boolean | cdktf.IResolvable;
+  readonly enablePhoton?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_endpoint#enable_serverless_compute SqlEndpoint#enable_serverless_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_endpoint#enable_serverless_compute SqlEndpoint#enable_serverless_compute}
   */
-  readonly enableServerlessCompute?: boolean | cdktf.IResolvable;
+  readonly enableServerlessCompute?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_endpoint#id SqlEndpoint#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_endpoint#id SqlEndpoint#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_endpoint#instance_profile_arn SqlEndpoint#instance_profile_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_endpoint#instance_profile_arn SqlEndpoint#instance_profile_arn}
   */
   readonly instanceProfileArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_endpoint#max_num_clusters SqlEndpoint#max_num_clusters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_endpoint#max_num_clusters SqlEndpoint#max_num_clusters}
   */
   readonly maxNumClusters?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_endpoint#min_num_clusters SqlEndpoint#min_num_clusters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_endpoint#min_num_clusters SqlEndpoint#min_num_clusters}
   */
   readonly minNumClusters?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_endpoint#name SqlEndpoint#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_endpoint#name SqlEndpoint#name}
   */
   readonly name: string;
   /**
   * If true, skip waiting for the warehouse to start after creation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_endpoint#no_wait SqlEndpoint#no_wait}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_endpoint#no_wait SqlEndpoint#no_wait}
   */
-  readonly noWait?: boolean | cdktf.IResolvable;
+  readonly noWait?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_endpoint#spot_instance_policy SqlEndpoint#spot_instance_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_endpoint#spot_instance_policy SqlEndpoint#spot_instance_policy}
   */
   readonly spotInstancePolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_endpoint#warehouse_type SqlEndpoint#warehouse_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_endpoint#warehouse_type SqlEndpoint#warehouse_type}
   */
   readonly warehouseType?: string;
   /**
   * channel block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_endpoint#channel SqlEndpoint#channel}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_endpoint#channel SqlEndpoint#channel}
   */
   readonly channel?: SqlEndpointChannel;
   /**
+  * provider_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_endpoint#provider_config SqlEndpoint#provider_config}
+  */
+  readonly providerConfig?: SqlEndpointProviderConfig;
+  /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_endpoint#tags SqlEndpoint#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_endpoint#tags SqlEndpoint#tags}
   */
   readonly tags?: SqlEndpointTags;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_endpoint#timeouts SqlEndpoint#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_endpoint#timeouts SqlEndpoint#timeouts}
   */
   readonly timeouts?: SqlEndpointTimeouts;
 }
@@ -92,8 +98,8 @@ export interface SqlEndpointHealthFailureReason {
 }
 
 export function sqlEndpointHealthFailureReasonToTerraform(struct?: SqlEndpointHealthFailureReason): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -102,8 +108,8 @@ export function sqlEndpointHealthFailureReasonToTerraform(struct?: SqlEndpointHe
 
 
 export function sqlEndpointHealthFailureReasonToHclTerraform(struct?: SqlEndpointHealthFailureReason): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -111,7 +117,7 @@ export function sqlEndpointHealthFailureReasonToHclTerraform(struct?: SqlEndpoin
   return attrs;
 }
 
-export class SqlEndpointHealthFailureReasonOutputReference extends cdktf.ComplexObject {
+export class SqlEndpointHealthFailureReasonOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -120,7 +126,7 @@ export class SqlEndpointHealthFailureReasonOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -145,7 +151,7 @@ export class SqlEndpointHealthFailureReasonOutputReference extends cdktf.Complex
   }
 
   // parameters - computed: true, optional: false, required: false
-  private _parameters = new cdktf.StringMap(this, "parameters");
+  private _parameters = new cdktn.StringMap(this, "parameters");
   public get parameters() {
     return this._parameters;
   }
@@ -156,14 +162,14 @@ export class SqlEndpointHealthFailureReasonOutputReference extends cdktf.Complex
   }
 }
 
-export class SqlEndpointHealthFailureReasonList extends cdktf.ComplexList {
+export class SqlEndpointHealthFailureReasonList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -178,8 +184,8 @@ export interface SqlEndpointHealth {
 }
 
 export function sqlEndpointHealthToTerraform(struct?: SqlEndpointHealth): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -188,8 +194,8 @@ export function sqlEndpointHealthToTerraform(struct?: SqlEndpointHealth): any {
 
 
 export function sqlEndpointHealthToHclTerraform(struct?: SqlEndpointHealth): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -197,7 +203,7 @@ export function sqlEndpointHealthToHclTerraform(struct?: SqlEndpointHealth): any
   return attrs;
 }
 
-export class SqlEndpointHealthOutputReference extends cdktf.ComplexObject {
+export class SqlEndpointHealthOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -206,7 +212,7 @@ export class SqlEndpointHealthOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -252,14 +258,14 @@ export class SqlEndpointHealthOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class SqlEndpointHealthList extends cdktf.ComplexList {
+export class SqlEndpointHealthList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -274,8 +280,8 @@ export interface SqlEndpointOdbcParams {
 }
 
 export function sqlEndpointOdbcParamsToTerraform(struct?: SqlEndpointOdbcParams): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -284,8 +290,8 @@ export function sqlEndpointOdbcParamsToTerraform(struct?: SqlEndpointOdbcParams)
 
 
 export function sqlEndpointOdbcParamsToHclTerraform(struct?: SqlEndpointOdbcParams): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -293,7 +299,7 @@ export function sqlEndpointOdbcParamsToHclTerraform(struct?: SqlEndpointOdbcPara
   return attrs;
 }
 
-export class SqlEndpointOdbcParamsOutputReference extends cdktf.ComplexObject {
+export class SqlEndpointOdbcParamsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -302,7 +308,7 @@ export class SqlEndpointOdbcParamsOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -342,14 +348,14 @@ export class SqlEndpointOdbcParamsOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class SqlEndpointOdbcParamsList extends cdktf.ComplexList {
+export class SqlEndpointOdbcParamsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -362,41 +368,41 @@ export class SqlEndpointOdbcParamsList extends cdktf.ComplexList {
 }
 export interface SqlEndpointChannel {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_endpoint#dbsql_version SqlEndpoint#dbsql_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_endpoint#dbsql_version SqlEndpoint#dbsql_version}
   */
   readonly dbsqlVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_endpoint#name SqlEndpoint#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_endpoint#name SqlEndpoint#name}
   */
   readonly name?: string;
 }
 
 export function sqlEndpointChannelToTerraform(struct?: SqlEndpointChannelOutputReference | SqlEndpointChannel): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    dbsql_version: cdktf.stringToTerraform(struct!.dbsqlVersion),
-    name: cdktf.stringToTerraform(struct!.name),
+    dbsql_version: cdktn.stringToTerraform(struct!.dbsqlVersion),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
 export function sqlEndpointChannelToHclTerraform(struct?: SqlEndpointChannelOutputReference | SqlEndpointChannel): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     dbsql_version: {
-      value: cdktf.stringToHclTerraform(struct!.dbsqlVersion),
+      value: cdktn.stringToHclTerraform(struct!.dbsqlVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -407,14 +413,14 @@ export function sqlEndpointChannelToHclTerraform(struct?: SqlEndpointChannelOutp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SqlEndpointChannelOutputReference extends cdktf.ComplexObject {
+export class SqlEndpointChannelOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -477,43 +483,32 @@ export class SqlEndpointChannelOutputReference extends cdktf.ComplexObject {
     return this._name;
   }
 }
-export interface SqlEndpointTagsCustomTags {
+export interface SqlEndpointProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_endpoint#key SqlEndpoint#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_endpoint#workspace_id SqlEndpoint#workspace_id}
   */
-  readonly key: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_endpoint#value SqlEndpoint#value}
-  */
-  readonly value: string;
+  readonly workspaceId: string;
 }
 
-export function sqlEndpointTagsCustomTagsToTerraform(struct?: SqlEndpointTagsCustomTags | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sqlEndpointProviderConfigToTerraform(struct?: SqlEndpointProviderConfigOutputReference | SqlEndpointProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    value: cdktf.stringToTerraform(struct!.value),
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
   }
 }
 
 
-export function sqlEndpointTagsCustomTagsToHclTerraform(struct?: SqlEndpointTagsCustomTags | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sqlEndpointProviderConfigToHclTerraform(struct?: SqlEndpointProviderConfigOutputReference | SqlEndpointProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
-    key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+    workspace_id: {
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -524,9 +519,101 @@ export function sqlEndpointTagsCustomTagsToHclTerraform(struct?: SqlEndpointTags
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SqlEndpointTagsCustomTagsOutputReference extends cdktf.ComplexObject {
+export class SqlEndpointProviderConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): SqlEndpointProviderConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._workspaceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workspaceId = this._workspaceId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SqlEndpointProviderConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._workspaceId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._workspaceId = value.workspaceId;
+    }
+  }
+
+  // workspace_id - computed: false, optional: false, required: true
+  private _workspaceId?: string; 
+  public get workspaceId() {
+    return this.getStringAttribute('workspace_id');
+  }
+  public set workspaceId(value: string) {
+    this._workspaceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workspaceIdInput() {
+    return this._workspaceId;
+  }
+}
+export interface SqlEndpointTagsCustomTags {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_endpoint#key SqlEndpoint#key}
+  */
+  readonly key: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_endpoint#value SqlEndpoint#value}
+  */
+  readonly value: string;
+}
+
+export function sqlEndpointTagsCustomTagsToTerraform(struct?: SqlEndpointTagsCustomTags | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    key: cdktn.stringToTerraform(struct!.key),
+    value: cdktn.stringToTerraform(struct!.value),
+  }
+}
+
+
+export function sqlEndpointTagsCustomTagsToHclTerraform(struct?: SqlEndpointTagsCustomTags | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktn.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktn.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class SqlEndpointTagsCustomTagsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -534,11 +621,11 @@ export class SqlEndpointTagsCustomTagsOutputReference extends cdktf.ComplexObjec
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SqlEndpointTagsCustomTags | cdktf.IResolvable | undefined {
+  public get internalValue(): SqlEndpointTagsCustomTags | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -555,14 +642,14 @@ export class SqlEndpointTagsCustomTagsOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SqlEndpointTagsCustomTags | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SqlEndpointTagsCustomTags | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -601,15 +688,15 @@ export class SqlEndpointTagsCustomTagsOutputReference extends cdktf.ComplexObjec
   }
 }
 
-export class SqlEndpointTagsCustomTagsList extends cdktf.ComplexList {
-  public internalValue? : SqlEndpointTagsCustomTags[] | cdktf.IResolvable
+export class SqlEndpointTagsCustomTagsList extends cdktn.ComplexList {
+  public internalValue? : SqlEndpointTagsCustomTags[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -624,30 +711,30 @@ export interface SqlEndpointTags {
   /**
   * custom_tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_endpoint#custom_tags SqlEndpoint#custom_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_endpoint#custom_tags SqlEndpoint#custom_tags}
   */
-  readonly customTags?: SqlEndpointTagsCustomTags[] | cdktf.IResolvable;
+  readonly customTags?: SqlEndpointTagsCustomTags[] | cdktn.IResolvable;
 }
 
 export function sqlEndpointTagsToTerraform(struct?: SqlEndpointTagsOutputReference | SqlEndpointTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    custom_tags: cdktf.listMapper(sqlEndpointTagsCustomTagsToTerraform, true)(struct!.customTags),
+    custom_tags: cdktn.listMapper(sqlEndpointTagsCustomTagsToTerraform, true)(struct!.customTags),
   }
 }
 
 
 export function sqlEndpointTagsToHclTerraform(struct?: SqlEndpointTagsOutputReference | SqlEndpointTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     custom_tags: {
-      value: cdktf.listMapperHcl(sqlEndpointTagsCustomTagsToHclTerraform, true)(struct!.customTags),
+      value: cdktn.listMapperHcl(sqlEndpointTagsCustomTagsToHclTerraform, true)(struct!.customTags),
       isBlock: true,
       type: "list",
       storageClassType: "SqlEndpointTagsCustomTagsList",
@@ -658,14 +745,14 @@ export function sqlEndpointTagsToHclTerraform(struct?: SqlEndpointTagsOutputRefe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SqlEndpointTagsOutputReference extends cdktf.ComplexObject {
+export class SqlEndpointTagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -695,7 +782,7 @@ export class SqlEndpointTagsOutputReference extends cdktf.ComplexObject {
   public get customTags() {
     return this._customTags;
   }
-  public putCustomTags(value: SqlEndpointTagsCustomTags[] | cdktf.IResolvable) {
+  public putCustomTags(value: SqlEndpointTagsCustomTags[] | cdktn.IResolvable) {
     this._customTags.internalValue = value;
   }
   public resetCustomTags() {
@@ -708,30 +795,30 @@ export class SqlEndpointTagsOutputReference extends cdktf.ComplexObject {
 }
 export interface SqlEndpointTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_endpoint#create SqlEndpoint#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_endpoint#create SqlEndpoint#create}
   */
   readonly create?: string;
 }
 
-export function sqlEndpointTimeoutsToTerraform(struct?: SqlEndpointTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sqlEndpointTimeoutsToTerraform(struct?: SqlEndpointTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
+    create: cdktn.stringToTerraform(struct!.create),
   }
 }
 
 
-export function sqlEndpointTimeoutsToHclTerraform(struct?: SqlEndpointTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sqlEndpointTimeoutsToHclTerraform(struct?: SqlEndpointTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -742,19 +829,19 @@ export function sqlEndpointTimeoutsToHclTerraform(struct?: SqlEndpointTimeouts |
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SqlEndpointTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SqlEndpointTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SqlEndpointTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SqlEndpointTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -767,13 +854,13 @@ export class SqlEndpointTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SqlEndpointTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SqlEndpointTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -802,9 +889,9 @@ export class SqlEndpointTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_endpoint databricks_sql_endpoint}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_endpoint databricks_sql_endpoint}
 */
-export class SqlEndpoint extends cdktf.TerraformResource {
+export class SqlEndpoint extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -815,14 +902,14 @@ export class SqlEndpoint extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SqlEndpoint resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SqlEndpoint resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SqlEndpoint to import
-  * @param importFromId The id of the existing SqlEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_endpoint#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SqlEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_endpoint#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SqlEndpoint to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_sql_endpoint", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_sql_endpoint", importId: importFromId, provider });
       }
 
   // ===========
@@ -830,7 +917,7 @@ export class SqlEndpoint extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_endpoint databricks_sql_endpoint} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_endpoint databricks_sql_endpoint} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -841,7 +928,7 @@ export class SqlEndpoint extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_sql_endpoint',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -866,6 +953,7 @@ export class SqlEndpoint extends cdktf.TerraformResource {
     this._spotInstancePolicy = config.spotInstancePolicy;
     this._warehouseType = config.warehouseType;
     this._channel.internalValue = config.channel;
+    this._providerConfig.internalValue = config.providerConfig;
     this._tags.internalValue = config.tags;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -925,11 +1013,11 @@ export class SqlEndpoint extends cdktf.TerraformResource {
   }
 
   // enable_photon - computed: false, optional: true, required: false
-  private _enablePhoton?: boolean | cdktf.IResolvable; 
+  private _enablePhoton?: boolean | cdktn.IResolvable; 
   public get enablePhoton() {
     return this.getBooleanAttribute('enable_photon');
   }
-  public set enablePhoton(value: boolean | cdktf.IResolvable) {
+  public set enablePhoton(value: boolean | cdktn.IResolvable) {
     this._enablePhoton = value;
   }
   public resetEnablePhoton() {
@@ -941,11 +1029,11 @@ export class SqlEndpoint extends cdktf.TerraformResource {
   }
 
   // enable_serverless_compute - computed: true, optional: true, required: false
-  private _enableServerlessCompute?: boolean | cdktf.IResolvable; 
+  private _enableServerlessCompute?: boolean | cdktn.IResolvable; 
   public get enableServerlessCompute() {
     return this.getBooleanAttribute('enable_serverless_compute');
   }
-  public set enableServerlessCompute(value: boolean | cdktf.IResolvable) {
+  public set enableServerlessCompute(value: boolean | cdktn.IResolvable) {
     this._enableServerlessCompute = value;
   }
   public resetEnableServerlessCompute() {
@@ -1045,11 +1133,11 @@ export class SqlEndpoint extends cdktf.TerraformResource {
   }
 
   // no_wait - computed: false, optional: true, required: false
-  private _noWait?: boolean | cdktf.IResolvable; 
+  private _noWait?: boolean | cdktn.IResolvable; 
   public get noWait() {
     return this.getBooleanAttribute('no_wait');
   }
-  public set noWait(value: boolean | cdktf.IResolvable) {
+  public set noWait(value: boolean | cdktn.IResolvable) {
     this._noWait = value;
   }
   public resetNoWait() {
@@ -1129,6 +1217,22 @@ export class SqlEndpoint extends cdktf.TerraformResource {
     return this._channel.internalValue;
   }
 
+  // provider_config - computed: false, optional: true, required: false
+  private _providerConfig = new SqlEndpointProviderConfigOutputReference(this, "provider_config");
+  public get providerConfig() {
+    return this._providerConfig;
+  }
+  public putProviderConfig(value: SqlEndpointProviderConfig) {
+    this._providerConfig.internalValue = value;
+  }
+  public resetProviderConfig() {
+    this._providerConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerConfigInput() {
+    return this._providerConfig.internalValue;
+  }
+
   // tags - computed: false, optional: true, required: false
   private _tags = new SqlEndpointTagsOutputReference(this, "tags");
   public get tags() {
@@ -1167,20 +1271,21 @@ export class SqlEndpoint extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      auto_stop_mins: cdktf.numberToTerraform(this._autoStopMins),
-      cluster_size: cdktf.stringToTerraform(this._clusterSize),
-      data_source_id: cdktf.stringToTerraform(this._dataSourceId),
-      enable_photon: cdktf.booleanToTerraform(this._enablePhoton),
-      enable_serverless_compute: cdktf.booleanToTerraform(this._enableServerlessCompute),
-      id: cdktf.stringToTerraform(this._id),
-      instance_profile_arn: cdktf.stringToTerraform(this._instanceProfileArn),
-      max_num_clusters: cdktf.numberToTerraform(this._maxNumClusters),
-      min_num_clusters: cdktf.numberToTerraform(this._minNumClusters),
-      name: cdktf.stringToTerraform(this._name),
-      no_wait: cdktf.booleanToTerraform(this._noWait),
-      spot_instance_policy: cdktf.stringToTerraform(this._spotInstancePolicy),
-      warehouse_type: cdktf.stringToTerraform(this._warehouseType),
+      auto_stop_mins: cdktn.numberToTerraform(this._autoStopMins),
+      cluster_size: cdktn.stringToTerraform(this._clusterSize),
+      data_source_id: cdktn.stringToTerraform(this._dataSourceId),
+      enable_photon: cdktn.booleanToTerraform(this._enablePhoton),
+      enable_serverless_compute: cdktn.booleanToTerraform(this._enableServerlessCompute),
+      id: cdktn.stringToTerraform(this._id),
+      instance_profile_arn: cdktn.stringToTerraform(this._instanceProfileArn),
+      max_num_clusters: cdktn.numberToTerraform(this._maxNumClusters),
+      min_num_clusters: cdktn.numberToTerraform(this._minNumClusters),
+      name: cdktn.stringToTerraform(this._name),
+      no_wait: cdktn.booleanToTerraform(this._noWait),
+      spot_instance_policy: cdktn.stringToTerraform(this._spotInstancePolicy),
+      warehouse_type: cdktn.stringToTerraform(this._warehouseType),
       channel: sqlEndpointChannelToTerraform(this._channel.internalValue),
+      provider_config: sqlEndpointProviderConfigToTerraform(this._providerConfig.internalValue),
       tags: sqlEndpointTagsToTerraform(this._tags.internalValue),
       timeouts: sqlEndpointTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -1189,79 +1294,79 @@ export class SqlEndpoint extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       auto_stop_mins: {
-        value: cdktf.numberToHclTerraform(this._autoStopMins),
+        value: cdktn.numberToHclTerraform(this._autoStopMins),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       cluster_size: {
-        value: cdktf.stringToHclTerraform(this._clusterSize),
+        value: cdktn.stringToHclTerraform(this._clusterSize),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       data_source_id: {
-        value: cdktf.stringToHclTerraform(this._dataSourceId),
+        value: cdktn.stringToHclTerraform(this._dataSourceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enable_photon: {
-        value: cdktf.booleanToHclTerraform(this._enablePhoton),
+        value: cdktn.booleanToHclTerraform(this._enablePhoton),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       enable_serverless_compute: {
-        value: cdktf.booleanToHclTerraform(this._enableServerlessCompute),
+        value: cdktn.booleanToHclTerraform(this._enableServerlessCompute),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance_profile_arn: {
-        value: cdktf.stringToHclTerraform(this._instanceProfileArn),
+        value: cdktn.stringToHclTerraform(this._instanceProfileArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       max_num_clusters: {
-        value: cdktf.numberToHclTerraform(this._maxNumClusters),
+        value: cdktn.numberToHclTerraform(this._maxNumClusters),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       min_num_clusters: {
-        value: cdktf.numberToHclTerraform(this._minNumClusters),
+        value: cdktn.numberToHclTerraform(this._minNumClusters),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       no_wait: {
-        value: cdktf.booleanToHclTerraform(this._noWait),
+        value: cdktn.booleanToHclTerraform(this._noWait),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       spot_instance_policy: {
-        value: cdktf.stringToHclTerraform(this._spotInstancePolicy),
+        value: cdktn.stringToHclTerraform(this._spotInstancePolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       warehouse_type: {
-        value: cdktf.stringToHclTerraform(this._warehouseType),
+        value: cdktn.stringToHclTerraform(this._warehouseType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -1271,6 +1376,12 @@ export class SqlEndpoint extends cdktf.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "SqlEndpointChannelList",
+      },
+      provider_config: {
+        value: sqlEndpointProviderConfigToHclTerraform(this._providerConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SqlEndpointProviderConfigList",
       },
       tags: {
         value: sqlEndpointTagsToHclTerraform(this._tags.internalValue),

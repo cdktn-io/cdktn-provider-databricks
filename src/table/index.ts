@@ -1,211 +1,217 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/table
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/table
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface TableConfig extends cdktf.TerraformMetaArguments {
+export interface TableConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/table#catalog_name Table#catalog_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/table#catalog_name Table#catalog_name}
   */
   readonly catalogName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/table#comment Table#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/table#comment Table#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/table#data_source_format Table#data_source_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/table#data_source_format Table#data_source_format}
   */
   readonly dataSourceFormat: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/table#id Table#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/table#id Table#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/table#name Table#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/table#name Table#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/table#owner Table#owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/table#owner Table#owner}
   */
   readonly owner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/table#properties Table#properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/table#properties Table#properties}
   */
   readonly properties?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/table#schema_name Table#schema_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/table#schema_name Table#schema_name}
   */
   readonly schemaName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/table#storage_credential_name Table#storage_credential_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/table#storage_credential_name Table#storage_credential_name}
   */
   readonly storageCredentialName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/table#storage_location Table#storage_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/table#storage_location Table#storage_location}
   */
   readonly storageLocation?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/table#table_type Table#table_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/table#table_type Table#table_type}
   */
   readonly tableType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/table#view_definition Table#view_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/table#view_definition Table#view_definition}
   */
   readonly viewDefinition?: string;
   /**
   * column block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/table#column Table#column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/table#column Table#column}
   */
-  readonly column: TableColumn[] | cdktf.IResolvable;
+  readonly column: TableColumn[] | cdktn.IResolvable;
+  /**
+  * provider_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/table#provider_config Table#provider_config}
+  */
+  readonly providerConfig?: TableProviderConfig;
 }
 export interface TableColumn {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/table#comment Table#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/table#comment Table#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/table#name Table#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/table#name Table#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/table#nullable Table#nullable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/table#nullable Table#nullable}
   */
-  readonly nullable?: boolean | cdktf.IResolvable;
+  readonly nullable?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/table#partition_index Table#partition_index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/table#partition_index Table#partition_index}
   */
   readonly partitionIndex?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/table#position Table#position}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/table#position Table#position}
   */
   readonly position: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/table#type_interval_type Table#type_interval_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/table#type_interval_type Table#type_interval_type}
   */
   readonly typeIntervalType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/table#type_json Table#type_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/table#type_json Table#type_json}
   */
   readonly typeJson?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/table#type_name Table#type_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/table#type_name Table#type_name}
   */
   readonly typeName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/table#type_precision Table#type_precision}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/table#type_precision Table#type_precision}
   */
   readonly typePrecision?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/table#type_scale Table#type_scale}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/table#type_scale Table#type_scale}
   */
   readonly typeScale?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/table#type_text Table#type_text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/table#type_text Table#type_text}
   */
   readonly typeText: string;
 }
 
-export function tableColumnToTerraform(struct?: TableColumn | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function tableColumnToTerraform(struct?: TableColumn | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comment: cdktf.stringToTerraform(struct!.comment),
-    name: cdktf.stringToTerraform(struct!.name),
-    nullable: cdktf.booleanToTerraform(struct!.nullable),
-    partition_index: cdktf.numberToTerraform(struct!.partitionIndex),
-    position: cdktf.numberToTerraform(struct!.position),
-    type_interval_type: cdktf.stringToTerraform(struct!.typeIntervalType),
-    type_json: cdktf.stringToTerraform(struct!.typeJson),
-    type_name: cdktf.stringToTerraform(struct!.typeName),
-    type_precision: cdktf.numberToTerraform(struct!.typePrecision),
-    type_scale: cdktf.numberToTerraform(struct!.typeScale),
-    type_text: cdktf.stringToTerraform(struct!.typeText),
+    comment: cdktn.stringToTerraform(struct!.comment),
+    name: cdktn.stringToTerraform(struct!.name),
+    nullable: cdktn.booleanToTerraform(struct!.nullable),
+    partition_index: cdktn.numberToTerraform(struct!.partitionIndex),
+    position: cdktn.numberToTerraform(struct!.position),
+    type_interval_type: cdktn.stringToTerraform(struct!.typeIntervalType),
+    type_json: cdktn.stringToTerraform(struct!.typeJson),
+    type_name: cdktn.stringToTerraform(struct!.typeName),
+    type_precision: cdktn.numberToTerraform(struct!.typePrecision),
+    type_scale: cdktn.numberToTerraform(struct!.typeScale),
+    type_text: cdktn.stringToTerraform(struct!.typeText),
   }
 }
 
 
-export function tableColumnToHclTerraform(struct?: TableColumn | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function tableColumnToHclTerraform(struct?: TableColumn | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comment: {
-      value: cdktf.stringToHclTerraform(struct!.comment),
+      value: cdktn.stringToHclTerraform(struct!.comment),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     nullable: {
-      value: cdktf.booleanToHclTerraform(struct!.nullable),
+      value: cdktn.booleanToHclTerraform(struct!.nullable),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     partition_index: {
-      value: cdktf.numberToHclTerraform(struct!.partitionIndex),
+      value: cdktn.numberToHclTerraform(struct!.partitionIndex),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     position: {
-      value: cdktf.numberToHclTerraform(struct!.position),
+      value: cdktn.numberToHclTerraform(struct!.position),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     type_interval_type: {
-      value: cdktf.stringToHclTerraform(struct!.typeIntervalType),
+      value: cdktn.stringToHclTerraform(struct!.typeIntervalType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type_json: {
-      value: cdktf.stringToHclTerraform(struct!.typeJson),
+      value: cdktn.stringToHclTerraform(struct!.typeJson),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type_name: {
-      value: cdktf.stringToHclTerraform(struct!.typeName),
+      value: cdktn.stringToHclTerraform(struct!.typeName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type_precision: {
-      value: cdktf.numberToHclTerraform(struct!.typePrecision),
+      value: cdktn.numberToHclTerraform(struct!.typePrecision),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     type_scale: {
-      value: cdktf.numberToHclTerraform(struct!.typeScale),
+      value: cdktn.numberToHclTerraform(struct!.typeScale),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     type_text: {
-      value: cdktf.stringToHclTerraform(struct!.typeText),
+      value: cdktn.stringToHclTerraform(struct!.typeText),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -216,9 +222,9 @@ export function tableColumnToHclTerraform(struct?: TableColumn | cdktf.IResolvab
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TableColumnOutputReference extends cdktf.ComplexObject {
+export class TableColumnOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -226,11 +232,11 @@ export class TableColumnOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): TableColumn | cdktf.IResolvable | undefined {
+  public get internalValue(): TableColumn | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -283,7 +289,7 @@ export class TableColumnOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: TableColumn | cdktf.IResolvable | undefined) {
+  public set internalValue(value: TableColumn | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -299,7 +305,7 @@ export class TableColumnOutputReference extends cdktf.ComplexObject {
       this._typeScale = undefined;
       this._typeText = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -350,11 +356,11 @@ export class TableColumnOutputReference extends cdktf.ComplexObject {
   }
 
   // nullable - computed: false, optional: true, required: false
-  private _nullable?: boolean | cdktf.IResolvable; 
+  private _nullable?: boolean | cdktn.IResolvable; 
   public get nullable() {
     return this.getBooleanAttribute('nullable');
   }
-  public set nullable(value: boolean | cdktf.IResolvable) {
+  public set nullable(value: boolean | cdktn.IResolvable) {
     this._nullable = value;
   }
   public resetNullable() {
@@ -485,15 +491,15 @@ export class TableColumnOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class TableColumnList extends cdktf.ComplexList {
-  public internalValue? : TableColumn[] | cdktf.IResolvable
+export class TableColumnList extends cdktn.ComplexList {
+  public internalValue? : TableColumn[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -504,11 +510,92 @@ export class TableColumnList extends cdktf.ComplexList {
     return new TableColumnOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface TableProviderConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/table#workspace_id Table#workspace_id}
+  */
+  readonly workspaceId: string;
+}
+
+export function tableProviderConfigToTerraform(struct?: TableProviderConfigOutputReference | TableProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
+  }
+}
+
+
+export function tableProviderConfigToHclTerraform(struct?: TableProviderConfigOutputReference | TableProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    workspace_id: {
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class TableProviderConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): TableProviderConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._workspaceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workspaceId = this._workspaceId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: TableProviderConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._workspaceId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._workspaceId = value.workspaceId;
+    }
+  }
+
+  // workspace_id - computed: false, optional: false, required: true
+  private _workspaceId?: string; 
+  public get workspaceId() {
+    return this.getStringAttribute('workspace_id');
+  }
+  public set workspaceId(value: string) {
+    this._workspaceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workspaceIdInput() {
+    return this._workspaceId;
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/table databricks_table}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/table databricks_table}
 */
-export class Table extends cdktf.TerraformResource {
+export class Table extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -519,14 +606,14 @@ export class Table extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Table resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Table resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Table to import
-  * @param importFromId The id of the existing Table that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/table#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Table that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/table#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Table to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_table", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_table", importId: importFromId, provider });
       }
 
   // ===========
@@ -534,7 +621,7 @@ export class Table extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/table databricks_table} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/table databricks_table} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -545,7 +632,7 @@ export class Table extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_table',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -569,6 +656,7 @@ export class Table extends cdktf.TerraformResource {
     this._tableType = config.tableType;
     this._viewDefinition = config.viewDefinition;
     this._column.internalValue = config.column;
+    this._providerConfig.internalValue = config.providerConfig;
   }
 
   // ==========
@@ -757,12 +845,28 @@ export class Table extends cdktf.TerraformResource {
   public get column() {
     return this._column;
   }
-  public putColumn(value: TableColumn[] | cdktf.IResolvable) {
+  public putColumn(value: TableColumn[] | cdktn.IResolvable) {
     this._column.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get columnInput() {
     return this._column.internalValue;
+  }
+
+  // provider_config - computed: false, optional: true, required: false
+  private _providerConfig = new TableProviderConfigOutputReference(this, "provider_config");
+  public get providerConfig() {
+    return this._providerConfig;
+  }
+  public putProviderConfig(value: TableProviderConfig) {
+    this._providerConfig.internalValue = value;
+  }
+  public resetProviderConfig() {
+    this._providerConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerConfigInput() {
+    return this._providerConfig.internalValue;
   }
 
   // =========
@@ -771,101 +875,108 @@ export class Table extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      catalog_name: cdktf.stringToTerraform(this._catalogName),
-      comment: cdktf.stringToTerraform(this._comment),
-      data_source_format: cdktf.stringToTerraform(this._dataSourceFormat),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      owner: cdktf.stringToTerraform(this._owner),
-      properties: cdktf.hashMapper(cdktf.stringToTerraform)(this._properties),
-      schema_name: cdktf.stringToTerraform(this._schemaName),
-      storage_credential_name: cdktf.stringToTerraform(this._storageCredentialName),
-      storage_location: cdktf.stringToTerraform(this._storageLocation),
-      table_type: cdktf.stringToTerraform(this._tableType),
-      view_definition: cdktf.stringToTerraform(this._viewDefinition),
-      column: cdktf.listMapper(tableColumnToTerraform, true)(this._column.internalValue),
+      catalog_name: cdktn.stringToTerraform(this._catalogName),
+      comment: cdktn.stringToTerraform(this._comment),
+      data_source_format: cdktn.stringToTerraform(this._dataSourceFormat),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      owner: cdktn.stringToTerraform(this._owner),
+      properties: cdktn.hashMapper(cdktn.stringToTerraform)(this._properties),
+      schema_name: cdktn.stringToTerraform(this._schemaName),
+      storage_credential_name: cdktn.stringToTerraform(this._storageCredentialName),
+      storage_location: cdktn.stringToTerraform(this._storageLocation),
+      table_type: cdktn.stringToTerraform(this._tableType),
+      view_definition: cdktn.stringToTerraform(this._viewDefinition),
+      column: cdktn.listMapper(tableColumnToTerraform, true)(this._column.internalValue),
+      provider_config: tableProviderConfigToTerraform(this._providerConfig.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       catalog_name: {
-        value: cdktf.stringToHclTerraform(this._catalogName),
+        value: cdktn.stringToHclTerraform(this._catalogName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       comment: {
-        value: cdktf.stringToHclTerraform(this._comment),
+        value: cdktn.stringToHclTerraform(this._comment),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       data_source_format: {
-        value: cdktf.stringToHclTerraform(this._dataSourceFormat),
+        value: cdktn.stringToHclTerraform(this._dataSourceFormat),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       owner: {
-        value: cdktf.stringToHclTerraform(this._owner),
+        value: cdktn.stringToHclTerraform(this._owner),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       properties: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._properties),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._properties),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       schema_name: {
-        value: cdktf.stringToHclTerraform(this._schemaName),
+        value: cdktn.stringToHclTerraform(this._schemaName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_credential_name: {
-        value: cdktf.stringToHclTerraform(this._storageCredentialName),
+        value: cdktn.stringToHclTerraform(this._storageCredentialName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_location: {
-        value: cdktf.stringToHclTerraform(this._storageLocation),
+        value: cdktn.stringToHclTerraform(this._storageLocation),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       table_type: {
-        value: cdktf.stringToHclTerraform(this._tableType),
+        value: cdktn.stringToHclTerraform(this._tableType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       view_definition: {
-        value: cdktf.stringToHclTerraform(this._viewDefinition),
+        value: cdktn.stringToHclTerraform(this._viewDefinition),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       column: {
-        value: cdktf.listMapperHcl(tableColumnToHclTerraform, true)(this._column.internalValue),
+        value: cdktn.listMapperHcl(tableColumnToHclTerraform, true)(this._column.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "TableColumnList",
+      },
+      provider_config: {
+        value: tableProviderConfigToHclTerraform(this._providerConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "TableProviderConfigList",
       },
     };
 

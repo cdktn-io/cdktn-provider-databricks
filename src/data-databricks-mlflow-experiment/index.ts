@@ -1,87 +1,87 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/mlflow_experiment
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/mlflow_experiment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataDatabricksMlflowExperimentConfig extends cdktf.TerraformMetaArguments {
+export interface DataDatabricksMlflowExperimentConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/mlflow_experiment#artifact_location DataDatabricksMlflowExperiment#artifact_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/mlflow_experiment#artifact_location DataDatabricksMlflowExperiment#artifact_location}
   */
   readonly artifactLocation?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/mlflow_experiment#creation_time DataDatabricksMlflowExperiment#creation_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/mlflow_experiment#creation_time DataDatabricksMlflowExperiment#creation_time}
   */
   readonly creationTime?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/mlflow_experiment#experiment_id DataDatabricksMlflowExperiment#experiment_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/mlflow_experiment#experiment_id DataDatabricksMlflowExperiment#experiment_id}
   */
   readonly experimentId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/mlflow_experiment#id DataDatabricksMlflowExperiment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/mlflow_experiment#id DataDatabricksMlflowExperiment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/mlflow_experiment#last_update_time DataDatabricksMlflowExperiment#last_update_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/mlflow_experiment#last_update_time DataDatabricksMlflowExperiment#last_update_time}
   */
   readonly lastUpdateTime?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/mlflow_experiment#lifecycle_stage DataDatabricksMlflowExperiment#lifecycle_stage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/mlflow_experiment#lifecycle_stage DataDatabricksMlflowExperiment#lifecycle_stage}
   */
   readonly lifecycleStage?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/mlflow_experiment#name DataDatabricksMlflowExperiment#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/mlflow_experiment#name DataDatabricksMlflowExperiment#name}
   */
   readonly name?: string;
   /**
   * provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/mlflow_experiment#provider_config DataDatabricksMlflowExperiment#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/mlflow_experiment#provider_config DataDatabricksMlflowExperiment#provider_config}
   */
   readonly providerConfig?: DataDatabricksMlflowExperimentProviderConfig;
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/mlflow_experiment#tags DataDatabricksMlflowExperiment#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/mlflow_experiment#tags DataDatabricksMlflowExperiment#tags}
   */
-  readonly tags?: DataDatabricksMlflowExperimentTags[] | cdktf.IResolvable;
+  readonly tags?: DataDatabricksMlflowExperimentTags[] | cdktn.IResolvable;
 }
 export interface DataDatabricksMlflowExperimentProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/mlflow_experiment#workspace_id DataDatabricksMlflowExperiment#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/mlflow_experiment#workspace_id DataDatabricksMlflowExperiment#workspace_id}
   */
   readonly workspaceId: string;
 }
 
 export function dataDatabricksMlflowExperimentProviderConfigToTerraform(struct?: DataDatabricksMlflowExperimentProviderConfigOutputReference | DataDatabricksMlflowExperimentProviderConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    workspace_id: cdktf.stringToTerraform(struct!.workspaceId),
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
   }
 }
 
 
 export function dataDatabricksMlflowExperimentProviderConfigToHclTerraform(struct?: DataDatabricksMlflowExperimentProviderConfigOutputReference | DataDatabricksMlflowExperimentProviderConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     workspace_id: {
-      value: cdktf.stringToHclTerraform(struct!.workspaceId),
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -92,14 +92,14 @@ export function dataDatabricksMlflowExperimentProviderConfigToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksMlflowExperimentProviderConfigOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksMlflowExperimentProviderConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -139,41 +139,41 @@ export class DataDatabricksMlflowExperimentProviderConfigOutputReference extends
 }
 export interface DataDatabricksMlflowExperimentTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/mlflow_experiment#key DataDatabricksMlflowExperiment#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/mlflow_experiment#key DataDatabricksMlflowExperiment#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/mlflow_experiment#value DataDatabricksMlflowExperiment#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/mlflow_experiment#value DataDatabricksMlflowExperiment#value}
   */
   readonly value?: string;
 }
 
-export function dataDatabricksMlflowExperimentTagsToTerraform(struct?: DataDatabricksMlflowExperimentTags | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksMlflowExperimentTagsToTerraform(struct?: DataDatabricksMlflowExperimentTags | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    value: cdktf.stringToTerraform(struct!.value),
+    key: cdktn.stringToTerraform(struct!.key),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function dataDatabricksMlflowExperimentTagsToHclTerraform(struct?: DataDatabricksMlflowExperimentTags | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksMlflowExperimentTagsToHclTerraform(struct?: DataDatabricksMlflowExperimentTags | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -184,9 +184,9 @@ export function dataDatabricksMlflowExperimentTagsToHclTerraform(struct?: DataDa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksMlflowExperimentTagsOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksMlflowExperimentTagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -194,11 +194,11 @@ export class DataDatabricksMlflowExperimentTagsOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataDatabricksMlflowExperimentTags | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatabricksMlflowExperimentTags | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -215,14 +215,14 @@ export class DataDatabricksMlflowExperimentTagsOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksMlflowExperimentTags | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksMlflowExperimentTags | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -267,15 +267,15 @@ export class DataDatabricksMlflowExperimentTagsOutputReference extends cdktf.Com
   }
 }
 
-export class DataDatabricksMlflowExperimentTagsList extends cdktf.ComplexList {
-  public internalValue? : DataDatabricksMlflowExperimentTags[] | cdktf.IResolvable
+export class DataDatabricksMlflowExperimentTagsList extends cdktn.ComplexList {
+  public internalValue? : DataDatabricksMlflowExperimentTags[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -288,9 +288,9 @@ export class DataDatabricksMlflowExperimentTagsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/mlflow_experiment databricks_mlflow_experiment}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/mlflow_experiment databricks_mlflow_experiment}
 */
-export class DataDatabricksMlflowExperiment extends cdktf.TerraformDataSource {
+export class DataDatabricksMlflowExperiment extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -301,14 +301,14 @@ export class DataDatabricksMlflowExperiment extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataDatabricksMlflowExperiment resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataDatabricksMlflowExperiment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksMlflowExperiment to import
-  * @param importFromId The id of the existing DataDatabricksMlflowExperiment that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/mlflow_experiment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksMlflowExperiment that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/mlflow_experiment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksMlflowExperiment to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_mlflow_experiment", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_mlflow_experiment", importId: importFromId, provider });
       }
 
   // ===========
@@ -316,7 +316,7 @@ export class DataDatabricksMlflowExperiment extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/mlflow_experiment databricks_mlflow_experiment} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/mlflow_experiment databricks_mlflow_experiment} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -327,7 +327,7 @@ export class DataDatabricksMlflowExperiment extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_mlflow_experiment',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -486,7 +486,7 @@ export class DataDatabricksMlflowExperiment extends cdktf.TerraformDataSource {
   public get tags() {
     return this._tags;
   }
-  public putTags(value: DataDatabricksMlflowExperimentTags[] | cdktf.IResolvable) {
+  public putTags(value: DataDatabricksMlflowExperimentTags[] | cdktn.IResolvable) {
     this._tags.internalValue = value;
   }
   public resetTags() {
@@ -503,58 +503,58 @@ export class DataDatabricksMlflowExperiment extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      artifact_location: cdktf.stringToTerraform(this._artifactLocation),
-      creation_time: cdktf.numberToTerraform(this._creationTime),
-      experiment_id: cdktf.stringToTerraform(this._experimentId),
-      id: cdktf.stringToTerraform(this._id),
-      last_update_time: cdktf.numberToTerraform(this._lastUpdateTime),
-      lifecycle_stage: cdktf.stringToTerraform(this._lifecycleStage),
-      name: cdktf.stringToTerraform(this._name),
+      artifact_location: cdktn.stringToTerraform(this._artifactLocation),
+      creation_time: cdktn.numberToTerraform(this._creationTime),
+      experiment_id: cdktn.stringToTerraform(this._experimentId),
+      id: cdktn.stringToTerraform(this._id),
+      last_update_time: cdktn.numberToTerraform(this._lastUpdateTime),
+      lifecycle_stage: cdktn.stringToTerraform(this._lifecycleStage),
+      name: cdktn.stringToTerraform(this._name),
       provider_config: dataDatabricksMlflowExperimentProviderConfigToTerraform(this._providerConfig.internalValue),
-      tags: cdktf.listMapper(dataDatabricksMlflowExperimentTagsToTerraform, true)(this._tags.internalValue),
+      tags: cdktn.listMapper(dataDatabricksMlflowExperimentTagsToTerraform, true)(this._tags.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       artifact_location: {
-        value: cdktf.stringToHclTerraform(this._artifactLocation),
+        value: cdktn.stringToHclTerraform(this._artifactLocation),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       creation_time: {
-        value: cdktf.numberToHclTerraform(this._creationTime),
+        value: cdktn.numberToHclTerraform(this._creationTime),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       experiment_id: {
-        value: cdktf.stringToHclTerraform(this._experimentId),
+        value: cdktn.stringToHclTerraform(this._experimentId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       last_update_time: {
-        value: cdktf.numberToHclTerraform(this._lastUpdateTime),
+        value: cdktn.numberToHclTerraform(this._lastUpdateTime),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       lifecycle_stage: {
-        value: cdktf.stringToHclTerraform(this._lifecycleStage),
+        value: cdktn.stringToHclTerraform(this._lifecycleStage),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -566,7 +566,7 @@ export class DataDatabricksMlflowExperiment extends cdktf.TerraformDataSource {
         storageClassType: "DataDatabricksMlflowExperimentProviderConfigList",
       },
       tags: {
-        value: cdktf.listMapperHcl(dataDatabricksMlflowExperimentTagsToHclTerraform, true)(this._tags.internalValue),
+        value: cdktn.listMapperHcl(dataDatabricksMlflowExperimentTagsToHclTerraform, true)(this._tags.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DataDatabricksMlflowExperimentTagsList",

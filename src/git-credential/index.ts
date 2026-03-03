@@ -1,58 +1,149 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/git_credential
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/git_credential
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface GitCredentialConfig extends cdktf.TerraformMetaArguments {
+export interface GitCredentialConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/git_credential#force GitCredential#force}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/git_credential#force GitCredential#force}
   */
-  readonly force?: boolean | cdktf.IResolvable;
+  readonly force?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/git_credential#git_email GitCredential#git_email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/git_credential#git_email GitCredential#git_email}
   */
   readonly gitEmail?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/git_credential#git_provider GitCredential#git_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/git_credential#git_provider GitCredential#git_provider}
   */
   readonly gitProvider: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/git_credential#git_username GitCredential#git_username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/git_credential#git_username GitCredential#git_username}
   */
   readonly gitUsername?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/git_credential#id GitCredential#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/git_credential#id GitCredential#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/git_credential#is_default_for_provider GitCredential#is_default_for_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/git_credential#is_default_for_provider GitCredential#is_default_for_provider}
   */
-  readonly isDefaultForProvider?: boolean | cdktf.IResolvable;
+  readonly isDefaultForProvider?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/git_credential#name GitCredential#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/git_credential#name GitCredential#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/git_credential#personal_access_token GitCredential#personal_access_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/git_credential#personal_access_token GitCredential#personal_access_token}
   */
   readonly personalAccessToken?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/git_credential#principal_id GitCredential#principal_id}
+  */
+  readonly principalId?: number;
+  /**
+  * provider_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/git_credential#provider_config GitCredential#provider_config}
+  */
+  readonly providerConfig?: GitCredentialProviderConfig;
+}
+export interface GitCredentialProviderConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/git_credential#workspace_id GitCredential#workspace_id}
+  */
+  readonly workspaceId: string;
+}
+
+export function gitCredentialProviderConfigToTerraform(struct?: GitCredentialProviderConfigOutputReference | GitCredentialProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
+  }
+}
+
+
+export function gitCredentialProviderConfigToHclTerraform(struct?: GitCredentialProviderConfigOutputReference | GitCredentialProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    workspace_id: {
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GitCredentialProviderConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GitCredentialProviderConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._workspaceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workspaceId = this._workspaceId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GitCredentialProviderConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._workspaceId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._workspaceId = value.workspaceId;
+    }
+  }
+
+  // workspace_id - computed: false, optional: false, required: true
+  private _workspaceId?: string; 
+  public get workspaceId() {
+    return this.getStringAttribute('workspace_id');
+  }
+  public set workspaceId(value: string) {
+    this._workspaceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workspaceIdInput() {
+    return this._workspaceId;
+  }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/git_credential databricks_git_credential}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/git_credential databricks_git_credential}
 */
-export class GitCredential extends cdktf.TerraformResource {
+export class GitCredential extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -63,14 +154,14 @@ export class GitCredential extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a GitCredential resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a GitCredential resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GitCredential to import
-  * @param importFromId The id of the existing GitCredential that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/git_credential#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GitCredential that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/git_credential#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GitCredential to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_git_credential", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_git_credential", importId: importFromId, provider });
       }
 
   // ===========
@@ -78,7 +169,7 @@ export class GitCredential extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/git_credential databricks_git_credential} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/git_credential databricks_git_credential} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -89,7 +180,7 @@ export class GitCredential extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_git_credential',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -108,6 +199,8 @@ export class GitCredential extends cdktf.TerraformResource {
     this._isDefaultForProvider = config.isDefaultForProvider;
     this._name = config.name;
     this._personalAccessToken = config.personalAccessToken;
+    this._principalId = config.principalId;
+    this._providerConfig.internalValue = config.providerConfig;
   }
 
   // ==========
@@ -115,11 +208,11 @@ export class GitCredential extends cdktf.TerraformResource {
   // ==========
 
   // force - computed: false, optional: true, required: false
-  private _force?: boolean | cdktf.IResolvable; 
+  private _force?: boolean | cdktn.IResolvable; 
   public get force() {
     return this.getBooleanAttribute('force');
   }
-  public set force(value: boolean | cdktf.IResolvable) {
+  public set force(value: boolean | cdktn.IResolvable) {
     this._force = value;
   }
   public resetForce() {
@@ -192,11 +285,11 @@ export class GitCredential extends cdktf.TerraformResource {
   }
 
   // is_default_for_provider - computed: false, optional: true, required: false
-  private _isDefaultForProvider?: boolean | cdktf.IResolvable; 
+  private _isDefaultForProvider?: boolean | cdktn.IResolvable; 
   public get isDefaultForProvider() {
     return this.getBooleanAttribute('is_default_for_provider');
   }
-  public set isDefaultForProvider(value: boolean | cdktf.IResolvable) {
+  public set isDefaultForProvider(value: boolean | cdktn.IResolvable) {
     this._isDefaultForProvider = value;
   }
   public resetIsDefaultForProvider() {
@@ -239,72 +332,118 @@ export class GitCredential extends cdktf.TerraformResource {
     return this._personalAccessToken;
   }
 
+  // principal_id - computed: false, optional: true, required: false
+  private _principalId?: number; 
+  public get principalId() {
+    return this.getNumberAttribute('principal_id');
+  }
+  public set principalId(value: number) {
+    this._principalId = value;
+  }
+  public resetPrincipalId() {
+    this._principalId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get principalIdInput() {
+    return this._principalId;
+  }
+
+  // provider_config - computed: false, optional: true, required: false
+  private _providerConfig = new GitCredentialProviderConfigOutputReference(this, "provider_config");
+  public get providerConfig() {
+    return this._providerConfig;
+  }
+  public putProviderConfig(value: GitCredentialProviderConfig) {
+    this._providerConfig.internalValue = value;
+  }
+  public resetProviderConfig() {
+    this._providerConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerConfigInput() {
+    return this._providerConfig.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      force: cdktf.booleanToTerraform(this._force),
-      git_email: cdktf.stringToTerraform(this._gitEmail),
-      git_provider: cdktf.stringToTerraform(this._gitProvider),
-      git_username: cdktf.stringToTerraform(this._gitUsername),
-      id: cdktf.stringToTerraform(this._id),
-      is_default_for_provider: cdktf.booleanToTerraform(this._isDefaultForProvider),
-      name: cdktf.stringToTerraform(this._name),
-      personal_access_token: cdktf.stringToTerraform(this._personalAccessToken),
+      force: cdktn.booleanToTerraform(this._force),
+      git_email: cdktn.stringToTerraform(this._gitEmail),
+      git_provider: cdktn.stringToTerraform(this._gitProvider),
+      git_username: cdktn.stringToTerraform(this._gitUsername),
+      id: cdktn.stringToTerraform(this._id),
+      is_default_for_provider: cdktn.booleanToTerraform(this._isDefaultForProvider),
+      name: cdktn.stringToTerraform(this._name),
+      personal_access_token: cdktn.stringToTerraform(this._personalAccessToken),
+      principal_id: cdktn.numberToTerraform(this._principalId),
+      provider_config: gitCredentialProviderConfigToTerraform(this._providerConfig.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       force: {
-        value: cdktf.booleanToHclTerraform(this._force),
+        value: cdktn.booleanToHclTerraform(this._force),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       git_email: {
-        value: cdktf.stringToHclTerraform(this._gitEmail),
+        value: cdktn.stringToHclTerraform(this._gitEmail),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       git_provider: {
-        value: cdktf.stringToHclTerraform(this._gitProvider),
+        value: cdktn.stringToHclTerraform(this._gitProvider),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       git_username: {
-        value: cdktf.stringToHclTerraform(this._gitUsername),
+        value: cdktn.stringToHclTerraform(this._gitUsername),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       is_default_for_provider: {
-        value: cdktf.booleanToHclTerraform(this._isDefaultForProvider),
+        value: cdktn.booleanToHclTerraform(this._isDefaultForProvider),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       personal_access_token: {
-        value: cdktf.stringToHclTerraform(this._personalAccessToken),
+        value: cdktn.stringToHclTerraform(this._personalAccessToken),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      principal_id: {
+        value: cdktn.numberToHclTerraform(this._principalId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      provider_config: {
+        value: gitCredentialProviderConfigToHclTerraform(this._providerConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GitCredentialProviderConfigList",
       },
     };
 

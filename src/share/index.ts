@@ -1,105 +1,105 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/share
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/share
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ShareConfig extends cdktf.TerraformMetaArguments {
+export interface ShareConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/share#comment Share#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/share#comment Share#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/share#name Share#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/share#name Share#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/share#owner Share#owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/share#owner Share#owner}
   */
   readonly owner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/share#storage_root Share#storage_root}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/share#storage_root Share#storage_root}
   */
   readonly storageRoot?: string;
   /**
   * object block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/share#object Share#object}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/share#object Share#object}
   */
-  readonly object?: ShareObject[] | cdktf.IResolvable;
+  readonly object?: ShareObject[] | cdktn.IResolvable;
   /**
   * provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/share#provider_config Share#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/share#provider_config Share#provider_config}
   */
-  readonly providerConfig?: ShareProviderConfig[] | cdktf.IResolvable;
+  readonly providerConfig?: ShareProviderConfig[] | cdktn.IResolvable;
 }
 export interface ShareObjectPartitionValue {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/share#name Share#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/share#name Share#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/share#op Share#op}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/share#op Share#op}
   */
   readonly op: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/share#recipient_property_key Share#recipient_property_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/share#recipient_property_key Share#recipient_property_key}
   */
   readonly recipientPropertyKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/share#value Share#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/share#value Share#value}
   */
   readonly value?: string;
 }
 
-export function shareObjectPartitionValueToTerraform(struct?: ShareObjectPartitionValue | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function shareObjectPartitionValueToTerraform(struct?: ShareObjectPartitionValue | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    op: cdktf.stringToTerraform(struct!.op),
-    recipient_property_key: cdktf.stringToTerraform(struct!.recipientPropertyKey),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    op: cdktn.stringToTerraform(struct!.op),
+    recipient_property_key: cdktn.stringToTerraform(struct!.recipientPropertyKey),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function shareObjectPartitionValueToHclTerraform(struct?: ShareObjectPartitionValue | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function shareObjectPartitionValueToHclTerraform(struct?: ShareObjectPartitionValue | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     op: {
-      value: cdktf.stringToHclTerraform(struct!.op),
+      value: cdktn.stringToHclTerraform(struct!.op),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     recipient_property_key: {
-      value: cdktf.stringToHclTerraform(struct!.recipientPropertyKey),
+      value: cdktn.stringToHclTerraform(struct!.recipientPropertyKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -110,9 +110,9 @@ export function shareObjectPartitionValueToHclTerraform(struct?: ShareObjectPart
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ShareObjectPartitionValueOutputReference extends cdktf.ComplexObject {
+export class ShareObjectPartitionValueOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -120,11 +120,11 @@ export class ShareObjectPartitionValueOutputReference extends cdktf.ComplexObjec
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ShareObjectPartitionValue | cdktf.IResolvable | undefined {
+  public get internalValue(): ShareObjectPartitionValue | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -149,7 +149,7 @@ export class ShareObjectPartitionValueOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ShareObjectPartitionValue | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ShareObjectPartitionValue | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -158,7 +158,7 @@ export class ShareObjectPartitionValueOutputReference extends cdktf.ComplexObjec
       this._recipientPropertyKey = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -231,15 +231,15 @@ export class ShareObjectPartitionValueOutputReference extends cdktf.ComplexObjec
   }
 }
 
-export class ShareObjectPartitionValueList extends cdktf.ComplexList {
-  public internalValue? : ShareObjectPartitionValue[] | cdktf.IResolvable
+export class ShareObjectPartitionValueList extends cdktn.ComplexList {
+  public internalValue? : ShareObjectPartitionValue[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -254,30 +254,30 @@ export interface ShareObjectPartition {
   /**
   * value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/share#value Share#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/share#value Share#value}
   */
-  readonly value?: ShareObjectPartitionValue[] | cdktf.IResolvable;
+  readonly value?: ShareObjectPartitionValue[] | cdktn.IResolvable;
 }
 
-export function shareObjectPartitionToTerraform(struct?: ShareObjectPartition | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function shareObjectPartitionToTerraform(struct?: ShareObjectPartition | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    value: cdktf.listMapper(shareObjectPartitionValueToTerraform, true)(struct!.value),
+    value: cdktn.listMapper(shareObjectPartitionValueToTerraform, true)(struct!.value),
   }
 }
 
 
-export function shareObjectPartitionToHclTerraform(struct?: ShareObjectPartition | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function shareObjectPartitionToHclTerraform(struct?: ShareObjectPartition | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     value: {
-      value: cdktf.listMapperHcl(shareObjectPartitionValueToHclTerraform, true)(struct!.value),
+      value: cdktn.listMapperHcl(shareObjectPartitionValueToHclTerraform, true)(struct!.value),
       isBlock: true,
       type: "list",
       storageClassType: "ShareObjectPartitionValueList",
@@ -288,9 +288,9 @@ export function shareObjectPartitionToHclTerraform(struct?: ShareObjectPartition
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ShareObjectPartitionOutputReference extends cdktf.ComplexObject {
+export class ShareObjectPartitionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -298,11 +298,11 @@ export class ShareObjectPartitionOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ShareObjectPartition | cdktf.IResolvable | undefined {
+  public get internalValue(): ShareObjectPartition | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -315,13 +315,13 @@ export class ShareObjectPartitionOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ShareObjectPartition | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ShareObjectPartition | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._value.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -337,7 +337,7 @@ export class ShareObjectPartitionOutputReference extends cdktf.ComplexObject {
   public get value() {
     return this._value;
   }
-  public putValue(value: ShareObjectPartitionValue[] | cdktf.IResolvable) {
+  public putValue(value: ShareObjectPartitionValue[] | cdktn.IResolvable) {
     this._value.internalValue = value;
   }
   public resetValue() {
@@ -349,15 +349,15 @@ export class ShareObjectPartitionOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class ShareObjectPartitionList extends cdktf.ComplexList {
-  public internalValue? : ShareObjectPartition[] | cdktf.IResolvable
+export class ShareObjectPartitionList extends cdktn.ComplexList {
+  public internalValue? : ShareObjectPartition[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -370,131 +370,131 @@ export class ShareObjectPartitionList extends cdktf.ComplexList {
 }
 export interface ShareObject {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/share#cdf_enabled Share#cdf_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/share#cdf_enabled Share#cdf_enabled}
   */
-  readonly cdfEnabled?: boolean | cdktf.IResolvable;
+  readonly cdfEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/share#comment Share#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/share#comment Share#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/share#content Share#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/share#content Share#content}
   */
   readonly content?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/share#data_object_type Share#data_object_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/share#data_object_type Share#data_object_type}
   */
   readonly dataObjectType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/share#history_data_sharing_status Share#history_data_sharing_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/share#history_data_sharing_status Share#history_data_sharing_status}
   */
   readonly historyDataSharingStatus?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/share#name Share#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/share#name Share#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/share#shared_as Share#shared_as}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/share#shared_as Share#shared_as}
   */
   readonly sharedAs?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/share#start_version Share#start_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/share#start_version Share#start_version}
   */
   readonly startVersion?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/share#string_shared_as Share#string_shared_as}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/share#string_shared_as Share#string_shared_as}
   */
   readonly stringSharedAs?: string;
   /**
   * partition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/share#partition Share#partition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/share#partition Share#partition}
   */
-  readonly partition?: ShareObjectPartition[] | cdktf.IResolvable;
+  readonly partition?: ShareObjectPartition[] | cdktn.IResolvable;
 }
 
-export function shareObjectToTerraform(struct?: ShareObject | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function shareObjectToTerraform(struct?: ShareObject | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cdf_enabled: cdktf.booleanToTerraform(struct!.cdfEnabled),
-    comment: cdktf.stringToTerraform(struct!.comment),
-    content: cdktf.stringToTerraform(struct!.content),
-    data_object_type: cdktf.stringToTerraform(struct!.dataObjectType),
-    history_data_sharing_status: cdktf.stringToTerraform(struct!.historyDataSharingStatus),
-    name: cdktf.stringToTerraform(struct!.name),
-    shared_as: cdktf.stringToTerraform(struct!.sharedAs),
-    start_version: cdktf.numberToTerraform(struct!.startVersion),
-    string_shared_as: cdktf.stringToTerraform(struct!.stringSharedAs),
-    partition: cdktf.listMapper(shareObjectPartitionToTerraform, true)(struct!.partition),
+    cdf_enabled: cdktn.booleanToTerraform(struct!.cdfEnabled),
+    comment: cdktn.stringToTerraform(struct!.comment),
+    content: cdktn.stringToTerraform(struct!.content),
+    data_object_type: cdktn.stringToTerraform(struct!.dataObjectType),
+    history_data_sharing_status: cdktn.stringToTerraform(struct!.historyDataSharingStatus),
+    name: cdktn.stringToTerraform(struct!.name),
+    shared_as: cdktn.stringToTerraform(struct!.sharedAs),
+    start_version: cdktn.numberToTerraform(struct!.startVersion),
+    string_shared_as: cdktn.stringToTerraform(struct!.stringSharedAs),
+    partition: cdktn.listMapper(shareObjectPartitionToTerraform, true)(struct!.partition),
   }
 }
 
 
-export function shareObjectToHclTerraform(struct?: ShareObject | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function shareObjectToHclTerraform(struct?: ShareObject | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cdf_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.cdfEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.cdfEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     comment: {
-      value: cdktf.stringToHclTerraform(struct!.comment),
+      value: cdktn.stringToHclTerraform(struct!.comment),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     content: {
-      value: cdktf.stringToHclTerraform(struct!.content),
+      value: cdktn.stringToHclTerraform(struct!.content),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     data_object_type: {
-      value: cdktf.stringToHclTerraform(struct!.dataObjectType),
+      value: cdktn.stringToHclTerraform(struct!.dataObjectType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     history_data_sharing_status: {
-      value: cdktf.stringToHclTerraform(struct!.historyDataSharingStatus),
+      value: cdktn.stringToHclTerraform(struct!.historyDataSharingStatus),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     shared_as: {
-      value: cdktf.stringToHclTerraform(struct!.sharedAs),
+      value: cdktn.stringToHclTerraform(struct!.sharedAs),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     start_version: {
-      value: cdktf.numberToHclTerraform(struct!.startVersion),
+      value: cdktn.numberToHclTerraform(struct!.startVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     string_shared_as: {
-      value: cdktf.stringToHclTerraform(struct!.stringSharedAs),
+      value: cdktn.stringToHclTerraform(struct!.stringSharedAs),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     partition: {
-      value: cdktf.listMapperHcl(shareObjectPartitionToHclTerraform, true)(struct!.partition),
+      value: cdktn.listMapperHcl(shareObjectPartitionToHclTerraform, true)(struct!.partition),
       isBlock: true,
       type: "list",
       storageClassType: "ShareObjectPartitionList",
@@ -505,9 +505,9 @@ export function shareObjectToHclTerraform(struct?: ShareObject | cdktf.IResolvab
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ShareObjectOutputReference extends cdktf.ComplexObject {
+export class ShareObjectOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -515,11 +515,11 @@ export class ShareObjectOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ShareObject | cdktf.IResolvable | undefined {
+  public get internalValue(): ShareObject | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -568,7 +568,7 @@ export class ShareObjectOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ShareObject | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ShareObject | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -583,7 +583,7 @@ export class ShareObjectOutputReference extends cdktf.ComplexObject {
       this._stringSharedAs = undefined;
       this._partition.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -614,11 +614,11 @@ export class ShareObjectOutputReference extends cdktf.ComplexObject {
   }
 
   // cdf_enabled - computed: false, optional: true, required: false
-  private _cdfEnabled?: boolean | cdktf.IResolvable; 
+  private _cdfEnabled?: boolean | cdktn.IResolvable; 
   public get cdfEnabled() {
     return this.getBooleanAttribute('cdf_enabled');
   }
-  public set cdfEnabled(value: boolean | cdktf.IResolvable) {
+  public set cdfEnabled(value: boolean | cdktn.IResolvable) {
     this._cdfEnabled = value;
   }
   public resetCdfEnabled() {
@@ -786,7 +786,7 @@ export class ShareObjectOutputReference extends cdktf.ComplexObject {
   public get partition() {
     return this._partition;
   }
-  public putPartition(value: ShareObjectPartition[] | cdktf.IResolvable) {
+  public putPartition(value: ShareObjectPartition[] | cdktn.IResolvable) {
     this._partition.internalValue = value;
   }
   public resetPartition() {
@@ -798,15 +798,15 @@ export class ShareObjectOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class ShareObjectList extends cdktf.ComplexList {
-  public internalValue? : ShareObject[] | cdktf.IResolvable
+export class ShareObjectList extends cdktn.ComplexList {
+  public internalValue? : ShareObject[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -819,30 +819,30 @@ export class ShareObjectList extends cdktf.ComplexList {
 }
 export interface ShareProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/share#workspace_id Share#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/share#workspace_id Share#workspace_id}
   */
   readonly workspaceId: string;
 }
 
-export function shareProviderConfigToTerraform(struct?: ShareProviderConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function shareProviderConfigToTerraform(struct?: ShareProviderConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    workspace_id: cdktf.stringToTerraform(struct!.workspaceId),
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
   }
 }
 
 
-export function shareProviderConfigToHclTerraform(struct?: ShareProviderConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function shareProviderConfigToHclTerraform(struct?: ShareProviderConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     workspace_id: {
-      value: cdktf.stringToHclTerraform(struct!.workspaceId),
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -853,9 +853,9 @@ export function shareProviderConfigToHclTerraform(struct?: ShareProviderConfig |
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ShareProviderConfigOutputReference extends cdktf.ComplexObject {
+export class ShareProviderConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -863,11 +863,11 @@ export class ShareProviderConfigOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ShareProviderConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): ShareProviderConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -880,13 +880,13 @@ export class ShareProviderConfigOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ShareProviderConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ShareProviderConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._workspaceId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -911,15 +911,15 @@ export class ShareProviderConfigOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class ShareProviderConfigList extends cdktf.ComplexList {
-  public internalValue? : ShareProviderConfig[] | cdktf.IResolvable
+export class ShareProviderConfigList extends cdktn.ComplexList {
+  public internalValue? : ShareProviderConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -932,9 +932,9 @@ export class ShareProviderConfigList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/share databricks_share}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/share databricks_share}
 */
-export class Share extends cdktf.TerraformResource {
+export class Share extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -945,14 +945,14 @@ export class Share extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Share resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Share resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Share to import
-  * @param importFromId The id of the existing Share that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/share#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Share that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/share#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Share to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_share", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_share", importId: importFromId, provider });
       }
 
   // ===========
@@ -960,7 +960,7 @@ export class Share extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/share databricks_share} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/share databricks_share} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -971,7 +971,7 @@ export class Share extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_share',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -1095,7 +1095,7 @@ export class Share extends cdktf.TerraformResource {
   public get object() {
     return this._object;
   }
-  public putObject(value: ShareObject[] | cdktf.IResolvable) {
+  public putObject(value: ShareObject[] | cdktn.IResolvable) {
     this._object.internalValue = value;
   }
   public resetObject() {
@@ -1111,7 +1111,7 @@ export class Share extends cdktf.TerraformResource {
   public get providerConfig() {
     return this._providerConfig;
   }
-  public putProviderConfig(value: ShareProviderConfig[] | cdktf.IResolvable) {
+  public putProviderConfig(value: ShareProviderConfig[] | cdktn.IResolvable) {
     this._providerConfig.internalValue = value;
   }
   public resetProviderConfig() {
@@ -1128,49 +1128,49 @@ export class Share extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      comment: cdktf.stringToTerraform(this._comment),
-      name: cdktf.stringToTerraform(this._name),
-      owner: cdktf.stringToTerraform(this._owner),
-      storage_root: cdktf.stringToTerraform(this._storageRoot),
-      object: cdktf.listMapper(shareObjectToTerraform, true)(this._object.internalValue),
-      provider_config: cdktf.listMapper(shareProviderConfigToTerraform, true)(this._providerConfig.internalValue),
+      comment: cdktn.stringToTerraform(this._comment),
+      name: cdktn.stringToTerraform(this._name),
+      owner: cdktn.stringToTerraform(this._owner),
+      storage_root: cdktn.stringToTerraform(this._storageRoot),
+      object: cdktn.listMapper(shareObjectToTerraform, true)(this._object.internalValue),
+      provider_config: cdktn.listMapper(shareProviderConfigToTerraform, true)(this._providerConfig.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       comment: {
-        value: cdktf.stringToHclTerraform(this._comment),
+        value: cdktn.stringToHclTerraform(this._comment),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       owner: {
-        value: cdktf.stringToHclTerraform(this._owner),
+        value: cdktn.stringToHclTerraform(this._owner),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_root: {
-        value: cdktf.stringToHclTerraform(this._storageRoot),
+        value: cdktn.stringToHclTerraform(this._storageRoot),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       object: {
-        value: cdktf.listMapperHcl(shareObjectToHclTerraform, true)(this._object.internalValue),
+        value: cdktn.listMapperHcl(shareObjectToHclTerraform, true)(this._object.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ShareObjectList",
       },
       provider_config: {
-        value: cdktf.listMapperHcl(shareProviderConfigToHclTerraform, true)(this._providerConfig.internalValue),
+        value: cdktn.listMapperHcl(shareProviderConfigToHclTerraform, true)(this._providerConfig.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ShareProviderConfigList",

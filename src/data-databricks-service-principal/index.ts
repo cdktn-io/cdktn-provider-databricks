@@ -1,66 +1,153 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/service_principal
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/service_principal
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataDatabricksServicePrincipalConfig extends cdktf.TerraformMetaArguments {
+export interface DataDatabricksServicePrincipalConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/service_principal#acl_principal_id DataDatabricksServicePrincipal#acl_principal_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/service_principal#acl_principal_id DataDatabricksServicePrincipal#acl_principal_id}
   */
   readonly aclPrincipalId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/service_principal#active DataDatabricksServicePrincipal#active}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/service_principal#active DataDatabricksServicePrincipal#active}
   */
-  readonly active?: boolean | cdktf.IResolvable;
+  readonly active?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/service_principal#application_id DataDatabricksServicePrincipal#application_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/service_principal#application_id DataDatabricksServicePrincipal#application_id}
   */
   readonly applicationId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/service_principal#display_name DataDatabricksServicePrincipal#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/service_principal#display_name DataDatabricksServicePrincipal#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/service_principal#external_id DataDatabricksServicePrincipal#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/service_principal#external_id DataDatabricksServicePrincipal#external_id}
   */
   readonly externalId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/service_principal#home DataDatabricksServicePrincipal#home}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/service_principal#home DataDatabricksServicePrincipal#home}
   */
   readonly home?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/service_principal#id DataDatabricksServicePrincipal#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/service_principal#id DataDatabricksServicePrincipal#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/service_principal#repos DataDatabricksServicePrincipal#repos}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/service_principal#repos DataDatabricksServicePrincipal#repos}
   */
   readonly repos?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/service_principal#scim_id DataDatabricksServicePrincipal#scim_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/service_principal#scim_id DataDatabricksServicePrincipal#scim_id}
   */
   readonly scimId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/service_principal#sp_id DataDatabricksServicePrincipal#sp_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/service_principal#sp_id DataDatabricksServicePrincipal#sp_id}
   */
   readonly spId?: string;
+  /**
+  * provider_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/service_principal#provider_config DataDatabricksServicePrincipal#provider_config}
+  */
+  readonly providerConfig?: DataDatabricksServicePrincipalProviderConfig;
+}
+export interface DataDatabricksServicePrincipalProviderConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/service_principal#workspace_id DataDatabricksServicePrincipal#workspace_id}
+  */
+  readonly workspaceId: string;
+}
+
+export function dataDatabricksServicePrincipalProviderConfigToTerraform(struct?: DataDatabricksServicePrincipalProviderConfigOutputReference | DataDatabricksServicePrincipalProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
+  }
+}
+
+
+export function dataDatabricksServicePrincipalProviderConfigToHclTerraform(struct?: DataDatabricksServicePrincipalProviderConfigOutputReference | DataDatabricksServicePrincipalProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    workspace_id: {
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataDatabricksServicePrincipalProviderConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DataDatabricksServicePrincipalProviderConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._workspaceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workspaceId = this._workspaceId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksServicePrincipalProviderConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._workspaceId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._workspaceId = value.workspaceId;
+    }
+  }
+
+  // workspace_id - computed: false, optional: false, required: true
+  private _workspaceId?: string; 
+  public get workspaceId() {
+    return this.getStringAttribute('workspace_id');
+  }
+  public set workspaceId(value: string) {
+    this._workspaceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workspaceIdInput() {
+    return this._workspaceId;
+  }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/service_principal databricks_service_principal}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/service_principal databricks_service_principal}
 */
-export class DataDatabricksServicePrincipal extends cdktf.TerraformDataSource {
+export class DataDatabricksServicePrincipal extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -71,14 +158,14 @@ export class DataDatabricksServicePrincipal extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataDatabricksServicePrincipal resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataDatabricksServicePrincipal resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksServicePrincipal to import
-  * @param importFromId The id of the existing DataDatabricksServicePrincipal that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/service_principal#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksServicePrincipal that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/service_principal#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksServicePrincipal to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_service_principal", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_service_principal", importId: importFromId, provider });
       }
 
   // ===========
@@ -86,7 +173,7 @@ export class DataDatabricksServicePrincipal extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/service_principal databricks_service_principal} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/service_principal databricks_service_principal} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -97,7 +184,7 @@ export class DataDatabricksServicePrincipal extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_service_principal',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -118,6 +205,7 @@ export class DataDatabricksServicePrincipal extends cdktf.TerraformDataSource {
     this._repos = config.repos;
     this._scimId = config.scimId;
     this._spId = config.spId;
+    this._providerConfig.internalValue = config.providerConfig;
   }
 
   // ==========
@@ -141,11 +229,11 @@ export class DataDatabricksServicePrincipal extends cdktf.TerraformDataSource {
   }
 
   // active - computed: true, optional: true, required: false
-  private _active?: boolean | cdktf.IResolvable; 
+  private _active?: boolean | cdktn.IResolvable; 
   public get active() {
     return this.getBooleanAttribute('active');
   }
-  public set active(value: boolean | cdktf.IResolvable) {
+  public set active(value: boolean | cdktn.IResolvable) {
     this._active = value;
   }
   public resetActive() {
@@ -284,86 +372,109 @@ export class DataDatabricksServicePrincipal extends cdktf.TerraformDataSource {
     return this._spId;
   }
 
+  // provider_config - computed: false, optional: true, required: false
+  private _providerConfig = new DataDatabricksServicePrincipalProviderConfigOutputReference(this, "provider_config");
+  public get providerConfig() {
+    return this._providerConfig;
+  }
+  public putProviderConfig(value: DataDatabricksServicePrincipalProviderConfig) {
+    this._providerConfig.internalValue = value;
+  }
+  public resetProviderConfig() {
+    this._providerConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerConfigInput() {
+    return this._providerConfig.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      acl_principal_id: cdktf.stringToTerraform(this._aclPrincipalId),
-      active: cdktf.booleanToTerraform(this._active),
-      application_id: cdktf.stringToTerraform(this._applicationId),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      external_id: cdktf.stringToTerraform(this._externalId),
-      home: cdktf.stringToTerraform(this._home),
-      id: cdktf.stringToTerraform(this._id),
-      repos: cdktf.stringToTerraform(this._repos),
-      scim_id: cdktf.stringToTerraform(this._scimId),
-      sp_id: cdktf.stringToTerraform(this._spId),
+      acl_principal_id: cdktn.stringToTerraform(this._aclPrincipalId),
+      active: cdktn.booleanToTerraform(this._active),
+      application_id: cdktn.stringToTerraform(this._applicationId),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      external_id: cdktn.stringToTerraform(this._externalId),
+      home: cdktn.stringToTerraform(this._home),
+      id: cdktn.stringToTerraform(this._id),
+      repos: cdktn.stringToTerraform(this._repos),
+      scim_id: cdktn.stringToTerraform(this._scimId),
+      sp_id: cdktn.stringToTerraform(this._spId),
+      provider_config: dataDatabricksServicePrincipalProviderConfigToTerraform(this._providerConfig.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       acl_principal_id: {
-        value: cdktf.stringToHclTerraform(this._aclPrincipalId),
+        value: cdktn.stringToHclTerraform(this._aclPrincipalId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       active: {
-        value: cdktf.booleanToHclTerraform(this._active),
+        value: cdktn.booleanToHclTerraform(this._active),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       application_id: {
-        value: cdktf.stringToHclTerraform(this._applicationId),
+        value: cdktn.stringToHclTerraform(this._applicationId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       external_id: {
-        value: cdktf.stringToHclTerraform(this._externalId),
+        value: cdktn.stringToHclTerraform(this._externalId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       home: {
-        value: cdktf.stringToHclTerraform(this._home),
+        value: cdktn.stringToHclTerraform(this._home),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       repos: {
-        value: cdktf.stringToHclTerraform(this._repos),
+        value: cdktn.stringToHclTerraform(this._repos),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       scim_id: {
-        value: cdktf.stringToHclTerraform(this._scimId),
+        value: cdktn.stringToHclTerraform(this._scimId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sp_id: {
-        value: cdktf.stringToHclTerraform(this._spId),
+        value: cdktn.stringToHclTerraform(this._spId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      provider_config: {
+        value: dataDatabricksServicePrincipalProviderConfigToHclTerraform(this._providerConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataDatabricksServicePrincipalProviderConfigList",
       },
     };
 

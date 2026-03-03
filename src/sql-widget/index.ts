@@ -1,142 +1,148 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_widget
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_widget
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SqlWidgetConfig extends cdktf.TerraformMetaArguments {
+export interface SqlWidgetConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_widget#dashboard_id SqlWidget#dashboard_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_widget#dashboard_id SqlWidget#dashboard_id}
   */
   readonly dashboardId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_widget#description SqlWidget#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_widget#description SqlWidget#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_widget#id SqlWidget#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_widget#id SqlWidget#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_widget#text SqlWidget#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_widget#text SqlWidget#text}
   */
   readonly text?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_widget#title SqlWidget#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_widget#title SqlWidget#title}
   */
   readonly title?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_widget#visualization_id SqlWidget#visualization_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_widget#visualization_id SqlWidget#visualization_id}
   */
   readonly visualizationId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_widget#widget_id SqlWidget#widget_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_widget#widget_id SqlWidget#widget_id}
   */
   readonly widgetId?: string;
   /**
   * parameter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_widget#parameter SqlWidget#parameter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_widget#parameter SqlWidget#parameter}
   */
-  readonly parameter?: SqlWidgetParameter[] | cdktf.IResolvable;
+  readonly parameter?: SqlWidgetParameter[] | cdktn.IResolvable;
   /**
   * position block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_widget#position SqlWidget#position}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_widget#position SqlWidget#position}
   */
   readonly position?: SqlWidgetPosition;
+  /**
+  * provider_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_widget#provider_config SqlWidget#provider_config}
+  */
+  readonly providerConfig?: SqlWidgetProviderConfig;
 }
 export interface SqlWidgetParameter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_widget#map_to SqlWidget#map_to}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_widget#map_to SqlWidget#map_to}
   */
   readonly mapTo?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_widget#name SqlWidget#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_widget#name SqlWidget#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_widget#title SqlWidget#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_widget#title SqlWidget#title}
   */
   readonly title?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_widget#type SqlWidget#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_widget#type SqlWidget#type}
   */
   readonly type: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_widget#value SqlWidget#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_widget#value SqlWidget#value}
   */
   readonly value?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_widget#values SqlWidget#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_widget#values SqlWidget#values}
   */
   readonly values?: string[];
 }
 
-export function sqlWidgetParameterToTerraform(struct?: SqlWidgetParameter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sqlWidgetParameterToTerraform(struct?: SqlWidgetParameter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    map_to: cdktf.stringToTerraform(struct!.mapTo),
-    name: cdktf.stringToTerraform(struct!.name),
-    title: cdktf.stringToTerraform(struct!.title),
-    type: cdktf.stringToTerraform(struct!.type),
-    value: cdktf.stringToTerraform(struct!.value),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    map_to: cdktn.stringToTerraform(struct!.mapTo),
+    name: cdktn.stringToTerraform(struct!.name),
+    title: cdktn.stringToTerraform(struct!.title),
+    type: cdktn.stringToTerraform(struct!.type),
+    value: cdktn.stringToTerraform(struct!.value),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function sqlWidgetParameterToHclTerraform(struct?: SqlWidgetParameter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sqlWidgetParameterToHclTerraform(struct?: SqlWidgetParameter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     map_to: {
-      value: cdktf.stringToHclTerraform(struct!.mapTo),
+      value: cdktn.stringToHclTerraform(struct!.mapTo),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title: {
-      value: cdktf.stringToHclTerraform(struct!.title),
+      value: cdktn.stringToHclTerraform(struct!.title),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -147,9 +153,9 @@ export function sqlWidgetParameterToHclTerraform(struct?: SqlWidgetParameter | c
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SqlWidgetParameterOutputReference extends cdktf.ComplexObject {
+export class SqlWidgetParameterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -157,11 +163,11 @@ export class SqlWidgetParameterOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SqlWidgetParameter | cdktf.IResolvable | undefined {
+  public get internalValue(): SqlWidgetParameter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -194,7 +200,7 @@ export class SqlWidgetParameterOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SqlWidgetParameter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SqlWidgetParameter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -205,7 +211,7 @@ export class SqlWidgetParameterOutputReference extends cdktf.ComplexObject {
       this._value = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -312,15 +318,15 @@ export class SqlWidgetParameterOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class SqlWidgetParameterList extends cdktf.ComplexList {
-  public internalValue? : SqlWidgetParameter[] | cdktf.IResolvable
+export class SqlWidgetParameterList extends cdktn.ComplexList {
+  public internalValue? : SqlWidgetParameter[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -333,74 +339,74 @@ export class SqlWidgetParameterList extends cdktf.ComplexList {
 }
 export interface SqlWidgetPosition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_widget#auto_height SqlWidget#auto_height}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_widget#auto_height SqlWidget#auto_height}
   */
-  readonly autoHeight?: boolean | cdktf.IResolvable;
+  readonly autoHeight?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_widget#pos_x SqlWidget#pos_x}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_widget#pos_x SqlWidget#pos_x}
   */
   readonly posX?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_widget#pos_y SqlWidget#pos_y}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_widget#pos_y SqlWidget#pos_y}
   */
   readonly posY?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_widget#size_x SqlWidget#size_x}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_widget#size_x SqlWidget#size_x}
   */
   readonly sizeX: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_widget#size_y SqlWidget#size_y}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_widget#size_y SqlWidget#size_y}
   */
   readonly sizeY: number;
 }
 
 export function sqlWidgetPositionToTerraform(struct?: SqlWidgetPositionOutputReference | SqlWidgetPosition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    auto_height: cdktf.booleanToTerraform(struct!.autoHeight),
-    pos_x: cdktf.numberToTerraform(struct!.posX),
-    pos_y: cdktf.numberToTerraform(struct!.posY),
-    size_x: cdktf.numberToTerraform(struct!.sizeX),
-    size_y: cdktf.numberToTerraform(struct!.sizeY),
+    auto_height: cdktn.booleanToTerraform(struct!.autoHeight),
+    pos_x: cdktn.numberToTerraform(struct!.posX),
+    pos_y: cdktn.numberToTerraform(struct!.posY),
+    size_x: cdktn.numberToTerraform(struct!.sizeX),
+    size_y: cdktn.numberToTerraform(struct!.sizeY),
   }
 }
 
 
 export function sqlWidgetPositionToHclTerraform(struct?: SqlWidgetPositionOutputReference | SqlWidgetPosition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     auto_height: {
-      value: cdktf.booleanToHclTerraform(struct!.autoHeight),
+      value: cdktn.booleanToHclTerraform(struct!.autoHeight),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     pos_x: {
-      value: cdktf.numberToHclTerraform(struct!.posX),
+      value: cdktn.numberToHclTerraform(struct!.posX),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     pos_y: {
-      value: cdktf.numberToHclTerraform(struct!.posY),
+      value: cdktn.numberToHclTerraform(struct!.posY),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     size_x: {
-      value: cdktf.numberToHclTerraform(struct!.sizeX),
+      value: cdktn.numberToHclTerraform(struct!.sizeX),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     size_y: {
-      value: cdktf.numberToHclTerraform(struct!.sizeY),
+      value: cdktn.numberToHclTerraform(struct!.sizeY),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -411,14 +417,14 @@ export function sqlWidgetPositionToHclTerraform(struct?: SqlWidgetPositionOutput
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SqlWidgetPositionOutputReference extends cdktf.ComplexObject {
+export class SqlWidgetPositionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -468,11 +474,11 @@ export class SqlWidgetPositionOutputReference extends cdktf.ComplexObject {
   }
 
   // auto_height - computed: false, optional: true, required: false
-  private _autoHeight?: boolean | cdktf.IResolvable; 
+  private _autoHeight?: boolean | cdktn.IResolvable; 
   public get autoHeight() {
     return this.getBooleanAttribute('auto_height');
   }
-  public set autoHeight(value: boolean | cdktf.IResolvable) {
+  public set autoHeight(value: boolean | cdktn.IResolvable) {
     this._autoHeight = value;
   }
   public resetAutoHeight() {
@@ -541,11 +547,92 @@ export class SqlWidgetPositionOutputReference extends cdktf.ComplexObject {
     return this._sizeY;
   }
 }
+export interface SqlWidgetProviderConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_widget#workspace_id SqlWidget#workspace_id}
+  */
+  readonly workspaceId: string;
+}
+
+export function sqlWidgetProviderConfigToTerraform(struct?: SqlWidgetProviderConfigOutputReference | SqlWidgetProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
+  }
+}
+
+
+export function sqlWidgetProviderConfigToHclTerraform(struct?: SqlWidgetProviderConfigOutputReference | SqlWidgetProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    workspace_id: {
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class SqlWidgetProviderConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): SqlWidgetProviderConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._workspaceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workspaceId = this._workspaceId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SqlWidgetProviderConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._workspaceId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._workspaceId = value.workspaceId;
+    }
+  }
+
+  // workspace_id - computed: false, optional: false, required: true
+  private _workspaceId?: string; 
+  public get workspaceId() {
+    return this.getStringAttribute('workspace_id');
+  }
+  public set workspaceId(value: string) {
+    this._workspaceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workspaceIdInput() {
+    return this._workspaceId;
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_widget databricks_sql_widget}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_widget databricks_sql_widget}
 */
-export class SqlWidget extends cdktf.TerraformResource {
+export class SqlWidget extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -556,14 +643,14 @@ export class SqlWidget extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SqlWidget resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SqlWidget resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SqlWidget to import
-  * @param importFromId The id of the existing SqlWidget that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_widget#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SqlWidget that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_widget#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SqlWidget to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_sql_widget", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_sql_widget", importId: importFromId, provider });
       }
 
   // ===========
@@ -571,7 +658,7 @@ export class SqlWidget extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/sql_widget databricks_sql_widget} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/sql_widget databricks_sql_widget} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -582,7 +669,7 @@ export class SqlWidget extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_sql_widget',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -602,6 +689,7 @@ export class SqlWidget extends cdktf.TerraformResource {
     this._widgetId = config.widgetId;
     this._parameter.internalValue = config.parameter;
     this._position.internalValue = config.position;
+    this._providerConfig.internalValue = config.providerConfig;
   }
 
   // ==========
@@ -722,7 +810,7 @@ export class SqlWidget extends cdktf.TerraformResource {
   public get parameter() {
     return this._parameter;
   }
-  public putParameter(value: SqlWidgetParameter[] | cdktf.IResolvable) {
+  public putParameter(value: SqlWidgetParameter[] | cdktn.IResolvable) {
     this._parameter.internalValue = value;
   }
   public resetParameter() {
@@ -749,70 +837,87 @@ export class SqlWidget extends cdktf.TerraformResource {
     return this._position.internalValue;
   }
 
+  // provider_config - computed: false, optional: true, required: false
+  private _providerConfig = new SqlWidgetProviderConfigOutputReference(this, "provider_config");
+  public get providerConfig() {
+    return this._providerConfig;
+  }
+  public putProviderConfig(value: SqlWidgetProviderConfig) {
+    this._providerConfig.internalValue = value;
+  }
+  public resetProviderConfig() {
+    this._providerConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerConfigInput() {
+    return this._providerConfig.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      dashboard_id: cdktf.stringToTerraform(this._dashboardId),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      text: cdktf.stringToTerraform(this._text),
-      title: cdktf.stringToTerraform(this._title),
-      visualization_id: cdktf.stringToTerraform(this._visualizationId),
-      widget_id: cdktf.stringToTerraform(this._widgetId),
-      parameter: cdktf.listMapper(sqlWidgetParameterToTerraform, true)(this._parameter.internalValue),
+      dashboard_id: cdktn.stringToTerraform(this._dashboardId),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      text: cdktn.stringToTerraform(this._text),
+      title: cdktn.stringToTerraform(this._title),
+      visualization_id: cdktn.stringToTerraform(this._visualizationId),
+      widget_id: cdktn.stringToTerraform(this._widgetId),
+      parameter: cdktn.listMapper(sqlWidgetParameterToTerraform, true)(this._parameter.internalValue),
       position: sqlWidgetPositionToTerraform(this._position.internalValue),
+      provider_config: sqlWidgetProviderConfigToTerraform(this._providerConfig.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       dashboard_id: {
-        value: cdktf.stringToHclTerraform(this._dashboardId),
+        value: cdktn.stringToHclTerraform(this._dashboardId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       text: {
-        value: cdktf.stringToHclTerraform(this._text),
+        value: cdktn.stringToHclTerraform(this._text),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       title: {
-        value: cdktf.stringToHclTerraform(this._title),
+        value: cdktn.stringToHclTerraform(this._title),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       visualization_id: {
-        value: cdktf.stringToHclTerraform(this._visualizationId),
+        value: cdktn.stringToHclTerraform(this._visualizationId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       widget_id: {
-        value: cdktf.stringToHclTerraform(this._widgetId),
+        value: cdktn.stringToHclTerraform(this._widgetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parameter: {
-        value: cdktf.listMapperHcl(sqlWidgetParameterToHclTerraform, true)(this._parameter.internalValue),
+        value: cdktn.listMapperHcl(sqlWidgetParameterToHclTerraform, true)(this._parameter.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "SqlWidgetParameterList",
@@ -822,6 +927,12 @@ export class SqlWidget extends cdktf.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "SqlWidgetPositionList",
+      },
+      provider_config: {
+        value: sqlWidgetProviderConfigToHclTerraform(this._providerConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SqlWidgetProviderConfigList",
       },
     };
 

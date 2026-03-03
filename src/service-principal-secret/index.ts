@@ -1,66 +1,153 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/service_principal_secret
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/service_principal_secret
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ServicePrincipalSecretConfig extends cdktf.TerraformMetaArguments {
+export interface ServicePrincipalSecretConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/service_principal_secret#create_time ServicePrincipalSecret#create_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/service_principal_secret#create_time ServicePrincipalSecret#create_time}
   */
   readonly createTime?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/service_principal_secret#expire_time ServicePrincipalSecret#expire_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/service_principal_secret#expire_time ServicePrincipalSecret#expire_time}
   */
   readonly expireTime?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/service_principal_secret#id ServicePrincipalSecret#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/service_principal_secret#id ServicePrincipalSecret#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/service_principal_secret#lifetime ServicePrincipalSecret#lifetime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/service_principal_secret#lifetime ServicePrincipalSecret#lifetime}
   */
   readonly lifetime?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/service_principal_secret#secret ServicePrincipalSecret#secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/service_principal_secret#secret ServicePrincipalSecret#secret}
   */
   readonly secret?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/service_principal_secret#secret_hash ServicePrincipalSecret#secret_hash}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/service_principal_secret#secret_hash ServicePrincipalSecret#secret_hash}
   */
   readonly secretHash?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/service_principal_secret#service_principal_id ServicePrincipalSecret#service_principal_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/service_principal_secret#service_principal_id ServicePrincipalSecret#service_principal_id}
   */
   readonly servicePrincipalId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/service_principal_secret#status ServicePrincipalSecret#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/service_principal_secret#status ServicePrincipalSecret#status}
   */
   readonly status?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/service_principal_secret#time_rotating ServicePrincipalSecret#time_rotating}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/service_principal_secret#time_rotating ServicePrincipalSecret#time_rotating}
   */
   readonly timeRotating?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/service_principal_secret#update_time ServicePrincipalSecret#update_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/service_principal_secret#update_time ServicePrincipalSecret#update_time}
   */
   readonly updateTime?: string;
+  /**
+  * provider_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/service_principal_secret#provider_config ServicePrincipalSecret#provider_config}
+  */
+  readonly providerConfig?: ServicePrincipalSecretProviderConfig;
+}
+export interface ServicePrincipalSecretProviderConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/service_principal_secret#workspace_id ServicePrincipalSecret#workspace_id}
+  */
+  readonly workspaceId: string;
+}
+
+export function servicePrincipalSecretProviderConfigToTerraform(struct?: ServicePrincipalSecretProviderConfigOutputReference | ServicePrincipalSecretProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
+  }
+}
+
+
+export function servicePrincipalSecretProviderConfigToHclTerraform(struct?: ServicePrincipalSecretProviderConfigOutputReference | ServicePrincipalSecretProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    workspace_id: {
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ServicePrincipalSecretProviderConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ServicePrincipalSecretProviderConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._workspaceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workspaceId = this._workspaceId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ServicePrincipalSecretProviderConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._workspaceId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._workspaceId = value.workspaceId;
+    }
+  }
+
+  // workspace_id - computed: false, optional: false, required: true
+  private _workspaceId?: string; 
+  public get workspaceId() {
+    return this.getStringAttribute('workspace_id');
+  }
+  public set workspaceId(value: string) {
+    this._workspaceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workspaceIdInput() {
+    return this._workspaceId;
+  }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/service_principal_secret databricks_service_principal_secret}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/service_principal_secret databricks_service_principal_secret}
 */
-export class ServicePrincipalSecret extends cdktf.TerraformResource {
+export class ServicePrincipalSecret extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -71,14 +158,14 @@ export class ServicePrincipalSecret extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ServicePrincipalSecret resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ServicePrincipalSecret resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ServicePrincipalSecret to import
-  * @param importFromId The id of the existing ServicePrincipalSecret that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/service_principal_secret#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ServicePrincipalSecret that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/service_principal_secret#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ServicePrincipalSecret to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_service_principal_secret", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_service_principal_secret", importId: importFromId, provider });
       }
 
   // ===========
@@ -86,7 +173,7 @@ export class ServicePrincipalSecret extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/service_principal_secret databricks_service_principal_secret} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/service_principal_secret databricks_service_principal_secret} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -97,7 +184,7 @@ export class ServicePrincipalSecret extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_service_principal_secret',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -118,6 +205,7 @@ export class ServicePrincipalSecret extends cdktf.TerraformResource {
     this._status = config.status;
     this._timeRotating = config.timeRotating;
     this._updateTime = config.updateTime;
+    this._providerConfig.internalValue = config.providerConfig;
   }
 
   // ==========
@@ -281,86 +369,109 @@ export class ServicePrincipalSecret extends cdktf.TerraformResource {
     return this._updateTime;
   }
 
+  // provider_config - computed: false, optional: true, required: false
+  private _providerConfig = new ServicePrincipalSecretProviderConfigOutputReference(this, "provider_config");
+  public get providerConfig() {
+    return this._providerConfig;
+  }
+  public putProviderConfig(value: ServicePrincipalSecretProviderConfig) {
+    this._providerConfig.internalValue = value;
+  }
+  public resetProviderConfig() {
+    this._providerConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerConfigInput() {
+    return this._providerConfig.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      create_time: cdktf.stringToTerraform(this._createTime),
-      expire_time: cdktf.stringToTerraform(this._expireTime),
-      id: cdktf.stringToTerraform(this._id),
-      lifetime: cdktf.stringToTerraform(this._lifetime),
-      secret: cdktf.stringToTerraform(this._secret),
-      secret_hash: cdktf.stringToTerraform(this._secretHash),
-      service_principal_id: cdktf.stringToTerraform(this._servicePrincipalId),
-      status: cdktf.stringToTerraform(this._status),
-      time_rotating: cdktf.stringToTerraform(this._timeRotating),
-      update_time: cdktf.stringToTerraform(this._updateTime),
+      create_time: cdktn.stringToTerraform(this._createTime),
+      expire_time: cdktn.stringToTerraform(this._expireTime),
+      id: cdktn.stringToTerraform(this._id),
+      lifetime: cdktn.stringToTerraform(this._lifetime),
+      secret: cdktn.stringToTerraform(this._secret),
+      secret_hash: cdktn.stringToTerraform(this._secretHash),
+      service_principal_id: cdktn.stringToTerraform(this._servicePrincipalId),
+      status: cdktn.stringToTerraform(this._status),
+      time_rotating: cdktn.stringToTerraform(this._timeRotating),
+      update_time: cdktn.stringToTerraform(this._updateTime),
+      provider_config: servicePrincipalSecretProviderConfigToTerraform(this._providerConfig.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       create_time: {
-        value: cdktf.stringToHclTerraform(this._createTime),
+        value: cdktn.stringToHclTerraform(this._createTime),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       expire_time: {
-        value: cdktf.stringToHclTerraform(this._expireTime),
+        value: cdktn.stringToHclTerraform(this._expireTime),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       lifetime: {
-        value: cdktf.stringToHclTerraform(this._lifetime),
+        value: cdktn.stringToHclTerraform(this._lifetime),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       secret: {
-        value: cdktf.stringToHclTerraform(this._secret),
+        value: cdktn.stringToHclTerraform(this._secret),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       secret_hash: {
-        value: cdktf.stringToHclTerraform(this._secretHash),
+        value: cdktn.stringToHclTerraform(this._secretHash),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_principal_id: {
-        value: cdktf.stringToHclTerraform(this._servicePrincipalId),
+        value: cdktn.stringToHclTerraform(this._servicePrincipalId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       status: {
-        value: cdktf.stringToHclTerraform(this._status),
+        value: cdktn.stringToHclTerraform(this._status),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       time_rotating: {
-        value: cdktf.stringToHclTerraform(this._timeRotating),
+        value: cdktn.stringToHclTerraform(this._timeRotating),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       update_time: {
-        value: cdktf.stringToHclTerraform(this._updateTime),
+        value: cdktn.stringToHclTerraform(this._updateTime),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      provider_config: {
+        value: servicePrincipalSecretProviderConfigToHclTerraform(this._providerConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ServicePrincipalSecretProviderConfigList",
       },
     };
 

@@ -1,115 +1,115 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/account_federation_policy
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/account_federation_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AccountFederationPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface AccountFederationPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/account_federation_policy#description AccountFederationPolicy#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/account_federation_policy#description AccountFederationPolicy#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/account_federation_policy#oidc_policy AccountFederationPolicy#oidc_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/account_federation_policy#oidc_policy AccountFederationPolicy#oidc_policy}
   */
   readonly oidcPolicy?: AccountFederationPolicyOidcPolicy;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/account_federation_policy#policy_id AccountFederationPolicy#policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/account_federation_policy#policy_id AccountFederationPolicy#policy_id}
   */
   readonly policyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/account_federation_policy#service_principal_id AccountFederationPolicy#service_principal_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/account_federation_policy#service_principal_id AccountFederationPolicy#service_principal_id}
   */
   readonly servicePrincipalId?: number;
 }
 export interface AccountFederationPolicyOidcPolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/account_federation_policy#audiences AccountFederationPolicy#audiences}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/account_federation_policy#audiences AccountFederationPolicy#audiences}
   */
   readonly audiences?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/account_federation_policy#issuer AccountFederationPolicy#issuer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/account_federation_policy#issuer AccountFederationPolicy#issuer}
   */
   readonly issuer?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/account_federation_policy#jwks_json AccountFederationPolicy#jwks_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/account_federation_policy#jwks_json AccountFederationPolicy#jwks_json}
   */
   readonly jwksJson?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/account_federation_policy#jwks_uri AccountFederationPolicy#jwks_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/account_federation_policy#jwks_uri AccountFederationPolicy#jwks_uri}
   */
   readonly jwksUri?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/account_federation_policy#subject AccountFederationPolicy#subject}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/account_federation_policy#subject AccountFederationPolicy#subject}
   */
   readonly subject?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/account_federation_policy#subject_claim AccountFederationPolicy#subject_claim}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/account_federation_policy#subject_claim AccountFederationPolicy#subject_claim}
   */
   readonly subjectClaim?: string;
 }
 
-export function accountFederationPolicyOidcPolicyToTerraform(struct?: AccountFederationPolicyOidcPolicy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accountFederationPolicyOidcPolicyToTerraform(struct?: AccountFederationPolicyOidcPolicy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    audiences: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.audiences),
-    issuer: cdktf.stringToTerraform(struct!.issuer),
-    jwks_json: cdktf.stringToTerraform(struct!.jwksJson),
-    jwks_uri: cdktf.stringToTerraform(struct!.jwksUri),
-    subject: cdktf.stringToTerraform(struct!.subject),
-    subject_claim: cdktf.stringToTerraform(struct!.subjectClaim),
+    audiences: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.audiences),
+    issuer: cdktn.stringToTerraform(struct!.issuer),
+    jwks_json: cdktn.stringToTerraform(struct!.jwksJson),
+    jwks_uri: cdktn.stringToTerraform(struct!.jwksUri),
+    subject: cdktn.stringToTerraform(struct!.subject),
+    subject_claim: cdktn.stringToTerraform(struct!.subjectClaim),
   }
 }
 
 
-export function accountFederationPolicyOidcPolicyToHclTerraform(struct?: AccountFederationPolicyOidcPolicy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accountFederationPolicyOidcPolicyToHclTerraform(struct?: AccountFederationPolicyOidcPolicy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     audiences: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.audiences),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.audiences),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     issuer: {
-      value: cdktf.stringToHclTerraform(struct!.issuer),
+      value: cdktn.stringToHclTerraform(struct!.issuer),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     jwks_json: {
-      value: cdktf.stringToHclTerraform(struct!.jwksJson),
+      value: cdktn.stringToHclTerraform(struct!.jwksJson),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     jwks_uri: {
-      value: cdktf.stringToHclTerraform(struct!.jwksUri),
+      value: cdktn.stringToHclTerraform(struct!.jwksUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     subject: {
-      value: cdktf.stringToHclTerraform(struct!.subject),
+      value: cdktn.stringToHclTerraform(struct!.subject),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     subject_claim: {
-      value: cdktf.stringToHclTerraform(struct!.subjectClaim),
+      value: cdktn.stringToHclTerraform(struct!.subjectClaim),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -120,19 +120,19 @@ export function accountFederationPolicyOidcPolicyToHclTerraform(struct?: Account
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccountFederationPolicyOidcPolicyOutputReference extends cdktf.ComplexObject {
+export class AccountFederationPolicyOidcPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): AccountFederationPolicyOidcPolicy | cdktf.IResolvable | undefined {
+  public get internalValue(): AccountFederationPolicyOidcPolicy | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -165,7 +165,7 @@ export class AccountFederationPolicyOidcPolicyOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AccountFederationPolicyOidcPolicy | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AccountFederationPolicyOidcPolicy | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -176,7 +176,7 @@ export class AccountFederationPolicyOidcPolicyOutputReference extends cdktf.Comp
       this._subject = undefined;
       this._subjectClaim = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -290,9 +290,9 @@ export class AccountFederationPolicyOidcPolicyOutputReference extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/account_federation_policy databricks_account_federation_policy}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/account_federation_policy databricks_account_federation_policy}
 */
-export class AccountFederationPolicy extends cdktf.TerraformResource {
+export class AccountFederationPolicy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -303,14 +303,14 @@ export class AccountFederationPolicy extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AccountFederationPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AccountFederationPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AccountFederationPolicy to import
-  * @param importFromId The id of the existing AccountFederationPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/account_federation_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AccountFederationPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/account_federation_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AccountFederationPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_account_federation_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_account_federation_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -318,7 +318,7 @@ export class AccountFederationPolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/account_federation_policy databricks_account_federation_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/account_federation_policy databricks_account_federation_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -329,7 +329,7 @@ export class AccountFederationPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_account_federation_policy',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -440,17 +440,17 @@ export class AccountFederationPolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
+      description: cdktn.stringToTerraform(this._description),
       oidc_policy: accountFederationPolicyOidcPolicyToTerraform(this._oidcPolicy.internalValue),
-      policy_id: cdktf.stringToTerraform(this._policyId),
-      service_principal_id: cdktf.numberToTerraform(this._servicePrincipalId),
+      policy_id: cdktn.stringToTerraform(this._policyId),
+      service_principal_id: cdktn.numberToTerraform(this._servicePrincipalId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -462,13 +462,13 @@ export class AccountFederationPolicy extends cdktf.TerraformResource {
         storageClassType: "AccountFederationPolicyOidcPolicy",
       },
       policy_id: {
-        value: cdktf.stringToHclTerraform(this._policyId),
+        value: cdktn.stringToHclTerraform(this._policyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_principal_id: {
-        value: cdktf.numberToHclTerraform(this._servicePrincipalId),
+        value: cdktn.numberToHclTerraform(this._servicePrincipalId),
         isBlock: false,
         type: "simple",
         storageClassType: "number",

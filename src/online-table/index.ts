@@ -1,38 +1,44 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/online_table
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/online_table
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface OnlineTableConfig extends cdktf.TerraformMetaArguments {
+export interface OnlineTableConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/online_table#id OnlineTable#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/online_table#id OnlineTable#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/online_table#name OnlineTable#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/online_table#name OnlineTable#name}
   */
   readonly name: string;
   /**
+  * provider_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/online_table#provider_config OnlineTable#provider_config}
+  */
+  readonly providerConfig?: OnlineTableProviderConfig;
+  /**
   * spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/online_table#spec OnlineTable#spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/online_table#spec OnlineTable#spec}
   */
   readonly spec?: OnlineTableSpec;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/online_table#timeouts OnlineTable#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/online_table#timeouts OnlineTable#timeouts}
   */
   readonly timeouts?: OnlineTableTimeouts;
 }
@@ -40,8 +46,8 @@ export interface OnlineTableStatusContinuousUpdateStatusInitialPipelineSyncProgr
 }
 
 export function onlineTableStatusContinuousUpdateStatusInitialPipelineSyncProgressToTerraform(struct?: OnlineTableStatusContinuousUpdateStatusInitialPipelineSyncProgress): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -50,8 +56,8 @@ export function onlineTableStatusContinuousUpdateStatusInitialPipelineSyncProgre
 
 
 export function onlineTableStatusContinuousUpdateStatusInitialPipelineSyncProgressToHclTerraform(struct?: OnlineTableStatusContinuousUpdateStatusInitialPipelineSyncProgress): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -59,7 +65,7 @@ export function onlineTableStatusContinuousUpdateStatusInitialPipelineSyncProgre
   return attrs;
 }
 
-export class OnlineTableStatusContinuousUpdateStatusInitialPipelineSyncProgressOutputReference extends cdktf.ComplexObject {
+export class OnlineTableStatusContinuousUpdateStatusInitialPipelineSyncProgressOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -68,7 +74,7 @@ export class OnlineTableStatusContinuousUpdateStatusInitialPipelineSyncProgressO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -113,14 +119,14 @@ export class OnlineTableStatusContinuousUpdateStatusInitialPipelineSyncProgressO
   }
 }
 
-export class OnlineTableStatusContinuousUpdateStatusInitialPipelineSyncProgressList extends cdktf.ComplexList {
+export class OnlineTableStatusContinuousUpdateStatusInitialPipelineSyncProgressList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -135,8 +141,8 @@ export interface OnlineTableStatusContinuousUpdateStatus {
 }
 
 export function onlineTableStatusContinuousUpdateStatusToTerraform(struct?: OnlineTableStatusContinuousUpdateStatus): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -145,8 +151,8 @@ export function onlineTableStatusContinuousUpdateStatusToTerraform(struct?: Onli
 
 
 export function onlineTableStatusContinuousUpdateStatusToHclTerraform(struct?: OnlineTableStatusContinuousUpdateStatus): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -154,7 +160,7 @@ export function onlineTableStatusContinuousUpdateStatusToHclTerraform(struct?: O
   return attrs;
 }
 
-export class OnlineTableStatusContinuousUpdateStatusOutputReference extends cdktf.ComplexObject {
+export class OnlineTableStatusContinuousUpdateStatusOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -163,7 +169,7 @@ export class OnlineTableStatusContinuousUpdateStatusOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -199,14 +205,14 @@ export class OnlineTableStatusContinuousUpdateStatusOutputReference extends cdkt
   }
 }
 
-export class OnlineTableStatusContinuousUpdateStatusList extends cdktf.ComplexList {
+export class OnlineTableStatusContinuousUpdateStatusList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -221,8 +227,8 @@ export interface OnlineTableStatusFailedStatus {
 }
 
 export function onlineTableStatusFailedStatusToTerraform(struct?: OnlineTableStatusFailedStatus): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -231,8 +237,8 @@ export function onlineTableStatusFailedStatusToTerraform(struct?: OnlineTableSta
 
 
 export function onlineTableStatusFailedStatusToHclTerraform(struct?: OnlineTableStatusFailedStatus): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -240,7 +246,7 @@ export function onlineTableStatusFailedStatusToHclTerraform(struct?: OnlineTable
   return attrs;
 }
 
-export class OnlineTableStatusFailedStatusOutputReference extends cdktf.ComplexObject {
+export class OnlineTableStatusFailedStatusOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -249,7 +255,7 @@ export class OnlineTableStatusFailedStatusOutputReference extends cdktf.ComplexO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -279,14 +285,14 @@ export class OnlineTableStatusFailedStatusOutputReference extends cdktf.ComplexO
   }
 }
 
-export class OnlineTableStatusFailedStatusList extends cdktf.ComplexList {
+export class OnlineTableStatusFailedStatusList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -301,8 +307,8 @@ export interface OnlineTableStatusProvisioningStatusInitialPipelineSyncProgress 
 }
 
 export function onlineTableStatusProvisioningStatusInitialPipelineSyncProgressToTerraform(struct?: OnlineTableStatusProvisioningStatusInitialPipelineSyncProgress): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -311,8 +317,8 @@ export function onlineTableStatusProvisioningStatusInitialPipelineSyncProgressTo
 
 
 export function onlineTableStatusProvisioningStatusInitialPipelineSyncProgressToHclTerraform(struct?: OnlineTableStatusProvisioningStatusInitialPipelineSyncProgress): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -320,7 +326,7 @@ export function onlineTableStatusProvisioningStatusInitialPipelineSyncProgressTo
   return attrs;
 }
 
-export class OnlineTableStatusProvisioningStatusInitialPipelineSyncProgressOutputReference extends cdktf.ComplexObject {
+export class OnlineTableStatusProvisioningStatusInitialPipelineSyncProgressOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -329,7 +335,7 @@ export class OnlineTableStatusProvisioningStatusInitialPipelineSyncProgressOutpu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -374,14 +380,14 @@ export class OnlineTableStatusProvisioningStatusInitialPipelineSyncProgressOutpu
   }
 }
 
-export class OnlineTableStatusProvisioningStatusInitialPipelineSyncProgressList extends cdktf.ComplexList {
+export class OnlineTableStatusProvisioningStatusInitialPipelineSyncProgressList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -396,8 +402,8 @@ export interface OnlineTableStatusProvisioningStatus {
 }
 
 export function onlineTableStatusProvisioningStatusToTerraform(struct?: OnlineTableStatusProvisioningStatus): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -406,8 +412,8 @@ export function onlineTableStatusProvisioningStatusToTerraform(struct?: OnlineTa
 
 
 export function onlineTableStatusProvisioningStatusToHclTerraform(struct?: OnlineTableStatusProvisioningStatus): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -415,7 +421,7 @@ export function onlineTableStatusProvisioningStatusToHclTerraform(struct?: Onlin
   return attrs;
 }
 
-export class OnlineTableStatusProvisioningStatusOutputReference extends cdktf.ComplexObject {
+export class OnlineTableStatusProvisioningStatusOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -424,7 +430,7 @@ export class OnlineTableStatusProvisioningStatusOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -450,14 +456,14 @@ export class OnlineTableStatusProvisioningStatusOutputReference extends cdktf.Co
   }
 }
 
-export class OnlineTableStatusProvisioningStatusList extends cdktf.ComplexList {
+export class OnlineTableStatusProvisioningStatusList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -472,8 +478,8 @@ export interface OnlineTableStatusTriggeredUpdateStatusTriggeredUpdateProgress {
 }
 
 export function onlineTableStatusTriggeredUpdateStatusTriggeredUpdateProgressToTerraform(struct?: OnlineTableStatusTriggeredUpdateStatusTriggeredUpdateProgress): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -482,8 +488,8 @@ export function onlineTableStatusTriggeredUpdateStatusTriggeredUpdateProgressToT
 
 
 export function onlineTableStatusTriggeredUpdateStatusTriggeredUpdateProgressToHclTerraform(struct?: OnlineTableStatusTriggeredUpdateStatusTriggeredUpdateProgress): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -491,7 +497,7 @@ export function onlineTableStatusTriggeredUpdateStatusTriggeredUpdateProgressToH
   return attrs;
 }
 
-export class OnlineTableStatusTriggeredUpdateStatusTriggeredUpdateProgressOutputReference extends cdktf.ComplexObject {
+export class OnlineTableStatusTriggeredUpdateStatusTriggeredUpdateProgressOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -500,7 +506,7 @@ export class OnlineTableStatusTriggeredUpdateStatusTriggeredUpdateProgressOutput
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -545,14 +551,14 @@ export class OnlineTableStatusTriggeredUpdateStatusTriggeredUpdateProgressOutput
   }
 }
 
-export class OnlineTableStatusTriggeredUpdateStatusTriggeredUpdateProgressList extends cdktf.ComplexList {
+export class OnlineTableStatusTriggeredUpdateStatusTriggeredUpdateProgressList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -567,8 +573,8 @@ export interface OnlineTableStatusTriggeredUpdateStatus {
 }
 
 export function onlineTableStatusTriggeredUpdateStatusToTerraform(struct?: OnlineTableStatusTriggeredUpdateStatus): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -577,8 +583,8 @@ export function onlineTableStatusTriggeredUpdateStatusToTerraform(struct?: Onlin
 
 
 export function onlineTableStatusTriggeredUpdateStatusToHclTerraform(struct?: OnlineTableStatusTriggeredUpdateStatus): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -586,7 +592,7 @@ export function onlineTableStatusTriggeredUpdateStatusToHclTerraform(struct?: On
   return attrs;
 }
 
-export class OnlineTableStatusTriggeredUpdateStatusOutputReference extends cdktf.ComplexObject {
+export class OnlineTableStatusTriggeredUpdateStatusOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -595,7 +601,7 @@ export class OnlineTableStatusTriggeredUpdateStatusOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -631,14 +637,14 @@ export class OnlineTableStatusTriggeredUpdateStatusOutputReference extends cdktf
   }
 }
 
-export class OnlineTableStatusTriggeredUpdateStatusList extends cdktf.ComplexList {
+export class OnlineTableStatusTriggeredUpdateStatusList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -653,8 +659,8 @@ export interface OnlineTableStatus {
 }
 
 export function onlineTableStatusToTerraform(struct?: OnlineTableStatus): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -663,8 +669,8 @@ export function onlineTableStatusToTerraform(struct?: OnlineTableStatus): any {
 
 
 export function onlineTableStatusToHclTerraform(struct?: OnlineTableStatus): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -672,7 +678,7 @@ export function onlineTableStatusToHclTerraform(struct?: OnlineTableStatus): any
   return attrs;
 }
 
-export class OnlineTableStatusOutputReference extends cdktf.ComplexObject {
+export class OnlineTableStatusOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -681,7 +687,7 @@ export class OnlineTableStatusOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -735,14 +741,14 @@ export class OnlineTableStatusOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class OnlineTableStatusList extends cdktf.ComplexList {
+export class OnlineTableStatusList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -753,12 +759,93 @@ export class OnlineTableStatusList extends cdktf.ComplexList {
     return new OnlineTableStatusOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface OnlineTableProviderConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/online_table#workspace_id OnlineTable#workspace_id}
+  */
+  readonly workspaceId: string;
+}
+
+export function onlineTableProviderConfigToTerraform(struct?: OnlineTableProviderConfigOutputReference | OnlineTableProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
+  }
+}
+
+
+export function onlineTableProviderConfigToHclTerraform(struct?: OnlineTableProviderConfigOutputReference | OnlineTableProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    workspace_id: {
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class OnlineTableProviderConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): OnlineTableProviderConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._workspaceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workspaceId = this._workspaceId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: OnlineTableProviderConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._workspaceId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._workspaceId = value.workspaceId;
+    }
+  }
+
+  // workspace_id - computed: false, optional: false, required: true
+  private _workspaceId?: string; 
+  public get workspaceId() {
+    return this.getStringAttribute('workspace_id');
+  }
+  public set workspaceId(value: string) {
+    this._workspaceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workspaceIdInput() {
+    return this._workspaceId;
+  }
+}
 export interface OnlineTableSpecRunContinuously {
 }
 
 export function onlineTableSpecRunContinuouslyToTerraform(struct?: OnlineTableSpecRunContinuouslyOutputReference | OnlineTableSpecRunContinuously): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -767,8 +854,8 @@ export function onlineTableSpecRunContinuouslyToTerraform(struct?: OnlineTableSp
 
 
 export function onlineTableSpecRunContinuouslyToHclTerraform(struct?: OnlineTableSpecRunContinuouslyOutputReference | OnlineTableSpecRunContinuously): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -776,14 +863,14 @@ export function onlineTableSpecRunContinuouslyToHclTerraform(struct?: OnlineTabl
   return attrs;
 }
 
-export class OnlineTableSpecRunContinuouslyOutputReference extends cdktf.ComplexObject {
+export class OnlineTableSpecRunContinuouslyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -806,8 +893,8 @@ export interface OnlineTableSpecRunTriggered {
 }
 
 export function onlineTableSpecRunTriggeredToTerraform(struct?: OnlineTableSpecRunTriggeredOutputReference | OnlineTableSpecRunTriggered): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -816,8 +903,8 @@ export function onlineTableSpecRunTriggeredToTerraform(struct?: OnlineTableSpecR
 
 
 export function onlineTableSpecRunTriggeredToHclTerraform(struct?: OnlineTableSpecRunTriggeredOutputReference | OnlineTableSpecRunTriggered): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -825,14 +912,14 @@ export function onlineTableSpecRunTriggeredToHclTerraform(struct?: OnlineTableSp
   return attrs;
 }
 
-export class OnlineTableSpecRunTriggeredOutputReference extends cdktf.ComplexObject {
+export class OnlineTableSpecRunTriggeredOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -853,45 +940,45 @@ export class OnlineTableSpecRunTriggeredOutputReference extends cdktf.ComplexObj
 }
 export interface OnlineTableSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/online_table#perform_full_copy OnlineTable#perform_full_copy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/online_table#perform_full_copy OnlineTable#perform_full_copy}
   */
-  readonly performFullCopy?: boolean | cdktf.IResolvable;
+  readonly performFullCopy?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/online_table#primary_key_columns OnlineTable#primary_key_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/online_table#primary_key_columns OnlineTable#primary_key_columns}
   */
   readonly primaryKeyColumns?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/online_table#source_table_full_name OnlineTable#source_table_full_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/online_table#source_table_full_name OnlineTable#source_table_full_name}
   */
   readonly sourceTableFullName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/online_table#timeseries_key OnlineTable#timeseries_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/online_table#timeseries_key OnlineTable#timeseries_key}
   */
   readonly timeseriesKey?: string;
   /**
   * run_continuously block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/online_table#run_continuously OnlineTable#run_continuously}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/online_table#run_continuously OnlineTable#run_continuously}
   */
   readonly runContinuously?: OnlineTableSpecRunContinuously;
   /**
   * run_triggered block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/online_table#run_triggered OnlineTable#run_triggered}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/online_table#run_triggered OnlineTable#run_triggered}
   */
   readonly runTriggered?: OnlineTableSpecRunTriggered;
 }
 
 export function onlineTableSpecToTerraform(struct?: OnlineTableSpecOutputReference | OnlineTableSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    perform_full_copy: cdktf.booleanToTerraform(struct!.performFullCopy),
-    primary_key_columns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.primaryKeyColumns),
-    source_table_full_name: cdktf.stringToTerraform(struct!.sourceTableFullName),
-    timeseries_key: cdktf.stringToTerraform(struct!.timeseriesKey),
+    perform_full_copy: cdktn.booleanToTerraform(struct!.performFullCopy),
+    primary_key_columns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.primaryKeyColumns),
+    source_table_full_name: cdktn.stringToTerraform(struct!.sourceTableFullName),
+    timeseries_key: cdktn.stringToTerraform(struct!.timeseriesKey),
     run_continuously: onlineTableSpecRunContinuouslyToTerraform(struct!.runContinuously),
     run_triggered: onlineTableSpecRunTriggeredToTerraform(struct!.runTriggered),
   }
@@ -899,31 +986,31 @@ export function onlineTableSpecToTerraform(struct?: OnlineTableSpecOutputReferen
 
 
 export function onlineTableSpecToHclTerraform(struct?: OnlineTableSpecOutputReference | OnlineTableSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     perform_full_copy: {
-      value: cdktf.booleanToHclTerraform(struct!.performFullCopy),
+      value: cdktn.booleanToHclTerraform(struct!.performFullCopy),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     primary_key_columns: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.primaryKeyColumns),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.primaryKeyColumns),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     source_table_full_name: {
-      value: cdktf.stringToHclTerraform(struct!.sourceTableFullName),
+      value: cdktn.stringToHclTerraform(struct!.sourceTableFullName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     timeseries_key: {
-      value: cdktf.stringToHclTerraform(struct!.timeseriesKey),
+      value: cdktn.stringToHclTerraform(struct!.timeseriesKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -946,14 +1033,14 @@ export function onlineTableSpecToHclTerraform(struct?: OnlineTableSpecOutputRefe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OnlineTableSpecOutputReference extends cdktf.ComplexObject {
+export class OnlineTableSpecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1009,11 +1096,11 @@ export class OnlineTableSpecOutputReference extends cdktf.ComplexObject {
   }
 
   // perform_full_copy - computed: false, optional: true, required: false
-  private _performFullCopy?: boolean | cdktf.IResolvable; 
+  private _performFullCopy?: boolean | cdktn.IResolvable; 
   public get performFullCopy() {
     return this.getBooleanAttribute('perform_full_copy');
   }
-  public set performFullCopy(value: boolean | cdktf.IResolvable) {
+  public set performFullCopy(value: boolean | cdktn.IResolvable) {
     this._performFullCopy = value;
   }
   public resetPerformFullCopy() {
@@ -1111,30 +1198,30 @@ export class OnlineTableSpecOutputReference extends cdktf.ComplexObject {
 }
 export interface OnlineTableTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/online_table#create OnlineTable#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/online_table#create OnlineTable#create}
   */
   readonly create?: string;
 }
 
-export function onlineTableTimeoutsToTerraform(struct?: OnlineTableTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function onlineTableTimeoutsToTerraform(struct?: OnlineTableTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
+    create: cdktn.stringToTerraform(struct!.create),
   }
 }
 
 
-export function onlineTableTimeoutsToHclTerraform(struct?: OnlineTableTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function onlineTableTimeoutsToHclTerraform(struct?: OnlineTableTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1145,19 +1232,19 @@ export function onlineTableTimeoutsToHclTerraform(struct?: OnlineTableTimeouts |
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OnlineTableTimeoutsOutputReference extends cdktf.ComplexObject {
+export class OnlineTableTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): OnlineTableTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): OnlineTableTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1170,13 +1257,13 @@ export class OnlineTableTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OnlineTableTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OnlineTableTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1205,9 +1292,9 @@ export class OnlineTableTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/online_table databricks_online_table}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/online_table databricks_online_table}
 */
-export class OnlineTable extends cdktf.TerraformResource {
+export class OnlineTable extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1218,14 +1305,14 @@ export class OnlineTable extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a OnlineTable resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a OnlineTable resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OnlineTable to import
-  * @param importFromId The id of the existing OnlineTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/online_table#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OnlineTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/online_table#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OnlineTable to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_online_table", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_online_table", importId: importFromId, provider });
       }
 
   // ===========
@@ -1233,7 +1320,7 @@ export class OnlineTable extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/online_table databricks_online_table} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/online_table databricks_online_table} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1244,7 +1331,7 @@ export class OnlineTable extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_online_table',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -1257,6 +1344,7 @@ export class OnlineTable extends cdktf.TerraformResource {
     });
     this._id = config.id;
     this._name = config.name;
+    this._providerConfig.internalValue = config.providerConfig;
     this._spec.internalValue = config.spec;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -1310,6 +1398,22 @@ export class OnlineTable extends cdktf.TerraformResource {
     return this.getStringAttribute('unity_catalog_provisioning_state');
   }
 
+  // provider_config - computed: false, optional: true, required: false
+  private _providerConfig = new OnlineTableProviderConfigOutputReference(this, "provider_config");
+  public get providerConfig() {
+    return this._providerConfig;
+  }
+  public putProviderConfig(value: OnlineTableProviderConfig) {
+    this._providerConfig.internalValue = value;
+  }
+  public resetProviderConfig() {
+    this._providerConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerConfigInput() {
+    return this._providerConfig.internalValue;
+  }
+
   // spec - computed: false, optional: true, required: false
   private _spec = new OnlineTableSpecOutputReference(this, "spec");
   public get spec() {
@@ -1348,8 +1452,9 @@ export class OnlineTable extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      provider_config: onlineTableProviderConfigToTerraform(this._providerConfig.internalValue),
       spec: onlineTableSpecToTerraform(this._spec.internalValue),
       timeouts: onlineTableTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -1358,16 +1463,22 @@ export class OnlineTable extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      provider_config: {
+        value: onlineTableProviderConfigToHclTerraform(this._providerConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "OnlineTableProviderConfigList",
       },
       spec: {
         value: onlineTableSpecToHclTerraform(this._spec.internalValue),

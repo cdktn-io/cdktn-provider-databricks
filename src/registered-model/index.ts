@@ -1,167 +1,173 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/registered_model
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/registered_model
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface RegisteredModelConfig extends cdktf.TerraformMetaArguments {
+export interface RegisteredModelConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/registered_model#browse_only RegisteredModel#browse_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/registered_model#browse_only RegisteredModel#browse_only}
   */
-  readonly browseOnly?: boolean | cdktf.IResolvable;
+  readonly browseOnly?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/registered_model#catalog_name RegisteredModel#catalog_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/registered_model#catalog_name RegisteredModel#catalog_name}
   */
   readonly catalogName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/registered_model#comment RegisteredModel#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/registered_model#comment RegisteredModel#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/registered_model#created_at RegisteredModel#created_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/registered_model#created_at RegisteredModel#created_at}
   */
   readonly createdAt?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/registered_model#created_by RegisteredModel#created_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/registered_model#created_by RegisteredModel#created_by}
   */
   readonly createdBy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/registered_model#full_name RegisteredModel#full_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/registered_model#full_name RegisteredModel#full_name}
   */
   readonly fullName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/registered_model#id RegisteredModel#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/registered_model#id RegisteredModel#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/registered_model#metastore_id RegisteredModel#metastore_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/registered_model#metastore_id RegisteredModel#metastore_id}
   */
   readonly metastoreId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/registered_model#name RegisteredModel#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/registered_model#name RegisteredModel#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/registered_model#owner RegisteredModel#owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/registered_model#owner RegisteredModel#owner}
   */
   readonly owner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/registered_model#schema_name RegisteredModel#schema_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/registered_model#schema_name RegisteredModel#schema_name}
   */
   readonly schemaName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/registered_model#storage_location RegisteredModel#storage_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/registered_model#storage_location RegisteredModel#storage_location}
   */
   readonly storageLocation?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/registered_model#updated_at RegisteredModel#updated_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/registered_model#updated_at RegisteredModel#updated_at}
   */
   readonly updatedAt?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/registered_model#updated_by RegisteredModel#updated_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/registered_model#updated_by RegisteredModel#updated_by}
   */
   readonly updatedBy?: string;
   /**
   * aliases block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/registered_model#aliases RegisteredModel#aliases}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/registered_model#aliases RegisteredModel#aliases}
   */
-  readonly aliases?: RegisteredModelAliases[] | cdktf.IResolvable;
+  readonly aliases?: RegisteredModelAliases[] | cdktn.IResolvable;
+  /**
+  * provider_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/registered_model#provider_config RegisteredModel#provider_config}
+  */
+  readonly providerConfig?: RegisteredModelProviderConfig;
 }
 export interface RegisteredModelAliases {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/registered_model#alias_name RegisteredModel#alias_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/registered_model#alias_name RegisteredModel#alias_name}
   */
   readonly aliasName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/registered_model#catalog_name RegisteredModel#catalog_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/registered_model#catalog_name RegisteredModel#catalog_name}
   */
   readonly catalogName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/registered_model#id RegisteredModel#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/registered_model#id RegisteredModel#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/registered_model#model_name RegisteredModel#model_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/registered_model#model_name RegisteredModel#model_name}
   */
   readonly modelName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/registered_model#schema_name RegisteredModel#schema_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/registered_model#schema_name RegisteredModel#schema_name}
   */
   readonly schemaName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/registered_model#version_num RegisteredModel#version_num}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/registered_model#version_num RegisteredModel#version_num}
   */
   readonly versionNum?: number;
 }
 
-export function registeredModelAliasesToTerraform(struct?: RegisteredModelAliases | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function registeredModelAliasesToTerraform(struct?: RegisteredModelAliases | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    alias_name: cdktf.stringToTerraform(struct!.aliasName),
-    catalog_name: cdktf.stringToTerraform(struct!.catalogName),
-    id: cdktf.stringToTerraform(struct!.id),
-    model_name: cdktf.stringToTerraform(struct!.modelName),
-    schema_name: cdktf.stringToTerraform(struct!.schemaName),
-    version_num: cdktf.numberToTerraform(struct!.versionNum),
+    alias_name: cdktn.stringToTerraform(struct!.aliasName),
+    catalog_name: cdktn.stringToTerraform(struct!.catalogName),
+    id: cdktn.stringToTerraform(struct!.id),
+    model_name: cdktn.stringToTerraform(struct!.modelName),
+    schema_name: cdktn.stringToTerraform(struct!.schemaName),
+    version_num: cdktn.numberToTerraform(struct!.versionNum),
   }
 }
 
 
-export function registeredModelAliasesToHclTerraform(struct?: RegisteredModelAliases | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function registeredModelAliasesToHclTerraform(struct?: RegisteredModelAliases | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     alias_name: {
-      value: cdktf.stringToHclTerraform(struct!.aliasName),
+      value: cdktn.stringToHclTerraform(struct!.aliasName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     catalog_name: {
-      value: cdktf.stringToHclTerraform(struct!.catalogName),
+      value: cdktn.stringToHclTerraform(struct!.catalogName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     model_name: {
-      value: cdktf.stringToHclTerraform(struct!.modelName),
+      value: cdktn.stringToHclTerraform(struct!.modelName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     schema_name: {
-      value: cdktf.stringToHclTerraform(struct!.schemaName),
+      value: cdktn.stringToHclTerraform(struct!.schemaName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     version_num: {
-      value: cdktf.numberToHclTerraform(struct!.versionNum),
+      value: cdktn.numberToHclTerraform(struct!.versionNum),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -172,9 +178,9 @@ export function registeredModelAliasesToHclTerraform(struct?: RegisteredModelAli
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RegisteredModelAliasesOutputReference extends cdktf.ComplexObject {
+export class RegisteredModelAliasesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -182,11 +188,11 @@ export class RegisteredModelAliasesOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): RegisteredModelAliases | cdktf.IResolvable | undefined {
+  public get internalValue(): RegisteredModelAliases | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -219,7 +225,7 @@ export class RegisteredModelAliasesOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RegisteredModelAliases | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RegisteredModelAliases | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -230,7 +236,7 @@ export class RegisteredModelAliasesOutputReference extends cdktf.ComplexObject {
       this._schemaName = undefined;
       this._versionNum = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -343,15 +349,15 @@ export class RegisteredModelAliasesOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class RegisteredModelAliasesList extends cdktf.ComplexList {
-  public internalValue? : RegisteredModelAliases[] | cdktf.IResolvable
+export class RegisteredModelAliasesList extends cdktn.ComplexList {
+  public internalValue? : RegisteredModelAliases[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -362,11 +368,92 @@ export class RegisteredModelAliasesList extends cdktf.ComplexList {
     return new RegisteredModelAliasesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface RegisteredModelProviderConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/registered_model#workspace_id RegisteredModel#workspace_id}
+  */
+  readonly workspaceId: string;
+}
+
+export function registeredModelProviderConfigToTerraform(struct?: RegisteredModelProviderConfigOutputReference | RegisteredModelProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
+  }
+}
+
+
+export function registeredModelProviderConfigToHclTerraform(struct?: RegisteredModelProviderConfigOutputReference | RegisteredModelProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    workspace_id: {
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class RegisteredModelProviderConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): RegisteredModelProviderConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._workspaceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workspaceId = this._workspaceId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: RegisteredModelProviderConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._workspaceId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._workspaceId = value.workspaceId;
+    }
+  }
+
+  // workspace_id - computed: false, optional: false, required: true
+  private _workspaceId?: string; 
+  public get workspaceId() {
+    return this.getStringAttribute('workspace_id');
+  }
+  public set workspaceId(value: string) {
+    this._workspaceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workspaceIdInput() {
+    return this._workspaceId;
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/registered_model databricks_registered_model}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/registered_model databricks_registered_model}
 */
-export class RegisteredModel extends cdktf.TerraformResource {
+export class RegisteredModel extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -377,14 +464,14 @@ export class RegisteredModel extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a RegisteredModel resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a RegisteredModel resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RegisteredModel to import
-  * @param importFromId The id of the existing RegisteredModel that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/registered_model#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing RegisteredModel that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/registered_model#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RegisteredModel to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_registered_model", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_registered_model", importId: importFromId, provider });
       }
 
   // ===========
@@ -392,7 +479,7 @@ export class RegisteredModel extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/registered_model databricks_registered_model} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/registered_model databricks_registered_model} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -403,7 +490,7 @@ export class RegisteredModel extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_registered_model',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -429,6 +516,7 @@ export class RegisteredModel extends cdktf.TerraformResource {
     this._updatedAt = config.updatedAt;
     this._updatedBy = config.updatedBy;
     this._aliases.internalValue = config.aliases;
+    this._providerConfig.internalValue = config.providerConfig;
   }
 
   // ==========
@@ -436,11 +524,11 @@ export class RegisteredModel extends cdktf.TerraformResource {
   // ==========
 
   // browse_only - computed: false, optional: true, required: false
-  private _browseOnly?: boolean | cdktf.IResolvable; 
+  private _browseOnly?: boolean | cdktn.IResolvable; 
   public get browseOnly() {
     return this.getBooleanAttribute('browse_only');
   }
-  public set browseOnly(value: boolean | cdktf.IResolvable) {
+  public set browseOnly(value: boolean | cdktn.IResolvable) {
     this._browseOnly = value;
   }
   public resetBrowseOnly() {
@@ -664,7 +752,7 @@ export class RegisteredModel extends cdktf.TerraformResource {
   public get aliases() {
     return this._aliases;
   }
-  public putAliases(value: RegisteredModelAliases[] | cdktf.IResolvable) {
+  public putAliases(value: RegisteredModelAliases[] | cdktn.IResolvable) {
     this._aliases.internalValue = value;
   }
   public resetAliases() {
@@ -675,121 +763,144 @@ export class RegisteredModel extends cdktf.TerraformResource {
     return this._aliases.internalValue;
   }
 
+  // provider_config - computed: false, optional: true, required: false
+  private _providerConfig = new RegisteredModelProviderConfigOutputReference(this, "provider_config");
+  public get providerConfig() {
+    return this._providerConfig;
+  }
+  public putProviderConfig(value: RegisteredModelProviderConfig) {
+    this._providerConfig.internalValue = value;
+  }
+  public resetProviderConfig() {
+    this._providerConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerConfigInput() {
+    return this._providerConfig.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      browse_only: cdktf.booleanToTerraform(this._browseOnly),
-      catalog_name: cdktf.stringToTerraform(this._catalogName),
-      comment: cdktf.stringToTerraform(this._comment),
-      created_at: cdktf.numberToTerraform(this._createdAt),
-      created_by: cdktf.stringToTerraform(this._createdBy),
-      full_name: cdktf.stringToTerraform(this._fullName),
-      id: cdktf.stringToTerraform(this._id),
-      metastore_id: cdktf.stringToTerraform(this._metastoreId),
-      name: cdktf.stringToTerraform(this._name),
-      owner: cdktf.stringToTerraform(this._owner),
-      schema_name: cdktf.stringToTerraform(this._schemaName),
-      storage_location: cdktf.stringToTerraform(this._storageLocation),
-      updated_at: cdktf.numberToTerraform(this._updatedAt),
-      updated_by: cdktf.stringToTerraform(this._updatedBy),
-      aliases: cdktf.listMapper(registeredModelAliasesToTerraform, true)(this._aliases.internalValue),
+      browse_only: cdktn.booleanToTerraform(this._browseOnly),
+      catalog_name: cdktn.stringToTerraform(this._catalogName),
+      comment: cdktn.stringToTerraform(this._comment),
+      created_at: cdktn.numberToTerraform(this._createdAt),
+      created_by: cdktn.stringToTerraform(this._createdBy),
+      full_name: cdktn.stringToTerraform(this._fullName),
+      id: cdktn.stringToTerraform(this._id),
+      metastore_id: cdktn.stringToTerraform(this._metastoreId),
+      name: cdktn.stringToTerraform(this._name),
+      owner: cdktn.stringToTerraform(this._owner),
+      schema_name: cdktn.stringToTerraform(this._schemaName),
+      storage_location: cdktn.stringToTerraform(this._storageLocation),
+      updated_at: cdktn.numberToTerraform(this._updatedAt),
+      updated_by: cdktn.stringToTerraform(this._updatedBy),
+      aliases: cdktn.listMapper(registeredModelAliasesToTerraform, true)(this._aliases.internalValue),
+      provider_config: registeredModelProviderConfigToTerraform(this._providerConfig.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       browse_only: {
-        value: cdktf.booleanToHclTerraform(this._browseOnly),
+        value: cdktn.booleanToHclTerraform(this._browseOnly),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       catalog_name: {
-        value: cdktf.stringToHclTerraform(this._catalogName),
+        value: cdktn.stringToHclTerraform(this._catalogName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       comment: {
-        value: cdktf.stringToHclTerraform(this._comment),
+        value: cdktn.stringToHclTerraform(this._comment),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       created_at: {
-        value: cdktf.numberToHclTerraform(this._createdAt),
+        value: cdktn.numberToHclTerraform(this._createdAt),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       created_by: {
-        value: cdktf.stringToHclTerraform(this._createdBy),
+        value: cdktn.stringToHclTerraform(this._createdBy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       full_name: {
-        value: cdktf.stringToHclTerraform(this._fullName),
+        value: cdktn.stringToHclTerraform(this._fullName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       metastore_id: {
-        value: cdktf.stringToHclTerraform(this._metastoreId),
+        value: cdktn.stringToHclTerraform(this._metastoreId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       owner: {
-        value: cdktf.stringToHclTerraform(this._owner),
+        value: cdktn.stringToHclTerraform(this._owner),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       schema_name: {
-        value: cdktf.stringToHclTerraform(this._schemaName),
+        value: cdktn.stringToHclTerraform(this._schemaName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_location: {
-        value: cdktf.stringToHclTerraform(this._storageLocation),
+        value: cdktn.stringToHclTerraform(this._storageLocation),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       updated_at: {
-        value: cdktf.numberToHclTerraform(this._updatedAt),
+        value: cdktn.numberToHclTerraform(this._updatedAt),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       updated_by: {
-        value: cdktf.stringToHclTerraform(this._updatedBy),
+        value: cdktn.stringToHclTerraform(this._updatedBy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       aliases: {
-        value: cdktf.listMapperHcl(registeredModelAliasesToHclTerraform, true)(this._aliases.internalValue),
+        value: cdktn.listMapperHcl(registeredModelAliasesToHclTerraform, true)(this._aliases.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "RegisteredModelAliasesList",
+      },
+      provider_config: {
+        value: registeredModelProviderConfigToHclTerraform(this._providerConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "RegisteredModelProviderConfigList",
       },
     };
 

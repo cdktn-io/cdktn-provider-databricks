@@ -1,175 +1,181 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/lakehouse_monitor
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/lakehouse_monitor
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LakehouseMonitorConfig extends cdktf.TerraformMetaArguments {
+export interface LakehouseMonitorConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/lakehouse_monitor#assets_dir LakehouseMonitor#assets_dir}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/lakehouse_monitor#assets_dir LakehouseMonitor#assets_dir}
   */
   readonly assetsDir: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/lakehouse_monitor#baseline_table_name LakehouseMonitor#baseline_table_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/lakehouse_monitor#baseline_table_name LakehouseMonitor#baseline_table_name}
   */
   readonly baselineTableName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/lakehouse_monitor#id LakehouseMonitor#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/lakehouse_monitor#id LakehouseMonitor#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/lakehouse_monitor#latest_monitor_failure_msg LakehouseMonitor#latest_monitor_failure_msg}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/lakehouse_monitor#latest_monitor_failure_msg LakehouseMonitor#latest_monitor_failure_msg}
   */
   readonly latestMonitorFailureMsg?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/lakehouse_monitor#output_schema_name LakehouseMonitor#output_schema_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/lakehouse_monitor#output_schema_name LakehouseMonitor#output_schema_name}
   */
   readonly outputSchemaName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/lakehouse_monitor#skip_builtin_dashboard LakehouseMonitor#skip_builtin_dashboard}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/lakehouse_monitor#skip_builtin_dashboard LakehouseMonitor#skip_builtin_dashboard}
   */
-  readonly skipBuiltinDashboard?: boolean | cdktf.IResolvable;
+  readonly skipBuiltinDashboard?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/lakehouse_monitor#slicing_exprs LakehouseMonitor#slicing_exprs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/lakehouse_monitor#slicing_exprs LakehouseMonitor#slicing_exprs}
   */
   readonly slicingExprs?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/lakehouse_monitor#table_name LakehouseMonitor#table_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/lakehouse_monitor#table_name LakehouseMonitor#table_name}
   */
   readonly tableName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/lakehouse_monitor#warehouse_id LakehouseMonitor#warehouse_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/lakehouse_monitor#warehouse_id LakehouseMonitor#warehouse_id}
   */
   readonly warehouseId?: string;
   /**
   * custom_metrics block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/lakehouse_monitor#custom_metrics LakehouseMonitor#custom_metrics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/lakehouse_monitor#custom_metrics LakehouseMonitor#custom_metrics}
   */
-  readonly customMetrics?: LakehouseMonitorCustomMetrics[] | cdktf.IResolvable;
+  readonly customMetrics?: LakehouseMonitorCustomMetrics[] | cdktn.IResolvable;
   /**
   * data_classification_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/lakehouse_monitor#data_classification_config LakehouseMonitor#data_classification_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/lakehouse_monitor#data_classification_config LakehouseMonitor#data_classification_config}
   */
   readonly dataClassificationConfig?: LakehouseMonitorDataClassificationConfig;
   /**
   * inference_log block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/lakehouse_monitor#inference_log LakehouseMonitor#inference_log}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/lakehouse_monitor#inference_log LakehouseMonitor#inference_log}
   */
   readonly inferenceLog?: LakehouseMonitorInferenceLog;
   /**
   * notifications block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/lakehouse_monitor#notifications LakehouseMonitor#notifications}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/lakehouse_monitor#notifications LakehouseMonitor#notifications}
   */
   readonly notifications?: LakehouseMonitorNotifications;
   /**
+  * provider_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/lakehouse_monitor#provider_config LakehouseMonitor#provider_config}
+  */
+  readonly providerConfig?: LakehouseMonitorProviderConfig;
+  /**
   * schedule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/lakehouse_monitor#schedule LakehouseMonitor#schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/lakehouse_monitor#schedule LakehouseMonitor#schedule}
   */
   readonly schedule?: LakehouseMonitorSchedule;
   /**
   * snapshot block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/lakehouse_monitor#snapshot LakehouseMonitor#snapshot}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/lakehouse_monitor#snapshot LakehouseMonitor#snapshot}
   */
   readonly snapshot?: LakehouseMonitorSnapshot;
   /**
   * time_series block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/lakehouse_monitor#time_series LakehouseMonitor#time_series}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/lakehouse_monitor#time_series LakehouseMonitor#time_series}
   */
   readonly timeSeries?: LakehouseMonitorTimeSeries;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/lakehouse_monitor#timeouts LakehouseMonitor#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/lakehouse_monitor#timeouts LakehouseMonitor#timeouts}
   */
   readonly timeouts?: LakehouseMonitorTimeouts;
 }
 export interface LakehouseMonitorCustomMetrics {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/lakehouse_monitor#definition LakehouseMonitor#definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/lakehouse_monitor#definition LakehouseMonitor#definition}
   */
   readonly definition: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/lakehouse_monitor#input_columns LakehouseMonitor#input_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/lakehouse_monitor#input_columns LakehouseMonitor#input_columns}
   */
   readonly inputColumns: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/lakehouse_monitor#name LakehouseMonitor#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/lakehouse_monitor#name LakehouseMonitor#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/lakehouse_monitor#output_data_type LakehouseMonitor#output_data_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/lakehouse_monitor#output_data_type LakehouseMonitor#output_data_type}
   */
   readonly outputDataType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/lakehouse_monitor#type LakehouseMonitor#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/lakehouse_monitor#type LakehouseMonitor#type}
   */
   readonly type: string;
 }
 
-export function lakehouseMonitorCustomMetricsToTerraform(struct?: LakehouseMonitorCustomMetrics | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lakehouseMonitorCustomMetricsToTerraform(struct?: LakehouseMonitorCustomMetrics | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    definition: cdktf.stringToTerraform(struct!.definition),
-    input_columns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.inputColumns),
-    name: cdktf.stringToTerraform(struct!.name),
-    output_data_type: cdktf.stringToTerraform(struct!.outputDataType),
-    type: cdktf.stringToTerraform(struct!.type),
+    definition: cdktn.stringToTerraform(struct!.definition),
+    input_columns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.inputColumns),
+    name: cdktn.stringToTerraform(struct!.name),
+    output_data_type: cdktn.stringToTerraform(struct!.outputDataType),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function lakehouseMonitorCustomMetricsToHclTerraform(struct?: LakehouseMonitorCustomMetrics | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lakehouseMonitorCustomMetricsToHclTerraform(struct?: LakehouseMonitorCustomMetrics | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     definition: {
-      value: cdktf.stringToHclTerraform(struct!.definition),
+      value: cdktn.stringToHclTerraform(struct!.definition),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     input_columns: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.inputColumns),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.inputColumns),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     output_data_type: {
-      value: cdktf.stringToHclTerraform(struct!.outputDataType),
+      value: cdktn.stringToHclTerraform(struct!.outputDataType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -180,9 +186,9 @@ export function lakehouseMonitorCustomMetricsToHclTerraform(struct?: LakehouseMo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LakehouseMonitorCustomMetricsOutputReference extends cdktf.ComplexObject {
+export class LakehouseMonitorCustomMetricsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -190,11 +196,11 @@ export class LakehouseMonitorCustomMetricsOutputReference extends cdktf.ComplexO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LakehouseMonitorCustomMetrics | cdktf.IResolvable | undefined {
+  public get internalValue(): LakehouseMonitorCustomMetrics | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -223,7 +229,7 @@ export class LakehouseMonitorCustomMetricsOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LakehouseMonitorCustomMetrics | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LakehouseMonitorCustomMetrics | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -233,7 +239,7 @@ export class LakehouseMonitorCustomMetricsOutputReference extends cdktf.ComplexO
       this._outputDataType = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -314,15 +320,15 @@ export class LakehouseMonitorCustomMetricsOutputReference extends cdktf.ComplexO
   }
 }
 
-export class LakehouseMonitorCustomMetricsList extends cdktf.ComplexList {
-  public internalValue? : LakehouseMonitorCustomMetrics[] | cdktf.IResolvable
+export class LakehouseMonitorCustomMetricsList extends cdktn.ComplexList {
+  public internalValue? : LakehouseMonitorCustomMetrics[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -335,30 +341,30 @@ export class LakehouseMonitorCustomMetricsList extends cdktf.ComplexList {
 }
 export interface LakehouseMonitorDataClassificationConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/lakehouse_monitor#enabled LakehouseMonitor#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/lakehouse_monitor#enabled LakehouseMonitor#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
 }
 
 export function lakehouseMonitorDataClassificationConfigToTerraform(struct?: LakehouseMonitorDataClassificationConfigOutputReference | LakehouseMonitorDataClassificationConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
   }
 }
 
 
 export function lakehouseMonitorDataClassificationConfigToHclTerraform(struct?: LakehouseMonitorDataClassificationConfigOutputReference | LakehouseMonitorDataClassificationConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -369,14 +375,14 @@ export function lakehouseMonitorDataClassificationConfigToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LakehouseMonitorDataClassificationConfigOutputReference extends cdktf.ComplexObject {
+export class LakehouseMonitorDataClassificationConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -402,11 +408,11 @@ export class LakehouseMonitorDataClassificationConfigOutputReference extends cdk
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -419,96 +425,96 @@ export class LakehouseMonitorDataClassificationConfigOutputReference extends cdk
 }
 export interface LakehouseMonitorInferenceLog {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/lakehouse_monitor#granularities LakehouseMonitor#granularities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/lakehouse_monitor#granularities LakehouseMonitor#granularities}
   */
   readonly granularities: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/lakehouse_monitor#label_col LakehouseMonitor#label_col}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/lakehouse_monitor#label_col LakehouseMonitor#label_col}
   */
   readonly labelCol?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/lakehouse_monitor#model_id_col LakehouseMonitor#model_id_col}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/lakehouse_monitor#model_id_col LakehouseMonitor#model_id_col}
   */
   readonly modelIdCol: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/lakehouse_monitor#prediction_col LakehouseMonitor#prediction_col}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/lakehouse_monitor#prediction_col LakehouseMonitor#prediction_col}
   */
   readonly predictionCol: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/lakehouse_monitor#prediction_proba_col LakehouseMonitor#prediction_proba_col}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/lakehouse_monitor#prediction_proba_col LakehouseMonitor#prediction_proba_col}
   */
   readonly predictionProbaCol?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/lakehouse_monitor#problem_type LakehouseMonitor#problem_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/lakehouse_monitor#problem_type LakehouseMonitor#problem_type}
   */
   readonly problemType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/lakehouse_monitor#timestamp_col LakehouseMonitor#timestamp_col}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/lakehouse_monitor#timestamp_col LakehouseMonitor#timestamp_col}
   */
   readonly timestampCol: string;
 }
 
 export function lakehouseMonitorInferenceLogToTerraform(struct?: LakehouseMonitorInferenceLogOutputReference | LakehouseMonitorInferenceLog): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    granularities: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.granularities),
-    label_col: cdktf.stringToTerraform(struct!.labelCol),
-    model_id_col: cdktf.stringToTerraform(struct!.modelIdCol),
-    prediction_col: cdktf.stringToTerraform(struct!.predictionCol),
-    prediction_proba_col: cdktf.stringToTerraform(struct!.predictionProbaCol),
-    problem_type: cdktf.stringToTerraform(struct!.problemType),
-    timestamp_col: cdktf.stringToTerraform(struct!.timestampCol),
+    granularities: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.granularities),
+    label_col: cdktn.stringToTerraform(struct!.labelCol),
+    model_id_col: cdktn.stringToTerraform(struct!.modelIdCol),
+    prediction_col: cdktn.stringToTerraform(struct!.predictionCol),
+    prediction_proba_col: cdktn.stringToTerraform(struct!.predictionProbaCol),
+    problem_type: cdktn.stringToTerraform(struct!.problemType),
+    timestamp_col: cdktn.stringToTerraform(struct!.timestampCol),
   }
 }
 
 
 export function lakehouseMonitorInferenceLogToHclTerraform(struct?: LakehouseMonitorInferenceLogOutputReference | LakehouseMonitorInferenceLog): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     granularities: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.granularities),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.granularities),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     label_col: {
-      value: cdktf.stringToHclTerraform(struct!.labelCol),
+      value: cdktn.stringToHclTerraform(struct!.labelCol),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     model_id_col: {
-      value: cdktf.stringToHclTerraform(struct!.modelIdCol),
+      value: cdktn.stringToHclTerraform(struct!.modelIdCol),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     prediction_col: {
-      value: cdktf.stringToHclTerraform(struct!.predictionCol),
+      value: cdktn.stringToHclTerraform(struct!.predictionCol),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     prediction_proba_col: {
-      value: cdktf.stringToHclTerraform(struct!.predictionProbaCol),
+      value: cdktn.stringToHclTerraform(struct!.predictionProbaCol),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     problem_type: {
-      value: cdktf.stringToHclTerraform(struct!.problemType),
+      value: cdktn.stringToHclTerraform(struct!.problemType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     timestamp_col: {
-      value: cdktf.stringToHclTerraform(struct!.timestampCol),
+      value: cdktn.stringToHclTerraform(struct!.timestampCol),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -519,14 +525,14 @@ export function lakehouseMonitorInferenceLogToHclTerraform(struct?: LakehouseMon
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LakehouseMonitorInferenceLogOutputReference extends cdktf.ComplexObject {
+export class LakehouseMonitorInferenceLogOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -686,30 +692,30 @@ export class LakehouseMonitorInferenceLogOutputReference extends cdktf.ComplexOb
 }
 export interface LakehouseMonitorNotificationsOnFailure {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/lakehouse_monitor#email_addresses LakehouseMonitor#email_addresses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/lakehouse_monitor#email_addresses LakehouseMonitor#email_addresses}
   */
   readonly emailAddresses?: string[];
 }
 
 export function lakehouseMonitorNotificationsOnFailureToTerraform(struct?: LakehouseMonitorNotificationsOnFailureOutputReference | LakehouseMonitorNotificationsOnFailure): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    email_addresses: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.emailAddresses),
+    email_addresses: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.emailAddresses),
   }
 }
 
 
 export function lakehouseMonitorNotificationsOnFailureToHclTerraform(struct?: LakehouseMonitorNotificationsOnFailureOutputReference | LakehouseMonitorNotificationsOnFailure): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     email_addresses: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.emailAddresses),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.emailAddresses),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -720,14 +726,14 @@ export function lakehouseMonitorNotificationsOnFailureToHclTerraform(struct?: La
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LakehouseMonitorNotificationsOnFailureOutputReference extends cdktf.ComplexObject {
+export class LakehouseMonitorNotificationsOnFailureOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -770,30 +776,30 @@ export class LakehouseMonitorNotificationsOnFailureOutputReference extends cdktf
 }
 export interface LakehouseMonitorNotificationsOnNewClassificationTagDetected {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/lakehouse_monitor#email_addresses LakehouseMonitor#email_addresses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/lakehouse_monitor#email_addresses LakehouseMonitor#email_addresses}
   */
   readonly emailAddresses?: string[];
 }
 
 export function lakehouseMonitorNotificationsOnNewClassificationTagDetectedToTerraform(struct?: LakehouseMonitorNotificationsOnNewClassificationTagDetectedOutputReference | LakehouseMonitorNotificationsOnNewClassificationTagDetected): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    email_addresses: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.emailAddresses),
+    email_addresses: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.emailAddresses),
   }
 }
 
 
 export function lakehouseMonitorNotificationsOnNewClassificationTagDetectedToHclTerraform(struct?: LakehouseMonitorNotificationsOnNewClassificationTagDetectedOutputReference | LakehouseMonitorNotificationsOnNewClassificationTagDetected): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     email_addresses: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.emailAddresses),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.emailAddresses),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -804,14 +810,14 @@ export function lakehouseMonitorNotificationsOnNewClassificationTagDetectedToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LakehouseMonitorNotificationsOnNewClassificationTagDetectedOutputReference extends cdktf.ComplexObject {
+export class LakehouseMonitorNotificationsOnNewClassificationTagDetectedOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -856,20 +862,20 @@ export interface LakehouseMonitorNotifications {
   /**
   * on_failure block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/lakehouse_monitor#on_failure LakehouseMonitor#on_failure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/lakehouse_monitor#on_failure LakehouseMonitor#on_failure}
   */
   readonly onFailure?: LakehouseMonitorNotificationsOnFailure;
   /**
   * on_new_classification_tag_detected block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/lakehouse_monitor#on_new_classification_tag_detected LakehouseMonitor#on_new_classification_tag_detected}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/lakehouse_monitor#on_new_classification_tag_detected LakehouseMonitor#on_new_classification_tag_detected}
   */
   readonly onNewClassificationTagDetected?: LakehouseMonitorNotificationsOnNewClassificationTagDetected;
 }
 
 export function lakehouseMonitorNotificationsToTerraform(struct?: LakehouseMonitorNotificationsOutputReference | LakehouseMonitorNotifications): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -880,8 +886,8 @@ export function lakehouseMonitorNotificationsToTerraform(struct?: LakehouseMonit
 
 
 export function lakehouseMonitorNotificationsToHclTerraform(struct?: LakehouseMonitorNotificationsOutputReference | LakehouseMonitorNotifications): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -903,14 +909,14 @@ export function lakehouseMonitorNotificationsToHclTerraform(struct?: LakehouseMo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LakehouseMonitorNotificationsOutputReference extends cdktf.ComplexObject {
+export class LakehouseMonitorNotificationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -973,43 +979,32 @@ export class LakehouseMonitorNotificationsOutputReference extends cdktf.ComplexO
     return this._onNewClassificationTagDetected.internalValue;
   }
 }
-export interface LakehouseMonitorSchedule {
+export interface LakehouseMonitorProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/lakehouse_monitor#quartz_cron_expression LakehouseMonitor#quartz_cron_expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/lakehouse_monitor#workspace_id LakehouseMonitor#workspace_id}
   */
-  readonly quartzCronExpression: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/lakehouse_monitor#timezone_id LakehouseMonitor#timezone_id}
-  */
-  readonly timezoneId: string;
+  readonly workspaceId: string;
 }
 
-export function lakehouseMonitorScheduleToTerraform(struct?: LakehouseMonitorScheduleOutputReference | LakehouseMonitorSchedule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lakehouseMonitorProviderConfigToTerraform(struct?: LakehouseMonitorProviderConfigOutputReference | LakehouseMonitorProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    quartz_cron_expression: cdktf.stringToTerraform(struct!.quartzCronExpression),
-    timezone_id: cdktf.stringToTerraform(struct!.timezoneId),
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
   }
 }
 
 
-export function lakehouseMonitorScheduleToHclTerraform(struct?: LakehouseMonitorScheduleOutputReference | LakehouseMonitorSchedule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lakehouseMonitorProviderConfigToHclTerraform(struct?: LakehouseMonitorProviderConfigOutputReference | LakehouseMonitorProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
-    quartz_cron_expression: {
-      value: cdktf.stringToHclTerraform(struct!.quartzCronExpression),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    timezone_id: {
-      value: cdktf.stringToHclTerraform(struct!.timezoneId),
+    workspace_id: {
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1020,14 +1015,106 @@ export function lakehouseMonitorScheduleToHclTerraform(struct?: LakehouseMonitor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LakehouseMonitorScheduleOutputReference extends cdktf.ComplexObject {
+export class LakehouseMonitorProviderConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): LakehouseMonitorProviderConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._workspaceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workspaceId = this._workspaceId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LakehouseMonitorProviderConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._workspaceId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._workspaceId = value.workspaceId;
+    }
+  }
+
+  // workspace_id - computed: false, optional: false, required: true
+  private _workspaceId?: string; 
+  public get workspaceId() {
+    return this.getStringAttribute('workspace_id');
+  }
+  public set workspaceId(value: string) {
+    this._workspaceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workspaceIdInput() {
+    return this._workspaceId;
+  }
+}
+export interface LakehouseMonitorSchedule {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/lakehouse_monitor#quartz_cron_expression LakehouseMonitor#quartz_cron_expression}
+  */
+  readonly quartzCronExpression: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/lakehouse_monitor#timezone_id LakehouseMonitor#timezone_id}
+  */
+  readonly timezoneId: string;
+}
+
+export function lakehouseMonitorScheduleToTerraform(struct?: LakehouseMonitorScheduleOutputReference | LakehouseMonitorSchedule): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    quartz_cron_expression: cdktn.stringToTerraform(struct!.quartzCronExpression),
+    timezone_id: cdktn.stringToTerraform(struct!.timezoneId),
+  }
+}
+
+
+export function lakehouseMonitorScheduleToHclTerraform(struct?: LakehouseMonitorScheduleOutputReference | LakehouseMonitorSchedule): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    quartz_cron_expression: {
+      value: cdktn.stringToHclTerraform(struct!.quartzCronExpression),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    timezone_id: {
+      value: cdktn.stringToHclTerraform(struct!.timezoneId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class LakehouseMonitorScheduleOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1093,8 +1180,8 @@ export interface LakehouseMonitorSnapshot {
 }
 
 export function lakehouseMonitorSnapshotToTerraform(struct?: LakehouseMonitorSnapshotOutputReference | LakehouseMonitorSnapshot): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1103,8 +1190,8 @@ export function lakehouseMonitorSnapshotToTerraform(struct?: LakehouseMonitorSna
 
 
 export function lakehouseMonitorSnapshotToHclTerraform(struct?: LakehouseMonitorSnapshotOutputReference | LakehouseMonitorSnapshot): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1112,14 +1199,14 @@ export function lakehouseMonitorSnapshotToHclTerraform(struct?: LakehouseMonitor
   return attrs;
 }
 
-export class LakehouseMonitorSnapshotOutputReference extends cdktf.ComplexObject {
+export class LakehouseMonitorSnapshotOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1140,41 +1227,41 @@ export class LakehouseMonitorSnapshotOutputReference extends cdktf.ComplexObject
 }
 export interface LakehouseMonitorTimeSeries {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/lakehouse_monitor#granularities LakehouseMonitor#granularities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/lakehouse_monitor#granularities LakehouseMonitor#granularities}
   */
   readonly granularities: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/lakehouse_monitor#timestamp_col LakehouseMonitor#timestamp_col}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/lakehouse_monitor#timestamp_col LakehouseMonitor#timestamp_col}
   */
   readonly timestampCol: string;
 }
 
 export function lakehouseMonitorTimeSeriesToTerraform(struct?: LakehouseMonitorTimeSeriesOutputReference | LakehouseMonitorTimeSeries): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    granularities: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.granularities),
-    timestamp_col: cdktf.stringToTerraform(struct!.timestampCol),
+    granularities: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.granularities),
+    timestamp_col: cdktn.stringToTerraform(struct!.timestampCol),
   }
 }
 
 
 export function lakehouseMonitorTimeSeriesToHclTerraform(struct?: LakehouseMonitorTimeSeriesOutputReference | LakehouseMonitorTimeSeries): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     granularities: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.granularities),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.granularities),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     timestamp_col: {
-      value: cdktf.stringToHclTerraform(struct!.timestampCol),
+      value: cdktn.stringToHclTerraform(struct!.timestampCol),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1185,14 +1272,14 @@ export function lakehouseMonitorTimeSeriesToHclTerraform(struct?: LakehouseMonit
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LakehouseMonitorTimeSeriesOutputReference extends cdktf.ComplexObject {
+export class LakehouseMonitorTimeSeriesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1251,30 +1338,30 @@ export class LakehouseMonitorTimeSeriesOutputReference extends cdktf.ComplexObje
 }
 export interface LakehouseMonitorTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/lakehouse_monitor#create LakehouseMonitor#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/lakehouse_monitor#create LakehouseMonitor#create}
   */
   readonly create?: string;
 }
 
-export function lakehouseMonitorTimeoutsToTerraform(struct?: LakehouseMonitorTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lakehouseMonitorTimeoutsToTerraform(struct?: LakehouseMonitorTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
+    create: cdktn.stringToTerraform(struct!.create),
   }
 }
 
 
-export function lakehouseMonitorTimeoutsToHclTerraform(struct?: LakehouseMonitorTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lakehouseMonitorTimeoutsToHclTerraform(struct?: LakehouseMonitorTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1285,19 +1372,19 @@ export function lakehouseMonitorTimeoutsToHclTerraform(struct?: LakehouseMonitor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LakehouseMonitorTimeoutsOutputReference extends cdktf.ComplexObject {
+export class LakehouseMonitorTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): LakehouseMonitorTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): LakehouseMonitorTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1310,13 +1397,13 @@ export class LakehouseMonitorTimeoutsOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LakehouseMonitorTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LakehouseMonitorTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1345,9 +1432,9 @@ export class LakehouseMonitorTimeoutsOutputReference extends cdktf.ComplexObject
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/lakehouse_monitor databricks_lakehouse_monitor}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/lakehouse_monitor databricks_lakehouse_monitor}
 */
-export class LakehouseMonitor extends cdktf.TerraformResource {
+export class LakehouseMonitor extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1358,14 +1445,14 @@ export class LakehouseMonitor extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LakehouseMonitor resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LakehouseMonitor resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LakehouseMonitor to import
-  * @param importFromId The id of the existing LakehouseMonitor that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/lakehouse_monitor#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LakehouseMonitor that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/lakehouse_monitor#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LakehouseMonitor to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_lakehouse_monitor", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_lakehouse_monitor", importId: importFromId, provider });
       }
 
   // ===========
@@ -1373,7 +1460,7 @@ export class LakehouseMonitor extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/lakehouse_monitor databricks_lakehouse_monitor} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/lakehouse_monitor databricks_lakehouse_monitor} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1384,7 +1471,7 @@ export class LakehouseMonitor extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_lakehouse_monitor',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -1408,6 +1495,7 @@ export class LakehouseMonitor extends cdktf.TerraformResource {
     this._dataClassificationConfig.internalValue = config.dataClassificationConfig;
     this._inferenceLog.internalValue = config.inferenceLog;
     this._notifications.internalValue = config.notifications;
+    this._providerConfig.internalValue = config.providerConfig;
     this._schedule.internalValue = config.schedule;
     this._snapshot.internalValue = config.snapshot;
     this._timeSeries.internalValue = config.timeSeries;
@@ -1513,11 +1601,11 @@ export class LakehouseMonitor extends cdktf.TerraformResource {
   }
 
   // skip_builtin_dashboard - computed: false, optional: true, required: false
-  private _skipBuiltinDashboard?: boolean | cdktf.IResolvable; 
+  private _skipBuiltinDashboard?: boolean | cdktn.IResolvable; 
   public get skipBuiltinDashboard() {
     return this.getBooleanAttribute('skip_builtin_dashboard');
   }
-  public set skipBuiltinDashboard(value: boolean | cdktf.IResolvable) {
+  public set skipBuiltinDashboard(value: boolean | cdktn.IResolvable) {
     this._skipBuiltinDashboard = value;
   }
   public resetSkipBuiltinDashboard() {
@@ -1583,7 +1671,7 @@ export class LakehouseMonitor extends cdktf.TerraformResource {
   public get customMetrics() {
     return this._customMetrics;
   }
-  public putCustomMetrics(value: LakehouseMonitorCustomMetrics[] | cdktf.IResolvable) {
+  public putCustomMetrics(value: LakehouseMonitorCustomMetrics[] | cdktn.IResolvable) {
     this._customMetrics.internalValue = value;
   }
   public resetCustomMetrics() {
@@ -1640,6 +1728,22 @@ export class LakehouseMonitor extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get notificationsInput() {
     return this._notifications.internalValue;
+  }
+
+  // provider_config - computed: false, optional: true, required: false
+  private _providerConfig = new LakehouseMonitorProviderConfigOutputReference(this, "provider_config");
+  public get providerConfig() {
+    return this._providerConfig;
+  }
+  public putProviderConfig(value: LakehouseMonitorProviderConfig) {
+    this._providerConfig.internalValue = value;
+  }
+  public resetProviderConfig() {
+    this._providerConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerConfigInput() {
+    return this._providerConfig.internalValue;
   }
 
   // schedule - computed: false, optional: true, required: false
@@ -1712,19 +1816,20 @@ export class LakehouseMonitor extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      assets_dir: cdktf.stringToTerraform(this._assetsDir),
-      baseline_table_name: cdktf.stringToTerraform(this._baselineTableName),
-      id: cdktf.stringToTerraform(this._id),
-      latest_monitor_failure_msg: cdktf.stringToTerraform(this._latestMonitorFailureMsg),
-      output_schema_name: cdktf.stringToTerraform(this._outputSchemaName),
-      skip_builtin_dashboard: cdktf.booleanToTerraform(this._skipBuiltinDashboard),
-      slicing_exprs: cdktf.listMapper(cdktf.stringToTerraform, false)(this._slicingExprs),
-      table_name: cdktf.stringToTerraform(this._tableName),
-      warehouse_id: cdktf.stringToTerraform(this._warehouseId),
-      custom_metrics: cdktf.listMapper(lakehouseMonitorCustomMetricsToTerraform, true)(this._customMetrics.internalValue),
+      assets_dir: cdktn.stringToTerraform(this._assetsDir),
+      baseline_table_name: cdktn.stringToTerraform(this._baselineTableName),
+      id: cdktn.stringToTerraform(this._id),
+      latest_monitor_failure_msg: cdktn.stringToTerraform(this._latestMonitorFailureMsg),
+      output_schema_name: cdktn.stringToTerraform(this._outputSchemaName),
+      skip_builtin_dashboard: cdktn.booleanToTerraform(this._skipBuiltinDashboard),
+      slicing_exprs: cdktn.listMapper(cdktn.stringToTerraform, false)(this._slicingExprs),
+      table_name: cdktn.stringToTerraform(this._tableName),
+      warehouse_id: cdktn.stringToTerraform(this._warehouseId),
+      custom_metrics: cdktn.listMapper(lakehouseMonitorCustomMetricsToTerraform, true)(this._customMetrics.internalValue),
       data_classification_config: lakehouseMonitorDataClassificationConfigToTerraform(this._dataClassificationConfig.internalValue),
       inference_log: lakehouseMonitorInferenceLogToTerraform(this._inferenceLog.internalValue),
       notifications: lakehouseMonitorNotificationsToTerraform(this._notifications.internalValue),
+      provider_config: lakehouseMonitorProviderConfigToTerraform(this._providerConfig.internalValue),
       schedule: lakehouseMonitorScheduleToTerraform(this._schedule.internalValue),
       snapshot: lakehouseMonitorSnapshotToTerraform(this._snapshot.internalValue),
       time_series: lakehouseMonitorTimeSeriesToTerraform(this._timeSeries.internalValue),
@@ -1735,61 +1840,61 @@ export class LakehouseMonitor extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       assets_dir: {
-        value: cdktf.stringToHclTerraform(this._assetsDir),
+        value: cdktn.stringToHclTerraform(this._assetsDir),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       baseline_table_name: {
-        value: cdktf.stringToHclTerraform(this._baselineTableName),
+        value: cdktn.stringToHclTerraform(this._baselineTableName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       latest_monitor_failure_msg: {
-        value: cdktf.stringToHclTerraform(this._latestMonitorFailureMsg),
+        value: cdktn.stringToHclTerraform(this._latestMonitorFailureMsg),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       output_schema_name: {
-        value: cdktf.stringToHclTerraform(this._outputSchemaName),
+        value: cdktn.stringToHclTerraform(this._outputSchemaName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       skip_builtin_dashboard: {
-        value: cdktf.booleanToHclTerraform(this._skipBuiltinDashboard),
+        value: cdktn.booleanToHclTerraform(this._skipBuiltinDashboard),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       slicing_exprs: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._slicingExprs),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._slicingExprs),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       table_name: {
-        value: cdktf.stringToHclTerraform(this._tableName),
+        value: cdktn.stringToHclTerraform(this._tableName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       warehouse_id: {
-        value: cdktf.stringToHclTerraform(this._warehouseId),
+        value: cdktn.stringToHclTerraform(this._warehouseId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       custom_metrics: {
-        value: cdktf.listMapperHcl(lakehouseMonitorCustomMetricsToHclTerraform, true)(this._customMetrics.internalValue),
+        value: cdktn.listMapperHcl(lakehouseMonitorCustomMetricsToHclTerraform, true)(this._customMetrics.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "LakehouseMonitorCustomMetricsList",
@@ -1811,6 +1916,12 @@ export class LakehouseMonitor extends cdktf.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "LakehouseMonitorNotificationsList",
+      },
+      provider_config: {
+        value: lakehouseMonitorProviderConfigToHclTerraform(this._providerConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "LakehouseMonitorProviderConfigList",
       },
       schedule: {
         value: lakehouseMonitorScheduleToHclTerraform(this._schedule.internalValue),

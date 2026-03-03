@@ -1,40 +1,52 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/vector_search_endpoint
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/vector_search_endpoint
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VectorSearchEndpointConfig extends cdktf.TerraformMetaArguments {
+export interface VectorSearchEndpointConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/vector_search_endpoint#budget_policy_id VectorSearchEndpoint#budget_policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/vector_search_endpoint#budget_policy_id VectorSearchEndpoint#budget_policy_id}
   */
   readonly budgetPolicyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/vector_search_endpoint#endpoint_type VectorSearchEndpoint#endpoint_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/vector_search_endpoint#endpoint_type VectorSearchEndpoint#endpoint_type}
   */
   readonly endpointType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/vector_search_endpoint#id VectorSearchEndpoint#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/vector_search_endpoint#id VectorSearchEndpoint#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/vector_search_endpoint#name VectorSearchEndpoint#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/vector_search_endpoint#name VectorSearchEndpoint#name}
   */
   readonly name: string;
   /**
+  * provider_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/vector_search_endpoint#provider_config VectorSearchEndpoint#provider_config}
+  */
+  readonly providerConfig?: VectorSearchEndpointProviderConfig;
+  /**
+  * scaling_info block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/vector_search_endpoint#scaling_info VectorSearchEndpoint#scaling_info}
+  */
+  readonly scalingInfo?: VectorSearchEndpointScalingInfo;
+  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/vector_search_endpoint#timeouts VectorSearchEndpoint#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/vector_search_endpoint#timeouts VectorSearchEndpoint#timeouts}
   */
   readonly timeouts?: VectorSearchEndpointTimeouts;
 }
@@ -42,8 +54,8 @@ export interface VectorSearchEndpointEndpointStatus {
 }
 
 export function vectorSearchEndpointEndpointStatusToTerraform(struct?: VectorSearchEndpointEndpointStatus): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -52,8 +64,8 @@ export function vectorSearchEndpointEndpointStatusToTerraform(struct?: VectorSea
 
 
 export function vectorSearchEndpointEndpointStatusToHclTerraform(struct?: VectorSearchEndpointEndpointStatus): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -61,7 +73,7 @@ export function vectorSearchEndpointEndpointStatusToHclTerraform(struct?: Vector
   return attrs;
 }
 
-export class VectorSearchEndpointEndpointStatusOutputReference extends cdktf.ComplexObject {
+export class VectorSearchEndpointEndpointStatusOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -70,7 +82,7 @@ export class VectorSearchEndpointEndpointStatusOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -100,14 +112,14 @@ export class VectorSearchEndpointEndpointStatusOutputReference extends cdktf.Com
   }
 }
 
-export class VectorSearchEndpointEndpointStatusList extends cdktf.ComplexList {
+export class VectorSearchEndpointEndpointStatusList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -118,32 +130,32 @@ export class VectorSearchEndpointEndpointStatusList extends cdktf.ComplexList {
     return new VectorSearchEndpointEndpointStatusOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface VectorSearchEndpointTimeouts {
+export interface VectorSearchEndpointProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/vector_search_endpoint#create VectorSearchEndpoint#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/vector_search_endpoint#workspace_id VectorSearchEndpoint#workspace_id}
   */
-  readonly create?: string;
+  readonly workspaceId: string;
 }
 
-export function vectorSearchEndpointTimeoutsToTerraform(struct?: VectorSearchEndpointTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vectorSearchEndpointProviderConfigToTerraform(struct?: VectorSearchEndpointProviderConfigOutputReference | VectorSearchEndpointProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
   }
 }
 
 
-export function vectorSearchEndpointTimeoutsToHclTerraform(struct?: VectorSearchEndpointTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vectorSearchEndpointProviderConfigToHclTerraform(struct?: VectorSearchEndpointProviderConfigOutputReference | VectorSearchEndpointProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
-    create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+    workspace_id: {
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -154,19 +166,217 @@ export function vectorSearchEndpointTimeoutsToHclTerraform(struct?: VectorSearch
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VectorSearchEndpointTimeoutsOutputReference extends cdktf.ComplexObject {
+export class VectorSearchEndpointProviderConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): VectorSearchEndpointProviderConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._workspaceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workspaceId = this._workspaceId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: VectorSearchEndpointProviderConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._workspaceId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._workspaceId = value.workspaceId;
+    }
+  }
+
+  // workspace_id - computed: false, optional: false, required: true
+  private _workspaceId?: string; 
+  public get workspaceId() {
+    return this.getStringAttribute('workspace_id');
+  }
+  public set workspaceId(value: string) {
+    this._workspaceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workspaceIdInput() {
+    return this._workspaceId;
+  }
+}
+export interface VectorSearchEndpointScalingInfo {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/vector_search_endpoint#requested_min_qps VectorSearchEndpoint#requested_min_qps}
+  */
+  readonly requestedMinQps?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/vector_search_endpoint#state VectorSearchEndpoint#state}
+  */
+  readonly state?: string;
+}
+
+export function vectorSearchEndpointScalingInfoToTerraform(struct?: VectorSearchEndpointScalingInfoOutputReference | VectorSearchEndpointScalingInfo): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    requested_min_qps: cdktn.numberToTerraform(struct!.requestedMinQps),
+    state: cdktn.stringToTerraform(struct!.state),
+  }
+}
+
+
+export function vectorSearchEndpointScalingInfoToHclTerraform(struct?: VectorSearchEndpointScalingInfoOutputReference | VectorSearchEndpointScalingInfo): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    requested_min_qps: {
+      value: cdktn.numberToHclTerraform(struct!.requestedMinQps),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    state: {
+      value: cdktn.stringToHclTerraform(struct!.state),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class VectorSearchEndpointScalingInfoOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): VectorSearchEndpointScalingInfo | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._requestedMinQps !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.requestedMinQps = this._requestedMinQps;
+    }
+    if (this._state !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.state = this._state;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: VectorSearchEndpointScalingInfo | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._requestedMinQps = undefined;
+      this._state = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._requestedMinQps = value.requestedMinQps;
+      this._state = value.state;
+    }
+  }
+
+  // requested_min_qps - computed: false, optional: true, required: false
+  private _requestedMinQps?: number; 
+  public get requestedMinQps() {
+    return this.getNumberAttribute('requested_min_qps');
+  }
+  public set requestedMinQps(value: number) {
+    this._requestedMinQps = value;
+  }
+  public resetRequestedMinQps() {
+    this._requestedMinQps = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get requestedMinQpsInput() {
+    return this._requestedMinQps;
+  }
+
+  // state - computed: false, optional: true, required: false
+  private _state?: string; 
+  public get state() {
+    return this.getStringAttribute('state');
+  }
+  public set state(value: string) {
+    this._state = value;
+  }
+  public resetState() {
+    this._state = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stateInput() {
+    return this._state;
+  }
+}
+export interface VectorSearchEndpointTimeouts {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/vector_search_endpoint#create VectorSearchEndpoint#create}
+  */
+  readonly create?: string;
+}
+
+export function vectorSearchEndpointTimeoutsToTerraform(struct?: VectorSearchEndpointTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    create: cdktn.stringToTerraform(struct!.create),
+  }
+}
+
+
+export function vectorSearchEndpointTimeoutsToHclTerraform(struct?: VectorSearchEndpointTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktn.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class VectorSearchEndpointTimeoutsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): VectorSearchEndpointTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): VectorSearchEndpointTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -179,13 +389,13 @@ export class VectorSearchEndpointTimeoutsOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VectorSearchEndpointTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VectorSearchEndpointTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -214,9 +424,9 @@ export class VectorSearchEndpointTimeoutsOutputReference extends cdktf.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/vector_search_endpoint databricks_vector_search_endpoint}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/vector_search_endpoint databricks_vector_search_endpoint}
 */
-export class VectorSearchEndpoint extends cdktf.TerraformResource {
+export class VectorSearchEndpoint extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -227,14 +437,14 @@ export class VectorSearchEndpoint extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VectorSearchEndpoint resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VectorSearchEndpoint resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VectorSearchEndpoint to import
-  * @param importFromId The id of the existing VectorSearchEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/vector_search_endpoint#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VectorSearchEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/vector_search_endpoint#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VectorSearchEndpoint to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_vector_search_endpoint", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_vector_search_endpoint", importId: importFromId, provider });
       }
 
   // ===========
@@ -242,7 +452,7 @@ export class VectorSearchEndpoint extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/vector_search_endpoint databricks_vector_search_endpoint} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/vector_search_endpoint databricks_vector_search_endpoint} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -253,7 +463,7 @@ export class VectorSearchEndpoint extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_vector_search_endpoint',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -268,6 +478,8 @@ export class VectorSearchEndpoint extends cdktf.TerraformResource {
     this._endpointType = config.endpointType;
     this._id = config.id;
     this._name = config.name;
+    this._providerConfig.internalValue = config.providerConfig;
+    this._scalingInfo.internalValue = config.scalingInfo;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -374,6 +586,38 @@ export class VectorSearchEndpoint extends cdktf.TerraformResource {
     return this.getNumberAttribute('num_indexes');
   }
 
+  // provider_config - computed: false, optional: true, required: false
+  private _providerConfig = new VectorSearchEndpointProviderConfigOutputReference(this, "provider_config");
+  public get providerConfig() {
+    return this._providerConfig;
+  }
+  public putProviderConfig(value: VectorSearchEndpointProviderConfig) {
+    this._providerConfig.internalValue = value;
+  }
+  public resetProviderConfig() {
+    this._providerConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerConfigInput() {
+    return this._providerConfig.internalValue;
+  }
+
+  // scaling_info - computed: false, optional: true, required: false
+  private _scalingInfo = new VectorSearchEndpointScalingInfoOutputReference(this, "scaling_info");
+  public get scalingInfo() {
+    return this._scalingInfo;
+  }
+  public putScalingInfo(value: VectorSearchEndpointScalingInfo) {
+    this._scalingInfo.internalValue = value;
+  }
+  public resetScalingInfo() {
+    this._scalingInfo.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scalingInfoInput() {
+    return this._scalingInfo.internalValue;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new VectorSearchEndpointTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -396,10 +640,12 @@ export class VectorSearchEndpoint extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      budget_policy_id: cdktf.stringToTerraform(this._budgetPolicyId),
-      endpoint_type: cdktf.stringToTerraform(this._endpointType),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
+      budget_policy_id: cdktn.stringToTerraform(this._budgetPolicyId),
+      endpoint_type: cdktn.stringToTerraform(this._endpointType),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      provider_config: vectorSearchEndpointProviderConfigToTerraform(this._providerConfig.internalValue),
+      scaling_info: vectorSearchEndpointScalingInfoToTerraform(this._scalingInfo.internalValue),
       timeouts: vectorSearchEndpointTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -407,28 +653,40 @@ export class VectorSearchEndpoint extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       budget_policy_id: {
-        value: cdktf.stringToHclTerraform(this._budgetPolicyId),
+        value: cdktn.stringToHclTerraform(this._budgetPolicyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       endpoint_type: {
-        value: cdktf.stringToHclTerraform(this._endpointType),
+        value: cdktn.stringToHclTerraform(this._endpointType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      provider_config: {
+        value: vectorSearchEndpointProviderConfigToHclTerraform(this._providerConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "VectorSearchEndpointProviderConfigList",
+      },
+      scaling_info: {
+        value: vectorSearchEndpointScalingInfoToHclTerraform(this._scalingInfo.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "VectorSearchEndpointScalingInfoList",
       },
       timeouts: {
         value: vectorSearchEndpointTimeoutsToHclTerraform(this._timeouts.internalValue),

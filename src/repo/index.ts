@@ -1,81 +1,168 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/repo
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/repo
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface RepoConfig extends cdktf.TerraformMetaArguments {
+export interface RepoConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/repo#branch Repo#branch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/repo#branch Repo#branch}
   */
   readonly branch?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/repo#commit_hash Repo#commit_hash}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/repo#commit_hash Repo#commit_hash}
   */
   readonly commitHash?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/repo#git_provider Repo#git_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/repo#git_provider Repo#git_provider}
   */
   readonly gitProvider?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/repo#id Repo#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/repo#id Repo#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/repo#path Repo#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/repo#path Repo#path}
   */
   readonly path?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/repo#tag Repo#tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/repo#tag Repo#tag}
   */
   readonly tag?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/repo#url Repo#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/repo#url Repo#url}
   */
   readonly url: string;
   /**
+  * provider_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/repo#provider_config Repo#provider_config}
+  */
+  readonly providerConfig?: RepoProviderConfig;
+  /**
   * sparse_checkout block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/repo#sparse_checkout Repo#sparse_checkout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/repo#sparse_checkout Repo#sparse_checkout}
   */
   readonly sparseCheckout?: RepoSparseCheckout;
 }
+export interface RepoProviderConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/repo#workspace_id Repo#workspace_id}
+  */
+  readonly workspaceId: string;
+}
+
+export function repoProviderConfigToTerraform(struct?: RepoProviderConfigOutputReference | RepoProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
+  }
+}
+
+
+export function repoProviderConfigToHclTerraform(struct?: RepoProviderConfigOutputReference | RepoProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    workspace_id: {
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class RepoProviderConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): RepoProviderConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._workspaceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workspaceId = this._workspaceId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: RepoProviderConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._workspaceId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._workspaceId = value.workspaceId;
+    }
+  }
+
+  // workspace_id - computed: false, optional: false, required: true
+  private _workspaceId?: string; 
+  public get workspaceId() {
+    return this.getStringAttribute('workspace_id');
+  }
+  public set workspaceId(value: string) {
+    this._workspaceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workspaceIdInput() {
+    return this._workspaceId;
+  }
+}
 export interface RepoSparseCheckout {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/repo#patterns Repo#patterns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/repo#patterns Repo#patterns}
   */
   readonly patterns: string[];
 }
 
 export function repoSparseCheckoutToTerraform(struct?: RepoSparseCheckoutOutputReference | RepoSparseCheckout): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    patterns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.patterns),
+    patterns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.patterns),
   }
 }
 
 
 export function repoSparseCheckoutToHclTerraform(struct?: RepoSparseCheckoutOutputReference | RepoSparseCheckout): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     patterns: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.patterns),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.patterns),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -86,14 +173,14 @@ export function repoSparseCheckoutToHclTerraform(struct?: RepoSparseCheckoutOutp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RepoSparseCheckoutOutputReference extends cdktf.ComplexObject {
+export class RepoSparseCheckoutOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -133,9 +220,9 @@ export class RepoSparseCheckoutOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/repo databricks_repo}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/repo databricks_repo}
 */
-export class Repo extends cdktf.TerraformResource {
+export class Repo extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -146,14 +233,14 @@ export class Repo extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Repo resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Repo resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Repo to import
-  * @param importFromId The id of the existing Repo that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/repo#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Repo that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/repo#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Repo to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_repo", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_repo", importId: importFromId, provider });
       }
 
   // ===========
@@ -161,7 +248,7 @@ export class Repo extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/repo databricks_repo} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/repo databricks_repo} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -172,7 +259,7 @@ export class Repo extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_repo',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -190,6 +277,7 @@ export class Repo extends cdktf.TerraformResource {
     this._path = config.path;
     this._tag = config.tag;
     this._url = config.url;
+    this._providerConfig.internalValue = config.providerConfig;
     this._sparseCheckout.internalValue = config.sparseCheckout;
   }
 
@@ -311,6 +399,22 @@ export class Repo extends cdktf.TerraformResource {
     return this.getStringAttribute('workspace_path');
   }
 
+  // provider_config - computed: false, optional: true, required: false
+  private _providerConfig = new RepoProviderConfigOutputReference(this, "provider_config");
+  public get providerConfig() {
+    return this._providerConfig;
+  }
+  public putProviderConfig(value: RepoProviderConfig) {
+    this._providerConfig.internalValue = value;
+  }
+  public resetProviderConfig() {
+    this._providerConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerConfigInput() {
+    return this._providerConfig.internalValue;
+  }
+
   // sparse_checkout - computed: false, optional: true, required: false
   private _sparseCheckout = new RepoSparseCheckoutOutputReference(this, "sparse_checkout");
   public get sparseCheckout() {
@@ -333,13 +437,14 @@ export class Repo extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      branch: cdktf.stringToTerraform(this._branch),
-      commit_hash: cdktf.stringToTerraform(this._commitHash),
-      git_provider: cdktf.stringToTerraform(this._gitProvider),
-      id: cdktf.stringToTerraform(this._id),
-      path: cdktf.stringToTerraform(this._path),
-      tag: cdktf.stringToTerraform(this._tag),
-      url: cdktf.stringToTerraform(this._url),
+      branch: cdktn.stringToTerraform(this._branch),
+      commit_hash: cdktn.stringToTerraform(this._commitHash),
+      git_provider: cdktn.stringToTerraform(this._gitProvider),
+      id: cdktn.stringToTerraform(this._id),
+      path: cdktn.stringToTerraform(this._path),
+      tag: cdktn.stringToTerraform(this._tag),
+      url: cdktn.stringToTerraform(this._url),
+      provider_config: repoProviderConfigToTerraform(this._providerConfig.internalValue),
       sparse_checkout: repoSparseCheckoutToTerraform(this._sparseCheckout.internalValue),
     };
   }
@@ -347,46 +452,52 @@ export class Repo extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       branch: {
-        value: cdktf.stringToHclTerraform(this._branch),
+        value: cdktn.stringToHclTerraform(this._branch),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       commit_hash: {
-        value: cdktf.stringToHclTerraform(this._commitHash),
+        value: cdktn.stringToHclTerraform(this._commitHash),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       git_provider: {
-        value: cdktf.stringToHclTerraform(this._gitProvider),
+        value: cdktn.stringToHclTerraform(this._gitProvider),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       path: {
-        value: cdktf.stringToHclTerraform(this._path),
+        value: cdktn.stringToHclTerraform(this._path),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tag: {
-        value: cdktf.stringToHclTerraform(this._tag),
+        value: cdktn.stringToHclTerraform(this._tag),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       url: {
-        value: cdktf.stringToHclTerraform(this._url),
+        value: cdktn.stringToHclTerraform(this._url),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      provider_config: {
+        value: repoProviderConfigToHclTerraform(this._providerConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "RepoProviderConfigList",
       },
       sparse_checkout: {
         value: repoSparseCheckoutToHclTerraform(this._sparseCheckout.internalValue),

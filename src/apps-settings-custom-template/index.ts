@@ -1,68 +1,72 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/apps_settings_custom_template
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/apps_settings_custom_template
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AppsSettingsCustomTemplateConfig extends cdktf.TerraformMetaArguments {
+export interface AppsSettingsCustomTemplateConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/apps_settings_custom_template#description AppsSettingsCustomTemplate#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/apps_settings_custom_template#description AppsSettingsCustomTemplate#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/apps_settings_custom_template#git_provider AppsSettingsCustomTemplate#git_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/apps_settings_custom_template#git_provider AppsSettingsCustomTemplate#git_provider}
   */
   readonly gitProvider: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/apps_settings_custom_template#git_repo AppsSettingsCustomTemplate#git_repo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/apps_settings_custom_template#git_repo AppsSettingsCustomTemplate#git_repo}
   */
   readonly gitRepo: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/apps_settings_custom_template#manifest AppsSettingsCustomTemplate#manifest}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/apps_settings_custom_template#manifest AppsSettingsCustomTemplate#manifest}
   */
   readonly manifest: AppsSettingsCustomTemplateManifest;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/apps_settings_custom_template#name AppsSettingsCustomTemplate#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/apps_settings_custom_template#name AppsSettingsCustomTemplate#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/apps_settings_custom_template#path AppsSettingsCustomTemplate#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/apps_settings_custom_template#path AppsSettingsCustomTemplate#path}
   */
   readonly path: string;
-}
-export interface AppsSettingsCustomTemplateManifestResourceSpecsJobSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/apps_settings_custom_template#permission AppsSettingsCustomTemplate#permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/apps_settings_custom_template#provider_config AppsSettingsCustomTemplate#provider_config}
+  */
+  readonly providerConfig?: AppsSettingsCustomTemplateProviderConfig;
+}
+export interface AppsSettingsCustomTemplateManifestResourceSpecsExperimentSpec {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/apps_settings_custom_template#permission AppsSettingsCustomTemplate#permission}
   */
   readonly permission: string;
 }
 
-export function appsSettingsCustomTemplateManifestResourceSpecsJobSpecToTerraform(struct?: AppsSettingsCustomTemplateManifestResourceSpecsJobSpec | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsSettingsCustomTemplateManifestResourceSpecsExperimentSpecToTerraform(struct?: AppsSettingsCustomTemplateManifestResourceSpecsExperimentSpec | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    permission: cdktf.stringToTerraform(struct!.permission),
+    permission: cdktn.stringToTerraform(struct!.permission),
   }
 }
 
 
-export function appsSettingsCustomTemplateManifestResourceSpecsJobSpecToHclTerraform(struct?: AppsSettingsCustomTemplateManifestResourceSpecsJobSpec | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsSettingsCustomTemplateManifestResourceSpecsExperimentSpecToHclTerraform(struct?: AppsSettingsCustomTemplateManifestResourceSpecsExperimentSpec | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     permission: {
-      value: cdktf.stringToHclTerraform(struct!.permission),
+      value: cdktn.stringToHclTerraform(struct!.permission),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -73,19 +77,19 @@ export function appsSettingsCustomTemplateManifestResourceSpecsJobSpecToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppsSettingsCustomTemplateManifestResourceSpecsJobSpecOutputReference extends cdktf.ComplexObject {
+export class AppsSettingsCustomTemplateManifestResourceSpecsExperimentSpecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): AppsSettingsCustomTemplateManifestResourceSpecsJobSpec | cdktf.IResolvable | undefined {
+  public get internalValue(): AppsSettingsCustomTemplateManifestResourceSpecsExperimentSpec | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -98,13 +102,104 @@ export class AppsSettingsCustomTemplateManifestResourceSpecsJobSpecOutputReferen
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppsSettingsCustomTemplateManifestResourceSpecsJobSpec | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppsSettingsCustomTemplateManifestResourceSpecsExperimentSpec | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._permission = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._permission = value.permission;
+    }
+  }
+
+  // permission - computed: false, optional: false, required: true
+  private _permission?: string; 
+  public get permission() {
+    return this.getStringAttribute('permission');
+  }
+  public set permission(value: string) {
+    this._permission = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get permissionInput() {
+    return this._permission;
+  }
+}
+export interface AppsSettingsCustomTemplateManifestResourceSpecsJobSpec {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/apps_settings_custom_template#permission AppsSettingsCustomTemplate#permission}
+  */
+  readonly permission: string;
+}
+
+export function appsSettingsCustomTemplateManifestResourceSpecsJobSpecToTerraform(struct?: AppsSettingsCustomTemplateManifestResourceSpecsJobSpec | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    permission: cdktn.stringToTerraform(struct!.permission),
+  }
+}
+
+
+export function appsSettingsCustomTemplateManifestResourceSpecsJobSpecToHclTerraform(struct?: AppsSettingsCustomTemplateManifestResourceSpecsJobSpec | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    permission: {
+      value: cdktn.stringToHclTerraform(struct!.permission),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class AppsSettingsCustomTemplateManifestResourceSpecsJobSpecOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): AppsSettingsCustomTemplateManifestResourceSpecsJobSpec | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._permission !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.permission = this._permission;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppsSettingsCustomTemplateManifestResourceSpecsJobSpec | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._permission = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -130,30 +225,30 @@ export class AppsSettingsCustomTemplateManifestResourceSpecsJobSpecOutputReferen
 }
 export interface AppsSettingsCustomTemplateManifestResourceSpecsSecretSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/apps_settings_custom_template#permission AppsSettingsCustomTemplate#permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/apps_settings_custom_template#permission AppsSettingsCustomTemplate#permission}
   */
   readonly permission: string;
 }
 
-export function appsSettingsCustomTemplateManifestResourceSpecsSecretSpecToTerraform(struct?: AppsSettingsCustomTemplateManifestResourceSpecsSecretSpec | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsSettingsCustomTemplateManifestResourceSpecsSecretSpecToTerraform(struct?: AppsSettingsCustomTemplateManifestResourceSpecsSecretSpec | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    permission: cdktf.stringToTerraform(struct!.permission),
+    permission: cdktn.stringToTerraform(struct!.permission),
   }
 }
 
 
-export function appsSettingsCustomTemplateManifestResourceSpecsSecretSpecToHclTerraform(struct?: AppsSettingsCustomTemplateManifestResourceSpecsSecretSpec | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsSettingsCustomTemplateManifestResourceSpecsSecretSpecToHclTerraform(struct?: AppsSettingsCustomTemplateManifestResourceSpecsSecretSpec | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     permission: {
-      value: cdktf.stringToHclTerraform(struct!.permission),
+      value: cdktn.stringToHclTerraform(struct!.permission),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -164,19 +259,19 @@ export function appsSettingsCustomTemplateManifestResourceSpecsSecretSpecToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppsSettingsCustomTemplateManifestResourceSpecsSecretSpecOutputReference extends cdktf.ComplexObject {
+export class AppsSettingsCustomTemplateManifestResourceSpecsSecretSpecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): AppsSettingsCustomTemplateManifestResourceSpecsSecretSpec | cdktf.IResolvable | undefined {
+  public get internalValue(): AppsSettingsCustomTemplateManifestResourceSpecsSecretSpec | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -189,13 +284,13 @@ export class AppsSettingsCustomTemplateManifestResourceSpecsSecretSpecOutputRefe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppsSettingsCustomTemplateManifestResourceSpecsSecretSpec | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppsSettingsCustomTemplateManifestResourceSpecsSecretSpec | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._permission = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -221,30 +316,30 @@ export class AppsSettingsCustomTemplateManifestResourceSpecsSecretSpecOutputRefe
 }
 export interface AppsSettingsCustomTemplateManifestResourceSpecsServingEndpointSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/apps_settings_custom_template#permission AppsSettingsCustomTemplate#permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/apps_settings_custom_template#permission AppsSettingsCustomTemplate#permission}
   */
   readonly permission: string;
 }
 
-export function appsSettingsCustomTemplateManifestResourceSpecsServingEndpointSpecToTerraform(struct?: AppsSettingsCustomTemplateManifestResourceSpecsServingEndpointSpec | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsSettingsCustomTemplateManifestResourceSpecsServingEndpointSpecToTerraform(struct?: AppsSettingsCustomTemplateManifestResourceSpecsServingEndpointSpec | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    permission: cdktf.stringToTerraform(struct!.permission),
+    permission: cdktn.stringToTerraform(struct!.permission),
   }
 }
 
 
-export function appsSettingsCustomTemplateManifestResourceSpecsServingEndpointSpecToHclTerraform(struct?: AppsSettingsCustomTemplateManifestResourceSpecsServingEndpointSpec | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsSettingsCustomTemplateManifestResourceSpecsServingEndpointSpecToHclTerraform(struct?: AppsSettingsCustomTemplateManifestResourceSpecsServingEndpointSpec | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     permission: {
-      value: cdktf.stringToHclTerraform(struct!.permission),
+      value: cdktn.stringToHclTerraform(struct!.permission),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -255,19 +350,19 @@ export function appsSettingsCustomTemplateManifestResourceSpecsServingEndpointSp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppsSettingsCustomTemplateManifestResourceSpecsServingEndpointSpecOutputReference extends cdktf.ComplexObject {
+export class AppsSettingsCustomTemplateManifestResourceSpecsServingEndpointSpecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): AppsSettingsCustomTemplateManifestResourceSpecsServingEndpointSpec | cdktf.IResolvable | undefined {
+  public get internalValue(): AppsSettingsCustomTemplateManifestResourceSpecsServingEndpointSpec | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -280,13 +375,13 @@ export class AppsSettingsCustomTemplateManifestResourceSpecsServingEndpointSpecO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppsSettingsCustomTemplateManifestResourceSpecsServingEndpointSpec | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppsSettingsCustomTemplateManifestResourceSpecsServingEndpointSpec | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._permission = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -312,30 +407,30 @@ export class AppsSettingsCustomTemplateManifestResourceSpecsServingEndpointSpecO
 }
 export interface AppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/apps_settings_custom_template#permission AppsSettingsCustomTemplate#permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/apps_settings_custom_template#permission AppsSettingsCustomTemplate#permission}
   */
   readonly permission: string;
 }
 
-export function appsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpecToTerraform(struct?: AppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpec | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpecToTerraform(struct?: AppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpec | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    permission: cdktf.stringToTerraform(struct!.permission),
+    permission: cdktn.stringToTerraform(struct!.permission),
   }
 }
 
 
-export function appsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpecToHclTerraform(struct?: AppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpec | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpecToHclTerraform(struct?: AppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpec | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     permission: {
-      value: cdktf.stringToHclTerraform(struct!.permission),
+      value: cdktn.stringToHclTerraform(struct!.permission),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -346,19 +441,19 @@ export function appsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpecT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpecOutputReference extends cdktf.ComplexObject {
+export class AppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): AppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpec | cdktf.IResolvable | undefined {
+  public get internalValue(): AppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpec | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -371,13 +466,13 @@ export class AppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpecOutp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpec | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpec | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._permission = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -403,41 +498,41 @@ export class AppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpecOutp
 }
 export interface AppsSettingsCustomTemplateManifestResourceSpecsUcSecurableSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/apps_settings_custom_template#permission AppsSettingsCustomTemplate#permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/apps_settings_custom_template#permission AppsSettingsCustomTemplate#permission}
   */
   readonly permission: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/apps_settings_custom_template#securable_type AppsSettingsCustomTemplate#securable_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/apps_settings_custom_template#securable_type AppsSettingsCustomTemplate#securable_type}
   */
   readonly securableType: string;
 }
 
-export function appsSettingsCustomTemplateManifestResourceSpecsUcSecurableSpecToTerraform(struct?: AppsSettingsCustomTemplateManifestResourceSpecsUcSecurableSpec | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsSettingsCustomTemplateManifestResourceSpecsUcSecurableSpecToTerraform(struct?: AppsSettingsCustomTemplateManifestResourceSpecsUcSecurableSpec | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    permission: cdktf.stringToTerraform(struct!.permission),
-    securable_type: cdktf.stringToTerraform(struct!.securableType),
+    permission: cdktn.stringToTerraform(struct!.permission),
+    securable_type: cdktn.stringToTerraform(struct!.securableType),
   }
 }
 
 
-export function appsSettingsCustomTemplateManifestResourceSpecsUcSecurableSpecToHclTerraform(struct?: AppsSettingsCustomTemplateManifestResourceSpecsUcSecurableSpec | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsSettingsCustomTemplateManifestResourceSpecsUcSecurableSpecToHclTerraform(struct?: AppsSettingsCustomTemplateManifestResourceSpecsUcSecurableSpec | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     permission: {
-      value: cdktf.stringToHclTerraform(struct!.permission),
+      value: cdktn.stringToHclTerraform(struct!.permission),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     securable_type: {
-      value: cdktf.stringToHclTerraform(struct!.securableType),
+      value: cdktn.stringToHclTerraform(struct!.securableType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -448,19 +543,19 @@ export function appsSettingsCustomTemplateManifestResourceSpecsUcSecurableSpecTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppsSettingsCustomTemplateManifestResourceSpecsUcSecurableSpecOutputReference extends cdktf.ComplexObject {
+export class AppsSettingsCustomTemplateManifestResourceSpecsUcSecurableSpecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): AppsSettingsCustomTemplateManifestResourceSpecsUcSecurableSpec | cdktf.IResolvable | undefined {
+  public get internalValue(): AppsSettingsCustomTemplateManifestResourceSpecsUcSecurableSpec | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -477,14 +572,14 @@ export class AppsSettingsCustomTemplateManifestResourceSpecsUcSecurableSpecOutpu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppsSettingsCustomTemplateManifestResourceSpecsUcSecurableSpec | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppsSettingsCustomTemplateManifestResourceSpecsUcSecurableSpec | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._permission = undefined;
       this._securableType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -524,44 +619,49 @@ export class AppsSettingsCustomTemplateManifestResourceSpecsUcSecurableSpecOutpu
 }
 export interface AppsSettingsCustomTemplateManifestResourceSpecs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/apps_settings_custom_template#description AppsSettingsCustomTemplate#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/apps_settings_custom_template#description AppsSettingsCustomTemplate#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/apps_settings_custom_template#job_spec AppsSettingsCustomTemplate#job_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/apps_settings_custom_template#experiment_spec AppsSettingsCustomTemplate#experiment_spec}
+  */
+  readonly experimentSpec?: AppsSettingsCustomTemplateManifestResourceSpecsExperimentSpec;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/apps_settings_custom_template#job_spec AppsSettingsCustomTemplate#job_spec}
   */
   readonly jobSpec?: AppsSettingsCustomTemplateManifestResourceSpecsJobSpec;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/apps_settings_custom_template#name AppsSettingsCustomTemplate#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/apps_settings_custom_template#name AppsSettingsCustomTemplate#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/apps_settings_custom_template#secret_spec AppsSettingsCustomTemplate#secret_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/apps_settings_custom_template#secret_spec AppsSettingsCustomTemplate#secret_spec}
   */
   readonly secretSpec?: AppsSettingsCustomTemplateManifestResourceSpecsSecretSpec;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/apps_settings_custom_template#serving_endpoint_spec AppsSettingsCustomTemplate#serving_endpoint_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/apps_settings_custom_template#serving_endpoint_spec AppsSettingsCustomTemplate#serving_endpoint_spec}
   */
   readonly servingEndpointSpec?: AppsSettingsCustomTemplateManifestResourceSpecsServingEndpointSpec;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/apps_settings_custom_template#sql_warehouse_spec AppsSettingsCustomTemplate#sql_warehouse_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/apps_settings_custom_template#sql_warehouse_spec AppsSettingsCustomTemplate#sql_warehouse_spec}
   */
   readonly sqlWarehouseSpec?: AppsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpec;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/apps_settings_custom_template#uc_securable_spec AppsSettingsCustomTemplate#uc_securable_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/apps_settings_custom_template#uc_securable_spec AppsSettingsCustomTemplate#uc_securable_spec}
   */
   readonly ucSecurableSpec?: AppsSettingsCustomTemplateManifestResourceSpecsUcSecurableSpec;
 }
 
-export function appsSettingsCustomTemplateManifestResourceSpecsToTerraform(struct?: AppsSettingsCustomTemplateManifestResourceSpecs | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsSettingsCustomTemplateManifestResourceSpecsToTerraform(struct?: AppsSettingsCustomTemplateManifestResourceSpecs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
+    description: cdktn.stringToTerraform(struct!.description),
+    experiment_spec: appsSettingsCustomTemplateManifestResourceSpecsExperimentSpecToTerraform(struct!.experimentSpec),
     job_spec: appsSettingsCustomTemplateManifestResourceSpecsJobSpecToTerraform(struct!.jobSpec),
-    name: cdktf.stringToTerraform(struct!.name),
+    name: cdktn.stringToTerraform(struct!.name),
     secret_spec: appsSettingsCustomTemplateManifestResourceSpecsSecretSpecToTerraform(struct!.secretSpec),
     serving_endpoint_spec: appsSettingsCustomTemplateManifestResourceSpecsServingEndpointSpecToTerraform(struct!.servingEndpointSpec),
     sql_warehouse_spec: appsSettingsCustomTemplateManifestResourceSpecsSqlWarehouseSpecToTerraform(struct!.sqlWarehouseSpec),
@@ -570,17 +670,23 @@ export function appsSettingsCustomTemplateManifestResourceSpecsToTerraform(struc
 }
 
 
-export function appsSettingsCustomTemplateManifestResourceSpecsToHclTerraform(struct?: AppsSettingsCustomTemplateManifestResourceSpecs | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsSettingsCustomTemplateManifestResourceSpecsToHclTerraform(struct?: AppsSettingsCustomTemplateManifestResourceSpecs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    experiment_spec: {
+      value: appsSettingsCustomTemplateManifestResourceSpecsExperimentSpecToHclTerraform(struct!.experimentSpec),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "AppsSettingsCustomTemplateManifestResourceSpecsExperimentSpec",
     },
     job_spec: {
       value: appsSettingsCustomTemplateManifestResourceSpecsJobSpecToHclTerraform(struct!.jobSpec),
@@ -589,7 +695,7 @@ export function appsSettingsCustomTemplateManifestResourceSpecsToHclTerraform(st
       storageClassType: "AppsSettingsCustomTemplateManifestResourceSpecsJobSpec",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -624,9 +730,9 @@ export function appsSettingsCustomTemplateManifestResourceSpecsToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppsSettingsCustomTemplateManifestResourceSpecsOutputReference extends cdktf.ComplexObject {
+export class AppsSettingsCustomTemplateManifestResourceSpecsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -634,11 +740,11 @@ export class AppsSettingsCustomTemplateManifestResourceSpecsOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AppsSettingsCustomTemplateManifestResourceSpecs | cdktf.IResolvable | undefined {
+  public get internalValue(): AppsSettingsCustomTemplateManifestResourceSpecs | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -647,6 +753,10 @@ export class AppsSettingsCustomTemplateManifestResourceSpecsOutputReference exte
     if (this._description !== undefined) {
       hasAnyValues = true;
       internalValueResult.description = this._description;
+    }
+    if (this._experimentSpec?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.experimentSpec = this._experimentSpec?.internalValue;
     }
     if (this._jobSpec?.internalValue !== undefined) {
       hasAnyValues = true;
@@ -675,11 +785,12 @@ export class AppsSettingsCustomTemplateManifestResourceSpecsOutputReference exte
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppsSettingsCustomTemplateManifestResourceSpecs | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppsSettingsCustomTemplateManifestResourceSpecs | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._description = undefined;
+      this._experimentSpec.internalValue = undefined;
       this._jobSpec.internalValue = undefined;
       this._name = undefined;
       this._secretSpec.internalValue = undefined;
@@ -687,7 +798,7 @@ export class AppsSettingsCustomTemplateManifestResourceSpecsOutputReference exte
       this._sqlWarehouseSpec.internalValue = undefined;
       this._ucSecurableSpec.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -695,6 +806,7 @@ export class AppsSettingsCustomTemplateManifestResourceSpecsOutputReference exte
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._description = value.description;
+      this._experimentSpec.internalValue = value.experimentSpec;
       this._jobSpec.internalValue = value.jobSpec;
       this._name = value.name;
       this._secretSpec.internalValue = value.secretSpec;
@@ -718,6 +830,22 @@ export class AppsSettingsCustomTemplateManifestResourceSpecsOutputReference exte
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
     return this._description;
+  }
+
+  // experiment_spec - computed: false, optional: true, required: false
+  private _experimentSpec = new AppsSettingsCustomTemplateManifestResourceSpecsExperimentSpecOutputReference(this, "experiment_spec");
+  public get experimentSpec() {
+    return this._experimentSpec;
+  }
+  public putExperimentSpec(value: AppsSettingsCustomTemplateManifestResourceSpecsExperimentSpec) {
+    this._experimentSpec.internalValue = value;
+  }
+  public resetExperimentSpec() {
+    this._experimentSpec.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get experimentSpecInput() {
+    return this._experimentSpec.internalValue;
   }
 
   // job_spec - computed: false, optional: true, required: false
@@ -814,15 +942,15 @@ export class AppsSettingsCustomTemplateManifestResourceSpecsOutputReference exte
   }
 }
 
-export class AppsSettingsCustomTemplateManifestResourceSpecsList extends cdktf.ComplexList {
-  public internalValue? : AppsSettingsCustomTemplateManifestResourceSpecs[] | cdktf.IResolvable
+export class AppsSettingsCustomTemplateManifestResourceSpecsList extends cdktn.ComplexList {
+  public internalValue? : AppsSettingsCustomTemplateManifestResourceSpecs[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -835,63 +963,63 @@ export class AppsSettingsCustomTemplateManifestResourceSpecsList extends cdktf.C
 }
 export interface AppsSettingsCustomTemplateManifest {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/apps_settings_custom_template#description AppsSettingsCustomTemplate#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/apps_settings_custom_template#description AppsSettingsCustomTemplate#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/apps_settings_custom_template#name AppsSettingsCustomTemplate#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/apps_settings_custom_template#name AppsSettingsCustomTemplate#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/apps_settings_custom_template#resource_specs AppsSettingsCustomTemplate#resource_specs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/apps_settings_custom_template#resource_specs AppsSettingsCustomTemplate#resource_specs}
   */
-  readonly resourceSpecs?: AppsSettingsCustomTemplateManifestResourceSpecs[] | cdktf.IResolvable;
+  readonly resourceSpecs?: AppsSettingsCustomTemplateManifestResourceSpecs[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/apps_settings_custom_template#version AppsSettingsCustomTemplate#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/apps_settings_custom_template#version AppsSettingsCustomTemplate#version}
   */
   readonly version: number;
 }
 
-export function appsSettingsCustomTemplateManifestToTerraform(struct?: AppsSettingsCustomTemplateManifest | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsSettingsCustomTemplateManifestToTerraform(struct?: AppsSettingsCustomTemplateManifest | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    name: cdktf.stringToTerraform(struct!.name),
-    resource_specs: cdktf.listMapper(appsSettingsCustomTemplateManifestResourceSpecsToTerraform, false)(struct!.resourceSpecs),
-    version: cdktf.numberToTerraform(struct!.version),
+    description: cdktn.stringToTerraform(struct!.description),
+    name: cdktn.stringToTerraform(struct!.name),
+    resource_specs: cdktn.listMapper(appsSettingsCustomTemplateManifestResourceSpecsToTerraform, false)(struct!.resourceSpecs),
+    version: cdktn.numberToTerraform(struct!.version),
   }
 }
 
 
-export function appsSettingsCustomTemplateManifestToHclTerraform(struct?: AppsSettingsCustomTemplateManifest | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsSettingsCustomTemplateManifestToHclTerraform(struct?: AppsSettingsCustomTemplateManifest | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     resource_specs: {
-      value: cdktf.listMapperHcl(appsSettingsCustomTemplateManifestResourceSpecsToHclTerraform, false)(struct!.resourceSpecs),
+      value: cdktn.listMapperHcl(appsSettingsCustomTemplateManifestResourceSpecsToHclTerraform, false)(struct!.resourceSpecs),
       isBlock: true,
       type: "list",
       storageClassType: "AppsSettingsCustomTemplateManifestResourceSpecsList",
     },
     version: {
-      value: cdktf.numberToHclTerraform(struct!.version),
+      value: cdktn.numberToHclTerraform(struct!.version),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -902,19 +1030,19 @@ export function appsSettingsCustomTemplateManifestToHclTerraform(struct?: AppsSe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppsSettingsCustomTemplateManifestOutputReference extends cdktf.ComplexObject {
+export class AppsSettingsCustomTemplateManifestOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): AppsSettingsCustomTemplateManifest | cdktf.IResolvable | undefined {
+  public get internalValue(): AppsSettingsCustomTemplateManifest | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -939,7 +1067,7 @@ export class AppsSettingsCustomTemplateManifestOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppsSettingsCustomTemplateManifest | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppsSettingsCustomTemplateManifest | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -948,7 +1076,7 @@ export class AppsSettingsCustomTemplateManifestOutputReference extends cdktf.Com
       this._resourceSpecs.internalValue = undefined;
       this._version = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -996,7 +1124,7 @@ export class AppsSettingsCustomTemplateManifestOutputReference extends cdktf.Com
   public get resourceSpecs() {
     return this._resourceSpecs;
   }
-  public putResourceSpecs(value: AppsSettingsCustomTemplateManifestResourceSpecs[] | cdktf.IResolvable) {
+  public putResourceSpecs(value: AppsSettingsCustomTemplateManifestResourceSpecs[] | cdktn.IResolvable) {
     this._resourceSpecs.internalValue = value;
   }
   public resetResourceSpecs() {
@@ -1020,11 +1148,102 @@ export class AppsSettingsCustomTemplateManifestOutputReference extends cdktf.Com
     return this._version;
   }
 }
+export interface AppsSettingsCustomTemplateProviderConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/apps_settings_custom_template#workspace_id AppsSettingsCustomTemplate#workspace_id}
+  */
+  readonly workspaceId: string;
+}
+
+export function appsSettingsCustomTemplateProviderConfigToTerraform(struct?: AppsSettingsCustomTemplateProviderConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
+  }
+}
+
+
+export function appsSettingsCustomTemplateProviderConfigToHclTerraform(struct?: AppsSettingsCustomTemplateProviderConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    workspace_id: {
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class AppsSettingsCustomTemplateProviderConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): AppsSettingsCustomTemplateProviderConfig | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._workspaceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workspaceId = this._workspaceId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppsSettingsCustomTemplateProviderConfig | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._workspaceId = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._workspaceId = value.workspaceId;
+    }
+  }
+
+  // workspace_id - computed: false, optional: false, required: true
+  private _workspaceId?: string; 
+  public get workspaceId() {
+    return this.getStringAttribute('workspace_id');
+  }
+  public set workspaceId(value: string) {
+    this._workspaceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workspaceIdInput() {
+    return this._workspaceId;
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/apps_settings_custom_template databricks_apps_settings_custom_template}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/apps_settings_custom_template databricks_apps_settings_custom_template}
 */
-export class AppsSettingsCustomTemplate extends cdktf.TerraformResource {
+export class AppsSettingsCustomTemplate extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1035,14 +1254,14 @@ export class AppsSettingsCustomTemplate extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AppsSettingsCustomTemplate resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AppsSettingsCustomTemplate resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AppsSettingsCustomTemplate to import
-  * @param importFromId The id of the existing AppsSettingsCustomTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/apps_settings_custom_template#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AppsSettingsCustomTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/apps_settings_custom_template#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AppsSettingsCustomTemplate to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_apps_settings_custom_template", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_apps_settings_custom_template", importId: importFromId, provider });
       }
 
   // ===========
@@ -1050,7 +1269,7 @@ export class AppsSettingsCustomTemplate extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/apps_settings_custom_template databricks_apps_settings_custom_template} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/apps_settings_custom_template databricks_apps_settings_custom_template} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1061,7 +1280,7 @@ export class AppsSettingsCustomTemplate extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_apps_settings_custom_template',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -1078,6 +1297,7 @@ export class AppsSettingsCustomTemplate extends cdktf.TerraformResource {
     this._manifest.internalValue = config.manifest;
     this._name = config.name;
     this._path = config.path;
+    this._providerConfig.internalValue = config.providerConfig;
   }
 
   // ==========
@@ -1170,37 +1390,54 @@ export class AppsSettingsCustomTemplate extends cdktf.TerraformResource {
     return this._path;
   }
 
+  // provider_config - computed: false, optional: true, required: false
+  private _providerConfig = new AppsSettingsCustomTemplateProviderConfigOutputReference(this, "provider_config");
+  public get providerConfig() {
+    return this._providerConfig;
+  }
+  public putProviderConfig(value: AppsSettingsCustomTemplateProviderConfig) {
+    this._providerConfig.internalValue = value;
+  }
+  public resetProviderConfig() {
+    this._providerConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerConfigInput() {
+    return this._providerConfig.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      git_provider: cdktf.stringToTerraform(this._gitProvider),
-      git_repo: cdktf.stringToTerraform(this._gitRepo),
+      description: cdktn.stringToTerraform(this._description),
+      git_provider: cdktn.stringToTerraform(this._gitProvider),
+      git_repo: cdktn.stringToTerraform(this._gitRepo),
       manifest: appsSettingsCustomTemplateManifestToTerraform(this._manifest.internalValue),
-      name: cdktf.stringToTerraform(this._name),
-      path: cdktf.stringToTerraform(this._path),
+      name: cdktn.stringToTerraform(this._name),
+      path: cdktn.stringToTerraform(this._path),
+      provider_config: appsSettingsCustomTemplateProviderConfigToTerraform(this._providerConfig.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       git_provider: {
-        value: cdktf.stringToHclTerraform(this._gitProvider),
+        value: cdktn.stringToHclTerraform(this._gitProvider),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       git_repo: {
-        value: cdktf.stringToHclTerraform(this._gitRepo),
+        value: cdktn.stringToHclTerraform(this._gitRepo),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -1212,16 +1449,22 @@ export class AppsSettingsCustomTemplate extends cdktf.TerraformResource {
         storageClassType: "AppsSettingsCustomTemplateManifest",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       path: {
-        value: cdktf.stringToHclTerraform(this._path),
+        value: cdktn.stringToHclTerraform(this._path),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      provider_config: {
+        value: appsSettingsCustomTemplateProviderConfigToHclTerraform(this._providerConfig.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "AppsSettingsCustomTemplateProviderConfig",
       },
     };
 

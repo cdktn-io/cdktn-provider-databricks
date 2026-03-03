@@ -1,97 +1,97 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/spark_version
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/spark_version
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataDatabricksSparkVersionConfig extends cdktf.TerraformMetaArguments {
+export interface DataDatabricksSparkVersionConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/spark_version#beta DataDatabricksSparkVersion#beta}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/spark_version#beta DataDatabricksSparkVersion#beta}
   */
-  readonly beta?: boolean | cdktf.IResolvable;
+  readonly beta?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/spark_version#genomics DataDatabricksSparkVersion#genomics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/spark_version#genomics DataDatabricksSparkVersion#genomics}
   */
-  readonly genomics?: boolean | cdktf.IResolvable;
+  readonly genomics?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/spark_version#gpu DataDatabricksSparkVersion#gpu}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/spark_version#gpu DataDatabricksSparkVersion#gpu}
   */
-  readonly gpu?: boolean | cdktf.IResolvable;
+  readonly gpu?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/spark_version#graviton DataDatabricksSparkVersion#graviton}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/spark_version#graviton DataDatabricksSparkVersion#graviton}
   */
-  readonly graviton?: boolean | cdktf.IResolvable;
+  readonly graviton?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/spark_version#id DataDatabricksSparkVersion#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/spark_version#id DataDatabricksSparkVersion#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/spark_version#latest DataDatabricksSparkVersion#latest}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/spark_version#latest DataDatabricksSparkVersion#latest}
   */
-  readonly latest?: boolean | cdktf.IResolvable;
+  readonly latest?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/spark_version#long_term_support DataDatabricksSparkVersion#long_term_support}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/spark_version#long_term_support DataDatabricksSparkVersion#long_term_support}
   */
-  readonly longTermSupport?: boolean | cdktf.IResolvable;
+  readonly longTermSupport?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/spark_version#ml DataDatabricksSparkVersion#ml}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/spark_version#ml DataDatabricksSparkVersion#ml}
   */
-  readonly ml?: boolean | cdktf.IResolvable;
+  readonly ml?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/spark_version#photon DataDatabricksSparkVersion#photon}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/spark_version#photon DataDatabricksSparkVersion#photon}
   */
-  readonly photon?: boolean | cdktf.IResolvable;
+  readonly photon?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/spark_version#scala DataDatabricksSparkVersion#scala}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/spark_version#scala DataDatabricksSparkVersion#scala}
   */
   readonly scala?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/spark_version#spark_version DataDatabricksSparkVersion#spark_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/spark_version#spark_version DataDatabricksSparkVersion#spark_version}
   */
   readonly sparkVersion?: string;
   /**
   * provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/spark_version#provider_config DataDatabricksSparkVersion#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/spark_version#provider_config DataDatabricksSparkVersion#provider_config}
   */
   readonly providerConfig?: DataDatabricksSparkVersionProviderConfig;
 }
 export interface DataDatabricksSparkVersionProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/spark_version#workspace_id DataDatabricksSparkVersion#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/spark_version#workspace_id DataDatabricksSparkVersion#workspace_id}
   */
   readonly workspaceId: string;
 }
 
 export function dataDatabricksSparkVersionProviderConfigToTerraform(struct?: DataDatabricksSparkVersionProviderConfigOutputReference | DataDatabricksSparkVersionProviderConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    workspace_id: cdktf.stringToTerraform(struct!.workspaceId),
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
   }
 }
 
 
 export function dataDatabricksSparkVersionProviderConfigToHclTerraform(struct?: DataDatabricksSparkVersionProviderConfigOutputReference | DataDatabricksSparkVersionProviderConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     workspace_id: {
-      value: cdktf.stringToHclTerraform(struct!.workspaceId),
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -102,14 +102,14 @@ export function dataDatabricksSparkVersionProviderConfigToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksSparkVersionProviderConfigOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksSparkVersionProviderConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -149,9 +149,9 @@ export class DataDatabricksSparkVersionProviderConfigOutputReference extends cdk
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/spark_version databricks_spark_version}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/spark_version databricks_spark_version}
 */
-export class DataDatabricksSparkVersion extends cdktf.TerraformDataSource {
+export class DataDatabricksSparkVersion extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -162,14 +162,14 @@ export class DataDatabricksSparkVersion extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataDatabricksSparkVersion resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataDatabricksSparkVersion resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksSparkVersion to import
-  * @param importFromId The id of the existing DataDatabricksSparkVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/spark_version#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksSparkVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/spark_version#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksSparkVersion to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_spark_version", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_spark_version", importId: importFromId, provider });
       }
 
   // ===========
@@ -177,7 +177,7 @@ export class DataDatabricksSparkVersion extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/spark_version databricks_spark_version} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/spark_version databricks_spark_version} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -188,7 +188,7 @@ export class DataDatabricksSparkVersion extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_spark_version',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -218,11 +218,11 @@ export class DataDatabricksSparkVersion extends cdktf.TerraformDataSource {
   // ==========
 
   // beta - computed: false, optional: true, required: false
-  private _beta?: boolean | cdktf.IResolvable; 
+  private _beta?: boolean | cdktn.IResolvable; 
   public get beta() {
     return this.getBooleanAttribute('beta');
   }
-  public set beta(value: boolean | cdktf.IResolvable) {
+  public set beta(value: boolean | cdktn.IResolvable) {
     this._beta = value;
   }
   public resetBeta() {
@@ -234,11 +234,11 @@ export class DataDatabricksSparkVersion extends cdktf.TerraformDataSource {
   }
 
   // genomics - computed: false, optional: true, required: false
-  private _genomics?: boolean | cdktf.IResolvable; 
+  private _genomics?: boolean | cdktn.IResolvable; 
   public get genomics() {
     return this.getBooleanAttribute('genomics');
   }
-  public set genomics(value: boolean | cdktf.IResolvable) {
+  public set genomics(value: boolean | cdktn.IResolvable) {
     this._genomics = value;
   }
   public resetGenomics() {
@@ -250,11 +250,11 @@ export class DataDatabricksSparkVersion extends cdktf.TerraformDataSource {
   }
 
   // gpu - computed: false, optional: true, required: false
-  private _gpu?: boolean | cdktf.IResolvable; 
+  private _gpu?: boolean | cdktn.IResolvable; 
   public get gpu() {
     return this.getBooleanAttribute('gpu');
   }
-  public set gpu(value: boolean | cdktf.IResolvable) {
+  public set gpu(value: boolean | cdktn.IResolvable) {
     this._gpu = value;
   }
   public resetGpu() {
@@ -266,11 +266,11 @@ export class DataDatabricksSparkVersion extends cdktf.TerraformDataSource {
   }
 
   // graviton - computed: false, optional: true, required: false
-  private _graviton?: boolean | cdktf.IResolvable; 
+  private _graviton?: boolean | cdktn.IResolvable; 
   public get graviton() {
     return this.getBooleanAttribute('graviton');
   }
-  public set graviton(value: boolean | cdktf.IResolvable) {
+  public set graviton(value: boolean | cdktn.IResolvable) {
     this._graviton = value;
   }
   public resetGraviton() {
@@ -298,11 +298,11 @@ export class DataDatabricksSparkVersion extends cdktf.TerraformDataSource {
   }
 
   // latest - computed: false, optional: true, required: false
-  private _latest?: boolean | cdktf.IResolvable; 
+  private _latest?: boolean | cdktn.IResolvable; 
   public get latest() {
     return this.getBooleanAttribute('latest');
   }
-  public set latest(value: boolean | cdktf.IResolvable) {
+  public set latest(value: boolean | cdktn.IResolvable) {
     this._latest = value;
   }
   public resetLatest() {
@@ -314,11 +314,11 @@ export class DataDatabricksSparkVersion extends cdktf.TerraformDataSource {
   }
 
   // long_term_support - computed: false, optional: true, required: false
-  private _longTermSupport?: boolean | cdktf.IResolvable; 
+  private _longTermSupport?: boolean | cdktn.IResolvable; 
   public get longTermSupport() {
     return this.getBooleanAttribute('long_term_support');
   }
-  public set longTermSupport(value: boolean | cdktf.IResolvable) {
+  public set longTermSupport(value: boolean | cdktn.IResolvable) {
     this._longTermSupport = value;
   }
   public resetLongTermSupport() {
@@ -330,11 +330,11 @@ export class DataDatabricksSparkVersion extends cdktf.TerraformDataSource {
   }
 
   // ml - computed: false, optional: true, required: false
-  private _ml?: boolean | cdktf.IResolvable; 
+  private _ml?: boolean | cdktn.IResolvable; 
   public get ml() {
     return this.getBooleanAttribute('ml');
   }
-  public set ml(value: boolean | cdktf.IResolvable) {
+  public set ml(value: boolean | cdktn.IResolvable) {
     this._ml = value;
   }
   public resetMl() {
@@ -346,11 +346,11 @@ export class DataDatabricksSparkVersion extends cdktf.TerraformDataSource {
   }
 
   // photon - computed: false, optional: true, required: false
-  private _photon?: boolean | cdktf.IResolvable; 
+  private _photon?: boolean | cdktn.IResolvable; 
   public get photon() {
     return this.getBooleanAttribute('photon');
   }
-  public set photon(value: boolean | cdktf.IResolvable) {
+  public set photon(value: boolean | cdktn.IResolvable) {
     this._photon = value;
   }
   public resetPhoton() {
@@ -415,17 +415,17 @@ export class DataDatabricksSparkVersion extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      beta: cdktf.booleanToTerraform(this._beta),
-      genomics: cdktf.booleanToTerraform(this._genomics),
-      gpu: cdktf.booleanToTerraform(this._gpu),
-      graviton: cdktf.booleanToTerraform(this._graviton),
-      id: cdktf.stringToTerraform(this._id),
-      latest: cdktf.booleanToTerraform(this._latest),
-      long_term_support: cdktf.booleanToTerraform(this._longTermSupport),
-      ml: cdktf.booleanToTerraform(this._ml),
-      photon: cdktf.booleanToTerraform(this._photon),
-      scala: cdktf.stringToTerraform(this._scala),
-      spark_version: cdktf.stringToTerraform(this._sparkVersion),
+      beta: cdktn.booleanToTerraform(this._beta),
+      genomics: cdktn.booleanToTerraform(this._genomics),
+      gpu: cdktn.booleanToTerraform(this._gpu),
+      graviton: cdktn.booleanToTerraform(this._graviton),
+      id: cdktn.stringToTerraform(this._id),
+      latest: cdktn.booleanToTerraform(this._latest),
+      long_term_support: cdktn.booleanToTerraform(this._longTermSupport),
+      ml: cdktn.booleanToTerraform(this._ml),
+      photon: cdktn.booleanToTerraform(this._photon),
+      scala: cdktn.stringToTerraform(this._scala),
+      spark_version: cdktn.stringToTerraform(this._sparkVersion),
       provider_config: dataDatabricksSparkVersionProviderConfigToTerraform(this._providerConfig.internalValue),
     };
   }
@@ -433,67 +433,67 @@ export class DataDatabricksSparkVersion extends cdktf.TerraformDataSource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       beta: {
-        value: cdktf.booleanToHclTerraform(this._beta),
+        value: cdktn.booleanToHclTerraform(this._beta),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       genomics: {
-        value: cdktf.booleanToHclTerraform(this._genomics),
+        value: cdktn.booleanToHclTerraform(this._genomics),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       gpu: {
-        value: cdktf.booleanToHclTerraform(this._gpu),
+        value: cdktn.booleanToHclTerraform(this._gpu),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       graviton: {
-        value: cdktf.booleanToHclTerraform(this._graviton),
+        value: cdktn.booleanToHclTerraform(this._graviton),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       latest: {
-        value: cdktf.booleanToHclTerraform(this._latest),
+        value: cdktn.booleanToHclTerraform(this._latest),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       long_term_support: {
-        value: cdktf.booleanToHclTerraform(this._longTermSupport),
+        value: cdktn.booleanToHclTerraform(this._longTermSupport),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       ml: {
-        value: cdktf.booleanToHclTerraform(this._ml),
+        value: cdktn.booleanToHclTerraform(this._ml),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       photon: {
-        value: cdktf.booleanToHclTerraform(this._photon),
+        value: cdktn.booleanToHclTerraform(this._photon),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       scala: {
-        value: cdktf.stringToHclTerraform(this._scala),
+        value: cdktn.stringToHclTerraform(this._scala),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       spark_version: {
-        value: cdktf.stringToHclTerraform(this._sparkVersion),
+        value: cdktn.stringToHclTerraform(this._sparkVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

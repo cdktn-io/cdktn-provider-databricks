@@ -1,137 +1,137 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_vpc_endpoint
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_vpc_endpoint
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MwsVpcEndpointConfig extends cdktf.TerraformMetaArguments {
+export interface MwsVpcEndpointConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_vpc_endpoint#account_id MwsVpcEndpoint#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_vpc_endpoint#account_id MwsVpcEndpoint#account_id}
   */
   readonly accountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_vpc_endpoint#aws_account_id MwsVpcEndpoint#aws_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_vpc_endpoint#aws_account_id MwsVpcEndpoint#aws_account_id}
   */
   readonly awsAccountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_vpc_endpoint#aws_endpoint_service_id MwsVpcEndpoint#aws_endpoint_service_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_vpc_endpoint#aws_endpoint_service_id MwsVpcEndpoint#aws_endpoint_service_id}
   */
   readonly awsEndpointServiceId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_vpc_endpoint#aws_vpc_endpoint_id MwsVpcEndpoint#aws_vpc_endpoint_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_vpc_endpoint#aws_vpc_endpoint_id MwsVpcEndpoint#aws_vpc_endpoint_id}
   */
   readonly awsVpcEndpointId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_vpc_endpoint#id MwsVpcEndpoint#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_vpc_endpoint#id MwsVpcEndpoint#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_vpc_endpoint#region MwsVpcEndpoint#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_vpc_endpoint#region MwsVpcEndpoint#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_vpc_endpoint#state MwsVpcEndpoint#state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_vpc_endpoint#state MwsVpcEndpoint#state}
   */
   readonly state?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_vpc_endpoint#use_case MwsVpcEndpoint#use_case}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_vpc_endpoint#use_case MwsVpcEndpoint#use_case}
   */
   readonly useCase?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_vpc_endpoint#vpc_endpoint_id MwsVpcEndpoint#vpc_endpoint_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_vpc_endpoint#vpc_endpoint_id MwsVpcEndpoint#vpc_endpoint_id}
   */
   readonly vpcEndpointId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_vpc_endpoint#vpc_endpoint_name MwsVpcEndpoint#vpc_endpoint_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_vpc_endpoint#vpc_endpoint_name MwsVpcEndpoint#vpc_endpoint_name}
   */
   readonly vpcEndpointName: string;
   /**
   * gcp_vpc_endpoint_info block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_vpc_endpoint#gcp_vpc_endpoint_info MwsVpcEndpoint#gcp_vpc_endpoint_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_vpc_endpoint#gcp_vpc_endpoint_info MwsVpcEndpoint#gcp_vpc_endpoint_info}
   */
   readonly gcpVpcEndpointInfo?: MwsVpcEndpointGcpVpcEndpointInfo;
 }
 export interface MwsVpcEndpointGcpVpcEndpointInfo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_vpc_endpoint#endpoint_region MwsVpcEndpoint#endpoint_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_vpc_endpoint#endpoint_region MwsVpcEndpoint#endpoint_region}
   */
   readonly endpointRegion: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_vpc_endpoint#project_id MwsVpcEndpoint#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_vpc_endpoint#project_id MwsVpcEndpoint#project_id}
   */
   readonly projectId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_vpc_endpoint#psc_connection_id MwsVpcEndpoint#psc_connection_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_vpc_endpoint#psc_connection_id MwsVpcEndpoint#psc_connection_id}
   */
   readonly pscConnectionId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_vpc_endpoint#psc_endpoint_name MwsVpcEndpoint#psc_endpoint_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_vpc_endpoint#psc_endpoint_name MwsVpcEndpoint#psc_endpoint_name}
   */
   readonly pscEndpointName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_vpc_endpoint#service_attachment_id MwsVpcEndpoint#service_attachment_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_vpc_endpoint#service_attachment_id MwsVpcEndpoint#service_attachment_id}
   */
   readonly serviceAttachmentId?: string;
 }
 
 export function mwsVpcEndpointGcpVpcEndpointInfoToTerraform(struct?: MwsVpcEndpointGcpVpcEndpointInfoOutputReference | MwsVpcEndpointGcpVpcEndpointInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    endpoint_region: cdktf.stringToTerraform(struct!.endpointRegion),
-    project_id: cdktf.stringToTerraform(struct!.projectId),
-    psc_connection_id: cdktf.stringToTerraform(struct!.pscConnectionId),
-    psc_endpoint_name: cdktf.stringToTerraform(struct!.pscEndpointName),
-    service_attachment_id: cdktf.stringToTerraform(struct!.serviceAttachmentId),
+    endpoint_region: cdktn.stringToTerraform(struct!.endpointRegion),
+    project_id: cdktn.stringToTerraform(struct!.projectId),
+    psc_connection_id: cdktn.stringToTerraform(struct!.pscConnectionId),
+    psc_endpoint_name: cdktn.stringToTerraform(struct!.pscEndpointName),
+    service_attachment_id: cdktn.stringToTerraform(struct!.serviceAttachmentId),
   }
 }
 
 
 export function mwsVpcEndpointGcpVpcEndpointInfoToHclTerraform(struct?: MwsVpcEndpointGcpVpcEndpointInfoOutputReference | MwsVpcEndpointGcpVpcEndpointInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     endpoint_region: {
-      value: cdktf.stringToHclTerraform(struct!.endpointRegion),
+      value: cdktn.stringToHclTerraform(struct!.endpointRegion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     project_id: {
-      value: cdktf.stringToHclTerraform(struct!.projectId),
+      value: cdktn.stringToHclTerraform(struct!.projectId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     psc_connection_id: {
-      value: cdktf.stringToHclTerraform(struct!.pscConnectionId),
+      value: cdktn.stringToHclTerraform(struct!.pscConnectionId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     psc_endpoint_name: {
-      value: cdktf.stringToHclTerraform(struct!.pscEndpointName),
+      value: cdktn.stringToHclTerraform(struct!.pscEndpointName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     service_attachment_id: {
-      value: cdktf.stringToHclTerraform(struct!.serviceAttachmentId),
+      value: cdktn.stringToHclTerraform(struct!.serviceAttachmentId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -142,14 +142,14 @@ export function mwsVpcEndpointGcpVpcEndpointInfoToHclTerraform(struct?: MwsVpcEn
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MwsVpcEndpointGcpVpcEndpointInfoOutputReference extends cdktf.ComplexObject {
+export class MwsVpcEndpointGcpVpcEndpointInfoOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -271,9 +271,9 @@ export class MwsVpcEndpointGcpVpcEndpointInfoOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_vpc_endpoint databricks_mws_vpc_endpoint}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_vpc_endpoint databricks_mws_vpc_endpoint}
 */
-export class MwsVpcEndpoint extends cdktf.TerraformResource {
+export class MwsVpcEndpoint extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -284,14 +284,14 @@ export class MwsVpcEndpoint extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a MwsVpcEndpoint resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a MwsVpcEndpoint resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MwsVpcEndpoint to import
-  * @param importFromId The id of the existing MwsVpcEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_vpc_endpoint#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MwsVpcEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_vpc_endpoint#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MwsVpcEndpoint to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_mws_vpc_endpoint", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_mws_vpc_endpoint", importId: importFromId, provider });
       }
 
   // ===========
@@ -299,7 +299,7 @@ export class MwsVpcEndpoint extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_vpc_endpoint databricks_mws_vpc_endpoint} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_vpc_endpoint databricks_mws_vpc_endpoint} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -310,7 +310,7 @@ export class MwsVpcEndpoint extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_mws_vpc_endpoint',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -517,16 +517,16 @@ export class MwsVpcEndpoint extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      aws_account_id: cdktf.stringToTerraform(this._awsAccountId),
-      aws_endpoint_service_id: cdktf.stringToTerraform(this._awsEndpointServiceId),
-      aws_vpc_endpoint_id: cdktf.stringToTerraform(this._awsVpcEndpointId),
-      id: cdktf.stringToTerraform(this._id),
-      region: cdktf.stringToTerraform(this._region),
-      state: cdktf.stringToTerraform(this._state),
-      use_case: cdktf.stringToTerraform(this._useCase),
-      vpc_endpoint_id: cdktf.stringToTerraform(this._vpcEndpointId),
-      vpc_endpoint_name: cdktf.stringToTerraform(this._vpcEndpointName),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      aws_account_id: cdktn.stringToTerraform(this._awsAccountId),
+      aws_endpoint_service_id: cdktn.stringToTerraform(this._awsEndpointServiceId),
+      aws_vpc_endpoint_id: cdktn.stringToTerraform(this._awsVpcEndpointId),
+      id: cdktn.stringToTerraform(this._id),
+      region: cdktn.stringToTerraform(this._region),
+      state: cdktn.stringToTerraform(this._state),
+      use_case: cdktn.stringToTerraform(this._useCase),
+      vpc_endpoint_id: cdktn.stringToTerraform(this._vpcEndpointId),
+      vpc_endpoint_name: cdktn.stringToTerraform(this._vpcEndpointName),
       gcp_vpc_endpoint_info: mwsVpcEndpointGcpVpcEndpointInfoToTerraform(this._gcpVpcEndpointInfo.internalValue),
     };
   }
@@ -534,61 +534,61 @@ export class MwsVpcEndpoint extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       aws_account_id: {
-        value: cdktf.stringToHclTerraform(this._awsAccountId),
+        value: cdktn.stringToHclTerraform(this._awsAccountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       aws_endpoint_service_id: {
-        value: cdktf.stringToHclTerraform(this._awsEndpointServiceId),
+        value: cdktn.stringToHclTerraform(this._awsEndpointServiceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       aws_vpc_endpoint_id: {
-        value: cdktf.stringToHclTerraform(this._awsVpcEndpointId),
+        value: cdktn.stringToHclTerraform(this._awsVpcEndpointId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       state: {
-        value: cdktf.stringToHclTerraform(this._state),
+        value: cdktn.stringToHclTerraform(this._state),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       use_case: {
-        value: cdktf.stringToHclTerraform(this._useCase),
+        value: cdktn.stringToHclTerraform(this._useCase),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       vpc_endpoint_id: {
-        value: cdktf.stringToHclTerraform(this._vpcEndpointId),
+        value: cdktn.stringToHclTerraform(this._vpcEndpointId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       vpc_endpoint_name: {
-        value: cdktf.stringToHclTerraform(this._vpcEndpointName),
+        value: cdktn.stringToHclTerraform(this._vpcEndpointName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

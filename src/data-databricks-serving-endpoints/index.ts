@@ -1,52 +1,52 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataDatabricksServingEndpointsConfig extends cdktf.TerraformMetaArguments {
+export interface DataDatabricksServingEndpointsConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#endpoints DataDatabricksServingEndpoints#endpoints}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#endpoints DataDatabricksServingEndpoints#endpoints}
   */
-  readonly endpoints?: DataDatabricksServingEndpointsEndpoints[] | cdktf.IResolvable;
+  readonly endpoints?: DataDatabricksServingEndpointsEndpoints[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#provider_config DataDatabricksServingEndpoints#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#provider_config DataDatabricksServingEndpoints#provider_config}
   */
   readonly providerConfig?: DataDatabricksServingEndpointsProviderConfig;
 }
 export interface DataDatabricksServingEndpointsEndpointsAiGatewayFallbackConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#enabled DataDatabricksServingEndpoints#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#enabled DataDatabricksServingEndpoints#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
 }
 
-export function dataDatabricksServingEndpointsEndpointsAiGatewayFallbackConfigToTerraform(struct?: DataDatabricksServingEndpointsEndpointsAiGatewayFallbackConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksServingEndpointsEndpointsAiGatewayFallbackConfigToTerraform(struct?: DataDatabricksServingEndpointsEndpointsAiGatewayFallbackConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
   }
 }
 
 
-export function dataDatabricksServingEndpointsEndpointsAiGatewayFallbackConfigToHclTerraform(struct?: DataDatabricksServingEndpointsEndpointsAiGatewayFallbackConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksServingEndpointsEndpointsAiGatewayFallbackConfigToHclTerraform(struct?: DataDatabricksServingEndpointsEndpointsAiGatewayFallbackConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -57,9 +57,9 @@ export function dataDatabricksServingEndpointsEndpointsAiGatewayFallbackConfigTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksServingEndpointsEndpointsAiGatewayFallbackConfigOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksServingEndpointsEndpointsAiGatewayFallbackConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -67,11 +67,11 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayFallbackConfigOutpu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataDatabricksServingEndpointsEndpointsAiGatewayFallbackConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatabricksServingEndpointsEndpointsAiGatewayFallbackConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -84,13 +84,13 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayFallbackConfigOutpu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksServingEndpointsEndpointsAiGatewayFallbackConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksServingEndpointsEndpointsAiGatewayFallbackConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._enabled = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -102,11 +102,11 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayFallbackConfigOutpu
   }
 
   // enabled - computed: true, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -115,15 +115,15 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayFallbackConfigOutpu
   }
 }
 
-export class DataDatabricksServingEndpointsEndpointsAiGatewayFallbackConfigList extends cdktf.ComplexList {
-  public internalValue? : DataDatabricksServingEndpointsEndpointsAiGatewayFallbackConfig[] | cdktf.IResolvable
+export class DataDatabricksServingEndpointsEndpointsAiGatewayFallbackConfigList extends cdktn.ComplexList {
+  public internalValue? : DataDatabricksServingEndpointsEndpointsAiGatewayFallbackConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -136,30 +136,30 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayFallbackConfigList 
 }
 export interface DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputPii {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#behavior DataDatabricksServingEndpoints#behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#behavior DataDatabricksServingEndpoints#behavior}
   */
   readonly behavior?: string;
 }
 
-export function dataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputPiiToTerraform(struct?: DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputPii | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputPiiToTerraform(struct?: DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputPii | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    behavior: cdktf.stringToTerraform(struct!.behavior),
+    behavior: cdktn.stringToTerraform(struct!.behavior),
   }
 }
 
 
-export function dataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputPiiToHclTerraform(struct?: DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputPii | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputPiiToHclTerraform(struct?: DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputPii | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     behavior: {
-      value: cdktf.stringToHclTerraform(struct!.behavior),
+      value: cdktn.stringToHclTerraform(struct!.behavior),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -170,9 +170,9 @@ export function dataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputP
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputPiiOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputPiiOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -180,11 +180,11 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputPiiO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputPii | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputPii | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -197,13 +197,13 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputPiiO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputPii | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputPii | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._behavior = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -231,15 +231,15 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputPiiO
   }
 }
 
-export class DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputPiiList extends cdktf.ComplexList {
-  public internalValue? : DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputPii[] | cdktf.IResolvable
+export class DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputPiiList extends cdktn.ComplexList {
+  public internalValue? : DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputPii[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -252,63 +252,63 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputPiiL
 }
 export interface DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInput {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#invalid_keywords DataDatabricksServingEndpoints#invalid_keywords}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#invalid_keywords DataDatabricksServingEndpoints#invalid_keywords}
   */
   readonly invalidKeywords?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#pii DataDatabricksServingEndpoints#pii}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#pii DataDatabricksServingEndpoints#pii}
   */
-  readonly pii?: DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputPii[] | cdktf.IResolvable;
+  readonly pii?: DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputPii[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#safety DataDatabricksServingEndpoints#safety}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#safety DataDatabricksServingEndpoints#safety}
   */
-  readonly safety?: boolean | cdktf.IResolvable;
+  readonly safety?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#valid_topics DataDatabricksServingEndpoints#valid_topics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#valid_topics DataDatabricksServingEndpoints#valid_topics}
   */
   readonly validTopics?: string[];
 }
 
-export function dataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputToTerraform(struct?: DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInput | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputToTerraform(struct?: DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInput | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    invalid_keywords: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.invalidKeywords),
-    pii: cdktf.listMapper(dataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputPiiToTerraform, false)(struct!.pii),
-    safety: cdktf.booleanToTerraform(struct!.safety),
-    valid_topics: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.validTopics),
+    invalid_keywords: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.invalidKeywords),
+    pii: cdktn.listMapper(dataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputPiiToTerraform, false)(struct!.pii),
+    safety: cdktn.booleanToTerraform(struct!.safety),
+    valid_topics: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.validTopics),
   }
 }
 
 
-export function dataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputToHclTerraform(struct?: DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInput | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputToHclTerraform(struct?: DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInput | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     invalid_keywords: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.invalidKeywords),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.invalidKeywords),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     pii: {
-      value: cdktf.listMapperHcl(dataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputPiiToHclTerraform, false)(struct!.pii),
+      value: cdktn.listMapperHcl(dataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputPiiToHclTerraform, false)(struct!.pii),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputPiiList",
     },
     safety: {
-      value: cdktf.booleanToHclTerraform(struct!.safety),
+      value: cdktn.booleanToHclTerraform(struct!.safety),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     valid_topics: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.validTopics),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.validTopics),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -319,9 +319,9 @@ export function dataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -329,11 +329,11 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputOutp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInput | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInput | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -358,7 +358,7 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputOutp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInput | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInput | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -367,7 +367,7 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputOutp
       this._safety = undefined;
       this._validTopics = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -402,7 +402,7 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputOutp
   public get pii() {
     return this._pii;
   }
-  public putPii(value: DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputPii[] | cdktf.IResolvable) {
+  public putPii(value: DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputPii[] | cdktn.IResolvable) {
     this._pii.internalValue = value;
   }
   public resetPii() {
@@ -414,11 +414,11 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputOutp
   }
 
   // safety - computed: true, optional: true, required: false
-  private _safety?: boolean | cdktf.IResolvable; 
+  private _safety?: boolean | cdktn.IResolvable; 
   public get safety() {
     return this.getBooleanAttribute('safety');
   }
-  public set safety(value: boolean | cdktf.IResolvable) {
+  public set safety(value: boolean | cdktn.IResolvable) {
     this._safety = value;
   }
   public resetSafety() {
@@ -446,15 +446,15 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputOutp
   }
 }
 
-export class DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputList extends cdktf.ComplexList {
-  public internalValue? : DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInput[] | cdktf.IResolvable
+export class DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputList extends cdktn.ComplexList {
+  public internalValue? : DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInput[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -467,30 +467,30 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputList
 }
 export interface DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputPii {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#behavior DataDatabricksServingEndpoints#behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#behavior DataDatabricksServingEndpoints#behavior}
   */
   readonly behavior?: string;
 }
 
-export function dataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputPiiToTerraform(struct?: DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputPii | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputPiiToTerraform(struct?: DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputPii | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    behavior: cdktf.stringToTerraform(struct!.behavior),
+    behavior: cdktn.stringToTerraform(struct!.behavior),
   }
 }
 
 
-export function dataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputPiiToHclTerraform(struct?: DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputPii | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputPiiToHclTerraform(struct?: DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputPii | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     behavior: {
-      value: cdktf.stringToHclTerraform(struct!.behavior),
+      value: cdktn.stringToHclTerraform(struct!.behavior),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -501,9 +501,9 @@ export function dataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutput
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputPiiOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputPiiOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -511,11 +511,11 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputPii
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputPii | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputPii | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -528,13 +528,13 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputPii
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputPii | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputPii | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._behavior = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -562,15 +562,15 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputPii
   }
 }
 
-export class DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputPiiList extends cdktf.ComplexList {
-  public internalValue? : DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputPii[] | cdktf.IResolvable
+export class DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputPiiList extends cdktn.ComplexList {
+  public internalValue? : DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputPii[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -583,63 +583,63 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputPii
 }
 export interface DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutput {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#invalid_keywords DataDatabricksServingEndpoints#invalid_keywords}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#invalid_keywords DataDatabricksServingEndpoints#invalid_keywords}
   */
   readonly invalidKeywords?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#pii DataDatabricksServingEndpoints#pii}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#pii DataDatabricksServingEndpoints#pii}
   */
-  readonly pii?: DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputPii[] | cdktf.IResolvable;
+  readonly pii?: DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputPii[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#safety DataDatabricksServingEndpoints#safety}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#safety DataDatabricksServingEndpoints#safety}
   */
-  readonly safety?: boolean | cdktf.IResolvable;
+  readonly safety?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#valid_topics DataDatabricksServingEndpoints#valid_topics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#valid_topics DataDatabricksServingEndpoints#valid_topics}
   */
   readonly validTopics?: string[];
 }
 
-export function dataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputToTerraform(struct?: DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutput | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputToTerraform(struct?: DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutput | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    invalid_keywords: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.invalidKeywords),
-    pii: cdktf.listMapper(dataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputPiiToTerraform, false)(struct!.pii),
-    safety: cdktf.booleanToTerraform(struct!.safety),
-    valid_topics: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.validTopics),
+    invalid_keywords: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.invalidKeywords),
+    pii: cdktn.listMapper(dataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputPiiToTerraform, false)(struct!.pii),
+    safety: cdktn.booleanToTerraform(struct!.safety),
+    valid_topics: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.validTopics),
   }
 }
 
 
-export function dataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputToHclTerraform(struct?: DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutput | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputToHclTerraform(struct?: DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutput | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     invalid_keywords: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.invalidKeywords),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.invalidKeywords),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     pii: {
-      value: cdktf.listMapperHcl(dataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputPiiToHclTerraform, false)(struct!.pii),
+      value: cdktn.listMapperHcl(dataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputPiiToHclTerraform, false)(struct!.pii),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputPiiList",
     },
     safety: {
-      value: cdktf.booleanToHclTerraform(struct!.safety),
+      value: cdktn.booleanToHclTerraform(struct!.safety),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     valid_topics: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.validTopics),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.validTopics),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -650,9 +650,9 @@ export function dataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutput
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -660,11 +660,11 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputOut
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutput | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutput | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -689,7 +689,7 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputOut
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutput | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutput | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -698,7 +698,7 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputOut
       this._safety = undefined;
       this._validTopics = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -733,7 +733,7 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputOut
   public get pii() {
     return this._pii;
   }
-  public putPii(value: DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputPii[] | cdktf.IResolvable) {
+  public putPii(value: DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputPii[] | cdktn.IResolvable) {
     this._pii.internalValue = value;
   }
   public resetPii() {
@@ -745,11 +745,11 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputOut
   }
 
   // safety - computed: true, optional: true, required: false
-  private _safety?: boolean | cdktf.IResolvable; 
+  private _safety?: boolean | cdktn.IResolvable; 
   public get safety() {
     return this.getBooleanAttribute('safety');
   }
-  public set safety(value: boolean | cdktf.IResolvable) {
+  public set safety(value: boolean | cdktn.IResolvable) {
     this._safety = value;
   }
   public resetSafety() {
@@ -777,15 +777,15 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputOut
   }
 }
 
-export class DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputList extends cdktf.ComplexList {
-  public internalValue? : DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutput[] | cdktf.IResolvable
+export class DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputList extends cdktn.ComplexList {
+  public internalValue? : DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutput[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -798,41 +798,41 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputLis
 }
 export interface DataDatabricksServingEndpointsEndpointsAiGatewayGuardrails {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#input DataDatabricksServingEndpoints#input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#input DataDatabricksServingEndpoints#input}
   */
-  readonly input?: DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInput[] | cdktf.IResolvable;
+  readonly input?: DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInput[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#output DataDatabricksServingEndpoints#output}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#output DataDatabricksServingEndpoints#output}
   */
-  readonly output?: DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutput[] | cdktf.IResolvable;
+  readonly output?: DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutput[] | cdktn.IResolvable;
 }
 
-export function dataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsToTerraform(struct?: DataDatabricksServingEndpointsEndpointsAiGatewayGuardrails | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsToTerraform(struct?: DataDatabricksServingEndpointsEndpointsAiGatewayGuardrails | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    input: cdktf.listMapper(dataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputToTerraform, false)(struct!.input),
-    output: cdktf.listMapper(dataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputToTerraform, false)(struct!.output),
+    input: cdktn.listMapper(dataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputToTerraform, false)(struct!.input),
+    output: cdktn.listMapper(dataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputToTerraform, false)(struct!.output),
   }
 }
 
 
-export function dataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsToHclTerraform(struct?: DataDatabricksServingEndpointsEndpointsAiGatewayGuardrails | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsToHclTerraform(struct?: DataDatabricksServingEndpointsEndpointsAiGatewayGuardrails | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     input: {
-      value: cdktf.listMapperHcl(dataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputToHclTerraform, false)(struct!.input),
+      value: cdktn.listMapperHcl(dataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputToHclTerraform, false)(struct!.input),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInputList",
     },
     output: {
-      value: cdktf.listMapperHcl(dataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputToHclTerraform, false)(struct!.output),
+      value: cdktn.listMapperHcl(dataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputToHclTerraform, false)(struct!.output),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputList",
@@ -843,9 +843,9 @@ export function dataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -853,11 +853,11 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputRef
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataDatabricksServingEndpointsEndpointsAiGatewayGuardrails | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatabricksServingEndpointsEndpointsAiGatewayGuardrails | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -874,14 +874,14 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputRef
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksServingEndpointsEndpointsAiGatewayGuardrails | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksServingEndpointsEndpointsAiGatewayGuardrails | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._input.internalValue = undefined;
       this._output.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -898,7 +898,7 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputRef
   public get input() {
     return this._input;
   }
-  public putInput(value: DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInput[] | cdktf.IResolvable) {
+  public putInput(value: DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsInput[] | cdktn.IResolvable) {
     this._input.internalValue = value;
   }
   public resetInput() {
@@ -914,7 +914,7 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputRef
   public get output() {
     return this._output;
   }
-  public putOutput(value: DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutput[] | cdktf.IResolvable) {
+  public putOutput(value: DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutput[] | cdktn.IResolvable) {
     this._output.internalValue = value;
   }
   public resetOutput() {
@@ -926,15 +926,15 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsOutputRef
   }
 }
 
-export class DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsList extends cdktf.ComplexList {
-  public internalValue? : DataDatabricksServingEndpointsEndpointsAiGatewayGuardrails[] | cdktf.IResolvable
+export class DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsList extends cdktn.ComplexList {
+  public internalValue? : DataDatabricksServingEndpointsEndpointsAiGatewayGuardrails[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -947,63 +947,63 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsList exte
 }
 export interface DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#catalog_name DataDatabricksServingEndpoints#catalog_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#catalog_name DataDatabricksServingEndpoints#catalog_name}
   */
   readonly catalogName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#enabled DataDatabricksServingEndpoints#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#enabled DataDatabricksServingEndpoints#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#schema_name DataDatabricksServingEndpoints#schema_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#schema_name DataDatabricksServingEndpoints#schema_name}
   */
   readonly schemaName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#table_name_prefix DataDatabricksServingEndpoints#table_name_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#table_name_prefix DataDatabricksServingEndpoints#table_name_prefix}
   */
   readonly tableNamePrefix?: string;
 }
 
-export function dataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfigToTerraform(struct?: DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfigToTerraform(struct?: DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    catalog_name: cdktf.stringToTerraform(struct!.catalogName),
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    schema_name: cdktf.stringToTerraform(struct!.schemaName),
-    table_name_prefix: cdktf.stringToTerraform(struct!.tableNamePrefix),
+    catalog_name: cdktn.stringToTerraform(struct!.catalogName),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    schema_name: cdktn.stringToTerraform(struct!.schemaName),
+    table_name_prefix: cdktn.stringToTerraform(struct!.tableNamePrefix),
   }
 }
 
 
-export function dataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfigToHclTerraform(struct?: DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfigToHclTerraform(struct?: DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     catalog_name: {
-      value: cdktf.stringToHclTerraform(struct!.catalogName),
+      value: cdktn.stringToHclTerraform(struct!.catalogName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     schema_name: {
-      value: cdktf.stringToHclTerraform(struct!.schemaName),
+      value: cdktn.stringToHclTerraform(struct!.schemaName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     table_name_prefix: {
-      value: cdktf.stringToHclTerraform(struct!.tableNamePrefix),
+      value: cdktn.stringToHclTerraform(struct!.tableNamePrefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1014,9 +1014,9 @@ export function dataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableCo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfigOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1024,11 +1024,11 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfi
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1053,7 +1053,7 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfi
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1062,7 +1062,7 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfi
       this._schemaName = undefined;
       this._tableNamePrefix = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1093,11 +1093,11 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfi
   }
 
   // enabled - computed: true, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -1141,15 +1141,15 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfi
   }
 }
 
-export class DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfigList extends cdktf.ComplexList {
-  public internalValue? : DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfig[] | cdktf.IResolvable
+export class DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfigList extends cdktn.ComplexList {
+  public internalValue? : DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1162,74 +1162,74 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfi
 }
 export interface DataDatabricksServingEndpointsEndpointsAiGatewayRateLimits {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#calls DataDatabricksServingEndpoints#calls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#calls DataDatabricksServingEndpoints#calls}
   */
   readonly calls?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#key DataDatabricksServingEndpoints#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#key DataDatabricksServingEndpoints#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#principal DataDatabricksServingEndpoints#principal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#principal DataDatabricksServingEndpoints#principal}
   */
   readonly principal?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#renewal_period DataDatabricksServingEndpoints#renewal_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#renewal_period DataDatabricksServingEndpoints#renewal_period}
   */
   readonly renewalPeriod: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#tokens DataDatabricksServingEndpoints#tokens}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#tokens DataDatabricksServingEndpoints#tokens}
   */
   readonly tokens?: number;
 }
 
-export function dataDatabricksServingEndpointsEndpointsAiGatewayRateLimitsToTerraform(struct?: DataDatabricksServingEndpointsEndpointsAiGatewayRateLimits | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksServingEndpointsEndpointsAiGatewayRateLimitsToTerraform(struct?: DataDatabricksServingEndpointsEndpointsAiGatewayRateLimits | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    calls: cdktf.numberToTerraform(struct!.calls),
-    key: cdktf.stringToTerraform(struct!.key),
-    principal: cdktf.stringToTerraform(struct!.principal),
-    renewal_period: cdktf.stringToTerraform(struct!.renewalPeriod),
-    tokens: cdktf.numberToTerraform(struct!.tokens),
+    calls: cdktn.numberToTerraform(struct!.calls),
+    key: cdktn.stringToTerraform(struct!.key),
+    principal: cdktn.stringToTerraform(struct!.principal),
+    renewal_period: cdktn.stringToTerraform(struct!.renewalPeriod),
+    tokens: cdktn.numberToTerraform(struct!.tokens),
   }
 }
 
 
-export function dataDatabricksServingEndpointsEndpointsAiGatewayRateLimitsToHclTerraform(struct?: DataDatabricksServingEndpointsEndpointsAiGatewayRateLimits | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksServingEndpointsEndpointsAiGatewayRateLimitsToHclTerraform(struct?: DataDatabricksServingEndpointsEndpointsAiGatewayRateLimits | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     calls: {
-      value: cdktf.numberToHclTerraform(struct!.calls),
+      value: cdktn.numberToHclTerraform(struct!.calls),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     principal: {
-      value: cdktf.stringToHclTerraform(struct!.principal),
+      value: cdktn.stringToHclTerraform(struct!.principal),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     renewal_period: {
-      value: cdktf.stringToHclTerraform(struct!.renewalPeriod),
+      value: cdktn.stringToHclTerraform(struct!.renewalPeriod),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tokens: {
-      value: cdktf.numberToHclTerraform(struct!.tokens),
+      value: cdktn.numberToHclTerraform(struct!.tokens),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1240,9 +1240,9 @@ export function dataDatabricksServingEndpointsEndpointsAiGatewayRateLimitsToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksServingEndpointsEndpointsAiGatewayRateLimitsOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksServingEndpointsEndpointsAiGatewayRateLimitsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1250,11 +1250,11 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayRateLimitsOutputRef
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataDatabricksServingEndpointsEndpointsAiGatewayRateLimits | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatabricksServingEndpointsEndpointsAiGatewayRateLimits | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1283,7 +1283,7 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayRateLimitsOutputRef
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksServingEndpointsEndpointsAiGatewayRateLimits | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksServingEndpointsEndpointsAiGatewayRateLimits | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1293,7 +1293,7 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayRateLimitsOutputRef
       this._renewalPeriod = undefined;
       this._tokens = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1386,15 +1386,15 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayRateLimitsOutputRef
   }
 }
 
-export class DataDatabricksServingEndpointsEndpointsAiGatewayRateLimitsList extends cdktf.ComplexList {
-  public internalValue? : DataDatabricksServingEndpointsEndpointsAiGatewayRateLimits[] | cdktf.IResolvable
+export class DataDatabricksServingEndpointsEndpointsAiGatewayRateLimitsList extends cdktn.ComplexList {
+  public internalValue? : DataDatabricksServingEndpointsEndpointsAiGatewayRateLimits[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1407,30 +1407,30 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayRateLimitsList exte
 }
 export interface DataDatabricksServingEndpointsEndpointsAiGatewayUsageTrackingConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#enabled DataDatabricksServingEndpoints#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#enabled DataDatabricksServingEndpoints#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
 }
 
-export function dataDatabricksServingEndpointsEndpointsAiGatewayUsageTrackingConfigToTerraform(struct?: DataDatabricksServingEndpointsEndpointsAiGatewayUsageTrackingConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksServingEndpointsEndpointsAiGatewayUsageTrackingConfigToTerraform(struct?: DataDatabricksServingEndpointsEndpointsAiGatewayUsageTrackingConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
   }
 }
 
 
-export function dataDatabricksServingEndpointsEndpointsAiGatewayUsageTrackingConfigToHclTerraform(struct?: DataDatabricksServingEndpointsEndpointsAiGatewayUsageTrackingConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksServingEndpointsEndpointsAiGatewayUsageTrackingConfigToHclTerraform(struct?: DataDatabricksServingEndpointsEndpointsAiGatewayUsageTrackingConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -1441,9 +1441,9 @@ export function dataDatabricksServingEndpointsEndpointsAiGatewayUsageTrackingCon
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksServingEndpointsEndpointsAiGatewayUsageTrackingConfigOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksServingEndpointsEndpointsAiGatewayUsageTrackingConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1451,11 +1451,11 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayUsageTrackingConfig
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataDatabricksServingEndpointsEndpointsAiGatewayUsageTrackingConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatabricksServingEndpointsEndpointsAiGatewayUsageTrackingConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1468,13 +1468,13 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayUsageTrackingConfig
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksServingEndpointsEndpointsAiGatewayUsageTrackingConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksServingEndpointsEndpointsAiGatewayUsageTrackingConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._enabled = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1486,11 +1486,11 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayUsageTrackingConfig
   }
 
   // enabled - computed: true, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -1502,15 +1502,15 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayUsageTrackingConfig
   }
 }
 
-export class DataDatabricksServingEndpointsEndpointsAiGatewayUsageTrackingConfigList extends cdktf.ComplexList {
-  public internalValue? : DataDatabricksServingEndpointsEndpointsAiGatewayUsageTrackingConfig[] | cdktf.IResolvable
+export class DataDatabricksServingEndpointsEndpointsAiGatewayUsageTrackingConfigList extends cdktn.ComplexList {
+  public internalValue? : DataDatabricksServingEndpointsEndpointsAiGatewayUsageTrackingConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1523,74 +1523,74 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayUsageTrackingConfig
 }
 export interface DataDatabricksServingEndpointsEndpointsAiGateway {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#fallback_config DataDatabricksServingEndpoints#fallback_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#fallback_config DataDatabricksServingEndpoints#fallback_config}
   */
-  readonly fallbackConfig?: DataDatabricksServingEndpointsEndpointsAiGatewayFallbackConfig[] | cdktf.IResolvable;
+  readonly fallbackConfig?: DataDatabricksServingEndpointsEndpointsAiGatewayFallbackConfig[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#guardrails DataDatabricksServingEndpoints#guardrails}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#guardrails DataDatabricksServingEndpoints#guardrails}
   */
-  readonly guardrails?: DataDatabricksServingEndpointsEndpointsAiGatewayGuardrails[] | cdktf.IResolvable;
+  readonly guardrails?: DataDatabricksServingEndpointsEndpointsAiGatewayGuardrails[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#inference_table_config DataDatabricksServingEndpoints#inference_table_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#inference_table_config DataDatabricksServingEndpoints#inference_table_config}
   */
-  readonly inferenceTableConfig?: DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfig[] | cdktf.IResolvable;
+  readonly inferenceTableConfig?: DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfig[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#rate_limits DataDatabricksServingEndpoints#rate_limits}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#rate_limits DataDatabricksServingEndpoints#rate_limits}
   */
-  readonly rateLimits?: DataDatabricksServingEndpointsEndpointsAiGatewayRateLimits[] | cdktf.IResolvable;
+  readonly rateLimits?: DataDatabricksServingEndpointsEndpointsAiGatewayRateLimits[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#usage_tracking_config DataDatabricksServingEndpoints#usage_tracking_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#usage_tracking_config DataDatabricksServingEndpoints#usage_tracking_config}
   */
-  readonly usageTrackingConfig?: DataDatabricksServingEndpointsEndpointsAiGatewayUsageTrackingConfig[] | cdktf.IResolvable;
+  readonly usageTrackingConfig?: DataDatabricksServingEndpointsEndpointsAiGatewayUsageTrackingConfig[] | cdktn.IResolvable;
 }
 
-export function dataDatabricksServingEndpointsEndpointsAiGatewayToTerraform(struct?: DataDatabricksServingEndpointsEndpointsAiGateway | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksServingEndpointsEndpointsAiGatewayToTerraform(struct?: DataDatabricksServingEndpointsEndpointsAiGateway | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    fallback_config: cdktf.listMapper(dataDatabricksServingEndpointsEndpointsAiGatewayFallbackConfigToTerraform, false)(struct!.fallbackConfig),
-    guardrails: cdktf.listMapper(dataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsToTerraform, false)(struct!.guardrails),
-    inference_table_config: cdktf.listMapper(dataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfigToTerraform, false)(struct!.inferenceTableConfig),
-    rate_limits: cdktf.listMapper(dataDatabricksServingEndpointsEndpointsAiGatewayRateLimitsToTerraform, false)(struct!.rateLimits),
-    usage_tracking_config: cdktf.listMapper(dataDatabricksServingEndpointsEndpointsAiGatewayUsageTrackingConfigToTerraform, false)(struct!.usageTrackingConfig),
+    fallback_config: cdktn.listMapper(dataDatabricksServingEndpointsEndpointsAiGatewayFallbackConfigToTerraform, false)(struct!.fallbackConfig),
+    guardrails: cdktn.listMapper(dataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsToTerraform, false)(struct!.guardrails),
+    inference_table_config: cdktn.listMapper(dataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfigToTerraform, false)(struct!.inferenceTableConfig),
+    rate_limits: cdktn.listMapper(dataDatabricksServingEndpointsEndpointsAiGatewayRateLimitsToTerraform, false)(struct!.rateLimits),
+    usage_tracking_config: cdktn.listMapper(dataDatabricksServingEndpointsEndpointsAiGatewayUsageTrackingConfigToTerraform, false)(struct!.usageTrackingConfig),
   }
 }
 
 
-export function dataDatabricksServingEndpointsEndpointsAiGatewayToHclTerraform(struct?: DataDatabricksServingEndpointsEndpointsAiGateway | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksServingEndpointsEndpointsAiGatewayToHclTerraform(struct?: DataDatabricksServingEndpointsEndpointsAiGateway | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     fallback_config: {
-      value: cdktf.listMapperHcl(dataDatabricksServingEndpointsEndpointsAiGatewayFallbackConfigToHclTerraform, false)(struct!.fallbackConfig),
+      value: cdktn.listMapperHcl(dataDatabricksServingEndpointsEndpointsAiGatewayFallbackConfigToHclTerraform, false)(struct!.fallbackConfig),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatabricksServingEndpointsEndpointsAiGatewayFallbackConfigList",
     },
     guardrails: {
-      value: cdktf.listMapperHcl(dataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsToHclTerraform, false)(struct!.guardrails),
+      value: cdktn.listMapperHcl(dataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsToHclTerraform, false)(struct!.guardrails),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatabricksServingEndpointsEndpointsAiGatewayGuardrailsList",
     },
     inference_table_config: {
-      value: cdktf.listMapperHcl(dataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfigToHclTerraform, false)(struct!.inferenceTableConfig),
+      value: cdktn.listMapperHcl(dataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfigToHclTerraform, false)(struct!.inferenceTableConfig),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfigList",
     },
     rate_limits: {
-      value: cdktf.listMapperHcl(dataDatabricksServingEndpointsEndpointsAiGatewayRateLimitsToHclTerraform, false)(struct!.rateLimits),
+      value: cdktn.listMapperHcl(dataDatabricksServingEndpointsEndpointsAiGatewayRateLimitsToHclTerraform, false)(struct!.rateLimits),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatabricksServingEndpointsEndpointsAiGatewayRateLimitsList",
     },
     usage_tracking_config: {
-      value: cdktf.listMapperHcl(dataDatabricksServingEndpointsEndpointsAiGatewayUsageTrackingConfigToHclTerraform, false)(struct!.usageTrackingConfig),
+      value: cdktn.listMapperHcl(dataDatabricksServingEndpointsEndpointsAiGatewayUsageTrackingConfigToHclTerraform, false)(struct!.usageTrackingConfig),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatabricksServingEndpointsEndpointsAiGatewayUsageTrackingConfigList",
@@ -1601,9 +1601,9 @@ export function dataDatabricksServingEndpointsEndpointsAiGatewayToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksServingEndpointsEndpointsAiGatewayOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksServingEndpointsEndpointsAiGatewayOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1611,11 +1611,11 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayOutputReference ext
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataDatabricksServingEndpointsEndpointsAiGateway | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatabricksServingEndpointsEndpointsAiGateway | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1644,7 +1644,7 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayOutputReference ext
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksServingEndpointsEndpointsAiGateway | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksServingEndpointsEndpointsAiGateway | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1654,7 +1654,7 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayOutputReference ext
       this._rateLimits.internalValue = undefined;
       this._usageTrackingConfig.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1674,7 +1674,7 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayOutputReference ext
   public get fallbackConfig() {
     return this._fallbackConfig;
   }
-  public putFallbackConfig(value: DataDatabricksServingEndpointsEndpointsAiGatewayFallbackConfig[] | cdktf.IResolvable) {
+  public putFallbackConfig(value: DataDatabricksServingEndpointsEndpointsAiGatewayFallbackConfig[] | cdktn.IResolvable) {
     this._fallbackConfig.internalValue = value;
   }
   public resetFallbackConfig() {
@@ -1690,7 +1690,7 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayOutputReference ext
   public get guardrails() {
     return this._guardrails;
   }
-  public putGuardrails(value: DataDatabricksServingEndpointsEndpointsAiGatewayGuardrails[] | cdktf.IResolvable) {
+  public putGuardrails(value: DataDatabricksServingEndpointsEndpointsAiGatewayGuardrails[] | cdktn.IResolvable) {
     this._guardrails.internalValue = value;
   }
   public resetGuardrails() {
@@ -1706,7 +1706,7 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayOutputReference ext
   public get inferenceTableConfig() {
     return this._inferenceTableConfig;
   }
-  public putInferenceTableConfig(value: DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfig[] | cdktf.IResolvable) {
+  public putInferenceTableConfig(value: DataDatabricksServingEndpointsEndpointsAiGatewayInferenceTableConfig[] | cdktn.IResolvable) {
     this._inferenceTableConfig.internalValue = value;
   }
   public resetInferenceTableConfig() {
@@ -1722,7 +1722,7 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayOutputReference ext
   public get rateLimits() {
     return this._rateLimits;
   }
-  public putRateLimits(value: DataDatabricksServingEndpointsEndpointsAiGatewayRateLimits[] | cdktf.IResolvable) {
+  public putRateLimits(value: DataDatabricksServingEndpointsEndpointsAiGatewayRateLimits[] | cdktn.IResolvable) {
     this._rateLimits.internalValue = value;
   }
   public resetRateLimits() {
@@ -1738,7 +1738,7 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayOutputReference ext
   public get usageTrackingConfig() {
     return this._usageTrackingConfig;
   }
-  public putUsageTrackingConfig(value: DataDatabricksServingEndpointsEndpointsAiGatewayUsageTrackingConfig[] | cdktf.IResolvable) {
+  public putUsageTrackingConfig(value: DataDatabricksServingEndpointsEndpointsAiGatewayUsageTrackingConfig[] | cdktn.IResolvable) {
     this._usageTrackingConfig.internalValue = value;
   }
   public resetUsageTrackingConfig() {
@@ -1750,15 +1750,15 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayOutputReference ext
   }
 }
 
-export class DataDatabricksServingEndpointsEndpointsAiGatewayList extends cdktf.ComplexList {
-  public internalValue? : DataDatabricksServingEndpointsEndpointsAiGateway[] | cdktf.IResolvable
+export class DataDatabricksServingEndpointsEndpointsAiGatewayList extends cdktn.ComplexList {
+  public internalValue? : DataDatabricksServingEndpointsEndpointsAiGateway[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1771,41 +1771,41 @@ export class DataDatabricksServingEndpointsEndpointsAiGatewayList extends cdktf.
 }
 export interface DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAi21LabsConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#ai21labs_api_key DataDatabricksServingEndpoints#ai21labs_api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#ai21labs_api_key DataDatabricksServingEndpoints#ai21labs_api_key}
   */
   readonly ai21LabsApiKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#ai21labs_api_key_plaintext DataDatabricksServingEndpoints#ai21labs_api_key_plaintext}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#ai21labs_api_key_plaintext DataDatabricksServingEndpoints#ai21labs_api_key_plaintext}
   */
   readonly ai21LabsApiKeyPlaintext?: string;
 }
 
-export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAi21LabsConfigToTerraform(struct?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAi21LabsConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAi21LabsConfigToTerraform(struct?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAi21LabsConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ai21labs_api_key: cdktf.stringToTerraform(struct!.ai21LabsApiKey),
-    ai21labs_api_key_plaintext: cdktf.stringToTerraform(struct!.ai21LabsApiKeyPlaintext),
+    ai21labs_api_key: cdktn.stringToTerraform(struct!.ai21LabsApiKey),
+    ai21labs_api_key_plaintext: cdktn.stringToTerraform(struct!.ai21LabsApiKeyPlaintext),
   }
 }
 
 
-export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAi21LabsConfigToHclTerraform(struct?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAi21LabsConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAi21LabsConfigToHclTerraform(struct?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAi21LabsConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ai21labs_api_key: {
-      value: cdktf.stringToHclTerraform(struct!.ai21LabsApiKey),
+      value: cdktn.stringToHclTerraform(struct!.ai21LabsApiKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ai21labs_api_key_plaintext: {
-      value: cdktf.stringToHclTerraform(struct!.ai21LabsApiKeyPlaintext),
+      value: cdktn.stringToHclTerraform(struct!.ai21LabsApiKeyPlaintext),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1816,9 +1816,9 @@ export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExter
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAi21LabsConfigOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAi21LabsConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1826,11 +1826,11 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAi21LabsConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAi21LabsConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1847,14 +1847,14 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAi21LabsConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAi21LabsConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._ai21LabsApiKey = undefined;
       this._ai21LabsApiKeyPlaintext = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1899,15 +1899,15 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
   }
 }
 
-export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAi21LabsConfigList extends cdktf.ComplexList {
-  public internalValue? : DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAi21LabsConfig[] | cdktf.IResolvable
+export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAi21LabsConfigList extends cdktn.ComplexList {
+  public internalValue? : DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAi21LabsConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1920,96 +1920,96 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
 }
 export interface DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAmazonBedrockConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#aws_access_key_id DataDatabricksServingEndpoints#aws_access_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#aws_access_key_id DataDatabricksServingEndpoints#aws_access_key_id}
   */
   readonly awsAccessKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#aws_access_key_id_plaintext DataDatabricksServingEndpoints#aws_access_key_id_plaintext}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#aws_access_key_id_plaintext DataDatabricksServingEndpoints#aws_access_key_id_plaintext}
   */
   readonly awsAccessKeyIdPlaintext?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#aws_region DataDatabricksServingEndpoints#aws_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#aws_region DataDatabricksServingEndpoints#aws_region}
   */
   readonly awsRegion: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#aws_secret_access_key DataDatabricksServingEndpoints#aws_secret_access_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#aws_secret_access_key DataDatabricksServingEndpoints#aws_secret_access_key}
   */
   readonly awsSecretAccessKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#aws_secret_access_key_plaintext DataDatabricksServingEndpoints#aws_secret_access_key_plaintext}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#aws_secret_access_key_plaintext DataDatabricksServingEndpoints#aws_secret_access_key_plaintext}
   */
   readonly awsSecretAccessKeyPlaintext?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#bedrock_provider DataDatabricksServingEndpoints#bedrock_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#bedrock_provider DataDatabricksServingEndpoints#bedrock_provider}
   */
   readonly bedrockProvider: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#instance_profile_arn DataDatabricksServingEndpoints#instance_profile_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#instance_profile_arn DataDatabricksServingEndpoints#instance_profile_arn}
   */
   readonly instanceProfileArn?: string;
 }
 
-export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAmazonBedrockConfigToTerraform(struct?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAmazonBedrockConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAmazonBedrockConfigToTerraform(struct?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAmazonBedrockConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_access_key_id: cdktf.stringToTerraform(struct!.awsAccessKeyId),
-    aws_access_key_id_plaintext: cdktf.stringToTerraform(struct!.awsAccessKeyIdPlaintext),
-    aws_region: cdktf.stringToTerraform(struct!.awsRegion),
-    aws_secret_access_key: cdktf.stringToTerraform(struct!.awsSecretAccessKey),
-    aws_secret_access_key_plaintext: cdktf.stringToTerraform(struct!.awsSecretAccessKeyPlaintext),
-    bedrock_provider: cdktf.stringToTerraform(struct!.bedrockProvider),
-    instance_profile_arn: cdktf.stringToTerraform(struct!.instanceProfileArn),
+    aws_access_key_id: cdktn.stringToTerraform(struct!.awsAccessKeyId),
+    aws_access_key_id_plaintext: cdktn.stringToTerraform(struct!.awsAccessKeyIdPlaintext),
+    aws_region: cdktn.stringToTerraform(struct!.awsRegion),
+    aws_secret_access_key: cdktn.stringToTerraform(struct!.awsSecretAccessKey),
+    aws_secret_access_key_plaintext: cdktn.stringToTerraform(struct!.awsSecretAccessKeyPlaintext),
+    bedrock_provider: cdktn.stringToTerraform(struct!.bedrockProvider),
+    instance_profile_arn: cdktn.stringToTerraform(struct!.instanceProfileArn),
   }
 }
 
 
-export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAmazonBedrockConfigToHclTerraform(struct?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAmazonBedrockConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAmazonBedrockConfigToHclTerraform(struct?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAmazonBedrockConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_access_key_id: {
-      value: cdktf.stringToHclTerraform(struct!.awsAccessKeyId),
+      value: cdktn.stringToHclTerraform(struct!.awsAccessKeyId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     aws_access_key_id_plaintext: {
-      value: cdktf.stringToHclTerraform(struct!.awsAccessKeyIdPlaintext),
+      value: cdktn.stringToHclTerraform(struct!.awsAccessKeyIdPlaintext),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     aws_region: {
-      value: cdktf.stringToHclTerraform(struct!.awsRegion),
+      value: cdktn.stringToHclTerraform(struct!.awsRegion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     aws_secret_access_key: {
-      value: cdktf.stringToHclTerraform(struct!.awsSecretAccessKey),
+      value: cdktn.stringToHclTerraform(struct!.awsSecretAccessKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     aws_secret_access_key_plaintext: {
-      value: cdktf.stringToHclTerraform(struct!.awsSecretAccessKeyPlaintext),
+      value: cdktn.stringToHclTerraform(struct!.awsSecretAccessKeyPlaintext),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     bedrock_provider: {
-      value: cdktf.stringToHclTerraform(struct!.bedrockProvider),
+      value: cdktn.stringToHclTerraform(struct!.bedrockProvider),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     instance_profile_arn: {
-      value: cdktf.stringToHclTerraform(struct!.instanceProfileArn),
+      value: cdktn.stringToHclTerraform(struct!.instanceProfileArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2020,9 +2020,9 @@ export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExter
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAmazonBedrockConfigOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAmazonBedrockConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2030,11 +2030,11 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAmazonBedrockConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAmazonBedrockConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2071,7 +2071,7 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAmazonBedrockConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAmazonBedrockConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2083,7 +2083,7 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
       this._bedrockProvider = undefined;
       this._instanceProfileArn = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2207,15 +2207,15 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
   }
 }
 
-export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAmazonBedrockConfigList extends cdktf.ComplexList {
-  public internalValue? : DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAmazonBedrockConfig[] | cdktf.IResolvable
+export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAmazonBedrockConfigList extends cdktn.ComplexList {
+  public internalValue? : DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAmazonBedrockConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2228,41 +2228,41 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
 }
 export interface DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAnthropicConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#anthropic_api_key DataDatabricksServingEndpoints#anthropic_api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#anthropic_api_key DataDatabricksServingEndpoints#anthropic_api_key}
   */
   readonly anthropicApiKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#anthropic_api_key_plaintext DataDatabricksServingEndpoints#anthropic_api_key_plaintext}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#anthropic_api_key_plaintext DataDatabricksServingEndpoints#anthropic_api_key_plaintext}
   */
   readonly anthropicApiKeyPlaintext?: string;
 }
 
-export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAnthropicConfigToTerraform(struct?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAnthropicConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAnthropicConfigToTerraform(struct?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAnthropicConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    anthropic_api_key: cdktf.stringToTerraform(struct!.anthropicApiKey),
-    anthropic_api_key_plaintext: cdktf.stringToTerraform(struct!.anthropicApiKeyPlaintext),
+    anthropic_api_key: cdktn.stringToTerraform(struct!.anthropicApiKey),
+    anthropic_api_key_plaintext: cdktn.stringToTerraform(struct!.anthropicApiKeyPlaintext),
   }
 }
 
 
-export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAnthropicConfigToHclTerraform(struct?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAnthropicConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAnthropicConfigToHclTerraform(struct?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAnthropicConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     anthropic_api_key: {
-      value: cdktf.stringToHclTerraform(struct!.anthropicApiKey),
+      value: cdktn.stringToHclTerraform(struct!.anthropicApiKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     anthropic_api_key_plaintext: {
-      value: cdktf.stringToHclTerraform(struct!.anthropicApiKeyPlaintext),
+      value: cdktn.stringToHclTerraform(struct!.anthropicApiKeyPlaintext),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2273,9 +2273,9 @@ export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExter
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAnthropicConfigOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAnthropicConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2283,11 +2283,11 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAnthropicConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAnthropicConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2304,14 +2304,14 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAnthropicConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAnthropicConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._anthropicApiKey = undefined;
       this._anthropicApiKeyPlaintext = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2356,15 +2356,15 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
   }
 }
 
-export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAnthropicConfigList extends cdktf.ComplexList {
-  public internalValue? : DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAnthropicConfig[] | cdktf.IResolvable
+export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAnthropicConfigList extends cdktn.ComplexList {
+  public internalValue? : DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAnthropicConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2377,52 +2377,52 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
 }
 export interface DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCohereConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#cohere_api_base DataDatabricksServingEndpoints#cohere_api_base}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#cohere_api_base DataDatabricksServingEndpoints#cohere_api_base}
   */
   readonly cohereApiBase?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#cohere_api_key DataDatabricksServingEndpoints#cohere_api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#cohere_api_key DataDatabricksServingEndpoints#cohere_api_key}
   */
   readonly cohereApiKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#cohere_api_key_plaintext DataDatabricksServingEndpoints#cohere_api_key_plaintext}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#cohere_api_key_plaintext DataDatabricksServingEndpoints#cohere_api_key_plaintext}
   */
   readonly cohereApiKeyPlaintext?: string;
 }
 
-export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCohereConfigToTerraform(struct?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCohereConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCohereConfigToTerraform(struct?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCohereConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cohere_api_base: cdktf.stringToTerraform(struct!.cohereApiBase),
-    cohere_api_key: cdktf.stringToTerraform(struct!.cohereApiKey),
-    cohere_api_key_plaintext: cdktf.stringToTerraform(struct!.cohereApiKeyPlaintext),
+    cohere_api_base: cdktn.stringToTerraform(struct!.cohereApiBase),
+    cohere_api_key: cdktn.stringToTerraform(struct!.cohereApiKey),
+    cohere_api_key_plaintext: cdktn.stringToTerraform(struct!.cohereApiKeyPlaintext),
   }
 }
 
 
-export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCohereConfigToHclTerraform(struct?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCohereConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCohereConfigToHclTerraform(struct?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCohereConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cohere_api_base: {
-      value: cdktf.stringToHclTerraform(struct!.cohereApiBase),
+      value: cdktn.stringToHclTerraform(struct!.cohereApiBase),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cohere_api_key: {
-      value: cdktf.stringToHclTerraform(struct!.cohereApiKey),
+      value: cdktn.stringToHclTerraform(struct!.cohereApiKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cohere_api_key_plaintext: {
-      value: cdktf.stringToHclTerraform(struct!.cohereApiKeyPlaintext),
+      value: cdktn.stringToHclTerraform(struct!.cohereApiKeyPlaintext),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2433,9 +2433,9 @@ export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExter
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCohereConfigOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCohereConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2443,11 +2443,11 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCohereConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCohereConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2468,7 +2468,7 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCohereConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCohereConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2476,7 +2476,7 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
       this._cohereApiKey = undefined;
       this._cohereApiKeyPlaintext = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2538,15 +2538,15 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
   }
 }
 
-export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCohereConfigList extends cdktf.ComplexList {
-  public internalValue? : DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCohereConfig[] | cdktf.IResolvable
+export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCohereConfigList extends cdktn.ComplexList {
+  public internalValue? : DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCohereConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2559,52 +2559,52 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
 }
 export interface DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigApiKeyAuth {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#key DataDatabricksServingEndpoints#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#key DataDatabricksServingEndpoints#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#value DataDatabricksServingEndpoints#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#value DataDatabricksServingEndpoints#value}
   */
   readonly value?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#value_plaintext DataDatabricksServingEndpoints#value_plaintext}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#value_plaintext DataDatabricksServingEndpoints#value_plaintext}
   */
   readonly valuePlaintext?: string;
 }
 
-export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigApiKeyAuthToTerraform(struct?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigApiKeyAuth | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigApiKeyAuthToTerraform(struct?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigApiKeyAuth | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    value: cdktf.stringToTerraform(struct!.value),
-    value_plaintext: cdktf.stringToTerraform(struct!.valuePlaintext),
+    key: cdktn.stringToTerraform(struct!.key),
+    value: cdktn.stringToTerraform(struct!.value),
+    value_plaintext: cdktn.stringToTerraform(struct!.valuePlaintext),
   }
 }
 
 
-export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigApiKeyAuthToHclTerraform(struct?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigApiKeyAuth | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigApiKeyAuthToHclTerraform(struct?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigApiKeyAuth | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value_plaintext: {
-      value: cdktf.stringToHclTerraform(struct!.valuePlaintext),
+      value: cdktn.stringToHclTerraform(struct!.valuePlaintext),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2615,9 +2615,9 @@ export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExter
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigApiKeyAuthOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigApiKeyAuthOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2625,11 +2625,11 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigApiKeyAuth | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigApiKeyAuth | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2650,7 +2650,7 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigApiKeyAuth | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigApiKeyAuth | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2658,7 +2658,7 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
       this._value = undefined;
       this._valuePlaintext = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2717,15 +2717,15 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
   }
 }
 
-export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigApiKeyAuthList extends cdktf.ComplexList {
-  public internalValue? : DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigApiKeyAuth[] | cdktf.IResolvable
+export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigApiKeyAuthList extends cdktn.ComplexList {
+  public internalValue? : DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigApiKeyAuth[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2738,41 +2738,41 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
 }
 export interface DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuth {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#token DataDatabricksServingEndpoints#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#token DataDatabricksServingEndpoints#token}
   */
   readonly token?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#token_plaintext DataDatabricksServingEndpoints#token_plaintext}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#token_plaintext DataDatabricksServingEndpoints#token_plaintext}
   */
   readonly tokenPlaintext?: string;
 }
 
-export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuthToTerraform(struct?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuth | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuthToTerraform(struct?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuth | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    token: cdktf.stringToTerraform(struct!.token),
-    token_plaintext: cdktf.stringToTerraform(struct!.tokenPlaintext),
+    token: cdktn.stringToTerraform(struct!.token),
+    token_plaintext: cdktn.stringToTerraform(struct!.tokenPlaintext),
   }
 }
 
 
-export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuthToHclTerraform(struct?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuth | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuthToHclTerraform(struct?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuth | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     token: {
-      value: cdktf.stringToHclTerraform(struct!.token),
+      value: cdktn.stringToHclTerraform(struct!.token),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     token_plaintext: {
-      value: cdktf.stringToHclTerraform(struct!.tokenPlaintext),
+      value: cdktn.stringToHclTerraform(struct!.tokenPlaintext),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2783,9 +2783,9 @@ export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExter
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuthOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuthOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2793,11 +2793,11 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuth | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuth | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2814,14 +2814,14 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuth | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuth | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._token = undefined;
       this._tokenPlaintext = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2866,15 +2866,15 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
   }
 }
 
-export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuthList extends cdktf.ComplexList {
-  public internalValue? : DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuth[] | cdktf.IResolvable
+export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuthList extends cdktn.ComplexList {
+  public internalValue? : DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuth[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2887,52 +2887,52 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
 }
 export interface DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#api_key_auth DataDatabricksServingEndpoints#api_key_auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#api_key_auth DataDatabricksServingEndpoints#api_key_auth}
   */
-  readonly apiKeyAuth?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigApiKeyAuth[] | cdktf.IResolvable;
+  readonly apiKeyAuth?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigApiKeyAuth[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#bearer_token_auth DataDatabricksServingEndpoints#bearer_token_auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#bearer_token_auth DataDatabricksServingEndpoints#bearer_token_auth}
   */
-  readonly bearerTokenAuth?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuth[] | cdktf.IResolvable;
+  readonly bearerTokenAuth?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuth[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#custom_provider_url DataDatabricksServingEndpoints#custom_provider_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#custom_provider_url DataDatabricksServingEndpoints#custom_provider_url}
   */
   readonly customProviderUrl: string;
 }
 
-export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigToTerraform(struct?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigToTerraform(struct?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    api_key_auth: cdktf.listMapper(dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigApiKeyAuthToTerraform, false)(struct!.apiKeyAuth),
-    bearer_token_auth: cdktf.listMapper(dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuthToTerraform, false)(struct!.bearerTokenAuth),
-    custom_provider_url: cdktf.stringToTerraform(struct!.customProviderUrl),
+    api_key_auth: cdktn.listMapper(dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigApiKeyAuthToTerraform, false)(struct!.apiKeyAuth),
+    bearer_token_auth: cdktn.listMapper(dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuthToTerraform, false)(struct!.bearerTokenAuth),
+    custom_provider_url: cdktn.stringToTerraform(struct!.customProviderUrl),
   }
 }
 
 
-export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigToHclTerraform(struct?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigToHclTerraform(struct?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     api_key_auth: {
-      value: cdktf.listMapperHcl(dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigApiKeyAuthToHclTerraform, false)(struct!.apiKeyAuth),
+      value: cdktn.listMapperHcl(dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigApiKeyAuthToHclTerraform, false)(struct!.apiKeyAuth),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigApiKeyAuthList",
     },
     bearer_token_auth: {
-      value: cdktf.listMapperHcl(dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuthToHclTerraform, false)(struct!.bearerTokenAuth),
+      value: cdktn.listMapperHcl(dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuthToHclTerraform, false)(struct!.bearerTokenAuth),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuthList",
     },
     custom_provider_url: {
-      value: cdktf.stringToHclTerraform(struct!.customProviderUrl),
+      value: cdktn.stringToHclTerraform(struct!.customProviderUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2943,9 +2943,9 @@ export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExter
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2953,11 +2953,11 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2978,7 +2978,7 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2986,7 +2986,7 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
       this._bearerTokenAuth.internalValue = undefined;
       this._customProviderUrl = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3004,7 +3004,7 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
   public get apiKeyAuth() {
     return this._apiKeyAuth;
   }
-  public putApiKeyAuth(value: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigApiKeyAuth[] | cdktf.IResolvable) {
+  public putApiKeyAuth(value: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigApiKeyAuth[] | cdktn.IResolvable) {
     this._apiKeyAuth.internalValue = value;
   }
   public resetApiKeyAuth() {
@@ -3020,7 +3020,7 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
   public get bearerTokenAuth() {
     return this._bearerTokenAuth;
   }
-  public putBearerTokenAuth(value: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuth[] | cdktf.IResolvable) {
+  public putBearerTokenAuth(value: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuth[] | cdktn.IResolvable) {
     this._bearerTokenAuth.internalValue = value;
   }
   public resetBearerTokenAuth() {
@@ -3045,15 +3045,15 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
   }
 }
 
-export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigList extends cdktf.ComplexList {
-  public internalValue? : DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfig[] | cdktf.IResolvable
+export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigList extends cdktn.ComplexList {
+  public internalValue? : DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3066,52 +3066,52 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
 }
 export interface DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelDatabricksModelServingConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#databricks_api_token DataDatabricksServingEndpoints#databricks_api_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#databricks_api_token DataDatabricksServingEndpoints#databricks_api_token}
   */
   readonly databricksApiToken?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#databricks_api_token_plaintext DataDatabricksServingEndpoints#databricks_api_token_plaintext}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#databricks_api_token_plaintext DataDatabricksServingEndpoints#databricks_api_token_plaintext}
   */
   readonly databricksApiTokenPlaintext?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#databricks_workspace_url DataDatabricksServingEndpoints#databricks_workspace_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#databricks_workspace_url DataDatabricksServingEndpoints#databricks_workspace_url}
   */
   readonly databricksWorkspaceUrl: string;
 }
 
-export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelDatabricksModelServingConfigToTerraform(struct?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelDatabricksModelServingConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelDatabricksModelServingConfigToTerraform(struct?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelDatabricksModelServingConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    databricks_api_token: cdktf.stringToTerraform(struct!.databricksApiToken),
-    databricks_api_token_plaintext: cdktf.stringToTerraform(struct!.databricksApiTokenPlaintext),
-    databricks_workspace_url: cdktf.stringToTerraform(struct!.databricksWorkspaceUrl),
+    databricks_api_token: cdktn.stringToTerraform(struct!.databricksApiToken),
+    databricks_api_token_plaintext: cdktn.stringToTerraform(struct!.databricksApiTokenPlaintext),
+    databricks_workspace_url: cdktn.stringToTerraform(struct!.databricksWorkspaceUrl),
   }
 }
 
 
-export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelDatabricksModelServingConfigToHclTerraform(struct?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelDatabricksModelServingConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelDatabricksModelServingConfigToHclTerraform(struct?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelDatabricksModelServingConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     databricks_api_token: {
-      value: cdktf.stringToHclTerraform(struct!.databricksApiToken),
+      value: cdktn.stringToHclTerraform(struct!.databricksApiToken),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     databricks_api_token_plaintext: {
-      value: cdktf.stringToHclTerraform(struct!.databricksApiTokenPlaintext),
+      value: cdktn.stringToHclTerraform(struct!.databricksApiTokenPlaintext),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     databricks_workspace_url: {
-      value: cdktf.stringToHclTerraform(struct!.databricksWorkspaceUrl),
+      value: cdktn.stringToHclTerraform(struct!.databricksWorkspaceUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3122,9 +3122,9 @@ export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExter
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelDatabricksModelServingConfigOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelDatabricksModelServingConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3132,11 +3132,11 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelDatabricksModelServingConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelDatabricksModelServingConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3157,7 +3157,7 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelDatabricksModelServingConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelDatabricksModelServingConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3165,7 +3165,7 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
       this._databricksApiTokenPlaintext = undefined;
       this._databricksWorkspaceUrl = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3224,15 +3224,15 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
   }
 }
 
-export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelDatabricksModelServingConfigList extends cdktf.ComplexList {
-  public internalValue? : DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelDatabricksModelServingConfig[] | cdktf.IResolvable
+export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelDatabricksModelServingConfigList extends cdktn.ComplexList {
+  public internalValue? : DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelDatabricksModelServingConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3245,63 +3245,63 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
 }
 export interface DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelGoogleCloudVertexAiConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#private_key DataDatabricksServingEndpoints#private_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#private_key DataDatabricksServingEndpoints#private_key}
   */
   readonly privateKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#private_key_plaintext DataDatabricksServingEndpoints#private_key_plaintext}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#private_key_plaintext DataDatabricksServingEndpoints#private_key_plaintext}
   */
   readonly privateKeyPlaintext?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#project_id DataDatabricksServingEndpoints#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#project_id DataDatabricksServingEndpoints#project_id}
   */
   readonly projectId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#region DataDatabricksServingEndpoints#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#region DataDatabricksServingEndpoints#region}
   */
   readonly region: string;
 }
 
-export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelGoogleCloudVertexAiConfigToTerraform(struct?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelGoogleCloudVertexAiConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelGoogleCloudVertexAiConfigToTerraform(struct?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelGoogleCloudVertexAiConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    private_key: cdktf.stringToTerraform(struct!.privateKey),
-    private_key_plaintext: cdktf.stringToTerraform(struct!.privateKeyPlaintext),
-    project_id: cdktf.stringToTerraform(struct!.projectId),
-    region: cdktf.stringToTerraform(struct!.region),
+    private_key: cdktn.stringToTerraform(struct!.privateKey),
+    private_key_plaintext: cdktn.stringToTerraform(struct!.privateKeyPlaintext),
+    project_id: cdktn.stringToTerraform(struct!.projectId),
+    region: cdktn.stringToTerraform(struct!.region),
   }
 }
 
 
-export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelGoogleCloudVertexAiConfigToHclTerraform(struct?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelGoogleCloudVertexAiConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelGoogleCloudVertexAiConfigToHclTerraform(struct?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelGoogleCloudVertexAiConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     private_key: {
-      value: cdktf.stringToHclTerraform(struct!.privateKey),
+      value: cdktn.stringToHclTerraform(struct!.privateKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     private_key_plaintext: {
-      value: cdktf.stringToHclTerraform(struct!.privateKeyPlaintext),
+      value: cdktn.stringToHclTerraform(struct!.privateKeyPlaintext),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     project_id: {
-      value: cdktf.stringToHclTerraform(struct!.projectId),
+      value: cdktn.stringToHclTerraform(struct!.projectId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     region: {
-      value: cdktf.stringToHclTerraform(struct!.region),
+      value: cdktn.stringToHclTerraform(struct!.region),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3312,9 +3312,9 @@ export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExter
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelGoogleCloudVertexAiConfigOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelGoogleCloudVertexAiConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3322,11 +3322,11 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelGoogleCloudVertexAiConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelGoogleCloudVertexAiConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3351,7 +3351,7 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelGoogleCloudVertexAiConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelGoogleCloudVertexAiConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3360,7 +3360,7 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
       this._projectId = undefined;
       this._region = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3433,15 +3433,15 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
   }
 }
 
-export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelGoogleCloudVertexAiConfigList extends cdktf.ComplexList {
-  public internalValue? : DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelGoogleCloudVertexAiConfig[] | cdktf.IResolvable
+export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelGoogleCloudVertexAiConfigList extends cdktn.ComplexList {
+  public internalValue? : DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelGoogleCloudVertexAiConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3454,140 +3454,140 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
 }
 export interface DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOpenaiConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#microsoft_entra_client_id DataDatabricksServingEndpoints#microsoft_entra_client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#microsoft_entra_client_id DataDatabricksServingEndpoints#microsoft_entra_client_id}
   */
   readonly microsoftEntraClientId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#microsoft_entra_client_secret DataDatabricksServingEndpoints#microsoft_entra_client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#microsoft_entra_client_secret DataDatabricksServingEndpoints#microsoft_entra_client_secret}
   */
   readonly microsoftEntraClientSecret?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#microsoft_entra_client_secret_plaintext DataDatabricksServingEndpoints#microsoft_entra_client_secret_plaintext}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#microsoft_entra_client_secret_plaintext DataDatabricksServingEndpoints#microsoft_entra_client_secret_plaintext}
   */
   readonly microsoftEntraClientSecretPlaintext?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#microsoft_entra_tenant_id DataDatabricksServingEndpoints#microsoft_entra_tenant_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#microsoft_entra_tenant_id DataDatabricksServingEndpoints#microsoft_entra_tenant_id}
   */
   readonly microsoftEntraTenantId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#openai_api_base DataDatabricksServingEndpoints#openai_api_base}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#openai_api_base DataDatabricksServingEndpoints#openai_api_base}
   */
   readonly openaiApiBase?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#openai_api_key DataDatabricksServingEndpoints#openai_api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#openai_api_key DataDatabricksServingEndpoints#openai_api_key}
   */
   readonly openaiApiKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#openai_api_key_plaintext DataDatabricksServingEndpoints#openai_api_key_plaintext}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#openai_api_key_plaintext DataDatabricksServingEndpoints#openai_api_key_plaintext}
   */
   readonly openaiApiKeyPlaintext?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#openai_api_type DataDatabricksServingEndpoints#openai_api_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#openai_api_type DataDatabricksServingEndpoints#openai_api_type}
   */
   readonly openaiApiType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#openai_api_version DataDatabricksServingEndpoints#openai_api_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#openai_api_version DataDatabricksServingEndpoints#openai_api_version}
   */
   readonly openaiApiVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#openai_deployment_name DataDatabricksServingEndpoints#openai_deployment_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#openai_deployment_name DataDatabricksServingEndpoints#openai_deployment_name}
   */
   readonly openaiDeploymentName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#openai_organization DataDatabricksServingEndpoints#openai_organization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#openai_organization DataDatabricksServingEndpoints#openai_organization}
   */
   readonly openaiOrganization?: string;
 }
 
-export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOpenaiConfigToTerraform(struct?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOpenaiConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOpenaiConfigToTerraform(struct?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOpenaiConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    microsoft_entra_client_id: cdktf.stringToTerraform(struct!.microsoftEntraClientId),
-    microsoft_entra_client_secret: cdktf.stringToTerraform(struct!.microsoftEntraClientSecret),
-    microsoft_entra_client_secret_plaintext: cdktf.stringToTerraform(struct!.microsoftEntraClientSecretPlaintext),
-    microsoft_entra_tenant_id: cdktf.stringToTerraform(struct!.microsoftEntraTenantId),
-    openai_api_base: cdktf.stringToTerraform(struct!.openaiApiBase),
-    openai_api_key: cdktf.stringToTerraform(struct!.openaiApiKey),
-    openai_api_key_plaintext: cdktf.stringToTerraform(struct!.openaiApiKeyPlaintext),
-    openai_api_type: cdktf.stringToTerraform(struct!.openaiApiType),
-    openai_api_version: cdktf.stringToTerraform(struct!.openaiApiVersion),
-    openai_deployment_name: cdktf.stringToTerraform(struct!.openaiDeploymentName),
-    openai_organization: cdktf.stringToTerraform(struct!.openaiOrganization),
+    microsoft_entra_client_id: cdktn.stringToTerraform(struct!.microsoftEntraClientId),
+    microsoft_entra_client_secret: cdktn.stringToTerraform(struct!.microsoftEntraClientSecret),
+    microsoft_entra_client_secret_plaintext: cdktn.stringToTerraform(struct!.microsoftEntraClientSecretPlaintext),
+    microsoft_entra_tenant_id: cdktn.stringToTerraform(struct!.microsoftEntraTenantId),
+    openai_api_base: cdktn.stringToTerraform(struct!.openaiApiBase),
+    openai_api_key: cdktn.stringToTerraform(struct!.openaiApiKey),
+    openai_api_key_plaintext: cdktn.stringToTerraform(struct!.openaiApiKeyPlaintext),
+    openai_api_type: cdktn.stringToTerraform(struct!.openaiApiType),
+    openai_api_version: cdktn.stringToTerraform(struct!.openaiApiVersion),
+    openai_deployment_name: cdktn.stringToTerraform(struct!.openaiDeploymentName),
+    openai_organization: cdktn.stringToTerraform(struct!.openaiOrganization),
   }
 }
 
 
-export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOpenaiConfigToHclTerraform(struct?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOpenaiConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOpenaiConfigToHclTerraform(struct?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOpenaiConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     microsoft_entra_client_id: {
-      value: cdktf.stringToHclTerraform(struct!.microsoftEntraClientId),
+      value: cdktn.stringToHclTerraform(struct!.microsoftEntraClientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     microsoft_entra_client_secret: {
-      value: cdktf.stringToHclTerraform(struct!.microsoftEntraClientSecret),
+      value: cdktn.stringToHclTerraform(struct!.microsoftEntraClientSecret),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     microsoft_entra_client_secret_plaintext: {
-      value: cdktf.stringToHclTerraform(struct!.microsoftEntraClientSecretPlaintext),
+      value: cdktn.stringToHclTerraform(struct!.microsoftEntraClientSecretPlaintext),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     microsoft_entra_tenant_id: {
-      value: cdktf.stringToHclTerraform(struct!.microsoftEntraTenantId),
+      value: cdktn.stringToHclTerraform(struct!.microsoftEntraTenantId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     openai_api_base: {
-      value: cdktf.stringToHclTerraform(struct!.openaiApiBase),
+      value: cdktn.stringToHclTerraform(struct!.openaiApiBase),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     openai_api_key: {
-      value: cdktf.stringToHclTerraform(struct!.openaiApiKey),
+      value: cdktn.stringToHclTerraform(struct!.openaiApiKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     openai_api_key_plaintext: {
-      value: cdktf.stringToHclTerraform(struct!.openaiApiKeyPlaintext),
+      value: cdktn.stringToHclTerraform(struct!.openaiApiKeyPlaintext),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     openai_api_type: {
-      value: cdktf.stringToHclTerraform(struct!.openaiApiType),
+      value: cdktn.stringToHclTerraform(struct!.openaiApiType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     openai_api_version: {
-      value: cdktf.stringToHclTerraform(struct!.openaiApiVersion),
+      value: cdktn.stringToHclTerraform(struct!.openaiApiVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     openai_deployment_name: {
-      value: cdktf.stringToHclTerraform(struct!.openaiDeploymentName),
+      value: cdktn.stringToHclTerraform(struct!.openaiDeploymentName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     openai_organization: {
-      value: cdktf.stringToHclTerraform(struct!.openaiOrganization),
+      value: cdktn.stringToHclTerraform(struct!.openaiOrganization),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3598,9 +3598,9 @@ export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExter
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOpenaiConfigOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOpenaiConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3608,11 +3608,11 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOpenaiConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOpenaiConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3665,7 +3665,7 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOpenaiConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOpenaiConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3681,7 +3681,7 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
       this._openaiDeploymentName = undefined;
       this._openaiOrganization = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3879,15 +3879,15 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
   }
 }
 
-export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOpenaiConfigList extends cdktf.ComplexList {
-  public internalValue? : DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOpenaiConfig[] | cdktf.IResolvable
+export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOpenaiConfigList extends cdktn.ComplexList {
+  public internalValue? : DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOpenaiConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3900,41 +3900,41 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
 }
 export interface DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelPalmConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#palm_api_key DataDatabricksServingEndpoints#palm_api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#palm_api_key DataDatabricksServingEndpoints#palm_api_key}
   */
   readonly palmApiKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#palm_api_key_plaintext DataDatabricksServingEndpoints#palm_api_key_plaintext}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#palm_api_key_plaintext DataDatabricksServingEndpoints#palm_api_key_plaintext}
   */
   readonly palmApiKeyPlaintext?: string;
 }
 
-export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelPalmConfigToTerraform(struct?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelPalmConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelPalmConfigToTerraform(struct?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelPalmConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    palm_api_key: cdktf.stringToTerraform(struct!.palmApiKey),
-    palm_api_key_plaintext: cdktf.stringToTerraform(struct!.palmApiKeyPlaintext),
+    palm_api_key: cdktn.stringToTerraform(struct!.palmApiKey),
+    palm_api_key_plaintext: cdktn.stringToTerraform(struct!.palmApiKeyPlaintext),
   }
 }
 
 
-export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelPalmConfigToHclTerraform(struct?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelPalmConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelPalmConfigToHclTerraform(struct?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelPalmConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     palm_api_key: {
-      value: cdktf.stringToHclTerraform(struct!.palmApiKey),
+      value: cdktn.stringToHclTerraform(struct!.palmApiKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     palm_api_key_plaintext: {
-      value: cdktf.stringToHclTerraform(struct!.palmApiKeyPlaintext),
+      value: cdktn.stringToHclTerraform(struct!.palmApiKeyPlaintext),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3945,9 +3945,9 @@ export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExter
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelPalmConfigOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelPalmConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3955,11 +3955,11 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelPalmConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelPalmConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3976,14 +3976,14 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelPalmConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelPalmConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._palmApiKey = undefined;
       this._palmApiKeyPlaintext = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4028,15 +4028,15 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
   }
 }
 
-export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelPalmConfigList extends cdktf.ComplexList {
-  public internalValue? : DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelPalmConfig[] | cdktf.IResolvable
+export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelPalmConfigList extends cdktn.ComplexList {
+  public internalValue? : DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelPalmConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4049,151 +4049,151 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
 }
 export interface DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModel {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#ai21labs_config DataDatabricksServingEndpoints#ai21labs_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#ai21labs_config DataDatabricksServingEndpoints#ai21labs_config}
   */
-  readonly ai21LabsConfig?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAi21LabsConfig[] | cdktf.IResolvable;
+  readonly ai21LabsConfig?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAi21LabsConfig[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#amazon_bedrock_config DataDatabricksServingEndpoints#amazon_bedrock_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#amazon_bedrock_config DataDatabricksServingEndpoints#amazon_bedrock_config}
   */
-  readonly amazonBedrockConfig?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAmazonBedrockConfig[] | cdktf.IResolvable;
+  readonly amazonBedrockConfig?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAmazonBedrockConfig[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#anthropic_config DataDatabricksServingEndpoints#anthropic_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#anthropic_config DataDatabricksServingEndpoints#anthropic_config}
   */
-  readonly anthropicConfig?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAnthropicConfig[] | cdktf.IResolvable;
+  readonly anthropicConfig?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAnthropicConfig[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#cohere_config DataDatabricksServingEndpoints#cohere_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#cohere_config DataDatabricksServingEndpoints#cohere_config}
   */
-  readonly cohereConfig?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCohereConfig[] | cdktf.IResolvable;
+  readonly cohereConfig?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCohereConfig[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#custom_provider_config DataDatabricksServingEndpoints#custom_provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#custom_provider_config DataDatabricksServingEndpoints#custom_provider_config}
   */
-  readonly customProviderConfig?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfig[] | cdktf.IResolvable;
+  readonly customProviderConfig?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfig[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#databricks_model_serving_config DataDatabricksServingEndpoints#databricks_model_serving_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#databricks_model_serving_config DataDatabricksServingEndpoints#databricks_model_serving_config}
   */
-  readonly databricksModelServingConfig?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelDatabricksModelServingConfig[] | cdktf.IResolvable;
+  readonly databricksModelServingConfig?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelDatabricksModelServingConfig[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#google_cloud_vertex_ai_config DataDatabricksServingEndpoints#google_cloud_vertex_ai_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#google_cloud_vertex_ai_config DataDatabricksServingEndpoints#google_cloud_vertex_ai_config}
   */
-  readonly googleCloudVertexAiConfig?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelGoogleCloudVertexAiConfig[] | cdktf.IResolvable;
+  readonly googleCloudVertexAiConfig?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelGoogleCloudVertexAiConfig[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#name DataDatabricksServingEndpoints#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#name DataDatabricksServingEndpoints#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#openai_config DataDatabricksServingEndpoints#openai_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#openai_config DataDatabricksServingEndpoints#openai_config}
   */
-  readonly openaiConfig?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOpenaiConfig[] | cdktf.IResolvable;
+  readonly openaiConfig?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOpenaiConfig[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#palm_config DataDatabricksServingEndpoints#palm_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#palm_config DataDatabricksServingEndpoints#palm_config}
   */
-  readonly palmConfig?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelPalmConfig[] | cdktf.IResolvable;
+  readonly palmConfig?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelPalmConfig[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#provider DataDatabricksServingEndpoints#provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#provider DataDatabricksServingEndpoints#provider}
   */
   readonly provider: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#task DataDatabricksServingEndpoints#task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#task DataDatabricksServingEndpoints#task}
   */
   readonly task: string;
 }
 
-export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelToTerraform(struct?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModel | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelToTerraform(struct?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModel | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ai21labs_config: cdktf.listMapper(dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAi21LabsConfigToTerraform, false)(struct!.ai21LabsConfig),
-    amazon_bedrock_config: cdktf.listMapper(dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAmazonBedrockConfigToTerraform, false)(struct!.amazonBedrockConfig),
-    anthropic_config: cdktf.listMapper(dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAnthropicConfigToTerraform, false)(struct!.anthropicConfig),
-    cohere_config: cdktf.listMapper(dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCohereConfigToTerraform, false)(struct!.cohereConfig),
-    custom_provider_config: cdktf.listMapper(dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigToTerraform, false)(struct!.customProviderConfig),
-    databricks_model_serving_config: cdktf.listMapper(dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelDatabricksModelServingConfigToTerraform, false)(struct!.databricksModelServingConfig),
-    google_cloud_vertex_ai_config: cdktf.listMapper(dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelGoogleCloudVertexAiConfigToTerraform, false)(struct!.googleCloudVertexAiConfig),
-    name: cdktf.stringToTerraform(struct!.name),
-    openai_config: cdktf.listMapper(dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOpenaiConfigToTerraform, false)(struct!.openaiConfig),
-    palm_config: cdktf.listMapper(dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelPalmConfigToTerraform, false)(struct!.palmConfig),
-    provider: cdktf.stringToTerraform(struct!.provider),
-    task: cdktf.stringToTerraform(struct!.task),
+    ai21labs_config: cdktn.listMapper(dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAi21LabsConfigToTerraform, false)(struct!.ai21LabsConfig),
+    amazon_bedrock_config: cdktn.listMapper(dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAmazonBedrockConfigToTerraform, false)(struct!.amazonBedrockConfig),
+    anthropic_config: cdktn.listMapper(dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAnthropicConfigToTerraform, false)(struct!.anthropicConfig),
+    cohere_config: cdktn.listMapper(dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCohereConfigToTerraform, false)(struct!.cohereConfig),
+    custom_provider_config: cdktn.listMapper(dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigToTerraform, false)(struct!.customProviderConfig),
+    databricks_model_serving_config: cdktn.listMapper(dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelDatabricksModelServingConfigToTerraform, false)(struct!.databricksModelServingConfig),
+    google_cloud_vertex_ai_config: cdktn.listMapper(dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelGoogleCloudVertexAiConfigToTerraform, false)(struct!.googleCloudVertexAiConfig),
+    name: cdktn.stringToTerraform(struct!.name),
+    openai_config: cdktn.listMapper(dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOpenaiConfigToTerraform, false)(struct!.openaiConfig),
+    palm_config: cdktn.listMapper(dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelPalmConfigToTerraform, false)(struct!.palmConfig),
+    provider: cdktn.stringToTerraform(struct!.provider),
+    task: cdktn.stringToTerraform(struct!.task),
   }
 }
 
 
-export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelToHclTerraform(struct?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModel | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelToHclTerraform(struct?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModel | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ai21labs_config: {
-      value: cdktf.listMapperHcl(dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAi21LabsConfigToHclTerraform, false)(struct!.ai21LabsConfig),
+      value: cdktn.listMapperHcl(dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAi21LabsConfigToHclTerraform, false)(struct!.ai21LabsConfig),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAi21LabsConfigList",
     },
     amazon_bedrock_config: {
-      value: cdktf.listMapperHcl(dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAmazonBedrockConfigToHclTerraform, false)(struct!.amazonBedrockConfig),
+      value: cdktn.listMapperHcl(dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAmazonBedrockConfigToHclTerraform, false)(struct!.amazonBedrockConfig),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAmazonBedrockConfigList",
     },
     anthropic_config: {
-      value: cdktf.listMapperHcl(dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAnthropicConfigToHclTerraform, false)(struct!.anthropicConfig),
+      value: cdktn.listMapperHcl(dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAnthropicConfigToHclTerraform, false)(struct!.anthropicConfig),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAnthropicConfigList",
     },
     cohere_config: {
-      value: cdktf.listMapperHcl(dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCohereConfigToHclTerraform, false)(struct!.cohereConfig),
+      value: cdktn.listMapperHcl(dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCohereConfigToHclTerraform, false)(struct!.cohereConfig),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCohereConfigList",
     },
     custom_provider_config: {
-      value: cdktf.listMapperHcl(dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigToHclTerraform, false)(struct!.customProviderConfig),
+      value: cdktn.listMapperHcl(dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigToHclTerraform, false)(struct!.customProviderConfig),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfigList",
     },
     databricks_model_serving_config: {
-      value: cdktf.listMapperHcl(dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelDatabricksModelServingConfigToHclTerraform, false)(struct!.databricksModelServingConfig),
+      value: cdktn.listMapperHcl(dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelDatabricksModelServingConfigToHclTerraform, false)(struct!.databricksModelServingConfig),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelDatabricksModelServingConfigList",
     },
     google_cloud_vertex_ai_config: {
-      value: cdktf.listMapperHcl(dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelGoogleCloudVertexAiConfigToHclTerraform, false)(struct!.googleCloudVertexAiConfig),
+      value: cdktn.listMapperHcl(dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelGoogleCloudVertexAiConfigToHclTerraform, false)(struct!.googleCloudVertexAiConfig),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelGoogleCloudVertexAiConfigList",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     openai_config: {
-      value: cdktf.listMapperHcl(dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOpenaiConfigToHclTerraform, false)(struct!.openaiConfig),
+      value: cdktn.listMapperHcl(dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOpenaiConfigToHclTerraform, false)(struct!.openaiConfig),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOpenaiConfigList",
     },
     palm_config: {
-      value: cdktf.listMapperHcl(dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelPalmConfigToHclTerraform, false)(struct!.palmConfig),
+      value: cdktn.listMapperHcl(dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelPalmConfigToHclTerraform, false)(struct!.palmConfig),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelPalmConfigList",
     },
     provider: {
-      value: cdktf.stringToHclTerraform(struct!.provider),
+      value: cdktn.stringToHclTerraform(struct!.provider),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     task: {
-      value: cdktf.stringToHclTerraform(struct!.task),
+      value: cdktn.stringToHclTerraform(struct!.task),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4204,9 +4204,9 @@ export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExter
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4214,11 +4214,11 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModel | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModel | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4275,7 +4275,7 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModel | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModel | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -4292,7 +4292,7 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
       this._provider = undefined;
       this._task = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4319,7 +4319,7 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
   public get ai21LabsConfig() {
     return this._ai21LabsConfig;
   }
-  public putAi21LabsConfig(value: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAi21LabsConfig[] | cdktf.IResolvable) {
+  public putAi21LabsConfig(value: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAi21LabsConfig[] | cdktn.IResolvable) {
     this._ai21LabsConfig.internalValue = value;
   }
   public resetAi21LabsConfig() {
@@ -4335,7 +4335,7 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
   public get amazonBedrockConfig() {
     return this._amazonBedrockConfig;
   }
-  public putAmazonBedrockConfig(value: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAmazonBedrockConfig[] | cdktf.IResolvable) {
+  public putAmazonBedrockConfig(value: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAmazonBedrockConfig[] | cdktn.IResolvable) {
     this._amazonBedrockConfig.internalValue = value;
   }
   public resetAmazonBedrockConfig() {
@@ -4351,7 +4351,7 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
   public get anthropicConfig() {
     return this._anthropicConfig;
   }
-  public putAnthropicConfig(value: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAnthropicConfig[] | cdktf.IResolvable) {
+  public putAnthropicConfig(value: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelAnthropicConfig[] | cdktn.IResolvable) {
     this._anthropicConfig.internalValue = value;
   }
   public resetAnthropicConfig() {
@@ -4367,7 +4367,7 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
   public get cohereConfig() {
     return this._cohereConfig;
   }
-  public putCohereConfig(value: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCohereConfig[] | cdktf.IResolvable) {
+  public putCohereConfig(value: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCohereConfig[] | cdktn.IResolvable) {
     this._cohereConfig.internalValue = value;
   }
   public resetCohereConfig() {
@@ -4383,7 +4383,7 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
   public get customProviderConfig() {
     return this._customProviderConfig;
   }
-  public putCustomProviderConfig(value: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfig[] | cdktf.IResolvable) {
+  public putCustomProviderConfig(value: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelCustomProviderConfig[] | cdktn.IResolvable) {
     this._customProviderConfig.internalValue = value;
   }
   public resetCustomProviderConfig() {
@@ -4399,7 +4399,7 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
   public get databricksModelServingConfig() {
     return this._databricksModelServingConfig;
   }
-  public putDatabricksModelServingConfig(value: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelDatabricksModelServingConfig[] | cdktf.IResolvable) {
+  public putDatabricksModelServingConfig(value: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelDatabricksModelServingConfig[] | cdktn.IResolvable) {
     this._databricksModelServingConfig.internalValue = value;
   }
   public resetDatabricksModelServingConfig() {
@@ -4415,7 +4415,7 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
   public get googleCloudVertexAiConfig() {
     return this._googleCloudVertexAiConfig;
   }
-  public putGoogleCloudVertexAiConfig(value: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelGoogleCloudVertexAiConfig[] | cdktf.IResolvable) {
+  public putGoogleCloudVertexAiConfig(value: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelGoogleCloudVertexAiConfig[] | cdktn.IResolvable) {
     this._googleCloudVertexAiConfig.internalValue = value;
   }
   public resetGoogleCloudVertexAiConfig() {
@@ -4444,7 +4444,7 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
   public get openaiConfig() {
     return this._openaiConfig;
   }
-  public putOpenaiConfig(value: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOpenaiConfig[] | cdktf.IResolvable) {
+  public putOpenaiConfig(value: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelOpenaiConfig[] | cdktn.IResolvable) {
     this._openaiConfig.internalValue = value;
   }
   public resetOpenaiConfig() {
@@ -4460,7 +4460,7 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
   public get palmConfig() {
     return this._palmConfig;
   }
-  public putPalmConfig(value: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelPalmConfig[] | cdktf.IResolvable) {
+  public putPalmConfig(value: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelPalmConfig[] | cdktn.IResolvable) {
     this._palmConfig.internalValue = value;
   }
   public resetPalmConfig() {
@@ -4498,15 +4498,15 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
   }
 }
 
-export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelList extends cdktf.ComplexList {
-  public internalValue? : DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModel[] | cdktf.IResolvable
+export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelList extends cdktn.ComplexList {
+  public internalValue? : DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModel[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4519,63 +4519,63 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternal
 }
 export interface DataDatabricksServingEndpointsEndpointsConfigServedEntitiesFoundationModel {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#description DataDatabricksServingEndpoints#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#description DataDatabricksServingEndpoints#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#display_name DataDatabricksServingEndpoints#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#display_name DataDatabricksServingEndpoints#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#docs DataDatabricksServingEndpoints#docs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#docs DataDatabricksServingEndpoints#docs}
   */
   readonly docs?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#name DataDatabricksServingEndpoints#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#name DataDatabricksServingEndpoints#name}
   */
   readonly name?: string;
 }
 
-export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesFoundationModelToTerraform(struct?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesFoundationModel | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesFoundationModelToTerraform(struct?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesFoundationModel | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    display_name: cdktf.stringToTerraform(struct!.displayName),
-    docs: cdktf.stringToTerraform(struct!.docs),
-    name: cdktf.stringToTerraform(struct!.name),
+    description: cdktn.stringToTerraform(struct!.description),
+    display_name: cdktn.stringToTerraform(struct!.displayName),
+    docs: cdktn.stringToTerraform(struct!.docs),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesFoundationModelToHclTerraform(struct?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesFoundationModel | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesFoundationModelToHclTerraform(struct?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesFoundationModel | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     display_name: {
-      value: cdktf.stringToHclTerraform(struct!.displayName),
+      value: cdktn.stringToHclTerraform(struct!.displayName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     docs: {
-      value: cdktf.stringToHclTerraform(struct!.docs),
+      value: cdktn.stringToHclTerraform(struct!.docs),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4586,9 +4586,9 @@ export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesFound
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesFoundationModelOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesFoundationModelOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4596,11 +4596,11 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesFoundati
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataDatabricksServingEndpointsEndpointsConfigServedEntitiesFoundationModel | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatabricksServingEndpointsEndpointsConfigServedEntitiesFoundationModel | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4625,7 +4625,7 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesFoundati
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesFoundationModel | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesFoundationModel | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -4634,7 +4634,7 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesFoundati
       this._docs = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4713,15 +4713,15 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesFoundati
   }
 }
 
-export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesFoundationModelList extends cdktf.ComplexList {
-  public internalValue? : DataDatabricksServingEndpointsEndpointsConfigServedEntitiesFoundationModel[] | cdktf.IResolvable
+export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesFoundationModelList extends cdktn.ComplexList {
+  public internalValue? : DataDatabricksServingEndpointsEndpointsConfigServedEntitiesFoundationModel[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4734,74 +4734,74 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesFoundati
 }
 export interface DataDatabricksServingEndpointsEndpointsConfigServedEntities {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#entity_name DataDatabricksServingEndpoints#entity_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#entity_name DataDatabricksServingEndpoints#entity_name}
   */
   readonly entityName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#entity_version DataDatabricksServingEndpoints#entity_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#entity_version DataDatabricksServingEndpoints#entity_version}
   */
   readonly entityVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#external_model DataDatabricksServingEndpoints#external_model}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#external_model DataDatabricksServingEndpoints#external_model}
   */
-  readonly externalModel?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModel[] | cdktf.IResolvable;
+  readonly externalModel?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModel[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#foundation_model DataDatabricksServingEndpoints#foundation_model}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#foundation_model DataDatabricksServingEndpoints#foundation_model}
   */
-  readonly foundationModel?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesFoundationModel[] | cdktf.IResolvable;
+  readonly foundationModel?: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesFoundationModel[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#name DataDatabricksServingEndpoints#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#name DataDatabricksServingEndpoints#name}
   */
   readonly name?: string;
 }
 
-export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesToTerraform(struct?: DataDatabricksServingEndpointsEndpointsConfigServedEntities | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesToTerraform(struct?: DataDatabricksServingEndpointsEndpointsConfigServedEntities | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    entity_name: cdktf.stringToTerraform(struct!.entityName),
-    entity_version: cdktf.stringToTerraform(struct!.entityVersion),
-    external_model: cdktf.listMapper(dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelToTerraform, false)(struct!.externalModel),
-    foundation_model: cdktf.listMapper(dataDatabricksServingEndpointsEndpointsConfigServedEntitiesFoundationModelToTerraform, false)(struct!.foundationModel),
-    name: cdktf.stringToTerraform(struct!.name),
+    entity_name: cdktn.stringToTerraform(struct!.entityName),
+    entity_version: cdktn.stringToTerraform(struct!.entityVersion),
+    external_model: cdktn.listMapper(dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelToTerraform, false)(struct!.externalModel),
+    foundation_model: cdktn.listMapper(dataDatabricksServingEndpointsEndpointsConfigServedEntitiesFoundationModelToTerraform, false)(struct!.foundationModel),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesToHclTerraform(struct?: DataDatabricksServingEndpointsEndpointsConfigServedEntities | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesToHclTerraform(struct?: DataDatabricksServingEndpointsEndpointsConfigServedEntities | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     entity_name: {
-      value: cdktf.stringToHclTerraform(struct!.entityName),
+      value: cdktn.stringToHclTerraform(struct!.entityName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     entity_version: {
-      value: cdktf.stringToHclTerraform(struct!.entityVersion),
+      value: cdktn.stringToHclTerraform(struct!.entityVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     external_model: {
-      value: cdktf.listMapperHcl(dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelToHclTerraform, false)(struct!.externalModel),
+      value: cdktn.listMapperHcl(dataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelToHclTerraform, false)(struct!.externalModel),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModelList",
     },
     foundation_model: {
-      value: cdktf.listMapperHcl(dataDatabricksServingEndpointsEndpointsConfigServedEntitiesFoundationModelToHclTerraform, false)(struct!.foundationModel),
+      value: cdktn.listMapperHcl(dataDatabricksServingEndpointsEndpointsConfigServedEntitiesFoundationModelToHclTerraform, false)(struct!.foundationModel),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatabricksServingEndpointsEndpointsConfigServedEntitiesFoundationModelList",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4812,9 +4812,9 @@ export function dataDatabricksServingEndpointsEndpointsConfigServedEntitiesToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4822,11 +4822,11 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesOutputRe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataDatabricksServingEndpointsEndpointsConfigServedEntities | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatabricksServingEndpointsEndpointsConfigServedEntities | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4855,7 +4855,7 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesOutputRe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksServingEndpointsEndpointsConfigServedEntities | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksServingEndpointsEndpointsConfigServedEntities | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -4865,7 +4865,7 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesOutputRe
       this._foundationModel.internalValue = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4917,7 +4917,7 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesOutputRe
   public get externalModel() {
     return this._externalModel;
   }
-  public putExternalModel(value: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModel[] | cdktf.IResolvable) {
+  public putExternalModel(value: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesExternalModel[] | cdktn.IResolvable) {
     this._externalModel.internalValue = value;
   }
   public resetExternalModel() {
@@ -4933,7 +4933,7 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesOutputRe
   public get foundationModel() {
     return this._foundationModel;
   }
-  public putFoundationModel(value: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesFoundationModel[] | cdktf.IResolvable) {
+  public putFoundationModel(value: DataDatabricksServingEndpointsEndpointsConfigServedEntitiesFoundationModel[] | cdktn.IResolvable) {
     this._foundationModel.internalValue = value;
   }
   public resetFoundationModel() {
@@ -4961,15 +4961,15 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesOutputRe
   }
 }
 
-export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesList extends cdktf.ComplexList {
-  public internalValue? : DataDatabricksServingEndpointsEndpointsConfigServedEntities[] | cdktf.IResolvable
+export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesList extends cdktn.ComplexList {
+  public internalValue? : DataDatabricksServingEndpointsEndpointsConfigServedEntities[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4982,52 +4982,52 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedEntitiesList ext
 }
 export interface DataDatabricksServingEndpointsEndpointsConfigServedModels {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#model_name DataDatabricksServingEndpoints#model_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#model_name DataDatabricksServingEndpoints#model_name}
   */
   readonly modelName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#model_version DataDatabricksServingEndpoints#model_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#model_version DataDatabricksServingEndpoints#model_version}
   */
   readonly modelVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#name DataDatabricksServingEndpoints#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#name DataDatabricksServingEndpoints#name}
   */
   readonly name?: string;
 }
 
-export function dataDatabricksServingEndpointsEndpointsConfigServedModelsToTerraform(struct?: DataDatabricksServingEndpointsEndpointsConfigServedModels | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksServingEndpointsEndpointsConfigServedModelsToTerraform(struct?: DataDatabricksServingEndpointsEndpointsConfigServedModels | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    model_name: cdktf.stringToTerraform(struct!.modelName),
-    model_version: cdktf.stringToTerraform(struct!.modelVersion),
-    name: cdktf.stringToTerraform(struct!.name),
+    model_name: cdktn.stringToTerraform(struct!.modelName),
+    model_version: cdktn.stringToTerraform(struct!.modelVersion),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function dataDatabricksServingEndpointsEndpointsConfigServedModelsToHclTerraform(struct?: DataDatabricksServingEndpointsEndpointsConfigServedModels | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksServingEndpointsEndpointsConfigServedModelsToHclTerraform(struct?: DataDatabricksServingEndpointsEndpointsConfigServedModels | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     model_name: {
-      value: cdktf.stringToHclTerraform(struct!.modelName),
+      value: cdktn.stringToHclTerraform(struct!.modelName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     model_version: {
-      value: cdktf.stringToHclTerraform(struct!.modelVersion),
+      value: cdktn.stringToHclTerraform(struct!.modelVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5038,9 +5038,9 @@ export function dataDatabricksServingEndpointsEndpointsConfigServedModelsToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksServingEndpointsEndpointsConfigServedModelsOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksServingEndpointsEndpointsConfigServedModelsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5048,11 +5048,11 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedModelsOutputRefe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataDatabricksServingEndpointsEndpointsConfigServedModels | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatabricksServingEndpointsEndpointsConfigServedModels | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5073,7 +5073,7 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedModelsOutputRefe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksServingEndpointsEndpointsConfigServedModels | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksServingEndpointsEndpointsConfigServedModels | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -5081,7 +5081,7 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedModelsOutputRefe
       this._modelVersion = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5143,15 +5143,15 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedModelsOutputRefe
   }
 }
 
-export class DataDatabricksServingEndpointsEndpointsConfigServedModelsList extends cdktf.ComplexList {
-  public internalValue? : DataDatabricksServingEndpointsEndpointsConfigServedModels[] | cdktf.IResolvable
+export class DataDatabricksServingEndpointsEndpointsConfigServedModelsList extends cdktn.ComplexList {
+  public internalValue? : DataDatabricksServingEndpointsEndpointsConfigServedModels[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5164,41 +5164,41 @@ export class DataDatabricksServingEndpointsEndpointsConfigServedModelsList exten
 }
 export interface DataDatabricksServingEndpointsEndpointsConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#served_entities DataDatabricksServingEndpoints#served_entities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#served_entities DataDatabricksServingEndpoints#served_entities}
   */
-  readonly servedEntities?: DataDatabricksServingEndpointsEndpointsConfigServedEntities[] | cdktf.IResolvable;
+  readonly servedEntities?: DataDatabricksServingEndpointsEndpointsConfigServedEntities[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#served_models DataDatabricksServingEndpoints#served_models}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#served_models DataDatabricksServingEndpoints#served_models}
   */
-  readonly servedModels?: DataDatabricksServingEndpointsEndpointsConfigServedModels[] | cdktf.IResolvable;
+  readonly servedModels?: DataDatabricksServingEndpointsEndpointsConfigServedModels[] | cdktn.IResolvable;
 }
 
-export function dataDatabricksServingEndpointsEndpointsConfigToTerraform(struct?: DataDatabricksServingEndpointsEndpointsConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksServingEndpointsEndpointsConfigToTerraform(struct?: DataDatabricksServingEndpointsEndpointsConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    served_entities: cdktf.listMapper(dataDatabricksServingEndpointsEndpointsConfigServedEntitiesToTerraform, false)(struct!.servedEntities),
-    served_models: cdktf.listMapper(dataDatabricksServingEndpointsEndpointsConfigServedModelsToTerraform, false)(struct!.servedModels),
+    served_entities: cdktn.listMapper(dataDatabricksServingEndpointsEndpointsConfigServedEntitiesToTerraform, false)(struct!.servedEntities),
+    served_models: cdktn.listMapper(dataDatabricksServingEndpointsEndpointsConfigServedModelsToTerraform, false)(struct!.servedModels),
   }
 }
 
 
-export function dataDatabricksServingEndpointsEndpointsConfigToHclTerraform(struct?: DataDatabricksServingEndpointsEndpointsConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksServingEndpointsEndpointsConfigToHclTerraform(struct?: DataDatabricksServingEndpointsEndpointsConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     served_entities: {
-      value: cdktf.listMapperHcl(dataDatabricksServingEndpointsEndpointsConfigServedEntitiesToHclTerraform, false)(struct!.servedEntities),
+      value: cdktn.listMapperHcl(dataDatabricksServingEndpointsEndpointsConfigServedEntitiesToHclTerraform, false)(struct!.servedEntities),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatabricksServingEndpointsEndpointsConfigServedEntitiesList",
     },
     served_models: {
-      value: cdktf.listMapperHcl(dataDatabricksServingEndpointsEndpointsConfigServedModelsToHclTerraform, false)(struct!.servedModels),
+      value: cdktn.listMapperHcl(dataDatabricksServingEndpointsEndpointsConfigServedModelsToHclTerraform, false)(struct!.servedModels),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatabricksServingEndpointsEndpointsConfigServedModelsList",
@@ -5209,9 +5209,9 @@ export function dataDatabricksServingEndpointsEndpointsConfigToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksServingEndpointsEndpointsConfigOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksServingEndpointsEndpointsConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5219,11 +5219,11 @@ export class DataDatabricksServingEndpointsEndpointsConfigOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataDatabricksServingEndpointsEndpointsConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatabricksServingEndpointsEndpointsConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5240,14 +5240,14 @@ export class DataDatabricksServingEndpointsEndpointsConfigOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksServingEndpointsEndpointsConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksServingEndpointsEndpointsConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._servedEntities.internalValue = undefined;
       this._servedModels.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5264,7 +5264,7 @@ export class DataDatabricksServingEndpointsEndpointsConfigOutputReference extend
   public get servedEntities() {
     return this._servedEntities;
   }
-  public putServedEntities(value: DataDatabricksServingEndpointsEndpointsConfigServedEntities[] | cdktf.IResolvable) {
+  public putServedEntities(value: DataDatabricksServingEndpointsEndpointsConfigServedEntities[] | cdktn.IResolvable) {
     this._servedEntities.internalValue = value;
   }
   public resetServedEntities() {
@@ -5280,7 +5280,7 @@ export class DataDatabricksServingEndpointsEndpointsConfigOutputReference extend
   public get servedModels() {
     return this._servedModels;
   }
-  public putServedModels(value: DataDatabricksServingEndpointsEndpointsConfigServedModels[] | cdktf.IResolvable) {
+  public putServedModels(value: DataDatabricksServingEndpointsEndpointsConfigServedModels[] | cdktn.IResolvable) {
     this._servedModels.internalValue = value;
   }
   public resetServedModels() {
@@ -5292,15 +5292,15 @@ export class DataDatabricksServingEndpointsEndpointsConfigOutputReference extend
   }
 }
 
-export class DataDatabricksServingEndpointsEndpointsConfigList extends cdktf.ComplexList {
-  public internalValue? : DataDatabricksServingEndpointsEndpointsConfig[] | cdktf.IResolvable
+export class DataDatabricksServingEndpointsEndpointsConfigList extends cdktn.ComplexList {
+  public internalValue? : DataDatabricksServingEndpointsEndpointsConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5313,41 +5313,41 @@ export class DataDatabricksServingEndpointsEndpointsConfigList extends cdktf.Com
 }
 export interface DataDatabricksServingEndpointsEndpointsState {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#config_update DataDatabricksServingEndpoints#config_update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#config_update DataDatabricksServingEndpoints#config_update}
   */
   readonly configUpdate?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#ready DataDatabricksServingEndpoints#ready}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#ready DataDatabricksServingEndpoints#ready}
   */
   readonly ready?: string;
 }
 
-export function dataDatabricksServingEndpointsEndpointsStateToTerraform(struct?: DataDatabricksServingEndpointsEndpointsState | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksServingEndpointsEndpointsStateToTerraform(struct?: DataDatabricksServingEndpointsEndpointsState | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    config_update: cdktf.stringToTerraform(struct!.configUpdate),
-    ready: cdktf.stringToTerraform(struct!.ready),
+    config_update: cdktn.stringToTerraform(struct!.configUpdate),
+    ready: cdktn.stringToTerraform(struct!.ready),
   }
 }
 
 
-export function dataDatabricksServingEndpointsEndpointsStateToHclTerraform(struct?: DataDatabricksServingEndpointsEndpointsState | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksServingEndpointsEndpointsStateToHclTerraform(struct?: DataDatabricksServingEndpointsEndpointsState | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     config_update: {
-      value: cdktf.stringToHclTerraform(struct!.configUpdate),
+      value: cdktn.stringToHclTerraform(struct!.configUpdate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ready: {
-      value: cdktf.stringToHclTerraform(struct!.ready),
+      value: cdktn.stringToHclTerraform(struct!.ready),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5358,9 +5358,9 @@ export function dataDatabricksServingEndpointsEndpointsStateToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksServingEndpointsEndpointsStateOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksServingEndpointsEndpointsStateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5368,11 +5368,11 @@ export class DataDatabricksServingEndpointsEndpointsStateOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataDatabricksServingEndpointsEndpointsState | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatabricksServingEndpointsEndpointsState | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5389,14 +5389,14 @@ export class DataDatabricksServingEndpointsEndpointsStateOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksServingEndpointsEndpointsState | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksServingEndpointsEndpointsState | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._configUpdate = undefined;
       this._ready = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5441,15 +5441,15 @@ export class DataDatabricksServingEndpointsEndpointsStateOutputReference extends
   }
 }
 
-export class DataDatabricksServingEndpointsEndpointsStateList extends cdktf.ComplexList {
-  public internalValue? : DataDatabricksServingEndpointsEndpointsState[] | cdktf.IResolvable
+export class DataDatabricksServingEndpointsEndpointsStateList extends cdktn.ComplexList {
+  public internalValue? : DataDatabricksServingEndpointsEndpointsState[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5462,41 +5462,41 @@ export class DataDatabricksServingEndpointsEndpointsStateList extends cdktf.Comp
 }
 export interface DataDatabricksServingEndpointsEndpointsTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#key DataDatabricksServingEndpoints#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#key DataDatabricksServingEndpoints#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#value DataDatabricksServingEndpoints#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#value DataDatabricksServingEndpoints#value}
   */
   readonly value?: string;
 }
 
-export function dataDatabricksServingEndpointsEndpointsTagsToTerraform(struct?: DataDatabricksServingEndpointsEndpointsTags | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksServingEndpointsEndpointsTagsToTerraform(struct?: DataDatabricksServingEndpointsEndpointsTags | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    value: cdktf.stringToTerraform(struct!.value),
+    key: cdktn.stringToTerraform(struct!.key),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function dataDatabricksServingEndpointsEndpointsTagsToHclTerraform(struct?: DataDatabricksServingEndpointsEndpointsTags | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksServingEndpointsEndpointsTagsToHclTerraform(struct?: DataDatabricksServingEndpointsEndpointsTags | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5507,9 +5507,9 @@ export function dataDatabricksServingEndpointsEndpointsTagsToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksServingEndpointsEndpointsTagsOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksServingEndpointsEndpointsTagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5517,11 +5517,11 @@ export class DataDatabricksServingEndpointsEndpointsTagsOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataDatabricksServingEndpointsEndpointsTags | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatabricksServingEndpointsEndpointsTags | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5538,14 +5538,14 @@ export class DataDatabricksServingEndpointsEndpointsTagsOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksServingEndpointsEndpointsTags | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksServingEndpointsEndpointsTags | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5587,15 +5587,15 @@ export class DataDatabricksServingEndpointsEndpointsTagsOutputReference extends 
   }
 }
 
-export class DataDatabricksServingEndpointsEndpointsTagsList extends cdktf.ComplexList {
-  public internalValue? : DataDatabricksServingEndpointsEndpointsTags[] | cdktf.IResolvable
+export class DataDatabricksServingEndpointsEndpointsTagsList extends cdktn.ComplexList {
+  public internalValue? : DataDatabricksServingEndpointsEndpointsTags[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5608,165 +5608,165 @@ export class DataDatabricksServingEndpointsEndpointsTagsList extends cdktf.Compl
 }
 export interface DataDatabricksServingEndpointsEndpoints {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#ai_gateway DataDatabricksServingEndpoints#ai_gateway}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#ai_gateway DataDatabricksServingEndpoints#ai_gateway}
   */
-  readonly aiGateway?: DataDatabricksServingEndpointsEndpointsAiGateway[] | cdktf.IResolvable;
+  readonly aiGateway?: DataDatabricksServingEndpointsEndpointsAiGateway[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#budget_policy_id DataDatabricksServingEndpoints#budget_policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#budget_policy_id DataDatabricksServingEndpoints#budget_policy_id}
   */
   readonly budgetPolicyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#config DataDatabricksServingEndpoints#config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#config DataDatabricksServingEndpoints#config}
   */
-  readonly config?: DataDatabricksServingEndpointsEndpointsConfig[] | cdktf.IResolvable;
+  readonly config?: DataDatabricksServingEndpointsEndpointsConfig[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#creation_timestamp DataDatabricksServingEndpoints#creation_timestamp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#creation_timestamp DataDatabricksServingEndpoints#creation_timestamp}
   */
   readonly creationTimestamp?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#creator DataDatabricksServingEndpoints#creator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#creator DataDatabricksServingEndpoints#creator}
   */
   readonly creator?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#description DataDatabricksServingEndpoints#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#description DataDatabricksServingEndpoints#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#id DataDatabricksServingEndpoints#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#id DataDatabricksServingEndpoints#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#last_updated_timestamp DataDatabricksServingEndpoints#last_updated_timestamp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#last_updated_timestamp DataDatabricksServingEndpoints#last_updated_timestamp}
   */
   readonly lastUpdatedTimestamp?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#name DataDatabricksServingEndpoints#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#name DataDatabricksServingEndpoints#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#state DataDatabricksServingEndpoints#state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#state DataDatabricksServingEndpoints#state}
   */
-  readonly state?: DataDatabricksServingEndpointsEndpointsState[] | cdktf.IResolvable;
+  readonly state?: DataDatabricksServingEndpointsEndpointsState[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#tags DataDatabricksServingEndpoints#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#tags DataDatabricksServingEndpoints#tags}
   */
-  readonly tags?: DataDatabricksServingEndpointsEndpointsTags[] | cdktf.IResolvable;
+  readonly tags?: DataDatabricksServingEndpointsEndpointsTags[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#task DataDatabricksServingEndpoints#task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#task DataDatabricksServingEndpoints#task}
   */
   readonly task?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#usage_policy_id DataDatabricksServingEndpoints#usage_policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#usage_policy_id DataDatabricksServingEndpoints#usage_policy_id}
   */
   readonly usagePolicyId?: string;
 }
 
-export function dataDatabricksServingEndpointsEndpointsToTerraform(struct?: DataDatabricksServingEndpointsEndpoints | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksServingEndpointsEndpointsToTerraform(struct?: DataDatabricksServingEndpointsEndpoints | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ai_gateway: cdktf.listMapper(dataDatabricksServingEndpointsEndpointsAiGatewayToTerraform, false)(struct!.aiGateway),
-    budget_policy_id: cdktf.stringToTerraform(struct!.budgetPolicyId),
-    config: cdktf.listMapper(dataDatabricksServingEndpointsEndpointsConfigToTerraform, false)(struct!.config),
-    creation_timestamp: cdktf.numberToTerraform(struct!.creationTimestamp),
-    creator: cdktf.stringToTerraform(struct!.creator),
-    description: cdktf.stringToTerraform(struct!.description),
-    id: cdktf.stringToTerraform(struct!.id),
-    last_updated_timestamp: cdktf.numberToTerraform(struct!.lastUpdatedTimestamp),
-    name: cdktf.stringToTerraform(struct!.name),
-    state: cdktf.listMapper(dataDatabricksServingEndpointsEndpointsStateToTerraform, false)(struct!.state),
-    tags: cdktf.listMapper(dataDatabricksServingEndpointsEndpointsTagsToTerraform, false)(struct!.tags),
-    task: cdktf.stringToTerraform(struct!.task),
-    usage_policy_id: cdktf.stringToTerraform(struct!.usagePolicyId),
+    ai_gateway: cdktn.listMapper(dataDatabricksServingEndpointsEndpointsAiGatewayToTerraform, false)(struct!.aiGateway),
+    budget_policy_id: cdktn.stringToTerraform(struct!.budgetPolicyId),
+    config: cdktn.listMapper(dataDatabricksServingEndpointsEndpointsConfigToTerraform, false)(struct!.config),
+    creation_timestamp: cdktn.numberToTerraform(struct!.creationTimestamp),
+    creator: cdktn.stringToTerraform(struct!.creator),
+    description: cdktn.stringToTerraform(struct!.description),
+    id: cdktn.stringToTerraform(struct!.id),
+    last_updated_timestamp: cdktn.numberToTerraform(struct!.lastUpdatedTimestamp),
+    name: cdktn.stringToTerraform(struct!.name),
+    state: cdktn.listMapper(dataDatabricksServingEndpointsEndpointsStateToTerraform, false)(struct!.state),
+    tags: cdktn.listMapper(dataDatabricksServingEndpointsEndpointsTagsToTerraform, false)(struct!.tags),
+    task: cdktn.stringToTerraform(struct!.task),
+    usage_policy_id: cdktn.stringToTerraform(struct!.usagePolicyId),
   }
 }
 
 
-export function dataDatabricksServingEndpointsEndpointsToHclTerraform(struct?: DataDatabricksServingEndpointsEndpoints | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksServingEndpointsEndpointsToHclTerraform(struct?: DataDatabricksServingEndpointsEndpoints | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ai_gateway: {
-      value: cdktf.listMapperHcl(dataDatabricksServingEndpointsEndpointsAiGatewayToHclTerraform, false)(struct!.aiGateway),
+      value: cdktn.listMapperHcl(dataDatabricksServingEndpointsEndpointsAiGatewayToHclTerraform, false)(struct!.aiGateway),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatabricksServingEndpointsEndpointsAiGatewayList",
     },
     budget_policy_id: {
-      value: cdktf.stringToHclTerraform(struct!.budgetPolicyId),
+      value: cdktn.stringToHclTerraform(struct!.budgetPolicyId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     config: {
-      value: cdktf.listMapperHcl(dataDatabricksServingEndpointsEndpointsConfigToHclTerraform, false)(struct!.config),
+      value: cdktn.listMapperHcl(dataDatabricksServingEndpointsEndpointsConfigToHclTerraform, false)(struct!.config),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatabricksServingEndpointsEndpointsConfigList",
     },
     creation_timestamp: {
-      value: cdktf.numberToHclTerraform(struct!.creationTimestamp),
+      value: cdktn.numberToHclTerraform(struct!.creationTimestamp),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     creator: {
-      value: cdktf.stringToHclTerraform(struct!.creator),
+      value: cdktn.stringToHclTerraform(struct!.creator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     last_updated_timestamp: {
-      value: cdktf.numberToHclTerraform(struct!.lastUpdatedTimestamp),
+      value: cdktn.numberToHclTerraform(struct!.lastUpdatedTimestamp),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     state: {
-      value: cdktf.listMapperHcl(dataDatabricksServingEndpointsEndpointsStateToHclTerraform, false)(struct!.state),
+      value: cdktn.listMapperHcl(dataDatabricksServingEndpointsEndpointsStateToHclTerraform, false)(struct!.state),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatabricksServingEndpointsEndpointsStateList",
     },
     tags: {
-      value: cdktf.listMapperHcl(dataDatabricksServingEndpointsEndpointsTagsToHclTerraform, false)(struct!.tags),
+      value: cdktn.listMapperHcl(dataDatabricksServingEndpointsEndpointsTagsToHclTerraform, false)(struct!.tags),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatabricksServingEndpointsEndpointsTagsList",
     },
     task: {
-      value: cdktf.stringToHclTerraform(struct!.task),
+      value: cdktn.stringToHclTerraform(struct!.task),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     usage_policy_id: {
-      value: cdktf.stringToHclTerraform(struct!.usagePolicyId),
+      value: cdktn.stringToHclTerraform(struct!.usagePolicyId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5777,9 +5777,9 @@ export function dataDatabricksServingEndpointsEndpointsToHclTerraform(struct?: D
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksServingEndpointsEndpointsOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksServingEndpointsEndpointsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5787,11 +5787,11 @@ export class DataDatabricksServingEndpointsEndpointsOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataDatabricksServingEndpointsEndpoints | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatabricksServingEndpointsEndpoints | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5852,7 +5852,7 @@ export class DataDatabricksServingEndpointsEndpointsOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksServingEndpointsEndpoints | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksServingEndpointsEndpoints | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -5870,7 +5870,7 @@ export class DataDatabricksServingEndpointsEndpointsOutputReference extends cdkt
       this._task = undefined;
       this._usagePolicyId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5898,7 +5898,7 @@ export class DataDatabricksServingEndpointsEndpointsOutputReference extends cdkt
   public get aiGateway() {
     return this._aiGateway;
   }
-  public putAiGateway(value: DataDatabricksServingEndpointsEndpointsAiGateway[] | cdktf.IResolvable) {
+  public putAiGateway(value: DataDatabricksServingEndpointsEndpointsAiGateway[] | cdktn.IResolvable) {
     this._aiGateway.internalValue = value;
   }
   public resetAiGateway() {
@@ -5930,7 +5930,7 @@ export class DataDatabricksServingEndpointsEndpointsOutputReference extends cdkt
   public get config() {
     return this._config;
   }
-  public putConfig(value: DataDatabricksServingEndpointsEndpointsConfig[] | cdktf.IResolvable) {
+  public putConfig(value: DataDatabricksServingEndpointsEndpointsConfig[] | cdktn.IResolvable) {
     this._config.internalValue = value;
   }
   public resetConfig() {
@@ -6042,7 +6042,7 @@ export class DataDatabricksServingEndpointsEndpointsOutputReference extends cdkt
   public get state() {
     return this._state;
   }
-  public putState(value: DataDatabricksServingEndpointsEndpointsState[] | cdktf.IResolvable) {
+  public putState(value: DataDatabricksServingEndpointsEndpointsState[] | cdktn.IResolvable) {
     this._state.internalValue = value;
   }
   public resetState() {
@@ -6058,7 +6058,7 @@ export class DataDatabricksServingEndpointsEndpointsOutputReference extends cdkt
   public get tags() {
     return this._tags;
   }
-  public putTags(value: DataDatabricksServingEndpointsEndpointsTags[] | cdktf.IResolvable) {
+  public putTags(value: DataDatabricksServingEndpointsEndpointsTags[] | cdktn.IResolvable) {
     this._tags.internalValue = value;
   }
   public resetTags() {
@@ -6102,15 +6102,15 @@ export class DataDatabricksServingEndpointsEndpointsOutputReference extends cdkt
   }
 }
 
-export class DataDatabricksServingEndpointsEndpointsList extends cdktf.ComplexList {
-  public internalValue? : DataDatabricksServingEndpointsEndpoints[] | cdktf.IResolvable
+export class DataDatabricksServingEndpointsEndpointsList extends cdktn.ComplexList {
+  public internalValue? : DataDatabricksServingEndpointsEndpoints[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6123,30 +6123,30 @@ export class DataDatabricksServingEndpointsEndpointsList extends cdktf.ComplexLi
 }
 export interface DataDatabricksServingEndpointsProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#workspace_id DataDatabricksServingEndpoints#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#workspace_id DataDatabricksServingEndpoints#workspace_id}
   */
   readonly workspaceId: string;
 }
 
-export function dataDatabricksServingEndpointsProviderConfigToTerraform(struct?: DataDatabricksServingEndpointsProviderConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksServingEndpointsProviderConfigToTerraform(struct?: DataDatabricksServingEndpointsProviderConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    workspace_id: cdktf.stringToTerraform(struct!.workspaceId),
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
   }
 }
 
 
-export function dataDatabricksServingEndpointsProviderConfigToHclTerraform(struct?: DataDatabricksServingEndpointsProviderConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksServingEndpointsProviderConfigToHclTerraform(struct?: DataDatabricksServingEndpointsProviderConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     workspace_id: {
-      value: cdktf.stringToHclTerraform(struct!.workspaceId),
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6157,19 +6157,19 @@ export function dataDatabricksServingEndpointsProviderConfigToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksServingEndpointsProviderConfigOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksServingEndpointsProviderConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataDatabricksServingEndpointsProviderConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatabricksServingEndpointsProviderConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6182,13 +6182,13 @@ export class DataDatabricksServingEndpointsProviderConfigOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksServingEndpointsProviderConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksServingEndpointsProviderConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._workspaceId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6214,9 +6214,9 @@ export class DataDatabricksServingEndpointsProviderConfigOutputReference extends
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints databricks_serving_endpoints}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints databricks_serving_endpoints}
 */
-export class DataDatabricksServingEndpoints extends cdktf.TerraformDataSource {
+export class DataDatabricksServingEndpoints extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -6227,14 +6227,14 @@ export class DataDatabricksServingEndpoints extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataDatabricksServingEndpoints resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataDatabricksServingEndpoints resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksServingEndpoints to import
-  * @param importFromId The id of the existing DataDatabricksServingEndpoints that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksServingEndpoints that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksServingEndpoints to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_serving_endpoints", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_serving_endpoints", importId: importFromId, provider });
       }
 
   // ===========
@@ -6242,7 +6242,7 @@ export class DataDatabricksServingEndpoints extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/serving_endpoints databricks_serving_endpoints} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/serving_endpoints databricks_serving_endpoints} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -6253,7 +6253,7 @@ export class DataDatabricksServingEndpoints extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_serving_endpoints',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -6277,7 +6277,7 @@ export class DataDatabricksServingEndpoints extends cdktf.TerraformDataSource {
   public get endpoints() {
     return this._endpoints;
   }
-  public putEndpoints(value: DataDatabricksServingEndpointsEndpoints[] | cdktf.IResolvable) {
+  public putEndpoints(value: DataDatabricksServingEndpointsEndpoints[] | cdktn.IResolvable) {
     this._endpoints.internalValue = value;
   }
   public resetEndpoints() {
@@ -6310,7 +6310,7 @@ export class DataDatabricksServingEndpoints extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      endpoints: cdktf.listMapper(dataDatabricksServingEndpointsEndpointsToTerraform, false)(this._endpoints.internalValue),
+      endpoints: cdktn.listMapper(dataDatabricksServingEndpointsEndpointsToTerraform, false)(this._endpoints.internalValue),
       provider_config: dataDatabricksServingEndpointsProviderConfigToTerraform(this._providerConfig.internalValue),
     };
   }
@@ -6318,7 +6318,7 @@ export class DataDatabricksServingEndpoints extends cdktf.TerraformDataSource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       endpoints: {
-        value: cdktf.listMapperHcl(dataDatabricksServingEndpointsEndpointsToHclTerraform, false)(this._endpoints.internalValue),
+        value: cdktn.listMapperHcl(dataDatabricksServingEndpointsEndpointsToHclTerraform, false)(this._endpoints.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DataDatabricksServingEndpointsEndpointsList",

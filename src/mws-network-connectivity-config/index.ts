@@ -1,81 +1,81 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_network_connectivity_config
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_network_connectivity_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MwsNetworkConnectivityConfigConfig extends cdktf.TerraformMetaArguments {
+export interface MwsNetworkConnectivityConfigConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_network_connectivity_config#account_id MwsNetworkConnectivityConfig#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_network_connectivity_config#account_id MwsNetworkConnectivityConfig#account_id}
   */
   readonly accountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_network_connectivity_config#creation_time MwsNetworkConnectivityConfig#creation_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_network_connectivity_config#creation_time MwsNetworkConnectivityConfig#creation_time}
   */
   readonly creationTime?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_network_connectivity_config#id MwsNetworkConnectivityConfig#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_network_connectivity_config#id MwsNetworkConnectivityConfig#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_network_connectivity_config#name MwsNetworkConnectivityConfig#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_network_connectivity_config#name MwsNetworkConnectivityConfig#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_network_connectivity_config#network_connectivity_config_id MwsNetworkConnectivityConfig#network_connectivity_config_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_network_connectivity_config#network_connectivity_config_id MwsNetworkConnectivityConfig#network_connectivity_config_id}
   */
   readonly networkConnectivityConfigId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_network_connectivity_config#region MwsNetworkConnectivityConfig#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_network_connectivity_config#region MwsNetworkConnectivityConfig#region}
   */
   readonly region: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_network_connectivity_config#updated_time MwsNetworkConnectivityConfig#updated_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_network_connectivity_config#updated_time MwsNetworkConnectivityConfig#updated_time}
   */
   readonly updatedTime?: number;
   /**
   * egress_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_network_connectivity_config#egress_config MwsNetworkConnectivityConfig#egress_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_network_connectivity_config#egress_config MwsNetworkConnectivityConfig#egress_config}
   */
   readonly egressConfig?: MwsNetworkConnectivityConfigEgressConfig;
 }
 export interface MwsNetworkConnectivityConfigEgressConfigDefaultRulesAwsStableIpRule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_network_connectivity_config#cidr_blocks MwsNetworkConnectivityConfig#cidr_blocks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_network_connectivity_config#cidr_blocks MwsNetworkConnectivityConfig#cidr_blocks}
   */
   readonly cidrBlocks?: string[];
 }
 
 export function mwsNetworkConnectivityConfigEgressConfigDefaultRulesAwsStableIpRuleToTerraform(struct?: MwsNetworkConnectivityConfigEgressConfigDefaultRulesAwsStableIpRuleOutputReference | MwsNetworkConnectivityConfigEgressConfigDefaultRulesAwsStableIpRule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cidr_blocks: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.cidrBlocks),
+    cidr_blocks: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.cidrBlocks),
   }
 }
 
 
 export function mwsNetworkConnectivityConfigEgressConfigDefaultRulesAwsStableIpRuleToHclTerraform(struct?: MwsNetworkConnectivityConfigEgressConfigDefaultRulesAwsStableIpRuleOutputReference | MwsNetworkConnectivityConfigEgressConfigDefaultRulesAwsStableIpRule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cidr_blocks: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.cidrBlocks),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.cidrBlocks),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -86,14 +86,14 @@ export function mwsNetworkConnectivityConfigEgressConfigDefaultRulesAwsStableIpR
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MwsNetworkConnectivityConfigEgressConfigDefaultRulesAwsStableIpRuleOutputReference extends cdktf.ComplexObject {
+export class MwsNetworkConnectivityConfigEgressConfigDefaultRulesAwsStableIpRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -136,52 +136,52 @@ export class MwsNetworkConnectivityConfigEgressConfigDefaultRulesAwsStableIpRule
 }
 export interface MwsNetworkConnectivityConfigEgressConfigDefaultRulesAzureServiceEndpointRule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_network_connectivity_config#subnets MwsNetworkConnectivityConfig#subnets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_network_connectivity_config#subnets MwsNetworkConnectivityConfig#subnets}
   */
   readonly subnets?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_network_connectivity_config#target_region MwsNetworkConnectivityConfig#target_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_network_connectivity_config#target_region MwsNetworkConnectivityConfig#target_region}
   */
   readonly targetRegion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_network_connectivity_config#target_services MwsNetworkConnectivityConfig#target_services}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_network_connectivity_config#target_services MwsNetworkConnectivityConfig#target_services}
   */
   readonly targetServices?: string[];
 }
 
 export function mwsNetworkConnectivityConfigEgressConfigDefaultRulesAzureServiceEndpointRuleToTerraform(struct?: MwsNetworkConnectivityConfigEgressConfigDefaultRulesAzureServiceEndpointRuleOutputReference | MwsNetworkConnectivityConfigEgressConfigDefaultRulesAzureServiceEndpointRule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    subnets: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnets),
-    target_region: cdktf.stringToTerraform(struct!.targetRegion),
-    target_services: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.targetServices),
+    subnets: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.subnets),
+    target_region: cdktn.stringToTerraform(struct!.targetRegion),
+    target_services: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.targetServices),
   }
 }
 
 
 export function mwsNetworkConnectivityConfigEgressConfigDefaultRulesAzureServiceEndpointRuleToHclTerraform(struct?: MwsNetworkConnectivityConfigEgressConfigDefaultRulesAzureServiceEndpointRuleOutputReference | MwsNetworkConnectivityConfigEgressConfigDefaultRulesAzureServiceEndpointRule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     subnets: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.subnets),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.subnets),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     target_region: {
-      value: cdktf.stringToHclTerraform(struct!.targetRegion),
+      value: cdktn.stringToHclTerraform(struct!.targetRegion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target_services: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.targetServices),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.targetServices),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -192,14 +192,14 @@ export function mwsNetworkConnectivityConfigEgressConfigDefaultRulesAzureService
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MwsNetworkConnectivityConfigEgressConfigDefaultRulesAzureServiceEndpointRuleOutputReference extends cdktf.ComplexObject {
+export class MwsNetworkConnectivityConfigEgressConfigDefaultRulesAzureServiceEndpointRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -288,20 +288,20 @@ export interface MwsNetworkConnectivityConfigEgressConfigDefaultRules {
   /**
   * aws_stable_ip_rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_network_connectivity_config#aws_stable_ip_rule MwsNetworkConnectivityConfig#aws_stable_ip_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_network_connectivity_config#aws_stable_ip_rule MwsNetworkConnectivityConfig#aws_stable_ip_rule}
   */
   readonly awsStableIpRule?: MwsNetworkConnectivityConfigEgressConfigDefaultRulesAwsStableIpRule;
   /**
   * azure_service_endpoint_rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_network_connectivity_config#azure_service_endpoint_rule MwsNetworkConnectivityConfig#azure_service_endpoint_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_network_connectivity_config#azure_service_endpoint_rule MwsNetworkConnectivityConfig#azure_service_endpoint_rule}
   */
   readonly azureServiceEndpointRule?: MwsNetworkConnectivityConfigEgressConfigDefaultRulesAzureServiceEndpointRule;
 }
 
 export function mwsNetworkConnectivityConfigEgressConfigDefaultRulesToTerraform(struct?: MwsNetworkConnectivityConfigEgressConfigDefaultRulesOutputReference | MwsNetworkConnectivityConfigEgressConfigDefaultRules): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -312,8 +312,8 @@ export function mwsNetworkConnectivityConfigEgressConfigDefaultRulesToTerraform(
 
 
 export function mwsNetworkConnectivityConfigEgressConfigDefaultRulesToHclTerraform(struct?: MwsNetworkConnectivityConfigEgressConfigDefaultRulesOutputReference | MwsNetworkConnectivityConfigEgressConfigDefaultRules): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -335,14 +335,14 @@ export function mwsNetworkConnectivityConfigEgressConfigDefaultRulesToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MwsNetworkConnectivityConfigEgressConfigDefaultRulesOutputReference extends cdktf.ComplexObject {
+export class MwsNetworkConnectivityConfigEgressConfigDefaultRulesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -407,162 +407,173 @@ export class MwsNetworkConnectivityConfigEgressConfigDefaultRulesOutputReference
 }
 export interface MwsNetworkConnectivityConfigEgressConfigTargetRulesAwsPrivateEndpointRules {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_network_connectivity_config#account_id MwsNetworkConnectivityConfig#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_network_connectivity_config#account_id MwsNetworkConnectivityConfig#account_id}
   */
   readonly accountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_network_connectivity_config#connection_state MwsNetworkConnectivityConfig#connection_state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_network_connectivity_config#connection_state MwsNetworkConnectivityConfig#connection_state}
   */
   readonly connectionState?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_network_connectivity_config#creation_time MwsNetworkConnectivityConfig#creation_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_network_connectivity_config#creation_time MwsNetworkConnectivityConfig#creation_time}
   */
   readonly creationTime?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_network_connectivity_config#deactivated MwsNetworkConnectivityConfig#deactivated}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_network_connectivity_config#deactivated MwsNetworkConnectivityConfig#deactivated}
   */
-  readonly deactivated?: boolean | cdktf.IResolvable;
+  readonly deactivated?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_network_connectivity_config#deactivated_at MwsNetworkConnectivityConfig#deactivated_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_network_connectivity_config#deactivated_at MwsNetworkConnectivityConfig#deactivated_at}
   */
   readonly deactivatedAt?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_network_connectivity_config#domain_names MwsNetworkConnectivityConfig#domain_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_network_connectivity_config#domain_names MwsNetworkConnectivityConfig#domain_names}
   */
   readonly domainNames?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_network_connectivity_config#enabled MwsNetworkConnectivityConfig#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_network_connectivity_config#enabled MwsNetworkConnectivityConfig#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_network_connectivity_config#endpoint_service MwsNetworkConnectivityConfig#endpoint_service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_network_connectivity_config#endpoint_service MwsNetworkConnectivityConfig#endpoint_service}
   */
   readonly endpointService?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_network_connectivity_config#network_connectivity_config_id MwsNetworkConnectivityConfig#network_connectivity_config_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_network_connectivity_config#error_message MwsNetworkConnectivityConfig#error_message}
+  */
+  readonly errorMessage?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_network_connectivity_config#network_connectivity_config_id MwsNetworkConnectivityConfig#network_connectivity_config_id}
   */
   readonly networkConnectivityConfigId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_network_connectivity_config#resource_names MwsNetworkConnectivityConfig#resource_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_network_connectivity_config#resource_names MwsNetworkConnectivityConfig#resource_names}
   */
   readonly resourceNames?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_network_connectivity_config#rule_id MwsNetworkConnectivityConfig#rule_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_network_connectivity_config#rule_id MwsNetworkConnectivityConfig#rule_id}
   */
   readonly ruleId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_network_connectivity_config#updated_time MwsNetworkConnectivityConfig#updated_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_network_connectivity_config#updated_time MwsNetworkConnectivityConfig#updated_time}
   */
   readonly updatedTime?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_network_connectivity_config#vpc_endpoint_id MwsNetworkConnectivityConfig#vpc_endpoint_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_network_connectivity_config#vpc_endpoint_id MwsNetworkConnectivityConfig#vpc_endpoint_id}
   */
   readonly vpcEndpointId?: string;
 }
 
-export function mwsNetworkConnectivityConfigEgressConfigTargetRulesAwsPrivateEndpointRulesToTerraform(struct?: MwsNetworkConnectivityConfigEgressConfigTargetRulesAwsPrivateEndpointRules | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mwsNetworkConnectivityConfigEgressConfigTargetRulesAwsPrivateEndpointRulesToTerraform(struct?: MwsNetworkConnectivityConfigEgressConfigTargetRulesAwsPrivateEndpointRules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    account_id: cdktf.stringToTerraform(struct!.accountId),
-    connection_state: cdktf.stringToTerraform(struct!.connectionState),
-    creation_time: cdktf.numberToTerraform(struct!.creationTime),
-    deactivated: cdktf.booleanToTerraform(struct!.deactivated),
-    deactivated_at: cdktf.numberToTerraform(struct!.deactivatedAt),
-    domain_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.domainNames),
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    endpoint_service: cdktf.stringToTerraform(struct!.endpointService),
-    network_connectivity_config_id: cdktf.stringToTerraform(struct!.networkConnectivityConfigId),
-    resource_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resourceNames),
-    rule_id: cdktf.stringToTerraform(struct!.ruleId),
-    updated_time: cdktf.numberToTerraform(struct!.updatedTime),
-    vpc_endpoint_id: cdktf.stringToTerraform(struct!.vpcEndpointId),
+    account_id: cdktn.stringToTerraform(struct!.accountId),
+    connection_state: cdktn.stringToTerraform(struct!.connectionState),
+    creation_time: cdktn.numberToTerraform(struct!.creationTime),
+    deactivated: cdktn.booleanToTerraform(struct!.deactivated),
+    deactivated_at: cdktn.numberToTerraform(struct!.deactivatedAt),
+    domain_names: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.domainNames),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    endpoint_service: cdktn.stringToTerraform(struct!.endpointService),
+    error_message: cdktn.stringToTerraform(struct!.errorMessage),
+    network_connectivity_config_id: cdktn.stringToTerraform(struct!.networkConnectivityConfigId),
+    resource_names: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.resourceNames),
+    rule_id: cdktn.stringToTerraform(struct!.ruleId),
+    updated_time: cdktn.numberToTerraform(struct!.updatedTime),
+    vpc_endpoint_id: cdktn.stringToTerraform(struct!.vpcEndpointId),
   }
 }
 
 
-export function mwsNetworkConnectivityConfigEgressConfigTargetRulesAwsPrivateEndpointRulesToHclTerraform(struct?: MwsNetworkConnectivityConfigEgressConfigTargetRulesAwsPrivateEndpointRules | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mwsNetworkConnectivityConfigEgressConfigTargetRulesAwsPrivateEndpointRulesToHclTerraform(struct?: MwsNetworkConnectivityConfigEgressConfigTargetRulesAwsPrivateEndpointRules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     account_id: {
-      value: cdktf.stringToHclTerraform(struct!.accountId),
+      value: cdktn.stringToHclTerraform(struct!.accountId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     connection_state: {
-      value: cdktf.stringToHclTerraform(struct!.connectionState),
+      value: cdktn.stringToHclTerraform(struct!.connectionState),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     creation_time: {
-      value: cdktf.numberToHclTerraform(struct!.creationTime),
+      value: cdktn.numberToHclTerraform(struct!.creationTime),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     deactivated: {
-      value: cdktf.booleanToHclTerraform(struct!.deactivated),
+      value: cdktn.booleanToHclTerraform(struct!.deactivated),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     deactivated_at: {
-      value: cdktf.numberToHclTerraform(struct!.deactivatedAt),
+      value: cdktn.numberToHclTerraform(struct!.deactivatedAt),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     domain_names: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.domainNames),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.domainNames),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     endpoint_service: {
-      value: cdktf.stringToHclTerraform(struct!.endpointService),
+      value: cdktn.stringToHclTerraform(struct!.endpointService),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    error_message: {
+      value: cdktn.stringToHclTerraform(struct!.errorMessage),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     network_connectivity_config_id: {
-      value: cdktf.stringToHclTerraform(struct!.networkConnectivityConfigId),
+      value: cdktn.stringToHclTerraform(struct!.networkConnectivityConfigId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     resource_names: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.resourceNames),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.resourceNames),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     rule_id: {
-      value: cdktf.stringToHclTerraform(struct!.ruleId),
+      value: cdktn.stringToHclTerraform(struct!.ruleId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     updated_time: {
-      value: cdktf.numberToHclTerraform(struct!.updatedTime),
+      value: cdktn.numberToHclTerraform(struct!.updatedTime),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     vpc_endpoint_id: {
-      value: cdktf.stringToHclTerraform(struct!.vpcEndpointId),
+      value: cdktn.stringToHclTerraform(struct!.vpcEndpointId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -573,9 +584,9 @@ export function mwsNetworkConnectivityConfigEgressConfigTargetRulesAwsPrivateEnd
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MwsNetworkConnectivityConfigEgressConfigTargetRulesAwsPrivateEndpointRulesOutputReference extends cdktf.ComplexObject {
+export class MwsNetworkConnectivityConfigEgressConfigTargetRulesAwsPrivateEndpointRulesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -583,11 +594,11 @@ export class MwsNetworkConnectivityConfigEgressConfigTargetRulesAwsPrivateEndpoi
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MwsNetworkConnectivityConfigEgressConfigTargetRulesAwsPrivateEndpointRules | cdktf.IResolvable | undefined {
+  public get internalValue(): MwsNetworkConnectivityConfigEgressConfigTargetRulesAwsPrivateEndpointRules | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -625,6 +636,10 @@ export class MwsNetworkConnectivityConfigEgressConfigTargetRulesAwsPrivateEndpoi
       hasAnyValues = true;
       internalValueResult.endpointService = this._endpointService;
     }
+    if (this._errorMessage !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.errorMessage = this._errorMessage;
+    }
     if (this._networkConnectivityConfigId !== undefined) {
       hasAnyValues = true;
       internalValueResult.networkConnectivityConfigId = this._networkConnectivityConfigId;
@@ -648,7 +663,7 @@ export class MwsNetworkConnectivityConfigEgressConfigTargetRulesAwsPrivateEndpoi
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MwsNetworkConnectivityConfigEgressConfigTargetRulesAwsPrivateEndpointRules | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MwsNetworkConnectivityConfigEgressConfigTargetRulesAwsPrivateEndpointRules | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -660,13 +675,14 @@ export class MwsNetworkConnectivityConfigEgressConfigTargetRulesAwsPrivateEndpoi
       this._domainNames = undefined;
       this._enabled = undefined;
       this._endpointService = undefined;
+      this._errorMessage = undefined;
       this._networkConnectivityConfigId = undefined;
       this._resourceNames = undefined;
       this._ruleId = undefined;
       this._updatedTime = undefined;
       this._vpcEndpointId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -681,6 +697,7 @@ export class MwsNetworkConnectivityConfigEgressConfigTargetRulesAwsPrivateEndpoi
       this._domainNames = value.domainNames;
       this._enabled = value.enabled;
       this._endpointService = value.endpointService;
+      this._errorMessage = value.errorMessage;
       this._networkConnectivityConfigId = value.networkConnectivityConfigId;
       this._resourceNames = value.resourceNames;
       this._ruleId = value.ruleId;
@@ -738,11 +755,11 @@ export class MwsNetworkConnectivityConfigEgressConfigTargetRulesAwsPrivateEndpoi
   }
 
   // deactivated - computed: false, optional: true, required: false
-  private _deactivated?: boolean | cdktf.IResolvable; 
+  private _deactivated?: boolean | cdktn.IResolvable; 
   public get deactivated() {
     return this.getBooleanAttribute('deactivated');
   }
-  public set deactivated(value: boolean | cdktf.IResolvable) {
+  public set deactivated(value: boolean | cdktn.IResolvable) {
     this._deactivated = value;
   }
   public resetDeactivated() {
@@ -786,11 +803,11 @@ export class MwsNetworkConnectivityConfigEgressConfigTargetRulesAwsPrivateEndpoi
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -815,6 +832,22 @@ export class MwsNetworkConnectivityConfigEgressConfigTargetRulesAwsPrivateEndpoi
   // Temporarily expose input value. Use with caution.
   public get endpointServiceInput() {
     return this._endpointService;
+  }
+
+  // error_message - computed: false, optional: true, required: false
+  private _errorMessage?: string; 
+  public get errorMessage() {
+    return this.getStringAttribute('error_message');
+  }
+  public set errorMessage(value: string) {
+    this._errorMessage = value;
+  }
+  public resetErrorMessage() {
+    this._errorMessage = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get errorMessageInput() {
+    return this._errorMessage;
   }
 
   // network_connectivity_config_id - computed: false, optional: true, required: false
@@ -898,15 +931,15 @@ export class MwsNetworkConnectivityConfigEgressConfigTargetRulesAwsPrivateEndpoi
   }
 }
 
-export class MwsNetworkConnectivityConfigEgressConfigTargetRulesAwsPrivateEndpointRulesList extends cdktf.ComplexList {
-  public internalValue? : MwsNetworkConnectivityConfigEgressConfigTargetRulesAwsPrivateEndpointRules[] | cdktf.IResolvable
+export class MwsNetworkConnectivityConfigEgressConfigTargetRulesAwsPrivateEndpointRulesList extends cdktn.ComplexList {
+  public internalValue? : MwsNetworkConnectivityConfigEgressConfigTargetRulesAwsPrivateEndpointRules[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -919,140 +952,151 @@ export class MwsNetworkConnectivityConfigEgressConfigTargetRulesAwsPrivateEndpoi
 }
 export interface MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRules {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_network_connectivity_config#connection_state MwsNetworkConnectivityConfig#connection_state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_network_connectivity_config#connection_state MwsNetworkConnectivityConfig#connection_state}
   */
   readonly connectionState?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_network_connectivity_config#creation_time MwsNetworkConnectivityConfig#creation_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_network_connectivity_config#creation_time MwsNetworkConnectivityConfig#creation_time}
   */
   readonly creationTime?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_network_connectivity_config#deactivated MwsNetworkConnectivityConfig#deactivated}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_network_connectivity_config#deactivated MwsNetworkConnectivityConfig#deactivated}
   */
-  readonly deactivated?: boolean | cdktf.IResolvable;
+  readonly deactivated?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_network_connectivity_config#deactivated_at MwsNetworkConnectivityConfig#deactivated_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_network_connectivity_config#deactivated_at MwsNetworkConnectivityConfig#deactivated_at}
   */
   readonly deactivatedAt?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_network_connectivity_config#domain_names MwsNetworkConnectivityConfig#domain_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_network_connectivity_config#domain_names MwsNetworkConnectivityConfig#domain_names}
   */
   readonly domainNames?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_network_connectivity_config#endpoint_name MwsNetworkConnectivityConfig#endpoint_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_network_connectivity_config#endpoint_name MwsNetworkConnectivityConfig#endpoint_name}
   */
   readonly endpointName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_network_connectivity_config#group_id MwsNetworkConnectivityConfig#group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_network_connectivity_config#error_message MwsNetworkConnectivityConfig#error_message}
+  */
+  readonly errorMessage?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_network_connectivity_config#group_id MwsNetworkConnectivityConfig#group_id}
   */
   readonly groupId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_network_connectivity_config#network_connectivity_config_id MwsNetworkConnectivityConfig#network_connectivity_config_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_network_connectivity_config#network_connectivity_config_id MwsNetworkConnectivityConfig#network_connectivity_config_id}
   */
   readonly networkConnectivityConfigId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_network_connectivity_config#resource_id MwsNetworkConnectivityConfig#resource_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_network_connectivity_config#resource_id MwsNetworkConnectivityConfig#resource_id}
   */
   readonly resourceId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_network_connectivity_config#rule_id MwsNetworkConnectivityConfig#rule_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_network_connectivity_config#rule_id MwsNetworkConnectivityConfig#rule_id}
   */
   readonly ruleId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_network_connectivity_config#updated_time MwsNetworkConnectivityConfig#updated_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_network_connectivity_config#updated_time MwsNetworkConnectivityConfig#updated_time}
   */
   readonly updatedTime?: number;
 }
 
-export function mwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesToTerraform(struct?: MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRules | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesToTerraform(struct?: MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    connection_state: cdktf.stringToTerraform(struct!.connectionState),
-    creation_time: cdktf.numberToTerraform(struct!.creationTime),
-    deactivated: cdktf.booleanToTerraform(struct!.deactivated),
-    deactivated_at: cdktf.numberToTerraform(struct!.deactivatedAt),
-    domain_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.domainNames),
-    endpoint_name: cdktf.stringToTerraform(struct!.endpointName),
-    group_id: cdktf.stringToTerraform(struct!.groupId),
-    network_connectivity_config_id: cdktf.stringToTerraform(struct!.networkConnectivityConfigId),
-    resource_id: cdktf.stringToTerraform(struct!.resourceId),
-    rule_id: cdktf.stringToTerraform(struct!.ruleId),
-    updated_time: cdktf.numberToTerraform(struct!.updatedTime),
+    connection_state: cdktn.stringToTerraform(struct!.connectionState),
+    creation_time: cdktn.numberToTerraform(struct!.creationTime),
+    deactivated: cdktn.booleanToTerraform(struct!.deactivated),
+    deactivated_at: cdktn.numberToTerraform(struct!.deactivatedAt),
+    domain_names: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.domainNames),
+    endpoint_name: cdktn.stringToTerraform(struct!.endpointName),
+    error_message: cdktn.stringToTerraform(struct!.errorMessage),
+    group_id: cdktn.stringToTerraform(struct!.groupId),
+    network_connectivity_config_id: cdktn.stringToTerraform(struct!.networkConnectivityConfigId),
+    resource_id: cdktn.stringToTerraform(struct!.resourceId),
+    rule_id: cdktn.stringToTerraform(struct!.ruleId),
+    updated_time: cdktn.numberToTerraform(struct!.updatedTime),
   }
 }
 
 
-export function mwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesToHclTerraform(struct?: MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRules | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesToHclTerraform(struct?: MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     connection_state: {
-      value: cdktf.stringToHclTerraform(struct!.connectionState),
+      value: cdktn.stringToHclTerraform(struct!.connectionState),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     creation_time: {
-      value: cdktf.numberToHclTerraform(struct!.creationTime),
+      value: cdktn.numberToHclTerraform(struct!.creationTime),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     deactivated: {
-      value: cdktf.booleanToHclTerraform(struct!.deactivated),
+      value: cdktn.booleanToHclTerraform(struct!.deactivated),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     deactivated_at: {
-      value: cdktf.numberToHclTerraform(struct!.deactivatedAt),
+      value: cdktn.numberToHclTerraform(struct!.deactivatedAt),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     domain_names: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.domainNames),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.domainNames),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     endpoint_name: {
-      value: cdktf.stringToHclTerraform(struct!.endpointName),
+      value: cdktn.stringToHclTerraform(struct!.endpointName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    error_message: {
+      value: cdktn.stringToHclTerraform(struct!.errorMessage),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     group_id: {
-      value: cdktf.stringToHclTerraform(struct!.groupId),
+      value: cdktn.stringToHclTerraform(struct!.groupId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     network_connectivity_config_id: {
-      value: cdktf.stringToHclTerraform(struct!.networkConnectivityConfigId),
+      value: cdktn.stringToHclTerraform(struct!.networkConnectivityConfigId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     resource_id: {
-      value: cdktf.stringToHclTerraform(struct!.resourceId),
+      value: cdktn.stringToHclTerraform(struct!.resourceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rule_id: {
-      value: cdktf.stringToHclTerraform(struct!.ruleId),
+      value: cdktn.stringToHclTerraform(struct!.ruleId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     updated_time: {
-      value: cdktf.numberToHclTerraform(struct!.updatedTime),
+      value: cdktn.numberToHclTerraform(struct!.updatedTime),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1063,9 +1107,9 @@ export function mwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateE
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesOutputReference extends cdktf.ComplexObject {
+export class MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1073,11 +1117,11 @@ export class MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRules | cdktf.IResolvable | undefined {
+  public get internalValue(): MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRules | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1107,6 +1151,10 @@ export class MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndp
       hasAnyValues = true;
       internalValueResult.endpointName = this._endpointName;
     }
+    if (this._errorMessage !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.errorMessage = this._errorMessage;
+    }
     if (this._groupId !== undefined) {
       hasAnyValues = true;
       internalValueResult.groupId = this._groupId;
@@ -1130,7 +1178,7 @@ export class MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRules | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRules | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1140,13 +1188,14 @@ export class MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndp
       this._deactivatedAt = undefined;
       this._domainNames = undefined;
       this._endpointName = undefined;
+      this._errorMessage = undefined;
       this._groupId = undefined;
       this._networkConnectivityConfigId = undefined;
       this._resourceId = undefined;
       this._ruleId = undefined;
       this._updatedTime = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1159,6 +1208,7 @@ export class MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndp
       this._deactivatedAt = value.deactivatedAt;
       this._domainNames = value.domainNames;
       this._endpointName = value.endpointName;
+      this._errorMessage = value.errorMessage;
       this._groupId = value.groupId;
       this._networkConnectivityConfigId = value.networkConnectivityConfigId;
       this._resourceId = value.resourceId;
@@ -1200,11 +1250,11 @@ export class MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndp
   }
 
   // deactivated - computed: false, optional: true, required: false
-  private _deactivated?: boolean | cdktf.IResolvable; 
+  private _deactivated?: boolean | cdktn.IResolvable; 
   public get deactivated() {
     return this.getBooleanAttribute('deactivated');
   }
-  public set deactivated(value: boolean | cdktf.IResolvable) {
+  public set deactivated(value: boolean | cdktn.IResolvable) {
     this._deactivated = value;
   }
   public resetDeactivated() {
@@ -1261,6 +1311,22 @@ export class MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndp
   // Temporarily expose input value. Use with caution.
   public get endpointNameInput() {
     return this._endpointName;
+  }
+
+  // error_message - computed: false, optional: true, required: false
+  private _errorMessage?: string; 
+  public get errorMessage() {
+    return this.getStringAttribute('error_message');
+  }
+  public set errorMessage(value: string) {
+    this._errorMessage = value;
+  }
+  public resetErrorMessage() {
+    this._errorMessage = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get errorMessageInput() {
+    return this._errorMessage;
   }
 
   // group_id - computed: false, optional: true, required: false
@@ -1344,15 +1410,15 @@ export class MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndp
   }
 }
 
-export class MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesList extends cdktf.ComplexList {
-  public internalValue? : MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRules[] | cdktf.IResolvable
+export class MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesList extends cdktn.ComplexList {
+  public internalValue? : MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRules[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1367,43 +1433,43 @@ export interface MwsNetworkConnectivityConfigEgressConfigTargetRules {
   /**
   * aws_private_endpoint_rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_network_connectivity_config#aws_private_endpoint_rules MwsNetworkConnectivityConfig#aws_private_endpoint_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_network_connectivity_config#aws_private_endpoint_rules MwsNetworkConnectivityConfig#aws_private_endpoint_rules}
   */
-  readonly awsPrivateEndpointRules?: MwsNetworkConnectivityConfigEgressConfigTargetRulesAwsPrivateEndpointRules[] | cdktf.IResolvable;
+  readonly awsPrivateEndpointRules?: MwsNetworkConnectivityConfigEgressConfigTargetRulesAwsPrivateEndpointRules[] | cdktn.IResolvable;
   /**
   * azure_private_endpoint_rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_network_connectivity_config#azure_private_endpoint_rules MwsNetworkConnectivityConfig#azure_private_endpoint_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_network_connectivity_config#azure_private_endpoint_rules MwsNetworkConnectivityConfig#azure_private_endpoint_rules}
   */
-  readonly azurePrivateEndpointRules?: MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRules[] | cdktf.IResolvable;
+  readonly azurePrivateEndpointRules?: MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRules[] | cdktn.IResolvable;
 }
 
 export function mwsNetworkConnectivityConfigEgressConfigTargetRulesToTerraform(struct?: MwsNetworkConnectivityConfigEgressConfigTargetRulesOutputReference | MwsNetworkConnectivityConfigEgressConfigTargetRules): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_private_endpoint_rules: cdktf.listMapper(mwsNetworkConnectivityConfigEgressConfigTargetRulesAwsPrivateEndpointRulesToTerraform, true)(struct!.awsPrivateEndpointRules),
-    azure_private_endpoint_rules: cdktf.listMapper(mwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesToTerraform, true)(struct!.azurePrivateEndpointRules),
+    aws_private_endpoint_rules: cdktn.listMapper(mwsNetworkConnectivityConfigEgressConfigTargetRulesAwsPrivateEndpointRulesToTerraform, true)(struct!.awsPrivateEndpointRules),
+    azure_private_endpoint_rules: cdktn.listMapper(mwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesToTerraform, true)(struct!.azurePrivateEndpointRules),
   }
 }
 
 
 export function mwsNetworkConnectivityConfigEgressConfigTargetRulesToHclTerraform(struct?: MwsNetworkConnectivityConfigEgressConfigTargetRulesOutputReference | MwsNetworkConnectivityConfigEgressConfigTargetRules): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_private_endpoint_rules: {
-      value: cdktf.listMapperHcl(mwsNetworkConnectivityConfigEgressConfigTargetRulesAwsPrivateEndpointRulesToHclTerraform, true)(struct!.awsPrivateEndpointRules),
+      value: cdktn.listMapperHcl(mwsNetworkConnectivityConfigEgressConfigTargetRulesAwsPrivateEndpointRulesToHclTerraform, true)(struct!.awsPrivateEndpointRules),
       isBlock: true,
       type: "list",
       storageClassType: "MwsNetworkConnectivityConfigEgressConfigTargetRulesAwsPrivateEndpointRulesList",
     },
     azure_private_endpoint_rules: {
-      value: cdktf.listMapperHcl(mwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesToHclTerraform, true)(struct!.azurePrivateEndpointRules),
+      value: cdktn.listMapperHcl(mwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesToHclTerraform, true)(struct!.azurePrivateEndpointRules),
       isBlock: true,
       type: "list",
       storageClassType: "MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRulesList",
@@ -1414,14 +1480,14 @@ export function mwsNetworkConnectivityConfigEgressConfigTargetRulesToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MwsNetworkConnectivityConfigEgressConfigTargetRulesOutputReference extends cdktf.ComplexObject {
+export class MwsNetworkConnectivityConfigEgressConfigTargetRulesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1457,7 +1523,7 @@ export class MwsNetworkConnectivityConfigEgressConfigTargetRulesOutputReference 
   public get awsPrivateEndpointRules() {
     return this._awsPrivateEndpointRules;
   }
-  public putAwsPrivateEndpointRules(value: MwsNetworkConnectivityConfigEgressConfigTargetRulesAwsPrivateEndpointRules[] | cdktf.IResolvable) {
+  public putAwsPrivateEndpointRules(value: MwsNetworkConnectivityConfigEgressConfigTargetRulesAwsPrivateEndpointRules[] | cdktn.IResolvable) {
     this._awsPrivateEndpointRules.internalValue = value;
   }
   public resetAwsPrivateEndpointRules() {
@@ -1473,7 +1539,7 @@ export class MwsNetworkConnectivityConfigEgressConfigTargetRulesOutputReference 
   public get azurePrivateEndpointRules() {
     return this._azurePrivateEndpointRules;
   }
-  public putAzurePrivateEndpointRules(value: MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRules[] | cdktf.IResolvable) {
+  public putAzurePrivateEndpointRules(value: MwsNetworkConnectivityConfigEgressConfigTargetRulesAzurePrivateEndpointRules[] | cdktn.IResolvable) {
     this._azurePrivateEndpointRules.internalValue = value;
   }
   public resetAzurePrivateEndpointRules() {
@@ -1488,20 +1554,20 @@ export interface MwsNetworkConnectivityConfigEgressConfig {
   /**
   * default_rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_network_connectivity_config#default_rules MwsNetworkConnectivityConfig#default_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_network_connectivity_config#default_rules MwsNetworkConnectivityConfig#default_rules}
   */
   readonly defaultRules?: MwsNetworkConnectivityConfigEgressConfigDefaultRules;
   /**
   * target_rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_network_connectivity_config#target_rules MwsNetworkConnectivityConfig#target_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_network_connectivity_config#target_rules MwsNetworkConnectivityConfig#target_rules}
   */
   readonly targetRules?: MwsNetworkConnectivityConfigEgressConfigTargetRules;
 }
 
 export function mwsNetworkConnectivityConfigEgressConfigToTerraform(struct?: MwsNetworkConnectivityConfigEgressConfigOutputReference | MwsNetworkConnectivityConfigEgressConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1512,8 +1578,8 @@ export function mwsNetworkConnectivityConfigEgressConfigToTerraform(struct?: Mws
 
 
 export function mwsNetworkConnectivityConfigEgressConfigToHclTerraform(struct?: MwsNetworkConnectivityConfigEgressConfigOutputReference | MwsNetworkConnectivityConfigEgressConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1535,14 +1601,14 @@ export function mwsNetworkConnectivityConfigEgressConfigToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MwsNetworkConnectivityConfigEgressConfigOutputReference extends cdktf.ComplexObject {
+export class MwsNetworkConnectivityConfigEgressConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1607,9 +1673,9 @@ export class MwsNetworkConnectivityConfigEgressConfigOutputReference extends cdk
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_network_connectivity_config databricks_mws_network_connectivity_config}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_network_connectivity_config databricks_mws_network_connectivity_config}
 */
-export class MwsNetworkConnectivityConfig extends cdktf.TerraformResource {
+export class MwsNetworkConnectivityConfig extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1620,14 +1686,14 @@ export class MwsNetworkConnectivityConfig extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a MwsNetworkConnectivityConfig resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a MwsNetworkConnectivityConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MwsNetworkConnectivityConfig to import
-  * @param importFromId The id of the existing MwsNetworkConnectivityConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_network_connectivity_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MwsNetworkConnectivityConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_network_connectivity_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MwsNetworkConnectivityConfig to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_mws_network_connectivity_config", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_mws_network_connectivity_config", importId: importFromId, provider });
       }
 
   // ===========
@@ -1635,7 +1701,7 @@ export class MwsNetworkConnectivityConfig extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_network_connectivity_config databricks_mws_network_connectivity_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_network_connectivity_config databricks_mws_network_connectivity_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1646,7 +1712,7 @@ export class MwsNetworkConnectivityConfig extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_mws_network_connectivity_config',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -1799,13 +1865,13 @@ export class MwsNetworkConnectivityConfig extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      creation_time: cdktf.numberToTerraform(this._creationTime),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      network_connectivity_config_id: cdktf.stringToTerraform(this._networkConnectivityConfigId),
-      region: cdktf.stringToTerraform(this._region),
-      updated_time: cdktf.numberToTerraform(this._updatedTime),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      creation_time: cdktn.numberToTerraform(this._creationTime),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      network_connectivity_config_id: cdktn.stringToTerraform(this._networkConnectivityConfigId),
+      region: cdktn.stringToTerraform(this._region),
+      updated_time: cdktn.numberToTerraform(this._updatedTime),
       egress_config: mwsNetworkConnectivityConfigEgressConfigToTerraform(this._egressConfig.internalValue),
     };
   }
@@ -1813,43 +1879,43 @@ export class MwsNetworkConnectivityConfig extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       creation_time: {
-        value: cdktf.numberToHclTerraform(this._creationTime),
+        value: cdktn.numberToHclTerraform(this._creationTime),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       network_connectivity_config_id: {
-        value: cdktf.stringToHclTerraform(this._networkConnectivityConfigId),
+        value: cdktn.stringToHclTerraform(this._networkConnectivityConfigId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       updated_time: {
-        value: cdktf.numberToHclTerraform(this._updatedTime),
+        value: cdktn.numberToHclTerraform(this._updatedTime),
         isBlock: false,
         type: "simple",
         storageClassType: "number",

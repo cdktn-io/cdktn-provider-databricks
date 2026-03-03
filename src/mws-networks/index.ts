@@ -1,116 +1,116 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_networks
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_networks
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MwsNetworksConfig extends cdktf.TerraformMetaArguments {
+export interface MwsNetworksConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_networks#account_id MwsNetworks#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_networks#account_id MwsNetworks#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_networks#creation_time MwsNetworks#creation_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_networks#creation_time MwsNetworks#creation_time}
   */
   readonly creationTime?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_networks#id MwsNetworks#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_networks#id MwsNetworks#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_networks#network_id MwsNetworks#network_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_networks#network_id MwsNetworks#network_id}
   */
   readonly networkId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_networks#network_name MwsNetworks#network_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_networks#network_name MwsNetworks#network_name}
   */
   readonly networkName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_networks#security_group_ids MwsNetworks#security_group_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_networks#security_group_ids MwsNetworks#security_group_ids}
   */
   readonly securityGroupIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_networks#subnet_ids MwsNetworks#subnet_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_networks#subnet_ids MwsNetworks#subnet_ids}
   */
   readonly subnetIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_networks#vpc_id MwsNetworks#vpc_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_networks#vpc_id MwsNetworks#vpc_id}
   */
   readonly vpcId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_networks#vpc_status MwsNetworks#vpc_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_networks#vpc_status MwsNetworks#vpc_status}
   */
   readonly vpcStatus?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_networks#workspace_id MwsNetworks#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_networks#workspace_id MwsNetworks#workspace_id}
   */
   readonly workspaceId?: number;
   /**
   * error_messages block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_networks#error_messages MwsNetworks#error_messages}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_networks#error_messages MwsNetworks#error_messages}
   */
-  readonly errorMessages?: MwsNetworksErrorMessages[] | cdktf.IResolvable;
+  readonly errorMessages?: MwsNetworksErrorMessages[] | cdktn.IResolvable;
   /**
   * gcp_network_info block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_networks#gcp_network_info MwsNetworks#gcp_network_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_networks#gcp_network_info MwsNetworks#gcp_network_info}
   */
   readonly gcpNetworkInfo?: MwsNetworksGcpNetworkInfo;
   /**
   * vpc_endpoints block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_networks#vpc_endpoints MwsNetworks#vpc_endpoints}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_networks#vpc_endpoints MwsNetworks#vpc_endpoints}
   */
   readonly vpcEndpoints?: MwsNetworksVpcEndpoints;
 }
 export interface MwsNetworksErrorMessages {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_networks#error_message MwsNetworks#error_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_networks#error_message MwsNetworks#error_message}
   */
   readonly errorMessage?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_networks#error_type MwsNetworks#error_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_networks#error_type MwsNetworks#error_type}
   */
   readonly errorType?: string;
 }
 
-export function mwsNetworksErrorMessagesToTerraform(struct?: MwsNetworksErrorMessages | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mwsNetworksErrorMessagesToTerraform(struct?: MwsNetworksErrorMessages | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    error_message: cdktf.stringToTerraform(struct!.errorMessage),
-    error_type: cdktf.stringToTerraform(struct!.errorType),
+    error_message: cdktn.stringToTerraform(struct!.errorMessage),
+    error_type: cdktn.stringToTerraform(struct!.errorType),
   }
 }
 
 
-export function mwsNetworksErrorMessagesToHclTerraform(struct?: MwsNetworksErrorMessages | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mwsNetworksErrorMessagesToHclTerraform(struct?: MwsNetworksErrorMessages | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     error_message: {
-      value: cdktf.stringToHclTerraform(struct!.errorMessage),
+      value: cdktn.stringToHclTerraform(struct!.errorMessage),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     error_type: {
-      value: cdktf.stringToHclTerraform(struct!.errorType),
+      value: cdktn.stringToHclTerraform(struct!.errorType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -121,9 +121,9 @@ export function mwsNetworksErrorMessagesToHclTerraform(struct?: MwsNetworksError
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MwsNetworksErrorMessagesOutputReference extends cdktf.ComplexObject {
+export class MwsNetworksErrorMessagesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -131,11 +131,11 @@ export class MwsNetworksErrorMessagesOutputReference extends cdktf.ComplexObject
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MwsNetworksErrorMessages | cdktf.IResolvable | undefined {
+  public get internalValue(): MwsNetworksErrorMessages | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -152,14 +152,14 @@ export class MwsNetworksErrorMessagesOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MwsNetworksErrorMessages | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MwsNetworksErrorMessages | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._errorMessage = undefined;
       this._errorType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -204,15 +204,15 @@ export class MwsNetworksErrorMessagesOutputReference extends cdktf.ComplexObject
   }
 }
 
-export class MwsNetworksErrorMessagesList extends cdktf.ComplexList {
-  public internalValue? : MwsNetworksErrorMessages[] | cdktf.IResolvable
+export class MwsNetworksErrorMessagesList extends cdktn.ComplexList {
+  public internalValue? : MwsNetworksErrorMessages[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -225,85 +225,85 @@ export class MwsNetworksErrorMessagesList extends cdktf.ComplexList {
 }
 export interface MwsNetworksGcpNetworkInfo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_networks#network_project_id MwsNetworks#network_project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_networks#network_project_id MwsNetworks#network_project_id}
   */
   readonly networkProjectId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_networks#pod_ip_range_name MwsNetworks#pod_ip_range_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_networks#pod_ip_range_name MwsNetworks#pod_ip_range_name}
   */
   readonly podIpRangeName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_networks#service_ip_range_name MwsNetworks#service_ip_range_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_networks#service_ip_range_name MwsNetworks#service_ip_range_name}
   */
   readonly serviceIpRangeName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_networks#subnet_id MwsNetworks#subnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_networks#subnet_id MwsNetworks#subnet_id}
   */
   readonly subnetId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_networks#subnet_region MwsNetworks#subnet_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_networks#subnet_region MwsNetworks#subnet_region}
   */
   readonly subnetRegion: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_networks#vpc_id MwsNetworks#vpc_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_networks#vpc_id MwsNetworks#vpc_id}
   */
   readonly vpcId: string;
 }
 
 export function mwsNetworksGcpNetworkInfoToTerraform(struct?: MwsNetworksGcpNetworkInfoOutputReference | MwsNetworksGcpNetworkInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    network_project_id: cdktf.stringToTerraform(struct!.networkProjectId),
-    pod_ip_range_name: cdktf.stringToTerraform(struct!.podIpRangeName),
-    service_ip_range_name: cdktf.stringToTerraform(struct!.serviceIpRangeName),
-    subnet_id: cdktf.stringToTerraform(struct!.subnetId),
-    subnet_region: cdktf.stringToTerraform(struct!.subnetRegion),
-    vpc_id: cdktf.stringToTerraform(struct!.vpcId),
+    network_project_id: cdktn.stringToTerraform(struct!.networkProjectId),
+    pod_ip_range_name: cdktn.stringToTerraform(struct!.podIpRangeName),
+    service_ip_range_name: cdktn.stringToTerraform(struct!.serviceIpRangeName),
+    subnet_id: cdktn.stringToTerraform(struct!.subnetId),
+    subnet_region: cdktn.stringToTerraform(struct!.subnetRegion),
+    vpc_id: cdktn.stringToTerraform(struct!.vpcId),
   }
 }
 
 
 export function mwsNetworksGcpNetworkInfoToHclTerraform(struct?: MwsNetworksGcpNetworkInfoOutputReference | MwsNetworksGcpNetworkInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     network_project_id: {
-      value: cdktf.stringToHclTerraform(struct!.networkProjectId),
+      value: cdktn.stringToHclTerraform(struct!.networkProjectId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     pod_ip_range_name: {
-      value: cdktf.stringToHclTerraform(struct!.podIpRangeName),
+      value: cdktn.stringToHclTerraform(struct!.podIpRangeName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     service_ip_range_name: {
-      value: cdktf.stringToHclTerraform(struct!.serviceIpRangeName),
+      value: cdktn.stringToHclTerraform(struct!.serviceIpRangeName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     subnet_id: {
-      value: cdktf.stringToHclTerraform(struct!.subnetId),
+      value: cdktn.stringToHclTerraform(struct!.subnetId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     subnet_region: {
-      value: cdktf.stringToHclTerraform(struct!.subnetRegion),
+      value: cdktn.stringToHclTerraform(struct!.subnetRegion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     vpc_id: {
-      value: cdktf.stringToHclTerraform(struct!.vpcId),
+      value: cdktn.stringToHclTerraform(struct!.vpcId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -314,14 +314,14 @@ export function mwsNetworksGcpNetworkInfoToHclTerraform(struct?: MwsNetworksGcpN
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MwsNetworksGcpNetworkInfoOutputReference extends cdktf.ComplexObject {
+export class MwsNetworksGcpNetworkInfoOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -462,41 +462,41 @@ export class MwsNetworksGcpNetworkInfoOutputReference extends cdktf.ComplexObjec
 }
 export interface MwsNetworksVpcEndpoints {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_networks#dataplane_relay MwsNetworks#dataplane_relay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_networks#dataplane_relay MwsNetworks#dataplane_relay}
   */
   readonly dataplaneRelay: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_networks#rest_api MwsNetworks#rest_api}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_networks#rest_api MwsNetworks#rest_api}
   */
   readonly restApi: string[];
 }
 
 export function mwsNetworksVpcEndpointsToTerraform(struct?: MwsNetworksVpcEndpointsOutputReference | MwsNetworksVpcEndpoints): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    dataplane_relay: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.dataplaneRelay),
-    rest_api: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.restApi),
+    dataplane_relay: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.dataplaneRelay),
+    rest_api: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.restApi),
   }
 }
 
 
 export function mwsNetworksVpcEndpointsToHclTerraform(struct?: MwsNetworksVpcEndpointsOutputReference | MwsNetworksVpcEndpoints): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     dataplane_relay: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.dataplaneRelay),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.dataplaneRelay),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     rest_api: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.restApi),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.restApi),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -507,14 +507,14 @@ export function mwsNetworksVpcEndpointsToHclTerraform(struct?: MwsNetworksVpcEnd
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MwsNetworksVpcEndpointsOutputReference extends cdktf.ComplexObject {
+export class MwsNetworksVpcEndpointsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -548,7 +548,7 @@ export class MwsNetworksVpcEndpointsOutputReference extends cdktf.ComplexObject 
   // dataplane_relay - computed: false, optional: false, required: true
   private _dataplaneRelay?: string[]; 
   public get dataplaneRelay() {
-    return cdktf.Fn.tolist(this.getListAttribute('dataplane_relay'));
+    return cdktn.Fn.tolist(this.getListAttribute('dataplane_relay'));
   }
   public set dataplaneRelay(value: string[]) {
     this._dataplaneRelay = value;
@@ -561,7 +561,7 @@ export class MwsNetworksVpcEndpointsOutputReference extends cdktf.ComplexObject 
   // rest_api - computed: false, optional: false, required: true
   private _restApi?: string[]; 
   public get restApi() {
-    return cdktf.Fn.tolist(this.getListAttribute('rest_api'));
+    return cdktn.Fn.tolist(this.getListAttribute('rest_api'));
   }
   public set restApi(value: string[]) {
     this._restApi = value;
@@ -573,9 +573,9 @@ export class MwsNetworksVpcEndpointsOutputReference extends cdktf.ComplexObject 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_networks databricks_mws_networks}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_networks databricks_mws_networks}
 */
-export class MwsNetworks extends cdktf.TerraformResource {
+export class MwsNetworks extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -586,14 +586,14 @@ export class MwsNetworks extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a MwsNetworks resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a MwsNetworks resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MwsNetworks to import
-  * @param importFromId The id of the existing MwsNetworks that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_networks#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MwsNetworks that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_networks#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MwsNetworks to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_mws_networks", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_mws_networks", importId: importFromId, provider });
       }
 
   // ===========
@@ -601,7 +601,7 @@ export class MwsNetworks extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_networks databricks_mws_networks} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_networks databricks_mws_networks} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -612,7 +612,7 @@ export class MwsNetworks extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_mws_networks',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -719,7 +719,7 @@ export class MwsNetworks extends cdktf.TerraformResource {
   // security_group_ids - computed: false, optional: true, required: false
   private _securityGroupIds?: string[]; 
   public get securityGroupIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('security_group_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('security_group_ids'));
   }
   public set securityGroupIds(value: string[]) {
     this._securityGroupIds = value;
@@ -735,7 +735,7 @@ export class MwsNetworks extends cdktf.TerraformResource {
   // subnet_ids - computed: false, optional: true, required: false
   private _subnetIds?: string[]; 
   public get subnetIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('subnet_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('subnet_ids'));
   }
   public set subnetIds(value: string[]) {
     this._subnetIds = value;
@@ -801,7 +801,7 @@ export class MwsNetworks extends cdktf.TerraformResource {
   public get errorMessages() {
     return this._errorMessages;
   }
-  public putErrorMessages(value: MwsNetworksErrorMessages[] | cdktf.IResolvable) {
+  public putErrorMessages(value: MwsNetworksErrorMessages[] | cdktn.IResolvable) {
     this._errorMessages.internalValue = value;
   }
   public resetErrorMessages() {
@@ -850,17 +850,17 @@ export class MwsNetworks extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      creation_time: cdktf.numberToTerraform(this._creationTime),
-      id: cdktf.stringToTerraform(this._id),
-      network_id: cdktf.stringToTerraform(this._networkId),
-      network_name: cdktf.stringToTerraform(this._networkName),
-      security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroupIds),
-      subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._subnetIds),
-      vpc_id: cdktf.stringToTerraform(this._vpcId),
-      vpc_status: cdktf.stringToTerraform(this._vpcStatus),
-      workspace_id: cdktf.numberToTerraform(this._workspaceId),
-      error_messages: cdktf.listMapper(mwsNetworksErrorMessagesToTerraform, true)(this._errorMessages.internalValue),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      creation_time: cdktn.numberToTerraform(this._creationTime),
+      id: cdktn.stringToTerraform(this._id),
+      network_id: cdktn.stringToTerraform(this._networkId),
+      network_name: cdktn.stringToTerraform(this._networkName),
+      security_group_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._securityGroupIds),
+      subnet_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._subnetIds),
+      vpc_id: cdktn.stringToTerraform(this._vpcId),
+      vpc_status: cdktn.stringToTerraform(this._vpcStatus),
+      workspace_id: cdktn.numberToTerraform(this._workspaceId),
+      error_messages: cdktn.listMapper(mwsNetworksErrorMessagesToTerraform, true)(this._errorMessages.internalValue),
       gcp_network_info: mwsNetworksGcpNetworkInfoToTerraform(this._gcpNetworkInfo.internalValue),
       vpc_endpoints: mwsNetworksVpcEndpointsToTerraform(this._vpcEndpoints.internalValue),
     };
@@ -869,67 +869,67 @@ export class MwsNetworks extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       creation_time: {
-        value: cdktf.numberToHclTerraform(this._creationTime),
+        value: cdktn.numberToHclTerraform(this._creationTime),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       network_id: {
-        value: cdktf.stringToHclTerraform(this._networkId),
+        value: cdktn.stringToHclTerraform(this._networkId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       network_name: {
-        value: cdktf.stringToHclTerraform(this._networkName),
+        value: cdktn.stringToHclTerraform(this._networkName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       security_group_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._securityGroupIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._securityGroupIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       subnet_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._subnetIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._subnetIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       vpc_id: {
-        value: cdktf.stringToHclTerraform(this._vpcId),
+        value: cdktn.stringToHclTerraform(this._vpcId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       vpc_status: {
-        value: cdktf.stringToHclTerraform(this._vpcStatus),
+        value: cdktn.stringToHclTerraform(this._vpcStatus),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       workspace_id: {
-        value: cdktf.numberToHclTerraform(this._workspaceId),
+        value: cdktn.numberToHclTerraform(this._workspaceId),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       error_messages: {
-        value: cdktf.listMapperHcl(mwsNetworksErrorMessagesToHclTerraform, true)(this._errorMessages.internalValue),
+        value: cdktn.listMapperHcl(mwsNetworksErrorMessagesToHclTerraform, true)(this._errorMessages.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "MwsNetworksErrorMessagesList",

@@ -1,107 +1,107 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/service_principal_federation_policies
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/service_principal_federation_policies
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataDatabricksServicePrincipalFederationPoliciesConfig extends cdktf.TerraformMetaArguments {
+export interface DataDatabricksServicePrincipalFederationPoliciesConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/service_principal_federation_policies#page_size DataDatabricksServicePrincipalFederationPolicies#page_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/service_principal_federation_policies#page_size DataDatabricksServicePrincipalFederationPolicies#page_size}
   */
   readonly pageSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/service_principal_federation_policies#service_principal_id DataDatabricksServicePrincipalFederationPolicies#service_principal_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/service_principal_federation_policies#service_principal_id DataDatabricksServicePrincipalFederationPolicies#service_principal_id}
   */
   readonly servicePrincipalId: number;
 }
 export interface DataDatabricksServicePrincipalFederationPoliciesPoliciesOidcPolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/service_principal_federation_policies#audiences DataDatabricksServicePrincipalFederationPolicies#audiences}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/service_principal_federation_policies#audiences DataDatabricksServicePrincipalFederationPolicies#audiences}
   */
   readonly audiences?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/service_principal_federation_policies#issuer DataDatabricksServicePrincipalFederationPolicies#issuer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/service_principal_federation_policies#issuer DataDatabricksServicePrincipalFederationPolicies#issuer}
   */
   readonly issuer?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/service_principal_federation_policies#jwks_json DataDatabricksServicePrincipalFederationPolicies#jwks_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/service_principal_federation_policies#jwks_json DataDatabricksServicePrincipalFederationPolicies#jwks_json}
   */
   readonly jwksJson?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/service_principal_federation_policies#jwks_uri DataDatabricksServicePrincipalFederationPolicies#jwks_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/service_principal_federation_policies#jwks_uri DataDatabricksServicePrincipalFederationPolicies#jwks_uri}
   */
   readonly jwksUri?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/service_principal_federation_policies#subject DataDatabricksServicePrincipalFederationPolicies#subject}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/service_principal_federation_policies#subject DataDatabricksServicePrincipalFederationPolicies#subject}
   */
   readonly subject?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/service_principal_federation_policies#subject_claim DataDatabricksServicePrincipalFederationPolicies#subject_claim}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/service_principal_federation_policies#subject_claim DataDatabricksServicePrincipalFederationPolicies#subject_claim}
   */
   readonly subjectClaim?: string;
 }
 
 export function dataDatabricksServicePrincipalFederationPoliciesPoliciesOidcPolicyToTerraform(struct?: DataDatabricksServicePrincipalFederationPoliciesPoliciesOidcPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    audiences: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.audiences),
-    issuer: cdktf.stringToTerraform(struct!.issuer),
-    jwks_json: cdktf.stringToTerraform(struct!.jwksJson),
-    jwks_uri: cdktf.stringToTerraform(struct!.jwksUri),
-    subject: cdktf.stringToTerraform(struct!.subject),
-    subject_claim: cdktf.stringToTerraform(struct!.subjectClaim),
+    audiences: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.audiences),
+    issuer: cdktn.stringToTerraform(struct!.issuer),
+    jwks_json: cdktn.stringToTerraform(struct!.jwksJson),
+    jwks_uri: cdktn.stringToTerraform(struct!.jwksUri),
+    subject: cdktn.stringToTerraform(struct!.subject),
+    subject_claim: cdktn.stringToTerraform(struct!.subjectClaim),
   }
 }
 
 
 export function dataDatabricksServicePrincipalFederationPoliciesPoliciesOidcPolicyToHclTerraform(struct?: DataDatabricksServicePrincipalFederationPoliciesPoliciesOidcPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     audiences: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.audiences),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.audiences),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     issuer: {
-      value: cdktf.stringToHclTerraform(struct!.issuer),
+      value: cdktn.stringToHclTerraform(struct!.issuer),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     jwks_json: {
-      value: cdktf.stringToHclTerraform(struct!.jwksJson),
+      value: cdktn.stringToHclTerraform(struct!.jwksJson),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     jwks_uri: {
-      value: cdktf.stringToHclTerraform(struct!.jwksUri),
+      value: cdktn.stringToHclTerraform(struct!.jwksUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     subject: {
-      value: cdktf.stringToHclTerraform(struct!.subject),
+      value: cdktn.stringToHclTerraform(struct!.subject),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     subject_claim: {
-      value: cdktf.stringToHclTerraform(struct!.subjectClaim),
+      value: cdktn.stringToHclTerraform(struct!.subjectClaim),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -112,14 +112,14 @@ export function dataDatabricksServicePrincipalFederationPoliciesPoliciesOidcPoli
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksServicePrincipalFederationPoliciesPoliciesOidcPolicyOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksServicePrincipalFederationPoliciesPoliciesOidcPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -272,41 +272,41 @@ export class DataDatabricksServicePrincipalFederationPoliciesPoliciesOidcPolicyO
 }
 export interface DataDatabricksServicePrincipalFederationPoliciesPolicies {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/service_principal_federation_policies#policy_id DataDatabricksServicePrincipalFederationPolicies#policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/service_principal_federation_policies#policy_id DataDatabricksServicePrincipalFederationPolicies#policy_id}
   */
   readonly policyId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/service_principal_federation_policies#service_principal_id DataDatabricksServicePrincipalFederationPolicies#service_principal_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/service_principal_federation_policies#service_principal_id DataDatabricksServicePrincipalFederationPolicies#service_principal_id}
   */
   readonly servicePrincipalId: number;
 }
 
 export function dataDatabricksServicePrincipalFederationPoliciesPoliciesToTerraform(struct?: DataDatabricksServicePrincipalFederationPoliciesPolicies): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    policy_id: cdktf.stringToTerraform(struct!.policyId),
-    service_principal_id: cdktf.numberToTerraform(struct!.servicePrincipalId),
+    policy_id: cdktn.stringToTerraform(struct!.policyId),
+    service_principal_id: cdktn.numberToTerraform(struct!.servicePrincipalId),
   }
 }
 
 
 export function dataDatabricksServicePrincipalFederationPoliciesPoliciesToHclTerraform(struct?: DataDatabricksServicePrincipalFederationPoliciesPolicies): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     policy_id: {
-      value: cdktf.stringToHclTerraform(struct!.policyId),
+      value: cdktn.stringToHclTerraform(struct!.policyId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     service_principal_id: {
-      value: cdktf.numberToHclTerraform(struct!.servicePrincipalId),
+      value: cdktn.numberToHclTerraform(struct!.servicePrincipalId),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -317,7 +317,7 @@ export function dataDatabricksServicePrincipalFederationPoliciesPoliciesToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksServicePrincipalFederationPoliciesPoliciesOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksServicePrincipalFederationPoliciesPoliciesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -326,7 +326,7 @@ export class DataDatabricksServicePrincipalFederationPoliciesPoliciesOutputRefer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -415,15 +415,15 @@ export class DataDatabricksServicePrincipalFederationPoliciesPoliciesOutputRefer
   }
 }
 
-export class DataDatabricksServicePrincipalFederationPoliciesPoliciesList extends cdktf.ComplexList {
-  public internalValue? : DataDatabricksServicePrincipalFederationPoliciesPolicies[] | cdktf.IResolvable
+export class DataDatabricksServicePrincipalFederationPoliciesPoliciesList extends cdktn.ComplexList {
+  public internalValue? : DataDatabricksServicePrincipalFederationPoliciesPolicies[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -436,9 +436,9 @@ export class DataDatabricksServicePrincipalFederationPoliciesPoliciesList extend
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/service_principal_federation_policies databricks_service_principal_federation_policies}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/service_principal_federation_policies databricks_service_principal_federation_policies}
 */
-export class DataDatabricksServicePrincipalFederationPolicies extends cdktf.TerraformDataSource {
+export class DataDatabricksServicePrincipalFederationPolicies extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -449,14 +449,14 @@ export class DataDatabricksServicePrincipalFederationPolicies extends cdktf.Terr
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataDatabricksServicePrincipalFederationPolicies resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataDatabricksServicePrincipalFederationPolicies resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksServicePrincipalFederationPolicies to import
-  * @param importFromId The id of the existing DataDatabricksServicePrincipalFederationPolicies that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/service_principal_federation_policies#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksServicePrincipalFederationPolicies that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/service_principal_federation_policies#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksServicePrincipalFederationPolicies to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_service_principal_federation_policies", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_service_principal_federation_policies", importId: importFromId, provider });
       }
 
   // ===========
@@ -464,7 +464,7 @@ export class DataDatabricksServicePrincipalFederationPolicies extends cdktf.Terr
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/service_principal_federation_policies databricks_service_principal_federation_policies} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/service_principal_federation_policies databricks_service_principal_federation_policies} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -475,7 +475,7 @@ export class DataDatabricksServicePrincipalFederationPolicies extends cdktf.Terr
       terraformResourceType: 'databricks_service_principal_federation_policies',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -535,21 +535,21 @@ export class DataDatabricksServicePrincipalFederationPolicies extends cdktf.Terr
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      page_size: cdktf.numberToTerraform(this._pageSize),
-      service_principal_id: cdktf.numberToTerraform(this._servicePrincipalId),
+      page_size: cdktn.numberToTerraform(this._pageSize),
+      service_principal_id: cdktn.numberToTerraform(this._servicePrincipalId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       page_size: {
-        value: cdktf.numberToHclTerraform(this._pageSize),
+        value: cdktn.numberToHclTerraform(this._pageSize),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       service_principal_id: {
-        value: cdktf.numberToHclTerraform(this._servicePrincipalId),
+        value: cdktn.numberToHclTerraform(this._servicePrincipalId),
         isBlock: false,
         type: "simple",
         storageClassType: "number",

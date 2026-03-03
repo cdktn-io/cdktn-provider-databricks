@@ -1,19 +1,19 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/instance_profiles
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/instance_profiles
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataDatabricksInstanceProfilesConfig extends cdktf.TerraformMetaArguments {
+export interface DataDatabricksInstanceProfilesConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/instance_profiles#id DataDatabricksInstanceProfiles#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/instance_profiles#id DataDatabricksInstanceProfiles#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,75 +22,75 @@ export interface DataDatabricksInstanceProfilesConfig extends cdktf.TerraformMet
   /**
   * instance_profiles block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/instance_profiles#instance_profiles DataDatabricksInstanceProfiles#instance_profiles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/instance_profiles#instance_profiles DataDatabricksInstanceProfiles#instance_profiles}
   */
-  readonly instanceProfiles?: DataDatabricksInstanceProfilesInstanceProfiles[] | cdktf.IResolvable;
+  readonly instanceProfiles?: DataDatabricksInstanceProfilesInstanceProfiles[] | cdktn.IResolvable;
   /**
   * provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/instance_profiles#provider_config DataDatabricksInstanceProfiles#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/instance_profiles#provider_config DataDatabricksInstanceProfiles#provider_config}
   */
   readonly providerConfig?: DataDatabricksInstanceProfilesProviderConfig;
 }
 export interface DataDatabricksInstanceProfilesInstanceProfiles {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/instance_profiles#arn DataDatabricksInstanceProfiles#arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/instance_profiles#arn DataDatabricksInstanceProfiles#arn}
   */
   readonly arn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/instance_profiles#is_meta DataDatabricksInstanceProfiles#is_meta}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/instance_profiles#is_meta DataDatabricksInstanceProfiles#is_meta}
   */
-  readonly isMeta?: boolean | cdktf.IResolvable;
+  readonly isMeta?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/instance_profiles#name DataDatabricksInstanceProfiles#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/instance_profiles#name DataDatabricksInstanceProfiles#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/instance_profiles#role_arn DataDatabricksInstanceProfiles#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/instance_profiles#role_arn DataDatabricksInstanceProfiles#role_arn}
   */
   readonly roleArn?: string;
 }
 
-export function dataDatabricksInstanceProfilesInstanceProfilesToTerraform(struct?: DataDatabricksInstanceProfilesInstanceProfiles | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksInstanceProfilesInstanceProfilesToTerraform(struct?: DataDatabricksInstanceProfilesInstanceProfiles | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    arn: cdktf.stringToTerraform(struct!.arn),
-    is_meta: cdktf.booleanToTerraform(struct!.isMeta),
-    name: cdktf.stringToTerraform(struct!.name),
-    role_arn: cdktf.stringToTerraform(struct!.roleArn),
+    arn: cdktn.stringToTerraform(struct!.arn),
+    is_meta: cdktn.booleanToTerraform(struct!.isMeta),
+    name: cdktn.stringToTerraform(struct!.name),
+    role_arn: cdktn.stringToTerraform(struct!.roleArn),
   }
 }
 
 
-export function dataDatabricksInstanceProfilesInstanceProfilesToHclTerraform(struct?: DataDatabricksInstanceProfilesInstanceProfiles | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksInstanceProfilesInstanceProfilesToHclTerraform(struct?: DataDatabricksInstanceProfilesInstanceProfiles | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     arn: {
-      value: cdktf.stringToHclTerraform(struct!.arn),
+      value: cdktn.stringToHclTerraform(struct!.arn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     is_meta: {
-      value: cdktf.booleanToHclTerraform(struct!.isMeta),
+      value: cdktn.booleanToHclTerraform(struct!.isMeta),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.roleArn),
+      value: cdktn.stringToHclTerraform(struct!.roleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -101,9 +101,9 @@ export function dataDatabricksInstanceProfilesInstanceProfilesToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksInstanceProfilesInstanceProfilesOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksInstanceProfilesInstanceProfilesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -111,11 +111,11 @@ export class DataDatabricksInstanceProfilesInstanceProfilesOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataDatabricksInstanceProfilesInstanceProfiles | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatabricksInstanceProfilesInstanceProfiles | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -140,7 +140,7 @@ export class DataDatabricksInstanceProfilesInstanceProfilesOutputReference exten
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksInstanceProfilesInstanceProfiles | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksInstanceProfilesInstanceProfiles | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -149,7 +149,7 @@ export class DataDatabricksInstanceProfilesInstanceProfilesOutputReference exten
       this._name = undefined;
       this._roleArn = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -180,11 +180,11 @@ export class DataDatabricksInstanceProfilesInstanceProfilesOutputReference exten
   }
 
   // is_meta - computed: true, optional: true, required: false
-  private _isMeta?: boolean | cdktf.IResolvable; 
+  private _isMeta?: boolean | cdktn.IResolvable; 
   public get isMeta() {
     return this.getBooleanAttribute('is_meta');
   }
-  public set isMeta(value: boolean | cdktf.IResolvable) {
+  public set isMeta(value: boolean | cdktn.IResolvable) {
     this._isMeta = value;
   }
   public resetIsMeta() {
@@ -228,15 +228,15 @@ export class DataDatabricksInstanceProfilesInstanceProfilesOutputReference exten
   }
 }
 
-export class DataDatabricksInstanceProfilesInstanceProfilesList extends cdktf.ComplexList {
-  public internalValue? : DataDatabricksInstanceProfilesInstanceProfiles[] | cdktf.IResolvable
+export class DataDatabricksInstanceProfilesInstanceProfilesList extends cdktn.ComplexList {
+  public internalValue? : DataDatabricksInstanceProfilesInstanceProfiles[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -249,30 +249,30 @@ export class DataDatabricksInstanceProfilesInstanceProfilesList extends cdktf.Co
 }
 export interface DataDatabricksInstanceProfilesProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/instance_profiles#workspace_id DataDatabricksInstanceProfiles#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/instance_profiles#workspace_id DataDatabricksInstanceProfiles#workspace_id}
   */
   readonly workspaceId: string;
 }
 
 export function dataDatabricksInstanceProfilesProviderConfigToTerraform(struct?: DataDatabricksInstanceProfilesProviderConfigOutputReference | DataDatabricksInstanceProfilesProviderConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    workspace_id: cdktf.stringToTerraform(struct!.workspaceId),
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
   }
 }
 
 
 export function dataDatabricksInstanceProfilesProviderConfigToHclTerraform(struct?: DataDatabricksInstanceProfilesProviderConfigOutputReference | DataDatabricksInstanceProfilesProviderConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     workspace_id: {
-      value: cdktf.stringToHclTerraform(struct!.workspaceId),
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -283,14 +283,14 @@ export function dataDatabricksInstanceProfilesProviderConfigToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksInstanceProfilesProviderConfigOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksInstanceProfilesProviderConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -330,9 +330,9 @@ export class DataDatabricksInstanceProfilesProviderConfigOutputReference extends
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/instance_profiles databricks_instance_profiles}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/instance_profiles databricks_instance_profiles}
 */
-export class DataDatabricksInstanceProfiles extends cdktf.TerraformDataSource {
+export class DataDatabricksInstanceProfiles extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -343,14 +343,14 @@ export class DataDatabricksInstanceProfiles extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataDatabricksInstanceProfiles resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataDatabricksInstanceProfiles resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksInstanceProfiles to import
-  * @param importFromId The id of the existing DataDatabricksInstanceProfiles that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/instance_profiles#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksInstanceProfiles that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/instance_profiles#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksInstanceProfiles to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_instance_profiles", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_instance_profiles", importId: importFromId, provider });
       }
 
   // ===========
@@ -358,7 +358,7 @@ export class DataDatabricksInstanceProfiles extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/instance_profiles databricks_instance_profiles} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/instance_profiles databricks_instance_profiles} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -369,7 +369,7 @@ export class DataDatabricksInstanceProfiles extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_instance_profiles',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -410,7 +410,7 @@ export class DataDatabricksInstanceProfiles extends cdktf.TerraformDataSource {
   public get instanceProfiles() {
     return this._instanceProfiles;
   }
-  public putInstanceProfiles(value: DataDatabricksInstanceProfilesInstanceProfiles[] | cdktf.IResolvable) {
+  public putInstanceProfiles(value: DataDatabricksInstanceProfilesInstanceProfiles[] | cdktn.IResolvable) {
     this._instanceProfiles.internalValue = value;
   }
   public resetInstanceProfiles() {
@@ -443,8 +443,8 @@ export class DataDatabricksInstanceProfiles extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      instance_profiles: cdktf.listMapper(dataDatabricksInstanceProfilesInstanceProfilesToTerraform, true)(this._instanceProfiles.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      instance_profiles: cdktn.listMapper(dataDatabricksInstanceProfilesInstanceProfilesToTerraform, true)(this._instanceProfiles.internalValue),
       provider_config: dataDatabricksInstanceProfilesProviderConfigToTerraform(this._providerConfig.internalValue),
     };
   }
@@ -452,13 +452,13 @@ export class DataDatabricksInstanceProfiles extends cdktf.TerraformDataSource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance_profiles: {
-        value: cdktf.listMapperHcl(dataDatabricksInstanceProfilesInstanceProfilesToHclTerraform, true)(this._instanceProfiles.internalValue),
+        value: cdktn.listMapperHcl(dataDatabricksInstanceProfilesInstanceProfilesToHclTerraform, true)(this._instanceProfiles.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DataDatabricksInstanceProfilesInstanceProfilesList",

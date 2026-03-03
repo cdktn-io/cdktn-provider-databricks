@@ -1,89 +1,89 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/notebook
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/notebook
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NotebookConfig extends cdktf.TerraformMetaArguments {
+export interface NotebookConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/notebook#content_base64 Notebook#content_base64}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/notebook#content_base64 Notebook#content_base64}
   */
   readonly contentBase64?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/notebook#format Notebook#format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/notebook#format Notebook#format}
   */
   readonly format?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/notebook#id Notebook#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/notebook#id Notebook#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/notebook#language Notebook#language}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/notebook#language Notebook#language}
   */
   readonly language?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/notebook#md5 Notebook#md5}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/notebook#md5 Notebook#md5}
   */
   readonly md5?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/notebook#object_id Notebook#object_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/notebook#object_id Notebook#object_id}
   */
   readonly objectId?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/notebook#object_type Notebook#object_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/notebook#object_type Notebook#object_type}
   */
   readonly objectType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/notebook#path Notebook#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/notebook#path Notebook#path}
   */
   readonly path: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/notebook#source Notebook#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/notebook#source Notebook#source}
   */
   readonly source?: string;
   /**
   * provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/notebook#provider_config Notebook#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/notebook#provider_config Notebook#provider_config}
   */
   readonly providerConfig?: NotebookProviderConfig;
 }
 export interface NotebookProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/notebook#workspace_id Notebook#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/notebook#workspace_id Notebook#workspace_id}
   */
   readonly workspaceId: string;
 }
 
 export function notebookProviderConfigToTerraform(struct?: NotebookProviderConfigOutputReference | NotebookProviderConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    workspace_id: cdktf.stringToTerraform(struct!.workspaceId),
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
   }
 }
 
 
 export function notebookProviderConfigToHclTerraform(struct?: NotebookProviderConfigOutputReference | NotebookProviderConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     workspace_id: {
-      value: cdktf.stringToHclTerraform(struct!.workspaceId),
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -94,14 +94,14 @@ export function notebookProviderConfigToHclTerraform(struct?: NotebookProviderCo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NotebookProviderConfigOutputReference extends cdktf.ComplexObject {
+export class NotebookProviderConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -141,9 +141,9 @@ export class NotebookProviderConfigOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/notebook databricks_notebook}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/notebook databricks_notebook}
 */
-export class Notebook extends cdktf.TerraformResource {
+export class Notebook extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -154,14 +154,14 @@ export class Notebook extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Notebook resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Notebook resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Notebook to import
-  * @param importFromId The id of the existing Notebook that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/notebook#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Notebook that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/notebook#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Notebook to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_notebook", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_notebook", importId: importFromId, provider });
       }
 
   // ===========
@@ -169,7 +169,7 @@ export class Notebook extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/notebook databricks_notebook} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/notebook databricks_notebook} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -180,7 +180,7 @@ export class Notebook extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_notebook',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -380,15 +380,15 @@ export class Notebook extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      content_base64: cdktf.stringToTerraform(this._contentBase64),
-      format: cdktf.stringToTerraform(this._format),
-      id: cdktf.stringToTerraform(this._id),
-      language: cdktf.stringToTerraform(this._language),
-      md5: cdktf.stringToTerraform(this._md5),
-      object_id: cdktf.numberToTerraform(this._objectId),
-      object_type: cdktf.stringToTerraform(this._objectType),
-      path: cdktf.stringToTerraform(this._path),
-      source: cdktf.stringToTerraform(this._source),
+      content_base64: cdktn.stringToTerraform(this._contentBase64),
+      format: cdktn.stringToTerraform(this._format),
+      id: cdktn.stringToTerraform(this._id),
+      language: cdktn.stringToTerraform(this._language),
+      md5: cdktn.stringToTerraform(this._md5),
+      object_id: cdktn.numberToTerraform(this._objectId),
+      object_type: cdktn.stringToTerraform(this._objectType),
+      path: cdktn.stringToTerraform(this._path),
+      source: cdktn.stringToTerraform(this._source),
       provider_config: notebookProviderConfigToTerraform(this._providerConfig.internalValue),
     };
   }
@@ -396,55 +396,55 @@ export class Notebook extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       content_base64: {
-        value: cdktf.stringToHclTerraform(this._contentBase64),
+        value: cdktn.stringToHclTerraform(this._contentBase64),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       format: {
-        value: cdktf.stringToHclTerraform(this._format),
+        value: cdktn.stringToHclTerraform(this._format),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       language: {
-        value: cdktf.stringToHclTerraform(this._language),
+        value: cdktn.stringToHclTerraform(this._language),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       md5: {
-        value: cdktf.stringToHclTerraform(this._md5),
+        value: cdktn.stringToHclTerraform(this._md5),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       object_id: {
-        value: cdktf.numberToHclTerraform(this._objectId),
+        value: cdktn.numberToHclTerraform(this._objectId),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       object_type: {
-        value: cdktf.stringToHclTerraform(this._objectType),
+        value: cdktn.stringToHclTerraform(this._objectType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       path: {
-        value: cdktf.stringToHclTerraform(this._path),
+        value: cdktn.stringToHclTerraform(this._path),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source: {
-        value: cdktf.stringToHclTerraform(this._source),
+        value: cdktn.stringToHclTerraform(this._source),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -1,105 +1,105 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/budget
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/budget
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface BudgetConfig extends cdktf.TerraformMetaArguments {
+export interface BudgetConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/budget#account_id Budget#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/budget#account_id Budget#account_id}
   */
   readonly accountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/budget#budget_configuration_id Budget#budget_configuration_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/budget#budget_configuration_id Budget#budget_configuration_id}
   */
   readonly budgetConfigurationId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/budget#create_time Budget#create_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/budget#create_time Budget#create_time}
   */
   readonly createTime?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/budget#display_name Budget#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/budget#display_name Budget#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/budget#id Budget#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/budget#id Budget#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/budget#update_time Budget#update_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/budget#update_time Budget#update_time}
   */
   readonly updateTime?: number;
   /**
   * alert_configurations block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/budget#alert_configurations Budget#alert_configurations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/budget#alert_configurations Budget#alert_configurations}
   */
-  readonly alertConfigurations?: BudgetAlertConfigurations[] | cdktf.IResolvable;
+  readonly alertConfigurations?: BudgetAlertConfigurations[] | cdktn.IResolvable;
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/budget#filter Budget#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/budget#filter Budget#filter}
   */
   readonly filter?: BudgetFilter;
 }
 export interface BudgetAlertConfigurationsActionConfigurations {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/budget#action_configuration_id Budget#action_configuration_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/budget#action_configuration_id Budget#action_configuration_id}
   */
   readonly actionConfigurationId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/budget#action_type Budget#action_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/budget#action_type Budget#action_type}
   */
   readonly actionType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/budget#target Budget#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/budget#target Budget#target}
   */
   readonly target?: string;
 }
 
-export function budgetAlertConfigurationsActionConfigurationsToTerraform(struct?: BudgetAlertConfigurationsActionConfigurations | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function budgetAlertConfigurationsActionConfigurationsToTerraform(struct?: BudgetAlertConfigurationsActionConfigurations | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    action_configuration_id: cdktf.stringToTerraform(struct!.actionConfigurationId),
-    action_type: cdktf.stringToTerraform(struct!.actionType),
-    target: cdktf.stringToTerraform(struct!.target),
+    action_configuration_id: cdktn.stringToTerraform(struct!.actionConfigurationId),
+    action_type: cdktn.stringToTerraform(struct!.actionType),
+    target: cdktn.stringToTerraform(struct!.target),
   }
 }
 
 
-export function budgetAlertConfigurationsActionConfigurationsToHclTerraform(struct?: BudgetAlertConfigurationsActionConfigurations | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function budgetAlertConfigurationsActionConfigurationsToHclTerraform(struct?: BudgetAlertConfigurationsActionConfigurations | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     action_configuration_id: {
-      value: cdktf.stringToHclTerraform(struct!.actionConfigurationId),
+      value: cdktn.stringToHclTerraform(struct!.actionConfigurationId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     action_type: {
-      value: cdktf.stringToHclTerraform(struct!.actionType),
+      value: cdktn.stringToHclTerraform(struct!.actionType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target: {
-      value: cdktf.stringToHclTerraform(struct!.target),
+      value: cdktn.stringToHclTerraform(struct!.target),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -110,9 +110,9 @@ export function budgetAlertConfigurationsActionConfigurationsToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BudgetAlertConfigurationsActionConfigurationsOutputReference extends cdktf.ComplexObject {
+export class BudgetAlertConfigurationsActionConfigurationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -120,11 +120,11 @@ export class BudgetAlertConfigurationsActionConfigurationsOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BudgetAlertConfigurationsActionConfigurations | cdktf.IResolvable | undefined {
+  public get internalValue(): BudgetAlertConfigurationsActionConfigurations | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -145,7 +145,7 @@ export class BudgetAlertConfigurationsActionConfigurationsOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BudgetAlertConfigurationsActionConfigurations | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BudgetAlertConfigurationsActionConfigurations | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -153,7 +153,7 @@ export class BudgetAlertConfigurationsActionConfigurationsOutputReference extend
       this._actionType = undefined;
       this._target = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -215,15 +215,15 @@ export class BudgetAlertConfigurationsActionConfigurationsOutputReference extend
   }
 }
 
-export class BudgetAlertConfigurationsActionConfigurationsList extends cdktf.ComplexList {
-  public internalValue? : BudgetAlertConfigurationsActionConfigurations[] | cdktf.IResolvable
+export class BudgetAlertConfigurationsActionConfigurationsList extends cdktn.ComplexList {
+  public internalValue? : BudgetAlertConfigurationsActionConfigurations[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -236,87 +236,87 @@ export class BudgetAlertConfigurationsActionConfigurationsList extends cdktf.Com
 }
 export interface BudgetAlertConfigurations {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/budget#alert_configuration_id Budget#alert_configuration_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/budget#alert_configuration_id Budget#alert_configuration_id}
   */
   readonly alertConfigurationId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/budget#quantity_threshold Budget#quantity_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/budget#quantity_threshold Budget#quantity_threshold}
   */
   readonly quantityThreshold?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/budget#quantity_type Budget#quantity_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/budget#quantity_type Budget#quantity_type}
   */
   readonly quantityType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/budget#time_period Budget#time_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/budget#time_period Budget#time_period}
   */
   readonly timePeriod?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/budget#trigger_type Budget#trigger_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/budget#trigger_type Budget#trigger_type}
   */
   readonly triggerType?: string;
   /**
   * action_configurations block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/budget#action_configurations Budget#action_configurations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/budget#action_configurations Budget#action_configurations}
   */
-  readonly actionConfigurations?: BudgetAlertConfigurationsActionConfigurations[] | cdktf.IResolvable;
+  readonly actionConfigurations?: BudgetAlertConfigurationsActionConfigurations[] | cdktn.IResolvable;
 }
 
-export function budgetAlertConfigurationsToTerraform(struct?: BudgetAlertConfigurations | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function budgetAlertConfigurationsToTerraform(struct?: BudgetAlertConfigurations | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    alert_configuration_id: cdktf.stringToTerraform(struct!.alertConfigurationId),
-    quantity_threshold: cdktf.stringToTerraform(struct!.quantityThreshold),
-    quantity_type: cdktf.stringToTerraform(struct!.quantityType),
-    time_period: cdktf.stringToTerraform(struct!.timePeriod),
-    trigger_type: cdktf.stringToTerraform(struct!.triggerType),
-    action_configurations: cdktf.listMapper(budgetAlertConfigurationsActionConfigurationsToTerraform, true)(struct!.actionConfigurations),
+    alert_configuration_id: cdktn.stringToTerraform(struct!.alertConfigurationId),
+    quantity_threshold: cdktn.stringToTerraform(struct!.quantityThreshold),
+    quantity_type: cdktn.stringToTerraform(struct!.quantityType),
+    time_period: cdktn.stringToTerraform(struct!.timePeriod),
+    trigger_type: cdktn.stringToTerraform(struct!.triggerType),
+    action_configurations: cdktn.listMapper(budgetAlertConfigurationsActionConfigurationsToTerraform, true)(struct!.actionConfigurations),
   }
 }
 
 
-export function budgetAlertConfigurationsToHclTerraform(struct?: BudgetAlertConfigurations | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function budgetAlertConfigurationsToHclTerraform(struct?: BudgetAlertConfigurations | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     alert_configuration_id: {
-      value: cdktf.stringToHclTerraform(struct!.alertConfigurationId),
+      value: cdktn.stringToHclTerraform(struct!.alertConfigurationId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     quantity_threshold: {
-      value: cdktf.stringToHclTerraform(struct!.quantityThreshold),
+      value: cdktn.stringToHclTerraform(struct!.quantityThreshold),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     quantity_type: {
-      value: cdktf.stringToHclTerraform(struct!.quantityType),
+      value: cdktn.stringToHclTerraform(struct!.quantityType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     time_period: {
-      value: cdktf.stringToHclTerraform(struct!.timePeriod),
+      value: cdktn.stringToHclTerraform(struct!.timePeriod),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     trigger_type: {
-      value: cdktf.stringToHclTerraform(struct!.triggerType),
+      value: cdktn.stringToHclTerraform(struct!.triggerType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     action_configurations: {
-      value: cdktf.listMapperHcl(budgetAlertConfigurationsActionConfigurationsToHclTerraform, true)(struct!.actionConfigurations),
+      value: cdktn.listMapperHcl(budgetAlertConfigurationsActionConfigurationsToHclTerraform, true)(struct!.actionConfigurations),
       isBlock: true,
       type: "list",
       storageClassType: "BudgetAlertConfigurationsActionConfigurationsList",
@@ -327,9 +327,9 @@ export function budgetAlertConfigurationsToHclTerraform(struct?: BudgetAlertConf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BudgetAlertConfigurationsOutputReference extends cdktf.ComplexObject {
+export class BudgetAlertConfigurationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -337,11 +337,11 @@ export class BudgetAlertConfigurationsOutputReference extends cdktf.ComplexObjec
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BudgetAlertConfigurations | cdktf.IResolvable | undefined {
+  public get internalValue(): BudgetAlertConfigurations | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -374,7 +374,7 @@ export class BudgetAlertConfigurationsOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BudgetAlertConfigurations | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BudgetAlertConfigurations | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -385,7 +385,7 @@ export class BudgetAlertConfigurationsOutputReference extends cdktf.ComplexObjec
       this._triggerType = undefined;
       this._actionConfigurations.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -486,7 +486,7 @@ export class BudgetAlertConfigurationsOutputReference extends cdktf.ComplexObjec
   public get actionConfigurations() {
     return this._actionConfigurations;
   }
-  public putActionConfigurations(value: BudgetAlertConfigurationsActionConfigurations[] | cdktf.IResolvable) {
+  public putActionConfigurations(value: BudgetAlertConfigurationsActionConfigurations[] | cdktn.IResolvable) {
     this._actionConfigurations.internalValue = value;
   }
   public resetActionConfigurations() {
@@ -498,15 +498,15 @@ export class BudgetAlertConfigurationsOutputReference extends cdktf.ComplexObjec
   }
 }
 
-export class BudgetAlertConfigurationsList extends cdktf.ComplexList {
-  public internalValue? : BudgetAlertConfigurations[] | cdktf.IResolvable
+export class BudgetAlertConfigurationsList extends cdktn.ComplexList {
+  public internalValue? : BudgetAlertConfigurations[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -519,41 +519,41 @@ export class BudgetAlertConfigurationsList extends cdktf.ComplexList {
 }
 export interface BudgetFilterTagsValue {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/budget#operator Budget#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/budget#operator Budget#operator}
   */
   readonly operator?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/budget#values Budget#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/budget#values Budget#values}
   */
   readonly values?: string[];
 }
 
 export function budgetFilterTagsValueToTerraform(struct?: BudgetFilterTagsValueOutputReference | BudgetFilterTagsValue): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    operator: cdktf.stringToTerraform(struct!.operator),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function budgetFilterTagsValueToHclTerraform(struct?: BudgetFilterTagsValueOutputReference | BudgetFilterTagsValue): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -564,14 +564,14 @@ export function budgetFilterTagsValueToHclTerraform(struct?: BudgetFilterTagsVal
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BudgetFilterTagsValueOutputReference extends cdktf.ComplexObject {
+export class BudgetFilterTagsValueOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -636,37 +636,37 @@ export class BudgetFilterTagsValueOutputReference extends cdktf.ComplexObject {
 }
 export interface BudgetFilterTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/budget#key Budget#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/budget#key Budget#key}
   */
   readonly key?: string;
   /**
   * value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/budget#value Budget#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/budget#value Budget#value}
   */
   readonly value?: BudgetFilterTagsValue;
 }
 
-export function budgetFilterTagsToTerraform(struct?: BudgetFilterTags | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function budgetFilterTagsToTerraform(struct?: BudgetFilterTags | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
+    key: cdktn.stringToTerraform(struct!.key),
     value: budgetFilterTagsValueToTerraform(struct!.value),
   }
 }
 
 
-export function budgetFilterTagsToHclTerraform(struct?: BudgetFilterTags | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function budgetFilterTagsToHclTerraform(struct?: BudgetFilterTags | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -683,9 +683,9 @@ export function budgetFilterTagsToHclTerraform(struct?: BudgetFilterTags | cdktf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BudgetFilterTagsOutputReference extends cdktf.ComplexObject {
+export class BudgetFilterTagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -693,11 +693,11 @@ export class BudgetFilterTagsOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BudgetFilterTags | cdktf.IResolvable | undefined {
+  public get internalValue(): BudgetFilterTags | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -714,14 +714,14 @@ export class BudgetFilterTagsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BudgetFilterTags | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BudgetFilterTags | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._value.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -766,15 +766,15 @@ export class BudgetFilterTagsOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class BudgetFilterTagsList extends cdktf.ComplexList {
-  public internalValue? : BudgetFilterTags[] | cdktf.IResolvable
+export class BudgetFilterTagsList extends cdktn.ComplexList {
+  public internalValue? : BudgetFilterTags[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -787,41 +787,41 @@ export class BudgetFilterTagsList extends cdktf.ComplexList {
 }
 export interface BudgetFilterWorkspaceId {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/budget#operator Budget#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/budget#operator Budget#operator}
   */
   readonly operator?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/budget#values Budget#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/budget#values Budget#values}
   */
   readonly values?: number[];
 }
 
 export function budgetFilterWorkspaceIdToTerraform(struct?: BudgetFilterWorkspaceIdOutputReference | BudgetFilterWorkspaceId): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    operator: cdktf.stringToTerraform(struct!.operator),
-    values: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.values),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    values: cdktn.listMapper(cdktn.numberToTerraform, false)(struct!.values),
   }
 }
 
 
 export function budgetFilterWorkspaceIdToHclTerraform(struct?: BudgetFilterWorkspaceIdOutputReference | BudgetFilterWorkspaceId): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.numberToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "list",
       storageClassType: "numberList",
@@ -832,14 +832,14 @@ export function budgetFilterWorkspaceIdToHclTerraform(struct?: BudgetFilterWorks
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BudgetFilterWorkspaceIdOutputReference extends cdktf.ComplexObject {
+export class BudgetFilterWorkspaceIdOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -906,37 +906,37 @@ export interface BudgetFilter {
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/budget#tags Budget#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/budget#tags Budget#tags}
   */
-  readonly tags?: BudgetFilterTags[] | cdktf.IResolvable;
+  readonly tags?: BudgetFilterTags[] | cdktn.IResolvable;
   /**
   * workspace_id block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/budget#workspace_id Budget#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/budget#workspace_id Budget#workspace_id}
   */
   readonly workspaceId?: BudgetFilterWorkspaceId;
 }
 
 export function budgetFilterToTerraform(struct?: BudgetFilterOutputReference | BudgetFilter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    tags: cdktf.listMapper(budgetFilterTagsToTerraform, true)(struct!.tags),
+    tags: cdktn.listMapper(budgetFilterTagsToTerraform, true)(struct!.tags),
     workspace_id: budgetFilterWorkspaceIdToTerraform(struct!.workspaceId),
   }
 }
 
 
 export function budgetFilterToHclTerraform(struct?: BudgetFilterOutputReference | BudgetFilter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     tags: {
-      value: cdktf.listMapperHcl(budgetFilterTagsToHclTerraform, true)(struct!.tags),
+      value: cdktn.listMapperHcl(budgetFilterTagsToHclTerraform, true)(struct!.tags),
       isBlock: true,
       type: "list",
       storageClassType: "BudgetFilterTagsList",
@@ -953,14 +953,14 @@ export function budgetFilterToHclTerraform(struct?: BudgetFilterOutputReference 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BudgetFilterOutputReference extends cdktf.ComplexObject {
+export class BudgetFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -996,7 +996,7 @@ export class BudgetFilterOutputReference extends cdktf.ComplexObject {
   public get tags() {
     return this._tags;
   }
-  public putTags(value: BudgetFilterTags[] | cdktf.IResolvable) {
+  public putTags(value: BudgetFilterTags[] | cdktn.IResolvable) {
     this._tags.internalValue = value;
   }
   public resetTags() {
@@ -1025,9 +1025,9 @@ export class BudgetFilterOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/budget databricks_budget}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/budget databricks_budget}
 */
-export class Budget extends cdktf.TerraformResource {
+export class Budget extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1038,14 +1038,14 @@ export class Budget extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Budget resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Budget resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Budget to import
-  * @param importFromId The id of the existing Budget that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/budget#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Budget that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/budget#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Budget to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_budget", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_budget", importId: importFromId, provider });
       }
 
   // ===========
@@ -1053,7 +1053,7 @@ export class Budget extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/budget databricks_budget} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/budget databricks_budget} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1064,7 +1064,7 @@ export class Budget extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_budget',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -1190,7 +1190,7 @@ export class Budget extends cdktf.TerraformResource {
   public get alertConfigurations() {
     return this._alertConfigurations;
   }
-  public putAlertConfigurations(value: BudgetAlertConfigurations[] | cdktf.IResolvable) {
+  public putAlertConfigurations(value: BudgetAlertConfigurations[] | cdktn.IResolvable) {
     this._alertConfigurations.internalValue = value;
   }
   public resetAlertConfigurations() {
@@ -1223,13 +1223,13 @@ export class Budget extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      budget_configuration_id: cdktf.stringToTerraform(this._budgetConfigurationId),
-      create_time: cdktf.numberToTerraform(this._createTime),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      id: cdktf.stringToTerraform(this._id),
-      update_time: cdktf.numberToTerraform(this._updateTime),
-      alert_configurations: cdktf.listMapper(budgetAlertConfigurationsToTerraform, true)(this._alertConfigurations.internalValue),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      budget_configuration_id: cdktn.stringToTerraform(this._budgetConfigurationId),
+      create_time: cdktn.numberToTerraform(this._createTime),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      id: cdktn.stringToTerraform(this._id),
+      update_time: cdktn.numberToTerraform(this._updateTime),
+      alert_configurations: cdktn.listMapper(budgetAlertConfigurationsToTerraform, true)(this._alertConfigurations.internalValue),
       filter: budgetFilterToTerraform(this._filter.internalValue),
     };
   }
@@ -1237,43 +1237,43 @@ export class Budget extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       budget_configuration_id: {
-        value: cdktf.stringToHclTerraform(this._budgetConfigurationId),
+        value: cdktn.stringToHclTerraform(this._budgetConfigurationId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       create_time: {
-        value: cdktf.numberToHclTerraform(this._createTime),
+        value: cdktn.numberToHclTerraform(this._createTime),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       update_time: {
-        value: cdktf.numberToHclTerraform(this._updateTime),
+        value: cdktn.numberToHclTerraform(this._updateTime),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       alert_configurations: {
-        value: cdktf.listMapperHcl(budgetAlertConfigurationsToHclTerraform, true)(this._alertConfigurations.internalValue),
+        value: cdktn.listMapperHcl(budgetAlertConfigurationsToHclTerraform, true)(this._alertConfigurations.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "BudgetAlertConfigurationsList",

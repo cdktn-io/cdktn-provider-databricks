@@ -1,67 +1,71 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/policy_info
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/policy_info
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataDatabricksPolicyInfoConfig extends cdktf.TerraformMetaArguments {
+export interface DataDatabricksPolicyInfoConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/policy_info#name DataDatabricksPolicyInfo#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/policy_info#name DataDatabricksPolicyInfo#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/policy_info#on_securable_fullname DataDatabricksPolicyInfo#on_securable_fullname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/policy_info#on_securable_fullname DataDatabricksPolicyInfo#on_securable_fullname}
   */
   readonly onSecurableFullname: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/policy_info#on_securable_type DataDatabricksPolicyInfo#on_securable_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/policy_info#on_securable_type DataDatabricksPolicyInfo#on_securable_type}
   */
   readonly onSecurableType: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/policy_info#provider_config DataDatabricksPolicyInfo#provider_config}
+  */
+  readonly providerConfig?: DataDatabricksPolicyInfoProviderConfig;
 }
 export interface DataDatabricksPolicyInfoColumnMaskUsing {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/policy_info#alias DataDatabricksPolicyInfo#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/policy_info#alias DataDatabricksPolicyInfo#alias}
   */
   readonly alias?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/policy_info#constant DataDatabricksPolicyInfo#constant}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/policy_info#constant DataDatabricksPolicyInfo#constant}
   */
   readonly constant?: string;
 }
 
-export function dataDatabricksPolicyInfoColumnMaskUsingToTerraform(struct?: DataDatabricksPolicyInfoColumnMaskUsing | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksPolicyInfoColumnMaskUsingToTerraform(struct?: DataDatabricksPolicyInfoColumnMaskUsing | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    alias: cdktf.stringToTerraform(struct!.alias),
-    constant: cdktf.stringToTerraform(struct!.constant),
+    alias: cdktn.stringToTerraform(struct!.alias),
+    constant: cdktn.stringToTerraform(struct!.constant),
   }
 }
 
 
-export function dataDatabricksPolicyInfoColumnMaskUsingToHclTerraform(struct?: DataDatabricksPolicyInfoColumnMaskUsing | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksPolicyInfoColumnMaskUsingToHclTerraform(struct?: DataDatabricksPolicyInfoColumnMaskUsing | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     alias: {
-      value: cdktf.stringToHclTerraform(struct!.alias),
+      value: cdktn.stringToHclTerraform(struct!.alias),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     constant: {
-      value: cdktf.stringToHclTerraform(struct!.constant),
+      value: cdktn.stringToHclTerraform(struct!.constant),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -72,9 +76,9 @@ export function dataDatabricksPolicyInfoColumnMaskUsingToHclTerraform(struct?: D
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksPolicyInfoColumnMaskUsingOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksPolicyInfoColumnMaskUsingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -82,11 +86,11 @@ export class DataDatabricksPolicyInfoColumnMaskUsingOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataDatabricksPolicyInfoColumnMaskUsing | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatabricksPolicyInfoColumnMaskUsing | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -103,14 +107,14 @@ export class DataDatabricksPolicyInfoColumnMaskUsingOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksPolicyInfoColumnMaskUsing | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksPolicyInfoColumnMaskUsing | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._alias = undefined;
       this._constant = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -155,15 +159,15 @@ export class DataDatabricksPolicyInfoColumnMaskUsingOutputReference extends cdkt
   }
 }
 
-export class DataDatabricksPolicyInfoColumnMaskUsingList extends cdktf.ComplexList {
-  public internalValue? : DataDatabricksPolicyInfoColumnMaskUsing[] | cdktf.IResolvable
+export class DataDatabricksPolicyInfoColumnMaskUsingList extends cdktn.ComplexList {
+  public internalValue? : DataDatabricksPolicyInfoColumnMaskUsing[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -176,52 +180,52 @@ export class DataDatabricksPolicyInfoColumnMaskUsingList extends cdktf.ComplexLi
 }
 export interface DataDatabricksPolicyInfoColumnMask {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/policy_info#function_name DataDatabricksPolicyInfo#function_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/policy_info#function_name DataDatabricksPolicyInfo#function_name}
   */
   readonly functionName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/policy_info#on_column DataDatabricksPolicyInfo#on_column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/policy_info#on_column DataDatabricksPolicyInfo#on_column}
   */
   readonly onColumn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/policy_info#using DataDatabricksPolicyInfo#using}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/policy_info#using DataDatabricksPolicyInfo#using}
   */
-  readonly using?: DataDatabricksPolicyInfoColumnMaskUsing[] | cdktf.IResolvable;
+  readonly using?: DataDatabricksPolicyInfoColumnMaskUsing[] | cdktn.IResolvable;
 }
 
 export function dataDatabricksPolicyInfoColumnMaskToTerraform(struct?: DataDatabricksPolicyInfoColumnMask): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    function_name: cdktf.stringToTerraform(struct!.functionName),
-    on_column: cdktf.stringToTerraform(struct!.onColumn),
-    using: cdktf.listMapper(dataDatabricksPolicyInfoColumnMaskUsingToTerraform, false)(struct!.using),
+    function_name: cdktn.stringToTerraform(struct!.functionName),
+    on_column: cdktn.stringToTerraform(struct!.onColumn),
+    using: cdktn.listMapper(dataDatabricksPolicyInfoColumnMaskUsingToTerraform, false)(struct!.using),
   }
 }
 
 
 export function dataDatabricksPolicyInfoColumnMaskToHclTerraform(struct?: DataDatabricksPolicyInfoColumnMask): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     function_name: {
-      value: cdktf.stringToHclTerraform(struct!.functionName),
+      value: cdktn.stringToHclTerraform(struct!.functionName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     on_column: {
-      value: cdktf.stringToHclTerraform(struct!.onColumn),
+      value: cdktn.stringToHclTerraform(struct!.onColumn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     using: {
-      value: cdktf.listMapperHcl(dataDatabricksPolicyInfoColumnMaskUsingToHclTerraform, false)(struct!.using),
+      value: cdktn.listMapperHcl(dataDatabricksPolicyInfoColumnMaskUsingToHclTerraform, false)(struct!.using),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatabricksPolicyInfoColumnMaskUsingList",
@@ -232,14 +236,14 @@ export function dataDatabricksPolicyInfoColumnMaskToHclTerraform(struct?: DataDa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksPolicyInfoColumnMaskOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksPolicyInfoColumnMaskOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -307,7 +311,7 @@ export class DataDatabricksPolicyInfoColumnMaskOutputReference extends cdktf.Com
   public get using() {
     return this._using;
   }
-  public putUsing(value: DataDatabricksPolicyInfoColumnMaskUsing[] | cdktf.IResolvable) {
+  public putUsing(value: DataDatabricksPolicyInfoColumnMaskUsing[] | cdktn.IResolvable) {
     this._using.internalValue = value;
   }
   public resetUsing() {
@@ -320,41 +324,41 @@ export class DataDatabricksPolicyInfoColumnMaskOutputReference extends cdktf.Com
 }
 export interface DataDatabricksPolicyInfoMatchColumns {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/policy_info#alias DataDatabricksPolicyInfo#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/policy_info#alias DataDatabricksPolicyInfo#alias}
   */
   readonly alias?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/policy_info#condition DataDatabricksPolicyInfo#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/policy_info#condition DataDatabricksPolicyInfo#condition}
   */
   readonly condition?: string;
 }
 
 export function dataDatabricksPolicyInfoMatchColumnsToTerraform(struct?: DataDatabricksPolicyInfoMatchColumns): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    alias: cdktf.stringToTerraform(struct!.alias),
-    condition: cdktf.stringToTerraform(struct!.condition),
+    alias: cdktn.stringToTerraform(struct!.alias),
+    condition: cdktn.stringToTerraform(struct!.condition),
   }
 }
 
 
 export function dataDatabricksPolicyInfoMatchColumnsToHclTerraform(struct?: DataDatabricksPolicyInfoMatchColumns): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     alias: {
-      value: cdktf.stringToHclTerraform(struct!.alias),
+      value: cdktn.stringToHclTerraform(struct!.alias),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     condition: {
-      value: cdktf.stringToHclTerraform(struct!.condition),
+      value: cdktn.stringToHclTerraform(struct!.condition),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -365,7 +369,7 @@ export function dataDatabricksPolicyInfoMatchColumnsToHclTerraform(struct?: Data
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksPolicyInfoMatchColumnsOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksPolicyInfoMatchColumnsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -374,7 +378,7 @@ export class DataDatabricksPolicyInfoMatchColumnsOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -438,15 +442,15 @@ export class DataDatabricksPolicyInfoMatchColumnsOutputReference extends cdktf.C
   }
 }
 
-export class DataDatabricksPolicyInfoMatchColumnsList extends cdktf.ComplexList {
-  public internalValue? : DataDatabricksPolicyInfoMatchColumns[] | cdktf.IResolvable
+export class DataDatabricksPolicyInfoMatchColumnsList extends cdktn.ComplexList {
+  public internalValue? : DataDatabricksPolicyInfoMatchColumns[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -457,43 +461,32 @@ export class DataDatabricksPolicyInfoMatchColumnsList extends cdktf.ComplexList 
     return new DataDatabricksPolicyInfoMatchColumnsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface DataDatabricksPolicyInfoRowFilterUsing {
+export interface DataDatabricksPolicyInfoProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/policy_info#alias DataDatabricksPolicyInfo#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/policy_info#workspace_id DataDatabricksPolicyInfo#workspace_id}
   */
-  readonly alias?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/policy_info#constant DataDatabricksPolicyInfo#constant}
-  */
-  readonly constant?: string;
+  readonly workspaceId: string;
 }
 
-export function dataDatabricksPolicyInfoRowFilterUsingToTerraform(struct?: DataDatabricksPolicyInfoRowFilterUsing | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksPolicyInfoProviderConfigToTerraform(struct?: DataDatabricksPolicyInfoProviderConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    alias: cdktf.stringToTerraform(struct!.alias),
-    constant: cdktf.stringToTerraform(struct!.constant),
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
   }
 }
 
 
-export function dataDatabricksPolicyInfoRowFilterUsingToHclTerraform(struct?: DataDatabricksPolicyInfoRowFilterUsing | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksPolicyInfoProviderConfigToHclTerraform(struct?: DataDatabricksPolicyInfoProviderConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
-    alias: {
-      value: cdktf.stringToHclTerraform(struct!.alias),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    constant: {
-      value: cdktf.stringToHclTerraform(struct!.constant),
+    workspace_id: {
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -504,9 +497,111 @@ export function dataDatabricksPolicyInfoRowFilterUsingToHclTerraform(struct?: Da
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksPolicyInfoRowFilterUsingOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksPolicyInfoProviderConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatabricksPolicyInfoProviderConfig | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._workspaceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workspaceId = this._workspaceId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksPolicyInfoProviderConfig | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._workspaceId = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._workspaceId = value.workspaceId;
+    }
+  }
+
+  // workspace_id - computed: false, optional: false, required: true
+  private _workspaceId?: string; 
+  public get workspaceId() {
+    return this.getStringAttribute('workspace_id');
+  }
+  public set workspaceId(value: string) {
+    this._workspaceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workspaceIdInput() {
+    return this._workspaceId;
+  }
+}
+export interface DataDatabricksPolicyInfoRowFilterUsing {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/policy_info#alias DataDatabricksPolicyInfo#alias}
+  */
+  readonly alias?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/policy_info#constant DataDatabricksPolicyInfo#constant}
+  */
+  readonly constant?: string;
+}
+
+export function dataDatabricksPolicyInfoRowFilterUsingToTerraform(struct?: DataDatabricksPolicyInfoRowFilterUsing | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    alias: cdktn.stringToTerraform(struct!.alias),
+    constant: cdktn.stringToTerraform(struct!.constant),
+  }
+}
+
+
+export function dataDatabricksPolicyInfoRowFilterUsingToHclTerraform(struct?: DataDatabricksPolicyInfoRowFilterUsing | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    alias: {
+      value: cdktn.stringToHclTerraform(struct!.alias),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    constant: {
+      value: cdktn.stringToHclTerraform(struct!.constant),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataDatabricksPolicyInfoRowFilterUsingOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -514,11 +609,11 @@ export class DataDatabricksPolicyInfoRowFilterUsingOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataDatabricksPolicyInfoRowFilterUsing | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatabricksPolicyInfoRowFilterUsing | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -535,14 +630,14 @@ export class DataDatabricksPolicyInfoRowFilterUsingOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksPolicyInfoRowFilterUsing | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksPolicyInfoRowFilterUsing | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._alias = undefined;
       this._constant = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -587,15 +682,15 @@ export class DataDatabricksPolicyInfoRowFilterUsingOutputReference extends cdktf
   }
 }
 
-export class DataDatabricksPolicyInfoRowFilterUsingList extends cdktf.ComplexList {
-  public internalValue? : DataDatabricksPolicyInfoRowFilterUsing[] | cdktf.IResolvable
+export class DataDatabricksPolicyInfoRowFilterUsingList extends cdktn.ComplexList {
+  public internalValue? : DataDatabricksPolicyInfoRowFilterUsing[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -608,41 +703,41 @@ export class DataDatabricksPolicyInfoRowFilterUsingList extends cdktf.ComplexLis
 }
 export interface DataDatabricksPolicyInfoRowFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/policy_info#function_name DataDatabricksPolicyInfo#function_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/policy_info#function_name DataDatabricksPolicyInfo#function_name}
   */
   readonly functionName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/policy_info#using DataDatabricksPolicyInfo#using}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/policy_info#using DataDatabricksPolicyInfo#using}
   */
-  readonly using?: DataDatabricksPolicyInfoRowFilterUsing[] | cdktf.IResolvable;
+  readonly using?: DataDatabricksPolicyInfoRowFilterUsing[] | cdktn.IResolvable;
 }
 
 export function dataDatabricksPolicyInfoRowFilterToTerraform(struct?: DataDatabricksPolicyInfoRowFilter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    function_name: cdktf.stringToTerraform(struct!.functionName),
-    using: cdktf.listMapper(dataDatabricksPolicyInfoRowFilterUsingToTerraform, false)(struct!.using),
+    function_name: cdktn.stringToTerraform(struct!.functionName),
+    using: cdktn.listMapper(dataDatabricksPolicyInfoRowFilterUsingToTerraform, false)(struct!.using),
   }
 }
 
 
 export function dataDatabricksPolicyInfoRowFilterToHclTerraform(struct?: DataDatabricksPolicyInfoRowFilter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     function_name: {
-      value: cdktf.stringToHclTerraform(struct!.functionName),
+      value: cdktn.stringToHclTerraform(struct!.functionName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     using: {
-      value: cdktf.listMapperHcl(dataDatabricksPolicyInfoRowFilterUsingToHclTerraform, false)(struct!.using),
+      value: cdktn.listMapperHcl(dataDatabricksPolicyInfoRowFilterUsingToHclTerraform, false)(struct!.using),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatabricksPolicyInfoRowFilterUsingList",
@@ -653,14 +748,14 @@ export function dataDatabricksPolicyInfoRowFilterToHclTerraform(struct?: DataDat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksPolicyInfoRowFilterOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksPolicyInfoRowFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -709,7 +804,7 @@ export class DataDatabricksPolicyInfoRowFilterOutputReference extends cdktf.Comp
   public get using() {
     return this._using;
   }
-  public putUsing(value: DataDatabricksPolicyInfoRowFilterUsing[] | cdktf.IResolvable) {
+  public putUsing(value: DataDatabricksPolicyInfoRowFilterUsing[] | cdktn.IResolvable) {
     this._using.internalValue = value;
   }
   public resetUsing() {
@@ -722,9 +817,9 @@ export class DataDatabricksPolicyInfoRowFilterOutputReference extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/policy_info databricks_policy_info}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/policy_info databricks_policy_info}
 */
-export class DataDatabricksPolicyInfo extends cdktf.TerraformDataSource {
+export class DataDatabricksPolicyInfo extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -735,14 +830,14 @@ export class DataDatabricksPolicyInfo extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataDatabricksPolicyInfo resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataDatabricksPolicyInfo resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksPolicyInfo to import
-  * @param importFromId The id of the existing DataDatabricksPolicyInfo that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/policy_info#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksPolicyInfo that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/policy_info#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksPolicyInfo to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_policy_info", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_policy_info", importId: importFromId, provider });
       }
 
   // ===========
@@ -750,7 +845,7 @@ export class DataDatabricksPolicyInfo extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/policy_info databricks_policy_info} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/policy_info databricks_policy_info} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -761,7 +856,7 @@ export class DataDatabricksPolicyInfo extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_policy_info',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -775,6 +870,7 @@ export class DataDatabricksPolicyInfo extends cdktf.TerraformDataSource {
     this._name = config.name;
     this._onSecurableFullname = config.onSecurableFullname;
     this._onSecurableType = config.onSecurableType;
+    this._providerConfig.internalValue = config.providerConfig;
   }
 
   // ==========
@@ -867,6 +963,22 @@ export class DataDatabricksPolicyInfo extends cdktf.TerraformDataSource {
     return this.getStringAttribute('policy_type');
   }
 
+  // provider_config - computed: false, optional: true, required: false
+  private _providerConfig = new DataDatabricksPolicyInfoProviderConfigOutputReference(this, "provider_config");
+  public get providerConfig() {
+    return this._providerConfig;
+  }
+  public putProviderConfig(value: DataDatabricksPolicyInfoProviderConfig) {
+    this._providerConfig.internalValue = value;
+  }
+  public resetProviderConfig() {
+    this._providerConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerConfigInput() {
+    return this._providerConfig.internalValue;
+  }
+
   // row_filter - computed: true, optional: false, required: false
   private _rowFilter = new DataDatabricksPolicyInfoRowFilterOutputReference(this, "row_filter");
   public get rowFilter() {
@@ -899,31 +1011,38 @@ export class DataDatabricksPolicyInfo extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: cdktf.stringToTerraform(this._name),
-      on_securable_fullname: cdktf.stringToTerraform(this._onSecurableFullname),
-      on_securable_type: cdktf.stringToTerraform(this._onSecurableType),
+      name: cdktn.stringToTerraform(this._name),
+      on_securable_fullname: cdktn.stringToTerraform(this._onSecurableFullname),
+      on_securable_type: cdktn.stringToTerraform(this._onSecurableType),
+      provider_config: dataDatabricksPolicyInfoProviderConfigToTerraform(this._providerConfig.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       on_securable_fullname: {
-        value: cdktf.stringToHclTerraform(this._onSecurableFullname),
+        value: cdktn.stringToHclTerraform(this._onSecurableFullname),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       on_securable_type: {
-        value: cdktf.stringToHclTerraform(this._onSecurableType),
+        value: cdktn.stringToHclTerraform(this._onSecurableType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      provider_config: {
+        value: dataDatabricksPolicyInfoProviderConfigToHclTerraform(this._providerConfig.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "DataDatabricksPolicyInfoProviderConfig",
       },
     };
 

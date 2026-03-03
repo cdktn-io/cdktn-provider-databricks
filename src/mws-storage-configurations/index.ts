@@ -1,42 +1,46 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_storage_configurations
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_storage_configurations
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MwsStorageConfigurationsConfig extends cdktf.TerraformMetaArguments {
+export interface MwsStorageConfigurationsConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_storage_configurations#account_id MwsStorageConfigurations#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_storage_configurations#account_id MwsStorageConfigurations#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_storage_configurations#bucket_name MwsStorageConfigurations#bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_storage_configurations#bucket_name MwsStorageConfigurations#bucket_name}
   */
   readonly bucketName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_storage_configurations#id MwsStorageConfigurations#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_storage_configurations#id MwsStorageConfigurations#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_storage_configurations#storage_configuration_name MwsStorageConfigurations#storage_configuration_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_storage_configurations#role_arn MwsStorageConfigurations#role_arn}
+  */
+  readonly roleArn?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_storage_configurations#storage_configuration_name MwsStorageConfigurations#storage_configuration_name}
   */
   readonly storageConfigurationName: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_storage_configurations databricks_mws_storage_configurations}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_storage_configurations databricks_mws_storage_configurations}
 */
-export class MwsStorageConfigurations extends cdktf.TerraformResource {
+export class MwsStorageConfigurations extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -47,14 +51,14 @@ export class MwsStorageConfigurations extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a MwsStorageConfigurations resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a MwsStorageConfigurations resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MwsStorageConfigurations to import
-  * @param importFromId The id of the existing MwsStorageConfigurations that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_storage_configurations#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MwsStorageConfigurations that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_storage_configurations#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MwsStorageConfigurations to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_mws_storage_configurations", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_mws_storage_configurations", importId: importFromId, provider });
       }
 
   // ===========
@@ -62,7 +66,7 @@ export class MwsStorageConfigurations extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mws_storage_configurations databricks_mws_storage_configurations} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mws_storage_configurations databricks_mws_storage_configurations} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -73,7 +77,7 @@ export class MwsStorageConfigurations extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_mws_storage_configurations',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -87,6 +91,7 @@ export class MwsStorageConfigurations extends cdktf.TerraformResource {
     this._accountId = config.accountId;
     this._bucketName = config.bucketName;
     this._id = config.id;
+    this._roleArn = config.roleArn;
     this._storageConfigurationName = config.storageConfigurationName;
   }
 
@@ -141,6 +146,22 @@ export class MwsStorageConfigurations extends cdktf.TerraformResource {
     return this._id;
   }
 
+  // role_arn - computed: false, optional: true, required: false
+  private _roleArn?: string; 
+  public get roleArn() {
+    return this.getStringAttribute('role_arn');
+  }
+  public set roleArn(value: string) {
+    this._roleArn = value;
+  }
+  public resetRoleArn() {
+    this._roleArn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get roleArnInput() {
+    return this._roleArn;
+  }
+
   // storage_configuration_id - computed: true, optional: false, required: false
   public get storageConfigurationId() {
     return this.getStringAttribute('storage_configuration_id');
@@ -165,35 +186,42 @@ export class MwsStorageConfigurations extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      bucket_name: cdktf.stringToTerraform(this._bucketName),
-      id: cdktf.stringToTerraform(this._id),
-      storage_configuration_name: cdktf.stringToTerraform(this._storageConfigurationName),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      bucket_name: cdktn.stringToTerraform(this._bucketName),
+      id: cdktn.stringToTerraform(this._id),
+      role_arn: cdktn.stringToTerraform(this._roleArn),
+      storage_configuration_name: cdktn.stringToTerraform(this._storageConfigurationName),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       bucket_name: {
-        value: cdktf.stringToHclTerraform(this._bucketName),
+        value: cdktn.stringToHclTerraform(this._bucketName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      role_arn: {
+        value: cdktn.stringToHclTerraform(this._roleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_configuration_name: {
-        value: cdktf.stringToHclTerraform(this._storageConfigurationName),
+        value: cdktn.stringToHclTerraform(this._storageConfigurationName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

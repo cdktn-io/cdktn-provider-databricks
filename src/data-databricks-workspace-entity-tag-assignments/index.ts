@@ -1,78 +1,60 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/workspace_entity_tag_assignments
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/workspace_entity_tag_assignments
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataDatabricksWorkspaceEntityTagAssignmentsConfig extends cdktf.TerraformMetaArguments {
+export interface DataDatabricksWorkspaceEntityTagAssignmentsConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/workspace_entity_tag_assignments#entity_id DataDatabricksWorkspaceEntityTagAssignments#entity_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/workspace_entity_tag_assignments#entity_id DataDatabricksWorkspaceEntityTagAssignments#entity_id}
   */
   readonly entityId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/workspace_entity_tag_assignments#entity_type DataDatabricksWorkspaceEntityTagAssignments#entity_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/workspace_entity_tag_assignments#entity_type DataDatabricksWorkspaceEntityTagAssignments#entity_type}
   */
   readonly entityType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/workspace_entity_tag_assignments#page_size DataDatabricksWorkspaceEntityTagAssignments#page_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/workspace_entity_tag_assignments#page_size DataDatabricksWorkspaceEntityTagAssignments#page_size}
   */
   readonly pageSize?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/workspace_entity_tag_assignments#provider_config DataDatabricksWorkspaceEntityTagAssignments#provider_config}
+  */
+  readonly providerConfig?: DataDatabricksWorkspaceEntityTagAssignmentsProviderConfig;
 }
-export interface DataDatabricksWorkspaceEntityTagAssignmentsTagAssignments {
+export interface DataDatabricksWorkspaceEntityTagAssignmentsProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/workspace_entity_tag_assignments#entity_id DataDatabricksWorkspaceEntityTagAssignments#entity_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/workspace_entity_tag_assignments#workspace_id DataDatabricksWorkspaceEntityTagAssignments#workspace_id}
   */
-  readonly entityId: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/workspace_entity_tag_assignments#entity_type DataDatabricksWorkspaceEntityTagAssignments#entity_type}
-  */
-  readonly entityType: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/workspace_entity_tag_assignments#tag_key DataDatabricksWorkspaceEntityTagAssignments#tag_key}
-  */
-  readonly tagKey: string;
+  readonly workspaceId: string;
 }
 
-export function dataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsToTerraform(struct?: DataDatabricksWorkspaceEntityTagAssignmentsTagAssignments): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksWorkspaceEntityTagAssignmentsProviderConfigToTerraform(struct?: DataDatabricksWorkspaceEntityTagAssignmentsProviderConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    entity_id: cdktf.stringToTerraform(struct!.entityId),
-    entity_type: cdktf.stringToTerraform(struct!.entityType),
-    tag_key: cdktf.stringToTerraform(struct!.tagKey),
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
   }
 }
 
 
-export function dataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsToHclTerraform(struct?: DataDatabricksWorkspaceEntityTagAssignmentsTagAssignments): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksWorkspaceEntityTagAssignmentsProviderConfigToHclTerraform(struct?: DataDatabricksWorkspaceEntityTagAssignmentsProviderConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
-    entity_id: {
-      value: cdktf.stringToHclTerraform(struct!.entityId),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    entity_type: {
-      value: cdktf.stringToHclTerraform(struct!.entityType),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    tag_key: {
-      value: cdktf.stringToHclTerraform(struct!.tagKey),
+    workspace_id: {
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -83,7 +65,222 @@ export function dataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksWorkspaceEntityTagAssignmentsProviderConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatabricksWorkspaceEntityTagAssignmentsProviderConfig | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._workspaceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workspaceId = this._workspaceId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksWorkspaceEntityTagAssignmentsProviderConfig | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._workspaceId = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._workspaceId = value.workspaceId;
+    }
+  }
+
+  // workspace_id - computed: false, optional: false, required: true
+  private _workspaceId?: string; 
+  public get workspaceId() {
+    return this.getStringAttribute('workspace_id');
+  }
+  public set workspaceId(value: string) {
+    this._workspaceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workspaceIdInput() {
+    return this._workspaceId;
+  }
+}
+export interface DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsProviderConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/workspace_entity_tag_assignments#workspace_id DataDatabricksWorkspaceEntityTagAssignments#workspace_id}
+  */
+  readonly workspaceId: string;
+}
+
+export function dataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsProviderConfigToTerraform(struct?: DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsProviderConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
+  }
+}
+
+
+export function dataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsProviderConfigToHclTerraform(struct?: DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsProviderConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    workspace_id: {
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsProviderConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsProviderConfig | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._workspaceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workspaceId = this._workspaceId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsProviderConfig | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._workspaceId = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._workspaceId = value.workspaceId;
+    }
+  }
+
+  // workspace_id - computed: true, optional: false, required: true
+  private _workspaceId?: string; 
+  public get workspaceId() {
+    return this.getStringAttribute('workspace_id');
+  }
+  public set workspaceId(value: string) {
+    this._workspaceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workspaceIdInput() {
+    return this._workspaceId;
+  }
+}
+export interface DataDatabricksWorkspaceEntityTagAssignmentsTagAssignments {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/workspace_entity_tag_assignments#entity_id DataDatabricksWorkspaceEntityTagAssignments#entity_id}
+  */
+  readonly entityId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/workspace_entity_tag_assignments#entity_type DataDatabricksWorkspaceEntityTagAssignments#entity_type}
+  */
+  readonly entityType: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/workspace_entity_tag_assignments#provider_config DataDatabricksWorkspaceEntityTagAssignments#provider_config}
+  */
+  readonly providerConfig?: DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsProviderConfig;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/workspace_entity_tag_assignments#tag_key DataDatabricksWorkspaceEntityTagAssignments#tag_key}
+  */
+  readonly tagKey: string;
+}
+
+export function dataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsToTerraform(struct?: DataDatabricksWorkspaceEntityTagAssignmentsTagAssignments): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    entity_id: cdktn.stringToTerraform(struct!.entityId),
+    entity_type: cdktn.stringToTerraform(struct!.entityType),
+    provider_config: dataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsProviderConfigToTerraform(struct!.providerConfig),
+    tag_key: cdktn.stringToTerraform(struct!.tagKey),
+  }
+}
+
+
+export function dataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsToHclTerraform(struct?: DataDatabricksWorkspaceEntityTagAssignmentsTagAssignments): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    entity_id: {
+      value: cdktn.stringToHclTerraform(struct!.entityId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    entity_type: {
+      value: cdktn.stringToHclTerraform(struct!.entityType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    provider_config: {
+      value: dataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsProviderConfigToHclTerraform(struct!.providerConfig),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsProviderConfig",
+    },
+    tag_key: {
+      value: cdktn.stringToHclTerraform(struct!.tagKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -92,7 +289,7 @@ export class DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsOutputRefe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -107,6 +304,10 @@ export class DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsOutputRefe
       hasAnyValues = true;
       internalValueResult.entityType = this._entityType;
     }
+    if (this._providerConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.providerConfig = this._providerConfig?.internalValue;
+    }
     if (this._tagKey !== undefined) {
       hasAnyValues = true;
       internalValueResult.tagKey = this._tagKey;
@@ -119,12 +320,14 @@ export class DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsOutputRefe
       this.isEmptyObject = false;
       this._entityId = undefined;
       this._entityType = undefined;
+      this._providerConfig.internalValue = undefined;
       this._tagKey = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._entityId = value.entityId;
       this._entityType = value.entityType;
+      this._providerConfig.internalValue = value.providerConfig;
       this._tagKey = value.tagKey;
     }
   }
@@ -155,6 +358,22 @@ export class DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsOutputRefe
     return this._entityType;
   }
 
+  // provider_config - computed: true, optional: true, required: false
+  private _providerConfig = new DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsProviderConfigOutputReference(this, "provider_config");
+  public get providerConfig() {
+    return this._providerConfig;
+  }
+  public putProviderConfig(value: DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsProviderConfig) {
+    this._providerConfig.internalValue = value;
+  }
+  public resetProviderConfig() {
+    this._providerConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerConfigInput() {
+    return this._providerConfig.internalValue;
+  }
+
   // tag_key - computed: true, optional: false, required: true
   private _tagKey?: string; 
   public get tagKey() {
@@ -174,15 +393,15 @@ export class DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsOutputRefe
   }
 }
 
-export class DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsList extends cdktf.ComplexList {
-  public internalValue? : DataDatabricksWorkspaceEntityTagAssignmentsTagAssignments[] | cdktf.IResolvable
+export class DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsList extends cdktn.ComplexList {
+  public internalValue? : DataDatabricksWorkspaceEntityTagAssignmentsTagAssignments[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -195,9 +414,9 @@ export class DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsList exten
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/workspace_entity_tag_assignments databricks_workspace_entity_tag_assignments}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/workspace_entity_tag_assignments databricks_workspace_entity_tag_assignments}
 */
-export class DataDatabricksWorkspaceEntityTagAssignments extends cdktf.TerraformDataSource {
+export class DataDatabricksWorkspaceEntityTagAssignments extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -208,14 +427,14 @@ export class DataDatabricksWorkspaceEntityTagAssignments extends cdktf.Terraform
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataDatabricksWorkspaceEntityTagAssignments resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataDatabricksWorkspaceEntityTagAssignments resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksWorkspaceEntityTagAssignments to import
-  * @param importFromId The id of the existing DataDatabricksWorkspaceEntityTagAssignments that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/workspace_entity_tag_assignments#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksWorkspaceEntityTagAssignments that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/workspace_entity_tag_assignments#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksWorkspaceEntityTagAssignments to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_workspace_entity_tag_assignments", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_workspace_entity_tag_assignments", importId: importFromId, provider });
       }
 
   // ===========
@@ -223,7 +442,7 @@ export class DataDatabricksWorkspaceEntityTagAssignments extends cdktf.Terraform
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/workspace_entity_tag_assignments databricks_workspace_entity_tag_assignments} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/workspace_entity_tag_assignments databricks_workspace_entity_tag_assignments} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -234,7 +453,7 @@ export class DataDatabricksWorkspaceEntityTagAssignments extends cdktf.Terraform
       terraformResourceType: 'databricks_workspace_entity_tag_assignments',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -248,6 +467,7 @@ export class DataDatabricksWorkspaceEntityTagAssignments extends cdktf.Terraform
     this._entityId = config.entityId;
     this._entityType = config.entityType;
     this._pageSize = config.pageSize;
+    this._providerConfig.internalValue = config.providerConfig;
   }
 
   // ==========
@@ -296,6 +516,22 @@ export class DataDatabricksWorkspaceEntityTagAssignments extends cdktf.Terraform
     return this._pageSize;
   }
 
+  // provider_config - computed: false, optional: true, required: false
+  private _providerConfig = new DataDatabricksWorkspaceEntityTagAssignmentsProviderConfigOutputReference(this, "provider_config");
+  public get providerConfig() {
+    return this._providerConfig;
+  }
+  public putProviderConfig(value: DataDatabricksWorkspaceEntityTagAssignmentsProviderConfig) {
+    this._providerConfig.internalValue = value;
+  }
+  public resetProviderConfig() {
+    this._providerConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerConfigInput() {
+    return this._providerConfig.internalValue;
+  }
+
   // tag_assignments - computed: true, optional: false, required: false
   private _tagAssignments = new DataDatabricksWorkspaceEntityTagAssignmentsTagAssignmentsList(this, "tag_assignments", false);
   public get tagAssignments() {
@@ -308,31 +544,38 @@ export class DataDatabricksWorkspaceEntityTagAssignments extends cdktf.Terraform
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      entity_id: cdktf.stringToTerraform(this._entityId),
-      entity_type: cdktf.stringToTerraform(this._entityType),
-      page_size: cdktf.numberToTerraform(this._pageSize),
+      entity_id: cdktn.stringToTerraform(this._entityId),
+      entity_type: cdktn.stringToTerraform(this._entityType),
+      page_size: cdktn.numberToTerraform(this._pageSize),
+      provider_config: dataDatabricksWorkspaceEntityTagAssignmentsProviderConfigToTerraform(this._providerConfig.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       entity_id: {
-        value: cdktf.stringToHclTerraform(this._entityId),
+        value: cdktn.stringToHclTerraform(this._entityId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       entity_type: {
-        value: cdktf.stringToHclTerraform(this._entityType),
+        value: cdktn.stringToHclTerraform(this._entityType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       page_size: {
-        value: cdktf.numberToHclTerraform(this._pageSize),
+        value: cdktn.numberToHclTerraform(this._pageSize),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
+      },
+      provider_config: {
+        value: dataDatabricksWorkspaceEntityTagAssignmentsProviderConfigToHclTerraform(this._providerConfig.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "DataDatabricksWorkspaceEntityTagAssignmentsProviderConfig",
       },
     };
 

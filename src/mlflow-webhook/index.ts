@@ -1,112 +1,118 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mlflow_webhook
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mlflow_webhook
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MlflowWebhookConfig extends cdktf.TerraformMetaArguments {
+export interface MlflowWebhookConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mlflow_webhook#description MlflowWebhook#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mlflow_webhook#description MlflowWebhook#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mlflow_webhook#events MlflowWebhook#events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mlflow_webhook#events MlflowWebhook#events}
   */
   readonly events: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mlflow_webhook#id MlflowWebhook#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mlflow_webhook#id MlflowWebhook#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mlflow_webhook#model_name MlflowWebhook#model_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mlflow_webhook#model_name MlflowWebhook#model_name}
   */
   readonly modelName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mlflow_webhook#status MlflowWebhook#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mlflow_webhook#status MlflowWebhook#status}
   */
   readonly status?: string;
   /**
   * http_url_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mlflow_webhook#http_url_spec MlflowWebhook#http_url_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mlflow_webhook#http_url_spec MlflowWebhook#http_url_spec}
   */
   readonly httpUrlSpec?: MlflowWebhookHttpUrlSpec;
   /**
   * job_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mlflow_webhook#job_spec MlflowWebhook#job_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mlflow_webhook#job_spec MlflowWebhook#job_spec}
   */
   readonly jobSpec?: MlflowWebhookJobSpec;
+  /**
+  * provider_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mlflow_webhook#provider_config MlflowWebhook#provider_config}
+  */
+  readonly providerConfig?: MlflowWebhookProviderConfig;
 }
 export interface MlflowWebhookHttpUrlSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mlflow_webhook#authorization MlflowWebhook#authorization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mlflow_webhook#authorization MlflowWebhook#authorization}
   */
   readonly authorization?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mlflow_webhook#enable_ssl_verification MlflowWebhook#enable_ssl_verification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mlflow_webhook#enable_ssl_verification MlflowWebhook#enable_ssl_verification}
   */
-  readonly enableSslVerification?: boolean | cdktf.IResolvable;
+  readonly enableSslVerification?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mlflow_webhook#secret MlflowWebhook#secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mlflow_webhook#secret MlflowWebhook#secret}
   */
   readonly secret?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mlflow_webhook#url MlflowWebhook#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mlflow_webhook#url MlflowWebhook#url}
   */
   readonly url: string;
 }
 
 export function mlflowWebhookHttpUrlSpecToTerraform(struct?: MlflowWebhookHttpUrlSpecOutputReference | MlflowWebhookHttpUrlSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    authorization: cdktf.stringToTerraform(struct!.authorization),
-    enable_ssl_verification: cdktf.booleanToTerraform(struct!.enableSslVerification),
-    secret: cdktf.stringToTerraform(struct!.secret),
-    url: cdktf.stringToTerraform(struct!.url),
+    authorization: cdktn.stringToTerraform(struct!.authorization),
+    enable_ssl_verification: cdktn.booleanToTerraform(struct!.enableSslVerification),
+    secret: cdktn.stringToTerraform(struct!.secret),
+    url: cdktn.stringToTerraform(struct!.url),
   }
 }
 
 
 export function mlflowWebhookHttpUrlSpecToHclTerraform(struct?: MlflowWebhookHttpUrlSpecOutputReference | MlflowWebhookHttpUrlSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     authorization: {
-      value: cdktf.stringToHclTerraform(struct!.authorization),
+      value: cdktn.stringToHclTerraform(struct!.authorization),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     enable_ssl_verification: {
-      value: cdktf.booleanToHclTerraform(struct!.enableSslVerification),
+      value: cdktn.booleanToHclTerraform(struct!.enableSslVerification),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     secret: {
-      value: cdktf.stringToHclTerraform(struct!.secret),
+      value: cdktn.stringToHclTerraform(struct!.secret),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     url: {
-      value: cdktf.stringToHclTerraform(struct!.url),
+      value: cdktn.stringToHclTerraform(struct!.url),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -117,14 +123,14 @@ export function mlflowWebhookHttpUrlSpecToHclTerraform(struct?: MlflowWebhookHtt
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MlflowWebhookHttpUrlSpecOutputReference extends cdktf.ComplexObject {
+export class MlflowWebhookHttpUrlSpecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -184,11 +190,11 @@ export class MlflowWebhookHttpUrlSpecOutputReference extends cdktf.ComplexObject
   }
 
   // enable_ssl_verification - computed: false, optional: true, required: false
-  private _enableSslVerification?: boolean | cdktf.IResolvable; 
+  private _enableSslVerification?: boolean | cdktn.IResolvable; 
   public get enableSslVerification() {
     return this.getBooleanAttribute('enable_ssl_verification');
   }
-  public set enableSslVerification(value: boolean | cdktf.IResolvable) {
+  public set enableSslVerification(value: boolean | cdktn.IResolvable) {
     this._enableSslVerification = value;
   }
   public resetEnableSslVerification() {
@@ -230,52 +236,52 @@ export class MlflowWebhookHttpUrlSpecOutputReference extends cdktf.ComplexObject
 }
 export interface MlflowWebhookJobSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mlflow_webhook#access_token MlflowWebhook#access_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mlflow_webhook#access_token MlflowWebhook#access_token}
   */
   readonly accessToken: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mlflow_webhook#job_id MlflowWebhook#job_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mlflow_webhook#job_id MlflowWebhook#job_id}
   */
   readonly jobId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mlflow_webhook#workspace_url MlflowWebhook#workspace_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mlflow_webhook#workspace_url MlflowWebhook#workspace_url}
   */
   readonly workspaceUrl?: string;
 }
 
 export function mlflowWebhookJobSpecToTerraform(struct?: MlflowWebhookJobSpecOutputReference | MlflowWebhookJobSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    access_token: cdktf.stringToTerraform(struct!.accessToken),
-    job_id: cdktf.stringToTerraform(struct!.jobId),
-    workspace_url: cdktf.stringToTerraform(struct!.workspaceUrl),
+    access_token: cdktn.stringToTerraform(struct!.accessToken),
+    job_id: cdktn.stringToTerraform(struct!.jobId),
+    workspace_url: cdktn.stringToTerraform(struct!.workspaceUrl),
   }
 }
 
 
 export function mlflowWebhookJobSpecToHclTerraform(struct?: MlflowWebhookJobSpecOutputReference | MlflowWebhookJobSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     access_token: {
-      value: cdktf.stringToHclTerraform(struct!.accessToken),
+      value: cdktn.stringToHclTerraform(struct!.accessToken),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     job_id: {
-      value: cdktf.stringToHclTerraform(struct!.jobId),
+      value: cdktn.stringToHclTerraform(struct!.jobId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     workspace_url: {
-      value: cdktf.stringToHclTerraform(struct!.workspaceUrl),
+      value: cdktn.stringToHclTerraform(struct!.workspaceUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -286,14 +292,14 @@ export function mlflowWebhookJobSpecToHclTerraform(struct?: MlflowWebhookJobSpec
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MlflowWebhookJobSpecOutputReference extends cdktf.ComplexObject {
+export class MlflowWebhookJobSpecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -372,11 +378,92 @@ export class MlflowWebhookJobSpecOutputReference extends cdktf.ComplexObject {
     return this._workspaceUrl;
   }
 }
+export interface MlflowWebhookProviderConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mlflow_webhook#workspace_id MlflowWebhook#workspace_id}
+  */
+  readonly workspaceId: string;
+}
+
+export function mlflowWebhookProviderConfigToTerraform(struct?: MlflowWebhookProviderConfigOutputReference | MlflowWebhookProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
+  }
+}
+
+
+export function mlflowWebhookProviderConfigToHclTerraform(struct?: MlflowWebhookProviderConfigOutputReference | MlflowWebhookProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    workspace_id: {
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class MlflowWebhookProviderConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): MlflowWebhookProviderConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._workspaceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workspaceId = this._workspaceId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MlflowWebhookProviderConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._workspaceId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._workspaceId = value.workspaceId;
+    }
+  }
+
+  // workspace_id - computed: false, optional: false, required: true
+  private _workspaceId?: string; 
+  public get workspaceId() {
+    return this.getStringAttribute('workspace_id');
+  }
+  public set workspaceId(value: string) {
+    this._workspaceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workspaceIdInput() {
+    return this._workspaceId;
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mlflow_webhook databricks_mlflow_webhook}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mlflow_webhook databricks_mlflow_webhook}
 */
-export class MlflowWebhook extends cdktf.TerraformResource {
+export class MlflowWebhook extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -387,14 +474,14 @@ export class MlflowWebhook extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a MlflowWebhook resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a MlflowWebhook resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MlflowWebhook to import
-  * @param importFromId The id of the existing MlflowWebhook that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mlflow_webhook#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MlflowWebhook that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mlflow_webhook#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MlflowWebhook to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_mlflow_webhook", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_mlflow_webhook", importId: importFromId, provider });
       }
 
   // ===========
@@ -402,7 +489,7 @@ export class MlflowWebhook extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/mlflow_webhook databricks_mlflow_webhook} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/mlflow_webhook databricks_mlflow_webhook} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -413,7 +500,7 @@ export class MlflowWebhook extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_mlflow_webhook',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -431,6 +518,7 @@ export class MlflowWebhook extends cdktf.TerraformResource {
     this._status = config.status;
     this._httpUrlSpec.internalValue = config.httpUrlSpec;
     this._jobSpec.internalValue = config.jobSpec;
+    this._providerConfig.internalValue = config.providerConfig;
   }
 
   // ==========
@@ -546,50 +634,67 @@ export class MlflowWebhook extends cdktf.TerraformResource {
     return this._jobSpec.internalValue;
   }
 
+  // provider_config - computed: false, optional: true, required: false
+  private _providerConfig = new MlflowWebhookProviderConfigOutputReference(this, "provider_config");
+  public get providerConfig() {
+    return this._providerConfig;
+  }
+  public putProviderConfig(value: MlflowWebhookProviderConfig) {
+    this._providerConfig.internalValue = value;
+  }
+  public resetProviderConfig() {
+    this._providerConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerConfigInput() {
+    return this._providerConfig.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      events: cdktf.listMapper(cdktf.stringToTerraform, false)(this._events),
-      id: cdktf.stringToTerraform(this._id),
-      model_name: cdktf.stringToTerraform(this._modelName),
-      status: cdktf.stringToTerraform(this._status),
+      description: cdktn.stringToTerraform(this._description),
+      events: cdktn.listMapper(cdktn.stringToTerraform, false)(this._events),
+      id: cdktn.stringToTerraform(this._id),
+      model_name: cdktn.stringToTerraform(this._modelName),
+      status: cdktn.stringToTerraform(this._status),
       http_url_spec: mlflowWebhookHttpUrlSpecToTerraform(this._httpUrlSpec.internalValue),
       job_spec: mlflowWebhookJobSpecToTerraform(this._jobSpec.internalValue),
+      provider_config: mlflowWebhookProviderConfigToTerraform(this._providerConfig.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       events: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._events),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._events),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       model_name: {
-        value: cdktf.stringToHclTerraform(this._modelName),
+        value: cdktn.stringToHclTerraform(this._modelName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       status: {
-        value: cdktf.stringToHclTerraform(this._status),
+        value: cdktn.stringToHclTerraform(this._status),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -605,6 +710,12 @@ export class MlflowWebhook extends cdktf.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "MlflowWebhookJobSpecList",
+      },
+      provider_config: {
+        value: mlflowWebhookProviderConfigToHclTerraform(this._providerConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "MlflowWebhookProviderConfigList",
       },
     };
 

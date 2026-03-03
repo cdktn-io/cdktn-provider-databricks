@@ -1,61 +1,148 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/global_init_script
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/global_init_script
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface GlobalInitScriptConfig extends cdktf.TerraformMetaArguments {
+export interface GlobalInitScriptConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/global_init_script#content_base64 GlobalInitScript#content_base64}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/global_init_script#content_base64 GlobalInitScript#content_base64}
   */
   readonly contentBase64?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/global_init_script#enabled GlobalInitScript#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/global_init_script#enabled GlobalInitScript#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/global_init_script#id GlobalInitScript#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/global_init_script#id GlobalInitScript#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/global_init_script#md5 GlobalInitScript#md5}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/global_init_script#md5 GlobalInitScript#md5}
   */
   readonly md5?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/global_init_script#name GlobalInitScript#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/global_init_script#name GlobalInitScript#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/global_init_script#position GlobalInitScript#position}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/global_init_script#position GlobalInitScript#position}
   */
   readonly position?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/global_init_script#source GlobalInitScript#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/global_init_script#source GlobalInitScript#source}
   */
   readonly source?: string;
   /**
+  * provider_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/global_init_script#provider_config GlobalInitScript#provider_config}
+  */
+  readonly providerConfig?: GlobalInitScriptProviderConfig;
+  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/global_init_script#timeouts GlobalInitScript#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/global_init_script#timeouts GlobalInitScript#timeouts}
   */
   readonly timeouts?: GlobalInitScriptTimeouts;
+}
+export interface GlobalInitScriptProviderConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/global_init_script#workspace_id GlobalInitScript#workspace_id}
+  */
+  readonly workspaceId: string;
+}
+
+export function globalInitScriptProviderConfigToTerraform(struct?: GlobalInitScriptProviderConfigOutputReference | GlobalInitScriptProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
+  }
+}
+
+
+export function globalInitScriptProviderConfigToHclTerraform(struct?: GlobalInitScriptProviderConfigOutputReference | GlobalInitScriptProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    workspace_id: {
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GlobalInitScriptProviderConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GlobalInitScriptProviderConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._workspaceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workspaceId = this._workspaceId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GlobalInitScriptProviderConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._workspaceId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._workspaceId = value.workspaceId;
+    }
+  }
+
+  // workspace_id - computed: false, optional: false, required: true
+  private _workspaceId?: string; 
+  public get workspaceId() {
+    return this.getStringAttribute('workspace_id');
+  }
+  public set workspaceId(value: string) {
+    this._workspaceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workspaceIdInput() {
+    return this._workspaceId;
+  }
 }
 export interface GlobalInitScriptTimeouts {
 }
 
-export function globalInitScriptTimeoutsToTerraform(struct?: GlobalInitScriptTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function globalInitScriptTimeoutsToTerraform(struct?: GlobalInitScriptTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -63,9 +150,9 @@ export function globalInitScriptTimeoutsToTerraform(struct?: GlobalInitScriptTim
 }
 
 
-export function globalInitScriptTimeoutsToHclTerraform(struct?: GlobalInitScriptTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function globalInitScriptTimeoutsToHclTerraform(struct?: GlobalInitScriptTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -73,19 +160,19 @@ export function globalInitScriptTimeoutsToHclTerraform(struct?: GlobalInitScript
   return attrs;
 }
 
-export class GlobalInitScriptTimeoutsOutputReference extends cdktf.ComplexObject {
+export class GlobalInitScriptTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): GlobalInitScriptTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): GlobalInitScriptTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -94,12 +181,12 @@ export class GlobalInitScriptTimeoutsOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GlobalInitScriptTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: GlobalInitScriptTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -111,9 +198,9 @@ export class GlobalInitScriptTimeoutsOutputReference extends cdktf.ComplexObject
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/global_init_script databricks_global_init_script}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/global_init_script databricks_global_init_script}
 */
-export class GlobalInitScript extends cdktf.TerraformResource {
+export class GlobalInitScript extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -124,14 +211,14 @@ export class GlobalInitScript extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a GlobalInitScript resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a GlobalInitScript resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GlobalInitScript to import
-  * @param importFromId The id of the existing GlobalInitScript that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/global_init_script#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GlobalInitScript that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/global_init_script#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GlobalInitScript to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_global_init_script", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_global_init_script", importId: importFromId, provider });
       }
 
   // ===========
@@ -139,7 +226,7 @@ export class GlobalInitScript extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/global_init_script databricks_global_init_script} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/global_init_script databricks_global_init_script} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -150,7 +237,7 @@ export class GlobalInitScript extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_global_init_script',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -168,6 +255,7 @@ export class GlobalInitScript extends cdktf.TerraformResource {
     this._name = config.name;
     this._position = config.position;
     this._source = config.source;
+    this._providerConfig.internalValue = config.providerConfig;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -192,11 +280,11 @@ export class GlobalInitScript extends cdktf.TerraformResource {
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -284,6 +372,22 @@ export class GlobalInitScript extends cdktf.TerraformResource {
     return this._source;
   }
 
+  // provider_config - computed: false, optional: true, required: false
+  private _providerConfig = new GlobalInitScriptProviderConfigOutputReference(this, "provider_config");
+  public get providerConfig() {
+    return this._providerConfig;
+  }
+  public putProviderConfig(value: GlobalInitScriptProviderConfig) {
+    this._providerConfig.internalValue = value;
+  }
+  public resetProviderConfig() {
+    this._providerConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerConfigInput() {
+    return this._providerConfig.internalValue;
+  }
+
   // timeouts - computed: false, optional: true, required: true
   private _timeouts = new GlobalInitScriptTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -303,13 +407,14 @@ export class GlobalInitScript extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      content_base64: cdktf.stringToTerraform(this._contentBase64),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      id: cdktf.stringToTerraform(this._id),
-      md5: cdktf.stringToTerraform(this._md5),
-      name: cdktf.stringToTerraform(this._name),
-      position: cdktf.numberToTerraform(this._position),
-      source: cdktf.stringToTerraform(this._source),
+      content_base64: cdktn.stringToTerraform(this._contentBase64),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      id: cdktn.stringToTerraform(this._id),
+      md5: cdktn.stringToTerraform(this._md5),
+      name: cdktn.stringToTerraform(this._name),
+      position: cdktn.numberToTerraform(this._position),
+      source: cdktn.stringToTerraform(this._source),
+      provider_config: globalInitScriptProviderConfigToTerraform(this._providerConfig.internalValue),
       timeouts: globalInitScriptTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -317,46 +422,52 @@ export class GlobalInitScript extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       content_base64: {
-        value: cdktf.stringToHclTerraform(this._contentBase64),
+        value: cdktn.stringToHclTerraform(this._contentBase64),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       md5: {
-        value: cdktf.stringToHclTerraform(this._md5),
+        value: cdktn.stringToHclTerraform(this._md5),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       position: {
-        value: cdktf.numberToHclTerraform(this._position),
+        value: cdktn.numberToHclTerraform(this._position),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       source: {
-        value: cdktf.stringToHclTerraform(this._source),
+        value: cdktn.stringToHclTerraform(this._source),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      provider_config: {
+        value: globalInitScriptProviderConfigToHclTerraform(this._providerConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GlobalInitScriptProviderConfigList",
       },
       timeouts: {
         value: globalInitScriptTimeoutsToHclTerraform(this._timeouts.internalValue),

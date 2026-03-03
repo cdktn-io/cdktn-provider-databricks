@@ -1,65 +1,71 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/disable_legacy_features_setting
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/disable_legacy_features_setting
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DisableLegacyFeaturesSettingConfig extends cdktf.TerraformMetaArguments {
+export interface DisableLegacyFeaturesSettingConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/disable_legacy_features_setting#etag DisableLegacyFeaturesSetting#etag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/disable_legacy_features_setting#etag DisableLegacyFeaturesSetting#etag}
   */
   readonly etag?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/disable_legacy_features_setting#id DisableLegacyFeaturesSetting#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/disable_legacy_features_setting#id DisableLegacyFeaturesSetting#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/disable_legacy_features_setting#setting_name DisableLegacyFeaturesSetting#setting_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/disable_legacy_features_setting#setting_name DisableLegacyFeaturesSetting#setting_name}
   */
   readonly settingName?: string;
   /**
   * disable_legacy_features block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/disable_legacy_features_setting#disable_legacy_features DisableLegacyFeaturesSetting#disable_legacy_features}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/disable_legacy_features_setting#disable_legacy_features DisableLegacyFeaturesSetting#disable_legacy_features}
   */
   readonly disableLegacyFeatures: DisableLegacyFeaturesSettingDisableLegacyFeatures;
+  /**
+  * provider_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/disable_legacy_features_setting#provider_config DisableLegacyFeaturesSetting#provider_config}
+  */
+  readonly providerConfig?: DisableLegacyFeaturesSettingProviderConfig;
 }
 export interface DisableLegacyFeaturesSettingDisableLegacyFeatures {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/disable_legacy_features_setting#value DisableLegacyFeaturesSetting#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/disable_legacy_features_setting#value DisableLegacyFeaturesSetting#value}
   */
-  readonly value: boolean | cdktf.IResolvable;
+  readonly value: boolean | cdktn.IResolvable;
 }
 
 export function disableLegacyFeaturesSettingDisableLegacyFeaturesToTerraform(struct?: DisableLegacyFeaturesSettingDisableLegacyFeaturesOutputReference | DisableLegacyFeaturesSettingDisableLegacyFeatures): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    value: cdktf.booleanToTerraform(struct!.value),
+    value: cdktn.booleanToTerraform(struct!.value),
   }
 }
 
 
 export function disableLegacyFeaturesSettingDisableLegacyFeaturesToHclTerraform(struct?: DisableLegacyFeaturesSettingDisableLegacyFeaturesOutputReference | DisableLegacyFeaturesSettingDisableLegacyFeatures): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     value: {
-      value: cdktf.booleanToHclTerraform(struct!.value),
+      value: cdktn.booleanToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -70,14 +76,14 @@ export function disableLegacyFeaturesSettingDisableLegacyFeaturesToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DisableLegacyFeaturesSettingDisableLegacyFeaturesOutputReference extends cdktf.ComplexObject {
+export class DisableLegacyFeaturesSettingDisableLegacyFeaturesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -103,11 +109,11 @@ export class DisableLegacyFeaturesSettingDisableLegacyFeaturesOutputReference ex
   }
 
   // value - computed: false, optional: false, required: true
-  private _value?: boolean | cdktf.IResolvable; 
+  private _value?: boolean | cdktn.IResolvable; 
   public get value() {
     return this.getBooleanAttribute('value');
   }
-  public set value(value: boolean | cdktf.IResolvable) {
+  public set value(value: boolean | cdktn.IResolvable) {
     this._value = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -115,11 +121,92 @@ export class DisableLegacyFeaturesSettingDisableLegacyFeaturesOutputReference ex
     return this._value;
   }
 }
+export interface DisableLegacyFeaturesSettingProviderConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/disable_legacy_features_setting#workspace_id DisableLegacyFeaturesSetting#workspace_id}
+  */
+  readonly workspaceId: string;
+}
+
+export function disableLegacyFeaturesSettingProviderConfigToTerraform(struct?: DisableLegacyFeaturesSettingProviderConfigOutputReference | DisableLegacyFeaturesSettingProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
+  }
+}
+
+
+export function disableLegacyFeaturesSettingProviderConfigToHclTerraform(struct?: DisableLegacyFeaturesSettingProviderConfigOutputReference | DisableLegacyFeaturesSettingProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    workspace_id: {
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DisableLegacyFeaturesSettingProviderConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DisableLegacyFeaturesSettingProviderConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._workspaceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workspaceId = this._workspaceId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DisableLegacyFeaturesSettingProviderConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._workspaceId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._workspaceId = value.workspaceId;
+    }
+  }
+
+  // workspace_id - computed: false, optional: false, required: true
+  private _workspaceId?: string; 
+  public get workspaceId() {
+    return this.getStringAttribute('workspace_id');
+  }
+  public set workspaceId(value: string) {
+    this._workspaceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workspaceIdInput() {
+    return this._workspaceId;
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/disable_legacy_features_setting databricks_disable_legacy_features_setting}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/disable_legacy_features_setting databricks_disable_legacy_features_setting}
 */
-export class DisableLegacyFeaturesSetting extends cdktf.TerraformResource {
+export class DisableLegacyFeaturesSetting extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -130,14 +217,14 @@ export class DisableLegacyFeaturesSetting extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DisableLegacyFeaturesSetting resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DisableLegacyFeaturesSetting resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DisableLegacyFeaturesSetting to import
-  * @param importFromId The id of the existing DisableLegacyFeaturesSetting that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/disable_legacy_features_setting#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DisableLegacyFeaturesSetting that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/disable_legacy_features_setting#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DisableLegacyFeaturesSetting to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_disable_legacy_features_setting", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_disable_legacy_features_setting", importId: importFromId, provider });
       }
 
   // ===========
@@ -145,7 +232,7 @@ export class DisableLegacyFeaturesSetting extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/disable_legacy_features_setting databricks_disable_legacy_features_setting} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/disable_legacy_features_setting databricks_disable_legacy_features_setting} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -156,7 +243,7 @@ export class DisableLegacyFeaturesSetting extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_disable_legacy_features_setting',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -171,6 +258,7 @@ export class DisableLegacyFeaturesSetting extends cdktf.TerraformResource {
     this._id = config.id;
     this._settingName = config.settingName;
     this._disableLegacyFeatures.internalValue = config.disableLegacyFeatures;
+    this._providerConfig.internalValue = config.providerConfig;
   }
 
   // ==========
@@ -238,35 +326,52 @@ export class DisableLegacyFeaturesSetting extends cdktf.TerraformResource {
     return this._disableLegacyFeatures.internalValue;
   }
 
+  // provider_config - computed: false, optional: true, required: false
+  private _providerConfig = new DisableLegacyFeaturesSettingProviderConfigOutputReference(this, "provider_config");
+  public get providerConfig() {
+    return this._providerConfig;
+  }
+  public putProviderConfig(value: DisableLegacyFeaturesSettingProviderConfig) {
+    this._providerConfig.internalValue = value;
+  }
+  public resetProviderConfig() {
+    this._providerConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerConfigInput() {
+    return this._providerConfig.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      etag: cdktf.stringToTerraform(this._etag),
-      id: cdktf.stringToTerraform(this._id),
-      setting_name: cdktf.stringToTerraform(this._settingName),
+      etag: cdktn.stringToTerraform(this._etag),
+      id: cdktn.stringToTerraform(this._id),
+      setting_name: cdktn.stringToTerraform(this._settingName),
       disable_legacy_features: disableLegacyFeaturesSettingDisableLegacyFeaturesToTerraform(this._disableLegacyFeatures.internalValue),
+      provider_config: disableLegacyFeaturesSettingProviderConfigToTerraform(this._providerConfig.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       etag: {
-        value: cdktf.stringToHclTerraform(this._etag),
+        value: cdktn.stringToHclTerraform(this._etag),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       setting_name: {
-        value: cdktf.stringToHclTerraform(this._settingName),
+        value: cdktn.stringToHclTerraform(this._settingName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -276,6 +381,12 @@ export class DisableLegacyFeaturesSetting extends cdktf.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "DisableLegacyFeaturesSettingDisableLegacyFeaturesList",
+      },
+      provider_config: {
+        value: disableLegacyFeaturesSettingProviderConfigToHclTerraform(this._providerConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DisableLegacyFeaturesSettingProviderConfigList",
       },
     };
 

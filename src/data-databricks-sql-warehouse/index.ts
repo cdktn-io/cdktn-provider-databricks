@@ -1,156 +1,156 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/sql_warehouse
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/sql_warehouse
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataDatabricksSqlWarehouseConfig extends cdktf.TerraformMetaArguments {
+export interface DataDatabricksSqlWarehouseConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/sql_warehouse#auto_stop_mins DataDatabricksSqlWarehouse#auto_stop_mins}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/sql_warehouse#auto_stop_mins DataDatabricksSqlWarehouse#auto_stop_mins}
   */
   readonly autoStopMins?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/sql_warehouse#cluster_size DataDatabricksSqlWarehouse#cluster_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/sql_warehouse#cluster_size DataDatabricksSqlWarehouse#cluster_size}
   */
   readonly clusterSize?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/sql_warehouse#creator_name DataDatabricksSqlWarehouse#creator_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/sql_warehouse#creator_name DataDatabricksSqlWarehouse#creator_name}
   */
   readonly creatorName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/sql_warehouse#data_source_id DataDatabricksSqlWarehouse#data_source_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/sql_warehouse#data_source_id DataDatabricksSqlWarehouse#data_source_id}
   */
   readonly dataSourceId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/sql_warehouse#enable_photon DataDatabricksSqlWarehouse#enable_photon}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/sql_warehouse#enable_photon DataDatabricksSqlWarehouse#enable_photon}
   */
-  readonly enablePhoton?: boolean | cdktf.IResolvable;
+  readonly enablePhoton?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/sql_warehouse#enable_serverless_compute DataDatabricksSqlWarehouse#enable_serverless_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/sql_warehouse#enable_serverless_compute DataDatabricksSqlWarehouse#enable_serverless_compute}
   */
-  readonly enableServerlessCompute?: boolean | cdktf.IResolvable;
+  readonly enableServerlessCompute?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/sql_warehouse#id DataDatabricksSqlWarehouse#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/sql_warehouse#id DataDatabricksSqlWarehouse#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/sql_warehouse#instance_profile_arn DataDatabricksSqlWarehouse#instance_profile_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/sql_warehouse#instance_profile_arn DataDatabricksSqlWarehouse#instance_profile_arn}
   */
   readonly instanceProfileArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/sql_warehouse#jdbc_url DataDatabricksSqlWarehouse#jdbc_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/sql_warehouse#jdbc_url DataDatabricksSqlWarehouse#jdbc_url}
   */
   readonly jdbcUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/sql_warehouse#max_num_clusters DataDatabricksSqlWarehouse#max_num_clusters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/sql_warehouse#max_num_clusters DataDatabricksSqlWarehouse#max_num_clusters}
   */
   readonly maxNumClusters?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/sql_warehouse#min_num_clusters DataDatabricksSqlWarehouse#min_num_clusters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/sql_warehouse#min_num_clusters DataDatabricksSqlWarehouse#min_num_clusters}
   */
   readonly minNumClusters?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/sql_warehouse#name DataDatabricksSqlWarehouse#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/sql_warehouse#name DataDatabricksSqlWarehouse#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/sql_warehouse#num_active_sessions DataDatabricksSqlWarehouse#num_active_sessions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/sql_warehouse#num_active_sessions DataDatabricksSqlWarehouse#num_active_sessions}
   */
   readonly numActiveSessions?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/sql_warehouse#num_clusters DataDatabricksSqlWarehouse#num_clusters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/sql_warehouse#num_clusters DataDatabricksSqlWarehouse#num_clusters}
   */
   readonly numClusters?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/sql_warehouse#spot_instance_policy DataDatabricksSqlWarehouse#spot_instance_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/sql_warehouse#spot_instance_policy DataDatabricksSqlWarehouse#spot_instance_policy}
   */
   readonly spotInstancePolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/sql_warehouse#state DataDatabricksSqlWarehouse#state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/sql_warehouse#state DataDatabricksSqlWarehouse#state}
   */
   readonly state?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/sql_warehouse#warehouse_type DataDatabricksSqlWarehouse#warehouse_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/sql_warehouse#warehouse_type DataDatabricksSqlWarehouse#warehouse_type}
   */
   readonly warehouseType?: string;
   /**
   * channel block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/sql_warehouse#channel DataDatabricksSqlWarehouse#channel}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/sql_warehouse#channel DataDatabricksSqlWarehouse#channel}
   */
   readonly channel?: DataDatabricksSqlWarehouseChannel;
   /**
   * health block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/sql_warehouse#health DataDatabricksSqlWarehouse#health}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/sql_warehouse#health DataDatabricksSqlWarehouse#health}
   */
   readonly health?: DataDatabricksSqlWarehouseHealth;
   /**
   * odbc_params block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/sql_warehouse#odbc_params DataDatabricksSqlWarehouse#odbc_params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/sql_warehouse#odbc_params DataDatabricksSqlWarehouse#odbc_params}
   */
   readonly odbcParams?: DataDatabricksSqlWarehouseOdbcParams;
   /**
   * provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/sql_warehouse#provider_config DataDatabricksSqlWarehouse#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/sql_warehouse#provider_config DataDatabricksSqlWarehouse#provider_config}
   */
   readonly providerConfig?: DataDatabricksSqlWarehouseProviderConfig;
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/sql_warehouse#tags DataDatabricksSqlWarehouse#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/sql_warehouse#tags DataDatabricksSqlWarehouse#tags}
   */
   readonly tags?: DataDatabricksSqlWarehouseTags;
 }
 export interface DataDatabricksSqlWarehouseChannel {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/sql_warehouse#dbsql_version DataDatabricksSqlWarehouse#dbsql_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/sql_warehouse#dbsql_version DataDatabricksSqlWarehouse#dbsql_version}
   */
   readonly dbsqlVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/sql_warehouse#name DataDatabricksSqlWarehouse#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/sql_warehouse#name DataDatabricksSqlWarehouse#name}
   */
   readonly name?: string;
 }
 
 export function dataDatabricksSqlWarehouseChannelToTerraform(struct?: DataDatabricksSqlWarehouseChannelOutputReference | DataDatabricksSqlWarehouseChannel): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    dbsql_version: cdktf.stringToTerraform(struct!.dbsqlVersion),
-    name: cdktf.stringToTerraform(struct!.name),
+    dbsql_version: cdktn.stringToTerraform(struct!.dbsqlVersion),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
 export function dataDatabricksSqlWarehouseChannelToHclTerraform(struct?: DataDatabricksSqlWarehouseChannelOutputReference | DataDatabricksSqlWarehouseChannel): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     dbsql_version: {
-      value: cdktf.stringToHclTerraform(struct!.dbsqlVersion),
+      value: cdktn.stringToHclTerraform(struct!.dbsqlVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -161,14 +161,14 @@ export function dataDatabricksSqlWarehouseChannelToHclTerraform(struct?: DataDat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksSqlWarehouseChannelOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksSqlWarehouseChannelOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -233,52 +233,52 @@ export class DataDatabricksSqlWarehouseChannelOutputReference extends cdktf.Comp
 }
 export interface DataDatabricksSqlWarehouseHealthFailureReason {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/sql_warehouse#code DataDatabricksSqlWarehouse#code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/sql_warehouse#code DataDatabricksSqlWarehouse#code}
   */
   readonly code?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/sql_warehouse#parameters DataDatabricksSqlWarehouse#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/sql_warehouse#parameters DataDatabricksSqlWarehouse#parameters}
   */
   readonly parameters?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/sql_warehouse#type DataDatabricksSqlWarehouse#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/sql_warehouse#type DataDatabricksSqlWarehouse#type}
   */
   readonly type?: string;
 }
 
 export function dataDatabricksSqlWarehouseHealthFailureReasonToTerraform(struct?: DataDatabricksSqlWarehouseHealthFailureReasonOutputReference | DataDatabricksSqlWarehouseHealthFailureReason): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    code: cdktf.stringToTerraform(struct!.code),
-    parameters: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.parameters),
-    type: cdktf.stringToTerraform(struct!.type),
+    code: cdktn.stringToTerraform(struct!.code),
+    parameters: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.parameters),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function dataDatabricksSqlWarehouseHealthFailureReasonToHclTerraform(struct?: DataDatabricksSqlWarehouseHealthFailureReasonOutputReference | DataDatabricksSqlWarehouseHealthFailureReason): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     code: {
-      value: cdktf.stringToHclTerraform(struct!.code),
+      value: cdktn.stringToHclTerraform(struct!.code),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     parameters: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.parameters),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.parameters),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -289,14 +289,14 @@ export function dataDatabricksSqlWarehouseHealthFailureReasonToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksSqlWarehouseHealthFailureReasonOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksSqlWarehouseHealthFailureReasonOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -383,70 +383,70 @@ export class DataDatabricksSqlWarehouseHealthFailureReasonOutputReference extend
 }
 export interface DataDatabricksSqlWarehouseHealth {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/sql_warehouse#details DataDatabricksSqlWarehouse#details}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/sql_warehouse#details DataDatabricksSqlWarehouse#details}
   */
   readonly details?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/sql_warehouse#message DataDatabricksSqlWarehouse#message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/sql_warehouse#message DataDatabricksSqlWarehouse#message}
   */
   readonly message?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/sql_warehouse#status DataDatabricksSqlWarehouse#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/sql_warehouse#status DataDatabricksSqlWarehouse#status}
   */
   readonly status?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/sql_warehouse#summary DataDatabricksSqlWarehouse#summary}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/sql_warehouse#summary DataDatabricksSqlWarehouse#summary}
   */
   readonly summary?: string;
   /**
   * failure_reason block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/sql_warehouse#failure_reason DataDatabricksSqlWarehouse#failure_reason}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/sql_warehouse#failure_reason DataDatabricksSqlWarehouse#failure_reason}
   */
   readonly failureReason?: DataDatabricksSqlWarehouseHealthFailureReason;
 }
 
 export function dataDatabricksSqlWarehouseHealthToTerraform(struct?: DataDatabricksSqlWarehouseHealthOutputReference | DataDatabricksSqlWarehouseHealth): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    details: cdktf.stringToTerraform(struct!.details),
-    message: cdktf.stringToTerraform(struct!.message),
-    status: cdktf.stringToTerraform(struct!.status),
-    summary: cdktf.stringToTerraform(struct!.summary),
+    details: cdktn.stringToTerraform(struct!.details),
+    message: cdktn.stringToTerraform(struct!.message),
+    status: cdktn.stringToTerraform(struct!.status),
+    summary: cdktn.stringToTerraform(struct!.summary),
     failure_reason: dataDatabricksSqlWarehouseHealthFailureReasonToTerraform(struct!.failureReason),
   }
 }
 
 
 export function dataDatabricksSqlWarehouseHealthToHclTerraform(struct?: DataDatabricksSqlWarehouseHealthOutputReference | DataDatabricksSqlWarehouseHealth): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     details: {
-      value: cdktf.stringToHclTerraform(struct!.details),
+      value: cdktn.stringToHclTerraform(struct!.details),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     message: {
-      value: cdktf.stringToHclTerraform(struct!.message),
+      value: cdktn.stringToHclTerraform(struct!.message),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     status: {
-      value: cdktf.stringToHclTerraform(struct!.status),
+      value: cdktn.stringToHclTerraform(struct!.status),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     summary: {
-      value: cdktf.stringToHclTerraform(struct!.summary),
+      value: cdktn.stringToHclTerraform(struct!.summary),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -463,14 +463,14 @@ export function dataDatabricksSqlWarehouseHealthToHclTerraform(struct?: DataData
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksSqlWarehouseHealthOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksSqlWarehouseHealthOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -601,63 +601,63 @@ export class DataDatabricksSqlWarehouseHealthOutputReference extends cdktf.Compl
 }
 export interface DataDatabricksSqlWarehouseOdbcParams {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/sql_warehouse#hostname DataDatabricksSqlWarehouse#hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/sql_warehouse#hostname DataDatabricksSqlWarehouse#hostname}
   */
   readonly hostname?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/sql_warehouse#path DataDatabricksSqlWarehouse#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/sql_warehouse#path DataDatabricksSqlWarehouse#path}
   */
   readonly path?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/sql_warehouse#port DataDatabricksSqlWarehouse#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/sql_warehouse#port DataDatabricksSqlWarehouse#port}
   */
   readonly port?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/sql_warehouse#protocol DataDatabricksSqlWarehouse#protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/sql_warehouse#protocol DataDatabricksSqlWarehouse#protocol}
   */
   readonly protocol?: string;
 }
 
 export function dataDatabricksSqlWarehouseOdbcParamsToTerraform(struct?: DataDatabricksSqlWarehouseOdbcParamsOutputReference | DataDatabricksSqlWarehouseOdbcParams): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    hostname: cdktf.stringToTerraform(struct!.hostname),
-    path: cdktf.stringToTerraform(struct!.path),
-    port: cdktf.numberToTerraform(struct!.port),
-    protocol: cdktf.stringToTerraform(struct!.protocol),
+    hostname: cdktn.stringToTerraform(struct!.hostname),
+    path: cdktn.stringToTerraform(struct!.path),
+    port: cdktn.numberToTerraform(struct!.port),
+    protocol: cdktn.stringToTerraform(struct!.protocol),
   }
 }
 
 
 export function dataDatabricksSqlWarehouseOdbcParamsToHclTerraform(struct?: DataDatabricksSqlWarehouseOdbcParamsOutputReference | DataDatabricksSqlWarehouseOdbcParams): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     hostname: {
-      value: cdktf.stringToHclTerraform(struct!.hostname),
+      value: cdktn.stringToHclTerraform(struct!.hostname),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port: {
-      value: cdktf.numberToHclTerraform(struct!.port),
+      value: cdktn.numberToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     protocol: {
-      value: cdktf.stringToHclTerraform(struct!.protocol),
+      value: cdktn.stringToHclTerraform(struct!.protocol),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -668,14 +668,14 @@ export function dataDatabricksSqlWarehouseOdbcParamsToHclTerraform(struct?: Data
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksSqlWarehouseOdbcParamsOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksSqlWarehouseOdbcParamsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -784,30 +784,30 @@ export class DataDatabricksSqlWarehouseOdbcParamsOutputReference extends cdktf.C
 }
 export interface DataDatabricksSqlWarehouseProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/sql_warehouse#workspace_id DataDatabricksSqlWarehouse#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/sql_warehouse#workspace_id DataDatabricksSqlWarehouse#workspace_id}
   */
   readonly workspaceId: string;
 }
 
 export function dataDatabricksSqlWarehouseProviderConfigToTerraform(struct?: DataDatabricksSqlWarehouseProviderConfigOutputReference | DataDatabricksSqlWarehouseProviderConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    workspace_id: cdktf.stringToTerraform(struct!.workspaceId),
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
   }
 }
 
 
 export function dataDatabricksSqlWarehouseProviderConfigToHclTerraform(struct?: DataDatabricksSqlWarehouseProviderConfigOutputReference | DataDatabricksSqlWarehouseProviderConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     workspace_id: {
-      value: cdktf.stringToHclTerraform(struct!.workspaceId),
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -818,14 +818,14 @@ export function dataDatabricksSqlWarehouseProviderConfigToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksSqlWarehouseProviderConfigOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksSqlWarehouseProviderConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -865,41 +865,41 @@ export class DataDatabricksSqlWarehouseProviderConfigOutputReference extends cdk
 }
 export interface DataDatabricksSqlWarehouseTagsCustomTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/sql_warehouse#key DataDatabricksSqlWarehouse#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/sql_warehouse#key DataDatabricksSqlWarehouse#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/sql_warehouse#value DataDatabricksSqlWarehouse#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/sql_warehouse#value DataDatabricksSqlWarehouse#value}
   */
   readonly value?: string;
 }
 
-export function dataDatabricksSqlWarehouseTagsCustomTagsToTerraform(struct?: DataDatabricksSqlWarehouseTagsCustomTags | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksSqlWarehouseTagsCustomTagsToTerraform(struct?: DataDatabricksSqlWarehouseTagsCustomTags | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    value: cdktf.stringToTerraform(struct!.value),
+    key: cdktn.stringToTerraform(struct!.key),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function dataDatabricksSqlWarehouseTagsCustomTagsToHclTerraform(struct?: DataDatabricksSqlWarehouseTagsCustomTags | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatabricksSqlWarehouseTagsCustomTagsToHclTerraform(struct?: DataDatabricksSqlWarehouseTagsCustomTags | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -910,9 +910,9 @@ export function dataDatabricksSqlWarehouseTagsCustomTagsToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksSqlWarehouseTagsCustomTagsOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksSqlWarehouseTagsCustomTagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -920,11 +920,11 @@ export class DataDatabricksSqlWarehouseTagsCustomTagsOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataDatabricksSqlWarehouseTagsCustomTags | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatabricksSqlWarehouseTagsCustomTags | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -941,14 +941,14 @@ export class DataDatabricksSqlWarehouseTagsCustomTagsOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksSqlWarehouseTagsCustomTags | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatabricksSqlWarehouseTagsCustomTags | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -993,15 +993,15 @@ export class DataDatabricksSqlWarehouseTagsCustomTagsOutputReference extends cdk
   }
 }
 
-export class DataDatabricksSqlWarehouseTagsCustomTagsList extends cdktf.ComplexList {
-  public internalValue? : DataDatabricksSqlWarehouseTagsCustomTags[] | cdktf.IResolvable
+export class DataDatabricksSqlWarehouseTagsCustomTagsList extends cdktn.ComplexList {
+  public internalValue? : DataDatabricksSqlWarehouseTagsCustomTags[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1016,30 +1016,30 @@ export interface DataDatabricksSqlWarehouseTags {
   /**
   * custom_tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/sql_warehouse#custom_tags DataDatabricksSqlWarehouse#custom_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/sql_warehouse#custom_tags DataDatabricksSqlWarehouse#custom_tags}
   */
-  readonly customTags?: DataDatabricksSqlWarehouseTagsCustomTags[] | cdktf.IResolvable;
+  readonly customTags?: DataDatabricksSqlWarehouseTagsCustomTags[] | cdktn.IResolvable;
 }
 
 export function dataDatabricksSqlWarehouseTagsToTerraform(struct?: DataDatabricksSqlWarehouseTagsOutputReference | DataDatabricksSqlWarehouseTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    custom_tags: cdktf.listMapper(dataDatabricksSqlWarehouseTagsCustomTagsToTerraform, true)(struct!.customTags),
+    custom_tags: cdktn.listMapper(dataDatabricksSqlWarehouseTagsCustomTagsToTerraform, true)(struct!.customTags),
   }
 }
 
 
 export function dataDatabricksSqlWarehouseTagsToHclTerraform(struct?: DataDatabricksSqlWarehouseTagsOutputReference | DataDatabricksSqlWarehouseTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     custom_tags: {
-      value: cdktf.listMapperHcl(dataDatabricksSqlWarehouseTagsCustomTagsToHclTerraform, true)(struct!.customTags),
+      value: cdktn.listMapperHcl(dataDatabricksSqlWarehouseTagsCustomTagsToHclTerraform, true)(struct!.customTags),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatabricksSqlWarehouseTagsCustomTagsList",
@@ -1050,14 +1050,14 @@ export function dataDatabricksSqlWarehouseTagsToHclTerraform(struct?: DataDatabr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatabricksSqlWarehouseTagsOutputReference extends cdktf.ComplexObject {
+export class DataDatabricksSqlWarehouseTagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1087,7 +1087,7 @@ export class DataDatabricksSqlWarehouseTagsOutputReference extends cdktf.Complex
   public get customTags() {
     return this._customTags;
   }
-  public putCustomTags(value: DataDatabricksSqlWarehouseTagsCustomTags[] | cdktf.IResolvable) {
+  public putCustomTags(value: DataDatabricksSqlWarehouseTagsCustomTags[] | cdktn.IResolvable) {
     this._customTags.internalValue = value;
   }
   public resetCustomTags() {
@@ -1100,9 +1100,9 @@ export class DataDatabricksSqlWarehouseTagsOutputReference extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/sql_warehouse databricks_sql_warehouse}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/sql_warehouse databricks_sql_warehouse}
 */
-export class DataDatabricksSqlWarehouse extends cdktf.TerraformDataSource {
+export class DataDatabricksSqlWarehouse extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -1113,14 +1113,14 @@ export class DataDatabricksSqlWarehouse extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataDatabricksSqlWarehouse resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataDatabricksSqlWarehouse resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksSqlWarehouse to import
-  * @param importFromId The id of the existing DataDatabricksSqlWarehouse that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/sql_warehouse#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksSqlWarehouse that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/sql_warehouse#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksSqlWarehouse to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_sql_warehouse", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_sql_warehouse", importId: importFromId, provider });
       }
 
   // ===========
@@ -1128,7 +1128,7 @@ export class DataDatabricksSqlWarehouse extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/sql_warehouse databricks_sql_warehouse} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/sql_warehouse databricks_sql_warehouse} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1139,7 +1139,7 @@ export class DataDatabricksSqlWarehouse extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_sql_warehouse',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -1243,11 +1243,11 @@ export class DataDatabricksSqlWarehouse extends cdktf.TerraformDataSource {
   }
 
   // enable_photon - computed: true, optional: true, required: false
-  private _enablePhoton?: boolean | cdktf.IResolvable; 
+  private _enablePhoton?: boolean | cdktn.IResolvable; 
   public get enablePhoton() {
     return this.getBooleanAttribute('enable_photon');
   }
-  public set enablePhoton(value: boolean | cdktf.IResolvable) {
+  public set enablePhoton(value: boolean | cdktn.IResolvable) {
     this._enablePhoton = value;
   }
   public resetEnablePhoton() {
@@ -1259,11 +1259,11 @@ export class DataDatabricksSqlWarehouse extends cdktf.TerraformDataSource {
   }
 
   // enable_serverless_compute - computed: true, optional: true, required: false
-  private _enableServerlessCompute?: boolean | cdktf.IResolvable; 
+  private _enableServerlessCompute?: boolean | cdktn.IResolvable; 
   public get enableServerlessCompute() {
     return this.getBooleanAttribute('enable_serverless_compute');
   }
-  public set enableServerlessCompute(value: boolean | cdktf.IResolvable) {
+  public set enableServerlessCompute(value: boolean | cdktn.IResolvable) {
     this._enableServerlessCompute = value;
   }
   public resetEnableServerlessCompute() {
@@ -1536,23 +1536,23 @@ export class DataDatabricksSqlWarehouse extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      auto_stop_mins: cdktf.numberToTerraform(this._autoStopMins),
-      cluster_size: cdktf.stringToTerraform(this._clusterSize),
-      creator_name: cdktf.stringToTerraform(this._creatorName),
-      data_source_id: cdktf.stringToTerraform(this._dataSourceId),
-      enable_photon: cdktf.booleanToTerraform(this._enablePhoton),
-      enable_serverless_compute: cdktf.booleanToTerraform(this._enableServerlessCompute),
-      id: cdktf.stringToTerraform(this._id),
-      instance_profile_arn: cdktf.stringToTerraform(this._instanceProfileArn),
-      jdbc_url: cdktf.stringToTerraform(this._jdbcUrl),
-      max_num_clusters: cdktf.numberToTerraform(this._maxNumClusters),
-      min_num_clusters: cdktf.numberToTerraform(this._minNumClusters),
-      name: cdktf.stringToTerraform(this._name),
-      num_active_sessions: cdktf.numberToTerraform(this._numActiveSessions),
-      num_clusters: cdktf.numberToTerraform(this._numClusters),
-      spot_instance_policy: cdktf.stringToTerraform(this._spotInstancePolicy),
-      state: cdktf.stringToTerraform(this._state),
-      warehouse_type: cdktf.stringToTerraform(this._warehouseType),
+      auto_stop_mins: cdktn.numberToTerraform(this._autoStopMins),
+      cluster_size: cdktn.stringToTerraform(this._clusterSize),
+      creator_name: cdktn.stringToTerraform(this._creatorName),
+      data_source_id: cdktn.stringToTerraform(this._dataSourceId),
+      enable_photon: cdktn.booleanToTerraform(this._enablePhoton),
+      enable_serverless_compute: cdktn.booleanToTerraform(this._enableServerlessCompute),
+      id: cdktn.stringToTerraform(this._id),
+      instance_profile_arn: cdktn.stringToTerraform(this._instanceProfileArn),
+      jdbc_url: cdktn.stringToTerraform(this._jdbcUrl),
+      max_num_clusters: cdktn.numberToTerraform(this._maxNumClusters),
+      min_num_clusters: cdktn.numberToTerraform(this._minNumClusters),
+      name: cdktn.stringToTerraform(this._name),
+      num_active_sessions: cdktn.numberToTerraform(this._numActiveSessions),
+      num_clusters: cdktn.numberToTerraform(this._numClusters),
+      spot_instance_policy: cdktn.stringToTerraform(this._spotInstancePolicy),
+      state: cdktn.stringToTerraform(this._state),
+      warehouse_type: cdktn.stringToTerraform(this._warehouseType),
       channel: dataDatabricksSqlWarehouseChannelToTerraform(this._channel.internalValue),
       health: dataDatabricksSqlWarehouseHealthToTerraform(this._health.internalValue),
       odbc_params: dataDatabricksSqlWarehouseOdbcParamsToTerraform(this._odbcParams.internalValue),
@@ -1564,103 +1564,103 @@ export class DataDatabricksSqlWarehouse extends cdktf.TerraformDataSource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       auto_stop_mins: {
-        value: cdktf.numberToHclTerraform(this._autoStopMins),
+        value: cdktn.numberToHclTerraform(this._autoStopMins),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       cluster_size: {
-        value: cdktf.stringToHclTerraform(this._clusterSize),
+        value: cdktn.stringToHclTerraform(this._clusterSize),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       creator_name: {
-        value: cdktf.stringToHclTerraform(this._creatorName),
+        value: cdktn.stringToHclTerraform(this._creatorName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       data_source_id: {
-        value: cdktf.stringToHclTerraform(this._dataSourceId),
+        value: cdktn.stringToHclTerraform(this._dataSourceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enable_photon: {
-        value: cdktf.booleanToHclTerraform(this._enablePhoton),
+        value: cdktn.booleanToHclTerraform(this._enablePhoton),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       enable_serverless_compute: {
-        value: cdktf.booleanToHclTerraform(this._enableServerlessCompute),
+        value: cdktn.booleanToHclTerraform(this._enableServerlessCompute),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance_profile_arn: {
-        value: cdktf.stringToHclTerraform(this._instanceProfileArn),
+        value: cdktn.stringToHclTerraform(this._instanceProfileArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       jdbc_url: {
-        value: cdktf.stringToHclTerraform(this._jdbcUrl),
+        value: cdktn.stringToHclTerraform(this._jdbcUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       max_num_clusters: {
-        value: cdktf.numberToHclTerraform(this._maxNumClusters),
+        value: cdktn.numberToHclTerraform(this._maxNumClusters),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       min_num_clusters: {
-        value: cdktf.numberToHclTerraform(this._minNumClusters),
+        value: cdktn.numberToHclTerraform(this._minNumClusters),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       num_active_sessions: {
-        value: cdktf.numberToHclTerraform(this._numActiveSessions),
+        value: cdktn.numberToHclTerraform(this._numActiveSessions),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       num_clusters: {
-        value: cdktf.numberToHclTerraform(this._numClusters),
+        value: cdktn.numberToHclTerraform(this._numClusters),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       spot_instance_policy: {
-        value: cdktf.stringToHclTerraform(this._spotInstancePolicy),
+        value: cdktn.stringToHclTerraform(this._spotInstancePolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       state: {
-        value: cdktf.stringToHclTerraform(this._state),
+        value: cdktn.stringToHclTerraform(this._state),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       warehouse_type: {
-        value: cdktf.stringToHclTerraform(this._warehouseType),
+        value: cdktn.stringToHclTerraform(this._warehouseType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

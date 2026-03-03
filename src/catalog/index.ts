@@ -1,141 +1,147 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/catalog
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/catalog
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CatalogConfig extends cdktf.TerraformMetaArguments {
+export interface CatalogConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/catalog#browse_only Catalog#browse_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/catalog#browse_only Catalog#browse_only}
   */
-  readonly browseOnly?: boolean | cdktf.IResolvable;
+  readonly browseOnly?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/catalog#comment Catalog#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/catalog#comment Catalog#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/catalog#connection_name Catalog#connection_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/catalog#connection_name Catalog#connection_name}
   */
   readonly connectionName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/catalog#enable_predictive_optimization Catalog#enable_predictive_optimization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/catalog#enable_predictive_optimization Catalog#enable_predictive_optimization}
   */
   readonly enablePredictiveOptimization?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/catalog#force_destroy Catalog#force_destroy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/catalog#force_destroy Catalog#force_destroy}
   */
-  readonly forceDestroy?: boolean | cdktf.IResolvable;
+  readonly forceDestroy?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/catalog#id Catalog#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/catalog#id Catalog#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/catalog#isolation_mode Catalog#isolation_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/catalog#isolation_mode Catalog#isolation_mode}
   */
   readonly isolationMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/catalog#metastore_id Catalog#metastore_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/catalog#metastore_id Catalog#metastore_id}
   */
   readonly metastoreId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/catalog#name Catalog#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/catalog#name Catalog#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/catalog#options Catalog#options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/catalog#options Catalog#options}
   */
   readonly options?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/catalog#owner Catalog#owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/catalog#owner Catalog#owner}
   */
   readonly owner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/catalog#properties Catalog#properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/catalog#properties Catalog#properties}
   */
   readonly properties?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/catalog#provider_name Catalog#provider_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/catalog#provider_name Catalog#provider_name}
   */
   readonly providerName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/catalog#share_name Catalog#share_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/catalog#share_name Catalog#share_name}
   */
   readonly shareName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/catalog#storage_root Catalog#storage_root}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/catalog#storage_root Catalog#storage_root}
   */
   readonly storageRoot?: string;
   /**
   * effective_predictive_optimization_flag block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/catalog#effective_predictive_optimization_flag Catalog#effective_predictive_optimization_flag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/catalog#effective_predictive_optimization_flag Catalog#effective_predictive_optimization_flag}
   */
   readonly effectivePredictiveOptimizationFlag?: CatalogEffectivePredictiveOptimizationFlag;
   /**
+  * provider_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/catalog#provider_config Catalog#provider_config}
+  */
+  readonly providerConfig?: CatalogProviderConfig;
+  /**
   * provisioning_info block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/catalog#provisioning_info Catalog#provisioning_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/catalog#provisioning_info Catalog#provisioning_info}
   */
   readonly provisioningInfo?: CatalogProvisioningInfo;
 }
 export interface CatalogEffectivePredictiveOptimizationFlag {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/catalog#inherited_from_name Catalog#inherited_from_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/catalog#inherited_from_name Catalog#inherited_from_name}
   */
   readonly inheritedFromName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/catalog#inherited_from_type Catalog#inherited_from_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/catalog#inherited_from_type Catalog#inherited_from_type}
   */
   readonly inheritedFromType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/catalog#value Catalog#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/catalog#value Catalog#value}
   */
   readonly value: string;
 }
 
 export function catalogEffectivePredictiveOptimizationFlagToTerraform(struct?: CatalogEffectivePredictiveOptimizationFlagOutputReference | CatalogEffectivePredictiveOptimizationFlag): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    inherited_from_name: cdktf.stringToTerraform(struct!.inheritedFromName),
-    inherited_from_type: cdktf.stringToTerraform(struct!.inheritedFromType),
-    value: cdktf.stringToTerraform(struct!.value),
+    inherited_from_name: cdktn.stringToTerraform(struct!.inheritedFromName),
+    inherited_from_type: cdktn.stringToTerraform(struct!.inheritedFromType),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
 export function catalogEffectivePredictiveOptimizationFlagToHclTerraform(struct?: CatalogEffectivePredictiveOptimizationFlagOutputReference | CatalogEffectivePredictiveOptimizationFlag): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     inherited_from_name: {
-      value: cdktf.stringToHclTerraform(struct!.inheritedFromName),
+      value: cdktn.stringToHclTerraform(struct!.inheritedFromName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     inherited_from_type: {
-      value: cdktf.stringToHclTerraform(struct!.inheritedFromType),
+      value: cdktn.stringToHclTerraform(struct!.inheritedFromType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -146,14 +152,14 @@ export function catalogEffectivePredictiveOptimizationFlagToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CatalogEffectivePredictiveOptimizationFlagOutputReference extends cdktf.ComplexObject {
+export class CatalogEffectivePredictiveOptimizationFlagOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -235,32 +241,32 @@ export class CatalogEffectivePredictiveOptimizationFlagOutputReference extends c
     return this._value;
   }
 }
-export interface CatalogProvisioningInfo {
+export interface CatalogProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/catalog#state Catalog#state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/catalog#workspace_id Catalog#workspace_id}
   */
-  readonly state?: string;
+  readonly workspaceId: string;
 }
 
-export function catalogProvisioningInfoToTerraform(struct?: CatalogProvisioningInfoOutputReference | CatalogProvisioningInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function catalogProviderConfigToTerraform(struct?: CatalogProviderConfigOutputReference | CatalogProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    state: cdktf.stringToTerraform(struct!.state),
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
   }
 }
 
 
-export function catalogProvisioningInfoToHclTerraform(struct?: CatalogProvisioningInfoOutputReference | CatalogProvisioningInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function catalogProviderConfigToHclTerraform(struct?: CatalogProviderConfigOutputReference | CatalogProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
-    state: {
-      value: cdktf.stringToHclTerraform(struct!.state),
+    workspace_id: {
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -271,14 +277,95 @@ export function catalogProvisioningInfoToHclTerraform(struct?: CatalogProvisioni
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CatalogProvisioningInfoOutputReference extends cdktf.ComplexObject {
+export class CatalogProviderConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): CatalogProviderConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._workspaceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workspaceId = this._workspaceId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CatalogProviderConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._workspaceId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._workspaceId = value.workspaceId;
+    }
+  }
+
+  // workspace_id - computed: false, optional: false, required: true
+  private _workspaceId?: string; 
+  public get workspaceId() {
+    return this.getStringAttribute('workspace_id');
+  }
+  public set workspaceId(value: string) {
+    this._workspaceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workspaceIdInput() {
+    return this._workspaceId;
+  }
+}
+export interface CatalogProvisioningInfo {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/catalog#state Catalog#state}
+  */
+  readonly state?: string;
+}
+
+export function catalogProvisioningInfoToTerraform(struct?: CatalogProvisioningInfoOutputReference | CatalogProvisioningInfo): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    state: cdktn.stringToTerraform(struct!.state),
+  }
+}
+
+
+export function catalogProvisioningInfoToHclTerraform(struct?: CatalogProvisioningInfoOutputReference | CatalogProvisioningInfo): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    state: {
+      value: cdktn.stringToHclTerraform(struct!.state),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class CatalogProvisioningInfoOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -321,9 +408,9 @@ export class CatalogProvisioningInfoOutputReference extends cdktf.ComplexObject 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/catalog databricks_catalog}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/catalog databricks_catalog}
 */
-export class Catalog extends cdktf.TerraformResource {
+export class Catalog extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -334,14 +421,14 @@ export class Catalog extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Catalog resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Catalog resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Catalog to import
-  * @param importFromId The id of the existing Catalog that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/catalog#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Catalog that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/catalog#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Catalog to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_catalog", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_catalog", importId: importFromId, provider });
       }
 
   // ===========
@@ -349,7 +436,7 @@ export class Catalog extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/catalog databricks_catalog} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/catalog databricks_catalog} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -360,7 +447,7 @@ export class Catalog extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_catalog',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -387,6 +474,7 @@ export class Catalog extends cdktf.TerraformResource {
     this._shareName = config.shareName;
     this._storageRoot = config.storageRoot;
     this._effectivePredictiveOptimizationFlag.internalValue = config.effectivePredictiveOptimizationFlag;
+    this._providerConfig.internalValue = config.providerConfig;
     this._provisioningInfo.internalValue = config.provisioningInfo;
   }
 
@@ -395,11 +483,11 @@ export class Catalog extends cdktf.TerraformResource {
   // ==========
 
   // browse_only - computed: false, optional: true, required: false
-  private _browseOnly?: boolean | cdktf.IResolvable; 
+  private _browseOnly?: boolean | cdktn.IResolvable; 
   public get browseOnly() {
     return this.getBooleanAttribute('browse_only');
   }
-  public set browseOnly(value: boolean | cdktf.IResolvable) {
+  public set browseOnly(value: boolean | cdktn.IResolvable) {
     this._browseOnly = value;
   }
   public resetBrowseOnly() {
@@ -474,11 +562,11 @@ export class Catalog extends cdktf.TerraformResource {
   }
 
   // force_destroy - computed: false, optional: true, required: false
-  private _forceDestroy?: boolean | cdktf.IResolvable; 
+  private _forceDestroy?: boolean | cdktn.IResolvable; 
   public get forceDestroy() {
     return this.getBooleanAttribute('force_destroy');
   }
-  public set forceDestroy(value: boolean | cdktf.IResolvable) {
+  public set forceDestroy(value: boolean | cdktn.IResolvable) {
     this._forceDestroy = value;
   }
   public resetForceDestroy() {
@@ -690,6 +778,22 @@ export class Catalog extends cdktf.TerraformResource {
     return this._effectivePredictiveOptimizationFlag.internalValue;
   }
 
+  // provider_config - computed: false, optional: true, required: false
+  private _providerConfig = new CatalogProviderConfigOutputReference(this, "provider_config");
+  public get providerConfig() {
+    return this._providerConfig;
+  }
+  public putProviderConfig(value: CatalogProviderConfig) {
+    this._providerConfig.internalValue = value;
+  }
+  public resetProviderConfig() {
+    this._providerConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerConfigInput() {
+    return this._providerConfig.internalValue;
+  }
+
   // provisioning_info - computed: false, optional: true, required: false
   private _provisioningInfo = new CatalogProvisioningInfoOutputReference(this, "provisioning_info");
   public get provisioningInfo() {
@@ -712,22 +816,23 @@ export class Catalog extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      browse_only: cdktf.booleanToTerraform(this._browseOnly),
-      comment: cdktf.stringToTerraform(this._comment),
-      connection_name: cdktf.stringToTerraform(this._connectionName),
-      enable_predictive_optimization: cdktf.stringToTerraform(this._enablePredictiveOptimization),
-      force_destroy: cdktf.booleanToTerraform(this._forceDestroy),
-      id: cdktf.stringToTerraform(this._id),
-      isolation_mode: cdktf.stringToTerraform(this._isolationMode),
-      metastore_id: cdktf.stringToTerraform(this._metastoreId),
-      name: cdktf.stringToTerraform(this._name),
-      options: cdktf.hashMapper(cdktf.stringToTerraform)(this._options),
-      owner: cdktf.stringToTerraform(this._owner),
-      properties: cdktf.hashMapper(cdktf.stringToTerraform)(this._properties),
-      provider_name: cdktf.stringToTerraform(this._providerName),
-      share_name: cdktf.stringToTerraform(this._shareName),
-      storage_root: cdktf.stringToTerraform(this._storageRoot),
+      browse_only: cdktn.booleanToTerraform(this._browseOnly),
+      comment: cdktn.stringToTerraform(this._comment),
+      connection_name: cdktn.stringToTerraform(this._connectionName),
+      enable_predictive_optimization: cdktn.stringToTerraform(this._enablePredictiveOptimization),
+      force_destroy: cdktn.booleanToTerraform(this._forceDestroy),
+      id: cdktn.stringToTerraform(this._id),
+      isolation_mode: cdktn.stringToTerraform(this._isolationMode),
+      metastore_id: cdktn.stringToTerraform(this._metastoreId),
+      name: cdktn.stringToTerraform(this._name),
+      options: cdktn.hashMapper(cdktn.stringToTerraform)(this._options),
+      owner: cdktn.stringToTerraform(this._owner),
+      properties: cdktn.hashMapper(cdktn.stringToTerraform)(this._properties),
+      provider_name: cdktn.stringToTerraform(this._providerName),
+      share_name: cdktn.stringToTerraform(this._shareName),
+      storage_root: cdktn.stringToTerraform(this._storageRoot),
       effective_predictive_optimization_flag: catalogEffectivePredictiveOptimizationFlagToTerraform(this._effectivePredictiveOptimizationFlag.internalValue),
+      provider_config: catalogProviderConfigToTerraform(this._providerConfig.internalValue),
       provisioning_info: catalogProvisioningInfoToTerraform(this._provisioningInfo.internalValue),
     };
   }
@@ -735,91 +840,91 @@ export class Catalog extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       browse_only: {
-        value: cdktf.booleanToHclTerraform(this._browseOnly),
+        value: cdktn.booleanToHclTerraform(this._browseOnly),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       comment: {
-        value: cdktf.stringToHclTerraform(this._comment),
+        value: cdktn.stringToHclTerraform(this._comment),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       connection_name: {
-        value: cdktf.stringToHclTerraform(this._connectionName),
+        value: cdktn.stringToHclTerraform(this._connectionName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enable_predictive_optimization: {
-        value: cdktf.stringToHclTerraform(this._enablePredictiveOptimization),
+        value: cdktn.stringToHclTerraform(this._enablePredictiveOptimization),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       force_destroy: {
-        value: cdktf.booleanToHclTerraform(this._forceDestroy),
+        value: cdktn.booleanToHclTerraform(this._forceDestroy),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       isolation_mode: {
-        value: cdktf.stringToHclTerraform(this._isolationMode),
+        value: cdktn.stringToHclTerraform(this._isolationMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       metastore_id: {
-        value: cdktf.stringToHclTerraform(this._metastoreId),
+        value: cdktn.stringToHclTerraform(this._metastoreId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       options: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._options),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._options),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       owner: {
-        value: cdktf.stringToHclTerraform(this._owner),
+        value: cdktn.stringToHclTerraform(this._owner),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       properties: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._properties),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._properties),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       provider_name: {
-        value: cdktf.stringToHclTerraform(this._providerName),
+        value: cdktn.stringToHclTerraform(this._providerName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       share_name: {
-        value: cdktf.stringToHclTerraform(this._shareName),
+        value: cdktn.stringToHclTerraform(this._shareName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_root: {
-        value: cdktf.stringToHclTerraform(this._storageRoot),
+        value: cdktn.stringToHclTerraform(this._storageRoot),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -829,6 +934,12 @@ export class Catalog extends cdktf.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "CatalogEffectivePredictiveOptimizationFlagList",
+      },
+      provider_config: {
+        value: catalogProviderConfigToHclTerraform(this._providerConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CatalogProviderConfigList",
       },
       provisioning_info: {
         value: catalogProvisioningInfoToHclTerraform(this._provisioningInfo.internalValue),

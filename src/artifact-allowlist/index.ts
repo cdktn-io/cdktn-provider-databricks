@@ -1,84 +1,90 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/artifact_allowlist
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/artifact_allowlist
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ArtifactAllowlistConfig extends cdktf.TerraformMetaArguments {
+export interface ArtifactAllowlistConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/artifact_allowlist#artifact_type ArtifactAllowlist#artifact_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/artifact_allowlist#artifact_type ArtifactAllowlist#artifact_type}
   */
   readonly artifactType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/artifact_allowlist#created_at ArtifactAllowlist#created_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/artifact_allowlist#created_at ArtifactAllowlist#created_at}
   */
   readonly createdAt?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/artifact_allowlist#created_by ArtifactAllowlist#created_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/artifact_allowlist#created_by ArtifactAllowlist#created_by}
   */
   readonly createdBy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/artifact_allowlist#id ArtifactAllowlist#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/artifact_allowlist#id ArtifactAllowlist#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/artifact_allowlist#metastore_id ArtifactAllowlist#metastore_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/artifact_allowlist#metastore_id ArtifactAllowlist#metastore_id}
   */
   readonly metastoreId?: string;
   /**
   * artifact_matcher block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/artifact_allowlist#artifact_matcher ArtifactAllowlist#artifact_matcher}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/artifact_allowlist#artifact_matcher ArtifactAllowlist#artifact_matcher}
   */
-  readonly artifactMatcher: ArtifactAllowlistArtifactMatcher[] | cdktf.IResolvable;
+  readonly artifactMatcher: ArtifactAllowlistArtifactMatcher[] | cdktn.IResolvable;
+  /**
+  * provider_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/artifact_allowlist#provider_config ArtifactAllowlist#provider_config}
+  */
+  readonly providerConfig?: ArtifactAllowlistProviderConfig;
 }
 export interface ArtifactAllowlistArtifactMatcher {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/artifact_allowlist#artifact ArtifactAllowlist#artifact}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/artifact_allowlist#artifact ArtifactAllowlist#artifact}
   */
   readonly artifact: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/artifact_allowlist#match_type ArtifactAllowlist#match_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/artifact_allowlist#match_type ArtifactAllowlist#match_type}
   */
   readonly matchType: string;
 }
 
-export function artifactAllowlistArtifactMatcherToTerraform(struct?: ArtifactAllowlistArtifactMatcher | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function artifactAllowlistArtifactMatcherToTerraform(struct?: ArtifactAllowlistArtifactMatcher | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    artifact: cdktf.stringToTerraform(struct!.artifact),
-    match_type: cdktf.stringToTerraform(struct!.matchType),
+    artifact: cdktn.stringToTerraform(struct!.artifact),
+    match_type: cdktn.stringToTerraform(struct!.matchType),
   }
 }
 
 
-export function artifactAllowlistArtifactMatcherToHclTerraform(struct?: ArtifactAllowlistArtifactMatcher | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function artifactAllowlistArtifactMatcherToHclTerraform(struct?: ArtifactAllowlistArtifactMatcher | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     artifact: {
-      value: cdktf.stringToHclTerraform(struct!.artifact),
+      value: cdktn.stringToHclTerraform(struct!.artifact),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_type: {
-      value: cdktf.stringToHclTerraform(struct!.matchType),
+      value: cdktn.stringToHclTerraform(struct!.matchType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -89,9 +95,9 @@ export function artifactAllowlistArtifactMatcherToHclTerraform(struct?: Artifact
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArtifactAllowlistArtifactMatcherOutputReference extends cdktf.ComplexObject {
+export class ArtifactAllowlistArtifactMatcherOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -99,11 +105,11 @@ export class ArtifactAllowlistArtifactMatcherOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ArtifactAllowlistArtifactMatcher | cdktf.IResolvable | undefined {
+  public get internalValue(): ArtifactAllowlistArtifactMatcher | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -120,14 +126,14 @@ export class ArtifactAllowlistArtifactMatcherOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArtifactAllowlistArtifactMatcher | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArtifactAllowlistArtifactMatcher | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._artifact = undefined;
       this._matchType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -166,15 +172,15 @@ export class ArtifactAllowlistArtifactMatcherOutputReference extends cdktf.Compl
   }
 }
 
-export class ArtifactAllowlistArtifactMatcherList extends cdktf.ComplexList {
-  public internalValue? : ArtifactAllowlistArtifactMatcher[] | cdktf.IResolvable
+export class ArtifactAllowlistArtifactMatcherList extends cdktn.ComplexList {
+  public internalValue? : ArtifactAllowlistArtifactMatcher[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -185,11 +191,92 @@ export class ArtifactAllowlistArtifactMatcherList extends cdktf.ComplexList {
     return new ArtifactAllowlistArtifactMatcherOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface ArtifactAllowlistProviderConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/artifact_allowlist#workspace_id ArtifactAllowlist#workspace_id}
+  */
+  readonly workspaceId: string;
+}
+
+export function artifactAllowlistProviderConfigToTerraform(struct?: ArtifactAllowlistProviderConfigOutputReference | ArtifactAllowlistProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
+  }
+}
+
+
+export function artifactAllowlistProviderConfigToHclTerraform(struct?: ArtifactAllowlistProviderConfigOutputReference | ArtifactAllowlistProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    workspace_id: {
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ArtifactAllowlistProviderConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ArtifactAllowlistProviderConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._workspaceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workspaceId = this._workspaceId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ArtifactAllowlistProviderConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._workspaceId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._workspaceId = value.workspaceId;
+    }
+  }
+
+  // workspace_id - computed: false, optional: false, required: true
+  private _workspaceId?: string; 
+  public get workspaceId() {
+    return this.getStringAttribute('workspace_id');
+  }
+  public set workspaceId(value: string) {
+    this._workspaceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workspaceIdInput() {
+    return this._workspaceId;
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/artifact_allowlist databricks_artifact_allowlist}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/artifact_allowlist databricks_artifact_allowlist}
 */
-export class ArtifactAllowlist extends cdktf.TerraformResource {
+export class ArtifactAllowlist extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -200,14 +287,14 @@ export class ArtifactAllowlist extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ArtifactAllowlist resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ArtifactAllowlist resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ArtifactAllowlist to import
-  * @param importFromId The id of the existing ArtifactAllowlist that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/artifact_allowlist#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ArtifactAllowlist that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/artifact_allowlist#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ArtifactAllowlist to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_artifact_allowlist", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_artifact_allowlist", importId: importFromId, provider });
       }
 
   // ===========
@@ -215,7 +302,7 @@ export class ArtifactAllowlist extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/artifact_allowlist databricks_artifact_allowlist} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/artifact_allowlist databricks_artifact_allowlist} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -226,7 +313,7 @@ export class ArtifactAllowlist extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_artifact_allowlist',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -243,6 +330,7 @@ export class ArtifactAllowlist extends cdktf.TerraformResource {
     this._id = config.id;
     this._metastoreId = config.metastoreId;
     this._artifactMatcher.internalValue = config.artifactMatcher;
+    this._providerConfig.internalValue = config.providerConfig;
   }
 
   // ==========
@@ -331,12 +419,28 @@ export class ArtifactAllowlist extends cdktf.TerraformResource {
   public get artifactMatcher() {
     return this._artifactMatcher;
   }
-  public putArtifactMatcher(value: ArtifactAllowlistArtifactMatcher[] | cdktf.IResolvable) {
+  public putArtifactMatcher(value: ArtifactAllowlistArtifactMatcher[] | cdktn.IResolvable) {
     this._artifactMatcher.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get artifactMatcherInput() {
     return this._artifactMatcher.internalValue;
+  }
+
+  // provider_config - computed: false, optional: true, required: false
+  private _providerConfig = new ArtifactAllowlistProviderConfigOutputReference(this, "provider_config");
+  public get providerConfig() {
+    return this._providerConfig;
+  }
+  public putProviderConfig(value: ArtifactAllowlistProviderConfig) {
+    this._providerConfig.internalValue = value;
+  }
+  public resetProviderConfig() {
+    this._providerConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerConfigInput() {
+    return this._providerConfig.internalValue;
   }
 
   // =========
@@ -345,52 +449,59 @@ export class ArtifactAllowlist extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      artifact_type: cdktf.stringToTerraform(this._artifactType),
-      created_at: cdktf.numberToTerraform(this._createdAt),
-      created_by: cdktf.stringToTerraform(this._createdBy),
-      id: cdktf.stringToTerraform(this._id),
-      metastore_id: cdktf.stringToTerraform(this._metastoreId),
-      artifact_matcher: cdktf.listMapper(artifactAllowlistArtifactMatcherToTerraform, true)(this._artifactMatcher.internalValue),
+      artifact_type: cdktn.stringToTerraform(this._artifactType),
+      created_at: cdktn.numberToTerraform(this._createdAt),
+      created_by: cdktn.stringToTerraform(this._createdBy),
+      id: cdktn.stringToTerraform(this._id),
+      metastore_id: cdktn.stringToTerraform(this._metastoreId),
+      artifact_matcher: cdktn.listMapper(artifactAllowlistArtifactMatcherToTerraform, true)(this._artifactMatcher.internalValue),
+      provider_config: artifactAllowlistProviderConfigToTerraform(this._providerConfig.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       artifact_type: {
-        value: cdktf.stringToHclTerraform(this._artifactType),
+        value: cdktn.stringToHclTerraform(this._artifactType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       created_at: {
-        value: cdktf.numberToHclTerraform(this._createdAt),
+        value: cdktn.numberToHclTerraform(this._createdAt),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       created_by: {
-        value: cdktf.stringToHclTerraform(this._createdBy),
+        value: cdktn.stringToHclTerraform(this._createdBy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       metastore_id: {
-        value: cdktf.stringToHclTerraform(this._metastoreId),
+        value: cdktn.stringToHclTerraform(this._metastoreId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       artifact_matcher: {
-        value: cdktf.listMapperHcl(artifactAllowlistArtifactMatcherToHclTerraform, true)(this._artifactMatcher.internalValue),
+        value: cdktn.listMapperHcl(artifactAllowlistArtifactMatcherToHclTerraform, true)(this._artifactMatcher.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "ArtifactAllowlistArtifactMatcherList",
+      },
+      provider_config: {
+        value: artifactAllowlistProviderConfigToHclTerraform(this._providerConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ArtifactAllowlistProviderConfigList",
       },
     };
 

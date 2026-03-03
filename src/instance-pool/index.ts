@@ -1,156 +1,168 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/instance_pool
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/instance_pool
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface InstancePoolConfig extends cdktf.TerraformMetaArguments {
+export interface InstancePoolConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/instance_pool#custom_tags InstancePool#custom_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/instance_pool#custom_tags InstancePool#custom_tags}
   */
   readonly customTags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/instance_pool#enable_elastic_disk InstancePool#enable_elastic_disk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/instance_pool#enable_elastic_disk InstancePool#enable_elastic_disk}
   */
-  readonly enableElasticDisk?: boolean | cdktf.IResolvable;
+  readonly enableElasticDisk?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/instance_pool#id InstancePool#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/instance_pool#id InstancePool#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/instance_pool#idle_instance_autotermination_minutes InstancePool#idle_instance_autotermination_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/instance_pool#idle_instance_autotermination_minutes InstancePool#idle_instance_autotermination_minutes}
   */
   readonly idleInstanceAutoterminationMinutes: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/instance_pool#instance_pool_id InstancePool#instance_pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/instance_pool#instance_pool_id InstancePool#instance_pool_id}
   */
   readonly instancePoolId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/instance_pool#instance_pool_name InstancePool#instance_pool_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/instance_pool#instance_pool_name InstancePool#instance_pool_name}
   */
   readonly instancePoolName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/instance_pool#max_capacity InstancePool#max_capacity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/instance_pool#max_capacity InstancePool#max_capacity}
   */
   readonly maxCapacity?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/instance_pool#min_idle_instances InstancePool#min_idle_instances}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/instance_pool#min_idle_instances InstancePool#min_idle_instances}
   */
   readonly minIdleInstances?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/instance_pool#node_type_id InstancePool#node_type_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/instance_pool#node_type_id InstancePool#node_type_id}
   */
   readonly nodeTypeId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/instance_pool#preloaded_spark_versions InstancePool#preloaded_spark_versions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/instance_pool#preloaded_spark_versions InstancePool#preloaded_spark_versions}
   */
   readonly preloadedSparkVersions?: string[];
   /**
   * aws_attributes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/instance_pool#aws_attributes InstancePool#aws_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/instance_pool#aws_attributes InstancePool#aws_attributes}
   */
   readonly awsAttributes?: InstancePoolAwsAttributes;
   /**
   * azure_attributes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/instance_pool#azure_attributes InstancePool#azure_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/instance_pool#azure_attributes InstancePool#azure_attributes}
   */
   readonly azureAttributes?: InstancePoolAzureAttributes;
   /**
   * disk_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/instance_pool#disk_spec InstancePool#disk_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/instance_pool#disk_spec InstancePool#disk_spec}
   */
   readonly diskSpec?: InstancePoolDiskSpec;
   /**
   * gcp_attributes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/instance_pool#gcp_attributes InstancePool#gcp_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/instance_pool#gcp_attributes InstancePool#gcp_attributes}
   */
   readonly gcpAttributes?: InstancePoolGcpAttributes;
   /**
   * instance_pool_fleet_attributes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/instance_pool#instance_pool_fleet_attributes InstancePool#instance_pool_fleet_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/instance_pool#instance_pool_fleet_attributes InstancePool#instance_pool_fleet_attributes}
   */
   readonly instancePoolFleetAttributes?: InstancePoolInstancePoolFleetAttributes;
   /**
+  * node_type_flexibility block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/instance_pool#node_type_flexibility InstancePool#node_type_flexibility}
+  */
+  readonly nodeTypeFlexibility?: InstancePoolNodeTypeFlexibility;
+  /**
   * preloaded_docker_image block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/instance_pool#preloaded_docker_image InstancePool#preloaded_docker_image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/instance_pool#preloaded_docker_image InstancePool#preloaded_docker_image}
   */
-  readonly preloadedDockerImage?: InstancePoolPreloadedDockerImage[] | cdktf.IResolvable;
+  readonly preloadedDockerImage?: InstancePoolPreloadedDockerImage[] | cdktn.IResolvable;
+  /**
+  * provider_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/instance_pool#provider_config InstancePool#provider_config}
+  */
+  readonly providerConfig?: InstancePoolProviderConfig;
 }
 export interface InstancePoolAwsAttributes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/instance_pool#availability InstancePool#availability}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/instance_pool#availability InstancePool#availability}
   */
   readonly availability?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/instance_pool#instance_profile_arn InstancePool#instance_profile_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/instance_pool#instance_profile_arn InstancePool#instance_profile_arn}
   */
   readonly instanceProfileArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/instance_pool#spot_bid_price_percent InstancePool#spot_bid_price_percent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/instance_pool#spot_bid_price_percent InstancePool#spot_bid_price_percent}
   */
   readonly spotBidPricePercent?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/instance_pool#zone_id InstancePool#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/instance_pool#zone_id InstancePool#zone_id}
   */
   readonly zoneId?: string;
 }
 
 export function instancePoolAwsAttributesToTerraform(struct?: InstancePoolAwsAttributesOutputReference | InstancePoolAwsAttributes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    availability: cdktf.stringToTerraform(struct!.availability),
-    instance_profile_arn: cdktf.stringToTerraform(struct!.instanceProfileArn),
-    spot_bid_price_percent: cdktf.numberToTerraform(struct!.spotBidPricePercent),
-    zone_id: cdktf.stringToTerraform(struct!.zoneId),
+    availability: cdktn.stringToTerraform(struct!.availability),
+    instance_profile_arn: cdktn.stringToTerraform(struct!.instanceProfileArn),
+    spot_bid_price_percent: cdktn.numberToTerraform(struct!.spotBidPricePercent),
+    zone_id: cdktn.stringToTerraform(struct!.zoneId),
   }
 }
 
 
 export function instancePoolAwsAttributesToHclTerraform(struct?: InstancePoolAwsAttributesOutputReference | InstancePoolAwsAttributes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     availability: {
-      value: cdktf.stringToHclTerraform(struct!.availability),
+      value: cdktn.stringToHclTerraform(struct!.availability),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     instance_profile_arn: {
-      value: cdktf.stringToHclTerraform(struct!.instanceProfileArn),
+      value: cdktn.stringToHclTerraform(struct!.instanceProfileArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     spot_bid_price_percent: {
-      value: cdktf.numberToHclTerraform(struct!.spotBidPricePercent),
+      value: cdktn.numberToHclTerraform(struct!.spotBidPricePercent),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     zone_id: {
-      value: cdktf.stringToHclTerraform(struct!.zoneId),
+      value: cdktn.stringToHclTerraform(struct!.zoneId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -161,14 +173,14 @@ export function instancePoolAwsAttributesToHclTerraform(struct?: InstancePoolAws
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class InstancePoolAwsAttributesOutputReference extends cdktf.ComplexObject {
+export class InstancePoolAwsAttributesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -277,41 +289,41 @@ export class InstancePoolAwsAttributesOutputReference extends cdktf.ComplexObjec
 }
 export interface InstancePoolAzureAttributes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/instance_pool#availability InstancePool#availability}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/instance_pool#availability InstancePool#availability}
   */
   readonly availability?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/instance_pool#spot_bid_max_price InstancePool#spot_bid_max_price}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/instance_pool#spot_bid_max_price InstancePool#spot_bid_max_price}
   */
   readonly spotBidMaxPrice?: number;
 }
 
 export function instancePoolAzureAttributesToTerraform(struct?: InstancePoolAzureAttributesOutputReference | InstancePoolAzureAttributes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    availability: cdktf.stringToTerraform(struct!.availability),
-    spot_bid_max_price: cdktf.numberToTerraform(struct!.spotBidMaxPrice),
+    availability: cdktn.stringToTerraform(struct!.availability),
+    spot_bid_max_price: cdktn.numberToTerraform(struct!.spotBidMaxPrice),
   }
 }
 
 
 export function instancePoolAzureAttributesToHclTerraform(struct?: InstancePoolAzureAttributesOutputReference | InstancePoolAzureAttributes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     availability: {
-      value: cdktf.stringToHclTerraform(struct!.availability),
+      value: cdktn.stringToHclTerraform(struct!.availability),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     spot_bid_max_price: {
-      value: cdktf.numberToHclTerraform(struct!.spotBidMaxPrice),
+      value: cdktn.numberToHclTerraform(struct!.spotBidMaxPrice),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -322,14 +334,14 @@ export function instancePoolAzureAttributesToHclTerraform(struct?: InstancePoolA
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class InstancePoolAzureAttributesOutputReference extends cdktf.ComplexObject {
+export class InstancePoolAzureAttributesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -394,41 +406,41 @@ export class InstancePoolAzureAttributesOutputReference extends cdktf.ComplexObj
 }
 export interface InstancePoolDiskSpecDiskType {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/instance_pool#azure_disk_volume_type InstancePool#azure_disk_volume_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/instance_pool#azure_disk_volume_type InstancePool#azure_disk_volume_type}
   */
   readonly azureDiskVolumeType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/instance_pool#ebs_volume_type InstancePool#ebs_volume_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/instance_pool#ebs_volume_type InstancePool#ebs_volume_type}
   */
   readonly ebsVolumeType?: string;
 }
 
 export function instancePoolDiskSpecDiskTypeToTerraform(struct?: InstancePoolDiskSpecDiskTypeOutputReference | InstancePoolDiskSpecDiskType): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    azure_disk_volume_type: cdktf.stringToTerraform(struct!.azureDiskVolumeType),
-    ebs_volume_type: cdktf.stringToTerraform(struct!.ebsVolumeType),
+    azure_disk_volume_type: cdktn.stringToTerraform(struct!.azureDiskVolumeType),
+    ebs_volume_type: cdktn.stringToTerraform(struct!.ebsVolumeType),
   }
 }
 
 
 export function instancePoolDiskSpecDiskTypeToHclTerraform(struct?: InstancePoolDiskSpecDiskTypeOutputReference | InstancePoolDiskSpecDiskType): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     azure_disk_volume_type: {
-      value: cdktf.stringToHclTerraform(struct!.azureDiskVolumeType),
+      value: cdktn.stringToHclTerraform(struct!.azureDiskVolumeType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ebs_volume_type: {
-      value: cdktf.stringToHclTerraform(struct!.ebsVolumeType),
+      value: cdktn.stringToHclTerraform(struct!.ebsVolumeType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -439,14 +451,14 @@ export function instancePoolDiskSpecDiskTypeToHclTerraform(struct?: InstancePool
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class InstancePoolDiskSpecDiskTypeOutputReference extends cdktf.ComplexObject {
+export class InstancePoolDiskSpecDiskTypeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -511,48 +523,48 @@ export class InstancePoolDiskSpecDiskTypeOutputReference extends cdktf.ComplexOb
 }
 export interface InstancePoolDiskSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/instance_pool#disk_count InstancePool#disk_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/instance_pool#disk_count InstancePool#disk_count}
   */
   readonly diskCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/instance_pool#disk_size InstancePool#disk_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/instance_pool#disk_size InstancePool#disk_size}
   */
   readonly diskSize?: number;
   /**
   * disk_type block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/instance_pool#disk_type InstancePool#disk_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/instance_pool#disk_type InstancePool#disk_type}
   */
   readonly diskType?: InstancePoolDiskSpecDiskType;
 }
 
 export function instancePoolDiskSpecToTerraform(struct?: InstancePoolDiskSpecOutputReference | InstancePoolDiskSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    disk_count: cdktf.numberToTerraform(struct!.diskCount),
-    disk_size: cdktf.numberToTerraform(struct!.diskSize),
+    disk_count: cdktn.numberToTerraform(struct!.diskCount),
+    disk_size: cdktn.numberToTerraform(struct!.diskSize),
     disk_type: instancePoolDiskSpecDiskTypeToTerraform(struct!.diskType),
   }
 }
 
 
 export function instancePoolDiskSpecToHclTerraform(struct?: InstancePoolDiskSpecOutputReference | InstancePoolDiskSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     disk_count: {
-      value: cdktf.numberToHclTerraform(struct!.diskCount),
+      value: cdktn.numberToHclTerraform(struct!.diskCount),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     disk_size: {
-      value: cdktf.numberToHclTerraform(struct!.diskSize),
+      value: cdktn.numberToHclTerraform(struct!.diskSize),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -569,14 +581,14 @@ export function instancePoolDiskSpecToHclTerraform(struct?: InstancePoolDiskSpec
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class InstancePoolDiskSpecOutputReference extends cdktf.ComplexObject {
+export class InstancePoolDiskSpecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -663,52 +675,52 @@ export class InstancePoolDiskSpecOutputReference extends cdktf.ComplexObject {
 }
 export interface InstancePoolGcpAttributes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/instance_pool#gcp_availability InstancePool#gcp_availability}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/instance_pool#gcp_availability InstancePool#gcp_availability}
   */
   readonly gcpAvailability?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/instance_pool#local_ssd_count InstancePool#local_ssd_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/instance_pool#local_ssd_count InstancePool#local_ssd_count}
   */
   readonly localSsdCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/instance_pool#zone_id InstancePool#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/instance_pool#zone_id InstancePool#zone_id}
   */
   readonly zoneId?: string;
 }
 
 export function instancePoolGcpAttributesToTerraform(struct?: InstancePoolGcpAttributesOutputReference | InstancePoolGcpAttributes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    gcp_availability: cdktf.stringToTerraform(struct!.gcpAvailability),
-    local_ssd_count: cdktf.numberToTerraform(struct!.localSsdCount),
-    zone_id: cdktf.stringToTerraform(struct!.zoneId),
+    gcp_availability: cdktn.stringToTerraform(struct!.gcpAvailability),
+    local_ssd_count: cdktn.numberToTerraform(struct!.localSsdCount),
+    zone_id: cdktn.stringToTerraform(struct!.zoneId),
   }
 }
 
 
 export function instancePoolGcpAttributesToHclTerraform(struct?: InstancePoolGcpAttributesOutputReference | InstancePoolGcpAttributes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     gcp_availability: {
-      value: cdktf.stringToHclTerraform(struct!.gcpAvailability),
+      value: cdktn.stringToHclTerraform(struct!.gcpAvailability),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     local_ssd_count: {
-      value: cdktf.numberToHclTerraform(struct!.localSsdCount),
+      value: cdktn.numberToHclTerraform(struct!.localSsdCount),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     zone_id: {
-      value: cdktf.stringToHclTerraform(struct!.zoneId),
+      value: cdktn.stringToHclTerraform(struct!.zoneId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -719,14 +731,14 @@ export function instancePoolGcpAttributesToHclTerraform(struct?: InstancePoolGcp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class InstancePoolGcpAttributesOutputReference extends cdktf.ComplexObject {
+export class InstancePoolGcpAttributesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -813,41 +825,41 @@ export class InstancePoolGcpAttributesOutputReference extends cdktf.ComplexObjec
 }
 export interface InstancePoolInstancePoolFleetAttributesFleetOnDemandOption {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/instance_pool#allocation_strategy InstancePool#allocation_strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/instance_pool#allocation_strategy InstancePool#allocation_strategy}
   */
   readonly allocationStrategy: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/instance_pool#instance_pools_to_use_count InstancePool#instance_pools_to_use_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/instance_pool#instance_pools_to_use_count InstancePool#instance_pools_to_use_count}
   */
   readonly instancePoolsToUseCount?: number;
 }
 
 export function instancePoolInstancePoolFleetAttributesFleetOnDemandOptionToTerraform(struct?: InstancePoolInstancePoolFleetAttributesFleetOnDemandOptionOutputReference | InstancePoolInstancePoolFleetAttributesFleetOnDemandOption): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allocation_strategy: cdktf.stringToTerraform(struct!.allocationStrategy),
-    instance_pools_to_use_count: cdktf.numberToTerraform(struct!.instancePoolsToUseCount),
+    allocation_strategy: cdktn.stringToTerraform(struct!.allocationStrategy),
+    instance_pools_to_use_count: cdktn.numberToTerraform(struct!.instancePoolsToUseCount),
   }
 }
 
 
 export function instancePoolInstancePoolFleetAttributesFleetOnDemandOptionToHclTerraform(struct?: InstancePoolInstancePoolFleetAttributesFleetOnDemandOptionOutputReference | InstancePoolInstancePoolFleetAttributesFleetOnDemandOption): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allocation_strategy: {
-      value: cdktf.stringToHclTerraform(struct!.allocationStrategy),
+      value: cdktn.stringToHclTerraform(struct!.allocationStrategy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     instance_pools_to_use_count: {
-      value: cdktf.numberToHclTerraform(struct!.instancePoolsToUseCount),
+      value: cdktn.numberToHclTerraform(struct!.instancePoolsToUseCount),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -858,14 +870,14 @@ export function instancePoolInstancePoolFleetAttributesFleetOnDemandOptionToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class InstancePoolInstancePoolFleetAttributesFleetOnDemandOptionOutputReference extends cdktf.ComplexObject {
+export class InstancePoolInstancePoolFleetAttributesFleetOnDemandOptionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -927,41 +939,41 @@ export class InstancePoolInstancePoolFleetAttributesFleetOnDemandOptionOutputRef
 }
 export interface InstancePoolInstancePoolFleetAttributesFleetSpotOption {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/instance_pool#allocation_strategy InstancePool#allocation_strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/instance_pool#allocation_strategy InstancePool#allocation_strategy}
   */
   readonly allocationStrategy: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/instance_pool#instance_pools_to_use_count InstancePool#instance_pools_to_use_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/instance_pool#instance_pools_to_use_count InstancePool#instance_pools_to_use_count}
   */
   readonly instancePoolsToUseCount?: number;
 }
 
 export function instancePoolInstancePoolFleetAttributesFleetSpotOptionToTerraform(struct?: InstancePoolInstancePoolFleetAttributesFleetSpotOptionOutputReference | InstancePoolInstancePoolFleetAttributesFleetSpotOption): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allocation_strategy: cdktf.stringToTerraform(struct!.allocationStrategy),
-    instance_pools_to_use_count: cdktf.numberToTerraform(struct!.instancePoolsToUseCount),
+    allocation_strategy: cdktn.stringToTerraform(struct!.allocationStrategy),
+    instance_pools_to_use_count: cdktn.numberToTerraform(struct!.instancePoolsToUseCount),
   }
 }
 
 
 export function instancePoolInstancePoolFleetAttributesFleetSpotOptionToHclTerraform(struct?: InstancePoolInstancePoolFleetAttributesFleetSpotOptionOutputReference | InstancePoolInstancePoolFleetAttributesFleetSpotOption): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allocation_strategy: {
-      value: cdktf.stringToHclTerraform(struct!.allocationStrategy),
+      value: cdktn.stringToHclTerraform(struct!.allocationStrategy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     instance_pools_to_use_count: {
-      value: cdktf.numberToHclTerraform(struct!.instancePoolsToUseCount),
+      value: cdktn.numberToHclTerraform(struct!.instancePoolsToUseCount),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -972,14 +984,14 @@ export function instancePoolInstancePoolFleetAttributesFleetSpotOptionToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class InstancePoolInstancePoolFleetAttributesFleetSpotOptionOutputReference extends cdktf.ComplexObject {
+export class InstancePoolInstancePoolFleetAttributesFleetSpotOptionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1041,41 +1053,41 @@ export class InstancePoolInstancePoolFleetAttributesFleetSpotOptionOutputReferen
 }
 export interface InstancePoolInstancePoolFleetAttributesLaunchTemplateOverride {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/instance_pool#availability_zone InstancePool#availability_zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/instance_pool#availability_zone InstancePool#availability_zone}
   */
   readonly availabilityZone: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/instance_pool#instance_type InstancePool#instance_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/instance_pool#instance_type InstancePool#instance_type}
   */
   readonly instanceType: string;
 }
 
-export function instancePoolInstancePoolFleetAttributesLaunchTemplateOverrideToTerraform(struct?: InstancePoolInstancePoolFleetAttributesLaunchTemplateOverride | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function instancePoolInstancePoolFleetAttributesLaunchTemplateOverrideToTerraform(struct?: InstancePoolInstancePoolFleetAttributesLaunchTemplateOverride | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    availability_zone: cdktf.stringToTerraform(struct!.availabilityZone),
-    instance_type: cdktf.stringToTerraform(struct!.instanceType),
+    availability_zone: cdktn.stringToTerraform(struct!.availabilityZone),
+    instance_type: cdktn.stringToTerraform(struct!.instanceType),
   }
 }
 
 
-export function instancePoolInstancePoolFleetAttributesLaunchTemplateOverrideToHclTerraform(struct?: InstancePoolInstancePoolFleetAttributesLaunchTemplateOverride | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function instancePoolInstancePoolFleetAttributesLaunchTemplateOverrideToHclTerraform(struct?: InstancePoolInstancePoolFleetAttributesLaunchTemplateOverride | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     availability_zone: {
-      value: cdktf.stringToHclTerraform(struct!.availabilityZone),
+      value: cdktn.stringToHclTerraform(struct!.availabilityZone),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     instance_type: {
-      value: cdktf.stringToHclTerraform(struct!.instanceType),
+      value: cdktn.stringToHclTerraform(struct!.instanceType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1086,9 +1098,9 @@ export function instancePoolInstancePoolFleetAttributesLaunchTemplateOverrideToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class InstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideOutputReference extends cdktf.ComplexObject {
+export class InstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1096,11 +1108,11 @@ export class InstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideOutput
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): InstancePoolInstancePoolFleetAttributesLaunchTemplateOverride | cdktf.IResolvable | undefined {
+  public get internalValue(): InstancePoolInstancePoolFleetAttributesLaunchTemplateOverride | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1117,14 +1129,14 @@ export class InstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideOutput
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: InstancePoolInstancePoolFleetAttributesLaunchTemplateOverride | cdktf.IResolvable | undefined) {
+  public set internalValue(value: InstancePoolInstancePoolFleetAttributesLaunchTemplateOverride | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._availabilityZone = undefined;
       this._instanceType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1163,15 +1175,15 @@ export class InstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideOutput
   }
 }
 
-export class InstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideList extends cdktf.ComplexList {
-  public internalValue? : InstancePoolInstancePoolFleetAttributesLaunchTemplateOverride[] | cdktf.IResolvable
+export class InstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideList extends cdktn.ComplexList {
+  public internalValue? : InstancePoolInstancePoolFleetAttributesLaunchTemplateOverride[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1186,39 +1198,39 @@ export interface InstancePoolInstancePoolFleetAttributes {
   /**
   * fleet_on_demand_option block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/instance_pool#fleet_on_demand_option InstancePool#fleet_on_demand_option}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/instance_pool#fleet_on_demand_option InstancePool#fleet_on_demand_option}
   */
   readonly fleetOnDemandOption?: InstancePoolInstancePoolFleetAttributesFleetOnDemandOption;
   /**
   * fleet_spot_option block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/instance_pool#fleet_spot_option InstancePool#fleet_spot_option}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/instance_pool#fleet_spot_option InstancePool#fleet_spot_option}
   */
   readonly fleetSpotOption?: InstancePoolInstancePoolFleetAttributesFleetSpotOption;
   /**
   * launch_template_override block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/instance_pool#launch_template_override InstancePool#launch_template_override}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/instance_pool#launch_template_override InstancePool#launch_template_override}
   */
-  readonly launchTemplateOverride: InstancePoolInstancePoolFleetAttributesLaunchTemplateOverride[] | cdktf.IResolvable;
+  readonly launchTemplateOverride: InstancePoolInstancePoolFleetAttributesLaunchTemplateOverride[] | cdktn.IResolvable;
 }
 
 export function instancePoolInstancePoolFleetAttributesToTerraform(struct?: InstancePoolInstancePoolFleetAttributesOutputReference | InstancePoolInstancePoolFleetAttributes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     fleet_on_demand_option: instancePoolInstancePoolFleetAttributesFleetOnDemandOptionToTerraform(struct!.fleetOnDemandOption),
     fleet_spot_option: instancePoolInstancePoolFleetAttributesFleetSpotOptionToTerraform(struct!.fleetSpotOption),
-    launch_template_override: cdktf.listMapper(instancePoolInstancePoolFleetAttributesLaunchTemplateOverrideToTerraform, true)(struct!.launchTemplateOverride),
+    launch_template_override: cdktn.listMapper(instancePoolInstancePoolFleetAttributesLaunchTemplateOverrideToTerraform, true)(struct!.launchTemplateOverride),
   }
 }
 
 
 export function instancePoolInstancePoolFleetAttributesToHclTerraform(struct?: InstancePoolInstancePoolFleetAttributesOutputReference | InstancePoolInstancePoolFleetAttributes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1235,7 +1247,7 @@ export function instancePoolInstancePoolFleetAttributesToHclTerraform(struct?: I
       storageClassType: "InstancePoolInstancePoolFleetAttributesFleetSpotOptionList",
     },
     launch_template_override: {
-      value: cdktf.listMapperHcl(instancePoolInstancePoolFleetAttributesLaunchTemplateOverrideToHclTerraform, true)(struct!.launchTemplateOverride),
+      value: cdktn.listMapperHcl(instancePoolInstancePoolFleetAttributesLaunchTemplateOverrideToHclTerraform, true)(struct!.launchTemplateOverride),
       isBlock: true,
       type: "set",
       storageClassType: "InstancePoolInstancePoolFleetAttributesLaunchTemplateOverrideList",
@@ -1246,14 +1258,14 @@ export function instancePoolInstancePoolFleetAttributesToHclTerraform(struct?: I
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class InstancePoolInstancePoolFleetAttributesOutputReference extends cdktf.ComplexObject {
+export class InstancePoolInstancePoolFleetAttributesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1327,7 +1339,7 @@ export class InstancePoolInstancePoolFleetAttributesOutputReference extends cdkt
   public get launchTemplateOverride() {
     return this._launchTemplateOverride;
   }
-  public putLaunchTemplateOverride(value: InstancePoolInstancePoolFleetAttributesLaunchTemplateOverride[] | cdktf.IResolvable) {
+  public putLaunchTemplateOverride(value: InstancePoolInstancePoolFleetAttributesLaunchTemplateOverride[] | cdktn.IResolvable) {
     this._launchTemplateOverride.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1335,43 +1347,124 @@ export class InstancePoolInstancePoolFleetAttributesOutputReference extends cdkt
     return this._launchTemplateOverride.internalValue;
   }
 }
+export interface InstancePoolNodeTypeFlexibility {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/instance_pool#alternate_node_type_ids InstancePool#alternate_node_type_ids}
+  */
+  readonly alternateNodeTypeIds: string[];
+}
+
+export function instancePoolNodeTypeFlexibilityToTerraform(struct?: InstancePoolNodeTypeFlexibilityOutputReference | InstancePoolNodeTypeFlexibility): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    alternate_node_type_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.alternateNodeTypeIds),
+  }
+}
+
+
+export function instancePoolNodeTypeFlexibilityToHclTerraform(struct?: InstancePoolNodeTypeFlexibilityOutputReference | InstancePoolNodeTypeFlexibility): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    alternate_node_type_ids: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.alternateNodeTypeIds),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class InstancePoolNodeTypeFlexibilityOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): InstancePoolNodeTypeFlexibility | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._alternateNodeTypeIds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.alternateNodeTypeIds = this._alternateNodeTypeIds;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: InstancePoolNodeTypeFlexibility | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._alternateNodeTypeIds = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._alternateNodeTypeIds = value.alternateNodeTypeIds;
+    }
+  }
+
+  // alternate_node_type_ids - computed: false, optional: false, required: true
+  private _alternateNodeTypeIds?: string[]; 
+  public get alternateNodeTypeIds() {
+    return this.getListAttribute('alternate_node_type_ids');
+  }
+  public set alternateNodeTypeIds(value: string[]) {
+    this._alternateNodeTypeIds = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get alternateNodeTypeIdsInput() {
+    return this._alternateNodeTypeIds;
+  }
+}
 export interface InstancePoolPreloadedDockerImageBasicAuth {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/instance_pool#password InstancePool#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/instance_pool#password InstancePool#password}
   */
   readonly password: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/instance_pool#username InstancePool#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/instance_pool#username InstancePool#username}
   */
   readonly username: string;
 }
 
 export function instancePoolPreloadedDockerImageBasicAuthToTerraform(struct?: InstancePoolPreloadedDockerImageBasicAuthOutputReference | InstancePoolPreloadedDockerImageBasicAuth): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    password: cdktf.stringToTerraform(struct!.password),
-    username: cdktf.stringToTerraform(struct!.username),
+    password: cdktn.stringToTerraform(struct!.password),
+    username: cdktn.stringToTerraform(struct!.username),
   }
 }
 
 
 export function instancePoolPreloadedDockerImageBasicAuthToHclTerraform(struct?: InstancePoolPreloadedDockerImageBasicAuthOutputReference | InstancePoolPreloadedDockerImageBasicAuth): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     password: {
-      value: cdktf.stringToHclTerraform(struct!.password),
+      value: cdktn.stringToHclTerraform(struct!.password),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     username: {
-      value: cdktf.stringToHclTerraform(struct!.username),
+      value: cdktn.stringToHclTerraform(struct!.username),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1382,14 +1475,14 @@ export function instancePoolPreloadedDockerImageBasicAuthToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class InstancePoolPreloadedDockerImageBasicAuthOutputReference extends cdktf.ComplexObject {
+export class InstancePoolPreloadedDockerImageBasicAuthOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1448,37 +1541,37 @@ export class InstancePoolPreloadedDockerImageBasicAuthOutputReference extends cd
 }
 export interface InstancePoolPreloadedDockerImage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/instance_pool#url InstancePool#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/instance_pool#url InstancePool#url}
   */
   readonly url: string;
   /**
   * basic_auth block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/instance_pool#basic_auth InstancePool#basic_auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/instance_pool#basic_auth InstancePool#basic_auth}
   */
   readonly basicAuth?: InstancePoolPreloadedDockerImageBasicAuth;
 }
 
-export function instancePoolPreloadedDockerImageToTerraform(struct?: InstancePoolPreloadedDockerImage | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function instancePoolPreloadedDockerImageToTerraform(struct?: InstancePoolPreloadedDockerImage | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    url: cdktf.stringToTerraform(struct!.url),
+    url: cdktn.stringToTerraform(struct!.url),
     basic_auth: instancePoolPreloadedDockerImageBasicAuthToTerraform(struct!.basicAuth),
   }
 }
 
 
-export function instancePoolPreloadedDockerImageToHclTerraform(struct?: InstancePoolPreloadedDockerImage | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function instancePoolPreloadedDockerImageToHclTerraform(struct?: InstancePoolPreloadedDockerImage | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     url: {
-      value: cdktf.stringToHclTerraform(struct!.url),
+      value: cdktn.stringToHclTerraform(struct!.url),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1495,9 +1588,9 @@ export function instancePoolPreloadedDockerImageToHclTerraform(struct?: Instance
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class InstancePoolPreloadedDockerImageOutputReference extends cdktf.ComplexObject {
+export class InstancePoolPreloadedDockerImageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1505,11 +1598,11 @@ export class InstancePoolPreloadedDockerImageOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): InstancePoolPreloadedDockerImage | cdktf.IResolvable | undefined {
+  public get internalValue(): InstancePoolPreloadedDockerImage | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1526,14 +1619,14 @@ export class InstancePoolPreloadedDockerImageOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: InstancePoolPreloadedDockerImage | cdktf.IResolvable | undefined) {
+  public set internalValue(value: InstancePoolPreloadedDockerImage | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._url = undefined;
       this._basicAuth.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1575,15 +1668,15 @@ export class InstancePoolPreloadedDockerImageOutputReference extends cdktf.Compl
   }
 }
 
-export class InstancePoolPreloadedDockerImageList extends cdktf.ComplexList {
-  public internalValue? : InstancePoolPreloadedDockerImage[] | cdktf.IResolvable
+export class InstancePoolPreloadedDockerImageList extends cdktn.ComplexList {
+  public internalValue? : InstancePoolPreloadedDockerImage[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1594,11 +1687,92 @@ export class InstancePoolPreloadedDockerImageList extends cdktf.ComplexList {
     return new InstancePoolPreloadedDockerImageOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface InstancePoolProviderConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/instance_pool#workspace_id InstancePool#workspace_id}
+  */
+  readonly workspaceId: string;
+}
+
+export function instancePoolProviderConfigToTerraform(struct?: InstancePoolProviderConfigOutputReference | InstancePoolProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
+  }
+}
+
+
+export function instancePoolProviderConfigToHclTerraform(struct?: InstancePoolProviderConfigOutputReference | InstancePoolProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    workspace_id: {
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class InstancePoolProviderConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): InstancePoolProviderConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._workspaceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workspaceId = this._workspaceId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: InstancePoolProviderConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._workspaceId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._workspaceId = value.workspaceId;
+    }
+  }
+
+  // workspace_id - computed: false, optional: false, required: true
+  private _workspaceId?: string; 
+  public get workspaceId() {
+    return this.getStringAttribute('workspace_id');
+  }
+  public set workspaceId(value: string) {
+    this._workspaceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workspaceIdInput() {
+    return this._workspaceId;
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/instance_pool databricks_instance_pool}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/instance_pool databricks_instance_pool}
 */
-export class InstancePool extends cdktf.TerraformResource {
+export class InstancePool extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1609,14 +1783,14 @@ export class InstancePool extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a InstancePool resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a InstancePool resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the InstancePool to import
-  * @param importFromId The id of the existing InstancePool that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/instance_pool#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing InstancePool that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/instance_pool#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the InstancePool to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_instance_pool", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_instance_pool", importId: importFromId, provider });
       }
 
   // ===========
@@ -1624,7 +1798,7 @@ export class InstancePool extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/instance_pool databricks_instance_pool} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/instance_pool databricks_instance_pool} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1635,7 +1809,7 @@ export class InstancePool extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_instance_pool',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -1661,7 +1835,9 @@ export class InstancePool extends cdktf.TerraformResource {
     this._diskSpec.internalValue = config.diskSpec;
     this._gcpAttributes.internalValue = config.gcpAttributes;
     this._instancePoolFleetAttributes.internalValue = config.instancePoolFleetAttributes;
+    this._nodeTypeFlexibility.internalValue = config.nodeTypeFlexibility;
     this._preloadedDockerImage.internalValue = config.preloadedDockerImage;
+    this._providerConfig.internalValue = config.providerConfig;
   }
 
   // ==========
@@ -1685,11 +1861,11 @@ export class InstancePool extends cdktf.TerraformResource {
   }
 
   // enable_elastic_disk - computed: false, optional: true, required: false
-  private _enableElasticDisk?: boolean | cdktf.IResolvable; 
+  private _enableElasticDisk?: boolean | cdktn.IResolvable; 
   public get enableElasticDisk() {
     return this.getBooleanAttribute('enable_elastic_disk');
   }
-  public set enableElasticDisk(value: boolean | cdktf.IResolvable) {
+  public set enableElasticDisk(value: boolean | cdktn.IResolvable) {
     this._enableElasticDisk = value;
   }
   public resetEnableElasticDisk() {
@@ -1902,12 +2078,28 @@ export class InstancePool extends cdktf.TerraformResource {
     return this._instancePoolFleetAttributes.internalValue;
   }
 
+  // node_type_flexibility - computed: false, optional: true, required: false
+  private _nodeTypeFlexibility = new InstancePoolNodeTypeFlexibilityOutputReference(this, "node_type_flexibility");
+  public get nodeTypeFlexibility() {
+    return this._nodeTypeFlexibility;
+  }
+  public putNodeTypeFlexibility(value: InstancePoolNodeTypeFlexibility) {
+    this._nodeTypeFlexibility.internalValue = value;
+  }
+  public resetNodeTypeFlexibility() {
+    this._nodeTypeFlexibility.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nodeTypeFlexibilityInput() {
+    return this._nodeTypeFlexibility.internalValue;
+  }
+
   // preloaded_docker_image - computed: false, optional: true, required: false
   private _preloadedDockerImage = new InstancePoolPreloadedDockerImageList(this, "preloaded_docker_image", true);
   public get preloadedDockerImage() {
     return this._preloadedDockerImage;
   }
-  public putPreloadedDockerImage(value: InstancePoolPreloadedDockerImage[] | cdktf.IResolvable) {
+  public putPreloadedDockerImage(value: InstancePoolPreloadedDockerImage[] | cdktn.IResolvable) {
     this._preloadedDockerImage.internalValue = value;
   }
   public resetPreloadedDockerImage() {
@@ -1918,89 +2110,107 @@ export class InstancePool extends cdktf.TerraformResource {
     return this._preloadedDockerImage.internalValue;
   }
 
+  // provider_config - computed: false, optional: true, required: false
+  private _providerConfig = new InstancePoolProviderConfigOutputReference(this, "provider_config");
+  public get providerConfig() {
+    return this._providerConfig;
+  }
+  public putProviderConfig(value: InstancePoolProviderConfig) {
+    this._providerConfig.internalValue = value;
+  }
+  public resetProviderConfig() {
+    this._providerConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerConfigInput() {
+    return this._providerConfig.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      custom_tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._customTags),
-      enable_elastic_disk: cdktf.booleanToTerraform(this._enableElasticDisk),
-      id: cdktf.stringToTerraform(this._id),
-      idle_instance_autotermination_minutes: cdktf.numberToTerraform(this._idleInstanceAutoterminationMinutes),
-      instance_pool_id: cdktf.stringToTerraform(this._instancePoolId),
-      instance_pool_name: cdktf.stringToTerraform(this._instancePoolName),
-      max_capacity: cdktf.numberToTerraform(this._maxCapacity),
-      min_idle_instances: cdktf.numberToTerraform(this._minIdleInstances),
-      node_type_id: cdktf.stringToTerraform(this._nodeTypeId),
-      preloaded_spark_versions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._preloadedSparkVersions),
+      custom_tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._customTags),
+      enable_elastic_disk: cdktn.booleanToTerraform(this._enableElasticDisk),
+      id: cdktn.stringToTerraform(this._id),
+      idle_instance_autotermination_minutes: cdktn.numberToTerraform(this._idleInstanceAutoterminationMinutes),
+      instance_pool_id: cdktn.stringToTerraform(this._instancePoolId),
+      instance_pool_name: cdktn.stringToTerraform(this._instancePoolName),
+      max_capacity: cdktn.numberToTerraform(this._maxCapacity),
+      min_idle_instances: cdktn.numberToTerraform(this._minIdleInstances),
+      node_type_id: cdktn.stringToTerraform(this._nodeTypeId),
+      preloaded_spark_versions: cdktn.listMapper(cdktn.stringToTerraform, false)(this._preloadedSparkVersions),
       aws_attributes: instancePoolAwsAttributesToTerraform(this._awsAttributes.internalValue),
       azure_attributes: instancePoolAzureAttributesToTerraform(this._azureAttributes.internalValue),
       disk_spec: instancePoolDiskSpecToTerraform(this._diskSpec.internalValue),
       gcp_attributes: instancePoolGcpAttributesToTerraform(this._gcpAttributes.internalValue),
       instance_pool_fleet_attributes: instancePoolInstancePoolFleetAttributesToTerraform(this._instancePoolFleetAttributes.internalValue),
-      preloaded_docker_image: cdktf.listMapper(instancePoolPreloadedDockerImageToTerraform, true)(this._preloadedDockerImage.internalValue),
+      node_type_flexibility: instancePoolNodeTypeFlexibilityToTerraform(this._nodeTypeFlexibility.internalValue),
+      preloaded_docker_image: cdktn.listMapper(instancePoolPreloadedDockerImageToTerraform, true)(this._preloadedDockerImage.internalValue),
+      provider_config: instancePoolProviderConfigToTerraform(this._providerConfig.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       custom_tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._customTags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._customTags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       enable_elastic_disk: {
-        value: cdktf.booleanToHclTerraform(this._enableElasticDisk),
+        value: cdktn.booleanToHclTerraform(this._enableElasticDisk),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       idle_instance_autotermination_minutes: {
-        value: cdktf.numberToHclTerraform(this._idleInstanceAutoterminationMinutes),
+        value: cdktn.numberToHclTerraform(this._idleInstanceAutoterminationMinutes),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       instance_pool_id: {
-        value: cdktf.stringToHclTerraform(this._instancePoolId),
+        value: cdktn.stringToHclTerraform(this._instancePoolId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance_pool_name: {
-        value: cdktf.stringToHclTerraform(this._instancePoolName),
+        value: cdktn.stringToHclTerraform(this._instancePoolName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       max_capacity: {
-        value: cdktf.numberToHclTerraform(this._maxCapacity),
+        value: cdktn.numberToHclTerraform(this._maxCapacity),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       min_idle_instances: {
-        value: cdktf.numberToHclTerraform(this._minIdleInstances),
+        value: cdktn.numberToHclTerraform(this._minIdleInstances),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       node_type_id: {
-        value: cdktf.stringToHclTerraform(this._nodeTypeId),
+        value: cdktn.stringToHclTerraform(this._nodeTypeId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       preloaded_spark_versions: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._preloadedSparkVersions),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._preloadedSparkVersions),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
@@ -2035,11 +2245,23 @@ export class InstancePool extends cdktf.TerraformResource {
         type: "list",
         storageClassType: "InstancePoolInstancePoolFleetAttributesList",
       },
+      node_type_flexibility: {
+        value: instancePoolNodeTypeFlexibilityToHclTerraform(this._nodeTypeFlexibility.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "InstancePoolNodeTypeFlexibilityList",
+      },
       preloaded_docker_image: {
-        value: cdktf.listMapperHcl(instancePoolPreloadedDockerImageToHclTerraform, true)(this._preloadedDockerImage.internalValue),
+        value: cdktn.listMapperHcl(instancePoolPreloadedDockerImageToHclTerraform, true)(this._preloadedDockerImage.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "InstancePoolPreloadedDockerImageList",
+      },
+      provider_config: {
+        value: instancePoolProviderConfigToHclTerraform(this._providerConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "InstancePoolProviderConfigList",
       },
     };
 

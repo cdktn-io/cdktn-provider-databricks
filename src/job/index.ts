@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -115,247 +115,247 @@ jobWebhookNotificationsToHclTerraform,
 JobWebhookNotificationsOutputReference} from './index-structs'
 export * from './index-structs'
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
-export interface JobConfig extends cdktf.TerraformMetaArguments {
+import * as cdktn from 'cdktn';
+export interface JobConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#always_running Job#always_running}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#always_running Job#always_running}
   */
-  readonly alwaysRunning?: boolean | cdktf.IResolvable;
+  readonly alwaysRunning?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#budget_policy_id Job#budget_policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#budget_policy_id Job#budget_policy_id}
   */
   readonly budgetPolicyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#control_run_state Job#control_run_state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#control_run_state Job#control_run_state}
   */
-  readonly controlRunState?: boolean | cdktf.IResolvable;
+  readonly controlRunState?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#description Job#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#description Job#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#edit_mode Job#edit_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#edit_mode Job#edit_mode}
   */
   readonly editMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#existing_cluster_id Job#existing_cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#existing_cluster_id Job#existing_cluster_id}
   */
   readonly existingClusterId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#format Job#format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#format Job#format}
   */
   readonly format?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#id Job#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#id Job#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#max_concurrent_runs Job#max_concurrent_runs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#max_concurrent_runs Job#max_concurrent_runs}
   */
   readonly maxConcurrentRuns?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#max_retries Job#max_retries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#max_retries Job#max_retries}
   */
   readonly maxRetries?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#min_retry_interval_millis Job#min_retry_interval_millis}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#min_retry_interval_millis Job#min_retry_interval_millis}
   */
   readonly minRetryIntervalMillis?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#name Job#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#name Job#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#performance_target Job#performance_target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#performance_target Job#performance_target}
   */
   readonly performanceTarget?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#retry_on_timeout Job#retry_on_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#retry_on_timeout Job#retry_on_timeout}
   */
-  readonly retryOnTimeout?: boolean | cdktf.IResolvable;
+  readonly retryOnTimeout?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#tags Job#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#tags Job#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#timeout_seconds Job#timeout_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#timeout_seconds Job#timeout_seconds}
   */
   readonly timeoutSeconds?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#usage_policy_id Job#usage_policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#usage_policy_id Job#usage_policy_id}
   */
   readonly usagePolicyId?: string;
   /**
   * continuous block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#continuous Job#continuous}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#continuous Job#continuous}
   */
   readonly continuous?: JobContinuous;
   /**
   * dbt_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#dbt_task Job#dbt_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#dbt_task Job#dbt_task}
   */
   readonly dbtTask?: JobDbtTask;
   /**
   * deployment block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#deployment Job#deployment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#deployment Job#deployment}
   */
   readonly deployment?: JobDeployment;
   /**
   * email_notifications block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#email_notifications Job#email_notifications}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#email_notifications Job#email_notifications}
   */
   readonly emailNotifications?: JobEmailNotifications;
   /**
   * environment block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#environment Job#environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#environment Job#environment}
   */
-  readonly environment?: JobEnvironment[] | cdktf.IResolvable;
+  readonly environment?: JobEnvironment[] | cdktn.IResolvable;
   /**
   * git_source block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#git_source Job#git_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#git_source Job#git_source}
   */
   readonly gitSource?: JobGitSource;
   /**
   * health block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#health Job#health}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#health Job#health}
   */
   readonly health?: JobHealth;
   /**
   * job_cluster block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#job_cluster Job#job_cluster}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#job_cluster Job#job_cluster}
   */
-  readonly jobCluster?: JobJobCluster[] | cdktf.IResolvable;
+  readonly jobCluster?: JobJobCluster[] | cdktn.IResolvable;
   /**
   * library block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#library Job#library}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#library Job#library}
   */
-  readonly library?: JobLibrary[] | cdktf.IResolvable;
+  readonly library?: JobLibrary[] | cdktn.IResolvable;
   /**
   * new_cluster block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#new_cluster Job#new_cluster}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#new_cluster Job#new_cluster}
   */
   readonly newCluster?: JobNewCluster;
   /**
   * notebook_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#notebook_task Job#notebook_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#notebook_task Job#notebook_task}
   */
   readonly notebookTask?: JobNotebookTask;
   /**
   * notification_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#notification_settings Job#notification_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#notification_settings Job#notification_settings}
   */
   readonly notificationSettings?: JobNotificationSettings;
   /**
   * parameter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#parameter Job#parameter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#parameter Job#parameter}
   */
-  readonly parameter?: JobParameter[] | cdktf.IResolvable;
+  readonly parameter?: JobParameter[] | cdktn.IResolvable;
   /**
   * pipeline_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#pipeline_task Job#pipeline_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#pipeline_task Job#pipeline_task}
   */
   readonly pipelineTask?: JobPipelineTask;
   /**
   * provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#provider_config Job#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#provider_config Job#provider_config}
   */
   readonly providerConfig?: JobProviderConfig;
   /**
   * python_wheel_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#python_wheel_task Job#python_wheel_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#python_wheel_task Job#python_wheel_task}
   */
   readonly pythonWheelTask?: JobPythonWheelTask;
   /**
   * queue block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#queue Job#queue}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#queue Job#queue}
   */
   readonly queue?: JobQueue;
   /**
   * run_as block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#run_as Job#run_as}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#run_as Job#run_as}
   */
   readonly runAs?: JobRunAs;
   /**
   * run_job_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#run_job_task Job#run_job_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#run_job_task Job#run_job_task}
   */
   readonly runJobTask?: JobRunJobTask;
   /**
   * schedule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#schedule Job#schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#schedule Job#schedule}
   */
   readonly schedule?: JobSchedule;
   /**
   * spark_jar_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#spark_jar_task Job#spark_jar_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#spark_jar_task Job#spark_jar_task}
   */
   readonly sparkJarTask?: JobSparkJarTask;
   /**
   * spark_python_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#spark_python_task Job#spark_python_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#spark_python_task Job#spark_python_task}
   */
   readonly sparkPythonTask?: JobSparkPythonTask;
   /**
   * spark_submit_task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#spark_submit_task Job#spark_submit_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#spark_submit_task Job#spark_submit_task}
   */
   readonly sparkSubmitTask?: JobSparkSubmitTask;
   /**
   * task block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#task Job#task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#task Job#task}
   */
-  readonly task?: JobTask[] | cdktf.IResolvable;
+  readonly task?: JobTask[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#timeouts Job#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#timeouts Job#timeouts}
   */
   readonly timeouts?: JobTimeouts;
   /**
   * trigger block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#trigger Job#trigger}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#trigger Job#trigger}
   */
   readonly trigger?: JobTrigger;
   /**
   * webhook_notifications block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#webhook_notifications Job#webhook_notifications}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#webhook_notifications Job#webhook_notifications}
   */
   readonly webhookNotifications?: JobWebhookNotifications;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job databricks_job}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job databricks_job}
 */
-export class Job extends cdktf.TerraformResource {
+export class Job extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -366,14 +366,14 @@ export class Job extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Job resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Job resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Job to import
-  * @param importFromId The id of the existing Job that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Job that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Job to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_job", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_job", importId: importFromId, provider });
       }
 
   // ===========
@@ -381,7 +381,7 @@ export class Job extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/job databricks_job} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/job databricks_job} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -392,7 +392,7 @@ export class Job extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_job',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -454,11 +454,11 @@ export class Job extends cdktf.TerraformResource {
   // ==========
 
   // always_running - computed: false, optional: true, required: false
-  private _alwaysRunning?: boolean | cdktf.IResolvable; 
+  private _alwaysRunning?: boolean | cdktn.IResolvable; 
   public get alwaysRunning() {
     return this.getBooleanAttribute('always_running');
   }
-  public set alwaysRunning(value: boolean | cdktf.IResolvable) {
+  public set alwaysRunning(value: boolean | cdktn.IResolvable) {
     this._alwaysRunning = value;
   }
   public resetAlwaysRunning() {
@@ -486,11 +486,11 @@ export class Job extends cdktf.TerraformResource {
   }
 
   // control_run_state - computed: false, optional: true, required: false
-  private _controlRunState?: boolean | cdktf.IResolvable; 
+  private _controlRunState?: boolean | cdktn.IResolvable; 
   public get controlRunState() {
     return this.getBooleanAttribute('control_run_state');
   }
-  public set controlRunState(value: boolean | cdktf.IResolvable) {
+  public set controlRunState(value: boolean | cdktn.IResolvable) {
     this._controlRunState = value;
   }
   public resetControlRunState() {
@@ -662,11 +662,11 @@ export class Job extends cdktf.TerraformResource {
   }
 
   // retry_on_timeout - computed: false, optional: true, required: false
-  private _retryOnTimeout?: boolean | cdktf.IResolvable; 
+  private _retryOnTimeout?: boolean | cdktn.IResolvable; 
   public get retryOnTimeout() {
     return this.getBooleanAttribute('retry_on_timeout');
   }
-  public set retryOnTimeout(value: boolean | cdktf.IResolvable) {
+  public set retryOnTimeout(value: boolean | cdktn.IResolvable) {
     this._retryOnTimeout = value;
   }
   public resetRetryOnTimeout() {
@@ -799,7 +799,7 @@ export class Job extends cdktf.TerraformResource {
   public get environment() {
     return this._environment;
   }
-  public putEnvironment(value: JobEnvironment[] | cdktf.IResolvable) {
+  public putEnvironment(value: JobEnvironment[] | cdktn.IResolvable) {
     this._environment.internalValue = value;
   }
   public resetEnvironment() {
@@ -847,7 +847,7 @@ export class Job extends cdktf.TerraformResource {
   public get jobCluster() {
     return this._jobCluster;
   }
-  public putJobCluster(value: JobJobCluster[] | cdktf.IResolvable) {
+  public putJobCluster(value: JobJobCluster[] | cdktn.IResolvable) {
     this._jobCluster.internalValue = value;
   }
   public resetJobCluster() {
@@ -863,7 +863,7 @@ export class Job extends cdktf.TerraformResource {
   public get library() {
     return this._library;
   }
-  public putLibrary(value: JobLibrary[] | cdktf.IResolvable) {
+  public putLibrary(value: JobLibrary[] | cdktn.IResolvable) {
     this._library.internalValue = value;
   }
   public resetLibrary() {
@@ -927,7 +927,7 @@ export class Job extends cdktf.TerraformResource {
   public get parameter() {
     return this._parameter;
   }
-  public putParameter(value: JobParameter[] | cdktf.IResolvable) {
+  public putParameter(value: JobParameter[] | cdktn.IResolvable) {
     this._parameter.internalValue = value;
   }
   public resetParameter() {
@@ -1103,7 +1103,7 @@ export class Job extends cdktf.TerraformResource {
   public get task() {
     return this._task;
   }
-  public putTask(value: JobTask[] | cdktf.IResolvable) {
+  public putTask(value: JobTask[] | cdktn.IResolvable) {
     this._task.internalValue = value;
   }
   public resetTask() {
@@ -1168,36 +1168,36 @@ export class Job extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      always_running: cdktf.booleanToTerraform(this._alwaysRunning),
-      budget_policy_id: cdktf.stringToTerraform(this._budgetPolicyId),
-      control_run_state: cdktf.booleanToTerraform(this._controlRunState),
-      description: cdktf.stringToTerraform(this._description),
-      edit_mode: cdktf.stringToTerraform(this._editMode),
-      existing_cluster_id: cdktf.stringToTerraform(this._existingClusterId),
-      format: cdktf.stringToTerraform(this._format),
-      id: cdktf.stringToTerraform(this._id),
-      max_concurrent_runs: cdktf.numberToTerraform(this._maxConcurrentRuns),
-      max_retries: cdktf.numberToTerraform(this._maxRetries),
-      min_retry_interval_millis: cdktf.numberToTerraform(this._minRetryIntervalMillis),
-      name: cdktf.stringToTerraform(this._name),
-      performance_target: cdktf.stringToTerraform(this._performanceTarget),
-      retry_on_timeout: cdktf.booleanToTerraform(this._retryOnTimeout),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      timeout_seconds: cdktf.numberToTerraform(this._timeoutSeconds),
-      usage_policy_id: cdktf.stringToTerraform(this._usagePolicyId),
+      always_running: cdktn.booleanToTerraform(this._alwaysRunning),
+      budget_policy_id: cdktn.stringToTerraform(this._budgetPolicyId),
+      control_run_state: cdktn.booleanToTerraform(this._controlRunState),
+      description: cdktn.stringToTerraform(this._description),
+      edit_mode: cdktn.stringToTerraform(this._editMode),
+      existing_cluster_id: cdktn.stringToTerraform(this._existingClusterId),
+      format: cdktn.stringToTerraform(this._format),
+      id: cdktn.stringToTerraform(this._id),
+      max_concurrent_runs: cdktn.numberToTerraform(this._maxConcurrentRuns),
+      max_retries: cdktn.numberToTerraform(this._maxRetries),
+      min_retry_interval_millis: cdktn.numberToTerraform(this._minRetryIntervalMillis),
+      name: cdktn.stringToTerraform(this._name),
+      performance_target: cdktn.stringToTerraform(this._performanceTarget),
+      retry_on_timeout: cdktn.booleanToTerraform(this._retryOnTimeout),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      timeout_seconds: cdktn.numberToTerraform(this._timeoutSeconds),
+      usage_policy_id: cdktn.stringToTerraform(this._usagePolicyId),
       continuous: jobContinuousToTerraform(this._continuous.internalValue),
       dbt_task: jobDbtTaskToTerraform(this._dbtTask.internalValue),
       deployment: jobDeploymentToTerraform(this._deployment.internalValue),
       email_notifications: jobEmailNotificationsToTerraform(this._emailNotifications.internalValue),
-      environment: cdktf.listMapper(jobEnvironmentToTerraform, true)(this._environment.internalValue),
+      environment: cdktn.listMapper(jobEnvironmentToTerraform, true)(this._environment.internalValue),
       git_source: jobGitSourceToTerraform(this._gitSource.internalValue),
       health: jobHealthToTerraform(this._health.internalValue),
-      job_cluster: cdktf.listMapper(jobJobClusterToTerraform, true)(this._jobCluster.internalValue),
-      library: cdktf.listMapper(jobLibraryToTerraform, true)(this._library.internalValue),
+      job_cluster: cdktn.listMapper(jobJobClusterToTerraform, true)(this._jobCluster.internalValue),
+      library: cdktn.listMapper(jobLibraryToTerraform, true)(this._library.internalValue),
       new_cluster: jobNewClusterToTerraform(this._newCluster.internalValue),
       notebook_task: jobNotebookTaskToTerraform(this._notebookTask.internalValue),
       notification_settings: jobNotificationSettingsToTerraform(this._notificationSettings.internalValue),
-      parameter: cdktf.listMapper(jobParameterToTerraform, true)(this._parameter.internalValue),
+      parameter: cdktn.listMapper(jobParameterToTerraform, true)(this._parameter.internalValue),
       pipeline_task: jobPipelineTaskToTerraform(this._pipelineTask.internalValue),
       provider_config: jobProviderConfigToTerraform(this._providerConfig.internalValue),
       python_wheel_task: jobPythonWheelTaskToTerraform(this._pythonWheelTask.internalValue),
@@ -1208,7 +1208,7 @@ export class Job extends cdktf.TerraformResource {
       spark_jar_task: jobSparkJarTaskToTerraform(this._sparkJarTask.internalValue),
       spark_python_task: jobSparkPythonTaskToTerraform(this._sparkPythonTask.internalValue),
       spark_submit_task: jobSparkSubmitTaskToTerraform(this._sparkSubmitTask.internalValue),
-      task: cdktf.listMapper(jobTaskToTerraform, true)(this._task.internalValue),
+      task: cdktn.listMapper(jobTaskToTerraform, true)(this._task.internalValue),
       timeouts: jobTimeoutsToTerraform(this._timeouts.internalValue),
       trigger: jobTriggerToTerraform(this._trigger.internalValue),
       webhook_notifications: jobWebhookNotificationsToTerraform(this._webhookNotifications.internalValue),
@@ -1218,103 +1218,103 @@ export class Job extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       always_running: {
-        value: cdktf.booleanToHclTerraform(this._alwaysRunning),
+        value: cdktn.booleanToHclTerraform(this._alwaysRunning),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       budget_policy_id: {
-        value: cdktf.stringToHclTerraform(this._budgetPolicyId),
+        value: cdktn.stringToHclTerraform(this._budgetPolicyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       control_run_state: {
-        value: cdktf.booleanToHclTerraform(this._controlRunState),
+        value: cdktn.booleanToHclTerraform(this._controlRunState),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       edit_mode: {
-        value: cdktf.stringToHclTerraform(this._editMode),
+        value: cdktn.stringToHclTerraform(this._editMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       existing_cluster_id: {
-        value: cdktf.stringToHclTerraform(this._existingClusterId),
+        value: cdktn.stringToHclTerraform(this._existingClusterId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       format: {
-        value: cdktf.stringToHclTerraform(this._format),
+        value: cdktn.stringToHclTerraform(this._format),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       max_concurrent_runs: {
-        value: cdktf.numberToHclTerraform(this._maxConcurrentRuns),
+        value: cdktn.numberToHclTerraform(this._maxConcurrentRuns),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       max_retries: {
-        value: cdktf.numberToHclTerraform(this._maxRetries),
+        value: cdktn.numberToHclTerraform(this._maxRetries),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       min_retry_interval_millis: {
-        value: cdktf.numberToHclTerraform(this._minRetryIntervalMillis),
+        value: cdktn.numberToHclTerraform(this._minRetryIntervalMillis),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       performance_target: {
-        value: cdktf.stringToHclTerraform(this._performanceTarget),
+        value: cdktn.stringToHclTerraform(this._performanceTarget),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       retry_on_timeout: {
-        value: cdktf.booleanToHclTerraform(this._retryOnTimeout),
+        value: cdktn.booleanToHclTerraform(this._retryOnTimeout),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       timeout_seconds: {
-        value: cdktf.numberToHclTerraform(this._timeoutSeconds),
+        value: cdktn.numberToHclTerraform(this._timeoutSeconds),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       usage_policy_id: {
-        value: cdktf.stringToHclTerraform(this._usagePolicyId),
+        value: cdktn.stringToHclTerraform(this._usagePolicyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -1344,7 +1344,7 @@ export class Job extends cdktf.TerraformResource {
         storageClassType: "JobEmailNotificationsList",
       },
       environment: {
-        value: cdktf.listMapperHcl(jobEnvironmentToHclTerraform, true)(this._environment.internalValue),
+        value: cdktn.listMapperHcl(jobEnvironmentToHclTerraform, true)(this._environment.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "JobEnvironmentList",
@@ -1362,13 +1362,13 @@ export class Job extends cdktf.TerraformResource {
         storageClassType: "JobHealthList",
       },
       job_cluster: {
-        value: cdktf.listMapperHcl(jobJobClusterToHclTerraform, true)(this._jobCluster.internalValue),
+        value: cdktn.listMapperHcl(jobJobClusterToHclTerraform, true)(this._jobCluster.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "JobJobClusterList",
       },
       library: {
-        value: cdktf.listMapperHcl(jobLibraryToHclTerraform, true)(this._library.internalValue),
+        value: cdktn.listMapperHcl(jobLibraryToHclTerraform, true)(this._library.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "JobLibraryList",
@@ -1392,7 +1392,7 @@ export class Job extends cdktf.TerraformResource {
         storageClassType: "JobNotificationSettingsList",
       },
       parameter: {
-        value: cdktf.listMapperHcl(jobParameterToHclTerraform, true)(this._parameter.internalValue),
+        value: cdktn.listMapperHcl(jobParameterToHclTerraform, true)(this._parameter.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "JobParameterList",
@@ -1458,7 +1458,7 @@ export class Job extends cdktf.TerraformResource {
         storageClassType: "JobSparkSubmitTaskList",
       },
       task: {
-        value: cdktf.listMapperHcl(jobTaskToHclTerraform, true)(this._task.internalValue),
+        value: cdktn.listMapperHcl(jobTaskToHclTerraform, true)(this._task.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "JobTaskList",

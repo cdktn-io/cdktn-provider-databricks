@@ -1,72 +1,72 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/access_control_rule_set
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/access_control_rule_set
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AccessControlRuleSetConfig extends cdktf.TerraformMetaArguments {
+export interface AccessControlRuleSetConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/access_control_rule_set#id AccessControlRuleSet#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/access_control_rule_set#id AccessControlRuleSet#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/access_control_rule_set#name AccessControlRuleSet#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/access_control_rule_set#name AccessControlRuleSet#name}
   */
   readonly name: string;
   /**
   * grant_rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/access_control_rule_set#grant_rules AccessControlRuleSet#grant_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/access_control_rule_set#grant_rules AccessControlRuleSet#grant_rules}
   */
-  readonly grantRules?: AccessControlRuleSetGrantRules[] | cdktf.IResolvable;
+  readonly grantRules?: AccessControlRuleSetGrantRules[] | cdktn.IResolvable;
 }
 export interface AccessControlRuleSetGrantRules {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/access_control_rule_set#principals AccessControlRuleSet#principals}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/access_control_rule_set#principals AccessControlRuleSet#principals}
   */
   readonly principals?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/access_control_rule_set#role AccessControlRuleSet#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/access_control_rule_set#role AccessControlRuleSet#role}
   */
   readonly role: string;
 }
 
-export function accessControlRuleSetGrantRulesToTerraform(struct?: AccessControlRuleSetGrantRules | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessControlRuleSetGrantRulesToTerraform(struct?: AccessControlRuleSetGrantRules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    principals: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.principals),
-    role: cdktf.stringToTerraform(struct!.role),
+    principals: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.principals),
+    role: cdktn.stringToTerraform(struct!.role),
   }
 }
 
 
-export function accessControlRuleSetGrantRulesToHclTerraform(struct?: AccessControlRuleSetGrantRules | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessControlRuleSetGrantRulesToHclTerraform(struct?: AccessControlRuleSetGrantRules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     principals: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.principals),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.principals),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     role: {
-      value: cdktf.stringToHclTerraform(struct!.role),
+      value: cdktn.stringToHclTerraform(struct!.role),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -77,9 +77,9 @@ export function accessControlRuleSetGrantRulesToHclTerraform(struct?: AccessCont
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccessControlRuleSetGrantRulesOutputReference extends cdktf.ComplexObject {
+export class AccessControlRuleSetGrantRulesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -87,11 +87,11 @@ export class AccessControlRuleSetGrantRulesOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AccessControlRuleSetGrantRules | cdktf.IResolvable | undefined {
+  public get internalValue(): AccessControlRuleSetGrantRules | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -108,14 +108,14 @@ export class AccessControlRuleSetGrantRulesOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AccessControlRuleSetGrantRules | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AccessControlRuleSetGrantRules | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._principals = undefined;
       this._role = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -130,7 +130,7 @@ export class AccessControlRuleSetGrantRulesOutputReference extends cdktf.Complex
   // principals - computed: false, optional: true, required: false
   private _principals?: string[]; 
   public get principals() {
-    return cdktf.Fn.tolist(this.getListAttribute('principals'));
+    return cdktn.Fn.tolist(this.getListAttribute('principals'));
   }
   public set principals(value: string[]) {
     this._principals = value;
@@ -157,15 +157,15 @@ export class AccessControlRuleSetGrantRulesOutputReference extends cdktf.Complex
   }
 }
 
-export class AccessControlRuleSetGrantRulesList extends cdktf.ComplexList {
-  public internalValue? : AccessControlRuleSetGrantRules[] | cdktf.IResolvable
+export class AccessControlRuleSetGrantRulesList extends cdktn.ComplexList {
+  public internalValue? : AccessControlRuleSetGrantRules[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -178,9 +178,9 @@ export class AccessControlRuleSetGrantRulesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/access_control_rule_set databricks_access_control_rule_set}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/access_control_rule_set databricks_access_control_rule_set}
 */
-export class AccessControlRuleSet extends cdktf.TerraformResource {
+export class AccessControlRuleSet extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -191,14 +191,14 @@ export class AccessControlRuleSet extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AccessControlRuleSet resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AccessControlRuleSet resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AccessControlRuleSet to import
-  * @param importFromId The id of the existing AccessControlRuleSet that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/access_control_rule_set#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AccessControlRuleSet that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/access_control_rule_set#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AccessControlRuleSet to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_access_control_rule_set", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_access_control_rule_set", importId: importFromId, provider });
       }
 
   // ===========
@@ -206,7 +206,7 @@ export class AccessControlRuleSet extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/access_control_rule_set databricks_access_control_rule_set} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/access_control_rule_set databricks_access_control_rule_set} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -217,7 +217,7 @@ export class AccessControlRuleSet extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_access_control_rule_set',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -276,7 +276,7 @@ export class AccessControlRuleSet extends cdktf.TerraformResource {
   public get grantRules() {
     return this._grantRules;
   }
-  public putGrantRules(value: AccessControlRuleSetGrantRules[] | cdktf.IResolvable) {
+  public putGrantRules(value: AccessControlRuleSetGrantRules[] | cdktn.IResolvable) {
     this._grantRules.internalValue = value;
   }
   public resetGrantRules() {
@@ -293,28 +293,28 @@ export class AccessControlRuleSet extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      grant_rules: cdktf.listMapper(accessControlRuleSetGrantRulesToTerraform, true)(this._grantRules.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      grant_rules: cdktn.listMapper(accessControlRuleSetGrantRulesToTerraform, true)(this._grantRules.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       grant_rules: {
-        value: cdktf.listMapperHcl(accessControlRuleSetGrantRulesToHclTerraform, true)(this._grantRules.internalValue),
+        value: cdktn.listMapperHcl(accessControlRuleSetGrantRulesToHclTerraform, true)(this._grantRules.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "AccessControlRuleSetGrantRulesList",

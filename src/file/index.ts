@@ -1,50 +1,137 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/file
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/file
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface FileConfig extends cdktf.TerraformMetaArguments {
+export interface FileConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/file#content_base64 File#content_base64}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/file#content_base64 File#content_base64}
   */
   readonly contentBase64?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/file#id File#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/file#id File#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/file#md5 File#md5}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/file#md5 File#md5}
   */
   readonly md5?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/file#path File#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/file#path File#path}
   */
   readonly path: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/file#remote_file_modified File#remote_file_modified}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/file#remote_file_modified File#remote_file_modified}
   */
-  readonly remoteFileModified?: boolean | cdktf.IResolvable;
+  readonly remoteFileModified?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/file#source File#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/file#source File#source}
   */
   readonly source?: string;
+  /**
+  * provider_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/file#provider_config File#provider_config}
+  */
+  readonly providerConfig?: FileProviderConfig;
+}
+export interface FileProviderConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/file#workspace_id File#workspace_id}
+  */
+  readonly workspaceId: string;
+}
+
+export function fileProviderConfigToTerraform(struct?: FileProviderConfigOutputReference | FileProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
+  }
+}
+
+
+export function fileProviderConfigToHclTerraform(struct?: FileProviderConfigOutputReference | FileProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    workspace_id: {
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class FileProviderConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): FileProviderConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._workspaceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workspaceId = this._workspaceId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: FileProviderConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._workspaceId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._workspaceId = value.workspaceId;
+    }
+  }
+
+  // workspace_id - computed: false, optional: false, required: true
+  private _workspaceId?: string; 
+  public get workspaceId() {
+    return this.getStringAttribute('workspace_id');
+  }
+  public set workspaceId(value: string) {
+    this._workspaceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workspaceIdInput() {
+    return this._workspaceId;
+  }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/file databricks_file}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/file databricks_file}
 */
-export class File extends cdktf.TerraformResource {
+export class File extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -55,14 +142,14 @@ export class File extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a File resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a File resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the File to import
-  * @param importFromId The id of the existing File that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/file#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing File that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/file#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the File to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_file", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_file", importId: importFromId, provider });
       }
 
   // ===========
@@ -70,7 +157,7 @@ export class File extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/file databricks_file} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/file databricks_file} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -81,7 +168,7 @@ export class File extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_file',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -98,6 +185,7 @@ export class File extends cdktf.TerraformResource {
     this._path = config.path;
     this._remoteFileModified = config.remoteFileModified;
     this._source = config.source;
+    this._providerConfig.internalValue = config.providerConfig;
   }
 
   // ==========
@@ -176,11 +264,11 @@ export class File extends cdktf.TerraformResource {
   }
 
   // remote_file_modified - computed: false, optional: true, required: false
-  private _remoteFileModified?: boolean | cdktf.IResolvable; 
+  private _remoteFileModified?: boolean | cdktn.IResolvable; 
   public get remoteFileModified() {
     return this.getBooleanAttribute('remote_file_modified');
   }
-  public set remoteFileModified(value: boolean | cdktf.IResolvable) {
+  public set remoteFileModified(value: boolean | cdktn.IResolvable) {
     this._remoteFileModified = value;
   }
   public resetRemoteFileModified() {
@@ -207,58 +295,81 @@ export class File extends cdktf.TerraformResource {
     return this._source;
   }
 
+  // provider_config - computed: false, optional: true, required: false
+  private _providerConfig = new FileProviderConfigOutputReference(this, "provider_config");
+  public get providerConfig() {
+    return this._providerConfig;
+  }
+  public putProviderConfig(value: FileProviderConfig) {
+    this._providerConfig.internalValue = value;
+  }
+  public resetProviderConfig() {
+    this._providerConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerConfigInput() {
+    return this._providerConfig.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      content_base64: cdktf.stringToTerraform(this._contentBase64),
-      id: cdktf.stringToTerraform(this._id),
-      md5: cdktf.stringToTerraform(this._md5),
-      path: cdktf.stringToTerraform(this._path),
-      remote_file_modified: cdktf.booleanToTerraform(this._remoteFileModified),
-      source: cdktf.stringToTerraform(this._source),
+      content_base64: cdktn.stringToTerraform(this._contentBase64),
+      id: cdktn.stringToTerraform(this._id),
+      md5: cdktn.stringToTerraform(this._md5),
+      path: cdktn.stringToTerraform(this._path),
+      remote_file_modified: cdktn.booleanToTerraform(this._remoteFileModified),
+      source: cdktn.stringToTerraform(this._source),
+      provider_config: fileProviderConfigToTerraform(this._providerConfig.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       content_base64: {
-        value: cdktf.stringToHclTerraform(this._contentBase64),
+        value: cdktn.stringToHclTerraform(this._contentBase64),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       md5: {
-        value: cdktf.stringToHclTerraform(this._md5),
+        value: cdktn.stringToHclTerraform(this._md5),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       path: {
-        value: cdktf.stringToHclTerraform(this._path),
+        value: cdktn.stringToHclTerraform(this._path),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       remote_file_modified: {
-        value: cdktf.booleanToHclTerraform(this._remoteFileModified),
+        value: cdktn.booleanToHclTerraform(this._remoteFileModified),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       source: {
-        value: cdktf.stringToHclTerraform(this._source),
+        value: cdktn.stringToHclTerraform(this._source),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      provider_config: {
+        value: fileProviderConfigToHclTerraform(this._providerConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "FileProviderConfigList",
       },
     };
 

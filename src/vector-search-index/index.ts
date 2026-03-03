@@ -1,56 +1,62 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/vector_search_index
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/vector_search_index
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VectorSearchIndexConfig extends cdktf.TerraformMetaArguments {
+export interface VectorSearchIndexConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/vector_search_index#endpoint_name VectorSearchIndex#endpoint_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/vector_search_index#endpoint_name VectorSearchIndex#endpoint_name}
   */
   readonly endpointName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/vector_search_index#id VectorSearchIndex#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/vector_search_index#id VectorSearchIndex#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/vector_search_index#index_type VectorSearchIndex#index_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/vector_search_index#index_type VectorSearchIndex#index_type}
   */
   readonly indexType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/vector_search_index#name VectorSearchIndex#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/vector_search_index#name VectorSearchIndex#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/vector_search_index#primary_key VectorSearchIndex#primary_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/vector_search_index#primary_key VectorSearchIndex#primary_key}
   */
   readonly primaryKey: string;
   /**
   * delta_sync_index_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/vector_search_index#delta_sync_index_spec VectorSearchIndex#delta_sync_index_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/vector_search_index#delta_sync_index_spec VectorSearchIndex#delta_sync_index_spec}
   */
   readonly deltaSyncIndexSpec?: VectorSearchIndexDeltaSyncIndexSpec;
   /**
   * direct_access_index_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/vector_search_index#direct_access_index_spec VectorSearchIndex#direct_access_index_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/vector_search_index#direct_access_index_spec VectorSearchIndex#direct_access_index_spec}
   */
   readonly directAccessIndexSpec?: VectorSearchIndexDirectAccessIndexSpec;
   /**
+  * provider_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/vector_search_index#provider_config VectorSearchIndex#provider_config}
+  */
+  readonly providerConfig?: VectorSearchIndexProviderConfig;
+  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/vector_search_index#timeouts VectorSearchIndex#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/vector_search_index#timeouts VectorSearchIndex#timeouts}
   */
   readonly timeouts?: VectorSearchIndexTimeouts;
 }
@@ -58,8 +64,8 @@ export interface VectorSearchIndexStatus {
 }
 
 export function vectorSearchIndexStatusToTerraform(struct?: VectorSearchIndexStatus): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -68,8 +74,8 @@ export function vectorSearchIndexStatusToTerraform(struct?: VectorSearchIndexSta
 
 
 export function vectorSearchIndexStatusToHclTerraform(struct?: VectorSearchIndexStatus): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -77,7 +83,7 @@ export function vectorSearchIndexStatusToHclTerraform(struct?: VectorSearchIndex
   return attrs;
 }
 
-export class VectorSearchIndexStatusOutputReference extends cdktf.ComplexObject {
+export class VectorSearchIndexStatusOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -86,7 +92,7 @@ export class VectorSearchIndexStatusOutputReference extends cdktf.ComplexObject 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -126,14 +132,14 @@ export class VectorSearchIndexStatusOutputReference extends cdktf.ComplexObject 
   }
 }
 
-export class VectorSearchIndexStatusList extends cdktf.ComplexList {
+export class VectorSearchIndexStatusList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -146,52 +152,52 @@ export class VectorSearchIndexStatusList extends cdktf.ComplexList {
 }
 export interface VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumns {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/vector_search_index#embedding_model_endpoint_name VectorSearchIndex#embedding_model_endpoint_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/vector_search_index#embedding_model_endpoint_name VectorSearchIndex#embedding_model_endpoint_name}
   */
   readonly embeddingModelEndpointName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/vector_search_index#model_endpoint_name_for_query VectorSearchIndex#model_endpoint_name_for_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/vector_search_index#model_endpoint_name_for_query VectorSearchIndex#model_endpoint_name_for_query}
   */
   readonly modelEndpointNameForQuery?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/vector_search_index#name VectorSearchIndex#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/vector_search_index#name VectorSearchIndex#name}
   */
   readonly name?: string;
 }
 
-export function vectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumnsToTerraform(struct?: VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumns | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumnsToTerraform(struct?: VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumns | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    embedding_model_endpoint_name: cdktf.stringToTerraform(struct!.embeddingModelEndpointName),
-    model_endpoint_name_for_query: cdktf.stringToTerraform(struct!.modelEndpointNameForQuery),
-    name: cdktf.stringToTerraform(struct!.name),
+    embedding_model_endpoint_name: cdktn.stringToTerraform(struct!.embeddingModelEndpointName),
+    model_endpoint_name_for_query: cdktn.stringToTerraform(struct!.modelEndpointNameForQuery),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function vectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumnsToHclTerraform(struct?: VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumns | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumnsToHclTerraform(struct?: VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumns | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     embedding_model_endpoint_name: {
-      value: cdktf.stringToHclTerraform(struct!.embeddingModelEndpointName),
+      value: cdktn.stringToHclTerraform(struct!.embeddingModelEndpointName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     model_endpoint_name_for_query: {
-      value: cdktf.stringToHclTerraform(struct!.modelEndpointNameForQuery),
+      value: cdktn.stringToHclTerraform(struct!.modelEndpointNameForQuery),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -202,9 +208,9 @@ export function vectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumnsToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumnsOutputReference extends cdktf.ComplexObject {
+export class VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumnsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -212,11 +218,11 @@ export class VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumnsOutputRefe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumns | cdktf.IResolvable | undefined {
+  public get internalValue(): VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumns | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -237,7 +243,7 @@ export class VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumnsOutputRefe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumns | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumns | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -245,7 +251,7 @@ export class VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumnsOutputRefe
       this._modelEndpointNameForQuery = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -307,15 +313,15 @@ export class VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumnsOutputRefe
   }
 }
 
-export class VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumnsList extends cdktf.ComplexList {
-  public internalValue? : VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumns[] | cdktf.IResolvable
+export class VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumnsList extends cdktn.ComplexList {
+  public internalValue? : VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumns[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -328,41 +334,41 @@ export class VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumnsList exten
 }
 export interface VectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumns {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/vector_search_index#embedding_dimension VectorSearchIndex#embedding_dimension}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/vector_search_index#embedding_dimension VectorSearchIndex#embedding_dimension}
   */
   readonly embeddingDimension?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/vector_search_index#name VectorSearchIndex#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/vector_search_index#name VectorSearchIndex#name}
   */
   readonly name?: string;
 }
 
-export function vectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumnsToTerraform(struct?: VectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumns | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumnsToTerraform(struct?: VectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumns | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    embedding_dimension: cdktf.numberToTerraform(struct!.embeddingDimension),
-    name: cdktf.stringToTerraform(struct!.name),
+    embedding_dimension: cdktn.numberToTerraform(struct!.embeddingDimension),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function vectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumnsToHclTerraform(struct?: VectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumns | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumnsToHclTerraform(struct?: VectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumns | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     embedding_dimension: {
-      value: cdktf.numberToHclTerraform(struct!.embeddingDimension),
+      value: cdktn.numberToHclTerraform(struct!.embeddingDimension),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -373,9 +379,9 @@ export function vectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumnsToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumnsOutputReference extends cdktf.ComplexObject {
+export class VectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumnsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -383,11 +389,11 @@ export class VectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumnsOutputRefe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): VectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumns | cdktf.IResolvable | undefined {
+  public get internalValue(): VectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumns | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -404,14 +410,14 @@ export class VectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumnsOutputRefe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumns | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumns | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._embeddingDimension = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -456,15 +462,15 @@ export class VectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumnsOutputRefe
   }
 }
 
-export class VectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumnsList extends cdktf.ComplexList {
-  public internalValue? : VectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumns[] | cdktf.IResolvable
+export class VectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumnsList extends cdktn.ComplexList {
+  public internalValue? : VectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumns[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -477,78 +483,78 @@ export class VectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumnsList exten
 }
 export interface VectorSearchIndexDeltaSyncIndexSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/vector_search_index#embedding_writeback_table VectorSearchIndex#embedding_writeback_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/vector_search_index#embedding_writeback_table VectorSearchIndex#embedding_writeback_table}
   */
   readonly embeddingWritebackTable?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/vector_search_index#pipeline_type VectorSearchIndex#pipeline_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/vector_search_index#pipeline_type VectorSearchIndex#pipeline_type}
   */
   readonly pipelineType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/vector_search_index#source_table VectorSearchIndex#source_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/vector_search_index#source_table VectorSearchIndex#source_table}
   */
   readonly sourceTable?: string;
   /**
   * embedding_source_columns block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/vector_search_index#embedding_source_columns VectorSearchIndex#embedding_source_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/vector_search_index#embedding_source_columns VectorSearchIndex#embedding_source_columns}
   */
-  readonly embeddingSourceColumns?: VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumns[] | cdktf.IResolvable;
+  readonly embeddingSourceColumns?: VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumns[] | cdktn.IResolvable;
   /**
   * embedding_vector_columns block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/vector_search_index#embedding_vector_columns VectorSearchIndex#embedding_vector_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/vector_search_index#embedding_vector_columns VectorSearchIndex#embedding_vector_columns}
   */
-  readonly embeddingVectorColumns?: VectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumns[] | cdktf.IResolvable;
+  readonly embeddingVectorColumns?: VectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumns[] | cdktn.IResolvable;
 }
 
 export function vectorSearchIndexDeltaSyncIndexSpecToTerraform(struct?: VectorSearchIndexDeltaSyncIndexSpecOutputReference | VectorSearchIndexDeltaSyncIndexSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    embedding_writeback_table: cdktf.stringToTerraform(struct!.embeddingWritebackTable),
-    pipeline_type: cdktf.stringToTerraform(struct!.pipelineType),
-    source_table: cdktf.stringToTerraform(struct!.sourceTable),
-    embedding_source_columns: cdktf.listMapper(vectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumnsToTerraform, true)(struct!.embeddingSourceColumns),
-    embedding_vector_columns: cdktf.listMapper(vectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumnsToTerraform, true)(struct!.embeddingVectorColumns),
+    embedding_writeback_table: cdktn.stringToTerraform(struct!.embeddingWritebackTable),
+    pipeline_type: cdktn.stringToTerraform(struct!.pipelineType),
+    source_table: cdktn.stringToTerraform(struct!.sourceTable),
+    embedding_source_columns: cdktn.listMapper(vectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumnsToTerraform, true)(struct!.embeddingSourceColumns),
+    embedding_vector_columns: cdktn.listMapper(vectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumnsToTerraform, true)(struct!.embeddingVectorColumns),
   }
 }
 
 
 export function vectorSearchIndexDeltaSyncIndexSpecToHclTerraform(struct?: VectorSearchIndexDeltaSyncIndexSpecOutputReference | VectorSearchIndexDeltaSyncIndexSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     embedding_writeback_table: {
-      value: cdktf.stringToHclTerraform(struct!.embeddingWritebackTable),
+      value: cdktn.stringToHclTerraform(struct!.embeddingWritebackTable),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     pipeline_type: {
-      value: cdktf.stringToHclTerraform(struct!.pipelineType),
+      value: cdktn.stringToHclTerraform(struct!.pipelineType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source_table: {
-      value: cdktf.stringToHclTerraform(struct!.sourceTable),
+      value: cdktn.stringToHclTerraform(struct!.sourceTable),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     embedding_source_columns: {
-      value: cdktf.listMapperHcl(vectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumnsToHclTerraform, true)(struct!.embeddingSourceColumns),
+      value: cdktn.listMapperHcl(vectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumnsToHclTerraform, true)(struct!.embeddingSourceColumns),
       isBlock: true,
       type: "list",
       storageClassType: "VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumnsList",
     },
     embedding_vector_columns: {
-      value: cdktf.listMapperHcl(vectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumnsToHclTerraform, true)(struct!.embeddingVectorColumns),
+      value: cdktn.listMapperHcl(vectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumnsToHclTerraform, true)(struct!.embeddingVectorColumns),
       isBlock: true,
       type: "list",
       storageClassType: "VectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumnsList",
@@ -559,14 +565,14 @@ export function vectorSearchIndexDeltaSyncIndexSpecToHclTerraform(struct?: Vecto
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VectorSearchIndexDeltaSyncIndexSpecOutputReference extends cdktf.ComplexObject {
+export class VectorSearchIndexDeltaSyncIndexSpecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -673,7 +679,7 @@ export class VectorSearchIndexDeltaSyncIndexSpecOutputReference extends cdktf.Co
   public get embeddingSourceColumns() {
     return this._embeddingSourceColumns;
   }
-  public putEmbeddingSourceColumns(value: VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumns[] | cdktf.IResolvable) {
+  public putEmbeddingSourceColumns(value: VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumns[] | cdktn.IResolvable) {
     this._embeddingSourceColumns.internalValue = value;
   }
   public resetEmbeddingSourceColumns() {
@@ -689,7 +695,7 @@ export class VectorSearchIndexDeltaSyncIndexSpecOutputReference extends cdktf.Co
   public get embeddingVectorColumns() {
     return this._embeddingVectorColumns;
   }
-  public putEmbeddingVectorColumns(value: VectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumns[] | cdktf.IResolvable) {
+  public putEmbeddingVectorColumns(value: VectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumns[] | cdktn.IResolvable) {
     this._embeddingVectorColumns.internalValue = value;
   }
   public resetEmbeddingVectorColumns() {
@@ -702,52 +708,52 @@ export class VectorSearchIndexDeltaSyncIndexSpecOutputReference extends cdktf.Co
 }
 export interface VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumns {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/vector_search_index#embedding_model_endpoint_name VectorSearchIndex#embedding_model_endpoint_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/vector_search_index#embedding_model_endpoint_name VectorSearchIndex#embedding_model_endpoint_name}
   */
   readonly embeddingModelEndpointName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/vector_search_index#model_endpoint_name_for_query VectorSearchIndex#model_endpoint_name_for_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/vector_search_index#model_endpoint_name_for_query VectorSearchIndex#model_endpoint_name_for_query}
   */
   readonly modelEndpointNameForQuery?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/vector_search_index#name VectorSearchIndex#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/vector_search_index#name VectorSearchIndex#name}
   */
   readonly name?: string;
 }
 
-export function vectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsToTerraform(struct?: VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumns | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsToTerraform(struct?: VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumns | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    embedding_model_endpoint_name: cdktf.stringToTerraform(struct!.embeddingModelEndpointName),
-    model_endpoint_name_for_query: cdktf.stringToTerraform(struct!.modelEndpointNameForQuery),
-    name: cdktf.stringToTerraform(struct!.name),
+    embedding_model_endpoint_name: cdktn.stringToTerraform(struct!.embeddingModelEndpointName),
+    model_endpoint_name_for_query: cdktn.stringToTerraform(struct!.modelEndpointNameForQuery),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function vectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsToHclTerraform(struct?: VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumns | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsToHclTerraform(struct?: VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumns | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     embedding_model_endpoint_name: {
-      value: cdktf.stringToHclTerraform(struct!.embeddingModelEndpointName),
+      value: cdktn.stringToHclTerraform(struct!.embeddingModelEndpointName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     model_endpoint_name_for_query: {
-      value: cdktf.stringToHclTerraform(struct!.modelEndpointNameForQuery),
+      value: cdktn.stringToHclTerraform(struct!.modelEndpointNameForQuery),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -758,9 +764,9 @@ export function vectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsToHc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsOutputReference extends cdktf.ComplexObject {
+export class VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -768,11 +774,11 @@ export class VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsOutputR
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumns | cdktf.IResolvable | undefined {
+  public get internalValue(): VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumns | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -793,7 +799,7 @@ export class VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsOutputR
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumns | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumns | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -801,7 +807,7 @@ export class VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsOutputR
       this._modelEndpointNameForQuery = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -863,15 +869,15 @@ export class VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsOutputR
   }
 }
 
-export class VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsList extends cdktf.ComplexList {
-  public internalValue? : VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumns[] | cdktf.IResolvable
+export class VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsList extends cdktn.ComplexList {
+  public internalValue? : VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumns[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -884,41 +890,41 @@ export class VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsList ex
 }
 export interface VectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumns {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/vector_search_index#embedding_dimension VectorSearchIndex#embedding_dimension}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/vector_search_index#embedding_dimension VectorSearchIndex#embedding_dimension}
   */
   readonly embeddingDimension?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/vector_search_index#name VectorSearchIndex#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/vector_search_index#name VectorSearchIndex#name}
   */
   readonly name?: string;
 }
 
-export function vectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumnsToTerraform(struct?: VectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumns | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumnsToTerraform(struct?: VectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumns | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    embedding_dimension: cdktf.numberToTerraform(struct!.embeddingDimension),
-    name: cdktf.stringToTerraform(struct!.name),
+    embedding_dimension: cdktn.numberToTerraform(struct!.embeddingDimension),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function vectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumnsToHclTerraform(struct?: VectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumns | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumnsToHclTerraform(struct?: VectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumns | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     embedding_dimension: {
-      value: cdktf.numberToHclTerraform(struct!.embeddingDimension),
+      value: cdktn.numberToHclTerraform(struct!.embeddingDimension),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -929,9 +935,9 @@ export function vectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumnsToHc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumnsOutputReference extends cdktf.ComplexObject {
+export class VectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumnsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -939,11 +945,11 @@ export class VectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumnsOutputR
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): VectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumns | cdktf.IResolvable | undefined {
+  public get internalValue(): VectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumns | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -960,14 +966,14 @@ export class VectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumnsOutputR
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumns | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumns | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._embeddingDimension = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1012,15 +1018,15 @@ export class VectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumnsOutputR
   }
 }
 
-export class VectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumnsList extends cdktf.ComplexList {
-  public internalValue? : VectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumns[] | cdktf.IResolvable
+export class VectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumnsList extends cdktn.ComplexList {
+  public internalValue? : VectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumns[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1033,56 +1039,56 @@ export class VectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumnsList ex
 }
 export interface VectorSearchIndexDirectAccessIndexSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/vector_search_index#schema_json VectorSearchIndex#schema_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/vector_search_index#schema_json VectorSearchIndex#schema_json}
   */
   readonly schemaJson?: string;
   /**
   * embedding_source_columns block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/vector_search_index#embedding_source_columns VectorSearchIndex#embedding_source_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/vector_search_index#embedding_source_columns VectorSearchIndex#embedding_source_columns}
   */
-  readonly embeddingSourceColumns?: VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumns[] | cdktf.IResolvable;
+  readonly embeddingSourceColumns?: VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumns[] | cdktn.IResolvable;
   /**
   * embedding_vector_columns block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/vector_search_index#embedding_vector_columns VectorSearchIndex#embedding_vector_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/vector_search_index#embedding_vector_columns VectorSearchIndex#embedding_vector_columns}
   */
-  readonly embeddingVectorColumns?: VectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumns[] | cdktf.IResolvable;
+  readonly embeddingVectorColumns?: VectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumns[] | cdktn.IResolvable;
 }
 
 export function vectorSearchIndexDirectAccessIndexSpecToTerraform(struct?: VectorSearchIndexDirectAccessIndexSpecOutputReference | VectorSearchIndexDirectAccessIndexSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    schema_json: cdktf.stringToTerraform(struct!.schemaJson),
-    embedding_source_columns: cdktf.listMapper(vectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsToTerraform, true)(struct!.embeddingSourceColumns),
-    embedding_vector_columns: cdktf.listMapper(vectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumnsToTerraform, true)(struct!.embeddingVectorColumns),
+    schema_json: cdktn.stringToTerraform(struct!.schemaJson),
+    embedding_source_columns: cdktn.listMapper(vectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsToTerraform, true)(struct!.embeddingSourceColumns),
+    embedding_vector_columns: cdktn.listMapper(vectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumnsToTerraform, true)(struct!.embeddingVectorColumns),
   }
 }
 
 
 export function vectorSearchIndexDirectAccessIndexSpecToHclTerraform(struct?: VectorSearchIndexDirectAccessIndexSpecOutputReference | VectorSearchIndexDirectAccessIndexSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     schema_json: {
-      value: cdktf.stringToHclTerraform(struct!.schemaJson),
+      value: cdktn.stringToHclTerraform(struct!.schemaJson),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     embedding_source_columns: {
-      value: cdktf.listMapperHcl(vectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsToHclTerraform, true)(struct!.embeddingSourceColumns),
+      value: cdktn.listMapperHcl(vectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsToHclTerraform, true)(struct!.embeddingSourceColumns),
       isBlock: true,
       type: "list",
       storageClassType: "VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumnsList",
     },
     embedding_vector_columns: {
-      value: cdktf.listMapperHcl(vectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumnsToHclTerraform, true)(struct!.embeddingVectorColumns),
+      value: cdktn.listMapperHcl(vectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumnsToHclTerraform, true)(struct!.embeddingVectorColumns),
       isBlock: true,
       type: "list",
       storageClassType: "VectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumnsList",
@@ -1093,14 +1099,14 @@ export function vectorSearchIndexDirectAccessIndexSpecToHclTerraform(struct?: Ve
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VectorSearchIndexDirectAccessIndexSpecOutputReference extends cdktf.ComplexObject {
+export class VectorSearchIndexDirectAccessIndexSpecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1158,7 +1164,7 @@ export class VectorSearchIndexDirectAccessIndexSpecOutputReference extends cdktf
   public get embeddingSourceColumns() {
     return this._embeddingSourceColumns;
   }
-  public putEmbeddingSourceColumns(value: VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumns[] | cdktf.IResolvable) {
+  public putEmbeddingSourceColumns(value: VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumns[] | cdktn.IResolvable) {
     this._embeddingSourceColumns.internalValue = value;
   }
   public resetEmbeddingSourceColumns() {
@@ -1174,7 +1180,7 @@ export class VectorSearchIndexDirectAccessIndexSpecOutputReference extends cdktf
   public get embeddingVectorColumns() {
     return this._embeddingVectorColumns;
   }
-  public putEmbeddingVectorColumns(value: VectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumns[] | cdktf.IResolvable) {
+  public putEmbeddingVectorColumns(value: VectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumns[] | cdktn.IResolvable) {
     this._embeddingVectorColumns.internalValue = value;
   }
   public resetEmbeddingVectorColumns() {
@@ -1185,32 +1191,32 @@ export class VectorSearchIndexDirectAccessIndexSpecOutputReference extends cdktf
     return this._embeddingVectorColumns.internalValue;
   }
 }
-export interface VectorSearchIndexTimeouts {
+export interface VectorSearchIndexProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/vector_search_index#create VectorSearchIndex#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/vector_search_index#workspace_id VectorSearchIndex#workspace_id}
   */
-  readonly create?: string;
+  readonly workspaceId: string;
 }
 
-export function vectorSearchIndexTimeoutsToTerraform(struct?: VectorSearchIndexTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vectorSearchIndexProviderConfigToTerraform(struct?: VectorSearchIndexProviderConfigOutputReference | VectorSearchIndexProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
   }
 }
 
 
-export function vectorSearchIndexTimeoutsToHclTerraform(struct?: VectorSearchIndexTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vectorSearchIndexProviderConfigToHclTerraform(struct?: VectorSearchIndexProviderConfigOutputReference | VectorSearchIndexProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
-    create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+    workspace_id: {
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1221,19 +1227,100 @@ export function vectorSearchIndexTimeoutsToHclTerraform(struct?: VectorSearchInd
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VectorSearchIndexTimeoutsOutputReference extends cdktf.ComplexObject {
+export class VectorSearchIndexProviderConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): VectorSearchIndexProviderConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._workspaceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workspaceId = this._workspaceId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: VectorSearchIndexProviderConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._workspaceId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._workspaceId = value.workspaceId;
+    }
+  }
+
+  // workspace_id - computed: false, optional: false, required: true
+  private _workspaceId?: string; 
+  public get workspaceId() {
+    return this.getStringAttribute('workspace_id');
+  }
+  public set workspaceId(value: string) {
+    this._workspaceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workspaceIdInput() {
+    return this._workspaceId;
+  }
+}
+export interface VectorSearchIndexTimeouts {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/vector_search_index#create VectorSearchIndex#create}
+  */
+  readonly create?: string;
+}
+
+export function vectorSearchIndexTimeoutsToTerraform(struct?: VectorSearchIndexTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    create: cdktn.stringToTerraform(struct!.create),
+  }
+}
+
+
+export function vectorSearchIndexTimeoutsToHclTerraform(struct?: VectorSearchIndexTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktn.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class VectorSearchIndexTimeoutsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): VectorSearchIndexTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): VectorSearchIndexTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1246,13 +1333,13 @@ export class VectorSearchIndexTimeoutsOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VectorSearchIndexTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VectorSearchIndexTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1281,9 +1368,9 @@ export class VectorSearchIndexTimeoutsOutputReference extends cdktf.ComplexObjec
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/vector_search_index databricks_vector_search_index}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/vector_search_index databricks_vector_search_index}
 */
-export class VectorSearchIndex extends cdktf.TerraformResource {
+export class VectorSearchIndex extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1294,14 +1381,14 @@ export class VectorSearchIndex extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VectorSearchIndex resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VectorSearchIndex resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VectorSearchIndex to import
-  * @param importFromId The id of the existing VectorSearchIndex that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/vector_search_index#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VectorSearchIndex that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/vector_search_index#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VectorSearchIndex to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_vector_search_index", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_vector_search_index", importId: importFromId, provider });
       }
 
   // ===========
@@ -1309,7 +1396,7 @@ export class VectorSearchIndex extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/vector_search_index databricks_vector_search_index} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/vector_search_index databricks_vector_search_index} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1320,7 +1407,7 @@ export class VectorSearchIndex extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_vector_search_index',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -1338,6 +1425,7 @@ export class VectorSearchIndex extends cdktf.TerraformResource {
     this._primaryKey = config.primaryKey;
     this._deltaSyncIndexSpec.internalValue = config.deltaSyncIndexSpec;
     this._directAccessIndexSpec.internalValue = config.directAccessIndexSpec;
+    this._providerConfig.internalValue = config.providerConfig;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -1456,6 +1544,22 @@ export class VectorSearchIndex extends cdktf.TerraformResource {
     return this._directAccessIndexSpec.internalValue;
   }
 
+  // provider_config - computed: false, optional: true, required: false
+  private _providerConfig = new VectorSearchIndexProviderConfigOutputReference(this, "provider_config");
+  public get providerConfig() {
+    return this._providerConfig;
+  }
+  public putProviderConfig(value: VectorSearchIndexProviderConfig) {
+    this._providerConfig.internalValue = value;
+  }
+  public resetProviderConfig() {
+    this._providerConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerConfigInput() {
+    return this._providerConfig.internalValue;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new VectorSearchIndexTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -1478,13 +1582,14 @@ export class VectorSearchIndex extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      endpoint_name: cdktf.stringToTerraform(this._endpointName),
-      id: cdktf.stringToTerraform(this._id),
-      index_type: cdktf.stringToTerraform(this._indexType),
-      name: cdktf.stringToTerraform(this._name),
-      primary_key: cdktf.stringToTerraform(this._primaryKey),
+      endpoint_name: cdktn.stringToTerraform(this._endpointName),
+      id: cdktn.stringToTerraform(this._id),
+      index_type: cdktn.stringToTerraform(this._indexType),
+      name: cdktn.stringToTerraform(this._name),
+      primary_key: cdktn.stringToTerraform(this._primaryKey),
       delta_sync_index_spec: vectorSearchIndexDeltaSyncIndexSpecToTerraform(this._deltaSyncIndexSpec.internalValue),
       direct_access_index_spec: vectorSearchIndexDirectAccessIndexSpecToTerraform(this._directAccessIndexSpec.internalValue),
+      provider_config: vectorSearchIndexProviderConfigToTerraform(this._providerConfig.internalValue),
       timeouts: vectorSearchIndexTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1492,31 +1597,31 @@ export class VectorSearchIndex extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       endpoint_name: {
-        value: cdktf.stringToHclTerraform(this._endpointName),
+        value: cdktn.stringToHclTerraform(this._endpointName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       index_type: {
-        value: cdktf.stringToHclTerraform(this._indexType),
+        value: cdktn.stringToHclTerraform(this._indexType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       primary_key: {
-        value: cdktf.stringToHclTerraform(this._primaryKey),
+        value: cdktn.stringToHclTerraform(this._primaryKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -1532,6 +1637,12 @@ export class VectorSearchIndex extends cdktf.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "VectorSearchIndexDirectAccessIndexSpecList",
+      },
+      provider_config: {
+        value: vectorSearchIndexProviderConfigToHclTerraform(this._providerConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "VectorSearchIndexProviderConfigList",
       },
       timeouts: {
         value: vectorSearchIndexTimeoutsToHclTerraform(this._timeouts.internalValue),

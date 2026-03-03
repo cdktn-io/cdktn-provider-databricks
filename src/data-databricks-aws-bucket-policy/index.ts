@@ -1,39 +1,39 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/aws_bucket_policy
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/aws_bucket_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataDatabricksAwsBucketPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface DataDatabricksAwsBucketPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/aws_bucket_policy#aws_partition DataDatabricksAwsBucketPolicy#aws_partition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/aws_bucket_policy#aws_partition DataDatabricksAwsBucketPolicy#aws_partition}
   */
   readonly awsPartition?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/aws_bucket_policy#bucket DataDatabricksAwsBucketPolicy#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/aws_bucket_policy#bucket DataDatabricksAwsBucketPolicy#bucket}
   */
   readonly bucket: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/aws_bucket_policy#databricks_account_id DataDatabricksAwsBucketPolicy#databricks_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/aws_bucket_policy#databricks_account_id DataDatabricksAwsBucketPolicy#databricks_account_id}
   */
   readonly databricksAccountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/aws_bucket_policy#databricks_e2_account_id DataDatabricksAwsBucketPolicy#databricks_e2_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/aws_bucket_policy#databricks_e2_account_id DataDatabricksAwsBucketPolicy#databricks_e2_account_id}
   */
   readonly databricksE2AccountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/aws_bucket_policy#full_access_role DataDatabricksAwsBucketPolicy#full_access_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/aws_bucket_policy#full_access_role DataDatabricksAwsBucketPolicy#full_access_role}
   */
   readonly fullAccessRole?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/aws_bucket_policy#id DataDatabricksAwsBucketPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/aws_bucket_policy#id DataDatabricksAwsBucketPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -42,9 +42,9 @@ export interface DataDatabricksAwsBucketPolicyConfig extends cdktf.TerraformMeta
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/aws_bucket_policy databricks_aws_bucket_policy}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/aws_bucket_policy databricks_aws_bucket_policy}
 */
-export class DataDatabricksAwsBucketPolicy extends cdktf.TerraformDataSource {
+export class DataDatabricksAwsBucketPolicy extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -55,14 +55,14 @@ export class DataDatabricksAwsBucketPolicy extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataDatabricksAwsBucketPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataDatabricksAwsBucketPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksAwsBucketPolicy to import
-  * @param importFromId The id of the existing DataDatabricksAwsBucketPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/aws_bucket_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksAwsBucketPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/aws_bucket_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksAwsBucketPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_aws_bucket_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_aws_bucket_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -70,7 +70,7 @@ export class DataDatabricksAwsBucketPolicy extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/aws_bucket_policy databricks_aws_bucket_policy} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/aws_bucket_policy databricks_aws_bucket_policy} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -81,7 +81,7 @@ export class DataDatabricksAwsBucketPolicy extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_aws_bucket_policy',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -208,49 +208,49 @@ export class DataDatabricksAwsBucketPolicy extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      aws_partition: cdktf.stringToTerraform(this._awsPartition),
-      bucket: cdktf.stringToTerraform(this._bucket),
-      databricks_account_id: cdktf.stringToTerraform(this._databricksAccountId),
-      databricks_e2_account_id: cdktf.stringToTerraform(this._databricksE2AccountId),
-      full_access_role: cdktf.stringToTerraform(this._fullAccessRole),
-      id: cdktf.stringToTerraform(this._id),
+      aws_partition: cdktn.stringToTerraform(this._awsPartition),
+      bucket: cdktn.stringToTerraform(this._bucket),
+      databricks_account_id: cdktn.stringToTerraform(this._databricksAccountId),
+      databricks_e2_account_id: cdktn.stringToTerraform(this._databricksE2AccountId),
+      full_access_role: cdktn.stringToTerraform(this._fullAccessRole),
+      id: cdktn.stringToTerraform(this._id),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       aws_partition: {
-        value: cdktf.stringToHclTerraform(this._awsPartition),
+        value: cdktn.stringToHclTerraform(this._awsPartition),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       bucket: {
-        value: cdktf.stringToHclTerraform(this._bucket),
+        value: cdktn.stringToHclTerraform(this._bucket),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       databricks_account_id: {
-        value: cdktf.stringToHclTerraform(this._databricksAccountId),
+        value: cdktn.stringToHclTerraform(this._databricksAccountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       databricks_e2_account_id: {
-        value: cdktf.stringToHclTerraform(this._databricksE2AccountId),
+        value: cdktn.stringToHclTerraform(this._databricksE2AccountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       full_access_role: {
-        value: cdktf.stringToHclTerraform(this._fullAccessRole),
+        value: cdktn.stringToHclTerraform(this._fullAccessRole),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

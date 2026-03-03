@@ -1,86 +1,181 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DashboardConfig extends cdktf.TerraformMetaArguments {
+export interface DashboardConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#create_time Dashboard#create_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#create_time Dashboard#create_time}
   */
   readonly createTime?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#dashboard_change_detected Dashboard#dashboard_change_detected}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#dashboard_change_detected Dashboard#dashboard_change_detected}
   */
-  readonly dashboardChangeDetected?: boolean | cdktf.IResolvable;
+  readonly dashboardChangeDetected?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#dashboard_id Dashboard#dashboard_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#dashboard_id Dashboard#dashboard_id}
   */
   readonly dashboardId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#display_name Dashboard#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#dataset_catalog Dashboard#dataset_catalog}
+  */
+  readonly datasetCatalog?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#dataset_schema Dashboard#dataset_schema}
+  */
+  readonly datasetSchema?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#display_name Dashboard#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#embed_credentials Dashboard#embed_credentials}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#embed_credentials Dashboard#embed_credentials}
   */
-  readonly embedCredentials?: boolean | cdktf.IResolvable;
+  readonly embedCredentials?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#etag Dashboard#etag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#etag Dashboard#etag}
   */
   readonly etag?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#file_path Dashboard#file_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#file_path Dashboard#file_path}
   */
   readonly filePath?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#id Dashboard#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#id Dashboard#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#lifecycle_state Dashboard#lifecycle_state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#lifecycle_state Dashboard#lifecycle_state}
   */
   readonly lifecycleState?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#md5 Dashboard#md5}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#md5 Dashboard#md5}
   */
   readonly md5?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#parent_path Dashboard#parent_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#parent_path Dashboard#parent_path}
   */
   readonly parentPath: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#path Dashboard#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#path Dashboard#path}
   */
   readonly path?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#serialized_dashboard Dashboard#serialized_dashboard}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#serialized_dashboard Dashboard#serialized_dashboard}
   */
   readonly serializedDashboard?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#update_time Dashboard#update_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#update_time Dashboard#update_time}
   */
   readonly updateTime?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#warehouse_id Dashboard#warehouse_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#warehouse_id Dashboard#warehouse_id}
   */
   readonly warehouseId: string;
+  /**
+  * provider_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#provider_config Dashboard#provider_config}
+  */
+  readonly providerConfig?: DashboardProviderConfig;
+}
+export interface DashboardProviderConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#workspace_id Dashboard#workspace_id}
+  */
+  readonly workspaceId: string;
+}
+
+export function dashboardProviderConfigToTerraform(struct?: DashboardProviderConfigOutputReference | DashboardProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
+  }
+}
+
+
+export function dashboardProviderConfigToHclTerraform(struct?: DashboardProviderConfigOutputReference | DashboardProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    workspace_id: {
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DashboardProviderConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DashboardProviderConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._workspaceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workspaceId = this._workspaceId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DashboardProviderConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._workspaceId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._workspaceId = value.workspaceId;
+    }
+  }
+
+  // workspace_id - computed: false, optional: false, required: true
+  private _workspaceId?: string; 
+  public get workspaceId() {
+    return this.getStringAttribute('workspace_id');
+  }
+  public set workspaceId(value: string) {
+    this._workspaceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workspaceIdInput() {
+    return this._workspaceId;
+  }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard databricks_dashboard}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard databricks_dashboard}
 */
-export class Dashboard extends cdktf.TerraformResource {
+export class Dashboard extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -91,14 +186,14 @@ export class Dashboard extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Dashboard resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Dashboard resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Dashboard to import
-  * @param importFromId The id of the existing Dashboard that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Dashboard that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Dashboard to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_dashboard", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_dashboard", importId: importFromId, provider });
       }
 
   // ===========
@@ -106,7 +201,7 @@ export class Dashboard extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/resources/dashboard databricks_dashboard} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/resources/dashboard databricks_dashboard} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -117,7 +212,7 @@ export class Dashboard extends cdktf.TerraformResource {
       terraformResourceType: 'databricks_dashboard',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -131,6 +226,8 @@ export class Dashboard extends cdktf.TerraformResource {
     this._createTime = config.createTime;
     this._dashboardChangeDetected = config.dashboardChangeDetected;
     this._dashboardId = config.dashboardId;
+    this._datasetCatalog = config.datasetCatalog;
+    this._datasetSchema = config.datasetSchema;
     this._displayName = config.displayName;
     this._embedCredentials = config.embedCredentials;
     this._etag = config.etag;
@@ -143,6 +240,7 @@ export class Dashboard extends cdktf.TerraformResource {
     this._serializedDashboard = config.serializedDashboard;
     this._updateTime = config.updateTime;
     this._warehouseId = config.warehouseId;
+    this._providerConfig.internalValue = config.providerConfig;
   }
 
   // ==========
@@ -166,11 +264,11 @@ export class Dashboard extends cdktf.TerraformResource {
   }
 
   // dashboard_change_detected - computed: false, optional: true, required: false
-  private _dashboardChangeDetected?: boolean | cdktf.IResolvable; 
+  private _dashboardChangeDetected?: boolean | cdktn.IResolvable; 
   public get dashboardChangeDetected() {
     return this.getBooleanAttribute('dashboard_change_detected');
   }
-  public set dashboardChangeDetected(value: boolean | cdktf.IResolvable) {
+  public set dashboardChangeDetected(value: boolean | cdktn.IResolvable) {
     this._dashboardChangeDetected = value;
   }
   public resetDashboardChangeDetected() {
@@ -197,6 +295,38 @@ export class Dashboard extends cdktf.TerraformResource {
     return this._dashboardId;
   }
 
+  // dataset_catalog - computed: false, optional: true, required: false
+  private _datasetCatalog?: string; 
+  public get datasetCatalog() {
+    return this.getStringAttribute('dataset_catalog');
+  }
+  public set datasetCatalog(value: string) {
+    this._datasetCatalog = value;
+  }
+  public resetDatasetCatalog() {
+    this._datasetCatalog = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get datasetCatalogInput() {
+    return this._datasetCatalog;
+  }
+
+  // dataset_schema - computed: false, optional: true, required: false
+  private _datasetSchema?: string; 
+  public get datasetSchema() {
+    return this.getStringAttribute('dataset_schema');
+  }
+  public set datasetSchema(value: string) {
+    this._datasetSchema = value;
+  }
+  public resetDatasetSchema() {
+    this._datasetSchema = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get datasetSchemaInput() {
+    return this._datasetSchema;
+  }
+
   // display_name - computed: false, optional: false, required: true
   private _displayName?: string; 
   public get displayName() {
@@ -211,11 +341,11 @@ export class Dashboard extends cdktf.TerraformResource {
   }
 
   // embed_credentials - computed: false, optional: true, required: false
-  private _embedCredentials?: boolean | cdktf.IResolvable; 
+  private _embedCredentials?: boolean | cdktn.IResolvable; 
   public get embedCredentials() {
     return this.getBooleanAttribute('embed_credentials');
   }
-  public set embedCredentials(value: boolean | cdktf.IResolvable) {
+  public set embedCredentials(value: boolean | cdktn.IResolvable) {
     this._embedCredentials = value;
   }
   public resetEmbedCredentials() {
@@ -226,7 +356,7 @@ export class Dashboard extends cdktf.TerraformResource {
     return this._embedCredentials;
   }
 
-  // etag - computed: true, optional: true, required: false
+  // etag - computed: false, optional: true, required: false
   private _etag?: string; 
   public get etag() {
     return this.getStringAttribute('etag');
@@ -380,121 +510,158 @@ export class Dashboard extends cdktf.TerraformResource {
     return this._warehouseId;
   }
 
+  // provider_config - computed: false, optional: true, required: false
+  private _providerConfig = new DashboardProviderConfigOutputReference(this, "provider_config");
+  public get providerConfig() {
+    return this._providerConfig;
+  }
+  public putProviderConfig(value: DashboardProviderConfig) {
+    this._providerConfig.internalValue = value;
+  }
+  public resetProviderConfig() {
+    this._providerConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerConfigInput() {
+    return this._providerConfig.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      create_time: cdktf.stringToTerraform(this._createTime),
-      dashboard_change_detected: cdktf.booleanToTerraform(this._dashboardChangeDetected),
-      dashboard_id: cdktf.stringToTerraform(this._dashboardId),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      embed_credentials: cdktf.booleanToTerraform(this._embedCredentials),
-      etag: cdktf.stringToTerraform(this._etag),
-      file_path: cdktf.stringToTerraform(this._filePath),
-      id: cdktf.stringToTerraform(this._id),
-      lifecycle_state: cdktf.stringToTerraform(this._lifecycleState),
-      md5: cdktf.stringToTerraform(this._md5),
-      parent_path: cdktf.stringToTerraform(this._parentPath),
-      path: cdktf.stringToTerraform(this._path),
-      serialized_dashboard: cdktf.stringToTerraform(this._serializedDashboard),
-      update_time: cdktf.stringToTerraform(this._updateTime),
-      warehouse_id: cdktf.stringToTerraform(this._warehouseId),
+      create_time: cdktn.stringToTerraform(this._createTime),
+      dashboard_change_detected: cdktn.booleanToTerraform(this._dashboardChangeDetected),
+      dashboard_id: cdktn.stringToTerraform(this._dashboardId),
+      dataset_catalog: cdktn.stringToTerraform(this._datasetCatalog),
+      dataset_schema: cdktn.stringToTerraform(this._datasetSchema),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      embed_credentials: cdktn.booleanToTerraform(this._embedCredentials),
+      etag: cdktn.stringToTerraform(this._etag),
+      file_path: cdktn.stringToTerraform(this._filePath),
+      id: cdktn.stringToTerraform(this._id),
+      lifecycle_state: cdktn.stringToTerraform(this._lifecycleState),
+      md5: cdktn.stringToTerraform(this._md5),
+      parent_path: cdktn.stringToTerraform(this._parentPath),
+      path: cdktn.stringToTerraform(this._path),
+      serialized_dashboard: cdktn.stringToTerraform(this._serializedDashboard),
+      update_time: cdktn.stringToTerraform(this._updateTime),
+      warehouse_id: cdktn.stringToTerraform(this._warehouseId),
+      provider_config: dashboardProviderConfigToTerraform(this._providerConfig.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       create_time: {
-        value: cdktf.stringToHclTerraform(this._createTime),
+        value: cdktn.stringToHclTerraform(this._createTime),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       dashboard_change_detected: {
-        value: cdktf.booleanToHclTerraform(this._dashboardChangeDetected),
+        value: cdktn.booleanToHclTerraform(this._dashboardChangeDetected),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       dashboard_id: {
-        value: cdktf.stringToHclTerraform(this._dashboardId),
+        value: cdktn.stringToHclTerraform(this._dashboardId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      dataset_catalog: {
+        value: cdktn.stringToHclTerraform(this._datasetCatalog),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      dataset_schema: {
+        value: cdktn.stringToHclTerraform(this._datasetSchema),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       embed_credentials: {
-        value: cdktf.booleanToHclTerraform(this._embedCredentials),
+        value: cdktn.booleanToHclTerraform(this._embedCredentials),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       etag: {
-        value: cdktf.stringToHclTerraform(this._etag),
+        value: cdktn.stringToHclTerraform(this._etag),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       file_path: {
-        value: cdktf.stringToHclTerraform(this._filePath),
+        value: cdktn.stringToHclTerraform(this._filePath),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       lifecycle_state: {
-        value: cdktf.stringToHclTerraform(this._lifecycleState),
+        value: cdktn.stringToHclTerraform(this._lifecycleState),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       md5: {
-        value: cdktf.stringToHclTerraform(this._md5),
+        value: cdktn.stringToHclTerraform(this._md5),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parent_path: {
-        value: cdktf.stringToHclTerraform(this._parentPath),
+        value: cdktn.stringToHclTerraform(this._parentPath),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       path: {
-        value: cdktf.stringToHclTerraform(this._path),
+        value: cdktn.stringToHclTerraform(this._path),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       serialized_dashboard: {
-        value: cdktf.stringToHclTerraform(this._serializedDashboard),
+        value: cdktn.stringToHclTerraform(this._serializedDashboard),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       update_time: {
-        value: cdktf.stringToHclTerraform(this._updateTime),
+        value: cdktn.stringToHclTerraform(this._updateTime),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       warehouse_id: {
-        value: cdktf.stringToHclTerraform(this._warehouseId),
+        value: cdktn.stringToHclTerraform(this._warehouseId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      provider_config: {
+        value: dashboardProviderConfigToHclTerraform(this._providerConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DashboardProviderConfigList",
       },
     };
 

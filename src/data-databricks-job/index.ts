@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -8,42 +8,52 @@
 import { DataDatabricksJobJobSettings, 
 dataDatabricksJobJobSettingsToTerraform, 
 dataDatabricksJobJobSettingsToHclTerraform, 
-DataDatabricksJobJobSettingsOutputReference} from './index-structs'
+DataDatabricksJobJobSettingsOutputReference, 
+DataDatabricksJobProviderConfig, 
+dataDatabricksJobProviderConfigToTerraform, 
+dataDatabricksJobProviderConfigToHclTerraform, 
+DataDatabricksJobProviderConfigOutputReference} from './index-structs'
 export * from './index-structs'
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
-export interface DataDatabricksJobConfig extends cdktf.TerraformMetaArguments {
+import * as cdktn from 'cdktn';
+export interface DataDatabricksJobConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/job#id DataDatabricksJob#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/job#id DataDatabricksJob#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/job#job_id DataDatabricksJob#job_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/job#job_id DataDatabricksJob#job_id}
   */
   readonly jobId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/job#job_name DataDatabricksJob#job_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/job#job_name DataDatabricksJob#job_name}
   */
   readonly jobName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/job#name DataDatabricksJob#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/job#name DataDatabricksJob#name}
   */
   readonly name?: string;
   /**
   * job_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/job#job_settings DataDatabricksJob#job_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/job#job_settings DataDatabricksJob#job_settings}
   */
   readonly jobSettings?: DataDatabricksJobJobSettings;
+  /**
+  * provider_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/job#provider_config DataDatabricksJob#provider_config}
+  */
+  readonly providerConfig?: DataDatabricksJobProviderConfig;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/job databricks_job}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/job databricks_job}
 */
-export class DataDatabricksJob extends cdktf.TerraformDataSource {
+export class DataDatabricksJob extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -54,14 +64,14 @@ export class DataDatabricksJob extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataDatabricksJob resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataDatabricksJob resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksJob to import
-  * @param importFromId The id of the existing DataDatabricksJob that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/job#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksJob that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/job#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksJob to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_job", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_job", importId: importFromId, provider });
       }
 
   // ===========
@@ -69,7 +79,7 @@ export class DataDatabricksJob extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/job databricks_job} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/job databricks_job} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -80,7 +90,7 @@ export class DataDatabricksJob extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_job',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -96,6 +106,7 @@ export class DataDatabricksJob extends cdktf.TerraformDataSource {
     this._jobName = config.jobName;
     this._name = config.name;
     this._jobSettings.internalValue = config.jobSettings;
+    this._providerConfig.internalValue = config.providerConfig;
   }
 
   // ==========
@@ -182,42 +193,59 @@ export class DataDatabricksJob extends cdktf.TerraformDataSource {
     return this._jobSettings.internalValue;
   }
 
+  // provider_config - computed: false, optional: true, required: false
+  private _providerConfig = new DataDatabricksJobProviderConfigOutputReference(this, "provider_config");
+  public get providerConfig() {
+    return this._providerConfig;
+  }
+  public putProviderConfig(value: DataDatabricksJobProviderConfig) {
+    this._providerConfig.internalValue = value;
+  }
+  public resetProviderConfig() {
+    this._providerConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerConfigInput() {
+    return this._providerConfig.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      job_id: cdktf.stringToTerraform(this._jobId),
-      job_name: cdktf.stringToTerraform(this._jobName),
-      name: cdktf.stringToTerraform(this._name),
+      id: cdktn.stringToTerraform(this._id),
+      job_id: cdktn.stringToTerraform(this._jobId),
+      job_name: cdktn.stringToTerraform(this._jobName),
+      name: cdktn.stringToTerraform(this._name),
       job_settings: dataDatabricksJobJobSettingsToTerraform(this._jobSettings.internalValue),
+      provider_config: dataDatabricksJobProviderConfigToTerraform(this._providerConfig.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       job_id: {
-        value: cdktf.stringToHclTerraform(this._jobId),
+        value: cdktn.stringToHclTerraform(this._jobId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       job_name: {
-        value: cdktf.stringToHclTerraform(this._jobName),
+        value: cdktn.stringToHclTerraform(this._jobName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -227,6 +255,12 @@ export class DataDatabricksJob extends cdktf.TerraformDataSource {
         isBlock: true,
         type: "list",
         storageClassType: "DataDatabricksJobJobSettingsList",
+      },
+      provider_config: {
+        value: dataDatabricksJobProviderConfigToHclTerraform(this._providerConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataDatabricksJobProviderConfigList",
       },
     };
 

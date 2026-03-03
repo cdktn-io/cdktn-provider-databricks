@@ -1,90 +1,177 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/group
+// https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataDatabricksGroupConfig extends cdktf.TerraformMetaArguments {
+export interface DataDatabricksGroupConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/group#acl_principal_id DataDatabricksGroup#acl_principal_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/group#acl_principal_id DataDatabricksGroup#acl_principal_id}
   */
   readonly aclPrincipalId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/group#allow_cluster_create DataDatabricksGroup#allow_cluster_create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/group#allow_cluster_create DataDatabricksGroup#allow_cluster_create}
   */
-  readonly allowClusterCreate?: boolean | cdktf.IResolvable;
+  readonly allowClusterCreate?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/group#allow_instance_pool_create DataDatabricksGroup#allow_instance_pool_create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/group#allow_instance_pool_create DataDatabricksGroup#allow_instance_pool_create}
   */
-  readonly allowInstancePoolCreate?: boolean | cdktf.IResolvable;
+  readonly allowInstancePoolCreate?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/group#child_groups DataDatabricksGroup#child_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/group#child_groups DataDatabricksGroup#child_groups}
   */
   readonly childGroups?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/group#databricks_sql_access DataDatabricksGroup#databricks_sql_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/group#databricks_sql_access DataDatabricksGroup#databricks_sql_access}
   */
-  readonly databricksSqlAccess?: boolean | cdktf.IResolvable;
+  readonly databricksSqlAccess?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/group#display_name DataDatabricksGroup#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/group#display_name DataDatabricksGroup#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/group#external_id DataDatabricksGroup#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/group#external_id DataDatabricksGroup#external_id}
   */
   readonly externalId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/group#groups DataDatabricksGroup#groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/group#groups DataDatabricksGroup#groups}
   */
   readonly groups?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/group#id DataDatabricksGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/group#id DataDatabricksGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/group#instance_profiles DataDatabricksGroup#instance_profiles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/group#instance_profiles DataDatabricksGroup#instance_profiles}
   */
   readonly instanceProfiles?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/group#members DataDatabricksGroup#members}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/group#members DataDatabricksGroup#members}
   */
   readonly members?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/group#recursive DataDatabricksGroup#recursive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/group#recursive DataDatabricksGroup#recursive}
   */
-  readonly recursive?: boolean | cdktf.IResolvable;
+  readonly recursive?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/group#service_principals DataDatabricksGroup#service_principals}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/group#service_principals DataDatabricksGroup#service_principals}
   */
   readonly servicePrincipals?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/group#users DataDatabricksGroup#users}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/group#users DataDatabricksGroup#users}
   */
   readonly users?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/group#workspace_access DataDatabricksGroup#workspace_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/group#workspace_access DataDatabricksGroup#workspace_access}
   */
-  readonly workspaceAccess?: boolean | cdktf.IResolvable;
+  readonly workspaceAccess?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/group#workspace_consume DataDatabricksGroup#workspace_consume}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/group#workspace_consume DataDatabricksGroup#workspace_consume}
   */
-  readonly workspaceConsume?: boolean | cdktf.IResolvable;
+  readonly workspaceConsume?: boolean | cdktn.IResolvable;
+  /**
+  * provider_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/group#provider_config DataDatabricksGroup#provider_config}
+  */
+  readonly providerConfig?: DataDatabricksGroupProviderConfig;
+}
+export interface DataDatabricksGroupProviderConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/group#workspace_id DataDatabricksGroup#workspace_id}
+  */
+  readonly workspaceId: string;
+}
+
+export function dataDatabricksGroupProviderConfigToTerraform(struct?: DataDatabricksGroupProviderConfigOutputReference | DataDatabricksGroupProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
+  }
+}
+
+
+export function dataDatabricksGroupProviderConfigToHclTerraform(struct?: DataDatabricksGroupProviderConfigOutputReference | DataDatabricksGroupProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    workspace_id: {
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataDatabricksGroupProviderConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DataDatabricksGroupProviderConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._workspaceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workspaceId = this._workspaceId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksGroupProviderConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._workspaceId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._workspaceId = value.workspaceId;
+    }
+  }
+
+  // workspace_id - computed: false, optional: false, required: true
+  private _workspaceId?: string; 
+  public get workspaceId() {
+    return this.getStringAttribute('workspace_id');
+  }
+  public set workspaceId(value: string) {
+    this._workspaceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workspaceIdInput() {
+    return this._workspaceId;
+  }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/group databricks_group}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/group databricks_group}
 */
-export class DataDatabricksGroup extends cdktf.TerraformDataSource {
+export class DataDatabricksGroup extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -95,14 +182,14 @@ export class DataDatabricksGroup extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataDatabricksGroup resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataDatabricksGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksGroup to import
-  * @param importFromId The id of the existing DataDatabricksGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/group#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksGroup to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "databricks_group", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "databricks_group", importId: importFromId, provider });
       }
 
   // ===========
@@ -110,7 +197,7 @@ export class DataDatabricksGroup extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.99.0/docs/data-sources/group databricks_group} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.110.0/docs/data-sources/group databricks_group} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -121,7 +208,7 @@ export class DataDatabricksGroup extends cdktf.TerraformDataSource {
       terraformResourceType: 'databricks_group',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.99.0',
+        providerVersion: '1.110.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -148,6 +235,7 @@ export class DataDatabricksGroup extends cdktf.TerraformDataSource {
     this._users = config.users;
     this._workspaceAccess = config.workspaceAccess;
     this._workspaceConsume = config.workspaceConsume;
+    this._providerConfig.internalValue = config.providerConfig;
   }
 
   // ==========
@@ -171,11 +259,11 @@ export class DataDatabricksGroup extends cdktf.TerraformDataSource {
   }
 
   // allow_cluster_create - computed: false, optional: true, required: false
-  private _allowClusterCreate?: boolean | cdktf.IResolvable; 
+  private _allowClusterCreate?: boolean | cdktn.IResolvable; 
   public get allowClusterCreate() {
     return this.getBooleanAttribute('allow_cluster_create');
   }
-  public set allowClusterCreate(value: boolean | cdktf.IResolvable) {
+  public set allowClusterCreate(value: boolean | cdktn.IResolvable) {
     this._allowClusterCreate = value;
   }
   public resetAllowClusterCreate() {
@@ -187,11 +275,11 @@ export class DataDatabricksGroup extends cdktf.TerraformDataSource {
   }
 
   // allow_instance_pool_create - computed: false, optional: true, required: false
-  private _allowInstancePoolCreate?: boolean | cdktf.IResolvable; 
+  private _allowInstancePoolCreate?: boolean | cdktn.IResolvable; 
   public get allowInstancePoolCreate() {
     return this.getBooleanAttribute('allow_instance_pool_create');
   }
-  public set allowInstancePoolCreate(value: boolean | cdktf.IResolvable) {
+  public set allowInstancePoolCreate(value: boolean | cdktn.IResolvable) {
     this._allowInstancePoolCreate = value;
   }
   public resetAllowInstancePoolCreate() {
@@ -205,7 +293,7 @@ export class DataDatabricksGroup extends cdktf.TerraformDataSource {
   // child_groups - computed: true, optional: true, required: false
   private _childGroups?: string[]; 
   public get childGroups() {
-    return cdktf.Fn.tolist(this.getListAttribute('child_groups'));
+    return cdktn.Fn.tolist(this.getListAttribute('child_groups'));
   }
   public set childGroups(value: string[]) {
     this._childGroups = value;
@@ -219,11 +307,11 @@ export class DataDatabricksGroup extends cdktf.TerraformDataSource {
   }
 
   // databricks_sql_access - computed: false, optional: true, required: false
-  private _databricksSqlAccess?: boolean | cdktf.IResolvable; 
+  private _databricksSqlAccess?: boolean | cdktn.IResolvable; 
   public get databricksSqlAccess() {
     return this.getBooleanAttribute('databricks_sql_access');
   }
-  public set databricksSqlAccess(value: boolean | cdktf.IResolvable) {
+  public set databricksSqlAccess(value: boolean | cdktn.IResolvable) {
     this._databricksSqlAccess = value;
   }
   public resetDatabricksSqlAccess() {
@@ -266,7 +354,7 @@ export class DataDatabricksGroup extends cdktf.TerraformDataSource {
   // groups - computed: true, optional: true, required: false
   private _groups?: string[]; 
   public get groups() {
-    return cdktf.Fn.tolist(this.getListAttribute('groups'));
+    return cdktn.Fn.tolist(this.getListAttribute('groups'));
   }
   public set groups(value: string[]) {
     this._groups = value;
@@ -298,7 +386,7 @@ export class DataDatabricksGroup extends cdktf.TerraformDataSource {
   // instance_profiles - computed: true, optional: true, required: false
   private _instanceProfiles?: string[]; 
   public get instanceProfiles() {
-    return cdktf.Fn.tolist(this.getListAttribute('instance_profiles'));
+    return cdktn.Fn.tolist(this.getListAttribute('instance_profiles'));
   }
   public set instanceProfiles(value: string[]) {
     this._instanceProfiles = value;
@@ -314,7 +402,7 @@ export class DataDatabricksGroup extends cdktf.TerraformDataSource {
   // members - computed: true, optional: true, required: false
   private _members?: string[]; 
   public get members() {
-    return cdktf.Fn.tolist(this.getListAttribute('members'));
+    return cdktn.Fn.tolist(this.getListAttribute('members'));
   }
   public set members(value: string[]) {
     this._members = value;
@@ -328,11 +416,11 @@ export class DataDatabricksGroup extends cdktf.TerraformDataSource {
   }
 
   // recursive - computed: false, optional: true, required: false
-  private _recursive?: boolean | cdktf.IResolvable; 
+  private _recursive?: boolean | cdktn.IResolvable; 
   public get recursive() {
     return this.getBooleanAttribute('recursive');
   }
-  public set recursive(value: boolean | cdktf.IResolvable) {
+  public set recursive(value: boolean | cdktn.IResolvable) {
     this._recursive = value;
   }
   public resetRecursive() {
@@ -346,7 +434,7 @@ export class DataDatabricksGroup extends cdktf.TerraformDataSource {
   // service_principals - computed: true, optional: true, required: false
   private _servicePrincipals?: string[]; 
   public get servicePrincipals() {
-    return cdktf.Fn.tolist(this.getListAttribute('service_principals'));
+    return cdktn.Fn.tolist(this.getListAttribute('service_principals'));
   }
   public set servicePrincipals(value: string[]) {
     this._servicePrincipals = value;
@@ -362,7 +450,7 @@ export class DataDatabricksGroup extends cdktf.TerraformDataSource {
   // users - computed: true, optional: true, required: false
   private _users?: string[]; 
   public get users() {
-    return cdktf.Fn.tolist(this.getListAttribute('users'));
+    return cdktn.Fn.tolist(this.getListAttribute('users'));
   }
   public set users(value: string[]) {
     this._users = value;
@@ -376,11 +464,11 @@ export class DataDatabricksGroup extends cdktf.TerraformDataSource {
   }
 
   // workspace_access - computed: false, optional: true, required: false
-  private _workspaceAccess?: boolean | cdktf.IResolvable; 
+  private _workspaceAccess?: boolean | cdktn.IResolvable; 
   public get workspaceAccess() {
     return this.getBooleanAttribute('workspace_access');
   }
-  public set workspaceAccess(value: boolean | cdktf.IResolvable) {
+  public set workspaceAccess(value: boolean | cdktn.IResolvable) {
     this._workspaceAccess = value;
   }
   public resetWorkspaceAccess() {
@@ -392,11 +480,11 @@ export class DataDatabricksGroup extends cdktf.TerraformDataSource {
   }
 
   // workspace_consume - computed: false, optional: true, required: false
-  private _workspaceConsume?: boolean | cdktf.IResolvable; 
+  private _workspaceConsume?: boolean | cdktn.IResolvable; 
   public get workspaceConsume() {
     return this.getBooleanAttribute('workspace_consume');
   }
-  public set workspaceConsume(value: boolean | cdktf.IResolvable) {
+  public set workspaceConsume(value: boolean | cdktn.IResolvable) {
     this._workspaceConsume = value;
   }
   public resetWorkspaceConsume() {
@@ -407,128 +495,151 @@ export class DataDatabricksGroup extends cdktf.TerraformDataSource {
     return this._workspaceConsume;
   }
 
+  // provider_config - computed: false, optional: true, required: false
+  private _providerConfig = new DataDatabricksGroupProviderConfigOutputReference(this, "provider_config");
+  public get providerConfig() {
+    return this._providerConfig;
+  }
+  public putProviderConfig(value: DataDatabricksGroupProviderConfig) {
+    this._providerConfig.internalValue = value;
+  }
+  public resetProviderConfig() {
+    this._providerConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerConfigInput() {
+    return this._providerConfig.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      acl_principal_id: cdktf.stringToTerraform(this._aclPrincipalId),
-      allow_cluster_create: cdktf.booleanToTerraform(this._allowClusterCreate),
-      allow_instance_pool_create: cdktf.booleanToTerraform(this._allowInstancePoolCreate),
-      child_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(this._childGroups),
-      databricks_sql_access: cdktf.booleanToTerraform(this._databricksSqlAccess),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      external_id: cdktf.stringToTerraform(this._externalId),
-      groups: cdktf.listMapper(cdktf.stringToTerraform, false)(this._groups),
-      id: cdktf.stringToTerraform(this._id),
-      instance_profiles: cdktf.listMapper(cdktf.stringToTerraform, false)(this._instanceProfiles),
-      members: cdktf.listMapper(cdktf.stringToTerraform, false)(this._members),
-      recursive: cdktf.booleanToTerraform(this._recursive),
-      service_principals: cdktf.listMapper(cdktf.stringToTerraform, false)(this._servicePrincipals),
-      users: cdktf.listMapper(cdktf.stringToTerraform, false)(this._users),
-      workspace_access: cdktf.booleanToTerraform(this._workspaceAccess),
-      workspace_consume: cdktf.booleanToTerraform(this._workspaceConsume),
+      acl_principal_id: cdktn.stringToTerraform(this._aclPrincipalId),
+      allow_cluster_create: cdktn.booleanToTerraform(this._allowClusterCreate),
+      allow_instance_pool_create: cdktn.booleanToTerraform(this._allowInstancePoolCreate),
+      child_groups: cdktn.listMapper(cdktn.stringToTerraform, false)(this._childGroups),
+      databricks_sql_access: cdktn.booleanToTerraform(this._databricksSqlAccess),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      external_id: cdktn.stringToTerraform(this._externalId),
+      groups: cdktn.listMapper(cdktn.stringToTerraform, false)(this._groups),
+      id: cdktn.stringToTerraform(this._id),
+      instance_profiles: cdktn.listMapper(cdktn.stringToTerraform, false)(this._instanceProfiles),
+      members: cdktn.listMapper(cdktn.stringToTerraform, false)(this._members),
+      recursive: cdktn.booleanToTerraform(this._recursive),
+      service_principals: cdktn.listMapper(cdktn.stringToTerraform, false)(this._servicePrincipals),
+      users: cdktn.listMapper(cdktn.stringToTerraform, false)(this._users),
+      workspace_access: cdktn.booleanToTerraform(this._workspaceAccess),
+      workspace_consume: cdktn.booleanToTerraform(this._workspaceConsume),
+      provider_config: dataDatabricksGroupProviderConfigToTerraform(this._providerConfig.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       acl_principal_id: {
-        value: cdktf.stringToHclTerraform(this._aclPrincipalId),
+        value: cdktn.stringToHclTerraform(this._aclPrincipalId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       allow_cluster_create: {
-        value: cdktf.booleanToHclTerraform(this._allowClusterCreate),
+        value: cdktn.booleanToHclTerraform(this._allowClusterCreate),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       allow_instance_pool_create: {
-        value: cdktf.booleanToHclTerraform(this._allowInstancePoolCreate),
+        value: cdktn.booleanToHclTerraform(this._allowInstancePoolCreate),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       child_groups: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._childGroups),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._childGroups),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       databricks_sql_access: {
-        value: cdktf.booleanToHclTerraform(this._databricksSqlAccess),
+        value: cdktn.booleanToHclTerraform(this._databricksSqlAccess),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       external_id: {
-        value: cdktf.stringToHclTerraform(this._externalId),
+        value: cdktn.stringToHclTerraform(this._externalId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       groups: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._groups),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._groups),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance_profiles: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._instanceProfiles),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._instanceProfiles),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       members: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._members),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._members),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       recursive: {
-        value: cdktf.booleanToHclTerraform(this._recursive),
+        value: cdktn.booleanToHclTerraform(this._recursive),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       service_principals: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._servicePrincipals),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._servicePrincipals),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       users: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._users),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._users),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       workspace_access: {
-        value: cdktf.booleanToHclTerraform(this._workspaceAccess),
+        value: cdktn.booleanToHclTerraform(this._workspaceAccess),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       workspace_consume: {
-        value: cdktf.booleanToHclTerraform(this._workspaceConsume),
+        value: cdktn.booleanToHclTerraform(this._workspaceConsume),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
+      },
+      provider_config: {
+        value: dataDatabricksGroupProviderConfigToHclTerraform(this._providerConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataDatabricksGroupProviderConfigList",
       },
     };
 
