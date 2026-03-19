@@ -4,7 +4,7 @@
 
 ### DataDatabricksOnlineStore <a name="DataDatabricksOnlineStore" id="@cdktn/provider-databricks.dataDatabricksOnlineStore.DataDatabricksOnlineStore"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/online_store databricks_online_store}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/online_store databricks_online_store}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksOnlineStore.DataDatabricksOnlineStore.Initializer"></a>
 
@@ -37,8 +37,8 @@ dataDatabricksOnlineStore.DataDatabricksOnlineStore(
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksOnlineStore.DataDatabricksOnlineStore.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksOnlineStore.DataDatabricksOnlineStore.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksOnlineStore.DataDatabricksOnlineStore.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksOnlineStore.DataDatabricksOnlineStore.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/online_store#name DataDatabricksOnlineStore#name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksOnlineStore.DataDatabricksOnlineStore.Initializer.parameter.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksOnlineStore.DataDatabricksOnlineStoreProviderConfig">DataDatabricksOnlineStoreProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/online_store#provider_config DataDatabricksOnlineStore#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksOnlineStore.DataDatabricksOnlineStore.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/online_store#name DataDatabricksOnlineStore#name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksOnlineStore.DataDatabricksOnlineStore.Initializer.parameter.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksOnlineStore.DataDatabricksOnlineStoreProviderConfig">DataDatabricksOnlineStoreProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/online_store#provider_config DataDatabricksOnlineStore#provider_config}. |
 
 ---
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/online_store#name DataDatabricksOnlineStore#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/online_store#name DataDatabricksOnlineStore#name}.
 
 ---
 
@@ -114,7 +114,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksOnlineStore.DataDatabricksOnlineStoreProviderConfig">DataDatabricksOnlineStoreProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/online_store#provider_config DataDatabricksOnlineStore#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/online_store#provider_config DataDatabricksOnlineStore#provider_config}.
 
 ---
 
@@ -397,7 +397,7 @@ def put_provider_config(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/online_store#workspace_id DataDatabricksOnlineStore#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/online_store#workspace_id DataDatabricksOnlineStore#workspace_id}.
 
 ---
 
@@ -521,7 +521,7 @@ The construct id used in the generated config for the DataDatabricksOnlineStore 
 
 The id of the existing DataDatabricksOnlineStore that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/online_store#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/online_store#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -835,8 +835,8 @@ dataDatabricksOnlineStore.DataDatabricksOnlineStoreConfig(
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksOnlineStore.DataDatabricksOnlineStoreConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksOnlineStore.DataDatabricksOnlineStoreConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksOnlineStore.DataDatabricksOnlineStoreConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksOnlineStore.DataDatabricksOnlineStoreConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/online_store#name DataDatabricksOnlineStore#name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksOnlineStore.DataDatabricksOnlineStoreConfig.property.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksOnlineStore.DataDatabricksOnlineStoreProviderConfig">DataDatabricksOnlineStoreProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/online_store#provider_config DataDatabricksOnlineStore#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksOnlineStore.DataDatabricksOnlineStoreConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/online_store#name DataDatabricksOnlineStore#name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksOnlineStore.DataDatabricksOnlineStoreConfig.property.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksOnlineStore.DataDatabricksOnlineStoreProviderConfig">DataDatabricksOnlineStoreProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/online_store#provider_config DataDatabricksOnlineStore#provider_config}. |
 
 ---
 
@@ -918,7 +918,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/online_store#name DataDatabricksOnlineStore#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/online_store#name DataDatabricksOnlineStore#name}.
 
 ---
 
@@ -930,7 +930,7 @@ provider_config: DataDatabricksOnlineStoreProviderConfig
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksOnlineStore.DataDatabricksOnlineStoreProviderConfig">DataDatabricksOnlineStoreProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/online_store#provider_config DataDatabricksOnlineStore#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/online_store#provider_config DataDatabricksOnlineStore#provider_config}.
 
 ---
 
@@ -950,7 +950,7 @@ dataDatabricksOnlineStore.DataDatabricksOnlineStoreProviderConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksOnlineStore.DataDatabricksOnlineStoreProviderConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/online_store#workspace_id DataDatabricksOnlineStore#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksOnlineStore.DataDatabricksOnlineStoreProviderConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/online_store#workspace_id DataDatabricksOnlineStore#workspace_id}. |
 
 ---
 
@@ -962,7 +962,7 @@ workspace_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/online_store#workspace_id DataDatabricksOnlineStore#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/online_store#workspace_id DataDatabricksOnlineStore#workspace_id}.
 
 ---
 

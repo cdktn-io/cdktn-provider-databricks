@@ -4,7 +4,7 @@
 
 ### SqlVisualization <a name="SqlVisualization" id="@cdktn/provider-databricks.sqlVisualization.SqlVisualization"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/sql_visualization databricks_sql_visualization}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/sql_visualization databricks_sql_visualization}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.sqlVisualization.SqlVisualization.Initializer"></a>
 
@@ -537,7 +537,7 @@ The construct id used in the generated config for the SqlVisualization to import
 
 The id of the existing SqlVisualization that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/sql_visualization#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/sql_visualization#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -951,15 +951,15 @@ const sqlVisualizationConfig: sqlVisualization.SqlVisualizationConfig = { ... }
 | <code><a href="#@cdktn/provider-databricks.sqlVisualization.SqlVisualizationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlVisualization.SqlVisualizationConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlVisualization.SqlVisualizationConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.sqlVisualization.SqlVisualizationConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/sql_visualization#name SqlVisualization#name}. |
-| <code><a href="#@cdktn/provider-databricks.sqlVisualization.SqlVisualizationConfig.property.options">options</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/sql_visualization#options SqlVisualization#options}. |
-| <code><a href="#@cdktn/provider-databricks.sqlVisualization.SqlVisualizationConfig.property.queryId">queryId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/sql_visualization#query_id SqlVisualization#query_id}. |
-| <code><a href="#@cdktn/provider-databricks.sqlVisualization.SqlVisualizationConfig.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/sql_visualization#type SqlVisualization#type}. |
-| <code><a href="#@cdktn/provider-databricks.sqlVisualization.SqlVisualizationConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/sql_visualization#description SqlVisualization#description}. |
-| <code><a href="#@cdktn/provider-databricks.sqlVisualization.SqlVisualizationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/sql_visualization#id SqlVisualization#id}. |
+| <code><a href="#@cdktn/provider-databricks.sqlVisualization.SqlVisualizationConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/sql_visualization#name SqlVisualization#name}. |
+| <code><a href="#@cdktn/provider-databricks.sqlVisualization.SqlVisualizationConfig.property.options">options</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/sql_visualization#options SqlVisualization#options}. |
+| <code><a href="#@cdktn/provider-databricks.sqlVisualization.SqlVisualizationConfig.property.queryId">queryId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/sql_visualization#query_id SqlVisualization#query_id}. |
+| <code><a href="#@cdktn/provider-databricks.sqlVisualization.SqlVisualizationConfig.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/sql_visualization#type SqlVisualization#type}. |
+| <code><a href="#@cdktn/provider-databricks.sqlVisualization.SqlVisualizationConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/sql_visualization#description SqlVisualization#description}. |
+| <code><a href="#@cdktn/provider-databricks.sqlVisualization.SqlVisualizationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/sql_visualization#id SqlVisualization#id}. |
 | <code><a href="#@cdktn/provider-databricks.sqlVisualization.SqlVisualizationConfig.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.sqlVisualization.SqlVisualizationProviderConfig">SqlVisualizationProviderConfig</a></code> | provider_config block. |
-| <code><a href="#@cdktn/provider-databricks.sqlVisualization.SqlVisualizationConfig.property.queryPlan">queryPlan</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/sql_visualization#query_plan SqlVisualization#query_plan}. |
-| <code><a href="#@cdktn/provider-databricks.sqlVisualization.SqlVisualizationConfig.property.visualizationId">visualizationId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/sql_visualization#visualization_id SqlVisualization#visualization_id}. |
+| <code><a href="#@cdktn/provider-databricks.sqlVisualization.SqlVisualizationConfig.property.queryPlan">queryPlan</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/sql_visualization#query_plan SqlVisualization#query_plan}. |
+| <code><a href="#@cdktn/provider-databricks.sqlVisualization.SqlVisualizationConfig.property.visualizationId">visualizationId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/sql_visualization#visualization_id SqlVisualization#visualization_id}. |
 
 ---
 
@@ -1041,7 +1041,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/sql_visualization#name SqlVisualization#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/sql_visualization#name SqlVisualization#name}.
 
 ---
 
@@ -1053,7 +1053,7 @@ public readonly options: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/sql_visualization#options SqlVisualization#options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/sql_visualization#options SqlVisualization#options}.
 
 ---
 
@@ -1065,7 +1065,7 @@ public readonly queryId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/sql_visualization#query_id SqlVisualization#query_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/sql_visualization#query_id SqlVisualization#query_id}.
 
 ---
 
@@ -1077,7 +1077,7 @@ public readonly type: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/sql_visualization#type SqlVisualization#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/sql_visualization#type SqlVisualization#type}.
 
 ---
 
@@ -1089,7 +1089,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/sql_visualization#description SqlVisualization#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/sql_visualization#description SqlVisualization#description}.
 
 ---
 
@@ -1101,7 +1101,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/sql_visualization#id SqlVisualization#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/sql_visualization#id SqlVisualization#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1118,7 +1118,7 @@ public readonly providerConfig: SqlVisualizationProviderConfig;
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/sql_visualization#provider_config SqlVisualization#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/sql_visualization#provider_config SqlVisualization#provider_config}
 
 ---
 
@@ -1130,7 +1130,7 @@ public readonly queryPlan: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/sql_visualization#query_plan SqlVisualization#query_plan}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/sql_visualization#query_plan SqlVisualization#query_plan}.
 
 ---
 
@@ -1142,7 +1142,7 @@ public readonly visualizationId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/sql_visualization#visualization_id SqlVisualization#visualization_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/sql_visualization#visualization_id SqlVisualization#visualization_id}.
 
 ---
 
@@ -1160,7 +1160,7 @@ const sqlVisualizationProviderConfig: sqlVisualization.SqlVisualizationProviderC
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.sqlVisualization.SqlVisualizationProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/sql_visualization#workspace_id SqlVisualization#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.sqlVisualization.SqlVisualizationProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/sql_visualization#workspace_id SqlVisualization#workspace_id}. |
 
 ---
 
@@ -1172,7 +1172,7 @@ public readonly workspaceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/sql_visualization#workspace_id SqlVisualization#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/sql_visualization#workspace_id SqlVisualization#workspace_id}.
 
 ---
 

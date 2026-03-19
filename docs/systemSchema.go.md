@@ -4,7 +4,7 @@
 
 ### SystemSchema <a name="SystemSchema" id="@cdktn/provider-databricks.systemSchema.SystemSchema"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/system_schema databricks_system_schema}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/system_schema databricks_system_schema}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.systemSchema.SystemSchema.Initializer"></a>
 
@@ -516,7 +516,7 @@ The construct id used in the generated config for the SystemSchema to import.
 
 The id of the existing SystemSchema that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/system_schema#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/system_schema#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -853,8 +853,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/systemsc
 | <code><a href="#@cdktn/provider-databricks.systemSchema.SystemSchemaConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.systemSchema.SystemSchemaConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.systemSchema.SystemSchemaConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.systemSchema.SystemSchemaConfig.property.schema">Schema</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/system_schema#schema SystemSchema#schema}. |
-| <code><a href="#@cdktn/provider-databricks.systemSchema.SystemSchemaConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/system_schema#id SystemSchema#id}. |
+| <code><a href="#@cdktn/provider-databricks.systemSchema.SystemSchemaConfig.property.schema">Schema</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/system_schema#schema SystemSchema#schema}. |
+| <code><a href="#@cdktn/provider-databricks.systemSchema.SystemSchemaConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/system_schema#id SystemSchema#id}. |
 | <code><a href="#@cdktn/provider-databricks.systemSchema.SystemSchemaConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.systemSchema.SystemSchemaProviderConfig">SystemSchemaProviderConfig</a></code> | provider_config block. |
 
 ---
@@ -937,7 +937,7 @@ Schema *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/system_schema#schema SystemSchema#schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/system_schema#schema SystemSchema#schema}.
 
 ---
 
@@ -949,7 +949,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/system_schema#id SystemSchema#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/system_schema#id SystemSchema#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -966,7 +966,7 @@ ProviderConfig SystemSchemaProviderConfig
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/system_schema#provider_config SystemSchema#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/system_schema#provider_config SystemSchema#provider_config}
 
 ---
 
@@ -986,7 +986,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/systemsc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.systemSchema.SystemSchemaProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/system_schema#workspace_id SystemSchema#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.systemSchema.SystemSchemaProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/system_schema#workspace_id SystemSchema#workspace_id}. |
 
 ---
 
@@ -998,7 +998,7 @@ WorkspaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/system_schema#workspace_id SystemSchema#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/system_schema#workspace_id SystemSchema#workspace_id}.
 
 ---
 

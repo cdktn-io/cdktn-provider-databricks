@@ -4,7 +4,7 @@
 
 ### FeatureEngineeringFeature <a name="FeatureEngineeringFeature" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature databricks_feature_engineering_feature}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature databricks_feature_engineering_feature}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.Initializer"></a>
 
@@ -23,12 +23,14 @@ featureEngineeringFeature.FeatureEngineeringFeature(
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   full_name: str,
   function: FeatureEngineeringFeatureFunction,
-  inputs: typing.List[str],
   source: FeatureEngineeringFeatureSource,
   description: str = None,
+  entities: IResolvable | typing.List[FeatureEngineeringFeatureEntities] = None,
   filter_condition: str = None,
+  inputs: typing.List[str] = None,
   lineage_context: FeatureEngineeringFeatureLineageContext = None,
   provider_config: FeatureEngineeringFeatureProviderConfig = None,
+  timeseries_column: FeatureEngineeringFeatureTimeseriesColumn = None,
   time_window: FeatureEngineeringFeatureTimeWindow = None
 )
 ```
@@ -44,15 +46,17 @@ featureEngineeringFeature.FeatureEngineeringFeature(
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.Initializer.parameter.fullName">full_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#full_name FeatureEngineeringFeature#full_name}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.Initializer.parameter.function">function</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunction">FeatureEngineeringFeatureFunction</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#function FeatureEngineeringFeature#function}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.Initializer.parameter.inputs">inputs</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#inputs FeatureEngineeringFeature#inputs}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.Initializer.parameter.source">source</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSource">FeatureEngineeringFeatureSource</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#source FeatureEngineeringFeature#source}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#description FeatureEngineeringFeature#description}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.Initializer.parameter.filterCondition">filter_condition</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#filter_condition FeatureEngineeringFeature#filter_condition}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.Initializer.parameter.lineageContext">lineage_context</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureLineageContext">FeatureEngineeringFeatureLineageContext</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#lineage_context FeatureEngineeringFeature#lineage_context}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.Initializer.parameter.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureProviderConfig">FeatureEngineeringFeatureProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#provider_config FeatureEngineeringFeature#provider_config}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.Initializer.parameter.timeWindow">time_window</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindow">FeatureEngineeringFeatureTimeWindow</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#time_window FeatureEngineeringFeature#time_window}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.Initializer.parameter.fullName">full_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#full_name FeatureEngineeringFeature#full_name}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.Initializer.parameter.function">function</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunction">FeatureEngineeringFeatureFunction</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#function FeatureEngineeringFeature#function}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.Initializer.parameter.source">source</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSource">FeatureEngineeringFeatureSource</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#source FeatureEngineeringFeature#source}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#description FeatureEngineeringFeature#description}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.Initializer.parameter.entities">entities</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntities">FeatureEngineeringFeatureEntities</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#entities FeatureEngineeringFeature#entities}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.Initializer.parameter.filterCondition">filter_condition</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#filter_condition FeatureEngineeringFeature#filter_condition}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.Initializer.parameter.inputs">inputs</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#inputs FeatureEngineeringFeature#inputs}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.Initializer.parameter.lineageContext">lineage_context</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureLineageContext">FeatureEngineeringFeatureLineageContext</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#lineage_context FeatureEngineeringFeature#lineage_context}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.Initializer.parameter.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureProviderConfig">FeatureEngineeringFeatureProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#provider_config FeatureEngineeringFeature#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.Initializer.parameter.timeseriesColumn">timeseries_column</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumn">FeatureEngineeringFeatureTimeseriesColumn</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#timeseries_column FeatureEngineeringFeature#timeseries_column}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.Initializer.parameter.timeWindow">time_window</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindow">FeatureEngineeringFeatureTimeWindow</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#time_window FeatureEngineeringFeature#time_window}. |
 
 ---
 
@@ -120,7 +124,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#full_name FeatureEngineeringFeature#full_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#full_name FeatureEngineeringFeature#full_name}.
 
 ---
 
@@ -128,15 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunction">FeatureEngineeringFeatureFunction</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#function FeatureEngineeringFeature#function}.
-
----
-
-##### `inputs`<sup>Required</sup> <a name="inputs" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.Initializer.parameter.inputs"></a>
-
-- *Type:* typing.List[str]
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#inputs FeatureEngineeringFeature#inputs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#function FeatureEngineeringFeature#function}.
 
 ---
 
@@ -144,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSource">FeatureEngineeringFeatureSource</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#source FeatureEngineeringFeature#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#source FeatureEngineeringFeature#source}.
 
 ---
 
@@ -152,7 +148,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#description FeatureEngineeringFeature#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#description FeatureEngineeringFeature#description}.
+
+---
+
+##### `entities`<sup>Optional</sup> <a name="entities" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.Initializer.parameter.entities"></a>
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntities">FeatureEngineeringFeatureEntities</a>]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#entities FeatureEngineeringFeature#entities}.
 
 ---
 
@@ -160,7 +164,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#filter_condition FeatureEngineeringFeature#filter_condition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#filter_condition FeatureEngineeringFeature#filter_condition}.
+
+---
+
+##### `inputs`<sup>Optional</sup> <a name="inputs" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.Initializer.parameter.inputs"></a>
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#inputs FeatureEngineeringFeature#inputs}.
 
 ---
 
@@ -168,7 +180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureLineageContext">FeatureEngineeringFeatureLineageContext</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#lineage_context FeatureEngineeringFeature#lineage_context}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#lineage_context FeatureEngineeringFeature#lineage_context}.
 
 ---
 
@@ -176,7 +188,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureProviderConfig">FeatureEngineeringFeatureProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#provider_config FeatureEngineeringFeature#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#provider_config FeatureEngineeringFeature#provider_config}.
+
+---
+
+##### `timeseries_column`<sup>Optional</sup> <a name="timeseries_column" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.Initializer.parameter.timeseriesColumn"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumn">FeatureEngineeringFeatureTimeseriesColumn</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#timeseries_column FeatureEngineeringFeature#timeseries_column}.
 
 ---
 
@@ -184,7 +204,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindow">FeatureEngineeringFeatureTimeWindow</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#time_window FeatureEngineeringFeature#time_window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#time_window FeatureEngineeringFeature#time_window}.
 
 ---
 
@@ -216,15 +236,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.putEntities">put_entities</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.putFunction">put_function</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.putLineageContext">put_lineage_context</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.putProviderConfig">put_provider_config</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.putSource">put_source</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.putTimeseriesColumn">put_timeseries_column</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.putTimeWindow">put_time_window</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.resetDescription">reset_description</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.resetEntities">reset_entities</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.resetFilterCondition">reset_filter_condition</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.resetInputs">reset_inputs</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.resetLineageContext">reset_lineage_context</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.resetProviderConfig">reset_provider_config</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.resetTimeseriesColumn">reset_timeseries_column</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.resetTimeWindow">reset_time_window</a></code> | *No description.* |
 
 ---
@@ -577,20 +602,35 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `put_entities` <a name="put_entities" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.putEntities"></a>
+
+```python
+def put_entities(
+  value: IResolvable | typing.List[FeatureEngineeringFeatureEntities]
+) -> None
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.putEntities.parameter.value"></a>
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntities">FeatureEngineeringFeatureEntities</a>]
+
+---
+
 ##### `put_function` <a name="put_function" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.putFunction"></a>
 
 ```python
 def put_function(
-  function_type: str,
-  extra_parameters: IResolvable | typing.List[FeatureEngineeringFeatureFunctionExtraParameters] = None
+  aggregation_function: FeatureEngineeringFeatureFunctionAggregationFunction = None,
+  extra_parameters: IResolvable | typing.List[FeatureEngineeringFeatureFunctionExtraParameters] = None,
+  function_type: str = None
 ) -> None
 ```
 
-###### `function_type`<sup>Required</sup> <a name="function_type" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.putFunction.parameter.functionType"></a>
+###### `aggregation_function`<sup>Optional</sup> <a name="aggregation_function" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.putFunction.parameter.aggregationFunction"></a>
 
-- *Type:* str
+- *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction">FeatureEngineeringFeatureFunctionAggregationFunction</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#function_type FeatureEngineeringFeature#function_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#aggregation_function FeatureEngineeringFeature#aggregation_function}.
 
 ---
 
@@ -598,7 +638,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionExtraParameters">FeatureEngineeringFeatureFunctionExtraParameters</a>]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#extra_parameters FeatureEngineeringFeature#extra_parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#extra_parameters FeatureEngineeringFeature#extra_parameters}.
+
+---
+
+###### `function_type`<sup>Optional</sup> <a name="function_type" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.putFunction.parameter.functionType"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#function_type FeatureEngineeringFeature#function_type}.
 
 ---
 
@@ -615,7 +663,7 @@ def put_lineage_context(
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureLineageContextJobContext">FeatureEngineeringFeatureLineageContextJobContext</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#job_context FeatureEngineeringFeature#job_context}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#job_context FeatureEngineeringFeature#job_context}.
 
 ---
 
@@ -623,7 +671,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#notebook_id FeatureEngineeringFeature#notebook_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#notebook_id FeatureEngineeringFeature#notebook_id}.
 
 ---
 
@@ -639,7 +687,7 @@ def put_provider_config(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#workspace_id FeatureEngineeringFeature#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#workspace_id FeatureEngineeringFeature#workspace_id}.
 
 ---
 
@@ -656,7 +704,7 @@ def put_source(
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceDeltaTableSource">FeatureEngineeringFeatureSourceDeltaTableSource</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#delta_table_source FeatureEngineeringFeature#delta_table_source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#delta_table_source FeatureEngineeringFeature#delta_table_source}.
 
 ---
 
@@ -664,7 +712,23 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSource">FeatureEngineeringFeatureSourceKafkaSource</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#kafka_source FeatureEngineeringFeature#kafka_source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#kafka_source FeatureEngineeringFeature#kafka_source}.
+
+---
+
+##### `put_timeseries_column` <a name="put_timeseries_column" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.putTimeseriesColumn"></a>
+
+```python
+def put_timeseries_column(
+  name: str
+) -> None
+```
+
+###### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.putTimeseriesColumn.parameter.name"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#name FeatureEngineeringFeature#name}.
 
 ---
 
@@ -682,7 +746,7 @@ def put_time_window(
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowContinuous">FeatureEngineeringFeatureTimeWindowContinuous</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#continuous FeatureEngineeringFeature#continuous}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#continuous FeatureEngineeringFeature#continuous}.
 
 ---
 
@@ -690,7 +754,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowSliding">FeatureEngineeringFeatureTimeWindowSliding</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#sliding FeatureEngineeringFeature#sliding}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#sliding FeatureEngineeringFeature#sliding}.
 
 ---
 
@@ -698,7 +762,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowTumbling">FeatureEngineeringFeatureTimeWindowTumbling</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#tumbling FeatureEngineeringFeature#tumbling}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#tumbling FeatureEngineeringFeature#tumbling}.
 
 ---
 
@@ -708,10 +772,22 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 def reset_description() -> None
 ```
 
+##### `reset_entities` <a name="reset_entities" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.resetEntities"></a>
+
+```python
+def reset_entities() -> None
+```
+
 ##### `reset_filter_condition` <a name="reset_filter_condition" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.resetFilterCondition"></a>
 
 ```python
 def reset_filter_condition() -> None
+```
+
+##### `reset_inputs` <a name="reset_inputs" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.resetInputs"></a>
+
+```python
+def reset_inputs() -> None
 ```
 
 ##### `reset_lineage_context` <a name="reset_lineage_context" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.resetLineageContext"></a>
@@ -724,6 +800,12 @@ def reset_lineage_context() -> None
 
 ```python
 def reset_provider_config() -> None
+```
+
+##### `reset_timeseries_column` <a name="reset_timeseries_column" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.resetTimeseriesColumn"></a>
+
+```python
+def reset_timeseries_column() -> None
 ```
 
 ##### `reset_time_window` <a name="reset_time_window" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.resetTimeWindow"></a>
@@ -846,7 +928,7 @@ The construct id used in the generated config for the FeatureEngineeringFeature 
 
 The id of the existing FeatureEngineeringFeature that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -876,12 +958,15 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.property.entities">entities</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesList">FeatureEngineeringFeatureEntitiesList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.property.function">function</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionOutputReference">FeatureEngineeringFeatureFunctionOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.property.lineageContext">lineage_context</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureLineageContextOutputReference">FeatureEngineeringFeatureLineageContextOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.property.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureProviderConfigOutputReference">FeatureEngineeringFeatureProviderConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.property.source">source</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceOutputReference">FeatureEngineeringFeatureSourceOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.property.timeseriesColumn">timeseries_column</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumnOutputReference">FeatureEngineeringFeatureTimeseriesColumnOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.property.timeWindow">time_window</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowOutputReference">FeatureEngineeringFeatureTimeWindowOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.property.entitiesInput">entities_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntities">FeatureEngineeringFeatureEntities</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.property.filterConditionInput">filter_condition_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.property.fullNameInput">full_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.property.functionInput">function_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunction">FeatureEngineeringFeatureFunction</a></code> | *No description.* |
@@ -889,6 +974,7 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.property.lineageContextInput">lineage_context_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureLineageContext">FeatureEngineeringFeatureLineageContext</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.property.providerConfigInput">provider_config_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureProviderConfig">FeatureEngineeringFeatureProviderConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.property.sourceInput">source_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSource">FeatureEngineeringFeatureSource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.property.timeseriesColumnInput">timeseries_column_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumn">FeatureEngineeringFeatureTimeseriesColumn</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.property.timeWindowInput">time_window_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindow">FeatureEngineeringFeatureTimeWindow</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.property.filterCondition">filter_condition</a></code> | <code>str</code> | *No description.* |
@@ -1039,6 +1125,16 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
+##### `entities`<sup>Required</sup> <a name="entities" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.property.entities"></a>
+
+```python
+entities: FeatureEngineeringFeatureEntitiesList
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesList">FeatureEngineeringFeatureEntitiesList</a>
+
+---
+
 ##### `function`<sup>Required</sup> <a name="function" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.property.function"></a>
 
 ```python
@@ -1079,6 +1175,16 @@ source: FeatureEngineeringFeatureSourceOutputReference
 
 ---
 
+##### `timeseries_column`<sup>Required</sup> <a name="timeseries_column" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.property.timeseriesColumn"></a>
+
+```python
+timeseries_column: FeatureEngineeringFeatureTimeseriesColumnOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumnOutputReference">FeatureEngineeringFeatureTimeseriesColumnOutputReference</a>
+
+---
+
 ##### `time_window`<sup>Required</sup> <a name="time_window" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.property.timeWindow"></a>
 
 ```python
@@ -1096,6 +1202,16 @@ description_input: str
 ```
 
 - *Type:* str
+
+---
+
+##### `entities_input`<sup>Optional</sup> <a name="entities_input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.property.entitiesInput"></a>
+
+```python
+entities_input: IResolvable | typing.List[FeatureEngineeringFeatureEntities]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntities">FeatureEngineeringFeatureEntities</a>]
 
 ---
 
@@ -1166,6 +1282,16 @@ source_input: IResolvable | FeatureEngineeringFeatureSource
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSource">FeatureEngineeringFeatureSource</a>
+
+---
+
+##### `timeseries_column_input`<sup>Optional</sup> <a name="timeseries_column_input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeature.property.timeseriesColumnInput"></a>
+
+```python
+timeseries_column_input: IResolvable | FeatureEngineeringFeatureTimeseriesColumn
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumn">FeatureEngineeringFeatureTimeseriesColumn</a>
 
 ---
 
@@ -1256,12 +1382,14 @@ featureEngineeringFeature.FeatureEngineeringFeatureConfig(
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   full_name: str,
   function: FeatureEngineeringFeatureFunction,
-  inputs: typing.List[str],
   source: FeatureEngineeringFeatureSource,
   description: str = None,
+  entities: IResolvable | typing.List[FeatureEngineeringFeatureEntities] = None,
   filter_condition: str = None,
+  inputs: typing.List[str] = None,
   lineage_context: FeatureEngineeringFeatureLineageContext = None,
   provider_config: FeatureEngineeringFeatureProviderConfig = None,
+  timeseries_column: FeatureEngineeringFeatureTimeseriesColumn = None,
   time_window: FeatureEngineeringFeatureTimeWindow = None
 )
 ```
@@ -1277,15 +1405,17 @@ featureEngineeringFeature.FeatureEngineeringFeatureConfig(
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureConfig.property.fullName">full_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#full_name FeatureEngineeringFeature#full_name}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureConfig.property.function">function</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunction">FeatureEngineeringFeatureFunction</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#function FeatureEngineeringFeature#function}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureConfig.property.inputs">inputs</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#inputs FeatureEngineeringFeature#inputs}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureConfig.property.source">source</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSource">FeatureEngineeringFeatureSource</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#source FeatureEngineeringFeature#source}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#description FeatureEngineeringFeature#description}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureConfig.property.filterCondition">filter_condition</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#filter_condition FeatureEngineeringFeature#filter_condition}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureConfig.property.lineageContext">lineage_context</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureLineageContext">FeatureEngineeringFeatureLineageContext</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#lineage_context FeatureEngineeringFeature#lineage_context}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureConfig.property.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureProviderConfig">FeatureEngineeringFeatureProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#provider_config FeatureEngineeringFeature#provider_config}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureConfig.property.timeWindow">time_window</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindow">FeatureEngineeringFeatureTimeWindow</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#time_window FeatureEngineeringFeature#time_window}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureConfig.property.fullName">full_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#full_name FeatureEngineeringFeature#full_name}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureConfig.property.function">function</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunction">FeatureEngineeringFeatureFunction</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#function FeatureEngineeringFeature#function}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureConfig.property.source">source</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSource">FeatureEngineeringFeatureSource</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#source FeatureEngineeringFeature#source}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#description FeatureEngineeringFeature#description}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureConfig.property.entities">entities</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntities">FeatureEngineeringFeatureEntities</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#entities FeatureEngineeringFeature#entities}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureConfig.property.filterCondition">filter_condition</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#filter_condition FeatureEngineeringFeature#filter_condition}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureConfig.property.inputs">inputs</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#inputs FeatureEngineeringFeature#inputs}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureConfig.property.lineageContext">lineage_context</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureLineageContext">FeatureEngineeringFeatureLineageContext</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#lineage_context FeatureEngineeringFeature#lineage_context}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureConfig.property.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureProviderConfig">FeatureEngineeringFeatureProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#provider_config FeatureEngineeringFeature#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureConfig.property.timeseriesColumn">timeseries_column</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumn">FeatureEngineeringFeatureTimeseriesColumn</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#timeseries_column FeatureEngineeringFeature#timeseries_column}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureConfig.property.timeWindow">time_window</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindow">FeatureEngineeringFeatureTimeWindow</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#time_window FeatureEngineeringFeature#time_window}. |
 
 ---
 
@@ -1367,7 +1497,7 @@ full_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#full_name FeatureEngineeringFeature#full_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#full_name FeatureEngineeringFeature#full_name}.
 
 ---
 
@@ -1379,19 +1509,7 @@ function: FeatureEngineeringFeatureFunction
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunction">FeatureEngineeringFeatureFunction</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#function FeatureEngineeringFeature#function}.
-
----
-
-##### `inputs`<sup>Required</sup> <a name="inputs" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureConfig.property.inputs"></a>
-
-```python
-inputs: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#inputs FeatureEngineeringFeature#inputs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#function FeatureEngineeringFeature#function}.
 
 ---
 
@@ -1403,7 +1521,7 @@ source: FeatureEngineeringFeatureSource
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSource">FeatureEngineeringFeatureSource</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#source FeatureEngineeringFeature#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#source FeatureEngineeringFeature#source}.
 
 ---
 
@@ -1415,7 +1533,19 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#description FeatureEngineeringFeature#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#description FeatureEngineeringFeature#description}.
+
+---
+
+##### `entities`<sup>Optional</sup> <a name="entities" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureConfig.property.entities"></a>
+
+```python
+entities: IResolvable | typing.List[FeatureEngineeringFeatureEntities]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntities">FeatureEngineeringFeatureEntities</a>]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#entities FeatureEngineeringFeature#entities}.
 
 ---
 
@@ -1427,7 +1557,19 @@ filter_condition: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#filter_condition FeatureEngineeringFeature#filter_condition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#filter_condition FeatureEngineeringFeature#filter_condition}.
+
+---
+
+##### `inputs`<sup>Optional</sup> <a name="inputs" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureConfig.property.inputs"></a>
+
+```python
+inputs: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#inputs FeatureEngineeringFeature#inputs}.
 
 ---
 
@@ -1439,7 +1581,7 @@ lineage_context: FeatureEngineeringFeatureLineageContext
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureLineageContext">FeatureEngineeringFeatureLineageContext</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#lineage_context FeatureEngineeringFeature#lineage_context}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#lineage_context FeatureEngineeringFeature#lineage_context}.
 
 ---
 
@@ -1451,7 +1593,19 @@ provider_config: FeatureEngineeringFeatureProviderConfig
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureProviderConfig">FeatureEngineeringFeatureProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#provider_config FeatureEngineeringFeature#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#provider_config FeatureEngineeringFeature#provider_config}.
+
+---
+
+##### `timeseries_column`<sup>Optional</sup> <a name="timeseries_column" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureConfig.property.timeseriesColumn"></a>
+
+```python
+timeseries_column: FeatureEngineeringFeatureTimeseriesColumn
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumn">FeatureEngineeringFeatureTimeseriesColumn</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#timeseries_column FeatureEngineeringFeature#timeseries_column}.
 
 ---
 
@@ -1463,7 +1617,39 @@ time_window: FeatureEngineeringFeatureTimeWindow
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindow">FeatureEngineeringFeatureTimeWindow</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#time_window FeatureEngineeringFeature#time_window}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#time_window FeatureEngineeringFeature#time_window}.
+
+---
+
+### FeatureEngineeringFeatureEntities <a name="FeatureEngineeringFeatureEntities" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntities"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntities.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import feature_engineering_feature
+
+featureEngineeringFeature.FeatureEngineeringFeatureEntities(
+  name: str
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntities.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#name FeatureEngineeringFeature#name}. |
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntities.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#name FeatureEngineeringFeature#name}.
 
 ---
 
@@ -1475,8 +1661,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 from cdktn_provider_databricks import feature_engineering_feature
 
 featureEngineeringFeature.FeatureEngineeringFeatureFunction(
-  function_type: str,
-  extra_parameters: IResolvable | typing.List[FeatureEngineeringFeatureFunctionExtraParameters] = None
+  aggregation_function: FeatureEngineeringFeatureFunctionAggregationFunction = None,
+  extra_parameters: IResolvable | typing.List[FeatureEngineeringFeatureFunctionExtraParameters] = None,
+  function_type: str = None
 )
 ```
 
@@ -1484,20 +1671,21 @@ featureEngineeringFeature.FeatureEngineeringFeatureFunction(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunction.property.functionType">function_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#function_type FeatureEngineeringFeature#function_type}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunction.property.extraParameters">extra_parameters</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionExtraParameters">FeatureEngineeringFeatureFunctionExtraParameters</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#extra_parameters FeatureEngineeringFeature#extra_parameters}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunction.property.aggregationFunction">aggregation_function</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction">FeatureEngineeringFeatureFunctionAggregationFunction</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#aggregation_function FeatureEngineeringFeature#aggregation_function}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunction.property.extraParameters">extra_parameters</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionExtraParameters">FeatureEngineeringFeatureFunctionExtraParameters</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#extra_parameters FeatureEngineeringFeature#extra_parameters}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunction.property.functionType">function_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#function_type FeatureEngineeringFeature#function_type}. |
 
 ---
 
-##### `function_type`<sup>Required</sup> <a name="function_type" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunction.property.functionType"></a>
+##### `aggregation_function`<sup>Optional</sup> <a name="aggregation_function" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunction.property.aggregationFunction"></a>
 
 ```python
-function_type: str
+aggregation_function: FeatureEngineeringFeatureFunctionAggregationFunction
 ```
 
-- *Type:* str
+- *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction">FeatureEngineeringFeatureFunctionAggregationFunction</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#function_type FeatureEngineeringFeature#function_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#aggregation_function FeatureEngineeringFeature#aggregation_function}.
 
 ---
 
@@ -1509,7 +1697,875 @@ extra_parameters: IResolvable | typing.List[FeatureEngineeringFeatureFunctionExt
 
 - *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionExtraParameters">FeatureEngineeringFeatureFunctionExtraParameters</a>]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#extra_parameters FeatureEngineeringFeature#extra_parameters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#extra_parameters FeatureEngineeringFeature#extra_parameters}.
+
+---
+
+##### `function_type`<sup>Optional</sup> <a name="function_type" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunction.property.functionType"></a>
+
+```python
+function_type: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#function_type FeatureEngineeringFeature#function_type}.
+
+---
+
+### FeatureEngineeringFeatureFunctionAggregationFunction <a name="FeatureEngineeringFeatureFunctionAggregationFunction" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import feature_engineering_feature
+
+featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction(
+  approx_count_distinct: FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinct = None,
+  approx_percentile: FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentile = None,
+  avg: FeatureEngineeringFeatureFunctionAggregationFunctionAvg = None,
+  count_function: FeatureEngineeringFeatureFunctionAggregationFunctionCountFunction = None,
+  first: FeatureEngineeringFeatureFunctionAggregationFunctionFirst = None,
+  last: FeatureEngineeringFeatureFunctionAggregationFunctionLast = None,
+  max: FeatureEngineeringFeatureFunctionAggregationFunctionMax = None,
+  min: FeatureEngineeringFeatureFunctionAggregationFunctionMin = None,
+  stddev_pop: FeatureEngineeringFeatureFunctionAggregationFunctionStddevPop = None,
+  stddev_samp: FeatureEngineeringFeatureFunctionAggregationFunctionStddevSamp = None,
+  sum: FeatureEngineeringFeatureFunctionAggregationFunctionSum = None,
+  time_window: FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindow = None,
+  var_pop: FeatureEngineeringFeatureFunctionAggregationFunctionVarPop = None,
+  var_samp: FeatureEngineeringFeatureFunctionAggregationFunctionVarSamp = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.property.approxCountDistinct">approx_count_distinct</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinct">FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinct</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#approx_count_distinct FeatureEngineeringFeature#approx_count_distinct}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.property.approxPercentile">approx_percentile</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentile">FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentile</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#approx_percentile FeatureEngineeringFeature#approx_percentile}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.property.avg">avg</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvg">FeatureEngineeringFeatureFunctionAggregationFunctionAvg</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#avg FeatureEngineeringFeature#avg}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.property.countFunction">count_function</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunction">FeatureEngineeringFeatureFunctionAggregationFunctionCountFunction</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#count_function FeatureEngineeringFeature#count_function}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.property.first">first</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirst">FeatureEngineeringFeatureFunctionAggregationFunctionFirst</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#first FeatureEngineeringFeature#first}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.property.last">last</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLast">FeatureEngineeringFeatureFunctionAggregationFunctionLast</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#last FeatureEngineeringFeature#last}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.property.max">max</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMax">FeatureEngineeringFeatureFunctionAggregationFunctionMax</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#max FeatureEngineeringFeature#max}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.property.min">min</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMin">FeatureEngineeringFeatureFunctionAggregationFunctionMin</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#min FeatureEngineeringFeature#min}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.property.stddevPop">stddev_pop</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPop">FeatureEngineeringFeatureFunctionAggregationFunctionStddevPop</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#stddev_pop FeatureEngineeringFeature#stddev_pop}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.property.stddevSamp">stddev_samp</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSamp">FeatureEngineeringFeatureFunctionAggregationFunctionStddevSamp</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#stddev_samp FeatureEngineeringFeature#stddev_samp}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.property.sum">sum</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSum">FeatureEngineeringFeatureFunctionAggregationFunctionSum</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#sum FeatureEngineeringFeature#sum}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.property.timeWindow">time_window</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindow">FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindow</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#time_window FeatureEngineeringFeature#time_window}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.property.varPop">var_pop</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPop">FeatureEngineeringFeatureFunctionAggregationFunctionVarPop</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#var_pop FeatureEngineeringFeature#var_pop}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.property.varSamp">var_samp</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSamp">FeatureEngineeringFeatureFunctionAggregationFunctionVarSamp</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#var_samp FeatureEngineeringFeature#var_samp}. |
+
+---
+
+##### `approx_count_distinct`<sup>Optional</sup> <a name="approx_count_distinct" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.property.approxCountDistinct"></a>
+
+```python
+approx_count_distinct: FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinct
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinct">FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinct</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#approx_count_distinct FeatureEngineeringFeature#approx_count_distinct}.
+
+---
+
+##### `approx_percentile`<sup>Optional</sup> <a name="approx_percentile" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.property.approxPercentile"></a>
+
+```python
+approx_percentile: FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentile
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentile">FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentile</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#approx_percentile FeatureEngineeringFeature#approx_percentile}.
+
+---
+
+##### `avg`<sup>Optional</sup> <a name="avg" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.property.avg"></a>
+
+```python
+avg: FeatureEngineeringFeatureFunctionAggregationFunctionAvg
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvg">FeatureEngineeringFeatureFunctionAggregationFunctionAvg</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#avg FeatureEngineeringFeature#avg}.
+
+---
+
+##### `count_function`<sup>Optional</sup> <a name="count_function" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.property.countFunction"></a>
+
+```python
+count_function: FeatureEngineeringFeatureFunctionAggregationFunctionCountFunction
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunction">FeatureEngineeringFeatureFunctionAggregationFunctionCountFunction</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#count_function FeatureEngineeringFeature#count_function}.
+
+---
+
+##### `first`<sup>Optional</sup> <a name="first" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.property.first"></a>
+
+```python
+first: FeatureEngineeringFeatureFunctionAggregationFunctionFirst
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirst">FeatureEngineeringFeatureFunctionAggregationFunctionFirst</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#first FeatureEngineeringFeature#first}.
+
+---
+
+##### `last`<sup>Optional</sup> <a name="last" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.property.last"></a>
+
+```python
+last: FeatureEngineeringFeatureFunctionAggregationFunctionLast
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLast">FeatureEngineeringFeatureFunctionAggregationFunctionLast</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#last FeatureEngineeringFeature#last}.
+
+---
+
+##### `max`<sup>Optional</sup> <a name="max" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.property.max"></a>
+
+```python
+max: FeatureEngineeringFeatureFunctionAggregationFunctionMax
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMax">FeatureEngineeringFeatureFunctionAggregationFunctionMax</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#max FeatureEngineeringFeature#max}.
+
+---
+
+##### `min`<sup>Optional</sup> <a name="min" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.property.min"></a>
+
+```python
+min: FeatureEngineeringFeatureFunctionAggregationFunctionMin
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMin">FeatureEngineeringFeatureFunctionAggregationFunctionMin</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#min FeatureEngineeringFeature#min}.
+
+---
+
+##### `stddev_pop`<sup>Optional</sup> <a name="stddev_pop" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.property.stddevPop"></a>
+
+```python
+stddev_pop: FeatureEngineeringFeatureFunctionAggregationFunctionStddevPop
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPop">FeatureEngineeringFeatureFunctionAggregationFunctionStddevPop</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#stddev_pop FeatureEngineeringFeature#stddev_pop}.
+
+---
+
+##### `stddev_samp`<sup>Optional</sup> <a name="stddev_samp" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.property.stddevSamp"></a>
+
+```python
+stddev_samp: FeatureEngineeringFeatureFunctionAggregationFunctionStddevSamp
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSamp">FeatureEngineeringFeatureFunctionAggregationFunctionStddevSamp</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#stddev_samp FeatureEngineeringFeature#stddev_samp}.
+
+---
+
+##### `sum`<sup>Optional</sup> <a name="sum" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.property.sum"></a>
+
+```python
+sum: FeatureEngineeringFeatureFunctionAggregationFunctionSum
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSum">FeatureEngineeringFeatureFunctionAggregationFunctionSum</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#sum FeatureEngineeringFeature#sum}.
+
+---
+
+##### `time_window`<sup>Optional</sup> <a name="time_window" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.property.timeWindow"></a>
+
+```python
+time_window: FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindow
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindow">FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindow</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#time_window FeatureEngineeringFeature#time_window}.
+
+---
+
+##### `var_pop`<sup>Optional</sup> <a name="var_pop" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.property.varPop"></a>
+
+```python
+var_pop: FeatureEngineeringFeatureFunctionAggregationFunctionVarPop
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPop">FeatureEngineeringFeatureFunctionAggregationFunctionVarPop</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#var_pop FeatureEngineeringFeature#var_pop}.
+
+---
+
+##### `var_samp`<sup>Optional</sup> <a name="var_samp" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction.property.varSamp"></a>
+
+```python
+var_samp: FeatureEngineeringFeatureFunctionAggregationFunctionVarSamp
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSamp">FeatureEngineeringFeatureFunctionAggregationFunctionVarSamp</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#var_samp FeatureEngineeringFeature#var_samp}.
+
+---
+
+### FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinct <a name="FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinct" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinct"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinct.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import feature_engineering_feature
+
+featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinct(
+  input: str,
+  relative_sd: typing.Union[int, float] = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinct.property.input">input</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinct.property.relativeSd">relative_sd</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#relative_sd FeatureEngineeringFeature#relative_sd}. |
+
+---
+
+##### `input`<sup>Required</sup> <a name="input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinct.property.input"></a>
+
+```python
+input: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
+
+---
+
+##### `relative_sd`<sup>Optional</sup> <a name="relative_sd" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinct.property.relativeSd"></a>
+
+```python
+relative_sd: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#relative_sd FeatureEngineeringFeature#relative_sd}.
+
+---
+
+### FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentile <a name="FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentile" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentile"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentile.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import feature_engineering_feature
+
+featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentile(
+  input: str,
+  percentile: typing.Union[int, float],
+  accuracy: typing.Union[int, float] = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentile.property.input">input</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentile.property.percentile">percentile</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#percentile FeatureEngineeringFeature#percentile}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentile.property.accuracy">accuracy</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#accuracy FeatureEngineeringFeature#accuracy}. |
+
+---
+
+##### `input`<sup>Required</sup> <a name="input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentile.property.input"></a>
+
+```python
+input: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
+
+---
+
+##### `percentile`<sup>Required</sup> <a name="percentile" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentile.property.percentile"></a>
+
+```python
+percentile: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#percentile FeatureEngineeringFeature#percentile}.
+
+---
+
+##### `accuracy`<sup>Optional</sup> <a name="accuracy" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentile.property.accuracy"></a>
+
+```python
+accuracy: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#accuracy FeatureEngineeringFeature#accuracy}.
+
+---
+
+### FeatureEngineeringFeatureFunctionAggregationFunctionAvg <a name="FeatureEngineeringFeatureFunctionAggregationFunctionAvg" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvg"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvg.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import feature_engineering_feature
+
+featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvg(
+  input: str
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvg.property.input">input</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}. |
+
+---
+
+##### `input`<sup>Required</sup> <a name="input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvg.property.input"></a>
+
+```python
+input: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
+
+---
+
+### FeatureEngineeringFeatureFunctionAggregationFunctionCountFunction <a name="FeatureEngineeringFeatureFunctionAggregationFunctionCountFunction" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunction"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunction.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import feature_engineering_feature
+
+featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunction(
+  input: str
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunction.property.input">input</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}. |
+
+---
+
+##### `input`<sup>Required</sup> <a name="input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunction.property.input"></a>
+
+```python
+input: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
+
+---
+
+### FeatureEngineeringFeatureFunctionAggregationFunctionFirst <a name="FeatureEngineeringFeatureFunctionAggregationFunctionFirst" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirst"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirst.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import feature_engineering_feature
+
+featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirst(
+  input: str
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirst.property.input">input</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}. |
+
+---
+
+##### `input`<sup>Required</sup> <a name="input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirst.property.input"></a>
+
+```python
+input: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
+
+---
+
+### FeatureEngineeringFeatureFunctionAggregationFunctionLast <a name="FeatureEngineeringFeatureFunctionAggregationFunctionLast" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLast"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLast.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import feature_engineering_feature
+
+featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLast(
+  input: str
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLast.property.input">input</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}. |
+
+---
+
+##### `input`<sup>Required</sup> <a name="input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLast.property.input"></a>
+
+```python
+input: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
+
+---
+
+### FeatureEngineeringFeatureFunctionAggregationFunctionMax <a name="FeatureEngineeringFeatureFunctionAggregationFunctionMax" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMax"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMax.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import feature_engineering_feature
+
+featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMax(
+  input: str
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMax.property.input">input</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}. |
+
+---
+
+##### `input`<sup>Required</sup> <a name="input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMax.property.input"></a>
+
+```python
+input: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
+
+---
+
+### FeatureEngineeringFeatureFunctionAggregationFunctionMin <a name="FeatureEngineeringFeatureFunctionAggregationFunctionMin" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMin"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMin.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import feature_engineering_feature
+
+featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMin(
+  input: str
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMin.property.input">input</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}. |
+
+---
+
+##### `input`<sup>Required</sup> <a name="input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMin.property.input"></a>
+
+```python
+input: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
+
+---
+
+### FeatureEngineeringFeatureFunctionAggregationFunctionStddevPop <a name="FeatureEngineeringFeatureFunctionAggregationFunctionStddevPop" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPop"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPop.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import feature_engineering_feature
+
+featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPop(
+  input: str
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPop.property.input">input</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}. |
+
+---
+
+##### `input`<sup>Required</sup> <a name="input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPop.property.input"></a>
+
+```python
+input: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
+
+---
+
+### FeatureEngineeringFeatureFunctionAggregationFunctionStddevSamp <a name="FeatureEngineeringFeatureFunctionAggregationFunctionStddevSamp" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSamp"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSamp.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import feature_engineering_feature
+
+featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSamp(
+  input: str
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSamp.property.input">input</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}. |
+
+---
+
+##### `input`<sup>Required</sup> <a name="input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSamp.property.input"></a>
+
+```python
+input: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
+
+---
+
+### FeatureEngineeringFeatureFunctionAggregationFunctionSum <a name="FeatureEngineeringFeatureFunctionAggregationFunctionSum" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSum"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSum.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import feature_engineering_feature
+
+featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSum(
+  input: str
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSum.property.input">input</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}. |
+
+---
+
+##### `input`<sup>Required</sup> <a name="input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSum.property.input"></a>
+
+```python
+input: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
+
+---
+
+### FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindow <a name="FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindow" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindow"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindow.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import feature_engineering_feature
+
+featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindow(
+  continuous: FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuous = None,
+  sliding: FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSliding = None,
+  tumbling: FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumbling = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindow.property.continuous">continuous</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuous">FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuous</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#continuous FeatureEngineeringFeature#continuous}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindow.property.sliding">sliding</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSliding">FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSliding</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#sliding FeatureEngineeringFeature#sliding}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindow.property.tumbling">tumbling</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumbling">FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumbling</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#tumbling FeatureEngineeringFeature#tumbling}. |
+
+---
+
+##### `continuous`<sup>Optional</sup> <a name="continuous" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindow.property.continuous"></a>
+
+```python
+continuous: FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuous
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuous">FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuous</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#continuous FeatureEngineeringFeature#continuous}.
+
+---
+
+##### `sliding`<sup>Optional</sup> <a name="sliding" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindow.property.sliding"></a>
+
+```python
+sliding: FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSliding
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSliding">FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSliding</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#sliding FeatureEngineeringFeature#sliding}.
+
+---
+
+##### `tumbling`<sup>Optional</sup> <a name="tumbling" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindow.property.tumbling"></a>
+
+```python
+tumbling: FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumbling
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumbling">FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumbling</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#tumbling FeatureEngineeringFeature#tumbling}.
+
+---
+
+### FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuous <a name="FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuous" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuous"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuous.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import feature_engineering_feature
+
+featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuous(
+  window_duration: str,
+  offset: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuous.property.windowDuration">window_duration</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuous.property.offset">offset</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#offset FeatureEngineeringFeature#offset}. |
+
+---
+
+##### `window_duration`<sup>Required</sup> <a name="window_duration" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuous.property.windowDuration"></a>
+
+```python
+window_duration: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}.
+
+---
+
+##### `offset`<sup>Optional</sup> <a name="offset" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuous.property.offset"></a>
+
+```python
+offset: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#offset FeatureEngineeringFeature#offset}.
+
+---
+
+### FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSliding <a name="FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSliding" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSliding"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSliding.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import feature_engineering_feature
+
+featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSliding(
+  slide_duration: str,
+  window_duration: str
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSliding.property.slideDuration">slide_duration</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#slide_duration FeatureEngineeringFeature#slide_duration}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSliding.property.windowDuration">window_duration</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}. |
+
+---
+
+##### `slide_duration`<sup>Required</sup> <a name="slide_duration" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSliding.property.slideDuration"></a>
+
+```python
+slide_duration: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#slide_duration FeatureEngineeringFeature#slide_duration}.
+
+---
+
+##### `window_duration`<sup>Required</sup> <a name="window_duration" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSliding.property.windowDuration"></a>
+
+```python
+window_duration: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}.
+
+---
+
+### FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumbling <a name="FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumbling" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumbling"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumbling.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import feature_engineering_feature
+
+featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumbling(
+  window_duration: str
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumbling.property.windowDuration">window_duration</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}. |
+
+---
+
+##### `window_duration`<sup>Required</sup> <a name="window_duration" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumbling.property.windowDuration"></a>
+
+```python
+window_duration: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}.
+
+---
+
+### FeatureEngineeringFeatureFunctionAggregationFunctionVarPop <a name="FeatureEngineeringFeatureFunctionAggregationFunctionVarPop" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPop"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPop.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import feature_engineering_feature
+
+featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPop(
+  input: str
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPop.property.input">input</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}. |
+
+---
+
+##### `input`<sup>Required</sup> <a name="input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPop.property.input"></a>
+
+```python
+input: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
+
+---
+
+### FeatureEngineeringFeatureFunctionAggregationFunctionVarSamp <a name="FeatureEngineeringFeatureFunctionAggregationFunctionVarSamp" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSamp"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSamp.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import feature_engineering_feature
+
+featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSamp(
+  input: str
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSamp.property.input">input</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}. |
+
+---
+
+##### `input`<sup>Required</sup> <a name="input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSamp.property.input"></a>
+
+```python
+input: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
 
 ---
 
@@ -1530,8 +2586,8 @@ featureEngineeringFeature.FeatureEngineeringFeatureFunctionExtraParameters(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionExtraParameters.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#key FeatureEngineeringFeature#key}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionExtraParameters.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#value FeatureEngineeringFeature#value}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionExtraParameters.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#key FeatureEngineeringFeature#key}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionExtraParameters.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#value FeatureEngineeringFeature#value}. |
 
 ---
 
@@ -1543,7 +2599,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#key FeatureEngineeringFeature#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#key FeatureEngineeringFeature#key}.
 
 ---
 
@@ -1555,7 +2611,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#value FeatureEngineeringFeature#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#value FeatureEngineeringFeature#value}.
 
 ---
 
@@ -1576,8 +2632,8 @@ featureEngineeringFeature.FeatureEngineeringFeatureLineageContext(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureLineageContext.property.jobContext">job_context</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureLineageContextJobContext">FeatureEngineeringFeatureLineageContextJobContext</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#job_context FeatureEngineeringFeature#job_context}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureLineageContext.property.notebookId">notebook_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#notebook_id FeatureEngineeringFeature#notebook_id}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureLineageContext.property.jobContext">job_context</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureLineageContextJobContext">FeatureEngineeringFeatureLineageContextJobContext</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#job_context FeatureEngineeringFeature#job_context}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureLineageContext.property.notebookId">notebook_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#notebook_id FeatureEngineeringFeature#notebook_id}. |
 
 ---
 
@@ -1589,7 +2645,7 @@ job_context: FeatureEngineeringFeatureLineageContextJobContext
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureLineageContextJobContext">FeatureEngineeringFeatureLineageContextJobContext</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#job_context FeatureEngineeringFeature#job_context}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#job_context FeatureEngineeringFeature#job_context}.
 
 ---
 
@@ -1601,7 +2657,7 @@ notebook_id: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#notebook_id FeatureEngineeringFeature#notebook_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#notebook_id FeatureEngineeringFeature#notebook_id}.
 
 ---
 
@@ -1622,8 +2678,8 @@ featureEngineeringFeature.FeatureEngineeringFeatureLineageContextJobContext(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureLineageContextJobContext.property.jobId">job_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#job_id FeatureEngineeringFeature#job_id}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureLineageContextJobContext.property.jobRunId">job_run_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#job_run_id FeatureEngineeringFeature#job_run_id}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureLineageContextJobContext.property.jobId">job_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#job_id FeatureEngineeringFeature#job_id}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureLineageContextJobContext.property.jobRunId">job_run_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#job_run_id FeatureEngineeringFeature#job_run_id}. |
 
 ---
 
@@ -1635,7 +2691,7 @@ job_id: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#job_id FeatureEngineeringFeature#job_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#job_id FeatureEngineeringFeature#job_id}.
 
 ---
 
@@ -1647,7 +2703,7 @@ job_run_id: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#job_run_id FeatureEngineeringFeature#job_run_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#job_run_id FeatureEngineeringFeature#job_run_id}.
 
 ---
 
@@ -1667,7 +2723,7 @@ featureEngineeringFeature.FeatureEngineeringFeatureProviderConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureProviderConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#workspace_id FeatureEngineeringFeature#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureProviderConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#workspace_id FeatureEngineeringFeature#workspace_id}. |
 
 ---
 
@@ -1679,7 +2735,7 @@ workspace_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#workspace_id FeatureEngineeringFeature#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#workspace_id FeatureEngineeringFeature#workspace_id}.
 
 ---
 
@@ -1700,8 +2756,8 @@ featureEngineeringFeature.FeatureEngineeringFeatureSource(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSource.property.deltaTableSource">delta_table_source</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceDeltaTableSource">FeatureEngineeringFeatureSourceDeltaTableSource</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#delta_table_source FeatureEngineeringFeature#delta_table_source}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSource.property.kafkaSource">kafka_source</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSource">FeatureEngineeringFeatureSourceKafkaSource</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#kafka_source FeatureEngineeringFeature#kafka_source}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSource.property.deltaTableSource">delta_table_source</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceDeltaTableSource">FeatureEngineeringFeatureSourceDeltaTableSource</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#delta_table_source FeatureEngineeringFeature#delta_table_source}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSource.property.kafkaSource">kafka_source</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSource">FeatureEngineeringFeatureSourceKafkaSource</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#kafka_source FeatureEngineeringFeature#kafka_source}. |
 
 ---
 
@@ -1713,7 +2769,7 @@ delta_table_source: FeatureEngineeringFeatureSourceDeltaTableSource
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceDeltaTableSource">FeatureEngineeringFeatureSourceDeltaTableSource</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#delta_table_source FeatureEngineeringFeature#delta_table_source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#delta_table_source FeatureEngineeringFeature#delta_table_source}.
 
 ---
 
@@ -1725,7 +2781,7 @@ kafka_source: FeatureEngineeringFeatureSourceKafkaSource
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSource">FeatureEngineeringFeatureSourceKafkaSource</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#kafka_source FeatureEngineeringFeature#kafka_source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#kafka_source FeatureEngineeringFeature#kafka_source}.
 
 ---
 
@@ -1737,11 +2793,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 from cdktn_provider_databricks import feature_engineering_feature
 
 featureEngineeringFeature.FeatureEngineeringFeatureSourceDeltaTableSource(
-  entity_columns: typing.List[str],
   full_name: str,
-  timeseries_column: str,
   dataframe_schema: str = None,
+  entity_columns: typing.List[str] = None,
   filter_condition: str = None,
+  timeseries_column: str = None,
   transformation_sql: str = None
 )
 ```
@@ -1750,24 +2806,12 @@ featureEngineeringFeature.FeatureEngineeringFeatureSourceDeltaTableSource(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceDeltaTableSource.property.entityColumns">entity_columns</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#entity_columns FeatureEngineeringFeature#entity_columns}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceDeltaTableSource.property.fullName">full_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#full_name FeatureEngineeringFeature#full_name}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceDeltaTableSource.property.timeseriesColumn">timeseries_column</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#timeseries_column FeatureEngineeringFeature#timeseries_column}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceDeltaTableSource.property.dataframeSchema">dataframe_schema</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#dataframe_schema FeatureEngineeringFeature#dataframe_schema}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceDeltaTableSource.property.filterCondition">filter_condition</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#filter_condition FeatureEngineeringFeature#filter_condition}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceDeltaTableSource.property.transformationSql">transformation_sql</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#transformation_sql FeatureEngineeringFeature#transformation_sql}. |
-
----
-
-##### `entity_columns`<sup>Required</sup> <a name="entity_columns" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceDeltaTableSource.property.entityColumns"></a>
-
-```python
-entity_columns: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#entity_columns FeatureEngineeringFeature#entity_columns}.
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceDeltaTableSource.property.fullName">full_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#full_name FeatureEngineeringFeature#full_name}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceDeltaTableSource.property.dataframeSchema">dataframe_schema</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#dataframe_schema FeatureEngineeringFeature#dataframe_schema}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceDeltaTableSource.property.entityColumns">entity_columns</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#entity_columns FeatureEngineeringFeature#entity_columns}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceDeltaTableSource.property.filterCondition">filter_condition</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#filter_condition FeatureEngineeringFeature#filter_condition}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceDeltaTableSource.property.timeseriesColumn">timeseries_column</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#timeseries_column FeatureEngineeringFeature#timeseries_column}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceDeltaTableSource.property.transformationSql">transformation_sql</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#transformation_sql FeatureEngineeringFeature#transformation_sql}. |
 
 ---
 
@@ -1779,19 +2823,7 @@ full_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#full_name FeatureEngineeringFeature#full_name}.
-
----
-
-##### `timeseries_column`<sup>Required</sup> <a name="timeseries_column" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceDeltaTableSource.property.timeseriesColumn"></a>
-
-```python
-timeseries_column: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#timeseries_column FeatureEngineeringFeature#timeseries_column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#full_name FeatureEngineeringFeature#full_name}.
 
 ---
 
@@ -1803,7 +2835,19 @@ dataframe_schema: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#dataframe_schema FeatureEngineeringFeature#dataframe_schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#dataframe_schema FeatureEngineeringFeature#dataframe_schema}.
+
+---
+
+##### `entity_columns`<sup>Optional</sup> <a name="entity_columns" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceDeltaTableSource.property.entityColumns"></a>
+
+```python
+entity_columns: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#entity_columns FeatureEngineeringFeature#entity_columns}.
 
 ---
 
@@ -1815,7 +2859,19 @@ filter_condition: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#filter_condition FeatureEngineeringFeature#filter_condition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#filter_condition FeatureEngineeringFeature#filter_condition}.
+
+---
+
+##### `timeseries_column`<sup>Optional</sup> <a name="timeseries_column" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceDeltaTableSource.property.timeseriesColumn"></a>
+
+```python
+timeseries_column: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#timeseries_column FeatureEngineeringFeature#timeseries_column}.
 
 ---
 
@@ -1827,7 +2883,7 @@ transformation_sql: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#transformation_sql FeatureEngineeringFeature#transformation_sql}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#transformation_sql FeatureEngineeringFeature#transformation_sql}.
 
 ---
 
@@ -1839,9 +2895,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 from cdktn_provider_databricks import feature_engineering_feature
 
 featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSource(
-  entity_column_identifiers: IResolvable | typing.List[FeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiers],
   name: str,
-  timeseries_column_identifier: FeatureEngineeringFeatureSourceKafkaSourceTimeseriesColumnIdentifier
+  entity_column_identifiers: IResolvable | typing.List[FeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiers] = None,
+  filter_condition: str = None,
+  timeseries_column_identifier: FeatureEngineeringFeatureSourceKafkaSourceTimeseriesColumnIdentifier = None
 )
 ```
 
@@ -1849,21 +2906,10 @@ featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSource(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSource.property.entityColumnIdentifiers">entity_column_identifiers</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiers">FeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiers</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#entity_column_identifiers FeatureEngineeringFeature#entity_column_identifiers}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSource.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#name FeatureEngineeringFeature#name}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSource.property.timeseriesColumnIdentifier">timeseries_column_identifier</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceTimeseriesColumnIdentifier">FeatureEngineeringFeatureSourceKafkaSourceTimeseriesColumnIdentifier</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#timeseries_column_identifier FeatureEngineeringFeature#timeseries_column_identifier}. |
-
----
-
-##### `entity_column_identifiers`<sup>Required</sup> <a name="entity_column_identifiers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSource.property.entityColumnIdentifiers"></a>
-
-```python
-entity_column_identifiers: IResolvable | typing.List[FeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiers]
-```
-
-- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiers">FeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiers</a>]
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#entity_column_identifiers FeatureEngineeringFeature#entity_column_identifiers}.
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSource.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#name FeatureEngineeringFeature#name}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSource.property.entityColumnIdentifiers">entity_column_identifiers</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiers">FeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiers</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#entity_column_identifiers FeatureEngineeringFeature#entity_column_identifiers}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSource.property.filterCondition">filter_condition</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#filter_condition FeatureEngineeringFeature#filter_condition}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSource.property.timeseriesColumnIdentifier">timeseries_column_identifier</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceTimeseriesColumnIdentifier">FeatureEngineeringFeatureSourceKafkaSourceTimeseriesColumnIdentifier</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#timeseries_column_identifier FeatureEngineeringFeature#timeseries_column_identifier}. |
 
 ---
 
@@ -1875,11 +2921,35 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#name FeatureEngineeringFeature#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#name FeatureEngineeringFeature#name}.
 
 ---
 
-##### `timeseries_column_identifier`<sup>Required</sup> <a name="timeseries_column_identifier" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSource.property.timeseriesColumnIdentifier"></a>
+##### `entity_column_identifiers`<sup>Optional</sup> <a name="entity_column_identifiers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSource.property.entityColumnIdentifiers"></a>
+
+```python
+entity_column_identifiers: IResolvable | typing.List[FeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiers]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiers">FeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiers</a>]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#entity_column_identifiers FeatureEngineeringFeature#entity_column_identifiers}.
+
+---
+
+##### `filter_condition`<sup>Optional</sup> <a name="filter_condition" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSource.property.filterCondition"></a>
+
+```python
+filter_condition: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#filter_condition FeatureEngineeringFeature#filter_condition}.
+
+---
+
+##### `timeseries_column_identifier`<sup>Optional</sup> <a name="timeseries_column_identifier" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSource.property.timeseriesColumnIdentifier"></a>
 
 ```python
 timeseries_column_identifier: FeatureEngineeringFeatureSourceKafkaSourceTimeseriesColumnIdentifier
@@ -1887,7 +2957,7 @@ timeseries_column_identifier: FeatureEngineeringFeatureSourceKafkaSourceTimeseri
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceTimeseriesColumnIdentifier">FeatureEngineeringFeatureSourceKafkaSourceTimeseriesColumnIdentifier</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#timeseries_column_identifier FeatureEngineeringFeature#timeseries_column_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#timeseries_column_identifier FeatureEngineeringFeature#timeseries_column_identifier}.
 
 ---
 
@@ -1907,7 +2977,7 @@ featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceEntityColumn
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiers.property.variantExprPath">variant_expr_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#variant_expr_path FeatureEngineeringFeature#variant_expr_path}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiers.property.variantExprPath">variant_expr_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#variant_expr_path FeatureEngineeringFeature#variant_expr_path}. |
 
 ---
 
@@ -1919,7 +2989,7 @@ variant_expr_path: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#variant_expr_path FeatureEngineeringFeature#variant_expr_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#variant_expr_path FeatureEngineeringFeature#variant_expr_path}.
 
 ---
 
@@ -1939,7 +3009,7 @@ featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceTimeseriesCo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceTimeseriesColumnIdentifier.property.variantExprPath">variant_expr_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#variant_expr_path FeatureEngineeringFeature#variant_expr_path}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceTimeseriesColumnIdentifier.property.variantExprPath">variant_expr_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#variant_expr_path FeatureEngineeringFeature#variant_expr_path}. |
 
 ---
 
@@ -1951,7 +3021,39 @@ variant_expr_path: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#variant_expr_path FeatureEngineeringFeature#variant_expr_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#variant_expr_path FeatureEngineeringFeature#variant_expr_path}.
+
+---
+
+### FeatureEngineeringFeatureTimeseriesColumn <a name="FeatureEngineeringFeatureTimeseriesColumn" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumn"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumn.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import feature_engineering_feature
+
+featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumn(
+  name: str
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumn.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#name FeatureEngineeringFeature#name}. |
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumn.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#name FeatureEngineeringFeature#name}.
 
 ---
 
@@ -1973,9 +3075,9 @@ featureEngineeringFeature.FeatureEngineeringFeatureTimeWindow(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindow.property.continuous">continuous</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowContinuous">FeatureEngineeringFeatureTimeWindowContinuous</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#continuous FeatureEngineeringFeature#continuous}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindow.property.sliding">sliding</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowSliding">FeatureEngineeringFeatureTimeWindowSliding</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#sliding FeatureEngineeringFeature#sliding}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindow.property.tumbling">tumbling</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowTumbling">FeatureEngineeringFeatureTimeWindowTumbling</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#tumbling FeatureEngineeringFeature#tumbling}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindow.property.continuous">continuous</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowContinuous">FeatureEngineeringFeatureTimeWindowContinuous</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#continuous FeatureEngineeringFeature#continuous}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindow.property.sliding">sliding</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowSliding">FeatureEngineeringFeatureTimeWindowSliding</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#sliding FeatureEngineeringFeature#sliding}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindow.property.tumbling">tumbling</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowTumbling">FeatureEngineeringFeatureTimeWindowTumbling</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#tumbling FeatureEngineeringFeature#tumbling}. |
 
 ---
 
@@ -1987,7 +3089,7 @@ continuous: FeatureEngineeringFeatureTimeWindowContinuous
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowContinuous">FeatureEngineeringFeatureTimeWindowContinuous</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#continuous FeatureEngineeringFeature#continuous}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#continuous FeatureEngineeringFeature#continuous}.
 
 ---
 
@@ -1999,7 +3101,7 @@ sliding: FeatureEngineeringFeatureTimeWindowSliding
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowSliding">FeatureEngineeringFeatureTimeWindowSliding</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#sliding FeatureEngineeringFeature#sliding}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#sliding FeatureEngineeringFeature#sliding}.
 
 ---
 
@@ -2011,7 +3113,7 @@ tumbling: FeatureEngineeringFeatureTimeWindowTumbling
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowTumbling">FeatureEngineeringFeatureTimeWindowTumbling</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#tumbling FeatureEngineeringFeature#tumbling}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#tumbling FeatureEngineeringFeature#tumbling}.
 
 ---
 
@@ -2032,8 +3134,8 @@ featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowContinuous(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowContinuous.property.windowDuration">window_duration</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowContinuous.property.offset">offset</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#offset FeatureEngineeringFeature#offset}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowContinuous.property.windowDuration">window_duration</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowContinuous.property.offset">offset</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#offset FeatureEngineeringFeature#offset}. |
 
 ---
 
@@ -2045,7 +3147,7 @@ window_duration: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}.
 
 ---
 
@@ -2057,7 +3159,7 @@ offset: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#offset FeatureEngineeringFeature#offset}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#offset FeatureEngineeringFeature#offset}.
 
 ---
 
@@ -2078,8 +3180,8 @@ featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowSliding(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowSliding.property.slideDuration">slide_duration</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#slide_duration FeatureEngineeringFeature#slide_duration}. |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowSliding.property.windowDuration">window_duration</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowSliding.property.slideDuration">slide_duration</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#slide_duration FeatureEngineeringFeature#slide_duration}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowSliding.property.windowDuration">window_duration</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}. |
 
 ---
 
@@ -2091,7 +3193,7 @@ slide_duration: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#slide_duration FeatureEngineeringFeature#slide_duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#slide_duration FeatureEngineeringFeature#slide_duration}.
 
 ---
 
@@ -2103,7 +3205,7 @@ window_duration: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}.
 
 ---
 
@@ -2123,7 +3225,7 @@ featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowTumbling(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowTumbling.property.windowDuration">window_duration</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeWindowTumbling.property.windowDuration">window_duration</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}. |
 
 ---
 
@@ -2135,11 +3237,6757 @@ window_duration: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### FeatureEngineeringFeatureEntitiesList <a name="FeatureEngineeringFeatureEntitiesList" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesList.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import feature_engineering_feature
+
+featureEngineeringFeature.FeatureEngineeringFeatureEntitiesList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> FeatureEngineeringFeatureEntitiesOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntities">FeatureEngineeringFeatureEntities</a>]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesList.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | typing.List[FeatureEngineeringFeatureEntities]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntities">FeatureEngineeringFeatureEntities</a>]
+
+---
+
+
+### FeatureEngineeringFeatureEntitiesOutputReference <a name="FeatureEngineeringFeatureEntitiesOutputReference" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import feature_engineering_feature
+
+featureEngineeringFeature.FeatureEngineeringFeatureEntitiesOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntities">FeatureEngineeringFeatureEntities</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesOutputReference.property.nameInput"></a>
+
+```python
+name_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesOutputReference.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntitiesOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | FeatureEngineeringFeatureEntities
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureEntities">FeatureEngineeringFeatureEntities</a>
+
+---
+
+
+### FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference <a name="FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import feature_engineering_feature
+
+featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference.resetRelativeSd">reset_relative_sd</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_relative_sd` <a name="reset_relative_sd" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference.resetRelativeSd"></a>
+
+```python
+def reset_relative_sd() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference.property.inputInput">input_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference.property.relativeSdInput">relative_sd_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference.property.input">input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference.property.relativeSd">relative_sd</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinct">FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinct</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `input_input`<sup>Optional</sup> <a name="input_input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference.property.inputInput"></a>
+
+```python
+input_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `relative_sd_input`<sup>Optional</sup> <a name="relative_sd_input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference.property.relativeSdInput"></a>
+
+```python
+relative_sd_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `input`<sup>Required</sup> <a name="input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference.property.input"></a>
+
+```python
+input: str
+```
+
+- *Type:* str
+
+---
+
+##### `relative_sd`<sup>Required</sup> <a name="relative_sd" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference.property.relativeSd"></a>
+
+```python
+relative_sd: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinct
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinct">FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinct</a>
+
+---
+
+
+### FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference <a name="FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import feature_engineering_feature
+
+featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference.resetAccuracy">reset_accuracy</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_accuracy` <a name="reset_accuracy" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference.resetAccuracy"></a>
+
+```python
+def reset_accuracy() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference.property.accuracyInput">accuracy_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference.property.inputInput">input_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference.property.percentileInput">percentile_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference.property.accuracy">accuracy</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference.property.input">input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference.property.percentile">percentile</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentile">FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentile</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `accuracy_input`<sup>Optional</sup> <a name="accuracy_input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference.property.accuracyInput"></a>
+
+```python
+accuracy_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `input_input`<sup>Optional</sup> <a name="input_input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference.property.inputInput"></a>
+
+```python
+input_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `percentile_input`<sup>Optional</sup> <a name="percentile_input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference.property.percentileInput"></a>
+
+```python
+percentile_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `accuracy`<sup>Required</sup> <a name="accuracy" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference.property.accuracy"></a>
+
+```python
+accuracy: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `input`<sup>Required</sup> <a name="input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference.property.input"></a>
+
+```python
+input: str
+```
+
+- *Type:* str
+
+---
+
+##### `percentile`<sup>Required</sup> <a name="percentile" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference.property.percentile"></a>
+
+```python
+percentile: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentile
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentile">FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentile</a>
+
+---
+
+
+### FeatureEngineeringFeatureFunctionAggregationFunctionAvgOutputReference <a name="FeatureEngineeringFeatureFunctionAggregationFunctionAvgOutputReference" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvgOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvgOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import feature_engineering_feature
+
+featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvgOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvgOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvgOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvgOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvgOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvgOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvgOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvgOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvgOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvgOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvgOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvgOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvgOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvgOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvgOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvgOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvgOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvgOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvgOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvgOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvgOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvgOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvgOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvgOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvgOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvgOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvgOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvgOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvgOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvgOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvgOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvgOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvgOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvgOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvgOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvgOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvgOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvgOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvgOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvgOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvgOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvgOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvgOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvgOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvgOutputReference.property.inputInput">input_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvgOutputReference.property.input">input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvgOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvg">FeatureEngineeringFeatureFunctionAggregationFunctionAvg</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvgOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvgOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `input_input`<sup>Optional</sup> <a name="input_input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvgOutputReference.property.inputInput"></a>
+
+```python
+input_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `input`<sup>Required</sup> <a name="input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvgOutputReference.property.input"></a>
+
+```python
+input: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvgOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | FeatureEngineeringFeatureFunctionAggregationFunctionAvg
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvg">FeatureEngineeringFeatureFunctionAggregationFunctionAvg</a>
+
+---
+
+
+### FeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionOutputReference <a name="FeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionOutputReference" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import feature_engineering_feature
+
+featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionOutputReference.property.inputInput">input_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionOutputReference.property.input">input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunction">FeatureEngineeringFeatureFunctionAggregationFunctionCountFunction</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `input_input`<sup>Optional</sup> <a name="input_input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionOutputReference.property.inputInput"></a>
+
+```python
+input_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `input`<sup>Required</sup> <a name="input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionOutputReference.property.input"></a>
+
+```python
+input: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | FeatureEngineeringFeatureFunctionAggregationFunctionCountFunction
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunction">FeatureEngineeringFeatureFunctionAggregationFunctionCountFunction</a>
+
+---
+
+
+### FeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference <a name="FeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import feature_engineering_feature
+
+featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference.property.inputInput">input_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference.property.input">input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirst">FeatureEngineeringFeatureFunctionAggregationFunctionFirst</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `input_input`<sup>Optional</sup> <a name="input_input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference.property.inputInput"></a>
+
+```python
+input_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `input`<sup>Required</sup> <a name="input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference.property.input"></a>
+
+```python
+input: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | FeatureEngineeringFeatureFunctionAggregationFunctionFirst
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirst">FeatureEngineeringFeatureFunctionAggregationFunctionFirst</a>
+
+---
+
+
+### FeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference <a name="FeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import feature_engineering_feature
+
+featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference.property.inputInput">input_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference.property.input">input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLast">FeatureEngineeringFeatureFunctionAggregationFunctionLast</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `input_input`<sup>Optional</sup> <a name="input_input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference.property.inputInput"></a>
+
+```python
+input_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `input`<sup>Required</sup> <a name="input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference.property.input"></a>
+
+```python
+input: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | FeatureEngineeringFeatureFunctionAggregationFunctionLast
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLast">FeatureEngineeringFeatureFunctionAggregationFunctionLast</a>
+
+---
+
+
+### FeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference <a name="FeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import feature_engineering_feature
+
+featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference.property.inputInput">input_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference.property.input">input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMax">FeatureEngineeringFeatureFunctionAggregationFunctionMax</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `input_input`<sup>Optional</sup> <a name="input_input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference.property.inputInput"></a>
+
+```python
+input_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `input`<sup>Required</sup> <a name="input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference.property.input"></a>
+
+```python
+input: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | FeatureEngineeringFeatureFunctionAggregationFunctionMax
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMax">FeatureEngineeringFeatureFunctionAggregationFunctionMax</a>
+
+---
+
+
+### FeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference <a name="FeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import feature_engineering_feature
+
+featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference.property.inputInput">input_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference.property.input">input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMin">FeatureEngineeringFeatureFunctionAggregationFunctionMin</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `input_input`<sup>Optional</sup> <a name="input_input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference.property.inputInput"></a>
+
+```python
+input_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `input`<sup>Required</sup> <a name="input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference.property.input"></a>
+
+```python
+input: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | FeatureEngineeringFeatureFunctionAggregationFunctionMin
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMin">FeatureEngineeringFeatureFunctionAggregationFunctionMin</a>
+
+---
+
+
+### FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference <a name="FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import feature_engineering_feature
+
+featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.putApproxCountDistinct">put_approx_count_distinct</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.putApproxPercentile">put_approx_percentile</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.putAvg">put_avg</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.putCountFunction">put_count_function</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.putFirst">put_first</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.putLast">put_last</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.putMax">put_max</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.putMin">put_min</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.putStddevPop">put_stddev_pop</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.putStddevSamp">put_stddev_samp</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.putSum">put_sum</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.putTimeWindow">put_time_window</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.putVarPop">put_var_pop</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.putVarSamp">put_var_samp</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.resetApproxCountDistinct">reset_approx_count_distinct</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.resetApproxPercentile">reset_approx_percentile</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.resetAvg">reset_avg</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.resetCountFunction">reset_count_function</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.resetFirst">reset_first</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.resetLast">reset_last</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.resetMax">reset_max</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.resetMin">reset_min</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.resetStddevPop">reset_stddev_pop</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.resetStddevSamp">reset_stddev_samp</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.resetSum">reset_sum</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.resetTimeWindow">reset_time_window</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.resetVarPop">reset_var_pop</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.resetVarSamp">reset_var_samp</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `put_approx_count_distinct` <a name="put_approx_count_distinct" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.putApproxCountDistinct"></a>
+
+```python
+def put_approx_count_distinct(
+  input: str,
+  relative_sd: typing.Union[int, float] = None
+) -> None
+```
+
+###### `input`<sup>Required</sup> <a name="input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.putApproxCountDistinct.parameter.input"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
+
+---
+
+###### `relative_sd`<sup>Optional</sup> <a name="relative_sd" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.putApproxCountDistinct.parameter.relativeSd"></a>
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#relative_sd FeatureEngineeringFeature#relative_sd}.
+
+---
+
+##### `put_approx_percentile` <a name="put_approx_percentile" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.putApproxPercentile"></a>
+
+```python
+def put_approx_percentile(
+  input: str,
+  percentile: typing.Union[int, float],
+  accuracy: typing.Union[int, float] = None
+) -> None
+```
+
+###### `input`<sup>Required</sup> <a name="input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.putApproxPercentile.parameter.input"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
+
+---
+
+###### `percentile`<sup>Required</sup> <a name="percentile" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.putApproxPercentile.parameter.percentile"></a>
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#percentile FeatureEngineeringFeature#percentile}.
+
+---
+
+###### `accuracy`<sup>Optional</sup> <a name="accuracy" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.putApproxPercentile.parameter.accuracy"></a>
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#accuracy FeatureEngineeringFeature#accuracy}.
+
+---
+
+##### `put_avg` <a name="put_avg" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.putAvg"></a>
+
+```python
+def put_avg(
+  input: str
+) -> None
+```
+
+###### `input`<sup>Required</sup> <a name="input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.putAvg.parameter.input"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
+
+---
+
+##### `put_count_function` <a name="put_count_function" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.putCountFunction"></a>
+
+```python
+def put_count_function(
+  input: str
+) -> None
+```
+
+###### `input`<sup>Required</sup> <a name="input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.putCountFunction.parameter.input"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
+
+---
+
+##### `put_first` <a name="put_first" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.putFirst"></a>
+
+```python
+def put_first(
+  input: str
+) -> None
+```
+
+###### `input`<sup>Required</sup> <a name="input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.putFirst.parameter.input"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
+
+---
+
+##### `put_last` <a name="put_last" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.putLast"></a>
+
+```python
+def put_last(
+  input: str
+) -> None
+```
+
+###### `input`<sup>Required</sup> <a name="input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.putLast.parameter.input"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
+
+---
+
+##### `put_max` <a name="put_max" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.putMax"></a>
+
+```python
+def put_max(
+  input: str
+) -> None
+```
+
+###### `input`<sup>Required</sup> <a name="input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.putMax.parameter.input"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
+
+---
+
+##### `put_min` <a name="put_min" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.putMin"></a>
+
+```python
+def put_min(
+  input: str
+) -> None
+```
+
+###### `input`<sup>Required</sup> <a name="input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.putMin.parameter.input"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
+
+---
+
+##### `put_stddev_pop` <a name="put_stddev_pop" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.putStddevPop"></a>
+
+```python
+def put_stddev_pop(
+  input: str
+) -> None
+```
+
+###### `input`<sup>Required</sup> <a name="input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.putStddevPop.parameter.input"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
+
+---
+
+##### `put_stddev_samp` <a name="put_stddev_samp" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.putStddevSamp"></a>
+
+```python
+def put_stddev_samp(
+  input: str
+) -> None
+```
+
+###### `input`<sup>Required</sup> <a name="input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.putStddevSamp.parameter.input"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
+
+---
+
+##### `put_sum` <a name="put_sum" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.putSum"></a>
+
+```python
+def put_sum(
+  input: str
+) -> None
+```
+
+###### `input`<sup>Required</sup> <a name="input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.putSum.parameter.input"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
+
+---
+
+##### `put_time_window` <a name="put_time_window" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.putTimeWindow"></a>
+
+```python
+def put_time_window(
+  continuous: FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuous = None,
+  sliding: FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSliding = None,
+  tumbling: FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumbling = None
+) -> None
+```
+
+###### `continuous`<sup>Optional</sup> <a name="continuous" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.putTimeWindow.parameter.continuous"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuous">FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuous</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#continuous FeatureEngineeringFeature#continuous}.
+
+---
+
+###### `sliding`<sup>Optional</sup> <a name="sliding" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.putTimeWindow.parameter.sliding"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSliding">FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSliding</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#sliding FeatureEngineeringFeature#sliding}.
+
+---
+
+###### `tumbling`<sup>Optional</sup> <a name="tumbling" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.putTimeWindow.parameter.tumbling"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumbling">FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumbling</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#tumbling FeatureEngineeringFeature#tumbling}.
+
+---
+
+##### `put_var_pop` <a name="put_var_pop" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.putVarPop"></a>
+
+```python
+def put_var_pop(
+  input: str
+) -> None
+```
+
+###### `input`<sup>Required</sup> <a name="input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.putVarPop.parameter.input"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
+
+---
+
+##### `put_var_samp` <a name="put_var_samp" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.putVarSamp"></a>
+
+```python
+def put_var_samp(
+  input: str
+) -> None
+```
+
+###### `input`<sup>Required</sup> <a name="input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.putVarSamp.parameter.input"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#input FeatureEngineeringFeature#input}.
+
+---
+
+##### `reset_approx_count_distinct` <a name="reset_approx_count_distinct" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.resetApproxCountDistinct"></a>
+
+```python
+def reset_approx_count_distinct() -> None
+```
+
+##### `reset_approx_percentile` <a name="reset_approx_percentile" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.resetApproxPercentile"></a>
+
+```python
+def reset_approx_percentile() -> None
+```
+
+##### `reset_avg` <a name="reset_avg" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.resetAvg"></a>
+
+```python
+def reset_avg() -> None
+```
+
+##### `reset_count_function` <a name="reset_count_function" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.resetCountFunction"></a>
+
+```python
+def reset_count_function() -> None
+```
+
+##### `reset_first` <a name="reset_first" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.resetFirst"></a>
+
+```python
+def reset_first() -> None
+```
+
+##### `reset_last` <a name="reset_last" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.resetLast"></a>
+
+```python
+def reset_last() -> None
+```
+
+##### `reset_max` <a name="reset_max" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.resetMax"></a>
+
+```python
+def reset_max() -> None
+```
+
+##### `reset_min` <a name="reset_min" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.resetMin"></a>
+
+```python
+def reset_min() -> None
+```
+
+##### `reset_stddev_pop` <a name="reset_stddev_pop" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.resetStddevPop"></a>
+
+```python
+def reset_stddev_pop() -> None
+```
+
+##### `reset_stddev_samp` <a name="reset_stddev_samp" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.resetStddevSamp"></a>
+
+```python
+def reset_stddev_samp() -> None
+```
+
+##### `reset_sum` <a name="reset_sum" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.resetSum"></a>
+
+```python
+def reset_sum() -> None
+```
+
+##### `reset_time_window` <a name="reset_time_window" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.resetTimeWindow"></a>
+
+```python
+def reset_time_window() -> None
+```
+
+##### `reset_var_pop` <a name="reset_var_pop" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.resetVarPop"></a>
+
+```python
+def reset_var_pop() -> None
+```
+
+##### `reset_var_samp` <a name="reset_var_samp" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.resetVarSamp"></a>
+
+```python
+def reset_var_samp() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.property.approxCountDistinct">approx_count_distinct</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference">FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.property.approxPercentile">approx_percentile</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference">FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.property.avg">avg</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvgOutputReference">FeatureEngineeringFeatureFunctionAggregationFunctionAvgOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.property.countFunction">count_function</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionOutputReference">FeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.property.first">first</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference">FeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.property.last">last</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference">FeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.property.max">max</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference">FeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.property.min">min</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference">FeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.property.stddevPop">stddev_pop</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPopOutputReference">FeatureEngineeringFeatureFunctionAggregationFunctionStddevPopOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.property.stddevSamp">stddev_samp</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSampOutputReference">FeatureEngineeringFeatureFunctionAggregationFunctionStddevSampOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.property.sum">sum</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSumOutputReference">FeatureEngineeringFeatureFunctionAggregationFunctionSumOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.property.timeWindow">time_window</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference">FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.property.varPop">var_pop</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPopOutputReference">FeatureEngineeringFeatureFunctionAggregationFunctionVarPopOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.property.varSamp">var_samp</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSampOutputReference">FeatureEngineeringFeatureFunctionAggregationFunctionVarSampOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.property.approxCountDistinctInput">approx_count_distinct_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinct">FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinct</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.property.approxPercentileInput">approx_percentile_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentile">FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentile</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.property.avgInput">avg_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvg">FeatureEngineeringFeatureFunctionAggregationFunctionAvg</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.property.countFunctionInput">count_function_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunction">FeatureEngineeringFeatureFunctionAggregationFunctionCountFunction</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.property.firstInput">first_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirst">FeatureEngineeringFeatureFunctionAggregationFunctionFirst</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.property.lastInput">last_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLast">FeatureEngineeringFeatureFunctionAggregationFunctionLast</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.property.maxInput">max_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMax">FeatureEngineeringFeatureFunctionAggregationFunctionMax</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.property.minInput">min_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMin">FeatureEngineeringFeatureFunctionAggregationFunctionMin</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.property.stddevPopInput">stddev_pop_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPop">FeatureEngineeringFeatureFunctionAggregationFunctionStddevPop</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.property.stddevSampInput">stddev_samp_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSamp">FeatureEngineeringFeatureFunctionAggregationFunctionStddevSamp</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.property.sumInput">sum_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSum">FeatureEngineeringFeatureFunctionAggregationFunctionSum</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.property.timeWindowInput">time_window_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindow">FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindow</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.property.varPopInput">var_pop_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPop">FeatureEngineeringFeatureFunctionAggregationFunctionVarPop</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.property.varSampInput">var_samp_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSamp">FeatureEngineeringFeatureFunctionAggregationFunctionVarSamp</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction">FeatureEngineeringFeatureFunctionAggregationFunction</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `approx_count_distinct`<sup>Required</sup> <a name="approx_count_distinct" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.property.approxCountDistinct"></a>
+
+```python
+approx_count_distinct: FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference">FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinctOutputReference</a>
+
+---
+
+##### `approx_percentile`<sup>Required</sup> <a name="approx_percentile" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.property.approxPercentile"></a>
+
+```python
+approx_percentile: FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference">FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentileOutputReference</a>
+
+---
+
+##### `avg`<sup>Required</sup> <a name="avg" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.property.avg"></a>
+
+```python
+avg: FeatureEngineeringFeatureFunctionAggregationFunctionAvgOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvgOutputReference">FeatureEngineeringFeatureFunctionAggregationFunctionAvgOutputReference</a>
+
+---
+
+##### `count_function`<sup>Required</sup> <a name="count_function" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.property.countFunction"></a>
+
+```python
+count_function: FeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionOutputReference">FeatureEngineeringFeatureFunctionAggregationFunctionCountFunctionOutputReference</a>
+
+---
+
+##### `first`<sup>Required</sup> <a name="first" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.property.first"></a>
+
+```python
+first: FeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference">FeatureEngineeringFeatureFunctionAggregationFunctionFirstOutputReference</a>
+
+---
+
+##### `last`<sup>Required</sup> <a name="last" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.property.last"></a>
+
+```python
+last: FeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference">FeatureEngineeringFeatureFunctionAggregationFunctionLastOutputReference</a>
+
+---
+
+##### `max`<sup>Required</sup> <a name="max" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.property.max"></a>
+
+```python
+max: FeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference">FeatureEngineeringFeatureFunctionAggregationFunctionMaxOutputReference</a>
+
+---
+
+##### `min`<sup>Required</sup> <a name="min" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.property.min"></a>
+
+```python
+min: FeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference">FeatureEngineeringFeatureFunctionAggregationFunctionMinOutputReference</a>
+
+---
+
+##### `stddev_pop`<sup>Required</sup> <a name="stddev_pop" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.property.stddevPop"></a>
+
+```python
+stddev_pop: FeatureEngineeringFeatureFunctionAggregationFunctionStddevPopOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPopOutputReference">FeatureEngineeringFeatureFunctionAggregationFunctionStddevPopOutputReference</a>
+
+---
+
+##### `stddev_samp`<sup>Required</sup> <a name="stddev_samp" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.property.stddevSamp"></a>
+
+```python
+stddev_samp: FeatureEngineeringFeatureFunctionAggregationFunctionStddevSampOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSampOutputReference">FeatureEngineeringFeatureFunctionAggregationFunctionStddevSampOutputReference</a>
+
+---
+
+##### `sum`<sup>Required</sup> <a name="sum" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.property.sum"></a>
+
+```python
+sum: FeatureEngineeringFeatureFunctionAggregationFunctionSumOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSumOutputReference">FeatureEngineeringFeatureFunctionAggregationFunctionSumOutputReference</a>
+
+---
+
+##### `time_window`<sup>Required</sup> <a name="time_window" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.property.timeWindow"></a>
+
+```python
+time_window: FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference">FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference</a>
+
+---
+
+##### `var_pop`<sup>Required</sup> <a name="var_pop" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.property.varPop"></a>
+
+```python
+var_pop: FeatureEngineeringFeatureFunctionAggregationFunctionVarPopOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPopOutputReference">FeatureEngineeringFeatureFunctionAggregationFunctionVarPopOutputReference</a>
+
+---
+
+##### `var_samp`<sup>Required</sup> <a name="var_samp" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.property.varSamp"></a>
+
+```python
+var_samp: FeatureEngineeringFeatureFunctionAggregationFunctionVarSampOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSampOutputReference">FeatureEngineeringFeatureFunctionAggregationFunctionVarSampOutputReference</a>
+
+---
+
+##### `approx_count_distinct_input`<sup>Optional</sup> <a name="approx_count_distinct_input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.property.approxCountDistinctInput"></a>
+
+```python
+approx_count_distinct_input: IResolvable | FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinct
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinct">FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinct</a>
+
+---
+
+##### `approx_percentile_input`<sup>Optional</sup> <a name="approx_percentile_input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.property.approxPercentileInput"></a>
+
+```python
+approx_percentile_input: IResolvable | FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentile
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentile">FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentile</a>
+
+---
+
+##### `avg_input`<sup>Optional</sup> <a name="avg_input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.property.avgInput"></a>
+
+```python
+avg_input: IResolvable | FeatureEngineeringFeatureFunctionAggregationFunctionAvg
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvg">FeatureEngineeringFeatureFunctionAggregationFunctionAvg</a>
+
+---
+
+##### `count_function_input`<sup>Optional</sup> <a name="count_function_input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.property.countFunctionInput"></a>
+
+```python
+count_function_input: IResolvable | FeatureEngineeringFeatureFunctionAggregationFunctionCountFunction
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunction">FeatureEngineeringFeatureFunctionAggregationFunctionCountFunction</a>
+
+---
+
+##### `first_input`<sup>Optional</sup> <a name="first_input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.property.firstInput"></a>
+
+```python
+first_input: IResolvable | FeatureEngineeringFeatureFunctionAggregationFunctionFirst
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirst">FeatureEngineeringFeatureFunctionAggregationFunctionFirst</a>
+
+---
+
+##### `last_input`<sup>Optional</sup> <a name="last_input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.property.lastInput"></a>
+
+```python
+last_input: IResolvable | FeatureEngineeringFeatureFunctionAggregationFunctionLast
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLast">FeatureEngineeringFeatureFunctionAggregationFunctionLast</a>
+
+---
+
+##### `max_input`<sup>Optional</sup> <a name="max_input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.property.maxInput"></a>
+
+```python
+max_input: IResolvable | FeatureEngineeringFeatureFunctionAggregationFunctionMax
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMax">FeatureEngineeringFeatureFunctionAggregationFunctionMax</a>
+
+---
+
+##### `min_input`<sup>Optional</sup> <a name="min_input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.property.minInput"></a>
+
+```python
+min_input: IResolvable | FeatureEngineeringFeatureFunctionAggregationFunctionMin
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMin">FeatureEngineeringFeatureFunctionAggregationFunctionMin</a>
+
+---
+
+##### `stddev_pop_input`<sup>Optional</sup> <a name="stddev_pop_input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.property.stddevPopInput"></a>
+
+```python
+stddev_pop_input: IResolvable | FeatureEngineeringFeatureFunctionAggregationFunctionStddevPop
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPop">FeatureEngineeringFeatureFunctionAggregationFunctionStddevPop</a>
+
+---
+
+##### `stddev_samp_input`<sup>Optional</sup> <a name="stddev_samp_input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.property.stddevSampInput"></a>
+
+```python
+stddev_samp_input: IResolvable | FeatureEngineeringFeatureFunctionAggregationFunctionStddevSamp
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSamp">FeatureEngineeringFeatureFunctionAggregationFunctionStddevSamp</a>
+
+---
+
+##### `sum_input`<sup>Optional</sup> <a name="sum_input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.property.sumInput"></a>
+
+```python
+sum_input: IResolvable | FeatureEngineeringFeatureFunctionAggregationFunctionSum
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSum">FeatureEngineeringFeatureFunctionAggregationFunctionSum</a>
+
+---
+
+##### `time_window_input`<sup>Optional</sup> <a name="time_window_input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.property.timeWindowInput"></a>
+
+```python
+time_window_input: IResolvable | FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindow
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindow">FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindow</a>
+
+---
+
+##### `var_pop_input`<sup>Optional</sup> <a name="var_pop_input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.property.varPopInput"></a>
+
+```python
+var_pop_input: IResolvable | FeatureEngineeringFeatureFunctionAggregationFunctionVarPop
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPop">FeatureEngineeringFeatureFunctionAggregationFunctionVarPop</a>
+
+---
+
+##### `var_samp_input`<sup>Optional</sup> <a name="var_samp_input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.property.varSampInput"></a>
+
+```python
+var_samp_input: IResolvable | FeatureEngineeringFeatureFunctionAggregationFunctionVarSamp
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSamp">FeatureEngineeringFeatureFunctionAggregationFunctionVarSamp</a>
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | FeatureEngineeringFeatureFunctionAggregationFunction
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction">FeatureEngineeringFeatureFunctionAggregationFunction</a>
+
+---
+
+
+### FeatureEngineeringFeatureFunctionAggregationFunctionStddevPopOutputReference <a name="FeatureEngineeringFeatureFunctionAggregationFunctionStddevPopOutputReference" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPopOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPopOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import feature_engineering_feature
+
+featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPopOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPopOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPopOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPopOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPopOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPopOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPopOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPopOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPopOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPopOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPopOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPopOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPopOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPopOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPopOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPopOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPopOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPopOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPopOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPopOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPopOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPopOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPopOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPopOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPopOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPopOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPopOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPopOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPopOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPopOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPopOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPopOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPopOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPopOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPopOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPopOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPopOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPopOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPopOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPopOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPopOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPopOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPopOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPopOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPopOutputReference.property.inputInput">input_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPopOutputReference.property.input">input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPopOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPop">FeatureEngineeringFeatureFunctionAggregationFunctionStddevPop</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPopOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPopOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `input_input`<sup>Optional</sup> <a name="input_input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPopOutputReference.property.inputInput"></a>
+
+```python
+input_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `input`<sup>Required</sup> <a name="input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPopOutputReference.property.input"></a>
+
+```python
+input: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPopOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | FeatureEngineeringFeatureFunctionAggregationFunctionStddevPop
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPop">FeatureEngineeringFeatureFunctionAggregationFunctionStddevPop</a>
+
+---
+
+
+### FeatureEngineeringFeatureFunctionAggregationFunctionStddevSampOutputReference <a name="FeatureEngineeringFeatureFunctionAggregationFunctionStddevSampOutputReference" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSampOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSampOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import feature_engineering_feature
+
+featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSampOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSampOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSampOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSampOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSampOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSampOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSampOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSampOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSampOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSampOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSampOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSampOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSampOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSampOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSampOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSampOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSampOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSampOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSampOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSampOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSampOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSampOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSampOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSampOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSampOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSampOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSampOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSampOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSampOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSampOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSampOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSampOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSampOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSampOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSampOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSampOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSampOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSampOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSampOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSampOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSampOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSampOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSampOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSampOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSampOutputReference.property.inputInput">input_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSampOutputReference.property.input">input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSampOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSamp">FeatureEngineeringFeatureFunctionAggregationFunctionStddevSamp</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSampOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSampOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `input_input`<sup>Optional</sup> <a name="input_input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSampOutputReference.property.inputInput"></a>
+
+```python
+input_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `input`<sup>Required</sup> <a name="input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSampOutputReference.property.input"></a>
+
+```python
+input: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSampOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | FeatureEngineeringFeatureFunctionAggregationFunctionStddevSamp
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSamp">FeatureEngineeringFeatureFunctionAggregationFunctionStddevSamp</a>
+
+---
+
+
+### FeatureEngineeringFeatureFunctionAggregationFunctionSumOutputReference <a name="FeatureEngineeringFeatureFunctionAggregationFunctionSumOutputReference" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSumOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSumOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import feature_engineering_feature
+
+featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSumOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSumOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSumOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSumOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSumOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSumOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSumOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSumOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSumOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSumOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSumOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSumOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSumOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSumOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSumOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSumOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSumOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSumOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSumOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSumOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSumOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSumOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSumOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSumOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSumOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSumOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSumOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSumOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSumOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSumOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSumOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSumOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSumOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSumOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSumOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSumOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSumOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSumOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSumOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSumOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSumOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSumOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSumOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSumOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSumOutputReference.property.inputInput">input_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSumOutputReference.property.input">input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSumOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSum">FeatureEngineeringFeatureFunctionAggregationFunctionSum</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSumOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSumOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `input_input`<sup>Optional</sup> <a name="input_input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSumOutputReference.property.inputInput"></a>
+
+```python
+input_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `input`<sup>Required</sup> <a name="input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSumOutputReference.property.input"></a>
+
+```python
+input: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSumOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | FeatureEngineeringFeatureFunctionAggregationFunctionSum
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSum">FeatureEngineeringFeatureFunctionAggregationFunctionSum</a>
+
+---
+
+
+### FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference <a name="FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import feature_engineering_feature
+
+featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference.resetOffset">reset_offset</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_offset` <a name="reset_offset" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference.resetOffset"></a>
+
+```python
+def reset_offset() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference.property.offsetInput">offset_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference.property.windowDurationInput">window_duration_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference.property.offset">offset</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference.property.windowDuration">window_duration</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuous">FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuous</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `offset_input`<sup>Optional</sup> <a name="offset_input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference.property.offsetInput"></a>
+
+```python
+offset_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `window_duration_input`<sup>Optional</sup> <a name="window_duration_input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference.property.windowDurationInput"></a>
+
+```python
+window_duration_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `offset`<sup>Required</sup> <a name="offset" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference.property.offset"></a>
+
+```python
+offset: str
+```
+
+- *Type:* str
+
+---
+
+##### `window_duration`<sup>Required</sup> <a name="window_duration" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference.property.windowDuration"></a>
+
+```python
+window_duration: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuous
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuous">FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuous</a>
+
+---
+
+
+### FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference <a name="FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import feature_engineering_feature
+
+featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.putContinuous">put_continuous</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.putSliding">put_sliding</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.putTumbling">put_tumbling</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.resetContinuous">reset_continuous</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.resetSliding">reset_sliding</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.resetTumbling">reset_tumbling</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `put_continuous` <a name="put_continuous" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.putContinuous"></a>
+
+```python
+def put_continuous(
+  window_duration: str,
+  offset: str = None
+) -> None
+```
+
+###### `window_duration`<sup>Required</sup> <a name="window_duration" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.putContinuous.parameter.windowDuration"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}.
+
+---
+
+###### `offset`<sup>Optional</sup> <a name="offset" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.putContinuous.parameter.offset"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#offset FeatureEngineeringFeature#offset}.
+
+---
+
+##### `put_sliding` <a name="put_sliding" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.putSliding"></a>
+
+```python
+def put_sliding(
+  slide_duration: str,
+  window_duration: str
+) -> None
+```
+
+###### `slide_duration`<sup>Required</sup> <a name="slide_duration" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.putSliding.parameter.slideDuration"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#slide_duration FeatureEngineeringFeature#slide_duration}.
+
+---
+
+###### `window_duration`<sup>Required</sup> <a name="window_duration" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.putSliding.parameter.windowDuration"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}.
+
+---
+
+##### `put_tumbling` <a name="put_tumbling" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.putTumbling"></a>
+
+```python
+def put_tumbling(
+  window_duration: str
+) -> None
+```
+
+###### `window_duration`<sup>Required</sup> <a name="window_duration" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.putTumbling.parameter.windowDuration"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}.
+
+---
+
+##### `reset_continuous` <a name="reset_continuous" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.resetContinuous"></a>
+
+```python
+def reset_continuous() -> None
+```
+
+##### `reset_sliding` <a name="reset_sliding" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.resetSliding"></a>
+
+```python
+def reset_sliding() -> None
+```
+
+##### `reset_tumbling` <a name="reset_tumbling" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.resetTumbling"></a>
+
+```python
+def reset_tumbling() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.property.continuous">continuous</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference">FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.property.sliding">sliding</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference">FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.property.tumbling">tumbling</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference">FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.property.continuousInput">continuous_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuous">FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuous</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.property.slidingInput">sliding_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSliding">FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSliding</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.property.tumblingInput">tumbling_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumbling">FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumbling</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindow">FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindow</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `continuous`<sup>Required</sup> <a name="continuous" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.property.continuous"></a>
+
+```python
+continuous: FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference">FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuousOutputReference</a>
+
+---
+
+##### `sliding`<sup>Required</sup> <a name="sliding" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.property.sliding"></a>
+
+```python
+sliding: FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference">FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference</a>
+
+---
+
+##### `tumbling`<sup>Required</sup> <a name="tumbling" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.property.tumbling"></a>
+
+```python
+tumbling: FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference">FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference</a>
+
+---
+
+##### `continuous_input`<sup>Optional</sup> <a name="continuous_input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.property.continuousInput"></a>
+
+```python
+continuous_input: IResolvable | FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuous
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuous">FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowContinuous</a>
+
+---
+
+##### `sliding_input`<sup>Optional</sup> <a name="sliding_input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.property.slidingInput"></a>
+
+```python
+sliding_input: IResolvable | FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSliding
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSliding">FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSliding</a>
+
+---
+
+##### `tumbling_input`<sup>Optional</sup> <a name="tumbling_input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.property.tumblingInput"></a>
+
+```python
+tumbling_input: IResolvable | FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumbling
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumbling">FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumbling</a>
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindow
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindow">FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindow</a>
+
+---
+
+
+### FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference <a name="FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import feature_engineering_feature
+
+featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference.property.slideDurationInput">slide_duration_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference.property.windowDurationInput">window_duration_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference.property.slideDuration">slide_duration</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference.property.windowDuration">window_duration</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSliding">FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSliding</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `slide_duration_input`<sup>Optional</sup> <a name="slide_duration_input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference.property.slideDurationInput"></a>
+
+```python
+slide_duration_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `window_duration_input`<sup>Optional</sup> <a name="window_duration_input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference.property.windowDurationInput"></a>
+
+```python
+window_duration_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `slide_duration`<sup>Required</sup> <a name="slide_duration" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference.property.slideDuration"></a>
+
+```python
+slide_duration: str
+```
+
+- *Type:* str
+
+---
+
+##### `window_duration`<sup>Required</sup> <a name="window_duration" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference.property.windowDuration"></a>
+
+```python
+window_duration: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSlidingOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSliding
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSliding">FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowSliding</a>
+
+---
+
+
+### FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference <a name="FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import feature_engineering_feature
+
+featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference.property.windowDurationInput">window_duration_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference.property.windowDuration">window_duration</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumbling">FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumbling</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `window_duration_input`<sup>Optional</sup> <a name="window_duration_input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference.property.windowDurationInput"></a>
+
+```python
+window_duration_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `window_duration`<sup>Required</sup> <a name="window_duration" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference.property.windowDuration"></a>
+
+```python
+window_duration: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumblingOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumbling
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumbling">FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindowTumbling</a>
+
+---
+
+
+### FeatureEngineeringFeatureFunctionAggregationFunctionVarPopOutputReference <a name="FeatureEngineeringFeatureFunctionAggregationFunctionVarPopOutputReference" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPopOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPopOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import feature_engineering_feature
+
+featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPopOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPopOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPopOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPopOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPopOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPopOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPopOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPopOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPopOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPopOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPopOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPopOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPopOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPopOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPopOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPopOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPopOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPopOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPopOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPopOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPopOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPopOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPopOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPopOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPopOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPopOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPopOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPopOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPopOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPopOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPopOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPopOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPopOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPopOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPopOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPopOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPopOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPopOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPopOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPopOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPopOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPopOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPopOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPopOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPopOutputReference.property.inputInput">input_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPopOutputReference.property.input">input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPopOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPop">FeatureEngineeringFeatureFunctionAggregationFunctionVarPop</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPopOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPopOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `input_input`<sup>Optional</sup> <a name="input_input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPopOutputReference.property.inputInput"></a>
+
+```python
+input_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `input`<sup>Required</sup> <a name="input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPopOutputReference.property.input"></a>
+
+```python
+input: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPopOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | FeatureEngineeringFeatureFunctionAggregationFunctionVarPop
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPop">FeatureEngineeringFeatureFunctionAggregationFunctionVarPop</a>
+
+---
+
+
+### FeatureEngineeringFeatureFunctionAggregationFunctionVarSampOutputReference <a name="FeatureEngineeringFeatureFunctionAggregationFunctionVarSampOutputReference" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSampOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSampOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import feature_engineering_feature
+
+featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSampOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSampOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSampOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSampOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSampOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSampOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSampOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSampOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSampOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSampOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSampOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSampOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSampOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSampOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSampOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSampOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSampOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSampOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSampOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSampOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSampOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSampOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSampOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSampOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSampOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSampOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSampOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSampOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSampOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSampOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSampOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSampOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSampOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSampOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSampOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSampOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSampOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSampOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSampOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSampOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSampOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSampOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSampOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSampOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSampOutputReference.property.inputInput">input_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSampOutputReference.property.input">input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSampOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSamp">FeatureEngineeringFeatureFunctionAggregationFunctionVarSamp</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSampOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSampOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `input_input`<sup>Optional</sup> <a name="input_input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSampOutputReference.property.inputInput"></a>
+
+```python
+input_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `input`<sup>Required</sup> <a name="input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSampOutputReference.property.input"></a>
+
+```python
+input: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSampOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | FeatureEngineeringFeatureFunctionAggregationFunctionVarSamp
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSamp">FeatureEngineeringFeatureFunctionAggregationFunctionVarSamp</a>
+
+---
+
 
 ### FeatureEngineeringFeatureFunctionExtraParametersList <a name="FeatureEngineeringFeatureFunctionExtraParametersList" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionExtraParametersList"></a>
 
@@ -2702,8 +10550,11 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionOutputReference.putAggregationFunction">put_aggregation_function</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionOutputReference.putExtraParameters">put_extra_parameters</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionOutputReference.resetAggregationFunction">reset_aggregation_function</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionOutputReference.resetExtraParameters">reset_extra_parameters</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionOutputReference.resetFunctionType">reset_function_type</a></code> | *No description.* |
 
 ---
 
@@ -2879,6 +10730,139 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `put_aggregation_function` <a name="put_aggregation_function" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionOutputReference.putAggregationFunction"></a>
+
+```python
+def put_aggregation_function(
+  approx_count_distinct: FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinct = None,
+  approx_percentile: FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentile = None,
+  avg: FeatureEngineeringFeatureFunctionAggregationFunctionAvg = None,
+  count_function: FeatureEngineeringFeatureFunctionAggregationFunctionCountFunction = None,
+  first: FeatureEngineeringFeatureFunctionAggregationFunctionFirst = None,
+  last: FeatureEngineeringFeatureFunctionAggregationFunctionLast = None,
+  max: FeatureEngineeringFeatureFunctionAggregationFunctionMax = None,
+  min: FeatureEngineeringFeatureFunctionAggregationFunctionMin = None,
+  stddev_pop: FeatureEngineeringFeatureFunctionAggregationFunctionStddevPop = None,
+  stddev_samp: FeatureEngineeringFeatureFunctionAggregationFunctionStddevSamp = None,
+  sum: FeatureEngineeringFeatureFunctionAggregationFunctionSum = None,
+  time_window: FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindow = None,
+  var_pop: FeatureEngineeringFeatureFunctionAggregationFunctionVarPop = None,
+  var_samp: FeatureEngineeringFeatureFunctionAggregationFunctionVarSamp = None
+) -> None
+```
+
+###### `approx_count_distinct`<sup>Optional</sup> <a name="approx_count_distinct" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionOutputReference.putAggregationFunction.parameter.approxCountDistinct"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinct">FeatureEngineeringFeatureFunctionAggregationFunctionApproxCountDistinct</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#approx_count_distinct FeatureEngineeringFeature#approx_count_distinct}.
+
+---
+
+###### `approx_percentile`<sup>Optional</sup> <a name="approx_percentile" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionOutputReference.putAggregationFunction.parameter.approxPercentile"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentile">FeatureEngineeringFeatureFunctionAggregationFunctionApproxPercentile</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#approx_percentile FeatureEngineeringFeature#approx_percentile}.
+
+---
+
+###### `avg`<sup>Optional</sup> <a name="avg" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionOutputReference.putAggregationFunction.parameter.avg"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionAvg">FeatureEngineeringFeatureFunctionAggregationFunctionAvg</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#avg FeatureEngineeringFeature#avg}.
+
+---
+
+###### `count_function`<sup>Optional</sup> <a name="count_function" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionOutputReference.putAggregationFunction.parameter.countFunction"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionCountFunction">FeatureEngineeringFeatureFunctionAggregationFunctionCountFunction</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#count_function FeatureEngineeringFeature#count_function}.
+
+---
+
+###### `first`<sup>Optional</sup> <a name="first" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionOutputReference.putAggregationFunction.parameter.first"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionFirst">FeatureEngineeringFeatureFunctionAggregationFunctionFirst</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#first FeatureEngineeringFeature#first}.
+
+---
+
+###### `last`<sup>Optional</sup> <a name="last" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionOutputReference.putAggregationFunction.parameter.last"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionLast">FeatureEngineeringFeatureFunctionAggregationFunctionLast</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#last FeatureEngineeringFeature#last}.
+
+---
+
+###### `max`<sup>Optional</sup> <a name="max" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionOutputReference.putAggregationFunction.parameter.max"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMax">FeatureEngineeringFeatureFunctionAggregationFunctionMax</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#max FeatureEngineeringFeature#max}.
+
+---
+
+###### `min`<sup>Optional</sup> <a name="min" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionOutputReference.putAggregationFunction.parameter.min"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionMin">FeatureEngineeringFeatureFunctionAggregationFunctionMin</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#min FeatureEngineeringFeature#min}.
+
+---
+
+###### `stddev_pop`<sup>Optional</sup> <a name="stddev_pop" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionOutputReference.putAggregationFunction.parameter.stddevPop"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevPop">FeatureEngineeringFeatureFunctionAggregationFunctionStddevPop</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#stddev_pop FeatureEngineeringFeature#stddev_pop}.
+
+---
+
+###### `stddev_samp`<sup>Optional</sup> <a name="stddev_samp" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionOutputReference.putAggregationFunction.parameter.stddevSamp"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionStddevSamp">FeatureEngineeringFeatureFunctionAggregationFunctionStddevSamp</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#stddev_samp FeatureEngineeringFeature#stddev_samp}.
+
+---
+
+###### `sum`<sup>Optional</sup> <a name="sum" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionOutputReference.putAggregationFunction.parameter.sum"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionSum">FeatureEngineeringFeatureFunctionAggregationFunctionSum</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#sum FeatureEngineeringFeature#sum}.
+
+---
+
+###### `time_window`<sup>Optional</sup> <a name="time_window" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionOutputReference.putAggregationFunction.parameter.timeWindow"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindow">FeatureEngineeringFeatureFunctionAggregationFunctionTimeWindow</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#time_window FeatureEngineeringFeature#time_window}.
+
+---
+
+###### `var_pop`<sup>Optional</sup> <a name="var_pop" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionOutputReference.putAggregationFunction.parameter.varPop"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarPop">FeatureEngineeringFeatureFunctionAggregationFunctionVarPop</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#var_pop FeatureEngineeringFeature#var_pop}.
+
+---
+
+###### `var_samp`<sup>Optional</sup> <a name="var_samp" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionOutputReference.putAggregationFunction.parameter.varSamp"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionVarSamp">FeatureEngineeringFeatureFunctionAggregationFunctionVarSamp</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#var_samp FeatureEngineeringFeature#var_samp}.
+
+---
+
 ##### `put_extra_parameters` <a name="put_extra_parameters" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionOutputReference.putExtraParameters"></a>
 
 ```python
@@ -2893,10 +10877,22 @@ def put_extra_parameters(
 
 ---
 
+##### `reset_aggregation_function` <a name="reset_aggregation_function" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionOutputReference.resetAggregationFunction"></a>
+
+```python
+def reset_aggregation_function() -> None
+```
+
 ##### `reset_extra_parameters` <a name="reset_extra_parameters" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionOutputReference.resetExtraParameters"></a>
 
 ```python
 def reset_extra_parameters() -> None
+```
+
+##### `reset_function_type` <a name="reset_function_type" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionOutputReference.resetFunctionType"></a>
+
+```python
+def reset_function_type() -> None
 ```
 
 
@@ -2906,7 +10902,9 @@ def reset_extra_parameters() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionOutputReference.property.aggregationFunction">aggregation_function</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference">FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionOutputReference.property.extraParameters">extra_parameters</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionExtraParametersList">FeatureEngineeringFeatureFunctionExtraParametersList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionOutputReference.property.aggregationFunctionInput">aggregation_function_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction">FeatureEngineeringFeatureFunctionAggregationFunction</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionOutputReference.property.extraParametersInput">extra_parameters_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionExtraParameters">FeatureEngineeringFeatureFunctionExtraParameters</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionOutputReference.property.functionTypeInput">function_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionOutputReference.property.functionType">function_type</a></code> | <code>str</code> | *No description.* |
@@ -2938,6 +10936,16 @@ fqn: str
 
 ---
 
+##### `aggregation_function`<sup>Required</sup> <a name="aggregation_function" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionOutputReference.property.aggregationFunction"></a>
+
+```python
+aggregation_function: FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference">FeatureEngineeringFeatureFunctionAggregationFunctionOutputReference</a>
+
+---
+
 ##### `extra_parameters`<sup>Required</sup> <a name="extra_parameters" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionOutputReference.property.extraParameters"></a>
 
 ```python
@@ -2945,6 +10953,16 @@ extra_parameters: FeatureEngineeringFeatureFunctionExtraParametersList
 ```
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionExtraParametersList">FeatureEngineeringFeatureFunctionExtraParametersList</a>
+
+---
+
+##### `aggregation_function_input`<sup>Optional</sup> <a name="aggregation_function_input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionOutputReference.property.aggregationFunctionInput"></a>
+
+```python
+aggregation_function_input: IResolvable | FeatureEngineeringFeatureFunctionAggregationFunction
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureFunctionAggregationFunction">FeatureEngineeringFeatureFunctionAggregationFunction</a>
 
 ---
 
@@ -3565,7 +11583,7 @@ def put_job_context(
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#job_id FeatureEngineeringFeature#job_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#job_id FeatureEngineeringFeature#job_id}.
 
 ---
 
@@ -3573,7 +11591,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#job_run_id FeatureEngineeringFeature#job_run_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#job_run_id FeatureEngineeringFeature#job_run_id}.
 
 ---
 
@@ -4029,7 +12047,9 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference.resetDataframeSchema">reset_dataframe_schema</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference.resetEntityColumns">reset_entity_columns</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference.resetFilterCondition">reset_filter_condition</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference.resetTimeseriesColumn">reset_timeseries_column</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference.resetTransformationSql">reset_transformation_sql</a></code> | *No description.* |
 
 ---
@@ -4212,10 +12232,22 @@ Returns a reversible string representation.
 def reset_dataframe_schema() -> None
 ```
 
+##### `reset_entity_columns` <a name="reset_entity_columns" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference.resetEntityColumns"></a>
+
+```python
+def reset_entity_columns() -> None
+```
+
 ##### `reset_filter_condition` <a name="reset_filter_condition" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference.resetFilterCondition"></a>
 
 ```python
 def reset_filter_condition() -> None
+```
+
+##### `reset_timeseries_column` <a name="reset_timeseries_column" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference.resetTimeseriesColumn"></a>
+
+```python
+def reset_timeseries_column() -> None
 ```
 
 ##### `reset_transformation_sql` <a name="reset_transformation_sql" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceDeltaTableSourceOutputReference.resetTransformationSql"></a>
@@ -4943,6 +12975,9 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceOutputReference.putEntityColumnIdentifiers">put_entity_column_identifiers</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceOutputReference.putTimeseriesColumnIdentifier">put_timeseries_column_identifier</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceOutputReference.resetEntityColumnIdentifiers">reset_entity_column_identifiers</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceOutputReference.resetFilterCondition">reset_filter_condition</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceOutputReference.resetTimeseriesColumnIdentifier">reset_timeseries_column_identifier</a></code> | *No description.* |
 
 ---
 
@@ -5144,9 +13179,27 @@ def put_timeseries_column_identifier(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#variant_expr_path FeatureEngineeringFeature#variant_expr_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#variant_expr_path FeatureEngineeringFeature#variant_expr_path}.
 
 ---
+
+##### `reset_entity_column_identifiers` <a name="reset_entity_column_identifiers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceOutputReference.resetEntityColumnIdentifiers"></a>
+
+```python
+def reset_entity_column_identifiers() -> None
+```
+
+##### `reset_filter_condition` <a name="reset_filter_condition" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceOutputReference.resetFilterCondition"></a>
+
+```python
+def reset_filter_condition() -> None
+```
+
+##### `reset_timeseries_column_identifier` <a name="reset_timeseries_column_identifier" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceOutputReference.resetTimeseriesColumnIdentifier"></a>
+
+```python
+def reset_timeseries_column_identifier() -> None
+```
 
 
 #### Properties <a name="Properties" id="Properties"></a>
@@ -5158,8 +13211,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceOutputReference.property.entityColumnIdentifiers">entity_column_identifiers</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiersList">FeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiersList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceOutputReference.property.timeseriesColumnIdentifier">timeseries_column_identifier</a></code> | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceTimeseriesColumnIdentifierOutputReference">FeatureEngineeringFeatureSourceKafkaSourceTimeseriesColumnIdentifierOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceOutputReference.property.entityColumnIdentifiersInput">entity_column_identifiers_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiers">FeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiers</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceOutputReference.property.filterConditionInput">filter_condition_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceOutputReference.property.timeseriesColumnIdentifierInput">timeseries_column_identifier_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceTimeseriesColumnIdentifier">FeatureEngineeringFeatureSourceKafkaSourceTimeseriesColumnIdentifier</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceOutputReference.property.filterCondition">filter_condition</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSource">FeatureEngineeringFeatureSourceKafkaSource</a></code> | *No description.* |
 
@@ -5219,6 +13274,16 @@ entity_column_identifiers_input: IResolvable | typing.List[FeatureEngineeringFea
 
 ---
 
+##### `filter_condition_input`<sup>Optional</sup> <a name="filter_condition_input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceOutputReference.property.filterConditionInput"></a>
+
+```python
+filter_condition_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceOutputReference.property.nameInput"></a>
 
 ```python
@@ -5236,6 +13301,16 @@ timeseries_column_identifier_input: IResolvable | FeatureEngineeringFeatureSourc
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceTimeseriesColumnIdentifier">FeatureEngineeringFeatureSourceKafkaSourceTimeseriesColumnIdentifier</a>
+
+---
+
+##### `filter_condition`<sup>Required</sup> <a name="filter_condition" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceOutputReference.property.filterCondition"></a>
+
+```python
+filter_condition: str
+```
+
+- *Type:* str
 
 ---
 
@@ -5792,36 +13867,20 @@ Returns a reversible string representation.
 
 ```python
 def put_delta_table_source(
-  entity_columns: typing.List[str],
   full_name: str,
-  timeseries_column: str,
   dataframe_schema: str = None,
+  entity_columns: typing.List[str] = None,
   filter_condition: str = None,
+  timeseries_column: str = None,
   transformation_sql: str = None
 ) -> None
 ```
-
-###### `entity_columns`<sup>Required</sup> <a name="entity_columns" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceOutputReference.putDeltaTableSource.parameter.entityColumns"></a>
-
-- *Type:* typing.List[str]
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#entity_columns FeatureEngineeringFeature#entity_columns}.
-
----
 
 ###### `full_name`<sup>Required</sup> <a name="full_name" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceOutputReference.putDeltaTableSource.parameter.fullName"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#full_name FeatureEngineeringFeature#full_name}.
-
----
-
-###### `timeseries_column`<sup>Required</sup> <a name="timeseries_column" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceOutputReference.putDeltaTableSource.parameter.timeseriesColumn"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#timeseries_column FeatureEngineeringFeature#timeseries_column}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#full_name FeatureEngineeringFeature#full_name}.
 
 ---
 
@@ -5829,7 +13888,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#dataframe_schema FeatureEngineeringFeature#dataframe_schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#dataframe_schema FeatureEngineeringFeature#dataframe_schema}.
+
+---
+
+###### `entity_columns`<sup>Optional</sup> <a name="entity_columns" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceOutputReference.putDeltaTableSource.parameter.entityColumns"></a>
+
+- *Type:* typing.List[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#entity_columns FeatureEngineeringFeature#entity_columns}.
 
 ---
 
@@ -5837,7 +13904,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#filter_condition FeatureEngineeringFeature#filter_condition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#filter_condition FeatureEngineeringFeature#filter_condition}.
+
+---
+
+###### `timeseries_column`<sup>Optional</sup> <a name="timeseries_column" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceOutputReference.putDeltaTableSource.parameter.timeseriesColumn"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#timeseries_column FeatureEngineeringFeature#timeseries_column}.
 
 ---
 
@@ -5845,7 +13920,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#transformation_sql FeatureEngineeringFeature#transformation_sql}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#transformation_sql FeatureEngineeringFeature#transformation_sql}.
 
 ---
 
@@ -5853,33 +13928,42 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 ```python
 def put_kafka_source(
-  entity_column_identifiers: IResolvable | typing.List[FeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiers],
   name: str,
-  timeseries_column_identifier: FeatureEngineeringFeatureSourceKafkaSourceTimeseriesColumnIdentifier
+  entity_column_identifiers: IResolvable | typing.List[FeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiers] = None,
+  filter_condition: str = None,
+  timeseries_column_identifier: FeatureEngineeringFeatureSourceKafkaSourceTimeseriesColumnIdentifier = None
 ) -> None
 ```
-
-###### `entity_column_identifiers`<sup>Required</sup> <a name="entity_column_identifiers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceOutputReference.putKafkaSource.parameter.entityColumnIdentifiers"></a>
-
-- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiers">FeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiers</a>]
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#entity_column_identifiers FeatureEngineeringFeature#entity_column_identifiers}.
-
----
 
 ###### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceOutputReference.putKafkaSource.parameter.name"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#name FeatureEngineeringFeature#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#name FeatureEngineeringFeature#name}.
 
 ---
 
-###### `timeseries_column_identifier`<sup>Required</sup> <a name="timeseries_column_identifier" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceOutputReference.putKafkaSource.parameter.timeseriesColumnIdentifier"></a>
+###### `entity_column_identifiers`<sup>Optional</sup> <a name="entity_column_identifiers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceOutputReference.putKafkaSource.parameter.entityColumnIdentifiers"></a>
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiers">FeatureEngineeringFeatureSourceKafkaSourceEntityColumnIdentifiers</a>]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#entity_column_identifiers FeatureEngineeringFeature#entity_column_identifiers}.
+
+---
+
+###### `filter_condition`<sup>Optional</sup> <a name="filter_condition" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceOutputReference.putKafkaSource.parameter.filterCondition"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#filter_condition FeatureEngineeringFeature#filter_condition}.
+
+---
+
+###### `timeseries_column_identifier`<sup>Optional</sup> <a name="timeseries_column_identifier" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceOutputReference.putKafkaSource.parameter.timeseriesColumnIdentifier"></a>
 
 - *Type:* <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSourceKafkaSourceTimeseriesColumnIdentifier">FeatureEngineeringFeatureSourceKafkaSourceTimeseriesColumnIdentifier</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#timeseries_column_identifier FeatureEngineeringFeature#timeseries_column_identifier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#timeseries_column_identifier FeatureEngineeringFeature#timeseries_column_identifier}.
 
 ---
 
@@ -5981,6 +14065,302 @@ internal_value: IResolvable | FeatureEngineeringFeatureSource
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureSource">FeatureEngineeringFeatureSource</a>
+
+---
+
+
+### FeatureEngineeringFeatureTimeseriesColumnOutputReference <a name="FeatureEngineeringFeatureTimeseriesColumnOutputReference" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumnOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumnOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import feature_engineering_feature
+
+featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumnOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumnOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumnOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumnOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumnOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumnOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumnOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumnOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumnOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumnOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumnOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumnOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumnOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumnOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumnOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumnOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumnOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumnOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumnOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumnOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumnOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumnOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumnOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumnOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumnOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumnOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumnOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumnOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumnOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumnOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumnOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumnOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumnOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumnOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumnOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumnOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumnOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumnOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumnOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumnOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumnOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumnOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumnOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumnOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumnOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumnOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumnOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumn">FeatureEngineeringFeatureTimeseriesColumn</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumnOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumnOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumnOutputReference.property.nameInput"></a>
+
+```python
+name_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumnOutputReference.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumnOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | FeatureEngineeringFeatureTimeseriesColumn
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.featureEngineeringFeature.FeatureEngineeringFeatureTimeseriesColumn">FeatureEngineeringFeatureTimeseriesColumn</a>
 
 ---
 
@@ -6557,7 +14937,7 @@ def put_continuous(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}.
 
 ---
 
@@ -6565,7 +14945,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#offset FeatureEngineeringFeature#offset}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#offset FeatureEngineeringFeature#offset}.
 
 ---
 
@@ -6582,7 +14962,7 @@ def put_sliding(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#slide_duration FeatureEngineeringFeature#slide_duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#slide_duration FeatureEngineeringFeature#slide_duration}.
 
 ---
 
@@ -6590,7 +14970,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}.
 
 ---
 
@@ -6606,7 +14986,7 @@ def put_tumbling(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/feature_engineering_feature#window_duration FeatureEngineeringFeature#window_duration}.
 
 ---
 

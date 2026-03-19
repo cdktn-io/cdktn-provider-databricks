@@ -4,7 +4,7 @@
 
 ### DataDatabricksWarehousesDefaultWarehouseOverrides <a name="DataDatabricksWarehousesDefaultWarehouseOverrides" id="@cdktn/provider-databricks.dataDatabricksWarehousesDefaultWarehouseOverrides.DataDatabricksWarehousesDefaultWarehouseOverrides"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/warehouses_default_warehouse_overrides databricks_warehouses_default_warehouse_overrides}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/warehouses_default_warehouse_overrides databricks_warehouses_default_warehouse_overrides}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksWarehousesDefaultWarehouseOverrides.DataDatabricksWarehousesDefaultWarehouseOverrides.Initializer"></a>
 
@@ -414,7 +414,7 @@ The construct id used in the generated config for the DataDatabricksWarehousesDe
 
 The id of the existing DataDatabricksWarehousesDefaultWarehouseOverrides that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/warehouses_default_warehouse_overrides#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/warehouses_default_warehouse_overrides#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -663,8 +663,8 @@ const dataDatabricksWarehousesDefaultWarehouseOverridesConfig: dataDatabricksWar
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWarehousesDefaultWarehouseOverrides.DataDatabricksWarehousesDefaultWarehouseOverridesConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWarehousesDefaultWarehouseOverrides.DataDatabricksWarehousesDefaultWarehouseOverridesConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksWarehousesDefaultWarehouseOverrides.DataDatabricksWarehousesDefaultWarehouseOverridesConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWarehousesDefaultWarehouseOverrides.DataDatabricksWarehousesDefaultWarehouseOverridesConfig.property.pageSize">pageSize</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/warehouses_default_warehouse_overrides#page_size DataDatabricksWarehousesDefaultWarehouseOverrides#page_size}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWarehousesDefaultWarehouseOverrides.DataDatabricksWarehousesDefaultWarehouseOverridesConfig.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWarehousesDefaultWarehouseOverrides.DataDatabricksWarehousesDefaultWarehouseOverridesProviderConfig">DataDatabricksWarehousesDefaultWarehouseOverridesProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/warehouses_default_warehouse_overrides#provider_config DataDatabricksWarehousesDefaultWarehouseOverrides#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWarehousesDefaultWarehouseOverrides.DataDatabricksWarehousesDefaultWarehouseOverridesConfig.property.pageSize">pageSize</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/warehouses_default_warehouse_overrides#page_size DataDatabricksWarehousesDefaultWarehouseOverrides#page_size}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWarehousesDefaultWarehouseOverrides.DataDatabricksWarehousesDefaultWarehouseOverridesConfig.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWarehousesDefaultWarehouseOverrides.DataDatabricksWarehousesDefaultWarehouseOverridesProviderConfig">DataDatabricksWarehousesDefaultWarehouseOverridesProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/warehouses_default_warehouse_overrides#provider_config DataDatabricksWarehousesDefaultWarehouseOverrides#provider_config}. |
 
 ---
 
@@ -746,7 +746,7 @@ public readonly pageSize: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/warehouses_default_warehouse_overrides#page_size DataDatabricksWarehousesDefaultWarehouseOverrides#page_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/warehouses_default_warehouse_overrides#page_size DataDatabricksWarehousesDefaultWarehouseOverrides#page_size}.
 
 ---
 
@@ -758,7 +758,7 @@ public readonly providerConfig: DataDatabricksWarehousesDefaultWarehouseOverride
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWarehousesDefaultWarehouseOverrides.DataDatabricksWarehousesDefaultWarehouseOverridesProviderConfig">DataDatabricksWarehousesDefaultWarehouseOverridesProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/warehouses_default_warehouse_overrides#provider_config DataDatabricksWarehousesDefaultWarehouseOverrides#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/warehouses_default_warehouse_overrides#provider_config DataDatabricksWarehousesDefaultWarehouseOverrides#provider_config}.
 
 ---
 
@@ -776,8 +776,8 @@ const dataDatabricksWarehousesDefaultWarehouseOverridesDefaultWarehouseOverrides
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWarehousesDefaultWarehouseOverrides.DataDatabricksWarehousesDefaultWarehouseOverridesDefaultWarehouseOverrides.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/warehouses_default_warehouse_overrides#name DataDatabricksWarehousesDefaultWarehouseOverrides#name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWarehousesDefaultWarehouseOverrides.DataDatabricksWarehousesDefaultWarehouseOverridesDefaultWarehouseOverrides.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWarehousesDefaultWarehouseOverrides.DataDatabricksWarehousesDefaultWarehouseOverridesDefaultWarehouseOverridesProviderConfig">DataDatabricksWarehousesDefaultWarehouseOverridesDefaultWarehouseOverridesProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/warehouses_default_warehouse_overrides#provider_config DataDatabricksWarehousesDefaultWarehouseOverrides#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWarehousesDefaultWarehouseOverrides.DataDatabricksWarehousesDefaultWarehouseOverridesDefaultWarehouseOverrides.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/warehouses_default_warehouse_overrides#name DataDatabricksWarehousesDefaultWarehouseOverrides#name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWarehousesDefaultWarehouseOverrides.DataDatabricksWarehousesDefaultWarehouseOverridesDefaultWarehouseOverrides.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksWarehousesDefaultWarehouseOverrides.DataDatabricksWarehousesDefaultWarehouseOverridesDefaultWarehouseOverridesProviderConfig">DataDatabricksWarehousesDefaultWarehouseOverridesDefaultWarehouseOverridesProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/warehouses_default_warehouse_overrides#provider_config DataDatabricksWarehousesDefaultWarehouseOverrides#provider_config}. |
 
 ---
 
@@ -789,7 +789,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/warehouses_default_warehouse_overrides#name DataDatabricksWarehousesDefaultWarehouseOverrides#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/warehouses_default_warehouse_overrides#name DataDatabricksWarehousesDefaultWarehouseOverrides#name}.
 
 ---
 
@@ -801,7 +801,7 @@ public readonly providerConfig: DataDatabricksWarehousesDefaultWarehouseOverride
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksWarehousesDefaultWarehouseOverrides.DataDatabricksWarehousesDefaultWarehouseOverridesDefaultWarehouseOverridesProviderConfig">DataDatabricksWarehousesDefaultWarehouseOverridesDefaultWarehouseOverridesProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/warehouses_default_warehouse_overrides#provider_config DataDatabricksWarehousesDefaultWarehouseOverrides#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/warehouses_default_warehouse_overrides#provider_config DataDatabricksWarehousesDefaultWarehouseOverrides#provider_config}.
 
 ---
 
@@ -819,7 +819,7 @@ const dataDatabricksWarehousesDefaultWarehouseOverridesDefaultWarehouseOverrides
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWarehousesDefaultWarehouseOverrides.DataDatabricksWarehousesDefaultWarehouseOverridesDefaultWarehouseOverridesProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/warehouses_default_warehouse_overrides#workspace_id DataDatabricksWarehousesDefaultWarehouseOverrides#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWarehousesDefaultWarehouseOverrides.DataDatabricksWarehousesDefaultWarehouseOverridesDefaultWarehouseOverridesProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/warehouses_default_warehouse_overrides#workspace_id DataDatabricksWarehousesDefaultWarehouseOverrides#workspace_id}. |
 
 ---
 
@@ -831,7 +831,7 @@ public readonly workspaceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/warehouses_default_warehouse_overrides#workspace_id DataDatabricksWarehousesDefaultWarehouseOverrides#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/warehouses_default_warehouse_overrides#workspace_id DataDatabricksWarehousesDefaultWarehouseOverrides#workspace_id}.
 
 ---
 
@@ -849,7 +849,7 @@ const dataDatabricksWarehousesDefaultWarehouseOverridesProviderConfig: dataDatab
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksWarehousesDefaultWarehouseOverrides.DataDatabricksWarehousesDefaultWarehouseOverridesProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/warehouses_default_warehouse_overrides#workspace_id DataDatabricksWarehousesDefaultWarehouseOverrides#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksWarehousesDefaultWarehouseOverrides.DataDatabricksWarehousesDefaultWarehouseOverridesProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/warehouses_default_warehouse_overrides#workspace_id DataDatabricksWarehousesDefaultWarehouseOverrides#workspace_id}. |
 
 ---
 
@@ -861,7 +861,7 @@ public readonly workspaceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/warehouses_default_warehouse_overrides#workspace_id DataDatabricksWarehousesDefaultWarehouseOverrides#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/warehouses_default_warehouse_overrides#workspace_id DataDatabricksWarehousesDefaultWarehouseOverrides#workspace_id}.
 
 ---
 

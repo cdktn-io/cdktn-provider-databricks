@@ -4,7 +4,7 @@
 
 ### ServicePrincipalRole <a name="ServicePrincipalRole" id="@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/service_principal_role databricks_service_principal_role}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal_role databricks_service_principal_role}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRole.Initializer"></a>
 
@@ -496,7 +496,7 @@ The construct id used in the generated config for the ServicePrincipalRole to im
 
 The id of the existing ServicePrincipalRole that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/service_principal_role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal_role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -778,9 +778,9 @@ const servicePrincipalRoleConfig: servicePrincipalRole.ServicePrincipalRoleConfi
 | <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/service_principal_role#role ServicePrincipalRole#role}. |
-| <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleConfig.property.servicePrincipalId">servicePrincipalId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/service_principal_role#service_principal_id ServicePrincipalRole#service_principal_id}. |
-| <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/service_principal_role#id ServicePrincipalRole#id}. |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal_role#role ServicePrincipalRole#role}. |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleConfig.property.servicePrincipalId">servicePrincipalId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal_role#service_principal_id ServicePrincipalRole#service_principal_id}. |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal_role#id ServicePrincipalRole#id}. |
 
 ---
 
@@ -862,7 +862,7 @@ public readonly role: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/service_principal_role#role ServicePrincipalRole#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal_role#role ServicePrincipalRole#role}.
 
 ---
 
@@ -874,7 +874,7 @@ public readonly servicePrincipalId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/service_principal_role#service_principal_id ServicePrincipalRole#service_principal_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal_role#service_principal_id ServicePrincipalRole#service_principal_id}.
 
 ---
 
@@ -886,7 +886,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/service_principal_role#id ServicePrincipalRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal_role#id ServicePrincipalRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
