@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/service_principal
+// https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,80 +13,80 @@ import * as cdktn from 'cdktn';
 
 export interface ServicePrincipalConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/service_principal#acl_principal_id ServicePrincipal#acl_principal_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal#acl_principal_id ServicePrincipal#acl_principal_id}
   */
   readonly aclPrincipalId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/service_principal#active ServicePrincipal#active}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal#active ServicePrincipal#active}
   */
   readonly active?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/service_principal#allow_cluster_create ServicePrincipal#allow_cluster_create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal#allow_cluster_create ServicePrincipal#allow_cluster_create}
   */
   readonly allowClusterCreate?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/service_principal#allow_instance_pool_create ServicePrincipal#allow_instance_pool_create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal#allow_instance_pool_create ServicePrincipal#allow_instance_pool_create}
   */
   readonly allowInstancePoolCreate?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/service_principal#application_id ServicePrincipal#application_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal#application_id ServicePrincipal#application_id}
   */
   readonly applicationId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/service_principal#databricks_sql_access ServicePrincipal#databricks_sql_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal#databricks_sql_access ServicePrincipal#databricks_sql_access}
   */
   readonly databricksSqlAccess?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/service_principal#disable_as_user_deletion ServicePrincipal#disable_as_user_deletion}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal#disable_as_user_deletion ServicePrincipal#disable_as_user_deletion}
   */
   readonly disableAsUserDeletion?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/service_principal#display_name ServicePrincipal#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal#display_name ServicePrincipal#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/service_principal#external_id ServicePrincipal#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal#external_id ServicePrincipal#external_id}
   */
   readonly externalId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/service_principal#force ServicePrincipal#force}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal#force ServicePrincipal#force}
   */
   readonly force?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/service_principal#force_delete_home_dir ServicePrincipal#force_delete_home_dir}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal#force_delete_home_dir ServicePrincipal#force_delete_home_dir}
   */
   readonly forceDeleteHomeDir?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/service_principal#force_delete_repos ServicePrincipal#force_delete_repos}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal#force_delete_repos ServicePrincipal#force_delete_repos}
   */
   readonly forceDeleteRepos?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/service_principal#home ServicePrincipal#home}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal#home ServicePrincipal#home}
   */
   readonly home?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/service_principal#id ServicePrincipal#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal#id ServicePrincipal#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/service_principal#repos ServicePrincipal#repos}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal#repos ServicePrincipal#repos}
   */
   readonly repos?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/service_principal#workspace_access ServicePrincipal#workspace_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal#workspace_access ServicePrincipal#workspace_access}
   */
   readonly workspaceAccess?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/service_principal#workspace_consume ServicePrincipal#workspace_consume}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal#workspace_consume ServicePrincipal#workspace_consume}
   */
   readonly workspaceConsume?: boolean | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/service_principal databricks_service_principal}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal databricks_service_principal}
 */
 export class ServicePrincipal extends cdktn.TerraformResource {
 
@@ -102,7 +102,7 @@ export class ServicePrincipal extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ServicePrincipal resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ServicePrincipal to import
-  * @param importFromId The id of the existing ServicePrincipal that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/service_principal#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ServicePrincipal that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ServicePrincipal to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -114,7 +114,7 @@ export class ServicePrincipal extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/service_principal databricks_service_principal} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal databricks_service_principal} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -125,7 +125,7 @@ export class ServicePrincipal extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_service_principal',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.111.0',
+        providerVersion: '1.112.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

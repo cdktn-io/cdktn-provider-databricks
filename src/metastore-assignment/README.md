@@ -1,3 +1,3 @@
 # `databricks_metastore_assignment`
 
-Refer to the Terraform Registry for docs: [`databricks_metastore_assignment`](https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/metastore_assignment).
+Refer to the Terraform Registry for docs: [`databricks_metastore_assignment`](https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/metastore_assignment).

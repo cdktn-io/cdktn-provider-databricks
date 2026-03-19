@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/postgres_branch
+// https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/postgres_branch
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,25 +13,25 @@ import * as cdktn from 'cdktn';
 
 export interface PostgresBranchConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/postgres_branch#branch_id PostgresBranch#branch_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/postgres_branch#branch_id PostgresBranch#branch_id}
   */
   readonly branchId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/postgres_branch#parent PostgresBranch#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/postgres_branch#parent PostgresBranch#parent}
   */
   readonly parent: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/postgres_branch#provider_config PostgresBranch#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/postgres_branch#provider_config PostgresBranch#provider_config}
   */
   readonly providerConfig?: PostgresBranchProviderConfig;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/postgres_branch#spec PostgresBranch#spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/postgres_branch#spec PostgresBranch#spec}
   */
   readonly spec?: PostgresBranchSpec;
 }
 export interface PostgresBranchProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/postgres_branch#workspace_id PostgresBranch#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/postgres_branch#workspace_id PostgresBranch#workspace_id}
   */
   readonly workspaceId: string;
 }
@@ -122,31 +122,31 @@ export class PostgresBranchProviderConfigOutputReference extends cdktn.ComplexOb
 }
 export interface PostgresBranchSpec {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/postgres_branch#expire_time PostgresBranch#expire_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/postgres_branch#expire_time PostgresBranch#expire_time}
   */
   readonly expireTime?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/postgres_branch#is_protected PostgresBranch#is_protected}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/postgres_branch#is_protected PostgresBranch#is_protected}
   */
   readonly isProtected?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/postgres_branch#no_expiry PostgresBranch#no_expiry}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/postgres_branch#no_expiry PostgresBranch#no_expiry}
   */
   readonly noExpiry?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/postgres_branch#source_branch PostgresBranch#source_branch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/postgres_branch#source_branch PostgresBranch#source_branch}
   */
   readonly sourceBranch?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/postgres_branch#source_branch_lsn PostgresBranch#source_branch_lsn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/postgres_branch#source_branch_lsn PostgresBranch#source_branch_lsn}
   */
   readonly sourceBranchLsn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/postgres_branch#source_branch_time PostgresBranch#source_branch_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/postgres_branch#source_branch_time PostgresBranch#source_branch_time}
   */
   readonly sourceBranchTime?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/postgres_branch#ttl PostgresBranch#ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/postgres_branch#ttl PostgresBranch#ttl}
   */
   readonly ttl?: string;
 }
@@ -513,7 +513,7 @@ export class PostgresBranchStatusOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/postgres_branch databricks_postgres_branch}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/postgres_branch databricks_postgres_branch}
 */
 export class PostgresBranch extends cdktn.TerraformResource {
 
@@ -529,7 +529,7 @@ export class PostgresBranch extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a PostgresBranch resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PostgresBranch to import
-  * @param importFromId The id of the existing PostgresBranch that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/postgres_branch#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing PostgresBranch that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/postgres_branch#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PostgresBranch to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -541,7 +541,7 @@ export class PostgresBranch extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/resources/postgres_branch databricks_postgres_branch} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/postgres_branch databricks_postgres_branch} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -552,7 +552,7 @@ export class PostgresBranch extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_postgres_branch',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.111.0',
+        providerVersion: '1.112.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/feature_engineering_features
+// https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,21 +13,2422 @@ import * as cdktn from 'cdktn';
 
 export interface DataDatabricksFeatureEngineeringFeaturesConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/feature_engineering_features#page_size DataDatabricksFeatureEngineeringFeatures#page_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#page_size DataDatabricksFeatureEngineeringFeatures#page_size}
   */
   readonly pageSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/feature_engineering_features#provider_config DataDatabricksFeatureEngineeringFeatures#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#provider_config DataDatabricksFeatureEngineeringFeatures#provider_config}
   */
   readonly providerConfig?: DataDatabricksFeatureEngineeringFeaturesProviderConfig;
 }
+export interface DataDatabricksFeatureEngineeringFeaturesFeaturesEntities {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#name DataDatabricksFeatureEngineeringFeatures#name}
+  */
+  readonly name: string;
+}
+
+export function dataDatabricksFeatureEngineeringFeaturesFeaturesEntitiesToTerraform(struct?: DataDatabricksFeatureEngineeringFeaturesFeaturesEntities): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    name: cdktn.stringToTerraform(struct!.name),
+  }
+}
+
+
+export function dataDatabricksFeatureEngineeringFeaturesFeaturesEntitiesToHclTerraform(struct?: DataDatabricksFeatureEngineeringFeaturesFeaturesEntities): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktn.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataDatabricksFeatureEngineeringFeaturesFeaturesEntitiesOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataDatabricksFeatureEngineeringFeaturesFeaturesEntities | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksFeatureEngineeringFeaturesFeaturesEntities | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._name = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._name = value.name;
+    }
+  }
+
+  // name - computed: true, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+}
+
+export class DataDatabricksFeatureEngineeringFeaturesFeaturesEntitiesList extends cdktn.ComplexList {
+  public internalValue? : DataDatabricksFeatureEngineeringFeaturesFeaturesEntities[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataDatabricksFeatureEngineeringFeaturesFeaturesEntitiesOutputReference {
+    return new DataDatabricksFeatureEngineeringFeaturesFeaturesEntitiesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionApproxCountDistinct {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#input DataDatabricksFeatureEngineeringFeatures#input}
+  */
+  readonly input: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#relative_sd DataDatabricksFeatureEngineeringFeatures#relative_sd}
+  */
+  readonly relativeSd?: number;
+}
+
+export function dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionApproxCountDistinctToTerraform(struct?: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionApproxCountDistinct | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    input: cdktn.stringToTerraform(struct!.input),
+    relative_sd: cdktn.numberToTerraform(struct!.relativeSd),
+  }
+}
+
+
+export function dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionApproxCountDistinctToHclTerraform(struct?: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionApproxCountDistinct | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    input: {
+      value: cdktn.stringToHclTerraform(struct!.input),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    relative_sd: {
+      value: cdktn.numberToHclTerraform(struct!.relativeSd),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionApproxCountDistinctOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionApproxCountDistinct | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._input !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.input = this._input;
+    }
+    if (this._relativeSd !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.relativeSd = this._relativeSd;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionApproxCountDistinct | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._input = undefined;
+      this._relativeSd = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._input = value.input;
+      this._relativeSd = value.relativeSd;
+    }
+  }
+
+  // input - computed: true, optional: false, required: true
+  private _input?: string; 
+  public get input() {
+    return this.getStringAttribute('input');
+  }
+  public set input(value: string) {
+    this._input = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get inputInput() {
+    return this._input;
+  }
+
+  // relative_sd - computed: true, optional: true, required: false
+  private _relativeSd?: number; 
+  public get relativeSd() {
+    return this.getNumberAttribute('relative_sd');
+  }
+  public set relativeSd(value: number) {
+    this._relativeSd = value;
+  }
+  public resetRelativeSd() {
+    this._relativeSd = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get relativeSdInput() {
+    return this._relativeSd;
+  }
+}
+export interface DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionApproxPercentile {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#accuracy DataDatabricksFeatureEngineeringFeatures#accuracy}
+  */
+  readonly accuracy?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#input DataDatabricksFeatureEngineeringFeatures#input}
+  */
+  readonly input: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#percentile DataDatabricksFeatureEngineeringFeatures#percentile}
+  */
+  readonly percentile: number;
+}
+
+export function dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionApproxPercentileToTerraform(struct?: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionApproxPercentile | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    accuracy: cdktn.numberToTerraform(struct!.accuracy),
+    input: cdktn.stringToTerraform(struct!.input),
+    percentile: cdktn.numberToTerraform(struct!.percentile),
+  }
+}
+
+
+export function dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionApproxPercentileToHclTerraform(struct?: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionApproxPercentile | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    accuracy: {
+      value: cdktn.numberToHclTerraform(struct!.accuracy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    input: {
+      value: cdktn.stringToHclTerraform(struct!.input),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    percentile: {
+      value: cdktn.numberToHclTerraform(struct!.percentile),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionApproxPercentileOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionApproxPercentile | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._accuracy !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.accuracy = this._accuracy;
+    }
+    if (this._input !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.input = this._input;
+    }
+    if (this._percentile !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.percentile = this._percentile;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionApproxPercentile | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._accuracy = undefined;
+      this._input = undefined;
+      this._percentile = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._accuracy = value.accuracy;
+      this._input = value.input;
+      this._percentile = value.percentile;
+    }
+  }
+
+  // accuracy - computed: true, optional: true, required: false
+  private _accuracy?: number; 
+  public get accuracy() {
+    return this.getNumberAttribute('accuracy');
+  }
+  public set accuracy(value: number) {
+    this._accuracy = value;
+  }
+  public resetAccuracy() {
+    this._accuracy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accuracyInput() {
+    return this._accuracy;
+  }
+
+  // input - computed: true, optional: false, required: true
+  private _input?: string; 
+  public get input() {
+    return this.getStringAttribute('input');
+  }
+  public set input(value: string) {
+    this._input = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get inputInput() {
+    return this._input;
+  }
+
+  // percentile - computed: true, optional: false, required: true
+  private _percentile?: number; 
+  public get percentile() {
+    return this.getNumberAttribute('percentile');
+  }
+  public set percentile(value: number) {
+    this._percentile = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get percentileInput() {
+    return this._percentile;
+  }
+}
+export interface DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionAvg {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#input DataDatabricksFeatureEngineeringFeatures#input}
+  */
+  readonly input: string;
+}
+
+export function dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionAvgToTerraform(struct?: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionAvg | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    input: cdktn.stringToTerraform(struct!.input),
+  }
+}
+
+
+export function dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionAvgToHclTerraform(struct?: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionAvg | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    input: {
+      value: cdktn.stringToHclTerraform(struct!.input),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionAvgOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionAvg | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._input !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.input = this._input;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionAvg | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._input = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._input = value.input;
+    }
+  }
+
+  // input - computed: true, optional: false, required: true
+  private _input?: string; 
+  public get input() {
+    return this.getStringAttribute('input');
+  }
+  public set input(value: string) {
+    this._input = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get inputInput() {
+    return this._input;
+  }
+}
+export interface DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionCountFunction {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#input DataDatabricksFeatureEngineeringFeatures#input}
+  */
+  readonly input: string;
+}
+
+export function dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionCountFunctionToTerraform(struct?: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionCountFunction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    input: cdktn.stringToTerraform(struct!.input),
+  }
+}
+
+
+export function dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionCountFunctionToHclTerraform(struct?: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionCountFunction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    input: {
+      value: cdktn.stringToHclTerraform(struct!.input),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionCountFunctionOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionCountFunction | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._input !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.input = this._input;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionCountFunction | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._input = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._input = value.input;
+    }
+  }
+
+  // input - computed: true, optional: false, required: true
+  private _input?: string; 
+  public get input() {
+    return this.getStringAttribute('input');
+  }
+  public set input(value: string) {
+    this._input = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get inputInput() {
+    return this._input;
+  }
+}
+export interface DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionFirst {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#input DataDatabricksFeatureEngineeringFeatures#input}
+  */
+  readonly input: string;
+}
+
+export function dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionFirstToTerraform(struct?: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionFirst | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    input: cdktn.stringToTerraform(struct!.input),
+  }
+}
+
+
+export function dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionFirstToHclTerraform(struct?: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionFirst | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    input: {
+      value: cdktn.stringToHclTerraform(struct!.input),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionFirstOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionFirst | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._input !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.input = this._input;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionFirst | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._input = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._input = value.input;
+    }
+  }
+
+  // input - computed: true, optional: false, required: true
+  private _input?: string; 
+  public get input() {
+    return this.getStringAttribute('input');
+  }
+  public set input(value: string) {
+    this._input = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get inputInput() {
+    return this._input;
+  }
+}
+export interface DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionLast {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#input DataDatabricksFeatureEngineeringFeatures#input}
+  */
+  readonly input: string;
+}
+
+export function dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionLastToTerraform(struct?: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionLast | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    input: cdktn.stringToTerraform(struct!.input),
+  }
+}
+
+
+export function dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionLastToHclTerraform(struct?: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionLast | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    input: {
+      value: cdktn.stringToHclTerraform(struct!.input),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionLastOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionLast | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._input !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.input = this._input;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionLast | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._input = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._input = value.input;
+    }
+  }
+
+  // input - computed: true, optional: false, required: true
+  private _input?: string; 
+  public get input() {
+    return this.getStringAttribute('input');
+  }
+  public set input(value: string) {
+    this._input = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get inputInput() {
+    return this._input;
+  }
+}
+export interface DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionMax {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#input DataDatabricksFeatureEngineeringFeatures#input}
+  */
+  readonly input: string;
+}
+
+export function dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionMaxToTerraform(struct?: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionMax | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    input: cdktn.stringToTerraform(struct!.input),
+  }
+}
+
+
+export function dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionMaxToHclTerraform(struct?: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionMax | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    input: {
+      value: cdktn.stringToHclTerraform(struct!.input),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionMaxOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionMax | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._input !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.input = this._input;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionMax | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._input = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._input = value.input;
+    }
+  }
+
+  // input - computed: true, optional: false, required: true
+  private _input?: string; 
+  public get input() {
+    return this.getStringAttribute('input');
+  }
+  public set input(value: string) {
+    this._input = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get inputInput() {
+    return this._input;
+  }
+}
+export interface DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionMin {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#input DataDatabricksFeatureEngineeringFeatures#input}
+  */
+  readonly input: string;
+}
+
+export function dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionMinToTerraform(struct?: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionMin | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    input: cdktn.stringToTerraform(struct!.input),
+  }
+}
+
+
+export function dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionMinToHclTerraform(struct?: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionMin | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    input: {
+      value: cdktn.stringToHclTerraform(struct!.input),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionMinOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionMin | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._input !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.input = this._input;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionMin | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._input = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._input = value.input;
+    }
+  }
+
+  // input - computed: true, optional: false, required: true
+  private _input?: string; 
+  public get input() {
+    return this.getStringAttribute('input');
+  }
+  public set input(value: string) {
+    this._input = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get inputInput() {
+    return this._input;
+  }
+}
+export interface DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionStddevPop {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#input DataDatabricksFeatureEngineeringFeatures#input}
+  */
+  readonly input: string;
+}
+
+export function dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionStddevPopToTerraform(struct?: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionStddevPop | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    input: cdktn.stringToTerraform(struct!.input),
+  }
+}
+
+
+export function dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionStddevPopToHclTerraform(struct?: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionStddevPop | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    input: {
+      value: cdktn.stringToHclTerraform(struct!.input),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionStddevPopOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionStddevPop | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._input !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.input = this._input;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionStddevPop | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._input = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._input = value.input;
+    }
+  }
+
+  // input - computed: true, optional: false, required: true
+  private _input?: string; 
+  public get input() {
+    return this.getStringAttribute('input');
+  }
+  public set input(value: string) {
+    this._input = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get inputInput() {
+    return this._input;
+  }
+}
+export interface DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionStddevSamp {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#input DataDatabricksFeatureEngineeringFeatures#input}
+  */
+  readonly input: string;
+}
+
+export function dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionStddevSampToTerraform(struct?: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionStddevSamp | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    input: cdktn.stringToTerraform(struct!.input),
+  }
+}
+
+
+export function dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionStddevSampToHclTerraform(struct?: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionStddevSamp | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    input: {
+      value: cdktn.stringToHclTerraform(struct!.input),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionStddevSampOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionStddevSamp | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._input !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.input = this._input;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionStddevSamp | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._input = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._input = value.input;
+    }
+  }
+
+  // input - computed: true, optional: false, required: true
+  private _input?: string; 
+  public get input() {
+    return this.getStringAttribute('input');
+  }
+  public set input(value: string) {
+    this._input = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get inputInput() {
+    return this._input;
+  }
+}
+export interface DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionSum {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#input DataDatabricksFeatureEngineeringFeatures#input}
+  */
+  readonly input: string;
+}
+
+export function dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionSumToTerraform(struct?: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionSum | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    input: cdktn.stringToTerraform(struct!.input),
+  }
+}
+
+
+export function dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionSumToHclTerraform(struct?: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionSum | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    input: {
+      value: cdktn.stringToHclTerraform(struct!.input),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionSumOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionSum | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._input !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.input = this._input;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionSum | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._input = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._input = value.input;
+    }
+  }
+
+  // input - computed: true, optional: false, required: true
+  private _input?: string; 
+  public get input() {
+    return this.getStringAttribute('input');
+  }
+  public set input(value: string) {
+    this._input = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get inputInput() {
+    return this._input;
+  }
+}
+export interface DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowContinuous {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#offset DataDatabricksFeatureEngineeringFeatures#offset}
+  */
+  readonly offset?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#window_duration DataDatabricksFeatureEngineeringFeatures#window_duration}
+  */
+  readonly windowDuration: string;
+}
+
+export function dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowContinuousToTerraform(struct?: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowContinuous | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    offset: cdktn.stringToTerraform(struct!.offset),
+    window_duration: cdktn.stringToTerraform(struct!.windowDuration),
+  }
+}
+
+
+export function dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowContinuousToHclTerraform(struct?: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowContinuous | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    offset: {
+      value: cdktn.stringToHclTerraform(struct!.offset),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    window_duration: {
+      value: cdktn.stringToHclTerraform(struct!.windowDuration),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowContinuousOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowContinuous | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._offset !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.offset = this._offset;
+    }
+    if (this._windowDuration !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.windowDuration = this._windowDuration;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowContinuous | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._offset = undefined;
+      this._windowDuration = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._offset = value.offset;
+      this._windowDuration = value.windowDuration;
+    }
+  }
+
+  // offset - computed: true, optional: true, required: false
+  private _offset?: string; 
+  public get offset() {
+    return this.getStringAttribute('offset');
+  }
+  public set offset(value: string) {
+    this._offset = value;
+  }
+  public resetOffset() {
+    this._offset = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get offsetInput() {
+    return this._offset;
+  }
+
+  // window_duration - computed: true, optional: false, required: true
+  private _windowDuration?: string; 
+  public get windowDuration() {
+    return this.getStringAttribute('window_duration');
+  }
+  public set windowDuration(value: string) {
+    this._windowDuration = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get windowDurationInput() {
+    return this._windowDuration;
+  }
+}
+export interface DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowSliding {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#slide_duration DataDatabricksFeatureEngineeringFeatures#slide_duration}
+  */
+  readonly slideDuration: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#window_duration DataDatabricksFeatureEngineeringFeatures#window_duration}
+  */
+  readonly windowDuration: string;
+}
+
+export function dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowSlidingToTerraform(struct?: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowSliding | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    slide_duration: cdktn.stringToTerraform(struct!.slideDuration),
+    window_duration: cdktn.stringToTerraform(struct!.windowDuration),
+  }
+}
+
+
+export function dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowSlidingToHclTerraform(struct?: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowSliding | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    slide_duration: {
+      value: cdktn.stringToHclTerraform(struct!.slideDuration),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    window_duration: {
+      value: cdktn.stringToHclTerraform(struct!.windowDuration),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowSlidingOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowSliding | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._slideDuration !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.slideDuration = this._slideDuration;
+    }
+    if (this._windowDuration !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.windowDuration = this._windowDuration;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowSliding | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._slideDuration = undefined;
+      this._windowDuration = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._slideDuration = value.slideDuration;
+      this._windowDuration = value.windowDuration;
+    }
+  }
+
+  // slide_duration - computed: true, optional: false, required: true
+  private _slideDuration?: string; 
+  public get slideDuration() {
+    return this.getStringAttribute('slide_duration');
+  }
+  public set slideDuration(value: string) {
+    this._slideDuration = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get slideDurationInput() {
+    return this._slideDuration;
+  }
+
+  // window_duration - computed: true, optional: false, required: true
+  private _windowDuration?: string; 
+  public get windowDuration() {
+    return this.getStringAttribute('window_duration');
+  }
+  public set windowDuration(value: string) {
+    this._windowDuration = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get windowDurationInput() {
+    return this._windowDuration;
+  }
+}
+export interface DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowTumbling {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#window_duration DataDatabricksFeatureEngineeringFeatures#window_duration}
+  */
+  readonly windowDuration: string;
+}
+
+export function dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowTumblingToTerraform(struct?: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowTumbling | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    window_duration: cdktn.stringToTerraform(struct!.windowDuration),
+  }
+}
+
+
+export function dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowTumblingToHclTerraform(struct?: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowTumbling | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    window_duration: {
+      value: cdktn.stringToHclTerraform(struct!.windowDuration),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowTumblingOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowTumbling | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._windowDuration !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.windowDuration = this._windowDuration;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowTumbling | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._windowDuration = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._windowDuration = value.windowDuration;
+    }
+  }
+
+  // window_duration - computed: true, optional: false, required: true
+  private _windowDuration?: string; 
+  public get windowDuration() {
+    return this.getStringAttribute('window_duration');
+  }
+  public set windowDuration(value: string) {
+    this._windowDuration = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get windowDurationInput() {
+    return this._windowDuration;
+  }
+}
+export interface DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindow {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#continuous DataDatabricksFeatureEngineeringFeatures#continuous}
+  */
+  readonly continuous?: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowContinuous;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#sliding DataDatabricksFeatureEngineeringFeatures#sliding}
+  */
+  readonly sliding?: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowSliding;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#tumbling DataDatabricksFeatureEngineeringFeatures#tumbling}
+  */
+  readonly tumbling?: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowTumbling;
+}
+
+export function dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowToTerraform(struct?: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindow | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    continuous: dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowContinuousToTerraform(struct!.continuous),
+    sliding: dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowSlidingToTerraform(struct!.sliding),
+    tumbling: dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowTumblingToTerraform(struct!.tumbling),
+  }
+}
+
+
+export function dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowToHclTerraform(struct?: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindow | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    continuous: {
+      value: dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowContinuousToHclTerraform(struct!.continuous),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowContinuous",
+    },
+    sliding: {
+      value: dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowSlidingToHclTerraform(struct!.sliding),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowSliding",
+    },
+    tumbling: {
+      value: dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowTumblingToHclTerraform(struct!.tumbling),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowTumbling",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindow | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._continuous?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.continuous = this._continuous?.internalValue;
+    }
+    if (this._sliding?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sliding = this._sliding?.internalValue;
+    }
+    if (this._tumbling?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tumbling = this._tumbling?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindow | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._continuous.internalValue = undefined;
+      this._sliding.internalValue = undefined;
+      this._tumbling.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._continuous.internalValue = value.continuous;
+      this._sliding.internalValue = value.sliding;
+      this._tumbling.internalValue = value.tumbling;
+    }
+  }
+
+  // continuous - computed: true, optional: true, required: false
+  private _continuous = new DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowContinuousOutputReference(this, "continuous");
+  public get continuous() {
+    return this._continuous;
+  }
+  public putContinuous(value: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowContinuous) {
+    this._continuous.internalValue = value;
+  }
+  public resetContinuous() {
+    this._continuous.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get continuousInput() {
+    return this._continuous.internalValue;
+  }
+
+  // sliding - computed: true, optional: true, required: false
+  private _sliding = new DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowSlidingOutputReference(this, "sliding");
+  public get sliding() {
+    return this._sliding;
+  }
+  public putSliding(value: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowSliding) {
+    this._sliding.internalValue = value;
+  }
+  public resetSliding() {
+    this._sliding.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get slidingInput() {
+    return this._sliding.internalValue;
+  }
+
+  // tumbling - computed: true, optional: true, required: false
+  private _tumbling = new DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowTumblingOutputReference(this, "tumbling");
+  public get tumbling() {
+    return this._tumbling;
+  }
+  public putTumbling(value: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowTumbling) {
+    this._tumbling.internalValue = value;
+  }
+  public resetTumbling() {
+    this._tumbling.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tumblingInput() {
+    return this._tumbling.internalValue;
+  }
+}
+export interface DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionVarPop {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#input DataDatabricksFeatureEngineeringFeatures#input}
+  */
+  readonly input: string;
+}
+
+export function dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionVarPopToTerraform(struct?: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionVarPop | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    input: cdktn.stringToTerraform(struct!.input),
+  }
+}
+
+
+export function dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionVarPopToHclTerraform(struct?: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionVarPop | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    input: {
+      value: cdktn.stringToHclTerraform(struct!.input),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionVarPopOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionVarPop | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._input !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.input = this._input;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionVarPop | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._input = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._input = value.input;
+    }
+  }
+
+  // input - computed: true, optional: false, required: true
+  private _input?: string; 
+  public get input() {
+    return this.getStringAttribute('input');
+  }
+  public set input(value: string) {
+    this._input = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get inputInput() {
+    return this._input;
+  }
+}
+export interface DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionVarSamp {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#input DataDatabricksFeatureEngineeringFeatures#input}
+  */
+  readonly input: string;
+}
+
+export function dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionVarSampToTerraform(struct?: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionVarSamp | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    input: cdktn.stringToTerraform(struct!.input),
+  }
+}
+
+
+export function dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionVarSampToHclTerraform(struct?: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionVarSamp | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    input: {
+      value: cdktn.stringToHclTerraform(struct!.input),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionVarSampOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionVarSamp | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._input !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.input = this._input;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionVarSamp | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._input = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._input = value.input;
+    }
+  }
+
+  // input - computed: true, optional: false, required: true
+  private _input?: string; 
+  public get input() {
+    return this.getStringAttribute('input');
+  }
+  public set input(value: string) {
+    this._input = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get inputInput() {
+    return this._input;
+  }
+}
+export interface DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunction {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#approx_count_distinct DataDatabricksFeatureEngineeringFeatures#approx_count_distinct}
+  */
+  readonly approxCountDistinct?: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionApproxCountDistinct;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#approx_percentile DataDatabricksFeatureEngineeringFeatures#approx_percentile}
+  */
+  readonly approxPercentile?: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionApproxPercentile;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#avg DataDatabricksFeatureEngineeringFeatures#avg}
+  */
+  readonly avg?: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionAvg;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#count_function DataDatabricksFeatureEngineeringFeatures#count_function}
+  */
+  readonly countFunction?: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionCountFunction;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#first DataDatabricksFeatureEngineeringFeatures#first}
+  */
+  readonly first?: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionFirst;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#last DataDatabricksFeatureEngineeringFeatures#last}
+  */
+  readonly last?: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionLast;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#max DataDatabricksFeatureEngineeringFeatures#max}
+  */
+  readonly max?: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionMax;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#min DataDatabricksFeatureEngineeringFeatures#min}
+  */
+  readonly min?: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionMin;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#stddev_pop DataDatabricksFeatureEngineeringFeatures#stddev_pop}
+  */
+  readonly stddevPop?: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionStddevPop;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#stddev_samp DataDatabricksFeatureEngineeringFeatures#stddev_samp}
+  */
+  readonly stddevSamp?: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionStddevSamp;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#sum DataDatabricksFeatureEngineeringFeatures#sum}
+  */
+  readonly sum?: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionSum;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#time_window DataDatabricksFeatureEngineeringFeatures#time_window}
+  */
+  readonly timeWindow?: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindow;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#var_pop DataDatabricksFeatureEngineeringFeatures#var_pop}
+  */
+  readonly varPop?: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionVarPop;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#var_samp DataDatabricksFeatureEngineeringFeatures#var_samp}
+  */
+  readonly varSamp?: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionVarSamp;
+}
+
+export function dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionToTerraform(struct?: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    approx_count_distinct: dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionApproxCountDistinctToTerraform(struct!.approxCountDistinct),
+    approx_percentile: dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionApproxPercentileToTerraform(struct!.approxPercentile),
+    avg: dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionAvgToTerraform(struct!.avg),
+    count_function: dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionCountFunctionToTerraform(struct!.countFunction),
+    first: dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionFirstToTerraform(struct!.first),
+    last: dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionLastToTerraform(struct!.last),
+    max: dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionMaxToTerraform(struct!.max),
+    min: dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionMinToTerraform(struct!.min),
+    stddev_pop: dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionStddevPopToTerraform(struct!.stddevPop),
+    stddev_samp: dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionStddevSampToTerraform(struct!.stddevSamp),
+    sum: dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionSumToTerraform(struct!.sum),
+    time_window: dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowToTerraform(struct!.timeWindow),
+    var_pop: dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionVarPopToTerraform(struct!.varPop),
+    var_samp: dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionVarSampToTerraform(struct!.varSamp),
+  }
+}
+
+
+export function dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionToHclTerraform(struct?: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    approx_count_distinct: {
+      value: dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionApproxCountDistinctToHclTerraform(struct!.approxCountDistinct),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionApproxCountDistinct",
+    },
+    approx_percentile: {
+      value: dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionApproxPercentileToHclTerraform(struct!.approxPercentile),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionApproxPercentile",
+    },
+    avg: {
+      value: dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionAvgToHclTerraform(struct!.avg),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionAvg",
+    },
+    count_function: {
+      value: dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionCountFunctionToHclTerraform(struct!.countFunction),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionCountFunction",
+    },
+    first: {
+      value: dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionFirstToHclTerraform(struct!.first),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionFirst",
+    },
+    last: {
+      value: dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionLastToHclTerraform(struct!.last),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionLast",
+    },
+    max: {
+      value: dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionMaxToHclTerraform(struct!.max),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionMax",
+    },
+    min: {
+      value: dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionMinToHclTerraform(struct!.min),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionMin",
+    },
+    stddev_pop: {
+      value: dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionStddevPopToHclTerraform(struct!.stddevPop),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionStddevPop",
+    },
+    stddev_samp: {
+      value: dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionStddevSampToHclTerraform(struct!.stddevSamp),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionStddevSamp",
+    },
+    sum: {
+      value: dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionSumToHclTerraform(struct!.sum),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionSum",
+    },
+    time_window: {
+      value: dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowToHclTerraform(struct!.timeWindow),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindow",
+    },
+    var_pop: {
+      value: dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionVarPopToHclTerraform(struct!.varPop),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionVarPop",
+    },
+    var_samp: {
+      value: dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionVarSampToHclTerraform(struct!.varSamp),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionVarSamp",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunction | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._approxCountDistinct?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.approxCountDistinct = this._approxCountDistinct?.internalValue;
+    }
+    if (this._approxPercentile?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.approxPercentile = this._approxPercentile?.internalValue;
+    }
+    if (this._avg?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.avg = this._avg?.internalValue;
+    }
+    if (this._countFunction?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.countFunction = this._countFunction?.internalValue;
+    }
+    if (this._first?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.first = this._first?.internalValue;
+    }
+    if (this._last?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.last = this._last?.internalValue;
+    }
+    if (this._max?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.max = this._max?.internalValue;
+    }
+    if (this._min?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.min = this._min?.internalValue;
+    }
+    if (this._stddevPop?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.stddevPop = this._stddevPop?.internalValue;
+    }
+    if (this._stddevSamp?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.stddevSamp = this._stddevSamp?.internalValue;
+    }
+    if (this._sum?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sum = this._sum?.internalValue;
+    }
+    if (this._timeWindow?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.timeWindow = this._timeWindow?.internalValue;
+    }
+    if (this._varPop?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.varPop = this._varPop?.internalValue;
+    }
+    if (this._varSamp?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.varSamp = this._varSamp?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunction | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._approxCountDistinct.internalValue = undefined;
+      this._approxPercentile.internalValue = undefined;
+      this._avg.internalValue = undefined;
+      this._countFunction.internalValue = undefined;
+      this._first.internalValue = undefined;
+      this._last.internalValue = undefined;
+      this._max.internalValue = undefined;
+      this._min.internalValue = undefined;
+      this._stddevPop.internalValue = undefined;
+      this._stddevSamp.internalValue = undefined;
+      this._sum.internalValue = undefined;
+      this._timeWindow.internalValue = undefined;
+      this._varPop.internalValue = undefined;
+      this._varSamp.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._approxCountDistinct.internalValue = value.approxCountDistinct;
+      this._approxPercentile.internalValue = value.approxPercentile;
+      this._avg.internalValue = value.avg;
+      this._countFunction.internalValue = value.countFunction;
+      this._first.internalValue = value.first;
+      this._last.internalValue = value.last;
+      this._max.internalValue = value.max;
+      this._min.internalValue = value.min;
+      this._stddevPop.internalValue = value.stddevPop;
+      this._stddevSamp.internalValue = value.stddevSamp;
+      this._sum.internalValue = value.sum;
+      this._timeWindow.internalValue = value.timeWindow;
+      this._varPop.internalValue = value.varPop;
+      this._varSamp.internalValue = value.varSamp;
+    }
+  }
+
+  // approx_count_distinct - computed: true, optional: true, required: false
+  private _approxCountDistinct = new DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionApproxCountDistinctOutputReference(this, "approx_count_distinct");
+  public get approxCountDistinct() {
+    return this._approxCountDistinct;
+  }
+  public putApproxCountDistinct(value: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionApproxCountDistinct) {
+    this._approxCountDistinct.internalValue = value;
+  }
+  public resetApproxCountDistinct() {
+    this._approxCountDistinct.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get approxCountDistinctInput() {
+    return this._approxCountDistinct.internalValue;
+  }
+
+  // approx_percentile - computed: true, optional: true, required: false
+  private _approxPercentile = new DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionApproxPercentileOutputReference(this, "approx_percentile");
+  public get approxPercentile() {
+    return this._approxPercentile;
+  }
+  public putApproxPercentile(value: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionApproxPercentile) {
+    this._approxPercentile.internalValue = value;
+  }
+  public resetApproxPercentile() {
+    this._approxPercentile.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get approxPercentileInput() {
+    return this._approxPercentile.internalValue;
+  }
+
+  // avg - computed: true, optional: true, required: false
+  private _avg = new DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionAvgOutputReference(this, "avg");
+  public get avg() {
+    return this._avg;
+  }
+  public putAvg(value: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionAvg) {
+    this._avg.internalValue = value;
+  }
+  public resetAvg() {
+    this._avg.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get avgInput() {
+    return this._avg.internalValue;
+  }
+
+  // count_function - computed: true, optional: true, required: false
+  private _countFunction = new DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionCountFunctionOutputReference(this, "count_function");
+  public get countFunction() {
+    return this._countFunction;
+  }
+  public putCountFunction(value: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionCountFunction) {
+    this._countFunction.internalValue = value;
+  }
+  public resetCountFunction() {
+    this._countFunction.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get countFunctionInput() {
+    return this._countFunction.internalValue;
+  }
+
+  // first - computed: true, optional: true, required: false
+  private _first = new DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionFirstOutputReference(this, "first");
+  public get first() {
+    return this._first;
+  }
+  public putFirst(value: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionFirst) {
+    this._first.internalValue = value;
+  }
+  public resetFirst() {
+    this._first.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get firstInput() {
+    return this._first.internalValue;
+  }
+
+  // last - computed: true, optional: true, required: false
+  private _last = new DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionLastOutputReference(this, "last");
+  public get last() {
+    return this._last;
+  }
+  public putLast(value: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionLast) {
+    this._last.internalValue = value;
+  }
+  public resetLast() {
+    this._last.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get lastInput() {
+    return this._last.internalValue;
+  }
+
+  // max - computed: true, optional: true, required: false
+  private _max = new DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionMaxOutputReference(this, "max");
+  public get max() {
+    return this._max;
+  }
+  public putMax(value: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionMax) {
+    this._max.internalValue = value;
+  }
+  public resetMax() {
+    this._max.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxInput() {
+    return this._max.internalValue;
+  }
+
+  // min - computed: true, optional: true, required: false
+  private _min = new DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionMinOutputReference(this, "min");
+  public get min() {
+    return this._min;
+  }
+  public putMin(value: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionMin) {
+    this._min.internalValue = value;
+  }
+  public resetMin() {
+    this._min.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minInput() {
+    return this._min.internalValue;
+  }
+
+  // stddev_pop - computed: true, optional: true, required: false
+  private _stddevPop = new DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionStddevPopOutputReference(this, "stddev_pop");
+  public get stddevPop() {
+    return this._stddevPop;
+  }
+  public putStddevPop(value: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionStddevPop) {
+    this._stddevPop.internalValue = value;
+  }
+  public resetStddevPop() {
+    this._stddevPop.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stddevPopInput() {
+    return this._stddevPop.internalValue;
+  }
+
+  // stddev_samp - computed: true, optional: true, required: false
+  private _stddevSamp = new DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionStddevSampOutputReference(this, "stddev_samp");
+  public get stddevSamp() {
+    return this._stddevSamp;
+  }
+  public putStddevSamp(value: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionStddevSamp) {
+    this._stddevSamp.internalValue = value;
+  }
+  public resetStddevSamp() {
+    this._stddevSamp.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stddevSampInput() {
+    return this._stddevSamp.internalValue;
+  }
+
+  // sum - computed: true, optional: true, required: false
+  private _sum = new DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionSumOutputReference(this, "sum");
+  public get sum() {
+    return this._sum;
+  }
+  public putSum(value: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionSum) {
+    this._sum.internalValue = value;
+  }
+  public resetSum() {
+    this._sum.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sumInput() {
+    return this._sum.internalValue;
+  }
+
+  // time_window - computed: true, optional: true, required: false
+  private _timeWindow = new DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindowOutputReference(this, "time_window");
+  public get timeWindow() {
+    return this._timeWindow;
+  }
+  public putTimeWindow(value: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionTimeWindow) {
+    this._timeWindow.internalValue = value;
+  }
+  public resetTimeWindow() {
+    this._timeWindow.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeWindowInput() {
+    return this._timeWindow.internalValue;
+  }
+
+  // var_pop - computed: true, optional: true, required: false
+  private _varPop = new DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionVarPopOutputReference(this, "var_pop");
+  public get varPop() {
+    return this._varPop;
+  }
+  public putVarPop(value: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionVarPop) {
+    this._varPop.internalValue = value;
+  }
+  public resetVarPop() {
+    this._varPop.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get varPopInput() {
+    return this._varPop.internalValue;
+  }
+
+  // var_samp - computed: true, optional: true, required: false
+  private _varSamp = new DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionVarSampOutputReference(this, "var_samp");
+  public get varSamp() {
+    return this._varSamp;
+  }
+  public putVarSamp(value: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionVarSamp) {
+    this._varSamp.internalValue = value;
+  }
+  public resetVarSamp() {
+    this._varSamp.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get varSampInput() {
+    return this._varSamp.internalValue;
+  }
+}
 export interface DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionExtraParameters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/feature_engineering_features#key DataDatabricksFeatureEngineeringFeatures#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#key DataDatabricksFeatureEngineeringFeatures#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/feature_engineering_features#value DataDatabricksFeatureEngineeringFeatures#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#value DataDatabricksFeatureEngineeringFeatures#value}
   */
   readonly value: string;
 }
@@ -166,13 +2567,17 @@ export class DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionExtraParame
 }
 export interface DataDatabricksFeatureEngineeringFeaturesFeaturesFunction {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/feature_engineering_features#extra_parameters DataDatabricksFeatureEngineeringFeatures#extra_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#aggregation_function DataDatabricksFeatureEngineeringFeatures#aggregation_function}
+  */
+  readonly aggregationFunction?: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunction;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#extra_parameters DataDatabricksFeatureEngineeringFeatures#extra_parameters}
   */
   readonly extraParameters?: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionExtraParameters[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/feature_engineering_features#function_type DataDatabricksFeatureEngineeringFeatures#function_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#function_type DataDatabricksFeatureEngineeringFeatures#function_type}
   */
-  readonly functionType: string;
+  readonly functionType?: string;
 }
 
 export function dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionToTerraform(struct?: DataDatabricksFeatureEngineeringFeaturesFeaturesFunction): any {
@@ -181,6 +2586,7 @@ export function dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionToTerraf
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    aggregation_function: dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionToTerraform(struct!.aggregationFunction),
     extra_parameters: cdktn.listMapper(dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionExtraParametersToTerraform, false)(struct!.extraParameters),
     function_type: cdktn.stringToTerraform(struct!.functionType),
   }
@@ -193,6 +2599,12 @@ export function dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionToHclTer
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
+    aggregation_function: {
+      value: dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionToHclTerraform(struct!.aggregationFunction),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunction",
+    },
     extra_parameters: {
       value: cdktn.listMapperHcl(dataDatabricksFeatureEngineeringFeaturesFeaturesFunctionExtraParametersToHclTerraform, false)(struct!.extraParameters),
       isBlock: true,
@@ -225,6 +2637,10 @@ export class DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionOutputRefer
   public get internalValue(): DataDatabricksFeatureEngineeringFeaturesFeaturesFunction | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._aggregationFunction?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.aggregationFunction = this._aggregationFunction?.internalValue;
+    }
     if (this._extraParameters?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.extraParameters = this._extraParameters?.internalValue;
@@ -239,14 +2655,32 @@ export class DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionOutputRefer
   public set internalValue(value: DataDatabricksFeatureEngineeringFeaturesFeaturesFunction | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._aggregationFunction.internalValue = undefined;
       this._extraParameters.internalValue = undefined;
       this._functionType = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._aggregationFunction.internalValue = value.aggregationFunction;
       this._extraParameters.internalValue = value.extraParameters;
       this._functionType = value.functionType;
     }
+  }
+
+  // aggregation_function - computed: true, optional: true, required: false
+  private _aggregationFunction = new DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunctionOutputReference(this, "aggregation_function");
+  public get aggregationFunction() {
+    return this._aggregationFunction;
+  }
+  public putAggregationFunction(value: DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionAggregationFunction) {
+    this._aggregationFunction.internalValue = value;
+  }
+  public resetAggregationFunction() {
+    this._aggregationFunction.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get aggregationFunctionInput() {
+    return this._aggregationFunction.internalValue;
   }
 
   // extra_parameters - computed: true, optional: true, required: false
@@ -265,13 +2699,16 @@ export class DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionOutputRefer
     return this._extraParameters.internalValue;
   }
 
-  // function_type - computed: true, optional: false, required: true
+  // function_type - computed: true, optional: true, required: false
   private _functionType?: string; 
   public get functionType() {
     return this.getStringAttribute('function_type');
   }
   public set functionType(value: string) {
     this._functionType = value;
+  }
+  public resetFunctionType() {
+    this._functionType = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get functionTypeInput() {
@@ -280,11 +2717,11 @@ export class DataDatabricksFeatureEngineeringFeaturesFeaturesFunctionOutputRefer
 }
 export interface DataDatabricksFeatureEngineeringFeaturesFeaturesLineageContextJobContext {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/feature_engineering_features#job_id DataDatabricksFeatureEngineeringFeatures#job_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#job_id DataDatabricksFeatureEngineeringFeatures#job_id}
   */
   readonly jobId?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/feature_engineering_features#job_run_id DataDatabricksFeatureEngineeringFeatures#job_run_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#job_run_id DataDatabricksFeatureEngineeringFeatures#job_run_id}
   */
   readonly jobRunId?: number;
 }
@@ -407,11 +2844,11 @@ export class DataDatabricksFeatureEngineeringFeaturesFeaturesLineageContextJobCo
 }
 export interface DataDatabricksFeatureEngineeringFeaturesFeaturesLineageContext {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/feature_engineering_features#job_context DataDatabricksFeatureEngineeringFeatures#job_context}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#job_context DataDatabricksFeatureEngineeringFeatures#job_context}
   */
   readonly jobContext?: DataDatabricksFeatureEngineeringFeaturesFeaturesLineageContextJobContext;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/feature_engineering_features#notebook_id DataDatabricksFeatureEngineeringFeatures#notebook_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#notebook_id DataDatabricksFeatureEngineeringFeatures#notebook_id}
   */
   readonly notebookId?: number;
 }
@@ -524,7 +2961,7 @@ export class DataDatabricksFeatureEngineeringFeaturesFeaturesLineageContextOutpu
 }
 export interface DataDatabricksFeatureEngineeringFeaturesFeaturesProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/feature_engineering_features#workspace_id DataDatabricksFeatureEngineeringFeatures#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#workspace_id DataDatabricksFeatureEngineeringFeatures#workspace_id}
   */
   readonly workspaceId: string;
 }
@@ -615,27 +3052,27 @@ export class DataDatabricksFeatureEngineeringFeaturesFeaturesProviderConfigOutpu
 }
 export interface DataDatabricksFeatureEngineeringFeaturesFeaturesSourceDeltaTableSource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/feature_engineering_features#dataframe_schema DataDatabricksFeatureEngineeringFeatures#dataframe_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#dataframe_schema DataDatabricksFeatureEngineeringFeatures#dataframe_schema}
   */
   readonly dataframeSchema?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/feature_engineering_features#entity_columns DataDatabricksFeatureEngineeringFeatures#entity_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#entity_columns DataDatabricksFeatureEngineeringFeatures#entity_columns}
   */
-  readonly entityColumns: string[];
+  readonly entityColumns?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/feature_engineering_features#filter_condition DataDatabricksFeatureEngineeringFeatures#filter_condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#filter_condition DataDatabricksFeatureEngineeringFeatures#filter_condition}
   */
   readonly filterCondition?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/feature_engineering_features#full_name DataDatabricksFeatureEngineeringFeatures#full_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#full_name DataDatabricksFeatureEngineeringFeatures#full_name}
   */
   readonly fullName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/feature_engineering_features#timeseries_column DataDatabricksFeatureEngineeringFeatures#timeseries_column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#timeseries_column DataDatabricksFeatureEngineeringFeatures#timeseries_column}
   */
-  readonly timeseriesColumn: string;
+  readonly timeseriesColumn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/feature_engineering_features#transformation_sql DataDatabricksFeatureEngineeringFeatures#transformation_sql}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#transformation_sql DataDatabricksFeatureEngineeringFeatures#transformation_sql}
   */
   readonly transformationSql?: string;
 }
@@ -792,13 +3229,16 @@ export class DataDatabricksFeatureEngineeringFeaturesFeaturesSourceDeltaTableSou
     return this._dataframeSchema;
   }
 
-  // entity_columns - computed: true, optional: false, required: true
+  // entity_columns - computed: true, optional: true, required: false
   private _entityColumns?: string[]; 
   public get entityColumns() {
     return this.getListAttribute('entity_columns');
   }
   public set entityColumns(value: string[]) {
     this._entityColumns = value;
+  }
+  public resetEntityColumns() {
+    this._entityColumns = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get entityColumnsInput() {
@@ -834,13 +3274,16 @@ export class DataDatabricksFeatureEngineeringFeaturesFeaturesSourceDeltaTableSou
     return this._fullName;
   }
 
-  // timeseries_column - computed: true, optional: false, required: true
+  // timeseries_column - computed: true, optional: true, required: false
   private _timeseriesColumn?: string; 
   public get timeseriesColumn() {
     return this.getStringAttribute('timeseries_column');
   }
   public set timeseriesColumn(value: string) {
     this._timeseriesColumn = value;
+  }
+  public resetTimeseriesColumn() {
+    this._timeseriesColumn = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get timeseriesColumnInput() {
@@ -865,12 +3308,12 @@ export class DataDatabricksFeatureEngineeringFeaturesFeaturesSourceDeltaTableSou
 }
 export interface DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceEntityColumnIdentifiers {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/feature_engineering_features#variant_expr_path DataDatabricksFeatureEngineeringFeatures#variant_expr_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#variant_expr_path DataDatabricksFeatureEngineeringFeatures#variant_expr_path}
   */
   readonly variantExprPath: string;
 }
 
-export function dataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceEntityColumnIdentifiersToTerraform(struct?: DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceEntityColumnIdentifiers): any {
+export function dataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceEntityColumnIdentifiersToTerraform(struct?: DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceEntityColumnIdentifiers | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -881,7 +3324,7 @@ export function dataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourc
 }
 
 
-export function dataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceEntityColumnIdentifiersToHclTerraform(struct?: DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceEntityColumnIdentifiers): any {
+export function dataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceEntityColumnIdentifiersToHclTerraform(struct?: DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceEntityColumnIdentifiers | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -901,6 +3344,7 @@ export function dataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourc
 
 export class DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceEntityColumnIdentifiersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -912,7 +3356,10 @@ export class DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceEn
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceEntityColumnIdentifiers | undefined {
+  public get internalValue(): DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceEntityColumnIdentifiers | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._variantExprPath !== undefined) {
@@ -922,13 +3369,19 @@ export class DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceEn
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceEntityColumnIdentifiers | undefined) {
+  public set internalValue(value: DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceEntityColumnIdentifiers | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._variantExprPath = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._variantExprPath = value.variantExprPath;
     }
   }
@@ -968,12 +3421,12 @@ export class DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceEn
 }
 export interface DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceTimeseriesColumnIdentifier {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/feature_engineering_features#variant_expr_path DataDatabricksFeatureEngineeringFeatures#variant_expr_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#variant_expr_path DataDatabricksFeatureEngineeringFeatures#variant_expr_path}
   */
   readonly variantExprPath: string;
 }
 
-export function dataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceTimeseriesColumnIdentifierToTerraform(struct?: DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceTimeseriesColumnIdentifier): any {
+export function dataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceTimeseriesColumnIdentifierToTerraform(struct?: DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceTimeseriesColumnIdentifier | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -984,7 +3437,7 @@ export function dataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourc
 }
 
 
-export function dataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceTimeseriesColumnIdentifierToHclTerraform(struct?: DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceTimeseriesColumnIdentifier): any {
+export function dataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceTimeseriesColumnIdentifierToHclTerraform(struct?: DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceTimeseriesColumnIdentifier | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -1004,6 +3457,7 @@ export function dataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourc
 
 export class DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceTimeseriesColumnIdentifierOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1013,7 +3467,10 @@ export class DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceTi
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceTimeseriesColumnIdentifier | undefined {
+  public get internalValue(): DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceTimeseriesColumnIdentifier | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._variantExprPath !== undefined) {
@@ -1023,13 +3480,19 @@ export class DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceTi
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceTimeseriesColumnIdentifier | undefined) {
+  public set internalValue(value: DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceTimeseriesColumnIdentifier | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._variantExprPath = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._variantExprPath = value.variantExprPath;
     }
   }
@@ -1049,17 +3512,21 @@ export class DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceTi
 }
 export interface DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/feature_engineering_features#entity_column_identifiers DataDatabricksFeatureEngineeringFeatures#entity_column_identifiers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#entity_column_identifiers DataDatabricksFeatureEngineeringFeatures#entity_column_identifiers}
   */
-  readonly entityColumnIdentifiers: DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceEntityColumnIdentifiers[] | cdktn.IResolvable;
+  readonly entityColumnIdentifiers?: DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceEntityColumnIdentifiers[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/feature_engineering_features#name DataDatabricksFeatureEngineeringFeatures#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#filter_condition DataDatabricksFeatureEngineeringFeatures#filter_condition}
+  */
+  readonly filterCondition?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#name DataDatabricksFeatureEngineeringFeatures#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/feature_engineering_features#timeseries_column_identifier DataDatabricksFeatureEngineeringFeatures#timeseries_column_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#timeseries_column_identifier DataDatabricksFeatureEngineeringFeatures#timeseries_column_identifier}
   */
-  readonly timeseriesColumnIdentifier: DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceTimeseriesColumnIdentifier;
+  readonly timeseriesColumnIdentifier?: DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceTimeseriesColumnIdentifier;
 }
 
 export function dataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceToTerraform(struct?: DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSource | cdktn.IResolvable): any {
@@ -1069,6 +3536,7 @@ export function dataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourc
   }
   return {
     entity_column_identifiers: cdktn.listMapper(dataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceEntityColumnIdentifiersToTerraform, false)(struct!.entityColumnIdentifiers),
+    filter_condition: cdktn.stringToTerraform(struct!.filterCondition),
     name: cdktn.stringToTerraform(struct!.name),
     timeseries_column_identifier: dataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceTimeseriesColumnIdentifierToTerraform(struct!.timeseriesColumnIdentifier),
   }
@@ -1086,6 +3554,12 @@ export function dataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourc
       isBlock: true,
       type: "list",
       storageClassType: "DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceEntityColumnIdentifiersList",
+    },
+    filter_condition: {
+      value: cdktn.stringToHclTerraform(struct!.filterCondition),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
     },
     name: {
       value: cdktn.stringToHclTerraform(struct!.name),
@@ -1127,6 +3601,10 @@ export class DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceOu
       hasAnyValues = true;
       internalValueResult.entityColumnIdentifiers = this._entityColumnIdentifiers?.internalValue;
     }
+    if (this._filterCondition !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.filterCondition = this._filterCondition;
+    }
     if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
@@ -1143,6 +3621,7 @@ export class DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceOu
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._entityColumnIdentifiers.internalValue = undefined;
+      this._filterCondition = undefined;
       this._name = undefined;
       this._timeseriesColumnIdentifier.internalValue = undefined;
     }
@@ -1154,12 +3633,13 @@ export class DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceOu
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._entityColumnIdentifiers.internalValue = value.entityColumnIdentifiers;
+      this._filterCondition = value.filterCondition;
       this._name = value.name;
       this._timeseriesColumnIdentifier.internalValue = value.timeseriesColumnIdentifier;
     }
   }
 
-  // entity_column_identifiers - computed: true, optional: false, required: true
+  // entity_column_identifiers - computed: true, optional: true, required: false
   private _entityColumnIdentifiers = new DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceEntityColumnIdentifiersList(this, "entity_column_identifiers", false);
   public get entityColumnIdentifiers() {
     return this._entityColumnIdentifiers;
@@ -1167,9 +3647,28 @@ export class DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceOu
   public putEntityColumnIdentifiers(value: DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceEntityColumnIdentifiers[] | cdktn.IResolvable) {
     this._entityColumnIdentifiers.internalValue = value;
   }
+  public resetEntityColumnIdentifiers() {
+    this._entityColumnIdentifiers.internalValue = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get entityColumnIdentifiersInput() {
     return this._entityColumnIdentifiers.internalValue;
+  }
+
+  // filter_condition - computed: true, optional: true, required: false
+  private _filterCondition?: string; 
+  public get filterCondition() {
+    return this.getStringAttribute('filter_condition');
+  }
+  public set filterCondition(value: string) {
+    this._filterCondition = value;
+  }
+  public resetFilterCondition() {
+    this._filterCondition = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterConditionInput() {
+    return this._filterCondition;
   }
 
   // name - computed: true, optional: false, required: true
@@ -1185,13 +3684,16 @@ export class DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceOu
     return this._name;
   }
 
-  // timeseries_column_identifier - computed: true, optional: false, required: true
+  // timeseries_column_identifier - computed: true, optional: true, required: false
   private _timeseriesColumnIdentifier = new DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceTimeseriesColumnIdentifierOutputReference(this, "timeseries_column_identifier");
   public get timeseriesColumnIdentifier() {
     return this._timeseriesColumnIdentifier;
   }
   public putTimeseriesColumnIdentifier(value: DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceTimeseriesColumnIdentifier) {
     this._timeseriesColumnIdentifier.internalValue = value;
+  }
+  public resetTimeseriesColumnIdentifier() {
+    this._timeseriesColumnIdentifier.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get timeseriesColumnIdentifierInput() {
@@ -1200,11 +3702,11 @@ export class DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSourceOu
 }
 export interface DataDatabricksFeatureEngineeringFeaturesFeaturesSource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/feature_engineering_features#delta_table_source DataDatabricksFeatureEngineeringFeatures#delta_table_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#delta_table_source DataDatabricksFeatureEngineeringFeatures#delta_table_source}
   */
   readonly deltaTableSource?: DataDatabricksFeatureEngineeringFeaturesFeaturesSourceDeltaTableSource;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/feature_engineering_features#kafka_source DataDatabricksFeatureEngineeringFeatures#kafka_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#kafka_source DataDatabricksFeatureEngineeringFeatures#kafka_source}
   */
   readonly kafkaSource?: DataDatabricksFeatureEngineeringFeaturesFeaturesSourceKafkaSource;
 }
@@ -1317,11 +3819,11 @@ export class DataDatabricksFeatureEngineeringFeaturesFeaturesSourceOutputReferen
 }
 export interface DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowContinuous {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/feature_engineering_features#offset DataDatabricksFeatureEngineeringFeatures#offset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#offset DataDatabricksFeatureEngineeringFeatures#offset}
   */
   readonly offset?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/feature_engineering_features#window_duration DataDatabricksFeatureEngineeringFeatures#window_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#window_duration DataDatabricksFeatureEngineeringFeatures#window_duration}
   */
   readonly windowDuration: string;
 }
@@ -1441,11 +3943,11 @@ export class DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowContinuou
 }
 export interface DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowSliding {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/feature_engineering_features#slide_duration DataDatabricksFeatureEngineeringFeatures#slide_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#slide_duration DataDatabricksFeatureEngineeringFeatures#slide_duration}
   */
   readonly slideDuration: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/feature_engineering_features#window_duration DataDatabricksFeatureEngineeringFeatures#window_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#window_duration DataDatabricksFeatureEngineeringFeatures#window_duration}
   */
   readonly windowDuration: string;
 }
@@ -1562,7 +4064,7 @@ export class DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowSlidingOu
 }
 export interface DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowTumbling {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/feature_engineering_features#window_duration DataDatabricksFeatureEngineeringFeatures#window_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#window_duration DataDatabricksFeatureEngineeringFeatures#window_duration}
   */
   readonly windowDuration: string;
 }
@@ -1653,15 +4155,15 @@ export class DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowTumblingO
 }
 export interface DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindow {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/feature_engineering_features#continuous DataDatabricksFeatureEngineeringFeatures#continuous}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#continuous DataDatabricksFeatureEngineeringFeatures#continuous}
   */
   readonly continuous?: DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowContinuous;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/feature_engineering_features#sliding DataDatabricksFeatureEngineeringFeatures#sliding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#sliding DataDatabricksFeatureEngineeringFeatures#sliding}
   */
   readonly sliding?: DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowSliding;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/feature_engineering_features#tumbling DataDatabricksFeatureEngineeringFeatures#tumbling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#tumbling DataDatabricksFeatureEngineeringFeatures#tumbling}
   */
   readonly tumbling?: DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowTumbling;
 }
@@ -1801,13 +4303,94 @@ export class DataDatabricksFeatureEngineeringFeaturesFeaturesTimeWindowOutputRef
     return this._tumbling.internalValue;
   }
 }
+export interface DataDatabricksFeatureEngineeringFeaturesFeaturesTimeseriesColumn {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#name DataDatabricksFeatureEngineeringFeatures#name}
+  */
+  readonly name: string;
+}
+
+export function dataDatabricksFeatureEngineeringFeaturesFeaturesTimeseriesColumnToTerraform(struct?: DataDatabricksFeatureEngineeringFeaturesFeaturesTimeseriesColumn): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    name: cdktn.stringToTerraform(struct!.name),
+  }
+}
+
+
+export function dataDatabricksFeatureEngineeringFeaturesFeaturesTimeseriesColumnToHclTerraform(struct?: DataDatabricksFeatureEngineeringFeaturesFeaturesTimeseriesColumn): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktn.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataDatabricksFeatureEngineeringFeaturesFeaturesTimeseriesColumnOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataDatabricksFeatureEngineeringFeaturesFeaturesTimeseriesColumn | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksFeatureEngineeringFeaturesFeaturesTimeseriesColumn | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._name = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._name = value.name;
+    }
+  }
+
+  // name - computed: true, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+}
 export interface DataDatabricksFeatureEngineeringFeaturesFeatures {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/feature_engineering_features#full_name DataDatabricksFeatureEngineeringFeatures#full_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#full_name DataDatabricksFeatureEngineeringFeatures#full_name}
   */
   readonly fullName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/feature_engineering_features#provider_config DataDatabricksFeatureEngineeringFeatures#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#provider_config DataDatabricksFeatureEngineeringFeatures#provider_config}
   */
   readonly providerConfig?: DataDatabricksFeatureEngineeringFeaturesFeaturesProviderConfig;
 }
@@ -1893,6 +4476,12 @@ export class DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReference ext
     return this.getStringAttribute('description');
   }
 
+  // entities - computed: true, optional: false, required: false
+  private _entities = new DataDatabricksFeatureEngineeringFeaturesFeaturesEntitiesList(this, "entities", false);
+  public get entities() {
+    return this._entities;
+  }
+
   // filter_condition - computed: true, optional: false, required: false
   public get filterCondition() {
     return this.getStringAttribute('filter_condition');
@@ -1955,6 +4544,12 @@ export class DataDatabricksFeatureEngineeringFeaturesFeaturesOutputReference ext
   public get timeWindow() {
     return this._timeWindow;
   }
+
+  // timeseries_column - computed: true, optional: false, required: false
+  private _timeseriesColumn = new DataDatabricksFeatureEngineeringFeaturesFeaturesTimeseriesColumnOutputReference(this, "timeseries_column");
+  public get timeseriesColumn() {
+    return this._timeseriesColumn;
+  }
 }
 
 export class DataDatabricksFeatureEngineeringFeaturesFeaturesList extends cdktn.ComplexList {
@@ -1978,7 +4573,7 @@ export class DataDatabricksFeatureEngineeringFeaturesFeaturesList extends cdktn.
 }
 export interface DataDatabricksFeatureEngineeringFeaturesProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/feature_engineering_features#workspace_id DataDatabricksFeatureEngineeringFeatures#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#workspace_id DataDatabricksFeatureEngineeringFeatures#workspace_id}
   */
   readonly workspaceId: string;
 }
@@ -2069,7 +4664,7 @@ export class DataDatabricksFeatureEngineeringFeaturesProviderConfigOutputReferen
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/feature_engineering_features databricks_feature_engineering_features}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features databricks_feature_engineering_features}
 */
 export class DataDatabricksFeatureEngineeringFeatures extends cdktn.TerraformDataSource {
 
@@ -2085,7 +4680,7 @@ export class DataDatabricksFeatureEngineeringFeatures extends cdktn.TerraformDat
   * Generates CDKTN code for importing a DataDatabricksFeatureEngineeringFeatures resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksFeatureEngineeringFeatures to import
-  * @param importFromId The id of the existing DataDatabricksFeatureEngineeringFeatures that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/feature_engineering_features#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksFeatureEngineeringFeatures that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksFeatureEngineeringFeatures to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2097,7 +4692,7 @@ export class DataDatabricksFeatureEngineeringFeatures extends cdktn.TerraformDat
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/feature_engineering_features databricks_feature_engineering_features} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/feature_engineering_features databricks_feature_engineering_features} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2108,7 +4703,7 @@ export class DataDatabricksFeatureEngineeringFeatures extends cdktn.TerraformDat
       terraformResourceType: 'databricks_feature_engineering_features',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.111.0',
+        providerVersion: '1.112.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/materialized_features_feature_tags
+// https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/materialized_features_feature_tags
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,25 +13,25 @@ import * as cdktn from 'cdktn';
 
 export interface DataDatabricksMaterializedFeaturesFeatureTagsConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/materialized_features_feature_tags#feature_name DataDatabricksMaterializedFeaturesFeatureTags#feature_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/materialized_features_feature_tags#feature_name DataDatabricksMaterializedFeaturesFeatureTags#feature_name}
   */
   readonly featureName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/materialized_features_feature_tags#page_size DataDatabricksMaterializedFeaturesFeatureTags#page_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/materialized_features_feature_tags#page_size DataDatabricksMaterializedFeaturesFeatureTags#page_size}
   */
   readonly pageSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/materialized_features_feature_tags#provider_config DataDatabricksMaterializedFeaturesFeatureTags#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/materialized_features_feature_tags#provider_config DataDatabricksMaterializedFeaturesFeatureTags#provider_config}
   */
   readonly providerConfig?: DataDatabricksMaterializedFeaturesFeatureTagsProviderConfig;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/materialized_features_feature_tags#table_name DataDatabricksMaterializedFeaturesFeatureTags#table_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/materialized_features_feature_tags#table_name DataDatabricksMaterializedFeaturesFeatureTags#table_name}
   */
   readonly tableName: string;
 }
 export interface DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/materialized_features_feature_tags#workspace_id DataDatabricksMaterializedFeaturesFeatureTags#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/materialized_features_feature_tags#workspace_id DataDatabricksMaterializedFeaturesFeatureTags#workspace_id}
   */
   readonly workspaceId: string;
 }
@@ -122,11 +122,11 @@ export class DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsProviderCon
 }
 export interface DataDatabricksMaterializedFeaturesFeatureTagsFeatureTags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/materialized_features_feature_tags#key DataDatabricksMaterializedFeaturesFeatureTags#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/materialized_features_feature_tags#key DataDatabricksMaterializedFeaturesFeatureTags#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/materialized_features_feature_tags#provider_config DataDatabricksMaterializedFeaturesFeatureTags#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/materialized_features_feature_tags#provider_config DataDatabricksMaterializedFeaturesFeatureTags#provider_config}
   */
   readonly providerConfig?: DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsProviderConfig;
 }
@@ -263,7 +263,7 @@ export class DataDatabricksMaterializedFeaturesFeatureTagsFeatureTagsList extend
 }
 export interface DataDatabricksMaterializedFeaturesFeatureTagsProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/materialized_features_feature_tags#workspace_id DataDatabricksMaterializedFeaturesFeatureTags#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/materialized_features_feature_tags#workspace_id DataDatabricksMaterializedFeaturesFeatureTags#workspace_id}
   */
   readonly workspaceId: string;
 }
@@ -354,7 +354,7 @@ export class DataDatabricksMaterializedFeaturesFeatureTagsProviderConfigOutputRe
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/materialized_features_feature_tags databricks_materialized_features_feature_tags}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/materialized_features_feature_tags databricks_materialized_features_feature_tags}
 */
 export class DataDatabricksMaterializedFeaturesFeatureTags extends cdktn.TerraformDataSource {
 
@@ -370,7 +370,7 @@ export class DataDatabricksMaterializedFeaturesFeatureTags extends cdktn.Terrafo
   * Generates CDKTN code for importing a DataDatabricksMaterializedFeaturesFeatureTags resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksMaterializedFeaturesFeatureTags to import
-  * @param importFromId The id of the existing DataDatabricksMaterializedFeaturesFeatureTags that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/materialized_features_feature_tags#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksMaterializedFeaturesFeatureTags that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/materialized_features_feature_tags#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksMaterializedFeaturesFeatureTags to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -382,7 +382,7 @@ export class DataDatabricksMaterializedFeaturesFeatureTags extends cdktn.Terrafo
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.111.0/docs/data-sources/materialized_features_feature_tags databricks_materialized_features_feature_tags} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/materialized_features_feature_tags databricks_materialized_features_feature_tags} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -393,7 +393,7 @@ export class DataDatabricksMaterializedFeaturesFeatureTags extends cdktn.Terrafo
       terraformResourceType: 'databricks_materialized_features_feature_tags',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.111.0',
+        providerVersion: '1.112.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
