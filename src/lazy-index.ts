@@ -49,6 +49,8 @@ Object.defineProperty(exports, 'endpoint', { get: function () { return require('
 Object.defineProperty(exports, 'enhancedSecurityMonitoringWorkspaceSetting', { get: function () { return require('./enhanced-security-monitoring-workspace-setting'); } });
 Object.defineProperty(exports, 'entitlements', { get: function () { return require('./entitlements'); } });
 Object.defineProperty(exports, 'entityTagAssignment', { get: function () { return require('./entity-tag-assignment'); } });
+Object.defineProperty(exports, 'environmentsDefaultWorkspaceBaseEnvironment', { get: function () { return require('./environments-default-workspace-base-environment'); } });
+Object.defineProperty(exports, 'environmentsWorkspaceBaseEnvironment', { get: function () { return require('./environments-workspace-base-environment'); } });
 Object.defineProperty(exports, 'externalLocation', { get: function () { return require('./external-location'); } });
 Object.defineProperty(exports, 'externalMetadata', { get: function () { return require('./external-metadata'); } });
 Object.defineProperty(exports, 'featureEngineeringFeature', { get: function () { return require('./feature-engineering-feature'); } });
@@ -106,6 +108,7 @@ Object.defineProperty(exports, 'postgresBranch', { get: function () { return req
 Object.defineProperty(exports, 'postgresDatabase', { get: function () { return require('./postgres-database'); } });
 Object.defineProperty(exports, 'postgresEndpoint', { get: function () { return require('./postgres-endpoint'); } });
 Object.defineProperty(exports, 'postgresProject', { get: function () { return require('./postgres-project'); } });
+Object.defineProperty(exports, 'postgresRole', { get: function () { return require('./postgres-role'); } });
 Object.defineProperty(exports, 'providerResource', { get: function () { return require('./provider-resource'); } });
 Object.defineProperty(exports, 'qualityMonitor', { get: function () { return require('./quality-monitor'); } });
 Object.defineProperty(exports, 'qualityMonitorV2', { get: function () { return require('./quality-monitor-v2'); } });
@@ -200,6 +203,9 @@ Object.defineProperty(exports, 'dataDatabricksEndpoint', { get: function () { re
 Object.defineProperty(exports, 'dataDatabricksEndpoints', { get: function () { return require('./data-databricks-endpoints'); } });
 Object.defineProperty(exports, 'dataDatabricksEntityTagAssignment', { get: function () { return require('./data-databricks-entity-tag-assignment'); } });
 Object.defineProperty(exports, 'dataDatabricksEntityTagAssignments', { get: function () { return require('./data-databricks-entity-tag-assignments'); } });
+Object.defineProperty(exports, 'dataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment', { get: function () { return require('./data-databricks-environments-default-workspace-base-environment'); } });
+Object.defineProperty(exports, 'dataDatabricksEnvironmentsWorkspaceBaseEnvironment', { get: function () { return require('./data-databricks-environments-workspace-base-environment'); } });
+Object.defineProperty(exports, 'dataDatabricksEnvironmentsWorkspaceBaseEnvironments', { get: function () { return require('./data-databricks-environments-workspace-base-environments'); } });
 Object.defineProperty(exports, 'dataDatabricksExternalLocation', { get: function () { return require('./data-databricks-external-location'); } });
 Object.defineProperty(exports, 'dataDatabricksExternalLocations', { get: function () { return require('./data-databricks-external-locations'); } });
 Object.defineProperty(exports, 'dataDatabricksExternalMetadata', { get: function () { return require('./data-databricks-external-metadata'); } });
@@ -248,6 +254,8 @@ Object.defineProperty(exports, 'dataDatabricksPostgresEndpoint', { get: function
 Object.defineProperty(exports, 'dataDatabricksPostgresEndpoints', { get: function () { return require('./data-databricks-postgres-endpoints'); } });
 Object.defineProperty(exports, 'dataDatabricksPostgresProject', { get: function () { return require('./data-databricks-postgres-project'); } });
 Object.defineProperty(exports, 'dataDatabricksPostgresProjects', { get: function () { return require('./data-databricks-postgres-projects'); } });
+Object.defineProperty(exports, 'dataDatabricksPostgresRole', { get: function () { return require('./data-databricks-postgres-role'); } });
+Object.defineProperty(exports, 'dataDatabricksPostgresRoles', { get: function () { return require('./data-databricks-postgres-roles'); } });
 Object.defineProperty(exports, 'dataDatabricksQualityMonitorV2', { get: function () { return require('./data-databricks-quality-monitor-v2'); } });
 Object.defineProperty(exports, 'dataDatabricksQualityMonitorsV2', { get: function () { return require('./data-databricks-quality-monitors-v2'); } });
 Object.defineProperty(exports, 'dataDatabricksRegisteredModel', { get: function () { return require('./data-databricks-registered-model'); } });
