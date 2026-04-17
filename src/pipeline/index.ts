@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline
+// https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,218 +13,218 @@ import * as cdktn from 'cdktn';
 
 export interface PipelineConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#allow_duplicate_names Pipeline#allow_duplicate_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#allow_duplicate_names Pipeline#allow_duplicate_names}
   */
   readonly allowDuplicateNames?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#budget_policy_id Pipeline#budget_policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#budget_policy_id Pipeline#budget_policy_id}
   */
   readonly budgetPolicyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#catalog Pipeline#catalog}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#catalog Pipeline#catalog}
   */
   readonly catalog?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#cause Pipeline#cause}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#cause Pipeline#cause}
   */
   readonly cause?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#channel Pipeline#channel}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#channel Pipeline#channel}
   */
   readonly channel?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#cluster_id Pipeline#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#cluster_id Pipeline#cluster_id}
   */
   readonly clusterId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#configuration Pipeline#configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#configuration Pipeline#configuration}
   */
   readonly configuration?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#continuous Pipeline#continuous}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#continuous Pipeline#continuous}
   */
   readonly continuous?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#creator_user_name Pipeline#creator_user_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#creator_user_name Pipeline#creator_user_name}
   */
   readonly creatorUserName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#development Pipeline#development}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#development Pipeline#development}
   */
   readonly development?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#edition Pipeline#edition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#edition Pipeline#edition}
   */
   readonly edition?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#expected_last_modified Pipeline#expected_last_modified}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#expected_last_modified Pipeline#expected_last_modified}
   */
   readonly expectedLastModified?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#health Pipeline#health}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#health Pipeline#health}
   */
   readonly health?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#id Pipeline#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#id Pipeline#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#last_modified Pipeline#last_modified}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#last_modified Pipeline#last_modified}
   */
   readonly lastModified?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#name Pipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#name Pipeline#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#photon Pipeline#photon}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#photon Pipeline#photon}
   */
   readonly photon?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#root_path Pipeline#root_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#root_path Pipeline#root_path}
   */
   readonly rootPath?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#run_as_user_name Pipeline#run_as_user_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#run_as_user_name Pipeline#run_as_user_name}
   */
   readonly runAsUserName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#schema Pipeline#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#schema Pipeline#schema}
   */
   readonly schema?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#serverless Pipeline#serverless}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#serverless Pipeline#serverless}
   */
   readonly serverless?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#state Pipeline#state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#state Pipeline#state}
   */
   readonly state?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#storage Pipeline#storage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#storage Pipeline#storage}
   */
   readonly storage?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#tags Pipeline#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#tags Pipeline#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#target Pipeline#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#target Pipeline#target}
   */
   readonly target?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#url Pipeline#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#url Pipeline#url}
   */
   readonly url?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#usage_policy_id Pipeline#usage_policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#usage_policy_id Pipeline#usage_policy_id}
   */
   readonly usagePolicyId?: string;
   /**
   * cluster block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#cluster Pipeline#cluster}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#cluster Pipeline#cluster}
   */
   readonly cluster?: PipelineCluster[] | cdktn.IResolvable;
   /**
   * deployment block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#deployment Pipeline#deployment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#deployment Pipeline#deployment}
   */
   readonly deployment?: PipelineDeployment;
   /**
   * environment block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#environment Pipeline#environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#environment Pipeline#environment}
   */
   readonly environment?: PipelineEnvironment;
   /**
   * event_log block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#event_log Pipeline#event_log}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#event_log Pipeline#event_log}
   */
   readonly eventLog?: PipelineEventLog;
   /**
   * filters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#filters Pipeline#filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#filters Pipeline#filters}
   */
   readonly filters?: PipelineFilters;
   /**
   * gateway_definition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#gateway_definition Pipeline#gateway_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#gateway_definition Pipeline#gateway_definition}
   */
   readonly gatewayDefinition?: PipelineGatewayDefinition;
   /**
   * ingestion_definition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#ingestion_definition Pipeline#ingestion_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#ingestion_definition Pipeline#ingestion_definition}
   */
   readonly ingestionDefinition?: PipelineIngestionDefinition;
   /**
   * latest_updates block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#latest_updates Pipeline#latest_updates}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#latest_updates Pipeline#latest_updates}
   */
   readonly latestUpdates?: PipelineLatestUpdates[] | cdktn.IResolvable;
   /**
   * library block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#library Pipeline#library}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#library Pipeline#library}
   */
   readonly library?: PipelineLibrary[] | cdktn.IResolvable;
   /**
   * notification block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#notification Pipeline#notification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#notification Pipeline#notification}
   */
   readonly notification?: PipelineNotification[] | cdktn.IResolvable;
   /**
   * provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#provider_config Pipeline#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#provider_config Pipeline#provider_config}
   */
   readonly providerConfig?: PipelineProviderConfig;
   /**
   * restart_window block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#restart_window Pipeline#restart_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#restart_window Pipeline#restart_window}
   */
   readonly restartWindow?: PipelineRestartWindow;
   /**
   * run_as block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#run_as Pipeline#run_as}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#run_as Pipeline#run_as}
   */
   readonly runAs?: PipelineRunAs;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#timeouts Pipeline#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#timeouts Pipeline#timeouts}
   */
   readonly timeouts?: PipelineTimeouts;
   /**
   * trigger block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#trigger Pipeline#trigger}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#trigger Pipeline#trigger}
   */
   readonly trigger?: PipelineTrigger;
 }
 export interface PipelineClusterAutoscale {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#max_workers Pipeline#max_workers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#max_workers Pipeline#max_workers}
   */
   readonly maxWorkers: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#min_workers Pipeline#min_workers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#min_workers Pipeline#min_workers}
   */
   readonly minWorkers: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#mode Pipeline#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#mode Pipeline#mode}
   */
   readonly mode?: string;
 }
@@ -360,43 +360,43 @@ export class PipelineClusterAutoscaleOutputReference extends cdktn.ComplexObject
 }
 export interface PipelineClusterAwsAttributes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#availability Pipeline#availability}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#availability Pipeline#availability}
   */
   readonly availability?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#ebs_volume_count Pipeline#ebs_volume_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#ebs_volume_count Pipeline#ebs_volume_count}
   */
   readonly ebsVolumeCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#ebs_volume_iops Pipeline#ebs_volume_iops}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#ebs_volume_iops Pipeline#ebs_volume_iops}
   */
   readonly ebsVolumeIops?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#ebs_volume_size Pipeline#ebs_volume_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#ebs_volume_size Pipeline#ebs_volume_size}
   */
   readonly ebsVolumeSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#ebs_volume_throughput Pipeline#ebs_volume_throughput}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#ebs_volume_throughput Pipeline#ebs_volume_throughput}
   */
   readonly ebsVolumeThroughput?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#ebs_volume_type Pipeline#ebs_volume_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#ebs_volume_type Pipeline#ebs_volume_type}
   */
   readonly ebsVolumeType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#first_on_demand Pipeline#first_on_demand}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#first_on_demand Pipeline#first_on_demand}
   */
   readonly firstOnDemand?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#instance_profile_arn Pipeline#instance_profile_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#instance_profile_arn Pipeline#instance_profile_arn}
   */
   readonly instanceProfileArn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#spot_bid_price_percent Pipeline#spot_bid_price_percent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#spot_bid_price_percent Pipeline#spot_bid_price_percent}
   */
   readonly spotBidPricePercent?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#zone_id Pipeline#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#zone_id Pipeline#zone_id}
   */
   readonly zoneId?: string;
 }
@@ -741,11 +741,11 @@ export class PipelineClusterAwsAttributesOutputReference extends cdktn.ComplexOb
 }
 export interface PipelineClusterAzureAttributesLogAnalyticsInfo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#log_analytics_primary_key Pipeline#log_analytics_primary_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#log_analytics_primary_key Pipeline#log_analytics_primary_key}
   */
   readonly logAnalyticsPrimaryKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#log_analytics_workspace_id Pipeline#log_analytics_workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#log_analytics_workspace_id Pipeline#log_analytics_workspace_id}
   */
   readonly logAnalyticsWorkspaceId?: string;
 }
@@ -858,21 +858,21 @@ export class PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference exten
 }
 export interface PipelineClusterAzureAttributes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#availability Pipeline#availability}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#availability Pipeline#availability}
   */
   readonly availability?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#first_on_demand Pipeline#first_on_demand}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#first_on_demand Pipeline#first_on_demand}
   */
   readonly firstOnDemand?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#spot_bid_max_price Pipeline#spot_bid_max_price}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#spot_bid_max_price Pipeline#spot_bid_max_price}
   */
   readonly spotBidMaxPrice?: number;
   /**
   * log_analytics_info block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#log_analytics_info Pipeline#log_analytics_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#log_analytics_info Pipeline#log_analytics_info}
   */
   readonly logAnalyticsInfo?: PipelineClusterAzureAttributesLogAnalyticsInfo;
 }
@@ -1043,7 +1043,7 @@ export class PipelineClusterAzureAttributesOutputReference extends cdktn.Complex
 }
 export interface PipelineClusterClusterLogConfDbfs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#destination Pipeline#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#destination Pipeline#destination}
   */
   readonly destination: string;
 }
@@ -1124,31 +1124,31 @@ export class PipelineClusterClusterLogConfDbfsOutputReference extends cdktn.Comp
 }
 export interface PipelineClusterClusterLogConfS3 {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#canned_acl Pipeline#canned_acl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#canned_acl Pipeline#canned_acl}
   */
   readonly cannedAcl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#destination Pipeline#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#destination Pipeline#destination}
   */
   readonly destination: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#enable_encryption Pipeline#enable_encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#enable_encryption Pipeline#enable_encryption}
   */
   readonly enableEncryption?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#encryption_type Pipeline#encryption_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#encryption_type Pipeline#encryption_type}
   */
   readonly encryptionType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#endpoint Pipeline#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#endpoint Pipeline#endpoint}
   */
   readonly endpoint?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#kms_key Pipeline#kms_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#kms_key Pipeline#kms_key}
   */
   readonly kmsKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#region Pipeline#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#region Pipeline#region}
   */
   readonly region?: string;
 }
@@ -1403,7 +1403,7 @@ export class PipelineClusterClusterLogConfS3OutputReference extends cdktn.Comple
 }
 export interface PipelineClusterClusterLogConfVolumes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#destination Pipeline#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#destination Pipeline#destination}
   */
   readonly destination: string;
 }
@@ -1486,19 +1486,19 @@ export interface PipelineClusterClusterLogConf {
   /**
   * dbfs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#dbfs Pipeline#dbfs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#dbfs Pipeline#dbfs}
   */
   readonly dbfs?: PipelineClusterClusterLogConfDbfs;
   /**
   * s3 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#s3 Pipeline#s3}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#s3 Pipeline#s3}
   */
   readonly s3?: PipelineClusterClusterLogConfS3;
   /**
   * volumes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#volumes Pipeline#volumes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#volumes Pipeline#volumes}
   */
   readonly volumes?: PipelineClusterClusterLogConfVolumes;
 }
@@ -1640,23 +1640,23 @@ export class PipelineClusterClusterLogConfOutputReference extends cdktn.ComplexO
 }
 export interface PipelineClusterGcpAttributes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#availability Pipeline#availability}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#availability Pipeline#availability}
   */
   readonly availability?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#first_on_demand Pipeline#first_on_demand}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#first_on_demand Pipeline#first_on_demand}
   */
   readonly firstOnDemand?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#google_service_account Pipeline#google_service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#google_service_account Pipeline#google_service_account}
   */
   readonly googleServiceAccount?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#local_ssd_count Pipeline#local_ssd_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#local_ssd_count Pipeline#local_ssd_count}
   */
   readonly localSsdCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#zone_id Pipeline#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#zone_id Pipeline#zone_id}
   */
   readonly zoneId?: string;
 }
@@ -1856,7 +1856,7 @@ export class PipelineClusterGcpAttributesOutputReference extends cdktn.ComplexOb
 }
 export interface PipelineClusterInitScriptsAbfss {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#destination Pipeline#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#destination Pipeline#destination}
   */
   readonly destination: string;
 }
@@ -1937,7 +1937,7 @@ export class PipelineClusterInitScriptsAbfssOutputReference extends cdktn.Comple
 }
 export interface PipelineClusterInitScriptsDbfs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#destination Pipeline#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#destination Pipeline#destination}
   */
   readonly destination: string;
 }
@@ -2018,7 +2018,7 @@ export class PipelineClusterInitScriptsDbfsOutputReference extends cdktn.Complex
 }
 export interface PipelineClusterInitScriptsFile {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#destination Pipeline#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#destination Pipeline#destination}
   */
   readonly destination: string;
 }
@@ -2099,7 +2099,7 @@ export class PipelineClusterInitScriptsFileOutputReference extends cdktn.Complex
 }
 export interface PipelineClusterInitScriptsGcs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#destination Pipeline#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#destination Pipeline#destination}
   */
   readonly destination: string;
 }
@@ -2180,31 +2180,31 @@ export class PipelineClusterInitScriptsGcsOutputReference extends cdktn.ComplexO
 }
 export interface PipelineClusterInitScriptsS3 {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#canned_acl Pipeline#canned_acl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#canned_acl Pipeline#canned_acl}
   */
   readonly cannedAcl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#destination Pipeline#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#destination Pipeline#destination}
   */
   readonly destination: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#enable_encryption Pipeline#enable_encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#enable_encryption Pipeline#enable_encryption}
   */
   readonly enableEncryption?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#encryption_type Pipeline#encryption_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#encryption_type Pipeline#encryption_type}
   */
   readonly encryptionType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#endpoint Pipeline#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#endpoint Pipeline#endpoint}
   */
   readonly endpoint?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#kms_key Pipeline#kms_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#kms_key Pipeline#kms_key}
   */
   readonly kmsKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#region Pipeline#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#region Pipeline#region}
   */
   readonly region?: string;
 }
@@ -2459,7 +2459,7 @@ export class PipelineClusterInitScriptsS3OutputReference extends cdktn.ComplexOb
 }
 export interface PipelineClusterInitScriptsVolumes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#destination Pipeline#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#destination Pipeline#destination}
   */
   readonly destination: string;
 }
@@ -2540,7 +2540,7 @@ export class PipelineClusterInitScriptsVolumesOutputReference extends cdktn.Comp
 }
 export interface PipelineClusterInitScriptsWorkspace {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#destination Pipeline#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#destination Pipeline#destination}
   */
   readonly destination: string;
 }
@@ -2623,43 +2623,43 @@ export interface PipelineClusterInitScripts {
   /**
   * abfss block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#abfss Pipeline#abfss}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#abfss Pipeline#abfss}
   */
   readonly abfss?: PipelineClusterInitScriptsAbfss;
   /**
   * dbfs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#dbfs Pipeline#dbfs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#dbfs Pipeline#dbfs}
   */
   readonly dbfs?: PipelineClusterInitScriptsDbfs;
   /**
   * file block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#file Pipeline#file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#file Pipeline#file}
   */
   readonly file?: PipelineClusterInitScriptsFile;
   /**
   * gcs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#gcs Pipeline#gcs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#gcs Pipeline#gcs}
   */
   readonly gcs?: PipelineClusterInitScriptsGcs;
   /**
   * s3 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#s3 Pipeline#s3}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#s3 Pipeline#s3}
   */
   readonly s3?: PipelineClusterInitScriptsS3;
   /**
   * volumes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#volumes Pipeline#volumes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#volumes Pipeline#volumes}
   */
   readonly volumes?: PipelineClusterInitScriptsVolumes;
   /**
   * workspace block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#workspace Pipeline#workspace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#workspace Pipeline#workspace}
   */
   readonly workspace?: PipelineClusterInitScriptsWorkspace;
 }
@@ -2936,7 +2936,7 @@ export class PipelineClusterInitScriptsList extends cdktn.ComplexList {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2949,91 +2949,91 @@ export class PipelineClusterInitScriptsList extends cdktn.ComplexList {
 }
 export interface PipelineCluster {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#apply_policy_default_values Pipeline#apply_policy_default_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#apply_policy_default_values Pipeline#apply_policy_default_values}
   */
   readonly applyPolicyDefaultValues?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#custom_tags Pipeline#custom_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#custom_tags Pipeline#custom_tags}
   */
   readonly customTags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#driver_instance_pool_id Pipeline#driver_instance_pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#driver_instance_pool_id Pipeline#driver_instance_pool_id}
   */
   readonly driverInstancePoolId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#driver_node_type_id Pipeline#driver_node_type_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#driver_node_type_id Pipeline#driver_node_type_id}
   */
   readonly driverNodeTypeId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#enable_local_disk_encryption Pipeline#enable_local_disk_encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#enable_local_disk_encryption Pipeline#enable_local_disk_encryption}
   */
   readonly enableLocalDiskEncryption?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#instance_pool_id Pipeline#instance_pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#instance_pool_id Pipeline#instance_pool_id}
   */
   readonly instancePoolId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#label Pipeline#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#label Pipeline#label}
   */
   readonly label?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#node_type_id Pipeline#node_type_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#node_type_id Pipeline#node_type_id}
   */
   readonly nodeTypeId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#num_workers Pipeline#num_workers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#num_workers Pipeline#num_workers}
   */
   readonly numWorkers?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#policy_id Pipeline#policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#policy_id Pipeline#policy_id}
   */
   readonly policyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#spark_conf Pipeline#spark_conf}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#spark_conf Pipeline#spark_conf}
   */
   readonly sparkConf?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#spark_env_vars Pipeline#spark_env_vars}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#spark_env_vars Pipeline#spark_env_vars}
   */
   readonly sparkEnvVars?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#ssh_public_keys Pipeline#ssh_public_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#ssh_public_keys Pipeline#ssh_public_keys}
   */
   readonly sshPublicKeys?: string[];
   /**
   * autoscale block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#autoscale Pipeline#autoscale}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#autoscale Pipeline#autoscale}
   */
   readonly autoscale?: PipelineClusterAutoscale;
   /**
   * aws_attributes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#aws_attributes Pipeline#aws_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#aws_attributes Pipeline#aws_attributes}
   */
   readonly awsAttributes?: PipelineClusterAwsAttributes;
   /**
   * azure_attributes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#azure_attributes Pipeline#azure_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#azure_attributes Pipeline#azure_attributes}
   */
   readonly azureAttributes?: PipelineClusterAzureAttributes;
   /**
   * cluster_log_conf block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#cluster_log_conf Pipeline#cluster_log_conf}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#cluster_log_conf Pipeline#cluster_log_conf}
   */
   readonly clusterLogConf?: PipelineClusterClusterLogConf;
   /**
   * gcp_attributes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#gcp_attributes Pipeline#gcp_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#gcp_attributes Pipeline#gcp_attributes}
   */
   readonly gcpAttributes?: PipelineClusterGcpAttributes;
   /**
   * init_scripts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#init_scripts Pipeline#init_scripts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#init_scripts Pipeline#init_scripts}
   */
   readonly initScripts?: PipelineClusterInitScripts[] | cdktn.IResolvable;
 }
@@ -3658,7 +3658,7 @@ export class PipelineClusterList extends cdktn.ComplexList {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3671,11 +3671,11 @@ export class PipelineClusterList extends cdktn.ComplexList {
 }
 export interface PipelineDeployment {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#kind Pipeline#kind}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#kind Pipeline#kind}
   */
   readonly kind: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#metadata_file_path Pipeline#metadata_file_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#metadata_file_path Pipeline#metadata_file_path}
   */
   readonly metadataFilePath?: string;
 }
@@ -3785,11 +3785,11 @@ export class PipelineDeploymentOutputReference extends cdktn.ComplexObject {
 }
 export interface PipelineEnvironment {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#dependencies Pipeline#dependencies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#dependencies Pipeline#dependencies}
   */
   readonly dependencies?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#environment_version Pipeline#environment_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#environment_version Pipeline#environment_version}
   */
   readonly environmentVersion?: string;
 }
@@ -3902,15 +3902,15 @@ export class PipelineEnvironmentOutputReference extends cdktn.ComplexObject {
 }
 export interface PipelineEventLog {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#catalog Pipeline#catalog}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#catalog Pipeline#catalog}
   */
   readonly catalog?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#name Pipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#name Pipeline#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#schema Pipeline#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#schema Pipeline#schema}
   */
   readonly schema?: string;
 }
@@ -4049,11 +4049,11 @@ export class PipelineEventLogOutputReference extends cdktn.ComplexObject {
 }
 export interface PipelineFilters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#exclude Pipeline#exclude}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#exclude Pipeline#exclude}
   */
   readonly exclude?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#include Pipeline#include}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#include Pipeline#include}
   */
   readonly include?: string[];
 }
@@ -4166,7 +4166,7 @@ export class PipelineFiltersOutputReference extends cdktn.ComplexObject {
 }
 export interface PipelineGatewayDefinitionConnectionParameters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}
   */
   readonly sourceCatalog?: string;
 }
@@ -4250,29 +4250,29 @@ export class PipelineGatewayDefinitionConnectionParametersOutputReference extend
 }
 export interface PipelineGatewayDefinition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#connection_id Pipeline#connection_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#connection_id Pipeline#connection_id}
   */
   readonly connectionId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#connection_name Pipeline#connection_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#connection_name Pipeline#connection_name}
   */
   readonly connectionName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#gateway_storage_catalog Pipeline#gateway_storage_catalog}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#gateway_storage_catalog Pipeline#gateway_storage_catalog}
   */
   readonly gatewayStorageCatalog: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#gateway_storage_name Pipeline#gateway_storage_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#gateway_storage_name Pipeline#gateway_storage_name}
   */
   readonly gatewayStorageName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#gateway_storage_schema Pipeline#gateway_storage_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#gateway_storage_schema Pipeline#gateway_storage_schema}
   */
   readonly gatewayStorageSchema: string;
   /**
   * connection_parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#connection_parameters Pipeline#connection_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#connection_parameters Pipeline#connection_parameters}
   */
   readonly connectionParameters?: PipelineGatewayDefinitionConnectionParameters;
 }
@@ -4492,15 +4492,15 @@ export class PipelineGatewayDefinitionOutputReference extends cdktn.ComplexObjec
 }
 export interface PipelineIngestionDefinitionDataStagingOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#catalog_name Pipeline#catalog_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#catalog_name Pipeline#catalog_name}
   */
   readonly catalogName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#schema_name Pipeline#schema_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#schema_name Pipeline#schema_name}
   */
   readonly schemaName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#volume_name Pipeline#volume_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#volume_name Pipeline#volume_name}
   */
   readonly volumeName?: string;
 }
@@ -4636,15 +4636,15 @@ export class PipelineIngestionDefinitionDataStagingOptionsOutputReference extend
 }
 export interface PipelineIngestionDefinitionFullRefreshWindow {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#days_of_week Pipeline#days_of_week}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#days_of_week Pipeline#days_of_week}
   */
   readonly daysOfWeek?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#start_hour Pipeline#start_hour}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#start_hour Pipeline#start_hour}
   */
   readonly startHour: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#time_zone_id Pipeline#time_zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#time_zone_id Pipeline#time_zone_id}
   */
   readonly timeZoneId?: string;
 }
@@ -4783,11 +4783,11 @@ export class PipelineIngestionDefinitionFullRefreshWindowOutputReference extends
 }
 export interface PipelineIngestionDefinitionObjectsReportTableConfigurationAutoFullRefreshPolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#enabled Pipeline#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#enabled Pipeline#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#min_interval_hours Pipeline#min_interval_hours}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#min_interval_hours Pipeline#min_interval_hours}
   */
   readonly minIntervalHours?: number;
 }
@@ -4897,15 +4897,15 @@ export class PipelineIngestionDefinitionObjectsReportTableConfigurationAutoFullR
 }
 export interface PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}
   */
   readonly cursorColumns?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}
   */
   readonly deletionCondition?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}
   */
   readonly hardDeletionSyncMinIntervalInSeconds?: number;
 }
@@ -5047,11 +5047,11 @@ export class PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBase
 }
 export interface PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#key Pipeline#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#key Pipeline#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#value Pipeline#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#value Pipeline#value}
   */
   readonly value?: string;
 }
@@ -5183,7 +5183,7 @@ export class PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayRe
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5196,17 +5196,17 @@ export class PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayRe
 }
 export interface PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#incremental Pipeline#incremental}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#incremental Pipeline#incremental}
   */
   readonly incremental?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#parameters Pipeline#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#parameters Pipeline#parameters}
   */
   readonly parameters?: { [key: string]: string };
   /**
   * report_parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#report_parameters Pipeline#report_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#report_parameters Pipeline#report_parameters}
   */
   readonly reportParameters?: PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters[] | cdktn.IResolvable;
 }
@@ -5348,49 +5348,49 @@ export class PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayRe
 }
 export interface PipelineIngestionDefinitionObjectsReportTableConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}
   */
   readonly excludeColumns?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#include_columns Pipeline#include_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#include_columns Pipeline#include_columns}
   */
   readonly includeColumns?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}
   */
   readonly primaryKeys?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#row_filter Pipeline#row_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#row_filter Pipeline#row_filter}
   */
   readonly rowFilter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}
   */
   readonly salesforceIncludeFormulaFields?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#scd_type Pipeline#scd_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#scd_type Pipeline#scd_type}
   */
   readonly scdType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}
   */
   readonly sequenceBy?: string[];
   /**
   * auto_full_refresh_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#auto_full_refresh_policy Pipeline#auto_full_refresh_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#auto_full_refresh_policy Pipeline#auto_full_refresh_policy}
   */
   readonly autoFullRefreshPolicy?: PipelineIngestionDefinitionObjectsReportTableConfigurationAutoFullRefreshPolicy;
   /**
   * query_based_connector_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#query_based_connector_config Pipeline#query_based_connector_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#query_based_connector_config Pipeline#query_based_connector_config}
   */
   readonly queryBasedConnectorConfig?: PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfig;
   /**
   * workday_report_parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#workday_report_parameters Pipeline#workday_report_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#workday_report_parameters Pipeline#workday_report_parameters}
   */
   readonly workdayReportParameters?: PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters;
 }
@@ -5735,25 +5735,25 @@ export class PipelineIngestionDefinitionObjectsReportTableConfigurationOutputRef
 }
 export interface PipelineIngestionDefinitionObjectsReport {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#destination_catalog Pipeline#destination_catalog}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#destination_catalog Pipeline#destination_catalog}
   */
   readonly destinationCatalog: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#destination_schema Pipeline#destination_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#destination_schema Pipeline#destination_schema}
   */
   readonly destinationSchema: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#destination_table Pipeline#destination_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#destination_table Pipeline#destination_table}
   */
   readonly destinationTable?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#source_url Pipeline#source_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#source_url Pipeline#source_url}
   */
   readonly sourceUrl: string;
   /**
   * table_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#table_configuration Pipeline#table_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#table_configuration Pipeline#table_configuration}
   */
   readonly tableConfiguration?: PipelineIngestionDefinitionObjectsReportTableConfiguration;
 }
@@ -5942,13 +5942,2133 @@ export class PipelineIngestionDefinitionObjectsReportOutputReference extends cdk
     return this._tableConfiguration.internalValue;
   }
 }
+export interface PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptionsFileFilters {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#modified_after Pipeline#modified_after}
+  */
+  readonly modifiedAfter?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#modified_before Pipeline#modified_before}
+  */
+  readonly modifiedBefore?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#path_filter Pipeline#path_filter}
+  */
+  readonly pathFilter?: string;
+}
+
+export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptionsFileFiltersToTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptionsFileFilters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    modified_after: cdktn.stringToTerraform(struct!.modifiedAfter),
+    modified_before: cdktn.stringToTerraform(struct!.modifiedBefore),
+    path_filter: cdktn.stringToTerraform(struct!.pathFilter),
+  }
+}
+
+
+export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptionsFileFiltersToHclTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptionsFileFilters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    modified_after: {
+      value: cdktn.stringToHclTerraform(struct!.modifiedAfter),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    modified_before: {
+      value: cdktn.stringToHclTerraform(struct!.modifiedBefore),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    path_filter: {
+      value: cdktn.stringToHclTerraform(struct!.pathFilter),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptionsFileFiltersOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptionsFileFilters | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._modifiedAfter !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.modifiedAfter = this._modifiedAfter;
+    }
+    if (this._modifiedBefore !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.modifiedBefore = this._modifiedBefore;
+    }
+    if (this._pathFilter !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pathFilter = this._pathFilter;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptionsFileFilters | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._modifiedAfter = undefined;
+      this._modifiedBefore = undefined;
+      this._pathFilter = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._modifiedAfter = value.modifiedAfter;
+      this._modifiedBefore = value.modifiedBefore;
+      this._pathFilter = value.pathFilter;
+    }
+  }
+
+  // modified_after - computed: false, optional: true, required: false
+  private _modifiedAfter?: string; 
+  public get modifiedAfter() {
+    return this.getStringAttribute('modified_after');
+  }
+  public set modifiedAfter(value: string) {
+    this._modifiedAfter = value;
+  }
+  public resetModifiedAfter() {
+    this._modifiedAfter = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get modifiedAfterInput() {
+    return this._modifiedAfter;
+  }
+
+  // modified_before - computed: false, optional: true, required: false
+  private _modifiedBefore?: string; 
+  public get modifiedBefore() {
+    return this.getStringAttribute('modified_before');
+  }
+  public set modifiedBefore(value: string) {
+    this._modifiedBefore = value;
+  }
+  public resetModifiedBefore() {
+    this._modifiedBefore = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get modifiedBeforeInput() {
+    return this._modifiedBefore;
+  }
+
+  // path_filter - computed: false, optional: true, required: false
+  private _pathFilter?: string; 
+  public get pathFilter() {
+    return this.getStringAttribute('path_filter');
+  }
+  public set pathFilter(value: string) {
+    this._pathFilter = value;
+  }
+  public resetPathFilter() {
+    this._pathFilter = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pathFilterInput() {
+    return this._pathFilter;
+  }
+}
+
+export class PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptionsFileFiltersList extends cdktn.ComplexList {
+  public internalValue? : PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptionsFileFilters[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptionsFileFiltersOutputReference {
+    return new PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptionsFileFiltersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptions {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#corrupt_record_column Pipeline#corrupt_record_column}
+  */
+  readonly corruptRecordColumn?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#format Pipeline#format}
+  */
+  readonly format?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#format_options Pipeline#format_options}
+  */
+  readonly formatOptions?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#ignore_corrupt_files Pipeline#ignore_corrupt_files}
+  */
+  readonly ignoreCorruptFiles?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#infer_column_types Pipeline#infer_column_types}
+  */
+  readonly inferColumnTypes?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#reader_case_sensitive Pipeline#reader_case_sensitive}
+  */
+  readonly readerCaseSensitive?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#rescued_data_column Pipeline#rescued_data_column}
+  */
+  readonly rescuedDataColumn?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#schema_evolution_mode Pipeline#schema_evolution_mode}
+  */
+  readonly schemaEvolutionMode?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#schema_hints Pipeline#schema_hints}
+  */
+  readonly schemaHints?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#single_variant_column Pipeline#single_variant_column}
+  */
+  readonly singleVariantColumn?: string;
+  /**
+  * file_filters block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#file_filters Pipeline#file_filters}
+  */
+  readonly fileFilters?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptionsFileFilters[] | cdktn.IResolvable;
+}
+
+export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptionsToTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptionsOutputReference | PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    corrupt_record_column: cdktn.stringToTerraform(struct!.corruptRecordColumn),
+    format: cdktn.stringToTerraform(struct!.format),
+    format_options: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.formatOptions),
+    ignore_corrupt_files: cdktn.booleanToTerraform(struct!.ignoreCorruptFiles),
+    infer_column_types: cdktn.booleanToTerraform(struct!.inferColumnTypes),
+    reader_case_sensitive: cdktn.booleanToTerraform(struct!.readerCaseSensitive),
+    rescued_data_column: cdktn.stringToTerraform(struct!.rescuedDataColumn),
+    schema_evolution_mode: cdktn.stringToTerraform(struct!.schemaEvolutionMode),
+    schema_hints: cdktn.stringToTerraform(struct!.schemaHints),
+    single_variant_column: cdktn.stringToTerraform(struct!.singleVariantColumn),
+    file_filters: cdktn.listMapper(pipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptionsFileFiltersToTerraform, true)(struct!.fileFilters),
+  }
+}
+
+
+export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptionsToHclTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptionsOutputReference | PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    corrupt_record_column: {
+      value: cdktn.stringToHclTerraform(struct!.corruptRecordColumn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    format: {
+      value: cdktn.stringToHclTerraform(struct!.format),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    format_options: {
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.formatOptions),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    ignore_corrupt_files: {
+      value: cdktn.booleanToHclTerraform(struct!.ignoreCorruptFiles),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    infer_column_types: {
+      value: cdktn.booleanToHclTerraform(struct!.inferColumnTypes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    reader_case_sensitive: {
+      value: cdktn.booleanToHclTerraform(struct!.readerCaseSensitive),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    rescued_data_column: {
+      value: cdktn.stringToHclTerraform(struct!.rescuedDataColumn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    schema_evolution_mode: {
+      value: cdktn.stringToHclTerraform(struct!.schemaEvolutionMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    schema_hints: {
+      value: cdktn.stringToHclTerraform(struct!.schemaHints),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    single_variant_column: {
+      value: cdktn.stringToHclTerraform(struct!.singleVariantColumn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    file_filters: {
+      value: cdktn.listMapperHcl(pipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptionsFileFiltersToHclTerraform, true)(struct!.fileFilters),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptionsFileFiltersList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptionsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._corruptRecordColumn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.corruptRecordColumn = this._corruptRecordColumn;
+    }
+    if (this._format !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.format = this._format;
+    }
+    if (this._formatOptions !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.formatOptions = this._formatOptions;
+    }
+    if (this._ignoreCorruptFiles !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ignoreCorruptFiles = this._ignoreCorruptFiles;
+    }
+    if (this._inferColumnTypes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.inferColumnTypes = this._inferColumnTypes;
+    }
+    if (this._readerCaseSensitive !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.readerCaseSensitive = this._readerCaseSensitive;
+    }
+    if (this._rescuedDataColumn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rescuedDataColumn = this._rescuedDataColumn;
+    }
+    if (this._schemaEvolutionMode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.schemaEvolutionMode = this._schemaEvolutionMode;
+    }
+    if (this._schemaHints !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.schemaHints = this._schemaHints;
+    }
+    if (this._singleVariantColumn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.singleVariantColumn = this._singleVariantColumn;
+    }
+    if (this._fileFilters?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fileFilters = this._fileFilters?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._corruptRecordColumn = undefined;
+      this._format = undefined;
+      this._formatOptions = undefined;
+      this._ignoreCorruptFiles = undefined;
+      this._inferColumnTypes = undefined;
+      this._readerCaseSensitive = undefined;
+      this._rescuedDataColumn = undefined;
+      this._schemaEvolutionMode = undefined;
+      this._schemaHints = undefined;
+      this._singleVariantColumn = undefined;
+      this._fileFilters.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._corruptRecordColumn = value.corruptRecordColumn;
+      this._format = value.format;
+      this._formatOptions = value.formatOptions;
+      this._ignoreCorruptFiles = value.ignoreCorruptFiles;
+      this._inferColumnTypes = value.inferColumnTypes;
+      this._readerCaseSensitive = value.readerCaseSensitive;
+      this._rescuedDataColumn = value.rescuedDataColumn;
+      this._schemaEvolutionMode = value.schemaEvolutionMode;
+      this._schemaHints = value.schemaHints;
+      this._singleVariantColumn = value.singleVariantColumn;
+      this._fileFilters.internalValue = value.fileFilters;
+    }
+  }
+
+  // corrupt_record_column - computed: false, optional: true, required: false
+  private _corruptRecordColumn?: string; 
+  public get corruptRecordColumn() {
+    return this.getStringAttribute('corrupt_record_column');
+  }
+  public set corruptRecordColumn(value: string) {
+    this._corruptRecordColumn = value;
+  }
+  public resetCorruptRecordColumn() {
+    this._corruptRecordColumn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get corruptRecordColumnInput() {
+    return this._corruptRecordColumn;
+  }
+
+  // format - computed: false, optional: true, required: false
+  private _format?: string; 
+  public get format() {
+    return this.getStringAttribute('format');
+  }
+  public set format(value: string) {
+    this._format = value;
+  }
+  public resetFormat() {
+    this._format = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get formatInput() {
+    return this._format;
+  }
+
+  // format_options - computed: false, optional: true, required: false
+  private _formatOptions?: { [key: string]: string }; 
+  public get formatOptions() {
+    return this.getStringMapAttribute('format_options');
+  }
+  public set formatOptions(value: { [key: string]: string }) {
+    this._formatOptions = value;
+  }
+  public resetFormatOptions() {
+    this._formatOptions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get formatOptionsInput() {
+    return this._formatOptions;
+  }
+
+  // ignore_corrupt_files - computed: false, optional: true, required: false
+  private _ignoreCorruptFiles?: boolean | cdktn.IResolvable; 
+  public get ignoreCorruptFiles() {
+    return this.getBooleanAttribute('ignore_corrupt_files');
+  }
+  public set ignoreCorruptFiles(value: boolean | cdktn.IResolvable) {
+    this._ignoreCorruptFiles = value;
+  }
+  public resetIgnoreCorruptFiles() {
+    this._ignoreCorruptFiles = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ignoreCorruptFilesInput() {
+    return this._ignoreCorruptFiles;
+  }
+
+  // infer_column_types - computed: false, optional: true, required: false
+  private _inferColumnTypes?: boolean | cdktn.IResolvable; 
+  public get inferColumnTypes() {
+    return this.getBooleanAttribute('infer_column_types');
+  }
+  public set inferColumnTypes(value: boolean | cdktn.IResolvable) {
+    this._inferColumnTypes = value;
+  }
+  public resetInferColumnTypes() {
+    this._inferColumnTypes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get inferColumnTypesInput() {
+    return this._inferColumnTypes;
+  }
+
+  // reader_case_sensitive - computed: false, optional: true, required: false
+  private _readerCaseSensitive?: boolean | cdktn.IResolvable; 
+  public get readerCaseSensitive() {
+    return this.getBooleanAttribute('reader_case_sensitive');
+  }
+  public set readerCaseSensitive(value: boolean | cdktn.IResolvable) {
+    this._readerCaseSensitive = value;
+  }
+  public resetReaderCaseSensitive() {
+    this._readerCaseSensitive = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get readerCaseSensitiveInput() {
+    return this._readerCaseSensitive;
+  }
+
+  // rescued_data_column - computed: false, optional: true, required: false
+  private _rescuedDataColumn?: string; 
+  public get rescuedDataColumn() {
+    return this.getStringAttribute('rescued_data_column');
+  }
+  public set rescuedDataColumn(value: string) {
+    this._rescuedDataColumn = value;
+  }
+  public resetRescuedDataColumn() {
+    this._rescuedDataColumn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rescuedDataColumnInput() {
+    return this._rescuedDataColumn;
+  }
+
+  // schema_evolution_mode - computed: false, optional: true, required: false
+  private _schemaEvolutionMode?: string; 
+  public get schemaEvolutionMode() {
+    return this.getStringAttribute('schema_evolution_mode');
+  }
+  public set schemaEvolutionMode(value: string) {
+    this._schemaEvolutionMode = value;
+  }
+  public resetSchemaEvolutionMode() {
+    this._schemaEvolutionMode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get schemaEvolutionModeInput() {
+    return this._schemaEvolutionMode;
+  }
+
+  // schema_hints - computed: false, optional: true, required: false
+  private _schemaHints?: string; 
+  public get schemaHints() {
+    return this.getStringAttribute('schema_hints');
+  }
+  public set schemaHints(value: string) {
+    this._schemaHints = value;
+  }
+  public resetSchemaHints() {
+    this._schemaHints = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get schemaHintsInput() {
+    return this._schemaHints;
+  }
+
+  // single_variant_column - computed: false, optional: true, required: false
+  private _singleVariantColumn?: string; 
+  public get singleVariantColumn() {
+    return this.getStringAttribute('single_variant_column');
+  }
+  public set singleVariantColumn(value: string) {
+    this._singleVariantColumn = value;
+  }
+  public resetSingleVariantColumn() {
+    this._singleVariantColumn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get singleVariantColumnInput() {
+    return this._singleVariantColumn;
+  }
+
+  // file_filters - computed: false, optional: true, required: false
+  private _fileFilters = new PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptionsFileFiltersList(this, "file_filters", false);
+  public get fileFilters() {
+    return this._fileFilters;
+  }
+  public putFileFilters(value: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptionsFileFilters[] | cdktn.IResolvable) {
+    this._fileFilters.internalValue = value;
+  }
+  public resetFileFilters() {
+    this._fileFilters.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fileFiltersInput() {
+    return this._fileFilters.internalValue;
+  }
+}
+export interface PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptions {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#entity_type Pipeline#entity_type}
+  */
+  readonly entityType?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#url Pipeline#url}
+  */
+  readonly url?: string;
+  /**
+  * file_ingestion_options block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#file_ingestion_options Pipeline#file_ingestion_options}
+  */
+  readonly fileIngestionOptions?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptions;
+}
+
+export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsToTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsOutputReference | PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    entity_type: cdktn.stringToTerraform(struct!.entityType),
+    url: cdktn.stringToTerraform(struct!.url),
+    file_ingestion_options: pipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptionsToTerraform(struct!.fileIngestionOptions),
+  }
+}
+
+
+export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsToHclTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsOutputReference | PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    entity_type: {
+      value: cdktn.stringToHclTerraform(struct!.entityType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    url: {
+      value: cdktn.stringToHclTerraform(struct!.url),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    file_ingestion_options: {
+      value: pipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptionsToHclTerraform(struct!.fileIngestionOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptionsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._entityType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.entityType = this._entityType;
+    }
+    if (this._url !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.url = this._url;
+    }
+    if (this._fileIngestionOptions?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fileIngestionOptions = this._fileIngestionOptions?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._entityType = undefined;
+      this._url = undefined;
+      this._fileIngestionOptions.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._entityType = value.entityType;
+      this._url = value.url;
+      this._fileIngestionOptions.internalValue = value.fileIngestionOptions;
+    }
+  }
+
+  // entity_type - computed: false, optional: true, required: false
+  private _entityType?: string; 
+  public get entityType() {
+    return this.getStringAttribute('entity_type');
+  }
+  public set entityType(value: string) {
+    this._entityType = value;
+  }
+  public resetEntityType() {
+    this._entityType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get entityTypeInput() {
+    return this._entityType;
+  }
+
+  // url - computed: false, optional: true, required: false
+  private _url?: string; 
+  public get url() {
+    return this.getStringAttribute('url');
+  }
+  public set url(value: string) {
+    this._url = value;
+  }
+  public resetUrl() {
+    this._url = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get urlInput() {
+    return this._url;
+  }
+
+  // file_ingestion_options - computed: false, optional: true, required: false
+  private _fileIngestionOptions = new PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptionsOutputReference(this, "file_ingestion_options");
+  public get fileIngestionOptions() {
+    return this._fileIngestionOptions;
+  }
+  public putFileIngestionOptions(value: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptions) {
+    this._fileIngestionOptions.internalValue = value;
+  }
+  public resetFileIngestionOptions() {
+    this._fileIngestionOptions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fileIngestionOptionsInput() {
+    return this._fileIngestionOptions.internalValue;
+  }
+}
+export interface PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptions {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#lookback_window_days Pipeline#lookback_window_days}
+  */
+  readonly lookbackWindowDays?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#manager_account_id Pipeline#manager_account_id}
+  */
+  readonly managerAccountId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#sync_start_date Pipeline#sync_start_date}
+  */
+  readonly syncStartDate?: string;
+}
+
+export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptionsToTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptionsOutputReference | PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    lookback_window_days: cdktn.numberToTerraform(struct!.lookbackWindowDays),
+    manager_account_id: cdktn.stringToTerraform(struct!.managerAccountId),
+    sync_start_date: cdktn.stringToTerraform(struct!.syncStartDate),
+  }
+}
+
+
+export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptionsToHclTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptionsOutputReference | PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    lookback_window_days: {
+      value: cdktn.numberToHclTerraform(struct!.lookbackWindowDays),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    manager_account_id: {
+      value: cdktn.stringToHclTerraform(struct!.managerAccountId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sync_start_date: {
+      value: cdktn.stringToHclTerraform(struct!.syncStartDate),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptionsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._lookbackWindowDays !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.lookbackWindowDays = this._lookbackWindowDays;
+    }
+    if (this._managerAccountId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.managerAccountId = this._managerAccountId;
+    }
+    if (this._syncStartDate !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.syncStartDate = this._syncStartDate;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._lookbackWindowDays = undefined;
+      this._managerAccountId = undefined;
+      this._syncStartDate = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._lookbackWindowDays = value.lookbackWindowDays;
+      this._managerAccountId = value.managerAccountId;
+      this._syncStartDate = value.syncStartDate;
+    }
+  }
+
+  // lookback_window_days - computed: false, optional: true, required: false
+  private _lookbackWindowDays?: number; 
+  public get lookbackWindowDays() {
+    return this.getNumberAttribute('lookback_window_days');
+  }
+  public set lookbackWindowDays(value: number) {
+    this._lookbackWindowDays = value;
+  }
+  public resetLookbackWindowDays() {
+    this._lookbackWindowDays = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get lookbackWindowDaysInput() {
+    return this._lookbackWindowDays;
+  }
+
+  // manager_account_id - computed: false, optional: false, required: true
+  private _managerAccountId?: string; 
+  public get managerAccountId() {
+    return this.getStringAttribute('manager_account_id');
+  }
+  public set managerAccountId(value: string) {
+    this._managerAccountId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get managerAccountIdInput() {
+    return this._managerAccountId;
+  }
+
+  // sync_start_date - computed: false, optional: true, required: false
+  private _syncStartDate?: string; 
+  public get syncStartDate() {
+    return this.getStringAttribute('sync_start_date');
+  }
+  public set syncStartDate(value: string) {
+    this._syncStartDate = value;
+  }
+  public resetSyncStartDate() {
+    this._syncStartDate = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get syncStartDateInput() {
+    return this._syncStartDate;
+  }
+}
+export interface PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptionsFileFilters {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#modified_after Pipeline#modified_after}
+  */
+  readonly modifiedAfter?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#modified_before Pipeline#modified_before}
+  */
+  readonly modifiedBefore?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#path_filter Pipeline#path_filter}
+  */
+  readonly pathFilter?: string;
+}
+
+export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptionsFileFiltersToTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptionsFileFilters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    modified_after: cdktn.stringToTerraform(struct!.modifiedAfter),
+    modified_before: cdktn.stringToTerraform(struct!.modifiedBefore),
+    path_filter: cdktn.stringToTerraform(struct!.pathFilter),
+  }
+}
+
+
+export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptionsFileFiltersToHclTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptionsFileFilters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    modified_after: {
+      value: cdktn.stringToHclTerraform(struct!.modifiedAfter),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    modified_before: {
+      value: cdktn.stringToHclTerraform(struct!.modifiedBefore),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    path_filter: {
+      value: cdktn.stringToHclTerraform(struct!.pathFilter),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptionsFileFiltersOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptionsFileFilters | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._modifiedAfter !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.modifiedAfter = this._modifiedAfter;
+    }
+    if (this._modifiedBefore !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.modifiedBefore = this._modifiedBefore;
+    }
+    if (this._pathFilter !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pathFilter = this._pathFilter;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptionsFileFilters | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._modifiedAfter = undefined;
+      this._modifiedBefore = undefined;
+      this._pathFilter = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._modifiedAfter = value.modifiedAfter;
+      this._modifiedBefore = value.modifiedBefore;
+      this._pathFilter = value.pathFilter;
+    }
+  }
+
+  // modified_after - computed: false, optional: true, required: false
+  private _modifiedAfter?: string; 
+  public get modifiedAfter() {
+    return this.getStringAttribute('modified_after');
+  }
+  public set modifiedAfter(value: string) {
+    this._modifiedAfter = value;
+  }
+  public resetModifiedAfter() {
+    this._modifiedAfter = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get modifiedAfterInput() {
+    return this._modifiedAfter;
+  }
+
+  // modified_before - computed: false, optional: true, required: false
+  private _modifiedBefore?: string; 
+  public get modifiedBefore() {
+    return this.getStringAttribute('modified_before');
+  }
+  public set modifiedBefore(value: string) {
+    this._modifiedBefore = value;
+  }
+  public resetModifiedBefore() {
+    this._modifiedBefore = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get modifiedBeforeInput() {
+    return this._modifiedBefore;
+  }
+
+  // path_filter - computed: false, optional: true, required: false
+  private _pathFilter?: string; 
+  public get pathFilter() {
+    return this.getStringAttribute('path_filter');
+  }
+  public set pathFilter(value: string) {
+    this._pathFilter = value;
+  }
+  public resetPathFilter() {
+    this._pathFilter = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pathFilterInput() {
+    return this._pathFilter;
+  }
+}
+
+export class PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptionsFileFiltersList extends cdktn.ComplexList {
+  public internalValue? : PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptionsFileFilters[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptionsFileFiltersOutputReference {
+    return new PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptionsFileFiltersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptions {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#corrupt_record_column Pipeline#corrupt_record_column}
+  */
+  readonly corruptRecordColumn?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#format Pipeline#format}
+  */
+  readonly format?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#format_options Pipeline#format_options}
+  */
+  readonly formatOptions?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#ignore_corrupt_files Pipeline#ignore_corrupt_files}
+  */
+  readonly ignoreCorruptFiles?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#infer_column_types Pipeline#infer_column_types}
+  */
+  readonly inferColumnTypes?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#reader_case_sensitive Pipeline#reader_case_sensitive}
+  */
+  readonly readerCaseSensitive?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#rescued_data_column Pipeline#rescued_data_column}
+  */
+  readonly rescuedDataColumn?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#schema_evolution_mode Pipeline#schema_evolution_mode}
+  */
+  readonly schemaEvolutionMode?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#schema_hints Pipeline#schema_hints}
+  */
+  readonly schemaHints?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#single_variant_column Pipeline#single_variant_column}
+  */
+  readonly singleVariantColumn?: string;
+  /**
+  * file_filters block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#file_filters Pipeline#file_filters}
+  */
+  readonly fileFilters?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptionsFileFilters[] | cdktn.IResolvable;
+}
+
+export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptionsToTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptionsOutputReference | PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    corrupt_record_column: cdktn.stringToTerraform(struct!.corruptRecordColumn),
+    format: cdktn.stringToTerraform(struct!.format),
+    format_options: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.formatOptions),
+    ignore_corrupt_files: cdktn.booleanToTerraform(struct!.ignoreCorruptFiles),
+    infer_column_types: cdktn.booleanToTerraform(struct!.inferColumnTypes),
+    reader_case_sensitive: cdktn.booleanToTerraform(struct!.readerCaseSensitive),
+    rescued_data_column: cdktn.stringToTerraform(struct!.rescuedDataColumn),
+    schema_evolution_mode: cdktn.stringToTerraform(struct!.schemaEvolutionMode),
+    schema_hints: cdktn.stringToTerraform(struct!.schemaHints),
+    single_variant_column: cdktn.stringToTerraform(struct!.singleVariantColumn),
+    file_filters: cdktn.listMapper(pipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptionsFileFiltersToTerraform, true)(struct!.fileFilters),
+  }
+}
+
+
+export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptionsToHclTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptionsOutputReference | PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    corrupt_record_column: {
+      value: cdktn.stringToHclTerraform(struct!.corruptRecordColumn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    format: {
+      value: cdktn.stringToHclTerraform(struct!.format),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    format_options: {
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.formatOptions),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    ignore_corrupt_files: {
+      value: cdktn.booleanToHclTerraform(struct!.ignoreCorruptFiles),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    infer_column_types: {
+      value: cdktn.booleanToHclTerraform(struct!.inferColumnTypes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    reader_case_sensitive: {
+      value: cdktn.booleanToHclTerraform(struct!.readerCaseSensitive),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    rescued_data_column: {
+      value: cdktn.stringToHclTerraform(struct!.rescuedDataColumn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    schema_evolution_mode: {
+      value: cdktn.stringToHclTerraform(struct!.schemaEvolutionMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    schema_hints: {
+      value: cdktn.stringToHclTerraform(struct!.schemaHints),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    single_variant_column: {
+      value: cdktn.stringToHclTerraform(struct!.singleVariantColumn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    file_filters: {
+      value: cdktn.listMapperHcl(pipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptionsFileFiltersToHclTerraform, true)(struct!.fileFilters),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptionsFileFiltersList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptionsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._corruptRecordColumn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.corruptRecordColumn = this._corruptRecordColumn;
+    }
+    if (this._format !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.format = this._format;
+    }
+    if (this._formatOptions !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.formatOptions = this._formatOptions;
+    }
+    if (this._ignoreCorruptFiles !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ignoreCorruptFiles = this._ignoreCorruptFiles;
+    }
+    if (this._inferColumnTypes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.inferColumnTypes = this._inferColumnTypes;
+    }
+    if (this._readerCaseSensitive !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.readerCaseSensitive = this._readerCaseSensitive;
+    }
+    if (this._rescuedDataColumn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rescuedDataColumn = this._rescuedDataColumn;
+    }
+    if (this._schemaEvolutionMode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.schemaEvolutionMode = this._schemaEvolutionMode;
+    }
+    if (this._schemaHints !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.schemaHints = this._schemaHints;
+    }
+    if (this._singleVariantColumn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.singleVariantColumn = this._singleVariantColumn;
+    }
+    if (this._fileFilters?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fileFilters = this._fileFilters?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._corruptRecordColumn = undefined;
+      this._format = undefined;
+      this._formatOptions = undefined;
+      this._ignoreCorruptFiles = undefined;
+      this._inferColumnTypes = undefined;
+      this._readerCaseSensitive = undefined;
+      this._rescuedDataColumn = undefined;
+      this._schemaEvolutionMode = undefined;
+      this._schemaHints = undefined;
+      this._singleVariantColumn = undefined;
+      this._fileFilters.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._corruptRecordColumn = value.corruptRecordColumn;
+      this._format = value.format;
+      this._formatOptions = value.formatOptions;
+      this._ignoreCorruptFiles = value.ignoreCorruptFiles;
+      this._inferColumnTypes = value.inferColumnTypes;
+      this._readerCaseSensitive = value.readerCaseSensitive;
+      this._rescuedDataColumn = value.rescuedDataColumn;
+      this._schemaEvolutionMode = value.schemaEvolutionMode;
+      this._schemaHints = value.schemaHints;
+      this._singleVariantColumn = value.singleVariantColumn;
+      this._fileFilters.internalValue = value.fileFilters;
+    }
+  }
+
+  // corrupt_record_column - computed: false, optional: true, required: false
+  private _corruptRecordColumn?: string; 
+  public get corruptRecordColumn() {
+    return this.getStringAttribute('corrupt_record_column');
+  }
+  public set corruptRecordColumn(value: string) {
+    this._corruptRecordColumn = value;
+  }
+  public resetCorruptRecordColumn() {
+    this._corruptRecordColumn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get corruptRecordColumnInput() {
+    return this._corruptRecordColumn;
+  }
+
+  // format - computed: false, optional: true, required: false
+  private _format?: string; 
+  public get format() {
+    return this.getStringAttribute('format');
+  }
+  public set format(value: string) {
+    this._format = value;
+  }
+  public resetFormat() {
+    this._format = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get formatInput() {
+    return this._format;
+  }
+
+  // format_options - computed: false, optional: true, required: false
+  private _formatOptions?: { [key: string]: string }; 
+  public get formatOptions() {
+    return this.getStringMapAttribute('format_options');
+  }
+  public set formatOptions(value: { [key: string]: string }) {
+    this._formatOptions = value;
+  }
+  public resetFormatOptions() {
+    this._formatOptions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get formatOptionsInput() {
+    return this._formatOptions;
+  }
+
+  // ignore_corrupt_files - computed: false, optional: true, required: false
+  private _ignoreCorruptFiles?: boolean | cdktn.IResolvable; 
+  public get ignoreCorruptFiles() {
+    return this.getBooleanAttribute('ignore_corrupt_files');
+  }
+  public set ignoreCorruptFiles(value: boolean | cdktn.IResolvable) {
+    this._ignoreCorruptFiles = value;
+  }
+  public resetIgnoreCorruptFiles() {
+    this._ignoreCorruptFiles = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ignoreCorruptFilesInput() {
+    return this._ignoreCorruptFiles;
+  }
+
+  // infer_column_types - computed: false, optional: true, required: false
+  private _inferColumnTypes?: boolean | cdktn.IResolvable; 
+  public get inferColumnTypes() {
+    return this.getBooleanAttribute('infer_column_types');
+  }
+  public set inferColumnTypes(value: boolean | cdktn.IResolvable) {
+    this._inferColumnTypes = value;
+  }
+  public resetInferColumnTypes() {
+    this._inferColumnTypes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get inferColumnTypesInput() {
+    return this._inferColumnTypes;
+  }
+
+  // reader_case_sensitive - computed: false, optional: true, required: false
+  private _readerCaseSensitive?: boolean | cdktn.IResolvable; 
+  public get readerCaseSensitive() {
+    return this.getBooleanAttribute('reader_case_sensitive');
+  }
+  public set readerCaseSensitive(value: boolean | cdktn.IResolvable) {
+    this._readerCaseSensitive = value;
+  }
+  public resetReaderCaseSensitive() {
+    this._readerCaseSensitive = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get readerCaseSensitiveInput() {
+    return this._readerCaseSensitive;
+  }
+
+  // rescued_data_column - computed: false, optional: true, required: false
+  private _rescuedDataColumn?: string; 
+  public get rescuedDataColumn() {
+    return this.getStringAttribute('rescued_data_column');
+  }
+  public set rescuedDataColumn(value: string) {
+    this._rescuedDataColumn = value;
+  }
+  public resetRescuedDataColumn() {
+    this._rescuedDataColumn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rescuedDataColumnInput() {
+    return this._rescuedDataColumn;
+  }
+
+  // schema_evolution_mode - computed: false, optional: true, required: false
+  private _schemaEvolutionMode?: string; 
+  public get schemaEvolutionMode() {
+    return this.getStringAttribute('schema_evolution_mode');
+  }
+  public set schemaEvolutionMode(value: string) {
+    this._schemaEvolutionMode = value;
+  }
+  public resetSchemaEvolutionMode() {
+    this._schemaEvolutionMode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get schemaEvolutionModeInput() {
+    return this._schemaEvolutionMode;
+  }
+
+  // schema_hints - computed: false, optional: true, required: false
+  private _schemaHints?: string; 
+  public get schemaHints() {
+    return this.getStringAttribute('schema_hints');
+  }
+  public set schemaHints(value: string) {
+    this._schemaHints = value;
+  }
+  public resetSchemaHints() {
+    this._schemaHints = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get schemaHintsInput() {
+    return this._schemaHints;
+  }
+
+  // single_variant_column - computed: false, optional: true, required: false
+  private _singleVariantColumn?: string; 
+  public get singleVariantColumn() {
+    return this.getStringAttribute('single_variant_column');
+  }
+  public set singleVariantColumn(value: string) {
+    this._singleVariantColumn = value;
+  }
+  public resetSingleVariantColumn() {
+    this._singleVariantColumn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get singleVariantColumnInput() {
+    return this._singleVariantColumn;
+  }
+
+  // file_filters - computed: false, optional: true, required: false
+  private _fileFilters = new PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptionsFileFiltersList(this, "file_filters", false);
+  public get fileFilters() {
+    return this._fileFilters;
+  }
+  public putFileFilters(value: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptionsFileFilters[] | cdktn.IResolvable) {
+    this._fileFilters.internalValue = value;
+  }
+  public resetFileFilters() {
+    this._fileFilters.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fileFiltersInput() {
+    return this._fileFilters.internalValue;
+  }
+}
+export interface PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptions {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#entity_type Pipeline#entity_type}
+  */
+  readonly entityType?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#url Pipeline#url}
+  */
+  readonly url?: string;
+  /**
+  * file_ingestion_options block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#file_ingestion_options Pipeline#file_ingestion_options}
+  */
+  readonly fileIngestionOptions?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptions;
+}
+
+export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsToTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsOutputReference | PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    entity_type: cdktn.stringToTerraform(struct!.entityType),
+    url: cdktn.stringToTerraform(struct!.url),
+    file_ingestion_options: pipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptionsToTerraform(struct!.fileIngestionOptions),
+  }
+}
+
+
+export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsToHclTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsOutputReference | PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    entity_type: {
+      value: cdktn.stringToHclTerraform(struct!.entityType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    url: {
+      value: cdktn.stringToHclTerraform(struct!.url),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    file_ingestion_options: {
+      value: pipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptionsToHclTerraform(struct!.fileIngestionOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptionsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._entityType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.entityType = this._entityType;
+    }
+    if (this._url !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.url = this._url;
+    }
+    if (this._fileIngestionOptions?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fileIngestionOptions = this._fileIngestionOptions?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._entityType = undefined;
+      this._url = undefined;
+      this._fileIngestionOptions.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._entityType = value.entityType;
+      this._url = value.url;
+      this._fileIngestionOptions.internalValue = value.fileIngestionOptions;
+    }
+  }
+
+  // entity_type - computed: false, optional: true, required: false
+  private _entityType?: string; 
+  public get entityType() {
+    return this.getStringAttribute('entity_type');
+  }
+  public set entityType(value: string) {
+    this._entityType = value;
+  }
+  public resetEntityType() {
+    this._entityType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get entityTypeInput() {
+    return this._entityType;
+  }
+
+  // url - computed: false, optional: true, required: false
+  private _url?: string; 
+  public get url() {
+    return this.getStringAttribute('url');
+  }
+  public set url(value: string) {
+    this._url = value;
+  }
+  public resetUrl() {
+    this._url = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get urlInput() {
+    return this._url;
+  }
+
+  // file_ingestion_options - computed: false, optional: true, required: false
+  private _fileIngestionOptions = new PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptionsOutputReference(this, "file_ingestion_options");
+  public get fileIngestionOptions() {
+    return this._fileIngestionOptions;
+  }
+  public putFileIngestionOptions(value: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptions) {
+    this._fileIngestionOptions.internalValue = value;
+  }
+  public resetFileIngestionOptions() {
+    this._fileIngestionOptions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fileIngestionOptionsInput() {
+    return this._fileIngestionOptions.internalValue;
+  }
+}
+export interface PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptions {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#data_level Pipeline#data_level}
+  */
+  readonly dataLevel?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#dimensions Pipeline#dimensions}
+  */
+  readonly dimensions?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#lookback_window_days Pipeline#lookback_window_days}
+  */
+  readonly lookbackWindowDays?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#metrics Pipeline#metrics}
+  */
+  readonly metrics?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#query_lifetime Pipeline#query_lifetime}
+  */
+  readonly queryLifetime?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#report_type Pipeline#report_type}
+  */
+  readonly reportType?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#sync_start_date Pipeline#sync_start_date}
+  */
+  readonly syncStartDate?: string;
+}
+
+export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptionsToTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptionsOutputReference | PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    data_level: cdktn.stringToTerraform(struct!.dataLevel),
+    dimensions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.dimensions),
+    lookback_window_days: cdktn.numberToTerraform(struct!.lookbackWindowDays),
+    metrics: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.metrics),
+    query_lifetime: cdktn.booleanToTerraform(struct!.queryLifetime),
+    report_type: cdktn.stringToTerraform(struct!.reportType),
+    sync_start_date: cdktn.stringToTerraform(struct!.syncStartDate),
+  }
+}
+
+
+export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptionsToHclTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptionsOutputReference | PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    data_level: {
+      value: cdktn.stringToHclTerraform(struct!.dataLevel),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    dimensions: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.dimensions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    lookback_window_days: {
+      value: cdktn.numberToHclTerraform(struct!.lookbackWindowDays),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    metrics: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.metrics),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    query_lifetime: {
+      value: cdktn.booleanToHclTerraform(struct!.queryLifetime),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    report_type: {
+      value: cdktn.stringToHclTerraform(struct!.reportType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sync_start_date: {
+      value: cdktn.stringToHclTerraform(struct!.syncStartDate),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptionsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._dataLevel !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dataLevel = this._dataLevel;
+    }
+    if (this._dimensions !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dimensions = this._dimensions;
+    }
+    if (this._lookbackWindowDays !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.lookbackWindowDays = this._lookbackWindowDays;
+    }
+    if (this._metrics !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.metrics = this._metrics;
+    }
+    if (this._queryLifetime !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.queryLifetime = this._queryLifetime;
+    }
+    if (this._reportType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.reportType = this._reportType;
+    }
+    if (this._syncStartDate !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.syncStartDate = this._syncStartDate;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._dataLevel = undefined;
+      this._dimensions = undefined;
+      this._lookbackWindowDays = undefined;
+      this._metrics = undefined;
+      this._queryLifetime = undefined;
+      this._reportType = undefined;
+      this._syncStartDate = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._dataLevel = value.dataLevel;
+      this._dimensions = value.dimensions;
+      this._lookbackWindowDays = value.lookbackWindowDays;
+      this._metrics = value.metrics;
+      this._queryLifetime = value.queryLifetime;
+      this._reportType = value.reportType;
+      this._syncStartDate = value.syncStartDate;
+    }
+  }
+
+  // data_level - computed: false, optional: true, required: false
+  private _dataLevel?: string; 
+  public get dataLevel() {
+    return this.getStringAttribute('data_level');
+  }
+  public set dataLevel(value: string) {
+    this._dataLevel = value;
+  }
+  public resetDataLevel() {
+    this._dataLevel = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataLevelInput() {
+    return this._dataLevel;
+  }
+
+  // dimensions - computed: false, optional: true, required: false
+  private _dimensions?: string[]; 
+  public get dimensions() {
+    return this.getListAttribute('dimensions');
+  }
+  public set dimensions(value: string[]) {
+    this._dimensions = value;
+  }
+  public resetDimensions() {
+    this._dimensions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dimensionsInput() {
+    return this._dimensions;
+  }
+
+  // lookback_window_days - computed: false, optional: true, required: false
+  private _lookbackWindowDays?: number; 
+  public get lookbackWindowDays() {
+    return this.getNumberAttribute('lookback_window_days');
+  }
+  public set lookbackWindowDays(value: number) {
+    this._lookbackWindowDays = value;
+  }
+  public resetLookbackWindowDays() {
+    this._lookbackWindowDays = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get lookbackWindowDaysInput() {
+    return this._lookbackWindowDays;
+  }
+
+  // metrics - computed: false, optional: true, required: false
+  private _metrics?: string[]; 
+  public get metrics() {
+    return this.getListAttribute('metrics');
+  }
+  public set metrics(value: string[]) {
+    this._metrics = value;
+  }
+  public resetMetrics() {
+    this._metrics = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get metricsInput() {
+    return this._metrics;
+  }
+
+  // query_lifetime - computed: false, optional: true, required: false
+  private _queryLifetime?: boolean | cdktn.IResolvable; 
+  public get queryLifetime() {
+    return this.getBooleanAttribute('query_lifetime');
+  }
+  public set queryLifetime(value: boolean | cdktn.IResolvable) {
+    this._queryLifetime = value;
+  }
+  public resetQueryLifetime() {
+    this._queryLifetime = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get queryLifetimeInput() {
+    return this._queryLifetime;
+  }
+
+  // report_type - computed: false, optional: true, required: false
+  private _reportType?: string; 
+  public get reportType() {
+    return this.getStringAttribute('report_type');
+  }
+  public set reportType(value: string) {
+    this._reportType = value;
+  }
+  public resetReportType() {
+    this._reportType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get reportTypeInput() {
+    return this._reportType;
+  }
+
+  // sync_start_date - computed: false, optional: true, required: false
+  private _syncStartDate?: string; 
+  public get syncStartDate() {
+    return this.getStringAttribute('sync_start_date');
+  }
+  public set syncStartDate(value: string) {
+    this._syncStartDate = value;
+  }
+  public resetSyncStartDate() {
+    this._syncStartDate = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get syncStartDateInput() {
+    return this._syncStartDate;
+  }
+}
+export interface PipelineIngestionDefinitionObjectsSchemaConnectorOptions {
+  /**
+  * gdrive_options block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#gdrive_options Pipeline#gdrive_options}
+  */
+  readonly gdriveOptions?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptions;
+  /**
+  * google_ads_options block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#google_ads_options Pipeline#google_ads_options}
+  */
+  readonly googleAdsOptions?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptions;
+  /**
+  * sharepoint_options block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#sharepoint_options Pipeline#sharepoint_options}
+  */
+  readonly sharepointOptions?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptions;
+  /**
+  * tiktok_ads_options block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#tiktok_ads_options Pipeline#tiktok_ads_options}
+  */
+  readonly tiktokAdsOptions?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptions;
+}
+
+export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsToTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference | PipelineIngestionDefinitionObjectsSchemaConnectorOptions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    gdrive_options: pipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsToTerraform(struct!.gdriveOptions),
+    google_ads_options: pipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptionsToTerraform(struct!.googleAdsOptions),
+    sharepoint_options: pipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsToTerraform(struct!.sharepointOptions),
+    tiktok_ads_options: pipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptionsToTerraform(struct!.tiktokAdsOptions),
+  }
+}
+
+
+export function pipelineIngestionDefinitionObjectsSchemaConnectorOptionsToHclTerraform(struct?: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference | PipelineIngestionDefinitionObjectsSchemaConnectorOptions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    gdrive_options: {
+      value: pipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsToHclTerraform(struct!.gdriveOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsList",
+    },
+    google_ads_options: {
+      value: pipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptionsToHclTerraform(struct!.googleAdsOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptionsList",
+    },
+    sharepoint_options: {
+      value: pipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsToHclTerraform(struct!.sharepointOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsList",
+    },
+    tiktok_ads_options: {
+      value: pipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptionsToHclTerraform(struct!.tiktokAdsOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptionsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): PipelineIngestionDefinitionObjectsSchemaConnectorOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._gdriveOptions?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.gdriveOptions = this._gdriveOptions?.internalValue;
+    }
+    if (this._googleAdsOptions?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.googleAdsOptions = this._googleAdsOptions?.internalValue;
+    }
+    if (this._sharepointOptions?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sharepointOptions = this._sharepointOptions?.internalValue;
+    }
+    if (this._tiktokAdsOptions?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tiktokAdsOptions = this._tiktokAdsOptions?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: PipelineIngestionDefinitionObjectsSchemaConnectorOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._gdriveOptions.internalValue = undefined;
+      this._googleAdsOptions.internalValue = undefined;
+      this._sharepointOptions.internalValue = undefined;
+      this._tiktokAdsOptions.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._gdriveOptions.internalValue = value.gdriveOptions;
+      this._googleAdsOptions.internalValue = value.googleAdsOptions;
+      this._sharepointOptions.internalValue = value.sharepointOptions;
+      this._tiktokAdsOptions.internalValue = value.tiktokAdsOptions;
+    }
+  }
+
+  // gdrive_options - computed: false, optional: true, required: false
+  private _gdriveOptions = new PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsOutputReference(this, "gdrive_options");
+  public get gdriveOptions() {
+    return this._gdriveOptions;
+  }
+  public putGdriveOptions(value: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptions) {
+    this._gdriveOptions.internalValue = value;
+  }
+  public resetGdriveOptions() {
+    this._gdriveOptions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get gdriveOptionsInput() {
+    return this._gdriveOptions.internalValue;
+  }
+
+  // google_ads_options - computed: false, optional: true, required: false
+  private _googleAdsOptions = new PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptionsOutputReference(this, "google_ads_options");
+  public get googleAdsOptions() {
+    return this._googleAdsOptions;
+  }
+  public putGoogleAdsOptions(value: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptions) {
+    this._googleAdsOptions.internalValue = value;
+  }
+  public resetGoogleAdsOptions() {
+    this._googleAdsOptions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get googleAdsOptionsInput() {
+    return this._googleAdsOptions.internalValue;
+  }
+
+  // sharepoint_options - computed: false, optional: true, required: false
+  private _sharepointOptions = new PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsOutputReference(this, "sharepoint_options");
+  public get sharepointOptions() {
+    return this._sharepointOptions;
+  }
+  public putSharepointOptions(value: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptions) {
+    this._sharepointOptions.internalValue = value;
+  }
+  public resetSharepointOptions() {
+    this._sharepointOptions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sharepointOptionsInput() {
+    return this._sharepointOptions.internalValue;
+  }
+
+  // tiktok_ads_options - computed: false, optional: true, required: false
+  private _tiktokAdsOptions = new PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptionsOutputReference(this, "tiktok_ads_options");
+  public get tiktokAdsOptions() {
+    return this._tiktokAdsOptions;
+  }
+  public putTiktokAdsOptions(value: PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptions) {
+    this._tiktokAdsOptions.internalValue = value;
+  }
+  public resetTiktokAdsOptions() {
+    this._tiktokAdsOptions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tiktokAdsOptionsInput() {
+    return this._tiktokAdsOptions.internalValue;
+  }
+}
 export interface PipelineIngestionDefinitionObjectsSchemaTableConfigurationAutoFullRefreshPolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#enabled Pipeline#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#enabled Pipeline#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#min_interval_hours Pipeline#min_interval_hours}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#min_interval_hours Pipeline#min_interval_hours}
   */
   readonly minIntervalHours?: number;
 }
@@ -6058,15 +8178,15 @@ export class PipelineIngestionDefinitionObjectsSchemaTableConfigurationAutoFullR
 }
 export interface PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}
   */
   readonly cursorColumns?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}
   */
   readonly deletionCondition?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}
   */
   readonly hardDeletionSyncMinIntervalInSeconds?: number;
 }
@@ -6208,11 +8328,11 @@ export class PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBase
 }
 export interface PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#key Pipeline#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#key Pipeline#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#value Pipeline#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#value Pipeline#value}
   */
   readonly value?: string;
 }
@@ -6344,7 +8464,7 @@ export class PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayRe
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6357,17 +8477,17 @@ export class PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayRe
 }
 export interface PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#incremental Pipeline#incremental}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#incremental Pipeline#incremental}
   */
   readonly incremental?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#parameters Pipeline#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#parameters Pipeline#parameters}
   */
   readonly parameters?: { [key: string]: string };
   /**
   * report_parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#report_parameters Pipeline#report_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#report_parameters Pipeline#report_parameters}
   */
   readonly reportParameters?: PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters[] | cdktn.IResolvable;
 }
@@ -6509,49 +8629,49 @@ export class PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayRe
 }
 export interface PipelineIngestionDefinitionObjectsSchemaTableConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}
   */
   readonly excludeColumns?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#include_columns Pipeline#include_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#include_columns Pipeline#include_columns}
   */
   readonly includeColumns?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}
   */
   readonly primaryKeys?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#row_filter Pipeline#row_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#row_filter Pipeline#row_filter}
   */
   readonly rowFilter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}
   */
   readonly salesforceIncludeFormulaFields?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#scd_type Pipeline#scd_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#scd_type Pipeline#scd_type}
   */
   readonly scdType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}
   */
   readonly sequenceBy?: string[];
   /**
   * auto_full_refresh_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#auto_full_refresh_policy Pipeline#auto_full_refresh_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#auto_full_refresh_policy Pipeline#auto_full_refresh_policy}
   */
   readonly autoFullRefreshPolicy?: PipelineIngestionDefinitionObjectsSchemaTableConfigurationAutoFullRefreshPolicy;
   /**
   * query_based_connector_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#query_based_connector_config Pipeline#query_based_connector_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#query_based_connector_config Pipeline#query_based_connector_config}
   */
   readonly queryBasedConnectorConfig?: PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorConfig;
   /**
   * workday_report_parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#workday_report_parameters Pipeline#workday_report_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#workday_report_parameters Pipeline#workday_report_parameters}
   */
   readonly workdayReportParameters?: PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters;
 }
@@ -6896,25 +9016,31 @@ export class PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputRef
 }
 export interface PipelineIngestionDefinitionObjectsSchema {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#destination_catalog Pipeline#destination_catalog}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#destination_catalog Pipeline#destination_catalog}
   */
   readonly destinationCatalog: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#destination_schema Pipeline#destination_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#destination_schema Pipeline#destination_schema}
   */
   readonly destinationSchema: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}
   */
   readonly sourceCatalog?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#source_schema Pipeline#source_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#source_schema Pipeline#source_schema}
   */
   readonly sourceSchema: string;
   /**
+  * connector_options block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#connector_options Pipeline#connector_options}
+  */
+  readonly connectorOptions?: PipelineIngestionDefinitionObjectsSchemaConnectorOptions;
+  /**
   * table_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#table_configuration Pipeline#table_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#table_configuration Pipeline#table_configuration}
   */
   readonly tableConfiguration?: PipelineIngestionDefinitionObjectsSchemaTableConfiguration;
 }
@@ -6929,6 +9055,7 @@ export function pipelineIngestionDefinitionObjectsSchemaToTerraform(struct?: Pip
     destination_schema: cdktn.stringToTerraform(struct!.destinationSchema),
     source_catalog: cdktn.stringToTerraform(struct!.sourceCatalog),
     source_schema: cdktn.stringToTerraform(struct!.sourceSchema),
+    connector_options: pipelineIngestionDefinitionObjectsSchemaConnectorOptionsToTerraform(struct!.connectorOptions),
     table_configuration: pipelineIngestionDefinitionObjectsSchemaTableConfigurationToTerraform(struct!.tableConfiguration),
   }
 }
@@ -6963,6 +9090,12 @@ export function pipelineIngestionDefinitionObjectsSchemaToHclTerraform(struct?: 
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    connector_options: {
+      value: pipelineIngestionDefinitionObjectsSchemaConnectorOptionsToHclTerraform(struct!.connectorOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PipelineIngestionDefinitionObjectsSchemaConnectorOptionsList",
     },
     table_configuration: {
       value: pipelineIngestionDefinitionObjectsSchemaTableConfigurationToHclTerraform(struct!.tableConfiguration),
@@ -7006,6 +9139,10 @@ export class PipelineIngestionDefinitionObjectsSchemaOutputReference extends cdk
       hasAnyValues = true;
       internalValueResult.sourceSchema = this._sourceSchema;
     }
+    if (this._connectorOptions?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.connectorOptions = this._connectorOptions?.internalValue;
+    }
     if (this._tableConfiguration?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.tableConfiguration = this._tableConfiguration?.internalValue;
@@ -7020,6 +9157,7 @@ export class PipelineIngestionDefinitionObjectsSchemaOutputReference extends cdk
       this._destinationSchema = undefined;
       this._sourceCatalog = undefined;
       this._sourceSchema = undefined;
+      this._connectorOptions.internalValue = undefined;
       this._tableConfiguration.internalValue = undefined;
     }
     else {
@@ -7028,6 +9166,7 @@ export class PipelineIngestionDefinitionObjectsSchemaOutputReference extends cdk
       this._destinationSchema = value.destinationSchema;
       this._sourceCatalog = value.sourceCatalog;
       this._sourceSchema = value.sourceSchema;
+      this._connectorOptions.internalValue = value.connectorOptions;
       this._tableConfiguration.internalValue = value.tableConfiguration;
     }
   }
@@ -7087,6 +9226,22 @@ export class PipelineIngestionDefinitionObjectsSchemaOutputReference extends cdk
     return this._sourceSchema;
   }
 
+  // connector_options - computed: false, optional: true, required: false
+  private _connectorOptions = new PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference(this, "connector_options");
+  public get connectorOptions() {
+    return this._connectorOptions;
+  }
+  public putConnectorOptions(value: PipelineIngestionDefinitionObjectsSchemaConnectorOptions) {
+    this._connectorOptions.internalValue = value;
+  }
+  public resetConnectorOptions() {
+    this._connectorOptions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get connectorOptionsInput() {
+    return this._connectorOptions.internalValue;
+  }
+
   // table_configuration - computed: false, optional: true, required: false
   private _tableConfiguration = new PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference(this, "table_configuration");
   public get tableConfiguration() {
@@ -7103,13 +9258,2133 @@ export class PipelineIngestionDefinitionObjectsSchemaOutputReference extends cdk
     return this._tableConfiguration.internalValue;
   }
 }
+export interface PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptionsFileFilters {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#modified_after Pipeline#modified_after}
+  */
+  readonly modifiedAfter?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#modified_before Pipeline#modified_before}
+  */
+  readonly modifiedBefore?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#path_filter Pipeline#path_filter}
+  */
+  readonly pathFilter?: string;
+}
+
+export function pipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptionsFileFiltersToTerraform(struct?: PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptionsFileFilters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    modified_after: cdktn.stringToTerraform(struct!.modifiedAfter),
+    modified_before: cdktn.stringToTerraform(struct!.modifiedBefore),
+    path_filter: cdktn.stringToTerraform(struct!.pathFilter),
+  }
+}
+
+
+export function pipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptionsFileFiltersToHclTerraform(struct?: PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptionsFileFilters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    modified_after: {
+      value: cdktn.stringToHclTerraform(struct!.modifiedAfter),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    modified_before: {
+      value: cdktn.stringToHclTerraform(struct!.modifiedBefore),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    path_filter: {
+      value: cdktn.stringToHclTerraform(struct!.pathFilter),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptionsFileFiltersOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptionsFileFilters | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._modifiedAfter !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.modifiedAfter = this._modifiedAfter;
+    }
+    if (this._modifiedBefore !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.modifiedBefore = this._modifiedBefore;
+    }
+    if (this._pathFilter !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pathFilter = this._pathFilter;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptionsFileFilters | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._modifiedAfter = undefined;
+      this._modifiedBefore = undefined;
+      this._pathFilter = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._modifiedAfter = value.modifiedAfter;
+      this._modifiedBefore = value.modifiedBefore;
+      this._pathFilter = value.pathFilter;
+    }
+  }
+
+  // modified_after - computed: false, optional: true, required: false
+  private _modifiedAfter?: string; 
+  public get modifiedAfter() {
+    return this.getStringAttribute('modified_after');
+  }
+  public set modifiedAfter(value: string) {
+    this._modifiedAfter = value;
+  }
+  public resetModifiedAfter() {
+    this._modifiedAfter = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get modifiedAfterInput() {
+    return this._modifiedAfter;
+  }
+
+  // modified_before - computed: false, optional: true, required: false
+  private _modifiedBefore?: string; 
+  public get modifiedBefore() {
+    return this.getStringAttribute('modified_before');
+  }
+  public set modifiedBefore(value: string) {
+    this._modifiedBefore = value;
+  }
+  public resetModifiedBefore() {
+    this._modifiedBefore = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get modifiedBeforeInput() {
+    return this._modifiedBefore;
+  }
+
+  // path_filter - computed: false, optional: true, required: false
+  private _pathFilter?: string; 
+  public get pathFilter() {
+    return this.getStringAttribute('path_filter');
+  }
+  public set pathFilter(value: string) {
+    this._pathFilter = value;
+  }
+  public resetPathFilter() {
+    this._pathFilter = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pathFilterInput() {
+    return this._pathFilter;
+  }
+}
+
+export class PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptionsFileFiltersList extends cdktn.ComplexList {
+  public internalValue? : PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptionsFileFilters[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptionsFileFiltersOutputReference {
+    return new PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptionsFileFiltersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptions {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#corrupt_record_column Pipeline#corrupt_record_column}
+  */
+  readonly corruptRecordColumn?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#format Pipeline#format}
+  */
+  readonly format?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#format_options Pipeline#format_options}
+  */
+  readonly formatOptions?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#ignore_corrupt_files Pipeline#ignore_corrupt_files}
+  */
+  readonly ignoreCorruptFiles?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#infer_column_types Pipeline#infer_column_types}
+  */
+  readonly inferColumnTypes?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#reader_case_sensitive Pipeline#reader_case_sensitive}
+  */
+  readonly readerCaseSensitive?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#rescued_data_column Pipeline#rescued_data_column}
+  */
+  readonly rescuedDataColumn?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#schema_evolution_mode Pipeline#schema_evolution_mode}
+  */
+  readonly schemaEvolutionMode?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#schema_hints Pipeline#schema_hints}
+  */
+  readonly schemaHints?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#single_variant_column Pipeline#single_variant_column}
+  */
+  readonly singleVariantColumn?: string;
+  /**
+  * file_filters block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#file_filters Pipeline#file_filters}
+  */
+  readonly fileFilters?: PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptionsFileFilters[] | cdktn.IResolvable;
+}
+
+export function pipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptionsToTerraform(struct?: PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptionsOutputReference | PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    corrupt_record_column: cdktn.stringToTerraform(struct!.corruptRecordColumn),
+    format: cdktn.stringToTerraform(struct!.format),
+    format_options: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.formatOptions),
+    ignore_corrupt_files: cdktn.booleanToTerraform(struct!.ignoreCorruptFiles),
+    infer_column_types: cdktn.booleanToTerraform(struct!.inferColumnTypes),
+    reader_case_sensitive: cdktn.booleanToTerraform(struct!.readerCaseSensitive),
+    rescued_data_column: cdktn.stringToTerraform(struct!.rescuedDataColumn),
+    schema_evolution_mode: cdktn.stringToTerraform(struct!.schemaEvolutionMode),
+    schema_hints: cdktn.stringToTerraform(struct!.schemaHints),
+    single_variant_column: cdktn.stringToTerraform(struct!.singleVariantColumn),
+    file_filters: cdktn.listMapper(pipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptionsFileFiltersToTerraform, true)(struct!.fileFilters),
+  }
+}
+
+
+export function pipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptionsToHclTerraform(struct?: PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptionsOutputReference | PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    corrupt_record_column: {
+      value: cdktn.stringToHclTerraform(struct!.corruptRecordColumn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    format: {
+      value: cdktn.stringToHclTerraform(struct!.format),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    format_options: {
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.formatOptions),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    ignore_corrupt_files: {
+      value: cdktn.booleanToHclTerraform(struct!.ignoreCorruptFiles),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    infer_column_types: {
+      value: cdktn.booleanToHclTerraform(struct!.inferColumnTypes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    reader_case_sensitive: {
+      value: cdktn.booleanToHclTerraform(struct!.readerCaseSensitive),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    rescued_data_column: {
+      value: cdktn.stringToHclTerraform(struct!.rescuedDataColumn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    schema_evolution_mode: {
+      value: cdktn.stringToHclTerraform(struct!.schemaEvolutionMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    schema_hints: {
+      value: cdktn.stringToHclTerraform(struct!.schemaHints),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    single_variant_column: {
+      value: cdktn.stringToHclTerraform(struct!.singleVariantColumn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    file_filters: {
+      value: cdktn.listMapperHcl(pipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptionsFileFiltersToHclTerraform, true)(struct!.fileFilters),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptionsFileFiltersList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptionsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._corruptRecordColumn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.corruptRecordColumn = this._corruptRecordColumn;
+    }
+    if (this._format !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.format = this._format;
+    }
+    if (this._formatOptions !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.formatOptions = this._formatOptions;
+    }
+    if (this._ignoreCorruptFiles !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ignoreCorruptFiles = this._ignoreCorruptFiles;
+    }
+    if (this._inferColumnTypes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.inferColumnTypes = this._inferColumnTypes;
+    }
+    if (this._readerCaseSensitive !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.readerCaseSensitive = this._readerCaseSensitive;
+    }
+    if (this._rescuedDataColumn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rescuedDataColumn = this._rescuedDataColumn;
+    }
+    if (this._schemaEvolutionMode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.schemaEvolutionMode = this._schemaEvolutionMode;
+    }
+    if (this._schemaHints !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.schemaHints = this._schemaHints;
+    }
+    if (this._singleVariantColumn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.singleVariantColumn = this._singleVariantColumn;
+    }
+    if (this._fileFilters?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fileFilters = this._fileFilters?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._corruptRecordColumn = undefined;
+      this._format = undefined;
+      this._formatOptions = undefined;
+      this._ignoreCorruptFiles = undefined;
+      this._inferColumnTypes = undefined;
+      this._readerCaseSensitive = undefined;
+      this._rescuedDataColumn = undefined;
+      this._schemaEvolutionMode = undefined;
+      this._schemaHints = undefined;
+      this._singleVariantColumn = undefined;
+      this._fileFilters.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._corruptRecordColumn = value.corruptRecordColumn;
+      this._format = value.format;
+      this._formatOptions = value.formatOptions;
+      this._ignoreCorruptFiles = value.ignoreCorruptFiles;
+      this._inferColumnTypes = value.inferColumnTypes;
+      this._readerCaseSensitive = value.readerCaseSensitive;
+      this._rescuedDataColumn = value.rescuedDataColumn;
+      this._schemaEvolutionMode = value.schemaEvolutionMode;
+      this._schemaHints = value.schemaHints;
+      this._singleVariantColumn = value.singleVariantColumn;
+      this._fileFilters.internalValue = value.fileFilters;
+    }
+  }
+
+  // corrupt_record_column - computed: false, optional: true, required: false
+  private _corruptRecordColumn?: string; 
+  public get corruptRecordColumn() {
+    return this.getStringAttribute('corrupt_record_column');
+  }
+  public set corruptRecordColumn(value: string) {
+    this._corruptRecordColumn = value;
+  }
+  public resetCorruptRecordColumn() {
+    this._corruptRecordColumn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get corruptRecordColumnInput() {
+    return this._corruptRecordColumn;
+  }
+
+  // format - computed: false, optional: true, required: false
+  private _format?: string; 
+  public get format() {
+    return this.getStringAttribute('format');
+  }
+  public set format(value: string) {
+    this._format = value;
+  }
+  public resetFormat() {
+    this._format = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get formatInput() {
+    return this._format;
+  }
+
+  // format_options - computed: false, optional: true, required: false
+  private _formatOptions?: { [key: string]: string }; 
+  public get formatOptions() {
+    return this.getStringMapAttribute('format_options');
+  }
+  public set formatOptions(value: { [key: string]: string }) {
+    this._formatOptions = value;
+  }
+  public resetFormatOptions() {
+    this._formatOptions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get formatOptionsInput() {
+    return this._formatOptions;
+  }
+
+  // ignore_corrupt_files - computed: false, optional: true, required: false
+  private _ignoreCorruptFiles?: boolean | cdktn.IResolvable; 
+  public get ignoreCorruptFiles() {
+    return this.getBooleanAttribute('ignore_corrupt_files');
+  }
+  public set ignoreCorruptFiles(value: boolean | cdktn.IResolvable) {
+    this._ignoreCorruptFiles = value;
+  }
+  public resetIgnoreCorruptFiles() {
+    this._ignoreCorruptFiles = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ignoreCorruptFilesInput() {
+    return this._ignoreCorruptFiles;
+  }
+
+  // infer_column_types - computed: false, optional: true, required: false
+  private _inferColumnTypes?: boolean | cdktn.IResolvable; 
+  public get inferColumnTypes() {
+    return this.getBooleanAttribute('infer_column_types');
+  }
+  public set inferColumnTypes(value: boolean | cdktn.IResolvable) {
+    this._inferColumnTypes = value;
+  }
+  public resetInferColumnTypes() {
+    this._inferColumnTypes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get inferColumnTypesInput() {
+    return this._inferColumnTypes;
+  }
+
+  // reader_case_sensitive - computed: false, optional: true, required: false
+  private _readerCaseSensitive?: boolean | cdktn.IResolvable; 
+  public get readerCaseSensitive() {
+    return this.getBooleanAttribute('reader_case_sensitive');
+  }
+  public set readerCaseSensitive(value: boolean | cdktn.IResolvable) {
+    this._readerCaseSensitive = value;
+  }
+  public resetReaderCaseSensitive() {
+    this._readerCaseSensitive = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get readerCaseSensitiveInput() {
+    return this._readerCaseSensitive;
+  }
+
+  // rescued_data_column - computed: false, optional: true, required: false
+  private _rescuedDataColumn?: string; 
+  public get rescuedDataColumn() {
+    return this.getStringAttribute('rescued_data_column');
+  }
+  public set rescuedDataColumn(value: string) {
+    this._rescuedDataColumn = value;
+  }
+  public resetRescuedDataColumn() {
+    this._rescuedDataColumn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rescuedDataColumnInput() {
+    return this._rescuedDataColumn;
+  }
+
+  // schema_evolution_mode - computed: false, optional: true, required: false
+  private _schemaEvolutionMode?: string; 
+  public get schemaEvolutionMode() {
+    return this.getStringAttribute('schema_evolution_mode');
+  }
+  public set schemaEvolutionMode(value: string) {
+    this._schemaEvolutionMode = value;
+  }
+  public resetSchemaEvolutionMode() {
+    this._schemaEvolutionMode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get schemaEvolutionModeInput() {
+    return this._schemaEvolutionMode;
+  }
+
+  // schema_hints - computed: false, optional: true, required: false
+  private _schemaHints?: string; 
+  public get schemaHints() {
+    return this.getStringAttribute('schema_hints');
+  }
+  public set schemaHints(value: string) {
+    this._schemaHints = value;
+  }
+  public resetSchemaHints() {
+    this._schemaHints = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get schemaHintsInput() {
+    return this._schemaHints;
+  }
+
+  // single_variant_column - computed: false, optional: true, required: false
+  private _singleVariantColumn?: string; 
+  public get singleVariantColumn() {
+    return this.getStringAttribute('single_variant_column');
+  }
+  public set singleVariantColumn(value: string) {
+    this._singleVariantColumn = value;
+  }
+  public resetSingleVariantColumn() {
+    this._singleVariantColumn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get singleVariantColumnInput() {
+    return this._singleVariantColumn;
+  }
+
+  // file_filters - computed: false, optional: true, required: false
+  private _fileFilters = new PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptionsFileFiltersList(this, "file_filters", false);
+  public get fileFilters() {
+    return this._fileFilters;
+  }
+  public putFileFilters(value: PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptionsFileFilters[] | cdktn.IResolvable) {
+    this._fileFilters.internalValue = value;
+  }
+  public resetFileFilters() {
+    this._fileFilters.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fileFiltersInput() {
+    return this._fileFilters.internalValue;
+  }
+}
+export interface PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptions {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#entity_type Pipeline#entity_type}
+  */
+  readonly entityType?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#url Pipeline#url}
+  */
+  readonly url?: string;
+  /**
+  * file_ingestion_options block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#file_ingestion_options Pipeline#file_ingestion_options}
+  */
+  readonly fileIngestionOptions?: PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptions;
+}
+
+export function pipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsToTerraform(struct?: PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsOutputReference | PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    entity_type: cdktn.stringToTerraform(struct!.entityType),
+    url: cdktn.stringToTerraform(struct!.url),
+    file_ingestion_options: pipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptionsToTerraform(struct!.fileIngestionOptions),
+  }
+}
+
+
+export function pipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsToHclTerraform(struct?: PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsOutputReference | PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    entity_type: {
+      value: cdktn.stringToHclTerraform(struct!.entityType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    url: {
+      value: cdktn.stringToHclTerraform(struct!.url),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    file_ingestion_options: {
+      value: pipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptionsToHclTerraform(struct!.fileIngestionOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptionsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._entityType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.entityType = this._entityType;
+    }
+    if (this._url !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.url = this._url;
+    }
+    if (this._fileIngestionOptions?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fileIngestionOptions = this._fileIngestionOptions?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._entityType = undefined;
+      this._url = undefined;
+      this._fileIngestionOptions.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._entityType = value.entityType;
+      this._url = value.url;
+      this._fileIngestionOptions.internalValue = value.fileIngestionOptions;
+    }
+  }
+
+  // entity_type - computed: false, optional: true, required: false
+  private _entityType?: string; 
+  public get entityType() {
+    return this.getStringAttribute('entity_type');
+  }
+  public set entityType(value: string) {
+    this._entityType = value;
+  }
+  public resetEntityType() {
+    this._entityType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get entityTypeInput() {
+    return this._entityType;
+  }
+
+  // url - computed: false, optional: true, required: false
+  private _url?: string; 
+  public get url() {
+    return this.getStringAttribute('url');
+  }
+  public set url(value: string) {
+    this._url = value;
+  }
+  public resetUrl() {
+    this._url = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get urlInput() {
+    return this._url;
+  }
+
+  // file_ingestion_options - computed: false, optional: true, required: false
+  private _fileIngestionOptions = new PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptionsOutputReference(this, "file_ingestion_options");
+  public get fileIngestionOptions() {
+    return this._fileIngestionOptions;
+  }
+  public putFileIngestionOptions(value: PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptions) {
+    this._fileIngestionOptions.internalValue = value;
+  }
+  public resetFileIngestionOptions() {
+    this._fileIngestionOptions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fileIngestionOptionsInput() {
+    return this._fileIngestionOptions.internalValue;
+  }
+}
+export interface PipelineIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptions {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#lookback_window_days Pipeline#lookback_window_days}
+  */
+  readonly lookbackWindowDays?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#manager_account_id Pipeline#manager_account_id}
+  */
+  readonly managerAccountId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#sync_start_date Pipeline#sync_start_date}
+  */
+  readonly syncStartDate?: string;
+}
+
+export function pipelineIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptionsToTerraform(struct?: PipelineIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptionsOutputReference | PipelineIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    lookback_window_days: cdktn.numberToTerraform(struct!.lookbackWindowDays),
+    manager_account_id: cdktn.stringToTerraform(struct!.managerAccountId),
+    sync_start_date: cdktn.stringToTerraform(struct!.syncStartDate),
+  }
+}
+
+
+export function pipelineIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptionsToHclTerraform(struct?: PipelineIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptionsOutputReference | PipelineIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    lookback_window_days: {
+      value: cdktn.numberToHclTerraform(struct!.lookbackWindowDays),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    manager_account_id: {
+      value: cdktn.stringToHclTerraform(struct!.managerAccountId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sync_start_date: {
+      value: cdktn.stringToHclTerraform(struct!.syncStartDate),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class PipelineIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptionsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): PipelineIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._lookbackWindowDays !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.lookbackWindowDays = this._lookbackWindowDays;
+    }
+    if (this._managerAccountId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.managerAccountId = this._managerAccountId;
+    }
+    if (this._syncStartDate !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.syncStartDate = this._syncStartDate;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: PipelineIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._lookbackWindowDays = undefined;
+      this._managerAccountId = undefined;
+      this._syncStartDate = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._lookbackWindowDays = value.lookbackWindowDays;
+      this._managerAccountId = value.managerAccountId;
+      this._syncStartDate = value.syncStartDate;
+    }
+  }
+
+  // lookback_window_days - computed: false, optional: true, required: false
+  private _lookbackWindowDays?: number; 
+  public get lookbackWindowDays() {
+    return this.getNumberAttribute('lookback_window_days');
+  }
+  public set lookbackWindowDays(value: number) {
+    this._lookbackWindowDays = value;
+  }
+  public resetLookbackWindowDays() {
+    this._lookbackWindowDays = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get lookbackWindowDaysInput() {
+    return this._lookbackWindowDays;
+  }
+
+  // manager_account_id - computed: false, optional: false, required: true
+  private _managerAccountId?: string; 
+  public get managerAccountId() {
+    return this.getStringAttribute('manager_account_id');
+  }
+  public set managerAccountId(value: string) {
+    this._managerAccountId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get managerAccountIdInput() {
+    return this._managerAccountId;
+  }
+
+  // sync_start_date - computed: false, optional: true, required: false
+  private _syncStartDate?: string; 
+  public get syncStartDate() {
+    return this.getStringAttribute('sync_start_date');
+  }
+  public set syncStartDate(value: string) {
+    this._syncStartDate = value;
+  }
+  public resetSyncStartDate() {
+    this._syncStartDate = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get syncStartDateInput() {
+    return this._syncStartDate;
+  }
+}
+export interface PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptionsFileFilters {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#modified_after Pipeline#modified_after}
+  */
+  readonly modifiedAfter?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#modified_before Pipeline#modified_before}
+  */
+  readonly modifiedBefore?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#path_filter Pipeline#path_filter}
+  */
+  readonly pathFilter?: string;
+}
+
+export function pipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptionsFileFiltersToTerraform(struct?: PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptionsFileFilters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    modified_after: cdktn.stringToTerraform(struct!.modifiedAfter),
+    modified_before: cdktn.stringToTerraform(struct!.modifiedBefore),
+    path_filter: cdktn.stringToTerraform(struct!.pathFilter),
+  }
+}
+
+
+export function pipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptionsFileFiltersToHclTerraform(struct?: PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptionsFileFilters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    modified_after: {
+      value: cdktn.stringToHclTerraform(struct!.modifiedAfter),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    modified_before: {
+      value: cdktn.stringToHclTerraform(struct!.modifiedBefore),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    path_filter: {
+      value: cdktn.stringToHclTerraform(struct!.pathFilter),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptionsFileFiltersOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptionsFileFilters | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._modifiedAfter !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.modifiedAfter = this._modifiedAfter;
+    }
+    if (this._modifiedBefore !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.modifiedBefore = this._modifiedBefore;
+    }
+    if (this._pathFilter !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pathFilter = this._pathFilter;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptionsFileFilters | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._modifiedAfter = undefined;
+      this._modifiedBefore = undefined;
+      this._pathFilter = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._modifiedAfter = value.modifiedAfter;
+      this._modifiedBefore = value.modifiedBefore;
+      this._pathFilter = value.pathFilter;
+    }
+  }
+
+  // modified_after - computed: false, optional: true, required: false
+  private _modifiedAfter?: string; 
+  public get modifiedAfter() {
+    return this.getStringAttribute('modified_after');
+  }
+  public set modifiedAfter(value: string) {
+    this._modifiedAfter = value;
+  }
+  public resetModifiedAfter() {
+    this._modifiedAfter = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get modifiedAfterInput() {
+    return this._modifiedAfter;
+  }
+
+  // modified_before - computed: false, optional: true, required: false
+  private _modifiedBefore?: string; 
+  public get modifiedBefore() {
+    return this.getStringAttribute('modified_before');
+  }
+  public set modifiedBefore(value: string) {
+    this._modifiedBefore = value;
+  }
+  public resetModifiedBefore() {
+    this._modifiedBefore = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get modifiedBeforeInput() {
+    return this._modifiedBefore;
+  }
+
+  // path_filter - computed: false, optional: true, required: false
+  private _pathFilter?: string; 
+  public get pathFilter() {
+    return this.getStringAttribute('path_filter');
+  }
+  public set pathFilter(value: string) {
+    this._pathFilter = value;
+  }
+  public resetPathFilter() {
+    this._pathFilter = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pathFilterInput() {
+    return this._pathFilter;
+  }
+}
+
+export class PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptionsFileFiltersList extends cdktn.ComplexList {
+  public internalValue? : PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptionsFileFilters[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptionsFileFiltersOutputReference {
+    return new PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptionsFileFiltersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptions {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#corrupt_record_column Pipeline#corrupt_record_column}
+  */
+  readonly corruptRecordColumn?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#format Pipeline#format}
+  */
+  readonly format?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#format_options Pipeline#format_options}
+  */
+  readonly formatOptions?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#ignore_corrupt_files Pipeline#ignore_corrupt_files}
+  */
+  readonly ignoreCorruptFiles?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#infer_column_types Pipeline#infer_column_types}
+  */
+  readonly inferColumnTypes?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#reader_case_sensitive Pipeline#reader_case_sensitive}
+  */
+  readonly readerCaseSensitive?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#rescued_data_column Pipeline#rescued_data_column}
+  */
+  readonly rescuedDataColumn?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#schema_evolution_mode Pipeline#schema_evolution_mode}
+  */
+  readonly schemaEvolutionMode?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#schema_hints Pipeline#schema_hints}
+  */
+  readonly schemaHints?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#single_variant_column Pipeline#single_variant_column}
+  */
+  readonly singleVariantColumn?: string;
+  /**
+  * file_filters block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#file_filters Pipeline#file_filters}
+  */
+  readonly fileFilters?: PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptionsFileFilters[] | cdktn.IResolvable;
+}
+
+export function pipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptionsToTerraform(struct?: PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptionsOutputReference | PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    corrupt_record_column: cdktn.stringToTerraform(struct!.corruptRecordColumn),
+    format: cdktn.stringToTerraform(struct!.format),
+    format_options: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.formatOptions),
+    ignore_corrupt_files: cdktn.booleanToTerraform(struct!.ignoreCorruptFiles),
+    infer_column_types: cdktn.booleanToTerraform(struct!.inferColumnTypes),
+    reader_case_sensitive: cdktn.booleanToTerraform(struct!.readerCaseSensitive),
+    rescued_data_column: cdktn.stringToTerraform(struct!.rescuedDataColumn),
+    schema_evolution_mode: cdktn.stringToTerraform(struct!.schemaEvolutionMode),
+    schema_hints: cdktn.stringToTerraform(struct!.schemaHints),
+    single_variant_column: cdktn.stringToTerraform(struct!.singleVariantColumn),
+    file_filters: cdktn.listMapper(pipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptionsFileFiltersToTerraform, true)(struct!.fileFilters),
+  }
+}
+
+
+export function pipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptionsToHclTerraform(struct?: PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptionsOutputReference | PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    corrupt_record_column: {
+      value: cdktn.stringToHclTerraform(struct!.corruptRecordColumn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    format: {
+      value: cdktn.stringToHclTerraform(struct!.format),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    format_options: {
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.formatOptions),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    ignore_corrupt_files: {
+      value: cdktn.booleanToHclTerraform(struct!.ignoreCorruptFiles),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    infer_column_types: {
+      value: cdktn.booleanToHclTerraform(struct!.inferColumnTypes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    reader_case_sensitive: {
+      value: cdktn.booleanToHclTerraform(struct!.readerCaseSensitive),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    rescued_data_column: {
+      value: cdktn.stringToHclTerraform(struct!.rescuedDataColumn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    schema_evolution_mode: {
+      value: cdktn.stringToHclTerraform(struct!.schemaEvolutionMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    schema_hints: {
+      value: cdktn.stringToHclTerraform(struct!.schemaHints),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    single_variant_column: {
+      value: cdktn.stringToHclTerraform(struct!.singleVariantColumn),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    file_filters: {
+      value: cdktn.listMapperHcl(pipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptionsFileFiltersToHclTerraform, true)(struct!.fileFilters),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptionsFileFiltersList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptionsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._corruptRecordColumn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.corruptRecordColumn = this._corruptRecordColumn;
+    }
+    if (this._format !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.format = this._format;
+    }
+    if (this._formatOptions !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.formatOptions = this._formatOptions;
+    }
+    if (this._ignoreCorruptFiles !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ignoreCorruptFiles = this._ignoreCorruptFiles;
+    }
+    if (this._inferColumnTypes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.inferColumnTypes = this._inferColumnTypes;
+    }
+    if (this._readerCaseSensitive !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.readerCaseSensitive = this._readerCaseSensitive;
+    }
+    if (this._rescuedDataColumn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rescuedDataColumn = this._rescuedDataColumn;
+    }
+    if (this._schemaEvolutionMode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.schemaEvolutionMode = this._schemaEvolutionMode;
+    }
+    if (this._schemaHints !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.schemaHints = this._schemaHints;
+    }
+    if (this._singleVariantColumn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.singleVariantColumn = this._singleVariantColumn;
+    }
+    if (this._fileFilters?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fileFilters = this._fileFilters?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._corruptRecordColumn = undefined;
+      this._format = undefined;
+      this._formatOptions = undefined;
+      this._ignoreCorruptFiles = undefined;
+      this._inferColumnTypes = undefined;
+      this._readerCaseSensitive = undefined;
+      this._rescuedDataColumn = undefined;
+      this._schemaEvolutionMode = undefined;
+      this._schemaHints = undefined;
+      this._singleVariantColumn = undefined;
+      this._fileFilters.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._corruptRecordColumn = value.corruptRecordColumn;
+      this._format = value.format;
+      this._formatOptions = value.formatOptions;
+      this._ignoreCorruptFiles = value.ignoreCorruptFiles;
+      this._inferColumnTypes = value.inferColumnTypes;
+      this._readerCaseSensitive = value.readerCaseSensitive;
+      this._rescuedDataColumn = value.rescuedDataColumn;
+      this._schemaEvolutionMode = value.schemaEvolutionMode;
+      this._schemaHints = value.schemaHints;
+      this._singleVariantColumn = value.singleVariantColumn;
+      this._fileFilters.internalValue = value.fileFilters;
+    }
+  }
+
+  // corrupt_record_column - computed: false, optional: true, required: false
+  private _corruptRecordColumn?: string; 
+  public get corruptRecordColumn() {
+    return this.getStringAttribute('corrupt_record_column');
+  }
+  public set corruptRecordColumn(value: string) {
+    this._corruptRecordColumn = value;
+  }
+  public resetCorruptRecordColumn() {
+    this._corruptRecordColumn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get corruptRecordColumnInput() {
+    return this._corruptRecordColumn;
+  }
+
+  // format - computed: false, optional: true, required: false
+  private _format?: string; 
+  public get format() {
+    return this.getStringAttribute('format');
+  }
+  public set format(value: string) {
+    this._format = value;
+  }
+  public resetFormat() {
+    this._format = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get formatInput() {
+    return this._format;
+  }
+
+  // format_options - computed: false, optional: true, required: false
+  private _formatOptions?: { [key: string]: string }; 
+  public get formatOptions() {
+    return this.getStringMapAttribute('format_options');
+  }
+  public set formatOptions(value: { [key: string]: string }) {
+    this._formatOptions = value;
+  }
+  public resetFormatOptions() {
+    this._formatOptions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get formatOptionsInput() {
+    return this._formatOptions;
+  }
+
+  // ignore_corrupt_files - computed: false, optional: true, required: false
+  private _ignoreCorruptFiles?: boolean | cdktn.IResolvable; 
+  public get ignoreCorruptFiles() {
+    return this.getBooleanAttribute('ignore_corrupt_files');
+  }
+  public set ignoreCorruptFiles(value: boolean | cdktn.IResolvable) {
+    this._ignoreCorruptFiles = value;
+  }
+  public resetIgnoreCorruptFiles() {
+    this._ignoreCorruptFiles = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ignoreCorruptFilesInput() {
+    return this._ignoreCorruptFiles;
+  }
+
+  // infer_column_types - computed: false, optional: true, required: false
+  private _inferColumnTypes?: boolean | cdktn.IResolvable; 
+  public get inferColumnTypes() {
+    return this.getBooleanAttribute('infer_column_types');
+  }
+  public set inferColumnTypes(value: boolean | cdktn.IResolvable) {
+    this._inferColumnTypes = value;
+  }
+  public resetInferColumnTypes() {
+    this._inferColumnTypes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get inferColumnTypesInput() {
+    return this._inferColumnTypes;
+  }
+
+  // reader_case_sensitive - computed: false, optional: true, required: false
+  private _readerCaseSensitive?: boolean | cdktn.IResolvable; 
+  public get readerCaseSensitive() {
+    return this.getBooleanAttribute('reader_case_sensitive');
+  }
+  public set readerCaseSensitive(value: boolean | cdktn.IResolvable) {
+    this._readerCaseSensitive = value;
+  }
+  public resetReaderCaseSensitive() {
+    this._readerCaseSensitive = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get readerCaseSensitiveInput() {
+    return this._readerCaseSensitive;
+  }
+
+  // rescued_data_column - computed: false, optional: true, required: false
+  private _rescuedDataColumn?: string; 
+  public get rescuedDataColumn() {
+    return this.getStringAttribute('rescued_data_column');
+  }
+  public set rescuedDataColumn(value: string) {
+    this._rescuedDataColumn = value;
+  }
+  public resetRescuedDataColumn() {
+    this._rescuedDataColumn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rescuedDataColumnInput() {
+    return this._rescuedDataColumn;
+  }
+
+  // schema_evolution_mode - computed: false, optional: true, required: false
+  private _schemaEvolutionMode?: string; 
+  public get schemaEvolutionMode() {
+    return this.getStringAttribute('schema_evolution_mode');
+  }
+  public set schemaEvolutionMode(value: string) {
+    this._schemaEvolutionMode = value;
+  }
+  public resetSchemaEvolutionMode() {
+    this._schemaEvolutionMode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get schemaEvolutionModeInput() {
+    return this._schemaEvolutionMode;
+  }
+
+  // schema_hints - computed: false, optional: true, required: false
+  private _schemaHints?: string; 
+  public get schemaHints() {
+    return this.getStringAttribute('schema_hints');
+  }
+  public set schemaHints(value: string) {
+    this._schemaHints = value;
+  }
+  public resetSchemaHints() {
+    this._schemaHints = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get schemaHintsInput() {
+    return this._schemaHints;
+  }
+
+  // single_variant_column - computed: false, optional: true, required: false
+  private _singleVariantColumn?: string; 
+  public get singleVariantColumn() {
+    return this.getStringAttribute('single_variant_column');
+  }
+  public set singleVariantColumn(value: string) {
+    this._singleVariantColumn = value;
+  }
+  public resetSingleVariantColumn() {
+    this._singleVariantColumn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get singleVariantColumnInput() {
+    return this._singleVariantColumn;
+  }
+
+  // file_filters - computed: false, optional: true, required: false
+  private _fileFilters = new PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptionsFileFiltersList(this, "file_filters", false);
+  public get fileFilters() {
+    return this._fileFilters;
+  }
+  public putFileFilters(value: PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptionsFileFilters[] | cdktn.IResolvable) {
+    this._fileFilters.internalValue = value;
+  }
+  public resetFileFilters() {
+    this._fileFilters.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fileFiltersInput() {
+    return this._fileFilters.internalValue;
+  }
+}
+export interface PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptions {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#entity_type Pipeline#entity_type}
+  */
+  readonly entityType?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#url Pipeline#url}
+  */
+  readonly url?: string;
+  /**
+  * file_ingestion_options block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#file_ingestion_options Pipeline#file_ingestion_options}
+  */
+  readonly fileIngestionOptions?: PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptions;
+}
+
+export function pipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsToTerraform(struct?: PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsOutputReference | PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    entity_type: cdktn.stringToTerraform(struct!.entityType),
+    url: cdktn.stringToTerraform(struct!.url),
+    file_ingestion_options: pipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptionsToTerraform(struct!.fileIngestionOptions),
+  }
+}
+
+
+export function pipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsToHclTerraform(struct?: PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsOutputReference | PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    entity_type: {
+      value: cdktn.stringToHclTerraform(struct!.entityType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    url: {
+      value: cdktn.stringToHclTerraform(struct!.url),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    file_ingestion_options: {
+      value: pipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptionsToHclTerraform(struct!.fileIngestionOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptionsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._entityType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.entityType = this._entityType;
+    }
+    if (this._url !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.url = this._url;
+    }
+    if (this._fileIngestionOptions?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fileIngestionOptions = this._fileIngestionOptions?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._entityType = undefined;
+      this._url = undefined;
+      this._fileIngestionOptions.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._entityType = value.entityType;
+      this._url = value.url;
+      this._fileIngestionOptions.internalValue = value.fileIngestionOptions;
+    }
+  }
+
+  // entity_type - computed: false, optional: true, required: false
+  private _entityType?: string; 
+  public get entityType() {
+    return this.getStringAttribute('entity_type');
+  }
+  public set entityType(value: string) {
+    this._entityType = value;
+  }
+  public resetEntityType() {
+    this._entityType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get entityTypeInput() {
+    return this._entityType;
+  }
+
+  // url - computed: false, optional: true, required: false
+  private _url?: string; 
+  public get url() {
+    return this.getStringAttribute('url');
+  }
+  public set url(value: string) {
+    this._url = value;
+  }
+  public resetUrl() {
+    this._url = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get urlInput() {
+    return this._url;
+  }
+
+  // file_ingestion_options - computed: false, optional: true, required: false
+  private _fileIngestionOptions = new PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptionsOutputReference(this, "file_ingestion_options");
+  public get fileIngestionOptions() {
+    return this._fileIngestionOptions;
+  }
+  public putFileIngestionOptions(value: PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptions) {
+    this._fileIngestionOptions.internalValue = value;
+  }
+  public resetFileIngestionOptions() {
+    this._fileIngestionOptions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fileIngestionOptionsInput() {
+    return this._fileIngestionOptions.internalValue;
+  }
+}
+export interface PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptions {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#data_level Pipeline#data_level}
+  */
+  readonly dataLevel?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#dimensions Pipeline#dimensions}
+  */
+  readonly dimensions?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#lookback_window_days Pipeline#lookback_window_days}
+  */
+  readonly lookbackWindowDays?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#metrics Pipeline#metrics}
+  */
+  readonly metrics?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#query_lifetime Pipeline#query_lifetime}
+  */
+  readonly queryLifetime?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#report_type Pipeline#report_type}
+  */
+  readonly reportType?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#sync_start_date Pipeline#sync_start_date}
+  */
+  readonly syncStartDate?: string;
+}
+
+export function pipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptionsToTerraform(struct?: PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptionsOutputReference | PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    data_level: cdktn.stringToTerraform(struct!.dataLevel),
+    dimensions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.dimensions),
+    lookback_window_days: cdktn.numberToTerraform(struct!.lookbackWindowDays),
+    metrics: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.metrics),
+    query_lifetime: cdktn.booleanToTerraform(struct!.queryLifetime),
+    report_type: cdktn.stringToTerraform(struct!.reportType),
+    sync_start_date: cdktn.stringToTerraform(struct!.syncStartDate),
+  }
+}
+
+
+export function pipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptionsToHclTerraform(struct?: PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptionsOutputReference | PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    data_level: {
+      value: cdktn.stringToHclTerraform(struct!.dataLevel),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    dimensions: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.dimensions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    lookback_window_days: {
+      value: cdktn.numberToHclTerraform(struct!.lookbackWindowDays),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    metrics: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.metrics),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    query_lifetime: {
+      value: cdktn.booleanToHclTerraform(struct!.queryLifetime),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    report_type: {
+      value: cdktn.stringToHclTerraform(struct!.reportType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sync_start_date: {
+      value: cdktn.stringToHclTerraform(struct!.syncStartDate),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptionsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._dataLevel !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dataLevel = this._dataLevel;
+    }
+    if (this._dimensions !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dimensions = this._dimensions;
+    }
+    if (this._lookbackWindowDays !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.lookbackWindowDays = this._lookbackWindowDays;
+    }
+    if (this._metrics !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.metrics = this._metrics;
+    }
+    if (this._queryLifetime !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.queryLifetime = this._queryLifetime;
+    }
+    if (this._reportType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.reportType = this._reportType;
+    }
+    if (this._syncStartDate !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.syncStartDate = this._syncStartDate;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._dataLevel = undefined;
+      this._dimensions = undefined;
+      this._lookbackWindowDays = undefined;
+      this._metrics = undefined;
+      this._queryLifetime = undefined;
+      this._reportType = undefined;
+      this._syncStartDate = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._dataLevel = value.dataLevel;
+      this._dimensions = value.dimensions;
+      this._lookbackWindowDays = value.lookbackWindowDays;
+      this._metrics = value.metrics;
+      this._queryLifetime = value.queryLifetime;
+      this._reportType = value.reportType;
+      this._syncStartDate = value.syncStartDate;
+    }
+  }
+
+  // data_level - computed: false, optional: true, required: false
+  private _dataLevel?: string; 
+  public get dataLevel() {
+    return this.getStringAttribute('data_level');
+  }
+  public set dataLevel(value: string) {
+    this._dataLevel = value;
+  }
+  public resetDataLevel() {
+    this._dataLevel = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataLevelInput() {
+    return this._dataLevel;
+  }
+
+  // dimensions - computed: false, optional: true, required: false
+  private _dimensions?: string[]; 
+  public get dimensions() {
+    return this.getListAttribute('dimensions');
+  }
+  public set dimensions(value: string[]) {
+    this._dimensions = value;
+  }
+  public resetDimensions() {
+    this._dimensions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dimensionsInput() {
+    return this._dimensions;
+  }
+
+  // lookback_window_days - computed: false, optional: true, required: false
+  private _lookbackWindowDays?: number; 
+  public get lookbackWindowDays() {
+    return this.getNumberAttribute('lookback_window_days');
+  }
+  public set lookbackWindowDays(value: number) {
+    this._lookbackWindowDays = value;
+  }
+  public resetLookbackWindowDays() {
+    this._lookbackWindowDays = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get lookbackWindowDaysInput() {
+    return this._lookbackWindowDays;
+  }
+
+  // metrics - computed: false, optional: true, required: false
+  private _metrics?: string[]; 
+  public get metrics() {
+    return this.getListAttribute('metrics');
+  }
+  public set metrics(value: string[]) {
+    this._metrics = value;
+  }
+  public resetMetrics() {
+    this._metrics = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get metricsInput() {
+    return this._metrics;
+  }
+
+  // query_lifetime - computed: false, optional: true, required: false
+  private _queryLifetime?: boolean | cdktn.IResolvable; 
+  public get queryLifetime() {
+    return this.getBooleanAttribute('query_lifetime');
+  }
+  public set queryLifetime(value: boolean | cdktn.IResolvable) {
+    this._queryLifetime = value;
+  }
+  public resetQueryLifetime() {
+    this._queryLifetime = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get queryLifetimeInput() {
+    return this._queryLifetime;
+  }
+
+  // report_type - computed: false, optional: true, required: false
+  private _reportType?: string; 
+  public get reportType() {
+    return this.getStringAttribute('report_type');
+  }
+  public set reportType(value: string) {
+    this._reportType = value;
+  }
+  public resetReportType() {
+    this._reportType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get reportTypeInput() {
+    return this._reportType;
+  }
+
+  // sync_start_date - computed: false, optional: true, required: false
+  private _syncStartDate?: string; 
+  public get syncStartDate() {
+    return this.getStringAttribute('sync_start_date');
+  }
+  public set syncStartDate(value: string) {
+    this._syncStartDate = value;
+  }
+  public resetSyncStartDate() {
+    this._syncStartDate = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get syncStartDateInput() {
+    return this._syncStartDate;
+  }
+}
+export interface PipelineIngestionDefinitionObjectsTableConnectorOptions {
+  /**
+  * gdrive_options block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#gdrive_options Pipeline#gdrive_options}
+  */
+  readonly gdriveOptions?: PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptions;
+  /**
+  * google_ads_options block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#google_ads_options Pipeline#google_ads_options}
+  */
+  readonly googleAdsOptions?: PipelineIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptions;
+  /**
+  * sharepoint_options block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#sharepoint_options Pipeline#sharepoint_options}
+  */
+  readonly sharepointOptions?: PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptions;
+  /**
+  * tiktok_ads_options block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#tiktok_ads_options Pipeline#tiktok_ads_options}
+  */
+  readonly tiktokAdsOptions?: PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptions;
+}
+
+export function pipelineIngestionDefinitionObjectsTableConnectorOptionsToTerraform(struct?: PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference | PipelineIngestionDefinitionObjectsTableConnectorOptions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    gdrive_options: pipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsToTerraform(struct!.gdriveOptions),
+    google_ads_options: pipelineIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptionsToTerraform(struct!.googleAdsOptions),
+    sharepoint_options: pipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsToTerraform(struct!.sharepointOptions),
+    tiktok_ads_options: pipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptionsToTerraform(struct!.tiktokAdsOptions),
+  }
+}
+
+
+export function pipelineIngestionDefinitionObjectsTableConnectorOptionsToHclTerraform(struct?: PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference | PipelineIngestionDefinitionObjectsTableConnectorOptions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    gdrive_options: {
+      value: pipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsToHclTerraform(struct!.gdriveOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsList",
+    },
+    google_ads_options: {
+      value: pipelineIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptionsToHclTerraform(struct!.googleAdsOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PipelineIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptionsList",
+    },
+    sharepoint_options: {
+      value: pipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsToHclTerraform(struct!.sharepointOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsList",
+    },
+    tiktok_ads_options: {
+      value: pipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptionsToHclTerraform(struct!.tiktokAdsOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptionsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): PipelineIngestionDefinitionObjectsTableConnectorOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._gdriveOptions?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.gdriveOptions = this._gdriveOptions?.internalValue;
+    }
+    if (this._googleAdsOptions?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.googleAdsOptions = this._googleAdsOptions?.internalValue;
+    }
+    if (this._sharepointOptions?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sharepointOptions = this._sharepointOptions?.internalValue;
+    }
+    if (this._tiktokAdsOptions?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tiktokAdsOptions = this._tiktokAdsOptions?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: PipelineIngestionDefinitionObjectsTableConnectorOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._gdriveOptions.internalValue = undefined;
+      this._googleAdsOptions.internalValue = undefined;
+      this._sharepointOptions.internalValue = undefined;
+      this._tiktokAdsOptions.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._gdriveOptions.internalValue = value.gdriveOptions;
+      this._googleAdsOptions.internalValue = value.googleAdsOptions;
+      this._sharepointOptions.internalValue = value.sharepointOptions;
+      this._tiktokAdsOptions.internalValue = value.tiktokAdsOptions;
+    }
+  }
+
+  // gdrive_options - computed: false, optional: true, required: false
+  private _gdriveOptions = new PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsOutputReference(this, "gdrive_options");
+  public get gdriveOptions() {
+    return this._gdriveOptions;
+  }
+  public putGdriveOptions(value: PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptions) {
+    this._gdriveOptions.internalValue = value;
+  }
+  public resetGdriveOptions() {
+    this._gdriveOptions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get gdriveOptionsInput() {
+    return this._gdriveOptions.internalValue;
+  }
+
+  // google_ads_options - computed: false, optional: true, required: false
+  private _googleAdsOptions = new PipelineIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptionsOutputReference(this, "google_ads_options");
+  public get googleAdsOptions() {
+    return this._googleAdsOptions;
+  }
+  public putGoogleAdsOptions(value: PipelineIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptions) {
+    this._googleAdsOptions.internalValue = value;
+  }
+  public resetGoogleAdsOptions() {
+    this._googleAdsOptions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get googleAdsOptionsInput() {
+    return this._googleAdsOptions.internalValue;
+  }
+
+  // sharepoint_options - computed: false, optional: true, required: false
+  private _sharepointOptions = new PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsOutputReference(this, "sharepoint_options");
+  public get sharepointOptions() {
+    return this._sharepointOptions;
+  }
+  public putSharepointOptions(value: PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptions) {
+    this._sharepointOptions.internalValue = value;
+  }
+  public resetSharepointOptions() {
+    this._sharepointOptions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sharepointOptionsInput() {
+    return this._sharepointOptions.internalValue;
+  }
+
+  // tiktok_ads_options - computed: false, optional: true, required: false
+  private _tiktokAdsOptions = new PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptionsOutputReference(this, "tiktok_ads_options");
+  public get tiktokAdsOptions() {
+    return this._tiktokAdsOptions;
+  }
+  public putTiktokAdsOptions(value: PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptions) {
+    this._tiktokAdsOptions.internalValue = value;
+  }
+  public resetTiktokAdsOptions() {
+    this._tiktokAdsOptions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tiktokAdsOptionsInput() {
+    return this._tiktokAdsOptions.internalValue;
+  }
+}
 export interface PipelineIngestionDefinitionObjectsTableTableConfigurationAutoFullRefreshPolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#enabled Pipeline#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#enabled Pipeline#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#min_interval_hours Pipeline#min_interval_hours}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#min_interval_hours Pipeline#min_interval_hours}
   */
   readonly minIntervalHours?: number;
 }
@@ -7219,15 +11494,15 @@ export class PipelineIngestionDefinitionObjectsTableTableConfigurationAutoFullRe
 }
 export interface PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}
   */
   readonly cursorColumns?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}
   */
   readonly deletionCondition?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}
   */
   readonly hardDeletionSyncMinIntervalInSeconds?: number;
 }
@@ -7369,11 +11644,11 @@ export class PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBased
 }
 export interface PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#key Pipeline#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#key Pipeline#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#value Pipeline#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#value Pipeline#value}
   */
   readonly value?: string;
 }
@@ -7505,7 +11780,7 @@ export class PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayRep
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7518,17 +11793,17 @@ export class PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayRep
 }
 export interface PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#incremental Pipeline#incremental}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#incremental Pipeline#incremental}
   */
   readonly incremental?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#parameters Pipeline#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#parameters Pipeline#parameters}
   */
   readonly parameters?: { [key: string]: string };
   /**
   * report_parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#report_parameters Pipeline#report_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#report_parameters Pipeline#report_parameters}
   */
   readonly reportParameters?: PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters[] | cdktn.IResolvable;
 }
@@ -7670,49 +11945,49 @@ export class PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayRep
 }
 export interface PipelineIngestionDefinitionObjectsTableTableConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}
   */
   readonly excludeColumns?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#include_columns Pipeline#include_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#include_columns Pipeline#include_columns}
   */
   readonly includeColumns?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}
   */
   readonly primaryKeys?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#row_filter Pipeline#row_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#row_filter Pipeline#row_filter}
   */
   readonly rowFilter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}
   */
   readonly salesforceIncludeFormulaFields?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#scd_type Pipeline#scd_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#scd_type Pipeline#scd_type}
   */
   readonly scdType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}
   */
   readonly sequenceBy?: string[];
   /**
   * auto_full_refresh_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#auto_full_refresh_policy Pipeline#auto_full_refresh_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#auto_full_refresh_policy Pipeline#auto_full_refresh_policy}
   */
   readonly autoFullRefreshPolicy?: PipelineIngestionDefinitionObjectsTableTableConfigurationAutoFullRefreshPolicy;
   /**
   * query_based_connector_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#query_based_connector_config Pipeline#query_based_connector_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#query_based_connector_config Pipeline#query_based_connector_config}
   */
   readonly queryBasedConnectorConfig?: PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfig;
   /**
   * workday_report_parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#workday_report_parameters Pipeline#workday_report_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#workday_report_parameters Pipeline#workday_report_parameters}
   */
   readonly workdayReportParameters?: PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters;
 }
@@ -8057,33 +12332,39 @@ export class PipelineIngestionDefinitionObjectsTableTableConfigurationOutputRefe
 }
 export interface PipelineIngestionDefinitionObjectsTable {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#destination_catalog Pipeline#destination_catalog}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#destination_catalog Pipeline#destination_catalog}
   */
   readonly destinationCatalog: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#destination_schema Pipeline#destination_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#destination_schema Pipeline#destination_schema}
   */
   readonly destinationSchema: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#destination_table Pipeline#destination_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#destination_table Pipeline#destination_table}
   */
   readonly destinationTable?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}
   */
   readonly sourceCatalog?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#source_schema Pipeline#source_schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#source_schema Pipeline#source_schema}
   */
   readonly sourceSchema?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#source_table Pipeline#source_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#source_table Pipeline#source_table}
   */
   readonly sourceTable: string;
   /**
+  * connector_options block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#connector_options Pipeline#connector_options}
+  */
+  readonly connectorOptions?: PipelineIngestionDefinitionObjectsTableConnectorOptions;
+  /**
   * table_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#table_configuration Pipeline#table_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#table_configuration Pipeline#table_configuration}
   */
   readonly tableConfiguration?: PipelineIngestionDefinitionObjectsTableTableConfiguration;
 }
@@ -8100,6 +12381,7 @@ export function pipelineIngestionDefinitionObjectsTableToTerraform(struct?: Pipe
     source_catalog: cdktn.stringToTerraform(struct!.sourceCatalog),
     source_schema: cdktn.stringToTerraform(struct!.sourceSchema),
     source_table: cdktn.stringToTerraform(struct!.sourceTable),
+    connector_options: pipelineIngestionDefinitionObjectsTableConnectorOptionsToTerraform(struct!.connectorOptions),
     table_configuration: pipelineIngestionDefinitionObjectsTableTableConfigurationToTerraform(struct!.tableConfiguration),
   }
 }
@@ -8146,6 +12428,12 @@ export function pipelineIngestionDefinitionObjectsTableToHclTerraform(struct?: P
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    connector_options: {
+      value: pipelineIngestionDefinitionObjectsTableConnectorOptionsToHclTerraform(struct!.connectorOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PipelineIngestionDefinitionObjectsTableConnectorOptionsList",
     },
     table_configuration: {
       value: pipelineIngestionDefinitionObjectsTableTableConfigurationToHclTerraform(struct!.tableConfiguration),
@@ -8197,6 +12485,10 @@ export class PipelineIngestionDefinitionObjectsTableOutputReference extends cdkt
       hasAnyValues = true;
       internalValueResult.sourceTable = this._sourceTable;
     }
+    if (this._connectorOptions?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.connectorOptions = this._connectorOptions?.internalValue;
+    }
     if (this._tableConfiguration?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.tableConfiguration = this._tableConfiguration?.internalValue;
@@ -8213,6 +12505,7 @@ export class PipelineIngestionDefinitionObjectsTableOutputReference extends cdkt
       this._sourceCatalog = undefined;
       this._sourceSchema = undefined;
       this._sourceTable = undefined;
+      this._connectorOptions.internalValue = undefined;
       this._tableConfiguration.internalValue = undefined;
     }
     else {
@@ -8223,6 +12516,7 @@ export class PipelineIngestionDefinitionObjectsTableOutputReference extends cdkt
       this._sourceCatalog = value.sourceCatalog;
       this._sourceSchema = value.sourceSchema;
       this._sourceTable = value.sourceTable;
+      this._connectorOptions.internalValue = value.connectorOptions;
       this._tableConfiguration.internalValue = value.tableConfiguration;
     }
   }
@@ -8314,6 +12608,22 @@ export class PipelineIngestionDefinitionObjectsTableOutputReference extends cdkt
     return this._sourceTable;
   }
 
+  // connector_options - computed: false, optional: true, required: false
+  private _connectorOptions = new PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference(this, "connector_options");
+  public get connectorOptions() {
+    return this._connectorOptions;
+  }
+  public putConnectorOptions(value: PipelineIngestionDefinitionObjectsTableConnectorOptions) {
+    this._connectorOptions.internalValue = value;
+  }
+  public resetConnectorOptions() {
+    this._connectorOptions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get connectorOptionsInput() {
+    return this._connectorOptions.internalValue;
+  }
+
   // table_configuration - computed: false, optional: true, required: false
   private _tableConfiguration = new PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference(this, "table_configuration");
   public get tableConfiguration() {
@@ -8334,19 +12644,19 @@ export interface PipelineIngestionDefinitionObjects {
   /**
   * report block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#report Pipeline#report}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#report Pipeline#report}
   */
   readonly report?: PipelineIngestionDefinitionObjectsReport;
   /**
   * schema block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#schema Pipeline#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#schema Pipeline#schema}
   */
   readonly schema?: PipelineIngestionDefinitionObjectsSchema;
   /**
   * table block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#table Pipeline#table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#table Pipeline#table}
   */
   readonly table?: PipelineIngestionDefinitionObjectsTable;
 }
@@ -8507,7 +12817,7 @@ export class PipelineIngestionDefinitionObjectsList extends cdktn.ComplexList {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -8520,11 +12830,11 @@ export class PipelineIngestionDefinitionObjectsList extends cdktn.ComplexList {
 }
 export interface PipelineIngestionDefinitionSourceConfigurationsCatalogPostgresSlotConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#publication_name Pipeline#publication_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#publication_name Pipeline#publication_name}
   */
   readonly publicationName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#slot_name Pipeline#slot_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#slot_name Pipeline#slot_name}
   */
   readonly slotName?: string;
 }
@@ -8639,7 +12949,7 @@ export interface PipelineIngestionDefinitionSourceConfigurationsCatalogPostgres 
   /**
   * slot_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#slot_config Pipeline#slot_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#slot_config Pipeline#slot_config}
   */
   readonly slotConfig?: PipelineIngestionDefinitionSourceConfigurationsCatalogPostgresSlotConfig;
 }
@@ -8723,13 +13033,13 @@ export class PipelineIngestionDefinitionSourceConfigurationsCatalogPostgresOutpu
 }
 export interface PipelineIngestionDefinitionSourceConfigurationsCatalog {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#source_catalog Pipeline#source_catalog}
   */
   readonly sourceCatalog?: string;
   /**
   * postgres block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#postgres Pipeline#postgres}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#postgres Pipeline#postgres}
   */
   readonly postgres?: PipelineIngestionDefinitionSourceConfigurationsCatalogPostgres;
 }
@@ -8844,7 +13154,7 @@ export interface PipelineIngestionDefinitionSourceConfigurations {
   /**
   * catalog block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#catalog Pipeline#catalog}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#catalog Pipeline#catalog}
   */
   readonly catalog?: PipelineIngestionDefinitionSourceConfigurationsCatalog;
 }
@@ -8947,7 +13257,7 @@ export class PipelineIngestionDefinitionSourceConfigurationsList extends cdktn.C
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -8960,11 +13270,11 @@ export class PipelineIngestionDefinitionSourceConfigurationsList extends cdktn.C
 }
 export interface PipelineIngestionDefinitionTableConfigurationAutoFullRefreshPolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#enabled Pipeline#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#enabled Pipeline#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#min_interval_hours Pipeline#min_interval_hours}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#min_interval_hours Pipeline#min_interval_hours}
   */
   readonly minIntervalHours?: number;
 }
@@ -9074,15 +13384,15 @@ export class PipelineIngestionDefinitionTableConfigurationAutoFullRefreshPolicyO
 }
 export interface PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#cursor_columns Pipeline#cursor_columns}
   */
   readonly cursorColumns?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#deletion_condition Pipeline#deletion_condition}
   */
   readonly deletionCondition?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#hard_deletion_sync_min_interval_in_seconds Pipeline#hard_deletion_sync_min_interval_in_seconds}
   */
   readonly hardDeletionSyncMinIntervalInSeconds?: number;
 }
@@ -9224,11 +13534,11 @@ export class PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorCon
 }
 export interface PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#key Pipeline#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#key Pipeline#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#value Pipeline#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#value Pipeline#value}
   */
   readonly value?: string;
 }
@@ -9360,7 +13670,7 @@ export class PipelineIngestionDefinitionTableConfigurationWorkdayReportParameter
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -9373,17 +13683,17 @@ export class PipelineIngestionDefinitionTableConfigurationWorkdayReportParameter
 }
 export interface PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#incremental Pipeline#incremental}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#incremental Pipeline#incremental}
   */
   readonly incremental?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#parameters Pipeline#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#parameters Pipeline#parameters}
   */
   readonly parameters?: { [key: string]: string };
   /**
   * report_parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#report_parameters Pipeline#report_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#report_parameters Pipeline#report_parameters}
   */
   readonly reportParameters?: PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters[] | cdktn.IResolvable;
 }
@@ -9525,49 +13835,49 @@ export class PipelineIngestionDefinitionTableConfigurationWorkdayReportParameter
 }
 export interface PipelineIngestionDefinitionTableConfiguration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#exclude_columns Pipeline#exclude_columns}
   */
   readonly excludeColumns?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#include_columns Pipeline#include_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#include_columns Pipeline#include_columns}
   */
   readonly includeColumns?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#primary_keys Pipeline#primary_keys}
   */
   readonly primaryKeys?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#row_filter Pipeline#row_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#row_filter Pipeline#row_filter}
   */
   readonly rowFilter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#salesforce_include_formula_fields Pipeline#salesforce_include_formula_fields}
   */
   readonly salesforceIncludeFormulaFields?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#scd_type Pipeline#scd_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#scd_type Pipeline#scd_type}
   */
   readonly scdType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#sequence_by Pipeline#sequence_by}
   */
   readonly sequenceBy?: string[];
   /**
   * auto_full_refresh_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#auto_full_refresh_policy Pipeline#auto_full_refresh_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#auto_full_refresh_policy Pipeline#auto_full_refresh_policy}
   */
   readonly autoFullRefreshPolicy?: PipelineIngestionDefinitionTableConfigurationAutoFullRefreshPolicy;
   /**
   * query_based_connector_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#query_based_connector_config Pipeline#query_based_connector_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#query_based_connector_config Pipeline#query_based_connector_config}
   */
   readonly queryBasedConnectorConfig?: PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfig;
   /**
   * workday_report_parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#workday_report_parameters Pipeline#workday_report_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#workday_report_parameters Pipeline#workday_report_parameters}
   */
   readonly workdayReportParameters?: PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters;
 }
@@ -9912,57 +14222,57 @@ export class PipelineIngestionDefinitionTableConfigurationOutputReference extend
 }
 export interface PipelineIngestionDefinition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#connection_name Pipeline#connection_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#connection_name Pipeline#connection_name}
   */
   readonly connectionName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#connector_type Pipeline#connector_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#connector_type Pipeline#connector_type}
   */
   readonly connectorType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#ingest_from_uc_foreign_catalog Pipeline#ingest_from_uc_foreign_catalog}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#ingest_from_uc_foreign_catalog Pipeline#ingest_from_uc_foreign_catalog}
   */
   readonly ingestFromUcForeignCatalog?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#ingestion_gateway_id Pipeline#ingestion_gateway_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#ingestion_gateway_id Pipeline#ingestion_gateway_id}
   */
   readonly ingestionGatewayId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#netsuite_jar_path Pipeline#netsuite_jar_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#netsuite_jar_path Pipeline#netsuite_jar_path}
   */
   readonly netsuiteJarPath?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#source_type Pipeline#source_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#source_type Pipeline#source_type}
   */
   readonly sourceType?: string;
   /**
   * data_staging_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#data_staging_options Pipeline#data_staging_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#data_staging_options Pipeline#data_staging_options}
   */
   readonly dataStagingOptions?: PipelineIngestionDefinitionDataStagingOptions;
   /**
   * full_refresh_window block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#full_refresh_window Pipeline#full_refresh_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#full_refresh_window Pipeline#full_refresh_window}
   */
   readonly fullRefreshWindow?: PipelineIngestionDefinitionFullRefreshWindow;
   /**
   * objects block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#objects Pipeline#objects}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#objects Pipeline#objects}
   */
   readonly objects?: PipelineIngestionDefinitionObjects[] | cdktn.IResolvable;
   /**
   * source_configurations block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#source_configurations Pipeline#source_configurations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#source_configurations Pipeline#source_configurations}
   */
   readonly sourceConfigurations?: PipelineIngestionDefinitionSourceConfigurations[] | cdktn.IResolvable;
   /**
   * table_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#table_configuration Pipeline#table_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#table_configuration Pipeline#table_configuration}
   */
   readonly tableConfiguration?: PipelineIngestionDefinitionTableConfiguration;
 }
@@ -10336,15 +14646,15 @@ export class PipelineIngestionDefinitionOutputReference extends cdktn.ComplexObj
 }
 export interface PipelineLatestUpdates {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#creation_time Pipeline#creation_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#creation_time Pipeline#creation_time}
   */
   readonly creationTime?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#state Pipeline#state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#state Pipeline#state}
   */
   readonly state?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#update_id Pipeline#update_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#update_id Pipeline#update_id}
   */
   readonly updateId?: string;
 }
@@ -10505,7 +14815,7 @@ export class PipelineLatestUpdatesList extends cdktn.ComplexList {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -10518,7 +14828,7 @@ export class PipelineLatestUpdatesList extends cdktn.ComplexList {
 }
 export interface PipelineLibraryFile {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#path Pipeline#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#path Pipeline#path}
   */
   readonly path: string;
 }
@@ -10599,7 +14909,7 @@ export class PipelineLibraryFileOutputReference extends cdktn.ComplexObject {
 }
 export interface PipelineLibraryGlob {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#include Pipeline#include}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#include Pipeline#include}
   */
   readonly include: string;
 }
@@ -10680,15 +14990,15 @@ export class PipelineLibraryGlobOutputReference extends cdktn.ComplexObject {
 }
 export interface PipelineLibraryMaven {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#coordinates Pipeline#coordinates}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#coordinates Pipeline#coordinates}
   */
   readonly coordinates: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#exclusions Pipeline#exclusions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#exclusions Pipeline#exclusions}
   */
   readonly exclusions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#repo Pipeline#repo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#repo Pipeline#repo}
   */
   readonly repo?: string;
 }
@@ -10827,7 +15137,7 @@ export class PipelineLibraryMavenOutputReference extends cdktn.ComplexObject {
 }
 export interface PipelineLibraryNotebook {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#path Pipeline#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#path Pipeline#path}
   */
   readonly path: string;
 }
@@ -10908,35 +15218,35 @@ export class PipelineLibraryNotebookOutputReference extends cdktn.ComplexObject 
 }
 export interface PipelineLibrary {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#jar Pipeline#jar}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#jar Pipeline#jar}
   */
   readonly jar?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#whl Pipeline#whl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#whl Pipeline#whl}
   */
   readonly whl?: string;
   /**
   * file block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#file Pipeline#file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#file Pipeline#file}
   */
   readonly file?: PipelineLibraryFile;
   /**
   * glob block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#glob Pipeline#glob}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#glob Pipeline#glob}
   */
   readonly glob?: PipelineLibraryGlob;
   /**
   * maven block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#maven Pipeline#maven}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#maven Pipeline#maven}
   */
   readonly maven?: PipelineLibraryMaven;
   /**
   * notebook block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#notebook Pipeline#notebook}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#notebook Pipeline#notebook}
   */
   readonly notebook?: PipelineLibraryNotebook;
 }
@@ -11184,7 +15494,7 @@ export class PipelineLibraryList extends cdktn.ComplexList {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -11197,11 +15507,11 @@ export class PipelineLibraryList extends cdktn.ComplexList {
 }
 export interface PipelineNotification {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#alerts Pipeline#alerts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#alerts Pipeline#alerts}
   */
   readonly alerts?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#email_recipients Pipeline#email_recipients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#email_recipients Pipeline#email_recipients}
   */
   readonly emailRecipients?: string[];
 }
@@ -11333,7 +15643,7 @@ export class PipelineNotificationList extends cdktn.ComplexList {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -11346,7 +15656,7 @@ export class PipelineNotificationList extends cdktn.ComplexList {
 }
 export interface PipelineProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#workspace_id Pipeline#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#workspace_id Pipeline#workspace_id}
   */
   readonly workspaceId: string;
 }
@@ -11427,15 +15737,15 @@ export class PipelineProviderConfigOutputReference extends cdktn.ComplexObject {
 }
 export interface PipelineRestartWindow {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#days_of_week Pipeline#days_of_week}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#days_of_week Pipeline#days_of_week}
   */
   readonly daysOfWeek?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#start_hour Pipeline#start_hour}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#start_hour Pipeline#start_hour}
   */
   readonly startHour: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#time_zone_id Pipeline#time_zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#time_zone_id Pipeline#time_zone_id}
   */
   readonly timeZoneId?: string;
 }
@@ -11574,11 +15884,11 @@ export class PipelineRestartWindowOutputReference extends cdktn.ComplexObject {
 }
 export interface PipelineRunAs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#service_principal_name Pipeline#service_principal_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#service_principal_name Pipeline#service_principal_name}
   */
   readonly servicePrincipalName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#user_name Pipeline#user_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#user_name Pipeline#user_name}
   */
   readonly userName?: string;
 }
@@ -11691,7 +16001,7 @@ export class PipelineRunAsOutputReference extends cdktn.ComplexObject {
 }
 export interface PipelineTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#default Pipeline#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#default Pipeline#default}
   */
   readonly default?: string;
 }
@@ -11785,11 +16095,11 @@ export class PipelineTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 export interface PipelineTriggerCron {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#quartz_cron_schedule Pipeline#quartz_cron_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#quartz_cron_schedule Pipeline#quartz_cron_schedule}
   */
   readonly quartzCronSchedule?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#timezone_id Pipeline#timezone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#timezone_id Pipeline#timezone_id}
   */
   readonly timezoneId?: string;
 }
@@ -11953,13 +16263,13 @@ export interface PipelineTrigger {
   /**
   * cron block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#cron Pipeline#cron}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#cron Pipeline#cron}
   */
   readonly cron?: PipelineTriggerCron;
   /**
   * manual block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#manual Pipeline#manual}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#manual Pipeline#manual}
   */
   readonly manual?: PipelineTriggerManual;
 }
@@ -12072,7 +16382,7 @@ export class PipelineTriggerOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline databricks_pipeline}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline databricks_pipeline}
 */
 export class Pipeline extends cdktn.TerraformResource {
 
@@ -12088,7 +16398,7 @@ export class Pipeline extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a Pipeline resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Pipeline to import
-  * @param importFromId The id of the existing Pipeline that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Pipeline that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Pipeline to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -12100,7 +16410,7 @@ export class Pipeline extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/pipeline databricks_pipeline} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/pipeline databricks_pipeline} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -12111,7 +16421,7 @@ export class Pipeline extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_pipeline',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.112.0',
+        providerVersion: '1.113.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

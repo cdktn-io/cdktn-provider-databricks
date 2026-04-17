@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/database_database_catalog
+// https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/database_database_catalog
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,29 +13,29 @@ import * as cdktn from 'cdktn';
 
 export interface DatabaseDatabaseCatalogConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/database_database_catalog#create_database_if_not_exists DatabaseDatabaseCatalog#create_database_if_not_exists}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/database_database_catalog#create_database_if_not_exists DatabaseDatabaseCatalog#create_database_if_not_exists}
   */
   readonly createDatabaseIfNotExists?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/database_database_catalog#database_instance_name DatabaseDatabaseCatalog#database_instance_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/database_database_catalog#database_instance_name DatabaseDatabaseCatalog#database_instance_name}
   */
   readonly databaseInstanceName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/database_database_catalog#database_name DatabaseDatabaseCatalog#database_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/database_database_catalog#database_name DatabaseDatabaseCatalog#database_name}
   */
   readonly databaseName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/database_database_catalog#name DatabaseDatabaseCatalog#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/database_database_catalog#name DatabaseDatabaseCatalog#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/database_database_catalog#provider_config DatabaseDatabaseCatalog#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/database_database_catalog#provider_config DatabaseDatabaseCatalog#provider_config}
   */
   readonly providerConfig?: DatabaseDatabaseCatalogProviderConfig;
 }
 export interface DatabaseDatabaseCatalogProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/database_database_catalog#workspace_id DatabaseDatabaseCatalog#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/database_database_catalog#workspace_id DatabaseDatabaseCatalog#workspace_id}
   */
   readonly workspaceId: string;
 }
@@ -126,7 +126,7 @@ export class DatabaseDatabaseCatalogProviderConfigOutputReference extends cdktn.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/database_database_catalog databricks_database_database_catalog}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/database_database_catalog databricks_database_database_catalog}
 */
 export class DatabaseDatabaseCatalog extends cdktn.TerraformResource {
 
@@ -142,7 +142,7 @@ export class DatabaseDatabaseCatalog extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a DatabaseDatabaseCatalog resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DatabaseDatabaseCatalog to import
-  * @param importFromId The id of the existing DatabaseDatabaseCatalog that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/database_database_catalog#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DatabaseDatabaseCatalog that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/database_database_catalog#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DatabaseDatabaseCatalog to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -154,7 +154,7 @@ export class DatabaseDatabaseCatalog extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/database_database_catalog databricks_database_database_catalog} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/database_database_catalog databricks_database_database_catalog} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -165,7 +165,7 @@ export class DatabaseDatabaseCatalog extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_database_database_catalog',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.112.0',
+        providerVersion: '1.113.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

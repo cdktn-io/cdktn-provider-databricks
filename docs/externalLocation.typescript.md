@@ -4,7 +4,7 @@
 
 ### ExternalLocation <a name="ExternalLocation" id="@cdktn/provider-databricks.externalLocation.ExternalLocation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location databricks_external_location}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location databricks_external_location}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.externalLocation.ExternalLocation.Initializer"></a>
 
@@ -74,10 +74,12 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocation.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocation.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocation.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocation.putEffectiveFileEventQueue">putEffectiveFileEventQueue</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocation.putEncryptionDetails">putEncryptionDetails</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocation.putFileEventQueue">putFileEventQueue</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocation.putProviderConfig">putProviderConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocation.resetComment">resetComment</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocation.resetEffectiveFileEventQueue">resetEffectiveFileEventQueue</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocation.resetEnableFileEvents">resetEnableFileEvents</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocation.resetEncryptionDetails">resetEncryptionDetails</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocation.resetFallback">resetFallback</a></code> | *No description.* |
@@ -403,6 +405,18 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `putEffectiveFileEventQueue` <a name="putEffectiveFileEventQueue" id="@cdktn/provider-databricks.externalLocation.ExternalLocation.putEffectiveFileEventQueue"></a>
+
+```typescript
+public putEffectiveFileEventQueue(value: ExternalLocationEffectiveFileEventQueue): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.externalLocation.ExternalLocation.putEffectiveFileEventQueue.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueue">ExternalLocationEffectiveFileEventQueue</a>
+
+---
+
 ##### `putEncryptionDetails` <a name="putEncryptionDetails" id="@cdktn/provider-databricks.externalLocation.ExternalLocation.putEncryptionDetails"></a>
 
 ```typescript
@@ -443,6 +457,12 @@ public putProviderConfig(value: ExternalLocationProviderConfig): void
 
 ```typescript
 public resetComment(): void
+```
+
+##### `resetEffectiveFileEventQueue` <a name="resetEffectiveFileEventQueue" id="@cdktn/provider-databricks.externalLocation.ExternalLocation.resetEffectiveFileEventQueue"></a>
+
+```typescript
+public resetEffectiveFileEventQueue(): void
 ```
 
 ##### `resetEnableFileEvents` <a name="resetEnableFileEvents" id="@cdktn/provider-databricks.externalLocation.ExternalLocation.resetEnableFileEvents"></a>
@@ -626,7 +646,7 @@ The construct id used in the generated config for the ExternalLocation to import
 
 The id of the existing ExternalLocation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -661,6 +681,7 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocation.property.createdBy">createdBy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocation.property.credentialId">credentialId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocation.property.effectiveEnableFileEvents">effectiveEnableFileEvents</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocation.property.effectiveFileEventQueue">effectiveFileEventQueue</a></code> | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference">ExternalLocationEffectiveFileEventQueueOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocation.property.encryptionDetails">encryptionDetails</a></code> | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEncryptionDetailsOutputReference">ExternalLocationEncryptionDetailsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocation.property.fileEventQueue">fileEventQueue</a></code> | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationFileEventQueueOutputReference">ExternalLocationFileEventQueueOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocation.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationProviderConfigOutputReference">ExternalLocationProviderConfigOutputReference</a></code> | *No description.* |
@@ -668,6 +689,7 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocation.property.updatedBy">updatedBy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocation.property.commentInput">commentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocation.property.credentialNameInput">credentialNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocation.property.effectiveFileEventQueueInput">effectiveFileEventQueueInput</a></code> | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueue">ExternalLocationEffectiveFileEventQueue</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocation.property.enableFileEventsInput">enableFileEventsInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocation.property.encryptionDetailsInput">encryptionDetailsInput</a></code> | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEncryptionDetails">ExternalLocationEncryptionDetails</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocation.property.fallbackInput">fallbackInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
@@ -892,6 +914,16 @@ public readonly effectiveEnableFileEvents: IResolvable;
 
 ---
 
+##### `effectiveFileEventQueue`<sup>Required</sup> <a name="effectiveFileEventQueue" id="@cdktn/provider-databricks.externalLocation.ExternalLocation.property.effectiveFileEventQueue"></a>
+
+```typescript
+public readonly effectiveFileEventQueue: ExternalLocationEffectiveFileEventQueueOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference">ExternalLocationEffectiveFileEventQueueOutputReference</a>
+
+---
+
 ##### `encryptionDetails`<sup>Required</sup> <a name="encryptionDetails" id="@cdktn/provider-databricks.externalLocation.ExternalLocation.property.encryptionDetails"></a>
 
 ```typescript
@@ -959,6 +991,16 @@ public readonly credentialNameInput: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `effectiveFileEventQueueInput`<sup>Optional</sup> <a name="effectiveFileEventQueueInput" id="@cdktn/provider-databricks.externalLocation.ExternalLocation.property.effectiveFileEventQueueInput"></a>
+
+```typescript
+public readonly effectiveFileEventQueueInput: ExternalLocationEffectiveFileEventQueue;
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueue">ExternalLocationEffectiveFileEventQueue</a>
 
 ---
 
@@ -1293,23 +1335,24 @@ const externalLocationConfig: externalLocation.ExternalLocationConfig = { ... }
 | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.credentialName">credentialName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#credential_name ExternalLocation#credential_name}. |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#name ExternalLocation#name}. |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.url">url</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#url ExternalLocation#url}. |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.comment">comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#comment ExternalLocation#comment}. |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.enableFileEvents">enableFileEvents</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#enable_file_events ExternalLocation#enable_file_events}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.credentialName">credentialName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#credential_name ExternalLocation#credential_name}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#name ExternalLocation#name}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.url">url</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#url ExternalLocation#url}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.comment">comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#comment ExternalLocation#comment}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.effectiveFileEventQueue">effectiveFileEventQueue</a></code> | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueue">ExternalLocationEffectiveFileEventQueue</a></code> | effective_file_event_queue block. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.enableFileEvents">enableFileEvents</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#enable_file_events ExternalLocation#enable_file_events}. |
 | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.encryptionDetails">encryptionDetails</a></code> | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEncryptionDetails">ExternalLocationEncryptionDetails</a></code> | encryption_details block. |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.fallback">fallback</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#fallback ExternalLocation#fallback}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.fallback">fallback</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#fallback ExternalLocation#fallback}. |
 | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.fileEventQueue">fileEventQueue</a></code> | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationFileEventQueue">ExternalLocationFileEventQueue</a></code> | file_event_queue block. |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.forceDestroy">forceDestroy</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#force_destroy ExternalLocation#force_destroy}. |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.forceUpdate">forceUpdate</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#force_update ExternalLocation#force_update}. |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#id ExternalLocation#id}. |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.isolationMode">isolationMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#isolation_mode ExternalLocation#isolation_mode}. |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.metastoreId">metastoreId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#metastore_id ExternalLocation#metastore_id}. |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.owner">owner</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#owner ExternalLocation#owner}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.forceDestroy">forceDestroy</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#force_destroy ExternalLocation#force_destroy}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.forceUpdate">forceUpdate</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#force_update ExternalLocation#force_update}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#id ExternalLocation#id}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.isolationMode">isolationMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#isolation_mode ExternalLocation#isolation_mode}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.metastoreId">metastoreId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#metastore_id ExternalLocation#metastore_id}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.owner">owner</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#owner ExternalLocation#owner}. |
 | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationProviderConfig">ExternalLocationProviderConfig</a></code> | provider_config block. |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.readOnly">readOnly</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#read_only ExternalLocation#read_only}. |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.skipValidation">skipValidation</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#skip_validation ExternalLocation#skip_validation}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.readOnly">readOnly</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#read_only ExternalLocation#read_only}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.skipValidation">skipValidation</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#skip_validation ExternalLocation#skip_validation}. |
 
 ---
 
@@ -1391,7 +1434,7 @@ public readonly credentialName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#credential_name ExternalLocation#credential_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#credential_name ExternalLocation#credential_name}.
 
 ---
 
@@ -1403,7 +1446,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#name ExternalLocation#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#name ExternalLocation#name}.
 
 ---
 
@@ -1415,7 +1458,7 @@ public readonly url: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#url ExternalLocation#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#url ExternalLocation#url}.
 
 ---
 
@@ -1427,7 +1470,21 @@ public readonly comment: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#comment ExternalLocation#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#comment ExternalLocation#comment}.
+
+---
+
+##### `effectiveFileEventQueue`<sup>Optional</sup> <a name="effectiveFileEventQueue" id="@cdktn/provider-databricks.externalLocation.ExternalLocationConfig.property.effectiveFileEventQueue"></a>
+
+```typescript
+public readonly effectiveFileEventQueue: ExternalLocationEffectiveFileEventQueue;
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueue">ExternalLocationEffectiveFileEventQueue</a>
+
+effective_file_event_queue block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#effective_file_event_queue ExternalLocation#effective_file_event_queue}
 
 ---
 
@@ -1439,7 +1496,7 @@ public readonly enableFileEvents: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#enable_file_events ExternalLocation#enable_file_events}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#enable_file_events ExternalLocation#enable_file_events}.
 
 ---
 
@@ -1453,7 +1510,7 @@ public readonly encryptionDetails: ExternalLocationEncryptionDetails;
 
 encryption_details block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#encryption_details ExternalLocation#encryption_details}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#encryption_details ExternalLocation#encryption_details}
 
 ---
 
@@ -1465,7 +1522,7 @@ public readonly fallback: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#fallback ExternalLocation#fallback}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#fallback ExternalLocation#fallback}.
 
 ---
 
@@ -1479,7 +1536,7 @@ public readonly fileEventQueue: ExternalLocationFileEventQueue;
 
 file_event_queue block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#file_event_queue ExternalLocation#file_event_queue}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#file_event_queue ExternalLocation#file_event_queue}
 
 ---
 
@@ -1491,7 +1548,7 @@ public readonly forceDestroy: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#force_destroy ExternalLocation#force_destroy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#force_destroy ExternalLocation#force_destroy}.
 
 ---
 
@@ -1503,7 +1560,7 @@ public readonly forceUpdate: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#force_update ExternalLocation#force_update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#force_update ExternalLocation#force_update}.
 
 ---
 
@@ -1515,7 +1572,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#id ExternalLocation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#id ExternalLocation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1530,7 +1587,7 @@ public readonly isolationMode: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#isolation_mode ExternalLocation#isolation_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#isolation_mode ExternalLocation#isolation_mode}.
 
 ---
 
@@ -1542,7 +1599,7 @@ public readonly metastoreId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#metastore_id ExternalLocation#metastore_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#metastore_id ExternalLocation#metastore_id}.
 
 ---
 
@@ -1554,7 +1611,7 @@ public readonly owner: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#owner ExternalLocation#owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#owner ExternalLocation#owner}.
 
 ---
 
@@ -1568,7 +1625,7 @@ public readonly providerConfig: ExternalLocationProviderConfig;
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#provider_config ExternalLocation#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#provider_config ExternalLocation#provider_config}
 
 ---
 
@@ -1580,7 +1637,7 @@ public readonly readOnly: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#read_only ExternalLocation#read_only}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#read_only ExternalLocation#read_only}.
 
 ---
 
@@ -1592,7 +1649,424 @@ public readonly skipValidation: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#skip_validation ExternalLocation#skip_validation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#skip_validation ExternalLocation#skip_validation}.
+
+---
+
+### ExternalLocationEffectiveFileEventQueue <a name="ExternalLocationEffectiveFileEventQueue" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueue"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueue.Initializer"></a>
+
+```typescript
+import { externalLocation } from '@cdktn/provider-databricks'
+
+const externalLocationEffectiveFileEventQueue: externalLocation.ExternalLocationEffectiveFileEventQueue = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueue.property.managedAqs">managedAqs</a></code> | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqs">ExternalLocationEffectiveFileEventQueueManagedAqs</a></code> | managed_aqs block. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueue.property.managedPubsub">managedPubsub</a></code> | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsub">ExternalLocationEffectiveFileEventQueueManagedPubsub</a></code> | managed_pubsub block. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueue.property.managedSqs">managedSqs</a></code> | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqs">ExternalLocationEffectiveFileEventQueueManagedSqs</a></code> | managed_sqs block. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueue.property.providedAqs">providedAqs</a></code> | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqs">ExternalLocationEffectiveFileEventQueueProvidedAqs</a></code> | provided_aqs block. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueue.property.providedPubsub">providedPubsub</a></code> | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsub">ExternalLocationEffectiveFileEventQueueProvidedPubsub</a></code> | provided_pubsub block. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueue.property.providedSqs">providedSqs</a></code> | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqs">ExternalLocationEffectiveFileEventQueueProvidedSqs</a></code> | provided_sqs block. |
+
+---
+
+##### `managedAqs`<sup>Optional</sup> <a name="managedAqs" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueue.property.managedAqs"></a>
+
+```typescript
+public readonly managedAqs: ExternalLocationEffectiveFileEventQueueManagedAqs;
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqs">ExternalLocationEffectiveFileEventQueueManagedAqs</a>
+
+managed_aqs block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#managed_aqs ExternalLocation#managed_aqs}
+
+---
+
+##### `managedPubsub`<sup>Optional</sup> <a name="managedPubsub" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueue.property.managedPubsub"></a>
+
+```typescript
+public readonly managedPubsub: ExternalLocationEffectiveFileEventQueueManagedPubsub;
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsub">ExternalLocationEffectiveFileEventQueueManagedPubsub</a>
+
+managed_pubsub block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#managed_pubsub ExternalLocation#managed_pubsub}
+
+---
+
+##### `managedSqs`<sup>Optional</sup> <a name="managedSqs" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueue.property.managedSqs"></a>
+
+```typescript
+public readonly managedSqs: ExternalLocationEffectiveFileEventQueueManagedSqs;
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqs">ExternalLocationEffectiveFileEventQueueManagedSqs</a>
+
+managed_sqs block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#managed_sqs ExternalLocation#managed_sqs}
+
+---
+
+##### `providedAqs`<sup>Optional</sup> <a name="providedAqs" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueue.property.providedAqs"></a>
+
+```typescript
+public readonly providedAqs: ExternalLocationEffectiveFileEventQueueProvidedAqs;
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqs">ExternalLocationEffectiveFileEventQueueProvidedAqs</a>
+
+provided_aqs block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#provided_aqs ExternalLocation#provided_aqs}
+
+---
+
+##### `providedPubsub`<sup>Optional</sup> <a name="providedPubsub" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueue.property.providedPubsub"></a>
+
+```typescript
+public readonly providedPubsub: ExternalLocationEffectiveFileEventQueueProvidedPubsub;
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsub">ExternalLocationEffectiveFileEventQueueProvidedPubsub</a>
+
+provided_pubsub block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#provided_pubsub ExternalLocation#provided_pubsub}
+
+---
+
+##### `providedSqs`<sup>Optional</sup> <a name="providedSqs" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueue.property.providedSqs"></a>
+
+```typescript
+public readonly providedSqs: ExternalLocationEffectiveFileEventQueueProvidedSqs;
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqs">ExternalLocationEffectiveFileEventQueueProvidedSqs</a>
+
+provided_sqs block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#provided_sqs ExternalLocation#provided_sqs}
+
+---
+
+### ExternalLocationEffectiveFileEventQueueManagedAqs <a name="ExternalLocationEffectiveFileEventQueueManagedAqs" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqs"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqs.Initializer"></a>
+
+```typescript
+import { externalLocation } from '@cdktn/provider-databricks'
+
+const externalLocationEffectiveFileEventQueueManagedAqs: externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqs = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqs.property.managedResourceId">managedResourceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#managed_resource_id ExternalLocation#managed_resource_id}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqs.property.queueUrl">queueUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqs.property.resourceGroup">resourceGroup</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#resource_group ExternalLocation#resource_group}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqs.property.subscriptionId">subscriptionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#subscription_id ExternalLocation#subscription_id}. |
+
+---
+
+##### `managedResourceId`<sup>Optional</sup> <a name="managedResourceId" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqs.property.managedResourceId"></a>
+
+```typescript
+public readonly managedResourceId: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#managed_resource_id ExternalLocation#managed_resource_id}.
+
+---
+
+##### `queueUrl`<sup>Optional</sup> <a name="queueUrl" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqs.property.queueUrl"></a>
+
+```typescript
+public readonly queueUrl: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}.
+
+---
+
+##### `resourceGroup`<sup>Optional</sup> <a name="resourceGroup" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqs.property.resourceGroup"></a>
+
+```typescript
+public readonly resourceGroup: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#resource_group ExternalLocation#resource_group}.
+
+---
+
+##### `subscriptionId`<sup>Optional</sup> <a name="subscriptionId" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqs.property.subscriptionId"></a>
+
+```typescript
+public readonly subscriptionId: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#subscription_id ExternalLocation#subscription_id}.
+
+---
+
+### ExternalLocationEffectiveFileEventQueueManagedPubsub <a name="ExternalLocationEffectiveFileEventQueueManagedPubsub" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsub"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsub.Initializer"></a>
+
+```typescript
+import { externalLocation } from '@cdktn/provider-databricks'
+
+const externalLocationEffectiveFileEventQueueManagedPubsub: externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsub = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsub.property.managedResourceId">managedResourceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#managed_resource_id ExternalLocation#managed_resource_id}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsub.property.subscriptionName">subscriptionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#subscription_name ExternalLocation#subscription_name}. |
+
+---
+
+##### `managedResourceId`<sup>Optional</sup> <a name="managedResourceId" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsub.property.managedResourceId"></a>
+
+```typescript
+public readonly managedResourceId: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#managed_resource_id ExternalLocation#managed_resource_id}.
+
+---
+
+##### `subscriptionName`<sup>Optional</sup> <a name="subscriptionName" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsub.property.subscriptionName"></a>
+
+```typescript
+public readonly subscriptionName: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#subscription_name ExternalLocation#subscription_name}.
+
+---
+
+### ExternalLocationEffectiveFileEventQueueManagedSqs <a name="ExternalLocationEffectiveFileEventQueueManagedSqs" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqs"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqs.Initializer"></a>
+
+```typescript
+import { externalLocation } from '@cdktn/provider-databricks'
+
+const externalLocationEffectiveFileEventQueueManagedSqs: externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqs = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqs.property.managedResourceId">managedResourceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#managed_resource_id ExternalLocation#managed_resource_id}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqs.property.queueUrl">queueUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}. |
+
+---
+
+##### `managedResourceId`<sup>Optional</sup> <a name="managedResourceId" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqs.property.managedResourceId"></a>
+
+```typescript
+public readonly managedResourceId: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#managed_resource_id ExternalLocation#managed_resource_id}.
+
+---
+
+##### `queueUrl`<sup>Optional</sup> <a name="queueUrl" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqs.property.queueUrl"></a>
+
+```typescript
+public readonly queueUrl: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}.
+
+---
+
+### ExternalLocationEffectiveFileEventQueueProvidedAqs <a name="ExternalLocationEffectiveFileEventQueueProvidedAqs" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqs"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqs.Initializer"></a>
+
+```typescript
+import { externalLocation } from '@cdktn/provider-databricks'
+
+const externalLocationEffectiveFileEventQueueProvidedAqs: externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqs = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqs.property.managedResourceId">managedResourceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#managed_resource_id ExternalLocation#managed_resource_id}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqs.property.queueUrl">queueUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqs.property.resourceGroup">resourceGroup</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#resource_group ExternalLocation#resource_group}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqs.property.subscriptionId">subscriptionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#subscription_id ExternalLocation#subscription_id}. |
+
+---
+
+##### `managedResourceId`<sup>Optional</sup> <a name="managedResourceId" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqs.property.managedResourceId"></a>
+
+```typescript
+public readonly managedResourceId: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#managed_resource_id ExternalLocation#managed_resource_id}.
+
+---
+
+##### `queueUrl`<sup>Optional</sup> <a name="queueUrl" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqs.property.queueUrl"></a>
+
+```typescript
+public readonly queueUrl: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}.
+
+---
+
+##### `resourceGroup`<sup>Optional</sup> <a name="resourceGroup" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqs.property.resourceGroup"></a>
+
+```typescript
+public readonly resourceGroup: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#resource_group ExternalLocation#resource_group}.
+
+---
+
+##### `subscriptionId`<sup>Optional</sup> <a name="subscriptionId" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqs.property.subscriptionId"></a>
+
+```typescript
+public readonly subscriptionId: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#subscription_id ExternalLocation#subscription_id}.
+
+---
+
+### ExternalLocationEffectiveFileEventQueueProvidedPubsub <a name="ExternalLocationEffectiveFileEventQueueProvidedPubsub" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsub"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsub.Initializer"></a>
+
+```typescript
+import { externalLocation } from '@cdktn/provider-databricks'
+
+const externalLocationEffectiveFileEventQueueProvidedPubsub: externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsub = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsub.property.managedResourceId">managedResourceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#managed_resource_id ExternalLocation#managed_resource_id}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsub.property.subscriptionName">subscriptionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#subscription_name ExternalLocation#subscription_name}. |
+
+---
+
+##### `managedResourceId`<sup>Optional</sup> <a name="managedResourceId" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsub.property.managedResourceId"></a>
+
+```typescript
+public readonly managedResourceId: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#managed_resource_id ExternalLocation#managed_resource_id}.
+
+---
+
+##### `subscriptionName`<sup>Optional</sup> <a name="subscriptionName" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsub.property.subscriptionName"></a>
+
+```typescript
+public readonly subscriptionName: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#subscription_name ExternalLocation#subscription_name}.
+
+---
+
+### ExternalLocationEffectiveFileEventQueueProvidedSqs <a name="ExternalLocationEffectiveFileEventQueueProvidedSqs" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqs"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqs.Initializer"></a>
+
+```typescript
+import { externalLocation } from '@cdktn/provider-databricks'
+
+const externalLocationEffectiveFileEventQueueProvidedSqs: externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqs = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqs.property.managedResourceId">managedResourceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#managed_resource_id ExternalLocation#managed_resource_id}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqs.property.queueUrl">queueUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}. |
+
+---
+
+##### `managedResourceId`<sup>Optional</sup> <a name="managedResourceId" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqs.property.managedResourceId"></a>
+
+```typescript
+public readonly managedResourceId: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#managed_resource_id ExternalLocation#managed_resource_id}.
+
+---
+
+##### `queueUrl`<sup>Optional</sup> <a name="queueUrl" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqs.property.queueUrl"></a>
+
+```typescript
+public readonly queueUrl: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}.
 
 ---
 
@@ -1624,7 +2098,7 @@ public readonly sseEncryptionDetails: ExternalLocationEncryptionDetailsSseEncryp
 
 sse_encryption_details block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#sse_encryption_details ExternalLocation#sse_encryption_details}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#sse_encryption_details ExternalLocation#sse_encryption_details}
 
 ---
 
@@ -1642,8 +2116,8 @@ const externalLocationEncryptionDetailsSseEncryptionDetails: externalLocation.Ex
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEncryptionDetailsSseEncryptionDetails.property.algorithm">algorithm</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#algorithm ExternalLocation#algorithm}. |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEncryptionDetailsSseEncryptionDetails.property.awsKmsKeyArn">awsKmsKeyArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#aws_kms_key_arn ExternalLocation#aws_kms_key_arn}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEncryptionDetailsSseEncryptionDetails.property.algorithm">algorithm</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#algorithm ExternalLocation#algorithm}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEncryptionDetailsSseEncryptionDetails.property.awsKmsKeyArn">awsKmsKeyArn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#aws_kms_key_arn ExternalLocation#aws_kms_key_arn}. |
 
 ---
 
@@ -1655,7 +2129,7 @@ public readonly algorithm: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#algorithm ExternalLocation#algorithm}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#algorithm ExternalLocation#algorithm}.
 
 ---
 
@@ -1667,7 +2141,7 @@ public readonly awsKmsKeyArn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#aws_kms_key_arn ExternalLocation#aws_kms_key_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#aws_kms_key_arn ExternalLocation#aws_kms_key_arn}.
 
 ---
 
@@ -1704,7 +2178,7 @@ public readonly managedAqs: ExternalLocationFileEventQueueManagedAqs;
 
 managed_aqs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#managed_aqs ExternalLocation#managed_aqs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#managed_aqs ExternalLocation#managed_aqs}
 
 ---
 
@@ -1718,7 +2192,7 @@ public readonly managedPubsub: ExternalLocationFileEventQueueManagedPubsub;
 
 managed_pubsub block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#managed_pubsub ExternalLocation#managed_pubsub}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#managed_pubsub ExternalLocation#managed_pubsub}
 
 ---
 
@@ -1732,7 +2206,7 @@ public readonly managedSqs: ExternalLocationFileEventQueueManagedSqs;
 
 managed_sqs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#managed_sqs ExternalLocation#managed_sqs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#managed_sqs ExternalLocation#managed_sqs}
 
 ---
 
@@ -1746,7 +2220,7 @@ public readonly providedAqs: ExternalLocationFileEventQueueProvidedAqs;
 
 provided_aqs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#provided_aqs ExternalLocation#provided_aqs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#provided_aqs ExternalLocation#provided_aqs}
 
 ---
 
@@ -1760,7 +2234,7 @@ public readonly providedPubsub: ExternalLocationFileEventQueueProvidedPubsub;
 
 provided_pubsub block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#provided_pubsub ExternalLocation#provided_pubsub}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#provided_pubsub ExternalLocation#provided_pubsub}
 
 ---
 
@@ -1774,7 +2248,7 @@ public readonly providedSqs: ExternalLocationFileEventQueueProvidedSqs;
 
 provided_sqs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#provided_sqs ExternalLocation#provided_sqs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#provided_sqs ExternalLocation#provided_sqs}
 
 ---
 
@@ -1792,9 +2266,9 @@ const externalLocationFileEventQueueManagedAqs: externalLocation.ExternalLocatio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationFileEventQueueManagedAqs.property.resourceGroup">resourceGroup</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#resource_group ExternalLocation#resource_group}. |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationFileEventQueueManagedAqs.property.subscriptionId">subscriptionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#subscription_id ExternalLocation#subscription_id}. |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationFileEventQueueManagedAqs.property.queueUrl">queueUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationFileEventQueueManagedAqs.property.resourceGroup">resourceGroup</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#resource_group ExternalLocation#resource_group}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationFileEventQueueManagedAqs.property.subscriptionId">subscriptionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#subscription_id ExternalLocation#subscription_id}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationFileEventQueueManagedAqs.property.queueUrl">queueUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}. |
 
 ---
 
@@ -1806,7 +2280,7 @@ public readonly resourceGroup: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#resource_group ExternalLocation#resource_group}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#resource_group ExternalLocation#resource_group}.
 
 ---
 
@@ -1818,7 +2292,7 @@ public readonly subscriptionId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#subscription_id ExternalLocation#subscription_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#subscription_id ExternalLocation#subscription_id}.
 
 ---
 
@@ -1830,7 +2304,7 @@ public readonly queueUrl: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}.
 
 ---
 
@@ -1848,7 +2322,7 @@ const externalLocationFileEventQueueManagedPubsub: externalLocation.ExternalLoca
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationFileEventQueueManagedPubsub.property.subscriptionName">subscriptionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#subscription_name ExternalLocation#subscription_name}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationFileEventQueueManagedPubsub.property.subscriptionName">subscriptionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#subscription_name ExternalLocation#subscription_name}. |
 
 ---
 
@@ -1860,7 +2334,7 @@ public readonly subscriptionName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#subscription_name ExternalLocation#subscription_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#subscription_name ExternalLocation#subscription_name}.
 
 ---
 
@@ -1878,7 +2352,7 @@ const externalLocationFileEventQueueManagedSqs: externalLocation.ExternalLocatio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationFileEventQueueManagedSqs.property.queueUrl">queueUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationFileEventQueueManagedSqs.property.queueUrl">queueUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}. |
 
 ---
 
@@ -1890,7 +2364,7 @@ public readonly queueUrl: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}.
 
 ---
 
@@ -1908,9 +2382,9 @@ const externalLocationFileEventQueueProvidedAqs: externalLocation.ExternalLocati
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationFileEventQueueProvidedAqs.property.queueUrl">queueUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}. |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationFileEventQueueProvidedAqs.property.resourceGroup">resourceGroup</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#resource_group ExternalLocation#resource_group}. |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationFileEventQueueProvidedAqs.property.subscriptionId">subscriptionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#subscription_id ExternalLocation#subscription_id}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationFileEventQueueProvidedAqs.property.queueUrl">queueUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationFileEventQueueProvidedAqs.property.resourceGroup">resourceGroup</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#resource_group ExternalLocation#resource_group}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationFileEventQueueProvidedAqs.property.subscriptionId">subscriptionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#subscription_id ExternalLocation#subscription_id}. |
 
 ---
 
@@ -1922,7 +2396,7 @@ public readonly queueUrl: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}.
 
 ---
 
@@ -1934,7 +2408,7 @@ public readonly resourceGroup: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#resource_group ExternalLocation#resource_group}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#resource_group ExternalLocation#resource_group}.
 
 ---
 
@@ -1946,7 +2420,7 @@ public readonly subscriptionId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#subscription_id ExternalLocation#subscription_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#subscription_id ExternalLocation#subscription_id}.
 
 ---
 
@@ -1964,7 +2438,7 @@ const externalLocationFileEventQueueProvidedPubsub: externalLocation.ExternalLoc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationFileEventQueueProvidedPubsub.property.subscriptionName">subscriptionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#subscription_name ExternalLocation#subscription_name}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationFileEventQueueProvidedPubsub.property.subscriptionName">subscriptionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#subscription_name ExternalLocation#subscription_name}. |
 
 ---
 
@@ -1976,7 +2450,7 @@ public readonly subscriptionName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#subscription_name ExternalLocation#subscription_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#subscription_name ExternalLocation#subscription_name}.
 
 ---
 
@@ -1994,7 +2468,7 @@ const externalLocationFileEventQueueProvidedSqs: externalLocation.ExternalLocati
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationFileEventQueueProvidedSqs.property.queueUrl">queueUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationFileEventQueueProvidedSqs.property.queueUrl">queueUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}. |
 
 ---
 
@@ -2006,7 +2480,7 @@ public readonly queueUrl: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}.
 
 ---
 
@@ -2024,7 +2498,7 @@ const externalLocationProviderConfig: externalLocation.ExternalLocationProviderC
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#workspace_id ExternalLocation#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#workspace_id ExternalLocation#workspace_id}. |
 
 ---
 
@@ -2036,11 +2510,2470 @@ public readonly workspaceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#workspace_id ExternalLocation#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#workspace_id ExternalLocation#workspace_id}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference <a name="ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.Initializer"></a>
+
+```typescript
+import { externalLocation } from '@cdktn/provider-databricks'
+
+new externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.resetManagedResourceId">resetManagedResourceId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.resetQueueUrl">resetQueueUrl</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.resetResourceGroup">resetResourceGroup</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.resetSubscriptionId">resetSubscriptionId</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetManagedResourceId` <a name="resetManagedResourceId" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.resetManagedResourceId"></a>
+
+```typescript
+public resetManagedResourceId(): void
+```
+
+##### `resetQueueUrl` <a name="resetQueueUrl" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.resetQueueUrl"></a>
+
+```typescript
+public resetQueueUrl(): void
+```
+
+##### `resetResourceGroup` <a name="resetResourceGroup" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.resetResourceGroup"></a>
+
+```typescript
+public resetResourceGroup(): void
+```
+
+##### `resetSubscriptionId` <a name="resetSubscriptionId" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.resetSubscriptionId"></a>
+
+```typescript
+public resetSubscriptionId(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.property.managedResourceIdInput">managedResourceIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.property.queueUrlInput">queueUrlInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.property.resourceGroupInput">resourceGroupInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.property.subscriptionIdInput">subscriptionIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.property.managedResourceId">managedResourceId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.property.queueUrl">queueUrl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.property.resourceGroup">resourceGroup</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.property.subscriptionId">subscriptionId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqs">ExternalLocationEffectiveFileEventQueueManagedAqs</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `managedResourceIdInput`<sup>Optional</sup> <a name="managedResourceIdInput" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.property.managedResourceIdInput"></a>
+
+```typescript
+public readonly managedResourceIdInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `queueUrlInput`<sup>Optional</sup> <a name="queueUrlInput" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.property.queueUrlInput"></a>
+
+```typescript
+public readonly queueUrlInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `resourceGroupInput`<sup>Optional</sup> <a name="resourceGroupInput" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.property.resourceGroupInput"></a>
+
+```typescript
+public readonly resourceGroupInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `subscriptionIdInput`<sup>Optional</sup> <a name="subscriptionIdInput" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.property.subscriptionIdInput"></a>
+
+```typescript
+public readonly subscriptionIdInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `managedResourceId`<sup>Required</sup> <a name="managedResourceId" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.property.managedResourceId"></a>
+
+```typescript
+public readonly managedResourceId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `queueUrl`<sup>Required</sup> <a name="queueUrl" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.property.queueUrl"></a>
+
+```typescript
+public readonly queueUrl: string;
+```
+
+- *Type:* string
+
+---
+
+##### `resourceGroup`<sup>Required</sup> <a name="resourceGroup" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.property.resourceGroup"></a>
+
+```typescript
+public readonly resourceGroup: string;
+```
+
+- *Type:* string
+
+---
+
+##### `subscriptionId`<sup>Required</sup> <a name="subscriptionId" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.property.subscriptionId"></a>
+
+```typescript
+public readonly subscriptionId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: ExternalLocationEffectiveFileEventQueueManagedAqs;
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqs">ExternalLocationEffectiveFileEventQueueManagedAqs</a>
+
+---
+
+
+### ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference <a name="ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference.Initializer"></a>
+
+```typescript
+import { externalLocation } from '@cdktn/provider-databricks'
+
+new externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference.resetManagedResourceId">resetManagedResourceId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference.resetSubscriptionName">resetSubscriptionName</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetManagedResourceId` <a name="resetManagedResourceId" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference.resetManagedResourceId"></a>
+
+```typescript
+public resetManagedResourceId(): void
+```
+
+##### `resetSubscriptionName` <a name="resetSubscriptionName" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference.resetSubscriptionName"></a>
+
+```typescript
+public resetSubscriptionName(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference.property.managedResourceIdInput">managedResourceIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference.property.subscriptionNameInput">subscriptionNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference.property.managedResourceId">managedResourceId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference.property.subscriptionName">subscriptionName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsub">ExternalLocationEffectiveFileEventQueueManagedPubsub</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `managedResourceIdInput`<sup>Optional</sup> <a name="managedResourceIdInput" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference.property.managedResourceIdInput"></a>
+
+```typescript
+public readonly managedResourceIdInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `subscriptionNameInput`<sup>Optional</sup> <a name="subscriptionNameInput" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference.property.subscriptionNameInput"></a>
+
+```typescript
+public readonly subscriptionNameInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `managedResourceId`<sup>Required</sup> <a name="managedResourceId" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference.property.managedResourceId"></a>
+
+```typescript
+public readonly managedResourceId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `subscriptionName`<sup>Required</sup> <a name="subscriptionName" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference.property.subscriptionName"></a>
+
+```typescript
+public readonly subscriptionName: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: ExternalLocationEffectiveFileEventQueueManagedPubsub;
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsub">ExternalLocationEffectiveFileEventQueueManagedPubsub</a>
+
+---
+
+
+### ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference <a name="ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference.Initializer"></a>
+
+```typescript
+import { externalLocation } from '@cdktn/provider-databricks'
+
+new externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference.resetManagedResourceId">resetManagedResourceId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference.resetQueueUrl">resetQueueUrl</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetManagedResourceId` <a name="resetManagedResourceId" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference.resetManagedResourceId"></a>
+
+```typescript
+public resetManagedResourceId(): void
+```
+
+##### `resetQueueUrl` <a name="resetQueueUrl" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference.resetQueueUrl"></a>
+
+```typescript
+public resetQueueUrl(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference.property.managedResourceIdInput">managedResourceIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference.property.queueUrlInput">queueUrlInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference.property.managedResourceId">managedResourceId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference.property.queueUrl">queueUrl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqs">ExternalLocationEffectiveFileEventQueueManagedSqs</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `managedResourceIdInput`<sup>Optional</sup> <a name="managedResourceIdInput" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference.property.managedResourceIdInput"></a>
+
+```typescript
+public readonly managedResourceIdInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `queueUrlInput`<sup>Optional</sup> <a name="queueUrlInput" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference.property.queueUrlInput"></a>
+
+```typescript
+public readonly queueUrlInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `managedResourceId`<sup>Required</sup> <a name="managedResourceId" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference.property.managedResourceId"></a>
+
+```typescript
+public readonly managedResourceId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `queueUrl`<sup>Required</sup> <a name="queueUrl" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference.property.queueUrl"></a>
+
+```typescript
+public readonly queueUrl: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: ExternalLocationEffectiveFileEventQueueManagedSqs;
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqs">ExternalLocationEffectiveFileEventQueueManagedSqs</a>
+
+---
+
+
+### ExternalLocationEffectiveFileEventQueueOutputReference <a name="ExternalLocationEffectiveFileEventQueueOutputReference" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.Initializer"></a>
+
+```typescript
+import { externalLocation } from '@cdktn/provider-databricks'
+
+new externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.putManagedAqs">putManagedAqs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.putManagedPubsub">putManagedPubsub</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.putManagedSqs">putManagedSqs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.putProvidedAqs">putProvidedAqs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.putProvidedPubsub">putProvidedPubsub</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.putProvidedSqs">putProvidedSqs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.resetManagedAqs">resetManagedAqs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.resetManagedPubsub">resetManagedPubsub</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.resetManagedSqs">resetManagedSqs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.resetProvidedAqs">resetProvidedAqs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.resetProvidedPubsub">resetProvidedPubsub</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.resetProvidedSqs">resetProvidedSqs</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putManagedAqs` <a name="putManagedAqs" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.putManagedAqs"></a>
+
+```typescript
+public putManagedAqs(value: ExternalLocationEffectiveFileEventQueueManagedAqs): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.putManagedAqs.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqs">ExternalLocationEffectiveFileEventQueueManagedAqs</a>
+
+---
+
+##### `putManagedPubsub` <a name="putManagedPubsub" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.putManagedPubsub"></a>
+
+```typescript
+public putManagedPubsub(value: ExternalLocationEffectiveFileEventQueueManagedPubsub): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.putManagedPubsub.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsub">ExternalLocationEffectiveFileEventQueueManagedPubsub</a>
+
+---
+
+##### `putManagedSqs` <a name="putManagedSqs" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.putManagedSqs"></a>
+
+```typescript
+public putManagedSqs(value: ExternalLocationEffectiveFileEventQueueManagedSqs): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.putManagedSqs.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqs">ExternalLocationEffectiveFileEventQueueManagedSqs</a>
+
+---
+
+##### `putProvidedAqs` <a name="putProvidedAqs" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.putProvidedAqs"></a>
+
+```typescript
+public putProvidedAqs(value: ExternalLocationEffectiveFileEventQueueProvidedAqs): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.putProvidedAqs.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqs">ExternalLocationEffectiveFileEventQueueProvidedAqs</a>
+
+---
+
+##### `putProvidedPubsub` <a name="putProvidedPubsub" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.putProvidedPubsub"></a>
+
+```typescript
+public putProvidedPubsub(value: ExternalLocationEffectiveFileEventQueueProvidedPubsub): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.putProvidedPubsub.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsub">ExternalLocationEffectiveFileEventQueueProvidedPubsub</a>
+
+---
+
+##### `putProvidedSqs` <a name="putProvidedSqs" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.putProvidedSqs"></a>
+
+```typescript
+public putProvidedSqs(value: ExternalLocationEffectiveFileEventQueueProvidedSqs): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.putProvidedSqs.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqs">ExternalLocationEffectiveFileEventQueueProvidedSqs</a>
+
+---
+
+##### `resetManagedAqs` <a name="resetManagedAqs" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.resetManagedAqs"></a>
+
+```typescript
+public resetManagedAqs(): void
+```
+
+##### `resetManagedPubsub` <a name="resetManagedPubsub" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.resetManagedPubsub"></a>
+
+```typescript
+public resetManagedPubsub(): void
+```
+
+##### `resetManagedSqs` <a name="resetManagedSqs" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.resetManagedSqs"></a>
+
+```typescript
+public resetManagedSqs(): void
+```
+
+##### `resetProvidedAqs` <a name="resetProvidedAqs" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.resetProvidedAqs"></a>
+
+```typescript
+public resetProvidedAqs(): void
+```
+
+##### `resetProvidedPubsub` <a name="resetProvidedPubsub" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.resetProvidedPubsub"></a>
+
+```typescript
+public resetProvidedPubsub(): void
+```
+
+##### `resetProvidedSqs` <a name="resetProvidedSqs" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.resetProvidedSqs"></a>
+
+```typescript
+public resetProvidedSqs(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.property.managedAqs">managedAqs</a></code> | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference">ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.property.managedPubsub">managedPubsub</a></code> | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference">ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.property.managedSqs">managedSqs</a></code> | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference">ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.property.providedAqs">providedAqs</a></code> | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference">ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.property.providedPubsub">providedPubsub</a></code> | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference">ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.property.providedSqs">providedSqs</a></code> | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference">ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.property.managedAqsInput">managedAqsInput</a></code> | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqs">ExternalLocationEffectiveFileEventQueueManagedAqs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.property.managedPubsubInput">managedPubsubInput</a></code> | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsub">ExternalLocationEffectiveFileEventQueueManagedPubsub</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.property.managedSqsInput">managedSqsInput</a></code> | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqs">ExternalLocationEffectiveFileEventQueueManagedSqs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.property.providedAqsInput">providedAqsInput</a></code> | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqs">ExternalLocationEffectiveFileEventQueueProvidedAqs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.property.providedPubsubInput">providedPubsubInput</a></code> | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsub">ExternalLocationEffectiveFileEventQueueProvidedPubsub</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.property.providedSqsInput">providedSqsInput</a></code> | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqs">ExternalLocationEffectiveFileEventQueueProvidedSqs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueue">ExternalLocationEffectiveFileEventQueue</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `managedAqs`<sup>Required</sup> <a name="managedAqs" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.property.managedAqs"></a>
+
+```typescript
+public readonly managedAqs: ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference">ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference</a>
+
+---
+
+##### `managedPubsub`<sup>Required</sup> <a name="managedPubsub" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.property.managedPubsub"></a>
+
+```typescript
+public readonly managedPubsub: ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference">ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference</a>
+
+---
+
+##### `managedSqs`<sup>Required</sup> <a name="managedSqs" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.property.managedSqs"></a>
+
+```typescript
+public readonly managedSqs: ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference">ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference</a>
+
+---
+
+##### `providedAqs`<sup>Required</sup> <a name="providedAqs" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.property.providedAqs"></a>
+
+```typescript
+public readonly providedAqs: ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference">ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference</a>
+
+---
+
+##### `providedPubsub`<sup>Required</sup> <a name="providedPubsub" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.property.providedPubsub"></a>
+
+```typescript
+public readonly providedPubsub: ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference">ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference</a>
+
+---
+
+##### `providedSqs`<sup>Required</sup> <a name="providedSqs" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.property.providedSqs"></a>
+
+```typescript
+public readonly providedSqs: ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference">ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference</a>
+
+---
+
+##### `managedAqsInput`<sup>Optional</sup> <a name="managedAqsInput" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.property.managedAqsInput"></a>
+
+```typescript
+public readonly managedAqsInput: ExternalLocationEffectiveFileEventQueueManagedAqs;
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedAqs">ExternalLocationEffectiveFileEventQueueManagedAqs</a>
+
+---
+
+##### `managedPubsubInput`<sup>Optional</sup> <a name="managedPubsubInput" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.property.managedPubsubInput"></a>
+
+```typescript
+public readonly managedPubsubInput: ExternalLocationEffectiveFileEventQueueManagedPubsub;
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedPubsub">ExternalLocationEffectiveFileEventQueueManagedPubsub</a>
+
+---
+
+##### `managedSqsInput`<sup>Optional</sup> <a name="managedSqsInput" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.property.managedSqsInput"></a>
+
+```typescript
+public readonly managedSqsInput: ExternalLocationEffectiveFileEventQueueManagedSqs;
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueManagedSqs">ExternalLocationEffectiveFileEventQueueManagedSqs</a>
+
+---
+
+##### `providedAqsInput`<sup>Optional</sup> <a name="providedAqsInput" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.property.providedAqsInput"></a>
+
+```typescript
+public readonly providedAqsInput: ExternalLocationEffectiveFileEventQueueProvidedAqs;
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqs">ExternalLocationEffectiveFileEventQueueProvidedAqs</a>
+
+---
+
+##### `providedPubsubInput`<sup>Optional</sup> <a name="providedPubsubInput" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.property.providedPubsubInput"></a>
+
+```typescript
+public readonly providedPubsubInput: ExternalLocationEffectiveFileEventQueueProvidedPubsub;
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsub">ExternalLocationEffectiveFileEventQueueProvidedPubsub</a>
+
+---
+
+##### `providedSqsInput`<sup>Optional</sup> <a name="providedSqsInput" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.property.providedSqsInput"></a>
+
+```typescript
+public readonly providedSqsInput: ExternalLocationEffectiveFileEventQueueProvidedSqs;
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqs">ExternalLocationEffectiveFileEventQueueProvidedSqs</a>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: ExternalLocationEffectiveFileEventQueue;
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueue">ExternalLocationEffectiveFileEventQueue</a>
+
+---
+
+
+### ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference <a name="ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.Initializer"></a>
+
+```typescript
+import { externalLocation } from '@cdktn/provider-databricks'
+
+new externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.resetManagedResourceId">resetManagedResourceId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.resetQueueUrl">resetQueueUrl</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.resetResourceGroup">resetResourceGroup</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.resetSubscriptionId">resetSubscriptionId</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetManagedResourceId` <a name="resetManagedResourceId" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.resetManagedResourceId"></a>
+
+```typescript
+public resetManagedResourceId(): void
+```
+
+##### `resetQueueUrl` <a name="resetQueueUrl" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.resetQueueUrl"></a>
+
+```typescript
+public resetQueueUrl(): void
+```
+
+##### `resetResourceGroup` <a name="resetResourceGroup" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.resetResourceGroup"></a>
+
+```typescript
+public resetResourceGroup(): void
+```
+
+##### `resetSubscriptionId` <a name="resetSubscriptionId" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.resetSubscriptionId"></a>
+
+```typescript
+public resetSubscriptionId(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.property.managedResourceIdInput">managedResourceIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.property.queueUrlInput">queueUrlInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.property.resourceGroupInput">resourceGroupInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.property.subscriptionIdInput">subscriptionIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.property.managedResourceId">managedResourceId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.property.queueUrl">queueUrl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.property.resourceGroup">resourceGroup</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.property.subscriptionId">subscriptionId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqs">ExternalLocationEffectiveFileEventQueueProvidedAqs</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `managedResourceIdInput`<sup>Optional</sup> <a name="managedResourceIdInput" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.property.managedResourceIdInput"></a>
+
+```typescript
+public readonly managedResourceIdInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `queueUrlInput`<sup>Optional</sup> <a name="queueUrlInput" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.property.queueUrlInput"></a>
+
+```typescript
+public readonly queueUrlInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `resourceGroupInput`<sup>Optional</sup> <a name="resourceGroupInput" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.property.resourceGroupInput"></a>
+
+```typescript
+public readonly resourceGroupInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `subscriptionIdInput`<sup>Optional</sup> <a name="subscriptionIdInput" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.property.subscriptionIdInput"></a>
+
+```typescript
+public readonly subscriptionIdInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `managedResourceId`<sup>Required</sup> <a name="managedResourceId" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.property.managedResourceId"></a>
+
+```typescript
+public readonly managedResourceId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `queueUrl`<sup>Required</sup> <a name="queueUrl" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.property.queueUrl"></a>
+
+```typescript
+public readonly queueUrl: string;
+```
+
+- *Type:* string
+
+---
+
+##### `resourceGroup`<sup>Required</sup> <a name="resourceGroup" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.property.resourceGroup"></a>
+
+```typescript
+public readonly resourceGroup: string;
+```
+
+- *Type:* string
+
+---
+
+##### `subscriptionId`<sup>Required</sup> <a name="subscriptionId" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.property.subscriptionId"></a>
+
+```typescript
+public readonly subscriptionId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: ExternalLocationEffectiveFileEventQueueProvidedAqs;
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedAqs">ExternalLocationEffectiveFileEventQueueProvidedAqs</a>
+
+---
+
+
+### ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference <a name="ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference.Initializer"></a>
+
+```typescript
+import { externalLocation } from '@cdktn/provider-databricks'
+
+new externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference.resetManagedResourceId">resetManagedResourceId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference.resetSubscriptionName">resetSubscriptionName</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetManagedResourceId` <a name="resetManagedResourceId" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference.resetManagedResourceId"></a>
+
+```typescript
+public resetManagedResourceId(): void
+```
+
+##### `resetSubscriptionName` <a name="resetSubscriptionName" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference.resetSubscriptionName"></a>
+
+```typescript
+public resetSubscriptionName(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference.property.managedResourceIdInput">managedResourceIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference.property.subscriptionNameInput">subscriptionNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference.property.managedResourceId">managedResourceId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference.property.subscriptionName">subscriptionName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsub">ExternalLocationEffectiveFileEventQueueProvidedPubsub</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `managedResourceIdInput`<sup>Optional</sup> <a name="managedResourceIdInput" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference.property.managedResourceIdInput"></a>
+
+```typescript
+public readonly managedResourceIdInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `subscriptionNameInput`<sup>Optional</sup> <a name="subscriptionNameInput" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference.property.subscriptionNameInput"></a>
+
+```typescript
+public readonly subscriptionNameInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `managedResourceId`<sup>Required</sup> <a name="managedResourceId" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference.property.managedResourceId"></a>
+
+```typescript
+public readonly managedResourceId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `subscriptionName`<sup>Required</sup> <a name="subscriptionName" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference.property.subscriptionName"></a>
+
+```typescript
+public readonly subscriptionName: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: ExternalLocationEffectiveFileEventQueueProvidedPubsub;
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedPubsub">ExternalLocationEffectiveFileEventQueueProvidedPubsub</a>
+
+---
+
+
+### ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference <a name="ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference.Initializer"></a>
+
+```typescript
+import { externalLocation } from '@cdktn/provider-databricks'
+
+new externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference.resetManagedResourceId">resetManagedResourceId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference.resetQueueUrl">resetQueueUrl</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetManagedResourceId` <a name="resetManagedResourceId" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference.resetManagedResourceId"></a>
+
+```typescript
+public resetManagedResourceId(): void
+```
+
+##### `resetQueueUrl` <a name="resetQueueUrl" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference.resetQueueUrl"></a>
+
+```typescript
+public resetQueueUrl(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference.property.managedResourceIdInput">managedResourceIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference.property.queueUrlInput">queueUrlInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference.property.managedResourceId">managedResourceId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference.property.queueUrl">queueUrl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqs">ExternalLocationEffectiveFileEventQueueProvidedSqs</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `managedResourceIdInput`<sup>Optional</sup> <a name="managedResourceIdInput" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference.property.managedResourceIdInput"></a>
+
+```typescript
+public readonly managedResourceIdInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `queueUrlInput`<sup>Optional</sup> <a name="queueUrlInput" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference.property.queueUrlInput"></a>
+
+```typescript
+public readonly queueUrlInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `managedResourceId`<sup>Required</sup> <a name="managedResourceId" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference.property.managedResourceId"></a>
+
+```typescript
+public readonly managedResourceId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `queueUrl`<sup>Required</sup> <a name="queueUrl" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference.property.queueUrl"></a>
+
+```typescript
+public readonly queueUrl: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: ExternalLocationEffectiveFileEventQueueProvidedSqs;
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.externalLocation.ExternalLocationEffectiveFileEventQueueProvidedSqs">ExternalLocationEffectiveFileEventQueueProvidedSqs</a>
+
+---
+
 
 ### ExternalLocationEncryptionDetailsOutputReference <a name="ExternalLocationEncryptionDetailsOutputReference" id="@cdktn/provider-databricks.externalLocation.ExternalLocationEncryptionDetailsOutputReference"></a>
 

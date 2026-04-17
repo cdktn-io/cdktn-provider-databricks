@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location
+// https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,90 +13,1191 @@ import * as cdktn from 'cdktn';
 
 export interface ExternalLocationConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#comment ExternalLocation#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#comment ExternalLocation#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#credential_name ExternalLocation#credential_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#credential_name ExternalLocation#credential_name}
   */
   readonly credentialName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#enable_file_events ExternalLocation#enable_file_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#enable_file_events ExternalLocation#enable_file_events}
   */
   readonly enableFileEvents?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#fallback ExternalLocation#fallback}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#fallback ExternalLocation#fallback}
   */
   readonly fallback?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#force_destroy ExternalLocation#force_destroy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#force_destroy ExternalLocation#force_destroy}
   */
   readonly forceDestroy?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#force_update ExternalLocation#force_update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#force_update ExternalLocation#force_update}
   */
   readonly forceUpdate?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#id ExternalLocation#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#id ExternalLocation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#isolation_mode ExternalLocation#isolation_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#isolation_mode ExternalLocation#isolation_mode}
   */
   readonly isolationMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#metastore_id ExternalLocation#metastore_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#metastore_id ExternalLocation#metastore_id}
   */
   readonly metastoreId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#name ExternalLocation#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#name ExternalLocation#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#owner ExternalLocation#owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#owner ExternalLocation#owner}
   */
   readonly owner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#read_only ExternalLocation#read_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#read_only ExternalLocation#read_only}
   */
   readonly readOnly?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#skip_validation ExternalLocation#skip_validation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#skip_validation ExternalLocation#skip_validation}
   */
   readonly skipValidation?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#url ExternalLocation#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#url ExternalLocation#url}
   */
   readonly url: string;
   /**
+  * effective_file_event_queue block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#effective_file_event_queue ExternalLocation#effective_file_event_queue}
+  */
+  readonly effectiveFileEventQueue?: ExternalLocationEffectiveFileEventQueue;
+  /**
   * encryption_details block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#encryption_details ExternalLocation#encryption_details}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#encryption_details ExternalLocation#encryption_details}
   */
   readonly encryptionDetails?: ExternalLocationEncryptionDetails;
   /**
   * file_event_queue block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#file_event_queue ExternalLocation#file_event_queue}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#file_event_queue ExternalLocation#file_event_queue}
   */
   readonly fileEventQueue?: ExternalLocationFileEventQueue;
   /**
   * provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#provider_config ExternalLocation#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#provider_config ExternalLocation#provider_config}
   */
   readonly providerConfig?: ExternalLocationProviderConfig;
 }
+export interface ExternalLocationEffectiveFileEventQueueManagedAqs {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#managed_resource_id ExternalLocation#managed_resource_id}
+  */
+  readonly managedResourceId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}
+  */
+  readonly queueUrl?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#resource_group ExternalLocation#resource_group}
+  */
+  readonly resourceGroup?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#subscription_id ExternalLocation#subscription_id}
+  */
+  readonly subscriptionId?: string;
+}
+
+export function externalLocationEffectiveFileEventQueueManagedAqsToTerraform(struct?: ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference | ExternalLocationEffectiveFileEventQueueManagedAqs): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    managed_resource_id: cdktn.stringToTerraform(struct!.managedResourceId),
+    queue_url: cdktn.stringToTerraform(struct!.queueUrl),
+    resource_group: cdktn.stringToTerraform(struct!.resourceGroup),
+    subscription_id: cdktn.stringToTerraform(struct!.subscriptionId),
+  }
+}
+
+
+export function externalLocationEffectiveFileEventQueueManagedAqsToHclTerraform(struct?: ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference | ExternalLocationEffectiveFileEventQueueManagedAqs): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    managed_resource_id: {
+      value: cdktn.stringToHclTerraform(struct!.managedResourceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    queue_url: {
+      value: cdktn.stringToHclTerraform(struct!.queueUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    resource_group: {
+      value: cdktn.stringToHclTerraform(struct!.resourceGroup),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    subscription_id: {
+      value: cdktn.stringToHclTerraform(struct!.subscriptionId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ExternalLocationEffectiveFileEventQueueManagedAqs | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._managedResourceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.managedResourceId = this._managedResourceId;
+    }
+    if (this._queueUrl !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.queueUrl = this._queueUrl;
+    }
+    if (this._resourceGroup !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.resourceGroup = this._resourceGroup;
+    }
+    if (this._subscriptionId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.subscriptionId = this._subscriptionId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ExternalLocationEffectiveFileEventQueueManagedAqs | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._managedResourceId = undefined;
+      this._queueUrl = undefined;
+      this._resourceGroup = undefined;
+      this._subscriptionId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._managedResourceId = value.managedResourceId;
+      this._queueUrl = value.queueUrl;
+      this._resourceGroup = value.resourceGroup;
+      this._subscriptionId = value.subscriptionId;
+    }
+  }
+
+  // managed_resource_id - computed: false, optional: true, required: false
+  private _managedResourceId?: string; 
+  public get managedResourceId() {
+    return this.getStringAttribute('managed_resource_id');
+  }
+  public set managedResourceId(value: string) {
+    this._managedResourceId = value;
+  }
+  public resetManagedResourceId() {
+    this._managedResourceId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get managedResourceIdInput() {
+    return this._managedResourceId;
+  }
+
+  // queue_url - computed: false, optional: true, required: false
+  private _queueUrl?: string; 
+  public get queueUrl() {
+    return this.getStringAttribute('queue_url');
+  }
+  public set queueUrl(value: string) {
+    this._queueUrl = value;
+  }
+  public resetQueueUrl() {
+    this._queueUrl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get queueUrlInput() {
+    return this._queueUrl;
+  }
+
+  // resource_group - computed: false, optional: true, required: false
+  private _resourceGroup?: string; 
+  public get resourceGroup() {
+    return this.getStringAttribute('resource_group');
+  }
+  public set resourceGroup(value: string) {
+    this._resourceGroup = value;
+  }
+  public resetResourceGroup() {
+    this._resourceGroup = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceGroupInput() {
+    return this._resourceGroup;
+  }
+
+  // subscription_id - computed: false, optional: true, required: false
+  private _subscriptionId?: string; 
+  public get subscriptionId() {
+    return this.getStringAttribute('subscription_id');
+  }
+  public set subscriptionId(value: string) {
+    this._subscriptionId = value;
+  }
+  public resetSubscriptionId() {
+    this._subscriptionId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subscriptionIdInput() {
+    return this._subscriptionId;
+  }
+}
+export interface ExternalLocationEffectiveFileEventQueueManagedPubsub {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#managed_resource_id ExternalLocation#managed_resource_id}
+  */
+  readonly managedResourceId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#subscription_name ExternalLocation#subscription_name}
+  */
+  readonly subscriptionName?: string;
+}
+
+export function externalLocationEffectiveFileEventQueueManagedPubsubToTerraform(struct?: ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference | ExternalLocationEffectiveFileEventQueueManagedPubsub): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    managed_resource_id: cdktn.stringToTerraform(struct!.managedResourceId),
+    subscription_name: cdktn.stringToTerraform(struct!.subscriptionName),
+  }
+}
+
+
+export function externalLocationEffectiveFileEventQueueManagedPubsubToHclTerraform(struct?: ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference | ExternalLocationEffectiveFileEventQueueManagedPubsub): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    managed_resource_id: {
+      value: cdktn.stringToHclTerraform(struct!.managedResourceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    subscription_name: {
+      value: cdktn.stringToHclTerraform(struct!.subscriptionName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ExternalLocationEffectiveFileEventQueueManagedPubsub | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._managedResourceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.managedResourceId = this._managedResourceId;
+    }
+    if (this._subscriptionName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.subscriptionName = this._subscriptionName;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ExternalLocationEffectiveFileEventQueueManagedPubsub | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._managedResourceId = undefined;
+      this._subscriptionName = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._managedResourceId = value.managedResourceId;
+      this._subscriptionName = value.subscriptionName;
+    }
+  }
+
+  // managed_resource_id - computed: false, optional: true, required: false
+  private _managedResourceId?: string; 
+  public get managedResourceId() {
+    return this.getStringAttribute('managed_resource_id');
+  }
+  public set managedResourceId(value: string) {
+    this._managedResourceId = value;
+  }
+  public resetManagedResourceId() {
+    this._managedResourceId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get managedResourceIdInput() {
+    return this._managedResourceId;
+  }
+
+  // subscription_name - computed: false, optional: true, required: false
+  private _subscriptionName?: string; 
+  public get subscriptionName() {
+    return this.getStringAttribute('subscription_name');
+  }
+  public set subscriptionName(value: string) {
+    this._subscriptionName = value;
+  }
+  public resetSubscriptionName() {
+    this._subscriptionName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subscriptionNameInput() {
+    return this._subscriptionName;
+  }
+}
+export interface ExternalLocationEffectiveFileEventQueueManagedSqs {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#managed_resource_id ExternalLocation#managed_resource_id}
+  */
+  readonly managedResourceId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}
+  */
+  readonly queueUrl?: string;
+}
+
+export function externalLocationEffectiveFileEventQueueManagedSqsToTerraform(struct?: ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference | ExternalLocationEffectiveFileEventQueueManagedSqs): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    managed_resource_id: cdktn.stringToTerraform(struct!.managedResourceId),
+    queue_url: cdktn.stringToTerraform(struct!.queueUrl),
+  }
+}
+
+
+export function externalLocationEffectiveFileEventQueueManagedSqsToHclTerraform(struct?: ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference | ExternalLocationEffectiveFileEventQueueManagedSqs): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    managed_resource_id: {
+      value: cdktn.stringToHclTerraform(struct!.managedResourceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    queue_url: {
+      value: cdktn.stringToHclTerraform(struct!.queueUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ExternalLocationEffectiveFileEventQueueManagedSqs | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._managedResourceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.managedResourceId = this._managedResourceId;
+    }
+    if (this._queueUrl !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.queueUrl = this._queueUrl;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ExternalLocationEffectiveFileEventQueueManagedSqs | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._managedResourceId = undefined;
+      this._queueUrl = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._managedResourceId = value.managedResourceId;
+      this._queueUrl = value.queueUrl;
+    }
+  }
+
+  // managed_resource_id - computed: false, optional: true, required: false
+  private _managedResourceId?: string; 
+  public get managedResourceId() {
+    return this.getStringAttribute('managed_resource_id');
+  }
+  public set managedResourceId(value: string) {
+    this._managedResourceId = value;
+  }
+  public resetManagedResourceId() {
+    this._managedResourceId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get managedResourceIdInput() {
+    return this._managedResourceId;
+  }
+
+  // queue_url - computed: false, optional: true, required: false
+  private _queueUrl?: string; 
+  public get queueUrl() {
+    return this.getStringAttribute('queue_url');
+  }
+  public set queueUrl(value: string) {
+    this._queueUrl = value;
+  }
+  public resetQueueUrl() {
+    this._queueUrl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get queueUrlInput() {
+    return this._queueUrl;
+  }
+}
+export interface ExternalLocationEffectiveFileEventQueueProvidedAqs {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#managed_resource_id ExternalLocation#managed_resource_id}
+  */
+  readonly managedResourceId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}
+  */
+  readonly queueUrl?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#resource_group ExternalLocation#resource_group}
+  */
+  readonly resourceGroup?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#subscription_id ExternalLocation#subscription_id}
+  */
+  readonly subscriptionId?: string;
+}
+
+export function externalLocationEffectiveFileEventQueueProvidedAqsToTerraform(struct?: ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference | ExternalLocationEffectiveFileEventQueueProvidedAqs): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    managed_resource_id: cdktn.stringToTerraform(struct!.managedResourceId),
+    queue_url: cdktn.stringToTerraform(struct!.queueUrl),
+    resource_group: cdktn.stringToTerraform(struct!.resourceGroup),
+    subscription_id: cdktn.stringToTerraform(struct!.subscriptionId),
+  }
+}
+
+
+export function externalLocationEffectiveFileEventQueueProvidedAqsToHclTerraform(struct?: ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference | ExternalLocationEffectiveFileEventQueueProvidedAqs): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    managed_resource_id: {
+      value: cdktn.stringToHclTerraform(struct!.managedResourceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    queue_url: {
+      value: cdktn.stringToHclTerraform(struct!.queueUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    resource_group: {
+      value: cdktn.stringToHclTerraform(struct!.resourceGroup),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    subscription_id: {
+      value: cdktn.stringToHclTerraform(struct!.subscriptionId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ExternalLocationEffectiveFileEventQueueProvidedAqs | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._managedResourceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.managedResourceId = this._managedResourceId;
+    }
+    if (this._queueUrl !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.queueUrl = this._queueUrl;
+    }
+    if (this._resourceGroup !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.resourceGroup = this._resourceGroup;
+    }
+    if (this._subscriptionId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.subscriptionId = this._subscriptionId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ExternalLocationEffectiveFileEventQueueProvidedAqs | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._managedResourceId = undefined;
+      this._queueUrl = undefined;
+      this._resourceGroup = undefined;
+      this._subscriptionId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._managedResourceId = value.managedResourceId;
+      this._queueUrl = value.queueUrl;
+      this._resourceGroup = value.resourceGroup;
+      this._subscriptionId = value.subscriptionId;
+    }
+  }
+
+  // managed_resource_id - computed: false, optional: true, required: false
+  private _managedResourceId?: string; 
+  public get managedResourceId() {
+    return this.getStringAttribute('managed_resource_id');
+  }
+  public set managedResourceId(value: string) {
+    this._managedResourceId = value;
+  }
+  public resetManagedResourceId() {
+    this._managedResourceId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get managedResourceIdInput() {
+    return this._managedResourceId;
+  }
+
+  // queue_url - computed: false, optional: true, required: false
+  private _queueUrl?: string; 
+  public get queueUrl() {
+    return this.getStringAttribute('queue_url');
+  }
+  public set queueUrl(value: string) {
+    this._queueUrl = value;
+  }
+  public resetQueueUrl() {
+    this._queueUrl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get queueUrlInput() {
+    return this._queueUrl;
+  }
+
+  // resource_group - computed: false, optional: true, required: false
+  private _resourceGroup?: string; 
+  public get resourceGroup() {
+    return this.getStringAttribute('resource_group');
+  }
+  public set resourceGroup(value: string) {
+    this._resourceGroup = value;
+  }
+  public resetResourceGroup() {
+    this._resourceGroup = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceGroupInput() {
+    return this._resourceGroup;
+  }
+
+  // subscription_id - computed: false, optional: true, required: false
+  private _subscriptionId?: string; 
+  public get subscriptionId() {
+    return this.getStringAttribute('subscription_id');
+  }
+  public set subscriptionId(value: string) {
+    this._subscriptionId = value;
+  }
+  public resetSubscriptionId() {
+    this._subscriptionId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subscriptionIdInput() {
+    return this._subscriptionId;
+  }
+}
+export interface ExternalLocationEffectiveFileEventQueueProvidedPubsub {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#managed_resource_id ExternalLocation#managed_resource_id}
+  */
+  readonly managedResourceId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#subscription_name ExternalLocation#subscription_name}
+  */
+  readonly subscriptionName?: string;
+}
+
+export function externalLocationEffectiveFileEventQueueProvidedPubsubToTerraform(struct?: ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference | ExternalLocationEffectiveFileEventQueueProvidedPubsub): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    managed_resource_id: cdktn.stringToTerraform(struct!.managedResourceId),
+    subscription_name: cdktn.stringToTerraform(struct!.subscriptionName),
+  }
+}
+
+
+export function externalLocationEffectiveFileEventQueueProvidedPubsubToHclTerraform(struct?: ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference | ExternalLocationEffectiveFileEventQueueProvidedPubsub): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    managed_resource_id: {
+      value: cdktn.stringToHclTerraform(struct!.managedResourceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    subscription_name: {
+      value: cdktn.stringToHclTerraform(struct!.subscriptionName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ExternalLocationEffectiveFileEventQueueProvidedPubsub | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._managedResourceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.managedResourceId = this._managedResourceId;
+    }
+    if (this._subscriptionName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.subscriptionName = this._subscriptionName;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ExternalLocationEffectiveFileEventQueueProvidedPubsub | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._managedResourceId = undefined;
+      this._subscriptionName = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._managedResourceId = value.managedResourceId;
+      this._subscriptionName = value.subscriptionName;
+    }
+  }
+
+  // managed_resource_id - computed: false, optional: true, required: false
+  private _managedResourceId?: string; 
+  public get managedResourceId() {
+    return this.getStringAttribute('managed_resource_id');
+  }
+  public set managedResourceId(value: string) {
+    this._managedResourceId = value;
+  }
+  public resetManagedResourceId() {
+    this._managedResourceId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get managedResourceIdInput() {
+    return this._managedResourceId;
+  }
+
+  // subscription_name - computed: false, optional: true, required: false
+  private _subscriptionName?: string; 
+  public get subscriptionName() {
+    return this.getStringAttribute('subscription_name');
+  }
+  public set subscriptionName(value: string) {
+    this._subscriptionName = value;
+  }
+  public resetSubscriptionName() {
+    this._subscriptionName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subscriptionNameInput() {
+    return this._subscriptionName;
+  }
+}
+export interface ExternalLocationEffectiveFileEventQueueProvidedSqs {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#managed_resource_id ExternalLocation#managed_resource_id}
+  */
+  readonly managedResourceId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}
+  */
+  readonly queueUrl?: string;
+}
+
+export function externalLocationEffectiveFileEventQueueProvidedSqsToTerraform(struct?: ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference | ExternalLocationEffectiveFileEventQueueProvidedSqs): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    managed_resource_id: cdktn.stringToTerraform(struct!.managedResourceId),
+    queue_url: cdktn.stringToTerraform(struct!.queueUrl),
+  }
+}
+
+
+export function externalLocationEffectiveFileEventQueueProvidedSqsToHclTerraform(struct?: ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference | ExternalLocationEffectiveFileEventQueueProvidedSqs): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    managed_resource_id: {
+      value: cdktn.stringToHclTerraform(struct!.managedResourceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    queue_url: {
+      value: cdktn.stringToHclTerraform(struct!.queueUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ExternalLocationEffectiveFileEventQueueProvidedSqs | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._managedResourceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.managedResourceId = this._managedResourceId;
+    }
+    if (this._queueUrl !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.queueUrl = this._queueUrl;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ExternalLocationEffectiveFileEventQueueProvidedSqs | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._managedResourceId = undefined;
+      this._queueUrl = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._managedResourceId = value.managedResourceId;
+      this._queueUrl = value.queueUrl;
+    }
+  }
+
+  // managed_resource_id - computed: false, optional: true, required: false
+  private _managedResourceId?: string; 
+  public get managedResourceId() {
+    return this.getStringAttribute('managed_resource_id');
+  }
+  public set managedResourceId(value: string) {
+    this._managedResourceId = value;
+  }
+  public resetManagedResourceId() {
+    this._managedResourceId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get managedResourceIdInput() {
+    return this._managedResourceId;
+  }
+
+  // queue_url - computed: false, optional: true, required: false
+  private _queueUrl?: string; 
+  public get queueUrl() {
+    return this.getStringAttribute('queue_url');
+  }
+  public set queueUrl(value: string) {
+    this._queueUrl = value;
+  }
+  public resetQueueUrl() {
+    this._queueUrl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get queueUrlInput() {
+    return this._queueUrl;
+  }
+}
+export interface ExternalLocationEffectiveFileEventQueue {
+  /**
+  * managed_aqs block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#managed_aqs ExternalLocation#managed_aqs}
+  */
+  readonly managedAqs?: ExternalLocationEffectiveFileEventQueueManagedAqs;
+  /**
+  * managed_pubsub block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#managed_pubsub ExternalLocation#managed_pubsub}
+  */
+  readonly managedPubsub?: ExternalLocationEffectiveFileEventQueueManagedPubsub;
+  /**
+  * managed_sqs block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#managed_sqs ExternalLocation#managed_sqs}
+  */
+  readonly managedSqs?: ExternalLocationEffectiveFileEventQueueManagedSqs;
+  /**
+  * provided_aqs block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#provided_aqs ExternalLocation#provided_aqs}
+  */
+  readonly providedAqs?: ExternalLocationEffectiveFileEventQueueProvidedAqs;
+  /**
+  * provided_pubsub block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#provided_pubsub ExternalLocation#provided_pubsub}
+  */
+  readonly providedPubsub?: ExternalLocationEffectiveFileEventQueueProvidedPubsub;
+  /**
+  * provided_sqs block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#provided_sqs ExternalLocation#provided_sqs}
+  */
+  readonly providedSqs?: ExternalLocationEffectiveFileEventQueueProvidedSqs;
+}
+
+export function externalLocationEffectiveFileEventQueueToTerraform(struct?: ExternalLocationEffectiveFileEventQueueOutputReference | ExternalLocationEffectiveFileEventQueue): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    managed_aqs: externalLocationEffectiveFileEventQueueManagedAqsToTerraform(struct!.managedAqs),
+    managed_pubsub: externalLocationEffectiveFileEventQueueManagedPubsubToTerraform(struct!.managedPubsub),
+    managed_sqs: externalLocationEffectiveFileEventQueueManagedSqsToTerraform(struct!.managedSqs),
+    provided_aqs: externalLocationEffectiveFileEventQueueProvidedAqsToTerraform(struct!.providedAqs),
+    provided_pubsub: externalLocationEffectiveFileEventQueueProvidedPubsubToTerraform(struct!.providedPubsub),
+    provided_sqs: externalLocationEffectiveFileEventQueueProvidedSqsToTerraform(struct!.providedSqs),
+  }
+}
+
+
+export function externalLocationEffectiveFileEventQueueToHclTerraform(struct?: ExternalLocationEffectiveFileEventQueueOutputReference | ExternalLocationEffectiveFileEventQueue): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    managed_aqs: {
+      value: externalLocationEffectiveFileEventQueueManagedAqsToHclTerraform(struct!.managedAqs),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ExternalLocationEffectiveFileEventQueueManagedAqsList",
+    },
+    managed_pubsub: {
+      value: externalLocationEffectiveFileEventQueueManagedPubsubToHclTerraform(struct!.managedPubsub),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ExternalLocationEffectiveFileEventQueueManagedPubsubList",
+    },
+    managed_sqs: {
+      value: externalLocationEffectiveFileEventQueueManagedSqsToHclTerraform(struct!.managedSqs),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ExternalLocationEffectiveFileEventQueueManagedSqsList",
+    },
+    provided_aqs: {
+      value: externalLocationEffectiveFileEventQueueProvidedAqsToHclTerraform(struct!.providedAqs),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ExternalLocationEffectiveFileEventQueueProvidedAqsList",
+    },
+    provided_pubsub: {
+      value: externalLocationEffectiveFileEventQueueProvidedPubsubToHclTerraform(struct!.providedPubsub),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ExternalLocationEffectiveFileEventQueueProvidedPubsubList",
+    },
+    provided_sqs: {
+      value: externalLocationEffectiveFileEventQueueProvidedSqsToHclTerraform(struct!.providedSqs),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ExternalLocationEffectiveFileEventQueueProvidedSqsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ExternalLocationEffectiveFileEventQueueOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ExternalLocationEffectiveFileEventQueue | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._managedAqs?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.managedAqs = this._managedAqs?.internalValue;
+    }
+    if (this._managedPubsub?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.managedPubsub = this._managedPubsub?.internalValue;
+    }
+    if (this._managedSqs?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.managedSqs = this._managedSqs?.internalValue;
+    }
+    if (this._providedAqs?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.providedAqs = this._providedAqs?.internalValue;
+    }
+    if (this._providedPubsub?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.providedPubsub = this._providedPubsub?.internalValue;
+    }
+    if (this._providedSqs?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.providedSqs = this._providedSqs?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ExternalLocationEffectiveFileEventQueue | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._managedAqs.internalValue = undefined;
+      this._managedPubsub.internalValue = undefined;
+      this._managedSqs.internalValue = undefined;
+      this._providedAqs.internalValue = undefined;
+      this._providedPubsub.internalValue = undefined;
+      this._providedSqs.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._managedAqs.internalValue = value.managedAqs;
+      this._managedPubsub.internalValue = value.managedPubsub;
+      this._managedSqs.internalValue = value.managedSqs;
+      this._providedAqs.internalValue = value.providedAqs;
+      this._providedPubsub.internalValue = value.providedPubsub;
+      this._providedSqs.internalValue = value.providedSqs;
+    }
+  }
+
+  // managed_aqs - computed: false, optional: true, required: false
+  private _managedAqs = new ExternalLocationEffectiveFileEventQueueManagedAqsOutputReference(this, "managed_aqs");
+  public get managedAqs() {
+    return this._managedAqs;
+  }
+  public putManagedAqs(value: ExternalLocationEffectiveFileEventQueueManagedAqs) {
+    this._managedAqs.internalValue = value;
+  }
+  public resetManagedAqs() {
+    this._managedAqs.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get managedAqsInput() {
+    return this._managedAqs.internalValue;
+  }
+
+  // managed_pubsub - computed: false, optional: true, required: false
+  private _managedPubsub = new ExternalLocationEffectiveFileEventQueueManagedPubsubOutputReference(this, "managed_pubsub");
+  public get managedPubsub() {
+    return this._managedPubsub;
+  }
+  public putManagedPubsub(value: ExternalLocationEffectiveFileEventQueueManagedPubsub) {
+    this._managedPubsub.internalValue = value;
+  }
+  public resetManagedPubsub() {
+    this._managedPubsub.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get managedPubsubInput() {
+    return this._managedPubsub.internalValue;
+  }
+
+  // managed_sqs - computed: false, optional: true, required: false
+  private _managedSqs = new ExternalLocationEffectiveFileEventQueueManagedSqsOutputReference(this, "managed_sqs");
+  public get managedSqs() {
+    return this._managedSqs;
+  }
+  public putManagedSqs(value: ExternalLocationEffectiveFileEventQueueManagedSqs) {
+    this._managedSqs.internalValue = value;
+  }
+  public resetManagedSqs() {
+    this._managedSqs.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get managedSqsInput() {
+    return this._managedSqs.internalValue;
+  }
+
+  // provided_aqs - computed: false, optional: true, required: false
+  private _providedAqs = new ExternalLocationEffectiveFileEventQueueProvidedAqsOutputReference(this, "provided_aqs");
+  public get providedAqs() {
+    return this._providedAqs;
+  }
+  public putProvidedAqs(value: ExternalLocationEffectiveFileEventQueueProvidedAqs) {
+    this._providedAqs.internalValue = value;
+  }
+  public resetProvidedAqs() {
+    this._providedAqs.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providedAqsInput() {
+    return this._providedAqs.internalValue;
+  }
+
+  // provided_pubsub - computed: false, optional: true, required: false
+  private _providedPubsub = new ExternalLocationEffectiveFileEventQueueProvidedPubsubOutputReference(this, "provided_pubsub");
+  public get providedPubsub() {
+    return this._providedPubsub;
+  }
+  public putProvidedPubsub(value: ExternalLocationEffectiveFileEventQueueProvidedPubsub) {
+    this._providedPubsub.internalValue = value;
+  }
+  public resetProvidedPubsub() {
+    this._providedPubsub.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providedPubsubInput() {
+    return this._providedPubsub.internalValue;
+  }
+
+  // provided_sqs - computed: false, optional: true, required: false
+  private _providedSqs = new ExternalLocationEffectiveFileEventQueueProvidedSqsOutputReference(this, "provided_sqs");
+  public get providedSqs() {
+    return this._providedSqs;
+  }
+  public putProvidedSqs(value: ExternalLocationEffectiveFileEventQueueProvidedSqs) {
+    this._providedSqs.internalValue = value;
+  }
+  public resetProvidedSqs() {
+    this._providedSqs.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providedSqsInput() {
+    return this._providedSqs.internalValue;
+  }
+}
 export interface ExternalLocationEncryptionDetailsSseEncryptionDetails {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#algorithm ExternalLocation#algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#algorithm ExternalLocation#algorithm}
   */
   readonly algorithm?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#aws_kms_key_arn ExternalLocation#aws_kms_key_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#aws_kms_key_arn ExternalLocation#aws_kms_key_arn}
   */
   readonly awsKmsKeyArn?: string;
 }
@@ -211,7 +1312,7 @@ export interface ExternalLocationEncryptionDetails {
   /**
   * sse_encryption_details block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#sse_encryption_details ExternalLocation#sse_encryption_details}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#sse_encryption_details ExternalLocation#sse_encryption_details}
   */
   readonly sseEncryptionDetails?: ExternalLocationEncryptionDetailsSseEncryptionDetails;
 }
@@ -295,15 +1396,15 @@ export class ExternalLocationEncryptionDetailsOutputReference extends cdktn.Comp
 }
 export interface ExternalLocationFileEventQueueManagedAqs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}
   */
   readonly queueUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#resource_group ExternalLocation#resource_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#resource_group ExternalLocation#resource_group}
   */
   readonly resourceGroup: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#subscription_id ExternalLocation#subscription_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#subscription_id ExternalLocation#subscription_id}
   */
   readonly subscriptionId: string;
 }
@@ -444,7 +1545,7 @@ export class ExternalLocationFileEventQueueManagedAqsOutputReference extends cdk
 }
 export interface ExternalLocationFileEventQueueManagedPubsub {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#subscription_name ExternalLocation#subscription_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#subscription_name ExternalLocation#subscription_name}
   */
   readonly subscriptionName?: string;
 }
@@ -533,7 +1634,7 @@ export class ExternalLocationFileEventQueueManagedPubsubOutputReference extends 
 }
 export interface ExternalLocationFileEventQueueManagedSqs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}
   */
   readonly queueUrl?: string;
 }
@@ -622,15 +1723,15 @@ export class ExternalLocationFileEventQueueManagedSqsOutputReference extends cdk
 }
 export interface ExternalLocationFileEventQueueProvidedAqs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}
   */
   readonly queueUrl: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#resource_group ExternalLocation#resource_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#resource_group ExternalLocation#resource_group}
   */
   readonly resourceGroup?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#subscription_id ExternalLocation#subscription_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#subscription_id ExternalLocation#subscription_id}
   */
   readonly subscriptionId?: string;
 }
@@ -774,7 +1875,7 @@ export class ExternalLocationFileEventQueueProvidedAqsOutputReference extends cd
 }
 export interface ExternalLocationFileEventQueueProvidedPubsub {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#subscription_name ExternalLocation#subscription_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#subscription_name ExternalLocation#subscription_name}
   */
   readonly subscriptionName: string;
 }
@@ -860,7 +1961,7 @@ export class ExternalLocationFileEventQueueProvidedPubsubOutputReference extends
 }
 export interface ExternalLocationFileEventQueueProvidedSqs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#queue_url ExternalLocation#queue_url}
   */
   readonly queueUrl: string;
 }
@@ -948,37 +2049,37 @@ export interface ExternalLocationFileEventQueue {
   /**
   * managed_aqs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#managed_aqs ExternalLocation#managed_aqs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#managed_aqs ExternalLocation#managed_aqs}
   */
   readonly managedAqs?: ExternalLocationFileEventQueueManagedAqs;
   /**
   * managed_pubsub block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#managed_pubsub ExternalLocation#managed_pubsub}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#managed_pubsub ExternalLocation#managed_pubsub}
   */
   readonly managedPubsub?: ExternalLocationFileEventQueueManagedPubsub;
   /**
   * managed_sqs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#managed_sqs ExternalLocation#managed_sqs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#managed_sqs ExternalLocation#managed_sqs}
   */
   readonly managedSqs?: ExternalLocationFileEventQueueManagedSqs;
   /**
   * provided_aqs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#provided_aqs ExternalLocation#provided_aqs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#provided_aqs ExternalLocation#provided_aqs}
   */
   readonly providedAqs?: ExternalLocationFileEventQueueProvidedAqs;
   /**
   * provided_pubsub block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#provided_pubsub ExternalLocation#provided_pubsub}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#provided_pubsub ExternalLocation#provided_pubsub}
   */
   readonly providedPubsub?: ExternalLocationFileEventQueueProvidedPubsub;
   /**
   * provided_sqs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#provided_sqs ExternalLocation#provided_sqs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#provided_sqs ExternalLocation#provided_sqs}
   */
   readonly providedSqs?: ExternalLocationFileEventQueueProvidedSqs;
 }
@@ -1207,7 +2308,7 @@ export class ExternalLocationFileEventQueueOutputReference extends cdktn.Complex
 }
 export interface ExternalLocationProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#workspace_id ExternalLocation#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#workspace_id ExternalLocation#workspace_id}
   */
   readonly workspaceId: string;
 }
@@ -1288,7 +2389,7 @@ export class ExternalLocationProviderConfigOutputReference extends cdktn.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location databricks_external_location}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location databricks_external_location}
 */
 export class ExternalLocation extends cdktn.TerraformResource {
 
@@ -1304,7 +2405,7 @@ export class ExternalLocation extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ExternalLocation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ExternalLocation to import
-  * @param importFromId The id of the existing ExternalLocation that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ExternalLocation that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ExternalLocation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1316,7 +2417,7 @@ export class ExternalLocation extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/external_location databricks_external_location} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/external_location databricks_external_location} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1327,7 +2428,7 @@ export class ExternalLocation extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_external_location',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.112.0',
+        providerVersion: '1.113.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -1352,6 +2453,7 @@ export class ExternalLocation extends cdktn.TerraformResource {
     this._readOnly = config.readOnly;
     this._skipValidation = config.skipValidation;
     this._url = config.url;
+    this._effectiveFileEventQueue.internalValue = config.effectiveFileEventQueue;
     this._encryptionDetails.internalValue = config.encryptionDetails;
     this._fileEventQueue.internalValue = config.fileEventQueue;
     this._providerConfig.internalValue = config.providerConfig;
@@ -1611,6 +2713,22 @@ export class ExternalLocation extends cdktn.TerraformResource {
     return this._url;
   }
 
+  // effective_file_event_queue - computed: false, optional: true, required: false
+  private _effectiveFileEventQueue = new ExternalLocationEffectiveFileEventQueueOutputReference(this, "effective_file_event_queue");
+  public get effectiveFileEventQueue() {
+    return this._effectiveFileEventQueue;
+  }
+  public putEffectiveFileEventQueue(value: ExternalLocationEffectiveFileEventQueue) {
+    this._effectiveFileEventQueue.internalValue = value;
+  }
+  public resetEffectiveFileEventQueue() {
+    this._effectiveFileEventQueue.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get effectiveFileEventQueueInput() {
+    return this._effectiveFileEventQueue.internalValue;
+  }
+
   // encryption_details - computed: false, optional: true, required: false
   private _encryptionDetails = new ExternalLocationEncryptionDetailsOutputReference(this, "encryption_details");
   public get encryptionDetails() {
@@ -1679,6 +2797,7 @@ export class ExternalLocation extends cdktn.TerraformResource {
       read_only: cdktn.booleanToTerraform(this._readOnly),
       skip_validation: cdktn.booleanToTerraform(this._skipValidation),
       url: cdktn.stringToTerraform(this._url),
+      effective_file_event_queue: externalLocationEffectiveFileEventQueueToTerraform(this._effectiveFileEventQueue.internalValue),
       encryption_details: externalLocationEncryptionDetailsToTerraform(this._encryptionDetails.internalValue),
       file_event_queue: externalLocationFileEventQueueToTerraform(this._fileEventQueue.internalValue),
       provider_config: externalLocationProviderConfigToTerraform(this._providerConfig.internalValue),
@@ -1770,6 +2889,12 @@ export class ExternalLocation extends cdktn.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      effective_file_event_queue: {
+        value: externalLocationEffectiveFileEventQueueToHclTerraform(this._effectiveFileEventQueue.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ExternalLocationEffectiveFileEventQueueList",
       },
       encryption_details: {
         value: externalLocationEncryptionDetailsToHclTerraform(this._encryptionDetails.internalValue),

@@ -4,7 +4,7 @@
 
 ### Credential <a name="Credential" id="@cdktn/provider-databricks.credential.Credential"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential databricks_credential}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential databricks_credential}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.credential.Credential.Initializer"></a>
 
@@ -78,6 +78,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-databricks.credential.Credential.putAzureManagedIdentity">PutAzureManagedIdentity</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.credential.Credential.putAzureServicePrincipal">PutAzureServicePrincipal</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.credential.Credential.putDatabricksGcpServiceAccount">PutDatabricksGcpServiceAccount</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.credential.Credential.putProviderConfig">PutProviderConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.credential.Credential.resetAwsIamRole">ResetAwsIamRole</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.credential.Credential.resetAzureManagedIdentity">ResetAzureManagedIdentity</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.credential.Credential.resetAzureServicePrincipal">ResetAzureServicePrincipal</a></code> | *No description.* |
@@ -92,6 +93,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-databricks.credential.Credential.resetIsolationMode">ResetIsolationMode</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.credential.Credential.resetMetastoreId">ResetMetastoreId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.credential.Credential.resetOwner">ResetOwner</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.credential.Credential.resetProviderConfig">ResetProviderConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.credential.Credential.resetReadOnly">ResetReadOnly</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.credential.Credential.resetSkipValidation">ResetSkipValidation</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.credential.Credential.resetUpdatedAt">ResetUpdatedAt</a></code> | *No description.* |
@@ -457,6 +459,18 @@ func PutDatabricksGcpServiceAccount(value CredentialDatabricksGcpServiceAccount)
 
 ---
 
+##### `PutProviderConfig` <a name="PutProviderConfig" id="@cdktn/provider-databricks.credential.Credential.putProviderConfig"></a>
+
+```go
+func PutProviderConfig(value CredentialProviderConfig)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.credential.Credential.putProviderConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.credential.CredentialProviderConfig">CredentialProviderConfig</a>
+
+---
+
 ##### `ResetAwsIamRole` <a name="ResetAwsIamRole" id="@cdktn/provider-databricks.credential.Credential.resetAwsIamRole"></a>
 
 ```go
@@ -539,6 +553,12 @@ func ResetMetastoreId()
 
 ```go
 func ResetOwner()
+```
+
+##### `ResetProviderConfig` <a name="ResetProviderConfig" id="@cdktn/provider-databricks.credential.Credential.resetProviderConfig"></a>
+
+```go
+func ResetProviderConfig()
 ```
 
 ##### `ResetReadOnly` <a name="ResetReadOnly" id="@cdktn/provider-databricks.credential.Credential.resetReadOnly"></a>
@@ -674,7 +694,7 @@ The construct id used in the generated config for the Credential to import.
 
 The id of the existing Credential that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -709,6 +729,7 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.credential.Credential.property.azureServicePrincipal">AzureServicePrincipal</a></code> | <code><a href="#@cdktn/provider-databricks.credential.CredentialAzureServicePrincipalOutputReference">CredentialAzureServicePrincipalOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.credential.Credential.property.credentialId">CredentialId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.credential.Credential.property.databricksGcpServiceAccount">DatabricksGcpServiceAccount</a></code> | <code><a href="#@cdktn/provider-databricks.credential.CredentialDatabricksGcpServiceAccountOutputReference">CredentialDatabricksGcpServiceAccountOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.credential.Credential.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.credential.CredentialProviderConfigOutputReference">CredentialProviderConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.credential.Credential.property.awsIamRoleInput">AwsIamRoleInput</a></code> | <code><a href="#@cdktn/provider-databricks.credential.CredentialAwsIamRole">CredentialAwsIamRole</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.credential.Credential.property.azureManagedIdentityInput">AzureManagedIdentityInput</a></code> | <code><a href="#@cdktn/provider-databricks.credential.CredentialAzureManagedIdentity">CredentialAzureManagedIdentity</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.credential.Credential.property.azureServicePrincipalInput">AzureServicePrincipalInput</a></code> | <code><a href="#@cdktn/provider-databricks.credential.CredentialAzureServicePrincipal">CredentialAzureServicePrincipal</a></code> | *No description.* |
@@ -724,6 +745,7 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.credential.Credential.property.metastoreIdInput">MetastoreIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.credential.Credential.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.credential.Credential.property.ownerInput">OwnerInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.credential.Credential.property.providerConfigInput">ProviderConfigInput</a></code> | <code><a href="#@cdktn/provider-databricks.credential.CredentialProviderConfig">CredentialProviderConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.credential.Credential.property.purposeInput">PurposeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.credential.Credential.property.readOnlyInput">ReadOnlyInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.credential.Credential.property.skipValidationInput">SkipValidationInput</a></code> | <code>interface{}</code> | *No description.* |
@@ -942,6 +964,16 @@ func DatabricksGcpServiceAccount() CredentialDatabricksGcpServiceAccountOutputRe
 
 ---
 
+##### `ProviderConfig`<sup>Required</sup> <a name="ProviderConfig" id="@cdktn/provider-databricks.credential.Credential.property.providerConfig"></a>
+
+```go
+func ProviderConfig() CredentialProviderConfigOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.credential.CredentialProviderConfigOutputReference">CredentialProviderConfigOutputReference</a>
+
+---
+
 ##### `AwsIamRoleInput`<sup>Optional</sup> <a name="AwsIamRoleInput" id="@cdktn/provider-databricks.credential.Credential.property.awsIamRoleInput"></a>
 
 ```go
@@ -1089,6 +1121,16 @@ func OwnerInput() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `ProviderConfigInput`<sup>Optional</sup> <a name="ProviderConfigInput" id="@cdktn/provider-databricks.credential.Credential.property.providerConfigInput"></a>
+
+```go
+func ProviderConfigInput() CredentialProviderConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.credential.CredentialProviderConfig">CredentialProviderConfig</a>
 
 ---
 
@@ -1360,9 +1402,9 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/credenti
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.credential.CredentialAwsIamRole.property.externalId">ExternalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential#external_id Credential#external_id}. |
-| <code><a href="#@cdktn/provider-databricks.credential.CredentialAwsIamRole.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential#role_arn Credential#role_arn}. |
-| <code><a href="#@cdktn/provider-databricks.credential.CredentialAwsIamRole.property.unityCatalogIamArn">UnityCatalogIamArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential#unity_catalog_iam_arn Credential#unity_catalog_iam_arn}. |
+| <code><a href="#@cdktn/provider-databricks.credential.CredentialAwsIamRole.property.externalId">ExternalId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#external_id Credential#external_id}. |
+| <code><a href="#@cdktn/provider-databricks.credential.CredentialAwsIamRole.property.roleArn">RoleArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#role_arn Credential#role_arn}. |
+| <code><a href="#@cdktn/provider-databricks.credential.CredentialAwsIamRole.property.unityCatalogIamArn">UnityCatalogIamArn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#unity_catalog_iam_arn Credential#unity_catalog_iam_arn}. |
 
 ---
 
@@ -1374,7 +1416,7 @@ ExternalId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential#external_id Credential#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#external_id Credential#external_id}.
 
 ---
 
@@ -1386,7 +1428,7 @@ RoleArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential#role_arn Credential#role_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#role_arn Credential#role_arn}.
 
 ---
 
@@ -1398,7 +1440,7 @@ UnityCatalogIamArn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential#unity_catalog_iam_arn Credential#unity_catalog_iam_arn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#unity_catalog_iam_arn Credential#unity_catalog_iam_arn}.
 
 ---
 
@@ -1420,9 +1462,9 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/credenti
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.credential.CredentialAzureManagedIdentity.property.accessConnectorId">AccessConnectorId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential#access_connector_id Credential#access_connector_id}. |
-| <code><a href="#@cdktn/provider-databricks.credential.CredentialAzureManagedIdentity.property.credentialId">CredentialId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential#credential_id Credential#credential_id}. |
-| <code><a href="#@cdktn/provider-databricks.credential.CredentialAzureManagedIdentity.property.managedIdentityId">ManagedIdentityId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential#managed_identity_id Credential#managed_identity_id}. |
+| <code><a href="#@cdktn/provider-databricks.credential.CredentialAzureManagedIdentity.property.accessConnectorId">AccessConnectorId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#access_connector_id Credential#access_connector_id}. |
+| <code><a href="#@cdktn/provider-databricks.credential.CredentialAzureManagedIdentity.property.credentialId">CredentialId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#credential_id Credential#credential_id}. |
+| <code><a href="#@cdktn/provider-databricks.credential.CredentialAzureManagedIdentity.property.managedIdentityId">ManagedIdentityId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#managed_identity_id Credential#managed_identity_id}. |
 
 ---
 
@@ -1434,7 +1476,7 @@ AccessConnectorId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential#access_connector_id Credential#access_connector_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#access_connector_id Credential#access_connector_id}.
 
 ---
 
@@ -1446,7 +1488,7 @@ CredentialId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential#credential_id Credential#credential_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#credential_id Credential#credential_id}.
 
 ---
 
@@ -1458,7 +1500,7 @@ ManagedIdentityId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential#managed_identity_id Credential#managed_identity_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#managed_identity_id Credential#managed_identity_id}.
 
 ---
 
@@ -1480,9 +1522,9 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/credenti
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.credential.CredentialAzureServicePrincipal.property.applicationId">ApplicationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential#application_id Credential#application_id}. |
-| <code><a href="#@cdktn/provider-databricks.credential.CredentialAzureServicePrincipal.property.clientSecret">ClientSecret</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential#client_secret Credential#client_secret}. |
-| <code><a href="#@cdktn/provider-databricks.credential.CredentialAzureServicePrincipal.property.directoryId">DirectoryId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential#directory_id Credential#directory_id}. |
+| <code><a href="#@cdktn/provider-databricks.credential.CredentialAzureServicePrincipal.property.applicationId">ApplicationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#application_id Credential#application_id}. |
+| <code><a href="#@cdktn/provider-databricks.credential.CredentialAzureServicePrincipal.property.clientSecret">ClientSecret</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#client_secret Credential#client_secret}. |
+| <code><a href="#@cdktn/provider-databricks.credential.CredentialAzureServicePrincipal.property.directoryId">DirectoryId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#directory_id Credential#directory_id}. |
 
 ---
 
@@ -1494,7 +1536,7 @@ ApplicationId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential#application_id Credential#application_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#application_id Credential#application_id}.
 
 ---
 
@@ -1506,7 +1548,7 @@ ClientSecret *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential#client_secret Credential#client_secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#client_secret Credential#client_secret}.
 
 ---
 
@@ -1518,7 +1560,7 @@ DirectoryId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential#directory_id Credential#directory_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#directory_id Credential#directory_id}.
 
 ---
 
@@ -1553,6 +1595,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/credenti
 	IsolationMode: *string,
 	MetastoreId: *string,
 	Owner: *string,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.credential.CredentialProviderConfig,
 	ReadOnly: interface{},
 	SkipValidation: interface{},
 	UpdatedAt: *f64,
@@ -1572,27 +1615,28 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/credenti
 | <code><a href="#@cdktn/provider-databricks.credential.CredentialConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.credential.CredentialConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.credential.CredentialConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.credential.CredentialConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential#name Credential#name}. |
-| <code><a href="#@cdktn/provider-databricks.credential.CredentialConfig.property.purpose">Purpose</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential#purpose Credential#purpose}. |
+| <code><a href="#@cdktn/provider-databricks.credential.CredentialConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#name Credential#name}. |
+| <code><a href="#@cdktn/provider-databricks.credential.CredentialConfig.property.purpose">Purpose</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#purpose Credential#purpose}. |
 | <code><a href="#@cdktn/provider-databricks.credential.CredentialConfig.property.awsIamRole">AwsIamRole</a></code> | <code><a href="#@cdktn/provider-databricks.credential.CredentialAwsIamRole">CredentialAwsIamRole</a></code> | aws_iam_role block. |
 | <code><a href="#@cdktn/provider-databricks.credential.CredentialConfig.property.azureManagedIdentity">AzureManagedIdentity</a></code> | <code><a href="#@cdktn/provider-databricks.credential.CredentialAzureManagedIdentity">CredentialAzureManagedIdentity</a></code> | azure_managed_identity block. |
 | <code><a href="#@cdktn/provider-databricks.credential.CredentialConfig.property.azureServicePrincipal">AzureServicePrincipal</a></code> | <code><a href="#@cdktn/provider-databricks.credential.CredentialAzureServicePrincipal">CredentialAzureServicePrincipal</a></code> | azure_service_principal block. |
-| <code><a href="#@cdktn/provider-databricks.credential.CredentialConfig.property.comment">Comment</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential#comment Credential#comment}. |
-| <code><a href="#@cdktn/provider-databricks.credential.CredentialConfig.property.createdAt">CreatedAt</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential#created_at Credential#created_at}. |
-| <code><a href="#@cdktn/provider-databricks.credential.CredentialConfig.property.createdBy">CreatedBy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential#created_by Credential#created_by}. |
+| <code><a href="#@cdktn/provider-databricks.credential.CredentialConfig.property.comment">Comment</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#comment Credential#comment}. |
+| <code><a href="#@cdktn/provider-databricks.credential.CredentialConfig.property.createdAt">CreatedAt</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#created_at Credential#created_at}. |
+| <code><a href="#@cdktn/provider-databricks.credential.CredentialConfig.property.createdBy">CreatedBy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#created_by Credential#created_by}. |
 | <code><a href="#@cdktn/provider-databricks.credential.CredentialConfig.property.databricksGcpServiceAccount">DatabricksGcpServiceAccount</a></code> | <code><a href="#@cdktn/provider-databricks.credential.CredentialDatabricksGcpServiceAccount">CredentialDatabricksGcpServiceAccount</a></code> | databricks_gcp_service_account block. |
-| <code><a href="#@cdktn/provider-databricks.credential.CredentialConfig.property.forceDestroy">ForceDestroy</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential#force_destroy Credential#force_destroy}. |
-| <code><a href="#@cdktn/provider-databricks.credential.CredentialConfig.property.forceUpdate">ForceUpdate</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential#force_update Credential#force_update}. |
-| <code><a href="#@cdktn/provider-databricks.credential.CredentialConfig.property.fullName">FullName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential#full_name Credential#full_name}. |
-| <code><a href="#@cdktn/provider-databricks.credential.CredentialConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential#id Credential#id}. |
-| <code><a href="#@cdktn/provider-databricks.credential.CredentialConfig.property.isolationMode">IsolationMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential#isolation_mode Credential#isolation_mode}. |
-| <code><a href="#@cdktn/provider-databricks.credential.CredentialConfig.property.metastoreId">MetastoreId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential#metastore_id Credential#metastore_id}. |
-| <code><a href="#@cdktn/provider-databricks.credential.CredentialConfig.property.owner">Owner</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential#owner Credential#owner}. |
-| <code><a href="#@cdktn/provider-databricks.credential.CredentialConfig.property.readOnly">ReadOnly</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential#read_only Credential#read_only}. |
-| <code><a href="#@cdktn/provider-databricks.credential.CredentialConfig.property.skipValidation">SkipValidation</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential#skip_validation Credential#skip_validation}. |
-| <code><a href="#@cdktn/provider-databricks.credential.CredentialConfig.property.updatedAt">UpdatedAt</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential#updated_at Credential#updated_at}. |
-| <code><a href="#@cdktn/provider-databricks.credential.CredentialConfig.property.updatedBy">UpdatedBy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential#updated_by Credential#updated_by}. |
-| <code><a href="#@cdktn/provider-databricks.credential.CredentialConfig.property.usedForManagedStorage">UsedForManagedStorage</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential#used_for_managed_storage Credential#used_for_managed_storage}. |
+| <code><a href="#@cdktn/provider-databricks.credential.CredentialConfig.property.forceDestroy">ForceDestroy</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#force_destroy Credential#force_destroy}. |
+| <code><a href="#@cdktn/provider-databricks.credential.CredentialConfig.property.forceUpdate">ForceUpdate</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#force_update Credential#force_update}. |
+| <code><a href="#@cdktn/provider-databricks.credential.CredentialConfig.property.fullName">FullName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#full_name Credential#full_name}. |
+| <code><a href="#@cdktn/provider-databricks.credential.CredentialConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#id Credential#id}. |
+| <code><a href="#@cdktn/provider-databricks.credential.CredentialConfig.property.isolationMode">IsolationMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#isolation_mode Credential#isolation_mode}. |
+| <code><a href="#@cdktn/provider-databricks.credential.CredentialConfig.property.metastoreId">MetastoreId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#metastore_id Credential#metastore_id}. |
+| <code><a href="#@cdktn/provider-databricks.credential.CredentialConfig.property.owner">Owner</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#owner Credential#owner}. |
+| <code><a href="#@cdktn/provider-databricks.credential.CredentialConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.credential.CredentialProviderConfig">CredentialProviderConfig</a></code> | provider_config block. |
+| <code><a href="#@cdktn/provider-databricks.credential.CredentialConfig.property.readOnly">ReadOnly</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#read_only Credential#read_only}. |
+| <code><a href="#@cdktn/provider-databricks.credential.CredentialConfig.property.skipValidation">SkipValidation</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#skip_validation Credential#skip_validation}. |
+| <code><a href="#@cdktn/provider-databricks.credential.CredentialConfig.property.updatedAt">UpdatedAt</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#updated_at Credential#updated_at}. |
+| <code><a href="#@cdktn/provider-databricks.credential.CredentialConfig.property.updatedBy">UpdatedBy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#updated_by Credential#updated_by}. |
+| <code><a href="#@cdktn/provider-databricks.credential.CredentialConfig.property.usedForManagedStorage">UsedForManagedStorage</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#used_for_managed_storage Credential#used_for_managed_storage}. |
 
 ---
 
@@ -1674,7 +1718,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential#name Credential#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#name Credential#name}.
 
 ---
 
@@ -1686,7 +1730,7 @@ Purpose *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential#purpose Credential#purpose}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#purpose Credential#purpose}.
 
 ---
 
@@ -1700,7 +1744,7 @@ AwsIamRole CredentialAwsIamRole
 
 aws_iam_role block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential#aws_iam_role Credential#aws_iam_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#aws_iam_role Credential#aws_iam_role}
 
 ---
 
@@ -1714,7 +1758,7 @@ AzureManagedIdentity CredentialAzureManagedIdentity
 
 azure_managed_identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential#azure_managed_identity Credential#azure_managed_identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#azure_managed_identity Credential#azure_managed_identity}
 
 ---
 
@@ -1728,7 +1772,7 @@ AzureServicePrincipal CredentialAzureServicePrincipal
 
 azure_service_principal block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential#azure_service_principal Credential#azure_service_principal}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#azure_service_principal Credential#azure_service_principal}
 
 ---
 
@@ -1740,7 +1784,7 @@ Comment *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential#comment Credential#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#comment Credential#comment}.
 
 ---
 
@@ -1752,7 +1796,7 @@ CreatedAt *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential#created_at Credential#created_at}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#created_at Credential#created_at}.
 
 ---
 
@@ -1764,7 +1808,7 @@ CreatedBy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential#created_by Credential#created_by}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#created_by Credential#created_by}.
 
 ---
 
@@ -1778,7 +1822,7 @@ DatabricksGcpServiceAccount CredentialDatabricksGcpServiceAccount
 
 databricks_gcp_service_account block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential#databricks_gcp_service_account Credential#databricks_gcp_service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#databricks_gcp_service_account Credential#databricks_gcp_service_account}
 
 ---
 
@@ -1790,7 +1834,7 @@ ForceDestroy interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential#force_destroy Credential#force_destroy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#force_destroy Credential#force_destroy}.
 
 ---
 
@@ -1802,7 +1846,7 @@ ForceUpdate interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential#force_update Credential#force_update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#force_update Credential#force_update}.
 
 ---
 
@@ -1814,7 +1858,7 @@ FullName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential#full_name Credential#full_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#full_name Credential#full_name}.
 
 ---
 
@@ -1826,7 +1870,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential#id Credential#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#id Credential#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1841,7 +1885,7 @@ IsolationMode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential#isolation_mode Credential#isolation_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#isolation_mode Credential#isolation_mode}.
 
 ---
 
@@ -1853,7 +1897,7 @@ MetastoreId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential#metastore_id Credential#metastore_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#metastore_id Credential#metastore_id}.
 
 ---
 
@@ -1865,7 +1909,21 @@ Owner *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential#owner Credential#owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#owner Credential#owner}.
+
+---
+
+##### `ProviderConfig`<sup>Optional</sup> <a name="ProviderConfig" id="@cdktn/provider-databricks.credential.CredentialConfig.property.providerConfig"></a>
+
+```go
+ProviderConfig CredentialProviderConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.credential.CredentialProviderConfig">CredentialProviderConfig</a>
+
+provider_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#provider_config Credential#provider_config}
 
 ---
 
@@ -1877,7 +1935,7 @@ ReadOnly interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential#read_only Credential#read_only}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#read_only Credential#read_only}.
 
 ---
 
@@ -1889,7 +1947,7 @@ SkipValidation interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential#skip_validation Credential#skip_validation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#skip_validation Credential#skip_validation}.
 
 ---
 
@@ -1901,7 +1959,7 @@ UpdatedAt *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential#updated_at Credential#updated_at}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#updated_at Credential#updated_at}.
 
 ---
 
@@ -1913,7 +1971,7 @@ UpdatedBy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential#updated_by Credential#updated_by}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#updated_by Credential#updated_by}.
 
 ---
 
@@ -1925,7 +1983,7 @@ UsedForManagedStorage interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential#used_for_managed_storage Credential#used_for_managed_storage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#used_for_managed_storage Credential#used_for_managed_storage}.
 
 ---
 
@@ -1947,9 +2005,9 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/credenti
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.credential.CredentialDatabricksGcpServiceAccount.property.credentialId">CredentialId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential#credential_id Credential#credential_id}. |
-| <code><a href="#@cdktn/provider-databricks.credential.CredentialDatabricksGcpServiceAccount.property.email">Email</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential#email Credential#email}. |
-| <code><a href="#@cdktn/provider-databricks.credential.CredentialDatabricksGcpServiceAccount.property.privateKeyId">PrivateKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential#private_key_id Credential#private_key_id}. |
+| <code><a href="#@cdktn/provider-databricks.credential.CredentialDatabricksGcpServiceAccount.property.credentialId">CredentialId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#credential_id Credential#credential_id}. |
+| <code><a href="#@cdktn/provider-databricks.credential.CredentialDatabricksGcpServiceAccount.property.email">Email</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#email Credential#email}. |
+| <code><a href="#@cdktn/provider-databricks.credential.CredentialDatabricksGcpServiceAccount.property.privateKeyId">PrivateKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#private_key_id Credential#private_key_id}. |
 
 ---
 
@@ -1961,7 +2019,7 @@ CredentialId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential#credential_id Credential#credential_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#credential_id Credential#credential_id}.
 
 ---
 
@@ -1973,7 +2031,7 @@ Email *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential#email Credential#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#email Credential#email}.
 
 ---
 
@@ -1985,7 +2043,39 @@ PrivateKeyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/credential#private_key_id Credential#private_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#private_key_id Credential#private_key_id}.
+
+---
+
+### CredentialProviderConfig <a name="CredentialProviderConfig" id="@cdktn/provider-databricks.credential.CredentialProviderConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.credential.CredentialProviderConfig.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/credential"
+
+&credential.CredentialProviderConfig {
+	WorkspaceId: *string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.credential.CredentialProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#workspace_id Credential#workspace_id}. |
+
+---
+
+##### `WorkspaceId`<sup>Required</sup> <a name="WorkspaceId" id="@cdktn/provider-databricks.credential.CredentialProviderConfig.property.workspaceId"></a>
+
+```go
+WorkspaceId *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/credential#workspace_id Credential#workspace_id}.
 
 ---
 
@@ -3303,6 +3393,277 @@ func InternalValue() CredentialDatabricksGcpServiceAccount
 ```
 
 - *Type:* <a href="#@cdktn/provider-databricks.credential.CredentialDatabricksGcpServiceAccount">CredentialDatabricksGcpServiceAccount</a>
+
+---
+
+
+### CredentialProviderConfigOutputReference <a name="CredentialProviderConfigOutputReference" id="@cdktn/provider-databricks.credential.CredentialProviderConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.credential.CredentialProviderConfigOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/credential"
+
+credential.NewCredentialProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CredentialProviderConfigOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.credential.CredentialProviderConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.credential.CredentialProviderConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.credential.CredentialProviderConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.credential.CredentialProviderConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.credential.CredentialProviderConfigOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.credential.CredentialProviderConfigOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.credential.CredentialProviderConfigOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.credential.CredentialProviderConfigOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.credential.CredentialProviderConfigOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.credential.CredentialProviderConfigOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.credential.CredentialProviderConfigOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.credential.CredentialProviderConfigOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.credential.CredentialProviderConfigOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.credential.CredentialProviderConfigOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.credential.CredentialProviderConfigOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.credential.CredentialProviderConfigOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.credential.CredentialProviderConfigOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-databricks.credential.CredentialProviderConfigOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-databricks.credential.CredentialProviderConfigOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.credential.CredentialProviderConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-databricks.credential.CredentialProviderConfigOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.credential.CredentialProviderConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-databricks.credential.CredentialProviderConfigOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.credential.CredentialProviderConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-databricks.credential.CredentialProviderConfigOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.credential.CredentialProviderConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-databricks.credential.CredentialProviderConfigOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.credential.CredentialProviderConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-databricks.credential.CredentialProviderConfigOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.credential.CredentialProviderConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-databricks.credential.CredentialProviderConfigOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.credential.CredentialProviderConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-databricks.credential.CredentialProviderConfigOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.credential.CredentialProviderConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-databricks.credential.CredentialProviderConfigOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.credential.CredentialProviderConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-databricks.credential.CredentialProviderConfigOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.credential.CredentialProviderConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-databricks.credential.CredentialProviderConfigOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.credential.CredentialProviderConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-databricks.credential.CredentialProviderConfigOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.credential.CredentialProviderConfigOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.credential.CredentialProviderConfigOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.credential.CredentialProviderConfigOutputReference.property.workspaceIdInput">WorkspaceIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.credential.CredentialProviderConfigOutputReference.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.credential.CredentialProviderConfigOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-databricks.credential.CredentialProviderConfig">CredentialProviderConfig</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-databricks.credential.CredentialProviderConfigOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-databricks.credential.CredentialProviderConfigOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `WorkspaceIdInput`<sup>Optional</sup> <a name="WorkspaceIdInput" id="@cdktn/provider-databricks.credential.CredentialProviderConfigOutputReference.property.workspaceIdInput"></a>
+
+```go
+func WorkspaceIdInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `WorkspaceId`<sup>Required</sup> <a name="WorkspaceId" id="@cdktn/provider-databricks.credential.CredentialProviderConfigOutputReference.property.workspaceId"></a>
+
+```go
+func WorkspaceId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-databricks.credential.CredentialProviderConfigOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() CredentialProviderConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.credential.CredentialProviderConfig">CredentialProviderConfig</a>
 
 ---
 

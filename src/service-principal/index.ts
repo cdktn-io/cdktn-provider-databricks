@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal
+// https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/service_principal
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,80 +13,173 @@ import * as cdktn from 'cdktn';
 
 export interface ServicePrincipalConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal#acl_principal_id ServicePrincipal#acl_principal_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/service_principal#acl_principal_id ServicePrincipal#acl_principal_id}
   */
   readonly aclPrincipalId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal#active ServicePrincipal#active}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/service_principal#active ServicePrincipal#active}
   */
   readonly active?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal#allow_cluster_create ServicePrincipal#allow_cluster_create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/service_principal#allow_cluster_create ServicePrincipal#allow_cluster_create}
   */
   readonly allowClusterCreate?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal#allow_instance_pool_create ServicePrincipal#allow_instance_pool_create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/service_principal#allow_instance_pool_create ServicePrincipal#allow_instance_pool_create}
   */
   readonly allowInstancePoolCreate?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal#application_id ServicePrincipal#application_id}
+  * Specifies whether to use account-level or workspace-level API. Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/service_principal#api ServicePrincipal#api}
+  */
+  readonly api?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/service_principal#application_id ServicePrincipal#application_id}
   */
   readonly applicationId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal#databricks_sql_access ServicePrincipal#databricks_sql_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/service_principal#databricks_sql_access ServicePrincipal#databricks_sql_access}
   */
   readonly databricksSqlAccess?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal#disable_as_user_deletion ServicePrincipal#disable_as_user_deletion}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/service_principal#disable_as_user_deletion ServicePrincipal#disable_as_user_deletion}
   */
   readonly disableAsUserDeletion?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal#display_name ServicePrincipal#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/service_principal#display_name ServicePrincipal#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal#external_id ServicePrincipal#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/service_principal#external_id ServicePrincipal#external_id}
   */
   readonly externalId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal#force ServicePrincipal#force}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/service_principal#force ServicePrincipal#force}
   */
   readonly force?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal#force_delete_home_dir ServicePrincipal#force_delete_home_dir}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/service_principal#force_delete_home_dir ServicePrincipal#force_delete_home_dir}
   */
   readonly forceDeleteHomeDir?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal#force_delete_repos ServicePrincipal#force_delete_repos}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/service_principal#force_delete_repos ServicePrincipal#force_delete_repos}
   */
   readonly forceDeleteRepos?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal#home ServicePrincipal#home}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/service_principal#home ServicePrincipal#home}
   */
   readonly home?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal#id ServicePrincipal#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/service_principal#id ServicePrincipal#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal#repos ServicePrincipal#repos}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/service_principal#repos ServicePrincipal#repos}
   */
   readonly repos?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal#workspace_access ServicePrincipal#workspace_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/service_principal#workspace_access ServicePrincipal#workspace_access}
   */
   readonly workspaceAccess?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal#workspace_consume ServicePrincipal#workspace_consume}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/service_principal#workspace_consume ServicePrincipal#workspace_consume}
   */
   readonly workspaceConsume?: boolean | cdktn.IResolvable;
+  /**
+  * provider_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/service_principal#provider_config ServicePrincipal#provider_config}
+  */
+  readonly providerConfig?: ServicePrincipalProviderConfig;
+}
+export interface ServicePrincipalProviderConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/service_principal#workspace_id ServicePrincipal#workspace_id}
+  */
+  readonly workspaceId: string;
+}
+
+export function servicePrincipalProviderConfigToTerraform(struct?: ServicePrincipalProviderConfigOutputReference | ServicePrincipalProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
+  }
+}
+
+
+export function servicePrincipalProviderConfigToHclTerraform(struct?: ServicePrincipalProviderConfigOutputReference | ServicePrincipalProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    workspace_id: {
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ServicePrincipalProviderConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ServicePrincipalProviderConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._workspaceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workspaceId = this._workspaceId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ServicePrincipalProviderConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._workspaceId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._workspaceId = value.workspaceId;
+    }
+  }
+
+  // workspace_id - computed: false, optional: false, required: true
+  private _workspaceId?: string; 
+  public get workspaceId() {
+    return this.getStringAttribute('workspace_id');
+  }
+  public set workspaceId(value: string) {
+    this._workspaceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workspaceIdInput() {
+    return this._workspaceId;
+  }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal databricks_service_principal}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/service_principal databricks_service_principal}
 */
 export class ServicePrincipal extends cdktn.TerraformResource {
 
@@ -102,7 +195,7 @@ export class ServicePrincipal extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ServicePrincipal resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ServicePrincipal to import
-  * @param importFromId The id of the existing ServicePrincipal that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ServicePrincipal that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/service_principal#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ServicePrincipal to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -114,7 +207,7 @@ export class ServicePrincipal extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal databricks_service_principal} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/service_principal databricks_service_principal} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -125,7 +218,7 @@ export class ServicePrincipal extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_service_principal',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.112.0',
+        providerVersion: '1.113.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -140,6 +233,7 @@ export class ServicePrincipal extends cdktn.TerraformResource {
     this._active = config.active;
     this._allowClusterCreate = config.allowClusterCreate;
     this._allowInstancePoolCreate = config.allowInstancePoolCreate;
+    this._api = config.api;
     this._applicationId = config.applicationId;
     this._databricksSqlAccess = config.databricksSqlAccess;
     this._disableAsUserDeletion = config.disableAsUserDeletion;
@@ -153,6 +247,7 @@ export class ServicePrincipal extends cdktn.TerraformResource {
     this._repos = config.repos;
     this._workspaceAccess = config.workspaceAccess;
     this._workspaceConsume = config.workspaceConsume;
+    this._providerConfig.internalValue = config.providerConfig;
   }
 
   // ==========
@@ -221,6 +316,22 @@ export class ServicePrincipal extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get allowInstancePoolCreateInput() {
     return this._allowInstancePoolCreate;
+  }
+
+  // api - computed: false, optional: true, required: false
+  private _api?: string; 
+  public get api() {
+    return this.getStringAttribute('api');
+  }
+  public set api(value: string) {
+    this._api = value;
+  }
+  public resetApi() {
+    this._api = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get apiInput() {
+    return this._api;
   }
 
   // application_id - computed: true, optional: true, required: false
@@ -431,6 +542,22 @@ export class ServicePrincipal extends cdktn.TerraformResource {
     return this._workspaceConsume;
   }
 
+  // provider_config - computed: false, optional: true, required: false
+  private _providerConfig = new ServicePrincipalProviderConfigOutputReference(this, "provider_config");
+  public get providerConfig() {
+    return this._providerConfig;
+  }
+  public putProviderConfig(value: ServicePrincipalProviderConfig) {
+    this._providerConfig.internalValue = value;
+  }
+  public resetProviderConfig() {
+    this._providerConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerConfigInput() {
+    return this._providerConfig.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -441,6 +568,7 @@ export class ServicePrincipal extends cdktn.TerraformResource {
       active: cdktn.booleanToTerraform(this._active),
       allow_cluster_create: cdktn.booleanToTerraform(this._allowClusterCreate),
       allow_instance_pool_create: cdktn.booleanToTerraform(this._allowInstancePoolCreate),
+      api: cdktn.stringToTerraform(this._api),
       application_id: cdktn.stringToTerraform(this._applicationId),
       databricks_sql_access: cdktn.booleanToTerraform(this._databricksSqlAccess),
       disable_as_user_deletion: cdktn.booleanToTerraform(this._disableAsUserDeletion),
@@ -454,6 +582,7 @@ export class ServicePrincipal extends cdktn.TerraformResource {
       repos: cdktn.stringToTerraform(this._repos),
       workspace_access: cdktn.booleanToTerraform(this._workspaceAccess),
       workspace_consume: cdktn.booleanToTerraform(this._workspaceConsume),
+      provider_config: servicePrincipalProviderConfigToTerraform(this._providerConfig.internalValue),
     };
   }
 
@@ -482,6 +611,12 @@ export class ServicePrincipal extends cdktn.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
+      },
+      api: {
+        value: cdktn.stringToHclTerraform(this._api),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
       },
       application_id: {
         value: cdktn.stringToHclTerraform(this._applicationId),
@@ -560,6 +695,12 @@ export class ServicePrincipal extends cdktn.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
+      },
+      provider_config: {
+        value: servicePrincipalProviderConfigToHclTerraform(this._providerConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ServicePrincipalProviderConfigList",
       },
     };
 

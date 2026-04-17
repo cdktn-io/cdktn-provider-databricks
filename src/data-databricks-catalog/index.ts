@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/catalog
+// https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/catalog
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,40 +13,40 @@ import * as cdktn from 'cdktn';
 
 export interface DataDatabricksCatalogConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/catalog#id DataDatabricksCatalog#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/catalog#id DataDatabricksCatalog#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/catalog#name DataDatabricksCatalog#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/catalog#name DataDatabricksCatalog#name}
   */
   readonly name: string;
   /**
   * catalog_info block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/catalog#catalog_info DataDatabricksCatalog#catalog_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/catalog#catalog_info DataDatabricksCatalog#catalog_info}
   */
   readonly catalogInfo?: DataDatabricksCatalogCatalogInfo;
   /**
   * provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/catalog#provider_config DataDatabricksCatalog#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/catalog#provider_config DataDatabricksCatalog#provider_config}
   */
   readonly providerConfig?: DataDatabricksCatalogProviderConfig;
 }
 export interface DataDatabricksCatalogCatalogInfoEffectivePredictiveOptimizationFlag {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/catalog#inherited_from_name DataDatabricksCatalog#inherited_from_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/catalog#inherited_from_name DataDatabricksCatalog#inherited_from_name}
   */
   readonly inheritedFromName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/catalog#inherited_from_type DataDatabricksCatalog#inherited_from_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/catalog#inherited_from_type DataDatabricksCatalog#inherited_from_type}
   */
   readonly inheritedFromType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/catalog#value DataDatabricksCatalog#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/catalog#value DataDatabricksCatalog#value}
   */
   readonly value: string;
 }
@@ -183,9 +183,308 @@ export class DataDatabricksCatalogCatalogInfoEffectivePredictiveOptimizationFlag
     return this._value;
   }
 }
+export interface DataDatabricksCatalogCatalogInfoManagedEncryptionSettingsAzureEncryptionSettings {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/catalog#azure_cmk_access_connector_id DataDatabricksCatalog#azure_cmk_access_connector_id}
+  */
+  readonly azureCmkAccessConnectorId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/catalog#azure_cmk_managed_identity_id DataDatabricksCatalog#azure_cmk_managed_identity_id}
+  */
+  readonly azureCmkManagedIdentityId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/catalog#azure_tenant_id DataDatabricksCatalog#azure_tenant_id}
+  */
+  readonly azureTenantId: string;
+}
+
+export function dataDatabricksCatalogCatalogInfoManagedEncryptionSettingsAzureEncryptionSettingsToTerraform(struct?: DataDatabricksCatalogCatalogInfoManagedEncryptionSettingsAzureEncryptionSettingsOutputReference | DataDatabricksCatalogCatalogInfoManagedEncryptionSettingsAzureEncryptionSettings): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    azure_cmk_access_connector_id: cdktn.stringToTerraform(struct!.azureCmkAccessConnectorId),
+    azure_cmk_managed_identity_id: cdktn.stringToTerraform(struct!.azureCmkManagedIdentityId),
+    azure_tenant_id: cdktn.stringToTerraform(struct!.azureTenantId),
+  }
+}
+
+
+export function dataDatabricksCatalogCatalogInfoManagedEncryptionSettingsAzureEncryptionSettingsToHclTerraform(struct?: DataDatabricksCatalogCatalogInfoManagedEncryptionSettingsAzureEncryptionSettingsOutputReference | DataDatabricksCatalogCatalogInfoManagedEncryptionSettingsAzureEncryptionSettings): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    azure_cmk_access_connector_id: {
+      value: cdktn.stringToHclTerraform(struct!.azureCmkAccessConnectorId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    azure_cmk_managed_identity_id: {
+      value: cdktn.stringToHclTerraform(struct!.azureCmkManagedIdentityId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    azure_tenant_id: {
+      value: cdktn.stringToHclTerraform(struct!.azureTenantId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataDatabricksCatalogCatalogInfoManagedEncryptionSettingsAzureEncryptionSettingsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DataDatabricksCatalogCatalogInfoManagedEncryptionSettingsAzureEncryptionSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._azureCmkAccessConnectorId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.azureCmkAccessConnectorId = this._azureCmkAccessConnectorId;
+    }
+    if (this._azureCmkManagedIdentityId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.azureCmkManagedIdentityId = this._azureCmkManagedIdentityId;
+    }
+    if (this._azureTenantId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.azureTenantId = this._azureTenantId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksCatalogCatalogInfoManagedEncryptionSettingsAzureEncryptionSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._azureCmkAccessConnectorId = undefined;
+      this._azureCmkManagedIdentityId = undefined;
+      this._azureTenantId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._azureCmkAccessConnectorId = value.azureCmkAccessConnectorId;
+      this._azureCmkManagedIdentityId = value.azureCmkManagedIdentityId;
+      this._azureTenantId = value.azureTenantId;
+    }
+  }
+
+  // azure_cmk_access_connector_id - computed: false, optional: true, required: false
+  private _azureCmkAccessConnectorId?: string; 
+  public get azureCmkAccessConnectorId() {
+    return this.getStringAttribute('azure_cmk_access_connector_id');
+  }
+  public set azureCmkAccessConnectorId(value: string) {
+    this._azureCmkAccessConnectorId = value;
+  }
+  public resetAzureCmkAccessConnectorId() {
+    this._azureCmkAccessConnectorId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get azureCmkAccessConnectorIdInput() {
+    return this._azureCmkAccessConnectorId;
+  }
+
+  // azure_cmk_managed_identity_id - computed: false, optional: true, required: false
+  private _azureCmkManagedIdentityId?: string; 
+  public get azureCmkManagedIdentityId() {
+    return this.getStringAttribute('azure_cmk_managed_identity_id');
+  }
+  public set azureCmkManagedIdentityId(value: string) {
+    this._azureCmkManagedIdentityId = value;
+  }
+  public resetAzureCmkManagedIdentityId() {
+    this._azureCmkManagedIdentityId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get azureCmkManagedIdentityIdInput() {
+    return this._azureCmkManagedIdentityId;
+  }
+
+  // azure_tenant_id - computed: false, optional: false, required: true
+  private _azureTenantId?: string; 
+  public get azureTenantId() {
+    return this.getStringAttribute('azure_tenant_id');
+  }
+  public set azureTenantId(value: string) {
+    this._azureTenantId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get azureTenantIdInput() {
+    return this._azureTenantId;
+  }
+}
+export interface DataDatabricksCatalogCatalogInfoManagedEncryptionSettings {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/catalog#azure_key_vault_key_id DataDatabricksCatalog#azure_key_vault_key_id}
+  */
+  readonly azureKeyVaultKeyId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/catalog#customer_managed_key_id DataDatabricksCatalog#customer_managed_key_id}
+  */
+  readonly customerManagedKeyId?: string;
+  /**
+  * azure_encryption_settings block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/catalog#azure_encryption_settings DataDatabricksCatalog#azure_encryption_settings}
+  */
+  readonly azureEncryptionSettings?: DataDatabricksCatalogCatalogInfoManagedEncryptionSettingsAzureEncryptionSettings;
+}
+
+export function dataDatabricksCatalogCatalogInfoManagedEncryptionSettingsToTerraform(struct?: DataDatabricksCatalogCatalogInfoManagedEncryptionSettingsOutputReference | DataDatabricksCatalogCatalogInfoManagedEncryptionSettings): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    azure_key_vault_key_id: cdktn.stringToTerraform(struct!.azureKeyVaultKeyId),
+    customer_managed_key_id: cdktn.stringToTerraform(struct!.customerManagedKeyId),
+    azure_encryption_settings: dataDatabricksCatalogCatalogInfoManagedEncryptionSettingsAzureEncryptionSettingsToTerraform(struct!.azureEncryptionSettings),
+  }
+}
+
+
+export function dataDatabricksCatalogCatalogInfoManagedEncryptionSettingsToHclTerraform(struct?: DataDatabricksCatalogCatalogInfoManagedEncryptionSettingsOutputReference | DataDatabricksCatalogCatalogInfoManagedEncryptionSettings): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    azure_key_vault_key_id: {
+      value: cdktn.stringToHclTerraform(struct!.azureKeyVaultKeyId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    customer_managed_key_id: {
+      value: cdktn.stringToHclTerraform(struct!.customerManagedKeyId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    azure_encryption_settings: {
+      value: dataDatabricksCatalogCatalogInfoManagedEncryptionSettingsAzureEncryptionSettingsToHclTerraform(struct!.azureEncryptionSettings),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataDatabricksCatalogCatalogInfoManagedEncryptionSettingsAzureEncryptionSettingsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataDatabricksCatalogCatalogInfoManagedEncryptionSettingsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DataDatabricksCatalogCatalogInfoManagedEncryptionSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._azureKeyVaultKeyId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.azureKeyVaultKeyId = this._azureKeyVaultKeyId;
+    }
+    if (this._customerManagedKeyId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.customerManagedKeyId = this._customerManagedKeyId;
+    }
+    if (this._azureEncryptionSettings?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.azureEncryptionSettings = this._azureEncryptionSettings?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataDatabricksCatalogCatalogInfoManagedEncryptionSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._azureKeyVaultKeyId = undefined;
+      this._customerManagedKeyId = undefined;
+      this._azureEncryptionSettings.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._azureKeyVaultKeyId = value.azureKeyVaultKeyId;
+      this._customerManagedKeyId = value.customerManagedKeyId;
+      this._azureEncryptionSettings.internalValue = value.azureEncryptionSettings;
+    }
+  }
+
+  // azure_key_vault_key_id - computed: false, optional: true, required: false
+  private _azureKeyVaultKeyId?: string; 
+  public get azureKeyVaultKeyId() {
+    return this.getStringAttribute('azure_key_vault_key_id');
+  }
+  public set azureKeyVaultKeyId(value: string) {
+    this._azureKeyVaultKeyId = value;
+  }
+  public resetAzureKeyVaultKeyId() {
+    this._azureKeyVaultKeyId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get azureKeyVaultKeyIdInput() {
+    return this._azureKeyVaultKeyId;
+  }
+
+  // customer_managed_key_id - computed: false, optional: true, required: false
+  private _customerManagedKeyId?: string; 
+  public get customerManagedKeyId() {
+    return this.getStringAttribute('customer_managed_key_id');
+  }
+  public set customerManagedKeyId(value: string) {
+    this._customerManagedKeyId = value;
+  }
+  public resetCustomerManagedKeyId() {
+    this._customerManagedKeyId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customerManagedKeyIdInput() {
+    return this._customerManagedKeyId;
+  }
+
+  // azure_encryption_settings - computed: false, optional: true, required: false
+  private _azureEncryptionSettings = new DataDatabricksCatalogCatalogInfoManagedEncryptionSettingsAzureEncryptionSettingsOutputReference(this, "azure_encryption_settings");
+  public get azureEncryptionSettings() {
+    return this._azureEncryptionSettings;
+  }
+  public putAzureEncryptionSettings(value: DataDatabricksCatalogCatalogInfoManagedEncryptionSettingsAzureEncryptionSettings) {
+    this._azureEncryptionSettings.internalValue = value;
+  }
+  public resetAzureEncryptionSettings() {
+    this._azureEncryptionSettings.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get azureEncryptionSettingsInput() {
+    return this._azureEncryptionSettings.internalValue;
+  }
+}
 export interface DataDatabricksCatalogCatalogInfoProvisioningInfo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/catalog#state DataDatabricksCatalog#state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/catalog#state DataDatabricksCatalog#state}
   */
   readonly state?: string;
 }
@@ -269,99 +568,105 @@ export class DataDatabricksCatalogCatalogInfoProvisioningInfoOutputReference ext
 }
 export interface DataDatabricksCatalogCatalogInfo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/catalog#browse_only DataDatabricksCatalog#browse_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/catalog#browse_only DataDatabricksCatalog#browse_only}
   */
   readonly browseOnly?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/catalog#catalog_type DataDatabricksCatalog#catalog_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/catalog#catalog_type DataDatabricksCatalog#catalog_type}
   */
   readonly catalogType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/catalog#comment DataDatabricksCatalog#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/catalog#comment DataDatabricksCatalog#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/catalog#connection_name DataDatabricksCatalog#connection_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/catalog#connection_name DataDatabricksCatalog#connection_name}
   */
   readonly connectionName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/catalog#created_at DataDatabricksCatalog#created_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/catalog#created_at DataDatabricksCatalog#created_at}
   */
   readonly createdAt?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/catalog#created_by DataDatabricksCatalog#created_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/catalog#created_by DataDatabricksCatalog#created_by}
   */
   readonly createdBy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/catalog#enable_predictive_optimization DataDatabricksCatalog#enable_predictive_optimization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/catalog#enable_predictive_optimization DataDatabricksCatalog#enable_predictive_optimization}
   */
   readonly enablePredictiveOptimization?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/catalog#full_name DataDatabricksCatalog#full_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/catalog#full_name DataDatabricksCatalog#full_name}
   */
   readonly fullName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/catalog#isolation_mode DataDatabricksCatalog#isolation_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/catalog#isolation_mode DataDatabricksCatalog#isolation_mode}
   */
   readonly isolationMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/catalog#metastore_id DataDatabricksCatalog#metastore_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/catalog#metastore_id DataDatabricksCatalog#metastore_id}
   */
   readonly metastoreId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/catalog#name DataDatabricksCatalog#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/catalog#name DataDatabricksCatalog#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/catalog#options DataDatabricksCatalog#options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/catalog#options DataDatabricksCatalog#options}
   */
   readonly options?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/catalog#owner DataDatabricksCatalog#owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/catalog#owner DataDatabricksCatalog#owner}
   */
   readonly owner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/catalog#properties DataDatabricksCatalog#properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/catalog#properties DataDatabricksCatalog#properties}
   */
   readonly properties?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/catalog#provider_name DataDatabricksCatalog#provider_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/catalog#provider_name DataDatabricksCatalog#provider_name}
   */
   readonly providerName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/catalog#securable_type DataDatabricksCatalog#securable_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/catalog#securable_type DataDatabricksCatalog#securable_type}
   */
   readonly securableType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/catalog#share_name DataDatabricksCatalog#share_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/catalog#share_name DataDatabricksCatalog#share_name}
   */
   readonly shareName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/catalog#storage_location DataDatabricksCatalog#storage_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/catalog#storage_location DataDatabricksCatalog#storage_location}
   */
   readonly storageLocation?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/catalog#storage_root DataDatabricksCatalog#storage_root}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/catalog#storage_root DataDatabricksCatalog#storage_root}
   */
   readonly storageRoot?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/catalog#updated_at DataDatabricksCatalog#updated_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/catalog#updated_at DataDatabricksCatalog#updated_at}
   */
   readonly updatedAt?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/catalog#updated_by DataDatabricksCatalog#updated_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/catalog#updated_by DataDatabricksCatalog#updated_by}
   */
   readonly updatedBy?: string;
   /**
   * effective_predictive_optimization_flag block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/catalog#effective_predictive_optimization_flag DataDatabricksCatalog#effective_predictive_optimization_flag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/catalog#effective_predictive_optimization_flag DataDatabricksCatalog#effective_predictive_optimization_flag}
   */
   readonly effectivePredictiveOptimizationFlag?: DataDatabricksCatalogCatalogInfoEffectivePredictiveOptimizationFlag;
   /**
+  * managed_encryption_settings block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/catalog#managed_encryption_settings DataDatabricksCatalog#managed_encryption_settings}
+  */
+  readonly managedEncryptionSettings?: DataDatabricksCatalogCatalogInfoManagedEncryptionSettings;
+  /**
   * provisioning_info block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/catalog#provisioning_info DataDatabricksCatalog#provisioning_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/catalog#provisioning_info DataDatabricksCatalog#provisioning_info}
   */
   readonly provisioningInfo?: DataDatabricksCatalogCatalogInfoProvisioningInfo;
 }
@@ -394,6 +699,7 @@ export function dataDatabricksCatalogCatalogInfoToTerraform(struct?: DataDatabri
     updated_at: cdktn.numberToTerraform(struct!.updatedAt),
     updated_by: cdktn.stringToTerraform(struct!.updatedBy),
     effective_predictive_optimization_flag: dataDatabricksCatalogCatalogInfoEffectivePredictiveOptimizationFlagToTerraform(struct!.effectivePredictiveOptimizationFlag),
+    managed_encryption_settings: dataDatabricksCatalogCatalogInfoManagedEncryptionSettingsToTerraform(struct!.managedEncryptionSettings),
     provisioning_info: dataDatabricksCatalogCatalogInfoProvisioningInfoToTerraform(struct!.provisioningInfo),
   }
 }
@@ -537,6 +843,12 @@ export function dataDatabricksCatalogCatalogInfoToHclTerraform(struct?: DataData
       type: "list",
       storageClassType: "DataDatabricksCatalogCatalogInfoEffectivePredictiveOptimizationFlagList",
     },
+    managed_encryption_settings: {
+      value: dataDatabricksCatalogCatalogInfoManagedEncryptionSettingsToHclTerraform(struct!.managedEncryptionSettings),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataDatabricksCatalogCatalogInfoManagedEncryptionSettingsList",
+    },
     provisioning_info: {
       value: dataDatabricksCatalogCatalogInfoProvisioningInfoToHclTerraform(struct!.provisioningInfo),
       isBlock: true,
@@ -651,6 +963,10 @@ export class DataDatabricksCatalogCatalogInfoOutputReference extends cdktn.Compl
       hasAnyValues = true;
       internalValueResult.effectivePredictiveOptimizationFlag = this._effectivePredictiveOptimizationFlag?.internalValue;
     }
+    if (this._managedEncryptionSettings?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.managedEncryptionSettings = this._managedEncryptionSettings?.internalValue;
+    }
     if (this._provisioningInfo?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.provisioningInfo = this._provisioningInfo?.internalValue;
@@ -683,6 +999,7 @@ export class DataDatabricksCatalogCatalogInfoOutputReference extends cdktn.Compl
       this._updatedAt = undefined;
       this._updatedBy = undefined;
       this._effectivePredictiveOptimizationFlag.internalValue = undefined;
+      this._managedEncryptionSettings.internalValue = undefined;
       this._provisioningInfo.internalValue = undefined;
     }
     else {
@@ -709,6 +1026,7 @@ export class DataDatabricksCatalogCatalogInfoOutputReference extends cdktn.Compl
       this._updatedAt = value.updatedAt;
       this._updatedBy = value.updatedBy;
       this._effectivePredictiveOptimizationFlag.internalValue = value.effectivePredictiveOptimizationFlag;
+      this._managedEncryptionSettings.internalValue = value.managedEncryptionSettings;
       this._provisioningInfo.internalValue = value.provisioningInfo;
     }
   }
@@ -1065,6 +1383,22 @@ export class DataDatabricksCatalogCatalogInfoOutputReference extends cdktn.Compl
     return this._effectivePredictiveOptimizationFlag.internalValue;
   }
 
+  // managed_encryption_settings - computed: false, optional: true, required: false
+  private _managedEncryptionSettings = new DataDatabricksCatalogCatalogInfoManagedEncryptionSettingsOutputReference(this, "managed_encryption_settings");
+  public get managedEncryptionSettings() {
+    return this._managedEncryptionSettings;
+  }
+  public putManagedEncryptionSettings(value: DataDatabricksCatalogCatalogInfoManagedEncryptionSettings) {
+    this._managedEncryptionSettings.internalValue = value;
+  }
+  public resetManagedEncryptionSettings() {
+    this._managedEncryptionSettings.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get managedEncryptionSettingsInput() {
+    return this._managedEncryptionSettings.internalValue;
+  }
+
   // provisioning_info - computed: false, optional: true, required: false
   private _provisioningInfo = new DataDatabricksCatalogCatalogInfoProvisioningInfoOutputReference(this, "provisioning_info");
   public get provisioningInfo() {
@@ -1083,7 +1417,7 @@ export class DataDatabricksCatalogCatalogInfoOutputReference extends cdktn.Compl
 }
 export interface DataDatabricksCatalogProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/catalog#workspace_id DataDatabricksCatalog#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/catalog#workspace_id DataDatabricksCatalog#workspace_id}
   */
   readonly workspaceId: string;
 }
@@ -1164,7 +1498,7 @@ export class DataDatabricksCatalogProviderConfigOutputReference extends cdktn.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/catalog databricks_catalog}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/catalog databricks_catalog}
 */
 export class DataDatabricksCatalog extends cdktn.TerraformDataSource {
 
@@ -1180,7 +1514,7 @@ export class DataDatabricksCatalog extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataDatabricksCatalog resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatabricksCatalog to import
-  * @param importFromId The id of the existing DataDatabricksCatalog that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/catalog#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatabricksCatalog that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/catalog#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatabricksCatalog to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1192,7 +1526,7 @@ export class DataDatabricksCatalog extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/catalog databricks_catalog} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/catalog databricks_catalog} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1203,7 +1537,7 @@ export class DataDatabricksCatalog extends cdktn.TerraformDataSource {
       terraformResourceType: 'databricks_catalog',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.112.0',
+        providerVersion: '1.113.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

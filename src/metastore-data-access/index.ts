@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/metastore_data_access
+// https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore_data_access
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,100 +13,112 @@ import * as cdktn from 'cdktn';
 
 export interface MetastoreDataAccessConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/metastore_data_access#comment MetastoreDataAccess#comment}
+  * Specifies whether to use account-level or workspace-level API. Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore_data_access#api MetastoreDataAccess#api}
+  */
+  readonly api?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore_data_access#comment MetastoreDataAccess#comment}
   */
   readonly comment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/metastore_data_access#force_destroy MetastoreDataAccess#force_destroy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore_data_access#force_destroy MetastoreDataAccess#force_destroy}
   */
   readonly forceDestroy?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/metastore_data_access#force_update MetastoreDataAccess#force_update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore_data_access#force_update MetastoreDataAccess#force_update}
   */
   readonly forceUpdate?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/metastore_data_access#id MetastoreDataAccess#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore_data_access#id MetastoreDataAccess#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/metastore_data_access#is_default MetastoreDataAccess#is_default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore_data_access#is_default MetastoreDataAccess#is_default}
   */
   readonly isDefault?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/metastore_data_access#isolation_mode MetastoreDataAccess#isolation_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore_data_access#isolation_mode MetastoreDataAccess#isolation_mode}
   */
   readonly isolationMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/metastore_data_access#metastore_id MetastoreDataAccess#metastore_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore_data_access#metastore_id MetastoreDataAccess#metastore_id}
   */
   readonly metastoreId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/metastore_data_access#name MetastoreDataAccess#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore_data_access#name MetastoreDataAccess#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/metastore_data_access#owner MetastoreDataAccess#owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore_data_access#owner MetastoreDataAccess#owner}
   */
   readonly owner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/metastore_data_access#read_only MetastoreDataAccess#read_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore_data_access#read_only MetastoreDataAccess#read_only}
   */
   readonly readOnly?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/metastore_data_access#skip_validation MetastoreDataAccess#skip_validation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore_data_access#skip_validation MetastoreDataAccess#skip_validation}
   */
   readonly skipValidation?: boolean | cdktn.IResolvable;
   /**
   * aws_iam_role block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/metastore_data_access#aws_iam_role MetastoreDataAccess#aws_iam_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore_data_access#aws_iam_role MetastoreDataAccess#aws_iam_role}
   */
   readonly awsIamRole?: MetastoreDataAccessAwsIamRole;
   /**
   * azure_managed_identity block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/metastore_data_access#azure_managed_identity MetastoreDataAccess#azure_managed_identity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore_data_access#azure_managed_identity MetastoreDataAccess#azure_managed_identity}
   */
   readonly azureManagedIdentity?: MetastoreDataAccessAzureManagedIdentity;
   /**
   * azure_service_principal block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/metastore_data_access#azure_service_principal MetastoreDataAccess#azure_service_principal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore_data_access#azure_service_principal MetastoreDataAccess#azure_service_principal}
   */
   readonly azureServicePrincipal?: MetastoreDataAccessAzureServicePrincipal;
   /**
   * cloudflare_api_token block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/metastore_data_access#cloudflare_api_token MetastoreDataAccess#cloudflare_api_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore_data_access#cloudflare_api_token MetastoreDataAccess#cloudflare_api_token}
   */
   readonly cloudflareApiToken?: MetastoreDataAccessCloudflareApiToken;
   /**
   * databricks_gcp_service_account block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/metastore_data_access#databricks_gcp_service_account MetastoreDataAccess#databricks_gcp_service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore_data_access#databricks_gcp_service_account MetastoreDataAccess#databricks_gcp_service_account}
   */
   readonly databricksGcpServiceAccount?: MetastoreDataAccessDatabricksGcpServiceAccount;
   /**
   * gcp_service_account_key block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/metastore_data_access#gcp_service_account_key MetastoreDataAccess#gcp_service_account_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore_data_access#gcp_service_account_key MetastoreDataAccess#gcp_service_account_key}
   */
   readonly gcpServiceAccountKey?: MetastoreDataAccessGcpServiceAccountKey;
+  /**
+  * provider_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore_data_access#provider_config MetastoreDataAccess#provider_config}
+  */
+  readonly providerConfig?: MetastoreDataAccessProviderConfig;
 }
 export interface MetastoreDataAccessAwsIamRole {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/metastore_data_access#external_id MetastoreDataAccess#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore_data_access#external_id MetastoreDataAccess#external_id}
   */
   readonly externalId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/metastore_data_access#role_arn MetastoreDataAccess#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore_data_access#role_arn MetastoreDataAccess#role_arn}
   */
   readonly roleArn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/metastore_data_access#unity_catalog_iam_arn MetastoreDataAccess#unity_catalog_iam_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore_data_access#unity_catalog_iam_arn MetastoreDataAccess#unity_catalog_iam_arn}
   */
   readonly unityCatalogIamArn?: string;
 }
@@ -245,15 +257,15 @@ export class MetastoreDataAccessAwsIamRoleOutputReference extends cdktn.ComplexO
 }
 export interface MetastoreDataAccessAzureManagedIdentity {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/metastore_data_access#access_connector_id MetastoreDataAccess#access_connector_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore_data_access#access_connector_id MetastoreDataAccess#access_connector_id}
   */
   readonly accessConnectorId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/metastore_data_access#credential_id MetastoreDataAccess#credential_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore_data_access#credential_id MetastoreDataAccess#credential_id}
   */
   readonly credentialId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/metastore_data_access#managed_identity_id MetastoreDataAccess#managed_identity_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore_data_access#managed_identity_id MetastoreDataAccess#managed_identity_id}
   */
   readonly managedIdentityId?: string;
 }
@@ -392,15 +404,15 @@ export class MetastoreDataAccessAzureManagedIdentityOutputReference extends cdkt
 }
 export interface MetastoreDataAccessAzureServicePrincipal {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/metastore_data_access#application_id MetastoreDataAccess#application_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore_data_access#application_id MetastoreDataAccess#application_id}
   */
   readonly applicationId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/metastore_data_access#client_secret MetastoreDataAccess#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore_data_access#client_secret MetastoreDataAccess#client_secret}
   */
   readonly clientSecret: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/metastore_data_access#directory_id MetastoreDataAccess#directory_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore_data_access#directory_id MetastoreDataAccess#directory_id}
   */
   readonly directoryId: string;
 }
@@ -533,15 +545,15 @@ export class MetastoreDataAccessAzureServicePrincipalOutputReference extends cdk
 }
 export interface MetastoreDataAccessCloudflareApiToken {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/metastore_data_access#access_key_id MetastoreDataAccess#access_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore_data_access#access_key_id MetastoreDataAccess#access_key_id}
   */
   readonly accessKeyId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/metastore_data_access#account_id MetastoreDataAccess#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore_data_access#account_id MetastoreDataAccess#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/metastore_data_access#secret_access_key MetastoreDataAccess#secret_access_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore_data_access#secret_access_key MetastoreDataAccess#secret_access_key}
   */
   readonly secretAccessKey: string;
 }
@@ -674,11 +686,11 @@ export class MetastoreDataAccessCloudflareApiTokenOutputReference extends cdktn.
 }
 export interface MetastoreDataAccessDatabricksGcpServiceAccount {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/metastore_data_access#credential_id MetastoreDataAccess#credential_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore_data_access#credential_id MetastoreDataAccess#credential_id}
   */
   readonly credentialId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/metastore_data_access#email MetastoreDataAccess#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore_data_access#email MetastoreDataAccess#email}
   */
   readonly email?: string;
 }
@@ -791,15 +803,15 @@ export class MetastoreDataAccessDatabricksGcpServiceAccountOutputReference exten
 }
 export interface MetastoreDataAccessGcpServiceAccountKey {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/metastore_data_access#email MetastoreDataAccess#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore_data_access#email MetastoreDataAccess#email}
   */
   readonly email: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/metastore_data_access#private_key MetastoreDataAccess#private_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore_data_access#private_key MetastoreDataAccess#private_key}
   */
   readonly privateKey: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/metastore_data_access#private_key_id MetastoreDataAccess#private_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore_data_access#private_key_id MetastoreDataAccess#private_key_id}
   */
   readonly privateKeyId: string;
 }
@@ -930,9 +942,90 @@ export class MetastoreDataAccessGcpServiceAccountKeyOutputReference extends cdkt
     return this._privateKeyId;
   }
 }
+export interface MetastoreDataAccessProviderConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore_data_access#workspace_id MetastoreDataAccess#workspace_id}
+  */
+  readonly workspaceId: string;
+}
+
+export function metastoreDataAccessProviderConfigToTerraform(struct?: MetastoreDataAccessProviderConfigOutputReference | MetastoreDataAccessProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
+  }
+}
+
+
+export function metastoreDataAccessProviderConfigToHclTerraform(struct?: MetastoreDataAccessProviderConfigOutputReference | MetastoreDataAccessProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    workspace_id: {
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class MetastoreDataAccessProviderConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): MetastoreDataAccessProviderConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._workspaceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workspaceId = this._workspaceId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MetastoreDataAccessProviderConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._workspaceId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._workspaceId = value.workspaceId;
+    }
+  }
+
+  // workspace_id - computed: false, optional: false, required: true
+  private _workspaceId?: string; 
+  public get workspaceId() {
+    return this.getStringAttribute('workspace_id');
+  }
+  public set workspaceId(value: string) {
+    this._workspaceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workspaceIdInput() {
+    return this._workspaceId;
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/metastore_data_access databricks_metastore_data_access}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore_data_access databricks_metastore_data_access}
 */
 export class MetastoreDataAccess extends cdktn.TerraformResource {
 
@@ -948,7 +1041,7 @@ export class MetastoreDataAccess extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a MetastoreDataAccess resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MetastoreDataAccess to import
-  * @param importFromId The id of the existing MetastoreDataAccess that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/metastore_data_access#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MetastoreDataAccess that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore_data_access#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MetastoreDataAccess to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -960,7 +1053,7 @@ export class MetastoreDataAccess extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/metastore_data_access databricks_metastore_data_access} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore_data_access databricks_metastore_data_access} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -971,7 +1064,7 @@ export class MetastoreDataAccess extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_metastore_data_access',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.112.0',
+        providerVersion: '1.113.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -982,6 +1075,7 @@ export class MetastoreDataAccess extends cdktn.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._api = config.api;
     this._comment = config.comment;
     this._forceDestroy = config.forceDestroy;
     this._forceUpdate = config.forceUpdate;
@@ -999,11 +1093,28 @@ export class MetastoreDataAccess extends cdktn.TerraformResource {
     this._cloudflareApiToken.internalValue = config.cloudflareApiToken;
     this._databricksGcpServiceAccount.internalValue = config.databricksGcpServiceAccount;
     this._gcpServiceAccountKey.internalValue = config.gcpServiceAccountKey;
+    this._providerConfig.internalValue = config.providerConfig;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // api - computed: false, optional: true, required: false
+  private _api?: string; 
+  public get api() {
+    return this.getStringAttribute('api');
+  }
+  public set api(value: string) {
+    this._api = value;
+  }
+  public resetApi() {
+    this._api = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get apiInput() {
+    return this._api;
+  }
 
   // comment - computed: false, optional: true, required: false
   private _comment?: string; 
@@ -1274,12 +1385,29 @@ export class MetastoreDataAccess extends cdktn.TerraformResource {
     return this._gcpServiceAccountKey.internalValue;
   }
 
+  // provider_config - computed: false, optional: true, required: false
+  private _providerConfig = new MetastoreDataAccessProviderConfigOutputReference(this, "provider_config");
+  public get providerConfig() {
+    return this._providerConfig;
+  }
+  public putProviderConfig(value: MetastoreDataAccessProviderConfig) {
+    this._providerConfig.internalValue = value;
+  }
+  public resetProviderConfig() {
+    this._providerConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerConfigInput() {
+    return this._providerConfig.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      api: cdktn.stringToTerraform(this._api),
       comment: cdktn.stringToTerraform(this._comment),
       force_destroy: cdktn.booleanToTerraform(this._forceDestroy),
       force_update: cdktn.booleanToTerraform(this._forceUpdate),
@@ -1297,11 +1425,18 @@ export class MetastoreDataAccess extends cdktn.TerraformResource {
       cloudflare_api_token: metastoreDataAccessCloudflareApiTokenToTerraform(this._cloudflareApiToken.internalValue),
       databricks_gcp_service_account: metastoreDataAccessDatabricksGcpServiceAccountToTerraform(this._databricksGcpServiceAccount.internalValue),
       gcp_service_account_key: metastoreDataAccessGcpServiceAccountKeyToTerraform(this._gcpServiceAccountKey.internalValue),
+      provider_config: metastoreDataAccessProviderConfigToTerraform(this._providerConfig.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      api: {
+        value: cdktn.stringToHclTerraform(this._api),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       comment: {
         value: cdktn.stringToHclTerraform(this._comment),
         isBlock: false,
@@ -1403,6 +1538,12 @@ export class MetastoreDataAccess extends cdktn.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "MetastoreDataAccessGcpServiceAccountKeyList",
+      },
+      provider_config: {
+        value: metastoreDataAccessProviderConfigToHclTerraform(this._providerConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "MetastoreDataAccessProviderConfigList",
       },
     };
 

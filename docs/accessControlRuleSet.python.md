@@ -4,7 +4,7 @@
 
 ### AccessControlRuleSet <a name="AccessControlRuleSet" id="@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/access_control_rule_set databricks_access_control_rule_set}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/access_control_rule_set databricks_access_control_rule_set}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSet.Initializer"></a>
 
@@ -22,8 +22,10 @@ accessControlRuleSet.AccessControlRuleSet(
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
+  api: str = None,
   grant_rules: IResolvable | typing.List[AccessControlRuleSetGrantRules] = None,
-  id: str = None
+  id: str = None,
+  provider_config: AccessControlRuleSetProviderConfig = None
 )
 ```
 
@@ -38,9 +40,11 @@ accessControlRuleSet.AccessControlRuleSet(
 | <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSet.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSet.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSet.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSet.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/access_control_rule_set#name AccessControlRuleSet#name}. |
+| <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSet.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/access_control_rule_set#name AccessControlRuleSet#name}. |
+| <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSet.Initializer.parameter.api">api</a></code> | <code>str</code> | Specifies whether to use account-level or workspace-level API. |
 | <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSet.Initializer.parameter.grantRules">grant_rules</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetGrantRules">AccessControlRuleSetGrantRules</a>]</code> | grant_rules block. |
-| <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSet.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/access_control_rule_set#id AccessControlRuleSet#id}. |
+| <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSet.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/access_control_rule_set#id AccessControlRuleSet#id}. |
+| <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSet.Initializer.parameter.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfig">AccessControlRuleSetProviderConfig</a></code> | provider_config block. |
 
 ---
 
@@ -108,7 +112,19 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/access_control_rule_set#name AccessControlRuleSet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/access_control_rule_set#name AccessControlRuleSet#name}.
+
+---
+
+##### `api`<sup>Optional</sup> <a name="api" id="@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSet.Initializer.parameter.api"></a>
+
+- *Type:* str
+
+Specifies whether to use account-level or workspace-level API.
+
+Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/access_control_rule_set#api AccessControlRuleSet#api}
 
 ---
 
@@ -118,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 grant_rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/access_control_rule_set#grant_rules AccessControlRuleSet#grant_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/access_control_rule_set#grant_rules AccessControlRuleSet#grant_rules}
 
 ---
 
@@ -126,10 +142,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/access_control_rule_set#id AccessControlRuleSet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/access_control_rule_set#id AccessControlRuleSet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `provider_config`<sup>Optional</sup> <a name="provider_config" id="@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSet.Initializer.parameter.providerConfig"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfig">AccessControlRuleSetProviderConfig</a>
+
+provider_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/access_control_rule_set#provider_config AccessControlRuleSet#provider_config}
 
 ---
 
@@ -162,8 +188,11 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSet.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSet.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSet.putGrantRules">put_grant_rules</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSet.putProviderConfig">put_provider_config</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSet.resetApi">reset_api</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSet.resetGrantRules">reset_grant_rules</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSet.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSet.resetProviderConfig">reset_provider_config</a></code> | *No description.* |
 
 ---
 
@@ -529,6 +558,28 @@ def put_grant_rules(
 
 ---
 
+##### `put_provider_config` <a name="put_provider_config" id="@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSet.putProviderConfig"></a>
+
+```python
+def put_provider_config(
+  workspace_id: str
+) -> None
+```
+
+###### `workspace_id`<sup>Required</sup> <a name="workspace_id" id="@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSet.putProviderConfig.parameter.workspaceId"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/access_control_rule_set#workspace_id AccessControlRuleSet#workspace_id}.
+
+---
+
+##### `reset_api` <a name="reset_api" id="@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSet.resetApi"></a>
+
+```python
+def reset_api() -> None
+```
+
 ##### `reset_grant_rules` <a name="reset_grant_rules" id="@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSet.resetGrantRules"></a>
 
 ```python
@@ -539,6 +590,12 @@ def reset_grant_rules() -> None
 
 ```python
 def reset_id() -> None
+```
+
+##### `reset_provider_config` <a name="reset_provider_config" id="@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSet.resetProviderConfig"></a>
+
+```python
+def reset_provider_config() -> None
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -655,7 +712,7 @@ The construct id used in the generated config for the AccessControlRuleSet to im
 
 The id of the existing AccessControlRuleSet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/access_control_rule_set#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/access_control_rule_set#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -687,9 +744,13 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSet.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSet.property.etag">etag</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSet.property.grantRules">grant_rules</a></code> | <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetGrantRulesList">AccessControlRuleSetGrantRulesList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSet.property.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfigOutputReference">AccessControlRuleSetProviderConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSet.property.apiInput">api_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSet.property.grantRulesInput">grant_rules_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetGrantRules">AccessControlRuleSetGrantRules</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSet.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSet.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSet.property.providerConfigInput">provider_config_input</a></code> | <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfig">AccessControlRuleSetProviderConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSet.property.api">api</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSet.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSet.property.name">name</a></code> | <code>str</code> | *No description.* |
 
@@ -857,6 +918,26 @@ grant_rules: AccessControlRuleSetGrantRulesList
 
 ---
 
+##### `provider_config`<sup>Required</sup> <a name="provider_config" id="@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSet.property.providerConfig"></a>
+
+```python
+provider_config: AccessControlRuleSetProviderConfigOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfigOutputReference">AccessControlRuleSetProviderConfigOutputReference</a>
+
+---
+
+##### `api_input`<sup>Optional</sup> <a name="api_input" id="@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSet.property.apiInput"></a>
+
+```python
+api_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `grant_rules_input`<sup>Optional</sup> <a name="grant_rules_input" id="@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSet.property.grantRulesInput"></a>
 
 ```python
@@ -881,6 +962,26 @@ id_input: str
 
 ```python
 name_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `provider_config_input`<sup>Optional</sup> <a name="provider_config_input" id="@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSet.property.providerConfigInput"></a>
+
+```python
+provider_config_input: AccessControlRuleSetProviderConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfig">AccessControlRuleSetProviderConfig</a>
+
+---
+
+##### `api`<sup>Required</sup> <a name="api" id="@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSet.property.api"></a>
+
+```python
+api: str
 ```
 
 - *Type:* str
@@ -943,8 +1044,10 @@ accessControlRuleSet.AccessControlRuleSetConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
+  api: str = None,
   grant_rules: IResolvable | typing.List[AccessControlRuleSetGrantRules] = None,
-  id: str = None
+  id: str = None,
+  provider_config: AccessControlRuleSetProviderConfig = None
 )
 ```
 
@@ -959,9 +1062,11 @@ accessControlRuleSet.AccessControlRuleSetConfig(
 | <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/access_control_rule_set#name AccessControlRuleSet#name}. |
+| <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/access_control_rule_set#name AccessControlRuleSet#name}. |
+| <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetConfig.property.api">api</a></code> | <code>str</code> | Specifies whether to use account-level or workspace-level API. |
 | <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetConfig.property.grantRules">grant_rules</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetGrantRules">AccessControlRuleSetGrantRules</a>]</code> | grant_rules block. |
-| <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/access_control_rule_set#id AccessControlRuleSet#id}. |
+| <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/access_control_rule_set#id AccessControlRuleSet#id}. |
+| <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetConfig.property.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfig">AccessControlRuleSetProviderConfig</a></code> | provider_config block. |
 
 ---
 
@@ -1043,7 +1148,23 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/access_control_rule_set#name AccessControlRuleSet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/access_control_rule_set#name AccessControlRuleSet#name}.
+
+---
+
+##### `api`<sup>Optional</sup> <a name="api" id="@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetConfig.property.api"></a>
+
+```python
+api: str
+```
+
+- *Type:* str
+
+Specifies whether to use account-level or workspace-level API.
+
+Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/access_control_rule_set#api AccessControlRuleSet#api}
 
 ---
 
@@ -1057,7 +1178,7 @@ grant_rules: IResolvable | typing.List[AccessControlRuleSetGrantRules]
 
 grant_rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/access_control_rule_set#grant_rules AccessControlRuleSet#grant_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/access_control_rule_set#grant_rules AccessControlRuleSet#grant_rules}
 
 ---
 
@@ -1069,10 +1190,24 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/access_control_rule_set#id AccessControlRuleSet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/access_control_rule_set#id AccessControlRuleSet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `provider_config`<sup>Optional</sup> <a name="provider_config" id="@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetConfig.property.providerConfig"></a>
+
+```python
+provider_config: AccessControlRuleSetProviderConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfig">AccessControlRuleSetProviderConfig</a>
+
+provider_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/access_control_rule_set#provider_config AccessControlRuleSet#provider_config}
 
 ---
 
@@ -1093,8 +1228,8 @@ accessControlRuleSet.AccessControlRuleSetGrantRules(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetGrantRules.property.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/access_control_rule_set#role AccessControlRuleSet#role}. |
-| <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetGrantRules.property.principals">principals</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/access_control_rule_set#principals AccessControlRuleSet#principals}. |
+| <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetGrantRules.property.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/access_control_rule_set#role AccessControlRuleSet#role}. |
+| <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetGrantRules.property.principals">principals</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/access_control_rule_set#principals AccessControlRuleSet#principals}. |
 
 ---
 
@@ -1106,7 +1241,7 @@ role: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/access_control_rule_set#role AccessControlRuleSet#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/access_control_rule_set#role AccessControlRuleSet#role}.
 
 ---
 
@@ -1118,7 +1253,39 @@ principals: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/access_control_rule_set#principals AccessControlRuleSet#principals}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/access_control_rule_set#principals AccessControlRuleSet#principals}.
+
+---
+
+### AccessControlRuleSetProviderConfig <a name="AccessControlRuleSetProviderConfig" id="@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfig.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import access_control_rule_set
+
+accessControlRuleSet.AccessControlRuleSetProviderConfig(
+  workspace_id: str
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/access_control_rule_set#workspace_id AccessControlRuleSet#workspace_id}. |
+
+---
+
+##### `workspace_id`<sup>Required</sup> <a name="workspace_id" id="@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfig.property.workspaceId"></a>
+
+```python
+workspace_id: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/access_control_rule_set#workspace_id AccessControlRuleSet#workspace_id}.
 
 ---
 
@@ -1635,6 +1802,302 @@ internal_value: AccessControlRuleSetGrantRules | IResolvable
 ```
 
 - *Type:* <a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetGrantRules">AccessControlRuleSetGrantRules</a> | cdktn.IResolvable
+
+---
+
+
+### AccessControlRuleSetProviderConfigOutputReference <a name="AccessControlRuleSetProviderConfigOutputReference" id="@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfigOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import access_control_rule_set
+
+accessControlRuleSet.AccessControlRuleSetProviderConfigOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfigOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfigOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfigOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfigOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfigOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfigOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfigOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfigOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfigOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfigOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfigOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfigOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfigOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfigOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfigOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfigOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfigOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfigOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfigOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfigOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfigOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfigOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfigOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfigOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfigOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfigOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfigOutputReference.property.workspaceIdInput">workspace_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfigOutputReference.property.workspaceId">workspace_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfigOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfig">AccessControlRuleSetProviderConfig</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfigOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfigOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `workspace_id_input`<sup>Optional</sup> <a name="workspace_id_input" id="@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfigOutputReference.property.workspaceIdInput"></a>
+
+```python
+workspace_id_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `workspace_id`<sup>Required</sup> <a name="workspace_id" id="@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfigOutputReference.property.workspaceId"></a>
+
+```python
+workspace_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfigOutputReference.property.internalValue"></a>
+
+```python
+internal_value: AccessControlRuleSetProviderConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accessControlRuleSet.AccessControlRuleSetProviderConfig">AccessControlRuleSetProviderConfig</a>
 
 ---
 

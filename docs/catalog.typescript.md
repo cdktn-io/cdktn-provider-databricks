@@ -4,7 +4,7 @@
 
 ### Catalog <a name="Catalog" id="@cdktn/provider-databricks.catalog.Catalog"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/catalog databricks_catalog}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/catalog databricks_catalog}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.catalog.Catalog.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-databricks.catalog.Catalog.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-databricks.catalog.Catalog.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-databricks.catalog.Catalog.putEffectivePredictiveOptimizationFlag">putEffectivePredictiveOptimizationFlag</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.catalog.Catalog.putManagedEncryptionSettings">putManagedEncryptionSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.catalog.Catalog.putProviderConfig">putProviderConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.catalog.Catalog.putProvisioningInfo">putProvisioningInfo</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.catalog.Catalog.resetBrowseOnly">resetBrowseOnly</a></code> | *No description.* |
@@ -85,6 +86,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-databricks.catalog.Catalog.resetForceDestroy">resetForceDestroy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.catalog.Catalog.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.catalog.Catalog.resetIsolationMode">resetIsolationMode</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.catalog.Catalog.resetManagedEncryptionSettings">resetManagedEncryptionSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.catalog.Catalog.resetMetastoreId">resetMetastoreId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.catalog.Catalog.resetName">resetName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.catalog.Catalog.resetOptions">resetOptions</a></code> | *No description.* |
@@ -419,6 +421,18 @@ public putEffectivePredictiveOptimizationFlag(value: CatalogEffectivePredictiveO
 
 ---
 
+##### `putManagedEncryptionSettings` <a name="putManagedEncryptionSettings" id="@cdktn/provider-databricks.catalog.Catalog.putManagedEncryptionSettings"></a>
+
+```typescript
+public putManagedEncryptionSettings(value: CatalogManagedEncryptionSettings): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.catalog.Catalog.putManagedEncryptionSettings.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettings">CatalogManagedEncryptionSettings</a>
+
+---
+
 ##### `putProviderConfig` <a name="putProviderConfig" id="@cdktn/provider-databricks.catalog.Catalog.putProviderConfig"></a>
 
 ```typescript
@@ -489,6 +503,12 @@ public resetId(): void
 
 ```typescript
 public resetIsolationMode(): void
+```
+
+##### `resetManagedEncryptionSettings` <a name="resetManagedEncryptionSettings" id="@cdktn/provider-databricks.catalog.Catalog.resetManagedEncryptionSettings"></a>
+
+```typescript
+public resetManagedEncryptionSettings(): void
 ```
 
 ##### `resetMetastoreId` <a name="resetMetastoreId" id="@cdktn/provider-databricks.catalog.Catalog.resetMetastoreId"></a>
@@ -654,7 +674,7 @@ The construct id used in the generated config for the Catalog to import.
 
 The id of the existing Catalog that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/catalog#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/catalog#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -689,6 +709,7 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.catalog.Catalog.property.createdBy">createdBy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.catalog.Catalog.property.effectivePredictiveOptimizationFlag">effectivePredictiveOptimizationFlag</a></code> | <code><a href="#@cdktn/provider-databricks.catalog.CatalogEffectivePredictiveOptimizationFlagOutputReference">CatalogEffectivePredictiveOptimizationFlagOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.catalog.Catalog.property.fullName">fullName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.catalog.Catalog.property.managedEncryptionSettings">managedEncryptionSettings</a></code> | <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference">CatalogManagedEncryptionSettingsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.catalog.Catalog.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.catalog.CatalogProviderConfigOutputReference">CatalogProviderConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.catalog.Catalog.property.provisioningInfo">provisioningInfo</a></code> | <code><a href="#@cdktn/provider-databricks.catalog.CatalogProvisioningInfoOutputReference">CatalogProvisioningInfoOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.catalog.Catalog.property.securableType">securableType</a></code> | <code>string</code> | *No description.* |
@@ -703,6 +724,7 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.catalog.Catalog.property.forceDestroyInput">forceDestroyInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.catalog.Catalog.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.catalog.Catalog.property.isolationModeInput">isolationModeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.catalog.Catalog.property.managedEncryptionSettingsInput">managedEncryptionSettingsInput</a></code> | <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettings">CatalogManagedEncryptionSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.catalog.Catalog.property.metastoreIdInput">metastoreIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.catalog.Catalog.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.catalog.Catalog.property.optionsInput">optionsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
@@ -923,6 +945,16 @@ public readonly fullName: string;
 
 ---
 
+##### `managedEncryptionSettings`<sup>Required</sup> <a name="managedEncryptionSettings" id="@cdktn/provider-databricks.catalog.Catalog.property.managedEncryptionSettings"></a>
+
+```typescript
+public readonly managedEncryptionSettings: CatalogManagedEncryptionSettingsOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference">CatalogManagedEncryptionSettingsOutputReference</a>
+
+---
+
 ##### `providerConfig`<sup>Required</sup> <a name="providerConfig" id="@cdktn/provider-databricks.catalog.Catalog.property.providerConfig"></a>
 
 ```typescript
@@ -1060,6 +1092,16 @@ public readonly isolationModeInput: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `managedEncryptionSettingsInput`<sup>Optional</sup> <a name="managedEncryptionSettingsInput" id="@cdktn/provider-databricks.catalog.Catalog.property.managedEncryptionSettingsInput"></a>
+
+```typescript
+public readonly managedEncryptionSettingsInput: CatalogManagedEncryptionSettings;
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettings">CatalogManagedEncryptionSettings</a>
 
 ---
 
@@ -1354,24 +1396,25 @@ const catalogConfig: catalog.CatalogConfig = { ... }
 | <code><a href="#@cdktn/provider-databricks.catalog.CatalogConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.catalog.CatalogConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.catalog.CatalogConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.catalog.CatalogConfig.property.browseOnly">browseOnly</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/catalog#browse_only Catalog#browse_only}. |
-| <code><a href="#@cdktn/provider-databricks.catalog.CatalogConfig.property.comment">comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/catalog#comment Catalog#comment}. |
-| <code><a href="#@cdktn/provider-databricks.catalog.CatalogConfig.property.connectionName">connectionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/catalog#connection_name Catalog#connection_name}. |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogConfig.property.browseOnly">browseOnly</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/catalog#browse_only Catalog#browse_only}. |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogConfig.property.comment">comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/catalog#comment Catalog#comment}. |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogConfig.property.connectionName">connectionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/catalog#connection_name Catalog#connection_name}. |
 | <code><a href="#@cdktn/provider-databricks.catalog.CatalogConfig.property.effectivePredictiveOptimizationFlag">effectivePredictiveOptimizationFlag</a></code> | <code><a href="#@cdktn/provider-databricks.catalog.CatalogEffectivePredictiveOptimizationFlag">CatalogEffectivePredictiveOptimizationFlag</a></code> | effective_predictive_optimization_flag block. |
-| <code><a href="#@cdktn/provider-databricks.catalog.CatalogConfig.property.enablePredictiveOptimization">enablePredictiveOptimization</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/catalog#enable_predictive_optimization Catalog#enable_predictive_optimization}. |
-| <code><a href="#@cdktn/provider-databricks.catalog.CatalogConfig.property.forceDestroy">forceDestroy</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/catalog#force_destroy Catalog#force_destroy}. |
-| <code><a href="#@cdktn/provider-databricks.catalog.CatalogConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/catalog#id Catalog#id}. |
-| <code><a href="#@cdktn/provider-databricks.catalog.CatalogConfig.property.isolationMode">isolationMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/catalog#isolation_mode Catalog#isolation_mode}. |
-| <code><a href="#@cdktn/provider-databricks.catalog.CatalogConfig.property.metastoreId">metastoreId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/catalog#metastore_id Catalog#metastore_id}. |
-| <code><a href="#@cdktn/provider-databricks.catalog.CatalogConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/catalog#name Catalog#name}. |
-| <code><a href="#@cdktn/provider-databricks.catalog.CatalogConfig.property.options">options</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/catalog#options Catalog#options}. |
-| <code><a href="#@cdktn/provider-databricks.catalog.CatalogConfig.property.owner">owner</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/catalog#owner Catalog#owner}. |
-| <code><a href="#@cdktn/provider-databricks.catalog.CatalogConfig.property.properties">properties</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/catalog#properties Catalog#properties}. |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogConfig.property.enablePredictiveOptimization">enablePredictiveOptimization</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/catalog#enable_predictive_optimization Catalog#enable_predictive_optimization}. |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogConfig.property.forceDestroy">forceDestroy</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/catalog#force_destroy Catalog#force_destroy}. |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/catalog#id Catalog#id}. |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogConfig.property.isolationMode">isolationMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/catalog#isolation_mode Catalog#isolation_mode}. |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogConfig.property.managedEncryptionSettings">managedEncryptionSettings</a></code> | <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettings">CatalogManagedEncryptionSettings</a></code> | managed_encryption_settings block. |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogConfig.property.metastoreId">metastoreId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/catalog#metastore_id Catalog#metastore_id}. |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/catalog#name Catalog#name}. |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogConfig.property.options">options</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/catalog#options Catalog#options}. |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogConfig.property.owner">owner</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/catalog#owner Catalog#owner}. |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogConfig.property.properties">properties</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/catalog#properties Catalog#properties}. |
 | <code><a href="#@cdktn/provider-databricks.catalog.CatalogConfig.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.catalog.CatalogProviderConfig">CatalogProviderConfig</a></code> | provider_config block. |
-| <code><a href="#@cdktn/provider-databricks.catalog.CatalogConfig.property.providerName">providerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/catalog#provider_name Catalog#provider_name}. |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogConfig.property.providerName">providerName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/catalog#provider_name Catalog#provider_name}. |
 | <code><a href="#@cdktn/provider-databricks.catalog.CatalogConfig.property.provisioningInfo">provisioningInfo</a></code> | <code><a href="#@cdktn/provider-databricks.catalog.CatalogProvisioningInfo">CatalogProvisioningInfo</a></code> | provisioning_info block. |
-| <code><a href="#@cdktn/provider-databricks.catalog.CatalogConfig.property.shareName">shareName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/catalog#share_name Catalog#share_name}. |
-| <code><a href="#@cdktn/provider-databricks.catalog.CatalogConfig.property.storageRoot">storageRoot</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/catalog#storage_root Catalog#storage_root}. |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogConfig.property.shareName">shareName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/catalog#share_name Catalog#share_name}. |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogConfig.property.storageRoot">storageRoot</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/catalog#storage_root Catalog#storage_root}. |
 
 ---
 
@@ -1453,7 +1496,7 @@ public readonly browseOnly: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/catalog#browse_only Catalog#browse_only}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/catalog#browse_only Catalog#browse_only}.
 
 ---
 
@@ -1465,7 +1508,7 @@ public readonly comment: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/catalog#comment Catalog#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/catalog#comment Catalog#comment}.
 
 ---
 
@@ -1477,7 +1520,7 @@ public readonly connectionName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/catalog#connection_name Catalog#connection_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/catalog#connection_name Catalog#connection_name}.
 
 ---
 
@@ -1491,7 +1534,7 @@ public readonly effectivePredictiveOptimizationFlag: CatalogEffectivePredictiveO
 
 effective_predictive_optimization_flag block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/catalog#effective_predictive_optimization_flag Catalog#effective_predictive_optimization_flag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/catalog#effective_predictive_optimization_flag Catalog#effective_predictive_optimization_flag}
 
 ---
 
@@ -1503,7 +1546,7 @@ public readonly enablePredictiveOptimization: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/catalog#enable_predictive_optimization Catalog#enable_predictive_optimization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/catalog#enable_predictive_optimization Catalog#enable_predictive_optimization}.
 
 ---
 
@@ -1515,7 +1558,7 @@ public readonly forceDestroy: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/catalog#force_destroy Catalog#force_destroy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/catalog#force_destroy Catalog#force_destroy}.
 
 ---
 
@@ -1527,7 +1570,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/catalog#id Catalog#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/catalog#id Catalog#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1542,7 +1585,21 @@ public readonly isolationMode: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/catalog#isolation_mode Catalog#isolation_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/catalog#isolation_mode Catalog#isolation_mode}.
+
+---
+
+##### `managedEncryptionSettings`<sup>Optional</sup> <a name="managedEncryptionSettings" id="@cdktn/provider-databricks.catalog.CatalogConfig.property.managedEncryptionSettings"></a>
+
+```typescript
+public readonly managedEncryptionSettings: CatalogManagedEncryptionSettings;
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettings">CatalogManagedEncryptionSettings</a>
+
+managed_encryption_settings block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/catalog#managed_encryption_settings Catalog#managed_encryption_settings}
 
 ---
 
@@ -1554,7 +1611,7 @@ public readonly metastoreId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/catalog#metastore_id Catalog#metastore_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/catalog#metastore_id Catalog#metastore_id}.
 
 ---
 
@@ -1566,7 +1623,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/catalog#name Catalog#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/catalog#name Catalog#name}.
 
 ---
 
@@ -1578,7 +1635,7 @@ public readonly options: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/catalog#options Catalog#options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/catalog#options Catalog#options}.
 
 ---
 
@@ -1590,7 +1647,7 @@ public readonly owner: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/catalog#owner Catalog#owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/catalog#owner Catalog#owner}.
 
 ---
 
@@ -1602,7 +1659,7 @@ public readonly properties: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/catalog#properties Catalog#properties}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/catalog#properties Catalog#properties}.
 
 ---
 
@@ -1616,7 +1673,7 @@ public readonly providerConfig: CatalogProviderConfig;
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/catalog#provider_config Catalog#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/catalog#provider_config Catalog#provider_config}
 
 ---
 
@@ -1628,7 +1685,7 @@ public readonly providerName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/catalog#provider_name Catalog#provider_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/catalog#provider_name Catalog#provider_name}.
 
 ---
 
@@ -1642,7 +1699,7 @@ public readonly provisioningInfo: CatalogProvisioningInfo;
 
 provisioning_info block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/catalog#provisioning_info Catalog#provisioning_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/catalog#provisioning_info Catalog#provisioning_info}
 
 ---
 
@@ -1654,7 +1711,7 @@ public readonly shareName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/catalog#share_name Catalog#share_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/catalog#share_name Catalog#share_name}.
 
 ---
 
@@ -1666,7 +1723,7 @@ public readonly storageRoot: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/catalog#storage_root Catalog#storage_root}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/catalog#storage_root Catalog#storage_root}.
 
 ---
 
@@ -1684,9 +1741,9 @@ const catalogEffectivePredictiveOptimizationFlag: catalog.CatalogEffectivePredic
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.catalog.CatalogEffectivePredictiveOptimizationFlag.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/catalog#value Catalog#value}. |
-| <code><a href="#@cdktn/provider-databricks.catalog.CatalogEffectivePredictiveOptimizationFlag.property.inheritedFromName">inheritedFromName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/catalog#inherited_from_name Catalog#inherited_from_name}. |
-| <code><a href="#@cdktn/provider-databricks.catalog.CatalogEffectivePredictiveOptimizationFlag.property.inheritedFromType">inheritedFromType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/catalog#inherited_from_type Catalog#inherited_from_type}. |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogEffectivePredictiveOptimizationFlag.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/catalog#value Catalog#value}. |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogEffectivePredictiveOptimizationFlag.property.inheritedFromName">inheritedFromName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/catalog#inherited_from_name Catalog#inherited_from_name}. |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogEffectivePredictiveOptimizationFlag.property.inheritedFromType">inheritedFromType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/catalog#inherited_from_type Catalog#inherited_from_type}. |
 
 ---
 
@@ -1698,7 +1755,7 @@ public readonly value: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/catalog#value Catalog#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/catalog#value Catalog#value}.
 
 ---
 
@@ -1710,7 +1767,7 @@ public readonly inheritedFromName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/catalog#inherited_from_name Catalog#inherited_from_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/catalog#inherited_from_name Catalog#inherited_from_name}.
 
 ---
 
@@ -1722,7 +1779,121 @@ public readonly inheritedFromType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/catalog#inherited_from_type Catalog#inherited_from_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/catalog#inherited_from_type Catalog#inherited_from_type}.
+
+---
+
+### CatalogManagedEncryptionSettings <a name="CatalogManagedEncryptionSettings" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettings"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettings.Initializer"></a>
+
+```typescript
+import { catalog } from '@cdktn/provider-databricks'
+
+const catalogManagedEncryptionSettings: catalog.CatalogManagedEncryptionSettings = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettings.property.azureEncryptionSettings">azureEncryptionSettings</a></code> | <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettings">CatalogManagedEncryptionSettingsAzureEncryptionSettings</a></code> | azure_encryption_settings block. |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettings.property.azureKeyVaultKeyId">azureKeyVaultKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/catalog#azure_key_vault_key_id Catalog#azure_key_vault_key_id}. |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettings.property.customerManagedKeyId">customerManagedKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/catalog#customer_managed_key_id Catalog#customer_managed_key_id}. |
+
+---
+
+##### `azureEncryptionSettings`<sup>Optional</sup> <a name="azureEncryptionSettings" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettings.property.azureEncryptionSettings"></a>
+
+```typescript
+public readonly azureEncryptionSettings: CatalogManagedEncryptionSettingsAzureEncryptionSettings;
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettings">CatalogManagedEncryptionSettingsAzureEncryptionSettings</a>
+
+azure_encryption_settings block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/catalog#azure_encryption_settings Catalog#azure_encryption_settings}
+
+---
+
+##### `azureKeyVaultKeyId`<sup>Optional</sup> <a name="azureKeyVaultKeyId" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettings.property.azureKeyVaultKeyId"></a>
+
+```typescript
+public readonly azureKeyVaultKeyId: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/catalog#azure_key_vault_key_id Catalog#azure_key_vault_key_id}.
+
+---
+
+##### `customerManagedKeyId`<sup>Optional</sup> <a name="customerManagedKeyId" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettings.property.customerManagedKeyId"></a>
+
+```typescript
+public readonly customerManagedKeyId: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/catalog#customer_managed_key_id Catalog#customer_managed_key_id}.
+
+---
+
+### CatalogManagedEncryptionSettingsAzureEncryptionSettings <a name="CatalogManagedEncryptionSettingsAzureEncryptionSettings" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettings"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettings.Initializer"></a>
+
+```typescript
+import { catalog } from '@cdktn/provider-databricks'
+
+const catalogManagedEncryptionSettingsAzureEncryptionSettings: catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettings = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettings.property.azureTenantId">azureTenantId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/catalog#azure_tenant_id Catalog#azure_tenant_id}. |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettings.property.azureCmkAccessConnectorId">azureCmkAccessConnectorId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/catalog#azure_cmk_access_connector_id Catalog#azure_cmk_access_connector_id}. |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettings.property.azureCmkManagedIdentityId">azureCmkManagedIdentityId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/catalog#azure_cmk_managed_identity_id Catalog#azure_cmk_managed_identity_id}. |
+
+---
+
+##### `azureTenantId`<sup>Required</sup> <a name="azureTenantId" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettings.property.azureTenantId"></a>
+
+```typescript
+public readonly azureTenantId: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/catalog#azure_tenant_id Catalog#azure_tenant_id}.
+
+---
+
+##### `azureCmkAccessConnectorId`<sup>Optional</sup> <a name="azureCmkAccessConnectorId" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettings.property.azureCmkAccessConnectorId"></a>
+
+```typescript
+public readonly azureCmkAccessConnectorId: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/catalog#azure_cmk_access_connector_id Catalog#azure_cmk_access_connector_id}.
+
+---
+
+##### `azureCmkManagedIdentityId`<sup>Optional</sup> <a name="azureCmkManagedIdentityId" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettings.property.azureCmkManagedIdentityId"></a>
+
+```typescript
+public readonly azureCmkManagedIdentityId: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/catalog#azure_cmk_managed_identity_id Catalog#azure_cmk_managed_identity_id}.
 
 ---
 
@@ -1740,7 +1911,7 @@ const catalogProviderConfig: catalog.CatalogProviderConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.catalog.CatalogProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/catalog#workspace_id Catalog#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/catalog#workspace_id Catalog#workspace_id}. |
 
 ---
 
@@ -1752,7 +1923,7 @@ public readonly workspaceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/catalog#workspace_id Catalog#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/catalog#workspace_id Catalog#workspace_id}.
 
 ---
 
@@ -1770,7 +1941,7 @@ const catalogProvisioningInfo: catalog.CatalogProvisioningInfo = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.catalog.CatalogProvisioningInfo.property.state">state</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/catalog#state Catalog#state}. |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogProvisioningInfo.property.state">state</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/catalog#state Catalog#state}. |
 
 ---
 
@@ -1782,7 +1953,7 @@ public readonly state: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/catalog#state Catalog#state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/catalog#state Catalog#state}.
 
 ---
 
@@ -2113,6 +2284,684 @@ public readonly internalValue: CatalogEffectivePredictiveOptimizationFlag;
 ```
 
 - *Type:* <a href="#@cdktn/provider-databricks.catalog.CatalogEffectivePredictiveOptimizationFlag">CatalogEffectivePredictiveOptimizationFlag</a>
+
+---
+
+
+### CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference <a name="CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference.Initializer"></a>
+
+```typescript
+import { catalog } from '@cdktn/provider-databricks'
+
+new catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference.resetAzureCmkAccessConnectorId">resetAzureCmkAccessConnectorId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference.resetAzureCmkManagedIdentityId">resetAzureCmkManagedIdentityId</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetAzureCmkAccessConnectorId` <a name="resetAzureCmkAccessConnectorId" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference.resetAzureCmkAccessConnectorId"></a>
+
+```typescript
+public resetAzureCmkAccessConnectorId(): void
+```
+
+##### `resetAzureCmkManagedIdentityId` <a name="resetAzureCmkManagedIdentityId" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference.resetAzureCmkManagedIdentityId"></a>
+
+```typescript
+public resetAzureCmkManagedIdentityId(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference.property.azureCmkAccessConnectorIdInput">azureCmkAccessConnectorIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference.property.azureCmkManagedIdentityIdInput">azureCmkManagedIdentityIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference.property.azureTenantIdInput">azureTenantIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference.property.azureCmkAccessConnectorId">azureCmkAccessConnectorId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference.property.azureCmkManagedIdentityId">azureCmkManagedIdentityId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference.property.azureTenantId">azureTenantId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettings">CatalogManagedEncryptionSettingsAzureEncryptionSettings</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `azureCmkAccessConnectorIdInput`<sup>Optional</sup> <a name="azureCmkAccessConnectorIdInput" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference.property.azureCmkAccessConnectorIdInput"></a>
+
+```typescript
+public readonly azureCmkAccessConnectorIdInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `azureCmkManagedIdentityIdInput`<sup>Optional</sup> <a name="azureCmkManagedIdentityIdInput" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference.property.azureCmkManagedIdentityIdInput"></a>
+
+```typescript
+public readonly azureCmkManagedIdentityIdInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `azureTenantIdInput`<sup>Optional</sup> <a name="azureTenantIdInput" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference.property.azureTenantIdInput"></a>
+
+```typescript
+public readonly azureTenantIdInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `azureCmkAccessConnectorId`<sup>Required</sup> <a name="azureCmkAccessConnectorId" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference.property.azureCmkAccessConnectorId"></a>
+
+```typescript
+public readonly azureCmkAccessConnectorId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `azureCmkManagedIdentityId`<sup>Required</sup> <a name="azureCmkManagedIdentityId" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference.property.azureCmkManagedIdentityId"></a>
+
+```typescript
+public readonly azureCmkManagedIdentityId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `azureTenantId`<sup>Required</sup> <a name="azureTenantId" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference.property.azureTenantId"></a>
+
+```typescript
+public readonly azureTenantId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: CatalogManagedEncryptionSettingsAzureEncryptionSettings;
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettings">CatalogManagedEncryptionSettingsAzureEncryptionSettings</a>
+
+---
+
+
+### CatalogManagedEncryptionSettingsOutputReference <a name="CatalogManagedEncryptionSettingsOutputReference" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.Initializer"></a>
+
+```typescript
+import { catalog } from '@cdktn/provider-databricks'
+
+new catalog.CatalogManagedEncryptionSettingsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.putAzureEncryptionSettings">putAzureEncryptionSettings</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.resetAzureEncryptionSettings">resetAzureEncryptionSettings</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.resetAzureKeyVaultKeyId">resetAzureKeyVaultKeyId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.resetCustomerManagedKeyId">resetCustomerManagedKeyId</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putAzureEncryptionSettings` <a name="putAzureEncryptionSettings" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.putAzureEncryptionSettings"></a>
+
+```typescript
+public putAzureEncryptionSettings(value: CatalogManagedEncryptionSettingsAzureEncryptionSettings): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.putAzureEncryptionSettings.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettings">CatalogManagedEncryptionSettingsAzureEncryptionSettings</a>
+
+---
+
+##### `resetAzureEncryptionSettings` <a name="resetAzureEncryptionSettings" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.resetAzureEncryptionSettings"></a>
+
+```typescript
+public resetAzureEncryptionSettings(): void
+```
+
+##### `resetAzureKeyVaultKeyId` <a name="resetAzureKeyVaultKeyId" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.resetAzureKeyVaultKeyId"></a>
+
+```typescript
+public resetAzureKeyVaultKeyId(): void
+```
+
+##### `resetCustomerManagedKeyId` <a name="resetCustomerManagedKeyId" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.resetCustomerManagedKeyId"></a>
+
+```typescript
+public resetCustomerManagedKeyId(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.property.azureEncryptionSettings">azureEncryptionSettings</a></code> | <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference">CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.property.azureEncryptionSettingsInput">azureEncryptionSettingsInput</a></code> | <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettings">CatalogManagedEncryptionSettingsAzureEncryptionSettings</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.property.azureKeyVaultKeyIdInput">azureKeyVaultKeyIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.property.customerManagedKeyIdInput">customerManagedKeyIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.property.azureKeyVaultKeyId">azureKeyVaultKeyId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.property.customerManagedKeyId">customerManagedKeyId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettings">CatalogManagedEncryptionSettings</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `azureEncryptionSettings`<sup>Required</sup> <a name="azureEncryptionSettings" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.property.azureEncryptionSettings"></a>
+
+```typescript
+public readonly azureEncryptionSettings: CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference">CatalogManagedEncryptionSettingsAzureEncryptionSettingsOutputReference</a>
+
+---
+
+##### `azureEncryptionSettingsInput`<sup>Optional</sup> <a name="azureEncryptionSettingsInput" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.property.azureEncryptionSettingsInput"></a>
+
+```typescript
+public readonly azureEncryptionSettingsInput: CatalogManagedEncryptionSettingsAzureEncryptionSettings;
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsAzureEncryptionSettings">CatalogManagedEncryptionSettingsAzureEncryptionSettings</a>
+
+---
+
+##### `azureKeyVaultKeyIdInput`<sup>Optional</sup> <a name="azureKeyVaultKeyIdInput" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.property.azureKeyVaultKeyIdInput"></a>
+
+```typescript
+public readonly azureKeyVaultKeyIdInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `customerManagedKeyIdInput`<sup>Optional</sup> <a name="customerManagedKeyIdInput" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.property.customerManagedKeyIdInput"></a>
+
+```typescript
+public readonly customerManagedKeyIdInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `azureKeyVaultKeyId`<sup>Required</sup> <a name="azureKeyVaultKeyId" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.property.azureKeyVaultKeyId"></a>
+
+```typescript
+public readonly azureKeyVaultKeyId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `customerManagedKeyId`<sup>Required</sup> <a name="customerManagedKeyId" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.property.customerManagedKeyId"></a>
+
+```typescript
+public readonly customerManagedKeyId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettingsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: CatalogManagedEncryptionSettings;
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.catalog.CatalogManagedEncryptionSettings">CatalogManagedEncryptionSettings</a>
 
 ---
 

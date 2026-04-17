@@ -4,7 +4,7 @@
 
 ### AccountNetworkPolicy <a name="AccountNetworkPolicy" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_network_policy databricks_account_network_policy}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy databricks_account_network_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicy.Initializer"></a>
 
@@ -75,8 +75,12 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicy.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicy.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicy.putEgress">PutEgress</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicy.putIngress">PutIngress</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicy.putIngressDryRun">PutIngressDryRun</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicy.resetAccountId">ResetAccountId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicy.resetEgress">ResetEgress</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicy.resetIngress">ResetIngress</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicy.resetIngressDryRun">ResetIngressDryRun</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicy.resetNetworkPolicyId">ResetNetworkPolicyId</a></code> | *No description.* |
 
 ---
@@ -402,6 +406,30 @@ func PutEgress(value AccountNetworkPolicyEgress)
 
 ---
 
+##### `PutIngress` <a name="PutIngress" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicy.putIngress"></a>
+
+```go
+func PutIngress(value AccountNetworkPolicyIngress)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicy.putIngress.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngress">AccountNetworkPolicyIngress</a>
+
+---
+
+##### `PutIngressDryRun` <a name="PutIngressDryRun" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicy.putIngressDryRun"></a>
+
+```go
+func PutIngressDryRun(value AccountNetworkPolicyIngressDryRun)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicy.putIngressDryRun.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRun">AccountNetworkPolicyIngressDryRun</a>
+
+---
+
 ##### `ResetAccountId` <a name="ResetAccountId" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicy.resetAccountId"></a>
 
 ```go
@@ -412,6 +440,18 @@ func ResetAccountId()
 
 ```go
 func ResetEgress()
+```
+
+##### `ResetIngress` <a name="ResetIngress" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicy.resetIngress"></a>
+
+```go
+func ResetIngress()
+```
+
+##### `ResetIngressDryRun` <a name="ResetIngressDryRun" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicy.resetIngressDryRun"></a>
+
+```go
+func ResetIngressDryRun()
 ```
 
 ##### `ResetNetworkPolicyId` <a name="ResetNetworkPolicyId" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicy.resetNetworkPolicyId"></a>
@@ -523,7 +563,7 @@ The construct id used in the generated config for the AccountNetworkPolicy to im
 
 The id of the existing AccountNetworkPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_network_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -554,8 +594,12 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicy.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicy.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicy.property.egress">Egress</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyEgressOutputReference">AccountNetworkPolicyEgressOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicy.property.ingress">Ingress</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressOutputReference">AccountNetworkPolicyIngressOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicy.property.ingressDryRun">IngressDryRun</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunOutputReference">AccountNetworkPolicyIngressDryRunOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicy.property.accountIdInput">AccountIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicy.property.egressInput">EgressInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicy.property.ingressDryRunInput">IngressDryRunInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicy.property.ingressInput">IngressInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicy.property.networkPolicyIdInput">NetworkPolicyIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicy.property.accountId">AccountId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicy.property.networkPolicyId">NetworkPolicyId</a></code> | <code>*string</code> | *No description.* |
@@ -714,6 +758,26 @@ func Egress() AccountNetworkPolicyEgressOutputReference
 
 ---
 
+##### `Ingress`<sup>Required</sup> <a name="Ingress" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicy.property.ingress"></a>
+
+```go
+func Ingress() AccountNetworkPolicyIngressOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressOutputReference">AccountNetworkPolicyIngressOutputReference</a>
+
+---
+
+##### `IngressDryRun`<sup>Required</sup> <a name="IngressDryRun" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicy.property.ingressDryRun"></a>
+
+```go
+func IngressDryRun() AccountNetworkPolicyIngressDryRunOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunOutputReference">AccountNetworkPolicyIngressDryRunOutputReference</a>
+
+---
+
 ##### `AccountIdInput`<sup>Optional</sup> <a name="AccountIdInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicy.property.accountIdInput"></a>
 
 ```go
@@ -728,6 +792,26 @@ func AccountIdInput() *string
 
 ```go
 func EgressInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `IngressDryRunInput`<sup>Optional</sup> <a name="IngressDryRunInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicy.property.ingressDryRunInput"></a>
+
+```go
+func IngressDryRunInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `IngressInput`<sup>Optional</sup> <a name="IngressInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicy.property.ingressInput"></a>
+
+```go
+func IngressInput() interface{}
 ```
 
 - *Type:* interface{}
@@ -801,6 +885,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountn
 	Provisioners: *[]interface{},
 	AccountId: *string,
 	Egress: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyEgress,
+	Ingress: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyIngress,
+	IngressDryRun: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyIngressDryRun,
 	NetworkPolicyId: *string,
 }
 ```
@@ -816,9 +902,11 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountn
 | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_network_policy#account_id AccountNetworkPolicy#account_id}. |
-| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyConfig.property.egress">Egress</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyEgress">AccountNetworkPolicyEgress</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_network_policy#egress AccountNetworkPolicy#egress}. |
-| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyConfig.property.networkPolicyId">NetworkPolicyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_network_policy#network_policy_id AccountNetworkPolicy#network_policy_id}. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#account_id AccountNetworkPolicy#account_id}. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyConfig.property.egress">Egress</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyEgress">AccountNetworkPolicyEgress</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#egress AccountNetworkPolicy#egress}. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyConfig.property.ingress">Ingress</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngress">AccountNetworkPolicyIngress</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#ingress AccountNetworkPolicy#ingress}. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyConfig.property.ingressDryRun">IngressDryRun</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRun">AccountNetworkPolicyIngressDryRun</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#ingress_dry_run AccountNetworkPolicy#ingress_dry_run}. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyConfig.property.networkPolicyId">NetworkPolicyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#network_policy_id AccountNetworkPolicy#network_policy_id}. |
 
 ---
 
@@ -900,7 +988,7 @@ AccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_network_policy#account_id AccountNetworkPolicy#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#account_id AccountNetworkPolicy#account_id}.
 
 ---
 
@@ -912,7 +1000,31 @@ Egress AccountNetworkPolicyEgress
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyEgress">AccountNetworkPolicyEgress</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_network_policy#egress AccountNetworkPolicy#egress}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#egress AccountNetworkPolicy#egress}.
+
+---
+
+##### `Ingress`<sup>Optional</sup> <a name="Ingress" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyConfig.property.ingress"></a>
+
+```go
+Ingress AccountNetworkPolicyIngress
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngress">AccountNetworkPolicyIngress</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#ingress AccountNetworkPolicy#ingress}.
+
+---
+
+##### `IngressDryRun`<sup>Optional</sup> <a name="IngressDryRun" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyConfig.property.ingressDryRun"></a>
+
+```go
+IngressDryRun AccountNetworkPolicyIngressDryRun
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRun">AccountNetworkPolicyIngressDryRun</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#ingress_dry_run AccountNetworkPolicy#ingress_dry_run}.
 
 ---
 
@@ -924,7 +1036,7 @@ NetworkPolicyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_network_policy#network_policy_id AccountNetworkPolicy#network_policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#network_policy_id AccountNetworkPolicy#network_policy_id}.
 
 ---
 
@@ -944,7 +1056,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountn
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyEgress.property.networkAccess">NetworkAccess</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyEgressNetworkAccess">AccountNetworkPolicyEgressNetworkAccess</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_network_policy#network_access AccountNetworkPolicy#network_access}. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyEgress.property.networkAccess">NetworkAccess</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyEgressNetworkAccess">AccountNetworkPolicyEgressNetworkAccess</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#network_access AccountNetworkPolicy#network_access}. |
 
 ---
 
@@ -956,7 +1068,7 @@ NetworkAccess AccountNetworkPolicyEgressNetworkAccess
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyEgressNetworkAccess">AccountNetworkPolicyEgressNetworkAccess</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_network_policy#network_access AccountNetworkPolicy#network_access}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#network_access AccountNetworkPolicy#network_access}.
 
 ---
 
@@ -979,10 +1091,10 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountn
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyEgressNetworkAccess.property.restrictionMode">RestrictionMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_network_policy#restriction_mode AccountNetworkPolicy#restriction_mode}. |
-| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyEgressNetworkAccess.property.allowedInternetDestinations">AllowedInternetDestinations</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_network_policy#allowed_internet_destinations AccountNetworkPolicy#allowed_internet_destinations}. |
-| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyEgressNetworkAccess.property.allowedStorageDestinations">AllowedStorageDestinations</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_network_policy#allowed_storage_destinations AccountNetworkPolicy#allowed_storage_destinations}. |
-| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyEgressNetworkAccess.property.policyEnforcement">PolicyEnforcement</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyEgressNetworkAccessPolicyEnforcement">AccountNetworkPolicyEgressNetworkAccessPolicyEnforcement</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_network_policy#policy_enforcement AccountNetworkPolicy#policy_enforcement}. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyEgressNetworkAccess.property.restrictionMode">RestrictionMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#restriction_mode AccountNetworkPolicy#restriction_mode}. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyEgressNetworkAccess.property.allowedInternetDestinations">AllowedInternetDestinations</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#allowed_internet_destinations AccountNetworkPolicy#allowed_internet_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyEgressNetworkAccess.property.allowedStorageDestinations">AllowedStorageDestinations</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#allowed_storage_destinations AccountNetworkPolicy#allowed_storage_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyEgressNetworkAccess.property.policyEnforcement">PolicyEnforcement</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyEgressNetworkAccessPolicyEnforcement">AccountNetworkPolicyEgressNetworkAccessPolicyEnforcement</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#policy_enforcement AccountNetworkPolicy#policy_enforcement}. |
 
 ---
 
@@ -994,7 +1106,7 @@ RestrictionMode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_network_policy#restriction_mode AccountNetworkPolicy#restriction_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#restriction_mode AccountNetworkPolicy#restriction_mode}.
 
 ---
 
@@ -1006,7 +1118,7 @@ AllowedInternetDestinations interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_network_policy#allowed_internet_destinations AccountNetworkPolicy#allowed_internet_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#allowed_internet_destinations AccountNetworkPolicy#allowed_internet_destinations}.
 
 ---
 
@@ -1018,7 +1130,7 @@ AllowedStorageDestinations interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_network_policy#allowed_storage_destinations AccountNetworkPolicy#allowed_storage_destinations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#allowed_storage_destinations AccountNetworkPolicy#allowed_storage_destinations}.
 
 ---
 
@@ -1030,7 +1142,7 @@ PolicyEnforcement AccountNetworkPolicyEgressNetworkAccessPolicyEnforcement
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyEgressNetworkAccessPolicyEnforcement">AccountNetworkPolicyEgressNetworkAccessPolicyEnforcement</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_network_policy#policy_enforcement AccountNetworkPolicy#policy_enforcement}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#policy_enforcement AccountNetworkPolicy#policy_enforcement}.
 
 ---
 
@@ -1051,8 +1163,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountn
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyEgressNetworkAccessAllowedInternetDestinations.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_network_policy#destination AccountNetworkPolicy#destination}. |
-| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyEgressNetworkAccessAllowedInternetDestinations.property.internetDestinationType">InternetDestinationType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_network_policy#internet_destination_type AccountNetworkPolicy#internet_destination_type}. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyEgressNetworkAccessAllowedInternetDestinations.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#destination AccountNetworkPolicy#destination}. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyEgressNetworkAccessAllowedInternetDestinations.property.internetDestinationType">InternetDestinationType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#internet_destination_type AccountNetworkPolicy#internet_destination_type}. |
 
 ---
 
@@ -1064,7 +1176,7 @@ Destination *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_network_policy#destination AccountNetworkPolicy#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#destination AccountNetworkPolicy#destination}.
 
 ---
 
@@ -1076,7 +1188,7 @@ InternetDestinationType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_network_policy#internet_destination_type AccountNetworkPolicy#internet_destination_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#internet_destination_type AccountNetworkPolicy#internet_destination_type}.
 
 ---
 
@@ -1100,11 +1212,11 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountn
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyEgressNetworkAccessAllowedStorageDestinations.property.azureStorageAccount">AzureStorageAccount</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_network_policy#azure_storage_account AccountNetworkPolicy#azure_storage_account}. |
-| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyEgressNetworkAccessAllowedStorageDestinations.property.azureStorageService">AzureStorageService</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_network_policy#azure_storage_service AccountNetworkPolicy#azure_storage_service}. |
-| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyEgressNetworkAccessAllowedStorageDestinations.property.bucketName">BucketName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_network_policy#bucket_name AccountNetworkPolicy#bucket_name}. |
-| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyEgressNetworkAccessAllowedStorageDestinations.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_network_policy#region AccountNetworkPolicy#region}. |
-| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyEgressNetworkAccessAllowedStorageDestinations.property.storageDestinationType">StorageDestinationType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_network_policy#storage_destination_type AccountNetworkPolicy#storage_destination_type}. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyEgressNetworkAccessAllowedStorageDestinations.property.azureStorageAccount">AzureStorageAccount</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#azure_storage_account AccountNetworkPolicy#azure_storage_account}. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyEgressNetworkAccessAllowedStorageDestinations.property.azureStorageService">AzureStorageService</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#azure_storage_service AccountNetworkPolicy#azure_storage_service}. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyEgressNetworkAccessAllowedStorageDestinations.property.bucketName">BucketName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#bucket_name AccountNetworkPolicy#bucket_name}. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyEgressNetworkAccessAllowedStorageDestinations.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#region AccountNetworkPolicy#region}. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyEgressNetworkAccessAllowedStorageDestinations.property.storageDestinationType">StorageDestinationType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#storage_destination_type AccountNetworkPolicy#storage_destination_type}. |
 
 ---
 
@@ -1116,7 +1228,7 @@ AzureStorageAccount *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_network_policy#azure_storage_account AccountNetworkPolicy#azure_storage_account}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#azure_storage_account AccountNetworkPolicy#azure_storage_account}.
 
 ---
 
@@ -1128,7 +1240,7 @@ AzureStorageService *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_network_policy#azure_storage_service AccountNetworkPolicy#azure_storage_service}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#azure_storage_service AccountNetworkPolicy#azure_storage_service}.
 
 ---
 
@@ -1140,7 +1252,7 @@ BucketName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_network_policy#bucket_name AccountNetworkPolicy#bucket_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#bucket_name AccountNetworkPolicy#bucket_name}.
 
 ---
 
@@ -1152,7 +1264,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_network_policy#region AccountNetworkPolicy#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#region AccountNetworkPolicy#region}.
 
 ---
 
@@ -1164,7 +1276,7 @@ StorageDestinationType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_network_policy#storage_destination_type AccountNetworkPolicy#storage_destination_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#storage_destination_type AccountNetworkPolicy#storage_destination_type}.
 
 ---
 
@@ -1185,8 +1297,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountn
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyEgressNetworkAccessPolicyEnforcement.property.dryRunModeProductFilter">DryRunModeProductFilter</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_network_policy#dry_run_mode_product_filter AccountNetworkPolicy#dry_run_mode_product_filter}. |
-| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyEgressNetworkAccessPolicyEnforcement.property.enforcementMode">EnforcementMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_network_policy#enforcement_mode AccountNetworkPolicy#enforcement_mode}. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyEgressNetworkAccessPolicyEnforcement.property.dryRunModeProductFilter">DryRunModeProductFilter</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#dry_run_mode_product_filter AccountNetworkPolicy#dry_run_mode_product_filter}. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyEgressNetworkAccessPolicyEnforcement.property.enforcementMode">EnforcementMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#enforcement_mode AccountNetworkPolicy#enforcement_mode}. |
 
 ---
 
@@ -1198,7 +1310,7 @@ DryRunModeProductFilter *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_network_policy#dry_run_mode_product_filter AccountNetworkPolicy#dry_run_mode_product_filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#dry_run_mode_product_filter AccountNetworkPolicy#dry_run_mode_product_filter}.
 
 ---
 
@@ -1210,7 +1322,1847 @@ EnforcementMode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_network_policy#enforcement_mode AccountNetworkPolicy#enforcement_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#enforcement_mode AccountNetworkPolicy#enforcement_mode}.
+
+---
+
+### AccountNetworkPolicyIngress <a name="AccountNetworkPolicyIngress" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngress"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngress.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+&accountnetworkpolicy.AccountNetworkPolicyIngress {
+	PublicAccess: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccess,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngress.property.publicAccess">PublicAccess</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccess">AccountNetworkPolicyIngressPublicAccess</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#public_access AccountNetworkPolicy#public_access}. |
+
+---
+
+##### `PublicAccess`<sup>Optional</sup> <a name="PublicAccess" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngress.property.publicAccess"></a>
+
+```go
+PublicAccess AccountNetworkPolicyIngressPublicAccess
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccess">AccountNetworkPolicyIngressPublicAccess</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#public_access AccountNetworkPolicy#public_access}.
+
+---
+
+### AccountNetworkPolicyIngressDryRun <a name="AccountNetworkPolicyIngressDryRun" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRun"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRun.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+&accountnetworkpolicy.AccountNetworkPolicyIngressDryRun {
+	PublicAccess: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccess,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRun.property.publicAccess">PublicAccess</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccess">AccountNetworkPolicyIngressDryRunPublicAccess</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#public_access AccountNetworkPolicy#public_access}. |
+
+---
+
+##### `PublicAccess`<sup>Optional</sup> <a name="PublicAccess" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRun.property.publicAccess"></a>
+
+```go
+PublicAccess AccountNetworkPolicyIngressDryRunPublicAccess
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccess">AccountNetworkPolicyIngressDryRunPublicAccess</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#public_access AccountNetworkPolicy#public_access}.
+
+---
+
+### AccountNetworkPolicyIngressDryRunPublicAccess <a name="AccountNetworkPolicyIngressDryRunPublicAccess" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccess"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccess.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+&accountnetworkpolicy.AccountNetworkPolicyIngressDryRunPublicAccess {
+	RestrictionMode: *string,
+	AllowRules: interface{},
+	DenyRules: interface{},
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccess.property.restrictionMode">RestrictionMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#restriction_mode AccountNetworkPolicy#restriction_mode}. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccess.property.allowRules">AllowRules</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#allow_rules AccountNetworkPolicy#allow_rules}. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccess.property.denyRules">DenyRules</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#deny_rules AccountNetworkPolicy#deny_rules}. |
+
+---
+
+##### `RestrictionMode`<sup>Required</sup> <a name="RestrictionMode" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccess.property.restrictionMode"></a>
+
+```go
+RestrictionMode *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#restriction_mode AccountNetworkPolicy#restriction_mode}.
+
+---
+
+##### `AllowRules`<sup>Optional</sup> <a name="AllowRules" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccess.property.allowRules"></a>
+
+```go
+AllowRules interface{}
+```
+
+- *Type:* interface{}
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#allow_rules AccountNetworkPolicy#allow_rules}.
+
+---
+
+##### `DenyRules`<sup>Optional</sup> <a name="DenyRules" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccess.property.denyRules"></a>
+
+```go
+DenyRules interface{}
+```
+
+- *Type:* interface{}
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#deny_rules AccountNetworkPolicy#deny_rules}.
+
+---
+
+### AccountNetworkPolicyIngressDryRunPublicAccessAllowRules <a name="AccountNetworkPolicyIngressDryRunPublicAccessAllowRules" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRules"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRules.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+&accountnetworkpolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRules {
+	Authentication: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthentication,
+	Destination: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestination,
+	Label: *string,
+	Origin: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOrigin,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRules.property.authentication">Authentication</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthentication">AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthentication</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#authentication AccountNetworkPolicy#authentication}. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRules.property.destination">Destination</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestination">AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestination</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#destination AccountNetworkPolicy#destination}. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRules.property.label">Label</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#label AccountNetworkPolicy#label}. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRules.property.origin">Origin</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOrigin">AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOrigin</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#origin AccountNetworkPolicy#origin}. |
+
+---
+
+##### `Authentication`<sup>Optional</sup> <a name="Authentication" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRules.property.authentication"></a>
+
+```go
+Authentication AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthentication
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthentication">AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthentication</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#authentication AccountNetworkPolicy#authentication}.
+
+---
+
+##### `Destination`<sup>Optional</sup> <a name="Destination" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRules.property.destination"></a>
+
+```go
+Destination AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestination
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestination">AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestination</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#destination AccountNetworkPolicy#destination}.
+
+---
+
+##### `Label`<sup>Optional</sup> <a name="Label" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRules.property.label"></a>
+
+```go
+Label *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#label AccountNetworkPolicy#label}.
+
+---
+
+##### `Origin`<sup>Optional</sup> <a name="Origin" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRules.property.origin"></a>
+
+```go
+Origin AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOrigin
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOrigin">AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOrigin</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#origin AccountNetworkPolicy#origin}.
+
+---
+
+### AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthentication <a name="AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthentication" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthentication"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthentication.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+&accountnetworkpolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthentication {
+	Identities: interface{},
+	IdentityType: *string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthentication.property.identities">Identities</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#identities AccountNetworkPolicy#identities}. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthentication.property.identityType">IdentityType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#identity_type AccountNetworkPolicy#identity_type}. |
+
+---
+
+##### `Identities`<sup>Optional</sup> <a name="Identities" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthentication.property.identities"></a>
+
+```go
+Identities interface{}
+```
+
+- *Type:* interface{}
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#identities AccountNetworkPolicy#identities}.
+
+---
+
+##### `IdentityType`<sup>Optional</sup> <a name="IdentityType" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthentication.property.identityType"></a>
+
+```go
+IdentityType *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#identity_type AccountNetworkPolicy#identity_type}.
+
+---
+
+### AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentities <a name="AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentities" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentities"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentities.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+&accountnetworkpolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentities {
+	PrincipalId: *f64,
+	PrincipalType: *string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentities.property.principalId">PrincipalId</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#principal_id AccountNetworkPolicy#principal_id}. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentities.property.principalType">PrincipalType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#principal_type AccountNetworkPolicy#principal_type}. |
+
+---
+
+##### `PrincipalId`<sup>Optional</sup> <a name="PrincipalId" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentities.property.principalId"></a>
+
+```go
+PrincipalId *f64
+```
+
+- *Type:* *f64
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#principal_id AccountNetworkPolicy#principal_id}.
+
+---
+
+##### `PrincipalType`<sup>Optional</sup> <a name="PrincipalType" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentities.property.principalType"></a>
+
+```go
+PrincipalType *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#principal_type AccountNetworkPolicy#principal_type}.
+
+---
+
+### AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestination <a name="AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestination" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestination"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestination.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+&accountnetworkpolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestination {
+	AllDestinations: interface{},
+	WorkspaceApi: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApi,
+	WorkspaceUi: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUi,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestination.property.allDestinations">AllDestinations</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestination.property.workspaceApi">WorkspaceApi</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApi">AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#workspace_api AccountNetworkPolicy#workspace_api}. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestination.property.workspaceUi">WorkspaceUi</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUi">AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#workspace_ui AccountNetworkPolicy#workspace_ui}. |
+
+---
+
+##### `AllDestinations`<sup>Optional</sup> <a name="AllDestinations" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestination.property.allDestinations"></a>
+
+```go
+AllDestinations interface{}
+```
+
+- *Type:* interface{}
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}.
+
+---
+
+##### `WorkspaceApi`<sup>Optional</sup> <a name="WorkspaceApi" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestination.property.workspaceApi"></a>
+
+```go
+WorkspaceApi AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApi
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApi">AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApi</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#workspace_api AccountNetworkPolicy#workspace_api}.
+
+---
+
+##### `WorkspaceUi`<sup>Optional</sup> <a name="WorkspaceUi" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestination.property.workspaceUi"></a>
+
+```go
+WorkspaceUi AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUi
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUi">AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUi</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#workspace_ui AccountNetworkPolicy#workspace_ui}.
+
+---
+
+### AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApi <a name="AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApi" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApi"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApi.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+&accountnetworkpolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApi {
+	Scopes: *[]*string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApi.property.scopes">Scopes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#scopes AccountNetworkPolicy#scopes}. |
+
+---
+
+##### `Scopes`<sup>Optional</sup> <a name="Scopes" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApi.property.scopes"></a>
+
+```go
+Scopes *[]*string
+```
+
+- *Type:* *[]*string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#scopes AccountNetworkPolicy#scopes}.
+
+---
+
+### AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUi <a name="AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUi" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUi"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUi.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+&accountnetworkpolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUi {
+	AllDestinations: interface{},
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUi.property.allDestinations">AllDestinations</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}. |
+
+---
+
+##### `AllDestinations`<sup>Optional</sup> <a name="AllDestinations" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUi.property.allDestinations"></a>
+
+```go
+AllDestinations interface{}
+```
+
+- *Type:* interface{}
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}.
+
+---
+
+### AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOrigin <a name="AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOrigin" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOrigin"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOrigin.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+&accountnetworkpolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOrigin {
+	AllIpRanges: interface{},
+	ExcludedIpRanges: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRanges,
+	IncludedIpRanges: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRanges,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOrigin.property.allIpRanges">AllIpRanges</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#all_ip_ranges AccountNetworkPolicy#all_ip_ranges}. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOrigin.property.excludedIpRanges">ExcludedIpRanges</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRanges">AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRanges</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#excluded_ip_ranges AccountNetworkPolicy#excluded_ip_ranges}. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOrigin.property.includedIpRanges">IncludedIpRanges</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRanges">AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRanges</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#included_ip_ranges AccountNetworkPolicy#included_ip_ranges}. |
+
+---
+
+##### `AllIpRanges`<sup>Optional</sup> <a name="AllIpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOrigin.property.allIpRanges"></a>
+
+```go
+AllIpRanges interface{}
+```
+
+- *Type:* interface{}
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#all_ip_ranges AccountNetworkPolicy#all_ip_ranges}.
+
+---
+
+##### `ExcludedIpRanges`<sup>Optional</sup> <a name="ExcludedIpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOrigin.property.excludedIpRanges"></a>
+
+```go
+ExcludedIpRanges AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRanges
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRanges">AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRanges</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#excluded_ip_ranges AccountNetworkPolicy#excluded_ip_ranges}.
+
+---
+
+##### `IncludedIpRanges`<sup>Optional</sup> <a name="IncludedIpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOrigin.property.includedIpRanges"></a>
+
+```go
+IncludedIpRanges AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRanges
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRanges">AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRanges</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#included_ip_ranges AccountNetworkPolicy#included_ip_ranges}.
+
+---
+
+### AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRanges <a name="AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRanges"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRanges.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+&accountnetworkpolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRanges {
+	IpRanges: *[]*string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRanges.property.ipRanges">IpRanges</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#ip_ranges AccountNetworkPolicy#ip_ranges}. |
+
+---
+
+##### `IpRanges`<sup>Optional</sup> <a name="IpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRanges.property.ipRanges"></a>
+
+```go
+IpRanges *[]*string
+```
+
+- *Type:* *[]*string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#ip_ranges AccountNetworkPolicy#ip_ranges}.
+
+---
+
+### AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRanges <a name="AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRanges"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRanges.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+&accountnetworkpolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRanges {
+	IpRanges: *[]*string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRanges.property.ipRanges">IpRanges</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#ip_ranges AccountNetworkPolicy#ip_ranges}. |
+
+---
+
+##### `IpRanges`<sup>Optional</sup> <a name="IpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRanges.property.ipRanges"></a>
+
+```go
+IpRanges *[]*string
+```
+
+- *Type:* *[]*string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#ip_ranges AccountNetworkPolicy#ip_ranges}.
+
+---
+
+### AccountNetworkPolicyIngressDryRunPublicAccessDenyRules <a name="AccountNetworkPolicyIngressDryRunPublicAccessDenyRules" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRules"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRules.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+&accountnetworkpolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRules {
+	Authentication: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthentication,
+	Destination: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestination,
+	Label: *string,
+	Origin: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOrigin,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRules.property.authentication">Authentication</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthentication">AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthentication</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#authentication AccountNetworkPolicy#authentication}. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRules.property.destination">Destination</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestination">AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestination</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#destination AccountNetworkPolicy#destination}. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRules.property.label">Label</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#label AccountNetworkPolicy#label}. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRules.property.origin">Origin</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOrigin">AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOrigin</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#origin AccountNetworkPolicy#origin}. |
+
+---
+
+##### `Authentication`<sup>Optional</sup> <a name="Authentication" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRules.property.authentication"></a>
+
+```go
+Authentication AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthentication
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthentication">AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthentication</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#authentication AccountNetworkPolicy#authentication}.
+
+---
+
+##### `Destination`<sup>Optional</sup> <a name="Destination" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRules.property.destination"></a>
+
+```go
+Destination AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestination
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestination">AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestination</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#destination AccountNetworkPolicy#destination}.
+
+---
+
+##### `Label`<sup>Optional</sup> <a name="Label" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRules.property.label"></a>
+
+```go
+Label *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#label AccountNetworkPolicy#label}.
+
+---
+
+##### `Origin`<sup>Optional</sup> <a name="Origin" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRules.property.origin"></a>
+
+```go
+Origin AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOrigin
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOrigin">AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOrigin</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#origin AccountNetworkPolicy#origin}.
+
+---
+
+### AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthentication <a name="AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthentication" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthentication"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthentication.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+&accountnetworkpolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthentication {
+	Identities: interface{},
+	IdentityType: *string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthentication.property.identities">Identities</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#identities AccountNetworkPolicy#identities}. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthentication.property.identityType">IdentityType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#identity_type AccountNetworkPolicy#identity_type}. |
+
+---
+
+##### `Identities`<sup>Optional</sup> <a name="Identities" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthentication.property.identities"></a>
+
+```go
+Identities interface{}
+```
+
+- *Type:* interface{}
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#identities AccountNetworkPolicy#identities}.
+
+---
+
+##### `IdentityType`<sup>Optional</sup> <a name="IdentityType" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthentication.property.identityType"></a>
+
+```go
+IdentityType *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#identity_type AccountNetworkPolicy#identity_type}.
+
+---
+
+### AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentities <a name="AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentities" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentities"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentities.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+&accountnetworkpolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentities {
+	PrincipalId: *f64,
+	PrincipalType: *string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentities.property.principalId">PrincipalId</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#principal_id AccountNetworkPolicy#principal_id}. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentities.property.principalType">PrincipalType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#principal_type AccountNetworkPolicy#principal_type}. |
+
+---
+
+##### `PrincipalId`<sup>Optional</sup> <a name="PrincipalId" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentities.property.principalId"></a>
+
+```go
+PrincipalId *f64
+```
+
+- *Type:* *f64
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#principal_id AccountNetworkPolicy#principal_id}.
+
+---
+
+##### `PrincipalType`<sup>Optional</sup> <a name="PrincipalType" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentities.property.principalType"></a>
+
+```go
+PrincipalType *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#principal_type AccountNetworkPolicy#principal_type}.
+
+---
+
+### AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestination <a name="AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestination" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestination"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestination.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+&accountnetworkpolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestination {
+	AllDestinations: interface{},
+	WorkspaceApi: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApi,
+	WorkspaceUi: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUi,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestination.property.allDestinations">AllDestinations</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestination.property.workspaceApi">WorkspaceApi</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApi">AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#workspace_api AccountNetworkPolicy#workspace_api}. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestination.property.workspaceUi">WorkspaceUi</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUi">AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#workspace_ui AccountNetworkPolicy#workspace_ui}. |
+
+---
+
+##### `AllDestinations`<sup>Optional</sup> <a name="AllDestinations" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestination.property.allDestinations"></a>
+
+```go
+AllDestinations interface{}
+```
+
+- *Type:* interface{}
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}.
+
+---
+
+##### `WorkspaceApi`<sup>Optional</sup> <a name="WorkspaceApi" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestination.property.workspaceApi"></a>
+
+```go
+WorkspaceApi AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApi
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApi">AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApi</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#workspace_api AccountNetworkPolicy#workspace_api}.
+
+---
+
+##### `WorkspaceUi`<sup>Optional</sup> <a name="WorkspaceUi" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestination.property.workspaceUi"></a>
+
+```go
+WorkspaceUi AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUi
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUi">AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUi</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#workspace_ui AccountNetworkPolicy#workspace_ui}.
+
+---
+
+### AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApi <a name="AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApi" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApi"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApi.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+&accountnetworkpolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApi {
+	Scopes: *[]*string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApi.property.scopes">Scopes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#scopes AccountNetworkPolicy#scopes}. |
+
+---
+
+##### `Scopes`<sup>Optional</sup> <a name="Scopes" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApi.property.scopes"></a>
+
+```go
+Scopes *[]*string
+```
+
+- *Type:* *[]*string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#scopes AccountNetworkPolicy#scopes}.
+
+---
+
+### AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUi <a name="AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUi" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUi"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUi.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+&accountnetworkpolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUi {
+	AllDestinations: interface{},
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUi.property.allDestinations">AllDestinations</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}. |
+
+---
+
+##### `AllDestinations`<sup>Optional</sup> <a name="AllDestinations" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUi.property.allDestinations"></a>
+
+```go
+AllDestinations interface{}
+```
+
+- *Type:* interface{}
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}.
+
+---
+
+### AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOrigin <a name="AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOrigin" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOrigin"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOrigin.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+&accountnetworkpolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOrigin {
+	AllIpRanges: interface{},
+	ExcludedIpRanges: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRanges,
+	IncludedIpRanges: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRanges,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOrigin.property.allIpRanges">AllIpRanges</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#all_ip_ranges AccountNetworkPolicy#all_ip_ranges}. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOrigin.property.excludedIpRanges">ExcludedIpRanges</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRanges">AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRanges</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#excluded_ip_ranges AccountNetworkPolicy#excluded_ip_ranges}. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOrigin.property.includedIpRanges">IncludedIpRanges</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRanges">AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRanges</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#included_ip_ranges AccountNetworkPolicy#included_ip_ranges}. |
+
+---
+
+##### `AllIpRanges`<sup>Optional</sup> <a name="AllIpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOrigin.property.allIpRanges"></a>
+
+```go
+AllIpRanges interface{}
+```
+
+- *Type:* interface{}
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#all_ip_ranges AccountNetworkPolicy#all_ip_ranges}.
+
+---
+
+##### `ExcludedIpRanges`<sup>Optional</sup> <a name="ExcludedIpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOrigin.property.excludedIpRanges"></a>
+
+```go
+ExcludedIpRanges AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRanges
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRanges">AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRanges</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#excluded_ip_ranges AccountNetworkPolicy#excluded_ip_ranges}.
+
+---
+
+##### `IncludedIpRanges`<sup>Optional</sup> <a name="IncludedIpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOrigin.property.includedIpRanges"></a>
+
+```go
+IncludedIpRanges AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRanges
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRanges">AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRanges</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#included_ip_ranges AccountNetworkPolicy#included_ip_ranges}.
+
+---
+
+### AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRanges <a name="AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRanges"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRanges.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+&accountnetworkpolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRanges {
+	IpRanges: *[]*string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRanges.property.ipRanges">IpRanges</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#ip_ranges AccountNetworkPolicy#ip_ranges}. |
+
+---
+
+##### `IpRanges`<sup>Optional</sup> <a name="IpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRanges.property.ipRanges"></a>
+
+```go
+IpRanges *[]*string
+```
+
+- *Type:* *[]*string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#ip_ranges AccountNetworkPolicy#ip_ranges}.
+
+---
+
+### AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRanges <a name="AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRanges"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRanges.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+&accountnetworkpolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRanges {
+	IpRanges: *[]*string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRanges.property.ipRanges">IpRanges</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#ip_ranges AccountNetworkPolicy#ip_ranges}. |
+
+---
+
+##### `IpRanges`<sup>Optional</sup> <a name="IpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRanges.property.ipRanges"></a>
+
+```go
+IpRanges *[]*string
+```
+
+- *Type:* *[]*string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#ip_ranges AccountNetworkPolicy#ip_ranges}.
+
+---
+
+### AccountNetworkPolicyIngressPublicAccess <a name="AccountNetworkPolicyIngressPublicAccess" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccess"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccess.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+&accountnetworkpolicy.AccountNetworkPolicyIngressPublicAccess {
+	RestrictionMode: *string,
+	AllowRules: interface{},
+	DenyRules: interface{},
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccess.property.restrictionMode">RestrictionMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#restriction_mode AccountNetworkPolicy#restriction_mode}. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccess.property.allowRules">AllowRules</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#allow_rules AccountNetworkPolicy#allow_rules}. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccess.property.denyRules">DenyRules</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#deny_rules AccountNetworkPolicy#deny_rules}. |
+
+---
+
+##### `RestrictionMode`<sup>Required</sup> <a name="RestrictionMode" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccess.property.restrictionMode"></a>
+
+```go
+RestrictionMode *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#restriction_mode AccountNetworkPolicy#restriction_mode}.
+
+---
+
+##### `AllowRules`<sup>Optional</sup> <a name="AllowRules" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccess.property.allowRules"></a>
+
+```go
+AllowRules interface{}
+```
+
+- *Type:* interface{}
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#allow_rules AccountNetworkPolicy#allow_rules}.
+
+---
+
+##### `DenyRules`<sup>Optional</sup> <a name="DenyRules" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccess.property.denyRules"></a>
+
+```go
+DenyRules interface{}
+```
+
+- *Type:* interface{}
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#deny_rules AccountNetworkPolicy#deny_rules}.
+
+---
+
+### AccountNetworkPolicyIngressPublicAccessAllowRules <a name="AccountNetworkPolicyIngressPublicAccessAllowRules" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRules"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRules.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+&accountnetworkpolicy.AccountNetworkPolicyIngressPublicAccessAllowRules {
+	Authentication: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthentication,
+	Destination: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestination,
+	Label: *string,
+	Origin: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOrigin,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRules.property.authentication">Authentication</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthentication">AccountNetworkPolicyIngressPublicAccessAllowRulesAuthentication</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#authentication AccountNetworkPolicy#authentication}. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRules.property.destination">Destination</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestination">AccountNetworkPolicyIngressPublicAccessAllowRulesDestination</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#destination AccountNetworkPolicy#destination}. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRules.property.label">Label</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#label AccountNetworkPolicy#label}. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRules.property.origin">Origin</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOrigin">AccountNetworkPolicyIngressPublicAccessAllowRulesOrigin</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#origin AccountNetworkPolicy#origin}. |
+
+---
+
+##### `Authentication`<sup>Optional</sup> <a name="Authentication" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRules.property.authentication"></a>
+
+```go
+Authentication AccountNetworkPolicyIngressPublicAccessAllowRulesAuthentication
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthentication">AccountNetworkPolicyIngressPublicAccessAllowRulesAuthentication</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#authentication AccountNetworkPolicy#authentication}.
+
+---
+
+##### `Destination`<sup>Optional</sup> <a name="Destination" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRules.property.destination"></a>
+
+```go
+Destination AccountNetworkPolicyIngressPublicAccessAllowRulesDestination
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestination">AccountNetworkPolicyIngressPublicAccessAllowRulesDestination</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#destination AccountNetworkPolicy#destination}.
+
+---
+
+##### `Label`<sup>Optional</sup> <a name="Label" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRules.property.label"></a>
+
+```go
+Label *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#label AccountNetworkPolicy#label}.
+
+---
+
+##### `Origin`<sup>Optional</sup> <a name="Origin" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRules.property.origin"></a>
+
+```go
+Origin AccountNetworkPolicyIngressPublicAccessAllowRulesOrigin
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOrigin">AccountNetworkPolicyIngressPublicAccessAllowRulesOrigin</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#origin AccountNetworkPolicy#origin}.
+
+---
+
+### AccountNetworkPolicyIngressPublicAccessAllowRulesAuthentication <a name="AccountNetworkPolicyIngressPublicAccessAllowRulesAuthentication" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthentication"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthentication.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+&accountnetworkpolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthentication {
+	Identities: interface{},
+	IdentityType: *string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthentication.property.identities">Identities</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#identities AccountNetworkPolicy#identities}. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthentication.property.identityType">IdentityType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#identity_type AccountNetworkPolicy#identity_type}. |
+
+---
+
+##### `Identities`<sup>Optional</sup> <a name="Identities" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthentication.property.identities"></a>
+
+```go
+Identities interface{}
+```
+
+- *Type:* interface{}
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#identities AccountNetworkPolicy#identities}.
+
+---
+
+##### `IdentityType`<sup>Optional</sup> <a name="IdentityType" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthentication.property.identityType"></a>
+
+```go
+IdentityType *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#identity_type AccountNetworkPolicy#identity_type}.
+
+---
+
+### AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentities <a name="AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentities" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentities"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentities.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+&accountnetworkpolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentities {
+	PrincipalId: *f64,
+	PrincipalType: *string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentities.property.principalId">PrincipalId</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#principal_id AccountNetworkPolicy#principal_id}. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentities.property.principalType">PrincipalType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#principal_type AccountNetworkPolicy#principal_type}. |
+
+---
+
+##### `PrincipalId`<sup>Optional</sup> <a name="PrincipalId" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentities.property.principalId"></a>
+
+```go
+PrincipalId *f64
+```
+
+- *Type:* *f64
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#principal_id AccountNetworkPolicy#principal_id}.
+
+---
+
+##### `PrincipalType`<sup>Optional</sup> <a name="PrincipalType" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentities.property.principalType"></a>
+
+```go
+PrincipalType *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#principal_type AccountNetworkPolicy#principal_type}.
+
+---
+
+### AccountNetworkPolicyIngressPublicAccessAllowRulesDestination <a name="AccountNetworkPolicyIngressPublicAccessAllowRulesDestination" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestination"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestination.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+&accountnetworkpolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestination {
+	AllDestinations: interface{},
+	WorkspaceApi: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApi,
+	WorkspaceUi: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUi,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestination.property.allDestinations">AllDestinations</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestination.property.workspaceApi">WorkspaceApi</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApi">AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#workspace_api AccountNetworkPolicy#workspace_api}. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestination.property.workspaceUi">WorkspaceUi</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUi">AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#workspace_ui AccountNetworkPolicy#workspace_ui}. |
+
+---
+
+##### `AllDestinations`<sup>Optional</sup> <a name="AllDestinations" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestination.property.allDestinations"></a>
+
+```go
+AllDestinations interface{}
+```
+
+- *Type:* interface{}
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}.
+
+---
+
+##### `WorkspaceApi`<sup>Optional</sup> <a name="WorkspaceApi" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestination.property.workspaceApi"></a>
+
+```go
+WorkspaceApi AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApi
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApi">AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApi</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#workspace_api AccountNetworkPolicy#workspace_api}.
+
+---
+
+##### `WorkspaceUi`<sup>Optional</sup> <a name="WorkspaceUi" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestination.property.workspaceUi"></a>
+
+```go
+WorkspaceUi AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUi
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUi">AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUi</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#workspace_ui AccountNetworkPolicy#workspace_ui}.
+
+---
+
+### AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApi <a name="AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApi" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApi"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApi.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+&accountnetworkpolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApi {
+	Scopes: *[]*string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApi.property.scopes">Scopes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#scopes AccountNetworkPolicy#scopes}. |
+
+---
+
+##### `Scopes`<sup>Optional</sup> <a name="Scopes" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApi.property.scopes"></a>
+
+```go
+Scopes *[]*string
+```
+
+- *Type:* *[]*string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#scopes AccountNetworkPolicy#scopes}.
+
+---
+
+### AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUi <a name="AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUi" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUi"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUi.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+&accountnetworkpolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUi {
+	AllDestinations: interface{},
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUi.property.allDestinations">AllDestinations</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}. |
+
+---
+
+##### `AllDestinations`<sup>Optional</sup> <a name="AllDestinations" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUi.property.allDestinations"></a>
+
+```go
+AllDestinations interface{}
+```
+
+- *Type:* interface{}
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}.
+
+---
+
+### AccountNetworkPolicyIngressPublicAccessAllowRulesOrigin <a name="AccountNetworkPolicyIngressPublicAccessAllowRulesOrigin" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOrigin"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOrigin.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+&accountnetworkpolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOrigin {
+	AllIpRanges: interface{},
+	ExcludedIpRanges: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRanges,
+	IncludedIpRanges: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRanges,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOrigin.property.allIpRanges">AllIpRanges</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#all_ip_ranges AccountNetworkPolicy#all_ip_ranges}. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOrigin.property.excludedIpRanges">ExcludedIpRanges</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRanges">AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRanges</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#excluded_ip_ranges AccountNetworkPolicy#excluded_ip_ranges}. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOrigin.property.includedIpRanges">IncludedIpRanges</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRanges">AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRanges</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#included_ip_ranges AccountNetworkPolicy#included_ip_ranges}. |
+
+---
+
+##### `AllIpRanges`<sup>Optional</sup> <a name="AllIpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOrigin.property.allIpRanges"></a>
+
+```go
+AllIpRanges interface{}
+```
+
+- *Type:* interface{}
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#all_ip_ranges AccountNetworkPolicy#all_ip_ranges}.
+
+---
+
+##### `ExcludedIpRanges`<sup>Optional</sup> <a name="ExcludedIpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOrigin.property.excludedIpRanges"></a>
+
+```go
+ExcludedIpRanges AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRanges
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRanges">AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRanges</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#excluded_ip_ranges AccountNetworkPolicy#excluded_ip_ranges}.
+
+---
+
+##### `IncludedIpRanges`<sup>Optional</sup> <a name="IncludedIpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOrigin.property.includedIpRanges"></a>
+
+```go
+IncludedIpRanges AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRanges
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRanges">AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRanges</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#included_ip_ranges AccountNetworkPolicy#included_ip_ranges}.
+
+---
+
+### AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRanges <a name="AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRanges"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRanges.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+&accountnetworkpolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRanges {
+	IpRanges: *[]*string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRanges.property.ipRanges">IpRanges</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#ip_ranges AccountNetworkPolicy#ip_ranges}. |
+
+---
+
+##### `IpRanges`<sup>Optional</sup> <a name="IpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRanges.property.ipRanges"></a>
+
+```go
+IpRanges *[]*string
+```
+
+- *Type:* *[]*string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#ip_ranges AccountNetworkPolicy#ip_ranges}.
+
+---
+
+### AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRanges <a name="AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRanges"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRanges.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+&accountnetworkpolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRanges {
+	IpRanges: *[]*string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRanges.property.ipRanges">IpRanges</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#ip_ranges AccountNetworkPolicy#ip_ranges}. |
+
+---
+
+##### `IpRanges`<sup>Optional</sup> <a name="IpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRanges.property.ipRanges"></a>
+
+```go
+IpRanges *[]*string
+```
+
+- *Type:* *[]*string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#ip_ranges AccountNetworkPolicy#ip_ranges}.
+
+---
+
+### AccountNetworkPolicyIngressPublicAccessDenyRules <a name="AccountNetworkPolicyIngressPublicAccessDenyRules" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRules"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRules.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+&accountnetworkpolicy.AccountNetworkPolicyIngressPublicAccessDenyRules {
+	Authentication: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthentication,
+	Destination: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestination,
+	Label: *string,
+	Origin: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOrigin,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRules.property.authentication">Authentication</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthentication">AccountNetworkPolicyIngressPublicAccessDenyRulesAuthentication</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#authentication AccountNetworkPolicy#authentication}. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRules.property.destination">Destination</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestination">AccountNetworkPolicyIngressPublicAccessDenyRulesDestination</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#destination AccountNetworkPolicy#destination}. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRules.property.label">Label</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#label AccountNetworkPolicy#label}. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRules.property.origin">Origin</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOrigin">AccountNetworkPolicyIngressPublicAccessDenyRulesOrigin</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#origin AccountNetworkPolicy#origin}. |
+
+---
+
+##### `Authentication`<sup>Optional</sup> <a name="Authentication" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRules.property.authentication"></a>
+
+```go
+Authentication AccountNetworkPolicyIngressPublicAccessDenyRulesAuthentication
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthentication">AccountNetworkPolicyIngressPublicAccessDenyRulesAuthentication</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#authentication AccountNetworkPolicy#authentication}.
+
+---
+
+##### `Destination`<sup>Optional</sup> <a name="Destination" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRules.property.destination"></a>
+
+```go
+Destination AccountNetworkPolicyIngressPublicAccessDenyRulesDestination
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestination">AccountNetworkPolicyIngressPublicAccessDenyRulesDestination</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#destination AccountNetworkPolicy#destination}.
+
+---
+
+##### `Label`<sup>Optional</sup> <a name="Label" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRules.property.label"></a>
+
+```go
+Label *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#label AccountNetworkPolicy#label}.
+
+---
+
+##### `Origin`<sup>Optional</sup> <a name="Origin" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRules.property.origin"></a>
+
+```go
+Origin AccountNetworkPolicyIngressPublicAccessDenyRulesOrigin
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOrigin">AccountNetworkPolicyIngressPublicAccessDenyRulesOrigin</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#origin AccountNetworkPolicy#origin}.
+
+---
+
+### AccountNetworkPolicyIngressPublicAccessDenyRulesAuthentication <a name="AccountNetworkPolicyIngressPublicAccessDenyRulesAuthentication" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthentication"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthentication.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+&accountnetworkpolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthentication {
+	Identities: interface{},
+	IdentityType: *string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthentication.property.identities">Identities</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#identities AccountNetworkPolicy#identities}. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthentication.property.identityType">IdentityType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#identity_type AccountNetworkPolicy#identity_type}. |
+
+---
+
+##### `Identities`<sup>Optional</sup> <a name="Identities" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthentication.property.identities"></a>
+
+```go
+Identities interface{}
+```
+
+- *Type:* interface{}
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#identities AccountNetworkPolicy#identities}.
+
+---
+
+##### `IdentityType`<sup>Optional</sup> <a name="IdentityType" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthentication.property.identityType"></a>
+
+```go
+IdentityType *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#identity_type AccountNetworkPolicy#identity_type}.
+
+---
+
+### AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentities <a name="AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentities" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentities"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentities.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+&accountnetworkpolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentities {
+	PrincipalId: *f64,
+	PrincipalType: *string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentities.property.principalId">PrincipalId</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#principal_id AccountNetworkPolicy#principal_id}. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentities.property.principalType">PrincipalType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#principal_type AccountNetworkPolicy#principal_type}. |
+
+---
+
+##### `PrincipalId`<sup>Optional</sup> <a name="PrincipalId" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentities.property.principalId"></a>
+
+```go
+PrincipalId *f64
+```
+
+- *Type:* *f64
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#principal_id AccountNetworkPolicy#principal_id}.
+
+---
+
+##### `PrincipalType`<sup>Optional</sup> <a name="PrincipalType" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentities.property.principalType"></a>
+
+```go
+PrincipalType *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#principal_type AccountNetworkPolicy#principal_type}.
+
+---
+
+### AccountNetworkPolicyIngressPublicAccessDenyRulesDestination <a name="AccountNetworkPolicyIngressPublicAccessDenyRulesDestination" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestination"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestination.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+&accountnetworkpolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestination {
+	AllDestinations: interface{},
+	WorkspaceApi: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApi,
+	WorkspaceUi: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUi,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestination.property.allDestinations">AllDestinations</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestination.property.workspaceApi">WorkspaceApi</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApi">AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#workspace_api AccountNetworkPolicy#workspace_api}. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestination.property.workspaceUi">WorkspaceUi</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUi">AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUi</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#workspace_ui AccountNetworkPolicy#workspace_ui}. |
+
+---
+
+##### `AllDestinations`<sup>Optional</sup> <a name="AllDestinations" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestination.property.allDestinations"></a>
+
+```go
+AllDestinations interface{}
+```
+
+- *Type:* interface{}
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}.
+
+---
+
+##### `WorkspaceApi`<sup>Optional</sup> <a name="WorkspaceApi" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestination.property.workspaceApi"></a>
+
+```go
+WorkspaceApi AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApi
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApi">AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApi</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#workspace_api AccountNetworkPolicy#workspace_api}.
+
+---
+
+##### `WorkspaceUi`<sup>Optional</sup> <a name="WorkspaceUi" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestination.property.workspaceUi"></a>
+
+```go
+WorkspaceUi AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUi
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUi">AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUi</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#workspace_ui AccountNetworkPolicy#workspace_ui}.
+
+---
+
+### AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApi <a name="AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApi" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApi"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApi.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+&accountnetworkpolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApi {
+	Scopes: *[]*string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApi.property.scopes">Scopes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#scopes AccountNetworkPolicy#scopes}. |
+
+---
+
+##### `Scopes`<sup>Optional</sup> <a name="Scopes" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApi.property.scopes"></a>
+
+```go
+Scopes *[]*string
+```
+
+- *Type:* *[]*string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#scopes AccountNetworkPolicy#scopes}.
+
+---
+
+### AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUi <a name="AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUi" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUi"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUi.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+&accountnetworkpolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUi {
+	AllDestinations: interface{},
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUi.property.allDestinations">AllDestinations</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}. |
+
+---
+
+##### `AllDestinations`<sup>Optional</sup> <a name="AllDestinations" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUi.property.allDestinations"></a>
+
+```go
+AllDestinations interface{}
+```
+
+- *Type:* interface{}
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#all_destinations AccountNetworkPolicy#all_destinations}.
+
+---
+
+### AccountNetworkPolicyIngressPublicAccessDenyRulesOrigin <a name="AccountNetworkPolicyIngressPublicAccessDenyRulesOrigin" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOrigin"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOrigin.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+&accountnetworkpolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOrigin {
+	AllIpRanges: interface{},
+	ExcludedIpRanges: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRanges,
+	IncludedIpRanges: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRanges,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOrigin.property.allIpRanges">AllIpRanges</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#all_ip_ranges AccountNetworkPolicy#all_ip_ranges}. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOrigin.property.excludedIpRanges">ExcludedIpRanges</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRanges">AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRanges</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#excluded_ip_ranges AccountNetworkPolicy#excluded_ip_ranges}. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOrigin.property.includedIpRanges">IncludedIpRanges</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRanges">AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRanges</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#included_ip_ranges AccountNetworkPolicy#included_ip_ranges}. |
+
+---
+
+##### `AllIpRanges`<sup>Optional</sup> <a name="AllIpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOrigin.property.allIpRanges"></a>
+
+```go
+AllIpRanges interface{}
+```
+
+- *Type:* interface{}
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#all_ip_ranges AccountNetworkPolicy#all_ip_ranges}.
+
+---
+
+##### `ExcludedIpRanges`<sup>Optional</sup> <a name="ExcludedIpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOrigin.property.excludedIpRanges"></a>
+
+```go
+ExcludedIpRanges AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRanges
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRanges">AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRanges</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#excluded_ip_ranges AccountNetworkPolicy#excluded_ip_ranges}.
+
+---
+
+##### `IncludedIpRanges`<sup>Optional</sup> <a name="IncludedIpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOrigin.property.includedIpRanges"></a>
+
+```go
+IncludedIpRanges AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRanges
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRanges">AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRanges</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#included_ip_ranges AccountNetworkPolicy#included_ip_ranges}.
+
+---
+
+### AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRanges <a name="AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRanges"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRanges.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+&accountnetworkpolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRanges {
+	IpRanges: *[]*string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRanges.property.ipRanges">IpRanges</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#ip_ranges AccountNetworkPolicy#ip_ranges}. |
+
+---
+
+##### `IpRanges`<sup>Optional</sup> <a name="IpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRanges.property.ipRanges"></a>
+
+```go
+IpRanges *[]*string
+```
+
+- *Type:* *[]*string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#ip_ranges AccountNetworkPolicy#ip_ranges}.
+
+---
+
+### AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRanges <a name="AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRanges"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRanges.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+&accountnetworkpolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRanges {
+	IpRanges: *[]*string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRanges.property.ipRanges">IpRanges</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#ip_ranges AccountNetworkPolicy#ip_ranges}. |
+
+---
+
+##### `IpRanges`<sup>Optional</sup> <a name="IpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRanges.property.ipRanges"></a>
+
+```go
+IpRanges *[]*string
+```
+
+- *Type:* *[]*string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_network_policy#ip_ranges AccountNetworkPolicy#ip_ranges}.
 
 ---
 
@@ -3258,6 +5210,14190 @@ func NetworkAccessInput() interface{}
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyEgressOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### AccountNetworkPolicyIngressDryRunOutputReference <a name="AccountNetworkPolicyIngressDryRunOutputReference" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+accountnetworkpolicy.NewAccountNetworkPolicyIngressDryRunOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyIngressDryRunOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunOutputReference.putPublicAccess">PutPublicAccess</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunOutputReference.resetPublicAccess">ResetPublicAccess</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `PutPublicAccess` <a name="PutPublicAccess" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunOutputReference.putPublicAccess"></a>
+
+```go
+func PutPublicAccess(value AccountNetworkPolicyIngressDryRunPublicAccess)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunOutputReference.putPublicAccess.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccess">AccountNetworkPolicyIngressDryRunPublicAccess</a>
+
+---
+
+##### `ResetPublicAccess` <a name="ResetPublicAccess" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunOutputReference.resetPublicAccess"></a>
+
+```go
+func ResetPublicAccess()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunOutputReference.property.publicAccess">PublicAccess</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference">AccountNetworkPolicyIngressDryRunPublicAccessOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunOutputReference.property.publicAccessInput">PublicAccessInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `PublicAccess`<sup>Required</sup> <a name="PublicAccess" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunOutputReference.property.publicAccess"></a>
+
+```go
+func PublicAccess() AccountNetworkPolicyIngressDryRunPublicAccessOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference">AccountNetworkPolicyIngressDryRunPublicAccessOutputReference</a>
+
+---
+
+##### `PublicAccessInput`<sup>Optional</sup> <a name="PublicAccessInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunOutputReference.property.publicAccessInput"></a>
+
+```go
+func PublicAccessInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesList <a name="AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesList" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesList.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+accountnetworkpolicy.NewAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesList.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesList.get"></a>
+
+```go
+func Get(index *f64) AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesList.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference <a name="AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+accountnetworkpolicy.NewAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.resetPrincipalId">ResetPrincipalId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.resetPrincipalType">ResetPrincipalType</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetPrincipalId` <a name="ResetPrincipalId" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.resetPrincipalId"></a>
+
+```go
+func ResetPrincipalId()
+```
+
+##### `ResetPrincipalType` <a name="ResetPrincipalType" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.resetPrincipalType"></a>
+
+```go
+func ResetPrincipalType()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.property.principalIdInput">PrincipalIdInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.property.principalTypeInput">PrincipalTypeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.property.principalId">PrincipalId</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.property.principalType">PrincipalType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `PrincipalIdInput`<sup>Optional</sup> <a name="PrincipalIdInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.property.principalIdInput"></a>
+
+```go
+func PrincipalIdInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `PrincipalTypeInput`<sup>Optional</sup> <a name="PrincipalTypeInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.property.principalTypeInput"></a>
+
+```go
+func PrincipalTypeInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `PrincipalId`<sup>Required</sup> <a name="PrincipalId" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.property.principalId"></a>
+
+```go
+func PrincipalId() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `PrincipalType`<sup>Required</sup> <a name="PrincipalType" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.property.principalType"></a>
+
+```go
+func PrincipalType() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference <a name="AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+accountnetworkpolicy.NewAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference.putIdentities">PutIdentities</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference.resetIdentities">ResetIdentities</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference.resetIdentityType">ResetIdentityType</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `PutIdentities` <a name="PutIdentities" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference.putIdentities"></a>
+
+```go
+func PutIdentities(value interface{})
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference.putIdentities.parameter.value"></a>
+
+- *Type:* interface{}
+
+---
+
+##### `ResetIdentities` <a name="ResetIdentities" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference.resetIdentities"></a>
+
+```go
+func ResetIdentities()
+```
+
+##### `ResetIdentityType` <a name="ResetIdentityType" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference.resetIdentityType"></a>
+
+```go
+func ResetIdentityType()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference.property.identities">Identities</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesList">AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference.property.identitiesInput">IdentitiesInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference.property.identityTypeInput">IdentityTypeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference.property.identityType">IdentityType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Identities`<sup>Required</sup> <a name="Identities" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference.property.identities"></a>
+
+```go
+func Identities() AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesList
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesList">AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesList</a>
+
+---
+
+##### `IdentitiesInput`<sup>Optional</sup> <a name="IdentitiesInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference.property.identitiesInput"></a>
+
+```go
+func IdentitiesInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `IdentityTypeInput`<sup>Optional</sup> <a name="IdentityTypeInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference.property.identityTypeInput"></a>
+
+```go
+func IdentityTypeInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `IdentityType`<sup>Required</sup> <a name="IdentityType" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference.property.identityType"></a>
+
+```go
+func IdentityType() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference <a name="AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+accountnetworkpolicy.NewAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.putWorkspaceApi">PutWorkspaceApi</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.putWorkspaceUi">PutWorkspaceUi</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.resetAllDestinations">ResetAllDestinations</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.resetWorkspaceApi">ResetWorkspaceApi</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.resetWorkspaceUi">ResetWorkspaceUi</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `PutWorkspaceApi` <a name="PutWorkspaceApi" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.putWorkspaceApi"></a>
+
+```go
+func PutWorkspaceApi(value AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApi)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.putWorkspaceApi.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApi">AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApi</a>
+
+---
+
+##### `PutWorkspaceUi` <a name="PutWorkspaceUi" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.putWorkspaceUi"></a>
+
+```go
+func PutWorkspaceUi(value AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUi)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.putWorkspaceUi.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUi">AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUi</a>
+
+---
+
+##### `ResetAllDestinations` <a name="ResetAllDestinations" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.resetAllDestinations"></a>
+
+```go
+func ResetAllDestinations()
+```
+
+##### `ResetWorkspaceApi` <a name="ResetWorkspaceApi" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.resetWorkspaceApi"></a>
+
+```go
+func ResetWorkspaceApi()
+```
+
+##### `ResetWorkspaceUi` <a name="ResetWorkspaceUi" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.resetWorkspaceUi"></a>
+
+```go
+func ResetWorkspaceUi()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.property.workspaceApi">WorkspaceApi</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference">AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.property.workspaceUi">WorkspaceUi</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference">AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.property.allDestinationsInput">AllDestinationsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.property.workspaceApiInput">WorkspaceApiInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.property.workspaceUiInput">WorkspaceUiInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.property.allDestinations">AllDestinations</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `WorkspaceApi`<sup>Required</sup> <a name="WorkspaceApi" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.property.workspaceApi"></a>
+
+```go
+func WorkspaceApi() AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference">AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference</a>
+
+---
+
+##### `WorkspaceUi`<sup>Required</sup> <a name="WorkspaceUi" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.property.workspaceUi"></a>
+
+```go
+func WorkspaceUi() AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference">AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference</a>
+
+---
+
+##### `AllDestinationsInput`<sup>Optional</sup> <a name="AllDestinationsInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.property.allDestinationsInput"></a>
+
+```go
+func AllDestinationsInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `WorkspaceApiInput`<sup>Optional</sup> <a name="WorkspaceApiInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.property.workspaceApiInput"></a>
+
+```go
+func WorkspaceApiInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `WorkspaceUiInput`<sup>Optional</sup> <a name="WorkspaceUiInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.property.workspaceUiInput"></a>
+
+```go
+func WorkspaceUiInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `AllDestinations`<sup>Required</sup> <a name="AllDestinations" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.property.allDestinations"></a>
+
+```go
+func AllDestinations() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference <a name="AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+accountnetworkpolicy.NewAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.resetScopes">ResetScopes</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetScopes` <a name="ResetScopes" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.resetScopes"></a>
+
+```go
+func ResetScopes()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.property.scopesInput">ScopesInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.property.scopes">Scopes</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ScopesInput`<sup>Optional</sup> <a name="ScopesInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.property.scopesInput"></a>
+
+```go
+func ScopesInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `Scopes`<sup>Required</sup> <a name="Scopes" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.property.scopes"></a>
+
+```go
+func Scopes() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference <a name="AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+accountnetworkpolicy.NewAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.resetAllDestinations">ResetAllDestinations</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetAllDestinations` <a name="ResetAllDestinations" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.resetAllDestinations"></a>
+
+```go
+func ResetAllDestinations()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.property.allDestinationsInput">AllDestinationsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.property.allDestinations">AllDestinations</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `AllDestinationsInput`<sup>Optional</sup> <a name="AllDestinationsInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.property.allDestinationsInput"></a>
+
+```go
+func AllDestinationsInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `AllDestinations`<sup>Required</sup> <a name="AllDestinations" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.property.allDestinations"></a>
+
+```go
+func AllDestinations() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesList <a name="AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesList" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesList.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+accountnetworkpolicy.NewAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesList.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesList.get"></a>
+
+```go
+func Get(index *f64) AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesList.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference <a name="AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+accountnetworkpolicy.NewAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.resetIpRanges">ResetIpRanges</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetIpRanges` <a name="ResetIpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.resetIpRanges"></a>
+
+```go
+func ResetIpRanges()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.property.ipRangesInput">IpRangesInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.property.ipRanges">IpRanges</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `IpRangesInput`<sup>Optional</sup> <a name="IpRangesInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.property.ipRangesInput"></a>
+
+```go
+func IpRangesInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `IpRanges`<sup>Required</sup> <a name="IpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.property.ipRanges"></a>
+
+```go
+func IpRanges() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference <a name="AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+accountnetworkpolicy.NewAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.resetIpRanges">ResetIpRanges</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetIpRanges` <a name="ResetIpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.resetIpRanges"></a>
+
+```go
+func ResetIpRanges()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.property.ipRangesInput">IpRangesInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.property.ipRanges">IpRanges</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `IpRangesInput`<sup>Optional</sup> <a name="IpRangesInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.property.ipRangesInput"></a>
+
+```go
+func IpRangesInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `IpRanges`<sup>Required</sup> <a name="IpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.property.ipRanges"></a>
+
+```go
+func IpRanges() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference <a name="AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+accountnetworkpolicy.NewAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.putExcludedIpRanges">PutExcludedIpRanges</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.putIncludedIpRanges">PutIncludedIpRanges</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.resetAllIpRanges">ResetAllIpRanges</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.resetExcludedIpRanges">ResetExcludedIpRanges</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.resetIncludedIpRanges">ResetIncludedIpRanges</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `PutExcludedIpRanges` <a name="PutExcludedIpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.putExcludedIpRanges"></a>
+
+```go
+func PutExcludedIpRanges(value AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRanges)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.putExcludedIpRanges.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRanges">AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRanges</a>
+
+---
+
+##### `PutIncludedIpRanges` <a name="PutIncludedIpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.putIncludedIpRanges"></a>
+
+```go
+func PutIncludedIpRanges(value AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRanges)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.putIncludedIpRanges.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRanges">AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRanges</a>
+
+---
+
+##### `ResetAllIpRanges` <a name="ResetAllIpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.resetAllIpRanges"></a>
+
+```go
+func ResetAllIpRanges()
+```
+
+##### `ResetExcludedIpRanges` <a name="ResetExcludedIpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.resetExcludedIpRanges"></a>
+
+```go
+func ResetExcludedIpRanges()
+```
+
+##### `ResetIncludedIpRanges` <a name="ResetIncludedIpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.resetIncludedIpRanges"></a>
+
+```go
+func ResetIncludedIpRanges()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.property.excludedIpRanges">ExcludedIpRanges</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference">AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.property.includedIpRanges">IncludedIpRanges</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference">AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.property.allIpRangesInput">AllIpRangesInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.property.excludedIpRangesInput">ExcludedIpRangesInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.property.includedIpRangesInput">IncludedIpRangesInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.property.allIpRanges">AllIpRanges</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ExcludedIpRanges`<sup>Required</sup> <a name="ExcludedIpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.property.excludedIpRanges"></a>
+
+```go
+func ExcludedIpRanges() AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference">AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference</a>
+
+---
+
+##### `IncludedIpRanges`<sup>Required</sup> <a name="IncludedIpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.property.includedIpRanges"></a>
+
+```go
+func IncludedIpRanges() AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference">AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference</a>
+
+---
+
+##### `AllIpRangesInput`<sup>Optional</sup> <a name="AllIpRangesInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.property.allIpRangesInput"></a>
+
+```go
+func AllIpRangesInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `ExcludedIpRangesInput`<sup>Optional</sup> <a name="ExcludedIpRangesInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.property.excludedIpRangesInput"></a>
+
+```go
+func ExcludedIpRangesInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `IncludedIpRangesInput`<sup>Optional</sup> <a name="IncludedIpRangesInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.property.includedIpRangesInput"></a>
+
+```go
+func IncludedIpRangesInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `AllIpRanges`<sup>Required</sup> <a name="AllIpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.property.allIpRanges"></a>
+
+```go
+func AllIpRanges() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference <a name="AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+accountnetworkpolicy.NewAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.putAuthentication">PutAuthentication</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.putDestination">PutDestination</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.putOrigin">PutOrigin</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.resetAuthentication">ResetAuthentication</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.resetDestination">ResetDestination</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.resetLabel">ResetLabel</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.resetOrigin">ResetOrigin</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `PutAuthentication` <a name="PutAuthentication" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.putAuthentication"></a>
+
+```go
+func PutAuthentication(value AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthentication)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.putAuthentication.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthentication">AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthentication</a>
+
+---
+
+##### `PutDestination` <a name="PutDestination" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.putDestination"></a>
+
+```go
+func PutDestination(value AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestination)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.putDestination.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestination">AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestination</a>
+
+---
+
+##### `PutOrigin` <a name="PutOrigin" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.putOrigin"></a>
+
+```go
+func PutOrigin(value AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOrigin)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.putOrigin.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOrigin">AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOrigin</a>
+
+---
+
+##### `ResetAuthentication` <a name="ResetAuthentication" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.resetAuthentication"></a>
+
+```go
+func ResetAuthentication()
+```
+
+##### `ResetDestination` <a name="ResetDestination" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.resetDestination"></a>
+
+```go
+func ResetDestination()
+```
+
+##### `ResetLabel` <a name="ResetLabel" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.resetLabel"></a>
+
+```go
+func ResetLabel()
+```
+
+##### `ResetOrigin` <a name="ResetOrigin" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.resetOrigin"></a>
+
+```go
+func ResetOrigin()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.property.authentication">Authentication</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference">AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.property.destination">Destination</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference">AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.property.origin">Origin</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference">AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.property.authenticationInput">AuthenticationInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.property.destinationInput">DestinationInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.property.labelInput">LabelInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.property.originInput">OriginInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.property.label">Label</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Authentication`<sup>Required</sup> <a name="Authentication" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.property.authentication"></a>
+
+```go
+func Authentication() AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference">AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference</a>
+
+---
+
+##### `Destination`<sup>Required</sup> <a name="Destination" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.property.destination"></a>
+
+```go
+func Destination() AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference">AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference</a>
+
+---
+
+##### `Origin`<sup>Required</sup> <a name="Origin" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.property.origin"></a>
+
+```go
+func Origin() AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference">AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference</a>
+
+---
+
+##### `AuthenticationInput`<sup>Optional</sup> <a name="AuthenticationInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.property.authenticationInput"></a>
+
+```go
+func AuthenticationInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `DestinationInput`<sup>Optional</sup> <a name="DestinationInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.property.destinationInput"></a>
+
+```go
+func DestinationInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `LabelInput`<sup>Optional</sup> <a name="LabelInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.property.labelInput"></a>
+
+```go
+func LabelInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `OriginInput`<sup>Optional</sup> <a name="OriginInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.property.originInput"></a>
+
+```go
+func OriginInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `Label`<sup>Required</sup> <a name="Label" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.property.label"></a>
+
+```go
+func Label() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesList <a name="AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesList" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesList.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+accountnetworkpolicy.NewAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesList.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesList.get"></a>
+
+```go
+func Get(index *f64) AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesList.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference <a name="AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+accountnetworkpolicy.NewAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.resetPrincipalId">ResetPrincipalId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.resetPrincipalType">ResetPrincipalType</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetPrincipalId` <a name="ResetPrincipalId" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.resetPrincipalId"></a>
+
+```go
+func ResetPrincipalId()
+```
+
+##### `ResetPrincipalType` <a name="ResetPrincipalType" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.resetPrincipalType"></a>
+
+```go
+func ResetPrincipalType()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.property.principalIdInput">PrincipalIdInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.property.principalTypeInput">PrincipalTypeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.property.principalId">PrincipalId</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.property.principalType">PrincipalType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `PrincipalIdInput`<sup>Optional</sup> <a name="PrincipalIdInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.property.principalIdInput"></a>
+
+```go
+func PrincipalIdInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `PrincipalTypeInput`<sup>Optional</sup> <a name="PrincipalTypeInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.property.principalTypeInput"></a>
+
+```go
+func PrincipalTypeInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `PrincipalId`<sup>Required</sup> <a name="PrincipalId" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.property.principalId"></a>
+
+```go
+func PrincipalId() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `PrincipalType`<sup>Required</sup> <a name="PrincipalType" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.property.principalType"></a>
+
+```go
+func PrincipalType() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference <a name="AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+accountnetworkpolicy.NewAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference.putIdentities">PutIdentities</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference.resetIdentities">ResetIdentities</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference.resetIdentityType">ResetIdentityType</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `PutIdentities` <a name="PutIdentities" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference.putIdentities"></a>
+
+```go
+func PutIdentities(value interface{})
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference.putIdentities.parameter.value"></a>
+
+- *Type:* interface{}
+
+---
+
+##### `ResetIdentities` <a name="ResetIdentities" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference.resetIdentities"></a>
+
+```go
+func ResetIdentities()
+```
+
+##### `ResetIdentityType` <a name="ResetIdentityType" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference.resetIdentityType"></a>
+
+```go
+func ResetIdentityType()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference.property.identities">Identities</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesList">AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference.property.identitiesInput">IdentitiesInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference.property.identityTypeInput">IdentityTypeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference.property.identityType">IdentityType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Identities`<sup>Required</sup> <a name="Identities" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference.property.identities"></a>
+
+```go
+func Identities() AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesList
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesList">AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesList</a>
+
+---
+
+##### `IdentitiesInput`<sup>Optional</sup> <a name="IdentitiesInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference.property.identitiesInput"></a>
+
+```go
+func IdentitiesInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `IdentityTypeInput`<sup>Optional</sup> <a name="IdentityTypeInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference.property.identityTypeInput"></a>
+
+```go
+func IdentityTypeInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `IdentityType`<sup>Required</sup> <a name="IdentityType" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference.property.identityType"></a>
+
+```go
+func IdentityType() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference <a name="AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+accountnetworkpolicy.NewAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.putWorkspaceApi">PutWorkspaceApi</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.putWorkspaceUi">PutWorkspaceUi</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.resetAllDestinations">ResetAllDestinations</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.resetWorkspaceApi">ResetWorkspaceApi</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.resetWorkspaceUi">ResetWorkspaceUi</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `PutWorkspaceApi` <a name="PutWorkspaceApi" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.putWorkspaceApi"></a>
+
+```go
+func PutWorkspaceApi(value AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApi)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.putWorkspaceApi.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApi">AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApi</a>
+
+---
+
+##### `PutWorkspaceUi` <a name="PutWorkspaceUi" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.putWorkspaceUi"></a>
+
+```go
+func PutWorkspaceUi(value AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUi)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.putWorkspaceUi.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUi">AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUi</a>
+
+---
+
+##### `ResetAllDestinations` <a name="ResetAllDestinations" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.resetAllDestinations"></a>
+
+```go
+func ResetAllDestinations()
+```
+
+##### `ResetWorkspaceApi` <a name="ResetWorkspaceApi" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.resetWorkspaceApi"></a>
+
+```go
+func ResetWorkspaceApi()
+```
+
+##### `ResetWorkspaceUi` <a name="ResetWorkspaceUi" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.resetWorkspaceUi"></a>
+
+```go
+func ResetWorkspaceUi()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.property.workspaceApi">WorkspaceApi</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference">AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.property.workspaceUi">WorkspaceUi</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference">AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.property.allDestinationsInput">AllDestinationsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.property.workspaceApiInput">WorkspaceApiInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.property.workspaceUiInput">WorkspaceUiInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.property.allDestinations">AllDestinations</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `WorkspaceApi`<sup>Required</sup> <a name="WorkspaceApi" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.property.workspaceApi"></a>
+
+```go
+func WorkspaceApi() AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference">AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference</a>
+
+---
+
+##### `WorkspaceUi`<sup>Required</sup> <a name="WorkspaceUi" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.property.workspaceUi"></a>
+
+```go
+func WorkspaceUi() AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference">AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference</a>
+
+---
+
+##### `AllDestinationsInput`<sup>Optional</sup> <a name="AllDestinationsInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.property.allDestinationsInput"></a>
+
+```go
+func AllDestinationsInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `WorkspaceApiInput`<sup>Optional</sup> <a name="WorkspaceApiInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.property.workspaceApiInput"></a>
+
+```go
+func WorkspaceApiInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `WorkspaceUiInput`<sup>Optional</sup> <a name="WorkspaceUiInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.property.workspaceUiInput"></a>
+
+```go
+func WorkspaceUiInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `AllDestinations`<sup>Required</sup> <a name="AllDestinations" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.property.allDestinations"></a>
+
+```go
+func AllDestinations() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference <a name="AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+accountnetworkpolicy.NewAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.resetScopes">ResetScopes</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetScopes` <a name="ResetScopes" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.resetScopes"></a>
+
+```go
+func ResetScopes()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.property.scopesInput">ScopesInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.property.scopes">Scopes</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ScopesInput`<sup>Optional</sup> <a name="ScopesInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.property.scopesInput"></a>
+
+```go
+func ScopesInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `Scopes`<sup>Required</sup> <a name="Scopes" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.property.scopes"></a>
+
+```go
+func Scopes() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference <a name="AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+accountnetworkpolicy.NewAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.resetAllDestinations">ResetAllDestinations</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetAllDestinations` <a name="ResetAllDestinations" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.resetAllDestinations"></a>
+
+```go
+func ResetAllDestinations()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.property.allDestinationsInput">AllDestinationsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.property.allDestinations">AllDestinations</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `AllDestinationsInput`<sup>Optional</sup> <a name="AllDestinationsInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.property.allDestinationsInput"></a>
+
+```go
+func AllDestinationsInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `AllDestinations`<sup>Required</sup> <a name="AllDestinations" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.property.allDestinations"></a>
+
+```go
+func AllDestinations() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesList <a name="AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesList" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesList.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+accountnetworkpolicy.NewAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesList.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesList.get"></a>
+
+```go
+func Get(index *f64) AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesList.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference <a name="AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+accountnetworkpolicy.NewAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.resetIpRanges">ResetIpRanges</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetIpRanges` <a name="ResetIpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.resetIpRanges"></a>
+
+```go
+func ResetIpRanges()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.property.ipRangesInput">IpRangesInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.property.ipRanges">IpRanges</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `IpRangesInput`<sup>Optional</sup> <a name="IpRangesInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.property.ipRangesInput"></a>
+
+```go
+func IpRangesInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `IpRanges`<sup>Required</sup> <a name="IpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.property.ipRanges"></a>
+
+```go
+func IpRanges() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference <a name="AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+accountnetworkpolicy.NewAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.resetIpRanges">ResetIpRanges</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetIpRanges` <a name="ResetIpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.resetIpRanges"></a>
+
+```go
+func ResetIpRanges()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.property.ipRangesInput">IpRangesInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.property.ipRanges">IpRanges</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `IpRangesInput`<sup>Optional</sup> <a name="IpRangesInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.property.ipRangesInput"></a>
+
+```go
+func IpRangesInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `IpRanges`<sup>Required</sup> <a name="IpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.property.ipRanges"></a>
+
+```go
+func IpRanges() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference <a name="AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+accountnetworkpolicy.NewAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.putExcludedIpRanges">PutExcludedIpRanges</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.putIncludedIpRanges">PutIncludedIpRanges</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.resetAllIpRanges">ResetAllIpRanges</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.resetExcludedIpRanges">ResetExcludedIpRanges</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.resetIncludedIpRanges">ResetIncludedIpRanges</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `PutExcludedIpRanges` <a name="PutExcludedIpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.putExcludedIpRanges"></a>
+
+```go
+func PutExcludedIpRanges(value AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRanges)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.putExcludedIpRanges.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRanges">AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRanges</a>
+
+---
+
+##### `PutIncludedIpRanges` <a name="PutIncludedIpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.putIncludedIpRanges"></a>
+
+```go
+func PutIncludedIpRanges(value AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRanges)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.putIncludedIpRanges.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRanges">AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRanges</a>
+
+---
+
+##### `ResetAllIpRanges` <a name="ResetAllIpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.resetAllIpRanges"></a>
+
+```go
+func ResetAllIpRanges()
+```
+
+##### `ResetExcludedIpRanges` <a name="ResetExcludedIpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.resetExcludedIpRanges"></a>
+
+```go
+func ResetExcludedIpRanges()
+```
+
+##### `ResetIncludedIpRanges` <a name="ResetIncludedIpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.resetIncludedIpRanges"></a>
+
+```go
+func ResetIncludedIpRanges()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.property.excludedIpRanges">ExcludedIpRanges</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference">AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.property.includedIpRanges">IncludedIpRanges</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference">AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.property.allIpRangesInput">AllIpRangesInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.property.excludedIpRangesInput">ExcludedIpRangesInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.property.includedIpRangesInput">IncludedIpRangesInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.property.allIpRanges">AllIpRanges</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ExcludedIpRanges`<sup>Required</sup> <a name="ExcludedIpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.property.excludedIpRanges"></a>
+
+```go
+func ExcludedIpRanges() AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference">AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference</a>
+
+---
+
+##### `IncludedIpRanges`<sup>Required</sup> <a name="IncludedIpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.property.includedIpRanges"></a>
+
+```go
+func IncludedIpRanges() AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference">AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference</a>
+
+---
+
+##### `AllIpRangesInput`<sup>Optional</sup> <a name="AllIpRangesInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.property.allIpRangesInput"></a>
+
+```go
+func AllIpRangesInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `ExcludedIpRangesInput`<sup>Optional</sup> <a name="ExcludedIpRangesInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.property.excludedIpRangesInput"></a>
+
+```go
+func ExcludedIpRangesInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `IncludedIpRangesInput`<sup>Optional</sup> <a name="IncludedIpRangesInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.property.includedIpRangesInput"></a>
+
+```go
+func IncludedIpRangesInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `AllIpRanges`<sup>Required</sup> <a name="AllIpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.property.allIpRanges"></a>
+
+```go
+func AllIpRanges() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference <a name="AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+accountnetworkpolicy.NewAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.putAuthentication">PutAuthentication</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.putDestination">PutDestination</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.putOrigin">PutOrigin</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.resetAuthentication">ResetAuthentication</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.resetDestination">ResetDestination</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.resetLabel">ResetLabel</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.resetOrigin">ResetOrigin</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `PutAuthentication` <a name="PutAuthentication" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.putAuthentication"></a>
+
+```go
+func PutAuthentication(value AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthentication)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.putAuthentication.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthentication">AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthentication</a>
+
+---
+
+##### `PutDestination` <a name="PutDestination" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.putDestination"></a>
+
+```go
+func PutDestination(value AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestination)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.putDestination.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestination">AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestination</a>
+
+---
+
+##### `PutOrigin` <a name="PutOrigin" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.putOrigin"></a>
+
+```go
+func PutOrigin(value AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOrigin)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.putOrigin.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOrigin">AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOrigin</a>
+
+---
+
+##### `ResetAuthentication` <a name="ResetAuthentication" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.resetAuthentication"></a>
+
+```go
+func ResetAuthentication()
+```
+
+##### `ResetDestination` <a name="ResetDestination" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.resetDestination"></a>
+
+```go
+func ResetDestination()
+```
+
+##### `ResetLabel` <a name="ResetLabel" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.resetLabel"></a>
+
+```go
+func ResetLabel()
+```
+
+##### `ResetOrigin` <a name="ResetOrigin" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.resetOrigin"></a>
+
+```go
+func ResetOrigin()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.property.authentication">Authentication</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference">AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.property.destination">Destination</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference">AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.property.origin">Origin</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference">AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.property.authenticationInput">AuthenticationInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.property.destinationInput">DestinationInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.property.labelInput">LabelInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.property.originInput">OriginInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.property.label">Label</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Authentication`<sup>Required</sup> <a name="Authentication" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.property.authentication"></a>
+
+```go
+func Authentication() AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference">AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference</a>
+
+---
+
+##### `Destination`<sup>Required</sup> <a name="Destination" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.property.destination"></a>
+
+```go
+func Destination() AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference">AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference</a>
+
+---
+
+##### `Origin`<sup>Required</sup> <a name="Origin" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.property.origin"></a>
+
+```go
+func Origin() AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference">AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference</a>
+
+---
+
+##### `AuthenticationInput`<sup>Optional</sup> <a name="AuthenticationInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.property.authenticationInput"></a>
+
+```go
+func AuthenticationInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `DestinationInput`<sup>Optional</sup> <a name="DestinationInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.property.destinationInput"></a>
+
+```go
+func DestinationInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `LabelInput`<sup>Optional</sup> <a name="LabelInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.property.labelInput"></a>
+
+```go
+func LabelInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `OriginInput`<sup>Optional</sup> <a name="OriginInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.property.originInput"></a>
+
+```go
+func OriginInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `Label`<sup>Required</sup> <a name="Label" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.property.label"></a>
+
+```go
+func Label() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### AccountNetworkPolicyIngressDryRunPublicAccessOutputReference <a name="AccountNetworkPolicyIngressDryRunPublicAccessOutputReference" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+accountnetworkpolicy.NewAccountNetworkPolicyIngressDryRunPublicAccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyIngressDryRunPublicAccessOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.putAllowRules">PutAllowRules</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.putDenyRules">PutDenyRules</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.resetAllowRules">ResetAllowRules</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.resetDenyRules">ResetDenyRules</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `PutAllowRules` <a name="PutAllowRules" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.putAllowRules"></a>
+
+```go
+func PutAllowRules(value interface{})
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.putAllowRules.parameter.value"></a>
+
+- *Type:* interface{}
+
+---
+
+##### `PutDenyRules` <a name="PutDenyRules" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.putDenyRules"></a>
+
+```go
+func PutDenyRules(value interface{})
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.putDenyRules.parameter.value"></a>
+
+- *Type:* interface{}
+
+---
+
+##### `ResetAllowRules` <a name="ResetAllowRules" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.resetAllowRules"></a>
+
+```go
+func ResetAllowRules()
+```
+
+##### `ResetDenyRules` <a name="ResetDenyRules" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.resetDenyRules"></a>
+
+```go
+func ResetDenyRules()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.property.allowRules">AllowRules</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesList">AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.property.denyRules">DenyRules</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesList">AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.property.allowRulesInput">AllowRulesInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.property.denyRulesInput">DenyRulesInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.property.restrictionModeInput">RestrictionModeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.property.restrictionMode">RestrictionMode</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `AllowRules`<sup>Required</sup> <a name="AllowRules" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.property.allowRules"></a>
+
+```go
+func AllowRules() AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesList
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesList">AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesList</a>
+
+---
+
+##### `DenyRules`<sup>Required</sup> <a name="DenyRules" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.property.denyRules"></a>
+
+```go
+func DenyRules() AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesList
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesList">AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesList</a>
+
+---
+
+##### `AllowRulesInput`<sup>Optional</sup> <a name="AllowRulesInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.property.allowRulesInput"></a>
+
+```go
+func AllowRulesInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `DenyRulesInput`<sup>Optional</sup> <a name="DenyRulesInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.property.denyRulesInput"></a>
+
+```go
+func DenyRulesInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `RestrictionModeInput`<sup>Optional</sup> <a name="RestrictionModeInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.property.restrictionModeInput"></a>
+
+```go
+func RestrictionModeInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `RestrictionMode`<sup>Required</sup> <a name="RestrictionMode" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.property.restrictionMode"></a>
+
+```go
+func RestrictionMode() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### AccountNetworkPolicyIngressOutputReference <a name="AccountNetworkPolicyIngressOutputReference" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+accountnetworkpolicy.NewAccountNetworkPolicyIngressOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyIngressOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressOutputReference.putPublicAccess">PutPublicAccess</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressOutputReference.resetPublicAccess">ResetPublicAccess</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `PutPublicAccess` <a name="PutPublicAccess" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressOutputReference.putPublicAccess"></a>
+
+```go
+func PutPublicAccess(value AccountNetworkPolicyIngressPublicAccess)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressOutputReference.putPublicAccess.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccess">AccountNetworkPolicyIngressPublicAccess</a>
+
+---
+
+##### `ResetPublicAccess` <a name="ResetPublicAccess" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressOutputReference.resetPublicAccess"></a>
+
+```go
+func ResetPublicAccess()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressOutputReference.property.publicAccess">PublicAccess</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference">AccountNetworkPolicyIngressPublicAccessOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressOutputReference.property.publicAccessInput">PublicAccessInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `PublicAccess`<sup>Required</sup> <a name="PublicAccess" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressOutputReference.property.publicAccess"></a>
+
+```go
+func PublicAccess() AccountNetworkPolicyIngressPublicAccessOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference">AccountNetworkPolicyIngressPublicAccessOutputReference</a>
+
+---
+
+##### `PublicAccessInput`<sup>Optional</sup> <a name="PublicAccessInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressOutputReference.property.publicAccessInput"></a>
+
+```go
+func PublicAccessInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesList <a name="AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesList" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesList.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+accountnetworkpolicy.NewAccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesList.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesList.get"></a>
+
+```go
+func Get(index *f64) AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesList.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference <a name="AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+accountnetworkpolicy.NewAccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.resetPrincipalId">ResetPrincipalId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.resetPrincipalType">ResetPrincipalType</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetPrincipalId` <a name="ResetPrincipalId" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.resetPrincipalId"></a>
+
+```go
+func ResetPrincipalId()
+```
+
+##### `ResetPrincipalType` <a name="ResetPrincipalType" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.resetPrincipalType"></a>
+
+```go
+func ResetPrincipalType()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.property.principalIdInput">PrincipalIdInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.property.principalTypeInput">PrincipalTypeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.property.principalId">PrincipalId</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.property.principalType">PrincipalType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `PrincipalIdInput`<sup>Optional</sup> <a name="PrincipalIdInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.property.principalIdInput"></a>
+
+```go
+func PrincipalIdInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `PrincipalTypeInput`<sup>Optional</sup> <a name="PrincipalTypeInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.property.principalTypeInput"></a>
+
+```go
+func PrincipalTypeInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `PrincipalId`<sup>Required</sup> <a name="PrincipalId" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.property.principalId"></a>
+
+```go
+func PrincipalId() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `PrincipalType`<sup>Required</sup> <a name="PrincipalType" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.property.principalType"></a>
+
+```go
+func PrincipalType() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference <a name="AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+accountnetworkpolicy.NewAccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference.putIdentities">PutIdentities</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference.resetIdentities">ResetIdentities</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference.resetIdentityType">ResetIdentityType</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `PutIdentities` <a name="PutIdentities" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference.putIdentities"></a>
+
+```go
+func PutIdentities(value interface{})
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference.putIdentities.parameter.value"></a>
+
+- *Type:* interface{}
+
+---
+
+##### `ResetIdentities` <a name="ResetIdentities" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference.resetIdentities"></a>
+
+```go
+func ResetIdentities()
+```
+
+##### `ResetIdentityType` <a name="ResetIdentityType" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference.resetIdentityType"></a>
+
+```go
+func ResetIdentityType()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference.property.identities">Identities</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesList">AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference.property.identitiesInput">IdentitiesInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference.property.identityTypeInput">IdentityTypeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference.property.identityType">IdentityType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Identities`<sup>Required</sup> <a name="Identities" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference.property.identities"></a>
+
+```go
+func Identities() AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesList
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesList">AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesList</a>
+
+---
+
+##### `IdentitiesInput`<sup>Optional</sup> <a name="IdentitiesInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference.property.identitiesInput"></a>
+
+```go
+func IdentitiesInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `IdentityTypeInput`<sup>Optional</sup> <a name="IdentityTypeInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference.property.identityTypeInput"></a>
+
+```go
+func IdentityTypeInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `IdentityType`<sup>Required</sup> <a name="IdentityType" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference.property.identityType"></a>
+
+```go
+func IdentityType() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference <a name="AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+accountnetworkpolicy.NewAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.putWorkspaceApi">PutWorkspaceApi</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.putWorkspaceUi">PutWorkspaceUi</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.resetAllDestinations">ResetAllDestinations</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.resetWorkspaceApi">ResetWorkspaceApi</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.resetWorkspaceUi">ResetWorkspaceUi</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `PutWorkspaceApi` <a name="PutWorkspaceApi" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.putWorkspaceApi"></a>
+
+```go
+func PutWorkspaceApi(value AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApi)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.putWorkspaceApi.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApi">AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApi</a>
+
+---
+
+##### `PutWorkspaceUi` <a name="PutWorkspaceUi" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.putWorkspaceUi"></a>
+
+```go
+func PutWorkspaceUi(value AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUi)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.putWorkspaceUi.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUi">AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUi</a>
+
+---
+
+##### `ResetAllDestinations` <a name="ResetAllDestinations" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.resetAllDestinations"></a>
+
+```go
+func ResetAllDestinations()
+```
+
+##### `ResetWorkspaceApi` <a name="ResetWorkspaceApi" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.resetWorkspaceApi"></a>
+
+```go
+func ResetWorkspaceApi()
+```
+
+##### `ResetWorkspaceUi` <a name="ResetWorkspaceUi" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.resetWorkspaceUi"></a>
+
+```go
+func ResetWorkspaceUi()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.property.workspaceApi">WorkspaceApi</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference">AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.property.workspaceUi">WorkspaceUi</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference">AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.property.allDestinationsInput">AllDestinationsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.property.workspaceApiInput">WorkspaceApiInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.property.workspaceUiInput">WorkspaceUiInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.property.allDestinations">AllDestinations</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `WorkspaceApi`<sup>Required</sup> <a name="WorkspaceApi" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.property.workspaceApi"></a>
+
+```go
+func WorkspaceApi() AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference">AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference</a>
+
+---
+
+##### `WorkspaceUi`<sup>Required</sup> <a name="WorkspaceUi" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.property.workspaceUi"></a>
+
+```go
+func WorkspaceUi() AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference">AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference</a>
+
+---
+
+##### `AllDestinationsInput`<sup>Optional</sup> <a name="AllDestinationsInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.property.allDestinationsInput"></a>
+
+```go
+func AllDestinationsInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `WorkspaceApiInput`<sup>Optional</sup> <a name="WorkspaceApiInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.property.workspaceApiInput"></a>
+
+```go
+func WorkspaceApiInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `WorkspaceUiInput`<sup>Optional</sup> <a name="WorkspaceUiInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.property.workspaceUiInput"></a>
+
+```go
+func WorkspaceUiInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `AllDestinations`<sup>Required</sup> <a name="AllDestinations" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.property.allDestinations"></a>
+
+```go
+func AllDestinations() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference <a name="AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+accountnetworkpolicy.NewAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.resetScopes">ResetScopes</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetScopes` <a name="ResetScopes" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.resetScopes"></a>
+
+```go
+func ResetScopes()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.property.scopesInput">ScopesInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.property.scopes">Scopes</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ScopesInput`<sup>Optional</sup> <a name="ScopesInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.property.scopesInput"></a>
+
+```go
+func ScopesInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `Scopes`<sup>Required</sup> <a name="Scopes" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.property.scopes"></a>
+
+```go
+func Scopes() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference <a name="AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+accountnetworkpolicy.NewAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.resetAllDestinations">ResetAllDestinations</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetAllDestinations` <a name="ResetAllDestinations" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.resetAllDestinations"></a>
+
+```go
+func ResetAllDestinations()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.property.allDestinationsInput">AllDestinationsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.property.allDestinations">AllDestinations</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `AllDestinationsInput`<sup>Optional</sup> <a name="AllDestinationsInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.property.allDestinationsInput"></a>
+
+```go
+func AllDestinationsInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `AllDestinations`<sup>Required</sup> <a name="AllDestinations" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.property.allDestinations"></a>
+
+```go
+func AllDestinations() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### AccountNetworkPolicyIngressPublicAccessAllowRulesList <a name="AccountNetworkPolicyIngressPublicAccessAllowRulesList" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesList.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+accountnetworkpolicy.NewAccountNetworkPolicyIngressPublicAccessAllowRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccountNetworkPolicyIngressPublicAccessAllowRulesList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesList.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesList.get"></a>
+
+```go
+func Get(index *f64) AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesList.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference <a name="AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+accountnetworkpolicy.NewAccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.resetIpRanges">ResetIpRanges</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetIpRanges` <a name="ResetIpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.resetIpRanges"></a>
+
+```go
+func ResetIpRanges()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.property.ipRangesInput">IpRangesInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.property.ipRanges">IpRanges</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `IpRangesInput`<sup>Optional</sup> <a name="IpRangesInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.property.ipRangesInput"></a>
+
+```go
+func IpRangesInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `IpRanges`<sup>Required</sup> <a name="IpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.property.ipRanges"></a>
+
+```go
+func IpRanges() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference <a name="AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+accountnetworkpolicy.NewAccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.resetIpRanges">ResetIpRanges</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetIpRanges` <a name="ResetIpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.resetIpRanges"></a>
+
+```go
+func ResetIpRanges()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.property.ipRangesInput">IpRangesInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.property.ipRanges">IpRanges</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `IpRangesInput`<sup>Optional</sup> <a name="IpRangesInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.property.ipRangesInput"></a>
+
+```go
+func IpRangesInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `IpRanges`<sup>Required</sup> <a name="IpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.property.ipRanges"></a>
+
+```go
+func IpRanges() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference <a name="AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+accountnetworkpolicy.NewAccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.putExcludedIpRanges">PutExcludedIpRanges</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.putIncludedIpRanges">PutIncludedIpRanges</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.resetAllIpRanges">ResetAllIpRanges</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.resetExcludedIpRanges">ResetExcludedIpRanges</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.resetIncludedIpRanges">ResetIncludedIpRanges</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `PutExcludedIpRanges` <a name="PutExcludedIpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.putExcludedIpRanges"></a>
+
+```go
+func PutExcludedIpRanges(value AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRanges)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.putExcludedIpRanges.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRanges">AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRanges</a>
+
+---
+
+##### `PutIncludedIpRanges` <a name="PutIncludedIpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.putIncludedIpRanges"></a>
+
+```go
+func PutIncludedIpRanges(value AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRanges)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.putIncludedIpRanges.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRanges">AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRanges</a>
+
+---
+
+##### `ResetAllIpRanges` <a name="ResetAllIpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.resetAllIpRanges"></a>
+
+```go
+func ResetAllIpRanges()
+```
+
+##### `ResetExcludedIpRanges` <a name="ResetExcludedIpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.resetExcludedIpRanges"></a>
+
+```go
+func ResetExcludedIpRanges()
+```
+
+##### `ResetIncludedIpRanges` <a name="ResetIncludedIpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.resetIncludedIpRanges"></a>
+
+```go
+func ResetIncludedIpRanges()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.property.excludedIpRanges">ExcludedIpRanges</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference">AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.property.includedIpRanges">IncludedIpRanges</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference">AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.property.allIpRangesInput">AllIpRangesInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.property.excludedIpRangesInput">ExcludedIpRangesInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.property.includedIpRangesInput">IncludedIpRangesInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.property.allIpRanges">AllIpRanges</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ExcludedIpRanges`<sup>Required</sup> <a name="ExcludedIpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.property.excludedIpRanges"></a>
+
+```go
+func ExcludedIpRanges() AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference">AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference</a>
+
+---
+
+##### `IncludedIpRanges`<sup>Required</sup> <a name="IncludedIpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.property.includedIpRanges"></a>
+
+```go
+func IncludedIpRanges() AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference">AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference</a>
+
+---
+
+##### `AllIpRangesInput`<sup>Optional</sup> <a name="AllIpRangesInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.property.allIpRangesInput"></a>
+
+```go
+func AllIpRangesInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `ExcludedIpRangesInput`<sup>Optional</sup> <a name="ExcludedIpRangesInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.property.excludedIpRangesInput"></a>
+
+```go
+func ExcludedIpRangesInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `IncludedIpRangesInput`<sup>Optional</sup> <a name="IncludedIpRangesInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.property.includedIpRangesInput"></a>
+
+```go
+func IncludedIpRangesInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `AllIpRanges`<sup>Required</sup> <a name="AllIpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.property.allIpRanges"></a>
+
+```go
+func AllIpRanges() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference <a name="AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+accountnetworkpolicy.NewAccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.putAuthentication">PutAuthentication</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.putDestination">PutDestination</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.putOrigin">PutOrigin</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.resetAuthentication">ResetAuthentication</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.resetDestination">ResetDestination</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.resetLabel">ResetLabel</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.resetOrigin">ResetOrigin</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `PutAuthentication` <a name="PutAuthentication" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.putAuthentication"></a>
+
+```go
+func PutAuthentication(value AccountNetworkPolicyIngressPublicAccessAllowRulesAuthentication)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.putAuthentication.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthentication">AccountNetworkPolicyIngressPublicAccessAllowRulesAuthentication</a>
+
+---
+
+##### `PutDestination` <a name="PutDestination" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.putDestination"></a>
+
+```go
+func PutDestination(value AccountNetworkPolicyIngressPublicAccessAllowRulesDestination)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.putDestination.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestination">AccountNetworkPolicyIngressPublicAccessAllowRulesDestination</a>
+
+---
+
+##### `PutOrigin` <a name="PutOrigin" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.putOrigin"></a>
+
+```go
+func PutOrigin(value AccountNetworkPolicyIngressPublicAccessAllowRulesOrigin)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.putOrigin.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOrigin">AccountNetworkPolicyIngressPublicAccessAllowRulesOrigin</a>
+
+---
+
+##### `ResetAuthentication` <a name="ResetAuthentication" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.resetAuthentication"></a>
+
+```go
+func ResetAuthentication()
+```
+
+##### `ResetDestination` <a name="ResetDestination" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.resetDestination"></a>
+
+```go
+func ResetDestination()
+```
+
+##### `ResetLabel` <a name="ResetLabel" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.resetLabel"></a>
+
+```go
+func ResetLabel()
+```
+
+##### `ResetOrigin` <a name="ResetOrigin" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.resetOrigin"></a>
+
+```go
+func ResetOrigin()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.property.authentication">Authentication</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference">AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.property.destination">Destination</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference">AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.property.origin">Origin</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference">AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.property.authenticationInput">AuthenticationInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.property.destinationInput">DestinationInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.property.labelInput">LabelInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.property.originInput">OriginInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.property.label">Label</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Authentication`<sup>Required</sup> <a name="Authentication" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.property.authentication"></a>
+
+```go
+func Authentication() AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference">AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference</a>
+
+---
+
+##### `Destination`<sup>Required</sup> <a name="Destination" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.property.destination"></a>
+
+```go
+func Destination() AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference">AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference</a>
+
+---
+
+##### `Origin`<sup>Required</sup> <a name="Origin" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.property.origin"></a>
+
+```go
+func Origin() AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference">AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference</a>
+
+---
+
+##### `AuthenticationInput`<sup>Optional</sup> <a name="AuthenticationInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.property.authenticationInput"></a>
+
+```go
+func AuthenticationInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `DestinationInput`<sup>Optional</sup> <a name="DestinationInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.property.destinationInput"></a>
+
+```go
+func DestinationInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `LabelInput`<sup>Optional</sup> <a name="LabelInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.property.labelInput"></a>
+
+```go
+func LabelInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `OriginInput`<sup>Optional</sup> <a name="OriginInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.property.originInput"></a>
+
+```go
+func OriginInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `Label`<sup>Required</sup> <a name="Label" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.property.label"></a>
+
+```go
+func Label() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesList <a name="AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesList" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesList.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+accountnetworkpolicy.NewAccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesList.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesList.get"></a>
+
+```go
+func Get(index *f64) AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesList.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference <a name="AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+accountnetworkpolicy.NewAccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.resetPrincipalId">ResetPrincipalId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.resetPrincipalType">ResetPrincipalType</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetPrincipalId` <a name="ResetPrincipalId" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.resetPrincipalId"></a>
+
+```go
+func ResetPrincipalId()
+```
+
+##### `ResetPrincipalType` <a name="ResetPrincipalType" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.resetPrincipalType"></a>
+
+```go
+func ResetPrincipalType()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.property.principalIdInput">PrincipalIdInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.property.principalTypeInput">PrincipalTypeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.property.principalId">PrincipalId</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.property.principalType">PrincipalType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `PrincipalIdInput`<sup>Optional</sup> <a name="PrincipalIdInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.property.principalIdInput"></a>
+
+```go
+func PrincipalIdInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `PrincipalTypeInput`<sup>Optional</sup> <a name="PrincipalTypeInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.property.principalTypeInput"></a>
+
+```go
+func PrincipalTypeInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `PrincipalId`<sup>Required</sup> <a name="PrincipalId" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.property.principalId"></a>
+
+```go
+func PrincipalId() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `PrincipalType`<sup>Required</sup> <a name="PrincipalType" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.property.principalType"></a>
+
+```go
+func PrincipalType() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference <a name="AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+accountnetworkpolicy.NewAccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference.putIdentities">PutIdentities</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference.resetIdentities">ResetIdentities</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference.resetIdentityType">ResetIdentityType</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `PutIdentities` <a name="PutIdentities" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference.putIdentities"></a>
+
+```go
+func PutIdentities(value interface{})
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference.putIdentities.parameter.value"></a>
+
+- *Type:* interface{}
+
+---
+
+##### `ResetIdentities` <a name="ResetIdentities" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference.resetIdentities"></a>
+
+```go
+func ResetIdentities()
+```
+
+##### `ResetIdentityType` <a name="ResetIdentityType" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference.resetIdentityType"></a>
+
+```go
+func ResetIdentityType()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference.property.identities">Identities</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesList">AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference.property.identitiesInput">IdentitiesInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference.property.identityTypeInput">IdentityTypeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference.property.identityType">IdentityType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Identities`<sup>Required</sup> <a name="Identities" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference.property.identities"></a>
+
+```go
+func Identities() AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesList
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesList">AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesList</a>
+
+---
+
+##### `IdentitiesInput`<sup>Optional</sup> <a name="IdentitiesInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference.property.identitiesInput"></a>
+
+```go
+func IdentitiesInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `IdentityTypeInput`<sup>Optional</sup> <a name="IdentityTypeInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference.property.identityTypeInput"></a>
+
+```go
+func IdentityTypeInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `IdentityType`<sup>Required</sup> <a name="IdentityType" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference.property.identityType"></a>
+
+```go
+func IdentityType() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference <a name="AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+accountnetworkpolicy.NewAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.putWorkspaceApi">PutWorkspaceApi</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.putWorkspaceUi">PutWorkspaceUi</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.resetAllDestinations">ResetAllDestinations</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.resetWorkspaceApi">ResetWorkspaceApi</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.resetWorkspaceUi">ResetWorkspaceUi</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `PutWorkspaceApi` <a name="PutWorkspaceApi" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.putWorkspaceApi"></a>
+
+```go
+func PutWorkspaceApi(value AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApi)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.putWorkspaceApi.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApi">AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApi</a>
+
+---
+
+##### `PutWorkspaceUi` <a name="PutWorkspaceUi" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.putWorkspaceUi"></a>
+
+```go
+func PutWorkspaceUi(value AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUi)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.putWorkspaceUi.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUi">AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUi</a>
+
+---
+
+##### `ResetAllDestinations` <a name="ResetAllDestinations" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.resetAllDestinations"></a>
+
+```go
+func ResetAllDestinations()
+```
+
+##### `ResetWorkspaceApi` <a name="ResetWorkspaceApi" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.resetWorkspaceApi"></a>
+
+```go
+func ResetWorkspaceApi()
+```
+
+##### `ResetWorkspaceUi` <a name="ResetWorkspaceUi" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.resetWorkspaceUi"></a>
+
+```go
+func ResetWorkspaceUi()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.property.workspaceApi">WorkspaceApi</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference">AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.property.workspaceUi">WorkspaceUi</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference">AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.property.allDestinationsInput">AllDestinationsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.property.workspaceApiInput">WorkspaceApiInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.property.workspaceUiInput">WorkspaceUiInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.property.allDestinations">AllDestinations</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `WorkspaceApi`<sup>Required</sup> <a name="WorkspaceApi" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.property.workspaceApi"></a>
+
+```go
+func WorkspaceApi() AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference">AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference</a>
+
+---
+
+##### `WorkspaceUi`<sup>Required</sup> <a name="WorkspaceUi" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.property.workspaceUi"></a>
+
+```go
+func WorkspaceUi() AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference">AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference</a>
+
+---
+
+##### `AllDestinationsInput`<sup>Optional</sup> <a name="AllDestinationsInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.property.allDestinationsInput"></a>
+
+```go
+func AllDestinationsInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `WorkspaceApiInput`<sup>Optional</sup> <a name="WorkspaceApiInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.property.workspaceApiInput"></a>
+
+```go
+func WorkspaceApiInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `WorkspaceUiInput`<sup>Optional</sup> <a name="WorkspaceUiInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.property.workspaceUiInput"></a>
+
+```go
+func WorkspaceUiInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `AllDestinations`<sup>Required</sup> <a name="AllDestinations" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.property.allDestinations"></a>
+
+```go
+func AllDestinations() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference <a name="AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+accountnetworkpolicy.NewAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.resetScopes">ResetScopes</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetScopes` <a name="ResetScopes" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.resetScopes"></a>
+
+```go
+func ResetScopes()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.property.scopesInput">ScopesInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.property.scopes">Scopes</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ScopesInput`<sup>Optional</sup> <a name="ScopesInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.property.scopesInput"></a>
+
+```go
+func ScopesInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `Scopes`<sup>Required</sup> <a name="Scopes" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.property.scopes"></a>
+
+```go
+func Scopes() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference <a name="AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+accountnetworkpolicy.NewAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.resetAllDestinations">ResetAllDestinations</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetAllDestinations` <a name="ResetAllDestinations" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.resetAllDestinations"></a>
+
+```go
+func ResetAllDestinations()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.property.allDestinationsInput">AllDestinationsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.property.allDestinations">AllDestinations</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `AllDestinationsInput`<sup>Optional</sup> <a name="AllDestinationsInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.property.allDestinationsInput"></a>
+
+```go
+func AllDestinationsInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `AllDestinations`<sup>Required</sup> <a name="AllDestinations" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.property.allDestinations"></a>
+
+```go
+func AllDestinations() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### AccountNetworkPolicyIngressPublicAccessDenyRulesList <a name="AccountNetworkPolicyIngressPublicAccessDenyRulesList" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesList.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+accountnetworkpolicy.NewAccountNetworkPolicyIngressPublicAccessDenyRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccountNetworkPolicyIngressPublicAccessDenyRulesList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesList.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesList.get"></a>
+
+```go
+func Get(index *f64) AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesList.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference <a name="AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+accountnetworkpolicy.NewAccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.resetIpRanges">ResetIpRanges</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetIpRanges` <a name="ResetIpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.resetIpRanges"></a>
+
+```go
+func ResetIpRanges()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.property.ipRangesInput">IpRangesInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.property.ipRanges">IpRanges</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `IpRangesInput`<sup>Optional</sup> <a name="IpRangesInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.property.ipRangesInput"></a>
+
+```go
+func IpRangesInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `IpRanges`<sup>Required</sup> <a name="IpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.property.ipRanges"></a>
+
+```go
+func IpRanges() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference <a name="AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+accountnetworkpolicy.NewAccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.resetIpRanges">ResetIpRanges</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetIpRanges` <a name="ResetIpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.resetIpRanges"></a>
+
+```go
+func ResetIpRanges()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.property.ipRangesInput">IpRangesInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.property.ipRanges">IpRanges</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `IpRangesInput`<sup>Optional</sup> <a name="IpRangesInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.property.ipRangesInput"></a>
+
+```go
+func IpRangesInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `IpRanges`<sup>Required</sup> <a name="IpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.property.ipRanges"></a>
+
+```go
+func IpRanges() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference <a name="AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+accountnetworkpolicy.NewAccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.putExcludedIpRanges">PutExcludedIpRanges</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.putIncludedIpRanges">PutIncludedIpRanges</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.resetAllIpRanges">ResetAllIpRanges</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.resetExcludedIpRanges">ResetExcludedIpRanges</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.resetIncludedIpRanges">ResetIncludedIpRanges</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `PutExcludedIpRanges` <a name="PutExcludedIpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.putExcludedIpRanges"></a>
+
+```go
+func PutExcludedIpRanges(value AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRanges)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.putExcludedIpRanges.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRanges">AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRanges</a>
+
+---
+
+##### `PutIncludedIpRanges` <a name="PutIncludedIpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.putIncludedIpRanges"></a>
+
+```go
+func PutIncludedIpRanges(value AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRanges)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.putIncludedIpRanges.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRanges">AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRanges</a>
+
+---
+
+##### `ResetAllIpRanges` <a name="ResetAllIpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.resetAllIpRanges"></a>
+
+```go
+func ResetAllIpRanges()
+```
+
+##### `ResetExcludedIpRanges` <a name="ResetExcludedIpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.resetExcludedIpRanges"></a>
+
+```go
+func ResetExcludedIpRanges()
+```
+
+##### `ResetIncludedIpRanges` <a name="ResetIncludedIpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.resetIncludedIpRanges"></a>
+
+```go
+func ResetIncludedIpRanges()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.property.excludedIpRanges">ExcludedIpRanges</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference">AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.property.includedIpRanges">IncludedIpRanges</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference">AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.property.allIpRangesInput">AllIpRangesInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.property.excludedIpRangesInput">ExcludedIpRangesInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.property.includedIpRangesInput">IncludedIpRangesInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.property.allIpRanges">AllIpRanges</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ExcludedIpRanges`<sup>Required</sup> <a name="ExcludedIpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.property.excludedIpRanges"></a>
+
+```go
+func ExcludedIpRanges() AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference">AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference</a>
+
+---
+
+##### `IncludedIpRanges`<sup>Required</sup> <a name="IncludedIpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.property.includedIpRanges"></a>
+
+```go
+func IncludedIpRanges() AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference">AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference</a>
+
+---
+
+##### `AllIpRangesInput`<sup>Optional</sup> <a name="AllIpRangesInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.property.allIpRangesInput"></a>
+
+```go
+func AllIpRangesInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `ExcludedIpRangesInput`<sup>Optional</sup> <a name="ExcludedIpRangesInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.property.excludedIpRangesInput"></a>
+
+```go
+func ExcludedIpRangesInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `IncludedIpRangesInput`<sup>Optional</sup> <a name="IncludedIpRangesInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.property.includedIpRangesInput"></a>
+
+```go
+func IncludedIpRangesInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `AllIpRanges`<sup>Required</sup> <a name="AllIpRanges" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.property.allIpRanges"></a>
+
+```go
+func AllIpRanges() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference <a name="AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+accountnetworkpolicy.NewAccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.putAuthentication">PutAuthentication</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.putDestination">PutDestination</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.putOrigin">PutOrigin</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.resetAuthentication">ResetAuthentication</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.resetDestination">ResetDestination</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.resetLabel">ResetLabel</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.resetOrigin">ResetOrigin</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `PutAuthentication` <a name="PutAuthentication" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.putAuthentication"></a>
+
+```go
+func PutAuthentication(value AccountNetworkPolicyIngressPublicAccessDenyRulesAuthentication)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.putAuthentication.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthentication">AccountNetworkPolicyIngressPublicAccessDenyRulesAuthentication</a>
+
+---
+
+##### `PutDestination` <a name="PutDestination" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.putDestination"></a>
+
+```go
+func PutDestination(value AccountNetworkPolicyIngressPublicAccessDenyRulesDestination)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.putDestination.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestination">AccountNetworkPolicyIngressPublicAccessDenyRulesDestination</a>
+
+---
+
+##### `PutOrigin` <a name="PutOrigin" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.putOrigin"></a>
+
+```go
+func PutOrigin(value AccountNetworkPolicyIngressPublicAccessDenyRulesOrigin)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.putOrigin.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOrigin">AccountNetworkPolicyIngressPublicAccessDenyRulesOrigin</a>
+
+---
+
+##### `ResetAuthentication` <a name="ResetAuthentication" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.resetAuthentication"></a>
+
+```go
+func ResetAuthentication()
+```
+
+##### `ResetDestination` <a name="ResetDestination" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.resetDestination"></a>
+
+```go
+func ResetDestination()
+```
+
+##### `ResetLabel` <a name="ResetLabel" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.resetLabel"></a>
+
+```go
+func ResetLabel()
+```
+
+##### `ResetOrigin` <a name="ResetOrigin" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.resetOrigin"></a>
+
+```go
+func ResetOrigin()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.property.authentication">Authentication</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference">AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.property.destination">Destination</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference">AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.property.origin">Origin</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference">AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.property.authenticationInput">AuthenticationInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.property.destinationInput">DestinationInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.property.labelInput">LabelInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.property.originInput">OriginInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.property.label">Label</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Authentication`<sup>Required</sup> <a name="Authentication" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.property.authentication"></a>
+
+```go
+func Authentication() AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference">AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference</a>
+
+---
+
+##### `Destination`<sup>Required</sup> <a name="Destination" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.property.destination"></a>
+
+```go
+func Destination() AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference">AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference</a>
+
+---
+
+##### `Origin`<sup>Required</sup> <a name="Origin" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.property.origin"></a>
+
+```go
+func Origin() AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference">AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference</a>
+
+---
+
+##### `AuthenticationInput`<sup>Optional</sup> <a name="AuthenticationInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.property.authenticationInput"></a>
+
+```go
+func AuthenticationInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `DestinationInput`<sup>Optional</sup> <a name="DestinationInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.property.destinationInput"></a>
+
+```go
+func DestinationInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `LabelInput`<sup>Optional</sup> <a name="LabelInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.property.labelInput"></a>
+
+```go
+func LabelInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `OriginInput`<sup>Optional</sup> <a name="OriginInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.property.originInput"></a>
+
+```go
+func OriginInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `Label`<sup>Required</sup> <a name="Label" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.property.label"></a>
+
+```go
+func Label() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### AccountNetworkPolicyIngressPublicAccessOutputReference <a name="AccountNetworkPolicyIngressPublicAccessOutputReference" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+
+accountnetworkpolicy.NewAccountNetworkPolicyIngressPublicAccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyIngressPublicAccessOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.putAllowRules">PutAllowRules</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.putDenyRules">PutDenyRules</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.resetAllowRules">ResetAllowRules</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.resetDenyRules">ResetDenyRules</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `PutAllowRules` <a name="PutAllowRules" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.putAllowRules"></a>
+
+```go
+func PutAllowRules(value interface{})
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.putAllowRules.parameter.value"></a>
+
+- *Type:* interface{}
+
+---
+
+##### `PutDenyRules` <a name="PutDenyRules" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.putDenyRules"></a>
+
+```go
+func PutDenyRules(value interface{})
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.putDenyRules.parameter.value"></a>
+
+- *Type:* interface{}
+
+---
+
+##### `ResetAllowRules` <a name="ResetAllowRules" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.resetAllowRules"></a>
+
+```go
+func ResetAllowRules()
+```
+
+##### `ResetDenyRules` <a name="ResetDenyRules" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.resetDenyRules"></a>
+
+```go
+func ResetDenyRules()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.property.allowRules">AllowRules</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesList">AccountNetworkPolicyIngressPublicAccessAllowRulesList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.property.denyRules">DenyRules</a></code> | <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesList">AccountNetworkPolicyIngressPublicAccessDenyRulesList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.property.allowRulesInput">AllowRulesInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.property.denyRulesInput">DenyRulesInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.property.restrictionModeInput">RestrictionModeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.property.restrictionMode">RestrictionMode</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `AllowRules`<sup>Required</sup> <a name="AllowRules" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.property.allowRules"></a>
+
+```go
+func AllowRules() AccountNetworkPolicyIngressPublicAccessAllowRulesList
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesList">AccountNetworkPolicyIngressPublicAccessAllowRulesList</a>
+
+---
+
+##### `DenyRules`<sup>Required</sup> <a name="DenyRules" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.property.denyRules"></a>
+
+```go
+func DenyRules() AccountNetworkPolicyIngressPublicAccessDenyRulesList
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesList">AccountNetworkPolicyIngressPublicAccessDenyRulesList</a>
+
+---
+
+##### `AllowRulesInput`<sup>Optional</sup> <a name="AllowRulesInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.property.allowRulesInput"></a>
+
+```go
+func AllowRulesInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `DenyRulesInput`<sup>Optional</sup> <a name="DenyRulesInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.property.denyRulesInput"></a>
+
+```go
+func DenyRulesInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `RestrictionModeInput`<sup>Optional</sup> <a name="RestrictionModeInput" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.property.restrictionModeInput"></a>
+
+```go
+func RestrictionModeInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `RestrictionMode`<sup>Required</sup> <a name="RestrictionMode" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.property.restrictionMode"></a>
+
+```go
+func RestrictionMode() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() interface{}

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/user
+// https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/user
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,80 +13,173 @@ import * as cdktn from 'cdktn';
 
 export interface UserConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/user#acl_principal_id User#acl_principal_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/user#acl_principal_id User#acl_principal_id}
   */
   readonly aclPrincipalId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/user#active User#active}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/user#active User#active}
   */
   readonly active?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/user#allow_cluster_create User#allow_cluster_create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/user#allow_cluster_create User#allow_cluster_create}
   */
   readonly allowClusterCreate?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/user#allow_instance_pool_create User#allow_instance_pool_create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/user#allow_instance_pool_create User#allow_instance_pool_create}
   */
   readonly allowInstancePoolCreate?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/user#databricks_sql_access User#databricks_sql_access}
+  * Specifies whether to use account-level or workspace-level API. Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/user#api User#api}
+  */
+  readonly api?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/user#databricks_sql_access User#databricks_sql_access}
   */
   readonly databricksSqlAccess?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/user#disable_as_user_deletion User#disable_as_user_deletion}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/user#disable_as_user_deletion User#disable_as_user_deletion}
   */
   readonly disableAsUserDeletion?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/user#display_name User#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/user#display_name User#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/user#external_id User#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/user#external_id User#external_id}
   */
   readonly externalId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/user#force User#force}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/user#force User#force}
   */
   readonly force?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/user#force_delete_home_dir User#force_delete_home_dir}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/user#force_delete_home_dir User#force_delete_home_dir}
   */
   readonly forceDeleteHomeDir?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/user#force_delete_repos User#force_delete_repos}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/user#force_delete_repos User#force_delete_repos}
   */
   readonly forceDeleteRepos?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/user#home User#home}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/user#home User#home}
   */
   readonly home?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/user#id User#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/user#id User#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/user#repos User#repos}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/user#repos User#repos}
   */
   readonly repos?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/user#user_name User#user_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/user#user_name User#user_name}
   */
   readonly userName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/user#workspace_access User#workspace_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/user#workspace_access User#workspace_access}
   */
   readonly workspaceAccess?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/user#workspace_consume User#workspace_consume}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/user#workspace_consume User#workspace_consume}
   */
   readonly workspaceConsume?: boolean | cdktn.IResolvable;
+  /**
+  * provider_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/user#provider_config User#provider_config}
+  */
+  readonly providerConfig?: UserProviderConfig;
+}
+export interface UserProviderConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/user#workspace_id User#workspace_id}
+  */
+  readonly workspaceId: string;
+}
+
+export function userProviderConfigToTerraform(struct?: UserProviderConfigOutputReference | UserProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
+  }
+}
+
+
+export function userProviderConfigToHclTerraform(struct?: UserProviderConfigOutputReference | UserProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    workspace_id: {
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class UserProviderConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): UserProviderConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._workspaceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workspaceId = this._workspaceId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: UserProviderConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._workspaceId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._workspaceId = value.workspaceId;
+    }
+  }
+
+  // workspace_id - computed: false, optional: false, required: true
+  private _workspaceId?: string; 
+  public get workspaceId() {
+    return this.getStringAttribute('workspace_id');
+  }
+  public set workspaceId(value: string) {
+    this._workspaceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workspaceIdInput() {
+    return this._workspaceId;
+  }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/user databricks_user}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/user databricks_user}
 */
 export class User extends cdktn.TerraformResource {
 
@@ -102,7 +195,7 @@ export class User extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a User resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the User to import
-  * @param importFromId The id of the existing User that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/user#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing User that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/user#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the User to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -114,7 +207,7 @@ export class User extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/user databricks_user} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/user databricks_user} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -125,7 +218,7 @@ export class User extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_user',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.112.0',
+        providerVersion: '1.113.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -140,6 +233,7 @@ export class User extends cdktn.TerraformResource {
     this._active = config.active;
     this._allowClusterCreate = config.allowClusterCreate;
     this._allowInstancePoolCreate = config.allowInstancePoolCreate;
+    this._api = config.api;
     this._databricksSqlAccess = config.databricksSqlAccess;
     this._disableAsUserDeletion = config.disableAsUserDeletion;
     this._displayName = config.displayName;
@@ -153,6 +247,7 @@ export class User extends cdktn.TerraformResource {
     this._userName = config.userName;
     this._workspaceAccess = config.workspaceAccess;
     this._workspaceConsume = config.workspaceConsume;
+    this._providerConfig.internalValue = config.providerConfig;
   }
 
   // ==========
@@ -221,6 +316,22 @@ export class User extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get allowInstancePoolCreateInput() {
     return this._allowInstancePoolCreate;
+  }
+
+  // api - computed: false, optional: true, required: false
+  private _api?: string; 
+  public get api() {
+    return this.getStringAttribute('api');
+  }
+  public set api(value: string) {
+    this._api = value;
+  }
+  public resetApi() {
+    this._api = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get apiInput() {
+    return this._api;
   }
 
   // databricks_sql_access - computed: false, optional: true, required: false
@@ -428,6 +539,22 @@ export class User extends cdktn.TerraformResource {
     return this._workspaceConsume;
   }
 
+  // provider_config - computed: false, optional: true, required: false
+  private _providerConfig = new UserProviderConfigOutputReference(this, "provider_config");
+  public get providerConfig() {
+    return this._providerConfig;
+  }
+  public putProviderConfig(value: UserProviderConfig) {
+    this._providerConfig.internalValue = value;
+  }
+  public resetProviderConfig() {
+    this._providerConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerConfigInput() {
+    return this._providerConfig.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -438,6 +565,7 @@ export class User extends cdktn.TerraformResource {
       active: cdktn.booleanToTerraform(this._active),
       allow_cluster_create: cdktn.booleanToTerraform(this._allowClusterCreate),
       allow_instance_pool_create: cdktn.booleanToTerraform(this._allowInstancePoolCreate),
+      api: cdktn.stringToTerraform(this._api),
       databricks_sql_access: cdktn.booleanToTerraform(this._databricksSqlAccess),
       disable_as_user_deletion: cdktn.booleanToTerraform(this._disableAsUserDeletion),
       display_name: cdktn.stringToTerraform(this._displayName),
@@ -451,6 +579,7 @@ export class User extends cdktn.TerraformResource {
       user_name: cdktn.stringToTerraform(this._userName),
       workspace_access: cdktn.booleanToTerraform(this._workspaceAccess),
       workspace_consume: cdktn.booleanToTerraform(this._workspaceConsume),
+      provider_config: userProviderConfigToTerraform(this._providerConfig.internalValue),
     };
   }
 
@@ -479,6 +608,12 @@ export class User extends cdktn.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
+      },
+      api: {
+        value: cdktn.stringToHclTerraform(this._api),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
       },
       databricks_sql_access: {
         value: cdktn.booleanToHclTerraform(this._databricksSqlAccess),
@@ -557,6 +692,12 @@ export class User extends cdktn.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
+      },
+      provider_config: {
+        value: userProviderConfigToHclTerraform(this._providerConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "UserProviderConfigList",
       },
     };
 

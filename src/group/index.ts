@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group
+// https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,56 +13,149 @@ import * as cdktn from 'cdktn';
 
 export interface GroupConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group#acl_principal_id Group#acl_principal_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#acl_principal_id Group#acl_principal_id}
   */
   readonly aclPrincipalId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group#allow_cluster_create Group#allow_cluster_create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#allow_cluster_create Group#allow_cluster_create}
   */
   readonly allowClusterCreate?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group#allow_instance_pool_create Group#allow_instance_pool_create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#allow_instance_pool_create Group#allow_instance_pool_create}
   */
   readonly allowInstancePoolCreate?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group#databricks_sql_access Group#databricks_sql_access}
+  * Specifies whether to use account-level or workspace-level API. Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#api Group#api}
+  */
+  readonly api?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#databricks_sql_access Group#databricks_sql_access}
   */
   readonly databricksSqlAccess?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group#display_name Group#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#display_name Group#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group#external_id Group#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#external_id Group#external_id}
   */
   readonly externalId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group#force Group#force}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#force Group#force}
   */
   readonly force?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group#id Group#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#id Group#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group#url Group#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#url Group#url}
   */
   readonly url?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group#workspace_access Group#workspace_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#workspace_access Group#workspace_access}
   */
   readonly workspaceAccess?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group#workspace_consume Group#workspace_consume}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#workspace_consume Group#workspace_consume}
   */
   readonly workspaceConsume?: boolean | cdktn.IResolvable;
+  /**
+  * provider_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#provider_config Group#provider_config}
+  */
+  readonly providerConfig?: GroupProviderConfig;
+}
+export interface GroupProviderConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#workspace_id Group#workspace_id}
+  */
+  readonly workspaceId: string;
+}
+
+export function groupProviderConfigToTerraform(struct?: GroupProviderConfigOutputReference | GroupProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
+  }
+}
+
+
+export function groupProviderConfigToHclTerraform(struct?: GroupProviderConfigOutputReference | GroupProviderConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    workspace_id: {
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class GroupProviderConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GroupProviderConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._workspaceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workspaceId = this._workspaceId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GroupProviderConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._workspaceId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._workspaceId = value.workspaceId;
+    }
+  }
+
+  // workspace_id - computed: false, optional: false, required: true
+  private _workspaceId?: string; 
+  public get workspaceId() {
+    return this.getStringAttribute('workspace_id');
+  }
+  public set workspaceId(value: string) {
+    this._workspaceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workspaceIdInput() {
+    return this._workspaceId;
+  }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group databricks_group}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group databricks_group}
 */
 export class Group extends cdktn.TerraformResource {
 
@@ -78,7 +171,7 @@ export class Group extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a Group resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Group to import
-  * @param importFromId The id of the existing Group that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Group that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Group to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -90,7 +183,7 @@ export class Group extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group databricks_group} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group databricks_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -101,7 +194,7 @@ export class Group extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_group',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.112.0',
+        providerVersion: '1.113.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -115,6 +208,7 @@ export class Group extends cdktn.TerraformResource {
     this._aclPrincipalId = config.aclPrincipalId;
     this._allowClusterCreate = config.allowClusterCreate;
     this._allowInstancePoolCreate = config.allowInstancePoolCreate;
+    this._api = config.api;
     this._databricksSqlAccess = config.databricksSqlAccess;
     this._displayName = config.displayName;
     this._externalId = config.externalId;
@@ -123,6 +217,7 @@ export class Group extends cdktn.TerraformResource {
     this._url = config.url;
     this._workspaceAccess = config.workspaceAccess;
     this._workspaceConsume = config.workspaceConsume;
+    this._providerConfig.internalValue = config.providerConfig;
   }
 
   // ==========
@@ -175,6 +270,22 @@ export class Group extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get allowInstancePoolCreateInput() {
     return this._allowInstancePoolCreate;
+  }
+
+  // api - computed: false, optional: true, required: false
+  private _api?: string; 
+  public get api() {
+    return this.getStringAttribute('api');
+  }
+  public set api(value: string) {
+    this._api = value;
+  }
+  public resetApi() {
+    this._api = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get apiInput() {
+    return this._api;
   }
 
   // databricks_sql_access - computed: false, optional: true, required: false
@@ -302,6 +413,22 @@ export class Group extends cdktn.TerraformResource {
     return this._workspaceConsume;
   }
 
+  // provider_config - computed: false, optional: true, required: false
+  private _providerConfig = new GroupProviderConfigOutputReference(this, "provider_config");
+  public get providerConfig() {
+    return this._providerConfig;
+  }
+  public putProviderConfig(value: GroupProviderConfig) {
+    this._providerConfig.internalValue = value;
+  }
+  public resetProviderConfig() {
+    this._providerConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerConfigInput() {
+    return this._providerConfig.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -311,6 +438,7 @@ export class Group extends cdktn.TerraformResource {
       acl_principal_id: cdktn.stringToTerraform(this._aclPrincipalId),
       allow_cluster_create: cdktn.booleanToTerraform(this._allowClusterCreate),
       allow_instance_pool_create: cdktn.booleanToTerraform(this._allowInstancePoolCreate),
+      api: cdktn.stringToTerraform(this._api),
       databricks_sql_access: cdktn.booleanToTerraform(this._databricksSqlAccess),
       display_name: cdktn.stringToTerraform(this._displayName),
       external_id: cdktn.stringToTerraform(this._externalId),
@@ -319,6 +447,7 @@ export class Group extends cdktn.TerraformResource {
       url: cdktn.stringToTerraform(this._url),
       workspace_access: cdktn.booleanToTerraform(this._workspaceAccess),
       workspace_consume: cdktn.booleanToTerraform(this._workspaceConsume),
+      provider_config: groupProviderConfigToTerraform(this._providerConfig.internalValue),
     };
   }
 
@@ -341,6 +470,12 @@ export class Group extends cdktn.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
+      },
+      api: {
+        value: cdktn.stringToHclTerraform(this._api),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
       },
       databricks_sql_access: {
         value: cdktn.booleanToHclTerraform(this._databricksSqlAccess),
@@ -389,6 +524,12 @@ export class Group extends cdktn.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
+      },
+      provider_config: {
+        value: groupProviderConfigToHclTerraform(this._providerConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GroupProviderConfigList",
       },
     };
 
