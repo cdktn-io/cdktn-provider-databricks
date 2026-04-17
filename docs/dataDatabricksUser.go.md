@@ -4,7 +4,7 @@
 
 ### DataDatabricksUser <a name="DataDatabricksUser" id="@cdktn/provider-databricks.dataDatabricksUser.DataDatabricksUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/user databricks_user}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/user databricks_user}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksUser.DataDatabricksUser.Initializer"></a>
 
@@ -69,6 +69,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksUser.DataDatabricksUser.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksUser.DataDatabricksUser.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksUser.DataDatabricksUser.putProviderConfig">PutProviderConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksUser.DataDatabricksUser.resetApi">ResetApi</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksUser.DataDatabricksUser.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksUser.DataDatabricksUser.resetProviderConfig">ResetProviderConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksUser.DataDatabricksUser.resetUserId">ResetUserId</a></code> | *No description.* |
@@ -301,6 +302,12 @@ func PutProviderConfig(value DataDatabricksUserProviderConfig)
 
 ---
 
+##### `ResetApi` <a name="ResetApi" id="@cdktn/provider-databricks.dataDatabricksUser.DataDatabricksUser.resetApi"></a>
+
+```go
+func ResetApi()
+```
+
 ##### `ResetId` <a name="ResetId" id="@cdktn/provider-databricks.dataDatabricksUser.DataDatabricksUser.resetId"></a>
 
 ```go
@@ -428,7 +435,7 @@ The construct id used in the generated config for the DataDatabricksUser to impo
 
 The id of the existing DataDatabricksUser that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/user#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -465,10 +472,12 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksUser.DataDatabricksUser.property.home">Home</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksUser.DataDatabricksUser.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksUser.DataDatabricksUserProviderConfigOutputReference">DataDatabricksUserProviderConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksUser.DataDatabricksUser.property.repos">Repos</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksUser.DataDatabricksUser.property.apiInput">ApiInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksUser.DataDatabricksUser.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksUser.DataDatabricksUser.property.providerConfigInput">ProviderConfigInput</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksUser.DataDatabricksUserProviderConfig">DataDatabricksUserProviderConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksUser.DataDatabricksUser.property.userIdInput">UserIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksUser.DataDatabricksUser.property.userNameInput">UserNameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksUser.DataDatabricksUser.property.api">Api</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksUser.DataDatabricksUser.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksUser.DataDatabricksUser.property.userId">UserId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksUser.DataDatabricksUser.property.userName">UserName</a></code> | <code>*string</code> | *No description.* |
@@ -687,6 +696,16 @@ func Repos() *string
 
 ---
 
+##### `ApiInput`<sup>Optional</sup> <a name="ApiInput" id="@cdktn/provider-databricks.dataDatabricksUser.DataDatabricksUser.property.apiInput"></a>
+
+```go
+func ApiInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktn/provider-databricks.dataDatabricksUser.DataDatabricksUser.property.idInput"></a>
 
 ```go
@@ -721,6 +740,16 @@ func UserIdInput() *string
 
 ```go
 func UserNameInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Api`<sup>Required</sup> <a name="Api" id="@cdktn/provider-databricks.dataDatabricksUser.DataDatabricksUser.property.api"></a>
+
+```go
+func Api() *string
 ```
 
 - *Type:* *string
@@ -792,6 +821,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadata
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
+	Api: *string,
 	Id: *string,
 	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksUser.DataDatabricksUserProviderConfig,
 	UserId: *string,
@@ -810,10 +840,11 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadata
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksUser.DataDatabricksUserConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksUser.DataDatabricksUserConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksUser.DataDatabricksUserConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksUser.DataDatabricksUserConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/user#id DataDatabricksUser#id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksUser.DataDatabricksUserConfig.property.api">Api</a></code> | <code>*string</code> | Specifies whether to use account-level or workspace-level API. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksUser.DataDatabricksUserConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/user#id DataDatabricksUser#id}. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksUser.DataDatabricksUserConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksUser.DataDatabricksUserProviderConfig">DataDatabricksUserProviderConfig</a></code> | provider_config block. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksUser.DataDatabricksUserConfig.property.userId">UserId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/user#user_id DataDatabricksUser#user_id}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksUser.DataDatabricksUserConfig.property.userName">UserName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/user#user_name DataDatabricksUser#user_name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksUser.DataDatabricksUserConfig.property.userId">UserId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/user#user_id DataDatabricksUser#user_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksUser.DataDatabricksUserConfig.property.userName">UserName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/user#user_name DataDatabricksUser#user_name}. |
 
 ---
 
@@ -887,6 +918,22 @@ Provisioners *[]interface{}
 
 ---
 
+##### `Api`<sup>Optional</sup> <a name="Api" id="@cdktn/provider-databricks.dataDatabricksUser.DataDatabricksUserConfig.property.api"></a>
+
+```go
+Api *string
+```
+
+- *Type:* *string
+
+Specifies whether to use account-level or workspace-level API.
+
+Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/user#api DataDatabricksUser#api}
+
+---
+
 ##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktn/provider-databricks.dataDatabricksUser.DataDatabricksUserConfig.property.id"></a>
 
 ```go
@@ -895,7 +942,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/user#id DataDatabricksUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/user#id DataDatabricksUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -912,7 +959,7 @@ ProviderConfig DataDatabricksUserProviderConfig
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/user#provider_config DataDatabricksUser#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/user#provider_config DataDatabricksUser#provider_config}
 
 ---
 
@@ -924,7 +971,7 @@ UserId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/user#user_id DataDatabricksUser#user_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/user#user_id DataDatabricksUser#user_id}.
 
 ---
 
@@ -936,7 +983,7 @@ UserName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/user#user_name DataDatabricksUser#user_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/user#user_name DataDatabricksUser#user_name}.
 
 ---
 
@@ -956,7 +1003,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksUser.DataDatabricksUserProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/user#workspace_id DataDatabricksUser#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksUser.DataDatabricksUserProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/user#workspace_id DataDatabricksUser#workspace_id}. |
 
 ---
 
@@ -968,7 +1015,7 @@ WorkspaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/data-sources/user#workspace_id DataDatabricksUser#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/data-sources/user#workspace_id DataDatabricksUser#workspace_id}.
 
 ---
 

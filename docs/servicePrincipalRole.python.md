@@ -4,7 +4,7 @@
 
 ### ServicePrincipalRole <a name="ServicePrincipalRole" id="@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal_role databricks_service_principal_role}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/service_principal_role databricks_service_principal_role}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRole.Initializer"></a>
 
@@ -23,7 +23,9 @@ servicePrincipalRole.ServicePrincipalRole(
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   role: str,
   service_principal_id: str,
-  id: str = None
+  api: str = None,
+  id: str = None,
+  provider_config: ServicePrincipalRoleProviderConfig = None
 )
 ```
 
@@ -38,9 +40,11 @@ servicePrincipalRole.ServicePrincipalRole(
 | <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRole.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRole.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRole.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRole.Initializer.parameter.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal_role#role ServicePrincipalRole#role}. |
-| <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRole.Initializer.parameter.servicePrincipalId">service_principal_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal_role#service_principal_id ServicePrincipalRole#service_principal_id}. |
-| <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRole.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal_role#id ServicePrincipalRole#id}. |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRole.Initializer.parameter.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/service_principal_role#role ServicePrincipalRole#role}. |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRole.Initializer.parameter.servicePrincipalId">service_principal_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/service_principal_role#service_principal_id ServicePrincipalRole#service_principal_id}. |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRole.Initializer.parameter.api">api</a></code> | <code>str</code> | Specifies whether to use account-level or workspace-level API. |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRole.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/service_principal_role#id ServicePrincipalRole#id}. |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRole.Initializer.parameter.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfig">ServicePrincipalRoleProviderConfig</a></code> | provider_config block. |
 
 ---
 
@@ -108,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal_role#role ServicePrincipalRole#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/service_principal_role#role ServicePrincipalRole#role}.
 
 ---
 
@@ -116,7 +120,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal_role#service_principal_id ServicePrincipalRole#service_principal_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/service_principal_role#service_principal_id ServicePrincipalRole#service_principal_id}.
+
+---
+
+##### `api`<sup>Optional</sup> <a name="api" id="@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRole.Initializer.parameter.api"></a>
+
+- *Type:* str
+
+Specifies whether to use account-level or workspace-level API.
+
+Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/service_principal_role#api ServicePrincipalRole#api}
 
 ---
 
@@ -124,10 +140,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal_role#id ServicePrincipalRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/service_principal_role#id ServicePrincipalRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `provider_config`<sup>Optional</sup> <a name="provider_config" id="@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRole.Initializer.parameter.providerConfig"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfig">ServicePrincipalRoleProviderConfig</a>
+
+provider_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/service_principal_role#provider_config ServicePrincipalRole#provider_config}
 
 ---
 
@@ -159,7 +185,10 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRole.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRole.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRole.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRole.putProviderConfig">put_provider_config</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRole.resetApi">reset_api</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRole.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRole.resetProviderConfig">reset_provider_config</a></code> | *No description.* |
 
 ---
 
@@ -511,10 +540,38 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `put_provider_config` <a name="put_provider_config" id="@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRole.putProviderConfig"></a>
+
+```python
+def put_provider_config(
+  workspace_id: str
+) -> None
+```
+
+###### `workspace_id`<sup>Required</sup> <a name="workspace_id" id="@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRole.putProviderConfig.parameter.workspaceId"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/service_principal_role#workspace_id ServicePrincipalRole#workspace_id}.
+
+---
+
+##### `reset_api` <a name="reset_api" id="@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRole.resetApi"></a>
+
+```python
+def reset_api() -> None
+```
+
 ##### `reset_id` <a name="reset_id" id="@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRole.resetId"></a>
 
 ```python
 def reset_id() -> None
+```
+
+##### `reset_provider_config` <a name="reset_provider_config" id="@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRole.resetProviderConfig"></a>
+
+```python
+def reset_provider_config() -> None
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -631,7 +688,7 @@ The construct id used in the generated config for the ServicePrincipalRole to im
 
 The id of the existing ServicePrincipalRole that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal_role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/service_principal_role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -661,9 +718,13 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRole.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRole.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRole.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRole.property.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfigOutputReference">ServicePrincipalRoleProviderConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRole.property.apiInput">api_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRole.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRole.property.providerConfigInput">provider_config_input</a></code> | <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfig">ServicePrincipalRoleProviderConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRole.property.roleInput">role_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRole.property.servicePrincipalIdInput">service_principal_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRole.property.api">api</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRole.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRole.property.role">role</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRole.property.servicePrincipalId">service_principal_id</a></code> | <code>str</code> | *No description.* |
@@ -812,6 +873,26 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
+##### `provider_config`<sup>Required</sup> <a name="provider_config" id="@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRole.property.providerConfig"></a>
+
+```python
+provider_config: ServicePrincipalRoleProviderConfigOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfigOutputReference">ServicePrincipalRoleProviderConfigOutputReference</a>
+
+---
+
+##### `api_input`<sup>Optional</sup> <a name="api_input" id="@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRole.property.apiInput"></a>
+
+```python
+api_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRole.property.idInput"></a>
 
 ```python
@@ -819,6 +900,16 @@ id_input: str
 ```
 
 - *Type:* str
+
+---
+
+##### `provider_config_input`<sup>Optional</sup> <a name="provider_config_input" id="@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRole.property.providerConfigInput"></a>
+
+```python
+provider_config_input: ServicePrincipalRoleProviderConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfig">ServicePrincipalRoleProviderConfig</a>
 
 ---
 
@@ -836,6 +927,16 @@ role_input: str
 
 ```python
 service_principal_id_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `api`<sup>Required</sup> <a name="api" id="@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRole.property.api"></a>
+
+```python
+api: str
 ```
 
 - *Type:* str
@@ -909,7 +1010,9 @@ servicePrincipalRole.ServicePrincipalRoleConfig(
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   role: str,
   service_principal_id: str,
-  id: str = None
+  api: str = None,
+  id: str = None,
+  provider_config: ServicePrincipalRoleProviderConfig = None
 )
 ```
 
@@ -924,9 +1027,11 @@ servicePrincipalRole.ServicePrincipalRoleConfig(
 | <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleConfig.property.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal_role#role ServicePrincipalRole#role}. |
-| <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleConfig.property.servicePrincipalId">service_principal_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal_role#service_principal_id ServicePrincipalRole#service_principal_id}. |
-| <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal_role#id ServicePrincipalRole#id}. |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleConfig.property.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/service_principal_role#role ServicePrincipalRole#role}. |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleConfig.property.servicePrincipalId">service_principal_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/service_principal_role#service_principal_id ServicePrincipalRole#service_principal_id}. |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleConfig.property.api">api</a></code> | <code>str</code> | Specifies whether to use account-level or workspace-level API. |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/service_principal_role#id ServicePrincipalRole#id}. |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleConfig.property.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfig">ServicePrincipalRoleProviderConfig</a></code> | provider_config block. |
 
 ---
 
@@ -1008,7 +1113,7 @@ role: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal_role#role ServicePrincipalRole#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/service_principal_role#role ServicePrincipalRole#role}.
 
 ---
 
@@ -1020,7 +1125,23 @@ service_principal_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal_role#service_principal_id ServicePrincipalRole#service_principal_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/service_principal_role#service_principal_id ServicePrincipalRole#service_principal_id}.
+
+---
+
+##### `api`<sup>Optional</sup> <a name="api" id="@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleConfig.property.api"></a>
+
+```python
+api: str
+```
+
+- *Type:* str
+
+Specifies whether to use account-level or workspace-level API.
+
+Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/service_principal_role#api ServicePrincipalRole#api}
 
 ---
 
@@ -1032,10 +1153,353 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/service_principal_role#id ServicePrincipalRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/service_principal_role#id ServicePrincipalRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `provider_config`<sup>Optional</sup> <a name="provider_config" id="@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleConfig.property.providerConfig"></a>
+
+```python
+provider_config: ServicePrincipalRoleProviderConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfig">ServicePrincipalRoleProviderConfig</a>
+
+provider_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/service_principal_role#provider_config ServicePrincipalRole#provider_config}
+
+---
+
+### ServicePrincipalRoleProviderConfig <a name="ServicePrincipalRoleProviderConfig" id="@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfig.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import service_principal_role
+
+servicePrincipalRole.ServicePrincipalRoleProviderConfig(
+  workspace_id: str
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/service_principal_role#workspace_id ServicePrincipalRole#workspace_id}. |
+
+---
+
+##### `workspace_id`<sup>Required</sup> <a name="workspace_id" id="@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfig.property.workspaceId"></a>
+
+```python
+workspace_id: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/service_principal_role#workspace_id ServicePrincipalRole#workspace_id}.
+
+---
+
+## Classes <a name="Classes" id="Classes"></a>
+
+### ServicePrincipalRoleProviderConfigOutputReference <a name="ServicePrincipalRoleProviderConfigOutputReference" id="@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfigOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import service_principal_role
+
+servicePrincipalRole.ServicePrincipalRoleProviderConfigOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfigOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfigOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfigOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfigOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfigOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfigOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfigOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfigOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfigOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfigOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfigOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfigOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfigOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfigOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfigOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfigOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfigOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfigOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfigOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfigOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfigOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfigOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfigOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfigOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfigOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfigOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfigOutputReference.property.workspaceIdInput">workspace_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfigOutputReference.property.workspaceId">workspace_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfigOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfig">ServicePrincipalRoleProviderConfig</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfigOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfigOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `workspace_id_input`<sup>Optional</sup> <a name="workspace_id_input" id="@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfigOutputReference.property.workspaceIdInput"></a>
+
+```python
+workspace_id_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `workspace_id`<sup>Required</sup> <a name="workspace_id" id="@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfigOutputReference.property.workspaceId"></a>
+
+```python
+workspace_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfigOutputReference.property.internalValue"></a>
+
+```python
+internal_value: ServicePrincipalRoleProviderConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.servicePrincipalRole.ServicePrincipalRoleProviderConfig">ServicePrincipalRoleProviderConfig</a>
 
 ---
 

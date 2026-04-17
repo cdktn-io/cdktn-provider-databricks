@@ -4,7 +4,7 @@
 
 ### MetastoreAssignment <a name="MetastoreAssignment" id="@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/metastore_assignment databricks_metastore_assignment}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore_assignment databricks_metastore_assignment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignment.Initializer"></a>
 
@@ -74,8 +74,11 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignment.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignment.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignment.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignment.putProviderConfig">putProviderConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignment.resetApi">resetApi</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignment.resetDefaultCatalogName">resetDefaultCatalogName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignment.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignment.resetProviderConfig">resetProviderConfig</a></code> | *No description.* |
 
 ---
 
@@ -388,6 +391,24 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `putProviderConfig` <a name="putProviderConfig" id="@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignment.putProviderConfig"></a>
+
+```typescript
+public putProviderConfig(value: MetastoreAssignmentProviderConfig): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignment.putProviderConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfig">MetastoreAssignmentProviderConfig</a>
+
+---
+
+##### `resetApi` <a name="resetApi" id="@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignment.resetApi"></a>
+
+```typescript
+public resetApi(): void
+```
+
 ##### `resetDefaultCatalogName` <a name="resetDefaultCatalogName" id="@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignment.resetDefaultCatalogName"></a>
 
 ```typescript
@@ -398,6 +419,12 @@ public resetDefaultCatalogName(): void
 
 ```typescript
 public resetId(): void
+```
+
+##### `resetProviderConfig` <a name="resetProviderConfig" id="@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignment.resetProviderConfig"></a>
+
+```typescript
+public resetProviderConfig(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -503,7 +530,7 @@ The construct id used in the generated config for the MetastoreAssignment to imp
 
 The id of the existing MetastoreAssignment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/metastore_assignment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore_assignment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -533,10 +560,14 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignment.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignment.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignment.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignment.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfigOutputReference">MetastoreAssignmentProviderConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignment.property.apiInput">apiInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignment.property.defaultCatalogNameInput">defaultCatalogNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignment.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignment.property.metastoreIdInput">metastoreIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignment.property.providerConfigInput">providerConfigInput</a></code> | <code><a href="#@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfig">MetastoreAssignmentProviderConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignment.property.workspaceIdInput">workspaceIdInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignment.property.api">api</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignment.property.defaultCatalogName">defaultCatalogName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignment.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignment.property.metastoreId">metastoreId</a></code> | <code>string</code> | *No description.* |
@@ -686,6 +717,26 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
+##### `providerConfig`<sup>Required</sup> <a name="providerConfig" id="@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignment.property.providerConfig"></a>
+
+```typescript
+public readonly providerConfig: MetastoreAssignmentProviderConfigOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfigOutputReference">MetastoreAssignmentProviderConfigOutputReference</a>
+
+---
+
+##### `apiInput`<sup>Optional</sup> <a name="apiInput" id="@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignment.property.apiInput"></a>
+
+```typescript
+public readonly apiInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `defaultCatalogNameInput`<sup>Optional</sup> <a name="defaultCatalogNameInput" id="@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignment.property.defaultCatalogNameInput"></a>
 
 ```typescript
@@ -716,6 +767,16 @@ public readonly metastoreIdInput: string;
 
 ---
 
+##### `providerConfigInput`<sup>Optional</sup> <a name="providerConfigInput" id="@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignment.property.providerConfigInput"></a>
+
+```typescript
+public readonly providerConfigInput: MetastoreAssignmentProviderConfig;
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfig">MetastoreAssignmentProviderConfig</a>
+
+---
+
 ##### `workspaceIdInput`<sup>Optional</sup> <a name="workspaceIdInput" id="@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignment.property.workspaceIdInput"></a>
 
 ```typescript
@@ -723,6 +784,16 @@ public readonly workspaceIdInput: number;
 ```
 
 - *Type:* number
+
+---
+
+##### `api`<sup>Required</sup> <a name="api" id="@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignment.property.api"></a>
+
+```typescript
+public readonly api: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -807,10 +878,12 @@ const metastoreAssignmentConfig: metastoreAssignment.MetastoreAssignmentConfig =
 | <code><a href="#@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentConfig.property.metastoreId">metastoreId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/metastore_assignment#metastore_id MetastoreAssignment#metastore_id}. |
-| <code><a href="#@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentConfig.property.workspaceId">workspaceId</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/metastore_assignment#workspace_id MetastoreAssignment#workspace_id}. |
-| <code><a href="#@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentConfig.property.defaultCatalogName">defaultCatalogName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/metastore_assignment#default_catalog_name MetastoreAssignment#default_catalog_name}. |
-| <code><a href="#@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/metastore_assignment#id MetastoreAssignment#id}. |
+| <code><a href="#@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentConfig.property.metastoreId">metastoreId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore_assignment#metastore_id MetastoreAssignment#metastore_id}. |
+| <code><a href="#@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentConfig.property.workspaceId">workspaceId</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore_assignment#workspace_id MetastoreAssignment#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentConfig.property.api">api</a></code> | <code>string</code> | Specifies whether to use account-level or workspace-level API. |
+| <code><a href="#@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentConfig.property.defaultCatalogName">defaultCatalogName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore_assignment#default_catalog_name MetastoreAssignment#default_catalog_name}. |
+| <code><a href="#@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore_assignment#id MetastoreAssignment#id}. |
+| <code><a href="#@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentConfig.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfig">MetastoreAssignmentProviderConfig</a></code> | provider_config block. |
 
 ---
 
@@ -892,7 +965,7 @@ public readonly metastoreId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/metastore_assignment#metastore_id MetastoreAssignment#metastore_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore_assignment#metastore_id MetastoreAssignment#metastore_id}.
 
 ---
 
@@ -904,7 +977,23 @@ public readonly workspaceId: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/metastore_assignment#workspace_id MetastoreAssignment#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore_assignment#workspace_id MetastoreAssignment#workspace_id}.
+
+---
+
+##### `api`<sup>Optional</sup> <a name="api" id="@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentConfig.property.api"></a>
+
+```typescript
+public readonly api: string;
+```
+
+- *Type:* string
+
+Specifies whether to use account-level or workspace-level API.
+
+Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore_assignment#api MetastoreAssignment#api}
 
 ---
 
@@ -916,7 +1005,7 @@ public readonly defaultCatalogName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/metastore_assignment#default_catalog_name MetastoreAssignment#default_catalog_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore_assignment#default_catalog_name MetastoreAssignment#default_catalog_name}.
 
 ---
 
@@ -928,10 +1017,326 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/metastore_assignment#id MetastoreAssignment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore_assignment#id MetastoreAssignment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `providerConfig`<sup>Optional</sup> <a name="providerConfig" id="@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentConfig.property.providerConfig"></a>
+
+```typescript
+public readonly providerConfig: MetastoreAssignmentProviderConfig;
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfig">MetastoreAssignmentProviderConfig</a>
+
+provider_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore_assignment#provider_config MetastoreAssignment#provider_config}
+
+---
+
+### MetastoreAssignmentProviderConfig <a name="MetastoreAssignmentProviderConfig" id="@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfig.Initializer"></a>
+
+```typescript
+import { metastoreAssignment } from '@cdktn/provider-databricks'
+
+const metastoreAssignmentProviderConfig: metastoreAssignment.MetastoreAssignmentProviderConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore_assignment#workspace_id MetastoreAssignment#workspace_id}. |
+
+---
+
+##### `workspaceId`<sup>Required</sup> <a name="workspaceId" id="@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfig.property.workspaceId"></a>
+
+```typescript
+public readonly workspaceId: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore_assignment#workspace_id MetastoreAssignment#workspace_id}.
+
+---
+
+## Classes <a name="Classes" id="Classes"></a>
+
+### MetastoreAssignmentProviderConfigOutputReference <a name="MetastoreAssignmentProviderConfigOutputReference" id="@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfigOutputReference.Initializer"></a>
+
+```typescript
+import { metastoreAssignment } from '@cdktn/provider-databricks'
+
+new metastoreAssignment.MetastoreAssignmentProviderConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfigOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfigOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfigOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfigOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfigOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfigOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfigOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfigOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfigOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfigOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfigOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfigOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfigOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfigOutputReference.property.workspaceIdInput">workspaceIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfigOutputReference.property.workspaceId">workspaceId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfig">MetastoreAssignmentProviderConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfigOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfigOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `workspaceIdInput`<sup>Optional</sup> <a name="workspaceIdInput" id="@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfigOutputReference.property.workspaceIdInput"></a>
+
+```typescript
+public readonly workspaceIdInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `workspaceId`<sup>Required</sup> <a name="workspaceId" id="@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfigOutputReference.property.workspaceId"></a>
+
+```typescript
+public readonly workspaceId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfigOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: MetastoreAssignmentProviderConfig;
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.metastoreAssignment.MetastoreAssignmentProviderConfig">MetastoreAssignmentProviderConfig</a>
 
 ---
 

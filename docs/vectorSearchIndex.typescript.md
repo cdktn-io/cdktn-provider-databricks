@@ -4,7 +4,7 @@
 
 ### VectorSearchIndex <a name="VectorSearchIndex" id="@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndex"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/vector_search_index databricks_vector_search_index}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/vector_search_index databricks_vector_search_index}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndex.Initializer"></a>
 
@@ -81,6 +81,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndex.resetDeltaSyncIndexSpec">resetDeltaSyncIndexSpec</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndex.resetDirectAccessIndexSpec">resetDirectAccessIndexSpec</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndex.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndex.resetIndexSubtype">resetIndexSubtype</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndex.resetProviderConfig">resetProviderConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndex.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 
@@ -461,6 +462,12 @@ public resetDirectAccessIndexSpec(): void
 public resetId(): void
 ```
 
+##### `resetIndexSubtype` <a name="resetIndexSubtype" id="@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndex.resetIndexSubtype"></a>
+
+```typescript
+public resetIndexSubtype(): void
+```
+
 ##### `resetProviderConfig` <a name="resetProviderConfig" id="@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndex.resetProviderConfig"></a>
 
 ```typescript
@@ -576,7 +583,7 @@ The construct id used in the generated config for the VectorSearchIndex to impor
 
 The id of the existing VectorSearchIndex that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/vector_search_index#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/vector_search_index#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -616,6 +623,7 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndex.property.directAccessIndexSpecInput">directAccessIndexSpecInput</a></code> | <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexDirectAccessIndexSpec">VectorSearchIndexDirectAccessIndexSpec</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndex.property.endpointNameInput">endpointNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndex.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndex.property.indexSubtypeInput">indexSubtypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndex.property.indexTypeInput">indexTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndex.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndex.property.primaryKeyInput">primaryKeyInput</a></code> | <code>string</code> | *No description.* |
@@ -623,6 +631,7 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndex.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexTimeouts">VectorSearchIndexTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndex.property.endpointName">endpointName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndex.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndex.property.indexSubtype">indexSubtype</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndex.property.indexType">indexType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndex.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndex.property.primaryKey">primaryKey</a></code> | <code>string</code> | *No description.* |
@@ -871,6 +880,16 @@ public readonly idInput: string;
 
 ---
 
+##### `indexSubtypeInput`<sup>Optional</sup> <a name="indexSubtypeInput" id="@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndex.property.indexSubtypeInput"></a>
+
+```typescript
+public readonly indexSubtypeInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `indexTypeInput`<sup>Optional</sup> <a name="indexTypeInput" id="@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndex.property.indexTypeInput"></a>
 
 ```typescript
@@ -935,6 +954,16 @@ public readonly endpointName: string;
 
 ```typescript
 public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
+##### `indexSubtype`<sup>Required</sup> <a name="indexSubtype" id="@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndex.property.indexSubtype"></a>
+
+```typescript
+public readonly indexSubtype: string;
 ```
 
 - *Type:* string
@@ -1012,13 +1041,14 @@ const vectorSearchIndexConfig: vectorSearchIndex.VectorSearchIndexConfig = { ...
 | <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexConfig.property.endpointName">endpointName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/vector_search_index#endpoint_name VectorSearchIndex#endpoint_name}. |
-| <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexConfig.property.indexType">indexType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/vector_search_index#index_type VectorSearchIndex#index_type}. |
-| <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/vector_search_index#name VectorSearchIndex#name}. |
-| <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexConfig.property.primaryKey">primaryKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/vector_search_index#primary_key VectorSearchIndex#primary_key}. |
+| <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexConfig.property.endpointName">endpointName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/vector_search_index#endpoint_name VectorSearchIndex#endpoint_name}. |
+| <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexConfig.property.indexType">indexType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/vector_search_index#index_type VectorSearchIndex#index_type}. |
+| <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/vector_search_index#name VectorSearchIndex#name}. |
+| <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexConfig.property.primaryKey">primaryKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/vector_search_index#primary_key VectorSearchIndex#primary_key}. |
 | <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexConfig.property.deltaSyncIndexSpec">deltaSyncIndexSpec</a></code> | <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexDeltaSyncIndexSpec">VectorSearchIndexDeltaSyncIndexSpec</a></code> | delta_sync_index_spec block. |
 | <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexConfig.property.directAccessIndexSpec">directAccessIndexSpec</a></code> | <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexDirectAccessIndexSpec">VectorSearchIndexDirectAccessIndexSpec</a></code> | direct_access_index_spec block. |
-| <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/vector_search_index#id VectorSearchIndex#id}. |
+| <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/vector_search_index#id VectorSearchIndex#id}. |
+| <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexConfig.property.indexSubtype">indexSubtype</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/vector_search_index#index_subtype VectorSearchIndex#index_subtype}. |
 | <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexConfig.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexProviderConfig">VectorSearchIndexProviderConfig</a></code> | provider_config block. |
 | <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexTimeouts">VectorSearchIndexTimeouts</a></code> | timeouts block. |
 
@@ -1102,7 +1132,7 @@ public readonly endpointName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/vector_search_index#endpoint_name VectorSearchIndex#endpoint_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/vector_search_index#endpoint_name VectorSearchIndex#endpoint_name}.
 
 ---
 
@@ -1114,7 +1144,7 @@ public readonly indexType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/vector_search_index#index_type VectorSearchIndex#index_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/vector_search_index#index_type VectorSearchIndex#index_type}.
 
 ---
 
@@ -1126,7 +1156,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/vector_search_index#name VectorSearchIndex#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/vector_search_index#name VectorSearchIndex#name}.
 
 ---
 
@@ -1138,7 +1168,7 @@ public readonly primaryKey: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/vector_search_index#primary_key VectorSearchIndex#primary_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/vector_search_index#primary_key VectorSearchIndex#primary_key}.
 
 ---
 
@@ -1152,7 +1182,7 @@ public readonly deltaSyncIndexSpec: VectorSearchIndexDeltaSyncIndexSpec;
 
 delta_sync_index_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/vector_search_index#delta_sync_index_spec VectorSearchIndex#delta_sync_index_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/vector_search_index#delta_sync_index_spec VectorSearchIndex#delta_sync_index_spec}
 
 ---
 
@@ -1166,7 +1196,7 @@ public readonly directAccessIndexSpec: VectorSearchIndexDirectAccessIndexSpec;
 
 direct_access_index_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/vector_search_index#direct_access_index_spec VectorSearchIndex#direct_access_index_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/vector_search_index#direct_access_index_spec VectorSearchIndex#direct_access_index_spec}
 
 ---
 
@@ -1178,10 +1208,22 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/vector_search_index#id VectorSearchIndex#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/vector_search_index#id VectorSearchIndex#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `indexSubtype`<sup>Optional</sup> <a name="indexSubtype" id="@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexConfig.property.indexSubtype"></a>
+
+```typescript
+public readonly indexSubtype: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/vector_search_index#index_subtype VectorSearchIndex#index_subtype}.
 
 ---
 
@@ -1195,7 +1237,7 @@ public readonly providerConfig: VectorSearchIndexProviderConfig;
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/vector_search_index#provider_config VectorSearchIndex#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/vector_search_index#provider_config VectorSearchIndex#provider_config}
 
 ---
 
@@ -1209,7 +1251,7 @@ public readonly timeouts: VectorSearchIndexTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/vector_search_index#timeouts VectorSearchIndex#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/vector_search_index#timeouts VectorSearchIndex#timeouts}
 
 ---
 
@@ -1229,9 +1271,9 @@ const vectorSearchIndexDeltaSyncIndexSpec: vectorSearchIndex.VectorSearchIndexDe
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexDeltaSyncIndexSpec.property.embeddingSourceColumns">embeddingSourceColumns</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumns">VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumns</a>[]</code> | embedding_source_columns block. |
 | <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexDeltaSyncIndexSpec.property.embeddingVectorColumns">embeddingVectorColumns</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumns">VectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumns</a>[]</code> | embedding_vector_columns block. |
-| <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexDeltaSyncIndexSpec.property.embeddingWritebackTable">embeddingWritebackTable</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/vector_search_index#embedding_writeback_table VectorSearchIndex#embedding_writeback_table}. |
-| <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexDeltaSyncIndexSpec.property.pipelineType">pipelineType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/vector_search_index#pipeline_type VectorSearchIndex#pipeline_type}. |
-| <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexDeltaSyncIndexSpec.property.sourceTable">sourceTable</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/vector_search_index#source_table VectorSearchIndex#source_table}. |
+| <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexDeltaSyncIndexSpec.property.embeddingWritebackTable">embeddingWritebackTable</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/vector_search_index#embedding_writeback_table VectorSearchIndex#embedding_writeback_table}. |
+| <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexDeltaSyncIndexSpec.property.pipelineType">pipelineType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/vector_search_index#pipeline_type VectorSearchIndex#pipeline_type}. |
+| <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexDeltaSyncIndexSpec.property.sourceTable">sourceTable</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/vector_search_index#source_table VectorSearchIndex#source_table}. |
 
 ---
 
@@ -1245,7 +1287,7 @@ public readonly embeddingSourceColumns: IResolvable | VectorSearchIndexDeltaSync
 
 embedding_source_columns block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/vector_search_index#embedding_source_columns VectorSearchIndex#embedding_source_columns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/vector_search_index#embedding_source_columns VectorSearchIndex#embedding_source_columns}
 
 ---
 
@@ -1259,7 +1301,7 @@ public readonly embeddingVectorColumns: IResolvable | VectorSearchIndexDeltaSync
 
 embedding_vector_columns block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/vector_search_index#embedding_vector_columns VectorSearchIndex#embedding_vector_columns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/vector_search_index#embedding_vector_columns VectorSearchIndex#embedding_vector_columns}
 
 ---
 
@@ -1271,7 +1313,7 @@ public readonly embeddingWritebackTable: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/vector_search_index#embedding_writeback_table VectorSearchIndex#embedding_writeback_table}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/vector_search_index#embedding_writeback_table VectorSearchIndex#embedding_writeback_table}.
 
 ---
 
@@ -1283,7 +1325,7 @@ public readonly pipelineType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/vector_search_index#pipeline_type VectorSearchIndex#pipeline_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/vector_search_index#pipeline_type VectorSearchIndex#pipeline_type}.
 
 ---
 
@@ -1295,7 +1337,7 @@ public readonly sourceTable: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/vector_search_index#source_table VectorSearchIndex#source_table}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/vector_search_index#source_table VectorSearchIndex#source_table}.
 
 ---
 
@@ -1313,9 +1355,9 @@ const vectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumns: vectorSearchInd
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumns.property.embeddingModelEndpointName">embeddingModelEndpointName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/vector_search_index#embedding_model_endpoint_name VectorSearchIndex#embedding_model_endpoint_name}. |
-| <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumns.property.modelEndpointNameForQuery">modelEndpointNameForQuery</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/vector_search_index#model_endpoint_name_for_query VectorSearchIndex#model_endpoint_name_for_query}. |
-| <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumns.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/vector_search_index#name VectorSearchIndex#name}. |
+| <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumns.property.embeddingModelEndpointName">embeddingModelEndpointName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/vector_search_index#embedding_model_endpoint_name VectorSearchIndex#embedding_model_endpoint_name}. |
+| <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumns.property.modelEndpointNameForQuery">modelEndpointNameForQuery</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/vector_search_index#model_endpoint_name_for_query VectorSearchIndex#model_endpoint_name_for_query}. |
+| <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexDeltaSyncIndexSpecEmbeddingSourceColumns.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/vector_search_index#name VectorSearchIndex#name}. |
 
 ---
 
@@ -1327,7 +1369,7 @@ public readonly embeddingModelEndpointName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/vector_search_index#embedding_model_endpoint_name VectorSearchIndex#embedding_model_endpoint_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/vector_search_index#embedding_model_endpoint_name VectorSearchIndex#embedding_model_endpoint_name}.
 
 ---
 
@@ -1339,7 +1381,7 @@ public readonly modelEndpointNameForQuery: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/vector_search_index#model_endpoint_name_for_query VectorSearchIndex#model_endpoint_name_for_query}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/vector_search_index#model_endpoint_name_for_query VectorSearchIndex#model_endpoint_name_for_query}.
 
 ---
 
@@ -1351,7 +1393,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/vector_search_index#name VectorSearchIndex#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/vector_search_index#name VectorSearchIndex#name}.
 
 ---
 
@@ -1369,8 +1411,8 @@ const vectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumns: vectorSearchInd
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumns.property.embeddingDimension">embeddingDimension</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/vector_search_index#embedding_dimension VectorSearchIndex#embedding_dimension}. |
-| <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumns.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/vector_search_index#name VectorSearchIndex#name}. |
+| <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumns.property.embeddingDimension">embeddingDimension</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/vector_search_index#embedding_dimension VectorSearchIndex#embedding_dimension}. |
+| <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexDeltaSyncIndexSpecEmbeddingVectorColumns.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/vector_search_index#name VectorSearchIndex#name}. |
 
 ---
 
@@ -1382,7 +1424,7 @@ public readonly embeddingDimension: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/vector_search_index#embedding_dimension VectorSearchIndex#embedding_dimension}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/vector_search_index#embedding_dimension VectorSearchIndex#embedding_dimension}.
 
 ---
 
@@ -1394,7 +1436,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/vector_search_index#name VectorSearchIndex#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/vector_search_index#name VectorSearchIndex#name}.
 
 ---
 
@@ -1414,7 +1456,7 @@ const vectorSearchIndexDirectAccessIndexSpec: vectorSearchIndex.VectorSearchInde
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexDirectAccessIndexSpec.property.embeddingSourceColumns">embeddingSourceColumns</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumns">VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumns</a>[]</code> | embedding_source_columns block. |
 | <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexDirectAccessIndexSpec.property.embeddingVectorColumns">embeddingVectorColumns</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumns">VectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumns</a>[]</code> | embedding_vector_columns block. |
-| <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexDirectAccessIndexSpec.property.schemaJson">schemaJson</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/vector_search_index#schema_json VectorSearchIndex#schema_json}. |
+| <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexDirectAccessIndexSpec.property.schemaJson">schemaJson</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/vector_search_index#schema_json VectorSearchIndex#schema_json}. |
 
 ---
 
@@ -1428,7 +1470,7 @@ public readonly embeddingSourceColumns: IResolvable | VectorSearchIndexDirectAcc
 
 embedding_source_columns block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/vector_search_index#embedding_source_columns VectorSearchIndex#embedding_source_columns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/vector_search_index#embedding_source_columns VectorSearchIndex#embedding_source_columns}
 
 ---
 
@@ -1442,7 +1484,7 @@ public readonly embeddingVectorColumns: IResolvable | VectorSearchIndexDirectAcc
 
 embedding_vector_columns block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/vector_search_index#embedding_vector_columns VectorSearchIndex#embedding_vector_columns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/vector_search_index#embedding_vector_columns VectorSearchIndex#embedding_vector_columns}
 
 ---
 
@@ -1454,7 +1496,7 @@ public readonly schemaJson: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/vector_search_index#schema_json VectorSearchIndex#schema_json}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/vector_search_index#schema_json VectorSearchIndex#schema_json}.
 
 ---
 
@@ -1472,9 +1514,9 @@ const vectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumns: vectorSearch
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumns.property.embeddingModelEndpointName">embeddingModelEndpointName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/vector_search_index#embedding_model_endpoint_name VectorSearchIndex#embedding_model_endpoint_name}. |
-| <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumns.property.modelEndpointNameForQuery">modelEndpointNameForQuery</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/vector_search_index#model_endpoint_name_for_query VectorSearchIndex#model_endpoint_name_for_query}. |
-| <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumns.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/vector_search_index#name VectorSearchIndex#name}. |
+| <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumns.property.embeddingModelEndpointName">embeddingModelEndpointName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/vector_search_index#embedding_model_endpoint_name VectorSearchIndex#embedding_model_endpoint_name}. |
+| <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumns.property.modelEndpointNameForQuery">modelEndpointNameForQuery</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/vector_search_index#model_endpoint_name_for_query VectorSearchIndex#model_endpoint_name_for_query}. |
+| <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexDirectAccessIndexSpecEmbeddingSourceColumns.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/vector_search_index#name VectorSearchIndex#name}. |
 
 ---
 
@@ -1486,7 +1528,7 @@ public readonly embeddingModelEndpointName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/vector_search_index#embedding_model_endpoint_name VectorSearchIndex#embedding_model_endpoint_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/vector_search_index#embedding_model_endpoint_name VectorSearchIndex#embedding_model_endpoint_name}.
 
 ---
 
@@ -1498,7 +1540,7 @@ public readonly modelEndpointNameForQuery: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/vector_search_index#model_endpoint_name_for_query VectorSearchIndex#model_endpoint_name_for_query}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/vector_search_index#model_endpoint_name_for_query VectorSearchIndex#model_endpoint_name_for_query}.
 
 ---
 
@@ -1510,7 +1552,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/vector_search_index#name VectorSearchIndex#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/vector_search_index#name VectorSearchIndex#name}.
 
 ---
 
@@ -1528,8 +1570,8 @@ const vectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumns: vectorSearch
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumns.property.embeddingDimension">embeddingDimension</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/vector_search_index#embedding_dimension VectorSearchIndex#embedding_dimension}. |
-| <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumns.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/vector_search_index#name VectorSearchIndex#name}. |
+| <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumns.property.embeddingDimension">embeddingDimension</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/vector_search_index#embedding_dimension VectorSearchIndex#embedding_dimension}. |
+| <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexDirectAccessIndexSpecEmbeddingVectorColumns.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/vector_search_index#name VectorSearchIndex#name}. |
 
 ---
 
@@ -1541,7 +1583,7 @@ public readonly embeddingDimension: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/vector_search_index#embedding_dimension VectorSearchIndex#embedding_dimension}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/vector_search_index#embedding_dimension VectorSearchIndex#embedding_dimension}.
 
 ---
 
@@ -1553,7 +1595,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/vector_search_index#name VectorSearchIndex#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/vector_search_index#name VectorSearchIndex#name}.
 
 ---
 
@@ -1571,7 +1613,7 @@ const vectorSearchIndexProviderConfig: vectorSearchIndex.VectorSearchIndexProvid
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/vector_search_index#workspace_id VectorSearchIndex#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/vector_search_index#workspace_id VectorSearchIndex#workspace_id}. |
 
 ---
 
@@ -1583,7 +1625,7 @@ public readonly workspaceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/vector_search_index#workspace_id VectorSearchIndex#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/vector_search_index#workspace_id VectorSearchIndex#workspace_id}.
 
 ---
 
@@ -1612,7 +1654,7 @@ const vectorSearchIndexTimeouts: vectorSearchIndex.VectorSearchIndexTimeouts = {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/vector_search_index#create VectorSearchIndex#create}. |
+| <code><a href="#@cdktn/provider-databricks.vectorSearchIndex.VectorSearchIndexTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/vector_search_index#create VectorSearchIndex#create}. |
 
 ---
 
@@ -1624,7 +1666,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/vector_search_index#create VectorSearchIndex#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/vector_search_index#create VectorSearchIndex#create}.
 
 ---
 

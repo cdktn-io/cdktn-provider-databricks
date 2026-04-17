@@ -4,7 +4,7 @@
 
 ### SqlPermissions <a name="SqlPermissions" id="@cdktn/provider-databricks.sqlPermissions.SqlPermissions"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/sql_permissions databricks_sql_permissions}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/sql_permissions databricks_sql_permissions}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.sqlPermissions.SqlPermissions.Initializer"></a>
 
@@ -28,6 +28,7 @@ sqlPermissions.SqlPermissions(
   database: str = None,
   id: str = None,
   privilege_assignments: IResolvable | typing.List[SqlPermissionsPrivilegeAssignments] = None,
+  provider_config: SqlPermissionsProviderConfig = None,
   table: str = None,
   view: str = None
 )
@@ -44,15 +45,16 @@ sqlPermissions.SqlPermissions(
 | <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissions.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissions.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissions.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissions.Initializer.parameter.anonymousFunction">anonymous_function</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/sql_permissions#anonymous_function SqlPermissions#anonymous_function}. |
-| <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissions.Initializer.parameter.anyFile">any_file</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/sql_permissions#any_file SqlPermissions#any_file}. |
-| <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissions.Initializer.parameter.catalog">catalog</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/sql_permissions#catalog SqlPermissions#catalog}. |
-| <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissions.Initializer.parameter.clusterId">cluster_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/sql_permissions#cluster_id SqlPermissions#cluster_id}. |
-| <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissions.Initializer.parameter.database">database</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/sql_permissions#database SqlPermissions#database}. |
-| <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissions.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/sql_permissions#id SqlPermissions#id}. |
+| <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissions.Initializer.parameter.anonymousFunction">anonymous_function</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/sql_permissions#anonymous_function SqlPermissions#anonymous_function}. |
+| <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissions.Initializer.parameter.anyFile">any_file</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/sql_permissions#any_file SqlPermissions#any_file}. |
+| <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissions.Initializer.parameter.catalog">catalog</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/sql_permissions#catalog SqlPermissions#catalog}. |
+| <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissions.Initializer.parameter.clusterId">cluster_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/sql_permissions#cluster_id SqlPermissions#cluster_id}. |
+| <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissions.Initializer.parameter.database">database</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/sql_permissions#database SqlPermissions#database}. |
+| <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissions.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/sql_permissions#id SqlPermissions#id}. |
 | <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissions.Initializer.parameter.privilegeAssignments">privilege_assignments</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissionsPrivilegeAssignments">SqlPermissionsPrivilegeAssignments</a>]</code> | privilege_assignments block. |
-| <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissions.Initializer.parameter.table">table</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/sql_permissions#table SqlPermissions#table}. |
-| <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissions.Initializer.parameter.view">view</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/sql_permissions#view SqlPermissions#view}. |
+| <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissions.Initializer.parameter.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfig">SqlPermissionsProviderConfig</a></code> | provider_config block. |
+| <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissions.Initializer.parameter.table">table</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/sql_permissions#table SqlPermissions#table}. |
+| <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissions.Initializer.parameter.view">view</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/sql_permissions#view SqlPermissions#view}. |
 
 ---
 
@@ -120,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/sql_permissions#anonymous_function SqlPermissions#anonymous_function}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/sql_permissions#anonymous_function SqlPermissions#anonymous_function}.
 
 ---
 
@@ -128,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/sql_permissions#any_file SqlPermissions#any_file}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/sql_permissions#any_file SqlPermissions#any_file}.
 
 ---
 
@@ -136,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/sql_permissions#catalog SqlPermissions#catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/sql_permissions#catalog SqlPermissions#catalog}.
 
 ---
 
@@ -144,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/sql_permissions#cluster_id SqlPermissions#cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/sql_permissions#cluster_id SqlPermissions#cluster_id}.
 
 ---
 
@@ -152,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/sql_permissions#database SqlPermissions#database}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/sql_permissions#database SqlPermissions#database}.
 
 ---
 
@@ -160,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/sql_permissions#id SqlPermissions#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/sql_permissions#id SqlPermissions#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -173,7 +175,17 @@ If you experience problems setting this value it might not be settable. Please t
 
 privilege_assignments block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/sql_permissions#privilege_assignments SqlPermissions#privilege_assignments}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/sql_permissions#privilege_assignments SqlPermissions#privilege_assignments}
+
+---
+
+##### `provider_config`<sup>Optional</sup> <a name="provider_config" id="@cdktn/provider-databricks.sqlPermissions.SqlPermissions.Initializer.parameter.providerConfig"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfig">SqlPermissionsProviderConfig</a>
+
+provider_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/sql_permissions#provider_config SqlPermissions#provider_config}
 
 ---
 
@@ -181,7 +193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/sql_permissions#table SqlPermissions#table}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/sql_permissions#table SqlPermissions#table}.
 
 ---
 
@@ -189,7 +201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/sql_permissions#view SqlPermissions#view}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/sql_permissions#view SqlPermissions#view}.
 
 ---
 
@@ -222,6 +234,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 | <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissions.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissions.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissions.putPrivilegeAssignments">put_privilege_assignments</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissions.putProviderConfig">put_provider_config</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissions.resetAnonymousFunction">reset_anonymous_function</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissions.resetAnyFile">reset_any_file</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissions.resetCatalog">reset_catalog</a></code> | *No description.* |
@@ -229,6 +242,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 | <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissions.resetDatabase">reset_database</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissions.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissions.resetPrivilegeAssignments">reset_privilege_assignments</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissions.resetProviderConfig">reset_provider_config</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissions.resetTable">reset_table</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissions.resetView">reset_view</a></code> | *No description.* |
 
@@ -596,6 +610,22 @@ def put_privilege_assignments(
 
 ---
 
+##### `put_provider_config` <a name="put_provider_config" id="@cdktn/provider-databricks.sqlPermissions.SqlPermissions.putProviderConfig"></a>
+
+```python
+def put_provider_config(
+  workspace_id: str
+) -> None
+```
+
+###### `workspace_id`<sup>Required</sup> <a name="workspace_id" id="@cdktn/provider-databricks.sqlPermissions.SqlPermissions.putProviderConfig.parameter.workspaceId"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/sql_permissions#workspace_id SqlPermissions#workspace_id}.
+
+---
+
 ##### `reset_anonymous_function` <a name="reset_anonymous_function" id="@cdktn/provider-databricks.sqlPermissions.SqlPermissions.resetAnonymousFunction"></a>
 
 ```python
@@ -636,6 +666,12 @@ def reset_id() -> None
 
 ```python
 def reset_privilege_assignments() -> None
+```
+
+##### `reset_provider_config` <a name="reset_provider_config" id="@cdktn/provider-databricks.sqlPermissions.SqlPermissions.resetProviderConfig"></a>
+
+```python
+def reset_provider_config() -> None
 ```
 
 ##### `reset_table` <a name="reset_table" id="@cdktn/provider-databricks.sqlPermissions.SqlPermissions.resetTable"></a>
@@ -764,7 +800,7 @@ The construct id used in the generated config for the SqlPermissions to import.
 
 The id of the existing SqlPermissions that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/sql_permissions#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/sql_permissions#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -795,6 +831,7 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissions.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissions.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissions.property.privilegeAssignments">privilege_assignments</a></code> | <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissionsPrivilegeAssignmentsList">SqlPermissionsPrivilegeAssignmentsList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissions.property.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfigOutputReference">SqlPermissionsProviderConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissions.property.anonymousFunctionInput">anonymous_function_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissions.property.anyFileInput">any_file_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissions.property.catalogInput">catalog_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
@@ -802,6 +839,7 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissions.property.databaseInput">database_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissions.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissions.property.privilegeAssignmentsInput">privilege_assignments_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissionsPrivilegeAssignments">SqlPermissionsPrivilegeAssignments</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissions.property.providerConfigInput">provider_config_input</a></code> | <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfig">SqlPermissionsProviderConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissions.property.tableInput">table_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissions.property.viewInput">view_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissions.property.anonymousFunction">anonymous_function</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
@@ -967,6 +1005,16 @@ privilege_assignments: SqlPermissionsPrivilegeAssignmentsList
 
 ---
 
+##### `provider_config`<sup>Required</sup> <a name="provider_config" id="@cdktn/provider-databricks.sqlPermissions.SqlPermissions.property.providerConfig"></a>
+
+```python
+provider_config: SqlPermissionsProviderConfigOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfigOutputReference">SqlPermissionsProviderConfigOutputReference</a>
+
+---
+
 ##### `anonymous_function_input`<sup>Optional</sup> <a name="anonymous_function_input" id="@cdktn/provider-databricks.sqlPermissions.SqlPermissions.property.anonymousFunctionInput"></a>
 
 ```python
@@ -1034,6 +1082,16 @@ privilege_assignments_input: IResolvable | typing.List[SqlPermissionsPrivilegeAs
 ```
 
 - *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissionsPrivilegeAssignments">SqlPermissionsPrivilegeAssignments</a>]
+
+---
+
+##### `provider_config_input`<sup>Optional</sup> <a name="provider_config_input" id="@cdktn/provider-databricks.sqlPermissions.SqlPermissions.property.providerConfigInput"></a>
+
+```python
+provider_config_input: SqlPermissionsProviderConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfig">SqlPermissionsProviderConfig</a>
 
 ---
 
@@ -1179,6 +1237,7 @@ sqlPermissions.SqlPermissionsConfig(
   database: str = None,
   id: str = None,
   privilege_assignments: IResolvable | typing.List[SqlPermissionsPrivilegeAssignments] = None,
+  provider_config: SqlPermissionsProviderConfig = None,
   table: str = None,
   view: str = None
 )
@@ -1195,15 +1254,16 @@ sqlPermissions.SqlPermissionsConfig(
 | <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissionsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissionsConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissionsConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissionsConfig.property.anonymousFunction">anonymous_function</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/sql_permissions#anonymous_function SqlPermissions#anonymous_function}. |
-| <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissionsConfig.property.anyFile">any_file</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/sql_permissions#any_file SqlPermissions#any_file}. |
-| <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissionsConfig.property.catalog">catalog</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/sql_permissions#catalog SqlPermissions#catalog}. |
-| <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissionsConfig.property.clusterId">cluster_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/sql_permissions#cluster_id SqlPermissions#cluster_id}. |
-| <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissionsConfig.property.database">database</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/sql_permissions#database SqlPermissions#database}. |
-| <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissionsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/sql_permissions#id SqlPermissions#id}. |
+| <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissionsConfig.property.anonymousFunction">anonymous_function</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/sql_permissions#anonymous_function SqlPermissions#anonymous_function}. |
+| <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissionsConfig.property.anyFile">any_file</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/sql_permissions#any_file SqlPermissions#any_file}. |
+| <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissionsConfig.property.catalog">catalog</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/sql_permissions#catalog SqlPermissions#catalog}. |
+| <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissionsConfig.property.clusterId">cluster_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/sql_permissions#cluster_id SqlPermissions#cluster_id}. |
+| <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissionsConfig.property.database">database</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/sql_permissions#database SqlPermissions#database}. |
+| <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissionsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/sql_permissions#id SqlPermissions#id}. |
 | <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissionsConfig.property.privilegeAssignments">privilege_assignments</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissionsPrivilegeAssignments">SqlPermissionsPrivilegeAssignments</a>]</code> | privilege_assignments block. |
-| <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissionsConfig.property.table">table</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/sql_permissions#table SqlPermissions#table}. |
-| <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissionsConfig.property.view">view</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/sql_permissions#view SqlPermissions#view}. |
+| <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissionsConfig.property.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfig">SqlPermissionsProviderConfig</a></code> | provider_config block. |
+| <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissionsConfig.property.table">table</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/sql_permissions#table SqlPermissions#table}. |
+| <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissionsConfig.property.view">view</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/sql_permissions#view SqlPermissions#view}. |
 
 ---
 
@@ -1285,7 +1345,7 @@ anonymous_function: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/sql_permissions#anonymous_function SqlPermissions#anonymous_function}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/sql_permissions#anonymous_function SqlPermissions#anonymous_function}.
 
 ---
 
@@ -1297,7 +1357,7 @@ any_file: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/sql_permissions#any_file SqlPermissions#any_file}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/sql_permissions#any_file SqlPermissions#any_file}.
 
 ---
 
@@ -1309,7 +1369,7 @@ catalog: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/sql_permissions#catalog SqlPermissions#catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/sql_permissions#catalog SqlPermissions#catalog}.
 
 ---
 
@@ -1321,7 +1381,7 @@ cluster_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/sql_permissions#cluster_id SqlPermissions#cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/sql_permissions#cluster_id SqlPermissions#cluster_id}.
 
 ---
 
@@ -1333,7 +1393,7 @@ database: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/sql_permissions#database SqlPermissions#database}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/sql_permissions#database SqlPermissions#database}.
 
 ---
 
@@ -1345,7 +1405,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/sql_permissions#id SqlPermissions#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/sql_permissions#id SqlPermissions#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1362,7 +1422,21 @@ privilege_assignments: IResolvable | typing.List[SqlPermissionsPrivilegeAssignme
 
 privilege_assignments block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/sql_permissions#privilege_assignments SqlPermissions#privilege_assignments}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/sql_permissions#privilege_assignments SqlPermissions#privilege_assignments}
+
+---
+
+##### `provider_config`<sup>Optional</sup> <a name="provider_config" id="@cdktn/provider-databricks.sqlPermissions.SqlPermissionsConfig.property.providerConfig"></a>
+
+```python
+provider_config: SqlPermissionsProviderConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfig">SqlPermissionsProviderConfig</a>
+
+provider_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/sql_permissions#provider_config SqlPermissions#provider_config}
 
 ---
 
@@ -1374,7 +1448,7 @@ table: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/sql_permissions#table SqlPermissions#table}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/sql_permissions#table SqlPermissions#table}.
 
 ---
 
@@ -1386,7 +1460,7 @@ view: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/sql_permissions#view SqlPermissions#view}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/sql_permissions#view SqlPermissions#view}.
 
 ---
 
@@ -1407,8 +1481,8 @@ sqlPermissions.SqlPermissionsPrivilegeAssignments(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissionsPrivilegeAssignments.property.principal">principal</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/sql_permissions#principal SqlPermissions#principal}. |
-| <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissionsPrivilegeAssignments.property.privileges">privileges</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/sql_permissions#privileges SqlPermissions#privileges}. |
+| <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissionsPrivilegeAssignments.property.principal">principal</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/sql_permissions#principal SqlPermissions#principal}. |
+| <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissionsPrivilegeAssignments.property.privileges">privileges</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/sql_permissions#privileges SqlPermissions#privileges}. |
 
 ---
 
@@ -1420,7 +1494,7 @@ principal: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/sql_permissions#principal SqlPermissions#principal}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/sql_permissions#principal SqlPermissions#principal}.
 
 ---
 
@@ -1432,7 +1506,39 @@ privileges: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/sql_permissions#privileges SqlPermissions#privileges}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/sql_permissions#privileges SqlPermissions#privileges}.
+
+---
+
+### SqlPermissionsProviderConfig <a name="SqlPermissionsProviderConfig" id="@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfig.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import sql_permissions
+
+sqlPermissions.SqlPermissionsProviderConfig(
+  workspace_id: str
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/sql_permissions#workspace_id SqlPermissions#workspace_id}. |
+
+---
+
+##### `workspace_id`<sup>Required</sup> <a name="workspace_id" id="@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfig.property.workspaceId"></a>
+
+```python
+workspace_id: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/sql_permissions#workspace_id SqlPermissions#workspace_id}.
 
 ---
 
@@ -1942,6 +2048,302 @@ internal_value: IResolvable | SqlPermissionsPrivilegeAssignments
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissionsPrivilegeAssignments">SqlPermissionsPrivilegeAssignments</a>
+
+---
+
+
+### SqlPermissionsProviderConfigOutputReference <a name="SqlPermissionsProviderConfigOutputReference" id="@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfigOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import sql_permissions
+
+sqlPermissions.SqlPermissionsProviderConfigOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfigOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfigOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfigOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfigOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfigOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfigOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfigOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfigOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfigOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfigOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfigOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfigOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfigOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfigOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfigOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfigOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfigOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfigOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfigOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfigOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfigOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfigOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfigOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfigOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfigOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfigOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfigOutputReference.property.workspaceIdInput">workspace_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfigOutputReference.property.workspaceId">workspace_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfigOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfig">SqlPermissionsProviderConfig</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfigOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfigOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `workspace_id_input`<sup>Optional</sup> <a name="workspace_id_input" id="@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfigOutputReference.property.workspaceIdInput"></a>
+
+```python
+workspace_id_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `workspace_id`<sup>Required</sup> <a name="workspace_id" id="@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfigOutputReference.property.workspaceId"></a>
+
+```python
+workspace_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfigOutputReference.property.internalValue"></a>
+
+```python
+internal_value: SqlPermissionsProviderConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.sqlPermissions.SqlPermissionsProviderConfig">SqlPermissionsProviderConfig</a>
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### Group <a name="Group" id="@cdktn/provider-databricks.group.Group"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group databricks_group}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group databricks_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.group.Group.Initializer"></a>
 
@@ -25,10 +25,12 @@ group.Group(
   acl_principal_id: str = None,
   allow_cluster_create: bool | IResolvable = None,
   allow_instance_pool_create: bool | IResolvable = None,
+  api: str = None,
   databricks_sql_access: bool | IResolvable = None,
   external_id: str = None,
   force: bool | IResolvable = None,
   id: str = None,
+  provider_config: GroupProviderConfig = None,
   url: str = None,
   workspace_access: bool | IResolvable = None,
   workspace_consume: bool | IResolvable = None
@@ -46,17 +48,19 @@ group.Group(
 | <code><a href="#@cdktn/provider-databricks.group.Group.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.group.Group.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.group.Group.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.group.Group.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group#display_name Group#display_name}. |
-| <code><a href="#@cdktn/provider-databricks.group.Group.Initializer.parameter.aclPrincipalId">acl_principal_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group#acl_principal_id Group#acl_principal_id}. |
-| <code><a href="#@cdktn/provider-databricks.group.Group.Initializer.parameter.allowClusterCreate">allow_cluster_create</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group#allow_cluster_create Group#allow_cluster_create}. |
-| <code><a href="#@cdktn/provider-databricks.group.Group.Initializer.parameter.allowInstancePoolCreate">allow_instance_pool_create</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group#allow_instance_pool_create Group#allow_instance_pool_create}. |
-| <code><a href="#@cdktn/provider-databricks.group.Group.Initializer.parameter.databricksSqlAccess">databricks_sql_access</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group#databricks_sql_access Group#databricks_sql_access}. |
-| <code><a href="#@cdktn/provider-databricks.group.Group.Initializer.parameter.externalId">external_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group#external_id Group#external_id}. |
-| <code><a href="#@cdktn/provider-databricks.group.Group.Initializer.parameter.force">force</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group#force Group#force}. |
-| <code><a href="#@cdktn/provider-databricks.group.Group.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group#id Group#id}. |
-| <code><a href="#@cdktn/provider-databricks.group.Group.Initializer.parameter.url">url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group#url Group#url}. |
-| <code><a href="#@cdktn/provider-databricks.group.Group.Initializer.parameter.workspaceAccess">workspace_access</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group#workspace_access Group#workspace_access}. |
-| <code><a href="#@cdktn/provider-databricks.group.Group.Initializer.parameter.workspaceConsume">workspace_consume</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group#workspace_consume Group#workspace_consume}. |
+| <code><a href="#@cdktn/provider-databricks.group.Group.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#display_name Group#display_name}. |
+| <code><a href="#@cdktn/provider-databricks.group.Group.Initializer.parameter.aclPrincipalId">acl_principal_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#acl_principal_id Group#acl_principal_id}. |
+| <code><a href="#@cdktn/provider-databricks.group.Group.Initializer.parameter.allowClusterCreate">allow_cluster_create</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#allow_cluster_create Group#allow_cluster_create}. |
+| <code><a href="#@cdktn/provider-databricks.group.Group.Initializer.parameter.allowInstancePoolCreate">allow_instance_pool_create</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#allow_instance_pool_create Group#allow_instance_pool_create}. |
+| <code><a href="#@cdktn/provider-databricks.group.Group.Initializer.parameter.api">api</a></code> | <code>str</code> | Specifies whether to use account-level or workspace-level API. |
+| <code><a href="#@cdktn/provider-databricks.group.Group.Initializer.parameter.databricksSqlAccess">databricks_sql_access</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#databricks_sql_access Group#databricks_sql_access}. |
+| <code><a href="#@cdktn/provider-databricks.group.Group.Initializer.parameter.externalId">external_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#external_id Group#external_id}. |
+| <code><a href="#@cdktn/provider-databricks.group.Group.Initializer.parameter.force">force</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#force Group#force}. |
+| <code><a href="#@cdktn/provider-databricks.group.Group.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#id Group#id}. |
+| <code><a href="#@cdktn/provider-databricks.group.Group.Initializer.parameter.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.group.GroupProviderConfig">GroupProviderConfig</a></code> | provider_config block. |
+| <code><a href="#@cdktn/provider-databricks.group.Group.Initializer.parameter.url">url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#url Group#url}. |
+| <code><a href="#@cdktn/provider-databricks.group.Group.Initializer.parameter.workspaceAccess">workspace_access</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#workspace_access Group#workspace_access}. |
+| <code><a href="#@cdktn/provider-databricks.group.Group.Initializer.parameter.workspaceConsume">workspace_consume</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#workspace_consume Group#workspace_consume}. |
 
 ---
 
@@ -124,7 +128,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group#display_name Group#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#display_name Group#display_name}.
 
 ---
 
@@ -132,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group#acl_principal_id Group#acl_principal_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#acl_principal_id Group#acl_principal_id}.
 
 ---
 
@@ -140,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group#allow_cluster_create Group#allow_cluster_create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#allow_cluster_create Group#allow_cluster_create}.
 
 ---
 
@@ -148,7 +152,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group#allow_instance_pool_create Group#allow_instance_pool_create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#allow_instance_pool_create Group#allow_instance_pool_create}.
+
+---
+
+##### `api`<sup>Optional</sup> <a name="api" id="@cdktn/provider-databricks.group.Group.Initializer.parameter.api"></a>
+
+- *Type:* str
+
+Specifies whether to use account-level or workspace-level API.
+
+Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#api Group#api}
 
 ---
 
@@ -156,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group#databricks_sql_access Group#databricks_sql_access}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#databricks_sql_access Group#databricks_sql_access}.
 
 ---
 
@@ -164,7 +180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group#external_id Group#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#external_id Group#external_id}.
 
 ---
 
@@ -172,7 +188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group#force Group#force}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#force Group#force}.
 
 ---
 
@@ -180,10 +196,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group#id Group#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#id Group#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `provider_config`<sup>Optional</sup> <a name="provider_config" id="@cdktn/provider-databricks.group.Group.Initializer.parameter.providerConfig"></a>
+
+- *Type:* <a href="#@cdktn/provider-databricks.group.GroupProviderConfig">GroupProviderConfig</a>
+
+provider_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#provider_config Group#provider_config}
 
 ---
 
@@ -191,7 +217,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group#url Group#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#url Group#url}.
 
 ---
 
@@ -199,7 +225,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group#workspace_access Group#workspace_access}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#workspace_access Group#workspace_access}.
 
 ---
 
@@ -207,7 +233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group#workspace_consume Group#workspace_consume}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#workspace_consume Group#workspace_consume}.
 
 ---
 
@@ -239,13 +265,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 | <code><a href="#@cdktn/provider-databricks.group.Group.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-databricks.group.Group.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-databricks.group.Group.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-databricks.group.Group.putProviderConfig">put_provider_config</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.group.Group.resetAclPrincipalId">reset_acl_principal_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.group.Group.resetAllowClusterCreate">reset_allow_cluster_create</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.group.Group.resetAllowInstancePoolCreate">reset_allow_instance_pool_create</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.group.Group.resetApi">reset_api</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.group.Group.resetDatabricksSqlAccess">reset_databricks_sql_access</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.group.Group.resetExternalId">reset_external_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.group.Group.resetForce">reset_force</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.group.Group.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.group.Group.resetProviderConfig">reset_provider_config</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.group.Group.resetUrl">reset_url</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.group.Group.resetWorkspaceAccess">reset_workspace_access</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.group.Group.resetWorkspaceConsume">reset_workspace_consume</a></code> | *No description.* |
@@ -600,6 +629,22 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `put_provider_config` <a name="put_provider_config" id="@cdktn/provider-databricks.group.Group.putProviderConfig"></a>
+
+```python
+def put_provider_config(
+  workspace_id: str
+) -> None
+```
+
+###### `workspace_id`<sup>Required</sup> <a name="workspace_id" id="@cdktn/provider-databricks.group.Group.putProviderConfig.parameter.workspaceId"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#workspace_id Group#workspace_id}.
+
+---
+
 ##### `reset_acl_principal_id` <a name="reset_acl_principal_id" id="@cdktn/provider-databricks.group.Group.resetAclPrincipalId"></a>
 
 ```python
@@ -616,6 +661,12 @@ def reset_allow_cluster_create() -> None
 
 ```python
 def reset_allow_instance_pool_create() -> None
+```
+
+##### `reset_api` <a name="reset_api" id="@cdktn/provider-databricks.group.Group.resetApi"></a>
+
+```python
+def reset_api() -> None
 ```
 
 ##### `reset_databricks_sql_access` <a name="reset_databricks_sql_access" id="@cdktn/provider-databricks.group.Group.resetDatabricksSqlAccess"></a>
@@ -640,6 +691,12 @@ def reset_force() -> None
 
 ```python
 def reset_id() -> None
+```
+
+##### `reset_provider_config` <a name="reset_provider_config" id="@cdktn/provider-databricks.group.Group.resetProviderConfig"></a>
+
+```python
+def reset_provider_config() -> None
 ```
 
 ##### `reset_url` <a name="reset_url" id="@cdktn/provider-databricks.group.Group.resetUrl"></a>
@@ -774,7 +831,7 @@ The construct id used in the generated config for the Group to import.
 
 The id of the existing Group that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -804,20 +861,24 @@ Refer to the {@link https://registry.terraform.io/providers/databricks/databrick
 | <code><a href="#@cdktn/provider-databricks.group.Group.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.group.Group.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.group.Group.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.group.Group.property.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.group.GroupProviderConfigOutputReference">GroupProviderConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.group.Group.property.aclPrincipalIdInput">acl_principal_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.group.Group.property.allowClusterCreateInput">allow_cluster_create_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.group.Group.property.allowInstancePoolCreateInput">allow_instance_pool_create_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.group.Group.property.apiInput">api_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.group.Group.property.databricksSqlAccessInput">databricks_sql_access_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.group.Group.property.displayNameInput">display_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.group.Group.property.externalIdInput">external_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.group.Group.property.forceInput">force_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.group.Group.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.group.Group.property.providerConfigInput">provider_config_input</a></code> | <code><a href="#@cdktn/provider-databricks.group.GroupProviderConfig">GroupProviderConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.group.Group.property.urlInput">url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.group.Group.property.workspaceAccessInput">workspace_access_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.group.Group.property.workspaceConsumeInput">workspace_consume_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.group.Group.property.aclPrincipalId">acl_principal_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.group.Group.property.allowClusterCreate">allow_cluster_create</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.group.Group.property.allowInstancePoolCreate">allow_instance_pool_create</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.group.Group.property.api">api</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.group.Group.property.databricksSqlAccess">databricks_sql_access</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.group.Group.property.displayName">display_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.group.Group.property.externalId">external_id</a></code> | <code>str</code> | *No description.* |
@@ -971,6 +1032,16 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
+##### `provider_config`<sup>Required</sup> <a name="provider_config" id="@cdktn/provider-databricks.group.Group.property.providerConfig"></a>
+
+```python
+provider_config: GroupProviderConfigOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.group.GroupProviderConfigOutputReference">GroupProviderConfigOutputReference</a>
+
+---
+
 ##### `acl_principal_id_input`<sup>Optional</sup> <a name="acl_principal_id_input" id="@cdktn/provider-databricks.group.Group.property.aclPrincipalIdInput"></a>
 
 ```python
@@ -998,6 +1069,16 @@ allow_instance_pool_create_input: bool | IResolvable
 ```
 
 - *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `api_input`<sup>Optional</sup> <a name="api_input" id="@cdktn/provider-databricks.group.Group.property.apiInput"></a>
+
+```python
+api_input: str
+```
+
+- *Type:* str
 
 ---
 
@@ -1048,6 +1129,16 @@ id_input: str
 ```
 
 - *Type:* str
+
+---
+
+##### `provider_config_input`<sup>Optional</sup> <a name="provider_config_input" id="@cdktn/provider-databricks.group.Group.property.providerConfigInput"></a>
+
+```python
+provider_config_input: GroupProviderConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.group.GroupProviderConfig">GroupProviderConfig</a>
 
 ---
 
@@ -1108,6 +1199,16 @@ allow_instance_pool_create: bool | IResolvable
 ```
 
 - *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `api`<sup>Required</sup> <a name="api" id="@cdktn/provider-databricks.group.Group.property.api"></a>
+
+```python
+api: str
+```
+
+- *Type:* str
 
 ---
 
@@ -1230,10 +1331,12 @@ group.GroupConfig(
   acl_principal_id: str = None,
   allow_cluster_create: bool | IResolvable = None,
   allow_instance_pool_create: bool | IResolvable = None,
+  api: str = None,
   databricks_sql_access: bool | IResolvable = None,
   external_id: str = None,
   force: bool | IResolvable = None,
   id: str = None,
+  provider_config: GroupProviderConfig = None,
   url: str = None,
   workspace_access: bool | IResolvable = None,
   workspace_consume: bool | IResolvable = None
@@ -1251,17 +1354,19 @@ group.GroupConfig(
 | <code><a href="#@cdktn/provider-databricks.group.GroupConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.group.GroupConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.group.GroupConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.group.GroupConfig.property.displayName">display_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group#display_name Group#display_name}. |
-| <code><a href="#@cdktn/provider-databricks.group.GroupConfig.property.aclPrincipalId">acl_principal_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group#acl_principal_id Group#acl_principal_id}. |
-| <code><a href="#@cdktn/provider-databricks.group.GroupConfig.property.allowClusterCreate">allow_cluster_create</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group#allow_cluster_create Group#allow_cluster_create}. |
-| <code><a href="#@cdktn/provider-databricks.group.GroupConfig.property.allowInstancePoolCreate">allow_instance_pool_create</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group#allow_instance_pool_create Group#allow_instance_pool_create}. |
-| <code><a href="#@cdktn/provider-databricks.group.GroupConfig.property.databricksSqlAccess">databricks_sql_access</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group#databricks_sql_access Group#databricks_sql_access}. |
-| <code><a href="#@cdktn/provider-databricks.group.GroupConfig.property.externalId">external_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group#external_id Group#external_id}. |
-| <code><a href="#@cdktn/provider-databricks.group.GroupConfig.property.force">force</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group#force Group#force}. |
-| <code><a href="#@cdktn/provider-databricks.group.GroupConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group#id Group#id}. |
-| <code><a href="#@cdktn/provider-databricks.group.GroupConfig.property.url">url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group#url Group#url}. |
-| <code><a href="#@cdktn/provider-databricks.group.GroupConfig.property.workspaceAccess">workspace_access</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group#workspace_access Group#workspace_access}. |
-| <code><a href="#@cdktn/provider-databricks.group.GroupConfig.property.workspaceConsume">workspace_consume</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group#workspace_consume Group#workspace_consume}. |
+| <code><a href="#@cdktn/provider-databricks.group.GroupConfig.property.displayName">display_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#display_name Group#display_name}. |
+| <code><a href="#@cdktn/provider-databricks.group.GroupConfig.property.aclPrincipalId">acl_principal_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#acl_principal_id Group#acl_principal_id}. |
+| <code><a href="#@cdktn/provider-databricks.group.GroupConfig.property.allowClusterCreate">allow_cluster_create</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#allow_cluster_create Group#allow_cluster_create}. |
+| <code><a href="#@cdktn/provider-databricks.group.GroupConfig.property.allowInstancePoolCreate">allow_instance_pool_create</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#allow_instance_pool_create Group#allow_instance_pool_create}. |
+| <code><a href="#@cdktn/provider-databricks.group.GroupConfig.property.api">api</a></code> | <code>str</code> | Specifies whether to use account-level or workspace-level API. |
+| <code><a href="#@cdktn/provider-databricks.group.GroupConfig.property.databricksSqlAccess">databricks_sql_access</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#databricks_sql_access Group#databricks_sql_access}. |
+| <code><a href="#@cdktn/provider-databricks.group.GroupConfig.property.externalId">external_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#external_id Group#external_id}. |
+| <code><a href="#@cdktn/provider-databricks.group.GroupConfig.property.force">force</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#force Group#force}. |
+| <code><a href="#@cdktn/provider-databricks.group.GroupConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#id Group#id}. |
+| <code><a href="#@cdktn/provider-databricks.group.GroupConfig.property.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.group.GroupProviderConfig">GroupProviderConfig</a></code> | provider_config block. |
+| <code><a href="#@cdktn/provider-databricks.group.GroupConfig.property.url">url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#url Group#url}. |
+| <code><a href="#@cdktn/provider-databricks.group.GroupConfig.property.workspaceAccess">workspace_access</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#workspace_access Group#workspace_access}. |
+| <code><a href="#@cdktn/provider-databricks.group.GroupConfig.property.workspaceConsume">workspace_consume</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#workspace_consume Group#workspace_consume}. |
 
 ---
 
@@ -1343,7 +1448,7 @@ display_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group#display_name Group#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#display_name Group#display_name}.
 
 ---
 
@@ -1355,7 +1460,7 @@ acl_principal_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group#acl_principal_id Group#acl_principal_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#acl_principal_id Group#acl_principal_id}.
 
 ---
 
@@ -1367,7 +1472,7 @@ allow_cluster_create: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group#allow_cluster_create Group#allow_cluster_create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#allow_cluster_create Group#allow_cluster_create}.
 
 ---
 
@@ -1379,7 +1484,23 @@ allow_instance_pool_create: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group#allow_instance_pool_create Group#allow_instance_pool_create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#allow_instance_pool_create Group#allow_instance_pool_create}.
+
+---
+
+##### `api`<sup>Optional</sup> <a name="api" id="@cdktn/provider-databricks.group.GroupConfig.property.api"></a>
+
+```python
+api: str
+```
+
+- *Type:* str
+
+Specifies whether to use account-level or workspace-level API.
+
+Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#api Group#api}
 
 ---
 
@@ -1391,7 +1512,7 @@ databricks_sql_access: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group#databricks_sql_access Group#databricks_sql_access}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#databricks_sql_access Group#databricks_sql_access}.
 
 ---
 
@@ -1403,7 +1524,7 @@ external_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group#external_id Group#external_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#external_id Group#external_id}.
 
 ---
 
@@ -1415,7 +1536,7 @@ force: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group#force Group#force}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#force Group#force}.
 
 ---
 
@@ -1427,10 +1548,24 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group#id Group#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#id Group#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `provider_config`<sup>Optional</sup> <a name="provider_config" id="@cdktn/provider-databricks.group.GroupConfig.property.providerConfig"></a>
+
+```python
+provider_config: GroupProviderConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.group.GroupProviderConfig">GroupProviderConfig</a>
+
+provider_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#provider_config Group#provider_config}
 
 ---
 
@@ -1442,7 +1577,7 @@ url: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group#url Group#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#url Group#url}.
 
 ---
 
@@ -1454,7 +1589,7 @@ workspace_access: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group#workspace_access Group#workspace_access}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#workspace_access Group#workspace_access}.
 
 ---
 
@@ -1466,7 +1601,336 @@ workspace_consume: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/group#workspace_consume Group#workspace_consume}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#workspace_consume Group#workspace_consume}.
+
+---
+
+### GroupProviderConfig <a name="GroupProviderConfig" id="@cdktn/provider-databricks.group.GroupProviderConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-databricks.group.GroupProviderConfig.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import group
+
+group.GroupProviderConfig(
+  workspace_id: str
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.group.GroupProviderConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#workspace_id Group#workspace_id}. |
+
+---
+
+##### `workspace_id`<sup>Required</sup> <a name="workspace_id" id="@cdktn/provider-databricks.group.GroupProviderConfig.property.workspaceId"></a>
+
+```python
+workspace_id: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/group#workspace_id Group#workspace_id}.
+
+---
+
+## Classes <a name="Classes" id="Classes"></a>
+
+### GroupProviderConfigOutputReference <a name="GroupProviderConfigOutputReference" id="@cdktn/provider-databricks.group.GroupProviderConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-databricks.group.GroupProviderConfigOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_databricks import group
+
+group.GroupProviderConfigOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.group.GroupProviderConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-databricks.group.GroupProviderConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-databricks.group.GroupProviderConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.group.GroupProviderConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-databricks.group.GroupProviderConfigOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.group.GroupProviderConfigOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.group.GroupProviderConfigOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.group.GroupProviderConfigOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.group.GroupProviderConfigOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.group.GroupProviderConfigOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.group.GroupProviderConfigOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.group.GroupProviderConfigOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.group.GroupProviderConfigOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.group.GroupProviderConfigOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.group.GroupProviderConfigOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.group.GroupProviderConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-databricks.group.GroupProviderConfigOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-databricks.group.GroupProviderConfigOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-databricks.group.GroupProviderConfigOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.group.GroupProviderConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-databricks.group.GroupProviderConfigOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.group.GroupProviderConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-databricks.group.GroupProviderConfigOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.group.GroupProviderConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-databricks.group.GroupProviderConfigOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.group.GroupProviderConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-databricks.group.GroupProviderConfigOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.group.GroupProviderConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-databricks.group.GroupProviderConfigOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.group.GroupProviderConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-databricks.group.GroupProviderConfigOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.group.GroupProviderConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-databricks.group.GroupProviderConfigOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.group.GroupProviderConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-databricks.group.GroupProviderConfigOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-databricks.group.GroupProviderConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-databricks.group.GroupProviderConfigOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-databricks.group.GroupProviderConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-databricks.group.GroupProviderConfigOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-databricks.group.GroupProviderConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-databricks.group.GroupProviderConfigOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-databricks.group.GroupProviderConfigOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-databricks.group.GroupProviderConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.group.GroupProviderConfigOutputReference.property.workspaceIdInput">workspace_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.group.GroupProviderConfigOutputReference.property.workspaceId">workspace_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-databricks.group.GroupProviderConfigOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-databricks.group.GroupProviderConfig">GroupProviderConfig</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-databricks.group.GroupProviderConfigOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-databricks.group.GroupProviderConfigOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `workspace_id_input`<sup>Optional</sup> <a name="workspace_id_input" id="@cdktn/provider-databricks.group.GroupProviderConfigOutputReference.property.workspaceIdInput"></a>
+
+```python
+workspace_id_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `workspace_id`<sup>Required</sup> <a name="workspace_id" id="@cdktn/provider-databricks.group.GroupProviderConfigOutputReference.property.workspaceId"></a>
+
+```python
+workspace_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-databricks.group.GroupProviderConfigOutputReference.property.internalValue"></a>
+
+```python
+internal_value: GroupProviderConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-databricks.group.GroupProviderConfig">GroupProviderConfig</a>
 
 ---
 

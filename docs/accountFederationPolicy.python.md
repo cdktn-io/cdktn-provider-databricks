@@ -4,7 +4,7 @@
 
 ### AccountFederationPolicy <a name="AccountFederationPolicy" id="@cdktn/provider-databricks.accountFederationPolicy.AccountFederationPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_federation_policy databricks_account_federation_policy}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_federation_policy databricks_account_federation_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountFederationPolicy.AccountFederationPolicy.Initializer"></a>
 
@@ -39,10 +39,10 @@ accountFederationPolicy.AccountFederationPolicy(
 | <code><a href="#@cdktn/provider-databricks.accountFederationPolicy.AccountFederationPolicy.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountFederationPolicy.AccountFederationPolicy.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountFederationPolicy.AccountFederationPolicy.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.accountFederationPolicy.AccountFederationPolicy.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_federation_policy#description AccountFederationPolicy#description}. |
-| <code><a href="#@cdktn/provider-databricks.accountFederationPolicy.AccountFederationPolicy.Initializer.parameter.oidcPolicy">oidc_policy</a></code> | <code><a href="#@cdktn/provider-databricks.accountFederationPolicy.AccountFederationPolicyOidcPolicy">AccountFederationPolicyOidcPolicy</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_federation_policy#oidc_policy AccountFederationPolicy#oidc_policy}. |
-| <code><a href="#@cdktn/provider-databricks.accountFederationPolicy.AccountFederationPolicy.Initializer.parameter.policyId">policy_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_federation_policy#policy_id AccountFederationPolicy#policy_id}. |
-| <code><a href="#@cdktn/provider-databricks.accountFederationPolicy.AccountFederationPolicy.Initializer.parameter.servicePrincipalId">service_principal_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_federation_policy#service_principal_id AccountFederationPolicy#service_principal_id}. |
+| <code><a href="#@cdktn/provider-databricks.accountFederationPolicy.AccountFederationPolicy.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_federation_policy#description AccountFederationPolicy#description}. |
+| <code><a href="#@cdktn/provider-databricks.accountFederationPolicy.AccountFederationPolicy.Initializer.parameter.oidcPolicy">oidc_policy</a></code> | <code><a href="#@cdktn/provider-databricks.accountFederationPolicy.AccountFederationPolicyOidcPolicy">AccountFederationPolicyOidcPolicy</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_federation_policy#oidc_policy AccountFederationPolicy#oidc_policy}. |
+| <code><a href="#@cdktn/provider-databricks.accountFederationPolicy.AccountFederationPolicy.Initializer.parameter.policyId">policy_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_federation_policy#policy_id AccountFederationPolicy#policy_id}. |
+| <code><a href="#@cdktn/provider-databricks.accountFederationPolicy.AccountFederationPolicy.Initializer.parameter.servicePrincipalId">service_principal_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_federation_policy#service_principal_id AccountFederationPolicy#service_principal_id}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_federation_policy#description AccountFederationPolicy#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_federation_policy#description AccountFederationPolicy#description}.
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountFederationPolicy.AccountFederationPolicyOidcPolicy">AccountFederationPolicyOidcPolicy</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_federation_policy#oidc_policy AccountFederationPolicy#oidc_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_federation_policy#oidc_policy AccountFederationPolicy#oidc_policy}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_federation_policy#policy_id AccountFederationPolicy#policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_federation_policy#policy_id AccountFederationPolicy#policy_id}.
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_federation_policy#service_principal_id AccountFederationPolicy#service_principal_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_federation_policy#service_principal_id AccountFederationPolicy#service_principal_id}.
 
 ---
 
@@ -539,7 +539,7 @@ def put_oidc_policy(
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_federation_policy#audiences AccountFederationPolicy#audiences}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_federation_policy#audiences AccountFederationPolicy#audiences}.
 
 ---
 
@@ -547,7 +547,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_federation_policy#issuer AccountFederationPolicy#issuer}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_federation_policy#issuer AccountFederationPolicy#issuer}.
 
 ---
 
@@ -555,7 +555,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_federation_policy#jwks_json AccountFederationPolicy#jwks_json}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_federation_policy#jwks_json AccountFederationPolicy#jwks_json}.
 
 ---
 
@@ -563,7 +563,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_federation_policy#jwks_uri AccountFederationPolicy#jwks_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_federation_policy#jwks_uri AccountFederationPolicy#jwks_uri}.
 
 ---
 
@@ -571,7 +571,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_federation_policy#subject AccountFederationPolicy#subject}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_federation_policy#subject AccountFederationPolicy#subject}.
 
 ---
 
@@ -579,7 +579,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_federation_policy#subject_claim AccountFederationPolicy#subject_claim}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_federation_policy#subject_claim AccountFederationPolicy#subject_claim}.
 
 ---
 
@@ -721,7 +721,7 @@ The construct id used in the generated config for the AccountFederationPolicy to
 
 The id of the existing AccountFederationPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_federation_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_federation_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1081,10 +1081,10 @@ accountFederationPolicy.AccountFederationPolicyConfig(
 | <code><a href="#@cdktn/provider-databricks.accountFederationPolicy.AccountFederationPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountFederationPolicy.AccountFederationPolicyConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.accountFederationPolicy.AccountFederationPolicyConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.accountFederationPolicy.AccountFederationPolicyConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_federation_policy#description AccountFederationPolicy#description}. |
-| <code><a href="#@cdktn/provider-databricks.accountFederationPolicy.AccountFederationPolicyConfig.property.oidcPolicy">oidc_policy</a></code> | <code><a href="#@cdktn/provider-databricks.accountFederationPolicy.AccountFederationPolicyOidcPolicy">AccountFederationPolicyOidcPolicy</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_federation_policy#oidc_policy AccountFederationPolicy#oidc_policy}. |
-| <code><a href="#@cdktn/provider-databricks.accountFederationPolicy.AccountFederationPolicyConfig.property.policyId">policy_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_federation_policy#policy_id AccountFederationPolicy#policy_id}. |
-| <code><a href="#@cdktn/provider-databricks.accountFederationPolicy.AccountFederationPolicyConfig.property.servicePrincipalId">service_principal_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_federation_policy#service_principal_id AccountFederationPolicy#service_principal_id}. |
+| <code><a href="#@cdktn/provider-databricks.accountFederationPolicy.AccountFederationPolicyConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_federation_policy#description AccountFederationPolicy#description}. |
+| <code><a href="#@cdktn/provider-databricks.accountFederationPolicy.AccountFederationPolicyConfig.property.oidcPolicy">oidc_policy</a></code> | <code><a href="#@cdktn/provider-databricks.accountFederationPolicy.AccountFederationPolicyOidcPolicy">AccountFederationPolicyOidcPolicy</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_federation_policy#oidc_policy AccountFederationPolicy#oidc_policy}. |
+| <code><a href="#@cdktn/provider-databricks.accountFederationPolicy.AccountFederationPolicyConfig.property.policyId">policy_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_federation_policy#policy_id AccountFederationPolicy#policy_id}. |
+| <code><a href="#@cdktn/provider-databricks.accountFederationPolicy.AccountFederationPolicyConfig.property.servicePrincipalId">service_principal_id</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_federation_policy#service_principal_id AccountFederationPolicy#service_principal_id}. |
 
 ---
 
@@ -1166,7 +1166,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_federation_policy#description AccountFederationPolicy#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_federation_policy#description AccountFederationPolicy#description}.
 
 ---
 
@@ -1178,7 +1178,7 @@ oidc_policy: AccountFederationPolicyOidcPolicy
 
 - *Type:* <a href="#@cdktn/provider-databricks.accountFederationPolicy.AccountFederationPolicyOidcPolicy">AccountFederationPolicyOidcPolicy</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_federation_policy#oidc_policy AccountFederationPolicy#oidc_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_federation_policy#oidc_policy AccountFederationPolicy#oidc_policy}.
 
 ---
 
@@ -1190,7 +1190,7 @@ policy_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_federation_policy#policy_id AccountFederationPolicy#policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_federation_policy#policy_id AccountFederationPolicy#policy_id}.
 
 ---
 
@@ -1202,7 +1202,7 @@ service_principal_id: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_federation_policy#service_principal_id AccountFederationPolicy#service_principal_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_federation_policy#service_principal_id AccountFederationPolicy#service_principal_id}.
 
 ---
 
@@ -1227,12 +1227,12 @@ accountFederationPolicy.AccountFederationPolicyOidcPolicy(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.accountFederationPolicy.AccountFederationPolicyOidcPolicy.property.audiences">audiences</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_federation_policy#audiences AccountFederationPolicy#audiences}. |
-| <code><a href="#@cdktn/provider-databricks.accountFederationPolicy.AccountFederationPolicyOidcPolicy.property.issuer">issuer</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_federation_policy#issuer AccountFederationPolicy#issuer}. |
-| <code><a href="#@cdktn/provider-databricks.accountFederationPolicy.AccountFederationPolicyOidcPolicy.property.jwksJson">jwks_json</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_federation_policy#jwks_json AccountFederationPolicy#jwks_json}. |
-| <code><a href="#@cdktn/provider-databricks.accountFederationPolicy.AccountFederationPolicyOidcPolicy.property.jwksUri">jwks_uri</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_federation_policy#jwks_uri AccountFederationPolicy#jwks_uri}. |
-| <code><a href="#@cdktn/provider-databricks.accountFederationPolicy.AccountFederationPolicyOidcPolicy.property.subject">subject</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_federation_policy#subject AccountFederationPolicy#subject}. |
-| <code><a href="#@cdktn/provider-databricks.accountFederationPolicy.AccountFederationPolicyOidcPolicy.property.subjectClaim">subject_claim</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_federation_policy#subject_claim AccountFederationPolicy#subject_claim}. |
+| <code><a href="#@cdktn/provider-databricks.accountFederationPolicy.AccountFederationPolicyOidcPolicy.property.audiences">audiences</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_federation_policy#audiences AccountFederationPolicy#audiences}. |
+| <code><a href="#@cdktn/provider-databricks.accountFederationPolicy.AccountFederationPolicyOidcPolicy.property.issuer">issuer</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_federation_policy#issuer AccountFederationPolicy#issuer}. |
+| <code><a href="#@cdktn/provider-databricks.accountFederationPolicy.AccountFederationPolicyOidcPolicy.property.jwksJson">jwks_json</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_federation_policy#jwks_json AccountFederationPolicy#jwks_json}. |
+| <code><a href="#@cdktn/provider-databricks.accountFederationPolicy.AccountFederationPolicyOidcPolicy.property.jwksUri">jwks_uri</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_federation_policy#jwks_uri AccountFederationPolicy#jwks_uri}. |
+| <code><a href="#@cdktn/provider-databricks.accountFederationPolicy.AccountFederationPolicyOidcPolicy.property.subject">subject</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_federation_policy#subject AccountFederationPolicy#subject}. |
+| <code><a href="#@cdktn/provider-databricks.accountFederationPolicy.AccountFederationPolicyOidcPolicy.property.subjectClaim">subject_claim</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_federation_policy#subject_claim AccountFederationPolicy#subject_claim}. |
 
 ---
 
@@ -1244,7 +1244,7 @@ audiences: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_federation_policy#audiences AccountFederationPolicy#audiences}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_federation_policy#audiences AccountFederationPolicy#audiences}.
 
 ---
 
@@ -1256,7 +1256,7 @@ issuer: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_federation_policy#issuer AccountFederationPolicy#issuer}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_federation_policy#issuer AccountFederationPolicy#issuer}.
 
 ---
 
@@ -1268,7 +1268,7 @@ jwks_json: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_federation_policy#jwks_json AccountFederationPolicy#jwks_json}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_federation_policy#jwks_json AccountFederationPolicy#jwks_json}.
 
 ---
 
@@ -1280,7 +1280,7 @@ jwks_uri: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_federation_policy#jwks_uri AccountFederationPolicy#jwks_uri}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_federation_policy#jwks_uri AccountFederationPolicy#jwks_uri}.
 
 ---
 
@@ -1292,7 +1292,7 @@ subject: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_federation_policy#subject AccountFederationPolicy#subject}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_federation_policy#subject AccountFederationPolicy#subject}.
 
 ---
 
@@ -1304,7 +1304,7 @@ subject_claim: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.112.0/docs/resources/account_federation_policy#subject_claim AccountFederationPolicy#subject_claim}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/account_federation_policy#subject_claim AccountFederationPolicy#subject_claim}.
 
 ---
 
