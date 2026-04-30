@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore
+// https://registry.terraform.io/providers/databricks/databricks/1.114.1/docs/resources/metastore
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,78 +15,78 @@ export interface MetastoreConfig extends cdktn.TerraformMetaArguments {
   /**
   * Specifies whether to use account-level or workspace-level API. Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore#api Metastore#api}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.1/docs/resources/metastore#api Metastore#api}
   */
   readonly api?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore#default_data_access_config_id Metastore#default_data_access_config_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.1/docs/resources/metastore#default_data_access_config_id Metastore#default_data_access_config_id}
   */
   readonly defaultDataAccessConfigId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore#delta_sharing_organization_name Metastore#delta_sharing_organization_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.1/docs/resources/metastore#delta_sharing_organization_name Metastore#delta_sharing_organization_name}
   */
   readonly deltaSharingOrganizationName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore#delta_sharing_recipient_token_lifetime_in_seconds Metastore#delta_sharing_recipient_token_lifetime_in_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.1/docs/resources/metastore#delta_sharing_recipient_token_lifetime_in_seconds Metastore#delta_sharing_recipient_token_lifetime_in_seconds}
   */
   readonly deltaSharingRecipientTokenLifetimeInSeconds?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore#delta_sharing_scope Metastore#delta_sharing_scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.1/docs/resources/metastore#delta_sharing_scope Metastore#delta_sharing_scope}
   */
   readonly deltaSharingScope?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore#external_access_enabled Metastore#external_access_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.1/docs/resources/metastore#external_access_enabled Metastore#external_access_enabled}
   */
   readonly externalAccessEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore#force_destroy Metastore#force_destroy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.1/docs/resources/metastore#force_destroy Metastore#force_destroy}
   */
   readonly forceDestroy?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore#id Metastore#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.1/docs/resources/metastore#id Metastore#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore#name Metastore#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.1/docs/resources/metastore#name Metastore#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore#owner Metastore#owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.1/docs/resources/metastore#owner Metastore#owner}
   */
   readonly owner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore#privilege_model_version Metastore#privilege_model_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.1/docs/resources/metastore#privilege_model_version Metastore#privilege_model_version}
   */
   readonly privilegeModelVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore#region Metastore#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.1/docs/resources/metastore#region Metastore#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore#storage_root Metastore#storage_root}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.1/docs/resources/metastore#storage_root Metastore#storage_root}
   */
   readonly storageRoot?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore#storage_root_credential_id Metastore#storage_root_credential_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.1/docs/resources/metastore#storage_root_credential_id Metastore#storage_root_credential_id}
   */
   readonly storageRootCredentialId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore#storage_root_credential_name Metastore#storage_root_credential_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.1/docs/resources/metastore#storage_root_credential_name Metastore#storage_root_credential_name}
   */
   readonly storageRootCredentialName?: string;
   /**
   * provider_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore#provider_config Metastore#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.1/docs/resources/metastore#provider_config Metastore#provider_config}
   */
   readonly providerConfig?: MetastoreProviderConfig;
 }
 export interface MetastoreProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore#workspace_id Metastore#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.1/docs/resources/metastore#workspace_id Metastore#workspace_id}
   */
   readonly workspaceId: string;
 }
@@ -167,7 +167,7 @@ export class MetastoreProviderConfigOutputReference extends cdktn.ComplexObject 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore databricks_metastore}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.1/docs/resources/metastore databricks_metastore}
 */
 export class Metastore extends cdktn.TerraformResource {
 
@@ -183,7 +183,7 @@ export class Metastore extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a Metastore resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Metastore to import
-  * @param importFromId The id of the existing Metastore that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Metastore that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.114.1/docs/resources/metastore#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Metastore to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -195,7 +195,7 @@ export class Metastore extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.113.0/docs/resources/metastore databricks_metastore} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.1/docs/resources/metastore databricks_metastore} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -206,7 +206,7 @@ export class Metastore extends cdktn.TerraformResource {
       terraformResourceType: 'databricks_metastore',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.113.0',
+        providerVersion: '1.114.1',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
