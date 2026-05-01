@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.114.1/docs/resources/warehouses_default_warehouse_override
+// https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/warehouses_default_warehouse_override
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,25 +13,25 @@ import * as cdktn from 'cdktn';
 
 export interface WarehousesDefaultWarehouseOverrideConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.1/docs/resources/warehouses_default_warehouse_override#default_warehouse_override_id WarehousesDefaultWarehouseOverride#default_warehouse_override_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/warehouses_default_warehouse_override#default_warehouse_override_id WarehousesDefaultWarehouseOverride#default_warehouse_override_id}
   */
   readonly defaultWarehouseOverrideId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.1/docs/resources/warehouses_default_warehouse_override#provider_config WarehousesDefaultWarehouseOverride#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/warehouses_default_warehouse_override#provider_config WarehousesDefaultWarehouseOverride#provider_config}
   */
   readonly providerConfig?: WarehousesDefaultWarehouseOverrideProviderConfig;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.1/docs/resources/warehouses_default_warehouse_override#type WarehousesDefaultWarehouseOverride#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/warehouses_default_warehouse_override#type WarehousesDefaultWarehouseOverride#type}
   */
   readonly type: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.1/docs/resources/warehouses_default_warehouse_override#warehouse_id WarehousesDefaultWarehouseOverride#warehouse_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/warehouses_default_warehouse_override#warehouse_id WarehousesDefaultWarehouseOverride#warehouse_id}
   */
   readonly warehouseId?: string;
 }
 export interface WarehousesDefaultWarehouseOverrideProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.1/docs/resources/warehouses_default_warehouse_override#workspace_id WarehousesDefaultWarehouseOverride#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/warehouses_default_warehouse_override#workspace_id WarehousesDefaultWarehouseOverride#workspace_id}
   */
   readonly workspaceId: string;
 }
@@ -122,7 +122,7 @@ export class WarehousesDefaultWarehouseOverrideProviderConfigOutputReference ext
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.1/docs/resources/warehouses_default_warehouse_override databricks_warehouses_default_warehouse_override}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/warehouses_default_warehouse_override databricks_warehouses_default_warehouse_override}
 */
 export class WarehousesDefaultWarehouseOverride extends cdktn.TerraformResource {
 
@@ -138,7 +138,7 @@ export class WarehousesDefaultWarehouseOverride extends cdktn.TerraformResource 
   * Generates CDKTN code for importing a WarehousesDefaultWarehouseOverride resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WarehousesDefaultWarehouseOverride to import
-  * @param importFromId The id of the existing WarehousesDefaultWarehouseOverride that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.114.1/docs/resources/warehouses_default_warehouse_override#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WarehousesDefaultWarehouseOverride that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/warehouses_default_warehouse_override#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WarehousesDefaultWarehouseOverride to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -150,7 +150,7 @@ export class WarehousesDefaultWarehouseOverride extends cdktn.TerraformResource 
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.1/docs/resources/warehouses_default_warehouse_override databricks_warehouses_default_warehouse_override} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/warehouses_default_warehouse_override databricks_warehouses_default_warehouse_override} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -161,7 +161,7 @@ export class WarehousesDefaultWarehouseOverride extends cdktn.TerraformResource 
       terraformResourceType: 'databricks_warehouses_default_warehouse_override',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.114.1',
+        providerVersion: '1.114.2',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
