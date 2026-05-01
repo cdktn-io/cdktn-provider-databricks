@@ -4,7 +4,7 @@
 
 ### DatabaseDatabaseCatalog <a name="DatabaseDatabaseCatalog" id="@cdktn/provider-databricks.databaseDatabaseCatalog.DatabaseDatabaseCatalog"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.1/docs/resources/database_database_catalog databricks_database_database_catalog}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/database_database_catalog databricks_database_database_catalog}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.databaseDatabaseCatalog.DatabaseDatabaseCatalog.Initializer"></a>
 
@@ -516,7 +516,7 @@ The construct id used in the generated config for the DatabaseDatabaseCatalog to
 
 The id of the existing DatabaseDatabaseCatalog that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.114.1/docs/resources/database_database_catalog#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/database_database_catalog#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -866,11 +866,11 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/database
 | <code><a href="#@cdktn/provider-databricks.databaseDatabaseCatalog.DatabaseDatabaseCatalogConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.databaseDatabaseCatalog.DatabaseDatabaseCatalogConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.databaseDatabaseCatalog.DatabaseDatabaseCatalogConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.databaseDatabaseCatalog.DatabaseDatabaseCatalogConfig.property.databaseInstanceName">DatabaseInstanceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.1/docs/resources/database_database_catalog#database_instance_name DatabaseDatabaseCatalog#database_instance_name}. |
-| <code><a href="#@cdktn/provider-databricks.databaseDatabaseCatalog.DatabaseDatabaseCatalogConfig.property.databaseName">DatabaseName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.1/docs/resources/database_database_catalog#database_name DatabaseDatabaseCatalog#database_name}. |
-| <code><a href="#@cdktn/provider-databricks.databaseDatabaseCatalog.DatabaseDatabaseCatalogConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.1/docs/resources/database_database_catalog#name DatabaseDatabaseCatalog#name}. |
-| <code><a href="#@cdktn/provider-databricks.databaseDatabaseCatalog.DatabaseDatabaseCatalogConfig.property.createDatabaseIfNotExists">CreateDatabaseIfNotExists</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.1/docs/resources/database_database_catalog#create_database_if_not_exists DatabaseDatabaseCatalog#create_database_if_not_exists}. |
-| <code><a href="#@cdktn/provider-databricks.databaseDatabaseCatalog.DatabaseDatabaseCatalogConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.databaseDatabaseCatalog.DatabaseDatabaseCatalogProviderConfig">DatabaseDatabaseCatalogProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.1/docs/resources/database_database_catalog#provider_config DatabaseDatabaseCatalog#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.databaseDatabaseCatalog.DatabaseDatabaseCatalogConfig.property.databaseInstanceName">DatabaseInstanceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/database_database_catalog#database_instance_name DatabaseDatabaseCatalog#database_instance_name}. |
+| <code><a href="#@cdktn/provider-databricks.databaseDatabaseCatalog.DatabaseDatabaseCatalogConfig.property.databaseName">DatabaseName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/database_database_catalog#database_name DatabaseDatabaseCatalog#database_name}. |
+| <code><a href="#@cdktn/provider-databricks.databaseDatabaseCatalog.DatabaseDatabaseCatalogConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/database_database_catalog#name DatabaseDatabaseCatalog#name}. |
+| <code><a href="#@cdktn/provider-databricks.databaseDatabaseCatalog.DatabaseDatabaseCatalogConfig.property.createDatabaseIfNotExists">CreateDatabaseIfNotExists</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/database_database_catalog#create_database_if_not_exists DatabaseDatabaseCatalog#create_database_if_not_exists}. |
+| <code><a href="#@cdktn/provider-databricks.databaseDatabaseCatalog.DatabaseDatabaseCatalogConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.databaseDatabaseCatalog.DatabaseDatabaseCatalogProviderConfig">DatabaseDatabaseCatalogProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/database_database_catalog#provider_config DatabaseDatabaseCatalog#provider_config}. |
 
 ---
 
@@ -952,7 +952,7 @@ DatabaseInstanceName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.1/docs/resources/database_database_catalog#database_instance_name DatabaseDatabaseCatalog#database_instance_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/database_database_catalog#database_instance_name DatabaseDatabaseCatalog#database_instance_name}.
 
 ---
 
@@ -964,7 +964,7 @@ DatabaseName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.1/docs/resources/database_database_catalog#database_name DatabaseDatabaseCatalog#database_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/database_database_catalog#database_name DatabaseDatabaseCatalog#database_name}.
 
 ---
 
@@ -976,7 +976,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.1/docs/resources/database_database_catalog#name DatabaseDatabaseCatalog#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/database_database_catalog#name DatabaseDatabaseCatalog#name}.
 
 ---
 
@@ -988,7 +988,7 @@ CreateDatabaseIfNotExists interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.1/docs/resources/database_database_catalog#create_database_if_not_exists DatabaseDatabaseCatalog#create_database_if_not_exists}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/database_database_catalog#create_database_if_not_exists DatabaseDatabaseCatalog#create_database_if_not_exists}.
 
 ---
 
@@ -1000,7 +1000,7 @@ ProviderConfig DatabaseDatabaseCatalogProviderConfig
 
 - *Type:* <a href="#@cdktn/provider-databricks.databaseDatabaseCatalog.DatabaseDatabaseCatalogProviderConfig">DatabaseDatabaseCatalogProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.1/docs/resources/database_database_catalog#provider_config DatabaseDatabaseCatalog#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/database_database_catalog#provider_config DatabaseDatabaseCatalog#provider_config}.
 
 ---
 
@@ -1020,7 +1020,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/database
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.databaseDatabaseCatalog.DatabaseDatabaseCatalogProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.1/docs/resources/database_database_catalog#workspace_id DatabaseDatabaseCatalog#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.databaseDatabaseCatalog.DatabaseDatabaseCatalogProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/database_database_catalog#workspace_id DatabaseDatabaseCatalog#workspace_id}. |
 
 ---
 
@@ -1032,7 +1032,7 @@ WorkspaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.1/docs/resources/database_database_catalog#workspace_id DatabaseDatabaseCatalog#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/database_database_catalog#workspace_id DatabaseDatabaseCatalog#workspace_id}.
 
 ---
 
