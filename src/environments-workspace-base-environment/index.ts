@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/databricks/databricks/1.114.1/docs/resources/environments_workspace_base_environment
+// https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/environments_workspace_base_environment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,29 +13,29 @@ import * as cdktn from 'cdktn';
 
 export interface EnvironmentsWorkspaceBaseEnvironmentConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.1/docs/resources/environments_workspace_base_environment#base_environment_type EnvironmentsWorkspaceBaseEnvironment#base_environment_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/environments_workspace_base_environment#base_environment_type EnvironmentsWorkspaceBaseEnvironment#base_environment_type}
   */
   readonly baseEnvironmentType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.1/docs/resources/environments_workspace_base_environment#display_name EnvironmentsWorkspaceBaseEnvironment#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/environments_workspace_base_environment#display_name EnvironmentsWorkspaceBaseEnvironment#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.1/docs/resources/environments_workspace_base_environment#filepath EnvironmentsWorkspaceBaseEnvironment#filepath}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/environments_workspace_base_environment#filepath EnvironmentsWorkspaceBaseEnvironment#filepath}
   */
   readonly filepath?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.1/docs/resources/environments_workspace_base_environment#provider_config EnvironmentsWorkspaceBaseEnvironment#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/environments_workspace_base_environment#provider_config EnvironmentsWorkspaceBaseEnvironment#provider_config}
   */
   readonly providerConfig?: EnvironmentsWorkspaceBaseEnvironmentProviderConfig;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.1/docs/resources/environments_workspace_base_environment#workspace_base_environment_id EnvironmentsWorkspaceBaseEnvironment#workspace_base_environment_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/environments_workspace_base_environment#workspace_base_environment_id EnvironmentsWorkspaceBaseEnvironment#workspace_base_environment_id}
   */
   readonly workspaceBaseEnvironmentId?: string;
 }
 export interface EnvironmentsWorkspaceBaseEnvironmentProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.1/docs/resources/environments_workspace_base_environment#workspace_id EnvironmentsWorkspaceBaseEnvironment#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/environments_workspace_base_environment#workspace_id EnvironmentsWorkspaceBaseEnvironment#workspace_id}
   */
   readonly workspaceId: string;
 }
@@ -126,7 +126,7 @@ export class EnvironmentsWorkspaceBaseEnvironmentProviderConfigOutputReference e
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.1/docs/resources/environments_workspace_base_environment databricks_environments_workspace_base_environment}
+* Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/environments_workspace_base_environment databricks_environments_workspace_base_environment}
 */
 export class EnvironmentsWorkspaceBaseEnvironment extends cdktn.TerraformResource {
 
@@ -142,7 +142,7 @@ export class EnvironmentsWorkspaceBaseEnvironment extends cdktn.TerraformResourc
   * Generates CDKTN code for importing a EnvironmentsWorkspaceBaseEnvironment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EnvironmentsWorkspaceBaseEnvironment to import
-  * @param importFromId The id of the existing EnvironmentsWorkspaceBaseEnvironment that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.114.1/docs/resources/environments_workspace_base_environment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EnvironmentsWorkspaceBaseEnvironment that should be imported. Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/environments_workspace_base_environment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EnvironmentsWorkspaceBaseEnvironment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -154,7 +154,7 @@ export class EnvironmentsWorkspaceBaseEnvironment extends cdktn.TerraformResourc
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.1/docs/resources/environments_workspace_base_environment databricks_environments_workspace_base_environment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/environments_workspace_base_environment databricks_environments_workspace_base_environment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -165,7 +165,7 @@ export class EnvironmentsWorkspaceBaseEnvironment extends cdktn.TerraformResourc
       terraformResourceType: 'databricks_environments_workspace_base_environment',
       terraformGeneratorMetadata: {
         providerName: 'databricks',
-        providerVersion: '1.114.1',
+        providerVersion: '1.114.2',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
