@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksnotificationdestinations"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksnotificationdestinations"
 
 datadatabricksnotificationdestinations.NewDataDatabricksNotificationDestinations(scope Construct, id *string, config DataDatabricksNotificationDestinationsConfig) DataDatabricksNotificationDestinations
 ```
@@ -332,7 +332,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinations.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksnotificationdestinations"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksnotificationdestinations"
 
 datadatabricksnotificationdestinations.DataDatabricksNotificationDestinations_IsConstruct(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinations.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksnotificationdestinations"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksnotificationdestinations"
 
 datadatabricksnotificationdestinations.DataDatabricksNotificationDestinations_IsTerraformElement(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ datadatabricksnotificationdestinations.DataDatabricksNotificationDestinations_Is
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinations.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksnotificationdestinations"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksnotificationdestinations"
 
 datadatabricksnotificationdestinations.DataDatabricksNotificationDestinations_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ datadatabricksnotificationdestinations.DataDatabricksNotificationDestinations_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinations.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksnotificationdestinations"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksnotificationdestinations"
 
 datadatabricksnotificationdestinations.DataDatabricksNotificationDestinations_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -676,7 +676,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksnotificationdestinations"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksnotificationdestinations"
 
 &datadatabricksnotificationdestinations.DataDatabricksNotificationDestinationsConfig {
 	Connection: interface{},
@@ -687,7 +687,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadata
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	DisplayNameContains: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsProviderConfig,
 	Type: *string,
 }
 ```
@@ -820,7 +820,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsNotificationDestinations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksnotificationdestinations"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksnotificationdestinations"
 
 &datadatabricksnotificationdestinations.DataDatabricksNotificationDestinationsNotificationDestinations {
 	DestinationType: *string,
@@ -883,7 +883,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksnotificationdestinations"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksnotificationdestinations"
 
 &datadatabricksnotificationdestinations.DataDatabricksNotificationDestinationsProviderConfig {
 	WorkspaceId: *string,
@@ -917,7 +917,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsNotificationDestinationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksnotificationdestinations"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksnotificationdestinations"
 
 datadatabricksnotificationdestinations.NewDataDatabricksNotificationDestinationsNotificationDestinationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksNotificationDestinationsNotificationDestinationsList
 ```
@@ -1077,7 +1077,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsNotificationDestinationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksnotificationdestinations"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksnotificationdestinations"
 
 datadatabricksnotificationdestinations.NewDataDatabricksNotificationDestinationsNotificationDestinationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksNotificationDestinationsNotificationDestinationsOutputReference
 ```
@@ -1431,7 +1431,7 @@ func InternalValue() DataDatabricksNotificationDestinationsNotificationDestinati
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksNotificationDestinations.DataDatabricksNotificationDestinationsProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksnotificationdestinations"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksnotificationdestinations"
 
 datadatabricksnotificationdestinations.NewDataDatabricksNotificationDestinationsProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksNotificationDestinationsProviderConfigOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJobs.DataDatabricksJobs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjobs"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjobs"
 
 datadatabricksjobs.NewDataDatabricksJobs(scope Construct, id *string, config DataDatabricksJobsConfig) DataDatabricksJobs
 ```
@@ -346,7 +346,7 @@ func ResetProviderConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.dataDatabricksJobs.DataDatabricksJobs.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjobs"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjobs"
 
 datadatabricksjobs.DataDatabricksJobs_IsConstruct(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.dataDatabricksJobs.DataDatabricksJobs.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjobs"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjobs"
 
 datadatabricksjobs.DataDatabricksJobs_IsTerraformElement(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ datadatabricksjobs.DataDatabricksJobs_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-databricks.dataDatabricksJobs.DataDatabricksJobs.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjobs"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjobs"
 
 datadatabricksjobs.DataDatabricksJobs_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ datadatabricksjobs.DataDatabricksJobs_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.dataDatabricksJobs.DataDatabricksJobs.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjobs"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjobs"
 
 datadatabricksjobs.DataDatabricksJobs_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -723,7 +723,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJobs.DataDatabricksJobsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjobs"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjobs"
 
 &datadatabricksjobs.DataDatabricksJobsConfig {
 	Connection: interface{},
@@ -737,7 +737,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadata
 	Ids: *map[string]*string,
 	JobNameContains: *string,
 	Key: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJobs.DataDatabricksJobsProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJobs.DataDatabricksJobsProviderConfig,
 }
 ```
 
@@ -900,7 +900,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJobs.DataDatabricksJobsProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjobs"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjobs"
 
 &datadatabricksjobs.DataDatabricksJobsProviderConfig {
 	WorkspaceId: *string,
@@ -934,7 +934,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJobs.DataDatabricksJobsProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjobs"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjobs"
 
 datadatabricksjobs.NewDataDatabricksJobsProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobsProviderConfigOutputReference
 ```

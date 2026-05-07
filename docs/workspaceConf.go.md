@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.workspaceConf.WorkspaceConf.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspaceconf"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspaceconf"
 
 workspaceconf.NewWorkspaceConf(scope Construct, id *string, config WorkspaceConfConfig) WorkspaceConf
 ```
@@ -434,7 +434,7 @@ func ResetProviderConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.workspaceConf.WorkspaceConf.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspaceconf"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspaceconf"
 
 workspaceconf.WorkspaceConf_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.workspaceConf.WorkspaceConf.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspaceconf"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspaceconf"
 
 workspaceconf.WorkspaceConf_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ workspaceconf.WorkspaceConf_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.workspaceConf.WorkspaceConf.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspaceconf"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspaceconf"
 
 workspaceconf.WorkspaceConf_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ workspaceconf.WorkspaceConf_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.workspaceConf.WorkspaceConf.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspaceconf"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspaceconf"
 
 workspaceconf.WorkspaceConf_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -789,7 +789,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.workspaceConf.WorkspaceConfConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspaceconf"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspaceconf"
 
 &workspaceconf.WorkspaceConfConfig {
 	Connection: interface{},
@@ -801,7 +801,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspac
 	Provisioners: *[]interface{},
 	CustomConfig: *map[string]*string,
 	Id: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.workspaceConf.WorkspaceConfProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.workspaceConf.WorkspaceConfProviderConfig,
 }
 ```
 
@@ -938,7 +938,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.workspaceConf.WorkspaceConfProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspaceconf"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspaceconf"
 
 &workspaceconf.WorkspaceConfProviderConfig {
 	WorkspaceId: *string,
@@ -972,7 +972,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.workspaceConf.WorkspaceConfProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspaceconf"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspaceconf"
 
 workspaceconf.NewWorkspaceConfProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkspaceConfProviderConfigOutputReference
 ```

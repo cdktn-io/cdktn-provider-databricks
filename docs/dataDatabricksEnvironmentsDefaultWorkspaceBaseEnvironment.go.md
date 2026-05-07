@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment.DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksenvironmentsdefaultworkspacebaseenvironment"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksenvironmentsdefaultworkspacebaseenvironment"
 
 datadatabricksenvironmentsdefaultworkspacebaseenvironment.NewDataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment(scope Construct, id *string, config DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironmentConfig) DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment
 ```
@@ -318,7 +318,7 @@ func ResetProviderConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.dataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment.DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksenvironmentsdefaultworkspacebaseenvironment"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksenvironmentsdefaultworkspacebaseenvironment"
 
 datadatabricksenvironmentsdefaultworkspacebaseenvironment.DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment_IsConstruct(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.dataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment.DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksenvironmentsdefaultworkspacebaseenvironment"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksenvironmentsdefaultworkspacebaseenvironment"
 
 datadatabricksenvironmentsdefaultworkspacebaseenvironment.DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment_IsTerraformElement(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ datadatabricksenvironmentsdefaultworkspacebaseenvironment.DataDatabricksEnvironm
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-databricks.dataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment.DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksenvironmentsdefaultworkspacebaseenvironment"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksenvironmentsdefaultworkspacebaseenvironment"
 
 datadatabricksenvironmentsdefaultworkspacebaseenvironment.DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ datadatabricksenvironmentsdefaultworkspacebaseenvironment.DataDatabricksEnvironm
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.dataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment.DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksenvironmentsdefaultworkspacebaseenvironment"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksenvironmentsdefaultworkspacebaseenvironment"
 
 datadatabricksenvironmentsdefaultworkspacebaseenvironment.DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -651,7 +651,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment.DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksenvironmentsdefaultworkspacebaseenvironment"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksenvironmentsdefaultworkspacebaseenvironment"
 
 &datadatabricksenvironmentsdefaultworkspacebaseenvironment.DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironmentConfig {
 	Connection: interface{},
@@ -662,7 +662,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadata
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment.DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironmentProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment.DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironmentProviderConfig,
 }
 ```
 
@@ -781,7 +781,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment.DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironmentProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksenvironmentsdefaultworkspacebaseenvironment"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksenvironmentsdefaultworkspacebaseenvironment"
 
 &datadatabricksenvironmentsdefaultworkspacebaseenvironment.DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironmentProviderConfig {
 	WorkspaceId: *string,
@@ -815,7 +815,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironment.DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironmentProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksenvironmentsdefaultworkspacebaseenvironment"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksenvironmentsdefaultworkspacebaseenvironment"
 
 datadatabricksenvironmentsdefaultworkspacebaseenvironment.NewDataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironmentProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksEnvironmentsDefaultWorkspaceBaseEnvironmentProviderConfigOutputReference
 ```

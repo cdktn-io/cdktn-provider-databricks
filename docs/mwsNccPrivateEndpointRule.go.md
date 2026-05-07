@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.mwsNccPrivateEndpointRule.MwsNccPrivateEndpointRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/mwsnccprivateendpointrule"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/mwsnccprivateendpointrule"
 
 mwsnccprivateendpointrule.NewMwsNccPrivateEndpointRule(scope Construct, id *string, config MwsNccPrivateEndpointRuleConfig) MwsNccPrivateEndpointRule
 ```
@@ -539,7 +539,7 @@ func ResetVpcEndpointId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.mwsNccPrivateEndpointRule.MwsNccPrivateEndpointRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/mwsnccprivateendpointrule"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/mwsnccprivateendpointrule"
 
 mwsnccprivateendpointrule.MwsNccPrivateEndpointRule_IsConstruct(x interface{}) *bool
 ```
@@ -571,7 +571,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.mwsNccPrivateEndpointRule.MwsNccPrivateEndpointRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/mwsnccprivateendpointrule"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/mwsnccprivateendpointrule"
 
 mwsnccprivateendpointrule.MwsNccPrivateEndpointRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -585,7 +585,7 @@ mwsnccprivateendpointrule.MwsNccPrivateEndpointRule_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.mwsNccPrivateEndpointRule.MwsNccPrivateEndpointRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/mwsnccprivateendpointrule"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/mwsnccprivateendpointrule"
 
 mwsnccprivateendpointrule.MwsNccPrivateEndpointRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -599,7 +599,7 @@ mwsnccprivateendpointrule.MwsNccPrivateEndpointRule_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.mwsNccPrivateEndpointRule.MwsNccPrivateEndpointRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/mwsnccprivateendpointrule"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/mwsnccprivateendpointrule"
 
 mwsnccprivateendpointrule.MwsNccPrivateEndpointRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1246,7 +1246,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.mwsNccPrivateEndpointRule.MwsNccPrivateEndpointRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/mwsnccprivateendpointrule"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/mwsnccprivateendpointrule"
 
 &mwsnccprivateendpointrule.MwsNccPrivateEndpointRuleConfig {
 	Connection: interface{},
@@ -1267,7 +1267,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/mwsnccpr
 	EndpointName: *string,
 	EndpointService: *string,
 	ErrorMessage: *string,
-	GcpEndpoint: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.mwsNccPrivateEndpointRule.MwsNccPrivateEndpointRuleGcpEndpoint,
+	GcpEndpoint: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.mwsNccPrivateEndpointRule.MwsNccPrivateEndpointRuleGcpEndpoint,
 	GroupId: *string,
 	Id: *string,
 	ResourceId: *string,
@@ -1619,7 +1619,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.mwsNccPrivateEndpointRule.MwsNccPrivateEndpointRuleGcpEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/mwsnccprivateendpointrule"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/mwsnccprivateendpointrule"
 
 &mwsnccprivateendpointrule.MwsNccPrivateEndpointRuleGcpEndpoint {
 	PscEndpointUri: *string,
@@ -1667,7 +1667,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.mwsNccPrivateEndpointRule.MwsNccPrivateEndpointRuleGcpEndpointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/mwsnccprivateendpointrule"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/mwsnccprivateendpointrule"
 
 mwsnccprivateendpointrule.NewMwsNccPrivateEndpointRuleGcpEndpointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MwsNccPrivateEndpointRuleGcpEndpointOutputReference
 ```

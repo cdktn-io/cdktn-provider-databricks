@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.entitlements.Entitlements.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/entitlements"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/entitlements"
 
 entitlements.NewEntitlements(scope Construct, id *string, config EntitlementsConfig) Entitlements
 ```
@@ -483,7 +483,7 @@ func ResetWorkspaceConsume()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.entitlements.Entitlements.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/entitlements"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/entitlements"
 
 entitlements.Entitlements_IsConstruct(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.entitlements.Entitlements.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/entitlements"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/entitlements"
 
 entitlements.Entitlements_IsTerraformElement(x interface{}) *bool
 ```
@@ -529,7 +529,7 @@ entitlements.Entitlements_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.entitlements.Entitlements.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/entitlements"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/entitlements"
 
 entitlements.Entitlements_IsTerraformResource(x interface{}) *bool
 ```
@@ -543,7 +543,7 @@ entitlements.Entitlements_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.entitlements.Entitlements.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/entitlements"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/entitlements"
 
 entitlements.Entitlements_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -992,7 +992,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.entitlements.EntitlementsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/entitlements"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/entitlements"
 
 &entitlements.EntitlementsConfig {
 	Connection: interface{},
@@ -1007,7 +1007,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/entitlem
 	DatabricksSqlAccess: interface{},
 	GroupId: *string,
 	Id: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.entitlements.EntitlementsProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.entitlements.EntitlementsProviderConfig,
 	ServicePrincipalId: *string,
 	UserId: *string,
 	WorkspaceAccess: interface{},
@@ -1239,7 +1239,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.entitlements.EntitlementsProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/entitlements"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/entitlements"
 
 &entitlements.EntitlementsProviderConfig {
 	WorkspaceId: *string,
@@ -1273,7 +1273,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.entitlements.EntitlementsProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/entitlements"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/entitlements"
 
 entitlements.NewEntitlementsProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EntitlementsProviderConfigOutputReference
 ```

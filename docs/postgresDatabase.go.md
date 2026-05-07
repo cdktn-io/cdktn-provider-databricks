@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.postgresDatabase.PostgresDatabase.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/postgresdatabase"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgresdatabase"
 
 postgresdatabase.NewPostgresDatabase(scope Construct, id *string, config PostgresDatabaseConfig) PostgresDatabase
 ```
@@ -447,7 +447,7 @@ func ResetSpec()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.postgresDatabase.PostgresDatabase.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/postgresdatabase"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgresdatabase"
 
 postgresdatabase.PostgresDatabase_IsConstruct(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.postgresDatabase.PostgresDatabase.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/postgresdatabase"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgresdatabase"
 
 postgresdatabase.PostgresDatabase_IsTerraformElement(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ postgresdatabase.PostgresDatabase_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.postgresDatabase.PostgresDatabase.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/postgresdatabase"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgresdatabase"
 
 postgresdatabase.PostgresDatabase_IsTerraformResource(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ postgresdatabase.PostgresDatabase_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.postgresDatabase.PostgresDatabase.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/postgresdatabase"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgresdatabase"
 
 postgresdatabase.PostgresDatabase_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -868,7 +868,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.postgresDatabase.PostgresDatabaseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/postgresdatabase"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgresdatabase"
 
 &postgresdatabase.PostgresDatabaseConfig {
 	Connection: interface{},
@@ -880,8 +880,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/postgres
 	Provisioners: *[]interface{},
 	Parent: *string,
 	DatabaseId: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.postgresDatabase.PostgresDatabaseProviderConfig,
-	Spec: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.postgresDatabase.PostgresDatabaseSpec,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.postgresDatabase.PostgresDatabaseProviderConfig,
+	Spec: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.postgresDatabase.PostgresDatabaseSpec,
 }
 ```
 
@@ -1026,7 +1026,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.postgresDatabase.PostgresDatabaseProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/postgresdatabase"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgresdatabase"
 
 &postgresdatabase.PostgresDatabaseProviderConfig {
 	WorkspaceId: *string,
@@ -1058,7 +1058,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.postgresDatabase.PostgresDatabaseSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/postgresdatabase"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgresdatabase"
 
 &postgresdatabase.PostgresDatabaseSpec {
 	PostgresDatabase: *string,
@@ -1104,7 +1104,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.postgresDatabase.PostgresDatabaseStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/postgresdatabase"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgresdatabase"
 
 &postgresdatabase.PostgresDatabaseStatus {
 	PostgresDatabase: *string,
@@ -1152,7 +1152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.postgresDatabase.PostgresDatabaseProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/postgresdatabase"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgresdatabase"
 
 postgresdatabase.NewPostgresDatabaseProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PostgresDatabaseProviderConfigOutputReference
 ```
@@ -1423,7 +1423,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.postgresDatabase.PostgresDatabaseSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/postgresdatabase"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgresdatabase"
 
 postgresdatabase.NewPostgresDatabaseSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PostgresDatabaseSpecOutputReference
 ```
@@ -1730,7 +1730,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.postgresDatabase.PostgresDatabaseStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/postgresdatabase"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgresdatabase"
 
 postgresdatabase.NewPostgresDatabaseStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PostgresDatabaseStatusOutputReference
 ```

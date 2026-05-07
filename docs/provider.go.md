@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.provider.DatabricksProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/provider"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/provider"
 
 provider.NewDatabricksProvider(scope Construct, id *string, config DatabricksProviderConfig) DatabricksProvider
 ```
@@ -467,7 +467,7 @@ func ResetWorkspaceId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.provider.DatabricksProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/provider"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/provider"
 
 provider.DatabricksProvider_IsConstruct(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.provider.DatabricksProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/provider"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/provider"
 
 provider.DatabricksProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ provider.DatabricksProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktn/provider-databricks.provider.DatabricksProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/provider"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/provider"
 
 provider.DatabricksProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ provider.DatabricksProvider_IsTerraformProvider(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.provider.DatabricksProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/provider"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/provider"
 
 provider.DatabricksProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1636,7 +1636,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.provider.DatabricksProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/provider"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/provider"
 
 &provider.DatabricksProviderConfig {
 	AccountId: *string,

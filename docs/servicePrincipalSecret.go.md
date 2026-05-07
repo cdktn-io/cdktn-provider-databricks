@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/serviceprincipalsecret"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/serviceprincipalsecret"
 
 serviceprincipalsecret.NewServicePrincipalSecret(scope Construct, id *string, config ServicePrincipalSecretConfig) ServicePrincipalSecret
 ```
@@ -490,7 +490,7 @@ func ResetUpdateTime()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/serviceprincipalsecret"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/serviceprincipalsecret"
 
 serviceprincipalsecret.ServicePrincipalSecret_IsConstruct(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/serviceprincipalsecret"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/serviceprincipalsecret"
 
 serviceprincipalsecret.ServicePrincipalSecret_IsTerraformElement(x interface{}) *bool
 ```
@@ -536,7 +536,7 @@ serviceprincipalsecret.ServicePrincipalSecret_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/serviceprincipalsecret"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/serviceprincipalsecret"
 
 serviceprincipalsecret.ServicePrincipalSecret_IsTerraformResource(x interface{}) *bool
 ```
@@ -550,7 +550,7 @@ serviceprincipalsecret.ServicePrincipalSecret_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecret.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/serviceprincipalsecret"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/serviceprincipalsecret"
 
 serviceprincipalsecret.ServicePrincipalSecret_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1043,7 +1043,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecretConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/serviceprincipalsecret"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/serviceprincipalsecret"
 
 &serviceprincipalsecret.ServicePrincipalSecretConfig {
 	Connection: interface{},
@@ -1059,7 +1059,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/servicep
 	ExpireTime: *string,
 	Id: *string,
 	Lifetime: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.servicePrincipalSecret.ServicePrincipalSecretProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.servicePrincipalSecret.ServicePrincipalSecretProviderConfig,
 	Secret: *string,
 	SecretHash: *string,
 	Status: *string,
@@ -1322,7 +1322,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecretProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/serviceprincipalsecret"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/serviceprincipalsecret"
 
 &serviceprincipalsecret.ServicePrincipalSecretProviderConfig {
 	WorkspaceId: *string,
@@ -1356,7 +1356,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.servicePrincipalSecret.ServicePrincipalSecretProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/serviceprincipalsecret"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/serviceprincipalsecret"
 
 serviceprincipalsecret.NewServicePrincipalSecretProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServicePrincipalSecretProviderConfigOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksnodetype"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksnodetype"
 
 datadatabricksnodetype.NewDataDatabricksNodeType(scope Construct, id *string, config DataDatabricksNodeTypeConfig) DataDatabricksNodeType
 ```
@@ -423,7 +423,7 @@ func ResetSupportPortForwarding()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksnodetype"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksnodetype"
 
 datadatabricksnodetype.DataDatabricksNodeType_IsConstruct(x interface{}) *bool
 ```
@@ -455,7 +455,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksnodetype"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksnodetype"
 
 datadatabricksnodetype.DataDatabricksNodeType_IsTerraformElement(x interface{}) *bool
 ```
@@ -469,7 +469,7 @@ datadatabricksnodetype.DataDatabricksNodeType_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksnodetype"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksnodetype"
 
 datadatabricksnodetype.DataDatabricksNodeType_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -483,7 +483,7 @@ datadatabricksnodetype.DataDatabricksNodeType_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeType.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksnodetype"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksnodetype"
 
 datadatabricksnodetype.DataDatabricksNodeType_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1042,7 +1042,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeTypeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksnodetype"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksnodetype"
 
 &datadatabricksnodetype.DataDatabricksNodeTypeConfig {
 	Connection: interface{},
@@ -1066,7 +1066,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadata
 	MinMemoryGb: *f64,
 	PhotonDriverCapable: interface{},
 	PhotonWorkerCapable: interface{},
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksNodeType.DataDatabricksNodeTypeProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksNodeType.DataDatabricksNodeTypeProviderConfig,
 	SupportPortForwarding: interface{},
 }
 ```
@@ -1373,7 +1373,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeTypeProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksnodetype"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksnodetype"
 
 &datadatabricksnodetype.DataDatabricksNodeTypeProviderConfig {
 	WorkspaceId: *string,
@@ -1407,7 +1407,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksNodeType.DataDatabricksNodeTypeProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksnodetype"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksnodetype"
 
 datadatabricksnodetype.NewDataDatabricksNodeTypeProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksNodeTypeProviderConfigOutputReference
 ```

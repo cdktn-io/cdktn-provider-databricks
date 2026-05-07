@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksClusters.DataDatabricksClusters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksclusters"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksclusters"
 
 datadatabricksclusters.NewDataDatabricksClusters(scope Construct, id *string, config DataDatabricksClustersConfig) DataDatabricksClusters
 ```
@@ -359,7 +359,7 @@ func ResetProviderConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.dataDatabricksClusters.DataDatabricksClusters.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksclusters"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksclusters"
 
 datadatabricksclusters.DataDatabricksClusters_IsConstruct(x interface{}) *bool
 ```
@@ -391,7 +391,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.dataDatabricksClusters.DataDatabricksClusters.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksclusters"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksclusters"
 
 datadatabricksclusters.DataDatabricksClusters_IsTerraformElement(x interface{}) *bool
 ```
@@ -405,7 +405,7 @@ datadatabricksclusters.DataDatabricksClusters_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-databricks.dataDatabricksClusters.DataDatabricksClusters.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksclusters"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksclusters"
 
 datadatabricksclusters.DataDatabricksClusters_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -419,7 +419,7 @@ datadatabricksclusters.DataDatabricksClusters_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.dataDatabricksClusters.DataDatabricksClusters.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksclusters"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksclusters"
 
 datadatabricksclusters.DataDatabricksClusters_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -736,7 +736,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksClusters.DataDatabricksClustersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksclusters"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksclusters"
 
 &datadatabricksclusters.DataDatabricksClustersConfig {
 	Connection: interface{},
@@ -747,10 +747,10 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadata
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	ClusterNameContains: *string,
-	FilterBy: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksClusters.DataDatabricksClustersFilterBy,
+	FilterBy: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksClusters.DataDatabricksClustersFilterBy,
 	Id: *string,
 	Ids: *[]*string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksClusters.DataDatabricksClustersProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksClusters.DataDatabricksClustersProviderConfig,
 }
 ```
 
@@ -915,7 +915,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksClusters.DataDatabricksClustersFilterBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksclusters"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksclusters"
 
 &datadatabricksclusters.DataDatabricksClustersFilterBy {
 	ClusterSources: *[]*string,
@@ -989,7 +989,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksClusters.DataDatabricksClustersProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksclusters"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksclusters"
 
 &datadatabricksclusters.DataDatabricksClustersProviderConfig {
 	WorkspaceId: *string,
@@ -1023,7 +1023,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksClusters.DataDatabricksClustersFilterByOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksclusters"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksclusters"
 
 datadatabricksclusters.NewDataDatabricksClustersFilterByOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksClustersFilterByOutputReference
 ```
@@ -1388,7 +1388,7 @@ func InternalValue() DataDatabricksClustersFilterBy
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksClusters.DataDatabricksClustersProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksclusters"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksclusters"
 
 datadatabricksclusters.NewDataDatabricksClustersProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksClustersProviderConfigOutputReference
 ```

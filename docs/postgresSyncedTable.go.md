@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.postgresSyncedTable.PostgresSyncedTable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/postgressyncedtable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgressyncedtable"
 
 postgressyncedtable.NewPostgresSyncedTable(scope Construct, id *string, config PostgresSyncedTableConfig) PostgresSyncedTable
 ```
@@ -440,7 +440,7 @@ func ResetSpec()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.postgresSyncedTable.PostgresSyncedTable.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/postgressyncedtable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgressyncedtable"
 
 postgressyncedtable.PostgresSyncedTable_IsConstruct(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.postgresSyncedTable.PostgresSyncedTable.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/postgressyncedtable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgressyncedtable"
 
 postgressyncedtable.PostgresSyncedTable_IsTerraformElement(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ postgressyncedtable.PostgresSyncedTable_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.postgresSyncedTable.PostgresSyncedTable.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/postgressyncedtable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgressyncedtable"
 
 postgressyncedtable.PostgresSyncedTable_IsTerraformResource(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ postgressyncedtable.PostgresSyncedTable_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.postgresSyncedTable.PostgresSyncedTable.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/postgressyncedtable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgressyncedtable"
 
 postgressyncedtable.PostgresSyncedTable_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -839,7 +839,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.postgresSyncedTable.PostgresSyncedTableConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/postgressyncedtable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgressyncedtable"
 
 &postgressyncedtable.PostgresSyncedTableConfig {
 	Connection: interface{},
@@ -850,8 +850,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/postgres
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	SyncedTableId: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.postgresSyncedTable.PostgresSyncedTableProviderConfig,
-	Spec: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.postgresSyncedTable.PostgresSyncedTableSpec,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.postgresSyncedTable.PostgresSyncedTableProviderConfig,
+	Spec: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.postgresSyncedTable.PostgresSyncedTableSpec,
 }
 ```
 
@@ -983,7 +983,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.postgresSyncedTable.PostgresSyncedTableProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/postgressyncedtable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgressyncedtable"
 
 &postgressyncedtable.PostgresSyncedTableProviderConfig {
 	WorkspaceId: *string,
@@ -1015,13 +1015,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.postgresSyncedTable.PostgresSyncedTableSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/postgressyncedtable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgressyncedtable"
 
 &postgressyncedtable.PostgresSyncedTableSpec {
 	Branch: *string,
 	CreateDatabaseObjectsIfMissing: interface{},
 	ExistingPipelineId: *string,
-	NewPipelineSpec: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.postgresSyncedTable.PostgresSyncedTableSpecNewPipelineSpec,
+	NewPipelineSpec: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.postgresSyncedTable.PostgresSyncedTableSpecNewPipelineSpec,
 	PostgresDatabase: *string,
 	PrimaryKeyColumns: *[]*string,
 	SchedulingPolicy: *string,
@@ -1159,7 +1159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.postgresSyncedTable.PostgresSyncedTableSpecNewPipelineSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/postgressyncedtable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgressyncedtable"
 
 &postgressyncedtable.PostgresSyncedTableSpecNewPipelineSpec {
 	BudgetPolicyId: *string,
@@ -1219,7 +1219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.postgresSyncedTable.PostgresSyncedTableStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/postgressyncedtable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgressyncedtable"
 
 &postgressyncedtable.PostgresSyncedTableStatus {
 
@@ -1232,7 +1232,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/postgres
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.postgresSyncedTable.PostgresSyncedTableStatusLastSync.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/postgressyncedtable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgressyncedtable"
 
 &postgressyncedtable.PostgresSyncedTableStatusLastSync {
 
@@ -1245,7 +1245,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/postgres
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.postgresSyncedTable.PostgresSyncedTableStatusLastSyncDeltaTableSyncInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/postgressyncedtable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgressyncedtable"
 
 &postgressyncedtable.PostgresSyncedTableStatusLastSyncDeltaTableSyncInfo {
 
@@ -1258,7 +1258,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/postgres
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.postgresSyncedTable.PostgresSyncedTableStatusOngoingSyncProgress.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/postgressyncedtable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgressyncedtable"
 
 &postgressyncedtable.PostgresSyncedTableStatusOngoingSyncProgress {
 
@@ -1273,7 +1273,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/postgres
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.postgresSyncedTable.PostgresSyncedTableProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/postgressyncedtable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgressyncedtable"
 
 postgressyncedtable.NewPostgresSyncedTableProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PostgresSyncedTableProviderConfigOutputReference
 ```
@@ -1544,7 +1544,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.postgresSyncedTable.PostgresSyncedTableSpecNewPipelineSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/postgressyncedtable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgressyncedtable"
 
 postgressyncedtable.NewPostgresSyncedTableSpecNewPipelineSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PostgresSyncedTableSpecNewPipelineSpecOutputReference
 ```
@@ -1880,7 +1880,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.postgresSyncedTable.PostgresSyncedTableSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/postgressyncedtable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgressyncedtable"
 
 postgressyncedtable.NewPostgresSyncedTableSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PostgresSyncedTableSpecOutputReference
 ```
@@ -2403,7 +2403,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.postgresSyncedTable.PostgresSyncedTableStatusLastSyncDeltaTableSyncInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/postgressyncedtable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgressyncedtable"
 
 postgressyncedtable.NewPostgresSyncedTableStatusLastSyncDeltaTableSyncInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PostgresSyncedTableStatusLastSyncDeltaTableSyncInfoOutputReference
 ```
@@ -2674,7 +2674,7 @@ func InternalValue() PostgresSyncedTableStatusLastSyncDeltaTableSyncInfo
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.postgresSyncedTable.PostgresSyncedTableStatusLastSyncOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/postgressyncedtable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgressyncedtable"
 
 postgressyncedtable.NewPostgresSyncedTableStatusLastSyncOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PostgresSyncedTableStatusLastSyncOutputReference
 ```
@@ -2956,7 +2956,7 @@ func InternalValue() PostgresSyncedTableStatusLastSync
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.postgresSyncedTable.PostgresSyncedTableStatusOngoingSyncProgressOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/postgressyncedtable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgressyncedtable"
 
 postgressyncedtable.NewPostgresSyncedTableStatusOngoingSyncProgressOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PostgresSyncedTableStatusOngoingSyncProgressOutputReference
 ```
@@ -3260,7 +3260,7 @@ func InternalValue() PostgresSyncedTableStatusOngoingSyncProgress
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.postgresSyncedTable.PostgresSyncedTableStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/postgressyncedtable"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/postgressyncedtable"
 
 postgressyncedtable.NewPostgresSyncedTableStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PostgresSyncedTableStatusOutputReference
 ```

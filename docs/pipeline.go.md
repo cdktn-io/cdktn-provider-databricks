@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.Pipeline.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipeline(scope Construct, id *string, config PipelineConfig) Pipeline
 ```
@@ -889,7 +889,7 @@ func ResetUsagePolicyId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.pipeline.Pipeline.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.Pipeline_IsConstruct(x interface{}) *bool
 ```
@@ -921,7 +921,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.pipeline.Pipeline.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.Pipeline_IsTerraformElement(x interface{}) *bool
 ```
@@ -935,7 +935,7 @@ pipeline.Pipeline_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.pipeline.Pipeline.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.Pipeline_IsTerraformResource(x interface{}) *bool
 ```
@@ -949,7 +949,7 @@ pipeline.Pipeline_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.pipeline.Pipeline.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.Pipeline_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -2102,19 +2102,19 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineCluster {
 	ApplyPolicyDefaultValues: interface{},
-	Autoscale: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineClusterAutoscale,
-	AwsAttributes: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineClusterAwsAttributes,
-	AzureAttributes: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineClusterAzureAttributes,
-	ClusterLogConf: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineClusterClusterLogConf,
+	Autoscale: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineClusterAutoscale,
+	AwsAttributes: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineClusterAwsAttributes,
+	AzureAttributes: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineClusterAzureAttributes,
+	ClusterLogConf: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineClusterClusterLogConf,
 	CustomTags: *map[string]*string,
 	DriverInstancePoolId: *string,
 	DriverNodeTypeId: *string,
 	EnableLocalDiskEncryption: interface{},
-	GcpAttributes: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineClusterGcpAttributes,
+	GcpAttributes: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineClusterGcpAttributes,
 	InitScripts: interface{},
 	InstancePoolId: *string,
 	Label: *string,
@@ -2398,7 +2398,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineClusterAutoscale.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineClusterAutoscale {
 	MaxWorkers: *f64,
@@ -2458,7 +2458,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineClusterAwsAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineClusterAwsAttributes {
 	Availability: *string,
@@ -2616,12 +2616,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineClusterAzureAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineClusterAzureAttributes {
 	Availability: *string,
 	FirstOnDemand: *f64,
-	LogAnalyticsInfo: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfo,
+	LogAnalyticsInfo: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfo,
 	SpotBidMaxPrice: *f64,
 }
 ```
@@ -2692,7 +2692,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineClusterAzureAttributesLogAnalyticsInfo {
 	LogAnalyticsPrimaryKey: *string,
@@ -2738,12 +2738,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineClusterClusterLogConf.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineClusterClusterLogConf {
-	Dbfs: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineClusterClusterLogConfDbfs,
-	S3: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineClusterClusterLogConfS3,
-	Volumes: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineClusterClusterLogConfVolumes,
+	Dbfs: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineClusterClusterLogConfDbfs,
+	S3: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineClusterClusterLogConfS3,
+	Volumes: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineClusterClusterLogConfVolumes,
 }
 ```
 
@@ -2804,7 +2804,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineClusterClusterLogConfDbfs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineClusterClusterLogConfDbfs {
 	Destination: *string,
@@ -2836,7 +2836,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineClusterClusterLogConfS3.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineClusterClusterLogConfS3 {
 	Destination: *string,
@@ -2952,7 +2952,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineClusterClusterLogConfVolumes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineClusterClusterLogConfVolumes {
 	Destination: *string,
@@ -2984,7 +2984,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineClusterGcpAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineClusterGcpAttributes {
 	Availability: *string,
@@ -3072,16 +3072,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineClusterInitScripts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineClusterInitScripts {
-	Abfss: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineClusterInitScriptsAbfss,
-	Dbfs: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineClusterInitScriptsDbfs,
-	File: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineClusterInitScriptsFile,
-	Gcs: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineClusterInitScriptsGcs,
-	S3: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineClusterInitScriptsS3,
-	Volumes: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineClusterInitScriptsVolumes,
-	Workspace: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineClusterInitScriptsWorkspace,
+	Abfss: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineClusterInitScriptsAbfss,
+	Dbfs: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineClusterInitScriptsDbfs,
+	File: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineClusterInitScriptsFile,
+	Gcs: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineClusterInitScriptsGcs,
+	S3: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineClusterInitScriptsS3,
+	Volumes: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineClusterInitScriptsVolumes,
+	Workspace: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineClusterInitScriptsWorkspace,
 }
 ```
 
@@ -3202,7 +3202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineClusterInitScriptsAbfss.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineClusterInitScriptsAbfss {
 	Destination: *string,
@@ -3234,7 +3234,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineClusterInitScriptsDbfs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineClusterInitScriptsDbfs {
 	Destination: *string,
@@ -3266,7 +3266,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineClusterInitScriptsFile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineClusterInitScriptsFile {
 	Destination: *string,
@@ -3298,7 +3298,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineClusterInitScriptsGcs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineClusterInitScriptsGcs {
 	Destination: *string,
@@ -3330,7 +3330,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineClusterInitScriptsS3.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineClusterInitScriptsS3 {
 	Destination: *string,
@@ -3446,7 +3446,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineClusterInitScriptsVolumes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineClusterInitScriptsVolumes {
 	Destination: *string,
@@ -3478,7 +3478,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineClusterInitScriptsWorkspace.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineClusterInitScriptsWorkspace {
 	Destination: *string,
@@ -3510,7 +3510,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineConfig {
 	Connection: interface{},
@@ -3530,27 +3530,27 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline
 	Configuration: *map[string]*string,
 	Continuous: interface{},
 	CreatorUserName: *string,
-	Deployment: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineDeployment,
+	Deployment: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineDeployment,
 	Development: interface{},
 	Edition: *string,
-	Environment: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineEnvironment,
-	EventLog: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineEventLog,
+	Environment: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineEnvironment,
+	EventLog: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineEventLog,
 	ExpectedLastModified: *f64,
-	Filters: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineFilters,
-	GatewayDefinition: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineGatewayDefinition,
+	Filters: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineFilters,
+	GatewayDefinition: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineGatewayDefinition,
 	Health: *string,
 	Id: *string,
-	IngestionDefinition: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineIngestionDefinition,
+	IngestionDefinition: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineIngestionDefinition,
 	LastModified: *f64,
 	LatestUpdates: interface{},
 	Library: interface{},
 	Name: *string,
 	Notification: interface{},
 	Photon: interface{},
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineProviderConfig,
-	RestartWindow: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineRestartWindow,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineProviderConfig,
+	RestartWindow: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineRestartWindow,
 	RootPath: *string,
-	RunAs: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineRunAs,
+	RunAs: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineRunAs,
 	RunAsUserName: *string,
 	Schema: *string,
 	Serverless: interface{},
@@ -3558,8 +3558,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline
 	Storage: *string,
 	Tags: *map[string]*string,
 	Target: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineTimeouts,
-	Trigger: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineTrigger,
+	Timeouts: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineTimeouts,
+	Trigger: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineTrigger,
 	Url: *string,
 	UsagePolicyId: *string,
 }
@@ -4233,7 +4233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineDeployment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineDeployment {
 	Kind: *string,
@@ -4279,7 +4279,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineEnvironment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineEnvironment {
 	Dependencies: *[]*string,
@@ -4325,7 +4325,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineEventLog.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineEventLog {
 	Name: *string,
@@ -4385,7 +4385,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineFilters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineFilters {
 	Exclude: *[]*string,
@@ -4431,14 +4431,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineGatewayDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineGatewayDefinition {
 	ConnectionName: *string,
 	GatewayStorageCatalog: *string,
 	GatewayStorageSchema: *string,
 	ConnectionId: *string,
-	ConnectionParameters: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineGatewayDefinitionConnectionParameters,
+	ConnectionParameters: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineGatewayDefinitionConnectionParameters,
 	GatewayStorageName: *string,
 }
 ```
@@ -4535,7 +4535,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineGatewayDefinitionConnectionParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineGatewayDefinitionConnectionParameters {
 	SourceCatalog: *string,
@@ -4567,20 +4567,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineIngestionDefinition {
 	ConnectionName: *string,
 	ConnectorType: *string,
-	DataStagingOptions: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineIngestionDefinitionDataStagingOptions,
-	FullRefreshWindow: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineIngestionDefinitionFullRefreshWindow,
+	DataStagingOptions: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineIngestionDefinitionDataStagingOptions,
+	FullRefreshWindow: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineIngestionDefinitionFullRefreshWindow,
 	IngestFromUcForeignCatalog: interface{},
 	IngestionGatewayId: *string,
 	NetsuiteJarPath: *string,
 	Objects: interface{},
 	SourceConfigurations: interface{},
 	SourceType: *string,
-	TableConfiguration: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineIngestionDefinitionTableConfiguration,
+	TableConfiguration: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineIngestionDefinitionTableConfiguration,
 }
 ```
 
@@ -4749,7 +4749,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionDataStagingOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineIngestionDefinitionDataStagingOptions {
 	CatalogName: *string,
@@ -4809,7 +4809,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionFullRefreshWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineIngestionDefinitionFullRefreshWindow {
 	StartHour: *f64,
@@ -4869,12 +4869,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjects.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineIngestionDefinitionObjects {
-	Report: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineIngestionDefinitionObjectsReport,
-	Schema: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineIngestionDefinitionObjectsSchema,
-	Table: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineIngestionDefinitionObjectsTable,
+	Report: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineIngestionDefinitionObjectsReport,
+	Schema: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineIngestionDefinitionObjectsSchema,
+	Table: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineIngestionDefinitionObjectsTable,
 }
 ```
 
@@ -4935,14 +4935,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReport.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineIngestionDefinitionObjectsReport {
 	DestinationCatalog: *string,
 	DestinationSchema: *string,
 	SourceUrl: *string,
 	DestinationTable: *string,
-	TableConfiguration: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration,
+	TableConfiguration: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration,
 }
 ```
 
@@ -5025,19 +5025,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineIngestionDefinitionObjectsReportTableConfiguration {
-	AutoFullRefreshPolicy: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationAutoFullRefreshPolicy,
+	AutoFullRefreshPolicy: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationAutoFullRefreshPolicy,
 	ExcludeColumns: *[]*string,
 	IncludeColumns: *[]*string,
 	PrimaryKeys: *[]*string,
-	QueryBasedConnectorConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfig,
+	QueryBasedConnectorConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfig,
 	RowFilter: *string,
 	SalesforceIncludeFormulaFields: interface{},
 	ScdType: *string,
 	SequenceBy: *[]*string,
-	WorkdayReportParameters: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters,
+	WorkdayReportParameters: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters,
 }
 ```
 
@@ -5189,7 +5189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationAutoFullRefreshPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationAutoFullRefreshPolicy {
 	Enabled: interface{},
@@ -5235,7 +5235,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfig {
 	CursorColumns: *[]*string,
@@ -5295,7 +5295,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParameters {
 	Incremental: interface{},
@@ -5357,7 +5357,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParameters {
 	Key: *string,
@@ -5403,15 +5403,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchema.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineIngestionDefinitionObjectsSchema {
 	DestinationCatalog: *string,
 	DestinationSchema: *string,
 	SourceSchema: *string,
-	ConnectorOptions: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptions,
+	ConnectorOptions: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptions,
 	SourceCatalog: *string,
-	TableConfiguration: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration,
+	TableConfiguration: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration,
 }
 ```
 
@@ -5509,13 +5509,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptions {
-	GdriveOptions: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptions,
-	GoogleAdsOptions: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptions,
-	SharepointOptions: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptions,
-	TiktokAdsOptions: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptions,
+	GdriveOptions: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptions,
+	GoogleAdsOptions: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptions,
+	SharepointOptions: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptions,
+	TiktokAdsOptions: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptions,
 }
 ```
 
@@ -5591,11 +5591,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptions {
 	EntityType: *string,
-	FileIngestionOptions: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptions,
+	FileIngestionOptions: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptions,
 	Url: *string,
 }
 ```
@@ -5653,7 +5653,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptions {
 	CorruptRecordColumn: *string,
@@ -5827,7 +5827,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptionsFileFilters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptionsFileFilters {
 	ModifiedAfter: *string,
@@ -5887,7 +5887,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptions {
 	ManagerAccountId: *string,
@@ -5947,11 +5947,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptions {
 	EntityType: *string,
-	FileIngestionOptions: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptions,
+	FileIngestionOptions: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptions,
 	Url: *string,
 }
 ```
@@ -6009,7 +6009,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptions {
 	CorruptRecordColumn: *string,
@@ -6183,7 +6183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptionsFileFilters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptionsFileFilters {
 	ModifiedAfter: *string,
@@ -6243,7 +6243,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptions {
 	DataLevel: *string,
@@ -6359,19 +6359,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfiguration {
-	AutoFullRefreshPolicy: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationAutoFullRefreshPolicy,
+	AutoFullRefreshPolicy: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationAutoFullRefreshPolicy,
 	ExcludeColumns: *[]*string,
 	IncludeColumns: *[]*string,
 	PrimaryKeys: *[]*string,
-	QueryBasedConnectorConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorConfig,
+	QueryBasedConnectorConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorConfig,
 	RowFilter: *string,
 	SalesforceIncludeFormulaFields: interface{},
 	ScdType: *string,
 	SequenceBy: *[]*string,
-	WorkdayReportParameters: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters,
+	WorkdayReportParameters: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters,
 }
 ```
 
@@ -6523,7 +6523,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationAutoFullRefreshPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationAutoFullRefreshPolicy {
 	Enabled: interface{},
@@ -6569,7 +6569,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorConfig {
 	CursorColumns: *[]*string,
@@ -6629,7 +6629,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParameters {
 	Incremental: interface{},
@@ -6691,7 +6691,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParameters {
 	Key: *string,
@@ -6737,17 +6737,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineIngestionDefinitionObjectsTable {
 	DestinationCatalog: *string,
 	DestinationSchema: *string,
 	SourceTable: *string,
-	ConnectorOptions: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptions,
+	ConnectorOptions: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptions,
 	DestinationTable: *string,
 	SourceCatalog: *string,
 	SourceSchema: *string,
-	TableConfiguration: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration,
+	TableConfiguration: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration,
 }
 ```
 
@@ -6871,13 +6871,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptions {
-	GdriveOptions: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptions,
-	GoogleAdsOptions: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptions,
-	SharepointOptions: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptions,
-	TiktokAdsOptions: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptions,
+	GdriveOptions: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptions,
+	GoogleAdsOptions: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptions,
+	SharepointOptions: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptions,
+	TiktokAdsOptions: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptions,
 }
 ```
 
@@ -6953,11 +6953,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptions {
 	EntityType: *string,
-	FileIngestionOptions: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptions,
+	FileIngestionOptions: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptions,
 	Url: *string,
 }
 ```
@@ -7015,7 +7015,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptions {
 	CorruptRecordColumn: *string,
@@ -7189,7 +7189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptionsFileFilters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptionsFileFilters {
 	ModifiedAfter: *string,
@@ -7249,7 +7249,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptions {
 	ManagerAccountId: *string,
@@ -7309,11 +7309,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptions {
 	EntityType: *string,
-	FileIngestionOptions: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptions,
+	FileIngestionOptions: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptions,
 	Url: *string,
 }
 ```
@@ -7371,7 +7371,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptions {
 	CorruptRecordColumn: *string,
@@ -7545,7 +7545,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptionsFileFilters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptionsFileFilters {
 	ModifiedAfter: *string,
@@ -7605,7 +7605,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptions {
 	DataLevel: *string,
@@ -7721,19 +7721,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineIngestionDefinitionObjectsTableTableConfiguration {
-	AutoFullRefreshPolicy: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationAutoFullRefreshPolicy,
+	AutoFullRefreshPolicy: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationAutoFullRefreshPolicy,
 	ExcludeColumns: *[]*string,
 	IncludeColumns: *[]*string,
 	PrimaryKeys: *[]*string,
-	QueryBasedConnectorConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfig,
+	QueryBasedConnectorConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfig,
 	RowFilter: *string,
 	SalesforceIncludeFormulaFields: interface{},
 	ScdType: *string,
 	SequenceBy: *[]*string,
-	WorkdayReportParameters: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters,
+	WorkdayReportParameters: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters,
 }
 ```
 
@@ -7885,7 +7885,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationAutoFullRefreshPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationAutoFullRefreshPolicy {
 	Enabled: interface{},
@@ -7931,7 +7931,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfig {
 	CursorColumns: *[]*string,
@@ -7991,7 +7991,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParameters {
 	Incremental: interface{},
@@ -8053,7 +8053,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParameters {
 	Key: *string,
@@ -8099,10 +8099,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionSourceConfigurations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineIngestionDefinitionSourceConfigurations {
-	Catalog: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineIngestionDefinitionSourceConfigurationsCatalog,
+	Catalog: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineIngestionDefinitionSourceConfigurationsCatalog,
 }
 ```
 
@@ -8133,10 +8133,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionSourceConfigurationsCatalog.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineIngestionDefinitionSourceConfigurationsCatalog {
-	Postgres: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineIngestionDefinitionSourceConfigurationsCatalogPostgres,
+	Postgres: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineIngestionDefinitionSourceConfigurationsCatalogPostgres,
 	SourceCatalog: *string,
 }
 ```
@@ -8181,10 +8181,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionSourceConfigurationsCatalogPostgres.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineIngestionDefinitionSourceConfigurationsCatalogPostgres {
-	SlotConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineIngestionDefinitionSourceConfigurationsCatalogPostgresSlotConfig,
+	SlotConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineIngestionDefinitionSourceConfigurationsCatalogPostgresSlotConfig,
 }
 ```
 
@@ -8215,7 +8215,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionSourceConfigurationsCatalogPostgresSlotConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineIngestionDefinitionSourceConfigurationsCatalogPostgresSlotConfig {
 	PublicationName: *string,
@@ -8261,19 +8261,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineIngestionDefinitionTableConfiguration {
-	AutoFullRefreshPolicy: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineIngestionDefinitionTableConfigurationAutoFullRefreshPolicy,
+	AutoFullRefreshPolicy: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineIngestionDefinitionTableConfigurationAutoFullRefreshPolicy,
 	ExcludeColumns: *[]*string,
 	IncludeColumns: *[]*string,
 	PrimaryKeys: *[]*string,
-	QueryBasedConnectorConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfig,
+	QueryBasedConnectorConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfig,
 	RowFilter: *string,
 	SalesforceIncludeFormulaFields: interface{},
 	ScdType: *string,
 	SequenceBy: *[]*string,
-	WorkdayReportParameters: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters,
+	WorkdayReportParameters: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters,
 }
 ```
 
@@ -8425,7 +8425,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationAutoFullRefreshPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineIngestionDefinitionTableConfigurationAutoFullRefreshPolicy {
 	Enabled: interface{},
@@ -8471,7 +8471,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfig {
 	CursorColumns: *[]*string,
@@ -8531,7 +8531,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParameters {
 	Incremental: interface{},
@@ -8593,7 +8593,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParameters {
 	Key: *string,
@@ -8639,7 +8639,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineLatestUpdates.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineLatestUpdates {
 	CreationTime: *string,
@@ -8699,14 +8699,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineLibrary.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineLibrary {
-	File: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineLibraryFile,
-	Glob: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineLibraryGlob,
+	File: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineLibraryFile,
+	Glob: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineLibraryGlob,
 	Jar: *string,
-	Maven: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineLibraryMaven,
-	Notebook: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineLibraryNotebook,
+	Maven: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineLibraryMaven,
+	Notebook: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineLibraryNotebook,
 	Whl: *string,
 }
 ```
@@ -8809,7 +8809,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineLibraryFile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineLibraryFile {
 	Path: *string,
@@ -8841,7 +8841,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineLibraryGlob.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineLibraryGlob {
 	Include: *string,
@@ -8873,7 +8873,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineLibraryMaven.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineLibraryMaven {
 	Coordinates: *string,
@@ -8933,7 +8933,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineLibraryNotebook.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineLibraryNotebook {
 	Path: *string,
@@ -8965,7 +8965,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineNotification.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineNotification {
 	Alerts: *[]*string,
@@ -9011,7 +9011,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineProviderConfig {
 	WorkspaceId: *string,
@@ -9043,7 +9043,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineRestartWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineRestartWindow {
 	StartHour: *f64,
@@ -9103,7 +9103,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineRunAs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineRunAs {
 	ServicePrincipalName: *string,
@@ -9149,7 +9149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineTimeouts {
 	Default: *string,
@@ -9181,11 +9181,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineTrigger.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineTrigger {
-	Cron: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineTriggerCron,
-	Manual: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.pipeline.PipelineTriggerManual,
+	Cron: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineTriggerCron,
+	Manual: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.pipeline.PipelineTriggerManual,
 }
 ```
 
@@ -9231,7 +9231,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineTriggerCron.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineTriggerCron {
 	QuartzCronSchedule: *string,
@@ -9277,7 +9277,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.pipeline.PipelineTriggerManual.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 &pipeline.PipelineTriggerManual {
 
@@ -9292,7 +9292,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineClusterAutoscaleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineClusterAutoscaleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineClusterAutoscaleOutputReference
 ```
@@ -9614,7 +9614,7 @@ func InternalValue() PipelineClusterAutoscale
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineClusterAwsAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineClusterAwsAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineClusterAwsAttributesOutputReference
 ```
@@ -10153,7 +10153,7 @@ func InternalValue() PipelineClusterAwsAttributes
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineClusterAzureAttributesLogAnalyticsInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineClusterAzureAttributesLogAnalyticsInfoOutputReference
 ```
@@ -10460,7 +10460,7 @@ func InternalValue() PipelineClusterAzureAttributesLogAnalyticsInfo
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineClusterAzureAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineClusterAzureAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineClusterAzureAttributesOutputReference
 ```
@@ -10838,7 +10838,7 @@ func InternalValue() PipelineClusterAzureAttributes
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineClusterClusterLogConfDbfsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineClusterClusterLogConfDbfsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineClusterClusterLogConfDbfsOutputReference
 ```
@@ -11109,7 +11109,7 @@ func InternalValue() PipelineClusterClusterLogConfDbfs
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineClusterClusterLogConfOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineClusterClusterLogConfOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineClusterClusterLogConfOutputReference
 ```
@@ -11484,7 +11484,7 @@ func InternalValue() PipelineClusterClusterLogConf
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineClusterClusterLogConfS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineClusterClusterLogConfS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineClusterClusterLogConfS3OutputReference
 ```
@@ -11929,7 +11929,7 @@ func InternalValue() PipelineClusterClusterLogConfS3
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineClusterClusterLogConfVolumesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineClusterClusterLogConfVolumesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineClusterClusterLogConfVolumesOutputReference
 ```
@@ -12200,7 +12200,7 @@ func InternalValue() PipelineClusterClusterLogConfVolumes
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineClusterGcpAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineClusterGcpAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineClusterGcpAttributesOutputReference
 ```
@@ -12594,7 +12594,7 @@ func InternalValue() PipelineClusterGcpAttributes
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineClusterInitScriptsAbfssOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineClusterInitScriptsAbfssOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineClusterInitScriptsAbfssOutputReference
 ```
@@ -12865,7 +12865,7 @@ func InternalValue() PipelineClusterInitScriptsAbfss
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineClusterInitScriptsDbfsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineClusterInitScriptsDbfsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineClusterInitScriptsDbfsOutputReference
 ```
@@ -13136,7 +13136,7 @@ func InternalValue() PipelineClusterInitScriptsDbfs
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineClusterInitScriptsFileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineClusterInitScriptsFileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineClusterInitScriptsFileOutputReference
 ```
@@ -13407,7 +13407,7 @@ func InternalValue() PipelineClusterInitScriptsFile
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineClusterInitScriptsGcsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineClusterInitScriptsGcsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineClusterInitScriptsGcsOutputReference
 ```
@@ -13678,7 +13678,7 @@ func InternalValue() PipelineClusterInitScriptsGcs
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineClusterInitScriptsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineClusterInitScriptsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PipelineClusterInitScriptsList
 ```
@@ -13838,7 +13838,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineClusterInitScriptsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineClusterInitScriptsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PipelineClusterInitScriptsOutputReference
 ```
@@ -14399,7 +14399,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineClusterInitScriptsS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineClusterInitScriptsS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineClusterInitScriptsS3OutputReference
 ```
@@ -14844,7 +14844,7 @@ func InternalValue() PipelineClusterInitScriptsS3
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineClusterInitScriptsVolumesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineClusterInitScriptsVolumesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineClusterInitScriptsVolumesOutputReference
 ```
@@ -15115,7 +15115,7 @@ func InternalValue() PipelineClusterInitScriptsVolumes
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineClusterInitScriptsWorkspaceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineClusterInitScriptsWorkspaceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineClusterInitScriptsWorkspaceOutputReference
 ```
@@ -15386,7 +15386,7 @@ func InternalValue() PipelineClusterInitScriptsWorkspace
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineClusterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineClusterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PipelineClusterList
 ```
@@ -15546,7 +15546,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineClusterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineClusterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PipelineClusterOutputReference
 ```
@@ -16442,7 +16442,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineDeploymentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineDeploymentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineDeploymentOutputReference
 ```
@@ -16742,7 +16742,7 @@ func InternalValue() PipelineDeployment
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineEnvironmentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineEnvironmentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineEnvironmentOutputReference
 ```
@@ -17049,7 +17049,7 @@ func InternalValue() PipelineEnvironment
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineEventLogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineEventLogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineEventLogOutputReference
 ```
@@ -17378,7 +17378,7 @@ func InternalValue() PipelineEventLog
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineFiltersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineFiltersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineFiltersOutputReference
 ```
@@ -17685,7 +17685,7 @@ func InternalValue() PipelineFilters
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineGatewayDefinitionConnectionParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineGatewayDefinitionConnectionParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineGatewayDefinitionConnectionParametersOutputReference
 ```
@@ -17963,7 +17963,7 @@ func InternalValue() PipelineGatewayDefinitionConnectionParameters
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineGatewayDefinitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineGatewayDefinitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineGatewayDefinitionOutputReference
 ```
@@ -18378,7 +18378,7 @@ func InternalValue() PipelineGatewayDefinition
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionDataStagingOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineIngestionDefinitionDataStagingOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineIngestionDefinitionDataStagingOptionsOutputReference
 ```
@@ -18700,7 +18700,7 @@ func InternalValue() PipelineIngestionDefinitionDataStagingOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionFullRefreshWindowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineIngestionDefinitionFullRefreshWindowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineIngestionDefinitionFullRefreshWindowOutputReference
 ```
@@ -19029,7 +19029,7 @@ func InternalValue() PipelineIngestionDefinitionFullRefreshWindow
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineIngestionDefinitionObjectsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PipelineIngestionDefinitionObjectsList
 ```
@@ -19189,7 +19189,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineIngestionDefinitionObjectsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PipelineIngestionDefinitionObjectsOutputReference
 ```
@@ -19582,7 +19582,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineIngestionDefinitionObjectsReportOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineIngestionDefinitionObjectsReportOutputReference
 ```
@@ -19968,7 +19968,7 @@ func InternalValue() PipelineIngestionDefinitionObjectsReport
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationAutoFullRefreshPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineIngestionDefinitionObjectsReportTableConfigurationAutoFullRefreshPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineIngestionDefinitionObjectsReportTableConfigurationAutoFullRefreshPolicyOutputReference
 ```
@@ -20268,7 +20268,7 @@ func InternalValue() PipelineIngestionDefinitionObjectsReportTableConfigurationA
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineIngestionDefinitionObjectsReportTableConfigurationOutputReference
 ```
@@ -20846,7 +20846,7 @@ func InternalValue() PipelineIngestionDefinitionObjectsReportTableConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineIngestionDefinitionObjectsReportTableConfigurationQueryBasedConnectorConfigOutputReference
 ```
@@ -21182,7 +21182,7 @@ func InternalValue() PipelineIngestionDefinitionObjectsReportTableConfigurationQ
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersOutputReference
 ```
@@ -21531,7 +21531,7 @@ func InternalValue() PipelineIngestionDefinitionObjectsReportTableConfigurationW
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersList
 ```
@@ -21691,7 +21691,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PipelineIngestionDefinitionObjectsReportTableConfigurationWorkdayReportParametersReportParametersOutputReference
 ```
@@ -22016,7 +22016,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptionsFileFiltersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptionsFileFiltersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptionsFileFiltersList
 ```
@@ -22176,7 +22176,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptionsFileFiltersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptionsFileFiltersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptionsFileFiltersOutputReference
 ```
@@ -22530,7 +22530,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsFileIngestionOptionsOutputReference
 ```
@@ -23111,7 +23111,7 @@ func InternalValue() PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdr
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdriveOptionsOutputReference
 ```
@@ -23460,7 +23460,7 @@ func InternalValue() PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGdr
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoogleAdsOptionsOutputReference
 ```
@@ -23789,7 +23789,7 @@ func InternalValue() PipelineIngestionDefinitionObjectsSchemaConnectorOptionsGoo
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineIngestionDefinitionObjectsSchemaConnectorOptionsOutputReference
 ```
@@ -24206,7 +24206,7 @@ func InternalValue() PipelineIngestionDefinitionObjectsSchemaConnectorOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptionsFileFiltersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptionsFileFiltersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptionsFileFiltersList
 ```
@@ -24366,7 +24366,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptionsFileFiltersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptionsFileFiltersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptionsFileFiltersOutputReference
 ```
@@ -24720,7 +24720,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsFileIngestionOptionsOutputReference
 ```
@@ -25301,7 +25301,7 @@ func InternalValue() PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSha
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSharepointOptionsOutputReference
 ```
@@ -25650,7 +25650,7 @@ func InternalValue() PipelineIngestionDefinitionObjectsSchemaConnectorOptionsSha
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTiktokAdsOptionsOutputReference
 ```
@@ -26102,7 +26102,7 @@ func InternalValue() PipelineIngestionDefinitionObjectsSchemaConnectorOptionsTik
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineIngestionDefinitionObjectsSchemaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineIngestionDefinitionObjectsSchemaOutputReference
 ```
@@ -26530,7 +26530,7 @@ func InternalValue() PipelineIngestionDefinitionObjectsSchema
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationAutoFullRefreshPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineIngestionDefinitionObjectsSchemaTableConfigurationAutoFullRefreshPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineIngestionDefinitionObjectsSchemaTableConfigurationAutoFullRefreshPolicyOutputReference
 ```
@@ -26830,7 +26830,7 @@ func InternalValue() PipelineIngestionDefinitionObjectsSchemaTableConfigurationA
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineIngestionDefinitionObjectsSchemaTableConfigurationOutputReference
 ```
@@ -27408,7 +27408,7 @@ func InternalValue() PipelineIngestionDefinitionObjectsSchemaTableConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineIngestionDefinitionObjectsSchemaTableConfigurationQueryBasedConnectorConfigOutputReference
 ```
@@ -27744,7 +27744,7 @@ func InternalValue() PipelineIngestionDefinitionObjectsSchemaTableConfigurationQ
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersOutputReference
 ```
@@ -28093,7 +28093,7 @@ func InternalValue() PipelineIngestionDefinitionObjectsSchemaTableConfigurationW
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersList
 ```
@@ -28253,7 +28253,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PipelineIngestionDefinitionObjectsSchemaTableConfigurationWorkdayReportParametersReportParametersOutputReference
 ```
@@ -28578,7 +28578,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptionsFileFiltersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptionsFileFiltersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptionsFileFiltersList
 ```
@@ -28738,7 +28738,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptionsFileFiltersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptionsFileFiltersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptionsFileFiltersOutputReference
 ```
@@ -29092,7 +29092,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsFileIngestionOptionsOutputReference
 ```
@@ -29673,7 +29673,7 @@ func InternalValue() PipelineIngestionDefinitionObjectsTableConnectorOptionsGdri
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineIngestionDefinitionObjectsTableConnectorOptionsGdriveOptionsOutputReference
 ```
@@ -30022,7 +30022,7 @@ func InternalValue() PipelineIngestionDefinitionObjectsTableConnectorOptionsGdri
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineIngestionDefinitionObjectsTableConnectorOptionsGoogleAdsOptionsOutputReference
 ```
@@ -30351,7 +30351,7 @@ func InternalValue() PipelineIngestionDefinitionObjectsTableConnectorOptionsGoog
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineIngestionDefinitionObjectsTableConnectorOptionsOutputReference
 ```
@@ -30768,7 +30768,7 @@ func InternalValue() PipelineIngestionDefinitionObjectsTableConnectorOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptionsFileFiltersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptionsFileFiltersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptionsFileFiltersList
 ```
@@ -30928,7 +30928,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptionsFileFiltersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptionsFileFiltersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptionsFileFiltersOutputReference
 ```
@@ -31282,7 +31282,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsFileIngestionOptionsOutputReference
 ```
@@ -31863,7 +31863,7 @@ func InternalValue() PipelineIngestionDefinitionObjectsTableConnectorOptionsShar
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineIngestionDefinitionObjectsTableConnectorOptionsSharepointOptionsOutputReference
 ```
@@ -32212,7 +32212,7 @@ func InternalValue() PipelineIngestionDefinitionObjectsTableConnectorOptionsShar
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineIngestionDefinitionObjectsTableConnectorOptionsTiktokAdsOptionsOutputReference
 ```
@@ -32664,7 +32664,7 @@ func InternalValue() PipelineIngestionDefinitionObjectsTableConnectorOptionsTikt
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineIngestionDefinitionObjectsTableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineIngestionDefinitionObjectsTableOutputReference
 ```
@@ -33150,7 +33150,7 @@ func InternalValue() PipelineIngestionDefinitionObjectsTable
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationAutoFullRefreshPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineIngestionDefinitionObjectsTableTableConfigurationAutoFullRefreshPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineIngestionDefinitionObjectsTableTableConfigurationAutoFullRefreshPolicyOutputReference
 ```
@@ -33450,7 +33450,7 @@ func InternalValue() PipelineIngestionDefinitionObjectsTableTableConfigurationAu
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineIngestionDefinitionObjectsTableTableConfigurationOutputReference
 ```
@@ -34028,7 +34028,7 @@ func InternalValue() PipelineIngestionDefinitionObjectsTableTableConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineIngestionDefinitionObjectsTableTableConfigurationQueryBasedConnectorConfigOutputReference
 ```
@@ -34364,7 +34364,7 @@ func InternalValue() PipelineIngestionDefinitionObjectsTableTableConfigurationQu
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersOutputReference
 ```
@@ -34713,7 +34713,7 @@ func InternalValue() PipelineIngestionDefinitionObjectsTableTableConfigurationWo
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersList
 ```
@@ -34873,7 +34873,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PipelineIngestionDefinitionObjectsTableTableConfigurationWorkdayReportParametersReportParametersOutputReference
 ```
@@ -35198,7 +35198,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineIngestionDefinitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineIngestionDefinitionOutputReference
 ```
@@ -35831,7 +35831,7 @@ func InternalValue() PipelineIngestionDefinition
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionSourceConfigurationsCatalogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineIngestionDefinitionSourceConfigurationsCatalogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineIngestionDefinitionSourceConfigurationsCatalogOutputReference
 ```
@@ -36151,7 +36151,7 @@ func InternalValue() PipelineIngestionDefinitionSourceConfigurationsCatalog
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionSourceConfigurationsCatalogPostgresOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineIngestionDefinitionSourceConfigurationsCatalogPostgresOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineIngestionDefinitionSourceConfigurationsCatalogPostgresOutputReference
 ```
@@ -36442,7 +36442,7 @@ func InternalValue() PipelineIngestionDefinitionSourceConfigurationsCatalogPostg
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionSourceConfigurationsCatalogPostgresSlotConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineIngestionDefinitionSourceConfigurationsCatalogPostgresSlotConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineIngestionDefinitionSourceConfigurationsCatalogPostgresSlotConfigOutputReference
 ```
@@ -36749,7 +36749,7 @@ func InternalValue() PipelineIngestionDefinitionSourceConfigurationsCatalogPostg
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionSourceConfigurationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineIngestionDefinitionSourceConfigurationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PipelineIngestionDefinitionSourceConfigurationsList
 ```
@@ -36909,7 +36909,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionSourceConfigurationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineIngestionDefinitionSourceConfigurationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PipelineIngestionDefinitionSourceConfigurationsOutputReference
 ```
@@ -37218,7 +37218,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationAutoFullRefreshPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineIngestionDefinitionTableConfigurationAutoFullRefreshPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineIngestionDefinitionTableConfigurationAutoFullRefreshPolicyOutputReference
 ```
@@ -37518,7 +37518,7 @@ func InternalValue() PipelineIngestionDefinitionTableConfigurationAutoFullRefres
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineIngestionDefinitionTableConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineIngestionDefinitionTableConfigurationOutputReference
 ```
@@ -38096,7 +38096,7 @@ func InternalValue() PipelineIngestionDefinitionTableConfiguration
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineIngestionDefinitionTableConfigurationQueryBasedConnectorConfigOutputReference
 ```
@@ -38432,7 +38432,7 @@ func InternalValue() PipelineIngestionDefinitionTableConfigurationQueryBasedConn
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersOutputReference
 ```
@@ -38781,7 +38781,7 @@ func InternalValue() PipelineIngestionDefinitionTableConfigurationWorkdayReportP
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersList
 ```
@@ -38941,7 +38941,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PipelineIngestionDefinitionTableConfigurationWorkdayReportParametersReportParametersOutputReference
 ```
@@ -39266,7 +39266,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineLatestUpdatesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineLatestUpdatesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PipelineLatestUpdatesList
 ```
@@ -39426,7 +39426,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineLatestUpdatesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineLatestUpdatesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PipelineLatestUpdatesOutputReference
 ```
@@ -39780,7 +39780,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineLibraryFileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineLibraryFileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineLibraryFileOutputReference
 ```
@@ -40051,7 +40051,7 @@ func InternalValue() PipelineLibraryFile
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineLibraryGlobOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineLibraryGlobOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineLibraryGlobOutputReference
 ```
@@ -40322,7 +40322,7 @@ func InternalValue() PipelineLibraryGlob
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineLibraryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineLibraryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PipelineLibraryList
 ```
@@ -40482,7 +40482,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineLibraryMavenOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineLibraryMavenOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineLibraryMavenOutputReference
 ```
@@ -40811,7 +40811,7 @@ func InternalValue() PipelineLibraryMaven
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineLibraryNotebookOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineLibraryNotebookOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineLibraryNotebookOutputReference
 ```
@@ -41082,7 +41082,7 @@ func InternalValue() PipelineLibraryNotebook
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineLibraryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineLibraryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PipelineLibraryOutputReference
 ```
@@ -41575,7 +41575,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineNotificationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineNotificationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PipelineNotificationList
 ```
@@ -41735,7 +41735,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineNotificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineNotificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PipelineNotificationOutputReference
 ```
@@ -42060,7 +42060,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineProviderConfigOutputReference
 ```
@@ -42331,7 +42331,7 @@ func InternalValue() PipelineProviderConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineRestartWindowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineRestartWindowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineRestartWindowOutputReference
 ```
@@ -42660,7 +42660,7 @@ func InternalValue() PipelineRestartWindow
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineRunAsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineRunAsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineRunAsOutputReference
 ```
@@ -42967,7 +42967,7 @@ func InternalValue() PipelineRunAs
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineTimeoutsOutputReference
 ```
@@ -43245,7 +43245,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineTriggerCronOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineTriggerCronOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineTriggerCronOutputReference
 ```
@@ -43552,7 +43552,7 @@ func InternalValue() PipelineTriggerCron
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineTriggerManualOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineTriggerManualOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineTriggerManualOutputReference
 ```
@@ -43801,7 +43801,7 @@ func InternalValue() PipelineTriggerManual
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.pipeline.PipelineTriggerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/pipeline"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/pipeline"
 
 pipeline.NewPipelineTriggerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PipelineTriggerOutputReference
 ```

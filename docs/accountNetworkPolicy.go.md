@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 accountnetworkpolicy.NewAccountNetworkPolicy(scope Construct, id *string, config AccountNetworkPolicyConfig) AccountNetworkPolicy
 ```
@@ -474,7 +474,7 @@ func ResetNetworkPolicyId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 accountnetworkpolicy.AccountNetworkPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 accountnetworkpolicy.AccountNetworkPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ accountnetworkpolicy.AccountNetworkPolicy_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 accountnetworkpolicy.AccountNetworkPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ accountnetworkpolicy.AccountNetworkPolicy_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 accountnetworkpolicy.AccountNetworkPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -873,7 +873,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 &accountnetworkpolicy.AccountNetworkPolicyConfig {
 	Connection: interface{},
@@ -884,9 +884,9 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountn
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	AccountId: *string,
-	Egress: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyEgress,
-	Ingress: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyIngress,
-	IngressDryRun: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyIngressDryRun,
+	Egress: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.accountNetworkPolicy.AccountNetworkPolicyEgress,
+	Ingress: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.accountNetworkPolicy.AccountNetworkPolicyIngress,
+	IngressDryRun: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.accountNetworkPolicy.AccountNetworkPolicyIngressDryRun,
 	NetworkPolicyId: *string,
 }
 ```
@@ -1045,10 +1045,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyEgress.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 &accountnetworkpolicy.AccountNetworkPolicyEgress {
-	NetworkAccess: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyEgressNetworkAccess,
+	NetworkAccess: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.accountNetworkPolicy.AccountNetworkPolicyEgressNetworkAccess,
 }
 ```
 
@@ -1077,13 +1077,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyEgressNetworkAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 &accountnetworkpolicy.AccountNetworkPolicyEgressNetworkAccess {
 	RestrictionMode: *string,
 	AllowedInternetDestinations: interface{},
 	AllowedStorageDestinations: interface{},
-	PolicyEnforcement: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyEgressNetworkAccessPolicyEnforcement,
+	PolicyEnforcement: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.accountNetworkPolicy.AccountNetworkPolicyEgressNetworkAccessPolicyEnforcement,
 }
 ```
 
@@ -1151,7 +1151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyEgressNetworkAccessAllowedInternetDestinations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 &accountnetworkpolicy.AccountNetworkPolicyEgressNetworkAccessAllowedInternetDestinations {
 	Destination: *string,
@@ -1197,7 +1197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyEgressNetworkAccessAllowedStorageDestinations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 &accountnetworkpolicy.AccountNetworkPolicyEgressNetworkAccessAllowedStorageDestinations {
 	AzureStorageAccount: *string,
@@ -1285,7 +1285,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyEgressNetworkAccessPolicyEnforcement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 &accountnetworkpolicy.AccountNetworkPolicyEgressNetworkAccessPolicyEnforcement {
 	DryRunModeProductFilter: *[]*string,
@@ -1331,10 +1331,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngress.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 &accountnetworkpolicy.AccountNetworkPolicyIngress {
-	PublicAccess: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccess,
+	PublicAccess: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccess,
 }
 ```
 
@@ -1363,10 +1363,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRun.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 &accountnetworkpolicy.AccountNetworkPolicyIngressDryRun {
-	PublicAccess: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccess,
+	PublicAccess: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccess,
 }
 ```
 
@@ -1395,7 +1395,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 &accountnetworkpolicy.AccountNetworkPolicyIngressDryRunPublicAccess {
 	RestrictionMode: *string,
@@ -1455,13 +1455,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 &accountnetworkpolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRules {
-	Authentication: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthentication,
-	Destination: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestination,
+	Authentication: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthentication,
+	Destination: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestination,
 	Label: *string,
-	Origin: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOrigin,
+	Origin: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOrigin,
 }
 ```
 
@@ -1529,7 +1529,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 &accountnetworkpolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthentication {
 	Identities: interface{},
@@ -1575,7 +1575,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentities.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 &accountnetworkpolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentities {
 	PrincipalId: *f64,
@@ -1621,12 +1621,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 &accountnetworkpolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestination {
 	AllDestinations: interface{},
-	WorkspaceApi: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApi,
-	WorkspaceUi: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUi,
+	WorkspaceApi: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApi,
+	WorkspaceUi: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUi,
 }
 ```
 
@@ -1681,7 +1681,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApi.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 &accountnetworkpolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApi {
 	Scopes: *[]*string,
@@ -1713,7 +1713,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUi.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 &accountnetworkpolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUi {
 	AllDestinations: interface{},
@@ -1745,12 +1745,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOrigin.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 &accountnetworkpolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOrigin {
 	AllIpRanges: interface{},
-	ExcludedIpRanges: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRanges,
-	IncludedIpRanges: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRanges,
+	ExcludedIpRanges: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRanges,
+	IncludedIpRanges: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRanges,
 }
 ```
 
@@ -1805,7 +1805,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRanges.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 &accountnetworkpolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRanges {
 	IpRanges: *[]*string,
@@ -1837,7 +1837,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRanges.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 &accountnetworkpolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRanges {
 	IpRanges: *[]*string,
@@ -1869,13 +1869,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 &accountnetworkpolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRules {
-	Authentication: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthentication,
-	Destination: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestination,
+	Authentication: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthentication,
+	Destination: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestination,
 	Label: *string,
-	Origin: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOrigin,
+	Origin: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOrigin,
 }
 ```
 
@@ -1943,7 +1943,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 &accountnetworkpolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthentication {
 	Identities: interface{},
@@ -1989,7 +1989,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentities.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 &accountnetworkpolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentities {
 	PrincipalId: *f64,
@@ -2035,12 +2035,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 &accountnetworkpolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestination {
 	AllDestinations: interface{},
-	WorkspaceApi: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApi,
-	WorkspaceUi: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUi,
+	WorkspaceApi: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApi,
+	WorkspaceUi: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUi,
 }
 ```
 
@@ -2095,7 +2095,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApi.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 &accountnetworkpolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApi {
 	Scopes: *[]*string,
@@ -2127,7 +2127,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUi.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 &accountnetworkpolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUi {
 	AllDestinations: interface{},
@@ -2159,12 +2159,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOrigin.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 &accountnetworkpolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOrigin {
 	AllIpRanges: interface{},
-	ExcludedIpRanges: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRanges,
-	IncludedIpRanges: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRanges,
+	ExcludedIpRanges: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRanges,
+	IncludedIpRanges: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRanges,
 }
 ```
 
@@ -2219,7 +2219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRanges.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 &accountnetworkpolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRanges {
 	IpRanges: *[]*string,
@@ -2251,7 +2251,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRanges.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 &accountnetworkpolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRanges {
 	IpRanges: *[]*string,
@@ -2283,7 +2283,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 &accountnetworkpolicy.AccountNetworkPolicyIngressPublicAccess {
 	RestrictionMode: *string,
@@ -2343,13 +2343,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 &accountnetworkpolicy.AccountNetworkPolicyIngressPublicAccessAllowRules {
-	Authentication: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthentication,
-	Destination: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestination,
+	Authentication: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthentication,
+	Destination: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestination,
 	Label: *string,
-	Origin: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOrigin,
+	Origin: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOrigin,
 }
 ```
 
@@ -2417,7 +2417,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 &accountnetworkpolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthentication {
 	Identities: interface{},
@@ -2463,7 +2463,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentities.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 &accountnetworkpolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentities {
 	PrincipalId: *f64,
@@ -2509,12 +2509,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 &accountnetworkpolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestination {
 	AllDestinations: interface{},
-	WorkspaceApi: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApi,
-	WorkspaceUi: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUi,
+	WorkspaceApi: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApi,
+	WorkspaceUi: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUi,
 }
 ```
 
@@ -2569,7 +2569,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApi.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 &accountnetworkpolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApi {
 	Scopes: *[]*string,
@@ -2601,7 +2601,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUi.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 &accountnetworkpolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUi {
 	AllDestinations: interface{},
@@ -2633,12 +2633,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOrigin.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 &accountnetworkpolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOrigin {
 	AllIpRanges: interface{},
-	ExcludedIpRanges: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRanges,
-	IncludedIpRanges: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRanges,
+	ExcludedIpRanges: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRanges,
+	IncludedIpRanges: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRanges,
 }
 ```
 
@@ -2693,7 +2693,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRanges.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 &accountnetworkpolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRanges {
 	IpRanges: *[]*string,
@@ -2725,7 +2725,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRanges.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 &accountnetworkpolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRanges {
 	IpRanges: *[]*string,
@@ -2757,13 +2757,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 &accountnetworkpolicy.AccountNetworkPolicyIngressPublicAccessDenyRules {
-	Authentication: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthentication,
-	Destination: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestination,
+	Authentication: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthentication,
+	Destination: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestination,
 	Label: *string,
-	Origin: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOrigin,
+	Origin: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOrigin,
 }
 ```
 
@@ -2831,7 +2831,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 &accountnetworkpolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthentication {
 	Identities: interface{},
@@ -2877,7 +2877,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentities.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 &accountnetworkpolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentities {
 	PrincipalId: *f64,
@@ -2923,12 +2923,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 &accountnetworkpolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestination {
 	AllDestinations: interface{},
-	WorkspaceApi: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApi,
-	WorkspaceUi: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUi,
+	WorkspaceApi: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApi,
+	WorkspaceUi: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUi,
 }
 ```
 
@@ -2983,7 +2983,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApi.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 &accountnetworkpolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApi {
 	Scopes: *[]*string,
@@ -3015,7 +3015,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUi.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 &accountnetworkpolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUi {
 	AllDestinations: interface{},
@@ -3047,12 +3047,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOrigin.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 &accountnetworkpolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOrigin {
 	AllIpRanges: interface{},
-	ExcludedIpRanges: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRanges,
-	IncludedIpRanges: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRanges,
+	ExcludedIpRanges: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRanges,
+	IncludedIpRanges: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRanges,
 }
 ```
 
@@ -3107,7 +3107,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRanges.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 &accountnetworkpolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRanges {
 	IpRanges: *[]*string,
@@ -3139,7 +3139,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRanges.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 &accountnetworkpolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRanges {
 	IpRanges: *[]*string,
@@ -3173,7 +3173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyEgressNetworkAccessAllowedInternetDestinationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 accountnetworkpolicy.NewAccountNetworkPolicyEgressNetworkAccessAllowedInternetDestinationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccountNetworkPolicyEgressNetworkAccessAllowedInternetDestinationsList
 ```
@@ -3333,7 +3333,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyEgressNetworkAccessAllowedInternetDestinationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 accountnetworkpolicy.NewAccountNetworkPolicyEgressNetworkAccessAllowedInternetDestinationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccountNetworkPolicyEgressNetworkAccessAllowedInternetDestinationsOutputReference
 ```
@@ -3658,7 +3658,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyEgressNetworkAccessAllowedStorageDestinationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 accountnetworkpolicy.NewAccountNetworkPolicyEgressNetworkAccessAllowedStorageDestinationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccountNetworkPolicyEgressNetworkAccessAllowedStorageDestinationsList
 ```
@@ -3818,7 +3818,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyEgressNetworkAccessAllowedStorageDestinationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 accountnetworkpolicy.NewAccountNetworkPolicyEgressNetworkAccessAllowedStorageDestinationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccountNetworkPolicyEgressNetworkAccessAllowedStorageDestinationsOutputReference
 ```
@@ -4230,7 +4230,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyEgressNetworkAccessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 accountnetworkpolicy.NewAccountNetworkPolicyEgressNetworkAccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyEgressNetworkAccessOutputReference
 ```
@@ -4627,7 +4627,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyEgressNetworkAccessPolicyEnforcementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 accountnetworkpolicy.NewAccountNetworkPolicyEgressNetworkAccessPolicyEnforcementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyEgressNetworkAccessPolicyEnforcementOutputReference
 ```
@@ -4934,7 +4934,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyEgressOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 accountnetworkpolicy.NewAccountNetworkPolicyEgressOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyEgressOutputReference
 ```
@@ -5225,7 +5225,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 accountnetworkpolicy.NewAccountNetworkPolicyIngressDryRunOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyIngressDryRunOutputReference
 ```
@@ -5516,7 +5516,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 accountnetworkpolicy.NewAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesList
 ```
@@ -5676,7 +5676,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 accountnetworkpolicy.NewAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationIdentitiesOutputReference
 ```
@@ -6001,7 +6001,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 accountnetworkpolicy.NewAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesAuthenticationOutputReference
 ```
@@ -6321,7 +6321,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 accountnetworkpolicy.NewAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationOutputReference
 ```
@@ -6683,7 +6683,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 accountnetworkpolicy.NewAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceApiOutputReference
 ```
@@ -6961,7 +6961,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 accountnetworkpolicy.NewAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesDestinationWorkspaceUiOutputReference
 ```
@@ -7239,7 +7239,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 accountnetworkpolicy.NewAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesList
 ```
@@ -7399,7 +7399,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 accountnetworkpolicy.NewAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginExcludedIpRangesOutputReference
 ```
@@ -7677,7 +7677,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 accountnetworkpolicy.NewAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginIncludedIpRangesOutputReference
 ```
@@ -7955,7 +7955,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 accountnetworkpolicy.NewAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOriginOutputReference
 ```
@@ -8317,7 +8317,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 accountnetworkpolicy.NewAccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccountNetworkPolicyIngressDryRunPublicAccessAllowRulesOutputReference
 ```
@@ -8739,7 +8739,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 accountnetworkpolicy.NewAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesList
 ```
@@ -8899,7 +8899,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 accountnetworkpolicy.NewAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationIdentitiesOutputReference
 ```
@@ -9224,7 +9224,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 accountnetworkpolicy.NewAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesAuthenticationOutputReference
 ```
@@ -9544,7 +9544,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 accountnetworkpolicy.NewAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationOutputReference
 ```
@@ -9906,7 +9906,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 accountnetworkpolicy.NewAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceApiOutputReference
 ```
@@ -10184,7 +10184,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 accountnetworkpolicy.NewAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesDestinationWorkspaceUiOutputReference
 ```
@@ -10462,7 +10462,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 accountnetworkpolicy.NewAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesList
 ```
@@ -10622,7 +10622,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 accountnetworkpolicy.NewAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginExcludedIpRangesOutputReference
 ```
@@ -10900,7 +10900,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 accountnetworkpolicy.NewAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginIncludedIpRangesOutputReference
 ```
@@ -11178,7 +11178,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 accountnetworkpolicy.NewAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOriginOutputReference
 ```
@@ -11540,7 +11540,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 accountnetworkpolicy.NewAccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccountNetworkPolicyIngressDryRunPublicAccessDenyRulesOutputReference
 ```
@@ -11962,7 +11962,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressDryRunPublicAccessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 accountnetworkpolicy.NewAccountNetworkPolicyIngressDryRunPublicAccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyIngressDryRunPublicAccessOutputReference
 ```
@@ -12317,7 +12317,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 accountnetworkpolicy.NewAccountNetworkPolicyIngressOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyIngressOutputReference
 ```
@@ -12608,7 +12608,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 accountnetworkpolicy.NewAccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesList
 ```
@@ -12768,7 +12768,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 accountnetworkpolicy.NewAccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationIdentitiesOutputReference
 ```
@@ -13093,7 +13093,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 accountnetworkpolicy.NewAccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyIngressPublicAccessAllowRulesAuthenticationOutputReference
 ```
@@ -13413,7 +13413,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 accountnetworkpolicy.NewAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationOutputReference
 ```
@@ -13775,7 +13775,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 accountnetworkpolicy.NewAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceApiOutputReference
 ```
@@ -14053,7 +14053,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 accountnetworkpolicy.NewAccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyIngressPublicAccessAllowRulesDestinationWorkspaceUiOutputReference
 ```
@@ -14331,7 +14331,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 accountnetworkpolicy.NewAccountNetworkPolicyIngressPublicAccessAllowRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccountNetworkPolicyIngressPublicAccessAllowRulesList
 ```
@@ -14491,7 +14491,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 accountnetworkpolicy.NewAccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyIngressPublicAccessAllowRulesOriginExcludedIpRangesOutputReference
 ```
@@ -14769,7 +14769,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 accountnetworkpolicy.NewAccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyIngressPublicAccessAllowRulesOriginIncludedIpRangesOutputReference
 ```
@@ -15047,7 +15047,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 accountnetworkpolicy.NewAccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyIngressPublicAccessAllowRulesOriginOutputReference
 ```
@@ -15409,7 +15409,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 accountnetworkpolicy.NewAccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccountNetworkPolicyIngressPublicAccessAllowRulesOutputReference
 ```
@@ -15831,7 +15831,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 accountnetworkpolicy.NewAccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesList
 ```
@@ -15991,7 +15991,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 accountnetworkpolicy.NewAccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationIdentitiesOutputReference
 ```
@@ -16316,7 +16316,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 accountnetworkpolicy.NewAccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyIngressPublicAccessDenyRulesAuthenticationOutputReference
 ```
@@ -16636,7 +16636,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 accountnetworkpolicy.NewAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationOutputReference
 ```
@@ -16998,7 +16998,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 accountnetworkpolicy.NewAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceApiOutputReference
 ```
@@ -17276,7 +17276,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 accountnetworkpolicy.NewAccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyIngressPublicAccessDenyRulesDestinationWorkspaceUiOutputReference
 ```
@@ -17554,7 +17554,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 accountnetworkpolicy.NewAccountNetworkPolicyIngressPublicAccessDenyRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccountNetworkPolicyIngressPublicAccessDenyRulesList
 ```
@@ -17714,7 +17714,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 accountnetworkpolicy.NewAccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyIngressPublicAccessDenyRulesOriginExcludedIpRangesOutputReference
 ```
@@ -17992,7 +17992,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 accountnetworkpolicy.NewAccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyIngressPublicAccessDenyRulesOriginIncludedIpRangesOutputReference
 ```
@@ -18270,7 +18270,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 accountnetworkpolicy.NewAccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyIngressPublicAccessDenyRulesOriginOutputReference
 ```
@@ -18632,7 +18632,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 accountnetworkpolicy.NewAccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccountNetworkPolicyIngressPublicAccessDenyRulesOutputReference
 ```
@@ -19054,7 +19054,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.accountNetworkPolicy.AccountNetworkPolicyIngressPublicAccessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/accountnetworkpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/accountnetworkpolicy"
 
 accountnetworkpolicy.NewAccountNetworkPolicyIngressPublicAccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountNetworkPolicyIngressPublicAccessOutputReference
 ```

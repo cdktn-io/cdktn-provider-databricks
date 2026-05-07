@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.azureAdlsGen1Mount.AzureAdlsGen1Mount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/azureadlsgen1mount"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/azureadlsgen1mount"
 
 azureadlsgen1mount.NewAzureAdlsGen1Mount(scope Construct, id *string, config AzureAdlsGen1MountConfig) AzureAdlsGen1Mount
 ```
@@ -428,7 +428,7 @@ func ResetSparkConfPrefix()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.azureAdlsGen1Mount.AzureAdlsGen1Mount.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/azureadlsgen1mount"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/azureadlsgen1mount"
 
 azureadlsgen1mount.AzureAdlsGen1Mount_IsConstruct(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.azureAdlsGen1Mount.AzureAdlsGen1Mount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/azureadlsgen1mount"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/azureadlsgen1mount"
 
 azureadlsgen1mount.AzureAdlsGen1Mount_IsTerraformElement(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ azureadlsgen1mount.AzureAdlsGen1Mount_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.azureAdlsGen1Mount.AzureAdlsGen1Mount.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/azureadlsgen1mount"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/azureadlsgen1mount"
 
 azureadlsgen1mount.AzureAdlsGen1Mount_IsTerraformResource(x interface{}) *bool
 ```
@@ -488,7 +488,7 @@ azureadlsgen1mount.AzureAdlsGen1Mount_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.azureAdlsGen1Mount.AzureAdlsGen1Mount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/azureadlsgen1mount"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/azureadlsgen1mount"
 
 azureadlsgen1mount.AzureAdlsGen1Mount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -948,7 +948,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.azureAdlsGen1Mount.AzureAdlsGen1MountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/azureadlsgen1mount"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/azureadlsgen1mount"
 
 &azureadlsgen1mount.AzureAdlsGen1MountConfig {
 	Connection: interface{},

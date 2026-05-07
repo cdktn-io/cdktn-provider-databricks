@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.complianceSecurityProfileWorkspaceSetting.ComplianceSecurityProfileWorkspaceSetting.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/compliancesecurityprofileworkspacesetting"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/compliancesecurityprofileworkspacesetting"
 
 compliancesecurityprofileworkspacesetting.NewComplianceSecurityProfileWorkspaceSetting(scope Construct, id *string, config ComplianceSecurityProfileWorkspaceSettingConfig) ComplianceSecurityProfileWorkspaceSetting
 ```
@@ -454,7 +454,7 @@ func ResetSettingName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.complianceSecurityProfileWorkspaceSetting.ComplianceSecurityProfileWorkspaceSetting.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/compliancesecurityprofileworkspacesetting"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/compliancesecurityprofileworkspacesetting"
 
 compliancesecurityprofileworkspacesetting.ComplianceSecurityProfileWorkspaceSetting_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.complianceSecurityProfileWorkspaceSetting.ComplianceSecurityProfileWorkspaceSetting.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/compliancesecurityprofileworkspacesetting"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/compliancesecurityprofileworkspacesetting"
 
 compliancesecurityprofileworkspacesetting.ComplianceSecurityProfileWorkspaceSetting_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ compliancesecurityprofileworkspacesetting.ComplianceSecurityProfileWorkspaceSett
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.complianceSecurityProfileWorkspaceSetting.ComplianceSecurityProfileWorkspaceSetting.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/compliancesecurityprofileworkspacesetting"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/compliancesecurityprofileworkspacesetting"
 
 compliancesecurityprofileworkspacesetting.ComplianceSecurityProfileWorkspaceSetting_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ compliancesecurityprofileworkspacesetting.ComplianceSecurityProfileWorkspaceSett
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.complianceSecurityProfileWorkspaceSetting.ComplianceSecurityProfileWorkspaceSetting.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/compliancesecurityprofileworkspacesetting"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/compliancesecurityprofileworkspacesetting"
 
 compliancesecurityprofileworkspacesetting.ComplianceSecurityProfileWorkspaceSetting_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -853,7 +853,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.complianceSecurityProfileWorkspaceSetting.ComplianceSecurityProfileWorkspaceSettingComplianceSecurityProfileWorkspace.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/compliancesecurityprofileworkspacesetting"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/compliancesecurityprofileworkspacesetting"
 
 &compliancesecurityprofileworkspacesetting.ComplianceSecurityProfileWorkspaceSettingComplianceSecurityProfileWorkspace {
 	ComplianceStandards: *[]*string,
@@ -899,7 +899,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.complianceSecurityProfileWorkspaceSetting.ComplianceSecurityProfileWorkspaceSettingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/compliancesecurityprofileworkspacesetting"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/compliancesecurityprofileworkspacesetting"
 
 &compliancesecurityprofileworkspacesetting.ComplianceSecurityProfileWorkspaceSettingConfig {
 	Connection: interface{},
@@ -909,10 +909,10 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/complian
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	ComplianceSecurityProfileWorkspace: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.complianceSecurityProfileWorkspaceSetting.ComplianceSecurityProfileWorkspaceSettingComplianceSecurityProfileWorkspace,
+	ComplianceSecurityProfileWorkspace: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.complianceSecurityProfileWorkspaceSetting.ComplianceSecurityProfileWorkspaceSettingComplianceSecurityProfileWorkspace,
 	Etag: *string,
 	Id: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.complianceSecurityProfileWorkspaceSetting.ComplianceSecurityProfileWorkspaceSettingProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.complianceSecurityProfileWorkspaceSetting.ComplianceSecurityProfileWorkspaceSettingProviderConfig,
 	SettingName: *string,
 }
 ```
@@ -1078,7 +1078,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.complianceSecurityProfileWorkspaceSetting.ComplianceSecurityProfileWorkspaceSettingProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/compliancesecurityprofileworkspacesetting"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/compliancesecurityprofileworkspacesetting"
 
 &compliancesecurityprofileworkspacesetting.ComplianceSecurityProfileWorkspaceSettingProviderConfig {
 	WorkspaceId: *string,
@@ -1112,7 +1112,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.complianceSecurityProfileWorkspaceSetting.ComplianceSecurityProfileWorkspaceSettingComplianceSecurityProfileWorkspaceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/compliancesecurityprofileworkspacesetting"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/compliancesecurityprofileworkspacesetting"
 
 compliancesecurityprofileworkspacesetting.NewComplianceSecurityProfileWorkspaceSettingComplianceSecurityProfileWorkspaceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComplianceSecurityProfileWorkspaceSettingComplianceSecurityProfileWorkspaceOutputReference
 ```
@@ -1405,7 +1405,7 @@ func InternalValue() ComplianceSecurityProfileWorkspaceSettingComplianceSecurity
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.complianceSecurityProfileWorkspaceSetting.ComplianceSecurityProfileWorkspaceSettingProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/compliancesecurityprofileworkspacesetting"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/compliancesecurityprofileworkspacesetting"
 
 compliancesecurityprofileworkspacesetting.NewComplianceSecurityProfileWorkspaceSettingProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComplianceSecurityProfileWorkspaceSettingProviderConfigOutputReference
 ```

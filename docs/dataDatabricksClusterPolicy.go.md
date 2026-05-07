@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksClusterPolicy.DataDatabricksClusterPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksclusterpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksclusterpolicy"
 
 datadatabricksclusterpolicy.NewDataDatabricksClusterPolicy(scope Construct, id *string, config DataDatabricksClusterPolicyConfig) DataDatabricksClusterPolicy
 ```
@@ -374,7 +374,7 @@ func ResetProviderConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.dataDatabricksClusterPolicy.DataDatabricksClusterPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksclusterpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksclusterpolicy"
 
 datadatabricksclusterpolicy.DataDatabricksClusterPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.dataDatabricksClusterPolicy.DataDatabricksClusterPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksclusterpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksclusterpolicy"
 
 datadatabricksclusterpolicy.DataDatabricksClusterPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -420,7 +420,7 @@ datadatabricksclusterpolicy.DataDatabricksClusterPolicy_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-databricks.dataDatabricksClusterPolicy.DataDatabricksClusterPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksclusterpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksclusterpolicy"
 
 datadatabricksclusterpolicy.DataDatabricksClusterPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -434,7 +434,7 @@ datadatabricksclusterpolicy.DataDatabricksClusterPolicy_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.dataDatabricksClusterPolicy.DataDatabricksClusterPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksclusterpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksclusterpolicy"
 
 datadatabricksclusterpolicy.DataDatabricksClusterPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -839,7 +839,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksClusterPolicy.DataDatabricksClusterPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksclusterpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksclusterpolicy"
 
 &datadatabricksclusterpolicy.DataDatabricksClusterPolicyConfig {
 	Connection: interface{},
@@ -857,7 +857,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadata
 	Name: *string,
 	PolicyFamilyDefinitionOverrides: *string,
 	PolicyFamilyId: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksClusterPolicy.DataDatabricksClusterPolicyProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksClusterPolicy.DataDatabricksClusterPolicyProviderConfig,
 }
 ```
 
@@ -1072,7 +1072,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksClusterPolicy.DataDatabricksClusterPolicyProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksclusterpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksclusterpolicy"
 
 &datadatabricksclusterpolicy.DataDatabricksClusterPolicyProviderConfig {
 	WorkspaceId: *string,
@@ -1106,7 +1106,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksClusterPolicy.DataDatabricksClusterPolicyProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksclusterpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksclusterpolicy"
 
 datadatabricksclusterpolicy.NewDataDatabricksClusterPolicyProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksClusterPolicyProviderConfigOutputReference
 ```

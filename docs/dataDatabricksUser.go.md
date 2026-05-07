@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksUser.DataDatabricksUser.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksuser"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksuser"
 
 datadatabricksuser.NewDataDatabricksUser(scope Construct, id *string, config DataDatabricksUserConfig) DataDatabricksUser
 ```
@@ -346,7 +346,7 @@ func ResetUserName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.dataDatabricksUser.DataDatabricksUser.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksuser"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksuser"
 
 datadatabricksuser.DataDatabricksUser_IsConstruct(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.dataDatabricksUser.DataDatabricksUser.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksuser"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksuser"
 
 datadatabricksuser.DataDatabricksUser_IsTerraformElement(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ datadatabricksuser.DataDatabricksUser_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-databricks.dataDatabricksUser.DataDatabricksUser.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksuser"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksuser"
 
 datadatabricksuser.DataDatabricksUser_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ datadatabricksuser.DataDatabricksUser_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.dataDatabricksUser.DataDatabricksUser.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksuser"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksuser"
 
 datadatabricksuser.DataDatabricksUser_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -811,7 +811,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksUser.DataDatabricksUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksuser"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksuser"
 
 &datadatabricksuser.DataDatabricksUserConfig {
 	Connection: interface{},
@@ -823,7 +823,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadata
 	Provisioners: *[]interface{},
 	Api: *string,
 	Id: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksUser.DataDatabricksUserProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksUser.DataDatabricksUserProviderConfig,
 	UserId: *string,
 	UserName: *string,
 }
@@ -992,7 +992,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksUser.DataDatabricksUserProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksuser"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksuser"
 
 &datadatabricksuser.DataDatabricksUserProviderConfig {
 	WorkspaceId: *string,
@@ -1026,7 +1026,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksUser.DataDatabricksUserProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksuser"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksuser"
 
 datadatabricksuser.NewDataDatabricksUserProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksUserProviderConfigOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.mwsStorageConfigurations.MwsStorageConfigurations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/mwsstorageconfigurations"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/mwsstorageconfigurations"
 
 mwsstorageconfigurations.NewMwsStorageConfigurations(scope Construct, id *string, config MwsStorageConfigurationsConfig) MwsStorageConfigurations
 ```
@@ -414,7 +414,7 @@ func ResetRoleArn()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.mwsStorageConfigurations.MwsStorageConfigurations.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/mwsstorageconfigurations"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/mwsstorageconfigurations"
 
 mwsstorageconfigurations.MwsStorageConfigurations_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.mwsStorageConfigurations.MwsStorageConfigurations.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/mwsstorageconfigurations"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/mwsstorageconfigurations"
 
 mwsstorageconfigurations.MwsStorageConfigurations_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ mwsstorageconfigurations.MwsStorageConfigurations_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.mwsStorageConfigurations.MwsStorageConfigurations.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/mwsstorageconfigurations"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/mwsstorageconfigurations"
 
 mwsstorageconfigurations.MwsStorageConfigurations_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ mwsstorageconfigurations.MwsStorageConfigurations_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.mwsStorageConfigurations.MwsStorageConfigurations.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/mwsstorageconfigurations"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/mwsstorageconfigurations"
 
 mwsstorageconfigurations.MwsStorageConfigurations_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -835,7 +835,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.mwsStorageConfigurations.MwsStorageConfigurationsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/mwsstorageconfigurations"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/mwsstorageconfigurations"
 
 &mwsstorageconfigurations.MwsStorageConfigurationsConfig {
 	Connection: interface{},

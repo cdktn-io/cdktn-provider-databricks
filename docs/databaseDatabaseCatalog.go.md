@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.databaseDatabaseCatalog.DatabaseDatabaseCatalog.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/databasedatabasecatalog"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/databasedatabasecatalog"
 
 databasedatabasecatalog.NewDatabaseDatabaseCatalog(scope Construct, id *string, config DatabaseDatabaseCatalogConfig) DatabaseDatabaseCatalog
 ```
@@ -427,7 +427,7 @@ func ResetProviderConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.databaseDatabaseCatalog.DatabaseDatabaseCatalog.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/databasedatabasecatalog"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/databasedatabasecatalog"
 
 databasedatabasecatalog.DatabaseDatabaseCatalog_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.databaseDatabaseCatalog.DatabaseDatabaseCatalog.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/databasedatabasecatalog"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/databasedatabasecatalog"
 
 databasedatabasecatalog.DatabaseDatabaseCatalog_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ databasedatabasecatalog.DatabaseDatabaseCatalog_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.databaseDatabaseCatalog.DatabaseDatabaseCatalog.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/databasedatabasecatalog"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/databasedatabasecatalog"
 
 databasedatabasecatalog.DatabaseDatabaseCatalog_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ databasedatabasecatalog.DatabaseDatabaseCatalog_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.databaseDatabaseCatalog.DatabaseDatabaseCatalog.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/databasedatabasecatalog"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/databasedatabasecatalog"
 
 databasedatabasecatalog.DatabaseDatabaseCatalog_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -837,7 +837,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.databaseDatabaseCatalog.DatabaseDatabaseCatalogConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/databasedatabasecatalog"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/databasedatabasecatalog"
 
 &databasedatabasecatalog.DatabaseDatabaseCatalogConfig {
 	Connection: interface{},
@@ -851,7 +851,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/database
 	DatabaseName: *string,
 	Name: *string,
 	CreateDatabaseIfNotExists: interface{},
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.databaseDatabaseCatalog.DatabaseDatabaseCatalogProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.databaseDatabaseCatalog.DatabaseDatabaseCatalogProviderConfig,
 }
 ```
 
@@ -1009,7 +1009,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.databaseDatabaseCatalog.DatabaseDatabaseCatalogProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/databasedatabasecatalog"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/databasedatabasecatalog"
 
 &databasedatabasecatalog.DatabaseDatabaseCatalogProviderConfig {
 	WorkspaceId: *string,
@@ -1043,7 +1043,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.databaseDatabaseCatalog.DatabaseDatabaseCatalogProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/databasedatabasecatalog"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/databasedatabasecatalog"
 
 databasedatabasecatalog.NewDatabaseDatabaseCatalogProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatabaseDatabaseCatalogProviderConfigOutputReference
 ```

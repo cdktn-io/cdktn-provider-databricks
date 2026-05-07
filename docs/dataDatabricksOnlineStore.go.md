@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksOnlineStore.DataDatabricksOnlineStore.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksonlinestore"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksonlinestore"
 
 datadatabricksonlinestore.NewDataDatabricksOnlineStore(scope Construct, id *string, config DataDatabricksOnlineStoreConfig) DataDatabricksOnlineStore
 ```
@@ -318,7 +318,7 @@ func ResetProviderConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.dataDatabricksOnlineStore.DataDatabricksOnlineStore.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksonlinestore"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksonlinestore"
 
 datadatabricksonlinestore.DataDatabricksOnlineStore_IsConstruct(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.dataDatabricksOnlineStore.DataDatabricksOnlineStore.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksonlinestore"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksonlinestore"
 
 datadatabricksonlinestore.DataDatabricksOnlineStore_IsTerraformElement(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ datadatabricksonlinestore.DataDatabricksOnlineStore_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-databricks.dataDatabricksOnlineStore.DataDatabricksOnlineStore.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksonlinestore"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksonlinestore"
 
 datadatabricksonlinestore.DataDatabricksOnlineStore_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ datadatabricksonlinestore.DataDatabricksOnlineStore_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.dataDatabricksOnlineStore.DataDatabricksOnlineStore.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksonlinestore"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksonlinestore"
 
 datadatabricksonlinestore.DataDatabricksOnlineStore_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -695,7 +695,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksOnlineStore.DataDatabricksOnlineStoreConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksonlinestore"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksonlinestore"
 
 &datadatabricksonlinestore.DataDatabricksOnlineStoreConfig {
 	Connection: interface{},
@@ -706,7 +706,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadata
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksOnlineStore.DataDatabricksOnlineStoreProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksOnlineStore.DataDatabricksOnlineStoreProviderConfig,
 }
 ```
 
@@ -825,7 +825,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksOnlineStore.DataDatabricksOnlineStoreProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksonlinestore"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksonlinestore"
 
 &datadatabricksonlinestore.DataDatabricksOnlineStoreProviderConfig {
 	WorkspaceId: *string,
@@ -859,7 +859,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksOnlineStore.DataDatabricksOnlineStoreProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksonlinestore"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksonlinestore"
 
 datadatabricksonlinestore.NewDataDatabricksOnlineStoreProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksOnlineStoreProviderConfigOutputReference
 ```

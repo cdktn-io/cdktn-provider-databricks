@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/vectorsearchendpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/vectorsearchendpoint"
 
 vectorsearchendpoint.NewVectorSearchEndpoint(scope Construct, id *string, config VectorSearchEndpointConfig) VectorSearchEndpoint
 ```
@@ -474,7 +474,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/vectorsearchendpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/vectorsearchendpoint"
 
 vectorsearchendpoint.VectorSearchEndpoint_IsConstruct(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/vectorsearchendpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/vectorsearchendpoint"
 
 vectorsearchendpoint.VectorSearchEndpoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ vectorsearchendpoint.VectorSearchEndpoint_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/vectorsearchendpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/vectorsearchendpoint"
 
 vectorsearchendpoint.VectorSearchEndpoint_IsTerraformResource(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ vectorsearchendpoint.VectorSearchEndpoint_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.vectorSearchEndpoint.VectorSearchEndpoint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/vectorsearchendpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/vectorsearchendpoint"
 
 vectorsearchendpoint.VectorSearchEndpoint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1005,7 +1005,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/vectorsearchendpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/vectorsearchendpoint"
 
 &vectorsearchendpoint.VectorSearchEndpointConfig {
 	Connection: interface{},
@@ -1019,9 +1019,9 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/vectorse
 	Name: *string,
 	BudgetPolicyId: *string,
 	Id: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.vectorSearchEndpoint.VectorSearchEndpointProviderConfig,
-	ScalingInfo: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.vectorSearchEndpoint.VectorSearchEndpointScalingInfo,
-	Timeouts: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.vectorSearchEndpoint.VectorSearchEndpointTimeouts,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.vectorSearchEndpoint.VectorSearchEndpointProviderConfig,
+	ScalingInfo: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.vectorSearchEndpoint.VectorSearchEndpointScalingInfo,
+	Timeouts: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.vectorSearchEndpoint.VectorSearchEndpointTimeouts,
 }
 ```
 
@@ -1214,7 +1214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointEndpointStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/vectorsearchendpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/vectorsearchendpoint"
 
 &vectorsearchendpoint.VectorSearchEndpointEndpointStatus {
 
@@ -1227,7 +1227,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/vectorse
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/vectorsearchendpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/vectorsearchendpoint"
 
 &vectorsearchendpoint.VectorSearchEndpointProviderConfig {
 	WorkspaceId: *string,
@@ -1259,7 +1259,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointScalingInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/vectorsearchendpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/vectorsearchendpoint"
 
 &vectorsearchendpoint.VectorSearchEndpointScalingInfo {
 	RequestedMinQps: *f64,
@@ -1305,7 +1305,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/vectorsearchendpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/vectorsearchendpoint"
 
 &vectorsearchendpoint.VectorSearchEndpointTimeouts {
 	Create: *string,
@@ -1339,7 +1339,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointEndpointStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/vectorsearchendpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/vectorsearchendpoint"
 
 vectorsearchendpoint.NewVectorSearchEndpointEndpointStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VectorSearchEndpointEndpointStatusList
 ```
@@ -1488,7 +1488,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointEndpointStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/vectorsearchendpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/vectorsearchendpoint"
 
 vectorsearchendpoint.NewVectorSearchEndpointEndpointStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VectorSearchEndpointEndpointStatusOutputReference
 ```
@@ -1777,7 +1777,7 @@ func InternalValue() VectorSearchEndpointEndpointStatus
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/vectorsearchendpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/vectorsearchendpoint"
 
 vectorsearchendpoint.NewVectorSearchEndpointProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VectorSearchEndpointProviderConfigOutputReference
 ```
@@ -2048,7 +2048,7 @@ func InternalValue() VectorSearchEndpointProviderConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointScalingInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/vectorsearchendpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/vectorsearchendpoint"
 
 vectorsearchendpoint.NewVectorSearchEndpointScalingInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VectorSearchEndpointScalingInfoOutputReference
 ```
@@ -2355,7 +2355,7 @@ func InternalValue() VectorSearchEndpointScalingInfo
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.vectorSearchEndpoint.VectorSearchEndpointTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/vectorsearchendpoint"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/vectorsearchendpoint"
 
 vectorsearchendpoint.NewVectorSearchEndpointTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VectorSearchEndpointTimeoutsOutputReference
 ```

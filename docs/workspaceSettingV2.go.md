@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspacesettingv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspacesettingv2"
 
 workspacesettingv2.NewWorkspaceSettingV2(scope Construct, id *string, config WorkspaceSettingV2Config) WorkspaceSettingV2
 ```
@@ -687,7 +687,7 @@ func ResetStringVal()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspacesettingv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspacesettingv2"
 
 workspacesettingv2.WorkspaceSettingV2_IsConstruct(x interface{}) *bool
 ```
@@ -719,7 +719,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspacesettingv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspacesettingv2"
 
 workspacesettingv2.WorkspaceSettingV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -733,7 +733,7 @@ workspacesettingv2.WorkspaceSettingV2_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspacesettingv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspacesettingv2"
 
 workspacesettingv2.WorkspaceSettingV2_IsTerraformResource(x interface{}) *bool
 ```
@@ -747,7 +747,7 @@ workspacesettingv2.WorkspaceSettingV2_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspacesettingv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspacesettingv2"
 
 workspacesettingv2.WorkspaceSettingV2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1339,7 +1339,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AibiDashboardEmbeddingAccessPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspacesettingv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspacesettingv2"
 
 &workspacesettingv2.WorkspaceSettingV2AibiDashboardEmbeddingAccessPolicy {
 	AccessPolicyType: *string,
@@ -1371,7 +1371,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AibiDashboardEmbeddingApprovedDomains.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspacesettingv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspacesettingv2"
 
 &workspacesettingv2.WorkspaceSettingV2AibiDashboardEmbeddingApprovedDomains {
 	ApprovedDomains: *[]*string,
@@ -1403,13 +1403,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspace.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspacesettingv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspacesettingv2"
 
 &workspacesettingv2.WorkspaceSettingV2AutomaticClusterUpdateWorkspace {
 	CanToggle: interface{},
 	Enabled: interface{},
-	EnablementDetails: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails,
-	MaintenanceWindow: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow,
+	EnablementDetails: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails,
+	MaintenanceWindow: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow,
 	RestartEvenIfNoUpdatesAvailable: interface{},
 }
 ```
@@ -1491,7 +1491,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspacesettingv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspacesettingv2"
 
 &workspacesettingv2.WorkspaceSettingV2AutomaticClusterUpdateWorkspaceEnablementDetails {
 	ForcedForComplianceMode: interface{},
@@ -1551,10 +1551,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspacesettingv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspacesettingv2"
 
 &workspacesettingv2.WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindow {
-	WeekDayBasedSchedule: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule,
+	WeekDayBasedSchedule: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule,
 }
 ```
 
@@ -1583,12 +1583,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspacesettingv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspacesettingv2"
 
 &workspacesettingv2.WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule {
 	DayOfWeek: *string,
 	Frequency: *string,
-	WindowStartTime: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime,
+	WindowStartTime: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime,
 }
 ```
 
@@ -1643,7 +1643,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspacesettingv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspacesettingv2"
 
 &workspacesettingv2.WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime {
 	Hours: *f64,
@@ -1689,7 +1689,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2BooleanVal.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspacesettingv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspacesettingv2"
 
 &workspacesettingv2.WorkspaceSettingV2BooleanVal {
 	Value: interface{},
@@ -1721,7 +1721,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspacesettingv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspacesettingv2"
 
 &workspacesettingv2.WorkspaceSettingV2Config {
 	Connection: interface{},
@@ -1731,21 +1731,21 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspac
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	AibiDashboardEmbeddingAccessPolicy: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.workspaceSettingV2.WorkspaceSettingV2AibiDashboardEmbeddingAccessPolicy,
-	AibiDashboardEmbeddingApprovedDomains: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.workspaceSettingV2.WorkspaceSettingV2AibiDashboardEmbeddingApprovedDomains,
-	AutomaticClusterUpdateWorkspace: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspace,
-	BooleanVal: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.workspaceSettingV2.WorkspaceSettingV2BooleanVal,
-	EffectiveAibiDashboardEmbeddingAccessPolicy: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.workspaceSettingV2.WorkspaceSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy,
-	EffectiveAibiDashboardEmbeddingApprovedDomains: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.workspaceSettingV2.WorkspaceSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains,
-	EffectiveAutomaticClusterUpdateWorkspace: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace,
-	EffectivePersonalCompute: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.workspaceSettingV2.WorkspaceSettingV2EffectivePersonalCompute,
-	EffectiveRestrictWorkspaceAdmins: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.workspaceSettingV2.WorkspaceSettingV2EffectiveRestrictWorkspaceAdmins,
-	IntegerVal: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.workspaceSettingV2.WorkspaceSettingV2IntegerVal,
+	AibiDashboardEmbeddingAccessPolicy: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.workspaceSettingV2.WorkspaceSettingV2AibiDashboardEmbeddingAccessPolicy,
+	AibiDashboardEmbeddingApprovedDomains: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.workspaceSettingV2.WorkspaceSettingV2AibiDashboardEmbeddingApprovedDomains,
+	AutomaticClusterUpdateWorkspace: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspace,
+	BooleanVal: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.workspaceSettingV2.WorkspaceSettingV2BooleanVal,
+	EffectiveAibiDashboardEmbeddingAccessPolicy: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.workspaceSettingV2.WorkspaceSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy,
+	EffectiveAibiDashboardEmbeddingApprovedDomains: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.workspaceSettingV2.WorkspaceSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains,
+	EffectiveAutomaticClusterUpdateWorkspace: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace,
+	EffectivePersonalCompute: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.workspaceSettingV2.WorkspaceSettingV2EffectivePersonalCompute,
+	EffectiveRestrictWorkspaceAdmins: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.workspaceSettingV2.WorkspaceSettingV2EffectiveRestrictWorkspaceAdmins,
+	IntegerVal: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.workspaceSettingV2.WorkspaceSettingV2IntegerVal,
 	Name: *string,
-	PersonalCompute: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.workspaceSettingV2.WorkspaceSettingV2PersonalCompute,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.workspaceSettingV2.WorkspaceSettingV2ProviderConfig,
-	RestrictWorkspaceAdmins: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.workspaceSettingV2.WorkspaceSettingV2RestrictWorkspaceAdmins,
-	StringVal: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.workspaceSettingV2.WorkspaceSettingV2StringVal,
+	PersonalCompute: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.workspaceSettingV2.WorkspaceSettingV2PersonalCompute,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.workspaceSettingV2.WorkspaceSettingV2ProviderConfig,
+	RestrictWorkspaceAdmins: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.workspaceSettingV2.WorkspaceSettingV2RestrictWorkspaceAdmins,
+	StringVal: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.workspaceSettingV2.WorkspaceSettingV2StringVal,
 }
 ```
 
@@ -2033,7 +2033,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspacesettingv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspacesettingv2"
 
 &workspacesettingv2.WorkspaceSettingV2EffectiveAibiDashboardEmbeddingAccessPolicy {
 	AccessPolicyType: *string,
@@ -2065,7 +2065,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspacesettingv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspacesettingv2"
 
 &workspacesettingv2.WorkspaceSettingV2EffectiveAibiDashboardEmbeddingApprovedDomains {
 	ApprovedDomains: *[]*string,
@@ -2097,13 +2097,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspacesettingv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspacesettingv2"
 
 &workspacesettingv2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspace {
 	CanToggle: interface{},
 	Enabled: interface{},
-	EnablementDetails: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails,
-	MaintenanceWindow: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindow,
+	EnablementDetails: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails,
+	MaintenanceWindow: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindow,
 	RestartEvenIfNoUpdatesAvailable: interface{},
 }
 ```
@@ -2185,7 +2185,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspacesettingv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspacesettingv2"
 
 &workspacesettingv2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetails {
 	ForcedForComplianceMode: interface{},
@@ -2245,10 +2245,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspacesettingv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspacesettingv2"
 
 &workspacesettingv2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindow {
-	WeekDayBasedSchedule: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule,
+	WeekDayBasedSchedule: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule,
 }
 ```
 
@@ -2277,12 +2277,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspacesettingv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspacesettingv2"
 
 &workspacesettingv2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedSchedule {
 	DayOfWeek: *string,
 	Frequency: *string,
-	WindowStartTime: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime,
+	WindowStartTime: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime,
 }
 ```
 
@@ -2337,7 +2337,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspacesettingv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspacesettingv2"
 
 &workspacesettingv2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTime {
 	Hours: *f64,
@@ -2383,7 +2383,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveBooleanVal.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspacesettingv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspacesettingv2"
 
 &workspacesettingv2.WorkspaceSettingV2EffectiveBooleanVal {
 	Value: interface{},
@@ -2415,7 +2415,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveIntegerVal.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspacesettingv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspacesettingv2"
 
 &workspacesettingv2.WorkspaceSettingV2EffectiveIntegerVal {
 	Value: *f64,
@@ -2447,7 +2447,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectivePersonalCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspacesettingv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspacesettingv2"
 
 &workspacesettingv2.WorkspaceSettingV2EffectivePersonalCompute {
 	Value: *string,
@@ -2479,7 +2479,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveRestrictWorkspaceAdmins.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspacesettingv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspacesettingv2"
 
 &workspacesettingv2.WorkspaceSettingV2EffectiveRestrictWorkspaceAdmins {
 	Status: *string,
@@ -2525,7 +2525,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveStringVal.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspacesettingv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspacesettingv2"
 
 &workspacesettingv2.WorkspaceSettingV2EffectiveStringVal {
 	Value: *string,
@@ -2557,7 +2557,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2IntegerVal.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspacesettingv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspacesettingv2"
 
 &workspacesettingv2.WorkspaceSettingV2IntegerVal {
 	Value: *f64,
@@ -2589,7 +2589,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2PersonalCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspacesettingv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspacesettingv2"
 
 &workspacesettingv2.WorkspaceSettingV2PersonalCompute {
 	Value: *string,
@@ -2621,7 +2621,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2ProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspacesettingv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspacesettingv2"
 
 &workspacesettingv2.WorkspaceSettingV2ProviderConfig {
 	WorkspaceId: *string,
@@ -2653,7 +2653,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2RestrictWorkspaceAdmins.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspacesettingv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspacesettingv2"
 
 &workspacesettingv2.WorkspaceSettingV2RestrictWorkspaceAdmins {
 	Status: *string,
@@ -2699,7 +2699,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2StringVal.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspacesettingv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspacesettingv2"
 
 &workspacesettingv2.WorkspaceSettingV2StringVal {
 	Value: *string,
@@ -2733,7 +2733,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AibiDashboardEmbeddingAccessPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspacesettingv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspacesettingv2"
 
 workspacesettingv2.NewWorkspaceSettingV2AibiDashboardEmbeddingAccessPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkspaceSettingV2AibiDashboardEmbeddingAccessPolicyOutputReference
 ```
@@ -3004,7 +3004,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AibiDashboardEmbeddingApprovedDomainsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspacesettingv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspacesettingv2"
 
 workspacesettingv2.NewWorkspaceSettingV2AibiDashboardEmbeddingApprovedDomainsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkspaceSettingV2AibiDashboardEmbeddingApprovedDomainsOutputReference
 ```
@@ -3282,7 +3282,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspaceEnablementDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspacesettingv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspacesettingv2"
 
 workspacesettingv2.NewWorkspaceSettingV2AutomaticClusterUpdateWorkspaceEnablementDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkspaceSettingV2AutomaticClusterUpdateWorkspaceEnablementDetailsOutputReference
 ```
@@ -3618,7 +3618,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspacesettingv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspacesettingv2"
 
 workspacesettingv2.NewWorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowOutputReference
 ```
@@ -3909,7 +3909,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspacesettingv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspacesettingv2"
 
 workspacesettingv2.NewWorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleOutputReference
 ```
@@ -4258,7 +4258,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTimeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspacesettingv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspacesettingv2"
 
 workspacesettingv2.NewWorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTimeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkspaceSettingV2AutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTimeOutputReference
 ```
@@ -4565,7 +4565,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2AutomaticClusterUpdateWorkspaceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspacesettingv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspacesettingv2"
 
 workspacesettingv2.NewWorkspaceSettingV2AutomaticClusterUpdateWorkspaceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkspaceSettingV2AutomaticClusterUpdateWorkspaceOutputReference
 ```
@@ -4985,7 +4985,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2BooleanValOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspacesettingv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspacesettingv2"
 
 workspacesettingv2.NewWorkspaceSettingV2BooleanValOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkspaceSettingV2BooleanValOutputReference
 ```
@@ -5263,7 +5263,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAibiDashboardEmbeddingAccessPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspacesettingv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspacesettingv2"
 
 workspacesettingv2.NewWorkspaceSettingV2EffectiveAibiDashboardEmbeddingAccessPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkspaceSettingV2EffectiveAibiDashboardEmbeddingAccessPolicyOutputReference
 ```
@@ -5534,7 +5534,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAibiDashboardEmbeddingApprovedDomainsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspacesettingv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspacesettingv2"
 
 workspacesettingv2.NewWorkspaceSettingV2EffectiveAibiDashboardEmbeddingApprovedDomainsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkspaceSettingV2EffectiveAibiDashboardEmbeddingApprovedDomainsOutputReference
 ```
@@ -5812,7 +5812,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspacesettingv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspacesettingv2"
 
 workspacesettingv2.NewWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceEnablementDetailsOutputReference
 ```
@@ -6148,7 +6148,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspacesettingv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspacesettingv2"
 
 workspacesettingv2.NewWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowOutputReference
 ```
@@ -6439,7 +6439,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspacesettingv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspacesettingv2"
 
 workspacesettingv2.NewWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleOutputReference
 ```
@@ -6788,7 +6788,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTimeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspacesettingv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspacesettingv2"
 
 workspacesettingv2.NewWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTimeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceMaintenanceWindowWeekDayBasedScheduleWindowStartTimeOutputReference
 ```
@@ -7095,7 +7095,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspacesettingv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspacesettingv2"
 
 workspacesettingv2.NewWorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkspaceSettingV2EffectiveAutomaticClusterUpdateWorkspaceOutputReference
 ```
@@ -7515,7 +7515,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveBooleanValOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspacesettingv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspacesettingv2"
 
 workspacesettingv2.NewWorkspaceSettingV2EffectiveBooleanValOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkspaceSettingV2EffectiveBooleanValOutputReference
 ```
@@ -7793,7 +7793,7 @@ func InternalValue() WorkspaceSettingV2EffectiveBooleanVal
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveIntegerValOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspacesettingv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspacesettingv2"
 
 workspacesettingv2.NewWorkspaceSettingV2EffectiveIntegerValOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkspaceSettingV2EffectiveIntegerValOutputReference
 ```
@@ -8071,7 +8071,7 @@ func InternalValue() WorkspaceSettingV2EffectiveIntegerVal
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectivePersonalComputeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspacesettingv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspacesettingv2"
 
 workspacesettingv2.NewWorkspaceSettingV2EffectivePersonalComputeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkspaceSettingV2EffectivePersonalComputeOutputReference
 ```
@@ -8349,7 +8349,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveRestrictWorkspaceAdminsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspacesettingv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspacesettingv2"
 
 workspacesettingv2.NewWorkspaceSettingV2EffectiveRestrictWorkspaceAdminsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkspaceSettingV2EffectiveRestrictWorkspaceAdminsOutputReference
 ```
@@ -8649,7 +8649,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2EffectiveStringValOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspacesettingv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspacesettingv2"
 
 workspacesettingv2.NewWorkspaceSettingV2EffectiveStringValOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkspaceSettingV2EffectiveStringValOutputReference
 ```
@@ -8927,7 +8927,7 @@ func InternalValue() WorkspaceSettingV2EffectiveStringVal
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2IntegerValOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspacesettingv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspacesettingv2"
 
 workspacesettingv2.NewWorkspaceSettingV2IntegerValOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkspaceSettingV2IntegerValOutputReference
 ```
@@ -9205,7 +9205,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2PersonalComputeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspacesettingv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspacesettingv2"
 
 workspacesettingv2.NewWorkspaceSettingV2PersonalComputeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkspaceSettingV2PersonalComputeOutputReference
 ```
@@ -9483,7 +9483,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2ProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspacesettingv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspacesettingv2"
 
 workspacesettingv2.NewWorkspaceSettingV2ProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkspaceSettingV2ProviderConfigOutputReference
 ```
@@ -9754,7 +9754,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2RestrictWorkspaceAdminsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspacesettingv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspacesettingv2"
 
 workspacesettingv2.NewWorkspaceSettingV2RestrictWorkspaceAdminsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkspaceSettingV2RestrictWorkspaceAdminsOutputReference
 ```
@@ -10054,7 +10054,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.workspaceSettingV2.WorkspaceSettingV2StringValOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/workspacesettingv2"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspacesettingv2"
 
 workspacesettingv2.NewWorkspaceSettingV2StringValOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkspaceSettingV2StringValOutputReference
 ```
