@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksPostgresRole.DataDatabricksPostgresRole.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickspostgresrole"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickspostgresrole"
 
 datadatabrickspostgresrole.NewDataDatabricksPostgresRole(scope Construct, id *string, config DataDatabricksPostgresRoleConfig) DataDatabricksPostgresRole
 ```
@@ -318,7 +318,7 @@ func ResetProviderConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.dataDatabricksPostgresRole.DataDatabricksPostgresRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickspostgresrole"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickspostgresrole"
 
 datadatabrickspostgresrole.DataDatabricksPostgresRole_IsConstruct(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.dataDatabricksPostgresRole.DataDatabricksPostgresRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickspostgresrole"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickspostgresrole"
 
 datadatabrickspostgresrole.DataDatabricksPostgresRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ datadatabrickspostgresrole.DataDatabricksPostgresRole_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-databricks.dataDatabricksPostgresRole.DataDatabricksPostgresRole.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickspostgresrole"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickspostgresrole"
 
 datadatabrickspostgresrole.DataDatabricksPostgresRole_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ datadatabrickspostgresrole.DataDatabricksPostgresRole_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.dataDatabricksPostgresRole.DataDatabricksPostgresRole.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickspostgresrole"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickspostgresrole"
 
 datadatabrickspostgresrole.DataDatabricksPostgresRole_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -684,7 +684,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksPostgresRole.DataDatabricksPostgresRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickspostgresrole"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickspostgresrole"
 
 &datadatabrickspostgresrole.DataDatabricksPostgresRoleConfig {
 	Connection: interface{},
@@ -695,7 +695,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadata
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksPostgresRole.DataDatabricksPostgresRoleProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksPostgresRole.DataDatabricksPostgresRoleProviderConfig,
 }
 ```
 
@@ -814,7 +814,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksPostgresRole.DataDatabricksPostgresRoleProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickspostgresrole"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickspostgresrole"
 
 &datadatabrickspostgresrole.DataDatabricksPostgresRoleProviderConfig {
 	WorkspaceId: *string,
@@ -846,10 +846,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksPostgresRole.DataDatabricksPostgresRoleSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickspostgresrole"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickspostgresrole"
 
 &datadatabrickspostgresrole.DataDatabricksPostgresRoleSpec {
-	Attributes: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksPostgresRole.DataDatabricksPostgresRoleSpecAttributes,
+	Attributes: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksPostgresRole.DataDatabricksPostgresRoleSpecAttributes,
 	AuthMethod: *string,
 	IdentityType: *string,
 	MembershipRoles: *[]*string,
@@ -934,7 +934,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksPostgresRole.DataDatabricksPostgresRoleSpecAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickspostgresrole"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickspostgresrole"
 
 &datadatabrickspostgresrole.DataDatabricksPostgresRoleSpecAttributes {
 	Bypassrls: interface{},
@@ -994,10 +994,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksPostgresRole.DataDatabricksPostgresRoleStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickspostgresrole"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickspostgresrole"
 
 &datadatabrickspostgresrole.DataDatabricksPostgresRoleStatus {
-	Attributes: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksPostgresRole.DataDatabricksPostgresRoleStatusAttributes,
+	Attributes: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksPostgresRole.DataDatabricksPostgresRoleStatusAttributes,
 	AuthMethod: *string,
 	IdentityType: *string,
 	MembershipRoles: *[]*string,
@@ -1082,7 +1082,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksPostgresRole.DataDatabricksPostgresRoleStatusAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickspostgresrole"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickspostgresrole"
 
 &datadatabrickspostgresrole.DataDatabricksPostgresRoleStatusAttributes {
 	Bypassrls: interface{},
@@ -1144,7 +1144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksPostgresRole.DataDatabricksPostgresRoleProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickspostgresrole"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickspostgresrole"
 
 datadatabrickspostgresrole.NewDataDatabricksPostgresRoleProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksPostgresRoleProviderConfigOutputReference
 ```
@@ -1415,7 +1415,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksPostgresRole.DataDatabricksPostgresRoleSpecAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickspostgresrole"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickspostgresrole"
 
 datadatabrickspostgresrole.NewDataDatabricksPostgresRoleSpecAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksPostgresRoleSpecAttributesOutputReference
 ```
@@ -1751,7 +1751,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksPostgresRole.DataDatabricksPostgresRoleSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickspostgresrole"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickspostgresrole"
 
 datadatabrickspostgresrole.NewDataDatabricksPostgresRoleSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksPostgresRoleSpecOutputReference
 ```
@@ -2158,7 +2158,7 @@ func InternalValue() DataDatabricksPostgresRoleSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksPostgresRole.DataDatabricksPostgresRoleStatusAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickspostgresrole"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickspostgresrole"
 
 datadatabrickspostgresrole.NewDataDatabricksPostgresRoleStatusAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksPostgresRoleStatusAttributesOutputReference
 ```
@@ -2494,7 +2494,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksPostgresRole.DataDatabricksPostgresRoleStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickspostgresrole"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickspostgresrole"
 
 datadatabrickspostgresrole.NewDataDatabricksPostgresRoleStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksPostgresRoleStatusOutputReference
 ```

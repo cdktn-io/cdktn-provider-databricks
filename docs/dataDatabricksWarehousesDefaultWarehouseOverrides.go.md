@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksWarehousesDefaultWarehouseOverrides.DataDatabricksWarehousesDefaultWarehouseOverrides.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickswarehousesdefaultwarehouseoverrides"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickswarehousesdefaultwarehouseoverrides"
 
 datadatabrickswarehousesdefaultwarehouseoverrides.NewDataDatabricksWarehousesDefaultWarehouseOverrides(scope Construct, id *string, config DataDatabricksWarehousesDefaultWarehouseOverridesConfig) DataDatabricksWarehousesDefaultWarehouseOverrides
 ```
@@ -325,7 +325,7 @@ func ResetProviderConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.dataDatabricksWarehousesDefaultWarehouseOverrides.DataDatabricksWarehousesDefaultWarehouseOverrides.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickswarehousesdefaultwarehouseoverrides"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickswarehousesdefaultwarehouseoverrides"
 
 datadatabrickswarehousesdefaultwarehouseoverrides.DataDatabricksWarehousesDefaultWarehouseOverrides_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.dataDatabricksWarehousesDefaultWarehouseOverrides.DataDatabricksWarehousesDefaultWarehouseOverrides.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickswarehousesdefaultwarehouseoverrides"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickswarehousesdefaultwarehouseoverrides"
 
 datadatabrickswarehousesdefaultwarehouseoverrides.DataDatabricksWarehousesDefaultWarehouseOverrides_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ datadatabrickswarehousesdefaultwarehouseoverrides.DataDatabricksWarehousesDefaul
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-databricks.dataDatabricksWarehousesDefaultWarehouseOverrides.DataDatabricksWarehousesDefaultWarehouseOverrides.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickswarehousesdefaultwarehouseoverrides"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickswarehousesdefaultwarehouseoverrides"
 
 datadatabrickswarehousesdefaultwarehouseoverrides.DataDatabricksWarehousesDefaultWarehouseOverrides_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ datadatabrickswarehousesdefaultwarehouseoverrides.DataDatabricksWarehousesDefaul
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.dataDatabricksWarehousesDefaultWarehouseOverrides.DataDatabricksWarehousesDefaultWarehouseOverrides.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickswarehousesdefaultwarehouseoverrides"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickswarehousesdefaultwarehouseoverrides"
 
 datadatabrickswarehousesdefaultwarehouseoverrides.DataDatabricksWarehousesDefaultWarehouseOverrides_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -647,7 +647,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksWarehousesDefaultWarehouseOverrides.DataDatabricksWarehousesDefaultWarehouseOverridesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickswarehousesdefaultwarehouseoverrides"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickswarehousesdefaultwarehouseoverrides"
 
 &datadatabrickswarehousesdefaultwarehouseoverrides.DataDatabricksWarehousesDefaultWarehouseOverridesConfig {
 	Connection: interface{},
@@ -658,7 +658,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadata
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	PageSize: *f64,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksWarehousesDefaultWarehouseOverrides.DataDatabricksWarehousesDefaultWarehouseOverridesProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksWarehousesDefaultWarehouseOverrides.DataDatabricksWarehousesDefaultWarehouseOverridesProviderConfig,
 }
 ```
 
@@ -777,11 +777,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksWarehousesDefaultWarehouseOverrides.DataDatabricksWarehousesDefaultWarehouseOverridesDefaultWarehouseOverrides.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickswarehousesdefaultwarehouseoverrides"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickswarehousesdefaultwarehouseoverrides"
 
 &datadatabrickswarehousesdefaultwarehouseoverrides.DataDatabricksWarehousesDefaultWarehouseOverridesDefaultWarehouseOverrides {
 	Name: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksWarehousesDefaultWarehouseOverrides.DataDatabricksWarehousesDefaultWarehouseOverridesDefaultWarehouseOverridesProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksWarehousesDefaultWarehouseOverrides.DataDatabricksWarehousesDefaultWarehouseOverridesDefaultWarehouseOverridesProviderConfig,
 }
 ```
 
@@ -823,7 +823,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksWarehousesDefaultWarehouseOverrides.DataDatabricksWarehousesDefaultWarehouseOverridesDefaultWarehouseOverridesProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickswarehousesdefaultwarehouseoverrides"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickswarehousesdefaultwarehouseoverrides"
 
 &datadatabrickswarehousesdefaultwarehouseoverrides.DataDatabricksWarehousesDefaultWarehouseOverridesDefaultWarehouseOverridesProviderConfig {
 	WorkspaceId: *string,
@@ -855,7 +855,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksWarehousesDefaultWarehouseOverrides.DataDatabricksWarehousesDefaultWarehouseOverridesProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickswarehousesdefaultwarehouseoverrides"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickswarehousesdefaultwarehouseoverrides"
 
 &datadatabrickswarehousesdefaultwarehouseoverrides.DataDatabricksWarehousesDefaultWarehouseOverridesProviderConfig {
 	WorkspaceId: *string,
@@ -889,7 +889,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksWarehousesDefaultWarehouseOverrides.DataDatabricksWarehousesDefaultWarehouseOverridesDefaultWarehouseOverridesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickswarehousesdefaultwarehouseoverrides"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickswarehousesdefaultwarehouseoverrides"
 
 datadatabrickswarehousesdefaultwarehouseoverrides.NewDataDatabricksWarehousesDefaultWarehouseOverridesDefaultWarehouseOverridesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksWarehousesDefaultWarehouseOverridesDefaultWarehouseOverridesList
 ```
@@ -1049,7 +1049,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksWarehousesDefaultWarehouseOverrides.DataDatabricksWarehousesDefaultWarehouseOverridesDefaultWarehouseOverridesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickswarehousesdefaultwarehouseoverrides"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickswarehousesdefaultwarehouseoverrides"
 
 datadatabrickswarehousesdefaultwarehouseoverrides.NewDataDatabricksWarehousesDefaultWarehouseOverridesDefaultWarehouseOverridesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksWarehousesDefaultWarehouseOverridesDefaultWarehouseOverridesOutputReference
 ```
@@ -1413,7 +1413,7 @@ func InternalValue() DataDatabricksWarehousesDefaultWarehouseOverridesDefaultWar
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksWarehousesDefaultWarehouseOverrides.DataDatabricksWarehousesDefaultWarehouseOverridesDefaultWarehouseOverridesProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickswarehousesdefaultwarehouseoverrides"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickswarehousesdefaultwarehouseoverrides"
 
 datadatabrickswarehousesdefaultwarehouseoverrides.NewDataDatabricksWarehousesDefaultWarehouseOverridesDefaultWarehouseOverridesProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksWarehousesDefaultWarehouseOverridesDefaultWarehouseOverridesProviderConfigOutputReference
 ```
@@ -1684,7 +1684,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksWarehousesDefaultWarehouseOverrides.DataDatabricksWarehousesDefaultWarehouseOverridesProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickswarehousesdefaultwarehouseoverrides"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickswarehousesdefaultwarehouseoverrides"
 
 datadatabrickswarehousesdefaultwarehouseoverrides.NewDataDatabricksWarehousesDefaultWarehouseOverridesProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksWarehousesDefaultWarehouseOverridesProviderConfigOutputReference
 ```

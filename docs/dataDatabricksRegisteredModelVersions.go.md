@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksRegisteredModelVersions.DataDatabricksRegisteredModelVersions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksregisteredmodelversions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksregisteredmodelversions"
 
 datadatabricksregisteredmodelversions.NewDataDatabricksRegisteredModelVersions(scope Construct, id *string, config DataDatabricksRegisteredModelVersionsConfig) DataDatabricksRegisteredModelVersions
 ```
@@ -338,7 +338,7 @@ func ResetProviderConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.dataDatabricksRegisteredModelVersions.DataDatabricksRegisteredModelVersions.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksregisteredmodelversions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksregisteredmodelversions"
 
 datadatabricksregisteredmodelversions.DataDatabricksRegisteredModelVersions_IsConstruct(x interface{}) *bool
 ```
@@ -370,7 +370,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.dataDatabricksRegisteredModelVersions.DataDatabricksRegisteredModelVersions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksregisteredmodelversions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksregisteredmodelversions"
 
 datadatabricksregisteredmodelversions.DataDatabricksRegisteredModelVersions_IsTerraformElement(x interface{}) *bool
 ```
@@ -384,7 +384,7 @@ datadatabricksregisteredmodelversions.DataDatabricksRegisteredModelVersions_IsTe
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-databricks.dataDatabricksRegisteredModelVersions.DataDatabricksRegisteredModelVersions.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksregisteredmodelversions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksregisteredmodelversions"
 
 datadatabricksregisteredmodelversions.DataDatabricksRegisteredModelVersions_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -398,7 +398,7 @@ datadatabricksregisteredmodelversions.DataDatabricksRegisteredModelVersions_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.dataDatabricksRegisteredModelVersions.DataDatabricksRegisteredModelVersions.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksregisteredmodelversions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksregisteredmodelversions"
 
 datadatabricksregisteredmodelversions.DataDatabricksRegisteredModelVersions_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -671,7 +671,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksRegisteredModelVersions.DataDatabricksRegisteredModelVersionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksregisteredmodelversions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksregisteredmodelversions"
 
 &datadatabricksregisteredmodelversions.DataDatabricksRegisteredModelVersionsConfig {
 	Connection: interface{},
@@ -683,7 +683,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadata
 	Provisioners: *[]interface{},
 	FullName: *string,
 	ModelVersions: interface{},
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksRegisteredModelVersions.DataDatabricksRegisteredModelVersionsProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksRegisteredModelVersions.DataDatabricksRegisteredModelVersionsProviderConfig,
 }
 ```
 
@@ -815,7 +815,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksRegisteredModelVersions.DataDatabricksRegisteredModelVersionsModelVersions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksregisteredmodelversions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksregisteredmodelversions"
 
 &datadatabricksregisteredmodelversions.DataDatabricksRegisteredModelVersionsModelVersions {
 	Aliases: interface{},
@@ -1088,7 +1088,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksRegisteredModelVersions.DataDatabricksRegisteredModelVersionsModelVersionsAliases.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksregisteredmodelversions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksregisteredmodelversions"
 
 &datadatabricksregisteredmodelversions.DataDatabricksRegisteredModelVersionsModelVersionsAliases {
 	AliasName: *string,
@@ -1193,7 +1193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksRegisteredModelVersions.DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependencies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksregisteredmodelversions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksregisteredmodelversions"
 
 &datadatabricksregisteredmodelversions.DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependencies {
 	Dependencies: interface{},
@@ -1225,7 +1225,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksRegisteredModelVersions.DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependencies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksregisteredmodelversions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksregisteredmodelversions"
 
 &datadatabricksregisteredmodelversions.DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependencies {
 	Connection: interface{},
@@ -1299,7 +1299,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksRegisteredModelVersions.DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksregisteredmodelversions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksregisteredmodelversions"
 
 &datadatabricksregisteredmodelversions.DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesConnection {
 	ConnectionName: *string,
@@ -1331,7 +1331,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksRegisteredModelVersions.DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesCredential.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksregisteredmodelversions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksregisteredmodelversions"
 
 &datadatabricksregisteredmodelversions.DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesCredential {
 	CredentialName: *string,
@@ -1363,7 +1363,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksRegisteredModelVersions.DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesFunction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksregisteredmodelversions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksregisteredmodelversions"
 
 &datadatabricksregisteredmodelversions.DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesFunction {
 	FunctionFullName: *string,
@@ -1395,7 +1395,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksRegisteredModelVersions.DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesTable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksregisteredmodelversions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksregisteredmodelversions"
 
 &datadatabricksregisteredmodelversions.DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesTable {
 	TableFullName: *string,
@@ -1427,7 +1427,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksRegisteredModelVersions.DataDatabricksRegisteredModelVersionsProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksregisteredmodelversions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksregisteredmodelversions"
 
 &datadatabricksregisteredmodelversions.DataDatabricksRegisteredModelVersionsProviderConfig {
 	WorkspaceId: *string,
@@ -1461,7 +1461,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksRegisteredModelVersions.DataDatabricksRegisteredModelVersionsModelVersionsAliasesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksregisteredmodelversions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksregisteredmodelversions"
 
 datadatabricksregisteredmodelversions.NewDataDatabricksRegisteredModelVersionsModelVersionsAliasesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksRegisteredModelVersionsModelVersionsAliasesList
 ```
@@ -1621,7 +1621,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksRegisteredModelVersions.DataDatabricksRegisteredModelVersionsModelVersionsAliasesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksregisteredmodelversions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksregisteredmodelversions"
 
 datadatabricksregisteredmodelversions.NewDataDatabricksRegisteredModelVersionsModelVersionsAliasesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksRegisteredModelVersionsModelVersionsAliasesOutputReference
 ```
@@ -2062,7 +2062,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksRegisteredModelVersions.DataDatabricksRegisteredModelVersionsModelVersionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksregisteredmodelversions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksregisteredmodelversions"
 
 datadatabricksregisteredmodelversions.NewDataDatabricksRegisteredModelVersionsModelVersionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksRegisteredModelVersionsModelVersionsList
 ```
@@ -2222,7 +2222,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksRegisteredModelVersions.DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesConnectionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksregisteredmodelversions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksregisteredmodelversions"
 
 datadatabricksregisteredmodelversions.NewDataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesConnectionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesConnectionList
 ```
@@ -2382,7 +2382,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksRegisteredModelVersions.DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesConnectionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksregisteredmodelversions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksregisteredmodelversions"
 
 datadatabricksregisteredmodelversions.NewDataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesConnectionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesConnectionOutputReference
 ```
@@ -2678,7 +2678,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksRegisteredModelVersions.DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesCredentialList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksregisteredmodelversions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksregisteredmodelversions"
 
 datadatabricksregisteredmodelversions.NewDataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesCredentialList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesCredentialList
 ```
@@ -2838,7 +2838,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksRegisteredModelVersions.DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesCredentialOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksregisteredmodelversions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksregisteredmodelversions"
 
 datadatabricksregisteredmodelversions.NewDataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesCredentialOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesCredentialOutputReference
 ```
@@ -3134,7 +3134,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksRegisteredModelVersions.DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesFunctionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksregisteredmodelversions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksregisteredmodelversions"
 
 datadatabricksregisteredmodelversions.NewDataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesFunctionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesFunctionList
 ```
@@ -3294,7 +3294,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksRegisteredModelVersions.DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesFunctionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksregisteredmodelversions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksregisteredmodelversions"
 
 datadatabricksregisteredmodelversions.NewDataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesFunctionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesFunctionOutputReference
 ```
@@ -3583,7 +3583,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksRegisteredModelVersions.DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksregisteredmodelversions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksregisteredmodelversions"
 
 datadatabricksregisteredmodelversions.NewDataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesList
 ```
@@ -3743,7 +3743,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksRegisteredModelVersions.DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksregisteredmodelversions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksregisteredmodelversions"
 
 datadatabricksregisteredmodelversions.NewDataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesOutputReference
 ```
@@ -4178,7 +4178,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksRegisteredModelVersions.DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesTableList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksregisteredmodelversions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksregisteredmodelversions"
 
 datadatabricksregisteredmodelversions.NewDataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesTableList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesTableList
 ```
@@ -4338,7 +4338,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksRegisteredModelVersions.DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesTableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksregisteredmodelversions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksregisteredmodelversions"
 
 datadatabricksregisteredmodelversions.NewDataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesTableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesDependenciesTableOutputReference
 ```
@@ -4627,7 +4627,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksRegisteredModelVersions.DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksregisteredmodelversions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksregisteredmodelversions"
 
 datadatabricksregisteredmodelversions.NewDataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesList
 ```
@@ -4787,7 +4787,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksRegisteredModelVersions.DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksregisteredmodelversions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksregisteredmodelversions"
 
 datadatabricksregisteredmodelversions.NewDataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksRegisteredModelVersionsModelVersionsModelVersionDependenciesOutputReference
 ```
@@ -5096,7 +5096,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksRegisteredModelVersions.DataDatabricksRegisteredModelVersionsModelVersionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksregisteredmodelversions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksregisteredmodelversions"
 
 datadatabricksregisteredmodelversions.NewDataDatabricksRegisteredModelVersionsModelVersionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksRegisteredModelVersionsModelVersionsOutputReference
 ```
@@ -5911,7 +5911,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksRegisteredModelVersions.DataDatabricksRegisteredModelVersionsProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksregisteredmodelversions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksregisteredmodelversions"
 
 datadatabricksregisteredmodelversions.NewDataDatabricksRegisteredModelVersionsProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksRegisteredModelVersionsProviderConfigOutputReference
 ```

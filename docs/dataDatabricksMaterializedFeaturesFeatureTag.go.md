@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksMaterializedFeaturesFeatureTag.DataDatabricksMaterializedFeaturesFeatureTag.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksmaterializedfeaturesfeaturetag"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksmaterializedfeaturesfeaturetag"
 
 datadatabricksmaterializedfeaturesfeaturetag.NewDataDatabricksMaterializedFeaturesFeatureTag(scope Construct, id *string, config DataDatabricksMaterializedFeaturesFeatureTagConfig) DataDatabricksMaterializedFeaturesFeatureTag
 ```
@@ -318,7 +318,7 @@ func ResetProviderConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.dataDatabricksMaterializedFeaturesFeatureTag.DataDatabricksMaterializedFeaturesFeatureTag.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksmaterializedfeaturesfeaturetag"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksmaterializedfeaturesfeaturetag"
 
 datadatabricksmaterializedfeaturesfeaturetag.DataDatabricksMaterializedFeaturesFeatureTag_IsConstruct(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.dataDatabricksMaterializedFeaturesFeatureTag.DataDatabricksMaterializedFeaturesFeatureTag.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksmaterializedfeaturesfeaturetag"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksmaterializedfeaturesfeaturetag"
 
 datadatabricksmaterializedfeaturesfeaturetag.DataDatabricksMaterializedFeaturesFeatureTag_IsTerraformElement(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ datadatabricksmaterializedfeaturesfeaturetag.DataDatabricksMaterializedFeaturesF
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-databricks.dataDatabricksMaterializedFeaturesFeatureTag.DataDatabricksMaterializedFeaturesFeatureTag.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksmaterializedfeaturesfeaturetag"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksmaterializedfeaturesfeaturetag"
 
 datadatabricksmaterializedfeaturesfeaturetag.DataDatabricksMaterializedFeaturesFeatureTag_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ datadatabricksmaterializedfeaturesfeaturetag.DataDatabricksMaterializedFeaturesF
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.dataDatabricksMaterializedFeaturesFeatureTag.DataDatabricksMaterializedFeaturesFeatureTag.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksmaterializedfeaturesfeaturetag"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksmaterializedfeaturesfeaturetag"
 
 datadatabricksmaterializedfeaturesfeaturetag.DataDatabricksMaterializedFeaturesFeatureTag_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -640,7 +640,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksMaterializedFeaturesFeatureTag.DataDatabricksMaterializedFeaturesFeatureTagConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksmaterializedfeaturesfeaturetag"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksmaterializedfeaturesfeaturetag"
 
 &datadatabricksmaterializedfeaturesfeaturetag.DataDatabricksMaterializedFeaturesFeatureTagConfig {
 	Connection: interface{},
@@ -651,7 +651,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadata
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Key: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksMaterializedFeaturesFeatureTag.DataDatabricksMaterializedFeaturesFeatureTagProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksMaterializedFeaturesFeatureTag.DataDatabricksMaterializedFeaturesFeatureTagProviderConfig,
 }
 ```
 
@@ -770,7 +770,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksMaterializedFeaturesFeatureTag.DataDatabricksMaterializedFeaturesFeatureTagProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksmaterializedfeaturesfeaturetag"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksmaterializedfeaturesfeaturetag"
 
 &datadatabricksmaterializedfeaturesfeaturetag.DataDatabricksMaterializedFeaturesFeatureTagProviderConfig {
 	WorkspaceId: *string,
@@ -804,7 +804,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksMaterializedFeaturesFeatureTag.DataDatabricksMaterializedFeaturesFeatureTagProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksmaterializedfeaturesfeaturetag"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksmaterializedfeaturesfeaturetag"
 
 datadatabricksmaterializedfeaturesfeaturetag.NewDataDatabricksMaterializedFeaturesFeatureTagProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksMaterializedFeaturesFeatureTagProviderConfigOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksfunctions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksfunctions"
 
 datadatabricksfunctions.NewDataDatabricksFunctions(scope Construct, id *string, config DataDatabricksFunctionsConfig) DataDatabricksFunctions
 ```
@@ -345,7 +345,7 @@ func ResetProviderConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctions.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksfunctions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksfunctions"
 
 datadatabricksfunctions.DataDatabricksFunctions_IsConstruct(x interface{}) *bool
 ```
@@ -377,7 +377,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksfunctions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksfunctions"
 
 datadatabricksfunctions.DataDatabricksFunctions_IsTerraformElement(x interface{}) *bool
 ```
@@ -391,7 +391,7 @@ datadatabricksfunctions.DataDatabricksFunctions_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctions.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksfunctions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksfunctions"
 
 datadatabricksfunctions.DataDatabricksFunctions_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -405,7 +405,7 @@ datadatabricksfunctions.DataDatabricksFunctions_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctions.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksfunctions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksfunctions"
 
 datadatabricksfunctions.DataDatabricksFunctions_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -722,7 +722,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksfunctions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksfunctions"
 
 &datadatabricksfunctions.DataDatabricksFunctionsConfig {
 	Connection: interface{},
@@ -736,7 +736,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadata
 	SchemaName: *string,
 	Functions: interface{},
 	IncludeBrowse: interface{},
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksFunctions.DataDatabricksFunctionsProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksFunctions.DataDatabricksFunctionsProviderConfig,
 }
 ```
 
@@ -894,7 +894,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksfunctions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksfunctions"
 
 &datadatabricksfunctions.DataDatabricksFunctionsFunctions {
 	BrowseOnly: interface{},
@@ -908,7 +908,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadata
 	FullDataType: *string,
 	FullName: *string,
 	FunctionId: *string,
-	InputParams: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsInputParams,
+	InputParams: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsInputParams,
 	IsDeterministic: interface{},
 	IsNullCall: interface{},
 	MetastoreId: *string,
@@ -916,10 +916,10 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadata
 	Owner: *string,
 	ParameterStyle: *string,
 	Properties: *string,
-	ReturnParams: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsReturnParams,
+	ReturnParams: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsReturnParams,
 	RoutineBody: *string,
 	RoutineDefinition: *string,
-	RoutineDependencies: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsRoutineDependencies,
+	RoutineDependencies: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsRoutineDependencies,
 	SchemaName: *string,
 	SecurityType: *string,
 	SpecificName: *string,
@@ -1332,7 +1332,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsInputParams.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksfunctions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksfunctions"
 
 &datadatabricksfunctions.DataDatabricksFunctionsFunctionsInputParams {
 	Parameters: interface{},
@@ -1364,7 +1364,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsInputParamsParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksfunctions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksfunctions"
 
 &datadatabricksfunctions.DataDatabricksFunctionsFunctionsInputParamsParameters {
 	Name: *string,
@@ -1550,7 +1550,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsReturnParams.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksfunctions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksfunctions"
 
 &datadatabricksfunctions.DataDatabricksFunctionsFunctionsReturnParams {
 	Parameters: interface{},
@@ -1582,7 +1582,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsReturnParamsParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksfunctions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksfunctions"
 
 &datadatabricksfunctions.DataDatabricksFunctionsFunctionsReturnParamsParameters {
 	Name: *string,
@@ -1768,7 +1768,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsRoutineDependencies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksfunctions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksfunctions"
 
 &datadatabricksfunctions.DataDatabricksFunctionsFunctionsRoutineDependencies {
 	Dependencies: interface{},
@@ -1800,13 +1800,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsRoutineDependenciesDependencies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksfunctions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksfunctions"
 
 &datadatabricksfunctions.DataDatabricksFunctionsFunctionsRoutineDependenciesDependencies {
-	Connection: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesConnection,
-	Credential: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesCredential,
-	Function: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesFunction,
-	Table: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesTable,
+	Connection: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesConnection,
+	Credential: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesCredential,
+	Function: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesFunction,
+	Table: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesTable,
 }
 ```
 
@@ -1874,7 +1874,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksfunctions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksfunctions"
 
 &datadatabricksfunctions.DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesConnection {
 	ConnectionName: *string,
@@ -1906,7 +1906,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesCredential.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksfunctions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksfunctions"
 
 &datadatabricksfunctions.DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesCredential {
 	CredentialName: *string,
@@ -1938,7 +1938,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesFunction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksfunctions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksfunctions"
 
 &datadatabricksfunctions.DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesFunction {
 	FunctionFullName: *string,
@@ -1970,7 +1970,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesTable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksfunctions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksfunctions"
 
 &datadatabricksfunctions.DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesTable {
 	TableFullName: *string,
@@ -2002,7 +2002,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksfunctions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksfunctions"
 
 &datadatabricksfunctions.DataDatabricksFunctionsProviderConfig {
 	WorkspaceId: *string,
@@ -2036,7 +2036,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsInputParamsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksfunctions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksfunctions"
 
 datadatabricksfunctions.NewDataDatabricksFunctionsFunctionsInputParamsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksFunctionsFunctionsInputParamsOutputReference
 ```
@@ -2327,7 +2327,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsInputParamsParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksfunctions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksfunctions"
 
 datadatabricksfunctions.NewDataDatabricksFunctionsFunctionsInputParamsParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksFunctionsFunctionsInputParamsParametersList
 ```
@@ -2487,7 +2487,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsInputParamsParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksfunctions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksfunctions"
 
 datadatabricksfunctions.NewDataDatabricksFunctionsFunctionsInputParamsParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksFunctionsFunctionsInputParamsParametersOutputReference
 ```
@@ -3074,7 +3074,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksfunctions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksfunctions"
 
 datadatabricksfunctions.NewDataDatabricksFunctionsFunctionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksFunctionsFunctionsList
 ```
@@ -3234,7 +3234,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksfunctions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksfunctions"
 
 datadatabricksfunctions.NewDataDatabricksFunctionsFunctionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksFunctionsFunctionsOutputReference
 ```
@@ -4410,7 +4410,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsReturnParamsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksfunctions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksfunctions"
 
 datadatabricksfunctions.NewDataDatabricksFunctionsFunctionsReturnParamsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksFunctionsFunctionsReturnParamsOutputReference
 ```
@@ -4701,7 +4701,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsReturnParamsParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksfunctions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksfunctions"
 
 datadatabricksfunctions.NewDataDatabricksFunctionsFunctionsReturnParamsParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksFunctionsFunctionsReturnParamsParametersList
 ```
@@ -4861,7 +4861,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsReturnParamsParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksfunctions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksfunctions"
 
 datadatabricksfunctions.NewDataDatabricksFunctionsFunctionsReturnParamsParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksFunctionsFunctionsReturnParamsParametersOutputReference
 ```
@@ -5448,7 +5448,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesConnectionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksfunctions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksfunctions"
 
 datadatabricksfunctions.NewDataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesConnectionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesConnectionOutputReference
 ```
@@ -5726,7 +5726,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesCredentialOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksfunctions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksfunctions"
 
 datadatabricksfunctions.NewDataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesCredentialOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesCredentialOutputReference
 ```
@@ -6004,7 +6004,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesFunctionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksfunctions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksfunctions"
 
 datadatabricksfunctions.NewDataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesFunctionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesFunctionOutputReference
 ```
@@ -6275,7 +6275,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksfunctions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksfunctions"
 
 datadatabricksfunctions.NewDataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesList
 ```
@@ -6435,7 +6435,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksfunctions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksfunctions"
 
 datadatabricksfunctions.NewDataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesOutputReference
 ```
@@ -6870,7 +6870,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesTableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksfunctions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksfunctions"
 
 datadatabricksfunctions.NewDataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesTableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksFunctionsFunctionsRoutineDependenciesDependenciesTableOutputReference
 ```
@@ -7141,7 +7141,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsFunctionsRoutineDependenciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksfunctions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksfunctions"
 
 datadatabricksfunctions.NewDataDatabricksFunctionsFunctionsRoutineDependenciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksFunctionsFunctionsRoutineDependenciesOutputReference
 ```
@@ -7432,7 +7432,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksFunctions.DataDatabricksFunctionsProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksfunctions"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksfunctions"
 
 datadatabricksfunctions.NewDataDatabricksFunctionsProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksFunctionsProviderConfigOutputReference
 ```

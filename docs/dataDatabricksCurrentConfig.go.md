@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksCurrentConfig.DataDatabricksCurrentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickscurrentconfig"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickscurrentconfig"
 
 datadatabrickscurrentconfig.NewDataDatabricksCurrentConfig(scope Construct, id *string, config DataDatabricksCurrentConfigConfig) DataDatabricksCurrentConfig
 ```
@@ -374,7 +374,7 @@ func ResetProviderConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.dataDatabricksCurrentConfig.DataDatabricksCurrentConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickscurrentconfig"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickscurrentconfig"
 
 datadatabrickscurrentconfig.DataDatabricksCurrentConfig_IsConstruct(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.dataDatabricksCurrentConfig.DataDatabricksCurrentConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickscurrentconfig"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickscurrentconfig"
 
 datadatabrickscurrentconfig.DataDatabricksCurrentConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -420,7 +420,7 @@ datadatabrickscurrentconfig.DataDatabricksCurrentConfig_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-databricks.dataDatabricksCurrentConfig.DataDatabricksCurrentConfig.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickscurrentconfig"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickscurrentconfig"
 
 datadatabrickscurrentconfig.DataDatabricksCurrentConfig_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -434,7 +434,7 @@ datadatabrickscurrentconfig.DataDatabricksCurrentConfig_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.dataDatabricksCurrentConfig.DataDatabricksCurrentConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickscurrentconfig"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickscurrentconfig"
 
 datadatabrickscurrentconfig.DataDatabricksCurrentConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -839,7 +839,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksCurrentConfig.DataDatabricksCurrentConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickscurrentconfig"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickscurrentconfig"
 
 &datadatabrickscurrentconfig.DataDatabricksCurrentConfigConfig {
 	Connection: interface{},
@@ -857,7 +857,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadata
 	Host: *string,
 	Id: *string,
 	IsAccount: interface{},
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksCurrentConfig.DataDatabricksCurrentConfigProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksCurrentConfig.DataDatabricksCurrentConfigProviderConfig,
 }
 ```
 
@@ -1076,7 +1076,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksCurrentConfig.DataDatabricksCurrentConfigProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickscurrentconfig"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickscurrentconfig"
 
 &datadatabrickscurrentconfig.DataDatabricksCurrentConfigProviderConfig {
 	WorkspaceId: *string,
@@ -1110,7 +1110,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksCurrentConfig.DataDatabricksCurrentConfigProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickscurrentconfig"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickscurrentconfig"
 
 datadatabrickscurrentconfig.NewDataDatabricksCurrentConfigProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksCurrentConfigProviderConfigOutputReference
 ```

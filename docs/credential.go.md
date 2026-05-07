@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.credential.Credential.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/credential"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/credential"
 
 credential.NewCredential(scope Construct, id *string, config CredentialConfig) Credential
 ```
@@ -605,7 +605,7 @@ func ResetUsedForManagedStorage()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.credential.Credential.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/credential"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/credential"
 
 credential.Credential_IsConstruct(x interface{}) *bool
 ```
@@ -637,7 +637,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.credential.Credential.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/credential"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/credential"
 
 credential.Credential_IsTerraformElement(x interface{}) *bool
 ```
@@ -651,7 +651,7 @@ credential.Credential_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.credential.Credential.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/credential"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/credential"
 
 credential.Credential_IsTerraformResource(x interface{}) *bool
 ```
@@ -665,7 +665,7 @@ credential.Credential_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.credential.Credential.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/credential"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/credential"
 
 credential.Credential_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1389,7 +1389,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.credential.CredentialAwsIamRole.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/credential"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/credential"
 
 &credential.CredentialAwsIamRole {
 	ExternalId: *string,
@@ -1449,7 +1449,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.credential.CredentialAzureManagedIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/credential"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/credential"
 
 &credential.CredentialAzureManagedIdentity {
 	AccessConnectorId: *string,
@@ -1509,7 +1509,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.credential.CredentialAzureServicePrincipal.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/credential"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/credential"
 
 &credential.CredentialAzureServicePrincipal {
 	ApplicationId: *string,
@@ -1569,7 +1569,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.credential.CredentialConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/credential"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/credential"
 
 &credential.CredentialConfig {
 	Connection: interface{},
@@ -1581,13 +1581,13 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/credenti
 	Provisioners: *[]interface{},
 	Name: *string,
 	Purpose: *string,
-	AwsIamRole: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.credential.CredentialAwsIamRole,
-	AzureManagedIdentity: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.credential.CredentialAzureManagedIdentity,
-	AzureServicePrincipal: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.credential.CredentialAzureServicePrincipal,
+	AwsIamRole: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.credential.CredentialAwsIamRole,
+	AzureManagedIdentity: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.credential.CredentialAzureManagedIdentity,
+	AzureServicePrincipal: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.credential.CredentialAzureServicePrincipal,
 	Comment: *string,
 	CreatedAt: *f64,
 	CreatedBy: *string,
-	DatabricksGcpServiceAccount: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.credential.CredentialDatabricksGcpServiceAccount,
+	DatabricksGcpServiceAccount: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.credential.CredentialDatabricksGcpServiceAccount,
 	ForceDestroy: interface{},
 	ForceUpdate: interface{},
 	FullName: *string,
@@ -1595,7 +1595,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/credenti
 	IsolationMode: *string,
 	MetastoreId: *string,
 	Owner: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.credential.CredentialProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.credential.CredentialProviderConfig,
 	ReadOnly: interface{},
 	SkipValidation: interface{},
 	UpdatedAt: *f64,
@@ -1992,7 +1992,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.credential.CredentialDatabricksGcpServiceAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/credential"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/credential"
 
 &credential.CredentialDatabricksGcpServiceAccount {
 	CredentialId: *string,
@@ -2052,7 +2052,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.credential.CredentialProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/credential"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/credential"
 
 &credential.CredentialProviderConfig {
 	WorkspaceId: *string,
@@ -2086,7 +2086,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.credential.CredentialAwsIamRoleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/credential"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/credential"
 
 credential.NewCredentialAwsIamRoleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CredentialAwsIamRoleOutputReference
 ```
@@ -2422,7 +2422,7 @@ func InternalValue() CredentialAwsIamRole
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.credential.CredentialAzureManagedIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/credential"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/credential"
 
 credential.NewCredentialAzureManagedIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CredentialAzureManagedIdentityOutputReference
 ```
@@ -2751,7 +2751,7 @@ func InternalValue() CredentialAzureManagedIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.credential.CredentialAzureServicePrincipalOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/credential"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/credential"
 
 credential.NewCredentialAzureServicePrincipalOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CredentialAzureServicePrincipalOutputReference
 ```
@@ -3066,7 +3066,7 @@ func InternalValue() CredentialAzureServicePrincipal
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.credential.CredentialDatabricksGcpServiceAccountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/credential"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/credential"
 
 credential.NewCredentialDatabricksGcpServiceAccountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CredentialDatabricksGcpServiceAccountOutputReference
 ```
@@ -3402,7 +3402,7 @@ func InternalValue() CredentialDatabricksGcpServiceAccount
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.credential.CredentialProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/credential"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/credential"
 
 credential.NewCredentialProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CredentialProviderConfigOutputReference
 ```

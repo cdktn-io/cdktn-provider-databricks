@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.token.Token.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/token"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/token"
 
 token.NewToken(scope Construct, id *string, config TokenConfig) Token
 ```
@@ -462,7 +462,7 @@ func ResetTokenId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.token.Token.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/token"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/token"
 
 token.Token_IsConstruct(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.token.Token.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/token"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/token"
 
 token.Token_IsTerraformElement(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ token.Token_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.token.Token.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/token"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/token"
 
 token.Token_IsTerraformResource(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ token.Token_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.token.Token.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/token"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/token"
 
 token.Token_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -916,7 +916,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.token.TokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/token"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/token"
 
 &token.TokenConfig {
 	Connection: interface{},
@@ -931,7 +931,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/token"
 	ExpiryTime: *f64,
 	Id: *string,
 	LifetimeSeconds: *f64,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.token.TokenProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.token.TokenProviderConfig,
 	TokenId: *string,
 }
 ```
@@ -1121,7 +1121,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.token.TokenProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/token"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/token"
 
 &token.TokenProviderConfig {
 	WorkspaceId: *string,
@@ -1155,7 +1155,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.token.TokenProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/token"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/token"
 
 token.NewTokenProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TokenProviderConfigOutputReference
 ```

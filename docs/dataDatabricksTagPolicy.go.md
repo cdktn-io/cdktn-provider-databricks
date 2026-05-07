@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksTagPolicy.DataDatabricksTagPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickstagpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstagpolicy"
 
 datadatabrickstagpolicy.NewDataDatabricksTagPolicy(scope Construct, id *string, config DataDatabricksTagPolicyConfig) DataDatabricksTagPolicy
 ```
@@ -318,7 +318,7 @@ func ResetProviderConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.dataDatabricksTagPolicy.DataDatabricksTagPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickstagpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstagpolicy"
 
 datadatabrickstagpolicy.DataDatabricksTagPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.dataDatabricksTagPolicy.DataDatabricksTagPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickstagpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstagpolicy"
 
 datadatabrickstagpolicy.DataDatabricksTagPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ datadatabrickstagpolicy.DataDatabricksTagPolicy_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-databricks.dataDatabricksTagPolicy.DataDatabricksTagPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickstagpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstagpolicy"
 
 datadatabrickstagpolicy.DataDatabricksTagPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ datadatabrickstagpolicy.DataDatabricksTagPolicy_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.dataDatabricksTagPolicy.DataDatabricksTagPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickstagpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstagpolicy"
 
 datadatabrickstagpolicy.DataDatabricksTagPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -684,7 +684,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksTagPolicy.DataDatabricksTagPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickstagpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstagpolicy"
 
 &datadatabrickstagpolicy.DataDatabricksTagPolicyConfig {
 	Connection: interface{},
@@ -695,7 +695,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadata
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	TagKey: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksTagPolicy.DataDatabricksTagPolicyProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksTagPolicy.DataDatabricksTagPolicyProviderConfig,
 }
 ```
 
@@ -814,7 +814,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksTagPolicy.DataDatabricksTagPolicyProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickstagpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstagpolicy"
 
 &datadatabrickstagpolicy.DataDatabricksTagPolicyProviderConfig {
 	WorkspaceId: *string,
@@ -846,7 +846,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksTagPolicy.DataDatabricksTagPolicyValues.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickstagpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstagpolicy"
 
 &datadatabrickstagpolicy.DataDatabricksTagPolicyValues {
 	Name: *string,
@@ -880,7 +880,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksTagPolicy.DataDatabricksTagPolicyProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickstagpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstagpolicy"
 
 datadatabrickstagpolicy.NewDataDatabricksTagPolicyProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksTagPolicyProviderConfigOutputReference
 ```
@@ -1151,7 +1151,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksTagPolicy.DataDatabricksTagPolicyValuesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickstagpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstagpolicy"
 
 datadatabrickstagpolicy.NewDataDatabricksTagPolicyValuesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksTagPolicyValuesList
 ```
@@ -1311,7 +1311,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksTagPolicy.DataDatabricksTagPolicyValuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabrickstagpolicy"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabrickstagpolicy"
 
 datadatabrickstagpolicy.NewDataDatabricksTagPolicyValuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksTagPolicyValuesOutputReference
 ```

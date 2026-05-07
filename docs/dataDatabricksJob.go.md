@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJob.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJob(scope Construct, id *string, config DataDatabricksJobConfig) DataDatabricksJob
 ```
@@ -366,7 +366,7 @@ func ResetProviderConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJob.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.DataDatabricksJob_IsConstruct(x interface{}) *bool
 ```
@@ -398,7 +398,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJob.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.DataDatabricksJob_IsTerraformElement(x interface{}) *bool
 ```
@@ -412,7 +412,7 @@ datadatabricksjob.DataDatabricksJob_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJob.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.DataDatabricksJob_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -426,7 +426,7 @@ datadatabricksjob.DataDatabricksJob_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJob.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.DataDatabricksJob_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -765,7 +765,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobConfig {
 	Connection: interface{},
@@ -778,9 +778,9 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadata
 	Id: *string,
 	JobId: *string,
 	JobName: *string,
-	JobSettings: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettings,
+	JobSettings: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettings,
 	Name: *string,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobProviderConfig,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobProviderConfig,
 }
 ```
 
@@ -958,14 +958,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettings {
 	CreatedTime: *f64,
 	CreatorUserName: *string,
 	JobId: *f64,
 	RunAsUserName: *string,
-	Settings: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettings,
+	Settings: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettings,
 }
 ```
 
@@ -1048,45 +1048,45 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettings {
-	Continuous: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsContinuous,
-	DbtTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsDbtTask,
-	Deployment: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsDeployment,
+	Continuous: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsContinuous,
+	DbtTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsDbtTask,
+	Deployment: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsDeployment,
 	Description: *string,
 	EditMode: *string,
-	EmailNotifications: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsEmailNotifications,
+	EmailNotifications: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsEmailNotifications,
 	Environment: interface{},
 	ExistingClusterId: *string,
 	Format: *string,
-	GitSource: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsGitSource,
-	Health: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsHealth,
+	GitSource: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsGitSource,
+	Health: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsHealth,
 	JobCluster: interface{},
 	Library: interface{},
 	MaxConcurrentRuns: *f64,
 	MaxRetries: *f64,
 	MinRetryIntervalMillis: *f64,
 	Name: *string,
-	NewCluster: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewCluster,
-	NotebookTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNotebookTask,
-	NotificationSettings: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNotificationSettings,
+	NewCluster: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewCluster,
+	NotebookTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNotebookTask,
+	NotificationSettings: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNotificationSettings,
 	Parameter: interface{},
-	PipelineTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsPipelineTask,
-	PythonWheelTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsPythonWheelTask,
-	Queue: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueue,
+	PipelineTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsPipelineTask,
+	PythonWheelTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsPythonWheelTask,
+	Queue: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueue,
 	RetryOnTimeout: interface{},
-	RunAs: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsRunAs,
-	RunJobTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsRunJobTask,
-	Schedule: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSchedule,
-	SparkJarTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkJarTask,
-	SparkPythonTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkPythonTask,
-	SparkSubmitTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkSubmitTask,
+	RunAs: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsRunAs,
+	RunJobTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsRunJobTask,
+	Schedule: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSchedule,
+	SparkJarTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkJarTask,
+	SparkPythonTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkPythonTask,
+	SparkSubmitTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkSubmitTask,
 	Tags: *map[string]*string,
 	Task: interface{},
 	TimeoutSeconds: *f64,
-	Trigger: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTrigger,
-	WebhookNotifications: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotifications,
+	Trigger: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTrigger,
+	WebhookNotifications: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotifications,
 }
 ```
 
@@ -1620,7 +1620,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsContinuous.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsContinuous {
 	PauseStatus: *string,
@@ -1652,7 +1652,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsDbtTask.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsDbtTask {
 	Commands: *[]*string,
@@ -1768,7 +1768,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsDeployment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsDeployment {
 	Kind: *string,
@@ -1814,7 +1814,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsEmailNotifications.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsEmailNotifications {
 	NoAlertForSkippedRuns: interface{},
@@ -1916,11 +1916,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsEnvironment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsEnvironment {
 	EnvironmentKey: *string,
-	Spec: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsEnvironmentSpec,
+	Spec: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsEnvironmentSpec,
 }
 ```
 
@@ -1964,7 +1964,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsEnvironmentSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsEnvironmentSpec {
 	BaseEnvironment: *string,
@@ -2052,13 +2052,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsGitSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsGitSource {
 	Url: *string,
 	Branch: *string,
 	Commit: *string,
-	JobSource: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsGitSourceJobSource,
+	JobSource: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsGitSourceJobSource,
 	Provider: *string,
 	Tag: *string,
 }
@@ -2156,7 +2156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsGitSourceJobSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsGitSourceJobSource {
 	ImportFromGitBranch: *string,
@@ -2216,7 +2216,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsHealth.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsHealth {
 	Rules: interface{},
@@ -2250,7 +2250,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsHealthRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsHealthRules {
 	Metric: *string,
@@ -2310,11 +2310,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsJobCluster {
 	JobClusterKey: *string,
-	NewCluster: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewCluster,
+	NewCluster: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewCluster,
 }
 ```
 
@@ -2358,27 +2358,27 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsJobClusterNewCluster {
 	NumWorkers: *f64,
 	ApplyPolicyDefaultValues: interface{},
-	Autoscale: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAutoscale,
+	Autoscale: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAutoscale,
 	AutoterminationMinutes: *f64,
-	AwsAttributes: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAwsAttributes,
-	AzureAttributes: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAzureAttributes,
+	AwsAttributes: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAwsAttributes,
+	AzureAttributes: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAzureAttributes,
 	ClusterId: *string,
-	ClusterLogConf: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConf,
+	ClusterLogConf: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConf,
 	ClusterMountInfo: interface{},
 	ClusterName: *string,
 	CustomTags: *map[string]*string,
 	DataSecurityMode: *string,
-	DockerImage: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterDockerImage,
+	DockerImage: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterDockerImage,
 	DriverInstancePoolId: *string,
 	DriverNodeTypeId: *string,
 	EnableElasticDisk: interface{},
 	EnableLocalDiskEncryption: interface{},
-	GcpAttributes: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterGcpAttributes,
+	GcpAttributes: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterGcpAttributes,
 	IdempotencyToken: *string,
 	InitScripts: interface{},
 	InstancePoolId: *string,
@@ -2390,7 +2390,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadata
 	SparkEnvVars: *map[string]*string,
 	SparkVersion: *string,
 	SshPublicKeys: *[]*string,
-	WorkloadType: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterWorkloadType,
+	WorkloadType: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterWorkloadType,
 }
 ```
 
@@ -2814,7 +2814,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAutoscale.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAutoscale {
 	MaxWorkers: *f64,
@@ -2860,7 +2860,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAwsAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAwsAttributes {
 	Availability: *string,
@@ -2990,7 +2990,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAzureAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAzureAttributes {
 	Availability: *string,
@@ -3050,11 +3050,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConf.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConf {
-	Dbfs: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConfDbfs,
-	S3: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConfS3,
+	Dbfs: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConfDbfs,
+	S3: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConfS3,
 }
 ```
 
@@ -3100,7 +3100,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConfDbfs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConfDbfs {
 	Destination: *string,
@@ -3132,7 +3132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConfS3.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConfS3 {
 	Destination: *string,
@@ -3248,11 +3248,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMountInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMountInfo {
 	LocalMountDirPath: *string,
-	NetworkFilesystemInfo: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMountInfoNetworkFilesystemInfo,
+	NetworkFilesystemInfo: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMountInfoNetworkFilesystemInfo,
 	RemoteMountDirPath: *string,
 }
 ```
@@ -3310,7 +3310,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMountInfoNetworkFilesystemInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMountInfoNetworkFilesystemInfo {
 	ServerAddress: *string,
@@ -3356,11 +3356,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterDockerImage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterDockerImage {
 	Url: *string,
-	BasicAuth: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterDockerImageBasicAuth,
+	BasicAuth: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterDockerImageBasicAuth,
 }
 ```
 
@@ -3404,7 +3404,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterDockerImageBasicAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterDockerImageBasicAuth {
 	Password: *string,
@@ -3450,7 +3450,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterGcpAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterGcpAttributes {
 	Availability: *string,
@@ -3552,16 +3552,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScripts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScripts {
-	Abfss: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsAbfss,
-	Dbfs: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsDbfs,
-	File: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsFile,
-	Gcs: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsGcs,
-	S3: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsS3,
-	Volumes: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsVolumes,
-	Workspace: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsWorkspace,
+	Abfss: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsAbfss,
+	Dbfs: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsDbfs,
+	File: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsFile,
+	Gcs: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsGcs,
+	S3: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsS3,
+	Volumes: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsVolumes,
+	Workspace: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsWorkspace,
 }
 ```
 
@@ -3682,7 +3682,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsAbfss.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsAbfss {
 	Destination: *string,
@@ -3714,7 +3714,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsDbfs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsDbfs {
 	Destination: *string,
@@ -3746,7 +3746,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsFile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsFile {
 	Destination: *string,
@@ -3778,7 +3778,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsGcs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsGcs {
 	Destination: *string,
@@ -3810,7 +3810,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsS3.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsS3 {
 	Destination: *string,
@@ -3926,7 +3926,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsVolumes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsVolumes {
 	Destination: *string,
@@ -3958,7 +3958,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsWorkspace.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsWorkspace {
 	Destination: *string,
@@ -3990,10 +3990,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterWorkloadType.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterWorkloadType {
-	Clients: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterWorkloadTypeClients,
+	Clients: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterWorkloadTypeClients,
 }
 ```
 
@@ -4024,7 +4024,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterWorkloadTypeClients.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterWorkloadTypeClients {
 	Jobs: interface{},
@@ -4070,15 +4070,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibrary.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsLibrary {
-	Cran: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibraryCran,
+	Cran: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibraryCran,
 	Egg: *string,
 	Jar: *string,
-	Maven: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibraryMaven,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibraryProviderConfig,
-	Pypi: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibraryPypi,
+	Maven: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibraryMaven,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibraryProviderConfig,
+	Pypi: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibraryPypi,
 	Requirements: *string,
 	Whl: *string,
 }
@@ -4208,7 +4208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibraryCran.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsLibraryCran {
 	Package: *string,
@@ -4254,7 +4254,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibraryMaven.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsLibraryMaven {
 	Coordinates: *string,
@@ -4314,7 +4314,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibraryProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsLibraryProviderConfig {
 	WorkspaceId: *string,
@@ -4346,7 +4346,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibraryPypi.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsLibraryPypi {
 	Package: *string,
@@ -4392,27 +4392,27 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsNewCluster {
 	NumWorkers: *f64,
 	ApplyPolicyDefaultValues: interface{},
-	Autoscale: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterAutoscale,
+	Autoscale: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterAutoscale,
 	AutoterminationMinutes: *f64,
-	AwsAttributes: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterAwsAttributes,
-	AzureAttributes: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterAzureAttributes,
+	AwsAttributes: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterAwsAttributes,
+	AzureAttributes: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterAzureAttributes,
 	ClusterId: *string,
-	ClusterLogConf: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConf,
+	ClusterLogConf: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConf,
 	ClusterMountInfo: interface{},
 	ClusterName: *string,
 	CustomTags: *map[string]*string,
 	DataSecurityMode: *string,
-	DockerImage: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterDockerImage,
+	DockerImage: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterDockerImage,
 	DriverInstancePoolId: *string,
 	DriverNodeTypeId: *string,
 	EnableElasticDisk: interface{},
 	EnableLocalDiskEncryption: interface{},
-	GcpAttributes: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterGcpAttributes,
+	GcpAttributes: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterGcpAttributes,
 	IdempotencyToken: *string,
 	InitScripts: interface{},
 	InstancePoolId: *string,
@@ -4424,7 +4424,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadata
 	SparkEnvVars: *map[string]*string,
 	SparkVersion: *string,
 	SshPublicKeys: *[]*string,
-	WorkloadType: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterWorkloadType,
+	WorkloadType: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterWorkloadType,
 }
 ```
 
@@ -4848,7 +4848,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterAutoscale.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsNewClusterAutoscale {
 	MaxWorkers: *f64,
@@ -4894,7 +4894,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterAwsAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsNewClusterAwsAttributes {
 	Availability: *string,
@@ -5024,7 +5024,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterAzureAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsNewClusterAzureAttributes {
 	Availability: *string,
@@ -5084,11 +5084,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConf.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConf {
-	Dbfs: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConfDbfs,
-	S3: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConfS3,
+	Dbfs: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConfDbfs,
+	S3: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConfS3,
 }
 ```
 
@@ -5134,7 +5134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConfDbfs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConfDbfs {
 	Destination: *string,
@@ -5166,7 +5166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConfS3.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConfS3 {
 	Destination: *string,
@@ -5282,11 +5282,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterMountInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsNewClusterClusterMountInfo {
 	LocalMountDirPath: *string,
-	NetworkFilesystemInfo: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterMountInfoNetworkFilesystemInfo,
+	NetworkFilesystemInfo: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterMountInfoNetworkFilesystemInfo,
 	RemoteMountDirPath: *string,
 }
 ```
@@ -5344,7 +5344,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterMountInfoNetworkFilesystemInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsNewClusterClusterMountInfoNetworkFilesystemInfo {
 	ServerAddress: *string,
@@ -5390,11 +5390,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterDockerImage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsNewClusterDockerImage {
 	Url: *string,
-	BasicAuth: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterDockerImageBasicAuth,
+	BasicAuth: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterDockerImageBasicAuth,
 }
 ```
 
@@ -5438,7 +5438,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterDockerImageBasicAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsNewClusterDockerImageBasicAuth {
 	Password: *string,
@@ -5484,7 +5484,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterGcpAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsNewClusterGcpAttributes {
 	Availability: *string,
@@ -5586,16 +5586,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScripts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsNewClusterInitScripts {
-	Abfss: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsAbfss,
-	Dbfs: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsDbfs,
-	File: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsFile,
-	Gcs: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsGcs,
-	S3: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsS3,
-	Volumes: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsVolumes,
-	Workspace: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsWorkspace,
+	Abfss: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsAbfss,
+	Dbfs: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsDbfs,
+	File: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsFile,
+	Gcs: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsGcs,
+	S3: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsS3,
+	Volumes: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsVolumes,
+	Workspace: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsWorkspace,
 }
 ```
 
@@ -5716,7 +5716,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsAbfss.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsAbfss {
 	Destination: *string,
@@ -5748,7 +5748,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsDbfs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsDbfs {
 	Destination: *string,
@@ -5780,7 +5780,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsFile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsFile {
 	Destination: *string,
@@ -5812,7 +5812,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsGcs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsGcs {
 	Destination: *string,
@@ -5844,7 +5844,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsS3.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsS3 {
 	Destination: *string,
@@ -5960,7 +5960,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsVolumes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsVolumes {
 	Destination: *string,
@@ -5992,7 +5992,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsWorkspace.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsWorkspace {
 	Destination: *string,
@@ -6024,10 +6024,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterWorkloadType.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsNewClusterWorkloadType {
-	Clients: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterWorkloadTypeClients,
+	Clients: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterWorkloadTypeClients,
 }
 ```
 
@@ -6058,7 +6058,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterWorkloadTypeClients.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsNewClusterWorkloadTypeClients {
 	Jobs: interface{},
@@ -6104,7 +6104,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNotebookTask.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsNotebookTask {
 	NotebookPath: *string,
@@ -6178,7 +6178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNotificationSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsNotificationSettings {
 	NoAlertForCanceledRuns: interface{},
@@ -6224,7 +6224,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsParameter {
 	Default: *string,
@@ -6270,7 +6270,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsPipelineTask.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsPipelineTask {
 	PipelineId: *string,
@@ -6316,7 +6316,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsPythonWheelTask.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsPythonWheelTask {
 	EntryPoint: *string,
@@ -6390,7 +6390,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsQueue {
 	Enabled: interface{},
@@ -6422,7 +6422,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsRunAs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsRunAs {
 	ServicePrincipalName: *string,
@@ -6468,7 +6468,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsRunJobTask.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsRunJobTask {
 	JobId: *f64,
@@ -6514,7 +6514,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsSchedule {
 	QuartzCronExpression: *string,
@@ -6574,7 +6574,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkJarTask.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsSparkJarTask {
 	JarUri: *string,
@@ -6634,7 +6634,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkPythonTask.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsSparkPythonTask {
 	PythonFile: *string,
@@ -6694,7 +6694,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkSubmitTask.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsSparkSubmitTask {
 	Parameters: *[]*string,
@@ -6726,39 +6726,39 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTask.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTask {
 	TaskKey: *string,
-	ConditionTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskConditionTask,
-	DashboardTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDashboardTask,
-	DbtTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDbtTask,
+	ConditionTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskConditionTask,
+	DashboardTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDashboardTask,
+	DbtTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDbtTask,
 	DependsOn: interface{},
 	Description: *string,
-	EmailNotifications: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskEmailNotifications,
+	EmailNotifications: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskEmailNotifications,
 	EnvironmentKey: *string,
 	ExistingClusterId: *string,
-	ForEachTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTask,
-	Health: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskHealth,
+	ForEachTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTask,
+	Health: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskHealth,
 	JobClusterKey: *string,
 	Library: interface{},
 	MaxRetries: *f64,
 	MinRetryIntervalMillis: *f64,
-	NewCluster: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewCluster,
-	NotebookTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNotebookTask,
-	NotificationSettings: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNotificationSettings,
-	PipelineTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPipelineTask,
-	PowerBiTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPowerBiTask,
-	PythonWheelTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPythonWheelTask,
+	NewCluster: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewCluster,
+	NotebookTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNotebookTask,
+	NotificationSettings: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNotificationSettings,
+	PipelineTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPipelineTask,
+	PowerBiTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPowerBiTask,
+	PythonWheelTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPythonWheelTask,
 	RetryOnTimeout: interface{},
 	RunIf: *string,
-	RunJobTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskRunJobTask,
-	SparkJarTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkJarTask,
-	SparkPythonTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkPythonTask,
-	SparkSubmitTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkSubmitTask,
-	SqlTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTask,
+	RunJobTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskRunJobTask,
+	SparkJarTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkJarTask,
+	SparkPythonTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkPythonTask,
+	SparkSubmitTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkSubmitTask,
+	SqlTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTask,
 	TimeoutSeconds: *f64,
-	WebhookNotifications: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskWebhookNotifications,
+	WebhookNotifications: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskWebhookNotifications,
 }
 ```
 
@@ -7204,7 +7204,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskConditionTask.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskConditionTask {
 	Left: *string,
@@ -7264,12 +7264,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDashboardTask.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskDashboardTask {
 	DashboardId: *string,
 	Filters: *map[string]*string,
-	Subscription: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDashboardTaskSubscription,
+	Subscription: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDashboardTaskSubscription,
 	WarehouseId: *string,
 }
 ```
@@ -7340,7 +7340,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDashboardTaskSubscription.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskDashboardTaskSubscription {
 	CustomSubject: *string,
@@ -7402,7 +7402,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDashboardTaskSubscriptionSubscribers.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskDashboardTaskSubscriptionSubscribers {
 	DestinationId: *string,
@@ -7448,7 +7448,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDbtTask.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskDbtTask {
 	Commands: *[]*string,
@@ -7564,7 +7564,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDependsOn.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskDependsOn {
 	TaskKey: *string,
@@ -7610,7 +7610,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskEmailNotifications.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskEmailNotifications {
 	NoAlertForSkippedRuns: interface{},
@@ -7712,11 +7712,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTask.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskForEachTask {
 	Inputs: *string,
-	Task: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTask,
+	Task: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTask,
 	Concurrency: *f64,
 }
 ```
@@ -7774,38 +7774,38 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTask.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTask {
 	TaskKey: *string,
-	ConditionTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskConditionTask,
-	DashboardTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTask,
-	DbtTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDbtTask,
+	ConditionTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskConditionTask,
+	DashboardTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTask,
+	DbtTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDbtTask,
 	DependsOn: interface{},
 	Description: *string,
-	EmailNotifications: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskEmailNotifications,
+	EmailNotifications: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskEmailNotifications,
 	EnvironmentKey: *string,
 	ExistingClusterId: *string,
-	Health: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskHealth,
+	Health: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskHealth,
 	JobClusterKey: *string,
 	Library: interface{},
 	MaxRetries: *f64,
 	MinRetryIntervalMillis: *f64,
-	NewCluster: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewCluster,
-	NotebookTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNotebookTask,
-	NotificationSettings: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNotificationSettings,
-	PipelineTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPipelineTask,
-	PowerBiTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPowerBiTask,
-	PythonWheelTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPythonWheelTask,
+	NewCluster: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewCluster,
+	NotebookTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNotebookTask,
+	NotificationSettings: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNotificationSettings,
+	PipelineTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPipelineTask,
+	PowerBiTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPowerBiTask,
+	PythonWheelTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPythonWheelTask,
 	RetryOnTimeout: interface{},
 	RunIf: *string,
-	RunJobTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskRunJobTask,
-	SparkJarTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSparkJarTask,
-	SparkPythonTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSparkPythonTask,
-	SparkSubmitTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSparkSubmitTask,
-	SqlTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTask,
+	RunJobTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskRunJobTask,
+	SparkJarTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSparkJarTask,
+	SparkPythonTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSparkPythonTask,
+	SparkSubmitTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSparkSubmitTask,
+	SqlTask: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTask,
 	TimeoutSeconds: *f64,
-	WebhookNotifications: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotifications,
+	WebhookNotifications: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotifications,
 }
 ```
 
@@ -8236,7 +8236,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskConditionTask.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskConditionTask {
 	Left: *string,
@@ -8296,12 +8296,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTask.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTask {
 	DashboardId: *string,
 	Filters: *map[string]*string,
-	Subscription: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscription,
+	Subscription: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscription,
 	WarehouseId: *string,
 }
 ```
@@ -8372,7 +8372,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscription.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscription {
 	CustomSubject: *string,
@@ -8434,7 +8434,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscriptionSubscribers.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscriptionSubscribers {
 	DestinationId: *string,
@@ -8480,7 +8480,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDbtTask.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDbtTask {
 	Commands: *[]*string,
@@ -8596,7 +8596,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDependsOn.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDependsOn {
 	TaskKey: *string,
@@ -8642,7 +8642,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskEmailNotifications.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskEmailNotifications {
 	NoAlertForSkippedRuns: interface{},
@@ -8744,7 +8744,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskHealth.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskHealth {
 	Rules: interface{},
@@ -8778,7 +8778,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskHealthRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskHealthRules {
 	Metric: *string,
@@ -8838,15 +8838,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibrary.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibrary {
-	Cran: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryCran,
+	Cran: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryCran,
 	Egg: *string,
 	Jar: *string,
-	Maven: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryMaven,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryProviderConfig,
-	Pypi: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryPypi,
+	Maven: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryMaven,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryProviderConfig,
+	Pypi: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryPypi,
 	Requirements: *string,
 	Whl: *string,
 }
@@ -8976,7 +8976,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryCran.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryCran {
 	Package: *string,
@@ -9022,7 +9022,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryMaven.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryMaven {
 	Coordinates: *string,
@@ -9082,7 +9082,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryProviderConfig {
 	WorkspaceId: *string,
@@ -9114,7 +9114,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryPypi.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryPypi {
 	Package: *string,
@@ -9160,27 +9160,27 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewCluster {
 	NumWorkers: *f64,
 	ApplyPolicyDefaultValues: interface{},
-	Autoscale: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterAutoscale,
+	Autoscale: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterAutoscale,
 	AutoterminationMinutes: *f64,
-	AwsAttributes: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterAwsAttributes,
-	AzureAttributes: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterAzureAttributes,
+	AwsAttributes: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterAwsAttributes,
+	AzureAttributes: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterAzureAttributes,
 	ClusterId: *string,
-	ClusterLogConf: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterLogConf,
+	ClusterLogConf: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterLogConf,
 	ClusterMountInfo: interface{},
 	ClusterName: *string,
 	CustomTags: *map[string]*string,
 	DataSecurityMode: *string,
-	DockerImage: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterDockerImage,
+	DockerImage: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterDockerImage,
 	DriverInstancePoolId: *string,
 	DriverNodeTypeId: *string,
 	EnableElasticDisk: interface{},
 	EnableLocalDiskEncryption: interface{},
-	GcpAttributes: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterGcpAttributes,
+	GcpAttributes: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterGcpAttributes,
 	IdempotencyToken: *string,
 	InitScripts: interface{},
 	InstancePoolId: *string,
@@ -9192,7 +9192,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadata
 	SparkEnvVars: *map[string]*string,
 	SparkVersion: *string,
 	SshPublicKeys: *[]*string,
-	WorkloadType: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterWorkloadType,
+	WorkloadType: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterWorkloadType,
 }
 ```
 
@@ -9616,7 +9616,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterAutoscale.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterAutoscale {
 	MaxWorkers: *f64,
@@ -9662,7 +9662,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterAwsAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterAwsAttributes {
 	Availability: *string,
@@ -9792,7 +9792,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterAzureAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterAzureAttributes {
 	Availability: *string,
@@ -9852,11 +9852,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterLogConf.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterLogConf {
-	Dbfs: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterLogConfDbfs,
-	S3: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterLogConfS3,
+	Dbfs: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterLogConfDbfs,
+	S3: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterLogConfS3,
 }
 ```
 
@@ -9902,7 +9902,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterLogConfDbfs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterLogConfDbfs {
 	Destination: *string,
@@ -9934,7 +9934,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterLogConfS3.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterLogConfS3 {
 	Destination: *string,
@@ -10050,11 +10050,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterMountInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterMountInfo {
 	LocalMountDirPath: *string,
-	NetworkFilesystemInfo: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterMountInfoNetworkFilesystemInfo,
+	NetworkFilesystemInfo: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterMountInfoNetworkFilesystemInfo,
 	RemoteMountDirPath: *string,
 }
 ```
@@ -10112,7 +10112,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterMountInfoNetworkFilesystemInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterMountInfoNetworkFilesystemInfo {
 	ServerAddress: *string,
@@ -10158,11 +10158,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterDockerImage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterDockerImage {
 	Url: *string,
-	BasicAuth: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterDockerImageBasicAuth,
+	BasicAuth: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterDockerImageBasicAuth,
 }
 ```
 
@@ -10206,7 +10206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterDockerImageBasicAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterDockerImageBasicAuth {
 	Password: *string,
@@ -10252,7 +10252,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterGcpAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterGcpAttributes {
 	Availability: *string,
@@ -10354,16 +10354,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScripts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScripts {
-	Abfss: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsAbfss,
-	Dbfs: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsDbfs,
-	File: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsFile,
-	Gcs: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsGcs,
-	S3: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsS3,
-	Volumes: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsVolumes,
-	Workspace: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsWorkspace,
+	Abfss: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsAbfss,
+	Dbfs: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsDbfs,
+	File: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsFile,
+	Gcs: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsGcs,
+	S3: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsS3,
+	Volumes: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsVolumes,
+	Workspace: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsWorkspace,
 }
 ```
 
@@ -10484,7 +10484,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsAbfss.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsAbfss {
 	Destination: *string,
@@ -10516,7 +10516,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsDbfs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsDbfs {
 	Destination: *string,
@@ -10548,7 +10548,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsFile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsFile {
 	Destination: *string,
@@ -10580,7 +10580,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsGcs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsGcs {
 	Destination: *string,
@@ -10612,7 +10612,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsS3.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsS3 {
 	Destination: *string,
@@ -10728,7 +10728,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsVolumes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsVolumes {
 	Destination: *string,
@@ -10760,7 +10760,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsWorkspace.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsWorkspace {
 	Destination: *string,
@@ -10792,10 +10792,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterWorkloadType.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterWorkloadType {
-	Clients: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterWorkloadTypeClients,
+	Clients: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterWorkloadTypeClients,
 }
 ```
 
@@ -10826,7 +10826,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterWorkloadTypeClients.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterWorkloadTypeClients {
 	Jobs: interface{},
@@ -10872,7 +10872,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNotebookTask.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNotebookTask {
 	NotebookPath: *string,
@@ -10946,7 +10946,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNotificationSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNotificationSettings {
 	AlertOnLastAttempt: interface{},
@@ -11006,7 +11006,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPipelineTask.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPipelineTask {
 	PipelineId: *string,
@@ -11052,11 +11052,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPowerBiTask.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPowerBiTask {
 	ConnectionResourceName: *string,
-	PowerBiModel: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPowerBiTaskPowerBiModel,
+	PowerBiModel: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPowerBiTaskPowerBiModel,
 	RefreshAfterUpdate: interface{},
 	Tables: interface{},
 	WarehouseId: *string,
@@ -11144,7 +11144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPowerBiTaskPowerBiModel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPowerBiTaskPowerBiModel {
 	AuthenticationMethod: *string,
@@ -11232,7 +11232,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPowerBiTaskTables.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPowerBiTaskTables {
 	Catalog: *string,
@@ -11306,7 +11306,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPythonWheelTask.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPythonWheelTask {
 	EntryPoint: *string,
@@ -11380,7 +11380,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskRunJobTask.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskRunJobTask {
 	JobId: *f64,
@@ -11426,7 +11426,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSparkJarTask.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSparkJarTask {
 	JarUri: *string,
@@ -11486,7 +11486,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSparkPythonTask.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSparkPythonTask {
 	PythonFile: *string,
@@ -11546,7 +11546,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSparkSubmitTask.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSparkSubmitTask {
 	Parameters: *[]*string,
@@ -11578,15 +11578,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTask.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTask {
 	WarehouseId: *string,
-	Alert: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskAlert,
-	Dashboard: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskDashboard,
-	File: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskFile,
+	Alert: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskAlert,
+	Dashboard: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskDashboard,
+	File: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskFile,
 	Parameters: *map[string]*string,
-	Query: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskQuery,
+	Query: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskQuery,
 }
 ```
 
@@ -11688,7 +11688,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskAlert.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskAlert {
 	AlertId: *string,
@@ -11750,7 +11750,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskAlertSubscriptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskAlertSubscriptions {
 	DestinationId: *string,
@@ -11796,7 +11796,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskDashboard.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskDashboard {
 	DashboardId: *string,
@@ -11872,7 +11872,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskDashboardSubscriptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskDashboardSubscriptions {
 	DestinationId: *string,
@@ -11918,7 +11918,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskFile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskFile {
 	Path: *string,
@@ -11964,7 +11964,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskQuery {
 	QueryId: *string,
@@ -11996,7 +11996,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotifications.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotifications {
 	OnDurationWarningThresholdExceeded: interface{},
@@ -12094,7 +12094,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceeded.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceeded {
 	Id: *string,
@@ -12129,7 +12129,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOnFailure.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOnFailure {
 	Id: *string,
@@ -12164,7 +12164,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOnStart.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOnStart {
 	Id: *string,
@@ -12199,7 +12199,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceeded.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceeded {
 	Id: *string,
@@ -12234,7 +12234,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOnSuccess.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOnSuccess {
 	Id: *string,
@@ -12269,7 +12269,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskHealth.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskHealth {
 	Rules: interface{},
@@ -12303,7 +12303,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskHealthRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskHealthRules {
 	Metric: *string,
@@ -12363,15 +12363,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibrary.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskLibrary {
-	Cran: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibraryCran,
+	Cran: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibraryCran,
 	Egg: *string,
 	Jar: *string,
-	Maven: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibraryMaven,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibraryProviderConfig,
-	Pypi: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibraryPypi,
+	Maven: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibraryMaven,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibraryProviderConfig,
+	Pypi: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibraryPypi,
 	Requirements: *string,
 	Whl: *string,
 }
@@ -12501,7 +12501,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibraryCran.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskLibraryCran {
 	Package: *string,
@@ -12547,7 +12547,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibraryMaven.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskLibraryMaven {
 	Coordinates: *string,
@@ -12607,7 +12607,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibraryProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskLibraryProviderConfig {
 	WorkspaceId: *string,
@@ -12639,7 +12639,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibraryPypi.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskLibraryPypi {
 	Package: *string,
@@ -12685,27 +12685,27 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskNewCluster {
 	NumWorkers: *f64,
 	ApplyPolicyDefaultValues: interface{},
-	Autoscale: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterAutoscale,
+	Autoscale: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterAutoscale,
 	AutoterminationMinutes: *f64,
-	AwsAttributes: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterAwsAttributes,
-	AzureAttributes: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterAzureAttributes,
+	AwsAttributes: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterAwsAttributes,
+	AzureAttributes: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterAzureAttributes,
 	ClusterId: *string,
-	ClusterLogConf: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConf,
+	ClusterLogConf: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConf,
 	ClusterMountInfo: interface{},
 	ClusterName: *string,
 	CustomTags: *map[string]*string,
 	DataSecurityMode: *string,
-	DockerImage: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterDockerImage,
+	DockerImage: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterDockerImage,
 	DriverInstancePoolId: *string,
 	DriverNodeTypeId: *string,
 	EnableElasticDisk: interface{},
 	EnableLocalDiskEncryption: interface{},
-	GcpAttributes: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterGcpAttributes,
+	GcpAttributes: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterGcpAttributes,
 	IdempotencyToken: *string,
 	InitScripts: interface{},
 	InstancePoolId: *string,
@@ -12717,7 +12717,7 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadata
 	SparkEnvVars: *map[string]*string,
 	SparkVersion: *string,
 	SshPublicKeys: *[]*string,
-	WorkloadType: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterWorkloadType,
+	WorkloadType: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterWorkloadType,
 }
 ```
 
@@ -13141,7 +13141,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterAutoscale.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskNewClusterAutoscale {
 	MaxWorkers: *f64,
@@ -13187,7 +13187,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterAwsAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskNewClusterAwsAttributes {
 	Availability: *string,
@@ -13317,7 +13317,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterAzureAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskNewClusterAzureAttributes {
 	Availability: *string,
@@ -13377,11 +13377,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConf.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConf {
-	Dbfs: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConfDbfs,
-	S3: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConfS3,
+	Dbfs: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConfDbfs,
+	S3: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConfS3,
 }
 ```
 
@@ -13427,7 +13427,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConfDbfs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConfDbfs {
 	Destination: *string,
@@ -13459,7 +13459,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConfS3.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConfS3 {
 	Destination: *string,
@@ -13575,11 +13575,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterMountInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterMountInfo {
 	LocalMountDirPath: *string,
-	NetworkFilesystemInfo: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterMountInfoNetworkFilesystemInfo,
+	NetworkFilesystemInfo: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterMountInfoNetworkFilesystemInfo,
 	RemoteMountDirPath: *string,
 }
 ```
@@ -13637,7 +13637,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterMountInfoNetworkFilesystemInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterMountInfoNetworkFilesystemInfo {
 	ServerAddress: *string,
@@ -13683,11 +13683,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterDockerImage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskNewClusterDockerImage {
 	Url: *string,
-	BasicAuth: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterDockerImageBasicAuth,
+	BasicAuth: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterDockerImageBasicAuth,
 }
 ```
 
@@ -13731,7 +13731,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterDockerImageBasicAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskNewClusterDockerImageBasicAuth {
 	Password: *string,
@@ -13777,7 +13777,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterGcpAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskNewClusterGcpAttributes {
 	Availability: *string,
@@ -13879,16 +13879,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScripts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScripts {
-	Abfss: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsAbfss,
-	Dbfs: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsDbfs,
-	File: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsFile,
-	Gcs: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsGcs,
-	S3: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsS3,
-	Volumes: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsVolumes,
-	Workspace: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsWorkspace,
+	Abfss: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsAbfss,
+	Dbfs: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsDbfs,
+	File: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsFile,
+	Gcs: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsGcs,
+	S3: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsS3,
+	Volumes: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsVolumes,
+	Workspace: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsWorkspace,
 }
 ```
 
@@ -14009,7 +14009,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsAbfss.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsAbfss {
 	Destination: *string,
@@ -14041,7 +14041,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsDbfs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsDbfs {
 	Destination: *string,
@@ -14073,7 +14073,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsFile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsFile {
 	Destination: *string,
@@ -14105,7 +14105,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsGcs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsGcs {
 	Destination: *string,
@@ -14137,7 +14137,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsS3.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsS3 {
 	Destination: *string,
@@ -14253,7 +14253,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsVolumes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsVolumes {
 	Destination: *string,
@@ -14285,7 +14285,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsWorkspace.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsWorkspace {
 	Destination: *string,
@@ -14317,10 +14317,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterWorkloadType.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskNewClusterWorkloadType {
-	Clients: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterWorkloadTypeClients,
+	Clients: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterWorkloadTypeClients,
 }
 ```
 
@@ -14351,7 +14351,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterWorkloadTypeClients.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskNewClusterWorkloadTypeClients {
 	Jobs: interface{},
@@ -14397,7 +14397,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNotebookTask.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskNotebookTask {
 	NotebookPath: *string,
@@ -14471,7 +14471,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNotificationSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskNotificationSettings {
 	AlertOnLastAttempt: interface{},
@@ -14531,7 +14531,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPipelineTask.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskPipelineTask {
 	PipelineId: *string,
@@ -14577,11 +14577,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPowerBiTask.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskPowerBiTask {
 	ConnectionResourceName: *string,
-	PowerBiModel: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskPowerBiModel,
+	PowerBiModel: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskPowerBiModel,
 	RefreshAfterUpdate: interface{},
 	Tables: interface{},
 	WarehouseId: *string,
@@ -14669,7 +14669,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskPowerBiModel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskPowerBiModel {
 	AuthenticationMethod: *string,
@@ -14757,7 +14757,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskTables.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskTables {
 	Catalog: *string,
@@ -14831,7 +14831,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPythonWheelTask.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskPythonWheelTask {
 	EntryPoint: *string,
@@ -14905,7 +14905,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskRunJobTask.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskRunJobTask {
 	JobId: *f64,
@@ -14951,7 +14951,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkJarTask.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskSparkJarTask {
 	JarUri: *string,
@@ -15011,7 +15011,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkPythonTask.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskSparkPythonTask {
 	PythonFile: *string,
@@ -15071,7 +15071,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkSubmitTask.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskSparkSubmitTask {
 	Parameters: *[]*string,
@@ -15103,15 +15103,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTask.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskSqlTask {
 	WarehouseId: *string,
-	Alert: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskAlert,
-	Dashboard: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboard,
-	File: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskFile,
+	Alert: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskAlert,
+	Dashboard: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboard,
+	File: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskFile,
 	Parameters: *map[string]*string,
-	Query: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskQuery,
+	Query: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskQuery,
 }
 ```
 
@@ -15213,7 +15213,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskAlert.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskAlert {
 	AlertId: *string,
@@ -15275,7 +15275,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskAlertSubscriptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskAlertSubscriptions {
 	DestinationId: *string,
@@ -15321,7 +15321,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboard.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboard {
 	DashboardId: *string,
@@ -15397,7 +15397,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboardSubscriptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboardSubscriptions {
 	DestinationId: *string,
@@ -15443,7 +15443,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskFile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskFile {
 	Path: *string,
@@ -15489,7 +15489,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskQuery {
 	QueryId: *string,
@@ -15521,7 +15521,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskWebhookNotifications.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskWebhookNotifications {
 	OnDurationWarningThresholdExceeded: interface{},
@@ -15619,7 +15619,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskWebhookNotificationsOnDurationWarningThresholdExceeded.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskWebhookNotificationsOnDurationWarningThresholdExceeded {
 	Id: *string,
@@ -15654,7 +15654,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskWebhookNotificationsOnFailure.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskWebhookNotificationsOnFailure {
 	Id: *string,
@@ -15689,7 +15689,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskWebhookNotificationsOnStart.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskWebhookNotificationsOnStart {
 	Id: *string,
@@ -15724,7 +15724,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskWebhookNotificationsOnStreamingBacklogExceeded.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskWebhookNotificationsOnStreamingBacklogExceeded {
 	Id: *string,
@@ -15759,7 +15759,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskWebhookNotificationsOnSuccess.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTaskWebhookNotificationsOnSuccess {
 	Id: *string,
@@ -15794,13 +15794,13 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTrigger.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTrigger {
-	FileArrival: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrival,
+	FileArrival: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrival,
 	PauseStatus: *string,
-	Periodic: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerPeriodic,
-	TableUpdate: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerTableUpdate,
+	Periodic: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerPeriodic,
+	TableUpdate: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerTableUpdate,
 }
 ```
 
@@ -15874,7 +15874,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrival.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTriggerFileArrival {
 	Url: *string,
@@ -15934,7 +15934,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerPeriodic.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTriggerPeriodic {
 	Interval: *f64,
@@ -15980,7 +15980,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerTableUpdate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsTriggerTableUpdate {
 	TableNames: *[]*string,
@@ -16054,7 +16054,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotifications.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsWebhookNotifications {
 	OnDurationWarningThresholdExceeded: interface{},
@@ -16152,7 +16152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnDurationWarningThresholdExceeded.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnDurationWarningThresholdExceeded {
 	Id: *string,
@@ -16187,7 +16187,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnFailure.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnFailure {
 	Id: *string,
@@ -16222,7 +16222,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStart.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStart {
 	Id: *string,
@@ -16257,7 +16257,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStreamingBacklogExceeded.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStreamingBacklogExceeded {
 	Id: *string,
@@ -16292,7 +16292,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnSuccess.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnSuccess {
 	Id: *string,
@@ -16327,7 +16327,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 &datadatabricksjob.DataDatabricksJobProviderConfig {
 	WorkspaceId: *string,
@@ -16361,7 +16361,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsOutputReference
 ```
@@ -16768,7 +16768,7 @@ func InternalValue() DataDatabricksJobJobSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsContinuousOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsContinuousOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsContinuousOutputReference
 ```
@@ -17046,7 +17046,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsContinuous
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsDbtTaskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsDbtTaskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsDbtTaskOutputReference
 ```
@@ -17491,7 +17491,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsDbtTask
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsDeploymentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsDeploymentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsDeploymentOutputReference
 ```
@@ -17791,7 +17791,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsDeployment
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsEmailNotificationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsEmailNotificationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsEmailNotificationsOutputReference
 ```
@@ -18214,7 +18214,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsEmailNotifications
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsEnvironmentList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsEnvironmentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksJobJobSettingsSettingsEnvironmentList
 ```
@@ -18374,7 +18374,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsEnvironmentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsEnvironmentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksJobJobSettingsSettingsEnvironmentOutputReference
 ```
@@ -18705,7 +18705,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsEnvironmentSpecOutputReference
 ```
@@ -19099,7 +19099,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsEnvironmentSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsGitSourceJobSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsGitSourceJobSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsGitSourceJobSourceOutputReference
 ```
@@ -19421,7 +19421,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsGitSourceJobSource
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsGitSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsGitSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsGitSourceOutputReference
 ```
@@ -19850,7 +19850,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsGitSource
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsHealthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsHealthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsHealthOutputReference
 ```
@@ -20134,7 +20134,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsHealth
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsHealthRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsHealthRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksJobJobSettingsSettingsHealthRulesList
 ```
@@ -20294,7 +20294,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsHealthRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsHealthRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksJobJobSettingsSettingsHealthRulesOutputReference
 ```
@@ -20627,7 +20627,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsJobClusterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksJobJobSettingsSettingsJobClusterList
 ```
@@ -20787,7 +20787,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAutoscaleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsJobClusterNewClusterAutoscaleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAutoscaleOutputReference
 ```
@@ -21094,7 +21094,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAut
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAwsAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsJobClusterNewClusterAwsAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAwsAttributesOutputReference
 ```
@@ -21575,7 +21575,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAws
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAzureAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsJobClusterNewClusterAzureAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAzureAttributesOutputReference
 ```
@@ -21911,7 +21911,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsJobClusterNewClusterAzu
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConfDbfsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConfDbfsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConfDbfsOutputReference
 ```
@@ -22182,7 +22182,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClu
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConfOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConfOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConfOutputReference
 ```
@@ -22515,7 +22515,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClu
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConfS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConfS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterLogConfS3OutputReference
 ```
@@ -22960,7 +22960,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClu
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMountInfoList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMountInfoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMountInfoList
 ```
@@ -23120,7 +23120,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMountInfoNetworkFilesystemInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMountInfoNetworkFilesystemInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMountInfoNetworkFilesystemInfoOutputReference
 ```
@@ -23420,7 +23420,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClu
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMountInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMountInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksJobJobSettingsSettingsJobClusterNewClusterClusterMountInfoOutputReference
 ```
@@ -23773,7 +23773,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterDockerImageBasicAuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsJobClusterNewClusterDockerImageBasicAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsJobClusterNewClusterDockerImageBasicAuthOutputReference
 ```
@@ -24066,7 +24066,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsJobClusterNewClusterDoc
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterDockerImageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsJobClusterNewClusterDockerImageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsJobClusterNewClusterDockerImageOutputReference
 ```
@@ -24379,7 +24379,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsJobClusterNewClusterDoc
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterGcpAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsJobClusterNewClusterGcpAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsJobClusterNewClusterGcpAttributesOutputReference
 ```
@@ -24802,7 +24802,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsJobClusterNewClusterGcp
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsAbfssOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsAbfssOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsAbfssOutputReference
 ```
@@ -25073,7 +25073,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsJobClusterNewClusterIni
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsDbfsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsDbfsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsDbfsOutputReference
 ```
@@ -25344,7 +25344,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsJobClusterNewClusterIni
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsFileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsFileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsFileOutputReference
 ```
@@ -25615,7 +25615,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsJobClusterNewClusterIni
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsGcsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsGcsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsGcsOutputReference
 ```
@@ -25886,7 +25886,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsJobClusterNewClusterIni
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsList
 ```
@@ -26046,7 +26046,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsOutputReference
 ```
@@ -26607,7 +26607,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsS3OutputReference
 ```
@@ -27052,7 +27052,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsJobClusterNewClusterIni
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsVolumesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsVolumesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsVolumesOutputReference
 ```
@@ -27323,7 +27323,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsJobClusterNewClusterIni
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsWorkspaceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsWorkspaceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsJobClusterNewClusterInitScriptsWorkspaceOutputReference
 ```
@@ -27594,7 +27594,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsJobClusterNewClusterIni
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsJobClusterNewClusterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsJobClusterNewClusterOutputReference
 ```
@@ -28823,7 +28823,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsJobClusterNewCluster
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterWorkloadTypeClientsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsJobClusterNewClusterWorkloadTypeClientsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsJobClusterNewClusterWorkloadTypeClientsOutputReference
 ```
@@ -29130,7 +29130,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsJobClusterNewClusterWor
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterNewClusterWorkloadTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsJobClusterNewClusterWorkloadTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsJobClusterNewClusterWorkloadTypeOutputReference
 ```
@@ -29414,7 +29414,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsJobClusterNewClusterWor
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsJobClusterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsJobClusterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksJobJobSettingsSettingsJobClusterOutputReference
 ```
@@ -29738,7 +29738,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibraryCranOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsLibraryCranOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsLibraryCranOutputReference
 ```
@@ -30038,7 +30038,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsLibraryCran
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibraryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsLibraryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksJobJobSettingsSettingsLibraryList
 ```
@@ -30198,7 +30198,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibraryMavenOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsLibraryMavenOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsLibraryMavenOutputReference
 ```
@@ -30527,7 +30527,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsLibraryMaven
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibraryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsLibraryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksJobJobSettingsSettingsLibraryOutputReference
 ```
@@ -31078,7 +31078,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibraryProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsLibraryProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsLibraryProviderConfigOutputReference
 ```
@@ -31349,7 +31349,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsLibraryProviderConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsLibraryPypiOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsLibraryPypiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsLibraryPypiOutputReference
 ```
@@ -31649,7 +31649,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsLibraryPypi
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterAutoscaleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsNewClusterAutoscaleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsNewClusterAutoscaleOutputReference
 ```
@@ -31956,7 +31956,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsNewClusterAutoscale
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterAwsAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsNewClusterAwsAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsNewClusterAwsAttributesOutputReference
 ```
@@ -32437,7 +32437,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsNewClusterAwsAttributes
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterAzureAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsNewClusterAzureAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsNewClusterAzureAttributesOutputReference
 ```
@@ -32773,7 +32773,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsNewClusterAzureAttribut
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConfDbfsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsNewClusterClusterLogConfDbfsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConfDbfsOutputReference
 ```
@@ -33044,7 +33044,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsNewClusterClusterLogCon
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConfOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsNewClusterClusterLogConfOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConfOutputReference
 ```
@@ -33377,7 +33377,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsNewClusterClusterLogCon
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConfS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsNewClusterClusterLogConfS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsNewClusterClusterLogConfS3OutputReference
 ```
@@ -33822,7 +33822,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsNewClusterClusterLogCon
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterMountInfoList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsNewClusterClusterMountInfoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksJobJobSettingsSettingsNewClusterClusterMountInfoList
 ```
@@ -33982,7 +33982,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterMountInfoNetworkFilesystemInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsNewClusterClusterMountInfoNetworkFilesystemInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsNewClusterClusterMountInfoNetworkFilesystemInfoOutputReference
 ```
@@ -34282,7 +34282,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsNewClusterClusterMountI
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterClusterMountInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsNewClusterClusterMountInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksJobJobSettingsSettingsNewClusterClusterMountInfoOutputReference
 ```
@@ -34635,7 +34635,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterDockerImageBasicAuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsNewClusterDockerImageBasicAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsNewClusterDockerImageBasicAuthOutputReference
 ```
@@ -34928,7 +34928,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsNewClusterDockerImageBa
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterDockerImageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsNewClusterDockerImageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsNewClusterDockerImageOutputReference
 ```
@@ -35241,7 +35241,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsNewClusterDockerImage
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterGcpAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsNewClusterGcpAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsNewClusterGcpAttributesOutputReference
 ```
@@ -35664,7 +35664,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsNewClusterGcpAttributes
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsAbfssOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsNewClusterInitScriptsAbfssOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsAbfssOutputReference
 ```
@@ -35935,7 +35935,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsAb
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsDbfsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsNewClusterInitScriptsDbfsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsDbfsOutputReference
 ```
@@ -36206,7 +36206,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsDb
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsFileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsNewClusterInitScriptsFileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsFileOutputReference
 ```
@@ -36477,7 +36477,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsFi
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsGcsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsNewClusterInitScriptsGcsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsGcsOutputReference
 ```
@@ -36748,7 +36748,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsGc
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsNewClusterInitScriptsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsList
 ```
@@ -36908,7 +36908,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsNewClusterInitScriptsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsOutputReference
 ```
@@ -37469,7 +37469,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsNewClusterInitScriptsS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsS3OutputReference
 ```
@@ -37914,7 +37914,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsS3
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsVolumesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsNewClusterInitScriptsVolumesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsVolumesOutputReference
 ```
@@ -38185,7 +38185,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsVo
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsWorkspaceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsNewClusterInitScriptsWorkspaceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsWorkspaceOutputReference
 ```
@@ -38456,7 +38456,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsNewClusterInitScriptsWo
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsNewClusterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsNewClusterOutputReference
 ```
@@ -39685,7 +39685,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsNewCluster
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterWorkloadTypeClientsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsNewClusterWorkloadTypeClientsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsNewClusterWorkloadTypeClientsOutputReference
 ```
@@ -39992,7 +39992,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsNewClusterWorkloadTypeC
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNewClusterWorkloadTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsNewClusterWorkloadTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsNewClusterWorkloadTypeOutputReference
 ```
@@ -40276,7 +40276,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsNewClusterWorkloadType
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNotebookTaskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsNotebookTaskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsNotebookTaskOutputReference
 ```
@@ -40634,7 +40634,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsNotebookTask
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsNotificationSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsNotificationSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsNotificationSettingsOutputReference
 ```
@@ -40941,7 +40941,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsNotificationSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsOutputReference
 ```
@@ -42559,7 +42559,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsParameterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsParameterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksJobJobSettingsSettingsParameterList
 ```
@@ -42719,7 +42719,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksJobJobSettingsSettingsParameterOutputReference
 ```
@@ -43030,7 +43030,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsPipelineTaskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsPipelineTaskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsPipelineTaskOutputReference
 ```
@@ -43330,7 +43330,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsPipelineTask
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsPythonWheelTaskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsPythonWheelTaskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsPythonWheelTaskOutputReference
 ```
@@ -43695,7 +43695,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsPythonWheelTask
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsQueueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsQueueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsQueueOutputReference
 ```
@@ -43966,7 +43966,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsQueue
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsRunAsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsRunAsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsRunAsOutputReference
 ```
@@ -44273,7 +44273,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsRunAs
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsRunJobTaskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsRunJobTaskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsRunJobTaskOutputReference
 ```
@@ -44573,7 +44573,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsRunJobTask
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsScheduleOutputReference
 ```
@@ -44895,7 +44895,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsSchedule
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkJarTaskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsSparkJarTaskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsSparkJarTaskOutputReference
 ```
@@ -45231,7 +45231,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsSparkJarTask
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkPythonTaskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsSparkPythonTaskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsSparkPythonTaskOutputReference
 ```
@@ -45560,7 +45560,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsSparkPythonTask
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsSparkSubmitTaskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsSparkSubmitTaskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsSparkSubmitTaskOutputReference
 ```
@@ -45838,7 +45838,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsSparkSubmitTask
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskConditionTaskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskConditionTaskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskConditionTaskOutputReference
 ```
@@ -46153,7 +46153,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskConditionTask
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDashboardTaskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskDashboardTaskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskDashboardTaskOutputReference
 ```
@@ -46531,7 +46531,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskDashboardTask
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDashboardTaskSubscriptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskDashboardTaskSubscriptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskDashboardTaskSubscriptionOutputReference
 ```
@@ -46880,7 +46880,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskDashboardTaskSubscr
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDashboardTaskSubscriptionSubscribersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskDashboardTaskSubscriptionSubscribersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksJobJobSettingsSettingsTaskDashboardTaskSubscriptionSubscribersList
 ```
@@ -47040,7 +47040,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDashboardTaskSubscriptionSubscribersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskDashboardTaskSubscriptionSubscribersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksJobJobSettingsSettingsTaskDashboardTaskSubscriptionSubscribersOutputReference
 ```
@@ -47365,7 +47365,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDbtTaskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskDbtTaskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskDbtTaskOutputReference
 ```
@@ -47810,7 +47810,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskDbtTask
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDependsOnList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskDependsOnList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksJobJobSettingsSettingsTaskDependsOnList
 ```
@@ -47970,7 +47970,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskDependsOnOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskDependsOnOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksJobJobSettingsSettingsTaskDependsOnOutputReference
 ```
@@ -48288,7 +48288,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskEmailNotificationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskEmailNotificationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskEmailNotificationsOutputReference
 ```
@@ -48711,7 +48711,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskEmailNotifications
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskForEachTaskOutputReference
 ```
@@ -49046,7 +49046,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskForEachTask
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskConditionTaskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskConditionTaskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskConditionTaskOutputReference
 ```
@@ -49361,7 +49361,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskCond
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskOutputReference
 ```
@@ -49739,7 +49739,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDash
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscriptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscriptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscriptionOutputReference
 ```
@@ -50088,7 +50088,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDash
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscriptionSubscribersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscriptionSubscribersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscriptionSubscribersList
 ```
@@ -50248,7 +50248,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscriptionSubscribersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscriptionSubscribersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDashboardTaskSubscriptionSubscribersOutputReference
 ```
@@ -50573,7 +50573,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDbtTaskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDbtTaskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDbtTaskOutputReference
 ```
@@ -51018,7 +51018,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDbtT
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDependsOnList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDependsOnList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDependsOnList
 ```
@@ -51178,7 +51178,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDependsOnOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDependsOnOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskDependsOnOutputReference
 ```
@@ -51496,7 +51496,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskEmailNotificationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskEmailNotificationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskEmailNotificationsOutputReference
 ```
@@ -51919,7 +51919,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskEmai
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskHealthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskHealthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskHealthOutputReference
 ```
@@ -52203,7 +52203,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskHeal
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskHealthRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskHealthRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskHealthRulesList
 ```
@@ -52363,7 +52363,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskHealthRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskHealthRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskHealthRulesOutputReference
 ```
@@ -52696,7 +52696,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryCranOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryCranOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryCranOutputReference
 ```
@@ -52996,7 +52996,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibr
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryList
 ```
@@ -53156,7 +53156,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryMavenOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryMavenOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryMavenOutputReference
 ```
@@ -53485,7 +53485,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibr
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryOutputReference
 ```
@@ -54036,7 +54036,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryProviderConfigOutputReference
 ```
@@ -54307,7 +54307,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibr
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryPypiOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryPypiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibraryPypiOutputReference
 ```
@@ -54607,7 +54607,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskLibr
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterAutoscaleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterAutoscaleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterAutoscaleOutputReference
 ```
@@ -54914,7 +54914,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewC
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterAwsAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterAwsAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterAwsAttributesOutputReference
 ```
@@ -55395,7 +55395,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewC
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterAzureAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterAzureAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterAzureAttributesOutputReference
 ```
@@ -55731,7 +55731,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewC
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterLogConfDbfsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterLogConfDbfsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterLogConfDbfsOutputReference
 ```
@@ -56002,7 +56002,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewC
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterLogConfOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterLogConfOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterLogConfOutputReference
 ```
@@ -56335,7 +56335,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewC
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterLogConfS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterLogConfS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterLogConfS3OutputReference
 ```
@@ -56780,7 +56780,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewC
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterMountInfoList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterMountInfoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterMountInfoList
 ```
@@ -56940,7 +56940,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterMountInfoNetworkFilesystemInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterMountInfoNetworkFilesystemInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterMountInfoNetworkFilesystemInfoOutputReference
 ```
@@ -57240,7 +57240,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewC
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterMountInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterMountInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterClusterMountInfoOutputReference
 ```
@@ -57593,7 +57593,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterDockerImageBasicAuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterDockerImageBasicAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterDockerImageBasicAuthOutputReference
 ```
@@ -57886,7 +57886,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewC
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterDockerImageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterDockerImageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterDockerImageOutputReference
 ```
@@ -58199,7 +58199,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewC
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterGcpAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterGcpAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterGcpAttributesOutputReference
 ```
@@ -58622,7 +58622,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewC
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsAbfssOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsAbfssOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsAbfssOutputReference
 ```
@@ -58893,7 +58893,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewC
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsDbfsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsDbfsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsDbfsOutputReference
 ```
@@ -59164,7 +59164,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewC
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsFileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsFileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsFileOutputReference
 ```
@@ -59435,7 +59435,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewC
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsGcsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsGcsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsGcsOutputReference
 ```
@@ -59706,7 +59706,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewC
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsList
 ```
@@ -59866,7 +59866,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsOutputReference
 ```
@@ -60427,7 +60427,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsS3OutputReference
 ```
@@ -60872,7 +60872,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewC
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsVolumesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsVolumesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsVolumesOutputReference
 ```
@@ -61143,7 +61143,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewC
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsWorkspaceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsWorkspaceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterInitScriptsWorkspaceOutputReference
 ```
@@ -61414,7 +61414,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewC
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterOutputReference
 ```
@@ -62643,7 +62643,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewC
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterWorkloadTypeClientsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterWorkloadTypeClientsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterWorkloadTypeClientsOutputReference
 ```
@@ -62950,7 +62950,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewC
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterWorkloadTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterWorkloadTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewClusterWorkloadTypeOutputReference
 ```
@@ -63234,7 +63234,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNewC
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNotebookTaskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNotebookTaskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNotebookTaskOutputReference
 ```
@@ -63592,7 +63592,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNote
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNotificationSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNotificationSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNotificationSettingsOutputReference
 ```
@@ -63928,7 +63928,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskNoti
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskOutputReference
 ```
@@ -65258,7 +65258,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTask
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPipelineTaskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPipelineTaskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPipelineTaskOutputReference
 ```
@@ -65558,7 +65558,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPipe
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPowerBiTaskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPowerBiTaskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPowerBiTaskOutputReference
 ```
@@ -65978,7 +65978,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPowe
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPowerBiTaskPowerBiModelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPowerBiTaskPowerBiModelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPowerBiTaskPowerBiModelOutputReference
 ```
@@ -66372,7 +66372,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPowe
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPowerBiTaskTablesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPowerBiTaskTablesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPowerBiTaskTablesList
 ```
@@ -66532,7 +66532,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPowerBiTaskTablesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPowerBiTaskTablesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPowerBiTaskTablesOutputReference
 ```
@@ -66915,7 +66915,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPythonWheelTaskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPythonWheelTaskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPythonWheelTaskOutputReference
 ```
@@ -67280,7 +67280,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskPyth
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskRunJobTaskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskRunJobTaskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskRunJobTaskOutputReference
 ```
@@ -67580,7 +67580,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskRunJ
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSparkJarTaskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSparkJarTaskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSparkJarTaskOutputReference
 ```
@@ -67916,7 +67916,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSpar
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSparkPythonTaskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSparkPythonTaskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSparkPythonTaskOutputReference
 ```
@@ -68245,7 +68245,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSpar
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSparkSubmitTaskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSparkSubmitTaskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSparkSubmitTaskOutputReference
 ```
@@ -68523,7 +68523,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSpar
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskAlertOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskAlertOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskAlertOutputReference
 ```
@@ -68865,7 +68865,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlT
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskAlertSubscriptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskAlertSubscriptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskAlertSubscriptionsList
 ```
@@ -69025,7 +69025,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskAlertSubscriptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskAlertSubscriptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskAlertSubscriptionsOutputReference
 ```
@@ -69350,7 +69350,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskDashboardOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskDashboardOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskDashboardOutputReference
 ```
@@ -69721,7 +69721,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlT
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskDashboardSubscriptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskDashboardSubscriptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskDashboardSubscriptionsList
 ```
@@ -69881,7 +69881,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskDashboardSubscriptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskDashboardSubscriptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskDashboardSubscriptionsOutputReference
 ```
@@ -70206,7 +70206,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskFileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskFileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskFileOutputReference
 ```
@@ -70506,7 +70506,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlT
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskOutputReference
 ```
@@ -70974,7 +70974,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlT
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlTaskQueryOutputReference
 ```
@@ -71245,7 +71245,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskSqlT
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceededList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceededList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceededList
 ```
@@ -71405,7 +71405,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceededOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceededOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOnDurationWarningThresholdExceededOutputReference
 ```
@@ -71694,7 +71694,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOnFailureList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOnFailureList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOnFailureList
 ```
@@ -71854,7 +71854,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOnFailureOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOnFailureOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOnFailureOutputReference
 ```
@@ -72143,7 +72143,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOnStartList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOnStartList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOnStartList
 ```
@@ -72303,7 +72303,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOnStartOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOnStartOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOnStartOutputReference
 ```
@@ -72592,7 +72592,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceededList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceededList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceededList
 ```
@@ -72752,7 +72752,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceededOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceededOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOnStreamingBacklogExceededOutputReference
 ```
@@ -73041,7 +73041,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOnSuccessList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOnSuccessList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOnSuccessList
 ```
@@ -73201,7 +73201,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOnSuccessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOnSuccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOnSuccessOutputReference
 ```
@@ -73490,7 +73490,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebhookNotificationsOutputReference
 ```
@@ -73949,7 +73949,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskForEachTaskTaskWebh
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskHealthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskHealthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskHealthOutputReference
 ```
@@ -74233,7 +74233,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskHealth
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskHealthRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskHealthRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksJobJobSettingsSettingsTaskHealthRulesList
 ```
@@ -74393,7 +74393,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskHealthRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskHealthRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksJobJobSettingsSettingsTaskHealthRulesOutputReference
 ```
@@ -74726,7 +74726,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibraryCranOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskLibraryCranOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskLibraryCranOutputReference
 ```
@@ -75026,7 +75026,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskLibraryCran
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibraryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskLibraryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksJobJobSettingsSettingsTaskLibraryList
 ```
@@ -75186,7 +75186,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibraryMavenOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskLibraryMavenOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskLibraryMavenOutputReference
 ```
@@ -75515,7 +75515,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskLibraryMaven
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibraryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskLibraryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksJobJobSettingsSettingsTaskLibraryOutputReference
 ```
@@ -76066,7 +76066,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibraryProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskLibraryProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskLibraryProviderConfigOutputReference
 ```
@@ -76337,7 +76337,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskLibraryProviderConf
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskLibraryPypiOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskLibraryPypiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskLibraryPypiOutputReference
 ```
@@ -76637,7 +76637,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskLibraryPypi
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksJobJobSettingsSettingsTaskList
 ```
@@ -76797,7 +76797,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterAutoscaleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskNewClusterAutoscaleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskNewClusterAutoscaleOutputReference
 ```
@@ -77104,7 +77104,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskNewClusterAutoscale
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterAwsAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskNewClusterAwsAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskNewClusterAwsAttributesOutputReference
 ```
@@ -77585,7 +77585,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskNewClusterAwsAttrib
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterAzureAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskNewClusterAzureAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskNewClusterAzureAttributesOutputReference
 ```
@@ -77921,7 +77921,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskNewClusterAzureAttr
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConfDbfsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConfDbfsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConfDbfsOutputReference
 ```
@@ -78192,7 +78192,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLo
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConfOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConfOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConfOutputReference
 ```
@@ -78525,7 +78525,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLo
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConfS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConfS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLogConfS3OutputReference
 ```
@@ -78970,7 +78970,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterLo
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterMountInfoList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskNewClusterClusterMountInfoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterMountInfoList
 ```
@@ -79130,7 +79130,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterMountInfoNetworkFilesystemInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskNewClusterClusterMountInfoNetworkFilesystemInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterMountInfoNetworkFilesystemInfoOutputReference
 ```
@@ -79430,7 +79430,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterMo
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterMountInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskNewClusterClusterMountInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksJobJobSettingsSettingsTaskNewClusterClusterMountInfoOutputReference
 ```
@@ -79783,7 +79783,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterDockerImageBasicAuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskNewClusterDockerImageBasicAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskNewClusterDockerImageBasicAuthOutputReference
 ```
@@ -80076,7 +80076,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskNewClusterDockerIma
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterDockerImageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskNewClusterDockerImageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskNewClusterDockerImageOutputReference
 ```
@@ -80389,7 +80389,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskNewClusterDockerIma
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterGcpAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskNewClusterGcpAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskNewClusterGcpAttributesOutputReference
 ```
@@ -80812,7 +80812,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskNewClusterGcpAttrib
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsAbfssOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsAbfssOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsAbfssOutputReference
 ```
@@ -81083,7 +81083,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScrip
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsDbfsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsDbfsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsDbfsOutputReference
 ```
@@ -81354,7 +81354,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScrip
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsFileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsFileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsFileOutputReference
 ```
@@ -81625,7 +81625,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScrip
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsGcsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsGcsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsGcsOutputReference
 ```
@@ -81896,7 +81896,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScrip
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsList
 ```
@@ -82056,7 +82056,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsOutputReference
 ```
@@ -82617,7 +82617,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsS3OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsS3OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsS3OutputReference
 ```
@@ -83062,7 +83062,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScrip
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsVolumesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsVolumesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsVolumesOutputReference
 ```
@@ -83333,7 +83333,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScrip
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsWorkspaceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsWorkspaceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScriptsWorkspaceOutputReference
 ```
@@ -83604,7 +83604,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskNewClusterInitScrip
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskNewClusterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskNewClusterOutputReference
 ```
@@ -84833,7 +84833,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskNewCluster
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterWorkloadTypeClientsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskNewClusterWorkloadTypeClientsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskNewClusterWorkloadTypeClientsOutputReference
 ```
@@ -85140,7 +85140,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskNewClusterWorkloadT
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNewClusterWorkloadTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskNewClusterWorkloadTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskNewClusterWorkloadTypeOutputReference
 ```
@@ -85424,7 +85424,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskNewClusterWorkloadT
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNotebookTaskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskNotebookTaskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskNotebookTaskOutputReference
 ```
@@ -85782,7 +85782,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskNotebookTask
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskNotificationSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskNotificationSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskNotificationSettingsOutputReference
 ```
@@ -86118,7 +86118,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskNotificationSetting
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksJobJobSettingsSettingsTaskOutputReference
 ```
@@ -87508,7 +87508,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPipelineTaskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskPipelineTaskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskPipelineTaskOutputReference
 ```
@@ -87808,7 +87808,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskPipelineTask
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskPowerBiTaskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskOutputReference
 ```
@@ -88228,7 +88228,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskPowerBiTask
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskPowerBiModelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskPowerBiTaskPowerBiModelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskPowerBiModelOutputReference
 ```
@@ -88622,7 +88622,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskPowerBiM
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskTablesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskPowerBiTaskTablesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskTablesList
 ```
@@ -88782,7 +88782,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskTablesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskPowerBiTaskTablesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksJobJobSettingsSettingsTaskPowerBiTaskTablesOutputReference
 ```
@@ -89165,7 +89165,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskPythonWheelTaskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskPythonWheelTaskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskPythonWheelTaskOutputReference
 ```
@@ -89530,7 +89530,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskPythonWheelTask
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskRunJobTaskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskRunJobTaskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskRunJobTaskOutputReference
 ```
@@ -89830,7 +89830,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskRunJobTask
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkJarTaskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskSparkJarTaskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskSparkJarTaskOutputReference
 ```
@@ -90166,7 +90166,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskSparkJarTask
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkPythonTaskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskSparkPythonTaskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskSparkPythonTaskOutputReference
 ```
@@ -90495,7 +90495,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskSparkPythonTask
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSparkSubmitTaskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskSparkSubmitTaskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskSparkSubmitTaskOutputReference
 ```
@@ -90773,7 +90773,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskSparkSubmitTask
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskAlertOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskSqlTaskAlertOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskSqlTaskAlertOutputReference
 ```
@@ -91115,7 +91115,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskSqlTaskAlert
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskAlertSubscriptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskSqlTaskAlertSubscriptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksJobJobSettingsSettingsTaskSqlTaskAlertSubscriptionsList
 ```
@@ -91275,7 +91275,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskAlertSubscriptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskSqlTaskAlertSubscriptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksJobJobSettingsSettingsTaskSqlTaskAlertSubscriptionsOutputReference
 ```
@@ -91600,7 +91600,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboardOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboardOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboardOutputReference
 ```
@@ -91971,7 +91971,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboard
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboardSubscriptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboardSubscriptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboardSubscriptionsList
 ```
@@ -92131,7 +92131,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboardSubscriptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboardSubscriptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksJobJobSettingsSettingsTaskSqlTaskDashboardSubscriptionsOutputReference
 ```
@@ -92456,7 +92456,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskFileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskSqlTaskFileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskSqlTaskFileOutputReference
 ```
@@ -92756,7 +92756,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskSqlTaskFile
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskSqlTaskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskSqlTaskOutputReference
 ```
@@ -93224,7 +93224,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskSqlTask
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskSqlTaskQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskSqlTaskQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskSqlTaskQueryOutputReference
 ```
@@ -93495,7 +93495,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskSqlTaskQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskWebhookNotificationsOnDurationWarningThresholdExceededList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskWebhookNotificationsOnDurationWarningThresholdExceededList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksJobJobSettingsSettingsTaskWebhookNotificationsOnDurationWarningThresholdExceededList
 ```
@@ -93655,7 +93655,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskWebhookNotificationsOnDurationWarningThresholdExceededOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskWebhookNotificationsOnDurationWarningThresholdExceededOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksJobJobSettingsSettingsTaskWebhookNotificationsOnDurationWarningThresholdExceededOutputReference
 ```
@@ -93944,7 +93944,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskWebhookNotificationsOnFailureList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskWebhookNotificationsOnFailureList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksJobJobSettingsSettingsTaskWebhookNotificationsOnFailureList
 ```
@@ -94104,7 +94104,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskWebhookNotificationsOnFailureOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskWebhookNotificationsOnFailureOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksJobJobSettingsSettingsTaskWebhookNotificationsOnFailureOutputReference
 ```
@@ -94393,7 +94393,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskWebhookNotificationsOnStartList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskWebhookNotificationsOnStartList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksJobJobSettingsSettingsTaskWebhookNotificationsOnStartList
 ```
@@ -94553,7 +94553,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskWebhookNotificationsOnStartOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskWebhookNotificationsOnStartOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksJobJobSettingsSettingsTaskWebhookNotificationsOnStartOutputReference
 ```
@@ -94842,7 +94842,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskWebhookNotificationsOnStreamingBacklogExceededList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskWebhookNotificationsOnStreamingBacklogExceededList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksJobJobSettingsSettingsTaskWebhookNotificationsOnStreamingBacklogExceededList
 ```
@@ -95002,7 +95002,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskWebhookNotificationsOnStreamingBacklogExceededOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskWebhookNotificationsOnStreamingBacklogExceededOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksJobJobSettingsSettingsTaskWebhookNotificationsOnStreamingBacklogExceededOutputReference
 ```
@@ -95291,7 +95291,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskWebhookNotificationsOnSuccessList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskWebhookNotificationsOnSuccessList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksJobJobSettingsSettingsTaskWebhookNotificationsOnSuccessList
 ```
@@ -95451,7 +95451,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskWebhookNotificationsOnSuccessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskWebhookNotificationsOnSuccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksJobJobSettingsSettingsTaskWebhookNotificationsOnSuccessOutputReference
 ```
@@ -95740,7 +95740,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTaskWebhookNotificationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTaskWebhookNotificationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTaskWebhookNotificationsOutputReference
 ```
@@ -96199,7 +96199,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTaskWebhookNotification
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTriggerFileArrivalOutputReference
 ```
@@ -96528,7 +96528,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTriggerFileArrival
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTriggerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTriggerOutputReference
 ```
@@ -96932,7 +96932,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTrigger
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerPeriodicOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTriggerPeriodicOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTriggerPeriodicOutputReference
 ```
@@ -97225,7 +97225,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTriggerPeriodic
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsTriggerTableUpdateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsTriggerTableUpdateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsTriggerTableUpdateOutputReference
 ```
@@ -97583,7 +97583,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsTriggerTableUpdate
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnDurationWarningThresholdExceededList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsWebhookNotificationsOnDurationWarningThresholdExceededList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnDurationWarningThresholdExceededList
 ```
@@ -97743,7 +97743,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnDurationWarningThresholdExceededOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsWebhookNotificationsOnDurationWarningThresholdExceededOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnDurationWarningThresholdExceededOutputReference
 ```
@@ -98032,7 +98032,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnFailureList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsWebhookNotificationsOnFailureList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnFailureList
 ```
@@ -98192,7 +98192,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnFailureOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsWebhookNotificationsOnFailureOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnFailureOutputReference
 ```
@@ -98481,7 +98481,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStartList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStartList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStartList
 ```
@@ -98641,7 +98641,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStartOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStartOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStartOutputReference
 ```
@@ -98930,7 +98930,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStreamingBacklogExceededList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStreamingBacklogExceededList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStreamingBacklogExceededList
 ```
@@ -99090,7 +99090,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStreamingBacklogExceededOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStreamingBacklogExceededOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnStreamingBacklogExceededOutputReference
 ```
@@ -99379,7 +99379,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnSuccessList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsWebhookNotificationsOnSuccessList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnSuccessList
 ```
@@ -99539,7 +99539,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnSuccessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsWebhookNotificationsOnSuccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatabricksJobJobSettingsSettingsWebhookNotificationsOnSuccessOutputReference
 ```
@@ -99828,7 +99828,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobJobSettingsSettingsWebhookNotificationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobJobSettingsSettingsWebhookNotificationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobJobSettingsSettingsWebhookNotificationsOutputReference
 ```
@@ -100287,7 +100287,7 @@ func InternalValue() DataDatabricksJobJobSettingsSettingsWebhookNotifications
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJob.DataDatabricksJobProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/datadatabricksjob"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadatabricksjob"
 
 datadatabricksjob.NewDataDatabricksJobProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatabricksJobProviderConfigOutputReference
 ```

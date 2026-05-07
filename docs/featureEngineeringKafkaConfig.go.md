@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/databricks/databrick
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringKafkaConfig.FeatureEngineeringKafkaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/featureengineeringkafkaconfig"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringkafkaconfig"
 
 featureengineeringkafkaconfig.NewFeatureEngineeringKafkaConfig(scope Construct, id *string, config FeatureEngineeringKafkaConfigConfig) FeatureEngineeringKafkaConfig
 ```
@@ -513,7 +513,7 @@ func ResetValueSchema()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-databricks.featureEngineeringKafkaConfig.FeatureEngineeringKafkaConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/featureengineeringkafkaconfig"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringkafkaconfig"
 
 featureengineeringkafkaconfig.FeatureEngineeringKafkaConfig_IsConstruct(x interface{}) *bool
 ```
@@ -545,7 +545,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-databricks.featureEngineeringKafkaConfig.FeatureEngineeringKafkaConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/featureengineeringkafkaconfig"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringkafkaconfig"
 
 featureengineeringkafkaconfig.FeatureEngineeringKafkaConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -559,7 +559,7 @@ featureengineeringkafkaconfig.FeatureEngineeringKafkaConfig_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-databricks.featureEngineeringKafkaConfig.FeatureEngineeringKafkaConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/featureengineeringkafkaconfig"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringkafkaconfig"
 
 featureengineeringkafkaconfig.FeatureEngineeringKafkaConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -573,7 +573,7 @@ featureengineeringkafkaconfig.FeatureEngineeringKafkaConfig_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-databricks.featureEngineeringKafkaConfig.FeatureEngineeringKafkaConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/featureengineeringkafkaconfig"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringkafkaconfig"
 
 featureengineeringkafkaconfig.FeatureEngineeringKafkaConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -989,7 +989,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringKafkaConfig.FeatureEngineeringKafkaConfigAuthConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/featureengineeringkafkaconfig"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringkafkaconfig"
 
 &featureengineeringkafkaconfig.FeatureEngineeringKafkaConfigAuthConfig {
 	UcServiceCredentialName: *string,
@@ -1021,10 +1021,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringKafkaConfig.FeatureEngineeringKafkaConfigBackfillSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/featureengineeringkafkaconfig"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringkafkaconfig"
 
 &featureengineeringkafkaconfig.FeatureEngineeringKafkaConfigBackfillSource {
-	DeltaTableSource: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.featureEngineeringKafkaConfig.FeatureEngineeringKafkaConfigBackfillSourceDeltaTableSource,
+	DeltaTableSource: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.featureEngineeringKafkaConfig.FeatureEngineeringKafkaConfigBackfillSourceDeltaTableSource,
 }
 ```
 
@@ -1053,7 +1053,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringKafkaConfig.FeatureEngineeringKafkaConfigBackfillSourceDeltaTableSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/featureengineeringkafkaconfig"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringkafkaconfig"
 
 &featureengineeringkafkaconfig.FeatureEngineeringKafkaConfigBackfillSourceDeltaTableSource {
 	FullName: *string,
@@ -1155,7 +1155,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringKafkaConfig.FeatureEngineeringKafkaConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/featureengineeringkafkaconfig"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringkafkaconfig"
 
 &featureengineeringkafkaconfig.FeatureEngineeringKafkaConfigConfig {
 	Connection: interface{},
@@ -1165,14 +1165,14 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/featuree
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	AuthConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.featureEngineeringKafkaConfig.FeatureEngineeringKafkaConfigAuthConfig,
+	AuthConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.featureEngineeringKafkaConfig.FeatureEngineeringKafkaConfigAuthConfig,
 	BootstrapServers: *string,
-	SubscriptionMode: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.featureEngineeringKafkaConfig.FeatureEngineeringKafkaConfigSubscriptionMode,
-	BackfillSource: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.featureEngineeringKafkaConfig.FeatureEngineeringKafkaConfigBackfillSource,
+	SubscriptionMode: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.featureEngineeringKafkaConfig.FeatureEngineeringKafkaConfigSubscriptionMode,
+	BackfillSource: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.featureEngineeringKafkaConfig.FeatureEngineeringKafkaConfigBackfillSource,
 	ExtraOptions: *map[string]*string,
-	KeySchema: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.featureEngineeringKafkaConfig.FeatureEngineeringKafkaConfigKeySchema,
-	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.featureEngineeringKafkaConfig.FeatureEngineeringKafkaConfigProviderConfig,
-	ValueSchema: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16.featureEngineeringKafkaConfig.FeatureEngineeringKafkaConfigValueSchema,
+	KeySchema: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.featureEngineeringKafkaConfig.FeatureEngineeringKafkaConfigKeySchema,
+	ProviderConfig: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.featureEngineeringKafkaConfig.FeatureEngineeringKafkaConfigProviderConfig,
+	ValueSchema: github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17.featureEngineeringKafkaConfig.FeatureEngineeringKafkaConfigValueSchema,
 }
 ```
 
@@ -1369,7 +1369,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringKafkaConfig.FeatureEngineeringKafkaConfigKeySchema.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/featureengineeringkafkaconfig"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringkafkaconfig"
 
 &featureengineeringkafkaconfig.FeatureEngineeringKafkaConfigKeySchema {
 	JsonSchema: *string,
@@ -1401,7 +1401,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringKafkaConfig.FeatureEngineeringKafkaConfigProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/featureengineeringkafkaconfig"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringkafkaconfig"
 
 &featureengineeringkafkaconfig.FeatureEngineeringKafkaConfigProviderConfig {
 	WorkspaceId: *string,
@@ -1433,7 +1433,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringKafkaConfig.FeatureEngineeringKafkaConfigSubscriptionMode.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/featureengineeringkafkaconfig"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringkafkaconfig"
 
 &featureengineeringkafkaconfig.FeatureEngineeringKafkaConfigSubscriptionMode {
 	Assign: *string,
@@ -1493,7 +1493,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializer <a name="Initializer" id="@cdktn/provider-databricks.featureEngineeringKafkaConfig.FeatureEngineeringKafkaConfigValueSchema.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/featureengineeringkafkaconfig"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringkafkaconfig"
 
 &featureengineeringkafkaconfig.FeatureEngineeringKafkaConfigValueSchema {
 	JsonSchema: *string,
@@ -1527,7 +1527,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringKafkaConfig.FeatureEngineeringKafkaConfigAuthConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/featureengineeringkafkaconfig"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringkafkaconfig"
 
 featureengineeringkafkaconfig.NewFeatureEngineeringKafkaConfigAuthConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FeatureEngineeringKafkaConfigAuthConfigOutputReference
 ```
@@ -1805,7 +1805,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringKafkaConfig.FeatureEngineeringKafkaConfigBackfillSourceDeltaTableSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/featureengineeringkafkaconfig"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringkafkaconfig"
 
 featureengineeringkafkaconfig.NewFeatureEngineeringKafkaConfigBackfillSourceDeltaTableSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FeatureEngineeringKafkaConfigBackfillSourceDeltaTableSourceOutputReference
 ```
@@ -2221,7 +2221,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringKafkaConfig.FeatureEngineeringKafkaConfigBackfillSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/featureengineeringkafkaconfig"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringkafkaconfig"
 
 featureengineeringkafkaconfig.NewFeatureEngineeringKafkaConfigBackfillSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FeatureEngineeringKafkaConfigBackfillSourceOutputReference
 ```
@@ -2512,7 +2512,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringKafkaConfig.FeatureEngineeringKafkaConfigKeySchemaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/featureengineeringkafkaconfig"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringkafkaconfig"
 
 featureengineeringkafkaconfig.NewFeatureEngineeringKafkaConfigKeySchemaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FeatureEngineeringKafkaConfigKeySchemaOutputReference
 ```
@@ -2790,7 +2790,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringKafkaConfig.FeatureEngineeringKafkaConfigProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/featureengineeringkafkaconfig"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringkafkaconfig"
 
 featureengineeringkafkaconfig.NewFeatureEngineeringKafkaConfigProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FeatureEngineeringKafkaConfigProviderConfigOutputReference
 ```
@@ -3061,7 +3061,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringKafkaConfig.FeatureEngineeringKafkaConfigSubscriptionModeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/featureengineeringkafkaconfig"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringkafkaconfig"
 
 featureengineeringkafkaconfig.NewFeatureEngineeringKafkaConfigSubscriptionModeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FeatureEngineeringKafkaConfigSubscriptionModeOutputReference
 ```
@@ -3397,7 +3397,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.featureEngineeringKafkaConfig.FeatureEngineeringKafkaConfigValueSchemaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v16/featureengineeringkafkaconfig"
+import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/featureengineeringkafkaconfig"
 
 featureengineeringkafkaconfig.NewFeatureEngineeringKafkaConfigValueSchemaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FeatureEngineeringKafkaConfigValueSchemaOutputReference
 ```
