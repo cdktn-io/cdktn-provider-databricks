@@ -4,7 +4,7 @@
 
 ### DataDatabricksJobs <a name="DataDatabricksJobs" id="@cdktn/provider-databricks.dataDatabricksJobs.DataDatabricksJobs"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/jobs databricks_jobs}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/jobs databricks_jobs}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksJobs.DataDatabricksJobs.Initializer"></a>
 
@@ -40,10 +40,10 @@ dataDatabricksJobs.DataDatabricksJobs(
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksJobs.DataDatabricksJobs.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksJobs.DataDatabricksJobs.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksJobs.DataDatabricksJobs.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksJobs.DataDatabricksJobs.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/jobs#id DataDatabricksJobs#id}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksJobs.DataDatabricksJobs.Initializer.parameter.ids">ids</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/jobs#ids DataDatabricksJobs#ids}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksJobs.DataDatabricksJobs.Initializer.parameter.jobNameContains">job_name_contains</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/jobs#job_name_contains DataDatabricksJobs#job_name_contains}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksJobs.DataDatabricksJobs.Initializer.parameter.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/jobs#key DataDatabricksJobs#key}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksJobs.DataDatabricksJobs.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/jobs#id DataDatabricksJobs#id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksJobs.DataDatabricksJobs.Initializer.parameter.ids">ids</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/jobs#ids DataDatabricksJobs#ids}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksJobs.DataDatabricksJobs.Initializer.parameter.jobNameContains">job_name_contains</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/jobs#job_name_contains DataDatabricksJobs#job_name_contains}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksJobs.DataDatabricksJobs.Initializer.parameter.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/jobs#key DataDatabricksJobs#key}. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksJobs.DataDatabricksJobs.Initializer.parameter.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksJobs.DataDatabricksJobsProviderConfig">DataDatabricksJobsProviderConfig</a></code> | provider_config block. |
 
 ---
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/jobs#id DataDatabricksJobs#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/jobs#id DataDatabricksJobs#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -123,7 +123,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/jobs#ids DataDatabricksJobs#ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/jobs#ids DataDatabricksJobs#ids}.
 
 ---
 
@@ -131,7 +131,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/jobs#job_name_contains DataDatabricksJobs#job_name_contains}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/jobs#job_name_contains DataDatabricksJobs#job_name_contains}.
 
 ---
 
@@ -139,7 +139,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/jobs#key DataDatabricksJobs#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/jobs#key DataDatabricksJobs#key}.
 
 ---
 
@@ -149,7 +149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/jobs#provider_config DataDatabricksJobs#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/jobs#provider_config DataDatabricksJobs#provider_config}
 
 ---
 
@@ -428,15 +428,15 @@ def interpolation_for_attribute(
 
 ```python
 def put_provider_config(
-  workspace_id: str
+  workspace_id: str = None
 ) -> None
 ```
 
-###### `workspace_id`<sup>Required</sup> <a name="workspace_id" id="@cdktn/provider-databricks.dataDatabricksJobs.DataDatabricksJobs.putProviderConfig.parameter.workspaceId"></a>
+###### `workspace_id`<sup>Optional</sup> <a name="workspace_id" id="@cdktn/provider-databricks.dataDatabricksJobs.DataDatabricksJobs.putProviderConfig.parameter.workspaceId"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/jobs#workspace_id DataDatabricksJobs#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/jobs#workspace_id DataDatabricksJobs#workspace_id}.
 
 ---
 
@@ -584,7 +584,7 @@ The construct id used in the generated config for the DataDatabricksJobs to impo
 
 The id of the existing DataDatabricksJobs that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/jobs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/jobs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -901,10 +901,10 @@ dataDatabricksJobs.DataDatabricksJobsConfig(
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksJobs.DataDatabricksJobsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksJobs.DataDatabricksJobsConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksJobs.DataDatabricksJobsConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksJobs.DataDatabricksJobsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/jobs#id DataDatabricksJobs#id}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksJobs.DataDatabricksJobsConfig.property.ids">ids</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/jobs#ids DataDatabricksJobs#ids}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksJobs.DataDatabricksJobsConfig.property.jobNameContains">job_name_contains</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/jobs#job_name_contains DataDatabricksJobs#job_name_contains}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksJobs.DataDatabricksJobsConfig.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/jobs#key DataDatabricksJobs#key}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksJobs.DataDatabricksJobsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/jobs#id DataDatabricksJobs#id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksJobs.DataDatabricksJobsConfig.property.ids">ids</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/jobs#ids DataDatabricksJobs#ids}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksJobs.DataDatabricksJobsConfig.property.jobNameContains">job_name_contains</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/jobs#job_name_contains DataDatabricksJobs#job_name_contains}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksJobs.DataDatabricksJobsConfig.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/jobs#key DataDatabricksJobs#key}. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksJobs.DataDatabricksJobsConfig.property.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksJobs.DataDatabricksJobsProviderConfig">DataDatabricksJobsProviderConfig</a></code> | provider_config block. |
 
 ---
@@ -987,7 +987,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/jobs#id DataDatabricksJobs#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/jobs#id DataDatabricksJobs#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1002,7 +1002,7 @@ ids: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/jobs#ids DataDatabricksJobs#ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/jobs#ids DataDatabricksJobs#ids}.
 
 ---
 
@@ -1014,7 +1014,7 @@ job_name_contains: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/jobs#job_name_contains DataDatabricksJobs#job_name_contains}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/jobs#job_name_contains DataDatabricksJobs#job_name_contains}.
 
 ---
 
@@ -1026,7 +1026,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/jobs#key DataDatabricksJobs#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/jobs#key DataDatabricksJobs#key}.
 
 ---
 
@@ -1040,7 +1040,7 @@ provider_config: DataDatabricksJobsProviderConfig
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/jobs#provider_config DataDatabricksJobs#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/jobs#provider_config DataDatabricksJobs#provider_config}
 
 ---
 
@@ -1052,7 +1052,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 from cdktn_provider_databricks import data_databricks_jobs
 
 dataDatabricksJobs.DataDatabricksJobsProviderConfig(
-  workspace_id: str
+  workspace_id: str = None
 )
 ```
 
@@ -1060,11 +1060,11 @@ dataDatabricksJobs.DataDatabricksJobsProviderConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksJobs.DataDatabricksJobsProviderConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/jobs#workspace_id DataDatabricksJobs#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksJobs.DataDatabricksJobsProviderConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/jobs#workspace_id DataDatabricksJobs#workspace_id}. |
 
 ---
 
-##### `workspace_id`<sup>Required</sup> <a name="workspace_id" id="@cdktn/provider-databricks.dataDatabricksJobs.DataDatabricksJobsProviderConfig.property.workspaceId"></a>
+##### `workspace_id`<sup>Optional</sup> <a name="workspace_id" id="@cdktn/provider-databricks.dataDatabricksJobs.DataDatabricksJobsProviderConfig.property.workspaceId"></a>
 
 ```python
 workspace_id: str
@@ -1072,7 +1072,7 @@ workspace_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/jobs#workspace_id DataDatabricksJobs#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/jobs#workspace_id DataDatabricksJobs#workspace_id}.
 
 ---
 
@@ -1131,6 +1131,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksJobs.DataDatabricksJobsProviderConfigOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksJobs.DataDatabricksJobsProviderConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksJobs.DataDatabricksJobsProviderConfigOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksJobs.DataDatabricksJobsProviderConfigOutputReference.resetWorkspaceId">reset_workspace_id</a></code> | *No description.* |
 
 ---
 
@@ -1305,6 +1306,12 @@ def to_string() -> str
 Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
+
+##### `reset_workspace_id` <a name="reset_workspace_id" id="@cdktn/provider-databricks.dataDatabricksJobs.DataDatabricksJobsProviderConfigOutputReference.resetWorkspaceId"></a>
+
+```python
+def reset_workspace_id() -> None
+```
 
 
 #### Properties <a name="Properties" id="Properties"></a>

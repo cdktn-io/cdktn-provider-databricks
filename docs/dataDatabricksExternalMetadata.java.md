@@ -4,7 +4,7 @@
 
 ### DataDatabricksExternalMetadata <a name="DataDatabricksExternalMetadata" id="@cdktn/provider-databricks.dataDatabricksExternalMetadata.DataDatabricksExternalMetadata"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/external_metadata databricks_external_metadata}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/external_metadata databricks_external_metadata}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksExternalMetadata.DataDatabricksExternalMetadata.Initializer"></a>
 
@@ -35,8 +35,8 @@ DataDatabricksExternalMetadata.Builder.create(Construct scope, java.lang.String 
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksExternalMetadata.DataDatabricksExternalMetadata.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksExternalMetadata.DataDatabricksExternalMetadata.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksExternalMetadata.DataDatabricksExternalMetadata.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksExternalMetadata.DataDatabricksExternalMetadata.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/external_metadata#name DataDatabricksExternalMetadata#name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksExternalMetadata.DataDatabricksExternalMetadata.Initializer.parameter.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksExternalMetadata.DataDatabricksExternalMetadataProviderConfig">DataDatabricksExternalMetadataProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/external_metadata#provider_config DataDatabricksExternalMetadata#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksExternalMetadata.DataDatabricksExternalMetadata.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/external_metadata#name DataDatabricksExternalMetadata#name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksExternalMetadata.DataDatabricksExternalMetadata.Initializer.parameter.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksExternalMetadata.DataDatabricksExternalMetadataProviderConfig">DataDatabricksExternalMetadataProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/external_metadata#provider_config DataDatabricksExternalMetadata#provider_config}. |
 
 ---
 
@@ -104,7 +104,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/external_metadata#name DataDatabricksExternalMetadata#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/external_metadata#name DataDatabricksExternalMetadata#name}.
 
 ---
 
@@ -112,7 +112,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksExternalMetadata.DataDatabricksExternalMetadataProviderConfig">DataDatabricksExternalMetadataProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/external_metadata#provider_config DataDatabricksExternalMetadata#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/external_metadata#provider_config DataDatabricksExternalMetadata#provider_config}.
 
 ---
 
@@ -477,7 +477,7 @@ The construct id used in the generated config for the DataDatabricksExternalMeta
 
 The id of the existing DataDatabricksExternalMetadata that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/external_metadata#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/external_metadata#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -868,8 +868,8 @@ DataDatabricksExternalMetadataConfig.builder()
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksExternalMetadata.DataDatabricksExternalMetadataConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksExternalMetadata.DataDatabricksExternalMetadataConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksExternalMetadata.DataDatabricksExternalMetadataConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksExternalMetadata.DataDatabricksExternalMetadataConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/external_metadata#name DataDatabricksExternalMetadata#name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksExternalMetadata.DataDatabricksExternalMetadataConfig.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksExternalMetadata.DataDatabricksExternalMetadataProviderConfig">DataDatabricksExternalMetadataProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/external_metadata#provider_config DataDatabricksExternalMetadata#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksExternalMetadata.DataDatabricksExternalMetadataConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/external_metadata#name DataDatabricksExternalMetadata#name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksExternalMetadata.DataDatabricksExternalMetadataConfig.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksExternalMetadata.DataDatabricksExternalMetadataProviderConfig">DataDatabricksExternalMetadataProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/external_metadata#provider_config DataDatabricksExternalMetadata#provider_config}. |
 
 ---
 
@@ -951,7 +951,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/external_metadata#name DataDatabricksExternalMetadata#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/external_metadata#name DataDatabricksExternalMetadata#name}.
 
 ---
 
@@ -963,7 +963,7 @@ public DataDatabricksExternalMetadataProviderConfig getProviderConfig();
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksExternalMetadata.DataDatabricksExternalMetadataProviderConfig">DataDatabricksExternalMetadataProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/external_metadata#provider_config DataDatabricksExternalMetadata#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/external_metadata#provider_config DataDatabricksExternalMetadata#provider_config}.
 
 ---
 
@@ -975,7 +975,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 import io.cdktn.providers.databricks.data_databricks_external_metadata.DataDatabricksExternalMetadataProviderConfig;
 
 DataDatabricksExternalMetadataProviderConfig.builder()
-    .workspaceId(java.lang.String)
+//  .workspaceId(java.lang.String)
     .build();
 ```
 
@@ -983,11 +983,11 @@ DataDatabricksExternalMetadataProviderConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksExternalMetadata.DataDatabricksExternalMetadataProviderConfig.property.workspaceId">workspaceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/external_metadata#workspace_id DataDatabricksExternalMetadata#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksExternalMetadata.DataDatabricksExternalMetadataProviderConfig.property.workspaceId">workspaceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/external_metadata#workspace_id DataDatabricksExternalMetadata#workspace_id}. |
 
 ---
 
-##### `workspaceId`<sup>Required</sup> <a name="workspaceId" id="@cdktn/provider-databricks.dataDatabricksExternalMetadata.DataDatabricksExternalMetadataProviderConfig.property.workspaceId"></a>
+##### `workspaceId`<sup>Optional</sup> <a name="workspaceId" id="@cdktn/provider-databricks.dataDatabricksExternalMetadata.DataDatabricksExternalMetadataProviderConfig.property.workspaceId"></a>
 
 ```java
 public java.lang.String getWorkspaceId();
@@ -995,7 +995,7 @@ public java.lang.String getWorkspaceId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/external_metadata#workspace_id DataDatabricksExternalMetadata#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/external_metadata#workspace_id DataDatabricksExternalMetadata#workspace_id}.
 
 ---
 
@@ -1051,6 +1051,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksExternalMetadata.DataDatabricksExternalMetadataProviderConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksExternalMetadata.DataDatabricksExternalMetadataProviderConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksExternalMetadata.DataDatabricksExternalMetadataProviderConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksExternalMetadata.DataDatabricksExternalMetadataProviderConfigOutputReference.resetWorkspaceId">resetWorkspaceId</a></code> | *No description.* |
 
 ---
 
@@ -1203,6 +1204,12 @@ public java.lang.String toString()
 Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
+
+##### `resetWorkspaceId` <a name="resetWorkspaceId" id="@cdktn/provider-databricks.dataDatabricksExternalMetadata.DataDatabricksExternalMetadataProviderConfigOutputReference.resetWorkspaceId"></a>
+
+```java
+public void resetWorkspaceId()
+```
 
 
 #### Properties <a name="Properties" id="Properties"></a>

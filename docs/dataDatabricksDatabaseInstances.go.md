@@ -4,7 +4,7 @@
 
 ### DataDatabricksDatabaseInstances <a name="DataDatabricksDatabaseInstances" id="@cdktn/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstances"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/database_instances databricks_database_instances}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/database_instances databricks_database_instances}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstances.Initializer"></a>
 
@@ -414,7 +414,7 @@ The construct id used in the generated config for the DataDatabricksDatabaseInst
 
 The id of the existing DataDatabricksDatabaseInstances that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/database_instances#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/database_instances#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -673,8 +673,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadata
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesConfig.property.pageSize">PageSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/database_instances#page_size DataDatabricksDatabaseInstances#page_size}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesProviderConfig">DataDatabricksDatabaseInstancesProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/database_instances#provider_config DataDatabricksDatabaseInstances#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesConfig.property.pageSize">PageSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/database_instances#page_size DataDatabricksDatabaseInstances#page_size}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesProviderConfig">DataDatabricksDatabaseInstancesProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/database_instances#provider_config DataDatabricksDatabaseInstances#provider_config}. |
 
 ---
 
@@ -756,7 +756,7 @@ PageSize *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/database_instances#page_size DataDatabricksDatabaseInstances#page_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/database_instances#page_size DataDatabricksDatabaseInstances#page_size}.
 
 ---
 
@@ -768,7 +768,7 @@ ProviderConfig DataDatabricksDatabaseInstancesProviderConfig
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesProviderConfig">DataDatabricksDatabaseInstancesProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/database_instances#provider_config DataDatabricksDatabaseInstances#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/database_instances#provider_config DataDatabricksDatabaseInstances#provider_config}.
 
 ---
 
@@ -789,8 +789,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesDatabaseInstances.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/database_instances#name DataDatabricksDatabaseInstances#name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesDatabaseInstances.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesDatabaseInstancesProviderConfig">DataDatabricksDatabaseInstancesDatabaseInstancesProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/database_instances#provider_config DataDatabricksDatabaseInstances#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesDatabaseInstances.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/database_instances#name DataDatabricksDatabaseInstances#name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesDatabaseInstances.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesDatabaseInstancesProviderConfig">DataDatabricksDatabaseInstancesDatabaseInstancesProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/database_instances#provider_config DataDatabricksDatabaseInstances#provider_config}. |
 
 ---
 
@@ -802,7 +802,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/database_instances#name DataDatabricksDatabaseInstances#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/database_instances#name DataDatabricksDatabaseInstances#name}.
 
 ---
 
@@ -814,7 +814,7 @@ ProviderConfig DataDatabricksDatabaseInstancesDatabaseInstancesProviderConfig
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesDatabaseInstancesProviderConfig">DataDatabricksDatabaseInstancesDatabaseInstancesProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/database_instances#provider_config DataDatabricksDatabaseInstances#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/database_instances#provider_config DataDatabricksDatabaseInstances#provider_config}.
 
 ---
 
@@ -836,9 +836,9 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesDatabaseInstancesChildInstanceRefs.property.branchTime">BranchTime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/database_instances#branch_time DataDatabricksDatabaseInstances#branch_time}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesDatabaseInstancesChildInstanceRefs.property.lsn">Lsn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/database_instances#lsn DataDatabricksDatabaseInstances#lsn}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesDatabaseInstancesChildInstanceRefs.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/database_instances#name DataDatabricksDatabaseInstances#name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesDatabaseInstancesChildInstanceRefs.property.branchTime">BranchTime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/database_instances#branch_time DataDatabricksDatabaseInstances#branch_time}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesDatabaseInstancesChildInstanceRefs.property.lsn">Lsn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/database_instances#lsn DataDatabricksDatabaseInstances#lsn}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesDatabaseInstancesChildInstanceRefs.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/database_instances#name DataDatabricksDatabaseInstances#name}. |
 
 ---
 
@@ -850,7 +850,7 @@ BranchTime *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/database_instances#branch_time DataDatabricksDatabaseInstances#branch_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/database_instances#branch_time DataDatabricksDatabaseInstances#branch_time}.
 
 ---
 
@@ -862,7 +862,7 @@ Lsn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/database_instances#lsn DataDatabricksDatabaseInstances#lsn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/database_instances#lsn DataDatabricksDatabaseInstances#lsn}.
 
 ---
 
@@ -874,7 +874,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/database_instances#name DataDatabricksDatabaseInstances#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/database_instances#name DataDatabricksDatabaseInstances#name}.
 
 ---
 
@@ -895,8 +895,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesDatabaseInstancesCustomTags.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/database_instances#key DataDatabricksDatabaseInstances#key}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesDatabaseInstancesCustomTags.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/database_instances#value DataDatabricksDatabaseInstances#value}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesDatabaseInstancesCustomTags.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/database_instances#key DataDatabricksDatabaseInstances#key}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesDatabaseInstancesCustomTags.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/database_instances#value DataDatabricksDatabaseInstances#value}. |
 
 ---
 
@@ -908,7 +908,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/database_instances#key DataDatabricksDatabaseInstances#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/database_instances#key DataDatabricksDatabaseInstances#key}.
 
 ---
 
@@ -920,7 +920,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/database_instances#value DataDatabricksDatabaseInstances#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/database_instances#value DataDatabricksDatabaseInstances#value}.
 
 ---
 
@@ -941,8 +941,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesDatabaseInstancesEffectiveCustomTags.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/database_instances#key DataDatabricksDatabaseInstances#key}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesDatabaseInstancesEffectiveCustomTags.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/database_instances#value DataDatabricksDatabaseInstances#value}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesDatabaseInstancesEffectiveCustomTags.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/database_instances#key DataDatabricksDatabaseInstances#key}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesDatabaseInstancesEffectiveCustomTags.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/database_instances#value DataDatabricksDatabaseInstances#value}. |
 
 ---
 
@@ -954,7 +954,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/database_instances#key DataDatabricksDatabaseInstances#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/database_instances#key DataDatabricksDatabaseInstances#key}.
 
 ---
 
@@ -966,7 +966,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/database_instances#value DataDatabricksDatabaseInstances#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/database_instances#value DataDatabricksDatabaseInstances#value}.
 
 ---
 
@@ -988,9 +988,9 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesDatabaseInstancesParentInstanceRef.property.branchTime">BranchTime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/database_instances#branch_time DataDatabricksDatabaseInstances#branch_time}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesDatabaseInstancesParentInstanceRef.property.lsn">Lsn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/database_instances#lsn DataDatabricksDatabaseInstances#lsn}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesDatabaseInstancesParentInstanceRef.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/database_instances#name DataDatabricksDatabaseInstances#name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesDatabaseInstancesParentInstanceRef.property.branchTime">BranchTime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/database_instances#branch_time DataDatabricksDatabaseInstances#branch_time}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesDatabaseInstancesParentInstanceRef.property.lsn">Lsn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/database_instances#lsn DataDatabricksDatabaseInstances#lsn}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesDatabaseInstancesParentInstanceRef.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/database_instances#name DataDatabricksDatabaseInstances#name}. |
 
 ---
 
@@ -1002,7 +1002,7 @@ BranchTime *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/database_instances#branch_time DataDatabricksDatabaseInstances#branch_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/database_instances#branch_time DataDatabricksDatabaseInstances#branch_time}.
 
 ---
 
@@ -1014,7 +1014,7 @@ Lsn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/database_instances#lsn DataDatabricksDatabaseInstances#lsn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/database_instances#lsn DataDatabricksDatabaseInstances#lsn}.
 
 ---
 
@@ -1026,7 +1026,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/database_instances#name DataDatabricksDatabaseInstances#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/database_instances#name DataDatabricksDatabaseInstances#name}.
 
 ---
 
@@ -1046,11 +1046,11 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesDatabaseInstancesProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/database_instances#workspace_id DataDatabricksDatabaseInstances#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesDatabaseInstancesProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/database_instances#workspace_id DataDatabricksDatabaseInstances#workspace_id}. |
 
 ---
 
-##### `WorkspaceId`<sup>Required</sup> <a name="WorkspaceId" id="@cdktn/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesDatabaseInstancesProviderConfig.property.workspaceId"></a>
+##### `WorkspaceId`<sup>Optional</sup> <a name="WorkspaceId" id="@cdktn/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesDatabaseInstancesProviderConfig.property.workspaceId"></a>
 
 ```go
 WorkspaceId *string
@@ -1058,7 +1058,7 @@ WorkspaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/database_instances#workspace_id DataDatabricksDatabaseInstances#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/database_instances#workspace_id DataDatabricksDatabaseInstances#workspace_id}.
 
 ---
 
@@ -1078,11 +1078,11 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/database_instances#workspace_id DataDatabricksDatabaseInstances#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/database_instances#workspace_id DataDatabricksDatabaseInstances#workspace_id}. |
 
 ---
 
-##### `WorkspaceId`<sup>Required</sup> <a name="WorkspaceId" id="@cdktn/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesProviderConfig.property.workspaceId"></a>
+##### `WorkspaceId`<sup>Optional</sup> <a name="WorkspaceId" id="@cdktn/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesProviderConfig.property.workspaceId"></a>
 
 ```go
 WorkspaceId *string
@@ -1090,7 +1090,7 @@ WorkspaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/database_instances#workspace_id DataDatabricksDatabaseInstances#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/database_instances#workspace_id DataDatabricksDatabaseInstances#workspace_id}.
 
 ---
 
@@ -3776,6 +3776,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesDatabaseInstancesProviderConfigOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesDatabaseInstancesProviderConfigOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesDatabaseInstancesProviderConfigOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesDatabaseInstancesProviderConfigOutputReference.resetWorkspaceId">ResetWorkspaceId</a></code> | *No description.* |
 
 ---
 
@@ -3929,6 +3930,12 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `ResetWorkspaceId` <a name="ResetWorkspaceId" id="@cdktn/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesDatabaseInstancesProviderConfigOutputReference.resetWorkspaceId"></a>
+
+```go
+func ResetWorkspaceId()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -4047,6 +4054,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesProviderConfigOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesProviderConfigOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesProviderConfigOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesProviderConfigOutputReference.resetWorkspaceId">ResetWorkspaceId</a></code> | *No description.* |
 
 ---
 
@@ -4199,6 +4207,12 @@ func ToString() *string
 Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
+
+##### `ResetWorkspaceId` <a name="ResetWorkspaceId" id="@cdktn/provider-databricks.dataDatabricksDatabaseInstances.DataDatabricksDatabaseInstancesProviderConfigOutputReference.resetWorkspaceId"></a>
+
+```go
+func ResetWorkspaceId()
+```
 
 
 #### Properties <a name="Properties" id="Properties"></a>

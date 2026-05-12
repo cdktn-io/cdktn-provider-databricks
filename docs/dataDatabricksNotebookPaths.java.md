@@ -4,7 +4,7 @@
 
 ### DataDatabricksNotebookPaths <a name="DataDatabricksNotebookPaths" id="@cdktn/provider-databricks.dataDatabricksNotebookPaths.DataDatabricksNotebookPaths"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/notebook_paths databricks_notebook_paths}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/notebook_paths databricks_notebook_paths}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksNotebookPaths.DataDatabricksNotebookPaths.Initializer"></a>
 
@@ -37,9 +37,9 @@ DataDatabricksNotebookPaths.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksNotebookPaths.DataDatabricksNotebookPaths.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksNotebookPaths.DataDatabricksNotebookPaths.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksNotebookPaths.DataDatabricksNotebookPaths.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksNotebookPaths.DataDatabricksNotebookPaths.Initializer.parameter.path">path</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/notebook_paths#path DataDatabricksNotebookPaths#path}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksNotebookPaths.DataDatabricksNotebookPaths.Initializer.parameter.recursive">recursive</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/notebook_paths#recursive DataDatabricksNotebookPaths#recursive}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksNotebookPaths.DataDatabricksNotebookPaths.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/notebook_paths#id DataDatabricksNotebookPaths#id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksNotebookPaths.DataDatabricksNotebookPaths.Initializer.parameter.path">path</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/notebook_paths#path DataDatabricksNotebookPaths#path}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksNotebookPaths.DataDatabricksNotebookPaths.Initializer.parameter.recursive">recursive</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/notebook_paths#recursive DataDatabricksNotebookPaths#recursive}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksNotebookPaths.DataDatabricksNotebookPaths.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/notebook_paths#id DataDatabricksNotebookPaths#id}. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksNotebookPaths.DataDatabricksNotebookPaths.Initializer.parameter.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksNotebookPaths.DataDatabricksNotebookPathsProviderConfig">DataDatabricksNotebookPathsProviderConfig</a></code> | provider_config block. |
 
 ---
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/notebook_paths#path DataDatabricksNotebookPaths#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/notebook_paths#path DataDatabricksNotebookPaths#path}.
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/notebook_paths#recursive DataDatabricksNotebookPaths#recursive}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/notebook_paths#recursive DataDatabricksNotebookPaths#recursive}.
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/notebook_paths#id DataDatabricksNotebookPaths#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/notebook_paths#id DataDatabricksNotebookPaths#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -137,7 +137,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/notebook_paths#provider_config DataDatabricksNotebookPaths#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/notebook_paths#provider_config DataDatabricksNotebookPaths#provider_config}
 
 ---
 
@@ -509,7 +509,7 @@ The construct id used in the generated config for the DataDatabricksNotebookPath
 
 The id of the existing DataDatabricksNotebookPaths that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/notebook_paths#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/notebook_paths#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -814,9 +814,9 @@ DataDatabricksNotebookPathsConfig.builder()
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksNotebookPaths.DataDatabricksNotebookPathsConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksNotebookPaths.DataDatabricksNotebookPathsConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksNotebookPaths.DataDatabricksNotebookPathsConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksNotebookPaths.DataDatabricksNotebookPathsConfig.property.path">path</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/notebook_paths#path DataDatabricksNotebookPaths#path}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksNotebookPaths.DataDatabricksNotebookPathsConfig.property.recursive">recursive</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/notebook_paths#recursive DataDatabricksNotebookPaths#recursive}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksNotebookPaths.DataDatabricksNotebookPathsConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/notebook_paths#id DataDatabricksNotebookPaths#id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksNotebookPaths.DataDatabricksNotebookPathsConfig.property.path">path</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/notebook_paths#path DataDatabricksNotebookPaths#path}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksNotebookPaths.DataDatabricksNotebookPathsConfig.property.recursive">recursive</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/notebook_paths#recursive DataDatabricksNotebookPaths#recursive}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksNotebookPaths.DataDatabricksNotebookPathsConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/notebook_paths#id DataDatabricksNotebookPaths#id}. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksNotebookPaths.DataDatabricksNotebookPathsConfig.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksNotebookPaths.DataDatabricksNotebookPathsProviderConfig">DataDatabricksNotebookPathsProviderConfig</a></code> | provider_config block. |
 
 ---
@@ -899,7 +899,7 @@ public java.lang.String getPath();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/notebook_paths#path DataDatabricksNotebookPaths#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/notebook_paths#path DataDatabricksNotebookPaths#path}.
 
 ---
 
@@ -911,7 +911,7 @@ public java.lang.Boolean|IResolvable getRecursive();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/notebook_paths#recursive DataDatabricksNotebookPaths#recursive}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/notebook_paths#recursive DataDatabricksNotebookPaths#recursive}.
 
 ---
 
@@ -923,7 +923,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/notebook_paths#id DataDatabricksNotebookPaths#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/notebook_paths#id DataDatabricksNotebookPaths#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -940,7 +940,7 @@ public DataDatabricksNotebookPathsProviderConfig getProviderConfig();
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/notebook_paths#provider_config DataDatabricksNotebookPaths#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/notebook_paths#provider_config DataDatabricksNotebookPaths#provider_config}
 
 ---
 
@@ -964,7 +964,7 @@ DataDatabricksNotebookPathsNotebookPathListStruct.builder()
 import io.cdktn.providers.databricks.data_databricks_notebook_paths.DataDatabricksNotebookPathsProviderConfig;
 
 DataDatabricksNotebookPathsProviderConfig.builder()
-    .workspaceId(java.lang.String)
+//  .workspaceId(java.lang.String)
     .build();
 ```
 
@@ -972,11 +972,11 @@ DataDatabricksNotebookPathsProviderConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksNotebookPaths.DataDatabricksNotebookPathsProviderConfig.property.workspaceId">workspaceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/notebook_paths#workspace_id DataDatabricksNotebookPaths#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksNotebookPaths.DataDatabricksNotebookPathsProviderConfig.property.workspaceId">workspaceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/notebook_paths#workspace_id DataDatabricksNotebookPaths#workspace_id}. |
 
 ---
 
-##### `workspaceId`<sup>Required</sup> <a name="workspaceId" id="@cdktn/provider-databricks.dataDatabricksNotebookPaths.DataDatabricksNotebookPathsProviderConfig.property.workspaceId"></a>
+##### `workspaceId`<sup>Optional</sup> <a name="workspaceId" id="@cdktn/provider-databricks.dataDatabricksNotebookPaths.DataDatabricksNotebookPathsProviderConfig.property.workspaceId"></a>
 
 ```java
 public java.lang.String getWorkspaceId();
@@ -984,7 +984,7 @@ public java.lang.String getWorkspaceId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/notebook_paths#workspace_id DataDatabricksNotebookPaths#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/notebook_paths#workspace_id DataDatabricksNotebookPaths#workspace_id}.
 
 ---
 
@@ -1478,6 +1478,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksNotebookPaths.DataDatabricksNotebookPathsProviderConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksNotebookPaths.DataDatabricksNotebookPathsProviderConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksNotebookPaths.DataDatabricksNotebookPathsProviderConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksNotebookPaths.DataDatabricksNotebookPathsProviderConfigOutputReference.resetWorkspaceId">resetWorkspaceId</a></code> | *No description.* |
 
 ---
 
@@ -1630,6 +1631,12 @@ public java.lang.String toString()
 Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
+
+##### `resetWorkspaceId` <a name="resetWorkspaceId" id="@cdktn/provider-databricks.dataDatabricksNotebookPaths.DataDatabricksNotebookPathsProviderConfigOutputReference.resetWorkspaceId"></a>
+
+```java
+public void resetWorkspaceId()
+```
 
 
 #### Properties <a name="Properties" id="Properties"></a>

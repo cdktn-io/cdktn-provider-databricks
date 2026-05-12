@@ -4,7 +4,7 @@
 
 ### DataDatabricksDataClassificationCatalogConfig <a name="DataDatabricksDataClassificationCatalogConfig" id="@cdktn/provider-databricks.dataDatabricksDataClassificationCatalogConfig.DataDatabricksDataClassificationCatalogConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/data_classification_catalog_config databricks_data_classification_catalog_config}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/data_classification_catalog_config databricks_data_classification_catalog_config}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksDataClassificationCatalogConfig.DataDatabricksDataClassificationCatalogConfig.Initializer"></a>
 
@@ -407,7 +407,7 @@ The construct id used in the generated config for the DataDatabricksDataClassifi
 
 The id of the existing DataDatabricksDataClassificationCatalogConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/data_classification_catalog_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/data_classification_catalog_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -660,8 +660,8 @@ const dataDatabricksDataClassificationCatalogConfigAutoTagConfigs: dataDatabrick
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksDataClassificationCatalogConfig.DataDatabricksDataClassificationCatalogConfigAutoTagConfigs.property.autoTaggingMode">autoTaggingMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/data_classification_catalog_config#auto_tagging_mode DataDatabricksDataClassificationCatalogConfig#auto_tagging_mode}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksDataClassificationCatalogConfig.DataDatabricksDataClassificationCatalogConfigAutoTagConfigs.property.classificationTag">classificationTag</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/data_classification_catalog_config#classification_tag DataDatabricksDataClassificationCatalogConfig#classification_tag}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksDataClassificationCatalogConfig.DataDatabricksDataClassificationCatalogConfigAutoTagConfigs.property.autoTaggingMode">autoTaggingMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/data_classification_catalog_config#auto_tagging_mode DataDatabricksDataClassificationCatalogConfig#auto_tagging_mode}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksDataClassificationCatalogConfig.DataDatabricksDataClassificationCatalogConfigAutoTagConfigs.property.classificationTag">classificationTag</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/data_classification_catalog_config#classification_tag DataDatabricksDataClassificationCatalogConfig#classification_tag}. |
 
 ---
 
@@ -673,7 +673,7 @@ public readonly autoTaggingMode: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/data_classification_catalog_config#auto_tagging_mode DataDatabricksDataClassificationCatalogConfig#auto_tagging_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/data_classification_catalog_config#auto_tagging_mode DataDatabricksDataClassificationCatalogConfig#auto_tagging_mode}.
 
 ---
 
@@ -685,7 +685,7 @@ public readonly classificationTag: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/data_classification_catalog_config#classification_tag DataDatabricksDataClassificationCatalogConfig#classification_tag}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/data_classification_catalog_config#classification_tag DataDatabricksDataClassificationCatalogConfig#classification_tag}.
 
 ---
 
@@ -710,8 +710,8 @@ const dataDatabricksDataClassificationCatalogConfigConfig: dataDatabricksDataCla
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksDataClassificationCatalogConfig.DataDatabricksDataClassificationCatalogConfigConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksDataClassificationCatalogConfig.DataDatabricksDataClassificationCatalogConfigConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksDataClassificationCatalogConfig.DataDatabricksDataClassificationCatalogConfigConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksDataClassificationCatalogConfig.DataDatabricksDataClassificationCatalogConfigConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/data_classification_catalog_config#name DataDatabricksDataClassificationCatalogConfig#name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksDataClassificationCatalogConfig.DataDatabricksDataClassificationCatalogConfigConfig.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksDataClassificationCatalogConfig.DataDatabricksDataClassificationCatalogConfigProviderConfig">DataDatabricksDataClassificationCatalogConfigProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/data_classification_catalog_config#provider_config DataDatabricksDataClassificationCatalogConfig#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksDataClassificationCatalogConfig.DataDatabricksDataClassificationCatalogConfigConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/data_classification_catalog_config#name DataDatabricksDataClassificationCatalogConfig#name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksDataClassificationCatalogConfig.DataDatabricksDataClassificationCatalogConfigConfig.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksDataClassificationCatalogConfig.DataDatabricksDataClassificationCatalogConfigProviderConfig">DataDatabricksDataClassificationCatalogConfigProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/data_classification_catalog_config#provider_config DataDatabricksDataClassificationCatalogConfig#provider_config}. |
 
 ---
 
@@ -793,7 +793,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/data_classification_catalog_config#name DataDatabricksDataClassificationCatalogConfig#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/data_classification_catalog_config#name DataDatabricksDataClassificationCatalogConfig#name}.
 
 ---
 
@@ -805,7 +805,7 @@ public readonly providerConfig: DataDatabricksDataClassificationCatalogConfigPro
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksDataClassificationCatalogConfig.DataDatabricksDataClassificationCatalogConfigProviderConfig">DataDatabricksDataClassificationCatalogConfigProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/data_classification_catalog_config#provider_config DataDatabricksDataClassificationCatalogConfig#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/data_classification_catalog_config#provider_config DataDatabricksDataClassificationCatalogConfig#provider_config}.
 
 ---
 
@@ -823,7 +823,7 @@ const dataDatabricksDataClassificationCatalogConfigIncludedSchemas: dataDatabric
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksDataClassificationCatalogConfig.DataDatabricksDataClassificationCatalogConfigIncludedSchemas.property.names">names</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/data_classification_catalog_config#names DataDatabricksDataClassificationCatalogConfig#names}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksDataClassificationCatalogConfig.DataDatabricksDataClassificationCatalogConfigIncludedSchemas.property.names">names</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/data_classification_catalog_config#names DataDatabricksDataClassificationCatalogConfig#names}. |
 
 ---
 
@@ -835,7 +835,7 @@ public readonly names: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/data_classification_catalog_config#names DataDatabricksDataClassificationCatalogConfig#names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/data_classification_catalog_config#names DataDatabricksDataClassificationCatalogConfig#names}.
 
 ---
 
@@ -853,11 +853,11 @@ const dataDatabricksDataClassificationCatalogConfigProviderConfig: dataDatabrick
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksDataClassificationCatalogConfig.DataDatabricksDataClassificationCatalogConfigProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/data_classification_catalog_config#workspace_id DataDatabricksDataClassificationCatalogConfig#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksDataClassificationCatalogConfig.DataDatabricksDataClassificationCatalogConfigProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/data_classification_catalog_config#workspace_id DataDatabricksDataClassificationCatalogConfig#workspace_id}. |
 
 ---
 
-##### `workspaceId`<sup>Required</sup> <a name="workspaceId" id="@cdktn/provider-databricks.dataDatabricksDataClassificationCatalogConfig.DataDatabricksDataClassificationCatalogConfigProviderConfig.property.workspaceId"></a>
+##### `workspaceId`<sup>Optional</sup> <a name="workspaceId" id="@cdktn/provider-databricks.dataDatabricksDataClassificationCatalogConfig.DataDatabricksDataClassificationCatalogConfigProviderConfig.property.workspaceId"></a>
 
 ```typescript
 public readonly workspaceId: string;
@@ -865,7 +865,7 @@ public readonly workspaceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/data_classification_catalog_config#workspace_id DataDatabricksDataClassificationCatalogConfig#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/data_classification_catalog_config#workspace_id DataDatabricksDataClassificationCatalogConfig#workspace_id}.
 
 ---
 
@@ -1663,6 +1663,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksDataClassificationCatalogConfig.DataDatabricksDataClassificationCatalogConfigProviderConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksDataClassificationCatalogConfig.DataDatabricksDataClassificationCatalogConfigProviderConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksDataClassificationCatalogConfig.DataDatabricksDataClassificationCatalogConfigProviderConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksDataClassificationCatalogConfig.DataDatabricksDataClassificationCatalogConfigProviderConfigOutputReference.resetWorkspaceId">resetWorkspaceId</a></code> | *No description.* |
 
 ---
 
@@ -1815,6 +1816,12 @@ public toString(): string
 Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
+
+##### `resetWorkspaceId` <a name="resetWorkspaceId" id="@cdktn/provider-databricks.dataDatabricksDataClassificationCatalogConfig.DataDatabricksDataClassificationCatalogConfigProviderConfigOutputReference.resetWorkspaceId"></a>
+
+```typescript
+public resetWorkspaceId(): void
+```
 
 
 #### Properties <a name="Properties" id="Properties"></a>

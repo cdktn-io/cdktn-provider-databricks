@@ -4,7 +4,7 @@
 
 ### ExternalMetadata <a name="ExternalMetadata" id="@cdktn/provider-databricks.externalMetadata.ExternalMetadata"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/external_metadata databricks_external_metadata}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/external_metadata databricks_external_metadata}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.externalMetadata.ExternalMetadata.Initializer"></a>
 
@@ -44,15 +44,15 @@ externalMetadata.ExternalMetadata(
 | <code><a href="#@cdktn/provider-databricks.externalMetadata.ExternalMetadata.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.externalMetadata.ExternalMetadata.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.externalMetadata.ExternalMetadata.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.externalMetadata.ExternalMetadata.Initializer.parameter.entityType">entity_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/external_metadata#entity_type ExternalMetadata#entity_type}. |
-| <code><a href="#@cdktn/provider-databricks.externalMetadata.ExternalMetadata.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/external_metadata#name ExternalMetadata#name}. |
-| <code><a href="#@cdktn/provider-databricks.externalMetadata.ExternalMetadata.Initializer.parameter.systemType">system_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/external_metadata#system_type ExternalMetadata#system_type}. |
-| <code><a href="#@cdktn/provider-databricks.externalMetadata.ExternalMetadata.Initializer.parameter.columns">columns</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/external_metadata#columns ExternalMetadata#columns}. |
-| <code><a href="#@cdktn/provider-databricks.externalMetadata.ExternalMetadata.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/external_metadata#description ExternalMetadata#description}. |
-| <code><a href="#@cdktn/provider-databricks.externalMetadata.ExternalMetadata.Initializer.parameter.owner">owner</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/external_metadata#owner ExternalMetadata#owner}. |
-| <code><a href="#@cdktn/provider-databricks.externalMetadata.ExternalMetadata.Initializer.parameter.properties">properties</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/external_metadata#properties ExternalMetadata#properties}. |
-| <code><a href="#@cdktn/provider-databricks.externalMetadata.ExternalMetadata.Initializer.parameter.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.externalMetadata.ExternalMetadataProviderConfig">ExternalMetadataProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/external_metadata#provider_config ExternalMetadata#provider_config}. |
-| <code><a href="#@cdktn/provider-databricks.externalMetadata.ExternalMetadata.Initializer.parameter.url">url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/external_metadata#url ExternalMetadata#url}. |
+| <code><a href="#@cdktn/provider-databricks.externalMetadata.ExternalMetadata.Initializer.parameter.entityType">entity_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/external_metadata#entity_type ExternalMetadata#entity_type}. |
+| <code><a href="#@cdktn/provider-databricks.externalMetadata.ExternalMetadata.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/external_metadata#name ExternalMetadata#name}. |
+| <code><a href="#@cdktn/provider-databricks.externalMetadata.ExternalMetadata.Initializer.parameter.systemType">system_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/external_metadata#system_type ExternalMetadata#system_type}. |
+| <code><a href="#@cdktn/provider-databricks.externalMetadata.ExternalMetadata.Initializer.parameter.columns">columns</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/external_metadata#columns ExternalMetadata#columns}. |
+| <code><a href="#@cdktn/provider-databricks.externalMetadata.ExternalMetadata.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/external_metadata#description ExternalMetadata#description}. |
+| <code><a href="#@cdktn/provider-databricks.externalMetadata.ExternalMetadata.Initializer.parameter.owner">owner</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/external_metadata#owner ExternalMetadata#owner}. |
+| <code><a href="#@cdktn/provider-databricks.externalMetadata.ExternalMetadata.Initializer.parameter.properties">properties</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/external_metadata#properties ExternalMetadata#properties}. |
+| <code><a href="#@cdktn/provider-databricks.externalMetadata.ExternalMetadata.Initializer.parameter.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.externalMetadata.ExternalMetadataProviderConfig">ExternalMetadataProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/external_metadata#provider_config ExternalMetadata#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.externalMetadata.ExternalMetadata.Initializer.parameter.url">url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/external_metadata#url ExternalMetadata#url}. |
 
 ---
 
@@ -120,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/external_metadata#entity_type ExternalMetadata#entity_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/external_metadata#entity_type ExternalMetadata#entity_type}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/external_metadata#name ExternalMetadata#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/external_metadata#name ExternalMetadata#name}.
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/external_metadata#system_type ExternalMetadata#system_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/external_metadata#system_type ExternalMetadata#system_type}.
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/external_metadata#columns ExternalMetadata#columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/external_metadata#columns ExternalMetadata#columns}.
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/external_metadata#description ExternalMetadata#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/external_metadata#description ExternalMetadata#description}.
 
 ---
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/external_metadata#owner ExternalMetadata#owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/external_metadata#owner ExternalMetadata#owner}.
 
 ---
 
@@ -168,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/external_metadata#properties ExternalMetadata#properties}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/external_metadata#properties ExternalMetadata#properties}.
 
 ---
 
@@ -176,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* <a href="#@cdktn/provider-databricks.externalMetadata.ExternalMetadataProviderConfig">ExternalMetadataProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/external_metadata#provider_config ExternalMetadata#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/external_metadata#provider_config ExternalMetadata#provider_config}.
 
 ---
 
@@ -184,7 +184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/external_metadata#url ExternalMetadata#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/external_metadata#url ExternalMetadata#url}.
 
 ---
 
@@ -578,15 +578,15 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ```python
 def put_provider_config(
-  workspace_id: str
+  workspace_id: str = None
 ) -> None
 ```
 
-###### `workspace_id`<sup>Required</sup> <a name="workspace_id" id="@cdktn/provider-databricks.externalMetadata.ExternalMetadata.putProviderConfig.parameter.workspaceId"></a>
+###### `workspace_id`<sup>Optional</sup> <a name="workspace_id" id="@cdktn/provider-databricks.externalMetadata.ExternalMetadata.putProviderConfig.parameter.workspaceId"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/external_metadata#workspace_id ExternalMetadata#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/external_metadata#workspace_id ExternalMetadata#workspace_id}.
 
 ---
 
@@ -740,7 +740,7 @@ The construct id used in the generated config for the ExternalMetadata to import
 
 The id of the existing ExternalMetadata that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/external_metadata#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/external_metadata#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1237,15 +1237,15 @@ externalMetadata.ExternalMetadataConfig(
 | <code><a href="#@cdktn/provider-databricks.externalMetadata.ExternalMetadataConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.externalMetadata.ExternalMetadataConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.externalMetadata.ExternalMetadataConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.externalMetadata.ExternalMetadataConfig.property.entityType">entity_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/external_metadata#entity_type ExternalMetadata#entity_type}. |
-| <code><a href="#@cdktn/provider-databricks.externalMetadata.ExternalMetadataConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/external_metadata#name ExternalMetadata#name}. |
-| <code><a href="#@cdktn/provider-databricks.externalMetadata.ExternalMetadataConfig.property.systemType">system_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/external_metadata#system_type ExternalMetadata#system_type}. |
-| <code><a href="#@cdktn/provider-databricks.externalMetadata.ExternalMetadataConfig.property.columns">columns</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/external_metadata#columns ExternalMetadata#columns}. |
-| <code><a href="#@cdktn/provider-databricks.externalMetadata.ExternalMetadataConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/external_metadata#description ExternalMetadata#description}. |
-| <code><a href="#@cdktn/provider-databricks.externalMetadata.ExternalMetadataConfig.property.owner">owner</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/external_metadata#owner ExternalMetadata#owner}. |
-| <code><a href="#@cdktn/provider-databricks.externalMetadata.ExternalMetadataConfig.property.properties">properties</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/external_metadata#properties ExternalMetadata#properties}. |
-| <code><a href="#@cdktn/provider-databricks.externalMetadata.ExternalMetadataConfig.property.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.externalMetadata.ExternalMetadataProviderConfig">ExternalMetadataProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/external_metadata#provider_config ExternalMetadata#provider_config}. |
-| <code><a href="#@cdktn/provider-databricks.externalMetadata.ExternalMetadataConfig.property.url">url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/external_metadata#url ExternalMetadata#url}. |
+| <code><a href="#@cdktn/provider-databricks.externalMetadata.ExternalMetadataConfig.property.entityType">entity_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/external_metadata#entity_type ExternalMetadata#entity_type}. |
+| <code><a href="#@cdktn/provider-databricks.externalMetadata.ExternalMetadataConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/external_metadata#name ExternalMetadata#name}. |
+| <code><a href="#@cdktn/provider-databricks.externalMetadata.ExternalMetadataConfig.property.systemType">system_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/external_metadata#system_type ExternalMetadata#system_type}. |
+| <code><a href="#@cdktn/provider-databricks.externalMetadata.ExternalMetadataConfig.property.columns">columns</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/external_metadata#columns ExternalMetadata#columns}. |
+| <code><a href="#@cdktn/provider-databricks.externalMetadata.ExternalMetadataConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/external_metadata#description ExternalMetadata#description}. |
+| <code><a href="#@cdktn/provider-databricks.externalMetadata.ExternalMetadataConfig.property.owner">owner</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/external_metadata#owner ExternalMetadata#owner}. |
+| <code><a href="#@cdktn/provider-databricks.externalMetadata.ExternalMetadataConfig.property.properties">properties</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/external_metadata#properties ExternalMetadata#properties}. |
+| <code><a href="#@cdktn/provider-databricks.externalMetadata.ExternalMetadataConfig.property.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.externalMetadata.ExternalMetadataProviderConfig">ExternalMetadataProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/external_metadata#provider_config ExternalMetadata#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.externalMetadata.ExternalMetadataConfig.property.url">url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/external_metadata#url ExternalMetadata#url}. |
 
 ---
 
@@ -1327,7 +1327,7 @@ entity_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/external_metadata#entity_type ExternalMetadata#entity_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/external_metadata#entity_type ExternalMetadata#entity_type}.
 
 ---
 
@@ -1339,7 +1339,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/external_metadata#name ExternalMetadata#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/external_metadata#name ExternalMetadata#name}.
 
 ---
 
@@ -1351,7 +1351,7 @@ system_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/external_metadata#system_type ExternalMetadata#system_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/external_metadata#system_type ExternalMetadata#system_type}.
 
 ---
 
@@ -1363,7 +1363,7 @@ columns: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/external_metadata#columns ExternalMetadata#columns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/external_metadata#columns ExternalMetadata#columns}.
 
 ---
 
@@ -1375,7 +1375,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/external_metadata#description ExternalMetadata#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/external_metadata#description ExternalMetadata#description}.
 
 ---
 
@@ -1387,7 +1387,7 @@ owner: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/external_metadata#owner ExternalMetadata#owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/external_metadata#owner ExternalMetadata#owner}.
 
 ---
 
@@ -1399,7 +1399,7 @@ properties: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/external_metadata#properties ExternalMetadata#properties}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/external_metadata#properties ExternalMetadata#properties}.
 
 ---
 
@@ -1411,7 +1411,7 @@ provider_config: ExternalMetadataProviderConfig
 
 - *Type:* <a href="#@cdktn/provider-databricks.externalMetadata.ExternalMetadataProviderConfig">ExternalMetadataProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/external_metadata#provider_config ExternalMetadata#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/external_metadata#provider_config ExternalMetadata#provider_config}.
 
 ---
 
@@ -1423,7 +1423,7 @@ url: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/external_metadata#url ExternalMetadata#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/external_metadata#url ExternalMetadata#url}.
 
 ---
 
@@ -1435,7 +1435,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 from cdktn_provider_databricks import external_metadata
 
 externalMetadata.ExternalMetadataProviderConfig(
-  workspace_id: str
+  workspace_id: str = None
 )
 ```
 
@@ -1443,11 +1443,11 @@ externalMetadata.ExternalMetadataProviderConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.externalMetadata.ExternalMetadataProviderConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/external_metadata#workspace_id ExternalMetadata#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.externalMetadata.ExternalMetadataProviderConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/external_metadata#workspace_id ExternalMetadata#workspace_id}. |
 
 ---
 
-##### `workspace_id`<sup>Required</sup> <a name="workspace_id" id="@cdktn/provider-databricks.externalMetadata.ExternalMetadataProviderConfig.property.workspaceId"></a>
+##### `workspace_id`<sup>Optional</sup> <a name="workspace_id" id="@cdktn/provider-databricks.externalMetadata.ExternalMetadataProviderConfig.property.workspaceId"></a>
 
 ```python
 workspace_id: str
@@ -1455,7 +1455,7 @@ workspace_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/external_metadata#workspace_id ExternalMetadata#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/external_metadata#workspace_id ExternalMetadata#workspace_id}.
 
 ---
 
@@ -1514,6 +1514,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-databricks.externalMetadata.ExternalMetadataProviderConfigOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.externalMetadata.ExternalMetadataProviderConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-databricks.externalMetadata.ExternalMetadataProviderConfigOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.externalMetadata.ExternalMetadataProviderConfigOutputReference.resetWorkspaceId">reset_workspace_id</a></code> | *No description.* |
 
 ---
 
@@ -1688,6 +1689,12 @@ def to_string() -> str
 Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
+
+##### `reset_workspace_id` <a name="reset_workspace_id" id="@cdktn/provider-databricks.externalMetadata.ExternalMetadataProviderConfigOutputReference.resetWorkspaceId"></a>
+
+```python
+def reset_workspace_id() -> None
+```
 
 
 #### Properties <a name="Properties" id="Properties"></a>

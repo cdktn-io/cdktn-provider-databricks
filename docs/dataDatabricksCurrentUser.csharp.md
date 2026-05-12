@@ -4,7 +4,7 @@
 
 ### DataDatabricksCurrentUser <a name="DataDatabricksCurrentUser" id="@cdktn/provider-databricks.dataDatabricksCurrentUser.DataDatabricksCurrentUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/current_user databricks_current_user}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/current_user databricks_current_user}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksCurrentUser.DataDatabricksCurrentUser.Initializer"></a>
 
@@ -414,7 +414,7 @@ The construct id used in the generated config for the DataDatabricksCurrentUser 
 
 The id of the existing DataDatabricksCurrentUser that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/current_user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/current_user#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -739,7 +739,7 @@ new DataDatabricksCurrentUserConfig {
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksCurrentUser.DataDatabricksCurrentUserConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksCurrentUser.DataDatabricksCurrentUserConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksCurrentUser.DataDatabricksCurrentUserConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksCurrentUser.DataDatabricksCurrentUserConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/current_user#id DataDatabricksCurrentUser#id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksCurrentUser.DataDatabricksCurrentUserConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/current_user#id DataDatabricksCurrentUser#id}. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksCurrentUser.DataDatabricksCurrentUserConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksCurrentUser.DataDatabricksCurrentUserProviderConfig">DataDatabricksCurrentUserProviderConfig</a></code> | provider_config block. |
 
 ---
@@ -822,7 +822,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/current_user#id DataDatabricksCurrentUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/current_user#id DataDatabricksCurrentUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -839,7 +839,7 @@ public DataDatabricksCurrentUserProviderConfig ProviderConfig { get; set; }
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/current_user#provider_config DataDatabricksCurrentUser#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/current_user#provider_config DataDatabricksCurrentUser#provider_config}
 
 ---
 
@@ -851,7 +851,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 using Io.Cdktn.Providers.Databricks;
 
 new DataDatabricksCurrentUserProviderConfig {
-    string WorkspaceId
+    string WorkspaceId = null
 };
 ```
 
@@ -859,11 +859,11 @@ new DataDatabricksCurrentUserProviderConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksCurrentUser.DataDatabricksCurrentUserProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/current_user#workspace_id DataDatabricksCurrentUser#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksCurrentUser.DataDatabricksCurrentUserProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/current_user#workspace_id DataDatabricksCurrentUser#workspace_id}. |
 
 ---
 
-##### `WorkspaceId`<sup>Required</sup> <a name="WorkspaceId" id="@cdktn/provider-databricks.dataDatabricksCurrentUser.DataDatabricksCurrentUserProviderConfig.property.workspaceId"></a>
+##### `WorkspaceId`<sup>Optional</sup> <a name="WorkspaceId" id="@cdktn/provider-databricks.dataDatabricksCurrentUser.DataDatabricksCurrentUserProviderConfig.property.workspaceId"></a>
 
 ```csharp
 public string WorkspaceId { get; set; }
@@ -871,7 +871,7 @@ public string WorkspaceId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/current_user#workspace_id DataDatabricksCurrentUser#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/current_user#workspace_id DataDatabricksCurrentUser#workspace_id}.
 
 ---
 
@@ -927,6 +927,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksCurrentUser.DataDatabricksCurrentUserProviderConfigOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksCurrentUser.DataDatabricksCurrentUserProviderConfigOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksCurrentUser.DataDatabricksCurrentUserProviderConfigOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksCurrentUser.DataDatabricksCurrentUserProviderConfigOutputReference.resetWorkspaceId">ResetWorkspaceId</a></code> | *No description.* |
 
 ---
 
@@ -1079,6 +1080,12 @@ private string ToString()
 Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
+
+##### `ResetWorkspaceId` <a name="ResetWorkspaceId" id="@cdktn/provider-databricks.dataDatabricksCurrentUser.DataDatabricksCurrentUserProviderConfigOutputReference.resetWorkspaceId"></a>
+
+```csharp
+private void ResetWorkspaceId()
+```
 
 
 #### Properties <a name="Properties" id="Properties"></a>

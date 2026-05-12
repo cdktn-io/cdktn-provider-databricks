@@ -4,7 +4,7 @@
 
 ### DataDatabricksViews <a name="DataDatabricksViews" id="@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViews"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/views databricks_views}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/views databricks_views}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViews.Initializer"></a>
 
@@ -38,10 +38,10 @@ DataDatabricksViews.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViews.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViews.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViews.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViews.Initializer.parameter.catalogName">catalogName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/views#catalog_name DataDatabricksViews#catalog_name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViews.Initializer.parameter.schemaName">schemaName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/views#schema_name DataDatabricksViews#schema_name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViews.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/views#id DataDatabricksViews#id}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViews.Initializer.parameter.ids">ids</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/views#ids DataDatabricksViews#ids}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViews.Initializer.parameter.catalogName">catalogName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/views#catalog_name DataDatabricksViews#catalog_name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViews.Initializer.parameter.schemaName">schemaName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/views#schema_name DataDatabricksViews#schema_name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViews.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/views#id DataDatabricksViews#id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViews.Initializer.parameter.ids">ids</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/views#ids DataDatabricksViews#ids}. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViews.Initializer.parameter.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViewsProviderConfig">DataDatabricksViewsProviderConfig</a></code> | provider_config block. |
 
 ---
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/views#catalog_name DataDatabricksViews#catalog_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/views#catalog_name DataDatabricksViews#catalog_name}.
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/views#schema_name DataDatabricksViews#schema_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/views#schema_name DataDatabricksViews#schema_name}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/views#id DataDatabricksViews#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/views#id DataDatabricksViews#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -137,7 +137,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/views#ids DataDatabricksViews#ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/views#ids DataDatabricksViews#ids}.
 
 ---
 
@@ -147,7 +147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/views#provider_config DataDatabricksViews#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/views#provider_config DataDatabricksViews#provider_config}
 
 ---
 
@@ -526,7 +526,7 @@ The construct id used in the generated config for the DataDatabricksViews to imp
 
 The id of the existing DataDatabricksViews that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/views#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/views#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -843,10 +843,10 @@ DataDatabricksViewsConfig.builder()
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViewsConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViewsConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViewsConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViewsConfig.property.catalogName">catalogName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/views#catalog_name DataDatabricksViews#catalog_name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViewsConfig.property.schemaName">schemaName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/views#schema_name DataDatabricksViews#schema_name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViewsConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/views#id DataDatabricksViews#id}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViewsConfig.property.ids">ids</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/views#ids DataDatabricksViews#ids}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViewsConfig.property.catalogName">catalogName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/views#catalog_name DataDatabricksViews#catalog_name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViewsConfig.property.schemaName">schemaName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/views#schema_name DataDatabricksViews#schema_name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViewsConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/views#id DataDatabricksViews#id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViewsConfig.property.ids">ids</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/views#ids DataDatabricksViews#ids}. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViewsConfig.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViewsProviderConfig">DataDatabricksViewsProviderConfig</a></code> | provider_config block. |
 
 ---
@@ -929,7 +929,7 @@ public java.lang.String getCatalogName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/views#catalog_name DataDatabricksViews#catalog_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/views#catalog_name DataDatabricksViews#catalog_name}.
 
 ---
 
@@ -941,7 +941,7 @@ public java.lang.String getSchemaName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/views#schema_name DataDatabricksViews#schema_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/views#schema_name DataDatabricksViews#schema_name}.
 
 ---
 
@@ -953,7 +953,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/views#id DataDatabricksViews#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/views#id DataDatabricksViews#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -968,7 +968,7 @@ public java.util.List<java.lang.String> getIds();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/views#ids DataDatabricksViews#ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/views#ids DataDatabricksViews#ids}.
 
 ---
 
@@ -982,7 +982,7 @@ public DataDatabricksViewsProviderConfig getProviderConfig();
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/views#provider_config DataDatabricksViews#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/views#provider_config DataDatabricksViews#provider_config}
 
 ---
 
@@ -994,7 +994,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 import io.cdktn.providers.databricks.data_databricks_views.DataDatabricksViewsProviderConfig;
 
 DataDatabricksViewsProviderConfig.builder()
-    .workspaceId(java.lang.String)
+//  .workspaceId(java.lang.String)
     .build();
 ```
 
@@ -1002,11 +1002,11 @@ DataDatabricksViewsProviderConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViewsProviderConfig.property.workspaceId">workspaceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/views#workspace_id DataDatabricksViews#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViewsProviderConfig.property.workspaceId">workspaceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/views#workspace_id DataDatabricksViews#workspace_id}. |
 
 ---
 
-##### `workspaceId`<sup>Required</sup> <a name="workspaceId" id="@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViewsProviderConfig.property.workspaceId"></a>
+##### `workspaceId`<sup>Optional</sup> <a name="workspaceId" id="@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViewsProviderConfig.property.workspaceId"></a>
 
 ```java
 public java.lang.String getWorkspaceId();
@@ -1014,7 +1014,7 @@ public java.lang.String getWorkspaceId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/views#workspace_id DataDatabricksViews#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/views#workspace_id DataDatabricksViews#workspace_id}.
 
 ---
 
@@ -1070,6 +1070,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViewsProviderConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViewsProviderConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViewsProviderConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViewsProviderConfigOutputReference.resetWorkspaceId">resetWorkspaceId</a></code> | *No description.* |
 
 ---
 
@@ -1222,6 +1223,12 @@ public java.lang.String toString()
 Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
+
+##### `resetWorkspaceId` <a name="resetWorkspaceId" id="@cdktn/provider-databricks.dataDatabricksViews.DataDatabricksViewsProviderConfigOutputReference.resetWorkspaceId"></a>
+
+```java
+public void resetWorkspaceId()
+```
 
 
 #### Properties <a name="Properties" id="Properties"></a>

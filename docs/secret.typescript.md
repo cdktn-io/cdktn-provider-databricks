@@ -4,7 +4,7 @@
 
 ### Secret <a name="Secret" id="@cdktn/provider-databricks.secret.Secret"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/secret databricks_secret}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/secret databricks_secret}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.secret.Secret.Initializer"></a>
 
@@ -516,7 +516,7 @@ The construct id used in the generated config for the Secret to import.
 
 The id of the existing Secret that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/secret#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/secret#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -864,10 +864,10 @@ const secretConfig: secret.SecretConfig = { ... }
 | <code><a href="#@cdktn/provider-databricks.secret.SecretConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.secret.SecretConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.secret.SecretConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.secret.SecretConfig.property.key">key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/secret#key Secret#key}. |
-| <code><a href="#@cdktn/provider-databricks.secret.SecretConfig.property.scope">scope</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/secret#scope Secret#scope}. |
-| <code><a href="#@cdktn/provider-databricks.secret.SecretConfig.property.stringValue">stringValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/secret#string_value Secret#string_value}. |
-| <code><a href="#@cdktn/provider-databricks.secret.SecretConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/secret#id Secret#id}. |
+| <code><a href="#@cdktn/provider-databricks.secret.SecretConfig.property.key">key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/secret#key Secret#key}. |
+| <code><a href="#@cdktn/provider-databricks.secret.SecretConfig.property.scope">scope</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/secret#scope Secret#scope}. |
+| <code><a href="#@cdktn/provider-databricks.secret.SecretConfig.property.stringValue">stringValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/secret#string_value Secret#string_value}. |
+| <code><a href="#@cdktn/provider-databricks.secret.SecretConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/secret#id Secret#id}. |
 | <code><a href="#@cdktn/provider-databricks.secret.SecretConfig.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.secret.SecretProviderConfig">SecretProviderConfig</a></code> | provider_config block. |
 
 ---
@@ -950,7 +950,7 @@ public readonly key: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/secret#key Secret#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/secret#key Secret#key}.
 
 ---
 
@@ -962,7 +962,7 @@ public readonly scope: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/secret#scope Secret#scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/secret#scope Secret#scope}.
 
 ---
 
@@ -974,7 +974,7 @@ public readonly stringValue: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/secret#string_value Secret#string_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/secret#string_value Secret#string_value}.
 
 ---
 
@@ -986,7 +986,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/secret#id Secret#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/secret#id Secret#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1003,7 +1003,7 @@ public readonly providerConfig: SecretProviderConfig;
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/secret#provider_config Secret#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/secret#provider_config Secret#provider_config}
 
 ---
 
@@ -1021,11 +1021,11 @@ const secretProviderConfig: secret.SecretProviderConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.secret.SecretProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/secret#workspace_id Secret#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.secret.SecretProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/secret#workspace_id Secret#workspace_id}. |
 
 ---
 
-##### `workspaceId`<sup>Required</sup> <a name="workspaceId" id="@cdktn/provider-databricks.secret.SecretProviderConfig.property.workspaceId"></a>
+##### `workspaceId`<sup>Optional</sup> <a name="workspaceId" id="@cdktn/provider-databricks.secret.SecretProviderConfig.property.workspaceId"></a>
 
 ```typescript
 public readonly workspaceId: string;
@@ -1033,7 +1033,7 @@ public readonly workspaceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/secret#workspace_id Secret#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/secret#workspace_id Secret#workspace_id}.
 
 ---
 
@@ -1089,6 +1089,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-databricks.secret.SecretProviderConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.secret.SecretProviderConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-databricks.secret.SecretProviderConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.secret.SecretProviderConfigOutputReference.resetWorkspaceId">resetWorkspaceId</a></code> | *No description.* |
 
 ---
 
@@ -1241,6 +1242,12 @@ public toString(): string
 Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
+
+##### `resetWorkspaceId` <a name="resetWorkspaceId" id="@cdktn/provider-databricks.secret.SecretProviderConfigOutputReference.resetWorkspaceId"></a>
+
+```typescript
+public resetWorkspaceId(): void
+```
 
 
 #### Properties <a name="Properties" id="Properties"></a>

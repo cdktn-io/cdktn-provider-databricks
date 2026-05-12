@@ -4,7 +4,7 @@
 
 ### DisableLegacyFeaturesSetting <a name="DisableLegacyFeaturesSetting" id="@cdktn/provider-databricks.disableLegacyFeaturesSetting.DisableLegacyFeaturesSetting"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/disable_legacy_features_setting databricks_disable_legacy_features_setting}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/disable_legacy_features_setting databricks_disable_legacy_features_setting}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.disableLegacyFeaturesSetting.DisableLegacyFeaturesSetting.Initializer"></a>
 
@@ -543,7 +543,7 @@ The construct id used in the generated config for the DisableLegacyFeaturesSetti
 
 The id of the existing DisableLegacyFeaturesSetting that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/disable_legacy_features_setting#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/disable_legacy_features_setting#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -870,10 +870,10 @@ const disableLegacyFeaturesSettingConfig: disableLegacyFeaturesSetting.DisableLe
 | <code><a href="#@cdktn/provider-databricks.disableLegacyFeaturesSetting.DisableLegacyFeaturesSettingConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.disableLegacyFeaturesSetting.DisableLegacyFeaturesSettingConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.disableLegacyFeaturesSetting.DisableLegacyFeaturesSettingConfig.property.disableLegacyFeatures">disableLegacyFeatures</a></code> | <code><a href="#@cdktn/provider-databricks.disableLegacyFeaturesSetting.DisableLegacyFeaturesSettingDisableLegacyFeatures">DisableLegacyFeaturesSettingDisableLegacyFeatures</a></code> | disable_legacy_features block. |
-| <code><a href="#@cdktn/provider-databricks.disableLegacyFeaturesSetting.DisableLegacyFeaturesSettingConfig.property.etag">etag</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/disable_legacy_features_setting#etag DisableLegacyFeaturesSetting#etag}. |
-| <code><a href="#@cdktn/provider-databricks.disableLegacyFeaturesSetting.DisableLegacyFeaturesSettingConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/disable_legacy_features_setting#id DisableLegacyFeaturesSetting#id}. |
+| <code><a href="#@cdktn/provider-databricks.disableLegacyFeaturesSetting.DisableLegacyFeaturesSettingConfig.property.etag">etag</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/disable_legacy_features_setting#etag DisableLegacyFeaturesSetting#etag}. |
+| <code><a href="#@cdktn/provider-databricks.disableLegacyFeaturesSetting.DisableLegacyFeaturesSettingConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/disable_legacy_features_setting#id DisableLegacyFeaturesSetting#id}. |
 | <code><a href="#@cdktn/provider-databricks.disableLegacyFeaturesSetting.DisableLegacyFeaturesSettingConfig.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.disableLegacyFeaturesSetting.DisableLegacyFeaturesSettingProviderConfig">DisableLegacyFeaturesSettingProviderConfig</a></code> | provider_config block. |
-| <code><a href="#@cdktn/provider-databricks.disableLegacyFeaturesSetting.DisableLegacyFeaturesSettingConfig.property.settingName">settingName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/disable_legacy_features_setting#setting_name DisableLegacyFeaturesSetting#setting_name}. |
+| <code><a href="#@cdktn/provider-databricks.disableLegacyFeaturesSetting.DisableLegacyFeaturesSettingConfig.property.settingName">settingName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/disable_legacy_features_setting#setting_name DisableLegacyFeaturesSetting#setting_name}. |
 
 ---
 
@@ -957,7 +957,7 @@ public readonly disableLegacyFeatures: DisableLegacyFeaturesSettingDisableLegacy
 
 disable_legacy_features block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/disable_legacy_features_setting#disable_legacy_features DisableLegacyFeaturesSetting#disable_legacy_features}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/disable_legacy_features_setting#disable_legacy_features DisableLegacyFeaturesSetting#disable_legacy_features}
 
 ---
 
@@ -969,7 +969,7 @@ public readonly etag: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/disable_legacy_features_setting#etag DisableLegacyFeaturesSetting#etag}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/disable_legacy_features_setting#etag DisableLegacyFeaturesSetting#etag}.
 
 ---
 
@@ -981,7 +981,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/disable_legacy_features_setting#id DisableLegacyFeaturesSetting#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/disable_legacy_features_setting#id DisableLegacyFeaturesSetting#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -998,7 +998,7 @@ public readonly providerConfig: DisableLegacyFeaturesSettingProviderConfig;
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/disable_legacy_features_setting#provider_config DisableLegacyFeaturesSetting#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/disable_legacy_features_setting#provider_config DisableLegacyFeaturesSetting#provider_config}
 
 ---
 
@@ -1010,7 +1010,7 @@ public readonly settingName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/disable_legacy_features_setting#setting_name DisableLegacyFeaturesSetting#setting_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/disable_legacy_features_setting#setting_name DisableLegacyFeaturesSetting#setting_name}.
 
 ---
 
@@ -1028,7 +1028,7 @@ const disableLegacyFeaturesSettingDisableLegacyFeatures: disableLegacyFeaturesSe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.disableLegacyFeaturesSetting.DisableLegacyFeaturesSettingDisableLegacyFeatures.property.value">value</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/disable_legacy_features_setting#value DisableLegacyFeaturesSetting#value}. |
+| <code><a href="#@cdktn/provider-databricks.disableLegacyFeaturesSetting.DisableLegacyFeaturesSettingDisableLegacyFeatures.property.value">value</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/disable_legacy_features_setting#value DisableLegacyFeaturesSetting#value}. |
 
 ---
 
@@ -1040,7 +1040,7 @@ public readonly value: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/disable_legacy_features_setting#value DisableLegacyFeaturesSetting#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/disable_legacy_features_setting#value DisableLegacyFeaturesSetting#value}.
 
 ---
 
@@ -1058,11 +1058,11 @@ const disableLegacyFeaturesSettingProviderConfig: disableLegacyFeaturesSetting.D
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.disableLegacyFeaturesSetting.DisableLegacyFeaturesSettingProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/disable_legacy_features_setting#workspace_id DisableLegacyFeaturesSetting#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.disableLegacyFeaturesSetting.DisableLegacyFeaturesSettingProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/disable_legacy_features_setting#workspace_id DisableLegacyFeaturesSetting#workspace_id}. |
 
 ---
 
-##### `workspaceId`<sup>Required</sup> <a name="workspaceId" id="@cdktn/provider-databricks.disableLegacyFeaturesSetting.DisableLegacyFeaturesSettingProviderConfig.property.workspaceId"></a>
+##### `workspaceId`<sup>Optional</sup> <a name="workspaceId" id="@cdktn/provider-databricks.disableLegacyFeaturesSetting.DisableLegacyFeaturesSettingProviderConfig.property.workspaceId"></a>
 
 ```typescript
 public readonly workspaceId: string;
@@ -1070,7 +1070,7 @@ public readonly workspaceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/disable_legacy_features_setting#workspace_id DisableLegacyFeaturesSetting#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/disable_legacy_features_setting#workspace_id DisableLegacyFeaturesSetting#workspace_id}.
 
 ---
 
@@ -1397,6 +1397,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-databricks.disableLegacyFeaturesSetting.DisableLegacyFeaturesSettingProviderConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.disableLegacyFeaturesSetting.DisableLegacyFeaturesSettingProviderConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-databricks.disableLegacyFeaturesSetting.DisableLegacyFeaturesSettingProviderConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.disableLegacyFeaturesSetting.DisableLegacyFeaturesSettingProviderConfigOutputReference.resetWorkspaceId">resetWorkspaceId</a></code> | *No description.* |
 
 ---
 
@@ -1549,6 +1550,12 @@ public toString(): string
 Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
+
+##### `resetWorkspaceId` <a name="resetWorkspaceId" id="@cdktn/provider-databricks.disableLegacyFeaturesSetting.DisableLegacyFeaturesSettingProviderConfigOutputReference.resetWorkspaceId"></a>
+
+```typescript
+public resetWorkspaceId(): void
+```
 
 
 #### Properties <a name="Properties" id="Properties"></a>

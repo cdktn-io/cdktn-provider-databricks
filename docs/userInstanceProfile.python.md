@@ -4,7 +4,7 @@
 
 ### UserInstanceProfile <a name="UserInstanceProfile" id="@cdktn/provider-databricks.userInstanceProfile.UserInstanceProfile"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/user_instance_profile databricks_user_instance_profile}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/user_instance_profile databricks_user_instance_profile}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.userInstanceProfile.UserInstanceProfile.Initializer"></a>
 
@@ -40,10 +40,10 @@ userInstanceProfile.UserInstanceProfile(
 | <code><a href="#@cdktn/provider-databricks.userInstanceProfile.UserInstanceProfile.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.userInstanceProfile.UserInstanceProfile.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.userInstanceProfile.UserInstanceProfile.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.userInstanceProfile.UserInstanceProfile.Initializer.parameter.instanceProfileId">instance_profile_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/user_instance_profile#instance_profile_id UserInstanceProfile#instance_profile_id}. |
-| <code><a href="#@cdktn/provider-databricks.userInstanceProfile.UserInstanceProfile.Initializer.parameter.userId">user_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/user_instance_profile#user_id UserInstanceProfile#user_id}. |
+| <code><a href="#@cdktn/provider-databricks.userInstanceProfile.UserInstanceProfile.Initializer.parameter.instanceProfileId">instance_profile_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/user_instance_profile#instance_profile_id UserInstanceProfile#instance_profile_id}. |
+| <code><a href="#@cdktn/provider-databricks.userInstanceProfile.UserInstanceProfile.Initializer.parameter.userId">user_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/user_instance_profile#user_id UserInstanceProfile#user_id}. |
 | <code><a href="#@cdktn/provider-databricks.userInstanceProfile.UserInstanceProfile.Initializer.parameter.api">api</a></code> | <code>str</code> | Specifies whether to use account-level or workspace-level API. |
-| <code><a href="#@cdktn/provider-databricks.userInstanceProfile.UserInstanceProfile.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/user_instance_profile#id UserInstanceProfile#id}. |
+| <code><a href="#@cdktn/provider-databricks.userInstanceProfile.UserInstanceProfile.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/user_instance_profile#id UserInstanceProfile#id}. |
 | <code><a href="#@cdktn/provider-databricks.userInstanceProfile.UserInstanceProfile.Initializer.parameter.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.userInstanceProfile.UserInstanceProfileProviderConfig">UserInstanceProfileProviderConfig</a></code> | provider_config block. |
 
 ---
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/user_instance_profile#instance_profile_id UserInstanceProfile#instance_profile_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/user_instance_profile#instance_profile_id UserInstanceProfile#instance_profile_id}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/user_instance_profile#user_id UserInstanceProfile#user_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/user_instance_profile#user_id UserInstanceProfile#user_id}.
 
 ---
 
@@ -132,7 +132,7 @@ Specifies whether to use account-level or workspace-level API.
 
 Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/user_instance_profile#api UserInstanceProfile#api}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/user_instance_profile#api UserInstanceProfile#api}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/user_instance_profile#id UserInstanceProfile#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/user_instance_profile#id UserInstanceProfile#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -153,7 +153,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/user_instance_profile#provider_config UserInstanceProfile#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/user_instance_profile#provider_config UserInstanceProfile#provider_config}
 
 ---
 
@@ -544,15 +544,15 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ```python
 def put_provider_config(
-  workspace_id: str
+  workspace_id: str = None
 ) -> None
 ```
 
-###### `workspace_id`<sup>Required</sup> <a name="workspace_id" id="@cdktn/provider-databricks.userInstanceProfile.UserInstanceProfile.putProviderConfig.parameter.workspaceId"></a>
+###### `workspace_id`<sup>Optional</sup> <a name="workspace_id" id="@cdktn/provider-databricks.userInstanceProfile.UserInstanceProfile.putProviderConfig.parameter.workspaceId"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/user_instance_profile#workspace_id UserInstanceProfile#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/user_instance_profile#workspace_id UserInstanceProfile#workspace_id}.
 
 ---
 
@@ -688,7 +688,7 @@ The construct id used in the generated config for the UserInstanceProfile to imp
 
 The id of the existing UserInstanceProfile that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/user_instance_profile#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/user_instance_profile#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1027,10 +1027,10 @@ userInstanceProfile.UserInstanceProfileConfig(
 | <code><a href="#@cdktn/provider-databricks.userInstanceProfile.UserInstanceProfileConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.userInstanceProfile.UserInstanceProfileConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.userInstanceProfile.UserInstanceProfileConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.userInstanceProfile.UserInstanceProfileConfig.property.instanceProfileId">instance_profile_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/user_instance_profile#instance_profile_id UserInstanceProfile#instance_profile_id}. |
-| <code><a href="#@cdktn/provider-databricks.userInstanceProfile.UserInstanceProfileConfig.property.userId">user_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/user_instance_profile#user_id UserInstanceProfile#user_id}. |
+| <code><a href="#@cdktn/provider-databricks.userInstanceProfile.UserInstanceProfileConfig.property.instanceProfileId">instance_profile_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/user_instance_profile#instance_profile_id UserInstanceProfile#instance_profile_id}. |
+| <code><a href="#@cdktn/provider-databricks.userInstanceProfile.UserInstanceProfileConfig.property.userId">user_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/user_instance_profile#user_id UserInstanceProfile#user_id}. |
 | <code><a href="#@cdktn/provider-databricks.userInstanceProfile.UserInstanceProfileConfig.property.api">api</a></code> | <code>str</code> | Specifies whether to use account-level or workspace-level API. |
-| <code><a href="#@cdktn/provider-databricks.userInstanceProfile.UserInstanceProfileConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/user_instance_profile#id UserInstanceProfile#id}. |
+| <code><a href="#@cdktn/provider-databricks.userInstanceProfile.UserInstanceProfileConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/user_instance_profile#id UserInstanceProfile#id}. |
 | <code><a href="#@cdktn/provider-databricks.userInstanceProfile.UserInstanceProfileConfig.property.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.userInstanceProfile.UserInstanceProfileProviderConfig">UserInstanceProfileProviderConfig</a></code> | provider_config block. |
 
 ---
@@ -1113,7 +1113,7 @@ instance_profile_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/user_instance_profile#instance_profile_id UserInstanceProfile#instance_profile_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/user_instance_profile#instance_profile_id UserInstanceProfile#instance_profile_id}.
 
 ---
 
@@ -1125,7 +1125,7 @@ user_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/user_instance_profile#user_id UserInstanceProfile#user_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/user_instance_profile#user_id UserInstanceProfile#user_id}.
 
 ---
 
@@ -1141,7 +1141,7 @@ Specifies whether to use account-level or workspace-level API.
 
 Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/user_instance_profile#api UserInstanceProfile#api}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/user_instance_profile#api UserInstanceProfile#api}
 
 ---
 
@@ -1153,7 +1153,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/user_instance_profile#id UserInstanceProfile#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/user_instance_profile#id UserInstanceProfile#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1170,7 +1170,7 @@ provider_config: UserInstanceProfileProviderConfig
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/user_instance_profile#provider_config UserInstanceProfile#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/user_instance_profile#provider_config UserInstanceProfile#provider_config}
 
 ---
 
@@ -1182,7 +1182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 from cdktn_provider_databricks import user_instance_profile
 
 userInstanceProfile.UserInstanceProfileProviderConfig(
-  workspace_id: str
+  workspace_id: str = None
 )
 ```
 
@@ -1190,11 +1190,11 @@ userInstanceProfile.UserInstanceProfileProviderConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.userInstanceProfile.UserInstanceProfileProviderConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/user_instance_profile#workspace_id UserInstanceProfile#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.userInstanceProfile.UserInstanceProfileProviderConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/user_instance_profile#workspace_id UserInstanceProfile#workspace_id}. |
 
 ---
 
-##### `workspace_id`<sup>Required</sup> <a name="workspace_id" id="@cdktn/provider-databricks.userInstanceProfile.UserInstanceProfileProviderConfig.property.workspaceId"></a>
+##### `workspace_id`<sup>Optional</sup> <a name="workspace_id" id="@cdktn/provider-databricks.userInstanceProfile.UserInstanceProfileProviderConfig.property.workspaceId"></a>
 
 ```python
 workspace_id: str
@@ -1202,7 +1202,7 @@ workspace_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/user_instance_profile#workspace_id UserInstanceProfile#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/user_instance_profile#workspace_id UserInstanceProfile#workspace_id}.
 
 ---
 
@@ -1261,6 +1261,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-databricks.userInstanceProfile.UserInstanceProfileProviderConfigOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.userInstanceProfile.UserInstanceProfileProviderConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-databricks.userInstanceProfile.UserInstanceProfileProviderConfigOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.userInstanceProfile.UserInstanceProfileProviderConfigOutputReference.resetWorkspaceId">reset_workspace_id</a></code> | *No description.* |
 
 ---
 
@@ -1435,6 +1436,12 @@ def to_string() -> str
 Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
+
+##### `reset_workspace_id` <a name="reset_workspace_id" id="@cdktn/provider-databricks.userInstanceProfile.UserInstanceProfileProviderConfigOutputReference.resetWorkspaceId"></a>
+
+```python
+def reset_workspace_id() -> None
+```
 
 
 #### Properties <a name="Properties" id="Properties"></a>

@@ -4,7 +4,7 @@
 
 ### WorkspaceConf <a name="WorkspaceConf" id="@cdktn/provider-databricks.workspaceConf.WorkspaceConf"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/workspace_conf databricks_workspace_conf}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_conf databricks_workspace_conf}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.workspaceConf.WorkspaceConf.Initializer"></a>
 
@@ -38,8 +38,8 @@ workspaceConf.WorkspaceConf(
 | <code><a href="#@cdktn/provider-databricks.workspaceConf.WorkspaceConf.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceConf.WorkspaceConf.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceConf.WorkspaceConf.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.workspaceConf.WorkspaceConf.Initializer.parameter.customConfig">custom_config</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/workspace_conf#custom_config WorkspaceConf#custom_config}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceConf.WorkspaceConf.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/workspace_conf#id WorkspaceConf#id}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceConf.WorkspaceConf.Initializer.parameter.customConfig">custom_config</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_conf#custom_config WorkspaceConf#custom_config}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceConf.WorkspaceConf.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_conf#id WorkspaceConf#id}. |
 | <code><a href="#@cdktn/provider-databricks.workspaceConf.WorkspaceConf.Initializer.parameter.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceConf.WorkspaceConfProviderConfig">WorkspaceConfProviderConfig</a></code> | provider_config block. |
 
 ---
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/workspace_conf#custom_config WorkspaceConf#custom_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_conf#custom_config WorkspaceConf#custom_config}.
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/workspace_conf#id WorkspaceConf#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_conf#id WorkspaceConf#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -129,7 +129,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/workspace_conf#provider_config WorkspaceConf#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_conf#provider_config WorkspaceConf#provider_config}
 
 ---
 
@@ -520,15 +520,15 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ```python
 def put_provider_config(
-  workspace_id: str
+  workspace_id: str = None
 ) -> None
 ```
 
-###### `workspace_id`<sup>Required</sup> <a name="workspace_id" id="@cdktn/provider-databricks.workspaceConf.WorkspaceConf.putProviderConfig.parameter.workspaceId"></a>
+###### `workspace_id`<sup>Optional</sup> <a name="workspace_id" id="@cdktn/provider-databricks.workspaceConf.WorkspaceConf.putProviderConfig.parameter.workspaceId"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/workspace_conf#workspace_id WorkspaceConf#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_conf#workspace_id WorkspaceConf#workspace_id}.
 
 ---
 
@@ -664,7 +664,7 @@ The construct id used in the generated config for the WorkspaceConf to import.
 
 The id of the existing WorkspaceConf that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/workspace_conf#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_conf#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -957,8 +957,8 @@ workspaceConf.WorkspaceConfConfig(
 | <code><a href="#@cdktn/provider-databricks.workspaceConf.WorkspaceConfConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceConf.WorkspaceConfConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceConf.WorkspaceConfConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.workspaceConf.WorkspaceConfConfig.property.customConfig">custom_config</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/workspace_conf#custom_config WorkspaceConf#custom_config}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceConf.WorkspaceConfConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/workspace_conf#id WorkspaceConf#id}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceConf.WorkspaceConfConfig.property.customConfig">custom_config</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_conf#custom_config WorkspaceConf#custom_config}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceConf.WorkspaceConfConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_conf#id WorkspaceConf#id}. |
 | <code><a href="#@cdktn/provider-databricks.workspaceConf.WorkspaceConfConfig.property.providerConfig">provider_config</a></code> | <code><a href="#@cdktn/provider-databricks.workspaceConf.WorkspaceConfProviderConfig">WorkspaceConfProviderConfig</a></code> | provider_config block. |
 
 ---
@@ -1041,7 +1041,7 @@ custom_config: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/workspace_conf#custom_config WorkspaceConf#custom_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_conf#custom_config WorkspaceConf#custom_config}.
 
 ---
 
@@ -1053,7 +1053,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/workspace_conf#id WorkspaceConf#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_conf#id WorkspaceConf#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1070,7 +1070,7 @@ provider_config: WorkspaceConfProviderConfig
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/workspace_conf#provider_config WorkspaceConf#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_conf#provider_config WorkspaceConf#provider_config}
 
 ---
 
@@ -1082,7 +1082,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 from cdktn_provider_databricks import workspace_conf
 
 workspaceConf.WorkspaceConfProviderConfig(
-  workspace_id: str
+  workspace_id: str = None
 )
 ```
 
@@ -1090,11 +1090,11 @@ workspaceConf.WorkspaceConfProviderConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.workspaceConf.WorkspaceConfProviderConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/workspace_conf#workspace_id WorkspaceConf#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceConf.WorkspaceConfProviderConfig.property.workspaceId">workspace_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_conf#workspace_id WorkspaceConf#workspace_id}. |
 
 ---
 
-##### `workspace_id`<sup>Required</sup> <a name="workspace_id" id="@cdktn/provider-databricks.workspaceConf.WorkspaceConfProviderConfig.property.workspaceId"></a>
+##### `workspace_id`<sup>Optional</sup> <a name="workspace_id" id="@cdktn/provider-databricks.workspaceConf.WorkspaceConfProviderConfig.property.workspaceId"></a>
 
 ```python
 workspace_id: str
@@ -1102,7 +1102,7 @@ workspace_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/workspace_conf#workspace_id WorkspaceConf#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_conf#workspace_id WorkspaceConf#workspace_id}.
 
 ---
 
@@ -1161,6 +1161,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-databricks.workspaceConf.WorkspaceConfProviderConfigOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceConf.WorkspaceConfProviderConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-databricks.workspaceConf.WorkspaceConfProviderConfigOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.workspaceConf.WorkspaceConfProviderConfigOutputReference.resetWorkspaceId">reset_workspace_id</a></code> | *No description.* |
 
 ---
 
@@ -1335,6 +1336,12 @@ def to_string() -> str
 Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
+
+##### `reset_workspace_id` <a name="reset_workspace_id" id="@cdktn/provider-databricks.workspaceConf.WorkspaceConfProviderConfigOutputReference.resetWorkspaceId"></a>
+
+```python
+def reset_workspace_id() -> None
+```
 
 
 #### Properties <a name="Properties" id="Properties"></a>

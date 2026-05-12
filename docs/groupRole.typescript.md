@@ -4,7 +4,7 @@
 
 ### GroupRole <a name="GroupRole" id="@cdktn/provider-databricks.groupRole.GroupRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/group_role databricks_group_role}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/group_role databricks_group_role}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.groupRole.GroupRole.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the GroupRole to import.
 
 The id of the existing GroupRole that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/group_role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/group_role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -849,10 +849,10 @@ const groupRoleConfig: groupRole.GroupRoleConfig = { ... }
 | <code><a href="#@cdktn/provider-databricks.groupRole.GroupRoleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.groupRole.GroupRoleConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.groupRole.GroupRoleConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.groupRole.GroupRoleConfig.property.groupId">groupId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/group_role#group_id GroupRole#group_id}. |
-| <code><a href="#@cdktn/provider-databricks.groupRole.GroupRoleConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/group_role#role GroupRole#role}. |
+| <code><a href="#@cdktn/provider-databricks.groupRole.GroupRoleConfig.property.groupId">groupId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/group_role#group_id GroupRole#group_id}. |
+| <code><a href="#@cdktn/provider-databricks.groupRole.GroupRoleConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/group_role#role GroupRole#role}. |
 | <code><a href="#@cdktn/provider-databricks.groupRole.GroupRoleConfig.property.api">api</a></code> | <code>string</code> | Specifies whether to use account-level or workspace-level API. |
-| <code><a href="#@cdktn/provider-databricks.groupRole.GroupRoleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/group_role#id GroupRole#id}. |
+| <code><a href="#@cdktn/provider-databricks.groupRole.GroupRoleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/group_role#id GroupRole#id}. |
 | <code><a href="#@cdktn/provider-databricks.groupRole.GroupRoleConfig.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.groupRole.GroupRoleProviderConfig">GroupRoleProviderConfig</a></code> | provider_config block. |
 
 ---
@@ -935,7 +935,7 @@ public readonly groupId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/group_role#group_id GroupRole#group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/group_role#group_id GroupRole#group_id}.
 
 ---
 
@@ -947,7 +947,7 @@ public readonly role: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/group_role#role GroupRole#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/group_role#role GroupRole#role}.
 
 ---
 
@@ -963,7 +963,7 @@ Specifies whether to use account-level or workspace-level API.
 
 Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/group_role#api GroupRole#api}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/group_role#api GroupRole#api}
 
 ---
 
@@ -975,7 +975,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/group_role#id GroupRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/group_role#id GroupRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -992,7 +992,7 @@ public readonly providerConfig: GroupRoleProviderConfig;
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/group_role#provider_config GroupRole#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/group_role#provider_config GroupRole#provider_config}
 
 ---
 
@@ -1010,11 +1010,11 @@ const groupRoleProviderConfig: groupRole.GroupRoleProviderConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.groupRole.GroupRoleProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/group_role#workspace_id GroupRole#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.groupRole.GroupRoleProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/group_role#workspace_id GroupRole#workspace_id}. |
 
 ---
 
-##### `workspaceId`<sup>Required</sup> <a name="workspaceId" id="@cdktn/provider-databricks.groupRole.GroupRoleProviderConfig.property.workspaceId"></a>
+##### `workspaceId`<sup>Optional</sup> <a name="workspaceId" id="@cdktn/provider-databricks.groupRole.GroupRoleProviderConfig.property.workspaceId"></a>
 
 ```typescript
 public readonly workspaceId: string;
@@ -1022,7 +1022,7 @@ public readonly workspaceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/group_role#workspace_id GroupRole#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/group_role#workspace_id GroupRole#workspace_id}.
 
 ---
 
@@ -1078,6 +1078,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-databricks.groupRole.GroupRoleProviderConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.groupRole.GroupRoleProviderConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-databricks.groupRole.GroupRoleProviderConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.groupRole.GroupRoleProviderConfigOutputReference.resetWorkspaceId">resetWorkspaceId</a></code> | *No description.* |
 
 ---
 
@@ -1230,6 +1231,12 @@ public toString(): string
 Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
+
+##### `resetWorkspaceId` <a name="resetWorkspaceId" id="@cdktn/provider-databricks.groupRole.GroupRoleProviderConfigOutputReference.resetWorkspaceId"></a>
+
+```typescript
+public resetWorkspaceId(): void
+```
 
 
 #### Properties <a name="Properties" id="Properties"></a>

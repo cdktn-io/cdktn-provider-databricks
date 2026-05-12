@@ -4,7 +4,7 @@
 
 ### DataDatabricksKnowledgeAssistants <a name="DataDatabricksKnowledgeAssistants" id="@cdktn/provider-databricks.dataDatabricksKnowledgeAssistants.DataDatabricksKnowledgeAssistants"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/knowledge_assistants databricks_knowledge_assistants}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/knowledge_assistants databricks_knowledge_assistants}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksKnowledgeAssistants.DataDatabricksKnowledgeAssistants.Initializer"></a>
 
@@ -414,7 +414,7 @@ The construct id used in the generated config for the DataDatabricksKnowledgeAss
 
 The id of the existing DataDatabricksKnowledgeAssistants that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/knowledge_assistants#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/knowledge_assistants#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -663,8 +663,8 @@ const dataDatabricksKnowledgeAssistantsConfig: dataDatabricksKnowledgeAssistants
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksKnowledgeAssistants.DataDatabricksKnowledgeAssistantsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksKnowledgeAssistants.DataDatabricksKnowledgeAssistantsConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksKnowledgeAssistants.DataDatabricksKnowledgeAssistantsConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksKnowledgeAssistants.DataDatabricksKnowledgeAssistantsConfig.property.pageSize">pageSize</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/knowledge_assistants#page_size DataDatabricksKnowledgeAssistants#page_size}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksKnowledgeAssistants.DataDatabricksKnowledgeAssistantsConfig.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksKnowledgeAssistants.DataDatabricksKnowledgeAssistantsProviderConfig">DataDatabricksKnowledgeAssistantsProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/knowledge_assistants#provider_config DataDatabricksKnowledgeAssistants#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksKnowledgeAssistants.DataDatabricksKnowledgeAssistantsConfig.property.pageSize">pageSize</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/knowledge_assistants#page_size DataDatabricksKnowledgeAssistants#page_size}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksKnowledgeAssistants.DataDatabricksKnowledgeAssistantsConfig.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksKnowledgeAssistants.DataDatabricksKnowledgeAssistantsProviderConfig">DataDatabricksKnowledgeAssistantsProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/knowledge_assistants#provider_config DataDatabricksKnowledgeAssistants#provider_config}. |
 
 ---
 
@@ -746,7 +746,7 @@ public readonly pageSize: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/knowledge_assistants#page_size DataDatabricksKnowledgeAssistants#page_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/knowledge_assistants#page_size DataDatabricksKnowledgeAssistants#page_size}.
 
 ---
 
@@ -758,7 +758,7 @@ public readonly providerConfig: DataDatabricksKnowledgeAssistantsProviderConfig;
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksKnowledgeAssistants.DataDatabricksKnowledgeAssistantsProviderConfig">DataDatabricksKnowledgeAssistantsProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/knowledge_assistants#provider_config DataDatabricksKnowledgeAssistants#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/knowledge_assistants#provider_config DataDatabricksKnowledgeAssistants#provider_config}.
 
 ---
 
@@ -776,8 +776,8 @@ const dataDatabricksKnowledgeAssistantsKnowledgeAssistants: dataDatabricksKnowle
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksKnowledgeAssistants.DataDatabricksKnowledgeAssistantsKnowledgeAssistants.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/knowledge_assistants#name DataDatabricksKnowledgeAssistants#name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksKnowledgeAssistants.DataDatabricksKnowledgeAssistantsKnowledgeAssistants.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksKnowledgeAssistants.DataDatabricksKnowledgeAssistantsKnowledgeAssistantsProviderConfig">DataDatabricksKnowledgeAssistantsKnowledgeAssistantsProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/knowledge_assistants#provider_config DataDatabricksKnowledgeAssistants#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksKnowledgeAssistants.DataDatabricksKnowledgeAssistantsKnowledgeAssistants.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/knowledge_assistants#name DataDatabricksKnowledgeAssistants#name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksKnowledgeAssistants.DataDatabricksKnowledgeAssistantsKnowledgeAssistants.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksKnowledgeAssistants.DataDatabricksKnowledgeAssistantsKnowledgeAssistantsProviderConfig">DataDatabricksKnowledgeAssistantsKnowledgeAssistantsProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/knowledge_assistants#provider_config DataDatabricksKnowledgeAssistants#provider_config}. |
 
 ---
 
@@ -789,7 +789,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/knowledge_assistants#name DataDatabricksKnowledgeAssistants#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/knowledge_assistants#name DataDatabricksKnowledgeAssistants#name}.
 
 ---
 
@@ -801,7 +801,7 @@ public readonly providerConfig: DataDatabricksKnowledgeAssistantsKnowledgeAssist
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksKnowledgeAssistants.DataDatabricksKnowledgeAssistantsKnowledgeAssistantsProviderConfig">DataDatabricksKnowledgeAssistantsKnowledgeAssistantsProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/knowledge_assistants#provider_config DataDatabricksKnowledgeAssistants#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/knowledge_assistants#provider_config DataDatabricksKnowledgeAssistants#provider_config}.
 
 ---
 
@@ -819,11 +819,11 @@ const dataDatabricksKnowledgeAssistantsKnowledgeAssistantsProviderConfig: dataDa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksKnowledgeAssistants.DataDatabricksKnowledgeAssistantsKnowledgeAssistantsProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/knowledge_assistants#workspace_id DataDatabricksKnowledgeAssistants#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksKnowledgeAssistants.DataDatabricksKnowledgeAssistantsKnowledgeAssistantsProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/knowledge_assistants#workspace_id DataDatabricksKnowledgeAssistants#workspace_id}. |
 
 ---
 
-##### `workspaceId`<sup>Required</sup> <a name="workspaceId" id="@cdktn/provider-databricks.dataDatabricksKnowledgeAssistants.DataDatabricksKnowledgeAssistantsKnowledgeAssistantsProviderConfig.property.workspaceId"></a>
+##### `workspaceId`<sup>Optional</sup> <a name="workspaceId" id="@cdktn/provider-databricks.dataDatabricksKnowledgeAssistants.DataDatabricksKnowledgeAssistantsKnowledgeAssistantsProviderConfig.property.workspaceId"></a>
 
 ```typescript
 public readonly workspaceId: string;
@@ -831,7 +831,7 @@ public readonly workspaceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/knowledge_assistants#workspace_id DataDatabricksKnowledgeAssistants#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/knowledge_assistants#workspace_id DataDatabricksKnowledgeAssistants#workspace_id}.
 
 ---
 
@@ -849,11 +849,11 @@ const dataDatabricksKnowledgeAssistantsProviderConfig: dataDatabricksKnowledgeAs
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksKnowledgeAssistants.DataDatabricksKnowledgeAssistantsProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/knowledge_assistants#workspace_id DataDatabricksKnowledgeAssistants#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksKnowledgeAssistants.DataDatabricksKnowledgeAssistantsProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/knowledge_assistants#workspace_id DataDatabricksKnowledgeAssistants#workspace_id}. |
 
 ---
 
-##### `workspaceId`<sup>Required</sup> <a name="workspaceId" id="@cdktn/provider-databricks.dataDatabricksKnowledgeAssistants.DataDatabricksKnowledgeAssistantsProviderConfig.property.workspaceId"></a>
+##### `workspaceId`<sup>Optional</sup> <a name="workspaceId" id="@cdktn/provider-databricks.dataDatabricksKnowledgeAssistants.DataDatabricksKnowledgeAssistantsProviderConfig.property.workspaceId"></a>
 
 ```typescript
 public readonly workspaceId: string;
@@ -861,7 +861,7 @@ public readonly workspaceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/knowledge_assistants#workspace_id DataDatabricksKnowledgeAssistants#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/knowledge_assistants#workspace_id DataDatabricksKnowledgeAssistants#workspace_id}.
 
 ---
 
@@ -1518,6 +1518,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksKnowledgeAssistants.DataDatabricksKnowledgeAssistantsKnowledgeAssistantsProviderConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksKnowledgeAssistants.DataDatabricksKnowledgeAssistantsKnowledgeAssistantsProviderConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksKnowledgeAssistants.DataDatabricksKnowledgeAssistantsKnowledgeAssistantsProviderConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksKnowledgeAssistants.DataDatabricksKnowledgeAssistantsKnowledgeAssistantsProviderConfigOutputReference.resetWorkspaceId">resetWorkspaceId</a></code> | *No description.* |
 
 ---
 
@@ -1671,6 +1672,12 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `resetWorkspaceId` <a name="resetWorkspaceId" id="@cdktn/provider-databricks.dataDatabricksKnowledgeAssistants.DataDatabricksKnowledgeAssistantsKnowledgeAssistantsProviderConfigOutputReference.resetWorkspaceId"></a>
+
+```typescript
+public resetWorkspaceId(): void
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -1789,6 +1796,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksKnowledgeAssistants.DataDatabricksKnowledgeAssistantsProviderConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksKnowledgeAssistants.DataDatabricksKnowledgeAssistantsProviderConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksKnowledgeAssistants.DataDatabricksKnowledgeAssistantsProviderConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksKnowledgeAssistants.DataDatabricksKnowledgeAssistantsProviderConfigOutputReference.resetWorkspaceId">resetWorkspaceId</a></code> | *No description.* |
 
 ---
 
@@ -1941,6 +1949,12 @@ public toString(): string
 Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
+
+##### `resetWorkspaceId` <a name="resetWorkspaceId" id="@cdktn/provider-databricks.dataDatabricksKnowledgeAssistants.DataDatabricksKnowledgeAssistantsProviderConfigOutputReference.resetWorkspaceId"></a>
+
+```typescript
+public resetWorkspaceId(): void
+```
 
 
 #### Properties <a name="Properties" id="Properties"></a>

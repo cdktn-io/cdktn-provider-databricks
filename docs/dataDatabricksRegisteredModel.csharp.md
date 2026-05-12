@@ -4,7 +4,7 @@
 
 ### DataDatabricksRegisteredModel <a name="DataDatabricksRegisteredModel" id="@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/registered_model databricks_registered_model}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/registered_model databricks_registered_model}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModel.Initializer"></a>
 
@@ -441,7 +441,7 @@ The construct id used in the generated config for the DataDatabricksRegisteredMo
 
 The id of the existing DataDatabricksRegisteredModel that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/registered_model#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/registered_model#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -758,11 +758,11 @@ new DataDatabricksRegisteredModelConfig {
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelConfig.property.fullName">FullName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/registered_model#full_name DataDatabricksRegisteredModel#full_name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelConfig.property.includeAliases">IncludeAliases</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/registered_model#include_aliases DataDatabricksRegisteredModel#include_aliases}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelConfig.property.includeBrowse">IncludeBrowse</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/registered_model#include_browse DataDatabricksRegisteredModel#include_browse}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelConfig.property.modelInfo">ModelInfo</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelModelInfo">DataDatabricksRegisteredModelModelInfo</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/registered_model#model_info DataDatabricksRegisteredModel#model_info}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelProviderConfig">DataDatabricksRegisteredModelProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/registered_model#provider_config DataDatabricksRegisteredModel#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelConfig.property.fullName">FullName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/registered_model#full_name DataDatabricksRegisteredModel#full_name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelConfig.property.includeAliases">IncludeAliases</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/registered_model#include_aliases DataDatabricksRegisteredModel#include_aliases}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelConfig.property.includeBrowse">IncludeBrowse</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/registered_model#include_browse DataDatabricksRegisteredModel#include_browse}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelConfig.property.modelInfo">ModelInfo</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelModelInfo">DataDatabricksRegisteredModelModelInfo</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/registered_model#model_info DataDatabricksRegisteredModel#model_info}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelProviderConfig">DataDatabricksRegisteredModelProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/registered_model#provider_config DataDatabricksRegisteredModel#provider_config}. |
 
 ---
 
@@ -844,7 +844,7 @@ public string FullName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/registered_model#full_name DataDatabricksRegisteredModel#full_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/registered_model#full_name DataDatabricksRegisteredModel#full_name}.
 
 ---
 
@@ -856,7 +856,7 @@ public bool|IResolvable IncludeAliases { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/registered_model#include_aliases DataDatabricksRegisteredModel#include_aliases}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/registered_model#include_aliases DataDatabricksRegisteredModel#include_aliases}.
 
 ---
 
@@ -868,7 +868,7 @@ public bool|IResolvable IncludeBrowse { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/registered_model#include_browse DataDatabricksRegisteredModel#include_browse}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/registered_model#include_browse DataDatabricksRegisteredModel#include_browse}.
 
 ---
 
@@ -880,7 +880,7 @@ public IResolvable|DataDatabricksRegisteredModelModelInfo[] ModelInfo { get; set
 
 - *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelModelInfo">DataDatabricksRegisteredModelModelInfo</a>[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/registered_model#model_info DataDatabricksRegisteredModel#model_info}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/registered_model#model_info DataDatabricksRegisteredModel#model_info}.
 
 ---
 
@@ -892,7 +892,7 @@ public DataDatabricksRegisteredModelProviderConfig ProviderConfig { get; set; }
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelProviderConfig">DataDatabricksRegisteredModelProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/registered_model#provider_config DataDatabricksRegisteredModel#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/registered_model#provider_config DataDatabricksRegisteredModel#provider_config}.
 
 ---
 
@@ -925,20 +925,20 @@ new DataDatabricksRegisteredModelModelInfo {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelModelInfo.property.aliases">Aliases</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelModelInfoAliases">DataDatabricksRegisteredModelModelInfoAliases</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/registered_model#aliases DataDatabricksRegisteredModel#aliases}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelModelInfo.property.browseOnly">BrowseOnly</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/registered_model#browse_only DataDatabricksRegisteredModel#browse_only}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelModelInfo.property.catalogName">CatalogName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/registered_model#catalog_name DataDatabricksRegisteredModel#catalog_name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelModelInfo.property.comment">Comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/registered_model#comment DataDatabricksRegisteredModel#comment}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelModelInfo.property.createdAt">CreatedAt</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/registered_model#created_at DataDatabricksRegisteredModel#created_at}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelModelInfo.property.createdBy">CreatedBy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/registered_model#created_by DataDatabricksRegisteredModel#created_by}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelModelInfo.property.fullName">FullName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/registered_model#full_name DataDatabricksRegisteredModel#full_name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelModelInfo.property.metastoreId">MetastoreId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/registered_model#metastore_id DataDatabricksRegisteredModel#metastore_id}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelModelInfo.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/registered_model#name DataDatabricksRegisteredModel#name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelModelInfo.property.owner">Owner</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/registered_model#owner DataDatabricksRegisteredModel#owner}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelModelInfo.property.schemaName">SchemaName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/registered_model#schema_name DataDatabricksRegisteredModel#schema_name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelModelInfo.property.storageLocation">StorageLocation</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/registered_model#storage_location DataDatabricksRegisteredModel#storage_location}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelModelInfo.property.updatedAt">UpdatedAt</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/registered_model#updated_at DataDatabricksRegisteredModel#updated_at}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelModelInfo.property.updatedBy">UpdatedBy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/registered_model#updated_by DataDatabricksRegisteredModel#updated_by}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelModelInfo.property.aliases">Aliases</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelModelInfoAliases">DataDatabricksRegisteredModelModelInfoAliases</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/registered_model#aliases DataDatabricksRegisteredModel#aliases}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelModelInfo.property.browseOnly">BrowseOnly</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/registered_model#browse_only DataDatabricksRegisteredModel#browse_only}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelModelInfo.property.catalogName">CatalogName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/registered_model#catalog_name DataDatabricksRegisteredModel#catalog_name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelModelInfo.property.comment">Comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/registered_model#comment DataDatabricksRegisteredModel#comment}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelModelInfo.property.createdAt">CreatedAt</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/registered_model#created_at DataDatabricksRegisteredModel#created_at}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelModelInfo.property.createdBy">CreatedBy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/registered_model#created_by DataDatabricksRegisteredModel#created_by}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelModelInfo.property.fullName">FullName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/registered_model#full_name DataDatabricksRegisteredModel#full_name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelModelInfo.property.metastoreId">MetastoreId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/registered_model#metastore_id DataDatabricksRegisteredModel#metastore_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelModelInfo.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/registered_model#name DataDatabricksRegisteredModel#name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelModelInfo.property.owner">Owner</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/registered_model#owner DataDatabricksRegisteredModel#owner}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelModelInfo.property.schemaName">SchemaName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/registered_model#schema_name DataDatabricksRegisteredModel#schema_name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelModelInfo.property.storageLocation">StorageLocation</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/registered_model#storage_location DataDatabricksRegisteredModel#storage_location}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelModelInfo.property.updatedAt">UpdatedAt</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/registered_model#updated_at DataDatabricksRegisteredModel#updated_at}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelModelInfo.property.updatedBy">UpdatedBy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/registered_model#updated_by DataDatabricksRegisteredModel#updated_by}. |
 
 ---
 
@@ -950,7 +950,7 @@ public IResolvable|DataDatabricksRegisteredModelModelInfoAliases[] Aliases { get
 
 - *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelModelInfoAliases">DataDatabricksRegisteredModelModelInfoAliases</a>[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/registered_model#aliases DataDatabricksRegisteredModel#aliases}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/registered_model#aliases DataDatabricksRegisteredModel#aliases}.
 
 ---
 
@@ -962,7 +962,7 @@ public bool|IResolvable BrowseOnly { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/registered_model#browse_only DataDatabricksRegisteredModel#browse_only}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/registered_model#browse_only DataDatabricksRegisteredModel#browse_only}.
 
 ---
 
@@ -974,7 +974,7 @@ public string CatalogName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/registered_model#catalog_name DataDatabricksRegisteredModel#catalog_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/registered_model#catalog_name DataDatabricksRegisteredModel#catalog_name}.
 
 ---
 
@@ -986,7 +986,7 @@ public string Comment { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/registered_model#comment DataDatabricksRegisteredModel#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/registered_model#comment DataDatabricksRegisteredModel#comment}.
 
 ---
 
@@ -998,7 +998,7 @@ public double CreatedAt { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/registered_model#created_at DataDatabricksRegisteredModel#created_at}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/registered_model#created_at DataDatabricksRegisteredModel#created_at}.
 
 ---
 
@@ -1010,7 +1010,7 @@ public string CreatedBy { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/registered_model#created_by DataDatabricksRegisteredModel#created_by}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/registered_model#created_by DataDatabricksRegisteredModel#created_by}.
 
 ---
 
@@ -1022,7 +1022,7 @@ public string FullName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/registered_model#full_name DataDatabricksRegisteredModel#full_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/registered_model#full_name DataDatabricksRegisteredModel#full_name}.
 
 ---
 
@@ -1034,7 +1034,7 @@ public string MetastoreId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/registered_model#metastore_id DataDatabricksRegisteredModel#metastore_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/registered_model#metastore_id DataDatabricksRegisteredModel#metastore_id}.
 
 ---
 
@@ -1046,7 +1046,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/registered_model#name DataDatabricksRegisteredModel#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/registered_model#name DataDatabricksRegisteredModel#name}.
 
 ---
 
@@ -1058,7 +1058,7 @@ public string Owner { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/registered_model#owner DataDatabricksRegisteredModel#owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/registered_model#owner DataDatabricksRegisteredModel#owner}.
 
 ---
 
@@ -1070,7 +1070,7 @@ public string SchemaName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/registered_model#schema_name DataDatabricksRegisteredModel#schema_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/registered_model#schema_name DataDatabricksRegisteredModel#schema_name}.
 
 ---
 
@@ -1082,7 +1082,7 @@ public string StorageLocation { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/registered_model#storage_location DataDatabricksRegisteredModel#storage_location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/registered_model#storage_location DataDatabricksRegisteredModel#storage_location}.
 
 ---
 
@@ -1094,7 +1094,7 @@ public double UpdatedAt { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/registered_model#updated_at DataDatabricksRegisteredModel#updated_at}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/registered_model#updated_at DataDatabricksRegisteredModel#updated_at}.
 
 ---
 
@@ -1106,7 +1106,7 @@ public string UpdatedBy { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/registered_model#updated_by DataDatabricksRegisteredModel#updated_by}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/registered_model#updated_by DataDatabricksRegisteredModel#updated_by}.
 
 ---
 
@@ -1131,12 +1131,12 @@ new DataDatabricksRegisteredModelModelInfoAliases {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelModelInfoAliases.property.aliasName">AliasName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/registered_model#alias_name DataDatabricksRegisteredModel#alias_name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelModelInfoAliases.property.catalogName">CatalogName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/registered_model#catalog_name DataDatabricksRegisteredModel#catalog_name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelModelInfoAliases.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/registered_model#id DataDatabricksRegisteredModel#id}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelModelInfoAliases.property.modelName">ModelName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/registered_model#model_name DataDatabricksRegisteredModel#model_name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelModelInfoAliases.property.schemaName">SchemaName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/registered_model#schema_name DataDatabricksRegisteredModel#schema_name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelModelInfoAliases.property.versionNum">VersionNum</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/registered_model#version_num DataDatabricksRegisteredModel#version_num}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelModelInfoAliases.property.aliasName">AliasName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/registered_model#alias_name DataDatabricksRegisteredModel#alias_name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelModelInfoAliases.property.catalogName">CatalogName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/registered_model#catalog_name DataDatabricksRegisteredModel#catalog_name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelModelInfoAliases.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/registered_model#id DataDatabricksRegisteredModel#id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelModelInfoAliases.property.modelName">ModelName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/registered_model#model_name DataDatabricksRegisteredModel#model_name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelModelInfoAliases.property.schemaName">SchemaName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/registered_model#schema_name DataDatabricksRegisteredModel#schema_name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelModelInfoAliases.property.versionNum">VersionNum</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/registered_model#version_num DataDatabricksRegisteredModel#version_num}. |
 
 ---
 
@@ -1148,7 +1148,7 @@ public string AliasName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/registered_model#alias_name DataDatabricksRegisteredModel#alias_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/registered_model#alias_name DataDatabricksRegisteredModel#alias_name}.
 
 ---
 
@@ -1160,7 +1160,7 @@ public string CatalogName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/registered_model#catalog_name DataDatabricksRegisteredModel#catalog_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/registered_model#catalog_name DataDatabricksRegisteredModel#catalog_name}.
 
 ---
 
@@ -1172,7 +1172,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/registered_model#id DataDatabricksRegisteredModel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/registered_model#id DataDatabricksRegisteredModel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1187,7 +1187,7 @@ public string ModelName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/registered_model#model_name DataDatabricksRegisteredModel#model_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/registered_model#model_name DataDatabricksRegisteredModel#model_name}.
 
 ---
 
@@ -1199,7 +1199,7 @@ public string SchemaName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/registered_model#schema_name DataDatabricksRegisteredModel#schema_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/registered_model#schema_name DataDatabricksRegisteredModel#schema_name}.
 
 ---
 
@@ -1211,7 +1211,7 @@ public double VersionNum { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/registered_model#version_num DataDatabricksRegisteredModel#version_num}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/registered_model#version_num DataDatabricksRegisteredModel#version_num}.
 
 ---
 
@@ -1223,7 +1223,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 using Io.Cdktn.Providers.Databricks;
 
 new DataDatabricksRegisteredModelProviderConfig {
-    string WorkspaceId
+    string WorkspaceId = null
 };
 ```
 
@@ -1231,11 +1231,11 @@ new DataDatabricksRegisteredModelProviderConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/registered_model#workspace_id DataDatabricksRegisteredModel#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/registered_model#workspace_id DataDatabricksRegisteredModel#workspace_id}. |
 
 ---
 
-##### `WorkspaceId`<sup>Required</sup> <a name="WorkspaceId" id="@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelProviderConfig.property.workspaceId"></a>
+##### `WorkspaceId`<sup>Optional</sup> <a name="WorkspaceId" id="@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelProviderConfig.property.workspaceId"></a>
 
 ```csharp
 public string WorkspaceId { get; set; }
@@ -1243,7 +1243,7 @@ public string WorkspaceId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/registered_model#workspace_id DataDatabricksRegisteredModel#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/registered_model#workspace_id DataDatabricksRegisteredModel#workspace_id}.
 
 ---
 
@@ -2746,6 +2746,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelProviderConfigOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelProviderConfigOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelProviderConfigOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelProviderConfigOutputReference.resetWorkspaceId">ResetWorkspaceId</a></code> | *No description.* |
 
 ---
 
@@ -2898,6 +2899,12 @@ private string ToString()
 Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
+
+##### `ResetWorkspaceId` <a name="ResetWorkspaceId" id="@cdktn/provider-databricks.dataDatabricksRegisteredModel.DataDatabricksRegisteredModelProviderConfigOutputReference.resetWorkspaceId"></a>
+
+```csharp
+private void ResetWorkspaceId()
+```
 
 
 #### Properties <a name="Properties" id="Properties"></a>

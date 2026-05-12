@@ -4,7 +4,7 @@
 
 ### DataDatabricksMwsWorkspaces <a name="DataDatabricksMwsWorkspaces" id="@cdktn/provider-databricks.dataDatabricksMwsWorkspaces.DataDatabricksMwsWorkspaces"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/mws_workspaces databricks_mws_workspaces}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/mws_workspaces databricks_mws_workspaces}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksMwsWorkspaces.DataDatabricksMwsWorkspaces.Initializer"></a>
 
@@ -414,7 +414,7 @@ The construct id used in the generated config for the DataDatabricksMwsWorkspace
 
 The id of the existing DataDatabricksMwsWorkspaces that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/mws_workspaces#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/mws_workspaces#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -663,7 +663,7 @@ const dataDatabricksMwsWorkspacesConfig: dataDatabricksMwsWorkspaces.DataDatabri
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksMwsWorkspaces.DataDatabricksMwsWorkspacesConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksMwsWorkspaces.DataDatabricksMwsWorkspacesConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksMwsWorkspaces.DataDatabricksMwsWorkspacesConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksMwsWorkspaces.DataDatabricksMwsWorkspacesConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/mws_workspaces#id DataDatabricksMwsWorkspaces#id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMwsWorkspaces.DataDatabricksMwsWorkspacesConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/mws_workspaces#id DataDatabricksMwsWorkspaces#id}. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksMwsWorkspaces.DataDatabricksMwsWorkspacesConfig.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksMwsWorkspaces.DataDatabricksMwsWorkspacesProviderConfig">DataDatabricksMwsWorkspacesProviderConfig</a></code> | provider_config block. |
 
 ---
@@ -746,7 +746,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/mws_workspaces#id DataDatabricksMwsWorkspaces#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/mws_workspaces#id DataDatabricksMwsWorkspaces#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -763,7 +763,7 @@ public readonly providerConfig: DataDatabricksMwsWorkspacesProviderConfig;
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/mws_workspaces#provider_config DataDatabricksMwsWorkspaces#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/mws_workspaces#provider_config DataDatabricksMwsWorkspaces#provider_config}
 
 ---
 
@@ -781,11 +781,11 @@ const dataDatabricksMwsWorkspacesProviderConfig: dataDatabricksMwsWorkspaces.Dat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksMwsWorkspaces.DataDatabricksMwsWorkspacesProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/mws_workspaces#workspace_id DataDatabricksMwsWorkspaces#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMwsWorkspaces.DataDatabricksMwsWorkspacesProviderConfig.property.workspaceId">workspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/mws_workspaces#workspace_id DataDatabricksMwsWorkspaces#workspace_id}. |
 
 ---
 
-##### `workspaceId`<sup>Required</sup> <a name="workspaceId" id="@cdktn/provider-databricks.dataDatabricksMwsWorkspaces.DataDatabricksMwsWorkspacesProviderConfig.property.workspaceId"></a>
+##### `workspaceId`<sup>Optional</sup> <a name="workspaceId" id="@cdktn/provider-databricks.dataDatabricksMwsWorkspaces.DataDatabricksMwsWorkspacesProviderConfig.property.workspaceId"></a>
 
 ```typescript
 public readonly workspaceId: string;
@@ -793,7 +793,7 @@ public readonly workspaceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/mws_workspaces#workspace_id DataDatabricksMwsWorkspaces#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/mws_workspaces#workspace_id DataDatabricksMwsWorkspaces#workspace_id}.
 
 ---
 
@@ -849,6 +849,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksMwsWorkspaces.DataDatabricksMwsWorkspacesProviderConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksMwsWorkspaces.DataDatabricksMwsWorkspacesProviderConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksMwsWorkspaces.DataDatabricksMwsWorkspacesProviderConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksMwsWorkspaces.DataDatabricksMwsWorkspacesProviderConfigOutputReference.resetWorkspaceId">resetWorkspaceId</a></code> | *No description.* |
 
 ---
 
@@ -1001,6 +1002,12 @@ public toString(): string
 Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
+
+##### `resetWorkspaceId` <a name="resetWorkspaceId" id="@cdktn/provider-databricks.dataDatabricksMwsWorkspaces.DataDatabricksMwsWorkspacesProviderConfigOutputReference.resetWorkspaceId"></a>
+
+```typescript
+public resetWorkspaceId(): void
+```
 
 
 #### Properties <a name="Properties" id="Properties"></a>

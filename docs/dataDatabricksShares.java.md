@@ -4,7 +4,7 @@
 
 ### DataDatabricksShares <a name="DataDatabricksShares" id="@cdktn/provider-databricks.dataDatabricksShares.DataDatabricksShares"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/shares databricks_shares}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/shares databricks_shares}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksShares.DataDatabricksShares.Initializer"></a>
 
@@ -35,8 +35,8 @@ DataDatabricksShares.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksShares.DataDatabricksShares.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksShares.DataDatabricksShares.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksShares.DataDatabricksShares.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksShares.DataDatabricksShares.Initializer.parameter.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksShares.DataDatabricksSharesProviderConfig">DataDatabricksSharesProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/shares#provider_config DataDatabricksShares#provider_config}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksShares.DataDatabricksShares.Initializer.parameter.shares">shares</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/shares#shares DataDatabricksShares#shares}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksShares.DataDatabricksShares.Initializer.parameter.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksShares.DataDatabricksSharesProviderConfig">DataDatabricksSharesProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/shares#provider_config DataDatabricksShares#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksShares.DataDatabricksShares.Initializer.parameter.shares">shares</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/shares#shares DataDatabricksShares#shares}. |
 
 ---
 
@@ -104,7 +104,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksShares.DataDatabricksSharesProviderConfig">DataDatabricksSharesProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/shares#provider_config DataDatabricksShares#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/shares#provider_config DataDatabricksShares#provider_config}.
 
 ---
 
@@ -112,7 +112,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/shares#shares DataDatabricksShares#shares}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/shares#shares DataDatabricksShares#shares}.
 
 ---
 
@@ -484,7 +484,7 @@ The construct id used in the generated config for the DataDatabricksShares to im
 
 The id of the existing DataDatabricksShares that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/shares#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/shares#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -732,8 +732,8 @@ DataDatabricksSharesConfig.builder()
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksShares.DataDatabricksSharesConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksShares.DataDatabricksSharesConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksShares.DataDatabricksSharesConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksShares.DataDatabricksSharesConfig.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksShares.DataDatabricksSharesProviderConfig">DataDatabricksSharesProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/shares#provider_config DataDatabricksShares#provider_config}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksShares.DataDatabricksSharesConfig.property.shares">shares</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/shares#shares DataDatabricksShares#shares}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksShares.DataDatabricksSharesConfig.property.providerConfig">providerConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksShares.DataDatabricksSharesProviderConfig">DataDatabricksSharesProviderConfig</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/shares#provider_config DataDatabricksShares#provider_config}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksShares.DataDatabricksSharesConfig.property.shares">shares</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/shares#shares DataDatabricksShares#shares}. |
 
 ---
 
@@ -815,7 +815,7 @@ public DataDatabricksSharesProviderConfig getProviderConfig();
 
 - *Type:* <a href="#@cdktn/provider-databricks.dataDatabricksShares.DataDatabricksSharesProviderConfig">DataDatabricksSharesProviderConfig</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/shares#provider_config DataDatabricksShares#provider_config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/shares#provider_config DataDatabricksShares#provider_config}.
 
 ---
 
@@ -827,7 +827,7 @@ public java.util.List<java.lang.String> getShares();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/shares#shares DataDatabricksShares#shares}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/shares#shares DataDatabricksShares#shares}.
 
 ---
 
@@ -839,7 +839,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 import io.cdktn.providers.databricks.data_databricks_shares.DataDatabricksSharesProviderConfig;
 
 DataDatabricksSharesProviderConfig.builder()
-    .workspaceId(java.lang.String)
+//  .workspaceId(java.lang.String)
     .build();
 ```
 
@@ -847,11 +847,11 @@ DataDatabricksSharesProviderConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksShares.DataDatabricksSharesProviderConfig.property.workspaceId">workspaceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/shares#workspace_id DataDatabricksShares#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksShares.DataDatabricksSharesProviderConfig.property.workspaceId">workspaceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/shares#workspace_id DataDatabricksShares#workspace_id}. |
 
 ---
 
-##### `workspaceId`<sup>Required</sup> <a name="workspaceId" id="@cdktn/provider-databricks.dataDatabricksShares.DataDatabricksSharesProviderConfig.property.workspaceId"></a>
+##### `workspaceId`<sup>Optional</sup> <a name="workspaceId" id="@cdktn/provider-databricks.dataDatabricksShares.DataDatabricksSharesProviderConfig.property.workspaceId"></a>
 
 ```java
 public java.lang.String getWorkspaceId();
@@ -859,7 +859,7 @@ public java.lang.String getWorkspaceId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/shares#workspace_id DataDatabricksShares#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/shares#workspace_id DataDatabricksShares#workspace_id}.
 
 ---
 
@@ -915,6 +915,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksShares.DataDatabricksSharesProviderConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksShares.DataDatabricksSharesProviderConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksShares.DataDatabricksSharesProviderConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksShares.DataDatabricksSharesProviderConfigOutputReference.resetWorkspaceId">resetWorkspaceId</a></code> | *No description.* |
 
 ---
 
@@ -1067,6 +1068,12 @@ public java.lang.String toString()
 Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
+
+##### `resetWorkspaceId` <a name="resetWorkspaceId" id="@cdktn/provider-databricks.dataDatabricksShares.DataDatabricksSharesProviderConfigOutputReference.resetWorkspaceId"></a>
+
+```java
+public void resetWorkspaceId()
+```
 
 
 #### Properties <a name="Properties" id="Properties"></a>

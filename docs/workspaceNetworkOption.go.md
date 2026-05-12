@@ -4,7 +4,7 @@
 
 ### WorkspaceNetworkOption <a name="WorkspaceNetworkOption" id="@cdktn/provider-databricks.workspaceNetworkOption.WorkspaceNetworkOption"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/workspace_network_option databricks_workspace_network_option}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_network_option databricks_workspace_network_option}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.workspaceNetworkOption.WorkspaceNetworkOption.Initializer"></a>
 
@@ -503,7 +503,7 @@ The construct id used in the generated config for the WorkspaceNetworkOption to 
 
 The id of the existing WorkspaceNetworkOption that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/workspace_network_option#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_network_option#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -773,8 +773,8 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/workspac
 | <code><a href="#@cdktn/provider-databricks.workspaceNetworkOption.WorkspaceNetworkOptionConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceNetworkOption.WorkspaceNetworkOptionConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.workspaceNetworkOption.WorkspaceNetworkOptionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.workspaceNetworkOption.WorkspaceNetworkOptionConfig.property.networkPolicyId">NetworkPolicyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/workspace_network_option#network_policy_id WorkspaceNetworkOption#network_policy_id}. |
-| <code><a href="#@cdktn/provider-databricks.workspaceNetworkOption.WorkspaceNetworkOptionConfig.property.workspaceId">WorkspaceId</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/workspace_network_option#workspace_id WorkspaceNetworkOption#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceNetworkOption.WorkspaceNetworkOptionConfig.property.networkPolicyId">NetworkPolicyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_network_option#network_policy_id WorkspaceNetworkOption#network_policy_id}. |
+| <code><a href="#@cdktn/provider-databricks.workspaceNetworkOption.WorkspaceNetworkOptionConfig.property.workspaceId">WorkspaceId</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_network_option#workspace_id WorkspaceNetworkOption#workspace_id}. |
 
 ---
 
@@ -856,7 +856,7 @@ NetworkPolicyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/workspace_network_option#network_policy_id WorkspaceNetworkOption#network_policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_network_option#network_policy_id WorkspaceNetworkOption#network_policy_id}.
 
 ---
 
@@ -868,7 +868,7 @@ WorkspaceId *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/workspace_network_option#workspace_id WorkspaceNetworkOption#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/workspace_network_option#workspace_id WorkspaceNetworkOption#workspace_id}.
 
 ---
 

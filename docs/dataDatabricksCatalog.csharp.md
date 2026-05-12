@@ -4,7 +4,7 @@
 
 ### DataDatabricksCatalog <a name="DataDatabricksCatalog" id="@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalog"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog databricks_catalog}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog databricks_catalog}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalog.Initializer"></a>
 
@@ -434,7 +434,7 @@ The construct id used in the generated config for the DataDatabricksCatalog to i
 
 The id of the existing DataDatabricksCatalog that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -734,30 +734,30 @@ new DataDatabricksCatalogCatalogInfo {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfo.property.browseOnly">BrowseOnly</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#browse_only DataDatabricksCatalog#browse_only}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfo.property.catalogType">CatalogType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#catalog_type DataDatabricksCatalog#catalog_type}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfo.property.comment">Comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#comment DataDatabricksCatalog#comment}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfo.property.connectionName">ConnectionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#connection_name DataDatabricksCatalog#connection_name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfo.property.createdAt">CreatedAt</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#created_at DataDatabricksCatalog#created_at}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfo.property.createdBy">CreatedBy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#created_by DataDatabricksCatalog#created_by}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfo.property.browseOnly">BrowseOnly</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#browse_only DataDatabricksCatalog#browse_only}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfo.property.catalogType">CatalogType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#catalog_type DataDatabricksCatalog#catalog_type}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfo.property.comment">Comment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#comment DataDatabricksCatalog#comment}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfo.property.connectionName">ConnectionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#connection_name DataDatabricksCatalog#connection_name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfo.property.createdAt">CreatedAt</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#created_at DataDatabricksCatalog#created_at}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfo.property.createdBy">CreatedBy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#created_by DataDatabricksCatalog#created_by}. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfo.property.effectivePredictiveOptimizationFlag">EffectivePredictiveOptimizationFlag</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfoEffectivePredictiveOptimizationFlag">DataDatabricksCatalogCatalogInfoEffectivePredictiveOptimizationFlag</a></code> | effective_predictive_optimization_flag block. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfo.property.enablePredictiveOptimization">EnablePredictiveOptimization</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#enable_predictive_optimization DataDatabricksCatalog#enable_predictive_optimization}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfo.property.fullName">FullName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#full_name DataDatabricksCatalog#full_name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfo.property.isolationMode">IsolationMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#isolation_mode DataDatabricksCatalog#isolation_mode}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfo.property.enablePredictiveOptimization">EnablePredictiveOptimization</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#enable_predictive_optimization DataDatabricksCatalog#enable_predictive_optimization}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfo.property.fullName">FullName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#full_name DataDatabricksCatalog#full_name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfo.property.isolationMode">IsolationMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#isolation_mode DataDatabricksCatalog#isolation_mode}. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfo.property.managedEncryptionSettings">ManagedEncryptionSettings</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfoManagedEncryptionSettings">DataDatabricksCatalogCatalogInfoManagedEncryptionSettings</a></code> | managed_encryption_settings block. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfo.property.metastoreId">MetastoreId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#metastore_id DataDatabricksCatalog#metastore_id}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfo.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#name DataDatabricksCatalog#name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfo.property.options">Options</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#options DataDatabricksCatalog#options}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfo.property.owner">Owner</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#owner DataDatabricksCatalog#owner}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfo.property.properties">Properties</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#properties DataDatabricksCatalog#properties}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfo.property.providerName">ProviderName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#provider_name DataDatabricksCatalog#provider_name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfo.property.metastoreId">MetastoreId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#metastore_id DataDatabricksCatalog#metastore_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfo.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#name DataDatabricksCatalog#name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfo.property.options">Options</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#options DataDatabricksCatalog#options}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfo.property.owner">Owner</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#owner DataDatabricksCatalog#owner}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfo.property.properties">Properties</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#properties DataDatabricksCatalog#properties}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfo.property.providerName">ProviderName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#provider_name DataDatabricksCatalog#provider_name}. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfo.property.provisioningInfo">ProvisioningInfo</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfoProvisioningInfo">DataDatabricksCatalogCatalogInfoProvisioningInfo</a></code> | provisioning_info block. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfo.property.securableType">SecurableType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#securable_type DataDatabricksCatalog#securable_type}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfo.property.shareName">ShareName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#share_name DataDatabricksCatalog#share_name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfo.property.storageLocation">StorageLocation</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#storage_location DataDatabricksCatalog#storage_location}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfo.property.storageRoot">StorageRoot</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#storage_root DataDatabricksCatalog#storage_root}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfo.property.updatedAt">UpdatedAt</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#updated_at DataDatabricksCatalog#updated_at}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfo.property.updatedBy">UpdatedBy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#updated_by DataDatabricksCatalog#updated_by}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfo.property.securableType">SecurableType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#securable_type DataDatabricksCatalog#securable_type}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfo.property.shareName">ShareName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#share_name DataDatabricksCatalog#share_name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfo.property.storageLocation">StorageLocation</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#storage_location DataDatabricksCatalog#storage_location}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfo.property.storageRoot">StorageRoot</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#storage_root DataDatabricksCatalog#storage_root}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfo.property.updatedAt">UpdatedAt</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#updated_at DataDatabricksCatalog#updated_at}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfo.property.updatedBy">UpdatedBy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#updated_by DataDatabricksCatalog#updated_by}. |
 
 ---
 
@@ -769,7 +769,7 @@ public bool|IResolvable BrowseOnly { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#browse_only DataDatabricksCatalog#browse_only}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#browse_only DataDatabricksCatalog#browse_only}.
 
 ---
 
@@ -781,7 +781,7 @@ public string CatalogType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#catalog_type DataDatabricksCatalog#catalog_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#catalog_type DataDatabricksCatalog#catalog_type}.
 
 ---
 
@@ -793,7 +793,7 @@ public string Comment { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#comment DataDatabricksCatalog#comment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#comment DataDatabricksCatalog#comment}.
 
 ---
 
@@ -805,7 +805,7 @@ public string ConnectionName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#connection_name DataDatabricksCatalog#connection_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#connection_name DataDatabricksCatalog#connection_name}.
 
 ---
 
@@ -817,7 +817,7 @@ public double CreatedAt { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#created_at DataDatabricksCatalog#created_at}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#created_at DataDatabricksCatalog#created_at}.
 
 ---
 
@@ -829,7 +829,7 @@ public string CreatedBy { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#created_by DataDatabricksCatalog#created_by}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#created_by DataDatabricksCatalog#created_by}.
 
 ---
 
@@ -843,7 +843,7 @@ public DataDatabricksCatalogCatalogInfoEffectivePredictiveOptimizationFlag Effec
 
 effective_predictive_optimization_flag block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#effective_predictive_optimization_flag DataDatabricksCatalog#effective_predictive_optimization_flag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#effective_predictive_optimization_flag DataDatabricksCatalog#effective_predictive_optimization_flag}
 
 ---
 
@@ -855,7 +855,7 @@ public string EnablePredictiveOptimization { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#enable_predictive_optimization DataDatabricksCatalog#enable_predictive_optimization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#enable_predictive_optimization DataDatabricksCatalog#enable_predictive_optimization}.
 
 ---
 
@@ -867,7 +867,7 @@ public string FullName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#full_name DataDatabricksCatalog#full_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#full_name DataDatabricksCatalog#full_name}.
 
 ---
 
@@ -879,7 +879,7 @@ public string IsolationMode { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#isolation_mode DataDatabricksCatalog#isolation_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#isolation_mode DataDatabricksCatalog#isolation_mode}.
 
 ---
 
@@ -893,7 +893,7 @@ public DataDatabricksCatalogCatalogInfoManagedEncryptionSettings ManagedEncrypti
 
 managed_encryption_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#managed_encryption_settings DataDatabricksCatalog#managed_encryption_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#managed_encryption_settings DataDatabricksCatalog#managed_encryption_settings}
 
 ---
 
@@ -905,7 +905,7 @@ public string MetastoreId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#metastore_id DataDatabricksCatalog#metastore_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#metastore_id DataDatabricksCatalog#metastore_id}.
 
 ---
 
@@ -917,7 +917,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#name DataDatabricksCatalog#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#name DataDatabricksCatalog#name}.
 
 ---
 
@@ -929,7 +929,7 @@ public System.Collections.Generic.IDictionary<string, string> Options { get; set
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#options DataDatabricksCatalog#options}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#options DataDatabricksCatalog#options}.
 
 ---
 
@@ -941,7 +941,7 @@ public string Owner { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#owner DataDatabricksCatalog#owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#owner DataDatabricksCatalog#owner}.
 
 ---
 
@@ -953,7 +953,7 @@ public System.Collections.Generic.IDictionary<string, string> Properties { get; 
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#properties DataDatabricksCatalog#properties}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#properties DataDatabricksCatalog#properties}.
 
 ---
 
@@ -965,7 +965,7 @@ public string ProviderName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#provider_name DataDatabricksCatalog#provider_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#provider_name DataDatabricksCatalog#provider_name}.
 
 ---
 
@@ -979,7 +979,7 @@ public DataDatabricksCatalogCatalogInfoProvisioningInfo ProvisioningInfo { get; 
 
 provisioning_info block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#provisioning_info DataDatabricksCatalog#provisioning_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#provisioning_info DataDatabricksCatalog#provisioning_info}
 
 ---
 
@@ -991,7 +991,7 @@ public string SecurableType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#securable_type DataDatabricksCatalog#securable_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#securable_type DataDatabricksCatalog#securable_type}.
 
 ---
 
@@ -1003,7 +1003,7 @@ public string ShareName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#share_name DataDatabricksCatalog#share_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#share_name DataDatabricksCatalog#share_name}.
 
 ---
 
@@ -1015,7 +1015,7 @@ public string StorageLocation { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#storage_location DataDatabricksCatalog#storage_location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#storage_location DataDatabricksCatalog#storage_location}.
 
 ---
 
@@ -1027,7 +1027,7 @@ public string StorageRoot { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#storage_root DataDatabricksCatalog#storage_root}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#storage_root DataDatabricksCatalog#storage_root}.
 
 ---
 
@@ -1039,7 +1039,7 @@ public double UpdatedAt { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#updated_at DataDatabricksCatalog#updated_at}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#updated_at DataDatabricksCatalog#updated_at}.
 
 ---
 
@@ -1051,7 +1051,7 @@ public string UpdatedBy { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#updated_by DataDatabricksCatalog#updated_by}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#updated_by DataDatabricksCatalog#updated_by}.
 
 ---
 
@@ -1073,9 +1073,9 @@ new DataDatabricksCatalogCatalogInfoEffectivePredictiveOptimizationFlag {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfoEffectivePredictiveOptimizationFlag.property.value">Value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#value DataDatabricksCatalog#value}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfoEffectivePredictiveOptimizationFlag.property.inheritedFromName">InheritedFromName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#inherited_from_name DataDatabricksCatalog#inherited_from_name}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfoEffectivePredictiveOptimizationFlag.property.inheritedFromType">InheritedFromType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#inherited_from_type DataDatabricksCatalog#inherited_from_type}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfoEffectivePredictiveOptimizationFlag.property.value">Value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#value DataDatabricksCatalog#value}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfoEffectivePredictiveOptimizationFlag.property.inheritedFromName">InheritedFromName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#inherited_from_name DataDatabricksCatalog#inherited_from_name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfoEffectivePredictiveOptimizationFlag.property.inheritedFromType">InheritedFromType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#inherited_from_type DataDatabricksCatalog#inherited_from_type}. |
 
 ---
 
@@ -1087,7 +1087,7 @@ public string Value { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#value DataDatabricksCatalog#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#value DataDatabricksCatalog#value}.
 
 ---
 
@@ -1099,7 +1099,7 @@ public string InheritedFromName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#inherited_from_name DataDatabricksCatalog#inherited_from_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#inherited_from_name DataDatabricksCatalog#inherited_from_name}.
 
 ---
 
@@ -1111,7 +1111,7 @@ public string InheritedFromType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#inherited_from_type DataDatabricksCatalog#inherited_from_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#inherited_from_type DataDatabricksCatalog#inherited_from_type}.
 
 ---
 
@@ -1134,8 +1134,8 @@ new DataDatabricksCatalogCatalogInfoManagedEncryptionSettings {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfoManagedEncryptionSettings.property.azureEncryptionSettings">AzureEncryptionSettings</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfoManagedEncryptionSettingsAzureEncryptionSettings">DataDatabricksCatalogCatalogInfoManagedEncryptionSettingsAzureEncryptionSettings</a></code> | azure_encryption_settings block. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfoManagedEncryptionSettings.property.azureKeyVaultKeyId">AzureKeyVaultKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#azure_key_vault_key_id DataDatabricksCatalog#azure_key_vault_key_id}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfoManagedEncryptionSettings.property.customerManagedKeyId">CustomerManagedKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#customer_managed_key_id DataDatabricksCatalog#customer_managed_key_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfoManagedEncryptionSettings.property.azureKeyVaultKeyId">AzureKeyVaultKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#azure_key_vault_key_id DataDatabricksCatalog#azure_key_vault_key_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfoManagedEncryptionSettings.property.customerManagedKeyId">CustomerManagedKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#customer_managed_key_id DataDatabricksCatalog#customer_managed_key_id}. |
 
 ---
 
@@ -1149,7 +1149,7 @@ public DataDatabricksCatalogCatalogInfoManagedEncryptionSettingsAzureEncryptionS
 
 azure_encryption_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#azure_encryption_settings DataDatabricksCatalog#azure_encryption_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#azure_encryption_settings DataDatabricksCatalog#azure_encryption_settings}
 
 ---
 
@@ -1161,7 +1161,7 @@ public string AzureKeyVaultKeyId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#azure_key_vault_key_id DataDatabricksCatalog#azure_key_vault_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#azure_key_vault_key_id DataDatabricksCatalog#azure_key_vault_key_id}.
 
 ---
 
@@ -1173,7 +1173,7 @@ public string CustomerManagedKeyId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#customer_managed_key_id DataDatabricksCatalog#customer_managed_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#customer_managed_key_id DataDatabricksCatalog#customer_managed_key_id}.
 
 ---
 
@@ -1195,9 +1195,9 @@ new DataDatabricksCatalogCatalogInfoManagedEncryptionSettingsAzureEncryptionSett
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfoManagedEncryptionSettingsAzureEncryptionSettings.property.azureTenantId">AzureTenantId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#azure_tenant_id DataDatabricksCatalog#azure_tenant_id}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfoManagedEncryptionSettingsAzureEncryptionSettings.property.azureCmkAccessConnectorId">AzureCmkAccessConnectorId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#azure_cmk_access_connector_id DataDatabricksCatalog#azure_cmk_access_connector_id}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfoManagedEncryptionSettingsAzureEncryptionSettings.property.azureCmkManagedIdentityId">AzureCmkManagedIdentityId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#azure_cmk_managed_identity_id DataDatabricksCatalog#azure_cmk_managed_identity_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfoManagedEncryptionSettingsAzureEncryptionSettings.property.azureTenantId">AzureTenantId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#azure_tenant_id DataDatabricksCatalog#azure_tenant_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfoManagedEncryptionSettingsAzureEncryptionSettings.property.azureCmkAccessConnectorId">AzureCmkAccessConnectorId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#azure_cmk_access_connector_id DataDatabricksCatalog#azure_cmk_access_connector_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfoManagedEncryptionSettingsAzureEncryptionSettings.property.azureCmkManagedIdentityId">AzureCmkManagedIdentityId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#azure_cmk_managed_identity_id DataDatabricksCatalog#azure_cmk_managed_identity_id}. |
 
 ---
 
@@ -1209,7 +1209,7 @@ public string AzureTenantId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#azure_tenant_id DataDatabricksCatalog#azure_tenant_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#azure_tenant_id DataDatabricksCatalog#azure_tenant_id}.
 
 ---
 
@@ -1221,7 +1221,7 @@ public string AzureCmkAccessConnectorId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#azure_cmk_access_connector_id DataDatabricksCatalog#azure_cmk_access_connector_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#azure_cmk_access_connector_id DataDatabricksCatalog#azure_cmk_access_connector_id}.
 
 ---
 
@@ -1233,7 +1233,7 @@ public string AzureCmkManagedIdentityId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#azure_cmk_managed_identity_id DataDatabricksCatalog#azure_cmk_managed_identity_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#azure_cmk_managed_identity_id DataDatabricksCatalog#azure_cmk_managed_identity_id}.
 
 ---
 
@@ -1253,7 +1253,7 @@ new DataDatabricksCatalogCatalogInfoProvisioningInfo {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfoProvisioningInfo.property.state">State</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#state DataDatabricksCatalog#state}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfoProvisioningInfo.property.state">State</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#state DataDatabricksCatalog#state}. |
 
 ---
 
@@ -1265,7 +1265,7 @@ public string State { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#state DataDatabricksCatalog#state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#state DataDatabricksCatalog#state}.
 
 ---
 
@@ -1302,9 +1302,9 @@ new DataDatabricksCatalogConfig {
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#name DataDatabricksCatalog#name}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#name DataDatabricksCatalog#name}. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogConfig.property.catalogInfo">CatalogInfo</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogCatalogInfo">DataDatabricksCatalogCatalogInfo</a></code> | catalog_info block. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#id DataDatabricksCatalog#id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#id DataDatabricksCatalog#id}. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogProviderConfig">DataDatabricksCatalogProviderConfig</a></code> | provider_config block. |
 
 ---
@@ -1387,7 +1387,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#name DataDatabricksCatalog#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#name DataDatabricksCatalog#name}.
 
 ---
 
@@ -1401,7 +1401,7 @@ public DataDatabricksCatalogCatalogInfo CatalogInfo { get; set; }
 
 catalog_info block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#catalog_info DataDatabricksCatalog#catalog_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#catalog_info DataDatabricksCatalog#catalog_info}
 
 ---
 
@@ -1413,7 +1413,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#id DataDatabricksCatalog#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#id DataDatabricksCatalog#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1430,7 +1430,7 @@ public DataDatabricksCatalogProviderConfig ProviderConfig { get; set; }
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#provider_config DataDatabricksCatalog#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#provider_config DataDatabricksCatalog#provider_config}
 
 ---
 
@@ -1442,7 +1442,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 using Io.Cdktn.Providers.Databricks;
 
 new DataDatabricksCatalogProviderConfig {
-    string WorkspaceId
+    string WorkspaceId = null
 };
 ```
 
@@ -1450,11 +1450,11 @@ new DataDatabricksCatalogProviderConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#workspace_id DataDatabricksCatalog#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#workspace_id DataDatabricksCatalog#workspace_id}. |
 
 ---
 
-##### `WorkspaceId`<sup>Required</sup> <a name="WorkspaceId" id="@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogProviderConfig.property.workspaceId"></a>
+##### `WorkspaceId`<sup>Optional</sup> <a name="WorkspaceId" id="@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogProviderConfig.property.workspaceId"></a>
 
 ```csharp
 public string WorkspaceId { get; set; }
@@ -1462,7 +1462,7 @@ public string WorkspaceId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/catalog#workspace_id DataDatabricksCatalog#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/catalog#workspace_id DataDatabricksCatalog#workspace_id}.
 
 ---
 
@@ -3787,6 +3787,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogProviderConfigOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogProviderConfigOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogProviderConfigOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogProviderConfigOutputReference.resetWorkspaceId">ResetWorkspaceId</a></code> | *No description.* |
 
 ---
 
@@ -3939,6 +3940,12 @@ private string ToString()
 Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
+
+##### `ResetWorkspaceId` <a name="ResetWorkspaceId" id="@cdktn/provider-databricks.dataDatabricksCatalog.DataDatabricksCatalogProviderConfigOutputReference.resetWorkspaceId"></a>
+
+```csharp
+private void ResetWorkspaceId()
+```
 
 
 #### Properties <a name="Properties" id="Properties"></a>

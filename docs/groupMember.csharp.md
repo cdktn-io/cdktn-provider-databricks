@@ -4,7 +4,7 @@
 
 ### GroupMember <a name="GroupMember" id="@cdktn/provider-databricks.groupMember.GroupMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/group_member databricks_group_member}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/group_member databricks_group_member}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.groupMember.GroupMember.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the GroupMember to import.
 
 The id of the existing GroupMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/group_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/group_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -862,10 +862,10 @@ new GroupMemberConfig {
 | <code><a href="#@cdktn/provider-databricks.groupMember.GroupMemberConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.groupMember.GroupMemberConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.groupMember.GroupMemberConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.groupMember.GroupMemberConfig.property.groupId">GroupId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/group_member#group_id GroupMember#group_id}. |
-| <code><a href="#@cdktn/provider-databricks.groupMember.GroupMemberConfig.property.memberId">MemberId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/group_member#member_id GroupMember#member_id}. |
+| <code><a href="#@cdktn/provider-databricks.groupMember.GroupMemberConfig.property.groupId">GroupId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/group_member#group_id GroupMember#group_id}. |
+| <code><a href="#@cdktn/provider-databricks.groupMember.GroupMemberConfig.property.memberId">MemberId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/group_member#member_id GroupMember#member_id}. |
 | <code><a href="#@cdktn/provider-databricks.groupMember.GroupMemberConfig.property.api">Api</a></code> | <code>string</code> | Specifies whether to use account-level or workspace-level API. |
-| <code><a href="#@cdktn/provider-databricks.groupMember.GroupMemberConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/group_member#id GroupMember#id}. |
+| <code><a href="#@cdktn/provider-databricks.groupMember.GroupMemberConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/group_member#id GroupMember#id}. |
 | <code><a href="#@cdktn/provider-databricks.groupMember.GroupMemberConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.groupMember.GroupMemberProviderConfig">GroupMemberProviderConfig</a></code> | provider_config block. |
 
 ---
@@ -948,7 +948,7 @@ public string GroupId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/group_member#group_id GroupMember#group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/group_member#group_id GroupMember#group_id}.
 
 ---
 
@@ -960,7 +960,7 @@ public string MemberId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/group_member#member_id GroupMember#member_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/group_member#member_id GroupMember#member_id}.
 
 ---
 
@@ -976,7 +976,7 @@ Specifies whether to use account-level or workspace-level API.
 
 Valid values are `account` and `workspace`. When not set, the API level is inferred from the provider host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/group_member#api GroupMember#api}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/group_member#api GroupMember#api}
 
 ---
 
@@ -988,7 +988,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/group_member#id GroupMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/group_member#id GroupMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1005,7 +1005,7 @@ public GroupMemberProviderConfig ProviderConfig { get; set; }
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/group_member#provider_config GroupMember#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/group_member#provider_config GroupMember#provider_config}
 
 ---
 
@@ -1017,7 +1017,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datab
 using Io.Cdktn.Providers.Databricks;
 
 new GroupMemberProviderConfig {
-    string WorkspaceId
+    string WorkspaceId = null
 };
 ```
 
@@ -1025,11 +1025,11 @@ new GroupMemberProviderConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.groupMember.GroupMemberProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/group_member#workspace_id GroupMember#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.groupMember.GroupMemberProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/group_member#workspace_id GroupMember#workspace_id}. |
 
 ---
 
-##### `WorkspaceId`<sup>Required</sup> <a name="WorkspaceId" id="@cdktn/provider-databricks.groupMember.GroupMemberProviderConfig.property.workspaceId"></a>
+##### `WorkspaceId`<sup>Optional</sup> <a name="WorkspaceId" id="@cdktn/provider-databricks.groupMember.GroupMemberProviderConfig.property.workspaceId"></a>
 
 ```csharp
 public string WorkspaceId { get; set; }
@@ -1037,7 +1037,7 @@ public string WorkspaceId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/resources/group_member#workspace_id GroupMember#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/resources/group_member#workspace_id GroupMember#workspace_id}.
 
 ---
 
@@ -1093,6 +1093,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-databricks.groupMember.GroupMemberProviderConfigOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.groupMember.GroupMemberProviderConfigOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-databricks.groupMember.GroupMemberProviderConfigOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.groupMember.GroupMemberProviderConfigOutputReference.resetWorkspaceId">ResetWorkspaceId</a></code> | *No description.* |
 
 ---
 
@@ -1245,6 +1246,12 @@ private string ToString()
 Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
+
+##### `ResetWorkspaceId` <a name="ResetWorkspaceId" id="@cdktn/provider-databricks.groupMember.GroupMemberProviderConfigOutputReference.resetWorkspaceId"></a>
+
+```csharp
+private void ResetWorkspaceId()
+```
 
 
 #### Properties <a name="Properties" id="Properties"></a>

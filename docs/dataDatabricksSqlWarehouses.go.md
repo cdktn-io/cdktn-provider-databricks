@@ -4,7 +4,7 @@
 
 ### DataDatabricksSqlWarehouses <a name="DataDatabricksSqlWarehouses" id="@cdktn/provider-databricks.dataDatabricksSqlWarehouses.DataDatabricksSqlWarehouses"></a>
 
-Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/sql_warehouses databricks_sql_warehouses}.
+Represents a {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/sql_warehouses databricks_sql_warehouses}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-databricks.dataDatabricksSqlWarehouses.DataDatabricksSqlWarehouses.Initializer"></a>
 
@@ -428,7 +428,7 @@ The construct id used in the generated config for the DataDatabricksSqlWarehouse
 
 The id of the existing DataDatabricksSqlWarehouses that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/sql_warehouses#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/sql_warehouses#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -722,10 +722,10 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadata
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksSqlWarehouses.DataDatabricksSqlWarehousesConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksSqlWarehouses.DataDatabricksSqlWarehousesConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksSqlWarehouses.DataDatabricksSqlWarehousesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksSqlWarehouses.DataDatabricksSqlWarehousesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/sql_warehouses#id DataDatabricksSqlWarehouses#id}. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksSqlWarehouses.DataDatabricksSqlWarehousesConfig.property.ids">Ids</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/sql_warehouses#ids DataDatabricksSqlWarehouses#ids}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksSqlWarehouses.DataDatabricksSqlWarehousesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/sql_warehouses#id DataDatabricksSqlWarehouses#id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksSqlWarehouses.DataDatabricksSqlWarehousesConfig.property.ids">Ids</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/sql_warehouses#ids DataDatabricksSqlWarehouses#ids}. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksSqlWarehouses.DataDatabricksSqlWarehousesConfig.property.providerConfig">ProviderConfig</a></code> | <code><a href="#@cdktn/provider-databricks.dataDatabricksSqlWarehouses.DataDatabricksSqlWarehousesProviderConfig">DataDatabricksSqlWarehousesProviderConfig</a></code> | provider_config block. |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksSqlWarehouses.DataDatabricksSqlWarehousesConfig.property.warehouseNameContains">WarehouseNameContains</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/sql_warehouses#warehouse_name_contains DataDatabricksSqlWarehouses#warehouse_name_contains}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksSqlWarehouses.DataDatabricksSqlWarehousesConfig.property.warehouseNameContains">WarehouseNameContains</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/sql_warehouses#warehouse_name_contains DataDatabricksSqlWarehouses#warehouse_name_contains}. |
 
 ---
 
@@ -807,7 +807,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/sql_warehouses#id DataDatabricksSqlWarehouses#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/sql_warehouses#id DataDatabricksSqlWarehouses#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -822,7 +822,7 @@ Ids *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/sql_warehouses#ids DataDatabricksSqlWarehouses#ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/sql_warehouses#ids DataDatabricksSqlWarehouses#ids}.
 
 ---
 
@@ -836,7 +836,7 @@ ProviderConfig DataDatabricksSqlWarehousesProviderConfig
 
 provider_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/sql_warehouses#provider_config DataDatabricksSqlWarehouses#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/sql_warehouses#provider_config DataDatabricksSqlWarehouses#provider_config}
 
 ---
 
@@ -848,7 +848,7 @@ WarehouseNameContains *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/sql_warehouses#warehouse_name_contains DataDatabricksSqlWarehouses#warehouse_name_contains}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/sql_warehouses#warehouse_name_contains DataDatabricksSqlWarehouses#warehouse_name_contains}.
 
 ---
 
@@ -868,11 +868,11 @@ import "github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v17/datadata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-databricks.dataDatabricksSqlWarehouses.DataDatabricksSqlWarehousesProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/sql_warehouses#workspace_id DataDatabricksSqlWarehouses#workspace_id}. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksSqlWarehouses.DataDatabricksSqlWarehousesProviderConfig.property.workspaceId">WorkspaceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/sql_warehouses#workspace_id DataDatabricksSqlWarehouses#workspace_id}. |
 
 ---
 
-##### `WorkspaceId`<sup>Required</sup> <a name="WorkspaceId" id="@cdktn/provider-databricks.dataDatabricksSqlWarehouses.DataDatabricksSqlWarehousesProviderConfig.property.workspaceId"></a>
+##### `WorkspaceId`<sup>Optional</sup> <a name="WorkspaceId" id="@cdktn/provider-databricks.dataDatabricksSqlWarehouses.DataDatabricksSqlWarehousesProviderConfig.property.workspaceId"></a>
 
 ```go
 WorkspaceId *string
@@ -880,7 +880,7 @@ WorkspaceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.114.2/docs/data-sources/sql_warehouses#workspace_id DataDatabricksSqlWarehouses#workspace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/databricks/databricks/1.115.0/docs/data-sources/sql_warehouses#workspace_id DataDatabricksSqlWarehouses#workspace_id}.
 
 ---
 
@@ -936,6 +936,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksSqlWarehouses.DataDatabricksSqlWarehousesProviderConfigOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksSqlWarehouses.DataDatabricksSqlWarehousesProviderConfigOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-databricks.dataDatabricksSqlWarehouses.DataDatabricksSqlWarehousesProviderConfigOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-databricks.dataDatabricksSqlWarehouses.DataDatabricksSqlWarehousesProviderConfigOutputReference.resetWorkspaceId">ResetWorkspaceId</a></code> | *No description.* |
 
 ---
 
@@ -1088,6 +1089,12 @@ func ToString() *string
 Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
+
+##### `ResetWorkspaceId` <a name="ResetWorkspaceId" id="@cdktn/provider-databricks.dataDatabricksSqlWarehouses.DataDatabricksSqlWarehousesProviderConfigOutputReference.resetWorkspaceId"></a>
+
+```go
+func ResetWorkspaceId()
+```
 
 
 #### Properties <a name="Properties" id="Properties"></a>
